@@ -1,0 +1,782 @@
+  5      COMMENTS                                                02NP     200212
+  5    H TYP=FUL$AUT=D.R. Tilley, et al$CUT=23-Aug-2001$CIT=NP A708, 3 (2002)$  
+  5   C  TITL$ABSTRACT FOR A=5                                                  
+  5   c  AUTH$D.R. Tilley, J.H. Kelley                                          
+  5   c  INST$Triangle Universities Nuclear Laboratory                          
+  5  #c       Durham, NC 27708 and Dept. of Physics, North Carolina             
+  5  #c       State University, Raleigh, |a(N) 27695                            
+  5   c  AUTH$C.M. Cheves, J.L. Godwin, G. Sheu,H.R. Weller                     
+  5   c  INST$Triangle Universities Nuclear Laboratory                          
+  5  #c       Durham, NC 27708 and Dept. of Physics, Duke University            
+  5  #c       Durham, NC 27708                                                  
+  5   c  AUTH$G.M. Hale                                                         
+  5   c  INST$Los Alamos National Laboratory, Los Alamos, NM 87545              
+  5   c  AUTH$H.M. Hoffmann                                                     
+  5   c  INST$Universiteat Erlangen-Neurenberg, Germany                         
+  5   c  ABST$Compilation of energy levels of A=5 nuclei, with emphasis on the  
+  5  2c  review of material leading to information about structure of the A=5   
+  5  3c  system. This work is a summary of 2002Ti10, D.R. Tilley, C.M. Cheves,  
+  5  4c  J.L. Godwin, G.M. Hale, H.M. Hofmann, J.H. Kelley, G. Sheu and H.R.    
+  5  5c  Weller, Nuclear Physics A 708 (2002) 3.                                
+  5   c  CUT$August 23, 2001.                                                   
+  5   c  FUND$This work is supported by the US Department of Energy, Office of  
+  5  xc  High Energy and Nuclear Physics, under: contract no. DEFGO2-97-ER41042 
+  5  xc  (North Carolina State University); contract no. DEFGO2-97-ER41033      
+  5  xc  (Duke University)                                                      
+  5   C  CIT$NP A708, 3 (2002)                                                  
+                                                                                
+  5      REFERENCES                                                             
+  5    R 1979AJ01 JOUR NUPAB A320 1                                             
+  5    R 1982SM09 JOUR NUPBB 206 333                                            
+  5    R 1983ANZQ REPT JAERI-M-83-025,Ando                                      
+  5    R 1984AJ01 JOUR NUPAB 413 1                                              
+  5    R 1985PO10 JOUR PYLBB 157 120                                            
+  5    R 1986BE35 JOUR NUPAB 460 352                                            
+  5    R 1986BE44 JOUR IANFA 50 1936                                            
+  5    R 1987BO40 JOUR RRPQA 32 497                                             
+  5    R 1987GO25 JOUR PZETA 45 205                                             
+  5    R 1987KO47 JOUR PZETA 46 306                                             
+  5    R 1988SEZJ CONF Rosseau Lake(Nuclei Far from Stability) Proc,P324,Seth   
+  5    R 1990AM04 JOUR PZETA 51 607                                             
+  5    R 1991GO19 JOUR NUPAB 531 613                                            
+  5    R 1991SE06 JOUR PRLTA 66 2448                                            
+  5    R 1995ALZU CONF Arles(Exotic Nuclei and Atomic Masses) Proc,P329,Aleksand
+  5    R 1997AU07 JOUR PRBMD 56 11294                                           
+  5    R 1997KO07 JOUR NUPAB 616 223c                                           
+  5    R 2002TI10 JOUR NUPAB 708 3                                              
+                                                                                
+  5H     ADOPTED LEVELS                                          ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H   Q 2.166E4   9 -2.0E2  13                        2017WA10                 
+  5H  c  As the following theoretical and experimental articles indicate, the   
+  5H 2c  ground state of {+5}H has J{+|p}=1/2+ and is located around 2 MeV      
+  5H 3c  above the {+3}H+2n threshold and has a width greater than 1 MeV. Broad 
+  5H 4c  and nearly degenerate excited states with J{+|p}=3/2+ and 5/2+ are     
+  5H 5c  predicted a few MeV above the ground state; however, the experimental  
+  5H 6c  results are not sufficient to describe the excited states in great     
+  5H 7c  detail.                                                                
+  5H  c  {I{Suggestion of a bound {+5}H ground state:}}                         
+  5H  c  In the theoretical work of [Blanchard and Winter, Phys. Rev. 107       
+  5H 2c  (1957) 774 ] titled {I"Is {+5}H Particle Stable"}, it was              
+  5H 3c  suggested that {+5}H{-g.s.} may be bound and observable with           
+  5H 4c  E{-|b}|?19 MeV followed by a delayed neutron emission.                 
+  5H 5c  Subsequent searches for |b unstable {+5}H were carried out             
+  5H 6c  utilizing {+7}Li(|g,2p) (1962Ce03: Berkeley, 1963Ne02: Purdue,         
+  5H 7c  1964Sh18: Orsay, 1965Ar04: Frascati), {+7}Li(p,3p) reactions           
+  5H 8c  (Tautfest, Phys. Rev. 111 (1958) 1162 and 1958Ta03: Berkeley,          
+  5H 9c  1964Sc02: Brookhaven),                                                 
+  5H ac  {+7}Li(|p{+-},d) (1968Bo32: Univ. Chicago) and analysis of the         
+  5H bc  {+235}U(n,{If}) yields (1964An06: USSR).                               
+  5H  c  An erroneous result obtained in the E{-brem.}(|g)=320                  
+  5H 2c  bombardment of {+nat}Li at Purdue suggested population of a            
+  5H 3c  T{-1/2}=110 ms {I30} |b emitter with E{-|b}>15 MeV that was            
+  5H 4c  attributed to {+5}H (1963Ne02). The experiments following (1963Ne02)   
+  5H 5c  mainly searched for a reasonably narrow and bound {+5}H ground state.  
+  5H 6c  However, no evidence of |b unstable {+5}H was found in any             
+  5H 7c  subsequent study.                                                      
+  5H 8c  The sentiment is well represented in the title                         
+  5H 9c  {IStill another unsucessful search for {+5}H}: (1968Bo32).             
+  5H  c  {IGeneral theoretical analyses, favoring an unbound}                   
+  5H 2c  {I{+5}H{-g.s.} are given in} (1960Go36, 1960Ze03, 1963Ar06, 1964Go25,  
+  5H 3c  1968Go36, 1975Be49, 1981Av02, 1981Be10, 1981Ka39, 1989Go24,            
+  5H 4c  2001Fi24, 2002Ti05, 2004Ao05, 2004Gr03, 2004Ti02, 2018Gr02).           
+  5H  c  See a broad review of the experimental data in (2004Gr17).             
+  5H  c  It is pointed out in (2017Wu03) that the structure of {+5}H plays an   
+  5H 2c  important role in the hypernucleus {+6}{-|L}H. See the discussion in   
+  5H 3c  the following reaction {+2}H({+6}He,{+3}He).                           
+  5H  t  {I{BTheory:}}                                                          
+  5H  t  -----------------------------------------------------------------------
+  5H  t  J{+|p}     1/2+         5/2+       3/2+                                
+  5H  t  -----------------------------------------------------------------------
+  5H  t  Ref.{+a}   E;|G{+b}     E;|G{+b}   E;|G{+b}\s          Method          
+  5H  t  -----------------------------------------------------------------------
+  5H  t  1985Po10   2.7          5.1        7.0            (0+1)~h|w shell model
+  5H  t  1985Po10   2.7          6.2        5.5            (0+2)~h|w shell model
+  5H  t  2000Sh23   2.5-3.0;3-4  4.6-5.0;5  6.4-6.9;8   hyperspherical harmonics
+  5H  t  2001De02,                                                              
+  5H  t  2002De68   |?3;1-4                                 generator coordinate
+  5H  t  2003Ar18   1.59;2.48    2.9;4.1    3.0;4.8     three body cluster model
+  5H  t  2007De18   1.57;1.53    2.82;2.51  3.25;3.89   complex scaled expansion
+  5H  t  2007Br18,                                                              
+  5H  t  2010Ne06   1.39;1.60    2.11;2.87  2.10;3.14           modifed J-matrix
+  5H  t  2008Ad16   1.9(2);0.6(2)           4(1);0.6(1)     generator coordinate
+  5H  t  -----------------------------------------------------------------------
+  5H  t  {+a} Also see 2003Ba99 (R matrix).                                     
+  5H  t  {+b} E;|G in MeV.                                                      
+  5H   XA1H(6HE,2HE)                                                            
+  5H   XB2H(6HE,3HE)                                                            
+  5H   XC3H(T,P)                                                                
+  5H   XD6LI(PI-,P)                                                             
+  5H   XE7LI(PI-,D)                                                             
+  5H   XF7LI(6LI,8B)                                                            
+  5H   XG9BE(PI-,PT)                                                            
+  5H   XH9BE(PI-,DD)                                                            
+  5H   XI9BE(A,8B)                                                              
+  5H   XJ9BE(11B,15O)                                                           
+  5H   XK11B(PI-,D4HE),10B(PI-,P4HE)                                            
+  5H   XLC(6HE,5H)                                                              
+  5H  CL DICT$(PI-,D4HE)=(|p{+-},d{+4}He)                                       
+  5H  CL DICT$(PI-,P4HE)=(|p{+-},p{+4}He)                                       
+  5H  CL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H   L 0            (1/2+)           5.3 MEV   4              2.4        3    
+  5H 2 L XREF=ABCL $ %2N AP 100                                                 
+  5H  cL E$From (2017Wu03) see discussion in {+2}H({+6}He,{+3}He);              
+  5H 2cL other reported values are E{-res}({+3}H+2n)=1.7 MeV {I3} (1997Ko07);   
+  5H 3cL E{-res}({+3}H+2n)=1.8 MeV {I2} (2004St18);                             
+  5H 3cL E{-res}({+3}H+2n)=2.2 MeV {I3} (2005Te05);                             
+  5H 4cL E{-res}({+3}H+2n)|?1.8 MeV (2005Go46) and                              
+  5H 5cL E{-res}({+3}H+2n)|?3 MeV (2003Me11,2003Me18).                          
+  5H  cL T$From (2017Wu03);                                                     
+  5H 2cL Other reported values are |G=1.9 MeV {I4} (1997Ko07);                  
+  5H 3cL |G=1.3 MeV {I5} (2004St18);                                            
+  5H 3cL |G|?2.5 MeV (2005Te05);                                                
+  5H 4cL |G|?1.3 MeV (2005Go46) and                                             
+  5H 5cL |G|?6 MeV (2003Me11,2003Me18).                                         
+  5H   L 3.1E3     6                   5.3 MEV   5              5.5        3    
+  5H  cL E$From average of E{-res}({+3}H+2n)=5.2 MeV {I3} (2005Gu17),           
+  5H 2cL E{-res}({+3}H+2n)=6.1 MeV {I4} (2005Gu17) and                          
+  5H 3cL E{-res}({+3}H+2n)=5.6 MeV {I1} (2009Gu03).                             
+  5H  cL T$From average of |G=5.5 MeV {I5} (2005Gu17),                          
+  5H 2cL |G=4.5 MeV {I12} (2005Gu17) and |G=4 MeV 2 (2009Gu03).                 
+  5H 2 L XREF=GHK $ %2N AP 100                                                  
+  5H   L 8.1E3     6                   6.8 MEV   6              10.5       4    
+  5H 2 L XREF=DEGHIK $ %2N AP 100                                               
+  5H  cL E$From average of E{-res}({+3}H+2n)=11.8 MeV {I7} (1990Am04)           
+  5H 2cL E{-res}({+3}H+2n)=9.1 MeV {I7} (1990Am04),                             
+  5H 3cL E{-res}({+3}H+2n)=10.4 MeV {I3} (2005Gu17),                            
+  5H 4cL E{-res}({+3}H+2n)=11.4 MeV {I7} (2005Gu17),                            
+  5H 3cL E{-res}({+3}H+2n)=9.7 MeV {I10} (2009Gu03) and                         
+  5H 3cL E{-res}({+3}H+2n)=11.5 MeV {I10} (2009Gu03).                           
+  5H  cL T$From average of |G=5.6 MeV {I9} (1990Am04);                          
+  5H 2cL |G=7.4 MeV {I6} (1990Am04),                                            
+  5H 3cL |G=7.4 MeV {I6} (2005Gu17),                                            
+  5H 4cL |G=5 MeV {I1} (2005Gu17),                                              
+  5H 5cL |G=7.3 MeV 30 (2009Gu03) and                                           
+  5H 6cL |G=8.2 MeV 30 (2009Gu03).                                              
+  5H   L 16.1E3    5                   4.8 MEV   17             18.5       4    
+  5H 2 L XREF=GH $ %2N AP 100                                                   
+  5H  cL E$From average of E{-res}({+3}H+2n)=18.7 {I5} (2005Gu17) and           
+  5H 2cL E{-res}({+3}H+2n)=18.3 MeV {I5} (2005Gu17).                            
+  5H  cL T$From average of |G=3.9 MeV {I20} (2005Gu17) and                      
+  5H 2cL |G=5.5 MeV {I17} (2005Gu17).                                           
+  5H   L 24.4E3    5                   3.5 MEV   14             26.8       4    
+  5H 2 L XREF=GH $ %2N AP 100                                                   
+  5H  cL E$From average of E{-res}({+3}H+2n)=26.8 MeV {I4} (2005Gu17) and       
+  5H 2cL E{-res}({+3}H+2n)=26.5 MeV {I10} (2005Gu17).                           
+  5H  cL T$From average of |G=3.0 MeV {I14} (2005Gu17) and                      
+  5H 2cL |G=6 MeV {I3} (2005Gu17).                                              
+                                                                                
+  5H     1H(6HE,2HE)                   2001Ko52                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1997Ko07: The experiment was performed at the RIKEN research facility  
+  5H 2c  with primary {+15}N beam with energy 115 MeV/nucleon. The secondary    
+  5H 3c  beam included {+6}He with energy 83 MeV/nucleon. The target was CH{-2}.
+  5H 4c  The separation energy spectrum of the two outgoing protons was         
+  5H 5c  measured. A broad resonance was reported corresponding to a {+5}H state
+  5H 6c  at E{-res}=1.1 {I4}(stat) {I3}(syst) MeV above the {+3}H+2n threshold. 
+  5H 7c  This experiment is also discussed in (1997KoZV).                       
+  5H  c  2001Te07,2001Ko52,2002Ko24: As reported in (2001Te07), the experiment  
+  5H 2c  was performed at Flerov Laboratory of Nuclear Reactions in Dubna. The  
+  5H 3c  {+6}He secondary beam with energy 37 MeV/nucleon was obtained from a   
+  5H 4c  primary beam of 42 MeV/nucleon {+13}C on a beryllium target. The       
+  5H 5c  target for the secondary beam was hydrogen gas. Measurements of the    
+  5H 6c  two protons and {+3}H from the decay of {+5}H allowed the energy of the
+  5H 7c  {+5}H to be determined. The result was a peak E{-res}|?2 MeV above the 
+  5H 8c  {+3}H+2n threshold.                                                    
+  5H  c  In what appears to be the same experiment as briefly reported in       
+  5H 2c  (2001Te07), the authors of (2001Ko52) give more experimental details   
+  5H 3c  and analysis of the measurements. Here, the energy of the secondary    
+  5H 4c  {+6}He beam is given as 36 MeV/nucleon. The resonance parameters       
+  5H 5c  obtained are E{-res}=1.7 MeV {I3} and |G=1.9 MeV {I4} for the energy   
+  5H 6c  above the {+3}H+2n threshold and width, respectively. Analysis of the  
+  5H 7c  two protons showed that they came from a virtual singlet state of      
+  5H 8c  {+2}He and that the {+5}H state formed in the reaction was likely the  
+  5H 9c  expected ground state with J{+|p}=1/2+. This experiment is also        
+  5H ac  discussed in (2003Ko68,2004Gr17,2004Wo10).                             
+  5H  c  See related measurements reported in (2001Go35).                       
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H  cL T$LABEL=|G                                                             
+  5H  cL J,T,S$From (2001Ko52)                                                  
+  5H   L 0            (1/2+)           1.9 MEV   4              1.7        3    
+  5H  cL J$From systematics.                                                    
+  5H  cL E$See also E{-res}=1.1 {I4}(stat) {I3}(syst) MeV (1997Ko07).           
+                                                                                
+  5H     2H(6HE,3HE)                                             ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  This reaction is interpreted as one in which a proton from the         
+  5H 2c  incident {+6}He is transferred to the {+2}H target allowing the low    
+  5H 3c  lying states of {+5}H to be populated.                                 
+  5H  c  2003Si15: The experiment was at JINR at Dubda. The 150 MeV {+6}He beam 
+  5H 2c  was directed onto a liquid {+2}H target. The {+3}He reaction product   
+  5H 3c  and the {+3}H from the decay of {+5}H were detected and the {+5}H      
+  5H 4c  spectrum determined by the missing mass method. A single narrow        
+  5H 5c  resonance structure was observed at E{-res}=1.8 MeV above the {+3}H+2n 
+  5H 6c  threshold which the authors assume to be the 1/2+ ground state of      
+  5H 7c  {+5}H. See related discussion in (2003Te06,2003Te16).                  
+  5H  c  2004St18: This experiment was also performed at JINR at Dubna. A       
+  5H 2c  primary {+11}B beam with energy 32 MeV/nucleon colliding with a Be     
+  5H 3c  target produced a secondary {+6}He beam with an energy of 132 MeV      
+  5H 4c  which struck a {+2}H gas target. The {+3}He reaction product and the   
+  5H 5c  {+3}H from the decay of {+5}H were detected and the {+5}H spectrum     
+  5H 6c  determined by the missing mass method. The authors interpret the       
+  5H 7c  results as two resonances, one corresponding to the 1/2+ ground state  
+  5H 8c  at E{-res}=1.8 MeV {I2} with an observable width of |G=1.3 MeV {I5}.   
+  5H 9c  A second broad resonance is shown at around 7 MeV in the figure,       
+  5H ac  though discussion on the second resonance is limited to the statement, 
+  5H bc  "one can only say that, in the present case, it seems to be a          
+  5H cc  rather broad resonance-like structure".                                
+  5H  c  2005Te05: This experiment was also performed at JINR at Dubna. The     
+  5H 2c  secondary {+6}He beam with an energy of 132 MeV collided with a {+2}H  
+  5H 3c  target, the {+3}He reaction product and the {+3}H from the decay of    
+  5H 4c  {+5}H were detected and the {+5}H spectrum determined by the missing   
+  5H 5c  mass method. A resonance at E{-res}=2.2 MeV {I3} and width |G|?2.5 MeV 
+  5H 6c  was observed. The authors also comment that the observed spectrum shows
+  5H 7c  the effects of interference between the 1/2+ state and a higher energy 
+  5H 8c  3/2+ and 5/2+ doublet. The reaction {+2}H({+6}He,{+3}H){+5}He was also 
+  5H 9c  studied and the T=3/2 analog of the ground {+5}H was observed in {+5}He
+  5H  c  2017Wu03: Experiment was conducted at NSCL at Michigan State           
+  5H 2c  University. The {+6}He secondary beam with energy 55 MeV/nucleon was   
+  5H 3c  obtained from {+18}O primary beam with energy 120 MeV/nucleon on a     
+  5H 4c  {+9}Be target. The {+6}He beam bombarded a thin CD{-2} target. The     
+  5H 5c  {+3}He reaction product and the {+3}H from the decay of {+5}H were     
+  5H 6c  detected. The resonance energy and width were determined to be         
+  5H 7c  E{-res}=2.4 MeV {I3} above the {+3}H+2n threshold and |G=5.3 MeV {I4}. 
+  5H 8c  Analysis of the data suggested that the {+5}H decay into               
+  5H 9c  {+3}H+2n showed a slight preference for dineutron emission process     
+  5H ac  over the democratic two neutron emission process.                      
+  5H  c  In the discussion of (2017Wu03), the impact of energy conservation and 
+  5H 2c  momentum matching on the observed lineshape are examined for this      
+  5H 3c  extremely negative Q-value reaction. Distortions of the lineshape are  
+  5H 4c  investigated for various experimental conditions of their results and  
+  5H 5c  past results. The total collection of reported parameters for          
+  5H 6c  {+5}H{-g.s.} is rather discrepant; however, the  quality of the data   
+  5H 7c  in (2017Wu03) that is attributed to suppression of the high-energy     
+  5H 8c  yield due to momentum matching effects, along with their detailed      
+  5H 9c  analysis and discussion weigh heavily in the adoption of their results 
+  5H ac  for {+5}H{-g.s.}.                                                      
+  5H  c  It is also noted in (2017Wu03) "...that {+5}H is important in the      
+  5H 2c  context of the hypernucleus {+6}{-|L}H..."  The point is that adding a 
+  5H 3c  |L to {+5}H could produce a bound {+6}{-|L}H even if {+5}H is unbound  
+  5H 4c  since the |L provides an additional attractive interaction.            
+  5H 5c  Experimental evidence for bound {+6}{-|L}H is given in (2012Ag06) and  
+  5H 6c  against a bound {+6}{-|L}H in (2017Ho15). Theoretical discussions of   
+  5H 7c  {+6}{-|L}H are given in (2013Ga51,2013Hi03) and references therein.    
+  5H 8c  (We are greatful to John Millener (BNL) for his input regarding        
+  5H 9c  {+6}{-|L}H and its relation to {+5}H.)                                 
+  5H  cL T$LABEL=|G                                                             
+  5H  cL J$From systematics                                                     
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H   L 0            (1/2+)           5.3 MEV     4            2.4       3     
+  5H  cL E,WIDTH$From (2017Wu03); these results are adopted as the ground       
+  5H 2cL state properties. Other reported values are  E{-res}({+3}H+2n)=1.8     
+  5H 3cL MeV {I2}, |G=1.3 MeV {I5} (2004St18); E{-res}({+3}H+2n)=2.2 MeV {I3},  
+  5H 4cL |G|?2.5 MeV (2005Te05)                                                 
+  5H  cL E$Also see (2003Si15) who report a narrow resonance (|G<0.5 MeV)       
+  5H 2cL with E{-res}({+3}H+2n)|?1.8 MeV (2003Si15).                            
+  5H   L 5         AP                                           7         AP   ?
+  5H  cL E$From (2004St18).                                                     
+  5H  cL T$Broad                                                                
+                                                                                
+  5H     3H(T,P)                       2003Go11                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1968Yo06: The energy of the incident tritons was 22.25 MeV from LANL   
+  5H 2c  electrostatic accelerator. The target was a tritium gas target. The    
+  5H 3c  energy spectrum of the protons was observed at four angles. A broad    
+  5H 4c  peak was observed in the proton spectrum |?1.8 MeV above the {+3}H+2n  
+  5H 5c  threshold with a width of |G|?1.2 MeV. The authors stop short of       
+  5H 6c  identifying their observed structure as a {+5}H state due to its       
+  5H 7c  similarity with a four body phase space spectrum. In their discussion  
+  5H 8c  of the (1968Yo06) article, the authors of (2017Wu03) note that the     
+  5H 9c  22.25 MeV energy was too low to effectively observe {+5}H states.      
+  5H  c  2003Go11: The experiment was performed at Flerov Laboratory of Nuclear 
+  5H 2c  Reactions in Dubna. The triton beam had an energy of 57.5 MeV, the     
+  5H 3c  target was liquid tritium. The detected particles were the reaction p  
+  5H 4c  and t and n from the decay of {+5}H. Using the missing mass method,    
+  5H 5c  the {+5}H spectrum was determined. Resonances were observed at         
+  5H 6c  E{-res}=1.8 MeV {I1} and 2.7 MeV {I1}, both with widths less than 0.5  
+  5H 7c  MeV. The authors attribute the 1.8 MeV resonance to the expected 1/2+  
+  5H 8c  ground state and the 2.7 MeV to the expected 3/2+ or 5/2+ excited      
+  5H 9c  states. See (2002Og12,2002TeZZ,2003Ko68,2003Re06,2003Te16,2004Go54) for
+  5H ac  more discussion of the results of this experiment. Also see            
+  5H bc  Oganessian et al., Nuclear Physics at Border Lines (2002) pp. 372-375. 
+  5H  c  2004Go54,2005Go46: The triton beam with an energy of 57.7 MeV          
+  5H 2c  from the cyclotron at Flerov Laboratory of                             
+  5H 3c  Nuclear Reactions in Dubna was focused on a cryogenic tritium target,  
+  5H 4c  see (2003Yu07). The detected particles were the reaction p and t and n 
+  5H 5c  from the decay of {+5}H. Using the missing mass method, the {+5}H      
+  5H 6c  spectrum was determined. A broad structure in the {+5}H spectrum above 
+  5H 7c  2.5 MeV was determined to be a mixture of 5/2+ and 3/2+ states. It was 
+  5H 8c  also determined, in (2004Go54), that the 1/2+ ground state is located  
+  5H 9c  at |?2MeV. In (2005Go46), it was determined that the ground state      
+  5H ac  resonance energy and width were E{-res}|?1.8 MeV and |G|?1.3 MeV.      
+  5H bc  See also (2005GoZY,2005Te05).                                          
+  5H cc  Note: energies are measured relative to the {+3}H+2n                   
+  5H dc  threshold.                                                             
+  5H  cL J$From systematics                                                     
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H   L 0            (1/2+)           1.3 MEV   AP             1.8       AP    
+  5H  cL E$From (2005Go46).                                                     
+  5H 2cL Earlier results in (2003Go11) reported E{-res}({+3}H+2n)|?1.8 MeV      
+  5H 3cL and |G<0.5 MeV along with a second narrow state.                       
+  5H 4cL See other results and discussion in (1968Yo06, 2017Wu03).              
+  5H   L X            (3/2+,5/2+)                               2.5       GT    
+  5H  cL T$Broad                                                                
+  5H  cL $Likely corresponds to unresolved strength from the                    
+  5H 2cL J{+|p}=3/2+ and 5/2+ states (2005Go46).                                
+                                                                                
+  5H     6LI(PI-,P)                    1990AM04                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1981SeZR: The missing mass spectrum resulting from stopped             
+  5H 2c  pions in the {+6}Li(|p{+-},p) reaction was analyzed at                 
+  5H 3c  |q=20|' at the LAMPF/EPICS facility. The authors suggest a             
+  5H 4c  E{-res}|?11.0 MeV {I15} resonance with |G|?14 MeV.                     
+  5H 5c  A later comment on this work, titled                                   
+  5H 6c  "{IWas {+5}H Observed in the Reaction {+6}Li(|p,p)?}" (1987Ko47),      
+  5H 7c  suggests other final state interactions involving {In+n} and {+4}H     
+  5H 8c  influence the observation. In (1991Se06), a final report on the        
+  5H 9c  (1981SeZR) data is given where evidence of involvement of dineutron    
+  5H ac  emission is suggested to explain the details of the                    
+  5H bc  missing mass spectrum.                                                 
+  5H  c  1990Am04: The experiments were conducted at Leningrad Institute of     
+  5H 2c  Nuclear Physics using pion beams stopped by {+6,7}Li targets.          
+  5H 3c  Observing the p spectrum from {+6}Li led to a {+5}H state with energy  
+  5H 4c  E{-res}=11.8 MeV {I7} and width |G=5.6 MeV {I9}.                       
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H  cL E$From E{-res}-E{-g.s.}=E{-res}-2.4 MeV {I3}                           
+  5H   L 9.4E3     8                   5.6 MEV   9              11.8       7    
+                                                                                
+  5H     7LI(PI-,D)                    1990AM04                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  Cohen, et al., Phys. Lett 14 (1965) 242. The energy spectrum of        
+  5H 2c  deuterium products was measured following {+7}Li(|p{+-},d) reactions   
+  5H 3c  on {+7}Li. No indication of {+5}H resonanses was observed in the data. 
+  5H  c  1969Mi10: A 100 MeV |p{+-} beam from                                   
+  5H 2c  the NASA Space Radiation Effects Laboratory was degraded and stopped   
+  5H 3c  in a natural Li target. The opening angles of resulting                
+  5H 4c  {Id}+{It} pairs were analyzed in search of {+5}H resonances.           
+  5H 5c  Upper limits were placed on {+5}H production.                          
+  5H  c  1990Am04: The experiments were conducted at Leningrad Institute of     
+  5H 2c  Nuclear Physics using pion beams stopped by {+6,7}Li targets.          
+  5H 3c  Observing the d                                                        
+  5H 4c  spectrum from {+7}Li led to a {+5}H state with energy E{-res}=9.1 MeV  
+  5H 5c  {I7} and width |G=7.4 MeV {I6}.                                        
+  5H  c  See theoretical analysis in (1969Ko15)                                 
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H  cL E$From E{-res}-E{-g.s.}=E{-res}-2.4 MeV {I3}                           
+  5H   L 6.7E3     8                   7.4 MEV   6              9.1        7    
+                                                                                
+  5H     7LI(6LI,8B)                   1977WE03                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1977We03: The {+7}Li({+6}Li,{+8}B) reaction was studied at the         
+  5H 2c  Berkeley 88-inch cyclotron by impinging a 93.3 MeV {+6}Li beam on a    
+  5H 3c  self supporting 330 |mg/cm{+2} {+7}Li target;                          
+  5H 4c  two |DE{-1}-|DE{-2}-E-Veto counters at angles between |q=11|' and 15|' 
+  5H 5c  measured the reaction products. No evidence was found for bound or     
+  5H 3c  narrow states of {+5}H.                                                
+  5H  c  See related work reported in (1995AlZW,1995AlZU).                      
+                                                                                
+  5H     9BE(PI-,PT)                   2003GO08,2005Gu17         ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1987Go25,1987GoZN,1988Go14,1991Go19:                                   
+  5H 2c  The experiment was performed at the Leningrad                          
+  5H 3c  Institute of Nuclear Physics. Stopped pions were captured by {+9}Be,   
+  5H 4c  reaction proton and triton pairs were detected and measured and a      
+  5H 5c  missing mass spectrum corresponding to the formation of {+5}H was      
+  5H 6c  determined. Structure in the spectrum was interpreted as the formation 
+  5H 7c  of a resonance in {+5}H with an energy of E{-res}=7.4 MeV {I7} above   
+  5H 8c  the {+3}H+2n threshold and width |G=8 MeV {I3}. Thoennessen,           
+  5H 9c  (2012Th01), considers that this is the experiment in which {+5}H was   
+  5H ac  first observed.                                                        
+  5H  c  2003Go08,2005Gu07,2005Gu17:                                            
+  5H 2c  The experiment was performed at LAMPF. The negative                    
+  5H 3c  pions were stopped in a thin Be target, the reaction products p+t and  
+  5H 4c  d+d were observed and the {+5}H missing mass spectra were obtained.    
+  5H 5c  Resonant energies E{-res} and widths |G are listed below.              
+  5H 6c  See similar discussion in (2009Gu17,2016Gu21).                         
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H  cL E$From E{-res}-E{-g.s.}=E{-res}-2.4 MeV {I3}                           
+  5H   L 2.8E3     6                   5.5 MEV   5              5.2        3    
+  5H   L 8.0E3     4                   7.4 MEV   6              10.4       3    
+  5H   L 16.3E3    6                   3.9 MEV   20             18.7       5    
+  5H   L 24.2E3    5                   3.0 MEV   14             26.8       4    
+                                                                                
+  5H     9BE(A,8B)                     1968MC02                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1968Mc02: The {+9}Be(|a,{+8}B) reaction was studied at the             
+  5H 2c  Berkeley 88-inch cyclotron by impinging a 129 MeV |a beam on a         
+  5H 3c  self supporting 650 |mg/cm{+2} {+9}Be target;                          
+  5H 4c  two |DE{-1}-|DE{-2}-E-Veto counters at |q=10|' and 14.1|' measured     
+  5H 5c  the reaction products. No evidence was found for bound or              
+  5H 3c  narrow states of {+5}H. However, the data was suggestive of a very     
+  5H 4c  broad state or group of states at around E{-res}({+3}H+2n)|?11.6 MeV.  
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H   L 9.2E3     AP                                           11.6      AP    
+  5H  cL T$Broad                                                                
+                                                                                
+  5H     9BE(11B,15O)                  1986BE35,1986BE44         ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  1986Be35,1986Be44,1987Bo40,1990BeYX:                                   
+  5H 2c  The oxygen {+9}Be({+11}B,{+14,15,16}O)                                 
+  5H 2c  reaction were studied at Dubna using an 88 MeV {+11}B beam that        
+  5H 3c  impinged on a 230 |mg/cm{+2} {+9}Be target. The reaction products      
+  5H 4c  were momentum analyzed using a magnetic spectrograph. For              
+  5H 5c  the {+9}Be({+11}B,{+15}O){+5}H reaction, the {+15}O ions with          
+  5H 6c  E({+15}O)|?57-70 MeV were analyzed at |q|?8|'. No evidence was found   
+  5H 7c  for a narrow state. However, "there is a phase space contribution      
+  5H 8c  from the {+14}0+{+5}H+n exit channel indicating a strong final         
+  5H 9c  state interaction with a rather large width (|G|?10 MeV)"              
+                                                                                
+  5H     9BE(PI-,DD)                   2003GO08,2005Gu17         ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  2003Go08,2005Gu07,2005Gu17: The experiment was performed               
+  5H 2c  at LAMPF. The negative                                                 
+  5H 3c  pions were stopped in a thin Be target, the reaction products p+t and  
+  5H 4c  d+d were observed and the {+5}H missing mass spectra were obtained. The
+  5H 5c  observed resonance energies E{-res} and widths |G are listed below.    
+  5H 6c  See similar discussion in (2009Gu17,2016Gu21).                         
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H  cL E$From E{-res}-E{-g.s.}=E{-res}-2.4 MeV {I3}                           
+  5H   L 3.7E3     5                   4.5 MEV   12             6.1        4    
+  5H   L 9.0E3     8                   5 MEV     1              11.4       7    
+  5H   L 16.3E3    6                   5.5 MEV   17             18.3       5    
+  5H   L 24.1E3    10                  6 MEV     3              26.5      10    
+                                                                                
+  5H     11B(PI-,D4HE),10B(PI-,P4HE)   2009GU03                  ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  2009Gu03,2016Gu21:                                                     
+  5H 2c  {+11}B(|p{+-},d{+4}He), {+11}B(|p{+-},t{+3}He), {+10}B(|p{+-},p{+4}He),
+  5H 3c  {+10}B(|p{+-},d{+3}He).                                                
+  5H  c  Beams of negative pions were slowed in a Be moderator and              
+  5H 2c  stopped in thin {+10}B or {+11}B target that was                       
+  5H 3c  located between a set of two silicon detectors that faced each other.  
+  5H 4c  The energies of p, d, t and {+3,4}He charged particles emitted         
+  5H 5c  following capture reactions were analyzed to deduce the                
+  5H 6c  missing mass spectrum. The missing mass resolution was                 
+  5H 7c  3.0 MeV {I1} and the error in reference to the energy scale did        
+  5H 8c  not exceed 200 keV.                                                    
+  5H  c  In each case, the missing mass spectra could be fit with a single      
+  5H 2c  resonance. In {+11}B(|p{+-},t{+3}He) a resonance near |?5 MeV          
+  5H 3c  was observed at E{-res}=5.6 MeV {I10} with |G=4 MeV {I2}.              
+  5H 4c  In the other reactions, a resonance near |?10 MeV was populated at     
+  5H 3c  E{-res}=9.7 MeV {I10} with |G=7.3 MeV {I30} ({+11}B(|p{+-},d{+4}He)),  
+  5H 3c  and at                                                                 
+  5H 4c  E{-res}=11.5 MeV {I10} with |G=8.2 MeV {I30} ({+10}B(|p{+-},p{+4}He)). 
+  5H  c  See similar discussion in (2016Gu21).                                  
+  5H  CL DICT$(PI-,D4HE)=(|p{+-},d{+4}He)                                       
+  5H  CL DICT$(PI-,P4HE)=(|p{+-},p{+4}He)                                       
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H  cL E$From E{-res}-E{-g.s.}=E{-res}-2.4 MeV {I3}                           
+  5H   L 3.2E3     11                  2 MEV      2             5.6       10    
+  5H  cL E,T$From {+11}B(|p{+-},t{+3}He).                                       
+  5H   L 8.2E3     11                  7.8 MEV   30             10.6      10    
+  5H  cL E,T$From {+11}B(|p{+-},d{+4}He) and {+10}B(|p{+-},p{+4}He).            
+                                                                                
+  5H     C(6HE,5H)                     2003ME11,2003ME18         ENSDF    201903
+  5H   H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=28-Feb-2019$CIT=ENSDF$         
+  5H  c  2003Me11,2003Me18: This experiment was performed at GSI. The primary   
+  5H 2c  {+18}O beam with energy 340 MeV/nucleon on a Be target produces a      
+  5H 3c  secondary {+6}He beam with energy 240 MeV/nucleon which strikes a C    
+  5H 4c  target. The coincidence detection of a triton and two neutrons allowed 
+  5H 5c  the {+5}H spectrum to be determined by the invariant mass method. The  
+  5H 6c  {+5}H spectrum had a resonance structure at E{-res}|?3 MeV above the   
+  5H 7c  {+3}H+2n threshold with a width |G|?6 MeV and J{+|p}=1/2+.             
+  5H 8c  These results are also discussed in (2004Ch16,2004Wo10).               
+  5H  c  In (2003Sh23) a complete {+3}H+{In}+{In} three-body dynamical          
+  5H 2c  model investigation is carried out that finds E{-g.s.}=2.5-3.0 MeV and 
+  5H 2c  |G{-g.s.}=3-4 MeV.                                                     
+  5H  cL J$From systematics                                                     
+  5H  cL T$LABEL=|G                                                             
+  5H  CL S$LABEL=E{-res}({+3}H+2n)(MeV)                                         
+  5H   L 0            (1/2+)           6 MEV     AP             3         AP    
+                                                                                
+  5HE    ADOPTED LEVELS                2002TI10                  02NP     200211
+  5HE  H TYP=FUL$AUT=X. HU, D.R.TILLEY, J.H.KELLEY $                            
+  5HE2 H CIT=NP A708,3 (2002)$CUT=23-AUG-2001$                                  
+  5HE  Q -4.5E2    6 -735    202.068E4 11735     20    2012WA38                 
+  5HE CQ Note: Current evaluation has used the following Q record               
+  5HE  Q  -290.    71-894.   5021.83E3 12              1997AU07                 
+  5HE  XA3H(D,X),4HE(N,X)                                                       
+  5HE  L 0.0          3/2-             0.648 MEV                                
+  5HE2 L %N=? $ ISPIN=1/2                                                       
+  5HE3 L WIDTHN=66.578 MEV $ WIDTHN0=0.578 MEV                                  
+  5HE4 L XREF=A                                                                 
+  5HE CL           WIDTHD=8.80 MEV                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 66 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED        
+  5HE3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+                                                                                
+  5HE    3H(D,X),4HE(N,X)              2002TI10                  02NP     200211
+  5HE CL           LEVELS ARE BASED ON THE COMPLEX POLES AND RESIDUES OF THE    
+  5HE2CL ^S-MATRIX (EXTENDED ^R-MATRIX).                                        
+  5HE3CL SEE 2002TI10 FOR A DISCUSSION OF THE ADOPTED (^S-MATRIX) LEVELS.       
+  5HE4CL THE FITS ARE BASED ON DATA FROM ALL POSSIBLE REACTIONS FOR THE TWO-BODY
+  5HE5CL CHANNELS D + 3H AND N + 4HE AT ^CM ENERGIES CORRESPONDING TO E{-X} < 23
+  5HE6CL MEV. IN ADDITION, N + 4HE* CHANNELS ARE INCLUDED TO APPROXIMATE THE    
+  5HE7CL EFFECTS OF THREE-BODY BREAKUP PROCESSES.                               
+  5HE  L 0.0          3/2-             0.648 MEV                                
+  5HE2 L %N=? $ ISPIN=1/2                                                       
+  5HE3 L WIDTHN=66.578 MEV $ WIDTHN0=0.578 MEV                                  
+  5HE CL           WIDTHD=8.80 MEV                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 66 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED        
+  5HE3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+  5HE  L 1270         1/2-             5.57 MEV                                 
+  5HE2 L %N=? $ ISPIN=1/2                                                       
+  5HE3 L WIDTHN=4.45 MEV $ WIDTHN0=3.18 MEV                                     
+  5HE CL           WIDTHD=38.0 MEV                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 1.27 MEV.                                           
+  5HE CL           (LARGE) PARTIAL WIDTHS IN CLOSED CHANNELS                    
+  5HE2CL HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.                
+  5HE  L 16840        3/2+             74.5 KEV                                 
+  5HE2 L %N=? $ %D=? $ %IT=? $ ISPIN=1/2                                        
+  5HE3 L WIDTHN=40 KEV                                                          
+  5HE CL           WIDTHD=25 KEV                                                
+  5HE  G 15544                                                                  
+  5HE  G 16810                                                                  
+  5HE  L 19140        5/2+             3.56 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=3 KEV                                                           
+  5HE CL           WIDTHD=1.62  MEV                                             
+  5HE  L 19260        3/2+             3.96 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=14 KEV                                                          
+  5HE CL           WIDTHD=1.83 MEV                                              
+  5HE  L 19310        7/2+             3.02 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=45 KEV                                                          
+  5HE CL           WIDTHD=1.89  MEV                                             
+  5HE  L 19960        3/2-             1.92 MEV                                 
+  5HE2 L %N=? $ %D=? $ %P=? $ ISPIN=1/2                                         
+  5HE3 L WIDTHN=865 KEV $ WIDTHN0=3 KEV                                         
+  5HE CL           WIDTHD=325 KEV                                               
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 862 KEV.                                            
+  5HE  L 21250        3/2+             4.61 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=98 KEV                                                          
+  5HE CL           WIDTHD=2.38 MEV                                              
+  5HE  L 21390        5/2+             3.95 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=91 KEV                                                          
+  5HE CL           WIDTHD=2.12 MEV                                              
+  5HE  L 21640        1/2+             4.03 MEV                                 
+  5HE2 L %N=? $ %D=? $ %P=? $ ISPIN=1/2                                         
+  5HE3 L WIDTHN=776 KEV $ WIDTHN0=50 KEV                                        
+  5HE CL           WIDTHD=878 KEV.                                              
+  5HE CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5HE2CL THE FINAL STATE IS 726 KEV.                                            
+  5HE  L 23970        7/2+             5.44 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=53 KEV                                                          
+  5HE CL           WIDTHD=2.85 MEV                                              
+  5HE  L 24060        5/2-             5.23 MEV                                 
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+  5HE3 L WIDTHN=13 KEV                                                          
+  5HE CL           WIDTHD=2.18 MEV                                              
+  5HE  L 35.7E3    4                   2 MEV     AP                            ?
+  5HE2 L %N=? $ %D=? $ ISPIN=1/2                                                
+                                                                                
+  5LI    ADOPTED LEVELS                2002TI10                  02NP     200211
+  5LI  H TYP=FUL$AUT=X. HU, D.R.TILLEY, J.H.KELLEY $                            
+  5LI2 H CIT=NP A708,3 (2002)$CUT=23-AUG-2001$                                  
+  5LI  Q -2.55E4   SY2.172E4 22-1.97E3 5 1.97E3  5     2012WA38                 
+  5LI CQ Note: Current evaluation has used the following Q record               
+  5LI  Q -26300    SY21.71E3 22-1966.  50 1966.  50    1997AU07                 
+  5LI  XA3HE(D,X),4HE(P,X)                                                      
+  5LI  L 0.0          3/2-             1.23 MEV                                 
+  5LI2 L %P=? $ ISPIN=1/2                                                       
+  5LI3 L WIDTHP=10.06 MEV $ WIDTHP0=1.06 MEV                                    
+  5LI4 L XREF=A                                                                 
+  5LI CL           WIDTHD=43.1 MEV                                              
+  5LI CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5LI2CL THE FINAL STATE IS 9 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED         
+  5LI3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+                                                                                
+  5LI    9C B+A DECAY                  1988MI03,2000GE09,2001BE51               
+  5LI  H TYP=UPD$AUT=J. Kelley$CUT=26-FEB-2013$CIT=ENSDF$                       
+  5LI2 H COM=Updated data set since last full evaluation$                       
+  5LI C  1988MI03: Implanted 9C into a thick SI detector and measured the total 
+  5LI2C  |b-delayed breakup energy; deduced |b-decay feeding to low-lying       
+  5LI3C  states. They missed several higherlying states that are fed and did not
+  5LI4C  directly distinguish delayed p vs. |a emission.                        
+  5LI C  2000GE09: 9C from the ^TRIUMF/^TISOL facility was implanted in a thin  
+  5LI2C  carbon foil. Data were taken in two detector configurations; one       
+  5LI3C  configuration was sensitive to decay through the p+8BE{-g.s.} decay    
+  5LI4C  mode while the other configuration was sensitive to the |a+5LI{-g.s.}  
+  5LI5C  and p+8BE^*(3.0) decay channels. Breakup particles from 9C -> 8BE+p -> 
+  5LI6C  2|a+p and 9C -> 5LI+|a -> 2|a+p were detected either in an array of    
+  5LI7C  4 DE-E telescopes configured with two segmented SI annular detectors   
+  5LI8C  or with a similar array 2 DE-E telescopes configured with two          
+  5LI9C  doublesided position sensitive SI strip detectors and a plastic        
+  5LIaC  scintillator to count |b-particles. Detector sensitivities and         
+  5LIbC  coincidence efficiencies were evaluated by Monte Carlo techniques,     
+  5LIcC  and a phenomenological approach was used to deduce the |b-decay        
+  5LIdC  reaction branching ratios.                                             
+  5LI C  2001BE51: At the ^CERN/^ISOLDE facility, doublesided strip detectors   
+  5LI2C  (^DSSD) were coupled with thick stopping detectors to provide          
+  5LI3C  high-granularity and large solid angle coverage for detecting decay    
+  5LI4C  particles. Emphasis was placed on characterizing population and decay  
+  5LI5C  of the AP 14.65 MEV IAS. Furthermore a thin DE ^DSSD was implemented   
+  5LI6C  to avoid threshold (efficiency) concerns that troubled (2000GE09).     
+  5LI7C  Lastly, the experimenters evaluated the decay branching ratios for the 
+  5LI8C  12B^*(12.2) state. Little comment is given on other populated levels.  
+  5LI C  2001BU05: The authors of (2000GE09) give a more rigorous alternate     
+  5LI2C  interpretation of their data in a full R-MATRIX analysis. There is a   
+  5LI3C  poor agreement between deduced level energies and accepted energy      
+  5LI4C  values.                                                                
+  5LI C                                                                         
+  5LI C  Comments:                                                              
+  5LI C  Four relevant articles are given that discuss three different          
+  5LI2C  experimental efforts. Agreement is relatively mixed.                   
+  5LI C  The experiments that are most sensitive to decay to 9B{-g.s.} find the 
+  5LI2C  largest feeding to that state, we take (54.1 15)% from (2001BE51). Data
+  5LI3C  from ^TRIUMF produced the most comprehensive set of populated          
+  5LI4C  levels, though they are analyzed via two different methods in          
+  5LI5C  (2000GE09) and (2001BU05) yielding somewhat different results, due in  
+  5LI6C  part to differences in the 9B{-g.s.} branch and subsequent             
+  5LI7C  renormalization. Lastly are the states above 14 MEV, (2000GE09) reports
+  5LI8C  only 9B^*(14.0: JPI= ?) which decays mainly via proton emission, while 
+  5LI9C  (2001BE51) reports population of 9B^*(14.6: JPI=3/2-) which decays     
+  5LIaC  about evenly via p and |a emission. On the other hand the analysis of  
+  5LIbC  (2001BU05) reports population of both levels. Finally, in (2000GE09,   
+  5LIcC  2001BU05) a previously unknown 9B level at E{-x}=13.3 MEV is reported. 
+  5LI C  The 9B ground state feeding from (2001BE51) is accepted here; the      
+  5LI2C  branching ratios from (2000GE09) including the mostly |a background    
+  5LI3C  component are then renormalized ( * 0.864). The branches feeding both  
+  5LI4C  of the E{-x}=14.0 and 14.6 MEV states are accepted, though it may      
+  5LI5C  be that only one level was populated. The particle breakup branching   
+  5LI6C  ratios for 9B^*(12.2) are accepted from (2001BE51). And lastly, the    
+  5LI7C  weak branch to 9B^*(13.3) is included with some uncertainty.           
+  5LI CL T$LABEL=WIDTH                                                          
+  5LI CL E,J,T$From (2002TI10).                                                 
+  9C   P 0           (3/2-)            126.5 MS  9              14807     50    
+  9C  CP QP$from 2012WA38.                                                      
+  5LI  N 1           1         0.379   58                                       
+  5LI PN                                                                     1  
+  5LI  L 0.0         3/2-              1.23 MEV                                 
+  5LI  DA365       2830.3    582345                                             
+  5LI  DA606       930.605   862780                                             
+  5LI  DA5818      363.53    5512160                                            
+  5LI  DA7204      310.005   6714655                                            
+  5LI  L 1490        1/2-              6.60 MEV                                 
+  5LI  DA4990      360.35    2412160                                            
+                                                                                
+  5LI    3HE(D,X),4HE(P,X)             2002TI10                  02NP     200211
+  5LI CL           LEVELS ARE BASED ON THE COMPLEX POLES AND RESIDUES OF THE    
+  5LI2CL ^S-MATRIX (EXTENDED ^R-MATRIX). SEE 2002TI10 FOR A DISCUSSION OF THE   
+  5LI3CL ADOPTED(^S-MATRIX) LEVELS AND THE ALTERNATE (^R-MATRIX) LEVELS.        
+  5LI4CL THE FITS ARE BASED ON DATA FROM ALL POSSIBLE REACTIONS FOR THE         
+  5LI5CL TWO-BODY CHANNELS D + 3HE AND P + 4HE AT ^CM ENERGIES CORRESPONDING TO 
+  5LI6CL E{-X} < 23 MEV. IN ADDITION, P + 4HE* CHANNELS ARE INCLUDED TO         
+  5LI7CL APPROXIMATE THE EFFECTS OF THREE-BODY BREAKUP PROCESSES.               
+  5LI  L 0.0          3/2-             1.23 MEV                                 
+  5LI2 L %P=? $ ISPIN=1/2                                                       
+  5LI3 L WIDTHP=10.06 MEV $ WIDTHP0=1.06 MEV                                    
+  5LI CL           WIDTHD=43.1 MEV                                              
+  5LI CL           NOTE THAT THE PARTIAL WIDTH CORRESPONDING TO EXCITED 4HE IN  
+  5LI2CL THE FINAL STATE IS 9 MEV, AND (LARGE) PARTIAL WIDTHS IN CLOSED         
+  5LI3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+  5LI  L  1490        1/2-             6.60 MEV                                 
+  5LI2 L %P=? $ ISPIN=1/2                                                       
+  5LI3 L WIDTHP=3.78 MEV                                                        
+  5LI CL           WIDTHD=16.4 MEV                                              
+  5LI2CL           BUT NOTE THAT (LARGE) PARTIAL WIDTHS IN CLOSED               
+  5LI3CL CHANNELS HAVE MEANING ONLY AS ASYMTOTIC NORMALIZATION CONSTANTS.       
+  5LI  L 16870        3/2+             267 KEV                                  
+  5LI2 L %P=? $ %D=? $ %IT=? $ ISPIN=1/2                                        
+  5LI3 L WIDTHP=55 KEV                                                          
+  5LI CL           WIDTHD=134 KEV                                               
+  5LI  G 15355                                                                  
+  5LI  G 16840                                                                  
+  5LI  L 19280        3/2-             959 KEV                                  
+  5LI2 L %P=? $ %D=? $ %N=? $ ISPIN=1/2                                         
+  5LI3 L WIDTHP=742 KEV                                                         
+  5LI CL           WIDTHD=40 KEV                                                
+  5LI  L 19450        7/2+             3.28 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=40 KEV                                                          
+  5LI CL           WIDTHD=1.82 MEV                                              
+  5LI  L 19710        5/2+             4.31 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=11 KEV                                                          
+  5LI CL           WIDTHD=2.03 MEV                                              
+  5LI  L 20530        1/2+             5.00 MEV                                 
+  5LI2 L %P=? $ %D=? $ %N=? $ ISPIN=1/2                                         
+  5LI3 L WIDTHP=222 KEV                                                         
+  5LI CL           WIDTHD=1.53 MEV                                              
+  5LI  L 22060        5/2-             15.0 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=928 KEV                                                         
+  5LI CL           WIDTHD=2.33 MEV                                              
+  5LI  L 23740        5/2+             5.43 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=234 KEV                                                         
+  5LI CL           WIDTHD=2.49 MEV                                              
+  5LI  L 25420        3/2+             534 KEV                                  
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=23 KEV                                                          
+  5LI CL           WIDTHD=467 KEV                                               
+  5LI  L 25440        7/2+             2.63 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=43 KEV                                                          
+  5LI CL           WIDTHD=1.94 MEV                                              
+  5LI  L 32530        1/2-             35.7 MEV                                 
+  5LI2 L %P=? $ %D=? $ ISPIN=1/2                                                
+  5LI3 L WIDTHP=8.75 MEV                                                        
+  5LI CL           WIDTHD=13 KEV                                                
+                                                                                
+  5BE    ADOPTED LEVELS                                          ENSDF    201903
+  5BE  H TYP=UPD$AUT=J.E. Purcell, C.G. Sheu$CUT=11-Jan-2018$CIT=ENSDF$         
+  5BE  Q                       -4.5E3  SY              2017WA10                 
+  5BE c  The {+5}Be nucleus is particle unbound to proton decay; no resonances  
+  5BE2c  have been experimentally observed.                                     
+  5BE c  2013Ti01 gives {+5}Be mass defect as 34.10 MeV {I12} by improved       
+  5BE2c  Kelson-Garvey systematics. Using this value for the {+5}Be mass        
+  5BE3c  defect, the ground state of {+5}Be would be 4.59 MeV {I12} above       
+  5BE4c  the {+3}He+2p threshold.                                               
+  5BE c  The 2016 mass table (2017Wa10) gives the estimated mass defect of      
+  5BE2c  {+5}Be as 37.1 MeV {I20}. Using this value, the ground state of        
+  5BE3c  {+5}Be would be 7.6 MeV {I20} above the {+3}He+2p threshold.           
+  5BE c                                                                         
+  5BE c  {I{BNegative experimental results:}}                                   
+  5BE c  {B{+3}He({+3}He,n){+5}Be:}                                             
+  5BE c  1967Ad05: {+3}He beams from CIT and Stanford accelerators with         
+  5BE2c  energies from 18 MeV to 26 MeV collided with {+3}He in a gas target and
+  5BE3c  the neutron spectrum measured. No structure was observed corresponding 
+  5BE4c  to {+5}Be states. It was concluded that any {+5}Be states must be at   
+  5BE5c  least 4.2 MeV above the {+3}He+2p threshold.                           
+  5BE c                                                                         
+  5BE c  {I{BTheory:}}                                                          
+  5BE c  1981Be10: The author presented a shell model calculation of A=5 nuclei 
+  5BE2c  with the goal of testing the T=3/2 IMME for A=5. His calculated binding
+  5BE3c  energy for {+5}Be is 1.5 MeV. This gives a mass defect of 35.7 MeV and 
+  5BE4c  a resonance energy of 6.2 MeV relative to the {+3}He+2p threshold.     
+  5BE5c  There is no mention of the J{+|p} value for the state.                 
+  5BE c  2003Ar18: The authors used a three body cluster model with effective   
+  5BE2c  interactions that give reasonable results for other nearby nuclei as   
+  5BE4c  well as p+{+3}He phase shifts. The authors suspect that the absence of 
+  5BE5c  a tensor component in their effective interaction may be of            
+  5BE6c  significance. They obtained the following results, where the resonance 
+  5BE7c  energies are given relative to the {+3}He+2p threshold.                
+  5BE t                                                                         
+  5BE t  theoretical estimate from (2003Ar18)                                   
+  5BE t  J{+|p}             E{-R}(MeV)         |G{-R}(MeV)                      
+  5BE t  1/2{++}            3.15              3.62                              
+  5BE t  5/2{++}            4.5               5.6                               
+  5BE t  3/2{++}            4.6               6.3                               
+  5BE t                                                                         
+  5BE c  Note that the 3/2+ and 5/2+ states are nearly degenerate and very      
+  5BE2c  broad and are not likely to show up in reactions as separate           
+  5BE3c  resonances.                                                            
+  5BE c  See other more general theoretical analyses in (1975Be31, 1981Ka39,    
+  5BE2c  1982Ng01, 2004Sa50)                                                    
+                                                                                

@@ -1,0 +1,931 @@
+267      COMMENTS                                                05NDS    200512
+267    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267  2 H CUT=12-Aug-2005$                                                       
+267   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+267   C  AUTH$M. GUPTA(a)                                                       
+267   C  INST$National Nuclear Data Center                                      
+267  #C       Brookhaven National Laboratory                                    
+267  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+267  #C                                                                         
+267   c  INST$Manipal Academy of Higher Education,                              
+267  #c  Manipal, KA 576 104, INDIA                                             
+267  #c  e-mail: mohini.gupta@manipal.edu                                       
+267   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+267  #c  Manipal, KA 576 104, INDIA                                             
+267   C  AUTH$THOMAS W. BURROWS                                                 
+267   C  INST$National Nuclear Data Center                                      
+267  #C       Brookhaven National Laboratory                                    
+267  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+267  #C       e-mail: burrows@bnl.gov                                           
+267   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+267  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+267  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+267  4C  RECEIVED BY August 12, 2005.                                           
+267   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+267  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+267  3C  DATE WERE CONSIDERED.                                                  
+267   C  CIT$NDS 106, 251 (2005)                                                
+267   c  COMM$                                                                  
+267  @c  {UAcronyms and notations used in this evaluation:}                     
+267  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+267  #c  BGS Berkeley Gas Filled Separator                                      
+267  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+267  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+267  #c  EVR Evaporation Residue                                                
+267  #c  GARIS Gas-filled Recoil Ion Separator                                  
+267  #c  RILAC RIKEN Linear Accelerator facility                                
+267  #c  SHIP Separator for Heavy Ion reaction Products                         
+267  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+267  2c  and detection of previous EVR or |a                                    
+267  #c  TKE Total Kinetic Energy                                               
+267  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+267  2c  Reactions, JINR, Dubna, Russia                                         
+267  #c                                                                         
+267  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+267  2c  (Z=110-112,114,116,118):}                                              
+267  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+267  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+267  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+267  5c  the evaluators have relied on the judgement of the JWP in              
+267  6c  determining the strength of the arguments made in the various papers.  
+267  7c  In the cases where there are new data or where the JWP has not yet     
+267  8c  assigned a priority of discovery for an element, the evaluators have   
+267  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+267  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+267  Bc  the data.                                                              
+267  #c                                                                         
+267  #c  In the above context, with respect to Z=112 and the collective works of
+267  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+267  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+267  4c  references therein.                                                    
+267  #c                                                                         
+267  @c                                                                         
+267  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+267  2c  discovery of an element and not a specific nuclide. The purpose of     
+267  3c  this evaluation is to present the "best" set of nuclear properties     
+267  4c  for those nuclides reported between A=266 and A=294 based on data      
+267  5c  currently available and {Bnot} to establish a priority of discovery for
+267  6c  any element.                                                           
+267  !c                                                                         
+267  #c  It is well known that alpha decay chains seen                          
+267  ac  in cold fusion reactions tend to terminate in known mass regions.      
+267  2c  The method of |a-|a or |a-SF correlations for identifying the          
+267  3c  parent has therefore been used with confidence.                        
+267  3c  Experiments carried out with hot fusion reactions,                     
+267  4c  result in alpha decay chains beginning and ending with hitherto unknown
+267  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+267  6c  in an attempt to identify the parent and daughters. The latter method  
+267  7c  is not as accurate as the first since a greater probability of         
+267  8c  randomness is inherant to the technique. As such, independent          
+267  9c  verification and confirmation of the data gains added importance.      
+267  ac  These facts should be taken into account when considering the suggested
+267  ac  properties of nuclei created following a hot fusion reaction as for    
+267  ac  the synthesis of Z=114 and above.                                      
+267  #c                                                                         
+267  #c  Finally, with regard to the some of the                                
+267  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+267  ac  2004Mo15 have pointed out that mass assignments which are based        
+267  ac  on the excitation energy of the compound nucleus may be off by a       
+267  ac  single unit. This may also be due in part to uncertainties in the beam 
+267  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+267  ac  Once again, collateral information is required to establish the charge 
+267  ac  and approximate A of the nucleus.                                      
+267  #c                                                                         
+267  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+267  2c  have not been adopted, the evaluators have used the approximations in  
+267  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+267  4c  exponential distribution to estimate the standard uncertainty (68%     
+267  5c  confidence level) in T{-1/2}:                                          
+267  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+267  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+267  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+267  9c  of events. For one and two events, the exact values given in Table 1   
+267  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+267  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+267  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+267  #c                                                                         
+267  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+267  ac  Calculations of T{-1/2}                                                
+267  2c  performed in the present evaluation used the relationship:             
+267  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+267  #c  where Z refers to the atomic                                           
+267  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+267  6c  and:                                                                   
+267  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+267  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+267  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+267  3c  parameter set used in these evaluations. We note that these systematics
+267  6c  are only an indication of |a-decay half-lives from the ground state    
+267  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+267  8c  the element under consideration. The use of this formalism in the      
+267  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+267  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+267  ac  estimate a Hindrance Factor (HF) for a given transition,               
+267  ac  attributable to the odd neutron or proton. This quantity is            
+267  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+267  ac  The HF so computed is an approximate indication.                       
+267  #c                                                                         
+267  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+267  2c  References.                                                            
+267  #c                                                                         
+267  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+267  2c  trans-fermium elements is the manifestation of shell effects in the    
+267  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+267  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+267  5c  important as QF is expected to play a greater role on the hindrance of 
+267  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+267  7c  the "island" of stability. An understanding of this mechanism is       
+267  8c  necessary to establishing the most favorable reactions for producing   
+267  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+267  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+267  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+267  Cc  to both the mass asymmetry in the entrance channel as well as the      
+267  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+267  Ec  deformations of target/projectile nuclei and their relative orientation
+267  Fc  to each other in the process of CN formation, may also play an         
+267  Gc  important role in reducing the probability of forming a compound       
+267  Hc  system. In the face of extremely low yields and a steep decrease of    
+267  Ic  production cross-sections already in evidence with available stable    
+267  Jc  beam-target combinations, the influence of all possible mitigating     
+267  Kc  factors must be accurately determined in order to                      
+267  Lc  optimize the probability of successful fusion. The formation of a      
+267  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+267  Nc  survives QF going on to form a compact compound system which must then 
+267  Oc  face competition from fission.                                         
+267  #c                                                                         
+267  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+267  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+267  3c  in collaboration with investigators from Belgium, France, and Italy.   
+267  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+267  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+267  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+267  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+267  8c  spectrometer "Corset". These experiments were inspired by              
+267  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+267  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+267  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+267  Cc  such experiments are planned or underway to investigate the various    
+267  Dc  effects.                                                               
+267  #c                                                                         
+267  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+267  2c  and references cited in these papers.                                  
+267  #c                                                                         
+267  !c  {UExperimental Estimates of Fission Barriers:}                         
+267  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+267  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+267  4c  the experimentally derived barrier heights are respectively:           
+267  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+267  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+267  #c                                                                         
+267  #c  2002It04, in an analysis of available experimental data, derive the    
+267  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+267  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+267  #c                                                                         
+267  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+267  2c  Two possibilities have been proposed in an attempt to understand the   
+267  ac  the {+289}114, {+287}114 observations:                                 
+267  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+267  ac  belongs to a rare decay mode originating from                          
+267  4c  an isomeric state, or that                                             
+267  #c  (ii) the sequence may actually originate from                          
+267  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+267  7c  Levels).                                                               
+267  #c  The evaluators believe that further investigations                     
+267  ac  are required to support either hypothesis.                             
+267  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+267  9c  unobserved. Also, T{-1/2}                                              
+267  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+267  ac  is much larger than that observed by 2004Og12 and                      
+267  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+267  ac  agreement. Such inconsistencies need to be better understood.          
+267  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+267  2c  respects. 2004OgZZ report more statistics in some cases.               
+267  #c                                                                         
+267  @c  {UOther comments on {+289}114 and {+283}112}                           
+267  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+267  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+267  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+267  4c  classified the evidence as being "very weak",                          
+267  5c  with no convincing supporting arguments for the possible production of 
+267  6c  SHE. We make the following general observations:                       
+267  #c                                                                         
+267  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+267  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+267  ac  by the Dubna-JINR collaborations for all isotopes of                   
+267  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+267  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+267  ac  {+287}114 (15 events) and {+286}114                                    
+267  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+267  ac  the |?34 min decay sequence postulated as originating from             
+267  5c  a rare decay mode of {+289}114, does not seem very likely.             
+267  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+267  7c  {+289}114 decays observed are genetically linked                       
+267  8c  and not the result of a background decay sequence. These               
+267  BC  discrepancies have to be resolved, along with some others.             
+267  #c                                                                         
+267  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+267  ac  (see also 2004Og02) with VASSILISSA, have not                          
+267  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+267  3c  lack of internal consistency through the collective measurements       
+267  ac  and the data are inconclusive as pointed                               
+267  4c  out by experimenters (reasons given in each paper). Decay properties of
+267  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+267  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+267  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+267  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+267  8c  by them. See {+283}112 Adopted Levels for details.                     
+267  #c                                                                         
+267  #c  These observations by the experimenters are consistent with the        
+267  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+267  3c  of the various arguments put                                           
+267  3c  forward therein, the following comments may be made here:              
+267  #c                                                                         
+267  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+267  #c  190 MeV and 212 MeV (1999Og05)                                         
+267  #c  65 MeV and 170 MeV  (2004Og02)                                         
+267  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+267  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+267  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+267  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+267  4c  plane and side detectors). With one exception, all the energies        
+267  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+267  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+267  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+267  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+267  9c  the second experiment) after EVR implantation resulted in              
+267  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+267  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+267  #c                                                                         
+267  #c  2. 2000Ar03 statement that correlations  between the fission events    
+267  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+267  3c  'backward' analysis of the data was reported in                        
+267  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+267  5c  evidently in contradiction with those made by the                      
+267  6c  experimenters. A more complete analysis would be beneficial.           
+267  #c                                                                         
+267  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+267  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+267  ac  quoted from an earlier                                                 
+267  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+267  4c  assignments. The proposed assignment of Z=114 to both parents may      
+267  5c  be incorrect taking into account new data which do not support         
+267  6c  these observations and for reasons already mentioned.                  
+267  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+267  !c                                                                         
+267  #c  CONCLUSIONS:                                                           
+267  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+267  ac  are not conclusive. Overall, the                                       
+267  2c  results from the VASSILISSA experiments are at variance with data from 
+267  3c  experiments using DGFRS. The latter investigations are done using      
+267  4c  more stringent methods, and have greater statistics, offering better   
+267  5c  internal consistency. Some obvious discrepancies and other             
+267  ac  inconsistencies between the two sets of                                
+267  6c  data remain and need to be resolved or adequately explained as does the
+267  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+267  8c  by 2005Gr19 and 2002Lo11.                                              
+267  #c                                                                         
+267  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+267  2c  from earlier work are not reproduced to date.                          
+267  #c                                                                         
+267  @c  {UTheoretical Calculations:}                                           
+267  @c  1995Mo29: |b2 based on the finite-range droplet                        
+267  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+267  3c  with "global" parameters.                                              
+267  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+267  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+267  3c  J|p simultaneously obtained with the calculated masses and             
+267  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+267  5c  A=239.                                                                 
+267  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+267  2c  model for the macroscopic part and the Strutinski shell correction,    
+267  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+267  4c  part.                                                                  
+267  @c  2005GaZX: |b2 based on self consistent calculations                    
+267  2c  within the framework of the Relativistic Mean Field (RMF)              
+267  3c  theory with very few "globally" fit parameters and employing the       
+267  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+267  5c  sets in use exhibit similar systematics, these results are expected to 
+267  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+267  #c                                                                         
+267  @c  {UOther Measurements:}                                                 
+267  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+267  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+267  3c  (Blocking technique in single crystals).                               
+267  #c                                                                         
+267   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+267  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+267  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+267  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+267  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+267  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+267  7c  additional information that they readily provided during this          
+267  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+267  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+267  Ac  Singh for helpful discussions. We thank A. Marinov                     
+267  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+267  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+267  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+267  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+267  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+267  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+267  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+267  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+267  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+267  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+267  Lc  insights, and suggestions until her untimely demise are hereby         
+267  Mc  acknowledged.                                                          
+267   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+267  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+267  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+267      REFERENCES                                                       200512
+267    R 1959IG05 JOUR PHRVA 115 1665                                           
+267    R 1966VI04 JOUR JINCA 28 741                                             
+267    R 1974AU05 JOUR NUIMA 115 75                                             
+267    R 1975MU16 JOUR NUIMA 128 425                                            
+267    R 1984SC13 JOUR ZPAAD 316 19                                             
+267    R 1984ZV02 JOUR RADKA 26 76                                              
+267    R 1987MU15 JOUR ZPAAD 328 49                                             
+267    R 1989OGZU CONF Varenna (Intern School Phys 'Enrico Fermi') Proc,P258,Oga
+267    R 1990HO03 JOUR PRVCA 41 631                                             
+267    R 1991GA28 JOUR NIMAE 309 201                                            
+267    R 1991GR05 JOUR NIMAE 302 135                                            
+267    R 1992BA77 JOUR PPNPD 29 453                                             
+267    R 1995GH04 JOUR NUPAB 583 861c                                           
+267    R 1995GH05 JOUR PRVCA 51 R2293                                           
+267    R 1995HO27 JOUR RAACA 70/71 135                                          
+267    R 1995LA20 JOUR PRLTA 75 1903                                            
+267    R 1995MO29 JOUR ADNDA 59 185                                             
+267    R 1995SC03 JOUR NUPAB 582 109                                            
+267    R 1995SC53 JOUR RAACA 68 7                                               
+267    R 1996HE07 JOUR PRVCA 53 1892                                            
+267    R 1996LA11 JOUR PRVCA 53 2893                                            
+267    R 1996LAZY REPT JINR-E7-96-82,Lazarev                                    
+267    R 1997MO25 JOUR ADNDA 66 131                                             
+267    R 1997SM03 JOUR PRVCA 56 812                                             
+267    R 1998DA24 JOUR ARNUA 48 401                                             
+267    R 1998HO13 JOUR RPPHA 61 639                                             
+267    R 1999AR21 JOUR NDSBA 88 155                                             
+267    R 1999OG05 JOUR ZAANE 5 63                                               
+267    R 1999OG07 JOUR NATUA 400 242                                            
+267    R 1999OG10 JOUR PRLTA 83 3154                                            
+267    R 2000AR03 JOUR ZAANE 7 23                                               
+267    R 2000EI05 JOUR NATUA 407 63                                             
+267    R 2000FI12 JOUR NDSBA 90 391                                             
+267    R 2000WI15 JOUR PRLTA 85 2697                                            
+267    R 2000ZL02 JOUR ZAANE 8 81                                               
+267    R 2001AK11 JOUR NDSBA 94 131                                             
+267    R 2001KA70 JOUR PACHA 73 959                                             
+267    R 2002HI20 JOUR PRLTA 89 282701                                          
+267    R 2002IT04 JOUR PRVCA 65 044602                                          
+267    R 2002LO11 JOUR PPNPD 48 123                                             
+267    R 2002LO15 JOUR PRVCA 66 044617                                          
+267    R 2002TU05 JOUR ZAANE 15 271                                             
+267    R 2003AU02 JOUR NUPAB 729 3                                              
+267    R 2003AU03 JOUR NUPAB 729 337                                            
+267    R 2003GAZR BOOK The Chemistry of Superheavy Elements,P237,Gaggeler       
+267    R 2003GE09 JOUR PRVCA 68 061303                                          
+267    R 2003GI05 JOUR PRVCA 67 064609                                          
+267    R 2003KA71 JOUR PACHA 75 1601                                            
+267    R 2003MU15 JOUR YAFIA 66 1051                                            
+267    R 2003MU26 JOUR APOBB 34 2073                                            
+267    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+267    R 2004BA86 JOUR JPGPE 30 B35                                             
+267    R 2004DA11 JOUR NUPAB 734 148                                            
+267    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+267    R 2004FO08 JOUR PRLTA 93 212702                                          
+267    R 2004GUZW PREPRINT Gupta                                                
+267    R 2004IT05 JOUR NUPAB 734 136                                            
+267    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+267    R 2004MO15 JOUR NUPAB 734 188                                            
+267    R 2004MO27 JOUR NUPAB 738 129                                            
+267    R 2004MO40 JOUR ZAANE 21 257                                             
+267    R 2004MO43 JOUR APHPF 19 53                                              
+267    R 2004OG02 JOUR ZAANE 19 3                                               
+267    R 2004OG03 JOUR PRVCA 69 021601                                          
+267    R 2004OG07 JOUR PRVCA 69 054607                                          
+267    R 2004OG12 JOUR PRVCA 70 064609                                          
+267    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+267    R 2004PRZW PREPRINT Prokhorova                                           
+267    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+267    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+267    R 2005GR19 JOUR PRVCA 72 014605                                          
+267    R 2005SCZZ PC M Schaedel                                                 
+                                                                                
+267RF    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+267RF  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267RF2 H CUT=12-Aug-2005$                                                       
+267RF  Q -6.E2     SY4.7E3   SY5.5E3   SY7.9E3   SY    2012WA38                 
+267RF CQ Note: Current evaluation has used the following Q record               
+267RF  Q -790      SY 4740   SY 5220   SY 7800   SY    2003AU03                 
+267RF CQ Q-$ESTIMATED UNCERTAINTY=740 KEV                                       
+267RF CQ SN$ESTIMATED UNCERTAINTY=790 KEV                                       
+267RF CQ SP$ESTIMATED UNCERTAINTY=870 KEV                                       
+267RF CQ QA$ESTIMATED UNCERTAINTY=300 KEV OTHER: 2004OG12 ESTIMATE              
+267RF2CQ QA LE 8.22 MEV.                                                        
+267RF C  2004OG12,2004OGZZ: AS ALPHA DECAY PRODUCT OF 28714 (15 EVENTS)         
+267RF2C  AND 28312 (7 EVENTS). SEE FOR 28714 AND 28312 Adopted Levels           
+267RF3C  FOR DETAILS. 28714 WAS SYNTHESIZED USING 242PU+48CA AT BEAM            
+267RF4C  ENERGIES OF 235, 238 AND 244 MEV WITH 5 MEASUREMENTS MADE              
+267RF5C  AT EACH ENERGY. 28312 WAS OBSERVED USING 238U+48CA AT 230 AND 234 MEV. 
+267RF6C  ONE SPECIAL CASE ATTRIBUTED TO 28714 IN THE 242PU REACTION             
+267RF7C  AT A BEAM ENERGY OF 244 MEV, LASTING FOR 6.5 M, OF THE TYPE            
+267RF8C  ^EVR-|a1-|a2-|a3-|a4-SF WARRANTS MENTION. GENERALLY,                   
+267RF9C  ALPHA DECAY IS BLOCKED BELOW 279DS WHICH FISSIONS RATHER THAN ALPHA    
+267RFAC  DECAYS (%A AP 10). THE EVALUATORS SUGGEST THAT THIS LONGER CHAIN       
+267RFBC  WHICH TERMINATES WITH 271SG MAY, IF CONFIRMED, BE ONE INCIDENCE OF THIS
+267RFCC  10% BRANCH. THE ALPHA ENERGY FOR 279DS FROM THIS EVENT IS 9.7 MEV 6    
+267RFDC  WITH A LIFETIME OF 0.2831 S. ANOTHER EXCEPTION TO THE FISSIONING OF    
+267RFEC  279DS APPEARS IN THE CASE OF A SIMILAR ^EVR-|a1-|a2-|a3-|a4-SF EVENT   
+267RFFC  ORIGINATING FROM 28312 IN THE 238U REACTION AT 234 MEV. HERE, THE      
+267RFGC  SEQUENCE ENDS WITH THE FISSION OF 267RF. THE ALPHA ENERGY FOR 279DS    
+267RFHC  FROM THIS EVENT IS 9.8 MEV 3 WITH A LIFETIME OF 0.2775 S. ALTHOUGH     
+267RFIC  BOTH EXCEPTIONS REQUIRE FURTHER INVESTIGATION, THEIR RADIOACTIVE       
+267RFJC  PROPERTIES AGREE WELL WITH EACH OTHER AND THE EVALUATORS SUGGEST THAT  
+267RFKC  IF CONFIRMED, THEY COULD REPRESENT THE 10% ALPHA DECAY BRANCH FOR      
+267RFLC  279DS. ESTIMATED QA LE 8.22 MEV FOR |a-DECAY BRANCH IF IT EXISTS.      
+267RF C  2005GR19, 2002LO15: NO ^EVR-ALPHA-ALPHA CORRELATIONS WITH              
+267RF2C  |Dt(^EVR-ALPHA)<20 S OR |Dt(ALPHA-ALPHA)<20 S WERE OBSERVED IN ANY OF  
+267RF3C  THE 48CA + 238U IRRADIATIONS. SEE 28312 Adopted Levels FOR DETAILS     
+267RF C  THEORY: SEE Nuclear Science References                                 
+267RF C  ASSIGNMENT: THE ASSIGNMENTS FOR Z=112, Z=114 (AND Z=116)               
+267RF2C  AND THEIR DAUGHTERS ARE BASED ON MEASURED                              
+267RF3C  EXCITATION FUNCTIONS AND IN SOME CASES CONSISTENCY OF OBSERVED         
+267RF4C  PROPERTIES PRODUCED BY CROSS-BOMBARDMENTS. IN                          
+267RF5C  PARTICULAR, THE DECAY PROPERTIES OF 28312 ARE CONSISTENT THROUGH       
+267RF6C  THE VARIOUS MEASUREMENTS USING THE ^DGFRS, INDEPENDENT OF WHETHER      
+267RF7C  THEY WERE OBSERVED AS PRIMARY NUCLEI OR AS ALPHA DECAY DAUGHTERS OF    
+267RF8C  PARENTS ONE (Z=114) OR TWO (Z=116) 'LEVELS' UP.                        
+267RF9C  IN THE CASE OF 28714, THE SECOND ALPHA IN THE DECAY CHAIN HAS AN       
+267RFAC  ENERGY OF 9.54 MEV 6 WHICH AGREES WELL WITH THE FOUR MEASURED          
+267RFBC  ALPHAS (2004OG07, 2004OG12) IN 11 OUT OF 14 CASES. THE OTHER THREE     
+267RFCC  ALPHA ENERGIES ARE 8.94, 9.36 AND 9.32 MEV WHICH THE EXPERIMENTERS     
+267RFDC  SUGGEST MAY BE INDICATIVE OF TRANSITIONS TO DIFFERENT EXCITED STATES   
+267RFEC  IN THE DAUGHTER NUCLEUS 279DS. NOTE THAT 2005GR19 DID NOT OBSERVE ANY  
+267RFGC  SF DECAYS OR ^EVR-ALPHA-ALPHA CORRELATIONS IN ANY 48CA + 238U          
+267RFHC  IRRADIATIONS.                                                          
+267RF  XA271SG A DECAY: TENTATIVE                                               
+267RF  L X                                                                     ?
+267RF CL J$|W(N)=13/2- FROM 1997MO25 (THEORY)                                   
+267RF2 L T=2.3 H +110-11                                                        
+267RF CL T$FROM ONE SF EVENT (EVALUATORS. DT AT 68% CONFIDENCE LEVEL).          
+267RF2CL 2.3 H +980-17 (2004OG12) IF 95% CONFIDENCE LEVEL USED. T(CALC)=2.5 H   
+267RF3CL FROM Viola-Seaborg SYSTEMATICS FOR QA=7.8 MEV IF A-DECAY BRANCH.       
+267RF3 L %SF AP 100                                                             
+267RF CL %SF$PRESUMED FROM ONE SF EVENT (2004OG12).                             
+267RF CL $B2(THEORY): 0.221 FROM 1995MO29; 0.248 FROM 2005GAZX                  
+267RFX L XREF=A                                                                 
+                                                                                
+267RF    271SG A DECAY: TENTATIVE      2004OG12                  05NDS    200601
+267RF  H TYP=ERR$AUT=M. GUPTA, THOMAS W. BURROWS$DAT=13-JAN-2006$               
+267RF2 H COM=CORRECTED PARENT Q-VALUE                                           
+267RF  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267RF2 H CUT=12-Aug-2005$                                                       
+267RF C  SEE 271SG Adopted Levels FOR DETAILS                                   
+271SG  P X                             2.4 M     +43-10         8.65E3    8     
+271SG CP T$FROM 2004OG12                                                        
+271SG CP QP$FROM 2004OG12                                                       
+267RF  N                       0.5     AP                                       
+267RF  L X                                                                     ?
+267RF2 L T=2.3 H +110-11                                                        
+267RF CL E,T$FROM THE Adopted Levels                                            
+                                                                                
+267DB    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+267DB  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267DB2 H CUT=12-Aug-2005$                                                       
+267DB  Q -1.8E3    SY6.7E3   SY3.3E3   SY7.9E3   SY    2012WA38                 
+267DB CQ Note: Current evaluation has used the following Q record               
+267DB  Q -1910     SY 6820   SY 3170   SY 7900      SY 2003AU03                 
+267DB CQ Q-$ESTIMATED UNCERTAINTY=540 KEV                                       
+267DB CQ SN$ESTIMATED UNCERTAINTY=590 KEV                                       
+267DB CQ SP$ESTIMATED UNCERTAINTY=710 KEV                                       
+267DB CQ QA$ESTIMATED UNCERTAINTY=300 KEV                                       
+267DB C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28715, 28313,   
+267DB2C  279RG, 275MT AND 267DB. 267DB IS THE FINAL NUCLIDE OBSERVED IN THE     
+267DB3C  28715 DECAY PRODUCED {IVIA} 243AM(48CA,4N) E=253 MEV. THE ALPHA DECAY  
+267DB4C  OF ITS PARENT, 271BH, WAS NOT OBSERVED. SEE 28715 Adopted Levels FOR   
+267DB5C  FOR EXPERIMENTAL DETAILS.                                              
+267DB C  REACTION: 243AM(48CA,4N) E=253 MEV CORRESPONDING TO                    
+267DB2C  AN EXCITATION ENERGY OF 42.4 TO 46.5 MEV AT THE TARGET CENTER.         
+267DB3C  28715 WAS FORMED AT A CROSS-SECTION OF 0.9 pb {I+32-8}.                
+267DB t  {TV}Energy of the evaporation residue=12.2 MeV                         
+267DB2t     E{-SF}=206 MeV         t=105.96 min   -   assigned to {+267}Db      
+267DB C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND Nuclear   
+267DB2C  Science References                                                     
+267DB C  ASSIGNMENT: THE EVALUATORS NOTE THAT THE IDENTIFICATION OF Z=115       
+267DB2C  AND ALL ASSOCIATED NUCLIDES IN THE CHAIN SHOULD BE TREATED AS          
+267DB3C  TENTATIVE UNTIL CONFIRMED IN INDEPENDENT EXPERIMENTS.                  
+267DB  L X                                                                     ?
+267DB CL J$|W(p)=1/2- FROM 1997MO25 (THEORY)                                    
+267DB2 L T=73 M +350-33                                                         
+267DB CL T$FROM ONE SF EVENT (2004OG03). T(CALC)=155 M FROM Viola-Seaborg       
+267DB2CL SYSTEMATICS FOR QA=7.9 MEV IF A-BRANCH ASSUMED.                        
+267DB3 L %SF AP 100                                                             
+267DB CL %SF$FROM 1/1 EVENT (2004OG03).                                         
+267DB CL $B2(THEORY): 0.230 FROM 1995MO29; 0.234 FROM 2003MU26; 0.267 FROM      
+267DB2CL 2005GAZX                                                               
+                                                                                
+267BH    ADOPTED LEVELS                                          05NDS    200512
+267BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267BH2 H CUT=12-Aug-2005$                                                       
+267BH  Q -3.9E3    SY7.4E3   SY2.1E3   SY9.23E3  SY    2012WA38                 
+267BH CQ Note: Current evaluation has used the following Q record               
+267BH  Q -3860     SY 7410   SY 2090   SY 8964     30  2003AU03,2000WI15        
+267BH CQ Q-$ESTIMATED UNCERTAINTY=280 KEV                                       
+267BH CQ SN$ESTIMATED UNCERTAINTY=330 KEV                                       
+267BH CQ SP$ESTIMATED UNCERTAINTY=390 KEV                                       
+267BH CQ QA$ FROM QUOTED AVERAGE ENERGY (5 EVENTS) EA=8.830 MEV 3 (2000WI15).   
+267BH2CQ OTHERS: 8957 KEV FROM EA=8823 KEV (2000EI05, UNCERTAINTIES NOT STATED; 
+267BH3CQ AS ESTIMATED BY EVALUATORS, UNWEIGHTED AVERAGE OF 6 EVENTS); 8959 KEV  
+267BH4CQ FROM EA=8825 KEV (EVALUATORS; UNWEIGHTED AVERAGE OF 11 EVENTS) AND     
+267BH5CQ 9370 KEV 200 FROM SYSTEMATICS (2003AU03).                              
+267BH C  1984ZV02, 1995SC53: CHEMICAL INVESTIGATIONS BASED ON THE PREMISE THAT  
+267BH2C  BH IS A MEMBER OF Group ^VII OF THE PERIODIC TABLE. THESE COMPRISED THE
+267BH3C  FIRST TWO ATTEMPTS MADE TO CHEMICALLY STUDY BH USING AN OXIDE HYDROXIDE
+267BH4C  FORM. REACTIONS: 249BK(22NE,4N) (1984ZV02) AND 254ES(16O,3N)           
+267BH5C  (1995SC03). THE ATTEMPTS WERE UNSUCCESSFUL DUE TO INSUFFICIENT         
+267BH6C  SENSITIVITY OF THE SET-UP (ALSO 2005SCZZ). THEY ARE MENTIONED HERE FOR 
+267BH7C  COMPLETENESS.                                                          
+267BH C  2000WI15: CHEMICAL INVESTIGATION BY American-Swiss COLLABORATION       
+267BH2C  AIMED AT THE STUDY OF 266,267BH; SEE DATA SET FOR 266BH FOR DETAILS.   
+267BH3C  REACTION: 249BK(22NE,5N) AT ^LBNL. THE 88-INCH CYCLOTRON               
+267BH4C  PROVIDED THE 22NE{+(6+)} BEAM AT TWO ENERGIES; 148 AND 153 MEV         
+267BH5C  CORRESPONDING TO 116-118 MEV AND 122-124 MEV RESPECTIVELY IN THE       
+267BH6C  TARGET. THE TARGET WAS MADE USING 0.81 mg/cm{+2} 249BK AS OXIDE        
+267BH7C  PREPARED BY THE MOLECULAR PLATING TECHNIQUE (1974AU05,1975MU16).       
+267BH8C  CHEMICAL SEPARATION PRIOR TO THIS ENSURED THAT LESS THAN 0.5% OF 249CF 
+267BH9C  WAS PRESENT. REACTION PRODUCTS COLLECTED IN A RECOIL CHAMBER LOCATED   
+267BHAC  DIRECTLY BEHIND THE TARGET. THIS CHAMBER WAS CONTINUOUSLY SWEPT WITH   
+267BHBC  He GAS CONTAINING KCl AEROSOLS TO COLLECT THE PRODUCTS. THE PRODUCTS   
+267BHCC  WERE THEN GUIDED THROUGH A ^TEFLON CAPILLARY (1.4 MM, 7 M IN LENGTH) TO
+267BHDC  THE MERRY-GO-ROUND (^MG) ROTATING WHEEL SYSTEM (1990HO03, 1996LA11)    
+267BHEC  WITH A TRANSPORT TIME AP 0.6 S AND A TRANSPORT EFFICIENCY OF 38 |+ 4%. 
+267BHFC  SEE THE ORIGINAL SOURCES FOR DETAILS OF THE ^MG AND THE METHOD OF DATA 
+267BHGC  COLLECTION AND ANALYSIS. A TOTAL OF FIVE ALPHA-DECAY SEQUENCES WERE    
+267BHHC  OBSERVED ATTRIBUTED TO 267BH: THREE ATOMS AT AN INCIDENT ENERGY OF     
+267BHIC  116-118 MEV AND TWO MORE EVENTS AT THE HIGHER BEAM ENERGY OF 122-124   
+267BHJC  MEV. THE CORRESPONDING CROSS-SECTIONS WERE 58 pb {I+33-15}, AND        
+267BHKC  96 pb {I+55-25}, RESPECTIVELY, ASSUMING ALPHA'S AS THE PRIMARY DECAY   
+267BHLC  MODE. IT WAS NOT POSSIBLE TO DETERMINE IF MORE THAN ONE 267BH          
+267BHMC  ALPHA-GROUP WAS PRESENT. IN ALL CASES, PROPERTIES OF THE DAUGHTER      
+267BHNC  NUCLEI WERE CONSISTENT WITH 263DB (T1/2=27 S, EA=8.35 MEV) AND         
+267BHaC  259LR (T1/2=6.34 S, EA=8.45 MEV). FISSION DECAY PROPERTIES             
+267BHOC  OF 266,267BH COULD NOT BE DETERMINED DUE TO FISSION CONTAMINATION      
+267BHPC  ATTRIBUTED TO 256FM.                                                   
+267BH t    {TV}Event #1 (Beam energy 116-118 MeV):                              
+267BH2t       E{-|a1}=8.83 MeV t{-1}=5.26 s    -  assigned to {+267}Bh          
+267BH3t       E{-|a2}=8.47 MeV t{-2}=59.04 s   -  assigned to {+263}Db or       
+267BH+t   {+259}Lr                                                              
+267BH t    {TV}Event #2 (Beam energy 116-118 MeV):                              
+267BH5t       E{-|a1}=8.87 MeV t{-1}=24.67 s   -  assigned to {+267}Bh          
+267BH6t       E{-|a2}=8.39 MeV t{-2}=35.02 s   -  assigned to {+263}Db          
+267BH t    {TV}Event #3 (Beam energy 116-118 MeV):                              
+267BH8t       E{-|a1}=8.87 MeV t{-1}=45.15 s   -  assigned to {+267}Bh          
+267BH9t       E{-|a2}=8.39 MeV t{-2}=24.49 s   -  assigned to {+263}Db          
+267BH t    {TV}Event #4 (Beam energy 122-124 MeV):                              
+267BHBt       E{-|a1}=8.73 MeV t{-1}=2.71 s    -  assigned to {+267}Bh          
+267BHCt       E{-|a2}=8.46 MeV t{-2}=51.90 s   -  assigned to {+263}Db or       
+267BH+t   {+259}Lr                                                              
+267BH t    {TV}Event #5 (Beam energy 122-124 MeV):                              
+267BHEt       E{-|a1}=8.84 MeV t{-1}=21.83 s   -  assigned to {+267}Bh          
+267BHFt       E{-|a2}=8.36 MeV t{-2}=26.49 s   -  assigned to {+263}Db          
+267BHGt  {TV}The experimenters estimate that one in five |a-|a correlations     
+267BH+t   reported for the present nucleus is random. Based on this it was      
+267BH+t   further estimated that 0.0016 triple-|a correlations are random.      
+267BH C  2000EI05: AN INTERNATIONAL COLLABORATION PERFORMED THIS CHEMICAL       
+267BH2C  INVESTIGATION AT THE Paul Scherrer Institute IN Switzerland            
+267BH3C  USING ONLINE GAS CHROMATOGRAPHY ON THE RELEVANT OXYCHLORIDES.          
+267BH4C  REACTION: 249BK(22NE,4N) AT A BEAM ENERGY AT TARGET CENTER OF          
+267BH5C  119 MEV 1. THE TARGET WAS PREPARED AT ^LBNL AND THE 22NE BEAM WAS      
+267BH6C  PROVIDED BY THE Phillips Cyclotron AT THE Paul Scherrer Institute.     
+267BH7C  THE TARGET WAS IRRADIATED OVER 4 WEEKS BY 1.6E+12 IONS PER SECOND.     
+267BH8C  176RE WAS SIMULTANEOUSLY PRODUCED IN THE REACTION 259TB(22NE,5N)       
+267BH9C  WHICH SERVED AS A YIELD MONITOR FOR THE CHEMICAL SEPARATION PROCESS.   
+267BHBC  ALL REACTION PRODUCTS WERE TRANSPORTED {IVIA} C-AEROSOL CLUSTERS TO    
+267BHCC  THE ^OLGA ^III (ONLINE GAS CHROMATOGRAPHIC APPARATUS) (1991GA28)       
+267BHDC  COUPLED TO ^ROMA (ROTATING WHEEL MULTIDETECTOR ANALYZER).              
+267BHEC  SIX GENETICALLY LINKED ALPHA-DECAY CHAINS WERE OBSERVED FOUR AT AN     
+267BHFC  ISOTHERMAL TEMPERATURE OF 180 DEG C (BEAM DOSE 1.02E+18 22NE IONS),    
+267BHGC  TWO AT 150 DEG C (BEAM DOSE 1.0E+18 22NE IONS ) AND NONE AT            
+267BHHC  75 DEG C (BEAM DOSE 1.0E+18 22NE IONS). THE EVENTS INCLUDED THREE OF   
+267BHIC  THE ALPHA-SF TYPE AND ONE WITH |a1-|a2-SF.                             
+267BHaC  DUE TO THE PASSAGE OF A FRACTION OF 212PB/212BI THROUGH THE            
+267BHaC  CHROMATOGRAPHY COLUMN DECAYS FROM 212PO (EA=8.785 MEV) PARTIALLY       
+267BHaC  OBSCURED THE DETECTION OF 267BH. IT WAS ESTIMATED THAT 1.3 OF THE      
+267BHaC  4 CHAINS OBSERVED AT THE ISOTHERMAL TEMPERATURE OF 180 DEG C WERE DUE  
+267BHaC  TO RANDOM CORRELATIONS. UPON EVALUATING THE RELATIVE YIELDS OF 267BH   
+267BHaC  AT ALL THREE ISOTHERMAL TEMPERATURES, AND TAKING INTO ACCOUNT THE      
+267BHJC  RANDOM CORRELATION FACTOR, THE EXPERIMENTERS ADOPTED THE YIELD OBSERVED
+267BHKC  AT 180 DEG C AS THE 100% 'RELATIVE' YIELD.                             
+267BH t    {TV}Event #1 (Isothermal temperature 150 \|' C):                     
+267BH2t       E{-|a1}=8.81 MeV   t{-1}=24.5 s    - assigned to {+267}Bh         
+267BH3t       E{-SF}=82 MeV     t(SF)=21.1 s - assigned to {+263}Db             
+267BH4t  {TV}Event #2 (Isothermal temperature 150 \|' C):                       
+267BH5t       E{-|a1}=8.85 MeV   t{-1}=34.4 s    - assigned to {+267}Bh         
+267BH6t       E{-SF}=46 MeV     t(SF)=98.9 s - assigned to {+263}Db             
+267BH7t  {TV}Event #3 (Isothermal temperature 180 \|' C):                       
+267BH8t       E{-|a1}=8.72 MeV   t{-1}=2.9 s     - assigned to {+267}Bh         
+267BH9t       E{-|a2}=8.40 MeV   t{-2}=29.9 s    - assigned to {+263}Db         
+267BHAt  {TV}Event #4 (Isothermal temperature 180 \|' C):                       
+267BHBt       E{-|a1}=8.84 MeV   t{-1}=26.7 s    - assigned to {+267}Bh         
+267BHCt       E{-|a2}=8.35 MeV   t{-2}=73.4 s    - assigned to {+263}Db         
+267BHDt  {TV}Event #5 (Isothermal temperature 180 \|' C):                       
+267BHEt       E{-|a1}=8.91 MeV   t{-1}=10.5 s    - assigned to {+267}Bh         
+267BHFt       E{-|a2}=8.37 MeV   t{-2}=0.8 s     - assigned to {+263}Db         
+267BHGt       E{-|a3}=8.41 MeV   t{-3}=14.6 s    - assigned to {+259}Lr         
+267BHHt  {TV}Event #6 (Isothermal temperature 180 \|' C):                       
+267BHIt       E{-|a1}=8.81 MeV   t{-1}=18.4 s    - assigned to {+267}Bh         
+267BHJt       E{-SF}=101+86 MeV t(SF)=16.3 s - assigned to {+263}Db             
+267BH C  THE PURPOSE OF THIS EXPERIMENT WAS THE CHEMICAL STUDY AND              
+267BHBC  CHARACTERISATION OF Bh IN THE FORM OF ITS OXYCHLORIDE. IT WAS          
+267BHCC  POSSIBLE TO CONCLUDE THAT Bh, PRESUMABLY FROM BhO{-3}Cl BEHAVES LIKE A 
+267BHaC  TYPICAL MEMBER OF Group ^VII OF THE PERIODIC TABLE. IT SHOWS A LOWER   
+267BHaC  VOLATILITY THAN ITS Re OR Tc HOMOLOGUES AS EXPECTED. THE STANDARD      
+267BHaC  ADSORPTION ENTHALPY OF BhO{-3}Cl WAS EVALUATED TO BE -75 kJ MOL{+-1}   
+267BHaC  {I+9-6} (68% c.i.) WITH T1/2=17 S FOR THIS NUCLEUS.                    
+267BH C  OTHER: 2002TU05                                                        
+267BH C  THEORY: SEE PAPERS ABOVE, 2003GAZR, AND Nuclear Science References.    
+267BH C  ASSIGNMENT: 249BK(22NE,4N), E=117 MEV 1 AND 123 MEV 1, CHEM (2000WI15);
+267BH2C  249BK(22NE,4N), E=119 MEV 1, CHEM (2000EI05). THE TWO SETS OF DATA     
+267BH3C  AGREE WELL, AND WHEN TAKEN TOGETHER ARE CONSISTENT.                    
+267BH  L X                             17 S      +14-6                          
+267BH CL J$|W(p)=5/2- FROM 1997MO25 (THEORY)                                    
+267BH CL T$FROM 2000WI15 USING MAXIMUM-LIKELIHOOD TECHNIQUE (1991GR05).         
+267BH2CL T= 14 S +10-4 FOR SIX EVENTS (FROM 2000EI05 BY EVALUATORS;             
+267BH3CL UNCERTAINTIES NOT REPORTED BY EXPERIMENTERS) IN AGREEMENT TAKING INTO  
+267BH4CL ACCOUNT UNCERTAINTIES. COMBINING ALL 11 EVENTS, T=14 S +6-4            
+267BH5CL (EVALUATORS) IN AGREEMENT TAKING INTO ACCOUNT UNCERTAINTIES.           
+267BH6CL T(CALC)=10.7 S FROM Viola-Seaborg SYSTEMATICS IF QA=8964 KEV AND       
+267BH7CL 0.62 S IF QA=9.37 MEV.                                                 
+267BH2 L %A AP 100                                                              
+267BH CL %A$FROM 11/11 EVENTS. FISSION DECAY PROPERTIES OF 267BH COULD NOT BE   
+267BH2CL DETERMINED BY 2000WI15 DUE TO FISSION CONTAMINATION ATTRIBUTED TO      
+267BH3CL 256FM.                                                                 
+267BH CL $B2(THEORY): 0.230 FROM 1995MO29; 0.240 FROM 2003MU26; 0.270 FROM      
+267BH2CL 2005GAZX.                                                              
+                                                                                
+267HS    ADOPTED LEVELS                                          05NDS    200512
+267HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267HS2 H CUT=12-Aug-2005$                                                       
+267HS  Q -5.1E3    SY6.56E3  SY2.74E3  SY10037   13    2012WA38                 
+267HS CQ Note: Current evaluation has used the following Q record               
+267HS  Q -5140     SY 6500   SY 2770   SY 9978      20 2003AU03,1998HO13        
+267HS CQ Q-$ESTIMATED UNCERTAINTY=550 KEV                                       
+267HS CQ SN$ESTIMATED UNCERTAINTY=300 KEV                                       
+267HS CQ SP$ESTIMATED UNCERTAINTY=230 KEV                                       
+267HS CQ QA$FROM EA=9829 KEV 20 (1998HO13). OTHER: 10120 KEV 70 (2003AU03.      
+267HS2CQ SYST.); 10000 KEV FROM AVERAGE EA=9850 KEV (2004MO40).                 
+267HS C  2000FI12 CITE 1996HE07 WHICH DOES NOT CONTAIN ANY INFORMATION ON       
+267HS2C  267HS. THE EVALUATORS BELIEVE THIS WAS A PRELIMINARY RESULT OF THE WORK
+267HS3C  FINALLY REPORTED IN 1998HO13 AND CITED AS A PRIVATE COMMUNICATION,     
+267HS4C  REFERENCE 20 IN 1995LA20.                                              
+267HS C  1995LA20: 267HS PRODUCED BY 238U(34S,5N) E=186 MEV AT Dubna.           
+267HS2C  THE Z=108 COMPOUND NUCLEI WERE PRODUCED AT AN EXCITATION ENERGY OF     
+267HS3C  ABOUT 50 MEV TO ALLOW FOR THE EVAPORATION OF 4 OR 5 NEUTRONS REQUIRED  
+267HS4C  TO CREATE 267HS. THE EVAPORATION RESIDUES (^EVR's) WERE SEPARATED BY   
+267HS5C  THE Dubna Gas Filled Recoil Separator (^DGFRS; SEE 1996LAZY FOR        
+267HS6C  DETAILS) FILLED WITH HYDROGEN TO A PRESSURE OF 1.0 TORR. THESE         
+267HS7C  SEPARATED ^EVR's PASSED THROUGH A TIME-OF-FLIGHT (TOF) SYSTEM COMPOSED 
+267HS8C  OF  TWO MULTIWIRE PROPORTIONAL CHAMBERS IN A 1.5 TORR PENTANE          
+267HS9C  FILLED MODULE, AND WERE FINALLY IMPLANTED IN A 120|*40                 
+267HSAC  mm{+2} POSITION SENSITIVE DETECTOR (PSD) ARRAY. THE CROSS-SECTION FOR  
+267HSBC  THE REACTION WAS 2.5 pb WITH AN ESTIMATED UNCERTAINTY OF AP 3.         
+267HSCC  THREE TIME AND POSITION CORRELATED CHAINS OF ALPHA PARTICLE EVENTS     
+267HSDC  WERE OBSERVED AND ASCRIBED TO THE DECAY OF 267HS. THE ENERGIES WERE    
+267HSEC  E1=9740 KEV 60, E2=9860 KEV 60, AND 9870 KEV 60. THE CALCULATED        
+267HSFC  MAXIMUM LIKELIHOOD HALF-LIFE WAS T1/2=19 MS +29-10. TWO OTHER          
+267HSGC  CORRELATED OUT-OF-BEAM EVENTS LINKING THE DECAYS OF 263SG, 259RF, AND  
+267HSHC  255NO WERE OBSERVED. NINE ^EVR-SF EVENT PAIRS WERE ALSO OBSERVED WITH  
+267HSIC  NO APPARENT CONNECTION TO THE PRECEDING hs DECAYS. THE MOST PROBABLE   
+267HSJC  ORIGIN OF THESE DECAYS COULD BE THE 0.9 MS SF ISOMER OF 240AM WITH     
+267HSKC  SMALLER CONTRIBUTIONS POSSIBLY FROM THE 14-MS 242AM AND 1.0-MS 244AM   
+267HSLC  PRODUCED IN TRANSFER REACTIONS WITH CROSS-SECTIONS OF THE ORDER OF     
+267HSMC  10-100 nb (SEE 1989OGZU).                                              
+267HS C  1998HO13: DAUGHTER OF 271DS PRODUCED BY 208PB(64NI,N). SEE             
+267HS2C  271DS ADOPTED LEVELS FOR EXPERIMENTAL DETAILS. A total number of 38    
+267HS3C  ALPHA-decays were measured and assigned to nine decay chains OF DS.    
+267HS4C  Decay of 271DS by consistency of lower chain member energies and       
+267HS5C  lifetimes with known 255NO, 259RF, and 263SG data.                     
+267HS6C  The measured ALPHA energies and emission times are grouped as follows: 
+267HS7C  five events with an average energy of E1=10738 KEV 20, two events      
+267HS8C  with an average energy of E2=10682 KEV 20, one escape and one event    
+267HS9C  with energy E3=10709 KEV 20 with a long life-time of 81 MS             
+267HSAC  corresponding to a half-life of 56 MS +270-26.                         
+267HSBC  The emission times for the first two groups were                       
+267HSCC  0.2-4.4 MS and 81 MS for the last event which 1998HO13 take as being a 
+267HSDC  sign of an isomeric state in 271DS. The second member of each chain    
+267HSEC  corresponds to decay of 267HS. 1998HO13 also suggest the               
+267HSFC  existence of two 267HS daughter states.                                
+267HS C  2003GI05: DAUGHTER OF 271DS PRODUCED BY 208PB(64NI,N). Confirmation    
+267HS2C  of 271DS was reported by experiments done at ^LBNL. SEE 271DS          
+267HS3C  Adopted Levels FOR EXPERIMENTAL DETAILS. Two position and time         
+267HS4C  correlated event chains were assigned to 271DS. No such event          
+267HS5C  sequences were seen at the other two beam energies. The two            
+267HS6C  corresponding 267HS ALPHA decay energies originating from 1.6-MS       
+267HS7C  271DS were 9.89 MEV (following ALPHA decay) and 9.88 MEV (following    
+267HS8C  an escape event) Both these states decay to 0.12-S 263SG with          
+267HS9C  life-times of 15 MS and 32 MS, respectively.                           
+267HS C  2004FO08: DAUGHTER OF 271DS PRODUCED BY 208PB(64NI,N). SEE             
+267HS2C  271DS Adopted Levels FOR EXPERIMENTAL DETAILS. DATA ARE IN             
+267HS3C  GOOD AGREEMENT WITH 1998HO13, 2003GI05, AND 2004MO40. SEVEN CHAINS     
+267HS4C  OBSERVED; AVERAGE ENERGY OF ALPHA'S ASSIGNED TO 267HS IN THREE CHAINS  
+267HS5C  9877 KEV CONSISTENT WITH THE KNOWN 9882-KEV TRANSITION. THE FULL       
+267HS6C  ENERGY 9830 ALPHA EVENT IN ANOTHER CHAIN CAN BE ASSIGNED TO THE KNOWN  
+267HS7C  9829-KEV TRANSITION.                                                   
+267HS C  2004MO40,2004MO27: DAUGHTER OF 271DS PRODUCED BY 208PB(64NI,N). SEE    
+267HS2C  271DS ADOPTED LEVELS FOR EXPERIMENTAL DETAILS. A TOTAL OF 14 DECAY     
+267HS3C  CHAINS ATTRIBUTED TO THE DECAY OF 271DS OVER THREE EXPERIMENTS. 13     
+267HS4C  DECAYS DETECTED AS SECOND GENERATION DECAYS WERE ATTRIBUTED TO 267HS   
+267HS5C  AND THE RESULTS ARE IN AGREEMENT WITH 1998HO13. EVIDENCE HAS BEEN      
+267HS6C  OFFERED FOR AN ISOMERIC STATE IN THE DAUGHTER 267HS. SEE ALSO 2004MO43.
+267HS C  THEORY: SEE Nuclear Science References.                                
+267HS C  ASSIGNMENT: 238U(34S,5N), E=186 MEV; GRANDPARENT OF 259RF              
+267HS2C  (EA=8.80 MEV 2, T1/2=2.6 S) AND 255NO (EA=8.10 MEV 2, T1/2=110 S) FROM 
+267HS3C  1995LA20. CONFIRMED BY 1998HO13 AS DAUGHTER OF 271DS PRODUCED          
+267HS4C  208PB(64NI,N), E=311.7 MEV, 313.0 MEV, AND 315.5 MEV.                  
+267HS CL           T(CALC)=24.1 MS FROM Viola-Seaborg SYSTEMATICS SUPPORT 52-MS 
+267HS2CL STATE AS BEING THE G.S.                                                
+267HS CL           2004FO08, BASED ON THE OBSERVATION OF TWO SHORT 267HS        
+267HS2CL LIFETIMES (0.482 MS AND 2.45 MS), SUGGEST THE POSSIBILITY OF A         
+267HS3CL SHORT-LIVED 267HS STATE WITH T1/2=0.94 MS +12-450. THIS STATE WAS NOT  
+267HS4CL REPORTED IN THE EARLIER WORK OF 1998HO13 AND 2004MO40.                 
+267HS  XA271DS A DECAY (1.63 MS)                                                
+267HS  XB271DS A DECAY (69 MS)                                                  
+267HS  L 0                             52 MS     +13-8                          
+267HS CL J$1998HO13 PROPOSE 9/2+ AS THE ANALOG NILSSON STATE OF THE 271DS       
+267HS2CL 9/2+[615]. 2003AU02 SUGGEST 3/2+ BASED ON SYSTEMATICS.                 
+267HS CL T$MEAN VALUE OBTAINED BY 2004MO40 FROM TAU=77 MS +31-7 (2004MO40) AND  
+267HS2CL TAU=72 MS +28-16 (1998HO13). OTHERS: MAXIMUM LIKELIHOOD T=19 MS +29-10 
+267HS3CL (1995LA20) AND 55 MS +32-18 (2004FO08; CALCULATED USING ^MLDS CODE).   
+267HS4CL 2000FI12 ADOPTED 26 MS +20-10, AN AVERAGE (UNWEIGHTED?) OF             
+267HS5CL 19 MS +29-10 (1995LA20) AND 33 MS +19-9 (FROM REFERENCE 20 IN          
+267HS6CL 1995LA20). T(CALC)=24.1 MS FROM Viola-Seaborg SYSTEMATICS FOR QA=9.98  
+267HS7CL MEV. PREDICTED T(B+)=38.1 S (1997MO25; FINITE-RANGE DROPLET MODEL,     
+267HS8CL FOLDED-Yukawa SINGLE PARTICLE POTENTIAL); T(ALPHA)=17.4 S AND          
+267HS9CL T(SF)=17.4 S (1995HO27; SYST.)                                         
+267HS2 L %A GE 80$%SF<20 (1995LA20)                                             
+267HS CL %SF$ESTIMATED FROM LACK OF OBSERVED SF (1995LA20). %EC+%B+=18.6,       
+267HS2CL %A=40.7, AND %SF=40.7 FROM PREDICTED PARTIAL T1/2'S NOT CONSISTENT.    
+267HS CL $B2(THEORY):0.230 FROM 1995MO29; 0.240 FROM 2003MU26; 0.262 FROM       
+267HS2CL 2005GAZX                                                               
+267HSX L XREF=AB                                                                
+267HS  L 57        7                                                           ?
+267HS CL           REPORTED BY 1998HO13 BUT NOT BY 2004MO40.                    
+267HS CL E         FROM 1.63-MS 271DS ALPHA DECAY                               
+267HS CL J         1998HO13 PROPOSE JPI=11/2+ FOR 69-MS 271DS AS A MEMBER OF    
+267HS2CL THE 9/2[615] BAND CORRESPONDING TO THE 10.681 MEV TRANSITION TO THE    
+267HS3CL FIRST ROTATIONAL STATE ALSO WITH 11/2+ IN 267HS.                       
+267HSX L XREF=A                                                                 
+267HS  L X                                                                   M ?
+267HS CL           REPORTED BY 2004MO40 BUT NOT BY 1998HO13. BASED ON THE LONG  
+267HS2CL DECAY TIME (5999 MS) OF THE 9.31-MEV 263SG ALPHA ASSOCIATED WITH THE   
+267HS3CL THE DECAY OF THIS STATE, 2004MO40 SUGGESTS THAT AN ISOMERIC STATE OF   
+267HS4CL 263SG MAY BE FED. THIS EVENT HAD QA=9.88 MEV, EA=9.73 MEV (CHAIN #3).  
+267HS2 L T=0.80 S +380-37                                                       
+267HS CL T$FROM 2004MO40 CORRESPONDING TO AN ALPHA-DECAY ENERGY OF 10.44 MEV 6  
+267HS2CL FROM THE DECAY OF THE 69-MS 271DS LEVEL.                               
+267HS2 L %A>0 (2004MO40)                                                        
+267HSX L XREF=B                                                                 
+                                                                                
+267HS    271DS A DECAY (1.63 MS)       1998HO13,2004MO40         05NDS    200512
+267HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267HS2 H CUT=12-Aug-2005$                                                       
+267HS C  1998HO13: SEE 271DS Adopted Levels FOR EXPERIMENTAL DETAILS. THE       
+267HS2C  MEASURED ALPHA ENERGIES AND EMISSION TIMES WERE AS FOLLOWS: FIVE       
+267HS3C  EVENTS WITH AN AVERAGE ENERGY OF E1=10738 KEV 20, TWO EVENTS WITH AN   
+267HS4C  AVERAGE ENERGY OF E2=10682 KEV 20 AND ONE EVENT WITH ENERGY            
+267HS5C  E3=10709 KEV 20. THE EMISSION TIMES FOR THE FIRST TWO GROUPS WERE      
+267HS6C  0.2-4.4 MS AND 81 MS FOR THE LAST EVENT WHICH 1998HO13 TAKE AS BEING A 
+267HS7C  SIGN OF AN ISOMERIC STATE IN 271DS. THE SECOND MEMBER OF EACH CHAIN    
+267HS8C  CORRESPONDS TO DECAY OF 267HS. 1998HO13 ALSO SUGGEST THE EXISTENCE OF  
+267HS9C  TWO 267HS DAUGHTER STATES.                                             
+267HS C  2004MO40,2004MO27: SEE 271DS Adopted Levels FOR DETAILS. A TOTAL OF    
+267HS2C  14 DECAY CHAINS ATTRIBUTED TO THE DECAY OF 271DS OVER THREE            
+267HS3C  EXPERIMENTS. THE ENERGY CENTERS OF PEAKS IN THE ALPHA SPECTRA WERE     
+267HS4C  DEDUCED TO BE AT 10.45 AND 10.73 MEV; THE LATTER IS IN GOOD AGREEMENT  
+267HS5C  WITH 10.74 MEV FROM 1998HO13. MEASURED LIFETIMES OF THE ALPHA'S FROM   
+267HS6C  271DS COULD BE DIVIDED INTO TWO GROUPS; ONE WITH DECAY TIMES LESS THAN 
+267HS7C  10 MS (11 EVENTS) AND ANOTHER WITH DECAY TIMES GREATER THAN 10 MS (3   
+267HS8C  EVENTS). THE MEAN LIFETIMES FOR BOTH GROUPS AGREE WITH THE RESULTS OF  
+267HS9C  1998HO13 AS DO THE NUMBER RATIOS OF THE TWO GROUPS: 11/3 (2004MO40)    
+267HSAC  AND 11/2 (1998HO13).                                                   
+267HS C  OTHER: 2004FO08.                                                       
+267HS CA           1998HO13 DERIVE HF(10738|a) AP 3 AND HF(10682|a) AP 6 USING  
+267HS2CA THEORETICAL T1/2'S CALCULATED BY THE ^WKB METHOD WITH THE POTENTIALS   
+267HS3CA OF 1959IG05.                                                           
+267HS DA HF=5.90 FOR T(CALC)=0.95 MS AND QA=10.71 MEV (SEE 271DS                
+267HS2DA Adopted Levels) FROM Gallagher-Rasmussen FORMALISM.                    
+267HS CA E         FROM 1998HO13 (RELATIVE UNCERTAINTIES OF 3 KEV FOR 10738 AND 
+267HS2CA 6 KEV FOR 10682 ALPHA). EA TO GS IN GOOD AGREEMENT WITH 10.73 MEV FROM 
+267HS3CA 2004MO40.                                                              
+267HS CA IA        BASED ON FIVE EVENTS FOR 10.74-MEV AND TWO EVENTS FOR        
+267HS2CA 10.68-MEV ALPHA'S                                                      
+267HS CL $DECAY SCHEME FROM 1998HO13 WHO PROPOSE JPI=11/2+ FOR 69-MS 271DS      
+267HS2CL AS A MEMBER OF THE 9/2[615] BAND CORRESPONDING TO THE 10.681 MEV       
+267HS3CL TRANSITION TO THE FIRST ROTATIONAL STATE ALSO WITH 11/2+ IN 267HS      
+271DS  P 0                             1.63 MS   +44-29         10899     20    
+271DS CP QP$2003AU03 ADOPTED 10870 KEV 20 ASSUMING THE 69-MS STATE OF 271DS WAS 
+271DS2CP THE GROUND STATE.                                                      
+267HS  N                       1.0     AP                                       
+267HS  L 0                               52 MS   +13-8                          
+267HS CL E,T$FROM THE Adopted Levels                                            
+267HS  A 10738     20 71     AP                                                 
+267HS  L 57        7                                                           ?
+267HS CL           NOT REPORTED BY 2004MO40                                     
+267HS CL E         FROM DE(ALPHA)                                               
+267HS  A 10682     20 29     AP                                                ?
+                                                                                
+267HS    271DS A DECAY (69 MS)         1998HO13,2004MO40         05NDS    200512
+267HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267HS2 H CUT=12-Aug-2005$                                                       
+267HS C  1998HO13: SEE 271DS Adopted Levels FOR EXPERIMENTAL DETAILS. THE       
+267HS2C  MEASURED ALPHA ENERGIES AND EMISSION TIMES WERE AS FOLLOWS: FIVE       
+267HS3C  EVENTS WITH AN AVERAGE ENERGY OF E1=10738 KEV 20, TWO EVENTS WITH AN   
+267HS4C  AVERAGE ENERGY OF E2=10682 KEV 20 AND ONE EVENT WITH ENERGY            
+267HS5C  E3=10709 KEV 20. THE EMISSION TIMES FOR THE FIRST TWO GROUPS WERE      
+267HS6C  0.2-4.4 MS AND 81 MS FOR THE LAST EVENT WHICH 1998HO13 TAKE AS BEING A 
+267HS7C  SIGN OF AN ISOMERIC STATE IN 271DS. THE SECOND MEMBER OF EACH CHAIN    
+267HS8C  CORRESPONDS TO DECAY OF 267HS. 1998HO13 ALSO SUGGEST THE EXISTENCE OF  
+267HS8C  TWO 267HS DAUGHTER STATES.                                             
+267HS C  2004MO40,2004MO27: SEE 271DS Adopted Levels FOR DETAILS. A TOTAL OF    
+267HS2C  14 DECAY CHAINS ATTRIBUTED TO THE DECAY OF 271DS OVER THREE            
+267HS3C  EXPERIMENTS. THE ENERGY CENTERS OF PEAKS IN THE ALPHA SPECTRA WERE     
+267HS4C  DEDUCED TO BE AT 10.45 AND 10.73 MEV; THE LATTER IS IN GOOD AGREEMENT  
+267HS5C  WITH 10.73 MEV FROM 1998HO13. MEASURED LIFETIMES OF THE ALPHA'S FROM   
+267HS6C  271DS COULD BE DIVIDED INTO TWO GROUPS; ONE WITH DECAY TIMES LESS THAN 
+267HS7C  10 MS (11 EVENTS) AND ANOTHER WITH DECAY TIMES GREATER THAN 10 MS (3   
+267HS8C  EVENTS). THE MEAN LIFETIMES FOR BOTH GROUPS AGREE WITH THE RESULTS OF  
+267HS9C  1998HO13 AS DO THE NUMBER RATIOS OF THE TWO GROUPS: 11/3 (2004MO40)    
+267HSAC  AND 11/2 (1998HO13).                                                   
+267HS CL           DECAY SCHEME FROM 2004MO40. 10.71-MEV ALPHA FROM 69-MS 271DS 
+267HS2CL OBSERVED BY 1998HO13 BUT NOT ASSIGNED AS FEEDING 0.8-S 267HS STATE.    
+267HS CL E,T       FROM THE Adopted Levels                                      
+271DS  P X                             69 MS     +56-21         10899     20    
+271DS CP QP$2003AU03 ADOPTED 10870 KEV 20 ASSUMING THE 69-MS STATE OF 271DS WAS 
+271DS2CP THE GROUND STATE.                                                      
+267HS  N                       1.0     LE                                       
+267HS CN BR        TO EXPLAIN THE DECAY PROPERTIES OF 271DS, 2004MO40 SUGGEST   
+267HS2CN THE 69-MS LEVEL DECAYS BY AN ISOMERIC TRANSITION TO THE GS OF 271DS    
+267HS3CN AND ALSO ALPHA DECAYS TO THE POSSIBLE ISOMERIC STATE IN 267HS.         
+267HS  A 10709     20                                                           
+267HS CA E$FROM 1998HO13; IN GOOD AGREEMENT WITH 10.71 MEV FROM 2004MO40. FROM  
+267HS2CA THE DISCUSSION IN 1998HO13 AND A COMPARISON OF EA TO EA=10738 20 FOR   
+267HS3CA 1.63-MS 271DS ALPHA DECAY, THIS ALPHA TRANSITION DOES NOT APPEAR TO    
+267HS4CA TO FEED THE 267HS GS                                                   
+267HS CA HF$HF=105 FROM 1998HO13 USING THEORETICAL T1/2'S CALCULATED BY THE     
+267HS2CA ^WKB METHOD WITH THE POTENTIALS OF 1959IG05.                           
+267HS  L 0                             52 MS     +13-8                         S
+267HS  L X                                                                   M ?
+267HS CL           NOT REPORTED BY 1998HO13.                                    
+267HS2 L T=0.80 S +380-37                                                       
+267HS  A 10.44E+3  6                                                           ?
+267HS CA E$FROM 2004MO40                                                        
+                                                                                
+267DS    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+267DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+267DS2 H CUT=12-Aug-2005$                                                       
+267DS  Q                       1.3E3   SY1.178E4 5     2012WA38                 
+267DS CQ Note: Current evaluation has used the following Q record               
+267DS  Q                         730   SY 12280   SY   2003AU03                 
+267DS CQ SP$ESTIMATED UNCERTAINTY=500 KEV                                       
+267DS CQ QA$ESTIMATED UNCERTAINTY=110 KEV                                       
+267DS C  1995GH05,1995GH04: Berkeley/^SASSY2 COLD FUSION EXPERIMENT.            
+267DS2C  209BI(59CO,N) E=5.1 MEV/^A. TOTAL OF 1.5E+18 PROJECTILE PARTICLES.     
+267DS3C  OBSERVED ONE POSITION AND TIME CORRELATED CHAIN OF ALPHA PARTICLES.    
+267DS4C  DETERMINED ALPHA ENERGIES AND TIME INTERVALS BETWEEN SUCCESSIVE        
+267DS5C  PARTICLES. THE EVENT CORRESPONDED TO A PRODUCTION CROSS-SECTION OF     
+267DS6C  AP 1 pb. DATA CONSISTENT WITH DECAY OF 267DS ASSUMING THAT THE         
+267DS6C  GRANDDAUGHTER 259SG DECAYS BY EC TO PRODUCE KNOWN 259DB AND 255LR. THE 
+267DS7C  MEASURED ALPHA ENERGY AND EMISSION TIME FOR THE EVENT WERE             
+267DS8C  E1=11.60 MEV 10 (QA=11.78 MEV 10), t1=4 |ms. DECAY OF 263HS MISSED     
+267DS9C  DUE TO A MALFUNCTIONING TRANSIENT RECORDER. 1995GH05 SUGGEST THAT THE  
+267DSAC  NEXT MEMBER OF THE CHAIN, 259SG, UNDERGOES UNDETECTED EC DECAY TO      
+267DSBC  259DB.  THIS NUCLEAR ASSIGNMENT RELIES ON THE OBSERVATION OF 259DB     
+267DSaC  AND 255LR. 263HS, THE EXPECTED DAUGHTER IS UNKNOWN AND WAS NOT         
+267DSaC  OBSERVED; THE GRAND-DAUGHTER 259SG IS KNOWN BUT WAS NOT OBSERVED       
+267DSaC  BY 1995GH05. THE 2.2 MEV ALPHA WAS INTERPRETED BY 1995GH05 AS A PARTIAL
+267DSaC  ESCAPE PEAK ATTRIBUTED TO 259DB (ASSUMED TO BE THE EC DAUGHTER OF      
+267DSaC  259SG). FINALLY, 1999AR21 POINT OUT THAT THE POSSIBILITY OF THE        
+267DSaC  OBSERVED 11.6 MEV ALPHA BELONGING TO 212PO CANNOT BE RULED OUT.        
+267DS C  ASSIGNMENT: ^IUPAC/^IUPAP ^JWP ASSESSMENT (2001KA70): THERE WERE       
+267DS2C  EXPERIMENTAL DIFFICULTIES AND OTHER PROBLEMS ASSOCIATED WITH THIS      
+267DS3C  EXPERIMENT. THEREFORE, THE EVALUATORS CONSIDER THE ASSIGNMENT TO 267DS 
+267DS4C  AS TENTATIVE.                                                          
+267DS  L X                                                                     ?
+267DS CL J$2003AU02 SUGGEST 9/2+ FROM SYSTEMATICS.  |W(n)=11/2- FROM 1997MO25   
+267DS2CL (THEORY).                                                              
+267DS2 L T=2.8 US +133-12                                                       
+267DS CL T$FROM t1=4 US (1995GH05); UNCERTAINTY ESTIMATED BY THE EVALUATORS.    
+267DS2CL T(ALPHA)=300 US PREDICTED BY 1997MO25 (FINITE-RANGE DROPLET MODEL,     
+267DS4CL FOLDED-Yukawa SINGLE PARTICLE POTENTIAL). OTHER: 2.8 US +130-13        
+267DS5CL (2003AU02) AND 3 US +6-2 (2000FI12). T(CALC)=0.34 US FROM Viola-Seaborg
+267DS6CL SYSTEMATICS FOR QA=12.28 MEV AND 3.9 US FOR QA=11.78 MEV.              
+267DS2 L %A AP 100                                                              
+267DS CL %A$FROM ONE EVENT. PREDICTED BETA (1997MO25; FINITE-RANGE DROPLET      
+267DS2CL MODEL, FOLDED-Yukawa SINGLE PARTICLE POTENTIAL) AND SF (1995HO27,      
+267DS3CL SYSTEMATICS, AND 1997SM03, MACROSCOPIC-MICROSCOPIC MODEL) HALF-LIVES   
+267DS4CL MUCH LONGER THAN THOSE PREDICTED AND OBSERVED FOR ALPHA EMISSION. NO   
+267DS5CL SPONTANEOUS FISSION EVENTS OBSERVED IN 1995GH05.                       
+267DS CL $B2(THEORY): 0.220 FROM 1995MO29; 0.234 FROM 2003MU15; 0.254 FROM      
+267DS2CL 2005GAZX.                                                              
+                                                                                

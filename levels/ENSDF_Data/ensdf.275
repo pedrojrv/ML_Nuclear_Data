@@ -1,0 +1,524 @@
+275      COMMENTS                                                05NDS    200512
+275    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+275  2 H CUT=12-Aug-2005$                                                       
+275   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+275   C  AUTH$M. GUPTA(a)                                                       
+275   C  INST$National Nuclear Data Center                                      
+275  #C       Brookhaven National Laboratory                                    
+275  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+275  #C                                                                         
+275   c  INST$Manipal Academy of Higher Education,                              
+275  #c  Manipal, KA 576 104, INDIA                                             
+275  #c  e-mail: mohini.gupta@manipal.edu                                       
+275   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+275  #c  Manipal, KA 576 104, INDIA                                             
+275   C  AUTH$THOMAS W. BURROWS                                                 
+275   C  INST$National Nuclear Data Center                                      
+275  #C       Brookhaven National Laboratory                                    
+275  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+275  #C       e-mail: burrows@bnl.gov                                           
+275   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+275  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+275  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+275  4C  RECEIVED BY August 12, 2005.                                           
+275   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+275  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+275  3C  DATE WERE CONSIDERED.                                                  
+275   C  CIT$NDS 106, 251 (2005)                                                
+275   c  COMM$                                                                  
+275  @c  {UAcronyms and notations used in this evaluation:}                     
+275  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+275  #c  BGS Berkeley Gas Filled Separator                                      
+275  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+275  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+275  #c  EVR Evaporation Residue                                                
+275  #c  GARIS Gas-filled Recoil Ion Separator                                  
+275  #c  RILAC RIKEN Linear Accelerator facility                                
+275  #c  SHIP Separator for Heavy Ion reaction Products                         
+275  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+275  2c  and detection of previous EVR or |a                                    
+275  #c  TKE Total Kinetic Energy                                               
+275  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+275  2c  Reactions, JINR, Dubna, Russia                                         
+275  #c                                                                         
+275  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+275  2c  (Z=110-112,114,116,118):}                                              
+275  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+275  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+275  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+275  5c  the evaluators have relied on the judgement of the JWP in              
+275  6c  determining the strength of the arguments made in the various papers.  
+275  7c  In the cases where there are new data or where the JWP has not yet     
+275  8c  assigned a priority of discovery for an element, the evaluators have   
+275  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+275  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+275  Bc  the data.                                                              
+275  #c                                                                         
+275  #c  In the above context, with respect to Z=112 and the collective works of
+275  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+275  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+275  4c  references therein.                                                    
+275  #c                                                                         
+275  @c                                                                         
+275  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+275  2c  discovery of an element and not a specific nuclide. The purpose of     
+275  3c  this evaluation is to present the "best" set of nuclear properties     
+275  4c  for those nuclides reported between A=266 and A=294 based on data      
+275  5c  currently available and {Bnot} to establish a priority of discovery for
+275  6c  any element.                                                           
+275  !c                                                                         
+275  #c  It is well known that alpha decay chains seen                          
+275  ac  in cold fusion reactions tend to terminate in known mass regions.      
+275  2c  The method of |a-|a or |a-SF correlations for identifying the          
+275  3c  parent has therefore been used with confidence.                        
+275  3c  Experiments carried out with hot fusion reactions,                     
+275  4c  result in alpha decay chains beginning and ending with hitherto unknown
+275  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+275  6c  in an attempt to identify the parent and daughters. The latter method  
+275  7c  is not as accurate as the first since a greater probability of         
+275  8c  randomness is inherant to the technique. As such, independent          
+275  9c  verification and confirmation of the data gains added importance.      
+275  ac  These facts should be taken into account when considering the suggested
+275  ac  properties of nuclei created following a hot fusion reaction as for    
+275  ac  the synthesis of Z=114 and above.                                      
+275  #c                                                                         
+275  #c  Finally, with regard to the some of the                                
+275  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+275  ac  2004Mo15 have pointed out that mass assignments which are based        
+275  ac  on the excitation energy of the compound nucleus may be off by a       
+275  ac  single unit. This may also be due in part to uncertainties in the beam 
+275  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+275  ac  Once again, collateral information is required to establish the charge 
+275  ac  and approximate A of the nucleus.                                      
+275  #c                                                                         
+275  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+275  2c  have not been adopted, the evaluators have used the approximations in  
+275  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+275  4c  exponential distribution to estimate the standard uncertainty (68%     
+275  5c  confidence level) in T{-1/2}:                                          
+275  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+275  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+275  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+275  9c  of events. For one and two events, the exact values given in Table 1   
+275  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+275  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+275  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+275  #c                                                                         
+275  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+275  ac  Calculations of T{-1/2}                                                
+275  2c  performed in the present evaluation used the relationship:             
+275  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+275  #c  where Z refers to the atomic                                           
+275  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+275  6c  and:                                                                   
+275  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+275  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+275  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+275  3c  parameter set used in these evaluations. We note that these systematics
+275  6c  are only an indication of |a-decay half-lives from the ground state    
+275  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+275  8c  the element under consideration. The use of this formalism in the      
+275  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+275  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+275  ac  estimate a Hindrance Factor (HF) for a given transition,               
+275  ac  attributable to the odd neutron or proton. This quantity is            
+275  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+275  ac  The HF so computed is an approximate indication.                       
+275  #c                                                                         
+275  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+275  2c  References.                                                            
+275  #c                                                                         
+275  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+275  2c  trans-fermium elements is the manifestation of shell effects in the    
+275  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+275  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+275  5c  important as QF is expected to play a greater role on the hindrance of 
+275  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+275  7c  the "island" of stability. An understanding of this mechanism is       
+275  8c  necessary to establishing the most favorable reactions for producing   
+275  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+275  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+275  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+275  Cc  to both the mass asymmetry in the entrance channel as well as the      
+275  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+275  Ec  deformations of target/projectile nuclei and their relative orientation
+275  Fc  to each other in the process of CN formation, may also play an         
+275  Gc  important role in reducing the probability of forming a compound       
+275  Hc  system. In the face of extremely low yields and a steep decrease of    
+275  Ic  production cross-sections already in evidence with available stable    
+275  Jc  beam-target combinations, the influence of all possible mitigating     
+275  Kc  factors must be accurately determined in order to                      
+275  Lc  optimize the probability of successful fusion. The formation of a      
+275  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+275  Nc  survives QF going on to form a compact compound system which must then 
+275  Oc  face competition from fission.                                         
+275  #c                                                                         
+275  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+275  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+275  3c  in collaboration with investigators from Belgium, France, and Italy.   
+275  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+275  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+275  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+275  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+275  8c  spectrometer "Corset". These experiments were inspired by              
+275  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+275  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+275  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+275  Cc  such experiments are planned or underway to investigate the various    
+275  Dc  effects.                                                               
+275  #c                                                                         
+275  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+275  2c  and references cited in these papers.                                  
+275  #c                                                                         
+275  !c  {UExperimental Estimates of Fission Barriers:}                         
+275  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+275  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+275  4c  the experimentally derived barrier heights are respectively:           
+275  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+275  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+275  #c                                                                         
+275  #c  2002It04, in an analysis of available experimental data, derive the    
+275  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+275  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+275  #c                                                                         
+275  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+275  2c  Two possibilities have been proposed in an attempt to understand the   
+275  ac  the {+289}114, {+287}114 observations:                                 
+275  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+275  ac  belongs to a rare decay mode originating from                          
+275  4c  an isomeric state, or that                                             
+275  #c  (ii) the sequence may actually originate from                          
+275  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+275  7c  Levels).                                                               
+275  #c  The evaluators believe that further investigations                     
+275  ac  are required to support either hypothesis.                             
+275  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+275  9c  unobserved. Also, T{-1/2}                                              
+275  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+275  ac  is much larger than that observed by 2004Og12 and                      
+275  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+275  ac  agreement. Such inconsistencies need to be better understood.          
+275  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+275  2c  respects. 2004OgZZ report more statistics in some cases.               
+275  #c                                                                         
+275  @c  {UOther comments on {+289}114 and {+283}112}                           
+275  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+275  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+275  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+275  4c  classified the evidence as being "very weak",                          
+275  5c  with no convincing supporting arguments for the possible production of 
+275  6c  SHE. We make the following general observations:                       
+275  #c                                                                         
+275  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+275  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+275  ac  by the Dubna-JINR collaborations for all isotopes of                   
+275  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+275  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+275  ac  {+287}114 (15 events) and {+286}114                                    
+275  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+275  ac  the |?34 min decay sequence postulated as originating from             
+275  5c  a rare decay mode of {+289}114, does not seem very likely.             
+275  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+275  7c  {+289}114 decays observed are genetically linked                       
+275  8c  and not the result of a background decay sequence. These               
+275  BC  discrepancies have to be resolved, along with some others.             
+275  #c                                                                         
+275  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+275  ac  (see also 2004Og02) with VASSILISSA, have not                          
+275  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+275  3c  lack of internal consistency through the collective measurements       
+275  ac  and the data are inconclusive as pointed                               
+275  4c  out by experimenters (reasons given in each paper). Decay properties of
+275  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+275  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+275  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+275  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+275  8c  by them. See {+283}112 Adopted Levels for details.                     
+275  #c                                                                         
+275  #c  These observations by the experimenters are consistent with the        
+275  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+275  3c  of the various arguments put                                           
+275  3c  forward therein, the following comments may be made here:              
+275  #c                                                                         
+275  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+275  #c  190 MeV and 212 MeV (1999Og05)                                         
+275  #c  65 MeV and 170 MeV  (2004Og02)                                         
+275  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+275  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+275  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+275  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+275  4c  plane and side detectors). With one exception, all the energies        
+275  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+275  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+275  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+275  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+275  9c  the second experiment) after EVR implantation resulted in              
+275  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+275  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+275  #c                                                                         
+275  #c  2. 2000Ar03 statement that correlations  between the fission events    
+275  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+275  3c  'backward' analysis of the data was reported in                        
+275  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+275  5c  evidently in contradiction with those made by the                      
+275  6c  experimenters. A more complete analysis would be beneficial.           
+275  #c                                                                         
+275  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+275  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+275  ac  quoted from an earlier                                                 
+275  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+275  4c  assignments. The proposed assignment of Z=114 to both parents may      
+275  5c  be incorrect taking into account new data which do not support         
+275  6c  these observations and for reasons already mentioned.                  
+275  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+275  !c                                                                         
+275  #c  CONCLUSIONS:                                                           
+275  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+275  ac  are not conclusive. Overall, the                                       
+275  2c  results from the VASSILISSA experiments are at variance with data from 
+275  3c  experiments using DGFRS. The latter investigations are done using      
+275  4c  more stringent methods, and have greater statistics, offering better   
+275  5c  internal consistency. Some obvious discrepancies and other             
+275  ac  inconsistencies between the two sets of                                
+275  6c  data remain and need to be resolved or adequately explained as does the
+275  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+275  8c  by 2005Gr19 and 2002Lo11.                                              
+275  #c                                                                         
+275  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+275  2c  from earlier work are not reproduced to date.                          
+275  #c                                                                         
+275  @c  {UTheoretical Calculations:}                                           
+275  @c  1995Mo29: |b2 based on the finite-range droplet                        
+275  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+275  3c  with "global" parameters.                                              
+275  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+275  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+275  3c  J|p simultaneously obtained with the calculated masses and             
+275  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+275  5c  A=239.                                                                 
+275  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+275  2c  model for the macroscopic part and the Strutinski shell correction,    
+275  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+275  4c  part.                                                                  
+275  @c  2005GaZX: |b2 based on self consistent calculations                    
+275  2c  within the framework of the Relativistic Mean Field (RMF)              
+275  3c  theory with very few "globally" fit parameters and employing the       
+275  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+275  5c  sets in use exhibit similar systematics, these results are expected to 
+275  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+275  #c                                                                         
+275  @c  {UOther Measurements:}                                                 
+275  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+275  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+275  3c  (Blocking technique in single crystals).                               
+275  #c                                                                         
+275   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+275  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+275  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+275  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+275  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+275  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+275  7c  additional information that they readily provided during this          
+275  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+275  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+275  Ac  Singh for helpful discussions. We thank A. Marinov                     
+275  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+275  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+275  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+275  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+275  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+275  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+275  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+275  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+275  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+275  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+275  Lc  insights, and suggestions until her untimely demise are hereby         
+275  Mc  acknowledged.                                                          
+275   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+275  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+275  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+275      REFERENCES                                                       200512
+275    R 1966VI04 JOUR JINCA 28 741                                             
+275    R 1984SC13 JOUR ZPAAD 316 19                                             
+275    R 1987MU15 JOUR ZPAAD 328 49                                             
+275    R 1992BA77 JOUR PPNPD 29 453                                             
+275    R 1995MO29 JOUR ADNDA 59 185                                             
+275    R 1997MO25 JOUR ADNDA 66 131                                             
+275    R 1998DA24 JOUR ARNUA 48 401                                             
+275    R 1999OG05 JOUR ZAANE 5 63                                               
+275    R 1999OG07 JOUR NATUA 400 242                                            
+275    R 1999OG10 JOUR PRLTA 83 3154                                            
+275    R 2000AR03 JOUR ZAANE 7 23                                               
+275    R 2000FI12 JOUR NDSBA 90 391                                             
+275    R 2000ZL02 JOUR ZAANE 8 81                                               
+275    R 2001AK11 JOUR NDSBA 94 131                                             
+275    R 2001KA70 JOUR PACHA 73 959                                             
+275    R 2002HI20 JOUR PRLTA 89 282701                                          
+275    R 2002IT04 JOUR PRVCA 65 044602                                          
+275    R 2002LO11 JOUR PPNPD 48 123                                             
+275    R 2002LO15 JOUR PRVCA 66 044617                                          
+275    R 2003AU03 JOUR NUPAB 729 337                                            
+275    R 2003GE09 JOUR PRVCA 68 061303                                          
+275    R 2003KA71 JOUR PACHA 75 1601                                            
+275    R 2003MU15 JOUR YAFIA 66 1051                                            
+275    R 2003MU26 JOUR APOBB 34 2073                                            
+275    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+275    R 2004BA86 JOUR JPGPE 30 B35                                             
+275    R 2004DA11 JOUR NUPAB 734 148                                            
+275    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+275    R 2004GUZW PREPRINT Gupta                                                
+275    R 2004IT05 JOUR NUPAB 734 136                                            
+275    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+275    R 2004MO15 JOUR NUPAB 734 188                                            
+275    R 2004OG02 JOUR ZAANE 19 3                                               
+275    R 2004OG03 JOUR PRVCA 69 021601                                          
+275    R 2004OG07 JOUR PRVCA 69 054607                                          
+275    R 2004OG12 JOUR PRVCA 70 064609                                          
+275    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+275    R 2004PRZW PREPRINT Prokhorova                                           
+275    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+275    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+275    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+275HS    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+275HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+275HS2 H CUT=12-Aug-2005$                                                       
+275HS  Q -2.0E3    SY4.9E3   SY4.4E3   SY9.44E3  5     2012WA38                 
+275HS CQ Note: Current evaluation has used the following Q record               
+275HS  Q -3290     SY 5540   SY 4020   SY 9.44E3 7     2003AU03,2004OG12        
+275HS CQ Q-$ESTIMATED UNCERTAINTY=740 KEV                                       
+275HS CQ SN$ESTIMATED UNCERTAINTY=960 KEV                                       
+275HS CQ SP$ESTIMATED UNCERTAINTY=1060 KEV                                      
+275HS CQ QA$FROM EA=9.30 MEV 7 (2004OG12). OTHER: 9.2 MEV 3 (2003AU03. SYST.)   
+275HS C  2004OG12,2004OGZZ: AS ALPHA DECAY PRODUCT OF 28714 (15 EVENTS)         
+275HS2C  AND 28312 (7 EVENTS). SEE FOR 28714 AND 28312 Adopted Levels           
+275HS3C  FOR DETAILS. 28714 WAS SYNTHESIZED USING 242PU+48CA AT BEAM            
+275HS4C  ENERGIES OF 235, 238 AND 244 MEV WITH 5 MEASUREMENTS MADE              
+275HS5C  AT EACH ENERGY. 28312 WAS OBSERVED USING 238U+48CA AT 230 AND 234 MEV. 
+275HS6C  ONE SPECIAL CASE ATTRIBUTED TO 28714 IN THE 242PU REACTION             
+275HS7C  AT A BEAM ENERGY OF 244 MEV, LASTING FOR 6.5 M, OF THE TYPE            
+275HS8C  ^EVR-|a1-|a2-|a3-|a4-SF WARRANTS MENTION. GENERALLY,                   
+275HS9C  ALPHA DECAY IS BLOCKED BELOW 279DS WHICH FISSIONS RATHER THAN ALPHA    
+275HSAC  DECAYS (%A AP 10). THE EVALUATORS SUGGEST THAT THIS LONGER CHAIN       
+275HSBC  WHICH TERMINATES WITH 271SG MAY, IF CONFIRMED, BE ONE INCIDENCE OF THIS
+275HSCC  10% BRANCH. THE ALPHA ENERGY FOR 279DS FROM THIS EVENT IS 9.7 MEV 6    
+275HSDC  WITH A LIFETIME OF 0.2831 S. ANOTHER EXCEPTION TO THE FISSIONING OF    
+275HSEC  279DS APPEARS IN THE CASE OF A SIMILAR ^EVR-|a1-|a2-|a3-|a4-SF EVENT   
+275HSFC  ORIGINATING FROM 28312 IN THE 238U REACTION AT 234 MEV. HERE, THE      
+275HSGC  SEQUENCE ENDS WITH THE FISSION OF 267RF. THE ALPHA ENERGY FOR 279DS    
+275HSHC  FROM THIS EVENT IS 9.8 MEV 3 WITH A LIFETIME OF 0.2775 S. ALTHOUGH     
+275HSIC  BOTH EXCEPTIONS REQUIRE FURTHER INVESTIGATION, THEIR RADIOACTIVE       
+275HSJC  PROPERTIES AGREE WELL WITH EACH OTHER AND THE EVALUATORS SUGGEST THAT  
+275HSKC  IF CONFIRMED, THEY COULD REPRESENT THE 10% ALPHA DECAY BRANCH FOR      
+275HSLC  279DS.                                                                 
+275HS C  2005GR19, 2002LO15: NO ^EVR-ALPHA-ALPHA CORRELATIONS WITH              
+275HS2C  |Dt(^EVR-ALPHA)<20 S OR |Dt(ALPHA-ALPHA)<20 S WERE OBSERVED IN ANY OF  
+275HS3C  THE 48CA + 238U IRRADIATIONS. SEE 28312 Adopted Levels FOR DETAILS     
+275HS C  THEORY: SEE Nuclear Science References                                 
+275HS C  ASSIGNMENT: THE ASSIGNMENTS FOR Z=112, Z=114 (AND Z=116)               
+275HS2C  AND THEIR DAUGHTERS ARE BASED ON MEASURED                              
+275HS3C  EXCITATION FUNCTIONS AND IN SOME CASES CONSISTENCY OF OBSERVED         
+275HS4C  PROPERTIES PRODUCED BY CROSS-BOMBARDMENTS. IN                          
+275HS5C  PARTICULAR, THE DECAY PROPERTIES OF 28312 ARE CONSISTENT THROUGH       
+275HS6C  THE VARIOUS MEASUREMENTS USING THE ^DGFRS, INDEPENDENT OF WHETHER      
+275HS7C  THEY WERE OBSERVED AS PRIMARY NUCLEI OR AS ALPHA DECAY DAUGHTERS OF    
+275HS8C  PARENTS ONE (Z=114) OR TWO (Z=116) 'LEVELS' UP.                        
+275HS9C  IN THE CASE OF 28714, THE SECOND ALPHA IN THE DECAY CHAIN HAS AN       
+275HSAC  ENERGY OF 9.54 MEV 6 WHICH AGREES WELL WITH THE FOUR MEASURED          
+275HSBC  ALPHAS (2004OG07, 2004OG12) IN 11 OUT OF 14 CASES. THE OTHER THREE     
+275HSCC  ALPHA ENERGIES ARE 8.94, 9.36 AND 9.32 MEV WHICH THE EXPERIMENTERS     
+275HSDC  SUGGEST MAY BE INDICATIVE OF TRANSITIONS TO DIFFERENT EXCITED STATES   
+275HSEC  IN THE DAUGHTER NUCLEUS 279DS. THESE TWO PAPERS ARE IDENTICAL IN MOST  
+275HSFC  RESPECTS. 2004OGZZ REPORT MORE STATISTICS IN A FEW CASES. NOTE THAT    
+275HSGC  2005GR19 DID NOT OBSERVE ANY SF DECAYS OR ^EVR-ALPHA-ALPHA CORRELATIONS
+275HSHC  IN ANY 48CA + 238U IRRADIATIONS.                                       
+275HS  XA279DS A DECAY: TENTATIVE                                               
+275HS  L X                             0.15 S    +27-6                         ?
+275HS CL J$|W(N)=3/2+ FROM 1997MO25 (THEORY)                                    
+275HS CL T$FROM 2 HALF-LIVES/2 ALPHA EVENTS (2004OG12). T(CALC)=0.81 S FROM     
+275HS2CL Viola-Seaborg SYSTEMATICS FOR QA=9.44 MEV                              
+275HS2 L %A AP 100                                                              
+275HS CL %A$ASSUMED FROM 2/2 EVENTS                                             
+275HS CL $B2(THEORY): 0.183 FROM 1995MO29; 0.211 FROM 2003MU26; 0.195 FROM      
+275HS2CL 2005GAZX                                                               
+275HSX L XREF=A                                                                 
+                                                                                
+275HS    279DS A DECAY: TENTATIVE      2004OG12                  05NDS    200512
+275HS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+275HS2 H CUT=12-Aug-2005$                                                       
+279DS  P X                             0.18 S    +5-3           9.84E3    6     
+279DS CP T$FROM 2004OG12                                                        
+279DS CP QP$FROM 2004OG12                                                       
+275HS  N                       0.1     AP                                       
+275HS  L X                             0.15 S    +27-6                         ?
+275HS CL E,T$FROM THE Adopted Levels                                            
+275HS  A 9.70E3    6                                                           ?
+275HS CA E$FROM 2004OG12                                                        
+                                                                                
+275MT    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+275MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+275MT2 H CUT=12-Aug-2005$                                                       
+275MT  Q -3.0E3    SY6.6E3   SY2.2E3   SY1.021E4 SY    2012WA38                 
+275MT CQ Note: Current evaluation has used the following Q record               
+275MT  Q -3290     SY 7000   SY 2150   SY 10480     90 2003AU03,2004OG03        
+275MT CQ Q-$ESTIMATED UNCERTAINTY=740 KEV                                       
+275MT CQ SN$ESTIMATED UNCERTAINTY=810 KEV                                       
+275MT CQ SP$ESTIMATED UNCERTAINTY=880 KEV                                       
+275MT CQ QA$FROM EA=10.33 MEV 9 (2004OG03). OTHER: 10.12 MEV 20 (2003AU03. SYST)
+275MT C  2003OGZY, 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28715, {+288}113,  
+275MT2C  279RG, 275MT AND 267DB. REACTION: 243AM(48CA,4N) E=253 MEV             
+275MT3C  CORRESPONDING TO AN EXCITATION ENERGY OF 42.4 TO 46.5 MEV AT THE TARGET
+275MT4C  CENTER. 28715 WAS FORMED AT A CROSS-SECTION OF 0.9 pb {I+32-8}. THE    
+275MT5C  TARGET WAS 99% ENRICHED 243AM. EXPERIMENTS WERE DONE AT THE            
+275MT6C  ^U400 CYCLOTRON WITH THE ^DGFRS AT ^FLNR, ^JINR IN COLLABORATION WITH  
+275MT7C  ^LLNL, USA. THE EVAPORATION RESIDUES RECOILING FROM THE TARGET WERE    
+275MT8C  SEPARATED BY ^DGFRS IN FLIGHT FROM THE 48CA BEAM IONS, SCATTERED       
+275MT9C  PARTICLES AND TRANSFER-REACTION PRODUCTS.                              
+275MT C  DETECTION SYSTEM: MULTIWIRE PROPORTIONAL COUNTER FOR TOF MEASUREMENT;  
+275MT2C  SEMI-CONDUCTOR FOCAL-PLANE DETECTOR ARRAY WITH 12 VERTICAL POSITION-   
+275MT3C  SENSITIVE STRIPS, WHICH MEASURED THE DECAY OF THE IMPLANTED RECOILS.   
+275MT4C  THIS DETECTION SYSTEM SURROUNDED BY EIGHT SIDE DETECTORS WITH NO       
+275MT5C  POSITION SENSITIVITY. THE ALPHA SPECTRUM WAS MEASURED IN THE RANGE     
+275MT6C  9.6 TO 11.0 MEV. RESOLUTION: FWHM=60-100 KEV FOR ALPHA PARTICLES       
+275MT7C  ABSORBED IN THE FOCAL-PLANE DETECTOR. 140-200 KEV FOR ALPHA'S ESCAPING 
+275MT8C  THE FOCAL-PLANE DETECTOR AND REGISTERED BY THE SIDE DETECTORS.         
+275MT C  RESULTS: ONE DECAY CHAIN WITH FOUR CONSECUTIVE ALPHA DECAYS DETECTED IN
+275MT2C  A TIME INTERVAL OF 0.5 S (IN THE BEAM-OFF MODE) TERMINATED BY AN SF    
+275MT3C  EVENT WITH A RELEASE OF KINETIC ENERGY OF 206 MEV. THIS EVENT WAS      
+275MT4C  ASSIGNED TO 243AM(48CA,4N) CHANNEL WITH THE PRODUCTION OF THE PARENT   
+275MT5C  NUCLIDE 28715. THE FOURTH EVENT IN THE SEQUENCE WAS 275MT WHOSE        
+275MT6C  PROPERTIES APPEAR BELOW.                                               
+275MT t    {TV}Energy of the evaporation residue=12.2 MeV                       
+275MT2t       E{-|a}=10330 keV         t=14 ms    - assigned to {+275}Mt        
+275MT C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND Nuclear   
+275MT2C  Science References                                                     
+275MT C  ASSIGNMENT: THE IDENTIFICATION OF Z=115 AND 113 AND ALL                
+275MT2C  ASSOCIATED NUCLIDES IN THE CHAIN SHOULD BE TREATED AS TENTATIVE UNTIL  
+275MT3C  CONFIRMED BY INDEPENDENT EXPERIMENTS.                                  
+275MT t                                                                         
+275MT  XA279RG A DECAY: TENTATIVE                                               
+275MT  L X                                                                     ?
+275MT CL J$|W(p)=11/2+  FROM 1997MO25 (THEORY)                                  
+275MT2 L T=9.7 MS +460-44 (2004OG03)                                            
+275MT CL T$T(CALC)=2.3 MS FROM Viola-Seaborg SYSTEMATICS FOR QA=10.48 MEV       
+275MT2 L %A AP 100                                                              
+275MT CL %A$ASSUMED FROM ONE EVENT                                              
+275MT CL $B2(THEORY): 0.212 FROM 1995MO29; 0.215 FROM 2003MU26; 0.202 FROM      
+275MT2CL 2005GAZX                                                               
+275MTX L XREF=A                                                                 
+                                                                                
+275MT    279RG A DECAY: TENTATIVE      2003OGZY,2004OG03         05NDS    200512
+275MT  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+275MT2 H CUT=12-Aug-2005$                                                       
+275MT C  SEE 279RG Adopted Levels FOR DETAILS.                                  
+279RG  P X                             0.17 S    +81-8          10.52E3   16    
+279RG CP T$FROM 2004OG03                                                        
+279RG CP QP$FROM 2004OG03                                                       
+275MT  N                       1.0     AP                                       
+275MT  L X                                                                     ?
+275MT2 L T=9.7 MS +460-44                                                       
+275MT CL E,T$FROM THE Adopted Levels                                            
+275MT  A 10.37E+3  16                                                           
+275MT CA E$FROM 2004OG03                                                        
+                                                                                

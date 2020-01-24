@@ -1,0 +1,2310 @@
+247      COMMENTS                                                15NDS    201503
+247    H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247   c  TITL$NUCLEAR DATA SHEETS FOR A=247                                     
+247   c  AUTH$C. D. NESARAJA                                                    
+247   c  INST$ Physics Division, Oak Ridge National Laboratory, P.O. Box 2008,  
+247  #c       Oak Ridge, Tennessee 37831-6354, USA                              
+247   c  ABST$Available information pertaining to the nuclear structure of      
+247  2c  all nuclei with mass numbers A=247 is presented. Various decay and     
+247  3c  reaction data are evaluated and compared. Adopted data, levels,        
+247  4c  spin, parity and configuration assignments are given. When there are   
+247  5c  insufficient data, expected values from systematics of nuclear         
+247  6c  properties or/and theoretical calculations are quoted. Unexpected or   
+247  7c  discrepant experimental results are also noted.  A summary and         
+247  8c  compilation of the discovery of various isotopes in this mass region   
+247  9C  is given in 2013Fr02 ({+247}Pu, {+247}Am, {+247}Cm, {+243}Bk,          
+247  cc  {+247}Cf), 2011Me01 ({+247}Es), and 2013Th02 ({+247}Fm, {+247}Md)      
+247   c  This work supersedes the 2004 evaluation by Y.A. Akovali               
+247  2c  (2004Ak17).                                                            
+247   c  CUT$March 31, 2014.                                                    
+247   C  CIT$NDS 125, 395 (2015)                                                
+247   c  ACKN$The author is grateful to M. Martin (ORNL) for his help           
+247  2c  and advice throughout the evaluation. The use of data from the XUNDL   
+247  3c  database has greatly helped to optimize the evaluation time.           
+247  4c  The author is also thankful to J. Totans (NNDC) for providing reference
+247  5c  material and M. Blennau (NNDC) and C.G. Sheu (TUNL) for assistance in  
+247  6c  the preparation of the manuscript. The careful and thorough review     
+247  7c  from J. Tuli is also greatly appreciated.                              
+247   c  FUND$Research sponsored by the Office of Nuclear Physics, Office of    
+247  2c  Science. US Department of Energy under contract                        
+247  3c  DE-AC05-00OR22725.                                                     
+                                                                                
+247      REFERENCES                                              15NDS    201503
+247    R 1954GH12 JOUR PHRVA 93 257                                             
+247    R 1954HU50 JOUR PHRVA 95 1703                                            
+247    R 1954ST33 JOUR PHRVA 94 974                                             
+247    R 1956CH77 REPT UCRL-3322                                                
+247    R 1963FI08 JOUR PHRVA 131 1249                                           
+247    R 1965MI08 JOUR NUPHA 71 299                                             
+247    R 1966RG01 JOUR PHRVA 148 1192                                           
+247    R 1967FL15 JOUR AENGA 22 342                                             
+247    R 1967GH01 JOUR PRLTA 18 401                                             
+247    R 1967MI06 JOUR YAFIA 5 49                                               
+247    R 1967OR02 JOUR PRLTA 19 128                                             
+247    R 1968CH03 JOUR NUPAB A107 645                                           
+247    R 1968FI03 JOUR JINCA 30 1345                                            
+247    R 1970BRZN REPT UCRL 19530 P 8                                           
+247    R 1971BB10 JOUR YAFIA 14 1101                                            
+247    R 1971BR22 JOUR NUPAB A167 57                                            
+247    R 1971BR27 JOUR PRVCA C4 247                                             
+247    R 1971FI01 JOUR NUPAB A160 460                                           
+247    R 1971GA20 JOUR NUPAB A171 134                                           
+247    R 1972DI02 JOUR PLRAA A5 481                                             
+247    R 1973AB03 JOUR PYLAA 44A 527                                            
+247    R 1973AH02 JOUR PRVCA C8 737                                             
+247    R 1973ES01 JOUR PRVCA C7 280                                             
+247    R 1974BA73 JOUR PRVCA C10 1948                                           
+247    R 1976CH22 JOUR PRVCA C14 1935                                           
+247    R 1977AH01 JOUR PRLTA 39 12                                              
+247    R 1977CH27 JOUR RMPHA 49 833                                             
+247    R 1978AH02 JOUR PRVCA C17 2163                                           
+247    R 1979AH01 JOUR ZPAAD A290 1                                             
+247    R 1979AH03 JOUR PRVCA C20 290                                            
+247    R 1980HO32 JOUR ADNDA 25 219                                             
+247    R 1980KU14 JOUR YAFIA 32 355                                             
+247    R 1981MO24 JOUR ADNDA 26 165                                             
+247    R 1981MU12 JOUR ZPAAD 302 7                                              
+247    R 1983DE19 JOUR NUPAB 399 1                                              
+247    R 1983PO14 JOUR RADKA 25 482                                             
+247    R 1983PO16 JOUR RADKA 25 800                                             
+247    R 1984AH02 JOUR NUPAB 413 423                                            
+247    R 1984KU05 JOUR YAFIA 39 281                                             
+247    R 1985CW01 JOUR NUPAB 444 1                                              
+247    R 1985LO17 JOUR ZPAAD 322 695                                            
+247    R 1987CH30 JOUR PRVCA 36 1820                                            
+247    R 1987GR13 JOUR PRVCA 35 2117                                            
+247    R 1987WE01 JOUR PRVCA 35 204                                             
+247    R 1988PO04 JOUR IANFA 52 144                                             
+247    R 1989HA27 JOUR NUPAB 500 90                                             
+247    R 1989HE03 JOUR NIMAE 274 522                                            
+247    R 1989HO24 JOUR PACHA 61 1483                                            
+247    R 1991PO17 JOUR RADKA 33 3                                               
+247    R 1991RY01 JOUR ADNDA 47 205                                             
+247    R 1993BU09 JOUR ADNDA 54 53                                              
+247    R 1994HOZW REPT GSI 94-1,P64,Hofmann                                     
+247    R 1995MO29 JOUR ADNDA 59 185                                             
+247    R 1996ST28 JOUR NUPAB 611 332                                            
+247    R 1997MO25 JOUR ADNDA 66 131                                             
+247    R 1998AK04 JOUR NDSBA 84 1                                               
+247    R 2001HE35 JOUR ZAANE 12 57                                              
+247    R 2001YAZU REPT INDC(CCP)-430,P73,Yavshits                               
+247    R 2002DU16 JOUR ADNDA 80 235                                             
+247    R 2002LO05 JOUR PRVCA 65 047306                                          
+247    R 2003AH03 JOUR PRVCA 67 041305                                          
+247    R 2003AH07 JOUR PRVCA 68 044306                                          
+247    R 2003RE14 JOUR PRVCA 67 064302                                          
+247    R 2004AK17 JOUR NDSBA 102 515                                            
+247    R 2004HE23 JOUR APHPF 19 133                                             
+247    R 2004HE28 JOUR ZAANE 22 417                                             
+247    R 2004PA40 JOUR APOBB 35 2447                                            
+247    R 2005HE27 JOUR ZAANE 26 233                                             
+247    R 2005MA88 JOUR NDSBA 106 89                                             
+247    R 2005PA73 JOUR APOBB 36 3115                                            
+247    R 2005RE16 JOUR NUPAB 759 64                                             
+247    R 2006AN13 JOUR APSVC 56 87                                              
+247    R 2006CH52 JOUR ZAANE 30 397                                             
+247    R 2006HE27 JOUR ZAANE 30 561                                             
+247    R 2006SH19 JOUR PRVCA 74 034316                                          
+247    R 2007MA82 JOUR PRVCA 76 061301                                          
+247    R 2008KI07 JOUR NIMAE 589 202                                            
+247    R 2009FO02 JOUR PRVCA 79 027602                                          
+247    R 2009SA25 JOUR NUPAB 825 159                                            
+247    R 2010AD17 JOUR PPNUE 41 1101                                            
+247    R 2010AD19 JOUR PRVCA 82 054304                                          
+247    R 2010AN08 JOUR ZAANE 43 35                                              
+247    R 2010NI02 JOUR PRVCA 81 024315                                          
+247    R 2010TA22 JOUR PRVCA 82 041301                                          
+247    R 2011AB07 JOUR NDSBA 112 2129                                           
+247    R 2011AD15 JOUR PRVCA 84 024324                                          
+247    R 2011AS03 JOUR PRVCA 83 014315                                          
+247    R 2011HA06 JOUR APOBB 42 605                                             
+247    R 2011ME01 JOUR ADNDA 97 134                                             
+247    R 2011STZZ REPT INDC(NDS)-0594,Stone                                     
+247    R 2011ZH03 JOUR PRVCA 83 011304                                          
+247    R 2011ZH36 JOUR PRVCA 84 044312                                          
+247    R 2012NI16 JOUR PRVCA 86 054608                                          
+247    R 2012SA05 JOUR NUPAB 877 1                                              
+247    R 2012WA38 JOUR CPCHC 36 1603                                            
+247    R 2012ZH01 JOUR PRVCA 85 014324                                          
+247    R 2013AF01 JOUR PRVCA 88 014320                                          
+247    R 2013BR09 JOUR NDSBA 114 1041                                           
+247    R 2013FR02 JOUR ADNDA 99 96                                              
+247    R 2013NI13 JOUR PRVCA 88 014325                                          
+247    R 2013TH02 JOUR ADNDA 99 312                                             
+247    R 2013ZD01 JOUR PRVCA 87 024308                                          
+                                                                                
+247U     COMMENTS                                                ENSDF    201506
+247U   H TYP=FUL$AUT=A.A. Sonzogni and B. Singh$CIT=ENSDF$CUT=23-Jun-2015$      
+247U  C  TITL$NUCLEAR DATA SHEETS FOR 247U                                      
+247U  c  AUTH$A.A. Sonzogni                                                     
+247U  c  INST$National Nuclear Data Center                                      
+247U #c       Brookhaven National Laboratory,                                   
+247U #c       Upton, New York, USA                                              
+247U  c  AUTH$B. Singh                                                          
+247U  c  INST$Department of Physics and Astronomy,                              
+247U #c       McMaster University, Hamilton, Ontario,                           
+247U #c       Canada, L8S 4M1                                                   
+247U  c  ABST$Information is presented here about the possible production of    
+247U 2c  the {+247}U nuclide in the study by 1960Di03 of debris of the first    
+247U 3c  large-scale thermonuclear test (Ivy Mike) of November 1, 1952 in the   
+247U 4c  Pacific Ocean.                                                         
+247U  c  CUT$Literature available up to June 23, 2015 has been consulted.       
+247U  c  ACKN$We thank Michael Thoennessen (NSCL-MSU) for useful comments.      
+247U  C  CIT$ENSDF                                                              
+247U  c  FUND$                                                                  
+                                                                                
+247U     ADOPTED LEVELS:TENTATIVE                                ENSDF    201506
+247U   H TYP=FUL$AUT=A.A. Sonzogni and B. Singh$CIT=ENSDF$CUT=23-Jun-2015       
+247U   Q 4340      CA 3250   CA 9190   CA 3600    CA   1997MO25                 
+247U  cQ $S(2n)=8090, S(2p)=17070 (theory,1997Mo25)                             
+247U  c  1960Di03: {+247}U measured indirectly through the detection of         
+247U 2c  {+247}Cm (T{-1/2}=1.56|*10{+7} y) in the debris of the first           
+247U 3c  large-scale thermonuclear test (Ivy Mike) of November 1, 1952 in the   
+247U 4c  Pacific Ocean. Airborne and condensed samples were collected,          
+247U 5c  followed by chemical extraction and purification. The isotopic         
+247U 6c  composition of Pu, Am and Cm fractions were determined by using mass   
+247U 7c  spectrometers, while the abundances of all the transcurium elements    
+247U 8c  were measured by the detection of radiations, primarily |a particles.  
+247U 9c  Mass abundance of A=239-255 uranium isotopes at zero time were         
+247U ac  deduced which varied from 1.0 for {+239}U to 5.7|*10{+-11} for         
+247U bc  {+255}U. The heavy uranium isotopes are expected to be produced in an  
+247U cc  environment of unusually high neutron flux (time-integrated flux of    
+247U dc  |?10{+24} n/cm{+2}) through successive neutron captures in {+238}U,    
+247U ec  with neutron energies of 14-MeV from deuterium-tritium fusion, and few 
+247U fc  MeV from the fission of {+235}U. The {+247}Cm fraction can be formed   
+247U gc  in {+247}U --> {+247}Np --> {+247}Pu --> {+247}Am --> {+247}Cm |b{+-}  
+247U hc  decay chain.                                                           
+247U  c  One should note that there is no Adopted Levels data set for {+247}Np  
+247U 2c  in the ENSDF database                                                  
+247U  c  See also related articles: 1956Fi11, 1967Ho20, 1966Rg01 and 1969In01   
+247U  c  2010To07: calculated proton and neutron single-particle spectra,       
+247U 2c  S(n), rms charge radius                                                
+247U   L 0                                                                     ?
+247U 2 L %B-=?                                                                  
+247U  cL $Through the detection of {+247}Cm (T{-1/2}=1.56|*10{+7} y) in the     
+247U 2cL debries of the thermonuclear test, abundance of {+247}U was deduced to 
+247U 3cL be 3.9|*10{+-6} {I2} relative to 1.000 {I4} for {+239}U (1960Di03)     
+247U  cL $|b{+-} is expected to be the dominant decay mode of {+247}U, since    
+247U 2cL the theoretical half-life for |a decay is >10{+20} s (1997Mo25)        
+247U  cL T$|b decay half-life=2.0 s (theory,2003Mo09)                           
+247U  cL J$9/2+ (theory,1997Mo25)                                               
+                                                                                
+247PU    ADOPTED LEVELS                                          15NDS    201503
+247PU  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247PU  Q 1950      SY4360    SY          4280    SY    2012WA38                 
+247PU cQ $|DQ(|b{+-})=220, |DS(n)=200, |DQ(|a)=450                              
+247PU2cQ (syst, 2012Wa38)                                                       
+247PU c                                                                         
+247PU c  Identification:                                                        
+247PU c  1983Po16,1983Po14: Pu irradiated with neutron followed by chemical     
+247PU2c  extraction and measured by semiconductor |g spectrometry               
+247PU c                                                                         
+247PU c  Theoretical studies:                                                   
+247PU c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247PU c  2005Pa73: Calculated neutron one-quasiparticle states of heaviest      
+247PU2c  nuclei within a macroscopic-microscopic approach.                      
+247PU c  1997Mo25: Calculated ground-state binding energy, proton and           
+247PU2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247PU3c  and partial half-lives for |a and |b decays                            
+247PU c  1995Mo29: Calculated ground-state masses and nuclear ground-state      
+247PU2c  deformations                                                           
+247PU c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247PU2c  Q{-4} and masses                                                       
+247PU c  1980Ho32: Calculated mass excess, S(n), S(p), Q(|b), Q(|a),            
+247PU2c  fission-barrier heights, deformation and energy at saddle-point        
+247PU c                                                                         
+247PU c  Systematic studies:                                                    
+247PU c  2011Ad15: Behavior of low-lying one-quasiparticle states studied in    
+247PU2c  the isotonic chain N=147, 149, 151, 153, and 155 within the            
+247PU3c  microscopic-macroscopic TCSM and                                       
+247PU3c  self-consistent SHFB approaches. Comparison of                         
+247PU4c  calculated low-lying one-quasineutron states in {+247}Pu with          
+247PU5c  available experimental data of {+249}Cm shows a rather good agreement  
+247PU c                                                                         
+247PU  L 0.0         (1/2+)            2.27 D    23                             
+247PU2 L %B-=100                                                                
+247PU cL $|b{+-} decay has been inferred through {+247}Am activity. Direct      
+247PU2cL |b{+-} decay scheme of {+247}Pu to {+247}Am was not studied.           
+247PU cL T$Measured by 1983Po14 (see also 1983Po16) from the increase in the    
+247PU2cL intensity of the 226- and 285-keV |g's in {+247}Am |b{+-} decay.       
+247PU cL J$In analogy to {+249}Cm, {+251}Cf and {+253}Fm isotones, J|p(g.s.)    
+247PU2cL is probably 1/2+ of the 1/2[620] orbital.                              
+                                                                                
+247AM    ADOPTED LEVELS                                          15NDS    201503
+247AM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247AM  Q 1620      SY5910    SY 5530   SY4850    SY    2012WA38                 
+247AM cQ $|DQ(|b{+-})=100, |DS(n)=100, |DS(p)=100, |DQ(|a)=110                  
+247AM2cQ (syst, 2012Wa38)                                                       
+247AM c                                                                         
+247AM c  Identification:                                                        
+247AM c  1983Po14: Pu irradiated with neutron followed by chemical              
+247AM2c  extraction and measured by semiconductor |g spectrometry               
+247AM c  1967Or02,1968Fi03: {+244}Pu irradiated with |a, followed by chemical   
+247AM2c  extraction and measured |g-rays with Ge(Li) detector                   
+247AM c                                                                         
+247AM c  Experimental work:                                                     
+247AM c  1987We01: Measured {+248}Cm({+129}Xe,X) and {+248}Cm({+132}Xe,X)       
+247AM2c  production cross-sections                                              
+247AM c  1974Ba73: Measured {+248}Cm(t,|aF) at E=16 MeV.                        
+247AM c  Measured |a singles and |a-fission product coincidence spectra. |a     
+247AM2c  measured with |DE-E counter telescope with energy resolution of        
+247AM3c  145 keV and the fission fragments were measured with fission           
+247AM4c  detector. By using a statistical model, heights and curvatures         
+247AM5c  for the peaks of double-humped fission barrier were deduced.           
+247AM c  1968Fi03: Measured {+244}Pu(|a,p) at E(|a)=42 MeV from Argonne         
+247AM2c  60-inch cyclotron. 227- and 285-keV |g-rays assigned to {+247}Am       
+247AM c  1967Or02: Measured {+244}Pu(|a,p) at E(|a)=24 MeV.                     
+247AM2c  Measured T{-1/2} from the decay of the 226- and 285-keV |g's           
+247AM c                                                                         
+247AM c  Theoretical studies:                                                   
+247AM c  2004Pa40: Calculated deformation parameters and the proton one         
+247AM2c  quasiparticle states of heaviest nuclei using the                      
+247AM3c  macroscopic-microscopic approach                                       
+247AM c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247AM c  2001YaZU: Calculated fission barrier with semimicroscopic model        
+247AM2c  with account of possible dependence on excitation energy               
+247AM c  1997Mo25: Calculated ground-state binding energy, proton and           
+247AM2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247AM3c  and partial half-lives for |a and |b decays                            
+247AM c  1995Mo29: Calculated ground-state masses and nuclear ground-state      
+247AM2c  deformations                                                           
+247AM c  1988Po04: Estimated nuclear mass excess using a semiempirical method   
+247AM c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247AM2c  Q{-4} and masses                                                       
+247AM c  1985Lo17: Ground-state spin and parity predicted on the basis on       
+247AM2c  the calculated Nilsson potential parameters.                           
+247AM c  1984Ku05, : Calculated fission barrier with statistical                
+247AM2c  approach and the two hump fission barrier model                        
+247AM c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247AM2c  Q{-4} and masses                                                       
+247AM c  1980Ku14: Quantitative description of the main characteristics of the  
+247AM2c  fission probability using a simple phenomenological model.             
+247AM c  1980Ho32: Calculated mass excess, S(n), S(p), Q(|b), Q(|a),            
+247AM2c  fission-barrier heights, deformation and energy at saddle-point        
+247AM c                                                                         
+247AM  L 0.0         (5/2)             23.0 M    13                             
+247AM2 L %B-=100                                                                
+247AM cL J$From systematics of Nilsson orbitals (1977Ch27) suggesting 5/2+[642] 
+247AM2cL in {+245}Am or 5/2-[523] in analogy to {+243}Am, {+241}Am              
+247AM2cL and {+239}Am.                                                          
+247AM cL T$From measurement of 1983Po14. Others:                                
+247AM2cL 20 min {I4} (1968Fi03), 24 min {I3} (1967Or02).                        
+                                                                                
+247CM    ADOPTED LEVELS, GAMMAS                                  15NDS    201503
+247CM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CM  Q 44        7 5155    4 6750    SY 5354   3     2012WA38                 
+247CM cQ $|DS(p)=18, |DQ(|a)=450                                                
+247CM2cQ (syst, 2012Wa38)                                                       
+247CM c                                                                         
+247CM c  Identification:                                                        
+247CM c  1954St33: {+247}Cm produced by irradiating Pu samples with neutrons    
+247CM2c  followed by chemical purification and mass separation. Half-life       
+247CM3c  determined by 1971Fi01, 1968Fi03, 1963Fi08                             
+247CM c                                                                         
+247CM c  Theoretical studies:                                                   
+247CM c  2012Ni16: |a decay T{-1/2} for transitions from ground-state to        
+247CM2c  favored rotational bands using Multichannel Cluster Model              
+247CM c  2011Ad15: Studied one-quasiparticle levels using the                   
+247CM2c  microscopic-macroscopic modified TCSM, QPM and the self-consistent     
+247CM3c  SHFB approaches                                                        
+247CM c  2011Zh36: Systematics and calculated partial half-life of |a decay to  
+247CM2c  members of favored band. Accurate expressions are proposed for the     
+247CM3c  evaluation of partial half-lives of these transitions based on         
+247CM4c  microscopic quantum tunneling theory.                                  
+247CM c  2002Du16: Calculated half-lives and Q-values of spontaneous nuclear    
+247CM2c  decay processes in the framework of the effective liquid drop model    
+247CM3c  (ELDM)                                                                 
+247CM c  1997Mo25: Calculated ground-state binding energy, proton and neutron   
+247CM2c  pairing gaps, neutron and proton separation energies, Q values and     
+247CM3c  partial half-lives for |a and |b decays                                
+247CM c  1995Mo29: Calculated ground-state mass and deformations                
+247CM c  1993Bu09: Calculated partial |a decay half-life, |a branching, and     
+247CM2c  nuclear radius using the cluster model predictions                     
+247CM c  1981Mo24: Calculated electric multipole moments, Q2 and Q4             
+247CM2c  using macroscopic-microscopic model                                    
+247CM c  1980Ho32: Calculated ground-state mass excess using                    
+247CM2c  macroscopic-microscopic model.Fission-barrier heights, deformation     
+247CM3c  and energy at saddle-point were also calculated                        
+247CM c  1971Ga20: Calculated fission barriers, ground-state masses and         
+247CM2c  particle separation energies                                           
+247CM c                                                                         
+247CM c  Systematic studies:                                                    
+247CM c  2013Af01: Systematic study of pairing and rotational properties of     
+247CM2c  actinides using the covariant density functional theory (CDFT) and     
+247CM3c  the density functional theory framework, respectively.                 
+247CM c  2012Zh01: Comparison of the low lying one-quasineutron band for N=151  
+247CM2c  isotones between the experimental values and calculated values using   
+247CM3c  the cranked shell model (CSM) with pairing correlations                
+247CM c  2011As03: Calculated ground-state deformation and energies of neutron  
+247CM2c  one-quasiparticle states in the N=151 isotones  using a                
+247CM3c  macroscopic-microscopic model. Energy systematics discussed in terms   
+247CM4c  of evolution of nuclear deformation                                    
+247CM c  2007Ma82: Comparison with experimental results of {+245}Pu and         
+247CM2c  systematics of neutron single-particle levels in N=151 isotones        
+247CM3c  ({+247}Cm, {+249}Cf, {+251}Fm and {+253}No)                            
+247CM c  2006Sh19: Calculated energy levels of ground-state rotational band     
+247CM2c  in N=151 isotones                                                      
+247CM c  2005Pa73: Calculated neutron one quasi-particle states of heaviest     
+247CM2c  nuclei within a macroscopic-microscopic approach.                      
+247CM c  1977Ch27,1976Ch22: Extracted neutron single particle states with       
+247CM2c  constant pairing elements                                              
+247CM cG E$From {+251}Cf |a decay and {+248}Cm({+209}B,{+210}Bi|g) data         
+247CM CG RI$Relative photon intensities de-exciting each level, adopted         
+247CM2CG from {+251}Cf |a decay.                                                
+247CM cG M,MR$Determined in {+251}Cf |a decay and {+247}Am |b{+-} decay.        
+247CM2CG The multipolarities in square brackets are from the level scheme;      
+247CM3CG they have not been determined experimentally.                          
+247CM cL E$From {+251}Cf |a decay, (d,p), (d,t) and {+248}Cm({+209}B,{+210}Bi|g)
+247CM2cL data                                                                   
+247CM CL J$From band assignments. Spin and parities for some of the bandheads   
+247CM2CL are explained in comments for those levels. Arguments for band members 
+247CM3cL are given with each band assignment. Nilsson state and band assignments
+247CM4CL were tentatively proposed to some levels above 600 keV by 1971Br27 from
+247CM5CL (d,p) and (d,t) data.                                                  
+247CM cL BAND(A)$9/2[734] band.                                                 
+247CM2cL A=5.6.                                                                 
+247CM3cL Band assignment from alpha hindrance factors, |g decays,               
+247CM4cL and (d,p), (d,t) data.                                                 
+247CM cL BAND(B)$5/2[622] band.                                                 
+247CM2cL A=5.7.                                                                 
+247CM3cL Band assignment from (d,p), (d,t) data and alpha hindrance factors.    
+247CM cL BAND(D)$7/2[624] band.                                                 
+247CM2cL Band assignment from (d,p), (d,t) data and alpha hindrance factors.    
+247CM cL BAND(E)$1/2[620] band.                                                 
+247CM2cL A=7.1                                                                  
+247CM3cL Band assignment from (d,p), (d,t) data and alpha hindrance factors.    
+247CM cL BAND(G)$1/2[631] band.                                                 
+247CM2cL A=7.0.                                                                 
+247CM3cL Band assignment from (d,t), (d,p) data.                                
+247CM cL BAND(H)$1/2[501] band.                                                 
+247CM2cL Band assignment from (d,t), (d,p) data.                                
+247CM  XA251CF A DECAY                                                          
+247CM  XB247AM B- DECAY                                                         
+247CM  XD246CM(D,P), 248CM(D,T)                                                 
+247CM  XE248CM(209BI,210BIG)                                                    
+247CM DG CC$FROM BrIcc v2.3a (30-Jun-2013) 2008Ki07, "Frozen Orbitals" appr.    
+247CM PN                                                                     6  
+247CM  L 0.0          9/2-             1.56E+7 Y 5                          A   
+247CM2 L %A=100                                                                 
+247CM2 L MOMM1=0.36 7 (1973Ab03,2011StZZ)                                       
+247CM cL MOMM1$From electron paramagnetic resonance measurement (1973Ab03).     
+247CM2cL Compiled by 2011StZZ.                                                  
+247CMX L XREF=ABDE                                                              
+247CM cL J$Spin measured by 1973Ab03 (electron paramagnetic resonance)          
+247CM2cL and parity determined from the measured magnetic dipole moment         
+247CM3cL and Nilsson diagram.                                                   
+247CM cL T$Measured by 1971Fi01. This half-life is recommended by               
+247CM2CL 1989Ho24. Earlier measurement: 1.64E+7 Y {I24} (1963Fi08).             
+247CM  L 61.67      4 11/2-                                                 A   
+247CMX L XREF=AB(?)DE                                                           
+247CM  G 61.67     5           M1+E2     0.25    3     37.5   23                
+247CMS G  LC=27.8 16$MC=7.1 5                                                   
+247CMS G  NC=1.96 13$OC=0.49 3$PC=0.092 5$QC=0.00493 9                          
+247CM  L 134.66     6 13/2-                                                 A   
+247CMX L XREF=ADE                                                               
+247CM  G 73.00     8 35      8 [M1+E2]   0.7     3     39     13                
+247CMS G  LC=28 9$MC=8 3                                                        
+247CMS G  NC=2.1 8$OC=0.52 18$PC=0.09 3$QC=0.0023 5                             
+247CM  G 134.65    8   100   13[E2]                    4.94                     
+247CMS G  KC=0.1531 22$LC=3.46 5$MC=0.976 14                                    
+247CMS G  NC=0.272 4$OC=0.0659 10$PC=0.01104 16$QC=6.08E-5 9                    
+247CM  L 219.02     7 15/2-                                                 A   
+247CMX L XREF=ADE                                                               
+247CM  G 84.35     8 100     13 [M1+E2]                26     15                
+247CMS G  LC=19 11$MC=5 4                                                       
+247CMS G  NC=1.5 9$OC=0.36 22$PC=0.06 4$QC=0.0012 9                             
+247CM  G 157.35    8 50      10[E2]                    2.56                     
+247CMS G  KC=0.1741 25$LC=1.723 25$MC=0.485 7                                   
+247CMS G  NC=0.1350 20$OC=0.0328 5$PC=0.00552 8$QC=3.65E-5 6                    
+247CM  L 227.38    19 5/2+             26.3 US   3                          B   
+247CMX L XREF=ABD                                                               
+247CM cL T$From {+251}Cf |a decay (2003Ah07).                                   
+247CM2cL Other: 25 |ms {I3} (1968Ch03).                                         
+247CM  G 165.70    5 1.76    15E3                      30.4                     
+247CMB G BE3W=5.5 6                                                             
+247CMS G  KC=0.235 4$LC=21.3 3$MC=6.47 10                                       
+247CMS G  NC=1.83 3$OC=0.445 7$PC=0.0750 11$QC=0.000469 7                       
+247CM  G 227.38    2 100     4  M2+E3    0.52    +9-8   10.3   4                
+247CMB G BM2W=0.0033 4$BE3W=7.3 21                                              
+247CMS G  KC=6.0 5$LC=3.15 9$MC=0.87 3                                          
+247CMS G  NC=0.242 9$OC=0.0609 20$PC=0.0113 3$QC=0.00056 4                      
+247CM  L 265.86     4(7/2+)                                                 B   
+247CMX L XREF=A                                                                 
+247CM  G 38.48     5 8.8     14(M1+E2)   0.21    5     1.8E2  4                 
+247CMS G  LC=1.4E2 3$MC=35 8                                                    
+247CMS G  NC=9.8 21$OC=2.4 5$PC=0.44 8$QC=0.0202 4                              
+247CM  G 265.86    8 100     7 [E1]                    0.0565                   
+247CMS G  KC=0.0442 7$LC=0.00927 13$MC=0.00226 4                                
+247CMS G  NC=0.000617 9$OC=0.0001540 22$PC=2.86E-5 4$QC=1.559E-6 22             
+247CM  L 285.41     5(7/2+)                                                 D   
+247CMX L XREF=ABD                                                               
+247CM  G 58.03     5 2.1     4 (M1+E2)   0.53    11    80     16                
+247CMS G  LC=59 11$MC=16 4                                                      
+247CMS G  NC=4.4 9$OC=1.08 21$PC=0.19 4$QC=0.0052 4                             
+247CM  G 285.41    8 100     8 [E1]                    0.0484                   
+247CMS G  KC=0.0380 6$LC=0.00787 11$MC=0.00192 3                                
+247CMS G  NC=0.000523 8$OC=0.0001308 19$PC=2.44E-5 4$QC=1.350E-6 19             
+247CM  L 309       3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 314.7      917/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 180       1                                                            
+247CM  L 318.31     5 9/2+                                                  B   
+247CMX L XREF=AD                                                                
+247CM  G 52.45     5 37      4 (M1+E2)   0.27    6     70     11                
+247CMS G  LC=51 8$MC=13.3 23                                                    
+247CMS G  NC=3.7 7$OC=0.92 15$PC=0.169 24$QC=0.00792 21                         
+247CM  G 256.65    8 100     8 [E1]                    0.0611                   
+247CMS G  KC=0.0477 7$LC=0.01007 15$MC=0.00246 4                                
+247CMS G  NC=0.000670 10$OC=0.0001672 24$PC=3.10E-5 5$QC=1.675E-6 24            
+247CM  G 318.3     1 38      4 [E1]                    0.0384                   
+247CMS G  KC=0.0302 5$LC=0.00614 9$MC=0.001495 21                               
+247CMS G  NC=0.000408 6$OC=0.0001021 15$PC=1.91E-5 3$QC=1.086E-6 16             
+247CM  L 336       5                                                            
+247CMX L XREF=D                                                                 
+247CM  L 345.89     6(9/2+)                                                 D   
+247CMX L XREF=AD                                                                
+247CM  G 60.5      1 8.3     25(M1+E2)   0.48    16    62     18                
+247CMS G  LC=46 13$MC=12 4                                                      
+247CMS G  NC=3.4 11$OC=0.83 25$PC=0.15 4$QC=0.0047 5                            
+247CM  G 284.2     1 100     8 [E1]                    0.0489                   
+247CMS G  KC=0.0383 6$LC=0.00794 12$MC=0.00194 3                                
+247CMS G  NC=0.000528 8$OC=0.0001320 19$PC=2.46E-5 4$QC=1.362E-6 19             
+247CM  G 345.9     1 36      3 [E1]                    0.0322                   
+247CMS G  KC=0.0254 4$LC=0.00510 8$MC=0.001240 18                               
+247CMS G  NC=0.000338 5$OC=8.48E-5 12$PC=1.593E-5 23$QC=9.22E-7 13              
+247CM  L 370       5                                                           ?
+247CMX L XREF=D                                                                 
+247CM  L 381       5 (11/2+)                                                B   
+247CMX L XREF=D                                                                 
+247CM  L 398       4                                                            
+247CMX L XREF=D                                                                 
+247CM cL J$11/2+,7/2[624] state was tentatively suggested by 1971Br27 from      
+247CM2cL (d,t) data.                                                            
+247CM  L 404.90    3  1/2+             100.6 NS  6                          E   
+247CMX L XREF=AD                                                                
+247CM CL J,T$From {+251}Cf |a decay (2003Ah07)                                  
+247CM  G 177.52    2           E2                      1.567                    
+247CMS G  KC=0.1643 23$LC=1.015 15$MC=0.285 4                                   
+247CMS G  NC=0.0794 12$OC=0.0193 3$PC=0.00327 5$QC=2.52E-5 4                    
+247CMB G BE2W=0.1350 14                                                         
+247CM  L 417       6                                                           ?
+247CMX L XREF=D                                                                 
+247CM cL J$3/2+,1/2[620] state was tentatively assigned by 1971Br27 from (d,t)  
+247CM2cL data. This state was observed at 433 keV in {+251}Cf |a decay.         
+247CM  L 421.0     9 19/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 202       1                                                            
+247CM  L 433       2 (3/2+)                                                 E   
+247CMX L XREF=A                                                                 
+247CM  L 439       3                                                            
+247CMX L XREF=D                                                                 
+247CM CL J$9/2+,7/2[613] assignment was tentatively suggested by 1971Br27.      
+247CM  L 448       2 (5/2+)                                                 E   
+247CMX L XREF=AD                                                                
+247CM  L 506       3 (1/2+)                                                 G   
+247CMX L XREF=D                                                                 
+247CM  L 516.68    11 (7/2+)                                                E   
+247CMX L XREF=AD                                                                
+247CM  G 289.3     1           [M1+E2]                 0.9    7                 
+247CMS G  KC=0.7 6$LC=0.19 6$MC=0.049 13                                        
+247CMS G  NC=0.014 4$OC=0.0034 9$PC=0.00064 21$QC=3.E-5 3                       
+247CM  L 518.59     7(3/2+)                                                 G   
+247CMX L XREF=AD                                                                
+247CM  G 113.7     1 8.0     17[M1+E2]                 8      3                 
+247CMS G  LC=5.5 20$MC=1.5 7                                                    
+247CMS G  NC=0.41 18$OC=0.10 4$PC=0.018 6$QC=0.0005 4                           
+247CM  G 291.20    8 100     10[M1+E2]                 0.9    7                 
+247CMS G  KC=0.7 6$LC=0.19 6$MC=0.048 13                                        
+247CMS G  NC=0.013 4$OC=0.0033 9$PC=0.00063 21$QC=3.E-5 3                       
+247CM  L 539.8     1221/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 225       1                                                            
+247CM  L 550       2 (9/2+)                                                 E   
+247CMX L XREF=D                                                                 
+247CM  L 581.67     8(5/2+)                                                 G   
+247CMX L XREF=AD                                                                
+247CM  G 315.8     1 100     13[M1+E2]                 0.7    6                 
+247CMS G  KC=0.5 5$LC=0.15 6$MC=0.037 12                                        
+247CMS G  NC=0.010 3$OC=0.0026 8$PC=0.00049 18$QC=2.6E-5 21                     
+247CM  G 354.3     1 54      8 [M1+E2]                 0.5    4                 
+247CMS G  KC=0.4 4$LC=0.10 5$MC=0.026 10                                        
+247CMS G  NC=0.0072 25$OC=0.0018 7$PC=0.00034 14$QC=1.9E-5 16                   
+247CM  L 592       2                                                            
+247CMX L XREF=D                                                                 
+247CM  L 604       3 (7/2+)                                                 G   
+247CMX L XREF=D                                                                 
+247CM  L 667.9     1223/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 247       1                                                            
+247CM2 G FL=421.0                                                               
+247CM  L 668       5 (3/2+)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 687       5 (11/2+)                                                    
+247CMX L XREF=D                                                                 
+247CM  L 699       2 (9/2+)                                                 G   
+247CMX L XREF=D                                                                 
+247CM cL $Level was assumed doublet in the (d,p),(d,t)                          
+247CM2cL reactions, and the other  member was assigned to the                   
+247CM3cL 5/2+,3/2[622] state by 1971Br27.                                       
+247CM  L 749       5 (7/2+)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 784       4 (3/2-)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 803       5                                                            
+247CMX L XREF=D                                                                 
+247CM  L 807.9     1225/2-                                                  A   
+247CM2 L XREF=E                                                                 
+247CM  G 140       1                                                            
+247CM2 G FL=667.9                                                               
+247CM  G 268       1                                                            
+247CM  L 819       4 (7/2-)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 819       4 (9/2+)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 856       5                                                            
+247CMX L XREF=D                                                                 
+247CM  L 897       5 (11/2-)                                                    
+247CMX L XREF=D                                                                 
+247CM  L 947       2                                                            
+247CMX L XREF=D                                                                 
+247CM  L 957       2 (1/2-)                                                 H   
+247CMX L XREF=D                                                                 
+247CM  L 957.9     1327/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 150                                                                    
+247CM2 G FL=807.9                                                               
+247CM  G 290                                                                    
+247CM2 G FL=667.9                                                               
+247CM  L 988       5                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1001      2 (3/2-,5/2-)                                            H   
+247CMX L XREF=D                                                                 
+247CM  L 1044      3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1064      3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1079      3 (5/2+)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 1091      3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1118.9    1429/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 161                                                                    
+247CM2 G FL=957.9                                                               
+247CM  G 311                                                                    
+247CM2 G FL=807.9                                                               
+247CM  L 1159      3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1182      3 (9/2+)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 1199      4                                                           ?
+247CMX L XREF=D                                                                 
+247CM  L 1239      5                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1247      5                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1271      3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1283      3 (5/2-)                                                     
+247CMX L XREF=D                                                                 
+247CM  L 1287.9    1531/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 169                                                                    
+247CM  G 330                                                                    
+247CM2 G FL=957.9                                                               
+247CM  L 1317      3                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1356      3                                                           ?
+247CMX L XREF=D                                                                 
+247CM  L 1364      4                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1372      4                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1467.9    1633/2-                                                  A   
+247CMX L XREF=E                                                                 
+247CM  G 180                                                                   ?
+247CM2 G FL=1287.9                                                              
+247CM  G 349                                                                    
+247CM  L 1512      6                                                            
+247CMX L XREF=D                                                                 
+247CM  L 1655.9    16   35/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 188                                                                    
+247CM  G 368                                                                    
+247CM2 G FL=1287.9                                                              
+247CM  L 1853.9    17   37/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 198                                                                    
+247CM  G 386                                                                    
+247CM  L 2056.9    19   39/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 401                                                                    
+247CM  L 2271.9    20   41/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 418                                                                    
+247CM  L 2487.9    22   43/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 431                                                                    
+247CM  L 2717.9    22   45/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 446                                                                    
+247CM  L 2945.9    24   47/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 458                                                                    
+247CM  L 3187.9    24   49/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 470                                                                    
+247CM  L 3427       3   51/2-                                               A   
+247CMX L XREF=E                                                                 
+247CM  G 481                                                                    
+                                                                                
+247CM    247AM B- DECAY                1967OR02,1968FI03         15NDS    201503
+247CM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CM c  1991Po17: Gamma emission of actinides isotopes                         
+247CM c  1968Fi03: {+247}Am produced by 42-MeV |a on {+244}Pu at the Argonne    
+247CM2c  60-inch cyclotron. Chemical purification was followed by evaporation   
+247CM3c  on a quartz plate. Gammas were then measured with a Ge(Li) detector    
+247CM4c  through a thick copper detector to reduce |b-particle background.      
+247CM c  1967Or02: {+247}Am produced by 28-MeV |a on {+244}Pu at the Los Alamos 
+247CM2c  variable-energy cyclotron. Chemical purification was followed by       
+247CM3c  evaporation on teflon film. Following |b decay of {+247}Am,            
+247CM3c  |g's were measured with a Ge(Li) detector and                          
+247CM4c  the electron spectrum was measured with a Si(Li) detector.             
+247CM cB $I(|b)'s were deduced from intensity balance. Since the decay          
+247CM2cB scheme is incomplete, I(|b{+-})'s given should be taken as approximate.
+247CM cG RI(A)$Relative photon intensity measured by 1991Po17.                  
+247CM cG RI(S)$Calculated by the evaluator from adopted relative branching      
+247CM cG M,MR$From Adopted Gammas                                               
+247CM cG E(S)$Transition was not observed in {+247}Am |b{+-} decay; energy is   
+247CM2cG from Adopted Gammas                                                    
+247CM cL E,J$From Adopted Level                                                 
+247CM DG CC$FROM BrIcc v2.3a (30-Jun-2013) 2008Ki07, "Frozen Orbitals" appr.    
+247AM  P 0.0         (5/2)             23.0 M    13             1620      SY    
+247AM cP T$From Adopted levels of {+247}Am                                      
+247AM cP QP$1620 {I100} (syst, 2012Wa38)                                        
+247CM  N 0.25      AP          1.0       1.0                                    
+247CM cN NR$The normalization factor to convert the relative                    
+247CM2cN photon intensities to absolute intensities is obtained as 0.25         
+247CM3cN which is an average of NR=0.26 assuming I|b to g.s.=0                  
+247CM4cN with [I|g(226)(1+|a)+I|g(285)(1+|a)+ I|g(61.67)(1+|a)]=100% and        
+247CM5cN NR|>0.24  when I|b to g.s.<6 % by requiring log{If{+1u}t}>8.5 with     
+247CM6cN [I|g(226)(1+|a)+I|g(285)(1+|a)+ I|g(61.67)(1+|a)]|>94%                 
+247CM7cN The decay scheme should, however, be considered to be incomplete.      
+247CM PN                                                                     3  
+247CM  L 0.0         9/2-              1.56E+7 Y 5                              
+247CM cL T$From Adopted Level                                                   
+247CM  B             6       LT          8.4     GT                          1U?
+247CMS B EAV AP 522                                                             
+247CM cB $If J|p({+247}Am g.s.)=5/2+ and log{If{+1u}t}>8.5 for the              
+247CM2cB |b to g.s., I(|b{+-}) to g.s.<6%.                                      
+247CM  L 61.67     4 11/2-                                                     S
+247CM  G 61.67     5 0.33    9 M1+E2     0.26    +12-1638     10               S
+247CMS G  LC=28 7$MC=7.2 21                                                     
+247CMS G  NC=2.0 6$OC=0.50 14$PC=0.093 22$QC=0.0049 3                           
+247CM cG RI$Calculated by the evaluator from intensity balance at the           
+247CM2cG 61.67-keV level.                                                       
+247CM  L 227.38    195/2+              26.3 US   3                              
+247CM cL T$From Adopted Levels. Others: 24 |ms (1967Or02), 20 |ms {I4}          
+247CM2cL (1968Fi03)                                                             
+247CM  B              31     21          6.6     AP                             
+247CMS B EAV AP 465                                                             
+247CM  G 165.70    5 0.41    4 E3                      30.4                 S  S
+247CMS G  KC=0.235 4$LC=21.3 3$MC=6.47 10                                       
+247CMS G  NC=1.83 3$OC=0.445 7$PC=0.0750 11$QC=0.000469 7                       
+247CM  G 226       2 23      3 M2+E3     0.56    17    10.4   7             A   
+247CMS G  KC=5.9 9$LC=3.26 20$MC=0.90 7                                         
+247CMS G  NC=0.252 19$OC=0.063 5$PC=0.0117 7$QC=0.00056 7                       
+247CM cG $I|g(226) relative to 285|g=25 {I7} was measured by 1967Or02.          
+247CM cG $|a(K)exp=6 {I3} estimated from comparison of ce and |g.               
+247CM2cG |a(K)exp=6 {I5} in {+251}Cf |a decay (2003Ah07).                       
+247CM  L 285.41     5(7/2+)                                                     
+247CM  B              63     19          6.22    AP                             
+247CMS B EAV AP 443                                                             
+247CM  G 58.03     5 2.1     5 (M1+E2)   0.49    19    7.E1   3             S  S
+247CMS G  LC=55 19$MC=15 6                                                      
+247CMS G  NC=4.1 15$OC=1.0 4$PC=0.18 6$QC=0.0053 6                              
+247CM  G 285       2 100     10[E1]                    0.0486 11            A   
+247CMS G  KC=0.0381 8$LC=0.00789 17$MC=0.00193 5                                
+247CMS G  NC=0.000525 12$OC=0.000131 3$PC=2.44E-5 6$QC=1.35E-6 3                
+247CM cG $From nonobservation of ce lines for 285|g, 1967Or02                   
+247CM2cG suggest that 285|g is probably E1 or E2.                               
+                                                                                
+247CM    251CF A DECAY                 2003AH07,1968CH03,1970BRZN15NDS    201503
+247CM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CM c  2003Ah07: Produced {+251}Cf from |a decay of {+255}Fm. Measured level  
+247CM2c  T{-1/2}, |g, |a, |a-|g coincidence, and electron spectra with high     
+247CM3c  resolution spectrometers such as the passivated, implanted, planar     
+247CM4c  silicon Detector (PIPS) (FWHM=10.5 and 9.2 keV). The latter being also 
+247CM5c  measured by the PIN diode.                                             
+247CM c  1970BrZN: Studied alpha spectrum decay of {+251}Cf with a Au-Si        
+247CM2c  surface barrier detector (FWHM=15 keV) and ZnS-photomultiplier tube.   
+247CM3c  Measured |g's with 5 cm{+3} Ge(Li) detector and electrons with         
+247CM4c  Si(Li) detector. Measured |a-particles energies, |g energies,          
+247CM5c  intensities, |a-|g coincidence, and conversion electrons.              
+247CM c  1968Ch03: |a decay of {+251}Cf along with |a-|g coincidence            
+247CM2c  measurements were done using Si(Au), Ge(Li) and NaI(Tl) detectors      
+247CM3c  Measured E|a, I|a, E|g, I|g, |a-|g coincidences. Deduced J|p, T{-1/2}  
+247CM4c  and identified rotational bands                                        
+247CM c  Other measurements: 1966Rg01                                           
+247CM cA E$Measurements by 2003Ah07, except where noted otherwise.              
+247CM cA IA$Measurements of 2003Ah07 are adopted.                               
+247CM cA HF$r{-0}({+247}Cm)=1.4924 {I88}, unweighted average of                 
+247CM2cA r{-0}({+246}Cm)=1.4836 {I5} and r{-0}({+248}Cm)=1.5012 {I6} (1998Ak04),
+247CM3cA is used in calculations of HF.                                         
+247CM TG $251CM x-rays: (2003Ah07)                                              
+247CM2TG                                                                        
+247CM3TG   E(x-ray)     I(x-ray)                    Transitions                 
+247CM4TG   --------     --------                    -----------                 
+247CM5TG   104.57 2     12.6 7                      K|a{-2} x-ray               
+247CM6TG   109.26 2     19.8 10                     K|a{-1} x-ray               
+247CM7TG   122.31 2                                 K|b{-3} x-ray               
+247CM8TG                 7.7 5                                                  
+247CM9TG                 I(K|b{-3} x-ray+K|b{-1} x-ray)                         
+247CMaTG   123.40 2                                 K|b{-1} x-ray               
+247CMbTG   127.01 4                                 K|b{-2} x-ray+K|b{-4} x-ray 
+247CMcTG                 2.6 2                                                  
+247CMdTG                 I(K|b{-2} x-ray+K|b{-4} x-ray                          
+247CMeTG                 +K|O{-23} x-ray)                                       
+247CMfTG   128.00 5                                 K|O{-23} x-ray              
+247CMgTG                                                                        
+247CMhTG Others: 1966Rg01, 1968Ch03, 1970BrZN                                   
+247CMiTG                                                                        
+247CM cG                                                                        
+247CM cG E$From 2003Ah07. Other measurements: 1968Ch03, 1970BrZN.               
+247CM cG RI$Measured by 2003Ah07, except as noted otherwise.                    
+247CM2cG Absolute intensities were determined by 2003Ah07 by measuring the      
+247CM3cG alpha rate of a thin {+251}Cf source with a Si detector of known       
+247CM4cG geometry and measuring the gamma spectrum with a Ge spectrometer of    
+247CM5cG known absolute efficiency which was determined with a calibrated       
+247CM6cG source. Earlier measurements: 1968Ch03, 1970BrZN.                      
+247CM3cG See also {+247}Am |b{+-} decay.                                        
+247CM cG E(S)$Transition was not observed. Existence is from the level          
+247CM2cG scheme.                                                                
+247CM cG M,MR(B)$Determined by evaluator from |a(exp) (2003Ah07)                
+247CM cG CC(A)$Deduced by evaluator from intensity balance                      
+247CM DG CC$FROM BrIcc v2.3a (30-Jun-2013) 2008Ki07, "Frozen Orbitals" appr.    
+247CM cL E$From least-squares fit to E|g's                                      
+247CM cL BAND(D)$ 9/2[734]                                                      
+247CM cL BAND(E)$ 5/2[622]                                                      
+247CM cL BAND(F)$ 7/2[624]                                                      
+247CM cL BAND(G)$ 1/2[620]                                                      
+247CM cL BAND(H)$ 1/2[631]                                                      
+251CF  P 0.0         1/2+              898 Y     44             6177.0    9     
+251CF cP T$From Adopted Levels in {+251}Cf                                      
+251CF cP QP$From 2012Wa38.                                                      
+251CF2cP E|a (to 404.90 level)=5679.3 {I16} yields Q|a=6176.2 {I16}             
+247CM  N 1.0         1.0       1.0                                              
+247CM PN                                                                     2  
+247CM  L 0.0         9/2-              1.56E+7 Y 5                          D   
+247CM cL T$From Adopted Levels                                                  
+247CM  A 6078      2 2.6     1  5.15E3 36                                       
+247CM cA IA$6 {I5} from I(|g+ce) imbalances                                     
+247CM  L 61.67      411/2-                                                  D   
+247CM  A 6017      2 12.5    3   519   32                                       
+247CM cA IA$9.7 {I16} from I(|g+ce) imbalances                                  
+247CM  G 61.67     5 0.40    3 M1+E2     0.25    2     37.5   16            B   
+247CMS G  LC=27.8 11$MC=7.1 4                                                   
+247CMS G  NC=1.96 9$OC=0.491 21$PC=0.092 4$QC=0.00493 8                         
+247CM cG $|a(L1+L2):|a(L3):|a(M+N)=23.5 {I31}:3.3 {I8}:11.0 {I17} (2003Ah07)    
+247CM cG $|a(K):|a(L1+L2):|a(L3):|a(M):|a(N)=0.24 {I5}:1.0 {I1}:0.5 {I1}:0.7    
+247CM2cG {I1}:0.37 {I5} (1970BrZN)                                              
+247CM  L 134.66     613/2-                                                  D   
+247CM  A 5946      2 0.60    6  4.52E3 52                                       
+247CM  G 73.00     8 0.040   5 [M1+E2]   0.7     +5-4  39     16            A   
+247CMF G FLAG=B                                                                 
+247CMS G  LC=28 13$MC=8 4                                                       
+247CMS G  NC=2.1 10$OC=0.52 24$PC=0.09 4$QC=0.0023 7                            
+247CM  G 134.65    8 0.014   3 [E2]                    4.94                     
+247CMS G  KC=0.1531 22$LC=3.46 5$MC=0.976 14                                    
+247CMS G  NC=0.272 4$OC=0.0659 10$PC=0.01104 16$QC=6.08E-5 9                    
+247CM  L 219.02     715/2-                                                  D   
+247CM  A                                                                       S
+247CM cA $From the |g's de-exciting the 219-keV level, existence of an          
+247CM2cA alpha branch to the 219.0-keV level with I|a=1.2% {I7} and             
+247CM3cA E|a=5862 {I2} may be deduced from intensity balance.                   
+247CM4cA For I|a|?1.2%, HF|?800.                                                
+247CM  G 84.35     8 0.040   5 [M1+E2]                 26     15                
+247CMS G  LC=19 11$MC=5 4                                                       
+247CMS G  NC=1.5 9$OC=0.36 22$PC=0.06 4$QC=0.0012 9                             
+247CM  G 157.35    8 0.020   4 [E2]                    2.56                     
+247CMS G  KC=0.1741 25$LC=1.723 25$MC=0.485 7                                   
+247CMS G  NC=0.1350 20$OC=0.0328 5$PC=0.00552 8$QC=3.65E-5 6                    
+247CM  L 227.379   195/2+              26.3 US   3                          EM  
+247CM cL T$From 2003Ah03. Others: 25 |ms {I3} (1968Ch03)                        
+247CM  A 5854      2 27.6    5   31.7  19                                       
+247CM  G 165.70    5 0.12    1 E3                      30.4                     
+247CMS G  KC=0.235 4$LC=21.3 3$MC=6.47 10                                       
+247CMS G  NC=1.83 3$OC=0.445 7$PC=0.0750 11$QC=0.000469 7                       
+247CM cG $Ice(L1+L2):Ice(L3)=15 {I3}:6.7 {I26} (2003Ah07).                      
+247CM  G 227.38    2 6.8     3  M2+E3    0.52    +9-8  10.3   4                 
+247CMS G  KC=6.0 5$LC=3.15 9$MC=0.87 3                                          
+247CMS G  NC=0.242 9$OC=0.0609 20$PC=0.0113 3$QC=0.00056 4                      
+247CM cG $|a(K):|a(L1+L2):|a(L3):|a(M+N)=6.0 {I5}:2.7 {I3}:0.41 {I5}            
+247CM2cG :1.53 {I17} (2003Ah07)                                                 
+247CM cG $|a(K):|a(L1+L2):|a(L3):|a(M):|a(N)=7 {I2}:3.7 {I6}:0.6 {I2}:2.1 {I4}  
+247CM2cG :0.85 {I15} (1970BrZN)                                                 
+247CM  L 265.86     4(7/2+)                                                 E   
+247CM  A 5817      2 4.0     2   136   11                                       
+247CM  G 38.48     5 0.038   6 (M1+E2)   0.21    5     183    32            A   
+247CMF G FLAG=B                                                                 
+247CMS G  LC=1.4E2 3$MC=35 8                                                    
+247CMS G  NC=9.8 21$OC=2.4 5$PC=0.44 8$QC=0.0202 4                              
+247CM  G 265.86    8  0.43   3 [E1]                    0.0565 8                 
+247CMS G  KC=0.0442 7$LC=0.00927 13$MC=0.00226 4                                
+247CMS G  NC=0.000617 9$OC=0.0001540 22$PC=2.86E-5 4$QC=1.559E-6 22             
+247CM cG $Since an E1 transition from 5/2[622] to 9/2[734] state                
+247CM2cG would be K forbidden, there might be some M2 admixture in 265.86 |g.   
+247CM3cG |a(M2)=7.10.                                                           
+247CM  L 285.41     5(7/2+)                                                 F   
+247CM  A 5798      2 2.5     2   170   17                                       
+247CM  G 58.03     5 0.024   5 (M1+E2)   0.53    11    80     22            A   
+247CMF G FLAG=B                                                                 
+247CMS G  LC=59 11$MC=16 4                                                      
+247CMS G  NC=4.4 9$OC=1.08 21$PC=0.19 4$QC=0.0052 4                             
+247CM  G 285.41    8  1.13   9 [E1]                    0.0484                   
+247CMS G  KC=0.0380 6$LC=0.00787 11$MC=0.00192 3                                
+247CMS G  NC=0.000523 8$OC=0.0001308 19$PC=2.44E-5 4$QC=1.350E-6 19             
+247CM  L 318.31     59/2+                                                   E   
+247CM  A 5766      2  3.6    2    78   7                                        
+247CM  G 52.45     5 0.048   5 (M1+E2)   0.27    6     70     8             A   
+247CMF G FLAG=B                                                                 
+247CMS G  LC=51 8$MC=13.3 23                                                    
+247CMS G  NC=3.7 7$OC=0.92 15$PC=0.169 24$QC=0.00792 21                         
+247CM  G 256.65    8 0.13    1 [E1]                    0.0611 9                 
+247CMS G  KC=0.0477 7$LC=0.01007 15$MC=0.00246 4                                
+247CMS G  NC=0.000670 10$OC=0.0001672 24$PC=3.10E-5 5$QC=1.675E-6 24            
+247CM  G 318.3     1 0.050   5 [E1]                    0.0384                   
+247CMS G  KC=0.0302 5$LC=0.00614 9$MC=0.001495 21                               
+247CMS G  NC=0.000408 6$OC=0.0001021 15$PC=1.91E-5 3$QC=1.086E-6 16             
+247CM  L 345.89     6(9/2+)                                                 F   
+247CM  A 5738      2 0.8     1   248   34                                       
+247CM  G 60.5      1 0.010   3 (M1+E2)   0.48    16    62     21            A   
+247CMF G FLAG=B                                                                 
+247CMS G  LC=46 13$MC=12 4                                                      
+247CMS G  NC=3.4 11$OC=0.83 25$PC=0.15 4$QC=0.0047 5                            
+247CM  G 284.2     1 0.12    1 [E1]                    0.0489 7                 
+247CMS G  KC=0.0383 6$LC=0.00794 12$MC=0.00194 3                                
+247CMS G  NC=0.000528 8$OC=0.0001320 19$PC=2.46E-5 4$QC=1.362E-6 19             
+247CM  G 345.9     1 0.043   4 [E1]                    0.0322 5                 
+247CMS G  KC=0.0254 4$LC=0.00510 8$MC=0.001240 18                               
+247CMS G  NC=0.000338 5$OC=8.48E-5 12$PC=1.593E-5 23$QC=9.22E-7 13              
+247CM  L 404.90     31/2+              100.6 NS  6                          G   
+247CM cL T$From 2003Ah03                                                        
+247CM  A 5679.3    1635.4    5   2.62  16                                       
+247CM cA IA$44.2 {I24} from I(|g+ce) imbalances                                 
+247CM cA E$Recommended by 1991Ry01 from E|a=5680.3 {I10} measured               
+247CM2cA by 1971Bb10, 5667 {I10} by 1968Ch03, and 5667 {I3} by 1970BrZN.        
+247CM3cA Adjustments were applied by 1991Ry01 because of changes in calibration 
+247CM4cA energies. E|a=5679 {I2} from 2003Ah07.                                 
+247CM  G 177.52    2  17.3   9 E2                      1.567  22                
+247CMS G  KC=0.1643 23$LC=1.015 15$MC=0.285 4                                   
+247CMS G  NC=0.0794 12$OC=0.0193 3$PC=0.00327 5$QC=2.52E-5 4                    
+247CM cG $Ice(K):Ice(L1+L2):Ice(L3):Ice(M+N)=0.19 {I3}:0.71 {I8}:0.31           
+247CM2cG {I3}:0.41 {I5} (2003Ah07)                                              
+247CM cG $Ice(K):Ice(L1+L2):Ice(L3):Ice(M):Ice(N)=                              
+247CM2cG 4.1 {I6}:18 {I1}:9 {I1}:12 {I1}:6.4 {I10} (1970BrZN)                   
+247CM cG $|a(K)exp=0.25, |a(exp)=1.27 (1968Ch03).                               
+247CM  L 432.98    23(3/2+)                                                 G   
+247CM  A 5651      2 3.3     2   19.5  17                                       
+247CM  G 28        2                                                        S  S
+247CM  L 448.8     13(5/2+)                                                 G   
+247CM  A 5635      2 4.9     2   10.7  8                                        
+247CM  G 16        3                                                        S  S
+247CM  G 44        2                                                        S  S
+247CM  L 516.68    11(7/2+)                                                 G   
+247CM  A 5569      2 1.9     LE   11   GE                                       
+247CM cA E$From E|a(404.9 level)=5679.3 {I16} and the level energy difference   
+247CM2cA from least-squares fit to E|g's (recoil energy is taken into account). 
+247CM3cA E|a=5568 {I2}, measured by 2003Ah07, is assumed by the evaluator to be 
+247CM4cA a doublet, feeding the 516.7- and 518.6-keV levels.                    
+247CM cA IA$1.9 {I1} was measured by 2003Ah07 for the doublet.                  
+247CM  G 68        2                                                        S  S
+247CM  G 83.7      2                                                        S  S
+247CM  G 289.3     1 0.070   7 [M1+E2]                 0.9    7                 
+247CMS G  KC=0.7 6$LC=0.19 6$MC=0.049 13                                        
+247CMS G  NC=0.014 4$OC=0.0034 9$PC=0.00064 21$QC=3.E-5 3                       
+247CM  L 518.59     7(3/2+)                                                 H   
+247CM  A 5567      2 1.9     LE   10   GE                                       
+247CM cA E$From E|a(404.9 level)=5679.3 {I16} and the level energy difference   
+247CM2cA from least-squares fit to E|g's (recoil energy is taken into account). 
+247CM3CA E|a=5568 2, measured by 2003Ah07, is assumed by the evaluator to be a  
+247CM4CA doublet, feeding the 516.7- and 518.6-keV levels.                      
+247CM cA IA$1.9 {I1} was measured by 2003Ah07 for the doublet.                  
+247CM  G 113.7     1 0.024   5 [M1+E2]                 8      3                 
+247CMS G  LC=5.5 20$MC=1.5 7                                                    
+247CMS G  NC=0.41 18$OC=0.10 4$PC=0.018 6$QC=0.0005 4                           
+247CM  G 291.20    8 0.30    3 [M1+E2]                 0.9    7                 
+247CMS G  KC=0.7 6$LC=0.19 6$MC=0.048 13                                        
+247CMS G  NC=0.013 4$OC=0.0033 9$PC=0.00063 21$QC=3.E-5 3                       
+247CM  L 581.67     8(5/2+)                                                 H   
+247CM  A 5505      2 0.27    5    33   7                                        
+247CM cA IA$0.060 {I17} from I(|g+ce) imbalances                                
+247CM  G 315.8     1 0.024   3 [M1+E2]                 0.7    6                 
+247CMS G  KC=0.5 5$LC=0.15 6$MC=0.037 12                                        
+247CMS G  NC=0.010 3$OC=0.0026 8$PC=0.00049 18$QC=2.6E-5 21                     
+247CM  G 354.3     1 0.013   2 [M1+E2]                 0.5    4                 
+247CMS G  KC=0.4 4$LC=0.10 5$MC=0.026 10                                        
+247CMS G  NC=0.0072 25$OC=0.0018 7$PC=0.00034 14$QC=1.9E-5 16                   
+                                                                                
+247CM    246CM(D,P), 248CM(D,T)        1971BR27                  15NDS    201503
+247CM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CM c  1971Br22: Single neutron transfer reaction studied with 12-MeV         
+247CM2c  deuteron beam on {+246,248}Cm targets. Protons and tritons were        
+247CM3c  detected at angles of 90|' and 140|' by magnetic spectrograph          
+247CM4c  detector. The (d,t) reaction was also studied                          
+247CM5c  with E(d)=16 MeV at 10|', 20|', 30|', 40|' and 50|'.                   
+247CM cL E(C,Z)$Level assumed doublet by authors.                               
+247CM cL J$Assignments made by 1971Br27. Estimated L-values and comparison      
+247CM2cL of measured cross sections with the calculated "signatures" were       
+247CM3cL the bases for spin and orbit assignments.                              
+247CM CL BAND(A)$9/2[734] BAND                                                  
+247CM CL BAND(B)$5/2[622] BAND                                                  
+247CM CL BAND(D)$7/2[624] BAND                                                  
+247CM CL BAND(E,C)$1/2[620] BAND                                                
+247CM CL BAND(F)$7/2[613] BAND?                                                 
+247CM CL BAND(G)$1/2[631] BAND                                                  
+247CM CL BAND(H,Z)$3/2[622] BAND?                                               
+247CM CL BAND(I)$9/2[615] BAND?                                                 
+247CM CL BAND(L)$1/2[750] or [761]  BAND?                                       
+247CM2CL Usually accepted Nilsson assignment is 1/2[761].                       
+247CM3CL 1/2[750] was used by 1971Br27 because of the wavefunction              
+247CM4CL structure.                                                             
+247CM CL BAND(M)$1/2[501] BAND                                                  
+247CM CL BAND(N)$3/2[631] BAND?                                                 
+247CM CL BAND(P)$5/2[503] BAND?                                                 
+247CM  L 0.0         9/2-                                                   A  S
+247CM  L 59        3 11/2-                                                  A  S
+247CM  L 137         13/2-                                                  A  S
+247CM cL E$Not in Table III (1971Br27) but is given in the level scheme         
+247CM2cL of Fig. 10 (1971Br27)                                                  
+247CM  L 217       2 15/2-                                                  A   
+247CM  L 227       1 5/2+                                                   B   
+247CM  L 287       4 (7/2+)                                                 D   
+247CM  L 309       3                                                            
+247CM  L 318       3 9/2+                                                   B   
+247CM  L 336       5                                                            
+247CM  L 344       2 (9/2+)                                                 D   
+247CM  L 370       3                                                           ?
+247CM  L 381       5 (11/2+)                                                B   
+247CM  L 398       4 (11/2+)                                                D   
+247CM  L 404       1 1/2+                                                   E   
+247CM  L 417       6 (3/2+)                                                 E  ?
+247CM  L 439       3 (9/2+)                                                 F   
+247CM  L 452       3 5/2+                                                   E   
+247CM  L 506       3 (1/2+)                                                 G   
+247CM  L 520       2 (7/2+)                                                 C   
+247CM  L 520       2 (3/2+)                                                 G   
+247CM  L 550       2 (9/2+)                                                 E   
+247CM  L 584       3                                                            
+247CM  L 592       2                                                            
+247CM  L 604       3 (7/2+)                                                 G   
+247CM  L 668       5 (3/2+)                                                 H   
+247CM  L 687       5 (11/2+)                                                I   
+247CM  L 699       2 (9/2+)                                                 G   
+247CM  L 699       2 (5/2+)                                                 Z   
+247CM  L 749       5 (7/2+)                                                 H   
+247CM  L 784       4 (3/2-)                                                 L   
+247CM  L 803       5                                                            
+247CM  L 819       4 (7/2-)                                                 L   
+247CM  L 819       4 (9/2+)                                                 Z   
+247CM  L 856       5                                                            
+247CM  L 897       5 (11/2-)                                                L   
+247CM cL J$Not in Table III (1971Br27) but is given in the level scheme         
+247CM2cL of Fig. 10 (1971Br27)                                                  
+247CM  L 947       2                                                            
+247CM  L 957       2 (1/2-)                                                 M   
+247CM  L 988       5                                                            
+247CM  L 1001      2 (3/2-,5/2-)                                            M   
+247CM  L 1044      3                                                            
+247CM  L 1064      3                                                            
+247CM  L 1079      3 (5/2+)                                                 N   
+247CM  L 1091      3                                                            
+247CM  L 1159      3                                                            
+247CM  L 1182      3 (9/2+)                                                 N   
+247CM  L 1199      4                                                           ?
+247CM  L 1239      5                                                            
+247CM  L 1247      5                                                            
+247CM  L 1271      3                                                            
+247CM  L 1283      3 (5/2-)                                                 P   
+247CM  L 1317      3                                                            
+247CM  L 1356      3                                                           ?
+247CM  L 1364      4                                                            
+247CM  L 1372      4                                                            
+247CM  L 1512      6                                                            
+                                                                                
+247CM    248CM(209BI,210BIG)           2010TA22                  15NDS    201503
+247CM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CM c  2010Ta22: Single-neutron transfer experiment was carried               
+247CM2c  at the ATLAS facility of Argonne National Laboratory.                  
+247CM3c  A target of {+248}Cm of 200 |mg/cm{+2} was bombarded with              
+247CM4c  {+209}Bi beam at energy of 1450 MeV. The target had a |?50 mg/cm{+2}   
+247CM5c  Au substrate backing and a 200 |mg/cm{+2} Au foil in front.            
+247CM6c  x-ray and |g coincidences along with cross coincidence with the 569    
+247CM7c  and 319 keV transition in {+207}Pb and {+210}Bi allowed unambiguous    
+247CM8c  band assignments. The |g-rays were detected using the Gammasphere      
+247CM9c  array with |?100 compton suppressed Ge detectors. Measured E|g, I|g,   
+247CMac  |g|g, (x-ray)-|g coin and |g|g|g. High spin properties described       
+247CMbc  in terms of the Woods-Saxon cranked shell model.                       
+247CM c  Others (Theoretical studies):                                          
+247CM c  2011Zh03: Experimental high spin rotational bands observed in          
+247CM2c  2010Ta22 have been investigated using the cranked shell model (CSM)    
+247CM3c  with the pairing correlations treated by particle number conserving    
+247CM4c  (PNC) method. The experimental moment of inertia and alignments and    
+247CM5c  variations with rotational frequency |w are reproduced well with these 
+247CM6c  calculations                                                           
+247CM cL E$From E|g's, assuming 1 keV uncertainty for each E|g                  
+247CM CL BAND(A)$ |n9/2[734],|a=+1/2                                            
+247CM CL BAND(a)$ |n9/2[734],|a=-1/2                                            
+247CM  L 0              9/2-                                                A   
+247CM  L 61.67      5   11/2-                                               a   
+247CM  G 61.67     5                                                            
+247CM cG E$From Adopted Gammas                                                  
+247CM  L 135.0     10   13/2-                                               A   
+247CM  G 135       1                                                           S
+247CM  L 219.7     10   15/2-                                               a   
+247CM  G 158       1                                                           S
+247CM  L 314.9     13   17/2-                                               A   
+247CM  G 180       1                                                            
+247CM  L 421.8     13   19/2-                                               a   
+247CM  G 202       1                                                            
+247CM  L 539.9     14   21/2-                                               A   
+247CM  G 225       1                                                            
+247CM  L 668.8     14   23/2-                                               a   
+247CM  G 247       1                                                            
+247CM  L 808.8     14   25/2-                                               A   
+247CM  G 140       1                                                            
+247CM  G 269       1                                                            
+247CM  L 958.8     15   27/2-                                               a   
+247CM  G 150       1                                                            
+247CM  G 290       1                                                            
+247CM  L 1119.8    16   29/2-                                               A   
+247CM  G 161       1                                                            
+247CM  G 311       1                                                            
+247CM  L 1288.8    16   31/2-                                               a   
+247CM  G 169       1                                                            
+247CM cG E$Spectral figure (Fig. 2) in 2010Ta22 indicates 170                   
+247CM  G 330       1                                                            
+247CM  L 1468.8    17   33/2-                                               A   
+247CM  G 180       1                                                           ?
+247CM  G 349       1                                                            
+247CM  L 1656.8    18   35/2-                                               a   
+247CM  G 188       1                                                            
+247CM  G 368       1                                                            
+247CM  L 1854.8    19   37/2-                                               A   
+247CM  G 198       1                                                            
+247CM  G 386       1                                                            
+247CM  L 2057.8    20   39/2-                                               a   
+247CM  G 401       1                                                            
+247CM  L 2272.8    21   41/2-                                               A   
+247CM  G 418       1                                                            
+247CM  L 2488.8    23   43/2-                                               a   
+247CM  G 431       1                                                            
+247CM  L 2718.8    23   45/2-                                               A   
+247CM  G 446       1                                                            
+247CM  L 2946.8    25   47/2-                                               a   
+247CM  G 458       1                                                            
+247CM  L 3189       3   49/2-                                               A   
+247CM  G 470       1                                                            
+247CM  L 3428       3   51/2-                                               a   
+247CM  G 481       1                                                           ?
+                                                                                
+247BK    ADOPTED LEVELS, GAMMAS                                  15NDS    201503
+247BK  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247BK  Q -613      166550    604417    5 5890    5     2012WA38                 
+247BK c                                                                         
+247BK c  Identification:                                                        
+247BK c  1965Mi08: {+247}Bk produced by irradiating {+246}Cm sample with He     
+247BK2c  ions from the Argonne 150-cm cyclotron. It was then followed by        
+247BK3c  chemical purification and mass spectrometric measurements. Half-life   
+247BK4c  was measured.                                                          
+247BK c  1956Ch77: {+244,245,246}Cm bombardment by 28-MeV He ions.              
+247BK2c  Bk was chemically separated from the decay of {+247}Cf                 
+247BK c                                                                         
+247BK c  Theoretical and Systematical studies:                                  
+247BK c  2013Ni13,2012Ni16: |a decay T{-1/2} for transitions from ground-state  
+247BK2c  to favored rotational bands using multichannel cluster model (MCCM)    
+247BK c  2012Sa05: Partial T{-1/2}, |a branching ratio to individual residual   
+247BK2c  states using Coulomb and proximity potential model for deformed nuclei 
+247BK3c  (CPPMDN).                                                              
+247BK c  2011Zh36: Systematic analysis of |a decay to members of favored bands  
+247BK2c  using the Geiger-Nutall law. Calculated the partial half-lives         
+247BK c  2010Ni02: Systematics and calculations of T{-1/2} and relative         
+247BK2c  intensities of |a decay within the generalized density-dependent       
+247BK3c  cluster model.                                                         
+247BK c  2004Pa40: Calculated deformation parameters and the proton             
+247BK2c  one-quasiparticle states of heaviest nuclei using the                  
+247BK3c  macroscopic-microscopic approach                                       
+247BK c  2003Re14: Calculated binding energy and Q|a and ground-state           
+247BK2c  deformations                                                           
+247BK2c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247BK c  1997Mo25: Calculated ground-state binding energy, proton and           
+247BK2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247BK3c  and partial half-lives for |a and |b decays                            
+247BK c  1995Mo29, 1980Ho32: Calculated ground-state masses and nuclear         
+247BK2c  ground-state deformations                                              
+247BK c  1993Bu09: Calculated partial |a decay half-life, |a branching, and     
+247BK2c  nuclear radius using the cluster model predictions                     
+247BK c  1985Lo17: Calculation of spontaneous fission half-life of              
+247BK2c  ground-state.                                                          
+247BK c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247BK2c  Q{-4} and masses                                                       
+247BK c  1980Ho32: Calculated fission-barrier heights, deformation and energy   
+247BK2c  at saddle-point were                                                   
+247BK c                                                                         
+247BK cG E$From {+247}Cf |e decay.                                              
+247BK cG RI$Relative photon intensities de-exciting each level, as              
+247BK2CG measured in {+247}Cf |e decay.                                         
+247BK cG M$From ce data taken in {+247}Cf |e decay.                             
+247BK cG E(S)$Transition is expected but unobserved.                            
+247BK cL J$Spin and parity assignments from (|a,t) were based on L-values       
+247BK2cL deduced from angular distributions and on relative peak intensities.   
+247BK3cL Assignments from (p,t) were based on comparison of experimental        
+247BK4cL spectroscopic factors with calculated ones.                            
+247BK CL BAND(A)$3/2[521] BAND.                                                 
+247BK CL BAND(B)$7/2[633] BAND.                                                 
+247BK CL BAND(C)$5/2[642] BAND.                                                 
+247BK CL BAND(D)$5/2[523] BAND.                                                 
+247BK CL BAND(E)$1/2[400] BAND.                                                 
+247BK2cL Assignments to this band were made by 1979Ah03 on the bases of         
+247BK3cL spectroscopic factors for (|a,t) reaction and the systematics of       
+247BK4cL orbitals.                                                              
+247BK CL BAND(F)$1/2[521] BAND.                                                 
+247BK2cL Assignments to this band were made by 1979Ah03 from (|a,t) data.       
+247BK CL BAND(G)$7/2[514] BAND.                                                 
+247BK2cL Assignment was proposed by 1979Ah03 from (|a,t) data and from          
+247BK3cL systematics of orbitals.                                               
+247BK CL BAND(H)$9/2[624] BAND?.                                                
+247BK2cL The assignment was suggested by 1979Ah03 from comparison of (|a,t)     
+247BK3cL spectroscopic factor with that for 13/2+, 9/2[624] state in            
+247BK4cL {+251}Es (1978Ah02).                                                   
+247BK  XE247CF EC DECAY                                                         
+247BK  XA251ES A DECAY                                                          
+247BK  XT246CM(A,T) E=28, 29 MEV                                                
+247BK  XP249BK(P,T) E=15 MEV                                                    
+247BK PN                                                                     6  
+247BK  L 0.0          3/2-             1380 Y    250                        A   
+247BK2 L %A LE 100                                                              
+247BK cL $A calculated half-life of |?10000 y for spontaneous fission           
+247BK2cL (1985Lo17) yields %SF|?12.                                             
+247BKX L XREF=AET                                                               
+247BK cL T$From 1965Mi08                                                        
+247BK cL J$Favored |a decay from g.s level in {+251}Es                          
+247BK  L 29.88     11 (5/2-)                                                A   
+247BKX L XREF=AET                                                               
+247BK cL J$Band member; |g to 3/2- g.s. level                                   
+247BK  G 29.9      2 100                                                        
+247BK  L 40.81     11  7/2+                                                 B   
+247BKX L XREF=AEP                                                               
+247BK cL J$L=0 in {+249}Bk(p,t) reaction [J|p({+249}Bk)=7/2+].                  
+247BK  G 10.9                                                               S  S
+247BK  G 40.8      3                                                            
+247BK  L 71.60     13 (7/2-)                                                A   
+247BKX L XREF=AET                                                               
+247BK cL J$Band member in (|a,t) data                                           
+247BK  L 82.81     23 (9/2)+                                                B   
+247BKX L XREF=AEP                                                               
+247BK cL J$L=2 in {+249}Bk(p,t) reaction [J|p({+249}Bk)=7/2+];                  
+247BK2cL log{Ift}=6.05 for |e feeding from (7/2+) {+247}Cf                      
+247BK  G 42.0      2 100                                                        
+247BK  L 125.5      4 (9/2-)                                                A   
+247BKX L XREF=ET                                                                
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 137       5 (11/2+)                                                B   
+247BKX L XREF=P                                                                 
+247BK cL J$From band member in (p,t) data                                       
+247BK  L 196       3  (13/2+)                                               B   
+247BKX L XREF=PT                                                                
+247BK cL J$From band member in (|a,t) and (p,t) data                            
+247BK  L 265       2  (15/2+)                                               B   
+247BKX L XREF=P                                                                 
+247BK cL J$From band member in (p,t) data                                       
+247BK  L 334.92    12 (5/2)+                                                C   
+247BKX L XREF=E                                                                 
+247BK cL J$M1 294.1|g to 7/2+ level; 334.9|g to (3/2-) level, 305.2|g to        
+247BK2cL (5/2-) level                                                           
+247BK  G 294.1     1 100     8 M1                      1.651                    
+247BK  G 305.2     3 0.91    14                                                 
+247BK  G 334.9     2 2.9     3                                                  
+247BK  L 378.1     6  (7/2+)                                                C  ?
+247BKX L XREF=E                                                                 
+247BK cL J$337.3|g to 7/2+ level                                                
+247BK2cL 334.9-keV                                                              
+247BK  G 337.3     5 100                                                        
+247BK  L 447.80     9(5/2-)                                                 D   
+247BKX L XREF=E                                                                 
+247BK cL J$(E1)407.0|g to 7/2+ level; M1+E2 447.8|g to (3/2-) level             
+247BK  G 376.2     1 12.9    13                                                 
+247BK  G 407.0     1 35      4  (E1)                   0.0238                   
+247BK  G 417.9     1 62      5  M1+E2     0.68   24    0.494  10            *   
+247BK  G 447.8     1 100     7  M1+E2     1.0    2     0.319  7                 
+247BK  L 487       3  (1/2+)                                                E   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 489.4      3 (7/2-)                                                D   
+247BKX L XREF=E                                                                 
+247BK cL J$363.9|g to (9/2-) level,  459.5|g to (5/2-)                          
+247BK2cL from 447.8-keV level                                                   
+247BK  G 363.9     2  100    19                                                 
+247BK  G 417.9                                                              *   
+247BK  G 459.5     3  100    15                                                 
+247BK  L 518       5  (3/2+)                                                E   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 541       3  (9/2-)                                                D   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 587       4  (13/2+)                                               C   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 704       4  (1/2-)                                                F   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 743       3  (5/2-)                                                F   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 815       4  (7/2-)                                                F   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK cL J$(|a,t) data                                                          
+247BK  L 828       5  (9/2-)                                                F   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 904       3  (9/2-)                                                G   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 983       3                                                            
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 1149      4                                                            
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+247BK  L 1166      4  (13/2+)                                               H   
+247BKX L XREF=T                                                                 
+247BK cL J$From band member in (|a,t) data                                      
+                                                                                
+247BK    247CF EC DECAY                1979AH03                  15NDS    201503
+247BK  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247BK c  1979Ah03: {+247}Cf produced by irradiating {+246}Cm with 40-MeV        
+247BK2c  |a-particle at the Argonne cyclotron. Chemical separation of the       
+247BK3c  product was followed by isotope separation. |g spectra were measured   
+247BK4c  with a Ge(Li) detector. Cd, Cu and Al absorbers were used to reduce    
+247BK5c  summing-effect interference from intense Bk K x-rays.                  
+247BK6c  The electron spectra was measured with a cooled Si(Li)                 
+247BK7c  spectrometer with FWHM at 100 keV=1.0 keV                              
+247BK c  1977Ah01: Experimental evidence for the identification of the deformed 
+247BK2c  proton orbital 1/2[521]                                                
+247BK cE IE$Electron-capture intensity per 100 |e decay, deduced from           
+247BK2cE intensity balance at each level.                                       
+247BK cG E$Measurements of 1979Ah03.                                            
+247BK cG RI$Measurements of 1979Ah03.                                           
+247BK cG M$From conversion electron data of 1979Ah03. Absolute                  
+247BK2cG conversion coefficients were determined by measuring |g and ce spectra 
+247BK3cG of a {+203}Hg source at identical geometries. Multipolarities in square
+247BK4cG brackets are from level scheme; they were not determined               
+247BK5cG experimentally.                                                        
+247BK cG                                                                        
+247BK cG $x-rays:                                                               
+247BK cG $K x-ray measurements are from 1979Ah03.                               
+247BK cG           x-ray intensities given are in same units as the photons.    
+247BK TG                                                                        
+247BK2TG              E|g           I|g        Transitions                      
+247BK3TG            -------     --------    -------------                       
+247BK4TG            107.2 1     2130 150     K|a{-2} x-ray                      
+247BK5TG            112.1 1     3370 240     K|a{-1} x-ray                      
+247BK6TG            126.2 2     1260 90      K|b{-1}' x-ray                     
+247BK7TG            130.3 2      470 40      K|b{-2}' x-ray                     
+247BK8TG                                                                        
+247BK9TG                                                                        
+247BK cG $The total observed K x-ray intensity is 7230 {I300}; the              
+247BK2cG calculated intensity due to internal conversions (153 {I10}) and those 
+247BK3cG due to electron captures (6250 {I996}) deduced from |e branchings and  
+247BK4cG theoretical K/|e ratios for Q+=613 {I16} keV yield 6403 {I996} for     
+247BK5cG total K x-ray intensity. Experimental K-shell fluorescence yield of    
+247BK6cG 0.971 {I4} (1979Ah01) was used in calculations. For Q+=570 keV,        
+247BK7cG the calculated total K x-ray intensity is 6682 {I1031}.                
+247BK cL J$From Adopted Levels.                                                 
+247BK CL BAND(A)$3/2[521] BAND                                                  
+247BK CL BAND(B)$7/2[633] BAND                                                  
+247BK CL BAND(D)$5/2[642] BAND                                                  
+247BK CL BAND(E)$5/2[523] BAND                                                  
+247BK DG CC$FROM BrIcc v2.3a (30-Jun-2013) 2008Ki07, "Frozen Orbitals" appr.    
+247CF  P 0.0         (7/2+)            3.11 H    3              613       16    
+247CF cP J,T$From Adopted Levels in {+247}Cf                                    
+247CF cP QP$From 2012Wa38                                                       
+247BK  N 0.0104    9 1.00      0.99965 5 1.0067                                 
+247BK PN                                                                     3  
+247BK cN NR$To convert I|g's to per 100 |e decays, a normalization              
+247BK2cN factor of 0.0104 {I9} was obtained by the evaluator from the sum of    
+247BK3cN transition intensities feeding the ground-state. Any possible direct |e
+247BK4cN feeding to g.s. is neglected since, for log{If{+1u}t}>8.5, one obtains 
+247BK5cN I|e<0.1%.                                                              
+247BK  L 0.0          3/2-             1380 Y    250                        A   
+247BK  L 29.88     11(5/2-)                                                 A   
+247BK  E                                                                        
+247BK  G 29.9      2 23.1    18[M1+E2]   0.124   4     361    1287        11    
+247BK cG $Ice(M):Ice(N+O)=1650 {I200}:620 {I60}.                                
+247BK cG $1.2 {I2}|<I|g|< 34 {I4} from Ice(M) and |a(M)(E2)=1360 {I50},         
+247BK2cG |a(M)(M1)=48.8 {I12}                                                   
+247BK3cG If |d(29.9|g)=0.124 {I4}, as it is for the similar intraband           
+247BK4cG transition, 32.6|g in {+241}Am (see 2005Ma88) and                      
+247BK5cG |a(M)(M1+E2)=68.7 {I23}; |a(N+O)(M1+E2)=25.95 {I82} (BrICC: 2008Ki07), 
+247BK6cG then I|g (weighted average)=23.1 {I18}.                                
+247BK7cG With |a=361 {I12}, I(|g+ce)= 87 {I11}                                  
+247BK  L 40.81     117/2+                                                   B   
+247BK  E                          74   12  5.58   8                             
+247BKS E CK=0.689 4$CL=0.2258 23$CM+=0.0852 11                                  
+247BK cE IE$Total |e feeding to the 29.88-, 40.81-, and 71.60-keV levels        
+247BK  G 10.9                                                                  S
+247BK  G 40.8      3 0.18    4 [M2]                    6.45E3 25                
+247BKS G  LC=4.58E3 17$MC=1.36E3 6                                              
+247BKS G  NC=392 15$OC=100 4$PC=18.4 7$QC=1.04 4                                
+247BK cG $Ice(M):Ice(N+O)250 {I50}:100 {I20}.                                   
+247BK cG RI$0.18 {I4} from Ice(M) and |a(M)(M2)=1360 {I30}                      
+247BK  L 71.60     13(7/2-)                                                 A   
+247BK  E                                                                       ?
+247BK  G 41.7                                                                  S
+247BK  G 71.6                                                                  S
+247BK  L 82.81     23(9/2)+                                                 B   
+247BK  E                          21   3   6.05   7                             
+247BKS E CK=0.680 4$CL=0.232 3$CM+=0.0880 13                                    
+247BK cE IE$Total |e feeding to the 82.81-, and 125.5-keV levels                
+247BK  G 42.0      2 17.4    17[M1+E2]   0.13    2     117    7 21.1      31    
+247BK cG $Ice(M):Ice(N+O)=370 {I40}:140 {I20}.                                  
+247BK cG $1.4 {I2}|<I|g|<21 {I2} from Ice(M) and |a(M)(E2)=260 {I8},            
+247BK2CG |a(M)(M1)=17.9 {I4}.                                                   
+247BK3cG If |d(42.0|g)=0.13 {I2}, as it is for the similar intraband transition,
+247BK4cG 41.805 |g in {+249}Bk (see 2011Ab07)                                   
+247BK5cG and |a(M)(M1+E2)=21.9 {I14}; |a(N+O)(M1+E2)=7.65 {I41},                
+247BK6cG then I|g (weighted average)=17.4 {I17}                                 
+247BK7cG With |a=117 {I7}, I(|g+ce)= 21.1 {I31}                                 
+247BK  L 125.5      4(9/2-)                                                 A   
+247BK  E                                                                       ?
+247BK  G 53.9                                                                  S
+247BK  G 95.6                                                                  S
+247BK  L 334.92    12(5/2)+                                                 D   
+247BK  E                          2.7  3   6.18  10                             
+247BKS E CK=0.53 3$CL=0.335 18$CM+=0.136 9                                      
+247BK  G 294.1     1  98     7 M1                      1.651                    
+247BKS G  KC=1.294 19$LC=0.268 4$MC=0.0656 10                                   
+247BKS G  NC=0.0181 3$OC=0.00465 7$PC=0.000918 13$QC=6.42E-5 9                  
+247BK cG $|a(K)exp:|a(L)exp:|a(M)exp=1.40:0.27:0.08;                            
+247BK2cG Ice(K):Ice(L):Ice(M)=137 {I12}:26 {I3}:8 {I2}                          
+247BK  G 305.2     3 0.89    14[E1]                    0.0430                   
+247BKS G  KC=0.0337 5$LC=0.00701 10$MC=0.001712 25                              
+247BKS G  NC=0.000469 7$OC=0.0001185 17$PC=2.22E-5 4$QC=1.217E-6 18             
+247BK  G 334.9     2 2.8     3 [E1]                    0.0354                   
+247BKS G  KC=0.0278 4$LC=0.00569 8$MC=0.001389 20                               
+247BKS G  NC=0.000381 6$OC=9.63E-5 14$PC=1.81E-5 3$QC=1.014E-6 15               
+247BK  L 378.1     6 (7/2+)                                                 D  ?
+247BK  E                                                                       ?
+247BK  G 337.3     5 0.6     AP[M1]                    1.130                   ?
+247BKS G  KC=0.886 13$LC=0.183 3$MC=0.0448 7                                    
+247BKS G  NC=0.01235 18$OC=0.00318 5$PC=0.000627 10$QC=4.38E-5 7                
+247BK  L 447.80     9(5/2-)                                                 E   
+247BK  E                         1.60  16  5.65  16                             
+247BKS E CK=0.16 10$CL=0.58 6$CM+=0.26 4                                        
+247BK  G 376.2     1 7.1     7 [M1+E2]                 0.5    4                 
+247BKS G  KC=0.4 3$LC=0.09 4$MC=0.024 10                                        
+247BKS G  NC=0.0066 25$OC=0.0017 7$PC=0.00032 14$QC=1.8E-5 15                   
+247BK  G 407.0     1 19      2 (E1)                    0.0238                   
+247BKS G  KC=0.0188 3$LC=0.00373 6$MC=0.000907 13                               
+247BKS G  NC=0.000249 4$OC=6.30E-5 9$PC=1.194E-5 17$QC=6.98E-7 10               
+247BK cG $|a(K)exp<0.11, |a(L)exp<0.11;                                         
+247BK2cG Ice(K):Ice(L)=<2:<2                                                    
+247BK  G 417.9     1 34      3 M1+E2     0.58    2     0.494  10            *   
+247BKS G  KC=0.380 8$LC=0.0852 15$MC=0.0211 4                                   
+247BKS G  NC=0.00583 10$OC=0.001493 25$PC=0.000291 5$QC=1.89E-5 4               
+247BK cG MR$From |a(exp) and |a(theory)(BrICC: 2008Ki07)                        
+247BK cG $|a(K)exp=0.38, |a(L)exp=0.08;                                         
+247BK2cG Ice(K):Ice(L)=13 {I2}:2.8 {I9}                                         
+247BK  G 447.8     1 55      4 M1+E2     0.92    2     0.319  7                 
+247BKS G  KC=0.240 6$LC=0.0589 11$MC=0.01476 25                                 
+247BKS G  NC=0.00408 7$OC=0.001041 18$PC=0.000201 4$QC=1.20E-5 3                
+247BK cG MR$From |a(exp) and |a(theory)(BrICC: 2008Ki07)                        
+247BK cG $|a(K)exp=0.24, |a(L)exp=0.06;                                         
+247BK2cG Ice(K):Ice(L)=13 {I2}:3.1 {I9}                                         
+247BK  L 489.4      3(7/2-)                                                 E   
+247BK  E                         0.032 7   6.99  18                             
+247BKS E CL=0.667 14$CM+=0.333 15                                               
+247BK  G 363.9     2 1.1     2 [M1+E2]                 0.5    4                 
+247BKS G  KC=0.4 4$LC=0.10 5$MC=0.027 10                                        
+247BKS G  NC=0.007 3$OC=0.0019 7$PC=0.00036 16$QC=2.0E-5 16                     
+247BK  G 417.9                                                              *   
+247BK  G 459.5     3 1.10    16[M1+E2]                 0.28   21                
+247BKS G  KC=0.21 17$LC=0.05 3$MC=0.013 6                                       
+247BKS G  NC=0.0036 17$OC=0.0009 5$PC=0.00018 9$QC=1.1E-5 8                     
+                                                                                
+247BK    251ES A DECAY                 1979AH03                  15NDS    201503
+247BK  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247BK c  1979Ah03: {+251}Es produced from decay of {+251}Fm followed by mass    
+247BK2c  separation. The |a-particle spectrum was measured with the Argonne     
+247BK3c  double focussing magnetic spectrometer (FWHM=5 keV) and Au-Si          
+247BK4c  surface barrier detector (FWHM|?13.0 keV)                              
+247BK cA E$From 1979Ah03. Uncertainties are from spectrometer calibration.      
+247BK cA IA$Alpha intensities per 100 |a decays, measured by 1979Ah03           
+247BK CA HF$r{-0}({+247}Bk)=1.4753 83, unweighted average of                    
+247BK2CA r{-0}({+246}Cm)=1.4836 5 and r{-0}({+248}Cf)=1.4670 8 (1998Ak04),      
+247BK3CA is used in calculations of HF.                                         
+247BK CL BAND(B)$3/2[521] BAND MEMBER                                           
+247BK CL BAND(A)$7/2[633] BAND MEMBER                                           
+251ES  P 0.0         3/2-              33 H      1              6598      3     
+251ES cP J,T$From Adopted Levels in {+251}Es (2013Br09)                         
+251ES cP QP$From 2012Wa38                                                       
+247BK  N                       0.005   2                                        
+247BK  L 0.0          3/2-                                                  B   
+247BK  A 6492      3 81.0    16  3.4   14                                       
+247BK  L 31        4 (5/2-)                                                 B   
+247BK  A 6462      3 9.4     10   21   9                                        
+247BK  L 42        4 7/2+                                                   A   
+247BK  A 6452      3 3.3     7    53   24                                       
+247BK  L 72        4 (7/2-)                                                 B   
+247BK  A 6422      3 3.0     6    42   19                                       
+247BK  L 84        4 (9/2)+                                                 A   
+247BK  A 6410      3 3.3     6    33   15                                       
+                                                                                
+247BK    246CM(A,T) E=28, 29 MEV       1979AH03,1977AH01         15NDS    201503
+247BK  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247BK c  1979Ah03: Thin {+246}Cm target was bombarded by |a-particles at        
+247BK2c  the Argonne FN tandem Van de Graaff accelerator.                       
+247BK3c  Tritons were detected with Kodak NTB-50 photographic emulsion plates   
+247BK4c  at 80|' and 90|' with bombarding |a energies of 28.0 MeV and 29.0 MeV  
+247BK5c  respectively.                                                          
+247BK6c  Elastically scattered |a-particles were detected with a Au-Si surface  
+247BK7c  barrier detector at 60|' to determine the absolute differential        
+247BK8c  cross sections.                                                        
+247BK c  1977Ah01: Experimental evidence for the identification of the deformed 
+247BK2c  proton orbital 1/2[521]                                                
+247BK cL S$(2J+1)S=(d|s/d|W)/N |q(DWBA), where N=120.                           
+247BK cL J$Spin and orbital assignments were based on comparison                
+247BK2cL of the experimental and calculated spectroscopic factors.              
+247BK CL BAND(A)$   3/2[521] BAND MEMBER                                        
+247BK CL BAND(B)$   7/2[633] BAND MEMBER                                        
+247BK CL BAND(C)$   1/2[400] BAND MEMBER                                        
+247BK CL BAND(D)$   5/2[523] BAND MEMBER                                        
+247BK CL BAND(E)$   5/2[642] BAND MEMBER                                        
+247BK CL BAND(F)$   1/2[521] BAND MEMBER                                        
+247BK CL BAND(G)$   7/2[514] BAND MEMBER                                        
+247BK CL BAND(H)$   9/2[624] BAND MEMBER?                                       
+247BK  L 0            3/2-                                       0.14     3 A   
+247BK  L 30        3  5/2-                                       0.18       A   
+247BK  L 72        3  7/2-                                       1.40     13A   
+247BK  L 130       3  9/2-                                                  A   
+247BK  L 196       3 13/2+                                       3.82     28B   
+247BK  L 487       3  1/2+                                       0.21     5 C   
+247BK  L 518       5  3/2+                                       0.09     3 C   
+247BK  L 541       3  9/2-                                       0.60     12D   
+247BK  L 587       4  13/2+                                      0.22     7 E   
+247BK  L 704       4  1/2-                                       0.23     5 F   
+247BK  L 743       3  5/2-                                       0.83     9 F   
+247BK  L 815       4  7/2-                                       0.35     7 F   
+247BK  L 828       5  9/2-                                       0.35     10F   
+247BK  L 904       3  9/2-                                       1.36     20G   
+247BK  L 983       3                                                            
+247BK  L 1149      4                                                            
+247BK  L 1166      4  13/2+                                      0.77     16H   
+                                                                                
+247BK    249BK(P,T) E=15 MEV           1983DE19                  15NDS    201503
+247BK  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247BK c  1983De19: {+249}Bk target was bombarded by 15-MeV protons from         
+247BK2c  Princeton University AVF cyclotron. Tritons were magnetically          
+247BK3c  analyzed by a QDDD spectrometer and detected with a position-sensitive 
+247BK4c  gas proportional counter (FWHM|?8 keV) backed by a plastic             
+247BK5c  scintillator. Data were taken at intervals of 5|' from |q=10|'         
+247BK6c  to 90|'. DWBA analysis was performed                                   
+247BK c  J|p({+249}Bk)=7/2+                                                     
+247BK cL E$From 1983De19. FWHM|?8 keV                                           
+247BK2cL No levels above 300 keV were observed.                                 
+247BK cL S$LABEL=Relative Intensity of peak at |q=20|'                          
+247BK cL J$J|p for the 41- and 196-keV levels known previously in 1977Ah01;     
+247BK2cL J|p's for all other levels were deduced by 1983De19 from relative      
+247BK3cL peak intensities, and from energy fit to the rotational band.          
+247BK cL L$From angular distribution (1983De19).                                
+247BK cL J(A)$7/2[633] band, Coriolis mixed with the 5/2[642] band.             
+247BK  L 41        1  7/2+                             0        100         A   
+247BK cL $The differential cross section at |q=20|' for the 41-keV level was    
+247BK2cL estimated to be about 30 |mb/sr.                                       
+247BK  L 84        1  9/2+                             2        48          A   
+247BK  L 137       5  11/2+                                     25          A   
+247BK  L 196       1  13/2+                                     9.7         A   
+247BK  L 265       2  15/2+                                     6.5         A   
+                                                                                
+247CF    ADOPTED LEVELS, GAMMAS                                  15NDS    201503
+247CF  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CF  Q -2475     256059    155150    606495    15    2012Wa38                 
+247CF c                                                                         
+247CF c  Identification:                                                        
+247CF c  1956Ch77: Determined {+244}Cm(|a,n) excitation function                
+247CF2c  1954Gh12: {+247}Cf produced by irradiating {+238}U with {+14}N ions    
+247CF c  at the Berkeley Crocker Laboratory 60 inch cyclotron. It was then      
+247CF2c  followed by chemical separation. Measured half-life|?2.7 h             
+247CF c  1954Hu50: He ion bombardment of {+244}Cm followed by fast chemical     
+247CF2c  Measured x-rays and determined half-life (2.5 h and |?3 h)             
+247CF c                                                                         
+247CF c  Other experimental work:                                               
+247CF c  1987Ch30: Measured {+249}Cf({+16}O,{+16}O 2n)                          
+247CF2c  production cross-sections                                              
+247CF c  1987Gr13: Measured {+249}Cf({+136}Xe,X)                                
+247CF2c  production cross-sections                                              
+247CF c  1987We01: Measured {+248}Cm({+129}Xe,X) and {+248}Cm({+132}Xe,X)       
+247CF2c  production cross-sections                                              
+247CF c                                                                         
+247CF c  Theoretical and systematical studies:                                  
+247CF c  2013Zd01: Calculated half-lives for |a and cluster decay using a       
+247CF2c  phenomenological model based on Gamow theory                           
+247CF c  2012Ni16: Calculated |a decay T{-1/2} for transitions from ground-state
+247CF2c  to favored rotational bands using Multicluster Channel Model.          
+247CF c  2012Zh01: Comparison of the low-lying one-quasineutron band for N=149  
+247CF2c  isotones between the experimental values and calculated values using   
+247CF3c  the cranked shell model (CSM) with pairing correlations                
+247CF c  2011Ad15,2010Ad17: One-quasiparticle levels using the                  
+247CF2c  microscopic-macroscopic modified TCSM, QPM and the self-consistent     
+247CF3c  SHFB approaches                                                        
+247CF c  2011Ha06: Systematic analysis of experimental work in N=149 isotones   
+247CF c  2011Zh36: Systematics and calculated partial half life of |a decay to  
+247CF2c  members of favored band. Accurate expressions are proposed for the     
+247CF3c  evaluation of partial half-lives of these transitions based on         
+247CF4c  microscopic quantum tunneling theory.                                  
+247CF c  2010Ni02: Systematics and calculations of T{-1/2} and relative         
+247CF2c  intensities of |a decay within the generalized density-dependent       
+247CF3c  cluster model.                                                         
+247CF c  2010Ni02: Systematics and calculations of T{-1/2} and relative         
+247CF2c  intensities of |a decay within the generalized density-dependent       
+247CF3c  cluster model.                                                         
+247CF c  2006Sh19: Calculated energy levels of ground-state rotational band     
+247CF2c  in N=149 isotones                                                      
+247CF c  2005Pa73: Calculated neutron one-quasiparticle states of heaviest      
+247CF2c  nuclei within a macroscopic-microscopic approach.                      
+247CF c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247CF c  1997Mo25: Calculated ground-state binding energy, proton and           
+247CF2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247CF3c  and partial half-lives for |a and |b decays                            
+247CF c  1995Mo29,1980Ho32: Calculated ground-state masses and nuclear          
+247CF2c  ground-state deformations                                              
+247CF c  1993Bu09: Calculated partial |a decay half-life, |a branching, and     
+247CF2c  nuclear radius using the cluster model predictions                     
+247CF c  1985Lo17: Calculation of spontaneous fission half-life of              
+247CF2c  ground-state.                                                          
+247CF c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247CF2c  Q{-4} and masses                                                       
+247CF c  1980Ho32: Calculated fission-barrier heights, deformation and energy   
+247CF2c  at saddle-point were.                                                  
+247CF cG RI$Relative photon intensities normalized to 100 for the               
+247CF2cG strongest |g from each level.                                          
+247CF cG RI(A)$Relative photon intensities of transitions de-exciting the       
+247CF2cG 480.4-keV level could be incorrect, if these photons include |g's      
+247CF3cG de-exciting an obscured 9/2+ member of the 5/2[622] band, expected at  
+247CF4cG about 484 keV.                                                         
+247CF CL BAND(A)$7/2[624] BAND. A=6.1.                                          
+247CF CL BAND(B)$5/2[622] BAND. A=5.9.                                          
+247CF2cL Population and depopulation of the 9/2+ (expected at 484 keV) member   
+247CF3cL should be obscured by the strongly populated (9/2-) state at 480.4 MeV 
+247CF CL BAND(D)$9/2[734] BAND. A=4.8                                           
+247CF2cL By considering the relative values of the reduced transition           
+247CF3cL rates for |g's from the 9/2- member of this band to the 7/2, 9/2       
+247CF4cL and 11/2 members of the g.s. band, 1973Ah02 suggested that this band is
+247CF5cL strongly CORIOLIS mixed.                                               
+247CF CL BAND(E)$7/2[743] BAND. A=6.7                                           
+247CF  XA251FM A DECAY                                                          
+247CF  XB247ES EC DECAY (4.55 M)                                                
+247CF  L 0.0         (7/2+)            3.11 H    3                          A   
+247CF2 L %EC=99.965 5$ %A=0.035 5                                               
+247CFX L XREF=+                                                                 
+247CF cL $Branchings were determined by 1984Ah02 from measured                  
+247CF2cL alpha and Cm K x-ray intensity ratio of 4.7|*10{+-4} {I5};             
+247CF3CL the K x-ray intensity was taken as 72.3 per 100 EC decays.             
+247CF cL T$From 1984Ah02 and 1979Ah03. Other measurements:                      
+247CF2cL 2.45 h {I15} (1956Ch77), 2.5 h (1954Hu50).                             
+247CF cL J$Analogy to {+245}Cm suggests 7/2[624] neutron orbital.               
+247CF  L 55.00     11(9/2+)                                                 A   
+247CFX L XREF=A                                                                 
+247CF cL J$M1+E2 55.0|g to (7/2+) g.s.                                          
+247CF  G 55.0      2 100        M1+E2    0.51    5     122    11                
+247CF  L 122.09    11(11/2+)                                                A   
+247CFX L XREF=A                                                                 
+247CF cL J$E2 122.1|g to (7/2+) g.s.; M1+E2 67.1|g to (9/2+)                    
+247CF  G 67.1      2 100     18 M1+E2    0.45    10    50     8                 
+247CF  G 122.1     2 100     18 E2                     9.12                     
+247CF  L 201.0      4(13/2+)                                                A   
+247CFX L XREF=A                                                                 
+247CF cL J$Energy fit to the 7/2[624] band                                      
+247CF  L 383.2     3 (5/2+)                                                 B   
+247CFX L XREF=A                                                                 
+247CF cL J$M1 383.2|g to (7/2+) g.s.; energy fit to the 5/2[622] band           
+247CF  G 383.2     3 100        M1                     0.943                    
+247CF  L 427.2      4(7/2+)                                                 B   
+247CFX L XREF=A                                                                 
+247CF cL J$|g's to (5/2+) and (9/2+) states; energy fit to the 5/2[622] band    
+247CF  G 44.0      4                                                            
+247CF  G 372.2     4                                                            
+247CF  L 480.40     9(9/2-)                                                 D   
+247CFX L XREF=A                                                                 
+247CF cL J$E1 358.3|g to (11/2+) and E1 480.4|g to (7/2+). Favoured |a          
+247CF2cL transition from {+251}Fm with HF=1.63 {I13}                            
+247CF  G 358.3     1 33.0    21 E1                     0.0319               A   
+247CF  G 425.4     1 100     6  E1                     0.0225               A   
+247CF  G 480.4     1 41.1    21 E1                     0.0178               A   
+247CF  L 531.99    21(11/2-)                                                D   
+247CFX L XREF=A                                                                 
+247CF cL J$|g's to (9/2-), (9/2+), (11/2+) and (13/2+) states; energy           
+247CF2cL fit to the 9/2[734] band                                               
+247CF  G 51.4      4                                                            
+247CF  G 331.0     3 65      13                                                 
+247CF  G 410.0     3 93      13                                                 
+247CF  G 477.0     3 100     15                                                 
+247CF  L 551.0     10(11/2+)                                                B   
+247CFX L XREF=A                                                                 
+247CF cL J$|g to (9/2+) state; energy fit to 5/2[622] band                      
+247CF  G 496       1 100                                                        
+247CF  L 595       4  (13/2-)                                               D   
+247CFX L XREF=A                                                                 
+247CF cL J$Energy fit to the 9/2[734] band                                      
+247CF  L 634       5  (13/2+)                                               B   
+247CFX L XREF=A                                                                 
+247CF cL J$Energy fit to 5/2[622] band                                          
+247CF2cL (11/2+) member.                                                        
+247CF  L 678.0      6 (7/2-)                                                E   
+247CFX L XREF=A                                                                 
+247CF cL J$|g's to the (7/2+) and (9/2+);                                       
+247CF2cL analogy to a similar band at 644 keV in {+245}Cm, 1973Ah02             
+247CF3cL suggested the 7/2-, 7/2[743] assignment.                               
+247CF  G 623.0     8  27     8                                                  
+247CF  G 678.0     8  100    23                                                 
+247CF  L 738.0      8 (9/2-)                                                E   
+247CFX L XREF=A                                                                 
+247CF cL J$|g's to the (9/2+), (11/2+) states of the g.s. band;                 
+247CF2cL energy fit to the 7/2[743] band                                        
+247CF  G 616       1  100    AP                                                 
+247CF  G 683       1  80     AP                                                 
+                                                                                
+247CF    247ES EC DECAY                                          15NDS    201503
+247CF  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CF c  {+247}Es |e decay scheme has not been studied.                         
+247ES  P 0.0           (7/2+)          4.55 M    26             2475      25    
+247ES cP J,T$From Adopted Levels in {+247}Cf                                    
+247ES cP QP$From 2012Wa38                                                       
+247CF  N                       0.93    AP                                       
+247CF  L 0.0           (7/2+)                                                   
+247CF cL J$From Adopted Levels                                                  
+                                                                                
+247CF    247ES EC DECAY (4.55 M)                                 15NDS    201503
+247CF  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CF c  {+247}Es |e decay scheme has not been studied.                         
+247ES  P 0.0+X         (7/2+)          4.55 M    26             2475      25    
+247ES cP J,T$From Adopted Levels in {+247}Cf                                    
+247ES cP QP$From 2012Wa38                                                       
+247CF  N                       0.93    AP                                       
+247CF  L 0.0           (7/2+)                                                   
+247CF cL J$From Adopted Levels                                                  
+                                                                                
+247CF    251FM A DECAY                 1973AH02                  15NDS    201503
+247CF  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247CF c  1973Ah02: {+251}Fm was produced by bombarding 32-MeV |a on {+249}Cf    
+247CF2c  The |a-particle decay was measured with the Argonne magnetic alpha     
+247CF3c  spectrometer (FWHM=5 keV) and 14 position-sensitive Au-Si surface      
+247CF4c  barrier detectors. |g-rays associated with the |a decay was identified 
+247CF5c  by |a-|g coincidence measurements for which the |g's were detected     
+247CF6c  with a Ge(Li)diode.                                                    
+247CF cA $|a branching was deduced by 1978Ah02 as 1.80% {I13} from              
+247CF2cA measured Einsteinium K x-ray/|a ratio of 40 {I2} and estimated         
+247CF3cA Einsteinium K x-ray intensity of 0.733 {I39} per |e decay.             
+247CF cA E$From 1973Ah02. The original energies have been                       
+247CF2cA increased by 1 keV, as recommended by 1991Ry01, due to change          
+247CF3cA in calibration energy.                                                 
+247CF cA IA$Intensity per 100 |a decays measured by 1973Ah02.                   
+247CF CA HF$r{-0}({+247}Cf)=1.4725 55, unweighted average of                    
+247CF2CA r{-0}({+248}Cf)=1.4670 8 and                                           
+247CF3CA r{-0}({+246}Cf)=1.478 14 (1998Ak04), is used in the calculations of HF 
+247CF TG           x-rays (Cf): 1973Ah02                                        
+247CF2TG                                                                        
+247CF3TG             E(x-ray)   I(x-ray)   Transitions                          
+247CF4TG             --------   --------   -----------                          
+247CF5TG             109.8 2    1.20 13    K|a{-2} x-ray                        
+247CF6TG             115.0 2    1.8 2      K|a{-1} x-ray                        
+247CF7TG             129.5 3    0.65 9     K|b{-1}' x-ray                       
+247CF8TG             133.6 4    0.24 5     K|b{-2}' x-ray                       
+247CF9TG                                                                        
+247CF cG $See 1972Di02 for very accurate K x-ray energies and                   
+247CF2CG relative transition probabilities.                                     
+247CF cG $K fluorescence yield for californium was deduced by 1979Ah01          
+247CF2cG to be {Iw{-k}}=0.973 {I4} from K x-ray and K Auger-electron intensities
+247CF cG $|a|g: See 1973Ah02 for coincidence data.                              
+247CF cG E$From 1973Ah02.                                                       
+247CF cG RI$Photon intensity per 100 |a decays of {+251}Fm, measured            
+247CF2cG by 1973Ah02, unless otherwise indicated.                               
+247CF cG M$From |g and ce work of 1973Ah02. I(ce)'s are given per               
+247CF2cG 100 |a decays. Multipolarities in square brackets are from             
+247CF3cG the level scheme; they were not determined experimentally.             
+247CF cG RI(F)$From 1978Ah02.                                                   
+247CF CL BAND(A)   7/2[624] BAND MEMBER                                         
+247CF CL BAND(B)   5/2[622] BAND MEMBER                                         
+247CF CL BAND(D)   9/2[734] BAND MEMBER                                         
+247CF CL BAND(E)   7/2[743] BAND MEMBER                                         
+247CF DG CC$FROM BrIcc v2.3a (30-Jun-2013) 2008Ki07, "Frozen Orbitals" appr.    
+251FM  P 0.0         (9/2-)            5.30 H    8              7425.1    20    
+251FM cP J,T$From Adopted Levels in {+251}Fm (2013Br09)                         
+251FM cP QP$From 2012Wa38                                                       
+247CF  N 1.0          1.0      0.0180  13                                       
+247CF PN                                                                     3  
+247CF  L 0.0         (7/2+)            3.11 H    3                          A   
+247CF CL T$From |a decay measurement of {+247}Cf (1984Ah02)                     
+247CF  A 7306      3 1.5     1  8.69E3 88                                       
+247CF  L 55.00     11(9/2+)                                                 A   
+247CF  A 7252      3  0.93   8  8.5E3  10                                       
+247CF  G 55.0      2  0.58   8 M1+E2     0.47    4     108    9 63.2      13    
+247CFS G  LC=79 7$MC=21.3 18                                                    
+247CFS G  NC=6.0 5$OC=1.50 13$PC=0.255 19$QC=0.00645 18                         
+247CF cG $Ice(L1+L2):Ice(L3):Ice(M):Ice(N+O)=                                   
+247CF2cG 33 {I3}:14.5 {I15}:12.2 {I13}:5.2 {I6}                                 
+247CF cG MR$From |a(M)(exp) and |a(theory)(BrICC: 2008Ki07)                     
+247CF  L 122.09    11(11/2+)                                                A   
+247CF  A 7185      3 0.29    3  1.49E4 20                                       
+247CF  G 67.1      2 0.28    5 M1+E2     0.50    1     50.8   1214.5      7     
+247CFS G  LC=37.2 9$MC=9.98 25                                                  
+247CFS G  NC=2.79 7$OC=0.704 17$PC=0.121 3$QC=0.00349 7                         
+247CF cG $Ice(L1+L2):Ice(L3):Ice(M):Ice(N+O)=7.8 {I8}:|?2:2.9 {I4}:1.1 {I2}     
+247CF cG MR$From |a(M)(exp) and |a(theory)(BrICC: 2008Ki07)                     
+247CF  G 122.1     2 0.28    5 E2                      8.88     2.8       3     
+247CFS G  LC=6.39 11$MC=1.82 3                                                  
+247CFS G  NC=0.513 9$OC=0.1270 21$PC=0.0204 4$QC=9.00E-5 14                     
+247CF cG $Ice(L1+L2):Ice(L3):Ice(M):Ice(N+O)=1.10 {I16}:0.70 {I12}:0.70         
+247CF2cG {I13}:0.4 {I1}                                                         
+247CF  L 201.0      4(13/2+)                                                A   
+247CF  A 7107      5  0.05   AP 41638  AP                                       
+247CF  L 383.2     3 (5/2+)                                                 B   
+247CF  A 6929      2  1.8    1   204   20                                   C   
+247CF  G 383.2     3  1.09   13M1                      0.870    2.0       2 FC  
+247CFS G  KC=0.680 10$LC=0.1421 21$MC=0.0349 5                                  
+247CFS G  NC=0.00965 14$OC=0.00250 4$PC=0.000484 7$QC=2.83E-5 4                 
+247CF cG $Ice(K):Ice(L)=0.85 {I14}:|?0.2                                        
+247CF  L 427.2      4(7/2+)                                                 B   
+247CF  A 6886      2  1.7    1   141   14                                   C   
+247CF  G 44.0      4 1.26    14                                 1.26      14    
+247CF cG $Ice(M)=0.7 {I2}                                                       
+247CF cG $I(|g+ce)=1.26 {I14} deduced from intensity balance                    
+247CF  G 372.2     4  0.25   5 [M1]                    0.942    0.44      10 C  
+247CFS G  KC=0.736 11$LC=0.1540 22$MC=0.0378 6                                  
+247CFS G  NC=0.01046 15$OC=0.00271 4$PC=0.000524 8$QC=3.07E-5 5                 
+247CF  L 480.40     9 (9/2-)                                                D   
+247CF  A 6834      2  87.0   9   1.63  13                                   C   
+247CF  G 358.3     1  17.5   17E1                      0.0316   18.1      17FC  
+247CFS G  KC=0.0248 4$LC=0.00510 8$MC=0.001246 18                               
+247CFS G  NC=0.000343 5$OC=8.76E-5 13$PC=1.606E-5 23$QC=7.65E-7 11              
+247CF cG $Ice(K)=0.44 {I6}                                                      
+247CF  G 425.4     1  53     5 E1                      0.0224   54        5 FC  
+247CFS G  KC=0.01769 25$LC=0.00354 5$MC=0.000862 12                             
+247CFS G  NC=0.000237 4$OC=6.07E-5 9$PC=1.122E-5 16$QC=5.54E-7 8                
+247CF cG $Ice(K):Ice(L)=0.87 {I14}:|?0.2                                        
+247CF  G 480.4     1  21.8   19E1                      0.01768  22.2      19FC  
+247CFS G  KC=0.01402 20$LC=0.00275 4$MC=0.000669 10                             
+247CFS G  NC=0.000184 3$OC=4.72E-5 7$PC=8.77E-6 13$QC=4.43E-7 7                 
+247CF cG $Ice(K):Ice(L)=1.0 {I1}:0.25 {I8}                                      
+247CF  L 531.99    21 (11/2-)                                               D   
+247CF  A 6783      2  4.8    2   17.6  16                                   C   
+247CF  G 51.4      4 3.74    23                                 3.74      23    
+247CF cG $Ice(M)=0.8 {I2}                                                       
+247CF cG $I(|g+ce)=3.74 {I23} deduced from intensity balance                    
+247CF  G 331.0     3  0.35   7 [E1]                    0.0372   0.36      7  C  
+247CFS G  KC=0.0291 5$LC=0.00607 9$MC=0.001485 21                               
+247CFS G  NC=0.000409 6$OC=0.0001042 15$PC=1.90E-5 3$QC=8.91E-7 13              
+247CF  G 410.0     3  0.50   7 [E1]                    0.0241   0.51      7  C  
+247CFS G  KC=0.0190 3$LC=0.00382 6$MC=0.000932 14                               
+247CFS G  NC=0.000256 4$OC=6.56E-5 10$PC=1.210E-5 17$QC=5.93E-7 9               
+247CF  G 477.0     3  0.54   8 [E1]                    0.0179   0.55      8  C  
+247CFS G  KC=0.01421 20$LC=0.00279 4$MC=0.000679 10                             
+247CFS G  NC=0.000187 3$OC=4.79E-5 7$PC=8.90E-6 13$QC=4.49E-7 7                 
+247CF  L 551.0     10(11/2+)                                                B   
+247CF  A 6763      3  0.38   6   184   33                                   C   
+247CF  G 496       1  0.08   AP[M1]                    0.430    0.11      AP C  
+247CFS G  KC=0.336 5$LC=0.0699 11$MC=0.0171 3                                   
+247CFS G  NC=0.00474 8$OC=0.001231 19$PC=0.000238 4$QC=1.389E-5 21              
+247CF  L 595       4  (13/2-)                                               D   
+247CF  A 6721      3  0.44   4   102   13                                       
+247CF  L 634       5 (13/2+)                                                B   
+247CF  A 6682      4  0.07   3  4.3E2  19                                       
+247CF  L 678.0      6 (7/2-)                                                E   
+247CF  A 6639      3  0.56   6    34   5                                    C   
+247CF  G 623.0     8  0.07   2 [E1]                    0.01087  0.07      2  C  
+247CFS G  KC=0.00868 13$LC=0.001646 24$MC=0.000399 6                            
+247CFS G  NC=0.0001097 16$OC=2.82E-5 4$PC=5.29E-6 8$QC=2.79E-7 4                
+247CF  G 678.0     8  0.26   6 [E1]                    0.00933  0.26      6  C  
+247CFS G  KC=0.00747 11$LC=0.001401 20$MC=0.000339 5                            
+247CFS G  NC=9.33E-5 14$OC=2.40E-5 4$PC=4.51E-6 7$QC=2.42E-7 4                  
+247CF  L 738.0      8 (9/2-)                                                E   
+247CF  A 6580      3  0.26   4    39   7                                    C   
+247CF  G 616       1  0.05   AP[E1]                    0.01110  0.05      AP    
+247CFS G  KC=0.00886 13$LC=0.001682 25$MC=0.000407 6                            
+247CFS G  NC=0.0001121 16$OC=2.88E-5 5$PC=5.41E-6 8$QC=2.85E-7 4                
+247CF  G 683       1  0.04   AP[E1]                    0.00921  0.04      AP C  
+247CFS G  KC=0.00737 11$LC=0.001382 20$MC=0.000334 5                            
+247CFS G  NC=9.20E-5 14$OC=2.37E-5 4$PC=4.45E-6 7$QC=2.39E-7 4                  
+                                                                                
+247ES    ADOPTED LEVELS, GAMMAS                                  15NDS    201503
+247ES  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247ES  Q -3100     SY7400    SY2802    207462    20    2012WA38                 
+247ES cQ $|DQ(|b{+-}=120, |DS(n)=220                                            
+247ES2cQ (syst, 2012Wa38)                                                       
+247ES c                                                                         
+247ES c  Identification:                                                        
+247ES c  1989Ha27: Observed in {+249}Cf(p,3n) and {+238}U({+14}N,5n)            
+247ES c  1973Es01: Produced from {+243}Am({+12}C,|a4n). Identified by           
+247ES2c  emitted |a energies, T{-1/2} and excitation functions                  
+247ES c  1967Mi06: Synthesized from {+238}U({+14}N,{+5}n). Identified by        
+247ES2c  emitted |a energies, T{-1/2} and excitation functions.                 
+247ES c                                                                         
+247ES c  Theoretical studies:                                                   
+247ES c  2012Ni16: |a decay T{-1/2} for transitions from ground-state to        
+247ES2c  favored rotational bands using Multicluster Channel Model.             
+247ES c  2012Zh01: Comparison of the low-lying one-quasineutron band for Z=99   
+247ES2c  isotopes between the experimental values and calculated values using   
+247ES3c  the cranked shell model (CSM) with pairing correlations                
+247ES c  2003Re14: Calculated binding energy, QA and deformations using the     
+247ES2c  deformed RMF theory                                                    
+247ES c  2002Lo05: Calculated binding energies, pairing gaps and deformations   
+247ES2c  using RMF+BCS theory                                                   
+247ES c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247ES c  1997Mo25: Calculated ground-state binding energy, proton and           
+247ES2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247ES3c  and partial half-lives for |a and |b decays                            
+247ES c  1996St28: |a decay through deformed barrier and anisotropies           
+247ES2c  for alphas were calculated                                             
+247ES c  1993Bu09: Calculated partial |a decay half-life, |a branching, and     
+247ES2c  nuclear radius using the cluster model predictions                     
+247ES c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247ES2c  Q{-4} and masses                                                       
+247ES c  1980Ho32: Calculated mass excess, S(n), S(p), Q(|b), Q(|a),            
+247ES2c  fission-barrier heights, deformation and energy at saddle-point        
+247ES c                                                                         
+247ES c  Systematic Studies:                                                    
+247ES c  2006Ch52: Systematics studies of one-quasiparticle states in Es        
+247ES2c  isotopes  using Skyrme-HFB calculations                                
+247ES c                                                                         
+247ES  XA251MD A DECAY                                                          
+247ES  XB247FM EC DECAY (31 S)                                                  
+247ES  L 0           (3/2-)                                                     
+247ES cL J$3/2-[521]                                                            
+247ESX L XREF=A                                                                 
+247ES  L 0+X         (7/2+)            4.55 M    26                             
+247ES cL E$X|?30 keV                                                            
+247ES DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+247ES2 L %A AP 7$%EC+%B+ AP 93                                                  
+247ESX L XREF=AB(?)                                                             
+247ES cL $Proposed configuration=7/2[633](1989Ha27)                             
+247ES cL $Observation of the ground-state in {+247}Fm |e decay is               
+247ES2cL indirect.                                                              
+247ES cL $|a branching was estimated by 1967Mi06 from observed |a               
+247ES2cL yield and calculated total cross section for {+238}U({+14}N,{+5}N)     
+247ES3cL reaction.                                                              
+247ES CL J$Analogy to {+249}Es suggests 7/2[633] state.                         
+247ES cL T$From 1989Ha27. Others: 5.0 min {I3} (1967Mi06),                      
+247ES2cL 4.7 min {I3} (1973Es01).                                               
+247ES  L 50.9+X     3(9/2+)                                                     
+247ESX L XREF=A                                                                 
+247ES cL J$Suggested by theoretical calculations in 2006Ch52.                   
+247ES  G 50                    (M1)                                            S
+247ES cG E$|g transition has not been observed. E|g is from level energies.     
+247ES2cG Transition considered to be highly converted (2006Ch52)                
+247ES  L 293.69+X  10(7/2-)                                                     
+247ESX L XREF=A                                                                 
+247ES cL $Proposed configuration=7/2[514] (based upon multipolarities proposed  
+247ES2cL for depopulating |g transitions).                                      
+247ES  G 242.7     3 16       2(E1)                                             
+247ES cG M$E2 is also possible but less likely                                  
+247ES  G 293.7     1 100       (E1)                                             
+                                                                                
+247ES    247FM EC DECAY (31 S)                                   15NDS    201503
+247ES  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247ES c  (%|e+%|b{++})=36 determined by 1967Fl15 from |a activities of          
+247ES2c  {+247}Fm and {+247}Es                                                  
+247ES c  The |e+|b{++} decay scheme has not been studied.                       
+247FM  P 0.0         (7/2+)            31 S      1              3100      SY    
+247FM cP J,T$From Adopted levels in {+247}Fm                                    
+247FM cP QP$3100 {I120} (syst, 2012Wa38)                                        
+247ES  N                       0.36                                             
+247ES  L 0.0                                                                    
+                                                                                
+247ES    251MD A DECAY                 2006CH52,2005HE27         15NDS    201503
+247ES  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247ES c  2006Ch52: {+251}Md isotope produced                                    
+247ES2c  in |a decay of {+255}Lr isotope. Parent nuclide produced by            
+247ES3c  {+209}Bi({+48}Ca,2n) reaction, in two separate                         
+247ES4c  experiments conducted at JYFL and GANIL. In both experiments, an       
+247ES6c  incident beam energy of E|?217 MeV was used. Recoil products           
+247ES7c  separated from the primary beam in each.                               
+247ES8c  JYFL: Measured recoil products, E|a, I|a, and tof using a              
+247ES9c  Multi-Wire Proportional Counter gas detector, two double-sided Si      
+247ESac  strip detectors (DSSSD) and a "box" of 28 pin-diodes surrounding the   
+247ESbc  two DSSSDs.                                                            
+247EScc  GANIL: Measured recoiled products, E|g, I|g, E|a, I|a, ce, and tof     
+247ESdc  using a "galotte" detector (mylar foil and micro-channel plate         
+247ESec  detector), a DSSSD, four cooled Si detectors (BEST) and four segmented 
+247ESfc  Ge detectors (EXOGAM).                                                 
+247ES c  Theoretical calculations using Hartree-Fock-Bogoliubov (HFB) with      
+247ES2c  Skyrme were performed to interpret the experimental results            
+247ES c  2005He27: {+251}Md produced from |a decay of                           
+247ES2c  {+255}Lr. {+255}Lr produced by the {+209}Bi({+48}Ca,2n) reaction       
+247ES3c  with beam energy E=4.55-4.65 MeV/nucleon.                              
+247ES4c  Evaporation residues were separated from the primary beam by velocity  
+247ES5c  filter SHIP at GSI facility. Measured (fragments)-|a coin, |a-|g coin, 
+247ES6c  prompt and delayed |g-rays, and K x-rays.                              
+247ES7c  |g-rays were detected with a 'Clover' detector and a position          
+247ES8c  sensitive (PIPS) detector was used to measure the |a decay.            
+247ES cA $|a line at 7590 {I5} in the |a spectrum in 2006Ch52 is assigned to a  
+247ES2cA sum line with an intensity of 13 {I3} relative to 87 {I3} for 7550|a.  
+247ES3cA This line was not clear if it was present in the work of 2005He27      
+247ES cA E$Energies from JYFL experiment in 2006Ch52, which had better          
+247ES2cA resolution.                                                            
+247ES CA HF$r{-0}({+247}Es)=1.476 20, estimated by the evaluator from the       
+247ES2CA r{-0} systematics given in 1998Ak04.                                   
+247ES cG E$From |a-|g coincidences in 2005He27 with higher precision            
+247ES cG RI$From 2005He27                                                       
+251MD  P 0.0         (7/2-)            4.27 M    26             7963      4     
+251MD cP T$From measured half-life of 7550|a from decay of {+251}Md (2006Ch52)  
+251MD cP QP$From 2012Wa38. Q(g.s)= 7965 {I1} from E|a=7550 to 293+x level       
+251MD2cP (2006Ch52); Q(g.s)=7955 {I10} from E|a=7540 {I10} to 293+x,            
+251MD3cP assuming x is small                                                    
+251MD cP J$From Adopted Levels in {+251}Md (2013Br09)                           
+251MD cP $Proposed configuration=7/2[514] (2005He27)                            
+247ES  N                       0.10    1                                        
+247ES cN BR$%|a=10 {I1} from comparison of the intensities in |a-|a and         
+247ES2cN recoil-|a coincidences in |a decay of {+255}Lr grand-mother nucleus    
+247ES3cN (2006Ch52)                                                             
+247ES  L 0           (3/2-)                                                     
+247ES cL J$Possibly 3/2-[521] (2005He27)                                        
+247ES  L 0+X          (7/2+)                                                    
+247ES DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+247ES cL $Proposed configuration=7/2[633] (1989Ha27)                            
+247ES cL E$The assignment to g.s. is not certain; 3/2[521] and                  
+247ES2cL 7/2[633] orbitals are close in energy and either could be the g.s.,    
+247ES3cL 2005He27 estimate that 7/2+ bandhead of 7/2[633] band lies |?30 keV    
+247ES4cL above the 3/2- bandhead of 3/2[521] band.                              
+247ES  L 50.9+X     3 (9/2+)                                                    
+247ES cL E$The unobserved transition depopulating this level is shown by        
+247ES2cL 2006Ch52 to be a highly-converted (possibly M1) transition.            
+247ES cL J$Suggested by theoretical calculations in 2006Ch52.                   
+247ES  G 50                    (M1)                                            S
+247ES cG $Highly converted transition                                           
+247ES  L 293.69+X  10   (7/2-)                                                  
+247ES cL $Proposed configuration=7/2[514] (based upon multipolarities proposed  
+247ES2cL for depopulating |g transitions).                                      
+247ES  A 7550      1 100         1.12  15                                       
+247ES cA E$Others: 7540 {I10} (2005He27); 7310 {I30} (1973Es01)                 
+247ES  G 242.7     3 16       2(E1)                                             
+247ES cG M$E2 is also possible but less likely.                                 
+247ES  G 293.7     1 100       (E1)                                             
+247ES2 G EKC LE 0.08$ ELC LE 0.16 (2005He27)                                    
+247ES cG RI$I|g(293)/I|g(243)=4.4 {I2} (2006Ch52)                               
+                                                                                
+247FM    ADOPTED LEVELS                                          15NDS    201503
+247FM  H TYP=ERR$AUT=J. Tuli$DAT=28-Jul-2015$COM=FIXED decay mode for isomer$   
+247FM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247FM  Q -4260     SY6590    SY3520    SY8258    10    2012Wa38                 
+247FM cQ $|DQ(|b{+-})=240, |DS(n)=120, |DS(p)=250                               
+247FM2cQ (syst, 2012Wa38)                                                       
+247FM c                                                                         
+247FM c  Identification:                                                        
+247FM c  1967Fl15: Synthesized from {+239}Pu({+12}C,{+4}N). Identified by       
+247FM2c  emitted |a energies, T{-1/2} and excitation functions.                 
+247FM c                                                                         
+247FM c  Theoretical studies:                                                   
+247FM c  2012Zh01: Comparison of the low-lying one-quasineutron band for N=147  
+247FM2c  isotones between the experimental values and calculated values using   
+247FM3c  the cranked shell model (CSM) with pairing correlations                
+247FM c  2011Ad15: One-quasiparticle levels for N=147 nuclei using the          
+247FM2c  microscopic-macroscopic modified TCSM, QPM and the self-consistent     
+247FM3c  SHFB approaches                                                        
+247FM c  2009Sa25:Calculated |a decay T{-1/2} using semi-empirical formulas,    
+247FM2c  and compared with experimental values and systematics                  
+247FM c  2006Sh19: Calculated energy levels of ground-state rotational band     
+247FM2c  in N=147 isotones                                                      
+247FM c  2005Pa73: Calculated neutron one-quasiparticle states of heaviest      
+247FM2c  nuclei within a macroscopic-microscopic approach.                      
+247FM c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247FM c  1997Mo25: Calculated ground-state binding energy, proton and           
+247FM2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247FM c  1995Mo29, 1980Ho32: Calculated ground-state masses and nuclear ground  
+247FM2c  state deformations                                                     
+247FM c  1993Bu09: Calculated partial |a decay half-life, |a branching,         
+247FM2c  nuclear radius using the cluster model predictions                     
+247FM c  1985Cw01: Calculated fission barrier                                   
+247FM c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247FM2c  Q{-4} and masses                                                       
+247FM c  1980Ho32: Calculated mass excess, S(n), S(p), Q(|b), Q(|a),            
+247FM2c  fission-barrier heights, deformation and energy at saddle-point        
+247FM c                                                                         
+247FM  XA251NO A DECAY (0.80 S)                                                 
+247FM  XB251NO A DECAY (1.02 S)                                                 
+247FM  L 0.0         (7/2+)            31 S      1                              
+247FMX L XREF=+                                                                 
+247FM2 L %A=64$%EC+%B+=36$                                                      
+247FM cL T$From 2006He27. Others: 57 s {I+30-17} (2009Fo02), 29 s {I1}          
+247FM2cL (2004He28), 37 s {I+21-10} (1989He03), 35 s {I4} (1967FL15)            
+247FM cL J$From favoured alpha transition (HF|?0.68) from g.s level in {+251}No 
+247FM2cL and proposed configuration=7/2[624] (2006He27,2004He28)                
+247FM  L 45        7  (1/2+)           5.1 S     2                           M  
+247FMX L XREF=+                                                                 
+247FM2 L %IT=12 2 (2006He27)$%A=88 2                                            
+247FM cL J$From favoured alpha transition (HF|?1.1) from 106-keV level          
+247FM2cL in {+251}No and proposed configuration=1/2[631] (2006He27,2004He28)    
+247FM cL T$From 2006He27. Other: 4.3 s {I4} (2004He28)                          
+247FM cL E$From 2006He27 based on the mean value derived from the |a energy     
+247FM2cL in the |aK x-ray measurement and the difference in measured Q(|a)      
+247FM3cL values for decays from g.s. to g.s and g.s to isomeric states.         
+                                                                                
+247FM    251NO A DECAY (0.80 S)        2006HE27,2004HE28         15NDS    201503
+247FM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247FM c  2009Fo02: {+251}No produced in the |a decay of {+255}Rf, which is the  
+247FM2c  daughter from the |a decay of {+259}Sg. {+259}Sg was produced in the   
+247FM3c  {+208}Pb({+52}Cr,n) reaction at the Lawrence Berkeley National         
+247FM4c  Laboratory with {+52}Cr beam energy ranging between E=250-267 MeV.     
+247FM5c  Decay products were observed using a detector array consisting of 48   
+247FM6c  vertically position-sensitive detector strips. Measured |a spectra     
+247FM7c  and half-live from six {+247}Fm decays resulting from                  
+247FM8c  |a decays of {+251}No to {+247}Fm                                      
+247FM c  2006He27: {+251}No produced by the {+206}Pb({+48}Ca,3n) reaction at    
+247FM2c  E=4.80 MeV/nucleon {+48}Ca beam at UNILAC accelerator at GSI, and from 
+247FM3c  |a decay of {+255}Rf. Reaction products were separated from the        
+247FM4c  primary beam by the SHIP velocity filter and implanted into a          
+247FM4c  position-sensitive 16-strip PIPS detector.                             
+247FM c  Measured E|g, I|g, |g|g, |a-|g coin, ce, and lifetimes with a clover   
+247FM2c  detector.                                                              
+247FM c  2004He28: {+251}No was produced via {+206}Pb({+48}Ca,3n) reaction at   
+247FM2c  E{-lab}=230.5 MeV {+48}Ca beam at UNILAC accelerator at GSI.           
+247FM3c  Reaction products were separated from the primary beam by the SHIP     
+247FM4c  velocity filter and implanted into a                                   
+247FM4c  position-sensitive 16-strip PIPS detector for |a measurement.          
+247FM c  Measured E|g, I|g, |g|g, |a-|g coin, ce, and lifetimes with a clover   
+247FM2c  detector.                                                              
+247FM c  2001He35: {+251}No was produced via {+255}Rf |a decay at the           
+247FM2c  filter SHIP at GSI. HPGe detectors were used to measure |a-|g coin, ce 
+247FM3c  half-life                                                              
+247FM c  1989He03: {+251}No was produced via |a decay chain of {+255}104 at GSI.
+247FM2c  Measured |a and T{-1/2} with surface barrier detectors                 
+247FM c  1967Gh01: {+251}No was produced via {+244}Cm({+12}C,5n) at Berkeley    
+247FM2c  heavy-ion linear accelerator. |a spectra and T{-1/2} were measured.    
+247FM c  All data are from 2006He27, unless otherwise stated                    
+247FM cA IA$Disagreements between the relative intensities of two alpha         
+247FM2cA groups observed by 1967Gh01, 1989He03 and 2001He35 were explained      
+247FM3cA by 2004He28 by existence of two separate |a decaying {+251}No parent   
+247FM4cA states which were produced in different amounts in direct reactions    
+247FM5cA than in |a decay of {+255}Rf. Alpha's assigned to these two parent     
+247FM6cA states were followed by different alpha activities.                    
+247FM cA E$Three types of uncertainties are combined in quadrature:             
+247FM2cA statistical uncertainty of 4-8 keV; systematic uncertainty of 15 keV   
+247FM3cA from calibration methods/standards; uncertainty of 3 keV due to        
+247FM4cA reproducibility of an |a peak energy.                                  
+247FM cA E(X)$Tentative line in the |a spectrum. Possibly contributed by        
+247FM2cA summing of main |a-line with conversion electrons from highly-converted
+247FM3cA transition(s).                                                         
+247FM CA HF$R0(247FM)=1.4708 58, unweighted average of                          
+247FM2CA r{-0}({+246}Fm)=1.465 7 and r{-0}({+248}Fm)=1.4765 19                  
+247FM2CA 1998AK04) is used in calculations for hindrance factors.               
+251NO  P 0.0          (7/2+)            0.80 S   1              8752      16    
+251NO cP J,T$From Adopted Levels in {+251}No (2013Br09)                         
+251NO cP QP$From 2012Wa38. Others: 8751 {I16} from E|a=8612 {I16} (2006He27)    
+251NO cP T$From 2006He27. Others: 0.78 s {I+38-22}, 0.78 s {I2} (2004He28),     
+251NO2cP 0.76 s {I3} (2001He35), 0.8 s {I2} (1967Gh01)                          
+251NO cP $Proposed configuration=7/2[624] (2006He27,2004He28).                  
+247FM  N                       0.84    16                                       
+247FM cN BR$%|a=91 {I+9-22}, %SF<0.3, %|e is expected to be small               
+247FM2cN %|a is from total number of {+255}Rf |a decays and the number of       
+247FM3cN |a-|a correlations in |a decay chain: {+255}Rf-{+251}No-{+247}Fm       
+247FM4cN (2001He35)                                                             
+247FM  A 8524      17 0.5    AP  133   AP                                   X   
+247FM cA E$Statistical uncertainty=8                                            
+247FM  A 8552      17 1      AP   66   AP                                   X   
+247FM cA E$Statistical uncertainty=8                                            
+247FM  A 8571      17 0.5    AP  133   AP                                   X   
+247FM cA E$Statistical uncertainty=7                                            
+247FM  L 0.0         (7/2+)             31 S     1                              
+247FM2 L %A=64 (2006He27)$%EC+%B+=36                                            
+247FM cL T$From 2006He27. Others: 57 s {I+30-17} (2009Fo02), 29 s {I1}          
+247FM2cL (2004He28), 37 s {I+21-10} (1989He03), 35 s {I4} (1967FL15)            
+247FM cL $Proposed configuration=7/2[624] (2006He27,2004He28)                   
+247FM  A 8612      16  98    AP  0.68  AP                                       
+247FM cA E$Statistical uncertainty=4. E|a=8608 {I5} (2004He28), 8621 {I10}      
+247FM2cA (2001He35)                                                             
+247FM  L 45        7  (1/2+)            5.1 S    2                           M  
+247FM2 L %IT=12 2 (2006He27)$%A=88 2                                            
+247FM cL T$From 2006He27. Other: 4.3 s {I4} (2004He28)                          
+247FM cL E$From 2006He27 based on the mean value derived from the |a energy     
+247FM2cL in the |aK x-ray measurement and the difference in measured Q(|a)      
+247FM3cL values for decays from g.s. to g.s and g.s to isomeric states.         
+247FM2cL Other: |?29 keV (2004He28)                                             
+247FM cL $Proposed configuration=1/2[631] (2006He27,2004He28).                  
+247FM  A 8562      17  0.3   AP  161   AP                                       
+247FM cA E$Statistical uncertainty=7. E|a=8578 {I10} (2001He35)                 
+                                                                                
+247FM    251NO A DECAY:1.02 S          2006HE27,2004HE28         15NDS    201503
+247FM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247FM c  2006He27: {+251}No produced by the {+206}Pb({+48}Ca,3n) reaction at    
+247FM2c  E=4.80 MeV/nucleon {+48} beam at UNILAC accelerator at GSI, and from   
+247FM3c  |a decay of {+255}Rf.  Reaction products were separated from the       
+247FM4c  primary beam by the SHIP velocity filter and implanted into a          
+247FM4c  position-sensitive 16-strip PIPS detector.                             
+247FM c  Measured E|g, I|g, |g|g, |a-|g coin, ce, and lifetimes with a clover   
+247FM2c  detector.                                                              
+247FM c  2004He28: {+251}No was produced via {+206}Pb({+48}Ca,3n) reaction at   
+247FM2c  E{-lab}=230.5 MeV {+48}Ca beam at UNILAC accelerator at GSI.           
+247FM3c  Reaction products were separated from the primary beam by the SHIP     
+247FM4c  velocity filter and implanted into a                                   
+247FM4c  position-sensitive 16-strip PIPS detector for |a measurement.          
+247FM c  Measured E|g, I|g, |g|g, |a-|g coin, ce, and lifetimes with a clover   
+247FM2c  detector.                                                              
+247FM cA E$ Three types of uncertainties are combined in quadrature:            
+247FM2cA statistical uncertainty of 4-8 keV; systematic uncertainty of 15 keV   
+247FM3cA from calibration methods/standards; uncertainty of 3 keV due to        
+247FM4cA reproducibility of an |a peak energy.                                  
+247FM CA HF$R0(247FM)=1.4708 58, unweighted average of                          
+247FM2CA r{-0}({+246}Fm)=1.465 7 and r{-0}({+248}Fm)=1.4765 19                  
+247FM2CA 1998AK04) is used in calculations for hindrance factors.               
+251NO  P 106       6  (1/2+)            1.02 S   3              8752      16    
+251NO cP E$ based upon difference in measured Q(|a) values for decays to the    
+251NO2cP 1/2+ isomer state in {+247}Fm from the ground and 1/2+ isomer state in 
+251NO3cP {+251}No (2006He27). Other: |?87 keV (2004He28)                        
+251NO cP J$From Adopted Levels in {+251}No (2013Br09)                           
+251NO cP T$ From 2006He27. Other: 0.93 s {I6} (2004He28)                        
+251NO cP QP$From 2012Wa38. Others: 8751 {I16} from E|a=8612 {I16} (2006He27)    
+251NO cP $Proposed configuration=1/2[631] (2006He27,2004He28)                   
+247FM  N                       1                                                
+247FM cN BR$assumed %|a=100; no |g rays observed by 2006He27                    
+247FM  A 8625      18    2   AP   74   AP                                       
+247FM cA E$tentatively assigned to the decay of the 1/2+ state in {+251}No      
+247FM2cA as its energy is higher than the g.s. to g.s. |a-decay from {+251}No   
+247FM3cA to {+247}Fm. Statistical uncertainty=10 keV                            
+247FM  L 0.0          (7/2+)            31 S     1                              
+247FM2 L %A=64 (2006He27)                                                       
+247FM cL T$ From 2006He27. Other: 29 s {I1} (2004He28)                          
+247FM cL $ Proposed configuration=7/2[624] (2006He27,2004He28)                  
+247FM  L 45        7  (1/2+)            5.1 S    2                           M  
+247FM2 L %IT=12 2 (2006He27)                                                    
+247FM cL E$from 2006He27 based on the mean value derived from the |a energy     
+247FM2cL in the |a-K X ray measurement and the difference in measured Q(|a)     
+247FM3cL values for decays from g.s. to g.s and g.s to isomeric states.         
+247FM cL T$ From 2006He27. Other: 4.3 s {I4} (2004He28)                         
+247FM cL $Proposed configuration=1/2[631] (2006He27,2004He28)                   
+247FM  A 8668      16   98   AP  1.1   AP                                       
+247FM cA E$ Statistical uncertainty=4 keV. E|a=8665 {I8} (2004He28)             
+                                                                                
+247FM    251NO A DECAY (1.02 S)        2006HE27,2004HE28         15NDS    201503
+247FM  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247FM c  2006He27: {+251}No produced by the {+206}Pb({+48}Ca,3n) reaction at    
+247FM2c  E=4.80 MeV/nucleon {+48} beam at UNILAC accelerator at GSI, and from   
+247FM3c  |a decay of {+255}Rf.  Reaction products were separated from the       
+247FM4c  primary beam by the SHIP velocity filter and implanted into a          
+247FM4c  position-sensitive 16-strip PIPS detector.                             
+247FM c  Measured E|g, I|g, |g|g, |a-|g coin, ce, and lifetimes with a clover   
+247FM2c  detector.                                                              
+247FM c  2004He28: {+251}No was produced via {+206}Pb({+48}Ca,3n) reaction at   
+247FM2c  E{-lab}=230.5 MeV {+48}Ca beam at UNILAC accelerator at GSI.           
+247FM3c  Reaction products were separated from the primary beam by the SHIP     
+247FM4c  velocity filter and implanted into a                                   
+247FM4c  position-sensitive 16-strip PIPS detector for |a measurement.          
+247FM c  Measured E|g, I|g, |g|g, |a-|g coin, ce, and lifetimes with a clover   
+247FM2c  detector.                                                              
+247FM cA E$Three types of uncertainties are combined in quadrature:             
+247FM2cA statistical uncertainty of 4-8 keV; systematic uncertainty of 15 keV   
+247FM3cA from calibration methods/standards; uncertainty of 3 keV due to        
+247FM4cA reproducibility of an |a peak energy.                                  
+247FM CA HF$R0(247FM)=1.4708 58, unweighted average of                          
+247FM2CA r{-0}({+246}Fm)=1.465 7 and r{-0}({+248}Fm)=1.4765 19                  
+247FM2CA 1998AK04) is used in calculations for hindrance factors.               
+251NO  P 106       6  (1/2+)            1.02 S   3              8752      16    
+251NO cP E$Based upon difference in measured Q(|a) values for decays to the     
+251NO2cP 1/2+ isomer state in {+247}Fm from the ground and 1/2+ isomer state in 
+251NO3cP {+251}No (2006He27). Other: |?87 keV (2004He28)                        
+251NO cP J$From Adopted Levels in {+251}No (2013Br09)                           
+251NO cP T$From 2006He27. Other: 0.93 s {I6} (2004He28)                         
+251NO cP QP$From 2012Wa38. Others: 8751 {I16} from E|a=8612 {I16} (2006He27)    
+251NO cP $Proposed configuration=1/2[631] (2006He27,2004He28)                   
+247FM  N                       1                                                
+247FM cN BR$Assumed %|a=100; no |g-rays observed by 2006He27                    
+247FM  A 8625      18    2   AP   74   AP                                       
+247FM cA E$Tentatively assigned to the decay of the 1/2+ state in {+251}No      
+247FM2cA as its energy is higher than the g.s. to g.s. |a decay from {+251}No   
+247FM3cA to {+247}Fm. Statistical uncertainty=10 keV                            
+247FM  L 0.0          (7/2+)            31 S     1                              
+247FM2 L %A=64 (2006He27)                                                       
+247FM cL T$From 2006He27. Other: 29 s {I1} (2004He28)                           
+247FM cL $Proposed configuration=7/2[624] (2006He27,2004He28)                   
+247FM  L 45        7  (1/2+)            5.1 S    2                           M  
+247FM2 L %IT=12 2 (2006He27)                                                    
+247FM cL E$From 2006He27 based on the mean value derived from the |a energy     
+247FM2cL in the |aK x-ray measurement and the difference in measured Q(|a)      
+247FM3cL values for decays from g.s. to g.s and g.s to isomeric states.         
+247FM cL T$From 2006He27. Other: 4.3 s {I4} (2004He28)                          
+247FM cL $Proposed configuration=1/2[631] (2006He27,2004He28)                   
+247FM  A 8668      16   98   AP  1.1   AP                                       
+247FM cA E$Statistical uncertainty=4 keV. E|a=8665 {I8} (2004He28)              
+                                                                                
+247MD    ADOPTED LEVELS                                          15NDS    201503
+247MD  H TYP=FUL$AUT=C. D. NESARAJA$CIT=NDS 125, 395 (2015)$CUT=31-Mar-2014$    
+247MD  Q             8250    SY1540    SY8764    10    2012WA38                 
+247MD cQ $|DS(n)=330, |DS(p)=210                                                
+247MD2cQ (syst, 2012Wa38)                                                       
+247MD c                                                                         
+247MD c  Identification and Experimental Studies:                               
+247MD c  2010An08: {+247}Md activity produced in the {+209}Bi({+40}Ar,2n)       
+247MD2c  reaction with E({+40}Ar)=187 MeV at UNILAC, GSI. Evaporation residues  
+247MD3c  (ER) separated with the SHIP velocity filter  and implanted into a     
+247MD4c  position sensitive Si strip detector.  Measured E|a, I|a, ER-|a(t),    
+247MD5c  ER-SF(t), E|g, I|g using tof detectors, an array of position sensitive 
+247MD6c  Si detectors, and a Ge clover detector. See also 2006An13, 2004He23    
+247MD c  2005He27: {+247}Md produced via {+209}Bi({+40}Ar,2n)reaction at UNILAC,
+247MD2c  GSI with E({+40}Ar)=4.95 MeV/u. The residues were separated by the     
+247MD3c  SHIP velocity filter and implanted on position sensitive               
+247MD4c  PIPS detectors for |a decay. |a-|g coin were measured with             
+247MD5c  a clover detector. |a activity observed at 8422 {I10} keV.             
+247MD c  1994HoZW: {+247}Md produced via {+209}Bi({+40}Ar,2n)reaction at UNILAC,
+247MD2c  GSI with E({+40}Ar)=4.78 MeV/u.                                        
+247MD3c  Two fission events assigned preliminary to the g.s {+247}Md were       
+247MD4c  observed with T{-1/2}=0.23 s {I+19-12}.                                
+247MD5c  |a activity observed at 8424 keV with T{-1/2}=1.12 s {I22}             
+247MD c  1981Mu12: Discovery of {+247}Md from heavy ion fusion reaction         
+247MD2c  {+209}Bi({+40}Ar,2n) with E({+40}Ar)=4.8 MeV/u from UNILAC at GSI.     
+247MD3c  The residues were separated by the SHIP velocity filter and implanted  
+247MD4c  on position sensitive surface barrier detectors for |a decay and       
+247MD5c  spontaneous fission measurement. |a activity observed at 8428 keV      
+247MD6c  {I25}.                                                                 
+247MD c                                                                         
+247MD c  Theoretical studies:                                                   
+247MD c  2010Ad19: One-quasiparticle levels for Md isotopes using the           
+247MD2c  microscopic-macroscopic modified TCSM                                  
+247MD c  2005Re16: Calculated spontaneous fission half lives using              
+247MD2c  Swiatecki's formula, by its generalized form, and by a new             
+247MD3c  formula where the blocking effect of unpaired nucleon on the           
+247MD4c  half-lives has been taken into account with different mechanisms       
+247MD c  2004Pa40: Calculated deformation parameters and the proton             
+247MD2c  one-quasiparticle states of heaviest nuclei using the                  
+247MD3c  macroscopic-microscopic approach                                       
+247MD c  2002Du16: Calculated partial half-lives for |a and cluster decays      
+247MD c  1997Mo25: Calculated ground-state binding energy, proton and           
+247MD2c  neutron pairing gaps, neutron and proton separation energies, Q values 
+247MD c  1995Mo29, 1980Ho32: Calculated ground-state masses and nuclear ground  
+247MD2c  state deformations                                                     
+247MD c  1993Bu09: Calculated partial |a decay half-life, |a branching,         
+247MD2c  nuclear radius using the cluster model predictions                     
+247MD c  1985Cw01: Calculated fission barrier                                   
+247MD c  1981Mo24: Calculated ground-state electric multipole moments Q{-2},    
+247MD2c  Q{-4} and masses                                                       
+247MD c                                                                         
+247MD  L 0.0         (7/2-)            1.2 S     1                              
+247MD2 L %A>99.9$%SF<0.1 (2010An08)                                             
+247MD cL %SF$<1% in Fig. 4 in 2010An08.                                         
+247MD cL T$From evaporation residue 8416 |a(t) correlations in 2010An08.        
+247MD2cL Note that there is some inconsistency in 2010An08, with                
+247MD3cL T{-1/2}=1.2 s {I1} quoted in the text and Table 1, however,            
+247MD4cL T{-1/2}=1.3 s {I1} is given in Fig. 2 and Fig. 4.                      
+247MD5cL Others: 2.9 s {I+17-12} (1981Mu12), 1.12 s {I22} (1994HoZW)            
+247MD cL J$From hindrance factor|?1 from {+247}Md |a decay to 209.6-keV level   
+247MD2cL in {+243}Es and proposed configuration=7/2[514] (2010An08)             
+247MD  L 0+X         (1/2-)            0.25 S    4                           M  
+247MD cL E$X<264 keV (2010An08)                                                 
+247MD2 L %IT=79 5$%SF=21 5                                                      
+247MD cL T$From a total of 24 counts of spontaneous fission events obtained in  
+247MD2cL 2010An08. Note that there is some inconsistency in 2010An08, with      
+247MD3cL T{-1/2}=0.25 s {I4} quoted in Table 1 and Fig. 4.                      
+247MD3cL however, T{-1/2}=0.24 s {I7} is given in the text.                     
+247MD cL J$Proposed configuration=1/2[521] (2010An08) and from hindrance        
+247MD2cL factor=2.5 from {+247}Md |a decay to (1/2-) level in {+243}Es          
+                                                                                

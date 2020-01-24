@@ -1,0 +1,1105 @@
+261      COMMENTS                                                99NDS    199911
+261    H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=1-Jul-1999$    
+261   C  TITL$NUCLEAR DATA SHEETS FOR A=261                                     
+261   c  AUTH$AGDA ARTNA-COHEN                                                  
+261   c  INST$Under subcontract to                                              
+261  #c       Nuclear Data Project                                              
+261  #c       Oak Ridge National Laboratory                                     
+261   c  ABST$All experimental data pertaining to nuclei with A=261 have been   
+261  2c  compiled and evaluated. In some cases information from various         
+261  3c  calculations and systematics has been added.                           
+261   c  CUT$All data received by July 1999 have been included.                 
+261   c  ACKN$The advice and assistance of the members of the Nuclear Data      
+261  2c  Project (Oak Ridge National Laboratory) and National Nuclear Data      
+261  3c  Center (Brookhaven National Laboratory) are gratefully acknowledged.   
+261   c  FUND$Research sponsored by the Oak Ridge National Laboratory, managed  
+261  xc  by Lockheed Martin Energy Research Corporation for the U.S.            
+261  xc  Department of Energy, under contract DE-AC05-96OR22464, subcontract    
+261  xc  54X-SW654V.                                                            
+261   c  COMM$r{-0} used in the calculation of hindrance factors (HF) in |a     
+261  2c  decay have been obtained by extrapolation from the r{-0} listed in     
+261  3c  1998Ak04.                                                              
+261   C  CIT$NDS 88, 155 (1999)                                                 
+                                                                                
+261      REFERENCES                                              99NDS    199911
+261    R 1970GH01 JOUR PYLBB 32B 95                                             
+261    R 1971FL02 JOUR NUPAB A160 181                                           
+261    R 1971GH01 JOUR PRVCA C4 1850                                            
+261    R 1976OG02 JOUR NUPAB A273 505                                           
+261    R 1984MU17 JOUR ZPAAD 317 235                                            
+261    R 1984OG03 JOUR RAACA 37 113                                             
+261    R 1985MU11 JOUR ZPAAD 322 227                                            
+261    R 1986MUZX REPT GSI-86-1,P31,Munzenberg                                  
+261    R 1987MU15 JOUR ZPAAD 328 49                                             
+261    R 1988LO03 JOUR ZPAAD 329 161                                            
+261    R 1988MUZX REPT GSI-88-1,P13,Munzenberg                                  
+261    R 1989HUZU PREPRINT UCRL-100763,Hulet                                    
+261    R 1989MO03 JOUR NUPAB 492 349                                            
+261    R 1989MU09 JOUR ZPAAD 333 163                                            
+261    R 1990SZ10 JOUR RAACA 51 71                                              
+261    R 1991HEZT REPT LBL-30798,P65,Henderson                                  
+261    R 1991IO03 JOUR RRPQA 36 163                                             
+261    R 1993BU09 JOUR ADNDA 54 53                                              
+261    R 1994CW02 JOUR NUPAB 573 356                                            
+261    R 1994LA22 JOUR PRLTA 73 624                                             
+261    R 1995AU04 JOUR NUPAB 595 409                                            
+261    R 1995HO03 JOUR ZPAAD 350 277                                            
+261    R 1995KOZL CONF St Petersburg,P445,Kolesnikov                            
+261    R 1995MO29 JOUR ADNDA 59 185                                             
+261    R 1996HO13 JOUR ZPAAD 354 229                                            
+261    R 1997HO03 JOUR NUPAB 616 370c                                           
+261    R 1997HO13 JOUR ZPAAD 358 125                                            
+261    R 1997MO25 JOUR ADNDA 66 131                                             
+261    R 1997PA22 JOUR JPGPE 23 939                                             
+261    R 1998AK04 JOUR NDSBA 84 1                                               
+261    R 1998LA30 JOUR PRVCA 58 3413                                            
+261    R 1998TU01 JOUR PRVCA 57 1648                                            
+261    R 1999HE11 JOUR JPGPE 25 877                                             
+                                                                                
+261LR    ADOPTED LEVELS                                          99NDS    199911
+261LR  H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=31-Jul-1999$   
+261LR  Q -1.76E3   SY6.79E3  SY3.3E3   SY8.14E3  SY    2012WA38                 
+261LR CQ Note: Current evaluation has used the following Q record               
+261LR  Q -1690     SY 6800   SY 3300   SY 8200   SY    1995AU04                 
+261LR CQ           Estimated DQ-=230, DSN=230, DSP=300, DQA=200 (1995Au04)      
+261LR C                                                                         
+261LR C  Calculations, compilations:                                            
+261LR C  GS properties: 1997Mo25, 1995Mo29                                      
+261LR C  Single-particle NILSSON levels: 1994Cw02                               
+261LR C                                                                         
+261LR C  1994Cw02 calculate the following single-particle level sequence:       
+261LR2C  GS 1/2[521], 0.07 MEV 7/2[514], 0.15 MEV 9/2[624], 0.62 MEV 7/2[633],  
+261LR3C  0.62 MEV 5/2[512]                                                      
+261LR C                                                                         
+261LR C  Assignment: 254ES+22NE, MS, ion chem; observed SF (1989HuZU).          
+261LR2C  248CM(18O,5n)261RF(EC); LR ion chem. Observed SF (1991HeZT).           
+261LR  L 0.0                           39 M      12                             
+261LR2 L %SF=?                                                                  
+261LR CL T         from 1989HuZU; other: 44 M +17-11 (1991HeZT)                 
+261LR CL %SF       SF observed. However, not clear whether SF is from           
+261LR2CL 261LR, or from EC daughter 261NO (1989HuZU,1991HeZT)                   
+261LR CL           Calculated T(A) AP 3E+3 M (1997Mo25)                         
+261LR CL           Calculated T(SF) AP 5 H (1989Mo03)                           
+                                                                                
+261RF    COMMENTS                                                ENSDF    201508
+261RF  H TYP=FUL$AUT=M. GUPTA$CIT=ENSDF$CUT=1-Aug-2015$                         
+261RF  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=ENSDF$CUT=31-Dec-2008$     
+261RF  H TYP=FUL$AUT=A.Artna-Cohen$CIT=NDS 88, 277 (1999)$CUT=31-Jul-1999$      
+261RF c  AUTH$M. GUPTA                                                          
+261RF c  INST$Manipal Centre for Natural Sciences,                              
+261RF#c       Manipal University,  Manipal,                                     
+261RF#c       KA 576 104, INDIA                                                 
+261RF c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for           
+261RF#c  {+261}Rf (1999Ar21) has been updated.                                  
+261RF#c  See 2005Gu33 for acronyms, notations and methodology used              
+261RFxc  in this evaluation.                                                    
+261RF c  CUT$August 1, 2015. All references relevant to the production of       
+261RF2c  {+261}Rf entered into the Nuclear Science References File and papers   
+261RF3c  and private communications received by this date were considered       
+261RF c  ACKN$The evaluator is grateful to B. Singh, McMaster                   
+261RFac  Unversity for compiling data from 2008Ga08, M. Birch and               
+261RFac  B. Singh, McMaster Unversity for compiling the data from 2011Ha13      
+261RFac  into XUNDL, Ch. E. Dullmann and J. K. Tuli.                            
+261RF C  CIT$ENSDF                                                              
+                                                                                
+261RF    ADOPTED LEVELS                                          ENSDF    201508
+261RF  H TYP=FUL$AUT=M. GUPTA$CIT=ENSDF$CUT=1-Aug-2015$                         
+261RF  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=ENSDF$CUT=31-Dec-2008$     
+261RF  H TYP=FUL$AUT=A.Artna-Cohen$CIT=NDS 88, 277 (1999)$CUT=31-Jul-1999$      
+261RF  Q -2928     SY 5958   SY 4244   SY 8646   50                             
+261RF cQ Q-$estimated uncertainty=121 keV                                       
+261RF cQ SN$estimated uncertainty=206 keV                                       
+261RF cQ SP$estimated uncertainty=134 keV                                       
+261RF cQ QA        From systematics, E|a=8646.42 keV |+ 50.0 (2012Wa38).        
+261RFAcQ Other: QA=8409 keV 40 from 25 correlated |a decay events corresponding 
+261RFacQ to EA=8280 keV 40 (2013Mu08); Average EA=8280 keV 50 (QA=8409 keV 50)  
+261RFacQ from 113 events (2011Ha13). Evaluators note that the Q(|a)=8.409 MeV   
+261RFacQ {I40} from 2013Mu08 in agreement with Q(|a)=8.411 MeV {I28}            
+261RFAcQ (E|a=8.282 MeV {I28}) from 2008Du09 could be the likely g.s.           
+261RFAcQ A second state with Q(|a)=8.637 MeV {I36} (E|a=8.505 MeV {I36})        
+261RFAcQ was also reported (2008Du09). The weighted                             
+261RFAcQ average of both states from 2008Du09 for {+261}Rf is                   
+261RFAcQ Q(|a)=8.615 MeV {I67} (E|a=8.483 MeV {I67}) by the normalised residual 
+261RFacQ method.                                                                
+261RF c  1970Gh01: direct synthesis through the reaction {+248}Cm({+18}O,5n) at 
+261RFAc  beam energies of 90-100 MeV.                                           
+261RFAc  The {+18}O beam was provided by the                                    
+261RFAc  Berkeley heavy ion accelerator (HILAC). The yield of                   
+261RFAc  {+261}Rf corresponded to a cross-section of 5 nb. The excitation       
+261RFAc  function for the reaction was determined approximately. The bombarding 
+261RFAc  energies were close to the calculated peak at 97 MeV.                  
+261RFAc  Recoils of interest were                                               
+261RFAc  deposited via a He gas jet on a rotating wheel with a cycle rate of    
+261RFAc  48 s. |a spectroscopy was performed using two stationery and two       
+261RFAc  rotating Si-Au surface barrier detectors. Target impurities            
+261RFAc  resulted in a host of contaminants in the observed spectra. The        
+261RFAc  main |a particle group was determined to be at 8.28 |+ 0.02 MeV.       
+261RFAc  The joint mother-daughter activity was 70 s |+ 10. The combined        
+261RFAc  half-life was 7% longer than of the mother activity alone              
+261RFAc  resulting in the                                                       
+261RFAc  corrected T{-1/2} of 65 s |+ 10 for {+261}Rf. No SF branch could be    
+261RFAc  determined although an upper limit of 10% was estimated.               
+261RF c  1994Lo27, 1994La22: produced as daughter nuclide                       
+261RFAc  in the reaction {+248}Cm({+22}Ne,5n)                                   
+261RF2c  E=116, 121 MeV using the U400 cyclotron at Dubna and the H-gas filled  
+261RF3c  separator DGFRS. See {+265}Sg adopted data set for experimental        
+261RFAc  details. Four                                                          
+261RF5c  |a-|a-(|a) correlations at 121 MeV were attributed to parent           
+261RF6c  {+265}Sg with E|a=8.71-8.91 MeV at a production cross-section of 260 pb
+261RF7c  accurate to within an approximate factor of three.                     
+261RFBc  The E|a=8.16 to 8.17 MeV |a-|a correlation was attributed to the       
+261RFAc  decay of {+261}Rf to {+257}No. The experimenters note that except for a
+261RFAc  single triple |a correlation, {+261}Rf could not be distinguished from 
+261RFAc  {+257}No with certainty due to the similarity in |a energies.          
+261RFAc  Experimenters suggest T{-1/2}=65 s, E|a|?8.29 MeV. Evaluators note that
+261RFAc  4 |a-SF events attributed to {+266}Sg and {+262}Rf are reassigned by   
+261RFAc  2006Dv01 to {+265}Sg and {+261}Rf{+b} (3 s state)                      
+261RFAc  which was unknown at the time. 1997Sc48                                
+261RFAc  note that the half-lives of the Sg isotopes could not be measured      
+261RFAc  due to the lack of an initial implantation signal in the Si detectors. 
+261RF c  1996Ka66: direct synthesis through the reaction                        
+261RFAc  {+248}Cm({+18}O{+5-},5n) at LBL, E(lab)=117 MeV. Reaction              
+261RFAc  cross-section was 5 nb. The purpose of this chemistry experiment was   
+261RFAc  to study the relative volatility of tetrachlorides of the group 4      
+261RFAc  elements Zr, Hf and Rf using gas phase isothermal chromatography.      
+261RFAc  Reaction products were transported through the heavy element           
+261RFAc  volatility instrument (HEVI) described in 1992Ka57. Total              
+261RFAc  transportation yield was 60% to 80%. Species leaving the               
+261RFAc  chromatography column were transported to the merry-go-round (MG)      
+261RFAc  detector system (1980Ho25) where 6 pairs of PIPS detectors were used   
+261RFAc  to measure the kinetic energies of coincident fission fragments and |a 
+261RFAc  particles. The step time was 1 minute and the detection efficiency was 
+261RFAc  about 60%. |a spectra from all chemistry measurements in the energy    
+261RFAc  window 8.15 to 8.38 MeV were analysed. A total of 170 |a-|a            
+261RFAc  correlations were observed close to the expected value of 169.         
+261RFAc  The suggested alpha decay half-life was T{-1/2}=78 s {I+11-6}          
+261RFAc  (68% c.i.) using the maximum likelihood                                
+261RFAc  method. The experimenters point out that a short component appears     
+261RFAc  to exist in the observed SF events providing an upper limit of 11%     
+261RFAc  corresponding to T{-1/2}(SF)>709 s assuming no other decay modes. The  
+261RFAc  evaluators note that estimates for randomness are not provided         
+261RFAc  for the |a-|a correlations making it difficult to distinguish true     
+261RFAc  mother-daughter correlations from random events. However due to the    
+261RFAc  improved ability of HEVI to seperate out non-volatile                  
+261RFAc  interfering activities prior to counting, the half-life arrived at     
+261RFAc  in this work is expected to be better than the earlier value from      
+261RFAc  1970Gh01.                                                              
+261RF c  1996Ho13: descendent of {+277}112 produced by {+208}Pb({+70}Zn,n),     
+261RF2c  E=343.8 MeV (E*=10.1 MeV; |s=1.0 pb {I+18-4}) at GSI/SHIP. Two         
+261RF3c  EVR-|a1-|a2-|a3-|a4-|a5-|a6 events observed. One event retracted by    
+261RF4c  2002Ho11; |s revised to 0.4 pb {I+9-3}. See {+277}112 Adopted Levels   
+261RF5c  in 2005Gu33 for details. One energy-time correlation recorded with one 
+261RF6c  escaped particle for this nucleus with a time interval of 32.7 s       
+261RFAc  (subsequently retracted by 2002Ho11) and                               
+261RFAc  one |a decay with E|a=8.52 MeV |+ 20 after a time interval of 4.7 s.   
+261RF c  1996La12: descendant of {+273}Ds using the hot fusion reaction         
+261RF2c  {+244}Pu({+34}S,5n) E=190 MeV at Dubna using DGFRS in collaboration    
+261RF3c  with LLNL. The cross-section was about 0.4 pb for {+273}Ds.            
+261RFAc  See {+273}Ds Adopted Levels in 2005Gu33                                
+261RF6c  for details. The energy window was set at 8.15 to 8.45 MeV for {+261}Rf
+261RFAc  and {+257}No with a time window of 1100 s following the                
+261RFAc  emission of the first |a.                                              
+261RFAc  Suggested properties from the most likely single event in beam off     
+261RFAc  conditions are                                                         
+261RF7c  E|a=8.20 MeV with a lifetime of 117 s corresponding to T{-1/2}=79 s.   
+261RFAc  The assignment took into account the presence of a small |DE signal    
+261RFAc  from preliminary results, which was                                    
+261RFAc  attributed at the time to a conversion electron                        
+261RFAc  accompanying the decay of the 8.63 MeV |a (from {+265}Sg)              
+261RFAc  to {+261}Rf and {+257}No. 1996La12 reason that this is consistent with 
+261RFAc  odd-A {+265}Sg decaying preferentially                                 
+261RFAc  to an excited state in daughter {+261}Rf.                              
+261RF c  1997Sc48, 1997Sc49: daughter of {+265}Sg produced in the hot fusion    
+261RFAc  reaction {+248}Cm({+22}Ne,5n)                                          
+261RF2c  E=121 MeV at GSI using the UNILAC. See {+265}Sg adopted levels for     
+261RFAc  details. Two chemical separation                                       
+261RF3c  techniques were used in these studies intended to study the chemical   
+261RF4c  properties of Sg and                                                   
+261RFAc  |a spectroscopy was done using a rotating wheel.                       
+261RFAc  The decay of {+265}Sg was not seen                                     
+261RF7c  although the presence of {+261}Rf and {+257}No as daughter products    
+261RF8c  indicates the production of the parent. Three events were observed     
+261RFAc  which could be attributed to {+261}Rf and daughter {+257}No:           
+261RFAc  E|a=8.24, 8.26 and 8.52 MeV with |t=33.5, 22.7 and 142.0 s             
+261RFCc  respectively (the last in 'parent-daughter' mode).                     
+261RFAc  Energy resolution was |+ 60 keV (FWHM) for |a particles                
+261RFAc  between 5 and 12 MeV in the PIPS detectors with a detection            
+261RFAc  efficiency of 33% (for |a's) and 66% (SF fragment). The overall        
+261RFAc  efficiency for an |a-|a correlation was 11% and for an |a-SF           
+261RFAc  correlation, 22%. A detailed analysis for random events is provided.   
+261RFAc  The experimenters conclude that they have no evidence for              
+261RFAc  the direct observation of {+265}Sg |a decay.                           
+261RFAc  1997Sc49 report results from                                           
+261RF9c  gas chromatography using the OLGA III (1996Tu05) setup. Three decay    
+261RFAc  events attributable to {+265}Sg were unambigiously measured.           
+261RFBc  The following properties were attributed to {+261}Rf:                  
+261RFAc  E|a=8.36, 8.15 and 8.34 MeV |+ 6 (FWHM) corresponding to               
+261RFAc  |t=31.0, 53.3 and 48.4 s respectively. Average E|a=8.28 MeV |+ 6       
+261RFAc  with T{-1/2}=31 s {I+42-11} (evaluators).                              
+261RFAc  The authors note that                                                  
+261RFAc  with about 90% probability, the isotopes of                            
+261RFac  Rf and No were formed                                                  
+261RFAc  between the time taken for chemical separation and their measurement   
+261RFAc  about 28 s later given the experimental set-up used. A random          
+261RFAc  analysis is not provided. The evaluators note that ambiguities exist   
+261RFAc  in both these experiments and the data from                            
+261RFAc  1997Sc48, 1997Sc49 were not considered in the reanalysis by            
+261RFAc  2008Du09.                                                              
+261RFFc  See also 1998Sc50 and 1999Tu04 for chemistry.                          
+261RF c  1998Tu01: produced as the daughter of {+265}Sg                         
+261RFAc  by the hot fusion reaction {+248}Cm({+22}Ne,5n) E=121,                 
+261RF2c  123 MeV at the GSI UNILAC; see {+265}Sg adopted levels for             
+261RFAc  experimental details.                                                  
+261RFAc  See also {+266}Sg Adopted Levels in 2005Gu33 for details. A total      
+261RFHc  of 13 |a-decay chains were attributed to {+265}Sg (and daughter        
+261RFAc  {+261}Rf) and an additional                                            
+261RFAc  three events attributed to {+266}Sg (and daughter {+262}Rf).           
+261RFAc  Three more decay chains                                                
+261RFAc  (events 14 to 16) with a higher degree of randomness were also         
+261RFAc  suggested as belonging to the decay of {+265}Sg.                       
+261RF c  Correlated decay chains with E|a(mother)=8.57-9.07 MeV                 
+261RFAc  ({+265}Sg) and                                                         
+261RFAc  E|a(daughter(s))=8.05-8.45 MeV ({+261}Rf, {+257}No),                   
+261RFAc  and E|a(mother)=8.41-8.85 MeV ({+266}Sg) and E{-SF}(daughter)          
+261RFAc  |> 20 MeV ({+262}Rf) within 6.3 s are shown below:                     
+261RF t  Event     E{-1}{+a}     t{-1}{+b}       E{-2}{+c}     |Dt{-2}{+d}      
+261RF+t         E{-3}{+e}    |Dt{-3}{+f}     Temp.    N{-R}{+g}                 
+261RF+t           Assignment                                                    
+261RF3t  {U#}     {U(MeV)}   {U (s)}     {U (MeV) }  {U (s)   }  {U (MeV) }     
+261RF+t    {U(s)  }    {U({+o}C)}    {U    }        {U           }              
+261RF4t                                                                         
+261RF4t  1     8.86     0.6      8.35     48.4                      300         
+261RF+t       0.83{+h}     {+265}Sg->{+261}Rf or {+257}No                       
+261RF4t  2     8.76     1.4      8.39    151.8                      350         
+261RF+t           {+h,i}                                                        
+261RF4t  3     8.93     7.0      8.22     22.2                      350         
+261RF+t           {+h,i}                                                        
+261RF4t  4     8.82    27.3      8.15     53.3                      300         
+261RF+t           {+h}                                                          
+261RF4t  5     8.81     2.8      8.36     31.0     8.11    14.8     400         
+261RF+t       0.04      {+265}Sg->{+261}Rf->{+257}No                            
+261RF4t  6     8.69     1.4      8.18     56.0                      300         
+261RF+t       1.90      {+265}Sg->{+261}Rf or {+257}No                          
+261RF4t  7     8.85     5.6      8.41     40.2                      350         
+261RF+t           {+i}                                                          
+261RF4t  8     8.76     6.6      8.28     45.8                      350         
+261RF4t  9     8.77     6.8      8.22     25.5                      350         
+261RF4t  10    8.96    12.8      8.23     23.5                      350         
+261RF4t  11    8.85    19.1      8.35      0.5                      400         
+261RF4t  12    8.93    19.1      8.41     35.6                      350         
+261RF+t           {+i}                                                          
+261RF4t  13    8.86    21.7      8.37     31.6                      300         
+261RF4t  14    8.95    34.0      8.22     31.2                      400         
+261RF+t       2.90      ({+265}Sg->{+261}Rf or {+257}No)                        
+261RF4t  15    8.97    43.8      8.20      1.5                      400         
+261RF4t  16    8.83    52.1      8.42      1.3                      400         
+261RF4t  17    8.52    48.9       SF{+j}      2.8                      400      
+261RF+t       0.03{+h}      {+266}Sg->{+262}Rf                                  
+261RF4t  18    8.79    15.1       SF{+j}      1.7                      350      
+261RF+t       0.09{+i}                                                          
+261RF4t  19    8.74     3.5       SF{+j}      2.4                       DC{+k}  
+261RF+t      0.45                                                               
+261RF4t  {+a} Energy of mother |a particle ({+265}Sg or {+266}Sg).              
+261RF4t  {+b} decay time (since beginning of measurement).                      
+261RF4t  {+c} Energy of daughter |a particle ({+261}Rf or {+257}No).            
+261RF4t  {+d} Time difference between decay of mother and daughter nuclei.      
+261RF4t  {+e} Energy of granddaughter particle ({+257}No).                      
+261RF4t  {+f} Time difference between the decay of the daughter and the         
+261RF+t  granddaughter ({+261}Rf and {+257}No).                                 
+261RF4t  {+g} Expected number of random correlations for decay chains           
+261RF+t   1 to 4, 5, 6 to 13, 14 to 16, 17, 18, and 19.                         
+261RF4t  {+h} Event was registered in daughter mode (DM).                       
+261RF4t  {+i} Event observed in the second series of experiments.               
+261RF4t  {+j} Spontaneous fission (SF) with E{-SF} >20 MeV.                     
+261RF4t  {+k} Decay chain was observed during a direct catch (DC)               
+261RF+t  experiment with the tape detection system.                             
+261RFAc  see also {+265}Sg adopted levels for details.                          
+261RF c  Note that Events 14-16 (assignments in parentheses)                    
+261RFac  have a high degree of randomness and were not                          
+261RFac  included in the re-evaluation by 2008Du09. Also,                       
+261RFAc  the three events (17 to 19) which were originally assigned to {+266}Sg 
+261RFac  ({+262}Rg) through this work                                           
+261RFAc  were reassigned to {+265}Sg ({+261}Rf) via 2006Dv01 and considered as  
+261RFAc  such in 2008Du09.                                                      
+261RF c  2000La34: direct synthesis through {+244}Pu({+22}Ne,5n){+261}Rf at beam
+261RFAc  energies of 114 and 120 MeV with an estimated cross-section of 4 nb    
+261RFAc  at both energies. 69 |a-|a correlations linking decays of {+261}Rf and 
+261RFAc  {+257}No were observed. Experiments were conducted using the Dubna     
+261RFAc  U400 cyclotron. Recoil products were separated by DGFRS described      
+261RFAc  in 1993LaZS. At a beam energy of 120 MeV, 17 correlated                
+261RFAc  |a-|a pairs were detected with the following properties:               
+261RFAc  E|a{-1}=8.22-8.41 MeV, |dt=0.4-181 s and E|a{-2}=8.07-8.37 MeV.        
+261RFAc  At 114 MeV, 25 pairs of |a events were observed with                   
+261RFAc  E|a{-1}=8.25-8.36 MeV, |dt=0.2-129 s and E|a{-2}=8.21-8.40 MeV.        
+261RFAc  The number of |a-|a correlations from genetically unrelated events     
+261RFAc  was estimated to be less than 0.1 within the time window of 200 s      
+261RFAc  over the total of 42 linked events observed. An |a energy spectrum     
+261RFAc  was measured for the first time centered around E|a=8.3 MeV with       
+261RFAc  standard deviation |s=33 keV. A single |a energy peak was observed at  
+261RFAc  E|a=8.30 MeV |+ 0.06 for 261Rf without any contribution from |a decays 
+261RFAc  originating from the daughter.                                         
+261RFAc  An estimate of the half-life is not given.                             
+261RFAc  No |a decays corresponding to the 8.52 MeV                             
+261RFAc  events ascribed to {+261}Rf in 1996Ho13 or 1997Sc49 were seen.         
+261RF c  2000Sy01: direct synthesis of {+261}Rf in the reaction                 
+261RFac  {+248}Cm({+18}O,5{In})                                                 
+261RFAc  at a beam energy on target of 99 MeV,                                  
+261RFAc  to study the relative volatility of group 4 tetrabromides. The         
+261RFAc  chromatographic system                                                 
+261RFAc  HEVI (heavy element volatility instrument) with an improved            
+261RFAc  temperature profile (1992Ka57) was used in which less volatile species 
+261RFAc  are retained. Upon exiting the chromatography column,                  
+261RFAc  molecules of interest were transported to the MG wheel system          
+261RFAc  (1980Ho25). |a spectroscopy was performed by PIPS detectors allowing   
+261RFAc  a solid angle detection efficiency of |?60% for |a and SF decays.      
+261RFAc  The step time was set at 1 min since the experiment was designed to    
+261RFAc  measure the known 78 s state in this nucleus. |a decays were measured  
+261RFAc  in energy window 8.12 - 8.38 MeV and T{-1/2}=74 s {I+7-6} (68% c.i.)   
+261RFAc  was suggested                                                          
+261RFAc  using a MLDS fit. The weighted average halflife when combined          
+261RFAc  with 1996Ka66 was T{-1/2}=75.5 s |+6.6. The recommended value          
+261RFAc  was T{-1/2}=75 s |+ 7. The experimenters note that the half-life fit   
+261RFAc  assumed the presence of the daughter {+257}No and {+211}Po{+m}.        
+261RFAc  The energy resolution, reaction cross-section and estimates            
+261RFAc  of randomness are not provided. In the                                 
+261RFAc  absence of a random analysis, evaluators note that it is difficult to  
+261RFAc  distinguish between true mother-daughter correlations and              
+261RFAc  random events. However as with the work of 1996Ka66, due to the        
+261RFAc  improved ability of HEVI to seperate out non-volatile                  
+261RFAc  interfering activities prior to counting, the half-life reported       
+261RFAc  in this work is expected to be better than the earlier value from      
+261RFAc  1970Gh01. The experiment was not sensitive to detecting a              
+261RFAc  shorter half-life state. The volatility temperature of                 
+261RFAc  {+261}RfBr{-4} was 175{+o} C and the adsorption enthalpy given         
+261RFac  as -87 |+ 7 kJ/mol{+-1}.                                               
+261RF c  2001Hu22:produced as daughter in the chemical study of seaborgium oxide
+261RFac  hydroxide with the reaction {+248}Cm({+22}Ne,4{In}){+266}Sg at a       
+261RF2c  beam energy of 119 MeV provided by UNILAC, GSI.  See {+265}Sg adopted  
+261RF3c  levels for details. The results of this experiment were reassigned to  
+261RF4c  {+265}Sg and {+261}Rf in the analysis by 2008Du09 and are              
+261RFAc  relevant here. Two |a-SF events were measured in the energy window     
+261RFAc  of 8.61 to 8.75 MeV attributed to {+266}Sg and                         
+261RFAc  {+262}Rf: E|a{-1}=8.66 MeV, |t{-1}=84.9 s and |t(SF)=7.0 s;            
+261RF2c  E|a{-2}=8.70 MeV, |t{-2}=4.8 s, |t(SF)=3.7 s. From both events,        
+261RF4c  probabilities of randomness were 0.82 (no random), 0.16 (one random)   
+261RF5c  and 2% (both random). Evaluators note that                             
+261RF7c  the average E|a=8.680 MeV |+ 28 corresponding to T{-1/2}=31 s          
+261RFAc  {I+57-12} (Sg). The two-event SF T{-1/2}(SF)=4 s {I+7-2} (Rf).         
+261RF c  2002Ho11: descendant of {+277}112. The experiment of 1996Ho13 was      
+261RF2c  redone at GSI/SHIP. The {+208}Pb({+70}Zn,n) reaction was again used at 
+261RF3c  projectile energies of 346.1 MeV (E*=12.0 MeV; |s=0.5 pb {I+11-4};     
+261RF4c  1 event) and 343.8 MeV (E*=10.1 MeV; |s<2.6 pb; 0 events). One         
+261RF5c  EVR-|a1-|a2-|a3-|a4-SF event observed. Retracted one event observed by 
+261RF6c  1996Ho13. See {+277}112 Adopted Levels in 2005Gu33 for details.        
+261RFAc  Two events were measured for this nucleus: E|a=8.52 MeV and            
+261RFAc  T{-1/2}=4.7 s and a SF event with a lifetime of 14.5 s. The            
+261RFAc  experimenters conclude that two states exist in {+261}Rf with          
+261RFAc  half-lives of 78 s {I+11-6} and 4.2 s +3.4-1.3. The first state decays 
+261RFAc  by the emission of an |a particle with E|a=8.28 MeV. The second state  
+261RFAc  decays either by an |a particle with E|a=8.52 MeV or by SF with a      
+261RFAc  branching of about 40%. It is suggested that the level with            
+261RFAc  T{-1/2}=4.2 s and E|a=8.52 MeV offers a better agreement with ground   
+261RFAc  state systematics. The state decaying with T{-1/2}=78 s is suggested   
+261RFAc  as being an isomeric state. The possibility that {+261}Rf may have two 
+261RFAc  states was put forward here for the first time.                        
+261RF c  2003Tu05, 2003Du27, 2002Du21: descendent of {+269}Hs in a chemical     
+261RFAc  study. {+269,270}Hs produced by {+248}Cm({+26}Mg,xn)                   
+261RF2c  at E=143.7-146.8 MeV (|s({+269}Hs)|?6 pb, |s({+270}Hs)|?4 pb) at       
+261RF3c  GSI using UNILAC with {IIn situ} Volatilization and Online detection   
+261RF4c  (IVO) as part of a large international collaboration. Three decay      
+261RF5c  chains were attributed to {+269}Hs.                                    
+261RFAc  Chemically separated Hs atoms were identified by observing             
+261RF7c  genetically linked decay chains. See {+269,270}Hs Adopted Levels       
+261RF8c  in 2005Gu33 for details.                                               
+261RF t    {TV}Event #1: 12-May-2001 at 09:55:03 hrs                            
+261RF#t    E{-|a1}=9180 MeV +7-3              - assigned to {+269}Hs            
+261RF2t    E{-|a2}=8.69 MeV +7-3 t2=4.4 s     - assigned to {+265}Sg            
+261RF3t    E{-|a3}=8.50 MeV +7-3 t3=2.4 s     - assigned to {+261}Rf            
+261RF4t    E{-|a4}=8.21 MeV +7-3 t4=55.6 s    - assigned to {+257}No            
+261RF5t  {TV}Event #2: 12-MAY-2001 at 22:00:28 hrs                              
+261RF6t    E{-|a1}=9.10 MeV +7-3              - assigned to {+269}Hs            
+261RF7t    E{-|a2}=8.68 MeV +7-3 t2=9.3 s     - assigned to {+265}Sg            
+261RF8t    E{-SF}=179 MeV 6      t3=7.9 s    - assigned to {+261}Rf             
+261RF9t  {TV}Event #3: 13-May-2001 at 10:02:07 hrs                              
+261RFAt    E{-|a1}=8.88 MeV +7-3 (partial E|a) - assigned to {+269}Hs           
+261RFBt    E{-|a2}=8.90 MeV +7-3 t2=17.1 s    - assigned to {+265}Sg            
+261RFCt    E{-|a3}=8.50 MeV +7-3 t3=0.846 s   - assigned to {+261}Rf            
+261RF c  The above properties are from 2003Tu05. Note that the life-times of    
+261RF2c  the parent could not be estimated with the applied thermochromatography
+261RF3c  technique since deposition times are not measured.                     
+261RFAc  2003Tu05 state that the first event with                               
+261RFAc  E|a=8.5 MeV {I+7-3}, |Dt=2.4 s                                         
+261RFAc  is in good agreement with {+261}Rf observed in the first decay chain   
+261RFAc  in 2002Ho11. Taking into account all three events listed above,        
+261RFAc  the experimenters suggest                                              
+261RFAc  E|a=8.5 MeV {I+7-3} (events 1 and 3 are energy redundant) and          
+261RFAc  T{-1/2}=4.2 s {I+34-13} (SF branch of 40%) for the                     
+261RFAc  ground state in {+261}Rf. The previously known 78 s                    
+261RFAc  state is proposed as an isomer, in agreement with 2002Ho11.            
+261RFAc  2003Du27 suggest a randomness probability of |<7|*10{+-5}              
+261RFBc  for decay sequences originating from {+269}Hs.                         
+261RFAc  Two more possible candidates for {+269}Hs                              
+261RFAc  are shown in 2002Du21 but not listed here since the parent             
+261RF5c  (in the first event) and daughter (in the second event)                
+261RF6c  were not observed. Tentative assignments of two decay chains initially 
+261RFAc  made to {+270}Hs in 2003Tu05 and 2002Du21 are reassigned to {+269}Hs   
+261RFAc  via 2006Dv01. All six events (three chains above, two tentative decays 
+261RFAc  and one candidate for either {+269}Hs or {+270}Hs from 2002Du21)       
+261RFAc  are taken into account by 2008Du09 in their reanalysis of {+261}Rf     
+261RFxc  data.                                                                  
+261RF c  2004Vo24: descendent of                                                
+261RFAc  {+269,270}Hs produced by {+248}Cm({+26}Mg,xn), E=142-150 MeV at        
+261RF2c  GSI using the UNILAC with Continuously Working Arrangement for         
+261RF3c  Clusterless Transport of {IIn-Situ} Produced Volatile Oxides           
+261RF4c  (CALLISTO). See {+269}Hs Adopted Levels in 2005Gu33 for details.       
+261RFAc  One correlated                                                         
+261RFHc  |a-|a-|a chain and five |a-SF chains observed; the last                
+261RFIc  |a-SF chain is a likely candidate for a random correlation.            
+261RF c  |a-|a-|a chain:                                                        
+261RF t    {TV}Event: {+269}Hs. October 30, 2002 (Probability to encounter      
+261RF+t   this as random: <4|*10{+-3})                                          
+261RF2t      E{-|a1}=9.12 MeV             - assigned to {+269}Hs                
+261RF3t      E{-|a2}=8.65 MeV t2=24.886 s - assigned to {+265}Sg                
+261RF4t      E{-|a3}=escape               - assigned to {+261}Rf                
+261RF5t      E{-|a4}=8.20 MeV t4=8.029 s  - assigned to {+257}No                
+261RF c  |a-SF events:                                                          
+261RF6t  {TV}Event #1: {+269,270}Hs. October 29, 2002                           
+261RF7t      E{-|a1}=9.284 MeV            - assigned to {+269,270}Hs            
+261RF8t      E{-|a2}=escape               - assigned to {+265,266}Sg            
+261RF9t      E{-SF}=31 MeV t3=10.484 s   - assigned to {+261,262}Rf             
+261RF6t  {TV}Event #2: {+269,270}Hs. November 8, 2002; 8:00 a.m.                
+261RF7t      E{-|a1}=9.124 MeV            - assigned to {+269,270}Hs            
+261RF8t      E{-|a2}=escape               - assigned to {+265,266}Sg            
+261RF9t      E{-SF}=31 MeV t3=17.721 s   - assigned to {+261,262}Rf             
+261RFAt  {TV}Event #3: {+269,270}Hs. November 10, 2002                          
+261RFBt      E{-|a2}=8.695 MeV            - assigned to {+265,266}Sg            
+261RFCt      E{-SF}=51 MeV t3=13.599 s   - assigned to {+261,262}Rf             
+261RFDt  {TV}Event #4: {+269,270}Hs. November 8, 2002; 9:12 a.m.                
+261RFEt      E{-|a2}=8.902 MeV            - assigned to {+265,266}Sg            
+261RFFt      E{-SF}=85 MeV t3=14.561 s   - assigned to {+261,262}Rf             
+261RFAt  {TV}Event #5:  Not assigned; possible random event.                    
+261RFEt      E{-|a2}=8.379 MeV                                                  
+261RFFt      E{-SF}=92 MeV t3=12.273 s                                          
+261RF c  Events 3 and 4 were included in the reevaluation by 2008Du09 and       
+261RFAc  taken as originating from {+269}Hs (undetected)                        
+261RFAc  decaying to {+265}Sg and ending by SF from the {+261}Rf{+b} state.     
+261RF c  2006Dv01: grand daughter of {+269}Hs produced by {+248}Cm({+26}Mg,5n)  
+261RF2c  at GSI/UNILAC. This was the first campaign, with beam energies of 193  
+261RFAc  MeV and 185 MeV corresponding to E=145, 136 MeV at the center of target
+261RFAc  for the expected 5n and 4n channels respectively.                      
+261RFAc  Three arc-shaped segmented targets (95.8% {+248}Cm, 4.2%               
+261RF3c  {+246}Cm); one segment contained 2% by weight of {+152}Gd (30%         
+261RF4c  enrichment) for simultaneous production of |a-decaying Os isotopes, a  
+261RF5c  chemical analog to Hs. See 2002Ki25, 2002Du21, and 2002Du22 for        
+261RF6c  description of rapid chemical separation and on-line detection method  
+261RF7c  used. Detection system consisted of a linear array of 2|*32 PIPS       
+261RF8c  detectors in two Invar profiles forming a vacuum tight gas channel.    
+261RF9c  Energy resolution=50 keV (FWHM). The energy region of interest at      
+261RFAc  E|a=8.0-9.5 MeV                                                        
+261RFAc  contained 145 events in the first 25 detectors. |a decay chain was     
+261RFBc  defined as an 8.0-9.5 MeV |a-decay followed within 300s in the same    
+261RFCc  or neighboring detector pair by an |a-decay in the same energy         
+261RFDc  window or by an SF. The search was repeated within the chain until no  
+261RFEc  |a-decay was registered. Data analysis revealed 15 correlated decay    
+261RFFc  chains in the first 25 detector pairs; eight at E=145 MeV and seven at 
+261RFGc  E=136 MeV. Based on the count rates, 3|*10{+-5} random sequences can be
+261RFHc  for |a-|a-|a-|a, 5|*10{+-3} for |a-|a-SF, and 1 for                    
+261RFIc  |a-SF. Cross sections of |?3 pb were measured for {+270}Hs at 136 MeV  
+261RFJc  and |?7 pb for {+269}Hs at 145 MeV within an estimated accuracy of a   
+261RFKc  factor of |?3.                                                         
+261RF t    {TV}Correlated chains observed:                                      
+261RF2t  E{-beam}    E{-1}       E{-2}      |Dt{-2}       E{-3}     |Dt{-3}     
+261RF+t       E{-4}    |Dt{-4}   Assignment                                     
+261RF3t  {U(MeV)}  {U(MeV)}  {U (MeV) }   {U (s)  }  {U (MeV) }  {U (s) }       
+261RF+t    {U(MeV)}  {U(s) }  {U         }                                      
+261RF4t   145   8.93   8.69      32.5    8.29     32.1   8.29   2.50  {+269}Hs  
+261RF4t   145   9.06   8.68      85.6    93       4.44                {+269}Hs  
+261RF4t   145   9.11   8.68      2.48    67/13    7.09                {+269}Hs  
+261RF4t   145   8.91   8.65      6.75    29       6.69                {+269}Hs  
+261RF4t   145   9.03   8.60      7.70    111/26   6.42                {+269}Hs  
+261RF4t   145   8.92   8.72      6.82    90/101   1.29                {+269}Hs  
+261RF4t   145   8.35   38        0.116                                None      
+261RF4t   145   8.85   100/74    1.62                                 {+270}Hs  
+261RF4t   136   9.08   8.71      8.70    100/74   0.580               {+269}Hs  
+261RF4t   136   9.10   80/90     96.0                                           
+261RF+t                                   {+269}Hs{+a}                          
+261RF4t   136   8.90   89/55     0.0496                               {+270}Hs  
+261RF4t   136   8.92   106/82    0.449                                {+270}Hs  
+261RF4t   136   8.88   96/110    0.444                                {+270}Hs  
+261RF4t   136   9.30   8.20      149     89/95    12.0                          
+261RF+t                  {+271}Hs{+a}                                           
+261RF4t   136   8.67   117/102   306                                  None      
+261RF4t  {+a} {TV}Tentative assignment                                          
+261RF c  Of the 7 events pertaining to the decay of {+265}Sg and {+261}Rf,      
+261RFAc  one event with                                                         
+261RFAc  E|a=8.29 MeV and T{-1/2}=22 s was assigned to {+261}Rf{+a} while the   
+261RFAc  other 6 events were assigned to the SF branch of {+261}Rf{+b} (states  
+261RFAc  labelled in accordance with 2008Du09).                                 
+261RF c  Evaluators Note:                                                       
+261RFAc  While the results from this experiment are contradictory to            
+261RFAc  earlier reports,                                                       
+261RFAc  they also differ from the properties of {+266}Sg and {+270}Hs          
+261RFAc  adopted in 2005Gu33.                                                   
+261RFAc  2006Dv01 suggest that data pertaining to these nuclides from earlier   
+261RFAc  studies are more consistent with decays from {+265}Sg and {+269}Hs and 
+261RFAc  were erroneously assigned to {+266}Sg and {+270}Hs whose properties    
+261RFAc  stand revised via their work. The quantities adopted in 2005Gu33       
+261RFAc  were in consonance with claims made by the various experimental        
+261RFAc  groups, some of which cited 'unambigious' results for these nuclides.  
+261RFAc  It is worthwhile to note that many of the early studies were           
+261RFAc  designed primarily to                                                  
+261RFAc  measure chemical properties such as the greatly increased volatility   
+261RFAc  of chlorides of trans-actinides ({Ii.e.} elements above Z=103).        
+261RFAc  Hence, the experimental focus was mainly on the transmission of SF     
+261RFAc  activity through a suitable detection system indicative of the         
+261RFAc  presence of a specific nuclide and chemical species of interest (or its
+261RFAc  absence), rather than on the accurate measurement of a half-life.      
+261RFAc  Additionally, the chemistry experiments employed hot fusion reactions  
+261RFAc  with actinide targets which are known to lead to a relatively large SF 
+261RFAc  background when compared to Pb-target based cold fusion reactions.     
+261RFAc  The non-negligible SF background through most of the chemistry         
+261RFAc  experiments may have interfered with the direct identification of      
+261RFAc  {+261}Rf{+b} as pointed out by 2008Du09.                               
+261RFAc  Finally, the presence of {+212}Po (E|a=8.52 MeV, I{-|a}=2.05%)         
+261RFAc  from transfer reactions caused by the projectile on Pb impurites       
+261RFAc  in the target, could also have hindered                                
+261RFAc  the detection of the 'second' shorter lived state, {+261}Rf{+b}        
+261RFAc  with E|a=8.505 MeV, even if the energy gate had been adequate.         
+261RFAc  Subsequent independent studies providing collateral information and    
+261RFAc  improved characterisation and assignment properties, through both      
+261RFAc  physical and chemical means were necessary in aiding more conclusive   
+261RFAc  assignments and an accurate determination of physical properties.      
+261RF c  2006Ni10: in a study of the reaction {+238}U({+30}Si,xn){+268}Sg at GSI
+261RF2c  using the UNILAC and SHIP. The SHIP setup was similar to               
+261RFAc  earlier work. See {+265}Sg adopted levels for details.                 
+261RFAc  One event (number 8) was attributed to {+265}Sg and daughter {+261}Rf. 
+261RFBc  The assignment was made                                                
+261RFAc  taking into account an 'average' half-life for {+265}Sg from           
+261RFAc  2003Tu05 (3 events) and 2002Ho11 (2 events). An SF event following     
+261RFAc  an escaped |a particle with a lifetime of 11.4 s was assigned to       
+261RFAc  {+261}Rf.                                                              
+261RFFc  The SF fragments were attributed to the presumed                       
+261RFGc  100% SF mode as a result of |a-decay from {+265}Sg, populating the     
+261RFAc  3.6 s {I+23-11} state in daughter {+261}Rf. The TKE was not provided as
+261RFAc  one of the SF fragments was not measured. A single |g emission with    
+261RFHc  energy 1172 keV was measured in coincidence with the SF decay          
+261RFIc  in the clover detector. The experimenters suggest that the gamma       
+261RFac  ray originated from a 100% SF branch of the 3.2 s level in {+261}Rf    
+261RFac  fed by the 15.2 s parent state with half life 10.5 s in {+265}Sg. If   
+261RFac  confirmed, this may represent the proposed 20% branch from {+265}Sg{+a}
+261RFac  to {+261}Rf{+b} (evaluators).                                          
+261RF c  2007Mo09, 2005MoZT, 2005MoZQ: descendent of 27712.                     
+261RF2c  Confirmatory experiments performed by the Japanese group at RIKEN with 
+261RF3c  {+208}Pb({+70}Zn,n) E=345.9 MeV (|s=0.44 pb {I+59-29}). Two            
+261RF4c  EVR-|a1-|a2-|a3-|a4-SF events observed. Confirmed results of 2002Ho11. 
+261RF5c  See {+277}112 Adopted Levels in 2005Gu33 for details. Randomness       
+261RF6c  factors are provided in 2007Mo09. The revised half-life for {+261}Rf   
+261RFAc  from 4 events (including the two from GSI) is suggested                
+261RF7c  as 5.3 s {I+53-18}. 2007Mo09 note that while E|a of grand-parent       
+261RF8c  {+269}Hs from 2006Dv01 is somewhat low when compared to their results, 
+261RFAc  the |a energies for {+265}Sg and decay properties of {+261}Rf are      
+261RFAc  consistent. 2007Mo09 suggest                                           
+261RFAc  an |a:SF branching of 1:3 from the fifth event chain.                  
+261RF c  2008Dv02: grand daughter of {+269}Hs produced by {+248}Cm({+26}Mg,5n)  
+261RF2c  at GSI/UNILAC. This was the second campaign with beam energies of 197  
+261RFAc  MeV, 189 and 181 MeV corresponding to E=150, 140 and 130 MeV at the    
+261RFAc  target center. The experimental set-up was the same as used in         
+261RFAc  2006Dv01. Excitation functions were measured for the                   
+261RFAc  {+248}Cm({+26}Mg,3-5n){+269-271}Hs reaction in this work.              
+261RFAc  Five decay chains attributed to {+269}Hs were observed:                
+261RF t    {TV}Correlated chains observed:                                      
+261RF2t  E{-beam}    E{-1}       E{-2}      |Dt{-2}       E{-3}     |Dt{-3}     
+261RF+t       E{-4}    |Dt{-4}   Assigment                                      
+261RF3t  {U(MeV)}  {U(MeV)}  {U (MeV) }   {U (s)  }  {U (MeV) }  {U (s) }       
+261RF+t    {U(MeV)}  {U(s) }  {U         }                                      
+261RF4t   150   9.18   8.62      10.9    8.51     4.89   8.24   20.8  {+269}Hs  
+261RF4t   150   9.13   8.68      7.61    79/88    2.25                {+269}Hs  
+261RF4t   140   8.61   83/84     3.35                                           
+261RF+t                                   {+265}Sg{+a}                          
+261RF4t   140   9.11   8.63      52.0    75/-     3.04                          
+261RF+t                  {+269}Hs{+b}                                           
+261RF4t   140   9.22   8.47      12.3    84/120   0.128               {+269}Hs  
+261RF4t  {+a} {TV}Incomplete (|a)-|a-SF chain from {+269}Hs                     
+261RF4t  {+b} {TV}First particle not position correlated                        
+261RF c  Revised decay properties were deduced from all                         
+261RFAc  events including those from 2006Dv01:                                  
+261RF c  {+269}Hs: |a decay, E|a=9.13 MeV {I5} with T{-1/2}=4 s (T{-1/2}        
+261RFAc  calculated using 2005Pa72) and 8.95 MeV {I5};                          
+261RF2c  {+270}Hs: |a decay, T{-1/2}=23 s (calculated                           
+261RF3c  using 2005Pa72 and Q(|a) deduced from their experimental data),        
+261RF4c  E|a=8.88 MeV {I5}; {+265}Sg: |a decay, T{-1/2}=15 s {I+7-4}, E|a=8.69  
+261RF5c  MeV {I5}; and {+266}Sg: SF decay, T{-1/2}=360 ms {I+250-100};          
+261RF6c  {+261}Rf{+a}: |a decay, T{-1/2}=20 s {I+110-10}, E|a=8.29 MeV {I5}; and
+261RF7c  {+261}Rf{+b}: |a decay, T{-1/2}=3 s {I+1-1}, E|a=8.51 MeV {I5} with    
+261RF8c  |a:SF ratio 0.09:0.91.                                                 
+261RF c  2008Du09: reexamine all earlier data for {+265}Sg and {+261}Rf         
+261RFAc  following reassignments via 2006Dv01.                                  
+261RFAc  A comprehensive reevaluation of all data relevant to                   
+261RFAc  the production of {+261}Rf in the reaction                             
+261RFac  248Cm(22Ne,{Ix}n){+270-{Ix}}Sg                                         
+261RFAc  was undertaken in an attempt to address                                
+261RFAc  existing ambiguities in deduced properties due to the varying          
+261RFAc  quality of older data. Decay properties previously                     
+261RFAc  assigned to {+266}Sg in 1994La22, 1996La12, 1998Tu01, 2001Hu22,        
+261RFAc  2003Tu05 and 2004Vo24 are reexamined together with new                 
+261RFAc  data from 2006Dv01                                                     
+261RFAc  and 2008Dv02. Properties of {+261}Rf from 1996Ka66 and 1996Ho13 are    
+261RFAc  also examined.                                                         
+261RFAc  A total of 60 events were considered for {+265}Sg and {+261}Rf         
+261RFAc  following reassignments.                                               
+261RFAc  Strong indications for two states (a and b) in {+261}Rf are suggested  
+261RFAc  although it is not possible to conclusively deduce which (if any)      
+261RFAc  is the ground state due to the poor quality of data.                   
+261RF c  Decay properties attributed to this nucleus are:                       
+261RF c  {+261}Rf{+a}: E|a=8.30 MeV; T{-1/2}=68 |+ 3 s; b{-SF}<0.11             
+261RF c  {+261}Rf{+b}: E|a=8.51 MeV; T{-1/2}=3 |+ 1 s; b{-SF}=0.91.             
+261RF c  From available data on the direct production of                        
+261RFAc  {+261}Rf the isomeric population ratio                                 
+261RFac  |s({+261}Rf{+a})/|s({+261}Rf{+b}) > 2 is deduced. In the case of the   
+261RFac  direct production of the grand-parent {+269}Hs, the decays proceed     
+261RFAc  preferentially to through 'b' states.                                  
+261RF c  2008Ga08: {+261}Rf produced as an EVR                                  
+261RFAc  in {+238}U({+26}Mg{+6+},3n) reaction at                                
+261RF2c  the lowest excitation energy of 35.3 MeV corresponding to a centre     
+261RFac  of target beam energy of 121.8 MeV. Excitation functions               
+261RFac  are shown for the 4{In}, 5{In} and 6{In} channels and an analysis      
+261RFac  provided. Noting that                                                  
+261RFac  2008Dv02 have observed a 3{In} channel from the                        
+261RFac  {+248}Cm+{+26}Mg reaction of comparable magnitude to the 4{In} channel 
+261RFac  in this work, a dedicated irradiation was performed to examine this.   
+261RFac  Experimenters used a                                                   
+261RFAc  {+238}UF{-4} rotating target at the 88-Inch                            
+261RF3c  cyclotron facility at LBNL and with the Berkeley gas-filled            
+261RF4c  recoil separator (BGS) filled with He gas. A pulsed beam was used for  
+261RFac  portions of the run to mimimise random correlations. A fast shut-off   
+261RFac  mode was used during the pulsed portion of this experiment,            
+261RFac  following the detection of an EVR during the beam pulse and            
+261RFac  the observed |a within 300 s and |+ 3.5 mm of the EVR. This  enabled   
+261RFac  the detection                                                          
+261RFac  of the 25 s  daughter {+257}No in nearly background free conditions.   
+261RFac  280 such beam shut-offs lasting 100 s each were triggered by a         
+261RFac  potential EVR-|a event. 8 |a particles were measured in the energy     
+261RFac  range 8.0-8.7 MeV. Expected random EVR-|a-|a sequences numbered        
+261RFac  7 x 10{+-3} during the entire irradiation. The probability of          
+261RFac  obtaining a random EVR-SF sequence was within five half-lives          
+261RFac  of {+261}Rf{+b} (estimated to be 6%). A single correlated              
+261RFac  EVR-|a-|a event with properties E|a=8.34 MeV {I5} attributed to        
+261RFac  {+261}Rf{+a} decay and |t=103.2 s,                                     
+261RF3c  followed by E|a=8.30 MeV {I5}, |t=12.2 s from {+257}No decay was       
+261RFac  observed corresponding to a cross-section of 28 pb {I+92-26}.          
+261RFac  One EVR-SF event with SF energy of 173.3 MeV and lifetime of           
+261RFac  9.4 s could belong to either state of Rf. Given that only a            
+261RFac  6% chance of a random EVR-SF event exists within 5 half-lives          
+261RFac  of {+261}Rf{+b}, if confirmed, the authors claim that                  
+261RFac  this is the first observation                                          
+261RFac  of the "isomeric" state produced directly as an EVR rather than as the 
+261RFac  daughter of {+265}Sg. The evaluators note that the                     
+261RFac  assignment to the {+261}Rf{+b} state is in agreement with 2008Du09     
+261RFac  although any conclusion regarding whether this is an isomeric or ground
+261RFac  state requires confirmation.                                           
+261RFac  The cross-section of the reaction in the 3n                            
+261RFac  channel will increase by 14% to 32 pb {I+93-26} including this event.  
+261RFac  Note that the evaluators adopt a nomenclature for states 'a' and 'b'   
+261RFac  consistent with 2008Du09.                                              
+261RF c  2011Ha13: Direct synthesis via the reaction {+248}Cm({+18}O,5n){+261}Rf
+261RFac  at RIKEN. Though both states were populated, the purpose of the        
+261RFac  experiment was a detailed study of the isomeric state {+261}Rf{+b}     
+261RFac  to determine its decay properties. Through this experiment, the decay  
+261RFac  properties of this state were directly measured for the first time.    
+261RF2c  The {+18}O beam was accelerated to energies of 95.1 and 93.1 MeV       
+261RFac  (middle of target) by the RIKEN Linear Accelerator (RILAC). Eight      
+261RF4c  arc-shaped targets of 230 |mg/cm{+2}  thick {+248}Cm{-2}O{-3}          
+261RF5c  enriched to 96.638% with 0.91 mg/cm{+2} Ti  backing foil rotated       
+261RF3c  on a 100-mm diameter wheel at 1000 rpm. EVRs were separated in-flight  
+261RFac  by GARIS and extracted by a gas jet system. The thermalised            
+261RFac  {+261}Rf ions were then attached to KCl aerosols and delivered to a    
+261RFac  shielded rotating wheel apparatus MANON for |a-spectrometry. The gas   
+261RFac  jet transport efficiency was 52 |+ 12% for {+261}Rf{+a}. In MANON, the 
+261RFac  aerosol particles were deposited on Mylar foils, 40 of which were set  
+261RFac  on the periphery of the rotating wheel. The wheel was stepped to       
+261RFac  position the foils between 7 pairs of Si PIN photodiodes with 38%      
+261RFac  counting efficiency. Step intervals were set to 30.5 s and 2.0 s to    
+261RFac  enable the study of both the the 68 s {+261}Rf{+a} and the 3 s         
+261RFac  {+261}Rf{+b} respectively. Detector signals for alpha particles were   
+261RFac  set at 1-20 MeV and for SF fragments 5-150 MeV. FWHM for               
+261RFac  |a detection was 50 keV in the top detectors and about 100 keV in the  
+261RFac  bottom ones.  In the  step interval of 30.5 s, 126 and 100 |a          
+261RFac  events were registered with energy 8.0 to 8.41 MeV while 174 and 23    
+261RFac  events were observed at a step interval of 2.0 s at beam energies of   
+261RFac  95.1 and 93.1 MeV respectively. From a total of 120 |a-|a              
+261RFac  correlations,  113 decayed with an alpha energy of 8.01-8.37 MeV. The  
+261RFac  average energy was EA=8.28 |+ 0.05 MeV with a half life deduced to be  
+261RFac  24 |+ 3 s.  These decay properties were consistent with                
+261RFac  the parent-daughter pair {+261}Rf{+a}-{+257}No. 6 |a-|a correlations   
+261RFac  were observed for the alpha group E|a=8.41-8.61 MeV at the 2.0 s time  
+261RFac  step. The average EA=8.52|+0.05 MeV from the top detectors,            
+261RFac  with an |a-decay half life of 2.4 |+ 0.8 s consistent with             
+261RFac  {+261}Rf{+b}. The number of random  correlations was estimated to be   
+261RFac  0.58 events. In addition to alpha decay, 5 and 8 SF events             
+261RFac  were measured respectively at 95.1 MeV and 93.1 MeV, 30.5 s            
+261RFac  time step, 77 and 9 SF events occured at 95.1 MeV and 93.1 MeV,        
+261RFac  2.0 s time step. Assuming that all SF activity for the 30.5 s time step
+261RFac  is from {+261}Rf{+a}, a b{-SF}<13% (68% c.i.) is deduced. From 86      
+261RFac  fission events at  the 2.0 s time step, a SF halflife of 1.8 |+ 0.4 s  
+261RFac  was deduced (Fig 3) and assigned to {+261}Rf{+b}. Refitted data taking 
+261RFac  into  account the sum of 8.5 MeV a-decays (9 events) and SF activity   
+261RFac  (77 and 9 events at beam energies of 95.1 MeV and 93.1 MeV             
+261RFac  respectively) yielded a half life  of 1.9 |+ 0.4 sec for {+261}Rf{+b}. 
+261RFac  Data are insufficient for a conclusive determination of the ground     
+261RFac  state. Experimenters suggest that the SF                               
+261RFac  half life of 2.1 |+ 0.2 s attributed to {+262}Rf by 1996La11, could    
+261RFac  possibly belong to {+261}Rf{+b}. SF branch of  b{-SF}=73 |+ 6% is      
+261RFac  derived. An exceptional |a-|a correlation at the 2.0 s time step       
+261RFac  with parent EA=8.91 MeV, |t=4.05 s was tentatively proposed as         
+261RFac  belonging to {+259}Rf.  The deduced cross-section                      
+261RFac  (sum of both states) was estimated to be 23 |+ 4 nb. Cross-section for 
+261RFac  {+261}Rf{+b}=11|+2 nb at 95.1 MeV by comparing with {+261}Rf{+a}=12|+3 
+261RFac  nb as reported by 2002Na37. Evaluators note that cross-sections        
+261RFac  reported by 2002Na37 for the same reaction are: 8|+2 nb                
+261RFac  (E{-lab}=91 MeV), 13|+3 nb (E{-lab}=94 MeV) and 8|+2 nb                
+261RFac  (E{-lab}=99 MeV). The ratio of cross-section in the current work is    
+261RFac  provided as {+261}Rf{+a}/{+261}Rf{+b}=1.1 |+ 0.2.                      
+261RF c  2012Ha05: Daughter of {+265}Sg produced using the reaction             
+261RFac  248Cm(22Ne,5{In}){+265}Sg at RIKEN. The {+22}Ne projectiles were       
+261RFac  delivered on target by RILAC with E{-beam}=117.8 MeV at the centre of  
+261RFac  target. For experimental details see Adopted Levels for {+265}Sg.      
+261RFac  A total of 18 and 24 observed events were attributed to parents        
+261RFac  {+265}Sg{+a} and  {+265}Sg{+b} respectively. Their corresponding       
+261RFac  daughters were respectively populated by 16 and 4 |a decays to         
+261RFac  {+261}Rf{+a} and 2 and 20 decays to {+261}Rf{+b}. The decay branching  
+261RFac  was calculated to be 91% ({+265}Sg{+a} to {+261}Rf{+a}, 16 of 18 |a    
+261RFac  decays) and 9% ({+265}Sg{+b} to {+261}Rf{+b}, 4 of 24 |a decays). A    
+261RFac  total of 25 decays from 18 SF events and 7 |a-decays, were attributed  
+261RFac  to {+261}Rf{+b}. E{-|a}=8.51 |+ 0.06 MeV from the 7 |a decays. The     
+261RFac  corresponding |a decay half-life is 10 s {I+6-3} (evaluators).         
+261RFac  A SF half life of 2.6 s {I+7-5} was deduced from the 22 fission events.
+261RFac  Decay branching SF:|a was b{-SF}=0.82|+0.09 : b{-|a}=0.18|+0.09.       
+261RFac  In addition, a total of 15 lifetimes for {+261}Rf{+a} were measured    
+261RFac  from triple |a correlations from {+265}Sg{+a or b} to {+261}Rf{+a} to  
+261RFac  {+257}No from which a half life of 59 |+ 42 s was derived using an     
+261RFac  exponential decay curve analysis. Evaluators note the large            
+261RFac  uncertainty in this value. The average |a energy was found to be       
+261RFac  8.27 |+ 0.06 MeV which agrees with the literature value.               
+261RF c  2013Mu08: Direct synthesis using the reaction 248Cm(18O,5{In}){+261}Rf 
+261RFac  at RIKEN using the RILAC facility to investigate the short lived SF    
+261RFac  components. Beam energies in the laboratory                            
+261RFac  frame were 88.2, 90.2, 94.8 and 101.3 MeV at centre of target. EVRs    
+261RFac  were separated by GARIS and transported to a Si detector array at the  
+261RFac  focal plane. Decay events were detected in beam off conditions. To     
+261RFac  distinguish between short-lived SF activity and the decay of {+262}Rf  
+261RFac  beam on-off periods were set to 6 s, 6 s, 0.1 s and 0.1 s. Following   
+261RFac  irradiations at each energy, background events were measured for       
+261RFac  several hours to estimate the contribution of long lived background    
+261RFac  SF events. Most of the events pertaining to {+261}Rf{+a} and its       
+261RFac  alpha decay daughter {+257}No were observed                            
+261RFac  at a beam energy of 94.8 MeV as expected going by the calculations of  
+261RFac  2004Ni10. 26 |a-|a correlations were observed with the following       
+261RFac  properties: 25 events at a beam energy of 94.8 MeV with                
+261RFac  E|a (average)=8.28 |+ 0.04 MeV (68% c.i.) consistent with the |a-decay 
+261RFac  of {+261}Rf{+a}; 1 event at a beam energy of 90.2 MeV with             
+261RFac  E|a=8.48|+0.04 MeV. The single event was attributed to {+261}Rf{+b}    
+261RFac  noting that the lifetime of the decay daughter was 11.8 s consistent   
+261RFac  with literature values for {+257}No. Estimated total number of random  
+261RFac  events in the |a- energy region 8.00 to 8.62 MeV was 0.14 suggesting   
+261RFac  true |a-|a correlations. Random |a-SF sequences were estimated to be   
+261RFac  0.09.                                                                  
+261RFac  Production cross-sections for {+261}Rf{+a} were derived from the total 
+261RFac  events within the |a-energy range 8.00 to 8.62 MeV at each beam energy:
+261RFac  0.47 |+ 0.20 nb (E{-b}=88.92 MeV), 1.8 |+ 0.6 nb (E{-b}=90.2 MeV),     
+261RFac  12 |+ 3 nb (E{-b}=94.8 MeV) and 4.1 |+ 1.1 nb (E{-b}=101.3 MeV).       
+261RFac  Cross-sections for the SF nuclide {+261}Rf{+b} were derived from the   
+261RFac  yields of {+261}Rf{+a} although the SF event was observed only at a    
+261RFac  beam energy of 94.8 MeV, as follows:1.5 nb {I+18-15} (E{-b}=88.92 MeV),
+261RFac  3.7 |+ 3 nb (E{-b}=90.2 MeV), 12 |+ 4 nb (E{-b}=94.8 MeV) and          
+261RFac  0.9 nb {I+26-9} (E{-b}=101.3 MeV). Total cross-sections for both states
+261RFac  {+261}Rf{+(a+b)} were 2.0 |+ 1.8 nb (E{-b}=88.92 MeV),                 
+261RFac  5.5 |+ 3.1 nb (E{-b}=90.2 MeV), 24 |+ 5 nb (E{-b}=94.8 MeV) and        
+261RFac  5.0 |+ 2.9 nb (E{-b}=101.3 MeV). The experimenters concluded that the  
+261RFac  ratio of cross-sections {+261}Rf{+a}:{+261}Rf{+b} depends on           
+261RFac  reaction employed.                                                     
+261RF c  2013Su04: Descendent of {+277}Cn produced in the cold fusion reaction  
+261RFac  208Pb(70Zn,n){+277}Cn at RIKEN. Three beam energies were used:         
+261RFac  347.5, 351.5 and 355.5 MeV. A single event was observed at 351.5 MeV.  
+261RFac  The fifth decay in the sequence with E(SF)=176 MeV and a decay time of 
+261RFac  3.73 s was attributed to this nucleus. The corresponding half life of  
+261RFac  4.7 s {I+36-14} is in agreement within uncertainties with known values 
+261RFac  for {+261}Rf{+b}. Experimenters suggest that when {+265}Sg and {+261}Rf
+261RFac  are produced as |a-decay daughters, they form only one of the two      
+261RFac  isomeric states.                                                       
+261RF c  Other: 2002Na37, 2006Sc02, 2007Ha29, 2009HA49.                         
+261RFAc  See also 1996La11 wherein                                              
+261RFAc  properties assigned to {+262}Rf may belong to {+261}Rf.                
+261RF c  Theory: see Nuclear Science References.                                
+261RF c  Assignment: reassessment of all data from {+248}Cm+{+22}Ne reaction    
+261RFAc  (2008Du09); chem, {+248}Cm({+18}O,5n){+261}Rf, E{-beam}=95.1, 93.1 MeV 
+261RFAc  (2011Ha13); 248Cm(18O,5{In}){+261}Rf, E{-lab}=88.2, 90.2, 94.8 and     
+261RFac  101.3 MeV (2013Mu08).                                                  
+261RF cL $Current data do not allow a conclusive assignment of any              
+261RFacL level to the g.s.                                                      
+261RF cL $2012Au07 assign the longer lived state to the isomer.                 
+261RF cL $The labeling of states is in accordance with 2008Du09.                
+261RF cL $Based on the re-examination of earlier data, 2008Du09 note            
+261RFacL that both states in {+261}Rf are fed with similar intensity when parent
+261RFacL {+265}Sg is produced as an EVR.                                        
+261RF cL $In the case of the direct production of                               
+261RFacL grand-parent {+269}Hs, the decays proceed preferentially through       
+261RFacL 'b' states (2008Du09, 2012Ha05).                                       
+261RF cL $Cross-feeding of both states does occur. Relative intensities are     
+261RFacL from 2012Ha05.                                                         
+261RF  XA265SG A DECAY (14.4 S)                                                 
+261RF  XB265SG A DECAY (8.5 S)                                                  
+261RF  L X                             68 S      +3-3                           
+261RF2 L %A=100  (2012Ha05)                                                     
+261RF cL $This level was labelled {+261}Rf{+a} by 2008Du09 as possible g.s.     
+261RF cL T$from 2008Du09                                                        
+261RF cL $Others: 65 s {I10} (1999Ar21,1970Gh01);                               
+261RFAcL 65 s (1994Lo27, 1994La22);                                             
+261RFAcL 78 s {I+11-6} (1996Ka66,2002Ho11);                                     
+261RFAcL 74 s {I+7-6}; 75 s |+ 7 recommended as weighted average including      
+261RFAcL 1996Ka66 (2000Sy01);                                                   
+261RF4CL 81 s {I9} (2012Au07 for isomer);                                       
+261RFAcL 20 s {I+110-10} (2008Dv02);                                            
+261RF4cL 71 s {I+342-33} (2008Ga08);                                            
+261RF5cL $74 s {I+74-25} (evaluated value) using the approximations of          
+261RFAcL 1984Sc13 for events 8, 11, 33 and 49 in 2008Du09.                      
+261RF cL $T{-1/2}(SF)|>11 min (2000Ho27); >709 s (1996Ka66)                     
+261RF cL $T{-1/2}(calc)=61 s for Q(|a)=8.409 MeV (2013Mu08) using Viola-Seaborg 
+261RFxcL systematics for g.s.                                                   
+261RF cL $%|a>80, %SF<10, %|e+%|b{++}<15 (1999Ar21,1970Gh01);                   
+261RF cL $%|a=?; %|b{++}<15; %SF <10 (2012Au07 for isomer); %SF <11 (2002Ho11)  
+261RF cL $%SF<0.11 (2008Du09) from a re-evaluation of data;                     
+261RF cL $%SF<0.13 (68% c.i. from 2011Ha13).                                    
+261RF cL E$Average EA=8280 keV 40 (QA=8409 keV 40) from 25 correlated |a        
+261RFacL decay events (2013Mu08); Average EA=8280 keV 50 (QA=8409 keV 50)       
+261RFacL from 113 events (2011Ha13)                                             
+261RF cL           This may be the possible g.s., based on systematics          
+261RF3cL (evaluators) and consistent with the findings of 2008Du09.             
+261RF cL J         2012Au07 suggest 9/2+ and                                    
+261RF3cL denote this as an isomeric state in agreement with 2002Ho11. 2003Au02  
+261RF4CL had suggested 9/2+ or 3/2+ based on systematics.                       
+261RF2cL 9/2+ is recommended by evaluators for the g.s.                         
+261RF cL J$|W(n)=7/2+ from 1997Mo25                                             
+261RF cL $|b{-2}(theory): 0.228 from 1995Mo29; 0.251 from 2003Mu26              
+261RFX L XREF=AB                                                                
+261RF  L   234+X   57                  1.9 S     4                           M1 
+261RFX L XREF=AB                                                                
+261RF2 L %SF=73 6$ %A=27 6 (2011Ha13)                                           
+261RF cL $This level was labelled {+261}Rf{+b} by 2008Du09 as possible isomer.  
+261RF cL $%2011Ha13 values at 68% c.i. Others:                                  
+261RF2cL %SF=91 (2008Du09,2008Dv02); %SF=82 {I9}, %|a=18 {I9} (2012Ha05).       
+261RFAcL %SF=40, as g.s. (2002Ho11,2003Tu05);                                   
+261RFacL %SF=88 {I5} %|a=12 {I5} (2013Mu08);                                    
+261RFacL %SF|?82 (2012Ha05); %SF=73 {I6} %|a=27 {I6} (2012Au07 as g.s.).        
+261RF cL E$Calculated from E|a difference                                       
+261RF cL T$from 9 |a-decays and 86 SF events (2011Ha13).                        
+261RF2cL Other: 3.26 s as g.s. (1996Ho13); 4.2 s {I+34-13} as g.s. (2001Ho11).  
+261RFacL 1.8 s |+4 from 86 SF events; 1.9 s |+4 for 9 |a events and 88 SF events
+261RFacL (2011Ha13); 2.2 |+ 3 s (2012Au07 as g.s.)                              
+261RF cL $T{-1/2}(SF): >709 s (1996Ka66);  2.6 s {I+7-5}                        
+261RFacL from 22 fission events (2012Ha05);                                     
+261RFbcL 7 s {I+31-3} (2008Ga08)from one observation pending                    
+261RF2cL confirmation and computed by evaluators using the method of 1984Sc13.  
+261RF cL $T{-1/2}(calc)=10 s for Q(|a)=8.653 MeV (2011Ha13) using Viola-Seaborg 
+261RFAcL systematics for g.s.                                                   
+261RF cL $EA=8510 keV 60 (QA=8642 keV 60) from 7 |a events (2012Ha05); 8520 keV 
+261RFacL 50 (QA=8653 keV 50) from 9 |a events (2011Ha13)                        
+261RF cL $QA=8646.42 keV 50.00 from 2012Wa38 for ground state.                  
+261RF cL J         1/2+ is recommended based on systematics (evaluators).       
+261RFacL 2012Au07 suggest 3/2+ for this level as g.s.                           
+                                                                                
+261RF    265SG A DECAY (14.4 S)        2012Ha05                  ENSDF    201508
+261RF  H TYP=FUL$AUT=M. GUPTA$CIT=ENSDF$CUT=1-Aug-2015$                         
+261RF  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=ENSDF$CUT=31-Dec-2008$     
+261RF  H TYP=FUL$AUT=A.Artna-Cohen$CIT=NDS 88, 277 (1999)$CUT=31-Jul-1999$      
+261RF cL $Both states in {+261}Rf are fed when                                  
+261RF2cL parent {+265}Sg is produced as an EVR.                                 
+265SG  P X                             14.4 S    +37-25         9051      SY    
+265SG cP E,T,QP    From {+265}Sg Adopted Levels                                 
+265SG CP QP$8823 50 for the isomer From 2012Ha05. QP=9051 SY (2012WA38)         
+265SG cP J         (1/2+) from 1997Mo25.                                        
+265SG2cP 2012AU06 suggest 3/2+ based on systematics.                            
+261RF  N                       0.5     AP                                       
+261RF  L  X             (9/2+)            68 S   +3-3                           
+261RF cL E,T$from the Adopted Levels                                            
+261RF  A  8280     50   20   AP                                                 
+261RF cA           from 2013Mu08                                                
+261RF  L  234+X    57    (1/2+)        1.9 S     +4-4                        M1 
+261RF cL E         from |DE(|a)                                                 
+261RF  A  8520     50   80   AP                                                 
+261RF cA           from 2011Ha13.                                               
+                                                                                
+261RF    265SG A DECAY (8.5 S)         2012Ha05                  ENSDF    201508
+261RF  H TYP=FUL$AUT=M. GUPTA$CIT=ENSDF$CUT=1-Aug-2015$                         
+261RF  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=ENSDF$CUT=31-Dec-2008$     
+261RF  H TYP=FUL$AUT=A.Artna-Cohen$CIT=NDS 88, 277 (1999)$CUT=31-Jul-1999$      
+265SG  P 152+X     71                  8.5 S     +26-16         9051      SY    
+265SG cP J         (9/2+) suggested from systematics.                           
+265SG cP E,T,QP    From 265SG Adopted Levels                                    
+265SG CP QP$8976 50 (2012Ha05) for the isomer. QP=9051 SY (2012WA38)            
+261RF  N                       0.49    GT                                       
+261RF  L  X             (9/2+)            68 S   +3-3                           
+261RF cL E,T$from the Adopted Levels                                            
+261RF  A  8280     50   91   AP                                                 
+261RF cA           from 2013Mu08                                                
+261RF  L  234+X    57    (1/2+)        1.9 S     +4-4                        M1 
+261RF cL E         from |DE(|a)                                                 
+261RF  A  8520     50    9   AP                                                 
+261RF cA           from 2011Ha13.                                               
+                                                                                
+261DB    ADOPTED LEVELS                                          99NDS    199911
+261DB  H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=31-Jul-1999$   
+261DB  Q -3.76E3   SY7.49E3  SY2.19E3  SY9.22E3  SY    2012WA38                 
+261DB CQ Note: Current evaluation has used the following Q record               
+261DB  Q -3800     SY 7400   SY 2000   SY 9220   SY    1995AU04                 
+261DB CQ           Estimated DQ-=400, DSN=400, DSP=300, DQA=100 (1995Au04)      
+261DB C                                                                         
+261DB C  Calculations, compilations:                                            
+261DB C  Favored ALPHA decay: 1993Bu09                                          
+261DB C  GS properties: 1997Mo25, 1995Mo29                                      
+261DB C  Single-particle NILSSON levels: 1994Cw02                               
+261DB C                                                                         
+261DB C  1994Cw02 calculate the following single-particle level sequence:       
+261DB2C  GS 9/2[624], 0.22 MEV 5/2[512], 0.30 MEV 1/2[521], 0.31 MEV 7/2[514]   
+261DB C                                                                         
+261DB C  Assignment: 250CF(15N,4N), 249BK(16O,4N), parent of 257LR (1971Gh01);  
+261DB2C  243AM(22NE,4n) excit, angular distribution of recoil atoms, excit      
+261DB3C  (1971Fl02); 250CF(15N,4N), 243AM(22NE,4N), parent of 257LR (1998La30)  
+261DB  L  0.0                          1.8 S     4                              
+261DB2 L %A GE 82$ %SF LE 18                                                    
+261DB CL T         from 1.8 S 6 (1971Fl02) and 1.8 S 6 (1971Gh01)               
+261DB CL %SF       from 1998La30; other: LT 50 (1971Gh01)                       
+261DB CL           Calculated: T(EC+B+) GT 100 S, T(A)=1.8 S (1997Mo25);        
+261DB2CL T(SF) AP 1E+2 S (1988Lo03)                                             
+                                                                                
+261SG    ADOPTED LEVELS                                          99NDS    199911
+261SG  H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=31-Jul-1999$   
+261SG  Q -5.13E3   SY6.61E3  3 2.96E3  SY9714    15    2012WA38                 
+261SG CQ Note: Current evaluation has used the following Q record               
+261SG  Q -5200     SY 6400   SY 2800   SY 9800   SY    1995AU04                 
+261SG CQ           Estimated DQ-=400, DSN=300, DSP=400, DQA=70 (1995Au04)       
+261SG C                                                                         
+261SG C  Calculations, compilations:                                            
+261SG C  Favored ALPHA decay: 1993Bu09                                          
+261SG C  GS properties: 1997Mo25, 1995Mo29                                      
+261SG C  Pion decay: 1991Io03                                                   
+261SG C  Single-particle NILSSON levels: 1994Cw02                               
+261SG C                                                                         
+261SG C  1994Cw02 calculate the following single-particle level sequence:       
+261SG2C  GS 1/2[620], 0.02 MEV 3/2[622], 0.03 MEV 11/2[725], 0.07 MEV 7/2[613], 
+261SG3C  0.29 MEV 9/2[615], 0.87 MEV 9/2[734]                                   
+261SG C                                                                         
+261SG C  Assignment: 208PB(54CR,n) 4.8 to 5.0 MEV/^A, ALPHA correlation         
+261SG2C  with daughter 257RF and granddaughter 253NO (1985Mu11,1984Mu17).       
+261SG3C  208PB(58FE,n)265HS E=5.04 2 MEV/^A, daughter of 265HS, parent of       
+261SG4C  257RF (1987Mu15). 208PB(54CR,n) E=5.5 MEV/^A, ALPHAS observed          
+261SGxC  (1984Og03).                                                            
+261SG C  1997Ho13, 1997Ho03 report a 34 MS 9.468 MEV ALPHA in the decay chain   
+261SG2C  from 26910 and assign it to 261SG.                                     
+261SG  XA265HS A DECAY (2.0 MS)                                                 
+261SG  XB265HS A DECAY (0.75 MS)                                                
+261SG CL E         From 265HS decays. Based on the assumption that the          
+261SG2CL highest energy ALPHA group from 265HS goes to the GS of 261SG.         
+261SG  L  0.0                          0.23 S    6                              
+261SG2 L %A AP 100$ %SF<1                                                       
+261SGX L XREF=AB                                                                
+261SG CL T         from 0.26 S +11-6 (1985Mu11,1984Mu17) and 0.11 S +14-4       
+261SGxCL (1987Mu15)                                                             
+261SG CL %A        only A DECAY observed (1985Mu11)                             
+261SG CL %SF       from 1999He11; no UNAMBIGUOUS indication for SF found        
+261SG2CL (1999He11). Other: <10 (1985Mu11), <50 (1984Og03)                      
+261SG CL           Calculated: T(A)=0.5 S, T(EC+B+)=32 S (1997Mo25); T(A)=0.2 S,
+261SG2CL T(EC+B+)=30 S, T(SF)=50 S (1995KoZL); T(SF) AP 1 S (1988Lo03)          
+261SG CL           Both 265HS isomers seem to feed the GS of 261SG.             
+261SG2CL No significant difference is observed between the EA and T of the      
+261SG3CL daughter, 261SG, from the decay of either 265HS isomer (1999He11).     
+261SG  L     56    21                                                           
+261SGX L XREF=A                                                                 
+261SG  L    127    21                                                           
+261SGX L XREF=A                                                                 
+261SG  L    156    21                                                           
+261SGX L XREF=B                                                                 
+261SG  L    185    21                                                           
+261SGX L XREF=A                                                                 
+261SG  L    212    21                                                           
+261SGX L XREF=B                                                                 
+261SG  L    396    21                                                           
+261SGX L XREF=B                                                                 
+                                                                                
+261SG    265HS A DECAY (2.0 MS)        1999HE11                  99NDS    199911
+261SG  H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=31-Jul-1999$   
+265HS  P 0.0                             2.0 MS  +3-2           10586     15    
+261SG  N                        1      AP                                       
+261SG C  208PB(58FE,n), excit. Delayed ALPHA - ALPHA coincidences observed      
+261SG2C  showing four generations of ALPHA decays: 265HS - 261SG - 257RF -      
+261SG3C  253NO. Other: 1997Ho13, 1995Ho03                                       
+261SG C  208PB(58FE,n) 5.04 MEV/nucleon; three ALPHA-event chains were          
+261SG2C  observed decaying to 253NO (1987Mu15,1984Mu17).                        
+261SG CL E         From EA (1999He11), based on the assumption that the highest 
+261SG2CL energy ALPHA group from 2.0 MS 265HS goes to the GS of 261SG.          
+261SG CA IA        From 1999He11                                                
+261SG CA HF        R0(261SG)=1.46                                               
+261SG  L   0.0                                                                  
+261SG  A  10426    15                                                           
+261SG  L     56    21                                                           
+261SG  A  10371    15                                                           
+261SG  L    127    21                                                           
+261SG  A  10301    15   90   AP   4    AP                                       
+261SG  L    185    21                                                           
+261SG  A  10244    15                                                           
+                                                                                
+261SG    265HS A DECAY (0.75 MS)       1999HE11                  99NDS    199911
+261SG  H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=31-Jul-1999$   
+265HS  P  300      GE                    0.75 MS +17-12         10586     15    
+261SG  N                        1      AP                                       
+261SG C  208PB(58FE,n), excit. Delayed ALPHA - ALPHA coincidences observed      
+261SG2C  showing four generations of ALPHA decays: 265HS - 261SG - 257RF -      
+261SG3C  253NO. Other: 1997Ho13, 1995Ho03                                       
+261SG C  208PB(58FE,n) 5.04 MEV/nucleon; three ALPHA-event chains were          
+261SG2C  observed decaying to 253NO (1987Mu15,1984Mu17).                        
+261SG CL E         From EA (1999He11), based on the assumption that the highest 
+261SG2CL energy ALPHA group from 0.75 MS 265HS goes to the GS of 261SG.         
+261SG CA IA        From 1999He11                                                
+261SG CA HF        R0(261SG)=1.46                                               
+261SG  L   0.0                                                                  
+261SG  A  10726    15                                                           
+261SG  L    156    21                                                           
+261SG  A  10572    15   63   AP  9     AP                                       
+261SG  L    212    21                                                           
+261SG  A  10517    15                                                           
+261SG  L    396    21                                                           
+261SG  A  10336    15                                                           
+                                                                                
+261BH    ADOPTED LEVELS                                          99NDS    199911
+261BH  H TYP=FUL$AUT=AGDA ARTNA-COHEN$CIT=NDS 88, 155 (1999)$CUT=31-Jul-1999$   
+261BH  Q             8.3E3   SY7.0E2   SY1.050E4 5     2012WA38                 
+261BH CQ Note: Current evaluation has used the following Q record               
+261BH  Q              8100   SY  430   SY 10560  50    1995AU04                 
+261BH CQ           Estimated DSN=700, DSP=240 (1995Au04)                        
+261BH CQ QA        Based on the assumption that the highest energy              
+261BH2CQ ALPHA group goes to the 257DB g.s.                                     
+261BH C                                                                         
+261BH C  Calculations, compilations:                                            
+261BH C  Favored ALPHA decay: 1993Bu09                                          
+261BH C  GS properties: 1997Mo25, 1995Mo29                                      
+261BH C  Single-particle NILSSON levels: 1994Cw02                               
+261BH C                                                                         
+261BH C  1994Cw02 calculate the following single-particle level sequence:       
+261BH2C  GS 5/2[512], 0.42 MEV 9/2[624], 0.86 MEV 9/2[505], 0.88 MEV 1/2[521]   
+261BH C                                                                         
+261BH C  Assignment: 209BI(54CR,2n) 4.87 to 5.07 MEV/nucleon,                   
+261BH2C  parent of 257DB, grandparent of 253LR from                             
+261BH3C  ALPHA-ALPHA-ALPHA correlation (1989Mu09,1986MuZX,1988MuZX).            
+261BH C                                                                         
+261BH C  1976Og02 (209BI(54CR,2n)) observed an AP 1.2 MS SF activity            
+261BH2C  followed by an AP 5 MS SF activity and assigned these to 261BH         
+261BH3C  and daughter 257DB. 1989Mu09 have not confirmed the SF activity        
+261BH4C  of 261BH and suggest that the 5 S SF activity is from 258RF            
+261BH5C  (from 258DB EC).                                                       
+261BH  L     0.0                         12 MS   +5-3                           
+261BH2 L %A=95 5$ %SF<10                                                        
+261BH CL T         from 11.8 MS +53-28 (1989Mu09). Others:                      
+261BH2CL 6.1 MS +43-18 (1986MuZX), 9.0 MS +44-23 (1988MuZX)                     
+261BH CL %SF       SF not observed. %SF<10 (1989Mu09). Calculated               
+261BH2CL T(SF) AP 1E+2 S (1988Lo03)                                             
+261BH CL           Calculated: T(EC+B+)=13 S, T(A)=8 MS (1997Mo25)              
+                                                                                

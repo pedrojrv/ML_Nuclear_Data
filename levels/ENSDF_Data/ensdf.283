@@ -1,0 +1,764 @@
+283      COMMENTS                                                05NDS    200512
+283    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+283  2 H CUT=12-Aug-2005$                                                       
+283   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+283   C  AUTH$M. GUPTA(a)                                                       
+283   C  INST$National Nuclear Data Center                                      
+283  #C       Brookhaven National Laboratory                                    
+283  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+283  #C                                                                         
+283   c  INST$Manipal Academy of Higher Education,                              
+283  #c  Manipal, KA 576 104, INDIA                                             
+283  #c  e-mail: mohini.gupta@manipal.edu                                       
+283   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+283  #c  Manipal, KA 576 104, INDIA                                             
+283   C  AUTH$THOMAS W. BURROWS                                                 
+283   C  INST$National Nuclear Data Center                                      
+283  #C       Brookhaven National Laboratory                                    
+283  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+283  #C       e-mail: burrows@bnl.gov                                           
+283   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+283  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+283  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+283  4C  RECEIVED BY August 12, 2005.                                           
+283   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+283  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+283  3C  DATE WERE CONSIDERED.                                                  
+283   C  CIT$NDS 106, 251 (2005)                                                
+283   c  COMM$                                                                  
+283  @c  {UAcronyms and notations used in this evaluation:}                     
+283  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+283  #c  BGS Berkeley Gas Filled Separator                                      
+283  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+283  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+283  #c  EVR Evaporation Residue                                                
+283  #c  GARIS Gas-filled Recoil Ion Separator                                  
+283  #c  RILAC RIKEN Linear Accelerator facility                                
+283  #c  SHIP Separator for Heavy Ion reaction Products                         
+283  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+283  2c  and detection of previous EVR or |a                                    
+283  #c  TKE Total Kinetic Energy                                               
+283  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+283  2c  Reactions, JINR, Dubna, Russia                                         
+283  #c                                                                         
+283  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+283  2c  (Z=110-112,114,116,118):}                                              
+283  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+283  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+283  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+283  5c  the evaluators have relied on the judgement of the JWP in              
+283  6c  determining the strength of the arguments made in the various papers.  
+283  7c  In the cases where there are new data or where the JWP has not yet     
+283  8c  assigned a priority of discovery for an element, the evaluators have   
+283  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+283  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+283  Bc  the data.                                                              
+283  #c                                                                         
+283  #c  In the above context, with respect to Z=112 and the collective works of
+283  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+283  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+283  4c  references therein.                                                    
+283  #c                                                                         
+283  @c                                                                         
+283  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+283  2c  discovery of an element and not a specific nuclide. The purpose of     
+283  3c  this evaluation is to present the "best" set of nuclear properties     
+283  4c  for those nuclides reported between A=266 and A=294 based on data      
+283  5c  currently available and {Bnot} to establish a priority of discovery for
+283  6c  any element.                                                           
+283  !c                                                                         
+283  #c  It is well known that alpha decay chains seen                          
+283  ac  in cold fusion reactions tend to terminate in known mass regions.      
+283  2c  The method of |a-|a or |a-SF correlations for identifying the          
+283  3c  parent has therefore been used with confidence.                        
+283  3c  Experiments carried out with hot fusion reactions,                     
+283  4c  result in alpha decay chains beginning and ending with hitherto unknown
+283  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+283  6c  in an attempt to identify the parent and daughters. The latter method  
+283  7c  is not as accurate as the first since a greater probability of         
+283  8c  randomness is inherant to the technique. As such, independent          
+283  9c  verification and confirmation of the data gains added importance.      
+283  ac  These facts should be taken into account when considering the suggested
+283  ac  properties of nuclei created following a hot fusion reaction as for    
+283  ac  the synthesis of Z=114 and above.                                      
+283  #c                                                                         
+283  #c  Finally, with regard to the some of the                                
+283  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+283  ac  2004Mo15 have pointed out that mass assignments which are based        
+283  ac  on the excitation energy of the compound nucleus may be off by a       
+283  ac  single unit. This may also be due in part to uncertainties in the beam 
+283  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+283  ac  Once again, collateral information is required to establish the charge 
+283  ac  and approximate A of the nucleus.                                      
+283  #c                                                                         
+283  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+283  2c  have not been adopted, the evaluators have used the approximations in  
+283  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+283  4c  exponential distribution to estimate the standard uncertainty (68%     
+283  5c  confidence level) in T{-1/2}:                                          
+283  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+283  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+283  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+283  9c  of events. For one and two events, the exact values given in Table 1   
+283  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+283  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+283  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+283  #c                                                                         
+283  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+283  ac  Calculations of T{-1/2}                                                
+283  2c  performed in the present evaluation used the relationship:             
+283  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+283  #c  where Z refers to the atomic                                           
+283  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+283  6c  and:                                                                   
+283  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+283  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+283  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+283  3c  parameter set used in these evaluations. We note that these systematics
+283  6c  are only an indication of |a-decay half-lives from the ground state    
+283  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+283  8c  the element under consideration. The use of this formalism in the      
+283  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+283  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+283  ac  estimate a Hindrance Factor (HF) for a given transition,               
+283  ac  attributable to the odd neutron or proton. This quantity is            
+283  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+283  ac  The HF so computed is an approximate indication.                       
+283  #c                                                                         
+283  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+283  2c  References.                                                            
+283  #c                                                                         
+283  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+283  2c  trans-fermium elements is the manifestation of shell effects in the    
+283  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+283  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+283  5c  important as QF is expected to play a greater role on the hindrance of 
+283  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+283  7c  the "island" of stability. An understanding of this mechanism is       
+283  8c  necessary to establishing the most favorable reactions for producing   
+283  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+283  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+283  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+283  Cc  to both the mass asymmetry in the entrance channel as well as the      
+283  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+283  Ec  deformations of target/projectile nuclei and their relative orientation
+283  Fc  to each other in the process of CN formation, may also play an         
+283  Gc  important role in reducing the probability of forming a compound       
+283  Hc  system. In the face of extremely low yields and a steep decrease of    
+283  Ic  production cross-sections already in evidence with available stable    
+283  Jc  beam-target combinations, the influence of all possible mitigating     
+283  Kc  factors must be accurately determined in order to                      
+283  Lc  optimize the probability of successful fusion. The formation of a      
+283  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+283  Nc  survives QF going on to form a compact compound system which must then 
+283  Oc  face competition from fission.                                         
+283  #c                                                                         
+283  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+283  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+283  3c  in collaboration with investigators from Belgium, France, and Italy.   
+283  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+283  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+283  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+283  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+283  8c  spectrometer "Corset". These experiments were inspired by              
+283  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+283  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+283  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+283  Cc  such experiments are planned or underway to investigate the various    
+283  Dc  effects.                                                               
+283  #c                                                                         
+283  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+283  2c  and references cited in these papers.                                  
+283  #c                                                                         
+283  !c  {UExperimental Estimates of Fission Barriers:}                         
+283  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+283  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+283  4c  the experimentally derived barrier heights are respectively:           
+283  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+283  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+283  #c                                                                         
+283  #c  2002It04, in an analysis of available experimental data, derive the    
+283  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+283  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+283  #c                                                                         
+283  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+283  2c  Two possibilities have been proposed in an attempt to understand the   
+283  ac  the {+289}114, {+287}114 observations:                                 
+283  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+283  ac  belongs to a rare decay mode originating from                          
+283  4c  an isomeric state, or that                                             
+283  #c  (ii) the sequence may actually originate from                          
+283  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+283  7c  Levels).                                                               
+283  #c  The evaluators believe that further investigations                     
+283  ac  are required to support either hypothesis.                             
+283  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+283  9c  unobserved. Also, T{-1/2}                                              
+283  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+283  ac  is much larger than that observed by 2004Og12 and                      
+283  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+283  ac  agreement. Such inconsistencies need to be better understood.          
+283  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+283  2c  respects. 2004OgZZ report more statistics in some cases.               
+283  #c                                                                         
+283  @c  {UOther comments on {+289}114 and {+283}112}                           
+283  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+283  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+283  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+283  4c  classified the evidence as being "very weak",                          
+283  5c  with no convincing supporting arguments for the possible production of 
+283  6c  SHE. We make the following general observations:                       
+283  #c                                                                         
+283  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+283  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+283  ac  by the Dubna-JINR collaborations for all isotopes of                   
+283  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+283  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+283  ac  {+287}114 (15 events) and {+286}114                                    
+283  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+283  ac  the |?34 min decay sequence postulated as originating from             
+283  5c  a rare decay mode of {+289}114, does not seem very likely.             
+283  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+283  7c  {+289}114 decays observed are genetically linked                       
+283  8c  and not the result of a background decay sequence. These               
+283  BC  discrepancies have to be resolved, along with some others.             
+283  #c                                                                         
+283  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+283  ac  (see also 2004Og02) with VASSILISSA, have not                          
+283  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+283  3c  lack of internal consistency through the collective measurements       
+283  ac  and the data are inconclusive as pointed                               
+283  4c  out by experimenters (reasons given in each paper). Decay properties of
+283  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+283  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+283  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+283  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+283  8c  by them. See {+283}112 Adopted Levels for details.                     
+283  #c                                                                         
+283  #c  These observations by the experimenters are consistent with the        
+283  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+283  3c  of the various arguments put                                           
+283  3c  forward therein, the following comments may be made here:              
+283  #c                                                                         
+283  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+283  #c  190 MeV and 212 MeV (1999Og05)                                         
+283  #c  65 MeV and 170 MeV  (2004Og02)                                         
+283  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+283  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+283  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+283  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+283  4c  plane and side detectors). With one exception, all the energies        
+283  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+283  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+283  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+283  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+283  9c  the second experiment) after EVR implantation resulted in              
+283  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+283  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+283  #c                                                                         
+283  #c  2. 2000Ar03 statement that correlations  between the fission events    
+283  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+283  3c  'backward' analysis of the data was reported in                        
+283  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+283  5c  evidently in contradiction with those made by the                      
+283  6c  experimenters. A more complete analysis would be beneficial.           
+283  #c                                                                         
+283  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+283  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+283  ac  quoted from an earlier                                                 
+283  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+283  4c  assignments. The proposed assignment of Z=114 to both parents may      
+283  5c  be incorrect taking into account new data which do not support         
+283  6c  these observations and for reasons already mentioned.                  
+283  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+283  !c                                                                         
+283  #c  CONCLUSIONS:                                                           
+283  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+283  ac  are not conclusive. Overall, the                                       
+283  2c  results from the VASSILISSA experiments are at variance with data from 
+283  3c  experiments using DGFRS. The latter investigations are done using      
+283  4c  more stringent methods, and have greater statistics, offering better   
+283  5c  internal consistency. Some obvious discrepancies and other             
+283  ac  inconsistencies between the two sets of                                
+283  6c  data remain and need to be resolved or adequately explained as does the
+283  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+283  8c  by 2005Gr19 and 2002Lo11.                                              
+283  #c                                                                         
+283  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+283  2c  from earlier work are not reproduced to date.                          
+283  #c                                                                         
+283  @c  {UTheoretical Calculations:}                                           
+283  @c  1995Mo29: |b2 based on the finite-range droplet                        
+283  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+283  3c  with "global" parameters.                                              
+283  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+283  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+283  3c  J|p simultaneously obtained with the calculated masses and             
+283  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+283  5c  A=239.                                                                 
+283  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+283  2c  model for the macroscopic part and the Strutinski shell correction,    
+283  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+283  4c  part.                                                                  
+283  @c  2005GaZX: |b2 based on self consistent calculations                    
+283  2c  within the framework of the Relativistic Mean Field (RMF)              
+283  3c  theory with very few "globally" fit parameters and employing the       
+283  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+283  5c  sets in use exhibit similar systematics, these results are expected to 
+283  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+283  #c                                                                         
+283  @c  {UOther Measurements:}                                                 
+283  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+283  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+283  3c  (Blocking technique in single crystals).                               
+283  #c                                                                         
+283   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+283  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+283  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+283  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+283  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+283  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+283  7c  additional information that they readily provided during this          
+283  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+283  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+283  Ac  Singh for helpful discussions. We thank A. Marinov                     
+283  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+283  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+283  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+283  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+283  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+283  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+283  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+283  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+283  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+283  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+283  Lc  insights, and suggestions until her untimely demise are hereby         
+283  Mc  acknowledged.                                                          
+283   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+283  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+283  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+283      REFERENCES                                                       200512
+283    R 1966VI04 JOUR JINCA 28 741                                             
+283    R 1984SC13 JOUR ZPAAD 316 19                                             
+283    R 1987MU15 JOUR ZPAAD 328 49                                             
+283    R 1992BA77 JOUR PPNPD 29 453                                             
+283    R 1994YE08 JOUR NIMAE 350 608                                            
+283    R 1995MO29 JOUR ADNDA 59 185                                             
+283    R 1995SM05 JOUR PRVCA 52 1871                                            
+283    R 1996HO13 JOUR ZPAAD 354 229                                            
+283    R 1997MO25 JOUR ADNDA 66 131                                             
+283    R 1997YE07 JOUR NIMBE 126 329                                            
+283    R 1998DA24 JOUR ARNUA 48 401                                             
+283    R 1998NIZR CONF Bellaire(Exotic Nuclei and Atomic Masses) Proc,P704,Ninov
+283    R 1999OG05 JOUR ZAANE 5 63                                               
+283    R 1999OG07 JOUR NATUA 400 242                                            
+283    R 1999OG10 JOUR PRLTA 83 3154                                            
+283    R 2000AR03 JOUR ZAANE 7 23                                               
+283    R 2000FI12 JOUR NDSBA 90 391                                             
+283    R 2000ZL02 JOUR ZAANE 8 81                                               
+283    R 2001AK11 JOUR NDSBA 94 131                                             
+283    R 2001KA70 JOUR PACHA 73 959                                             
+283    R 2001YA19 JOUR RAACA 89 743                                             
+283    R 2002DU22 JOUR NIMAE 479 631                                            
+283    R 2002HI20 JOUR PRLTA 89 282701                                          
+283    R 2002IT04 JOUR PRVCA 65 044602                                          
+283    R 2002LO11 JOUR PPNPD 48 123                                             
+283    R 2002LO15 JOUR PRVCA 66 044617                                          
+283    R 2002OG07 JOUR FECLA 110 5                                              
+283    R 2003AU03 JOUR NUPAB 729 337                                            
+283    R 2003GE09 JOUR PRVCA 68 061303                                          
+283    R 2003KA71 JOUR PACHA 75 1601                                            
+283    R 2003MU15 JOUR YAFIA 66 1051                                            
+283    R 2003MU26 JOUR APOBB 34 2073                                            
+283    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+283    R 2003YA22 JOUR RAACA 91 433                                             
+283    R 2004BA86 JOUR JPGPE 30 B35                                             
+283    R 2004DA11 JOUR NUPAB 734 148                                            
+283    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+283    R 2004GA18 JOUR NUPAB 734 208                                            
+283    R 2004GUZW PREPRINT Gupta                                                
+283    R 2004IT05 JOUR NUPAB 734 136                                            
+283    R 2004MA01 JOUR NIMAE 516 529                                            
+283    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+283    R 2004MO15 JOUR NUPAB 734 188                                            
+283    R 2004OG02 JOUR ZAANE 19 3                                               
+283    R 2004OG03 JOUR PRVCA 69 021601                                          
+283    R 2004OG05 JOUR NUPAB 734 109                                            
+283    R 2004OG06 JOUR NUPAB 734 196                                            
+283    R 2004OG07 JOUR PRVCA 69 054607                                          
+283    R 2004OG10 JOUR PTPSA 154 406                                            
+283    R 2004OG12 JOUR PRVCA 70 064609                                          
+283    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+283    R 2004PE06 JOUR NUPAB 734 200                                            
+283    R 2004PRZW PREPRINT Prokhorova                                           
+283    R 2004YA09 JOUR NUPAB 734 204                                            
+283    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+283    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+283    R 2005GR19 JOUR PRVCA 72 014605                                          
+283    R 2005SCZZ PC M Schaedel                                                 
+                                                                                
+283CN    ADOPTED LEVELS: TENTATIVE                               05NDS    200601
+283CN  H TYP=ERR$AUT=M. GUPTA, THOMAS W. BURROWS$DAT=13-JAN-2006$               
+283CN2 H COM=CORRECTED GROUND-STATE BRANCHING RATIOS                            
+283CN  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+283CN2 H CUT=12-Aug-2005$                                                       
+283CN  Q -3.1E3    SY5.5E3   SY3.4E3   SY9.85E3  SY    2012WA38                 
+283CN CQ Note: Current evaluation has used the following Q record               
+283CN  Q -4340        6180   SY 3280   SY 9670      60 2003AU03,2004OG12        
+283CN CQ Q-$ESTIMATED UNCERTAINTY=1060 KEV                                      
+283CN CQ SN$ESTIMATED UNCERTAINTY=1040 KEV                                      
+283CN CQ SP$ESTIMATED UNCERTAINTY=1170 KEV                                      
+283CN CQ QA$FROM EA=9.54 MEV 60 (2004OG12). OTHER: 9260 KEV 200 (2003AU03.      
+283CN2CQ SYST.)                                                                 
+283CN C  1999OG05: USING THE REACTION 238U(48CA,XN) ATTEMPTS TO SYNTHESIZE      
+283CN2C  NEW ISOTOPES OF Z=112 WERE MADE AT ^DUBNA/^JINR IN COLLABORATION WITH  
+283CN3C  ^GSI AND ^RIKEN. AN UPGRADED AND IMPROVED SET-UP WAS NECESSARY FOR THE 
+283CN4C  PREPARATION OF THE 48CA BEAM EXTRACTED FROM THE ^U400 CYCLOTRON USED   
+283CN5C  WITH THE DETECTION SYSTEM WITH THE ^VASSILISSA SEPARATOR. THE KEY TO   
+283CN6C  SYNTHESIS OF Z=112 WAS THE PRODUCTION OF AN INTENSE 48CA ION BEAM      
+283CN7C  IN THIS HOT FUSION REACTION. THE ^U400 CYCLOTRON WAS MODIFIED FOR AN   
+283CN8C  AXIAL INJECTION OF THE BEAM FROM THE ^ECR-4M ION SOURCE WHICH LEAD TO  
+283CN9C  AN INCREASE IN INTENSITY OF A FACTOR OF 2-3 OVER THE PREVIOUS PULSED   
+283CNAC  MODE; THE INTENSITY AT TARGET THUS BEING 2.2E+12 PER SEC. TWO BEAM     
+283CNBC  ENERGIES WERE USED, 255 MEV 3 AND 262 MEV 3, POST EXTRACTION FROM THE  
+283CNCC  CYCLOTRON. THE 0.3 mg/cm{+2} 238U TARGET WAS ENRICHED TO 99.999%. THE  
+283CNDC  ^EVR's WERE SEPARATED IN-FLIGHT FROM OTHER REACTION PRODUCTS BY THE    
+283CNEC  ELECTROSTATIC RECOIL SEPARATOR ^VASSILISSA (1997YE07). TOF DETECTORS   
+283CNFC  WERE USED TO REGISTER ^EVR's AND A POSITION SENSITIVE STRIP DETECTOR   
+283CNGC  WAS INSTALLED IN THE FOCAL PLANE OF THE SEPARATOR. THE ENERGY          
+283CNHC  RESOLUTION FOR ALPHA PARTICLES WITH ENERGIES OF 6 TO 9 MEV, WAS 20 KEV.
+283CNIC  AN ACCURACY OF 1 MICROSEC WAS ACHIEVED FOR RECORDING TIME SIGNALS FROM 
+283CNJC  EVENTS. THE ESTIMATED DETECTION EFFICIENCY OF AP 25% WAS ENHANCED BY   
+283CNKC  SURROUNDING THE STRIP DETECTOR BY 4 Si DETECTORS. THE ARRAY HAD AN     
+283CNLC  EFFICIENCY OF 85% OF 4PI. THE HIGH TOF EFFICIENCY ALLOWED FOR THE      
+283CNMC  OBSERVATION OF CLEAN SPECTRA. THE CALCULATED BEAM ENERGIES AT THE      
+283CNNC  TARGET CENTER WERE 231 AND 238 MEV CORRESPONDING TO EXCITATION         
+283CNOC  ENERGIES OF 33 AND 39 MEV RESPECTIVELY. THE IRRADIATION STARTED        
+283CNPC  MARCH 1998 AND PROCEEDED FOR 25 DAYS AT THE LOWER ENERGY WITH A TOTAL  
+283CNQC  BEAM DOSE OF 3.5E18 PROJECTILES, AND FOR A FURTHER 15 DAYS AT THE      
+283CNRC  HIGHER ENERGY WITH A BEAM  DOSE OF 2.2E+18 IONS. ONLY TWO SF EVENTS    
+283CNSC  WERE DETECTED AT THE LOWER ENERGY (231 MEV) NOT ACCOMPANIED BY A TOF   
+283CNTC  SIGNAL BUT THE HIGH ENERGY INDICATIVE OF AN IMPLANTED RECOIL.  THE     
+283CNUC  ^TKE VALUES FOR THE TWO EVENTS ARE 190 AND 212 MEV. TIME REVERSED      
+283CNVC  RECONSTRUCTION OF EVENTS REVEALED THE POSSIBILITY OF AN ALPHA-SF TYPE  
+283CNWC  OCCURANCE AT A MEASURED CROSS-SECTION OF 5.0 pb {I+63-32}. THE MEAN    
+283CNXC  HALF-LIFE OF THE EVENTS WAS 81 S +147-32. THE ^EVR's BEING FAR FROM THE
+283CNYC  REGION OF KNOWN ISOTOPES, COULD NOT BE IDENTIFIED MORE CONCLUSIVELY AND
+283CNZC  THE POSSIBILITY THAT THE PARENT MAY BE 283CN IN THE ABSENCE OF ANY     
+283CNaC  DECAY CHAINS HAVING BEEN OBSERVED, IS BASED ON A VARIETY OF ARGUMENTS  
+283CNbC  INCLUDING A COMPARISON WITH EXPECTED THEORETICAL CROSS-SECTIONS. THE   
+283CNcC  EXPERIMENTERS HAVE OBSERVED THAT T(SF) OF THE NEW NUCLIDE IS AP 1.5    
+283CNdC  MIN BASED ON THESE TWO EVENTS, 3E+5 TIMES LONGER THAN T(ALPHA) OF THE  
+283CNeC  LIGHTER NUCLEUS 277CN SYNTHESIZED BY THE ^GSI GROUP AND REPORTED IN    
+283CNfC  1996HO13 AND 1999OG07.                                                 
+283CN C  1999OG07: AS DAUGHTER OF 28714 IN EXPERIMENTS DONE AT Dubna, WITH FIVE 
+283CN2C  PARTICIPATING COUNTRIES, FROM MARCH 3 TO APRIL 5, 1999 USING THE       
+283CN3C  REACTION 48CA+242PU {IVIA} THE 3{In} CHANNEL WITH A CROSS-SECTION OF   
+283CN4C  2.5 pb {I+33-16}. THE 48CA BEAM WAS INJECTED INTO THE ^U400 CYCLOTRON  
+283CN5C  AT DUBNA USING SIX ROTATING TARGETS OF 242PU ENRICHED TO 97%. ^EVR's   
+283CN6C  WERE SEPARATED BY ^VASSILISSA (1994YE08) IN A SET-UP SIMILAR TO THE ONE
+283CN7C  USED IN 1999OG05. THE BEAM ENERGY AT THE CENTER OF THE TARGET WAS      
+283CN8C  235 MEV 2, OVER A PERIOD OF 32 DAYS. A TOTAL OF 7.5E18 IONS PASSED     
+283CN9C  THROUGH THE TARGET. 4 EVENTS WERE RECORDED WITH E(SF)>100 MEV IN THE   
+283CNAC  FRONT DETECTOR: TWO WERE ATTRIBUTED TO SF-ISOMERS OF {+242mf}PU. IN    
+283CNBC  THE OTHER EVENTS, SF WAS OBSERVED IN TWO COINCIDENT SIGNALS WITH       
+283CNCC  E(TOT)=195 MEV FOR THE FIRST EVENT AND E(TOT)=165 MEV IN THE OTHER.    
+283CNDC  TENTATIVE ASSIGNMENT ^CN 29014 POST THE EVAPORATION OF 3 NEUTRONS TO   
+283CNEC  28714 WITH EA=10.44 MEV 2 TO 283CN WITH T(SF)=180 S +170-60 BASED ON   
+283CNFC  4 EVENTS. NO ALPHA DECAYS OBSERVED.                                    
+283CN D  THE RADIOACTIVE PROPERTIES OF ALL THE ASCRIBED NUCLEI DIFFER FROM THOSE
+283CNaD  EXPECTED/SEEN IN THEIR NEIGHBOURS SUCH AS {+289}114 (EXCLUDING THE     
+283CNaD  AP 34 MIN SEQUENCE). ALSO, THIS IS AN UNEXPECTED DECAY MODE FOR        
+283CNaD  Z=112 AS ALL ITS OTHER ISOTOPES ({+277,284,285}112) ALPHA DECAY.       
+283CN C  2000AR03 DISCOUNT ALL DATA FROM 1999OG05 AND 1999OG07 (INCLUDING DECAY 
+283CN2C  CHAIN FOR 28914 FROM 1999OG10), CLASSIFYING THE EVIDENCE AS BEING      
+283CN3C  "very weak", WITH NO CONVINCING SUPPORTING ARGUMENTS FOR THE POSSIBLE  
+283CN4C  PRODUCTION OF ^SHE. 5 DECAY EVENTS DESCRIBED AS BEING UNCORRELATED     
+283CN5C  (SEE THE General Comments FOR THIS EVALUATION).                        
+283CN C  2001YA19: THE FIRST ATTEMPT TO CHEMICALLY STUDY Z=112 WHICH IS EXPECTED
+283CN2C  TO EXHIBIT HIGHER 'VOLATILITY' THAN HG IN GAS CHROMATOGRAPHIC          
+283CN3C  EXPERIMENTS WITH AU SURFACES (2004PE06). THE INVESTIGATIONS WERE       
+283CN4C  PROMPTED BY THE OBSERVATION OF THE SINGLE 3 MIN, SF DECAY EVENT        
+283CN5C  OBSERVED IN 1999OG05. THE REACTION USED WAS 48CA+{+NAT}U{-3}O{-8}      
+283CN6C  CONTAINING 100 |mg OF {+NAT}Nd TO ENABLE THE SIMULTANEOUS PRODUCTION   
+283CN7C  OF SHORT-LIVED HG NUCLIDES, EXPECTED TO BE THE LIGHTER HOMOLOGUE OF    
+283CN8C  Z=112. STARTED IN JANUARY 2000, A 10 DAY IRRADIATION WITH 48CA IONS AT 
+283CN9C  A BEAM ENERGY OF 262 MEV (CORRESPONDING TO A CENTER-OF-TARGET ENERGY OF
+283CNAC  234 MEV) WITH A BEAM CURRENT OF 0.2-0.4 p|mA RESULTED IN A TOTAL BEAM  
+283CNBC  DOSE OF 6.85E+17 IONS. FOLLOWING THE BOMBARDMENTS, BOTH HG AND Z=112   
+283CNCC  COULD BE ISOLATED AND TRANSPORTED FROM THE TARGET, THROUGH GASEOUS HE  
+283CNDC  TO A ^PIPS (PASSIVATED ION-IMPLANTED PLANAR SILICON) DETECTOR SYSTEM   
+283CNEC  WHICH COULD DETECT BOTH SF AND ALPHA'S. TO ENSURE HIGH EFFICIENCY      
+283CNFC  ADSORPTION ON THE ^PIPS SURFACES, THEY WERE COATED WITH AU (OR PD).    
+283CNGC  BOTH THE 3{IN} AND 4{IN} DE-EXCITATION CHANNELS WERE OBSERVED. RECOILS 
+283CNHC  WERE THERMALIZED IN PURE HE AT ATMOSPHERIC PRESSURE AND TRANSPORTED    
+283CNIC  THROUGH A 25 M LONG POLYTETRAFLOURETHYLENE (^PTFE) CAPILLARY TO THE    
+283CNJC  DETECTORS. DETAILS OF TESTS WITH CARRIER-FREE HG NUCLIDES ALSO         
+283CNKC  DESCRIBED. THE ADSORPTION OF HG ATOMS IN 48CA(ND,XN) REACTIONS WAS     
+283CNLC  MEASURED BY RECORDING THE KNOWN EA=5.65 MEV  (49 S) FROM 185HG. IF     
+283CNMC  INDEED Z=112 BEHAVED LIKE HG, 3.4 +43-22 SF EVENTS COULD HAVE BEEN     
+283CNNC  OBSERVED. NO SF EVENTS WERE RECORDED ALTHOUGH THE ATTEMPT SHOWED THAT  
+283CNOC  CHEMICAL IDENTIFICATION OF SF NUCLEI PRODUCED WITH pb CROSS-SECTIONS   
+283CNPC  IS POSSIBLE.                                                           
+283CN C  2002LO15: EXPERIMENT REPEATED WITH THE 238U(48CA,3N) REACTION AT       
+283CN2C  BERKELEY USING THE 88 INCH CYCLOTRON AND THE ^BGS (1998NIZR). THE      
+283CN3C  EXPERIMENTAL APPARATUS WAS IMPROVED OVER 1998NIZR TO INCLUDE BETTER    
+283CN4C  DETECTORS, DATA ACQUISITION SYSTEM {Ietc}. THE 48CA{+10+} BEAM WAS     
+283CN5C  PROVIDED AT AN ENERGY OF 243.5 MEV OVER A 5.5 DAY RUN. THE ^EVR's      
+283CN6C  WITH AN EXPECTED MAGNETIC RIGIDITY OF AP 39 MEV WERE SEPARATED BY THE  
+283CN7C  ^BGS WITH A PARALLEL PLATE AVALANCHE DETECTOR (^PPAC) AT THE FOCAL     
+283CN8C  PLANE. A THOROUGH SEARCH OF THE DATA RESULTING FROM A BEAM DOSE OF     
+283CN9C  1.1E+18 IONS DID NOT REVEAL ANY EVENTS OF INTEREST.                    
+283CNAC  NO DATA WAS RECORDED AT THE "one-event" UPPER LIMIT CROSS-SECTION      
+283CNBC  OF 1.6 pb FOR ^EVR-SF EVENTS OR AT THE CORRESPONDING CROSS SECTION OF  
+283CNCC  1.8 pb FOR ^EVR-|a EVENTS. 2002LO15 CONCLUDE THAT THE CROSS-SECTION    
+283CNDC  FOR THE PRODUCTION OF THIS NUCLEUS MUST BE BETTER DETERMINED SINCE     
+283CNEC  THE SMALL VALUE OR A POSSIBLE WEAKER ALPHA-DECAY CHANNEL WILL          
+283CNFC  CONTRIBUTE TO THE DIFFICULTY IN MEASUREMENT.                           
+283CN D  THE "ONE-EVENT" UPPER LIMIT CROSS-SECTION IS WHAT WOULD RESULT IF      
+283CNaD  ONE EVENT WAS OBSERVED IN THE EXPERIMENT.                              
+283CN C  2003YA22: THE SECOND EXPERIMENT WAS AN IMPROVED VERSION OF 2001YA19.   
+283CN2C  THE SET UP EXTENDED TO INVESTIGATE THE ADSORPTION BEHAVIOR OF Z=112    
+283CN3C  IN COMPARISON WITH BOTH HG AND RN. SPANNING NOVEMBER-DECEMBER 2001 AT  
+283CN4C  ^FLNR/^JINR USING THE ^U400 CYCLOTRON FOR THE SAME REACTION BUT A MUCH 
+283CN5C  STRONGER FLUX OF INCIDENT 48CA IONS (0.6 p|mA). THE EARLIER            
+283CN6C  ARRANGEMENT WAS EXTENDED TO INCLUDE A 25 M LONG CAPILLARY TUBE         
+283CN7C  CONNECTED TO A DETECTOR ARRAY WITH 8 PAIRS OF AU COATED ^PIPS          
+283CN8C  DETECTORS TO DETECT HG-LIKE Z=112. FOLLOWING THIS WAS A 5000 CM**3     
+283CN9C  IONIZATION CHAMBER TO OBSERVE THE GASEOUS RN-LIKE BEHAVIOR OF Z=112.   
+283CNAC  AT THE END OF THE EXPERIMENT 8 SF EVENTS WERE DETECTED IN THE          
+283CNBC  IONIZATION CHAMBER WITH NONE IN THE ^PIPS DETECTORS INDICATING THAT A  
+283CNCC  METAL-METAL BOND WITH AU WAS NOT FORMED. WITH AN EXPECTED BACKGROUND   
+283CNDC  OF ABOUT 1 EVENT, AND WITH GOOD ARGUMENTS TO RULE OUT OTHER SF         
+283CNEC  SOURCES, THE SF EVENTS WERE ATTRIBUTED TO 283CN (2004YA09,2005SCZZ). IT
+283CNFC  WAS CONCLUDED THAT Z=112 BEHAVES MORE LIKE A NOBLE GAS SIMILAR TO RN.  
+283CNGC  BASED ON THE ABSENCE OF ANY METAL-LIKE EVENT, AN UPPER LIMIT FOR THE   
+283CNHC  ADSORPTION ENTHALPY WAS DEDUCED TO BE -|DH{-ads}(112) LE 60 kJ/mol.    
+283CNIC  RESULTS ARE INDICATIVE BUT NOT CONCLUSIVE.                             
+283CN C  2004GA18 REPORTS RESULTS FROM EXPERIMENTS CARRIED OUT AT GSI IN 2003.  
+283CN2C  DONE BY A LARGE INTERNATIONAL COLLABORATION CONSISTING OF              
+283CN3C  5 COUNTRIES, 10 INSTITUTES. THE REACTION 238U(48CA,3N) WAS STUDIED     
+283CN4C  WITH A 1.2 p|mA BEAM SUPPLIED BY ^UNILAC. THE BEAM ENERGY WAS 239 MEV  
+283CN5C  AND A TOTAL FLUX OF 2.8E+18 IONS. EMPLOYING THE ^IVO (IN-SITU          
+283CN6C  VOLATILIZATION AND ON-LINE DETECTION) (2002DU22) TECHNIQUE WITH ^COLD  
+283CN7C  (CRYO ON-LINE DETECTOR) SUCCESSFULLY USED IN Hs EXPERIMENTS, SEVEN     
+283CN8C  GE 40 MEV SF EVENTS WERE SEEN WHICH COULD BE 283CN (ASSUMING           
+283CN9C  T=3.0 MIN) AT A CROSS-SECTION OF A FEW pb. THESE WERE OBSERVED IN THE  
+283CNAC  SAME DETECTORS THAT REGISTERED ISOTOPES OF RN. RESULTS ARE INDICATIVE  
+283CNBC  BUT NOT CONCLUSIVE. IMPERFECTIONS IN THE EXPERIMENT HAVE BEEN NOTICED  
+283CNCC  AND FURTHER EXPERIMENTS ARE PLANNED.                                   
+283CN C  2004OG02: FURTHER INVESTIGATIONS FOR 283CN UNDERTAKEN AT Dubna         
+283CN2C  GIVEN THAT T(SF) AP 3 MIN WITH THE CROSS-SECTION OF AP 5 pb IS QUITE   
+283CN3C  LARGE. SINCE THE UNAMBIGUOUS IDENTIFICATION OF SF NUCLEI IS DIFFICULT, 
+283CN4C  ^VASSILISSA WAS UPGRADED FOR BETTER MASS RESOLUTION BY INCORPORATING   
+283CN5C  A NEW DIPOLE MAGNET WITH HIGHER BENDING POWER (SEE DESCRIPTION AND     
+283CN6C  REFERENCES CITED) RESULTING IN A TOTAL GEOMETRIC EFFICIENCY OF         
+283CN7C  70% OF 4PI WITH AN ADDITIONAL SUPPRESSION OF UNWANTED REACTION         
+283CN8C  PRODUCTS BY A FACTOR OF AP 100. THE 48CA BEAM IMPINGED ON THE          
+283CN9C  238U TARGET WITH AN INCIDENT ENERGY OF 242 MEV CORRESPONDING TO        
+283CNAC  AN EXCITATION ENERGY, ^E*=33 MEV AT THE TARGET CENTER. DURING A PERIOD 
+283CNBC  29 DAYS AND A BEAM DOSE OF 5.9E+18 IONS NO SF EVENTS WERE DETECTED.    
+283CN5C  DURING THE ANALYSIS OF DATA, LIFETIMES IN THE INTERVAL 5 US TO         
+283CN6C  1000 S AND ENERGIES IN THE INTERVAL 8 MEV TO 13 MEV WERE SCANNED. THE  
+283CN7C  UPPER LIMIT OF THE CROSS-SECTION WAS DEDUCED TO BE 2.2 pb. A SECOND    
+283CN8C  RUN LASTING 15 DAYS WAS CARRIED OUT AT THE HIGHER BEAM ENERGY OF       
+283CN9C  245 MEV (^E*=35.5 MEV) WITH A TOTAL BEAM DOSE OF 4.7E+18 PROJECTILES.  
+283CNAC  TWO SF SIGNALS WERE DETECTED WITH LIFETIMES OF 3.0 AND 24.3 MIN        
+283CNBC  RESPECTIVELY WITH NO ALPHA DECAY EVENTS OBSERVED. MEAN VALUE T FOR A   
+283CNCC  TOTAL OF SIX DECAYS INCLUDING TWO AS DAUGHTERS OF 28714 (1999OG07) IS  
+283CNDC  5.1 MIN +35-15. THE CROSS-SECTION MEASURED WAS 3.0 pb {I+40-20}.       
+283CN C  2004OG07 (SEE ALSO 2004OG05): AS GRANDDAUGHTER OF 29116 FROM ONE EVENT 
+283CN2C  RECORDED FROM THE SINGLE ALPHA-DECAY OF 28714. SEE Adopted Levels FOR  
+283CN3C  28714 AND 29116 FOR DETAILS OF EXPERIMENTAL SET-UP. EXPERIMENTS WERE   
+283CN4C  DONE AT DUBNA IN COLLABORATION WITH ^LLNL. THE CURRENT AND ALL         
+283CN5C  SUBSEQUENT INVESTIGATIONS WERE CARRIED OUT USING THE ^DGFRS. ALPHA     
+283CN6C  ENERGIES ATTRIBUTED TO THE DECAY OF 283CN WERE AS FOLLOWS:             
+283CN7C  EA=9.54 MEV 7 AS ALPHA DECAY DAUGHTER OF 28714;                        
+283CN8C  EA=9.55 MEV 7 (EVENT 1) AND                                            
+283CN9C  EA=9.52 MEV 7 (EVENT 2) AS ALPHA DECAY GRAND-DAUGHTERS OF 29116. THE   
+283CNAC  MEAN ALPHA ENERGY (3 EVENTS) WAS 9.54 MEV AND THE ESTIMATED HALF-LIFE  
+283CNBC  WAS GIVEN AS 6.1 S +72-22.                                             
+283CN C  2004OG12,2004OGZZ: BY THE COMPLETE FUSION REACTION 238U(48CA,3N) AT    
+283CN2C  DUBNA USING THE ^DGFRS. A TOTAL OF 8 DECAY SEQUENCES WERE OBSERVED     
+283CN3C  AND ASSIGNED TO Z=112: 7 ^EVR-|a-SF EVENTS SPANNING ABOUT 0.5-6 S      
+283CN4C  OBSERVED AT E(BEAM)=230-234 MEV ASSIGNED TO 283CN AND 1 SHORTER        
+283CN5C  ^EVR-SF SEQUENCE WITH T(SF)<1 MS OBSERVED AT AN ENERGY OF 240 MEV      
+283CN6C  ASSIGNED TO 282CN. THE MEAN ALPHA ENERGY WAS 9.54 MEV IN AGREEMENT     
+283CN7C  WITH 2004OG07. A SPECIAL CASE AT A BEAM ENERGY OF 234 MEV WAS RECORDED 
+283CN8C  OF THE TYPE ^EVR-|a1-|a2-|a3-|a4-SF ENDING WITH 267RF. ALPHA DECAY IS  
+283CN9C  BLOCKED BELOW 279DS WHICH FISSIONS RATHER THAN ALPHA DECAYS (10%). THE 
+283CNAC  EVALUATORS SUGGEST THAT THIS LONGER CHAIN WHICH TERMINATES WITH 267RF, 
+283CNBC  IF CONFIRMED, MAY BE ONE INCIDENCE OF THIS 10% BRANCH. THE EVENT       
+283CNCC  REQUIRES FURTHER INVESTIGATION. NO EVENTS THAT COULD BE ASSIGNED TO    
+283CNDC  Z=112 WERE FOUND IN THE REACTION 233U+48CA AT 240 MEV DESPITE AN       
+283CNEC  ACCUMULATED BEAM DOSE OF 8E+8 IONS. SEE 2004OG12 AND 2004OGZZ FOR A    
+283CNFC  DETAILED DISCUSSION. THESE PAPERS ARE IDENTICAL IN MANY RESPECTS.      
+283CNGC  2004OGZZ REPORT MORE STATISTICS SOME CASES.                            
+283CN D  THE EXCITATION FUNCTIONS AND DECAY PROPERTIES OF THE SHORTER CHAIN     
+283CNaD  MEMBERS  DECAYING BY ^ER-|a-SF IN THE 242PU+48CA REACTION WHEN         
+283CNaD  COMPARED AGAINST ^EVR-SF CORRELATIONS IN THE 238U+48CA REACTION        
+283CNaD  SHOW THAT THEY MAY ORIGINATE FROM THE  EVEN-EVEN                       
+283CNaD  PARENTS  28614 (WITH 282CN AS THE ALPHA-DECAY DAUGHTER)                
+283CNaD  AND 282CN RESPECTIVELY.                                                
+283CN C  IN THE CASE OF 28714, THE SECOND ALPHA IN THE DECAY CHAIN HAS AN       
+283CN2C  ENERGY OF 9.54 MEV 6 WHICH AGREES WELL WITH THE 4 MEASURED             
+283CN3C  ALPHAS (2004OG07) IN 11 OUT OF 14 CASES. THE OTHER 3 ALPHA ENERGIES    
+283CN4C  ARE 8.94, 9.36 AND 9.32 MEV WHICH 2004OG12 SUGGEST MAY                 
+283CN5C  BE INDICATIVE OF TRANSITIONS TO DIFFERENT EXCITED STATES IN THE        
+283CN6C  DAUGHTER NUCLEUS 279DS.                                                
+283CN C  2004OGZZ NOTE THAT THE MAXIMUM CROSS-SECTION FOR THE 48CA+238U         
+283CN2C  REACTION IN THE 3{In} CHANNEL IS 2.5 pb {I+18-11} AT ^E*=35 MEV        
+283CN3C  CORRESPONDING TO A BEAM ENERGY OF 231 MEV. THEY SUGGEST THAT THE       
+283CN4C  NON-OBSERVATION OF ANY EVENTS ATTRIBUTABLE TO Z=112 BY 2002LO15 MAY BE 
+283CN5C  DUE TO INSUFFICIENT EXPERIMENTAL SENSITIVITY. THE ONE-EVENT UPPER      
+283CN6C  CROSS-SECTION LIMIT SET THEREIN OF 1.6 pb CORRESPONDS TO A STATISTICAL 
+283CN7C  UPPER LIMIT OF 2.9 pb WITH 84% CONFIDENCE, ASSUMING ALL PARAMETERS ARE 
+283CN8C  CHOSEN OPTIMALLY.                                                      
+283CN C  2005GR19 (INCLUDES RESULTS OF 2002LO15): ATTEMPT AT INDEPENDENT        
+283CN2C  CONFIRMATION OF THE PRODUCTION OF                                      
+283CN2C  283CN USING THE REACTION 238U(48CA,3N) AT ^LBNL USING THE ^BGS.        
+283CN3C  48CA{+10+} ACCELERATED BY THE ^LBNL 88-INCH CYCLOTRON TO E=243.5 AND   
+283CN4C  248.3 MEV (230.3 AND 235.6 MEV CENTER OF TARGET ENERGIES,              
+283CN5C  RESPECTIVELY). TARGETS CONSISTED OF 0.58 mg/cm{+2} AL FOILS WITH       
+283CN6C  {+238}^UF{-4} EVAPORATED ON THE DOWNSTREAM SIDE. NINE TARGETS ON       
+283CN7C  ARC-SHAPED FRAMES WERE ARRANGED ON THE PERIPHERY OF A 35-cm DIAMETER   
+283CN8C  WHEEL WHICH ROTATED AT AP 500 ^RPM. BEAM INTENSITIES AP 3E+12 IONS/S.  
+283CN9C  ^BGS FILLED WITH HE GAS AT 66 Pa (93 Pa FOR THE 230.3-MEV IRRADIATION).
+283CNAC  EFFICIENCY FOR COLLECTING 283CN ^EVR ESTIMATED TO BE 49% AT 230.3 MEV  
+283CNBC  AND 59% AT 235.6 MEV. 10 cm|*10 cm ^PPAC WITH 12 cm|*6 cm Si STRIP     
+283CNCC  ARRAY FOR 230.3-MEV IRRADIATION; 16 cm|*8 cm MULTIWIRE PROPORTIONAL    
+283CNDC  COUNTER(^MWPC) WITH 18 cm|*6 cm Si STRIP ARRAY FOR 235.6-MEV           
+283CNEC  IRRADIATION. DE{-|a}(FWHM)=50 KEV IN THE FOCAL PLANE DETECTOR AND      
+283CNFC  AP 100 KEV IN UPSTREAM STRIPS. ALPHA-PARTICLE DETECTION                
+283CNGC  EFFICIENCY AP 73-75%.                                                  
+283CN C  FROM THEORY (1995SM05) AND PREVIOUS WORK, PRODUCTION OF ^SHE IN THE    
+283CN2C  REGION OF 283CN SHOULD RESULT IN SF DECAY OF EITHER THE PRODUCED       
+283CN3C  ISOTOPE OR ONE OF THE DAUGHTER ISOTOPES. THE EXPERIMENT OF 2005GR19 WAS
+283CN4C  SENSITIVE TO SF DECAYS WITH LIFETIMES FROM 11 US (15 US AT 230.3 MEV)  
+283CN5C  TO AP 1.0E+6 S. NO SF EVENTS WERE OBSERVED IN ANY OF THE 48CA + 238U   
+283CN6C  IRRADIATIONS (LE 1.6 pb AND LE 2.0 pb AT 230.3 MEV AND 235.6 MEV,      
+283CN7C  RESPECTIVELY; 84% c.i.). SEARCHES FOR POSSIBLE Z=112 DECAY CHAINS WHICH
+283CN8C  ARE NOT TERMINATED BY SF DECAY (OR WHERE THE SF LIFETIME IS LONGER THAN
+283CN9C  THE DURATION OF THE EXPERIMENT) WERE ALSO PERFORMED. NO                
+283CNAC  ^EVR-ALPHA-ALPHA                                                       
+283CNAC  CORRELATIONS WITH |Dt(^EVR-ALPHA)<20 S OR |Dt(ALPHA-ALPHA)<20 S WERE   
+283CNBC  OBSERVED IN ANY OF THE 48CA + 238U IRRADIATIONS (LIMITS AP 1.19 LARGER 
+283CNCC  THAN FOR SF DECAY). SEE 2005GR19 FOR ADDITIONAL DETAILS.               
+283CN C  OTHERS: 2004MA01, 2004OG06, 2004OG10, AND 2002OG07. SEE ALSO THE       
+283CN2C  General Comments SECTION OF THIS EVALUATION.                           
+283CN C  THEORY: SEE Nuclear Science References.                                
+283CN C  ASSIGNMENT: 238U(48CA,3N) E=255, 262 MEV (1999OG05), E=245 MEV         
+283CN2C  (2004OG02), AND E=230-234 MEV (2004OG12,2004OGZZ). DAUGHTER OF 28714   
+283CN3C  PRODUCED BY 242PU(48CA,3N) E=235 MEV (1999OG07). GRANDDAUGHTER OF 29116
+283CN4C  PRODUCED BY 245CM(48CA,2N) E=243 MEV (2004OG07). THE EVALUATORS NOTE   
+283CN5C  THAT THE RADIOACTIVE PROPERTIES FOR THE CURRENT NUCLEUS AS REPORTED BY 
+283CN6C  2004OGZZ, 2004OG12, AND 2004OG07, ALL USING THE ^DGFRS, ARE IN         
+283CN7C  AGREEMENT WITH EACH OTHER WHEREAS THEY DIFFER CONSIDERABLY FROM RESULTS
+283CN8C  OBTAINED IN EXPERIMENTS USING THE ^VASSILISSA SEPARATOR. FURTHER       
+283CN9C  INVESTIGATIONS MAY BE WARRANTED TO RESOLVE THE EXISTING AMBIGUITIES IN 
+283CNAC  THE DATA. IT CANNOT BE RULED OUT THAT 283CN MAY EXHIBIT BOTH SF AND    
+283CNBC  ALPHA DECAY MODES ALTHOUGH THE PROBABILITY OF THIS APPEARS TO BE SMALL.
+283CNCC  HOWEVER, IF THE DATA FROM BOTH SETS OF EXPERIMENTS ARE TAKEN TOGETHER  
+283CNDC  AND ANALYZED, GIVEN A TOTAL OF 17 ALPHA-DECAY EVENTS (2004OG07,        
+283CNEC  2004OGZZ) FROM THE ^DGFRS DATA (NO SF EVENT) AND A TOTAL OF SIX SF     
+283CNFC  EVENTS (1999OG05, 1999OG07, 2004OG02) FROM ^VASSILISSA (NO ALPHA-DECAY 
+283CNGC  EVENT), THE SF BRANCH CONSTITUTES AP 35%. THIS RATIO IS CLEARLY NOT    
+283CNHC  OBSERVED IN EITHER DATA SET, BOTH BEING MUTUALLY EXCLUSIVE TO EACH     
+283CNIC  OTHER ({Ii.e.}, ALL SF OR ALL ALPHA-DECAY). SINCE, HOWEVER, IN         
+283CNJC  EXPERIMENTS USING ^DGFRS, THE ASSIGNMENTS FOR Z=112, Z=114, AND Z=116  
+283CNKC  ARE BASED ON MEASURED EXCITATION FUNCTIONS AND, IN SOME CASES,         
+283CNLC  CONSISTENCY OF OBSERVED PROPERTIES OF DECAY DAUGHTERS PRODUCED BY      
+283CNMC  CROSS-BOMBARDMENTS, GREATER INTERNAL CONSISTENCY EXISTS. IN PARTICULAR,
+283CNNC  THE DECAY PROPERTIES OF 283CN ARE CONSISTENT THROUGH THE VARIOUS       
+283CNOC  MEASUREMENTS (FOLLOWING REASSIGNMENTS AS SUGGESTED FIRST IN 2004OG07), 
+283CNPC  INDEPENDENTLY OF WHETHER THEY WERE OBSERVED AS PRIMARY NUCLEI OR AS    
+283CNQC  ALPHA DECAY DAUGHTERS OF PARENTS ONE (Z=114) OR TWO (Z=116) 'LEVELS'   
+283CNRC  UP. THE EVALUATORS HAVE, THEREFORE, TENTATIVELY ADOPTED THESE          
+283CNSC  RADIOACTIVE PROPERTIES HERE. NOTE THAT 2005GR19 DID NOT OBSERVE ANY    
+283CNTC  SF DECAYS OR ^EVR-ALPHA-ALPHA CORRELATIONS IN ANY 48CA + 238U          
+283CNUC  IRRADIATIONS.                                                          
+283CN C  ^IUPAC/^IUPAP ^JWP ASSESSMENT (2003KA71):                              
+283CN2C  WITH RESPECT TO THE DUBNA EXPERIMENTS (1999OG05,1999OG07), ALTHOUGH    
+283CN3C  THEY HAVE PERFORMED HIGH QUALITY STUDIES, AN ACKNOWLEDGEMENT OF        
+283CN4C  DISCOVERY OF Z=112 IS NOT WARRANTED DUE TO UNSECURED CONNECTIONS TO    
+283CN5C  DESCENDENTS AND UNOBSERVED ELEMENTAL SIGNATURES; SEE ALSO 2001KA70.    
+283CN  L X                             4.0 S     +13-7                         ?
+283CN CL J$|W(N)=7/2- FROM 1997MO25 (THEORY)                                    
+283CN CL T$FROM 18/18 EVENTS HALF-LIVES/ALPHA PARTICLE ENERGIES (2004OG12).     
+283CN2CL T(CALC)=3.3 S FROM Viola-Seaborg SYSTEMATICS FOR QA=9.67 MEV           
+283CN2 L %A GE 90$%SF LE 10                                                     
+283CN CL %A,%SF$FROM 2004OG12. OTHER %SF<4 (EVALUATORS)                         
+283CN CL $B2(THEORY): 0.089 FROM 1995MO29; 0.135 FROM 2003MU15; 0.165 FROM      
+283CN2CL 2005GAZX                                                               
+                                                                                
+283CN    28714 A DECAY: TENTATIVE      2004OG12                  05NDS    200512
+283CN  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+283CN2 H CUT=12-Aug-2005$                                                       
+283CN C  SEE 28714 Adopted Levels FOR DETAILS.                                  
+28714  P X                             0.51 S    +18-10         10160     60    
+28714 CP T$FROM 2004OG12                                                        
+28714 CP QP$FROM 2004OG12                                                       
+283CN  N                       1.0     AP                                       
+283CN  L X                             4.0 S     +13-7                         ?
+283CN CL E,T$FROM THE Adopted Levels                                            
+283CN  A 10.02E3   6                                                           ?
+283CN CA E$FROM 2004OG12                                                        
+                                                                                
+28313    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+28313  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+283132 H CUT=12-Aug-2005$                                                       
+28313  Q             7.2E3   SY1.6E3   SY1.048E4 SY    2012WA38                 
+28313 CQ Note: Current evaluation has used the following Q record               
+28313  Q                        1060   SY 10.26E3  9   2003AU03,2004OG03        
+28313 CQ SP$ESTIMATED UNCERTAINTY=1020 KEV                                      
+28313 CQ QA$FROM EA=10.12 MEV 9 (2004OG03). OTHER: 10.60 MEV 30 (2003AU03.      
+283132CQ SYST.)                                                                 
+28313 C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28715, 28313,   
+283132C  279RG, 275MT and 267DB. 28313 OBSERVED AS ALPHA-DECAY DAUGHTER OF      
+283133C  PARENT 28715; SEE 28715 Adopted Levels FOR EXPERIMENTAL DETAILS.       
+28313 C  REACTION: 243AM(48CA,4N) E=253 MEV CORRESPONDING TO                    
+283132C  AN EXCITATION ENERGY OF 42.4 TO 46.5 MEV AT THE TARGET CENTER.         
+283133C  28715 WAS FORMED AT A CROSS-SECTION OF 0.9 pb {I+32-8}.                
+28313 C  ONE DECAY CHAIN WITH FOUR CONSECUTIVE ALPHA DECAYS WAS DETECTED        
+283132C  TERMINATED BY A FISSION EVENT. THE BEAM WAS SWITCHED OFF AFTER THE     
+283133C  DETECTION OF AN ^EVR SIGNAL FOLLOWED BY AN ALPHA SIGNAL AFTER 46.6 MS  
+283134C  WITH E=10.59 MEV IN THE SAME STRIP ATTRIBUTED TO 28715. WHILE IN THE   
+283135C  BEAM-OFF MODE 3 OTHER ALPHA DECAYS WERE RECORDED IN WITHIN A TIME      
+283136C  INTERVAL OF ABOUT 0.4 S FOLLOWED BY AN SF EVENT AFTER ABOUT 106 M WITH 
+283137C  A SUM ENERGY OF 206 MEV, ALL IN THE SAME POSITION IN THE SAME STRIP    
+283138C  DETECTOR. THREE OTHER SF EVENTS WERE ALSO MEASURED WITH FRAGMENT       
+283139C  ENERGIES OF 168 MEV, 154 MEV, AND 151 MEV. THE SECOND EVENT IN THE     
+28313AC  CHAIN WAS ASSIGNED TO THE NUCLEUS 28313:                               
+28313 t    {TV}Energy of the evaporation residue=12.2 MeV                       
+283132t       E{-|a}=10120 keV         t=100 MS   - assigned to {+283}113       
+28313 C  THEORY: 1997MO25, 2003MU15, 2003GE09, 2004BA86, 2004GUZW AND           
+283132C  Nuclear Science References                                             
+28313 C  THE EVALUATORS NOTE THAT THE IDENTIFICATION OF Z=115                   
+283132C  AND ALL ASSOCIATED NUCLIDES IN THE CHAIN SHOULD BE TREATED AS          
+283133C  TENTATIVE UNTIL CONFIRMED IN INDEPENDENT EXPERIMENTS.                  
+28313  XA28715 A DECAY: TENTATIVE                                               
+28313  L X                                                                     ?
+28313 CL J$|W(p)=7/2- FROM 1997MO25 (THEORY)                                    
+283132 L T=100 MS +490-45 (2004OG03)                                            
+28313 CL T$T(CALC)=140 MS FROM Viola-Seaborg SYSTEMATICS FOR QA=10.26 MEV       
+283133 L %A AP 100                                                              
+28313 CL %A$FROM ONE EVENT                                                      
+28313 CL $B2(THEORY): 0.072 FROM 1995MO29; 0.149 FROM 2003MU15; 0.169 FROM      
+283132CL 2005GAZX                                                               
+28313X L XREF=A                                                                 
+                                                                                
+28313    28715 A DECAY: TENTATIVE      2004OG03                  05NDS    200512
+28313  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+283132 H CUT=12-Aug-2005$                                                       
+28313 C  SEE 28715 Adopted Levels FOR DETAILS.                                  
+28715  P X                             0.03 S    +16-2          10.74E3   9     
+28715 CP T$32 MS +155-14 (2004OG03)                                             
+28715 CP QP$FROM 2004OG03                                                       
+28313  N                       1.0     AP                                       
+28313  L X                                                                     ?
+283132 L T=100 MS +490-45                                                       
+28313 CL E,T$FROM THE Adopted Levels                                            
+28313  A 10.59E3   9                                                           ?
+28313 CA E$FROM 2004OG03                                                        
+                                                                                

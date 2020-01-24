@@ -1,0 +1,91 @@
+# Challenge Understanding
+
+It is the intent of this projet to develop an algorithm for cross section predictions. Through this journey we are testign several ML models with different parameteres/hyperparameters. Cross sections data is used in every aspect of nuclear sciences. It describes the probability that a particular reaction channel will occurr. It is normaly used in monte carlo and deterministic codes to simulate a particular assembly. The accuracy of such models depend to a high degree on the cross section data used. Througout the years there have been a variety of experimental campaings that aim to calculate cross section data for many elements/isotopes. This campagins require sometimes extensive resources and calculating data for each existing isotope is unfeasiable/imposible. While there are physical reaction models that are used in tools like EMPIRE and TALLY which use theory to try and predict cross section data in unevaluated energy zones, it is known that some of these are innaccurate in the order of 5 or more. Motivated by this, and due to the avaliable computational power nowdays, we seek to use Machine Learning to try and come up with a model that will help us guide cross section data evaluations. 
+
+
+**What factors influence cross section values?**
+
+There are a variety of independent variables that are known to have a role in cross section data. Some obvious ones like the number of protons and neutrons, and some not like energy levels, and parities/spins. Therefore the first phase of this project consists on gathering only the experimental data and build a model around it to set a baseline accuracy.
+
+
+
+
+
+# Analytic Approach
+
+The task involves a regression problem. We need to collect features that might help the ML algorithm learn unhidden patterns and behavious. These features must make sense physically. Knowing that this is a regression problem we need to select a suitable techniques for the desired outcome. 
+
+**Desicion Trees and Random Forests**
+
+If we suspect cross sections follow a specific set of unknown tree rules then this might be an appropiate approach although it becomes apparent intially that the desiciont tree will need to be deep enough to capture specific patterns in all nuclei, it's isotopes, and energy regions. 
+
+
+
+
+
+# Data Requirements
+
+For this challenge we need real known expeirmental data that will form the basis for our entire problem. We will initially focuse on neutron induce reactions. This means we need energy and angle dependent cross section measurments. Additionally, we will require information about the individual isotopes. This involes masses, # of neutrons and protons, spins, parities, energy levels, etc. 
+
+
+
+
+# Data Collection and Sources
+
+We will use the EXFOR database which contains all experimental data avaliable. The latest database that was downloaded from the IAEA servers was `CE-2019-07-18`. As for the masses, binding energy, and beta decay information, they were gathered from the Atomic Mass Evaluation files. All other information will be collected from other nuclear databases by web scrapping. This will involve a great deal of cleaning and formatting data sources. 
+
+
+
+
+
+# Data Understanding
+
+Cleaned EXFOR Database Description:
+
+- Prj: 1 for neutron.
+- Isomer: G for Ground and M for Metastable
+- MF: ENDF file labels. "Files" are usually used to store different types of data, thus:
+MF=1 contains descriptive and miscellaneous data,
+MF=2 contains resonance parameter data,
+MF=3 contains reaction cross sections vs energy,
+MF=4 contains angular distributions,
+MF=5 contains energy distributions,
+MF=6 contains energy-angle distributions,
+MF=7 contains thermal scattering data,
+MF=8 contains radioactivity data
+MF=9-10 contain nuclide production data,
+MF=12-15 contain photon production data, and
+MF=30-36 contain covariance data.
+- MT: Specifies the reaction to be measured. 
+- Energy and Uncertainty: Energy at which the XS was measured and its given uncertainty.
+- Cross Section Measurments and Uncertainty: XS measured along with its uncertainty.
+- Angle and Uncertainty (if applicable): Some experiments do not specify angle (not even 0) so we are assuming those with empty values are at 0 degrees. The measured angle uncertainty is also given. 
+- ELV/HL and dELV/HL: Something related to half-life?
+- Protons, Neutrons and Mass Number: Derived from the original Target feature in EXFOR. 
+- Product Meta State: The energy level state of the final product. 
+- Center of Mass of Experiment: Lab or Center-of-Mass measurment. 
+
+
+# Data Preparation
+
+11/10/2019: The entire EXFOR database consisting of 6,007,126 data points and 18 features (including the two target variables) has been cleaned. There are still some questions regarding some unknown and default values that should be asked. The data is stored in `working_xs.csv`.
+
+PUT ASSUMPTIONS HERE. 
+
+
+
+
+# Modeling
+
+### PHASE 1
+
+In phase one we use only the EXFOR files. This files include features like:
+
+
+We will build several ML models to set a baseline accuracy. 
+
+### PHASE 2 
+
+We collect masses from the Atomic Masses Evaluations. We add them to our original dataset and see improvment in accuracy. 
+
+# EVALUATION

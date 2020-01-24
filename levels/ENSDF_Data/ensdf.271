@@ -1,0 +1,648 @@
+271      COMMENTS                                                05NDS    200512
+271    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+271  2 H CUT=12-Aug-2005$                                                       
+271   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+271   C  AUTH$M. GUPTA(a)                                                       
+271   C  INST$National Nuclear Data Center                                      
+271  #C       Brookhaven National Laboratory                                    
+271  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+271  #C                                                                         
+271   c  INST$Manipal Academy of Higher Education,                              
+271  #c  Manipal, KA 576 104, INDIA                                             
+271  #c  e-mail: mohini.gupta@manipal.edu                                       
+271   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+271  #c  Manipal, KA 576 104, INDIA                                             
+271   C  AUTH$THOMAS W. BURROWS                                                 
+271   C  INST$National Nuclear Data Center                                      
+271  #C       Brookhaven National Laboratory                                    
+271  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+271  #C       e-mail: burrows@bnl.gov                                           
+271   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+271  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+271  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+271  4C  RECEIVED BY August 12, 2005.                                           
+271   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+271  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+271  3C  DATE WERE CONSIDERED.                                                  
+271   C  CIT$NDS 106, 251 (2005)                                                
+271   c  COMM$                                                                  
+271  @c  {UAcronyms and notations used in this evaluation:}                     
+271  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+271  #c  BGS Berkeley Gas Filled Separator                                      
+271  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+271  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+271  #c  EVR Evaporation Residue                                                
+271  #c  GARIS Gas-filled Recoil Ion Separator                                  
+271  #c  RILAC RIKEN Linear Accelerator facility                                
+271  #c  SHIP Separator for Heavy Ion reaction Products                         
+271  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+271  2c  and detection of previous EVR or |a                                    
+271  #c  TKE Total Kinetic Energy                                               
+271  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+271  2c  Reactions, JINR, Dubna, Russia                                         
+271  #c                                                                         
+271  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+271  2c  (Z=110-112,114,116,118):}                                              
+271  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+271  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+271  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+271  5c  the evaluators have relied on the judgement of the JWP in              
+271  6c  determining the strength of the arguments made in the various papers.  
+271  7c  In the cases where there are new data or where the JWP has not yet     
+271  8c  assigned a priority of discovery for an element, the evaluators have   
+271  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+271  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+271  Bc  the data.                                                              
+271  #c                                                                         
+271  #c  In the above context, with respect to Z=112 and the collective works of
+271  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+271  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+271  4c  references therein.                                                    
+271  #c                                                                         
+271  @c                                                                         
+271  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+271  2c  discovery of an element and not a specific nuclide. The purpose of     
+271  3c  this evaluation is to present the "best" set of nuclear properties     
+271  4c  for those nuclides reported between A=266 and A=294 based on data      
+271  5c  currently available and {Bnot} to establish a priority of discovery for
+271  6c  any element.                                                           
+271  !c                                                                         
+271  #c  It is well known that alpha decay chains seen                          
+271  ac  in cold fusion reactions tend to terminate in known mass regions.      
+271  2c  The method of |a-|a or |a-SF correlations for identifying the          
+271  3c  parent has therefore been used with confidence.                        
+271  3c  Experiments carried out with hot fusion reactions,                     
+271  4c  result in alpha decay chains beginning and ending with hitherto unknown
+271  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+271  6c  in an attempt to identify the parent and daughters. The latter method  
+271  7c  is not as accurate as the first since a greater probability of         
+271  8c  randomness is inherant to the technique. As such, independent          
+271  9c  verification and confirmation of the data gains added importance.      
+271  ac  These facts should be taken into account when considering the suggested
+271  ac  properties of nuclei created following a hot fusion reaction as for    
+271  ac  the synthesis of Z=114 and above.                                      
+271  #c                                                                         
+271  #c  Finally, with regard to the some of the                                
+271  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+271  ac  2004Mo15 have pointed out that mass assignments which are based        
+271  ac  on the excitation energy of the compound nucleus may be off by a       
+271  ac  single unit. This may also be due in part to uncertainties in the beam 
+271  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+271  ac  Once again, collateral information is required to establish the charge 
+271  ac  and approximate A of the nucleus.                                      
+271  #c                                                                         
+271  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+271  2c  have not been adopted, the evaluators have used the approximations in  
+271  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+271  4c  exponential distribution to estimate the standard uncertainty (68%     
+271  5c  confidence level) in T{-1/2}:                                          
+271  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+271  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+271  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+271  9c  of events. For one and two events, the exact values given in Table 1   
+271  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+271  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+271  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+271  #c                                                                         
+271  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+271  ac  Calculations of T{-1/2}                                                
+271  2c  performed in the present evaluation used the relationship:             
+271  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+271  #c  where Z refers to the atomic                                           
+271  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+271  6c  and:                                                                   
+271  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+271  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+271  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+271  3c  parameter set used in these evaluations. We note that these systematics
+271  6c  are only an indication of |a-decay half-lives from the ground state    
+271  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+271  8c  the element under consideration. The use of this formalism in the      
+271  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+271  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+271  ac  estimate a Hindrance Factor (HF) for a given transition,               
+271  ac  attributable to the odd neutron or proton. This quantity is            
+271  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+271  ac  The HF so computed is an approximate indication.                       
+271  #c                                                                         
+271  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+271  2c  References.                                                            
+271  #c                                                                         
+271  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+271  2c  trans-fermium elements is the manifestation of shell effects in the    
+271  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+271  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+271  5c  important as QF is expected to play a greater role on the hindrance of 
+271  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+271  7c  the "island" of stability. An understanding of this mechanism is       
+271  8c  necessary to establishing the most favorable reactions for producing   
+271  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+271  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+271  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+271  Cc  to both the mass asymmetry in the entrance channel as well as the      
+271  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+271  Ec  deformations of target/projectile nuclei and their relative orientation
+271  Fc  to each other in the process of CN formation, may also play an         
+271  Gc  important role in reducing the probability of forming a compound       
+271  Hc  system. In the face of extremely low yields and a steep decrease of    
+271  Ic  production cross-sections already in evidence with available stable    
+271  Jc  beam-target combinations, the influence of all possible mitigating     
+271  Kc  factors must be accurately determined in order to                      
+271  Lc  optimize the probability of successful fusion. The formation of a      
+271  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+271  Nc  survives QF going on to form a compact compound system which must then 
+271  Oc  face competition from fission.                                         
+271  #c                                                                         
+271  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+271  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+271  3c  in collaboration with investigators from Belgium, France, and Italy.   
+271  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+271  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+271  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+271  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+271  8c  spectrometer "Corset". These experiments were inspired by              
+271  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+271  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+271  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+271  Cc  such experiments are planned or underway to investigate the various    
+271  Dc  effects.                                                               
+271  #c                                                                         
+271  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+271  2c  and references cited in these papers.                                  
+271  #c                                                                         
+271  !c  {UExperimental Estimates of Fission Barriers:}                         
+271  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+271  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+271  4c  the experimentally derived barrier heights are respectively:           
+271  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+271  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+271  #c                                                                         
+271  #c  2002It04, in an analysis of available experimental data, derive the    
+271  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+271  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+271  #c                                                                         
+271  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+271  2c  Two possibilities have been proposed in an attempt to understand the   
+271  ac  the {+289}114, {+287}114 observations:                                 
+271  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+271  ac  belongs to a rare decay mode originating from                          
+271  4c  an isomeric state, or that                                             
+271  #c  (ii) the sequence may actually originate from                          
+271  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+271  7c  Levels).                                                               
+271  #c  The evaluators believe that further investigations                     
+271  ac  are required to support either hypothesis.                             
+271  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+271  9c  unobserved. Also, T{-1/2}                                              
+271  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+271  ac  is much larger than that observed by 2004Og12 and                      
+271  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+271  ac  agreement. Such inconsistencies need to be better understood.          
+271  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+271  2c  respects. 2004OgZZ report more statistics in some cases.               
+271  #c                                                                         
+271  @c  {UOther comments on {+289}114 and {+283}112}                           
+271  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+271  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+271  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+271  4c  classified the evidence as being "very weak",                          
+271  5c  with no convincing supporting arguments for the possible production of 
+271  6c  SHE. We make the following general observations:                       
+271  #c                                                                         
+271  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+271  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+271  ac  by the Dubna-JINR collaborations for all isotopes of                   
+271  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+271  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+271  ac  {+287}114 (15 events) and {+286}114                                    
+271  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+271  ac  the |?34 min decay sequence postulated as originating from             
+271  5c  a rare decay mode of {+289}114, does not seem very likely.             
+271  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+271  7c  {+289}114 decays observed are genetically linked                       
+271  8c  and not the result of a background decay sequence. These               
+271  BC  discrepancies have to be resolved, along with some others.             
+271  #c                                                                         
+271  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+271  ac  (see also 2004Og02) with VASSILISSA, have not                          
+271  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+271  3c  lack of internal consistency through the collective measurements       
+271  ac  and the data are inconclusive as pointed                               
+271  4c  out by experimenters (reasons given in each paper). Decay properties of
+271  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+271  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+271  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+271  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+271  8c  by them. See {+283}112 Adopted Levels for details.                     
+271  #c                                                                         
+271  #c  These observations by the experimenters are consistent with the        
+271  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+271  3c  of the various arguments put                                           
+271  3c  forward therein, the following comments may be made here:              
+271  #c                                                                         
+271  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+271  #c  190 MeV and 212 MeV (1999Og05)                                         
+271  #c  65 MeV and 170 MeV  (2004Og02)                                         
+271  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+271  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+271  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+271  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+271  4c  plane and side detectors). With one exception, all the energies        
+271  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+271  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+271  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+271  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+271  9c  the second experiment) after EVR implantation resulted in              
+271  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+271  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+271  #c                                                                         
+271  #c  2. 2000Ar03 statement that correlations  between the fission events    
+271  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+271  3c  'backward' analysis of the data was reported in                        
+271  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+271  5c  evidently in contradiction with those made by the                      
+271  6c  experimenters. A more complete analysis would be beneficial.           
+271  #c                                                                         
+271  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+271  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+271  ac  quoted from an earlier                                                 
+271  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+271  4c  assignments. The proposed assignment of Z=114 to both parents may      
+271  5c  be incorrect taking into account new data which do not support         
+271  6c  these observations and for reasons already mentioned.                  
+271  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+271  !c                                                                         
+271  #c  CONCLUSIONS:                                                           
+271  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+271  ac  are not conclusive. Overall, the                                       
+271  2c  results from the VASSILISSA experiments are at variance with data from 
+271  3c  experiments using DGFRS. The latter investigations are done using      
+271  4c  more stringent methods, and have greater statistics, offering better   
+271  5c  internal consistency. Some obvious discrepancies and other             
+271  ac  inconsistencies between the two sets of                                
+271  6c  data remain and need to be resolved or adequately explained as does the
+271  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+271  8c  by 2005Gr19 and 2002Lo11.                                              
+271  #c                                                                         
+271  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+271  2c  from earlier work are not reproduced to date.                          
+271  #c                                                                         
+271  @c  {UTheoretical Calculations:}                                           
+271  @c  1995Mo29: |b2 based on the finite-range droplet                        
+271  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+271  3c  with "global" parameters.                                              
+271  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+271  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+271  3c  J|p simultaneously obtained with the calculated masses and             
+271  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+271  5c  A=239.                                                                 
+271  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+271  2c  model for the macroscopic part and the Strutinski shell correction,    
+271  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+271  4c  part.                                                                  
+271  @c  2005GaZX: |b2 based on self consistent calculations                    
+271  2c  within the framework of the Relativistic Mean Field (RMF)              
+271  3c  theory with very few "globally" fit parameters and employing the       
+271  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+271  5c  sets in use exhibit similar systematics, these results are expected to 
+271  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+271  #c                                                                         
+271  @c  {UOther Measurements:}                                                 
+271  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+271  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+271  3c  (Blocking technique in single crystals).                               
+271  #c                                                                         
+271   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+271  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+271  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+271  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+271  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+271  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+271  7c  additional information that they readily provided during this          
+271  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+271  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+271  Ac  Singh for helpful discussions. We thank A. Marinov                     
+271  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+271  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+271  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+271  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+271  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+271  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+271  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+271  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+271  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+271  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+271  Lc  insights, and suggestions until her untimely demise are hereby         
+271  Mc  acknowledged.                                                          
+271   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+271  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+271  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+271      REFERENCES                                                       200512
+271    R 1966VI04 JOUR JINCA 28 741                                             
+271    R 1984SC13 JOUR ZPAAD 316 19                                             
+271    R 1987MU15 JOUR ZPAAD 328 49                                             
+271    R 1992BA77 JOUR PPNPD 29 453                                             
+271    R 1995HO04 JOUR ZPAAD 350 281                                            
+271    R 1995HO27 JOUR RAACA 70/71 135                                          
+271    R 1995LA20 JOUR PRLTA 75 1903                                            
+271    R 1995MO29 JOUR ADNDA 59 185                                             
+271    R 1996HE07 JOUR PRVCA 53 1892                                            
+271    R 1997MO25 JOUR ADNDA 66 131                                             
+271    R 1997SM03 JOUR PRVCA 56 812                                             
+271    R 1998DA24 JOUR ARNUA 48 401                                             
+271    R 1998HO13 JOUR RPPHA 61 639                                             
+271    R 1999OG05 JOUR ZAANE 5 63                                               
+271    R 1999OG07 JOUR NATUA 400 242                                            
+271    R 1999OG10 JOUR PRLTA 83 3154                                            
+271    R 2000AR03 JOUR ZAANE 7 23                                               
+271    R 2000FI12 JOUR NDSBA 90 391                                             
+271    R 2000SC26 JOUR ZAANE 8 141                                              
+271    R 2000ZL02 JOUR ZAANE 8 81                                               
+271    R 2001AK11 JOUR NDSBA 94 131                                             
+271    R 2001KA70 JOUR PACHA 73 959                                             
+271    R 2002HI20 JOUR PRLTA 89 282701                                          
+271    R 2002HO11 JOUR ZAANE 14 147                                             
+271    R 2002IT04 JOUR PRVCA 65 044602                                          
+271    R 2002LO11 JOUR PPNPD 48 123                                             
+271    R 2002LO15 JOUR PRVCA 66 044617                                          
+271    R 2003AU02 JOUR NUPAB 729 3                                              
+271    R 2003AU03 JOUR NUPAB 729 337                                            
+271    R 2003GI05 JOUR PRVCA 67 064609                                          
+271    R 2003KA71 JOUR PACHA 75 1601                                            
+271    R 2003MU15 JOUR YAFIA 66 1051                                            
+271    R 2003MU26 JOUR APOBB 34 2073                                            
+271    R 2003OGZY REPT JINR-E7-2003-178,Oganessian                              
+271    R 2004DA11 JOUR NUPAB 734 148                                            
+271    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+271    R 2004FO08 JOUR PRLTA 93 212702                                          
+271    R 2004IT05 JOUR NUPAB 734 136                                            
+271    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+271    R 2004MO14 JOUR NUPAB 734 101                                            
+271    R 2004MO15 JOUR NUPAB 734 188                                            
+271    R 2004MO27 JOUR NUPAB 738 129                                            
+271    R 2004MO40 JOUR ZAANE 21 257                                             
+271    R 2004MO43 JOUR APHPF 19 53                                              
+271    R 2004OG02 JOUR ZAANE 19 3                                               
+271    R 2004OG03 JOUR PRVCA 69 021601                                          
+271    R 2004OG07 JOUR PRVCA 69 054607                                          
+271    R 2004OG12 JOUR PRVCA 70 064609                                          
+271    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+271    R 2004PRZW PREPRINT Prokhorova                                           
+271    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+271    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+271    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+271SG    ADOPTED LEVELS: TENTATIVE                               05NDS    200601
+271SG  H TYP=ERR$AUT=M. GUPTA, THOMAS W. BURROWS$DAT=13-JAN-2006$               
+271SG2 H COM=CORRECTED QA                                                       
+271SG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+271SG2 H CUT=12-Aug-2005$                                                       
+271SG  Q -1.2E3    SY4.8E3   SY4.9E3   SY8.89E3  SY    2012WA38                 
+271SG CQ Note: Current evaluation has used the following Q record               
+271SG  Q -3060     SY 5140   SY 4720   SY 8.65E3 8     2003AU03,2004OG12        
+271SG CQ Q-$ESTIMATED UNCERTAINTY=780 KEV                                       
+271SG CQ SN$ESTIMATED UNCERTAINTY=900 KEV                                       
+271SG CQ SP$ESTIMATED UNCERTAINTY=970 KEV                                       
+271SG CQ QA$FROM EA=8.53 MEV 8 (2004OG12). OTHER: 8.7 MEV 3 (2003AU03. SYST.)   
+271SG C  2004OG12,2004OGZZ: AS ALPHA DECAY PRODUCT OF 28714 (15 EVENTS)         
+271SG2C  AND 28312 (7 EVENTS). SEE FOR 28714 AND 28312 Adopted Levels           
+271SG3C  FOR DETAILS. 28714 WAS SYNTHESIZED USING 242PU+48CA AT BEAM            
+271SG4C  ENERGIES OF 235, 238 AND 244 MEV WITH 5 MEASUREMENTS MADE              
+271SG5C  AT EACH ENERGY. 28312 WAS OBSERVED USING 238U+48CA AT 230 AND 234 MEV. 
+271SG6C  ONE SPECIAL CASE ATTRIBUTED TO 28714 IN THE 242PU REACTION             
+271SG7C  AT A BEAM ENERGY OF 244 MEV, LASTING FOR 6.5 M, OF THE TYPE            
+271SG8C  ^EVR-|a1-|a2-|a3-|a4-SF WARRANTS MENTION. GENERALLY,                   
+271SG9C  ALPHA DECAY IS BLOCKED BELOW 279DS WHICH FISSIONS RATHER THAN ALPHA    
+271SGAC  DECAYS (%A AP 10). THE EVALUATORS SUGGEST THAT THIS LONGER CHAIN       
+271SGBC  WHICH TERMINATES WITH 271SG MAY, IF CONFIRMED, BE ONE INCIDENCE OF THIS
+271SGCC  10% BRANCH. THE ALPHA ENERGY FOR 279DS FROM THIS EVENT IS 9.7 MEV 6    
+271SGDC  WITH A LIFETIME OF 0.2831 S. ANOTHER EXCEPTION TO THE FISSIONING OF    
+271SGEC  279DS APPEARS IN THE CASE OF A SIMILAR ^EVR-|a1-|a2-|a3-|a4-SF EVENT   
+271SGFC  ORIGINATING FROM 28312 IN THE 238U REACTION AT 234 MEV. HERE, THE      
+271SGGC  SEQUENCE ENDS WITH THE FISSION OF 267RF. THE ALPHA ENERGY FOR 279DS    
+271SGHC  FROM THIS EVENT IS 9.8 MEV 3 WITH A LIFETIME OF 0.2775 S. ALTHOUGH     
+271SGIC  BOTH EXCEPTIONS REQUIRE FURTHER INVESTIGATION, THEIR RADIOACTIVE       
+271SGJC  PROPERTIES AGREE WELL WITH EACH OTHER AND THE EVALUATORS SUGGEST THAT  
+271SGKC  IF CONFIRMED, THEY COULD REPRESENT THE 10% ALPHA DECAY BRANCH FOR      
+271SGLC  279DS.                                                                 
+271SG C  2005GR19, 2002LO15: NO ^EVR-ALPHA-ALPHA CORRELATIONS WITH              
+271SG2C  |Dt(^EVR-ALPHA)<20 S OR |Dt(ALPHA-ALPHA)<20 S WERE OBSERVED IN ANY OF  
+271SG3C  THE 48CA + 238U IRRADIATIONS. SEE 28312 Adopted Levels FOR DETAILS     
+271SG C  THEORY: SEE Nuclear Science References                                 
+271SG C  ASSIGNMENT: THE ASSIGNMENTS FOR Z=112, Z=114 (AND Z=116)               
+271SG2C  AND THEIR DAUGHTERS ARE BASED ON MEASURED                              
+271SG3C  EXCITATION FUNCTIONS AND IN SOME CASES CONSISTENCY OF OBSERVED         
+271SG4C  PROPERTIES PRODUCED BY CROSS-BOMBARDMENTS. IN                          
+271SG5C  PARTICULAR, THE DECAY PROPERTIES OF 28312 ARE CONSISTENT THROUGH       
+271SG6C  THE VARIOUS MEASUREMENTS USING THE ^DGFRS, INDEPENDENT OF WHETHER      
+271SG7C  THEY WERE OBSERVED AS PRIMARY NUCLEI OR AS ALPHA DECAY DAUGHTERS OF    
+271SG8C  PARENTS ONE (Z=114) OR TWO (Z=116) 'LEVELS' UP.                        
+271SG9C  IN THE CASE OF 28714, THE SECOND ALPHA IN THE DECAY CHAIN HAS AN       
+271SGAC  ENERGY OF 9.54 MEV 6 WHICH AGREES WELL WITH THE FOUR MEASURED          
+271SGBC  ALPHAS (2004OG07, 2004OG12) IN 11 OUT OF 14 CASES. THE OTHER THREE     
+271SGCC  ALPHA ENERGIES ARE 8.94, 9.36 AND 9.32 MEV WHICH THE EXPERIMENTERS     
+271SGDC  SUGGEST MAY BE INDICATIVE OF TRANSITIONS TO DIFFERENT EXCITED STATES   
+271SGEC  IN THE DAUGHTER NUCLEUS 279DS. ASSIGNMENTS TO THIS NUCLEUS SHOULD BE   
+271SGFC  TAKEN AS TENTATIVE. NOTE THAT 2005GR19 DID NOT OBSERVE ANY             
+271SGGC  SF DECAYS OR ^EVR-ALPHA-ALPHA CORRELATIONS IN ANY 48CA + 238U          
+271SGHC  IRRADIATIONS.                                                          
+271SG  XA275HS A DECAY: TENTATIVE                                               
+271SG  L X                             2.4 M     +43-10                        ?
+271SG CL J$|W(N)=3/2+ FROM 1997MO25 (THEORY)                                    
+271SG CL T$FROM 2 HALF-LIVES/1 ALPHA EVENTS (2004OG12,2004OGZZ). T(CALC)=46.2 S 
+271SG2CL (0.77 MIN) FROM Viola-Seaborg SYSTEMATICS FOR QA=8.66 MEV.             
+271SG2 L %A AP 50$%SF AP 50                                                     
+271SG CL %A,%SF$FROM 2 HALF-LIVES/1 ALPHA EVENTS (2004OG12).                    
+271SG CL $B2(THEORY): 0.212 FROM 1995MO29; 0.218 FROM 2003MU26; 0.219 FROM      
+271SG2CL 2005GAZX                                                               
+271SGX L XREF=A                                                                 
+                                                                                
+271SG    275HS A DECAY: TENTATIVE      2004OG12                  05NDS    200512
+271SG  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+271SG2 H CUT=12-Aug-2005$                                                       
+271SG C  SEE 275HS Adopted Levels FOR DETAILS                                   
+275HS  P X                             0.15 S    +27-6          9.44E3    7     
+275HS CP T$FROM 2004OG12                                                        
+275HS CP QP$FROM 2004OG12                                                       
+271SG  N                       1.0     AP                                       
+271SG  L X                             2.4 M     +43-10                        ?
+271SG CL E,T$FROM THE Adopted Levels                                            
+                                                                                
+271BH    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+271BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+271BH2 H CUT=12-Aug-2005$                                                       
+271BH  Q -1.8E3    SY6.3E3   SY2.8E3   SY9.49E3  17    2012WA38                 
+271BH CQ Note: Current evaluation has used the following Q record               
+271BH  Q -2310     SY 6620   SY 2770   SY 9500      SY 2003AU03                 
+271BH CQ Q-$ESTIMATED UNCERTAINTY=650 KEV                                       
+271BH CQ SN$ESTIMATED UNCERTAINTY=730 KEV                                       
+271BH CQ SP$ESTIMATED UNCERTAINTY=830 KEV                                       
+271BH CQ QA$ESTIMATED UNCERTAINTY=300 KEV                                       
+271BH C  2003OGZY AND 2004OG03: IDENTIFICATION OF NEW NUCLIDES: 28715, 28313,   
+271BH2C  279RG, 275MT AND 267DB. THE ALPHA DECAY OF 271BH, THE PENULTIMATE      
+271BH3C  DESCENDENT OF 28715 PRODUCED {IVIA} 243AM(48CA,4N) E=253 MEV WAS NOT   
+271BH4C  OBSERVED; SEE 28715 Adopted Levels FOR EXPERIMENTAL DETAILS. HOWEVER,  
+271BH5C  THE SF DECAY OF 267DB (T=73 M +350-33. ^TKE=206 MEV) AND THE ALPHA     
+271BH6C  DECAY OF 275MT (T=9.7 MS +46-44. EA=10.33 MEV 9) WERE OBSERVED.        
+271BH C  THEORY: SEE Nuclear Science References                                 
+271BH C  ASSIGNMENT: THE EVALUATORS NOTE THAT THE IDENTIFICATION OF Z=115       
+271BH2C  AND ALL ASSOCIATED NUCLIDES IN THE CHAIN SHOULD BE TREATED AS          
+271BH3C  TENTATIVE UNTIL CONFIRMED IN INDEPENDENT EXPERIMENTS.                  
+271BH  XA275MT A DECAY: TENTATIVE                                               
+271BH  L X                                                                     ?
+271BH CL J$|W(p)=1/2- FROM 1997MO25 (THEORY)                                    
+271BH CL T$40 S (2003AU03. SYST.). T(CALC)=0.25 S FROM Viola-Seaborg            
+271BH2CL SYSTEMATICS FOR QA=9.5 MEV                                             
+271BH2 L %A=?                                                                   
+271BH CL $B2(THEORY): 0.221 FROM 1995MO29; 0.228 FROM 2003MU26; 0.238 FROM      
+271BH2CL 2005GAZX                                                               
+271BHX L XREF=A                                                                 
+                                                                                
+271BH    275MT A DECAY: TENTATIVE      2004OG03                  05NDS    200512
+271BH  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+271BH2 H CUT=12-Aug-2005$                                                       
+271BH C  SEE 275MT Adopted Levels FOR DETAILS.                                  
+275MT  P X                             10 MS     +50-5          10.48E3   9     
+275MT CP T$9.7 MS +460-44 (2004OG03)                                            
+275MT CP QP$FROM 2004OG03                                                       
+271BH  N                       1.0     AP                                       
+271BH  A 10.33E3   9                                                            
+271BH  L X                                                                     ?
+                                                                                
+271DS    ADOPTED LEVELS                                          05NDS    200512
+271DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+271DS2 H CUT=12-Aug-2005$                                                       
+271DS  Q             6.80E3  SY2.06E3  SY10870   18    2012WA38                 
+271DS CQ Note: Current evaluation has used the following Q record               
+271DS  Q             6820    SY 2250   SY10899   20    2003AU03                 
+271DS CQ SN$ESTIMATED UNCERTAINTY=310 KEV                                       
+271DS CQ SP$ESTIMATED UNCERTAINTY=550 KEV                                       
+271DS CQ QA$FROM EA=10738 KEV 20 (1998HO13); 10738 KEV 3 (68% c.i.). 2003AU03   
+271DS2CQ ADOPTED 10870 KEV 20 BASED ON INPUT VALUES OF 10870 KEV 20 AND         
+271DS3CQ 10899 KEV 20 FROM THE EA'S OF 1998HO13 AND APPARENTLY USED THE LEVEL   
+271DS4CQ SCHEME PROPOSED BY 2000FI12 WHO ASSIGNED THE 69-MS STATE OF 271DS AS   
+271DS5CQ THE GS                                                                 
+271DS C  2000FI12 CITE 1996HE07 WHICH DOES NOT CONTAIN ANY INFORMATION ON       
+271DS2C  271DS. THE EVALUATORS BELIEVE THIS WAS A PRELIMINARY RESULT OF THE WORK
+271DS3C  FINALLY REPORTED IN 1998HO13 AND CITED AS A PRIVATE COMMUNICATION,     
+271DS4C  REFERENCE 20 IN 1995LA20.                                              
+271DS C  1998HO13: GSI/^SHIP COLD FUSION EXPERIMENT, 208PB(64NI,N) AT A         
+271DS2C  DETECTION EFFICIENCY OF 100% FOR ALPHA-DECAY AND FISSION EVENTS.       
+271DS4C  NINE POSITION AND TIME CORRELATED CHAINS OF ALPHA PARTICLES WERE       
+271DS5C  OBSERVED: TWO AT A BEAM ENERGY OF 311.7 MEV, SIX AT 313.0 MEV, AND ONE 
+271DS6C  AT 315.5 MEV. THE CROSS-SECTIONS AT THESE ENERGIES WERE 7.4 pb         
+271DS7C  {I+94-48}, 15 pb {I+9-6}, AND 3.6 pb {I+68-3} RESPECTIVELY. A TOTAL    
+271DS8C  NUMBER OF 38 ALPHA-DECAYS WERE MEASURED AND ASSIGNED TO NINE DECAY     
+271DS9C  CHAINS. DETERMINED ALPHA ENERGIES AND TIME INTERVALS BETWEEN SUCCESSIVE
+271DSAC  PARTICLES. ASSIGNED TO DECAY OF 271DS BY CONSISTENCY OF LOWER CHAIN    
+271DSBC  MEMBER ENERGIES AND LIFETIMES WITH KNOWN 255NO, 259RF, AND 263SG DATA. 
+271DSDC  THE MEASURED ALPHA ENERGIES AND EMISSION TIMES ARE GROUPED AS FOLLOWS: 
+271DSEC  FIVE EVENTS WITH AN AVERAGE ENERGY OF E1=10738 KEV 20, TWO EVENTS      
+271DSFC  WITH AN AVERAGE ENERGY OF E2=10682 KEV 20, AND ONE ESCAPE AND ONE EVENT
+271DSGC  WITH ENERGY E3=10709 KEV 20 WITH A LONG LIFE-TIME OF 81 MS             
+271DSHC  CORRESPONDING TO T=56 MS +270-26. THE EMISSION TIMES FOR THE FIRST     
+271DSIC  TWO GROUPS WERE 0.2-4.4 MS AND 81 MS FOR THE LAST EVENT WHICH 1998HO13 
+271DSJC  TAKE AS BEING A SIGN OF AN ISOMERIC STATE IN 271DS. THE SECOND MEMBER  
+271DSKC  OF EACH CHAIN CORRESPONDS TO DECAY OF 267HS. ANALYSIS BY 2000SC26      
+271DSLC  CONFIRMS THE ASSIGNMENT. 1998HO13 ALSO SUGGEST THE EXISTENCE OF TWO    
+271DSMC  267HS DAUGHTER STATES.                                                 
+271DS C  2003GI05: CONFIRMATION OF 271DS WAS REPORTED BY EXPERIMENTS DONE AT    
+271DS2C  ^LBNL WITH THE Berkeley Gas Filled Separator (^BGS) AT THE 88-INCH     
+271DS3C  CYCLOTRON FACILITY. THE ^BGS WAS INCORPORATED TO ENHANCE THE           
+271DS4C  COLLECTION OF ^EVR's PRODUCED BY THE REACTION. THE SAME PRODUCTION     
+271DS5C  REACTION, 208PB(64NI,N), WAS STUDIED AT ENERGIES OF 306.7, 309.2 AND   
+271DS6C  312.8 MEV AT THE CENTER OF THE TARGET. A CROSS-SECTION OF              
+271DS7C  8.3 pb {I+11-5} WAS DEDUCED AT A BEAM ENERGY OF 309.2 MEV IN AGREEMENT 
+271DS8C  WITH DATA OF 1998HO13. TWO POSITION AND TIME CORRELATED                
+271DSAC  EVENT CHAINS WERE ASSIGNED TO 271DS. NO SUCH EVENT SEQUENCES WERE      
+271DSBC  SEEN AT THE OTHER TWO BEAM ENERGIES. THE TWO CORRESPONDING             
+271DSCC  267HS ALPHA DECAY ENERGIES ORIGINATING FROM 1.6-MS 271DS WERE          
+271DSDC  9.89 MEV (FOLLOWING ALPHA DECAY) AND 9.88 MEV (FOLLOWING AN ESCAPE     
+271DSEC  EVENT). BOTH THESE STATES DECAY TO 0.12-S 263SG WITH LIFE-TIMES OF 15  
+271DSFC  MS AND 32 MS, RESPECTIVELY. UNCERTAINTIES OF ENERGY AND TIME           
+271DSGC  MEASUREMENTS ARE NOT GIVEN; STRIP DETECTORS HAD AN AVERAGE ENERGY      
+271DSHC  RESOLUTION OF 70 KEV FOR 5 TO 9 MEV ALPHA'S.                           
+271DS C  2004FO08: 271DS WAS STUDIED AT ^LBNL WITH THE Berkeley Gas Filled      
+271DS2C  Separator (^BGS) AT THE 88-INCH CYCLOTRON FACILITY AS PART OF AN       
+271DS3C  EXPERIMENT TO PRODUCE 27211 {Ivia} THE 208PB(65CU,N) REACTION AND      
+271DS4C  AND COMPARE THE RESULTANT CROSS SECTION WITH THAT OF THE 209BI(64NI,N) 
+271DS5C  REACTION (2002HO11,2004MO14) AND CONFIRM THE ASSIGNMENT OF 27211 BY    
+271DS6C  1995HO04. 208PB(64NI,N) AT 317.0 MEV (7.7 pb {I+100-52}) AND 319.8 MEV 
+271DS7C  (20 pb {I+15-11}) USING A 98.4% ENRICHED 208PB TARGET. ESTIMATED       
+271DS8C  UNCERTAINTIES FOR EA WERE AP 20 KEV FOR ALPHA'S FULLY STOPPED IN THE   
+271DS9C  FOCAL PLANE AND AP 45 KEV FOR ALPHA PARTICLE EVENTS "reconstructed"    
+271DSAC  FROM THE SUM OF FOCAL PLANE AND UPSTREAM DETECTOR EVENTS. DATA ARE IN  
+271DSBC  GOOD AGREEMENT WITH 1998HO13, 2003GI05, AND 2004MO40. SEVEN CHAINS     
+271DSCC  OBSERVED; AVERAGE ENERGY OF ALPHA'S ASSIGNED TO 271DS IN THREE CHAINS  
+271DSDC  WAS 10753 KEV AND ASSIGNED TO KNOWN TRANSITION OF 10738 KEV.           
+271DSEC  10688 KEV 45 FROM ONE CHAIN MAY BE EITHER THE KNOWN 10682 OR           
+271DSFC  10738 KEV ALPHA'S.                                                     
+271DS C  2004MO40,2004MO27: 271DS WAS STUDIED AT THE ^RIKEN Linear Accelerator  
+271DS2C  (^RILAC) USING THE Gas Filled Recoil Separator (^GARIS) WITH           
+271DS3C  EFFICIENCY ESTIMATED TO BE 80% 15. PRODUCTION REACTION: 208PB(64NI,N)  
+271DS4C  AT E=310, 313, 316 AND 320 MEV USING A 98.4% ENRICHED 208PB TARGET.    
+271DS5C  THE CROSS-SECTIONS AT THESE ENERGIES (LABORATORY FRAME) WERE           
+271DS6C  1.8 pb {I+41-15}, 8.0 pb {I+60-40}, 17 pb {I+7-6}, AND <3.7 pb,        
+271DS7C  RESPECTIVELY. THE MAXIMUM CROSS-SECTION WAS OBSERVED AT A PRIMARY BEAM 
+271DS8C  ENERGY OF 316 MEV. THE DIFFERENCE OF ABOUT 3 MEV FROM THE RESULT OF    
+271DS9C  1998HO13 IS NOT CONSIDERED SIGNIFICANT DUE TO STATISTICAL UNCERTAINTIES
+271DSAC  IN THE ESTIMATION. A TOTAL OF 14 DECAY CHAINS ATTRIBUTED TO THE DECAY  
+271DSBC  OF 271DS OVER THREE EXPERIMENTS. THE POSITION RESOLUTION WAS BETTER    
+271DSCC  THAN |+0.9 mm FOR AN ENERGY DEPOSIT >2 MEV. 13 DECAYS DETECTED AS      
+271DSDC  SECOND GENERATION DECAYS WERE ATTRIBUTED TO 267HS AND THE RESULTS ARE  
+271DSEC  IN AGREEMENT WITH 1998HO13. METHOD PROPOSED BY 2000SC26 USED IN        
+271DSFC  ANALYSIS.                                                              
+271DSFC  THE ENERGY CENTROIDS IN THE ALPHA SPECTRA WERE DEDUCED TO BE AT        
+271DSGC  10.45 AND 10.73 MEV; THE LATTER IS IN GOOD AGREEMENT WITH 10.73 MEV    
+271DSHC  FROM 1998HO13. MEASURED LIFETIMES OF THE ALPHA'S FROM 271DS COULD BE   
+271DSIC  DIVIDED INTO TWO GROUPS; ONE WITH DECAY TIMES LESS THAN 10 MS (11      
+271DSJC  EVENTS) AND ANOTHER WITH DECAY TIMES GREATER THAN 10 MS (3 EVENTS).    
+271DSKC  THE MEAN LIFETIMES FOR BOTH GROUPS AGREE WITH THE RESULTS OF 1998HO13  
+271DSLC  AS DO THE NUMBER RATIOS OF THE TWO GROUPS: 11/3 (2004MO40) AND 11/2    
+271DSMC  (1998HO13). NOTE THAT Q-VALUES CORRESPONDING TO THEIR AVERAGE T1/2'S   
+271DSNC  WERE NOT PRESENTED BY 2004MO40. SEE ALSO 2004MO43.                     
+271DS C  THEORY: SEE Nuclear Science References.                                
+271DS C  ASSIGNMENT: 208PB(64NI,N), E=311.7 MEV, 313.0 MEV, AND 315.5 MEV; GREAT
+271DS2C  GRANDPARENT OF 259RF (EA=8.80 MEV 2, T1/2=2.6 S), 255NO                
+271DS3C  (EA=8.10 MEV 2, T1/2=110 S) FROM 1998HO13. ASSIGNMENT ACCEPTED IN      
+271DS4C  ^IUPAP/^IUPAC ^JWP ASSESSMENT (2001KA70).                              
+271DS CL $LEVEL SCHEME FROM 1998HO13 AND 2004MO40. 2000FI12 ADOPTED A LEVEL     
+271DS2CL SCHEME WITH THE 69-MS STATE AS THE GROUND STATE. T(CALC)=0.41 MS FROM  
+271DS3CL Viola-Seaborg SYSTEMATICS SUPPORTS CONCLUSION THAT THE 69-MS STATE IS  
+271DS4CL LESS LIKELY TO BE THE G.S.                                             
+271DS  L 0                             1.63 MS   +44-29                         
+271DS CL J         1998HO13 PROPOSE 9/2+[615] BASED ON THEORY WHICH PREDICTS    
+271DS2CL THAT THE 9/2[615] NILSSON ORBITAL LIES CLOSER TO THE FERMI LEVEL IN    
+271DS3CL 271DS. 2003AU02 SUGGEST 9/2+ BASED ON SYSTEMATICS;                     
+271DS4CL |W(n)=3/2+ FROM 1997MO25 (THEORY).                                     
+271DS CL T$MEAN VALUE FROM 2004MO40 BASED ON TAU=2.9 MS +13-7 (2004MO40) AND    
+271DS2CL AND TAU=1.8 MS +8-4 (1998HO13). OTHER: 1.6 MS +9-5 (2004FO08;          
+271DS3CL CALCULATED USING ^MLDS CODE). T(CALC)=0.41 MS FROM Viola-Seaborg       
+271DS4CL SYSTEMATICS FOR QA=10.90 MEV.                                          
+271DS2 L %A AP 100 (1998HO13)                                                   
+271DS CL %A$NO SF EVENTS OBSERVED. PREDICTED BETA (1997MO25; FINITE-RANGE       
+271DS2CL DROPLET MODEL, FOLDED-Yukawa SINGLE PARTICLE POTENTIAL) AND SF         
+271DS2CL (1995HO27, SYSTEMATICS, AND 1997SM03, MACROSCOPIC-MICROSCOPIC MODEL)   
+271DS3CL HALF-LIVES MUCH LONGER THAN THOSE PREDICTED AND OBSERVED FOR ALPHA     
+271DS4CL EMISSION.                                                              
+271DS CL $B2(THEORY): 0.221 FROM 1995MO29; 0.230 FROM 2003MU15; 0.248 FROM      
+271DS2CL 2005GAZX                                                               
+271DS  L X                             69 MS     +56-21                      M  
+271DS CL J$1998HO13 SUGGEST 13/2- AS A SUITABLE CANDIDATE FOR THE ASSIGNMENT OF 
+271DS2CL THE 69-MS STATE; IN 267HS THE 13/2- STATE IS PREDICTED TO BE HIGH IN   
+271DS3CL ENERGY AND, THEREFORE, HINDRANCE OF ALPHA TRANSITIONS TO STATES CLOSER 
+271DS4CL TO GS COULD BE EXPECTED AND ARE IN AGREEMENT WITH THE DATA. 2003AU02   
+271DS5CL SUGGEST 11/2- BASED ON SYSTEMATICS.                                    
+271DS CL T$MEAN VALUE FROM 2004MO40 BASED ON TAU=124 MS +169-45 (2004MO40)      
+271DS2CL AND TAU=65 MS +120-26 (1998HO13).                                      
+271DS2 L %A>0$%IT=? (1998HO13,2004MO40)                                         
+271DS CL %A,%IT$TO EXPLAIN THE DECAY PROPERTIES OF 271DS, 2004MO40 SUGGEST THAT 
+271DS2CL THIS LEVEL DECAYS BY AN ISOMERIC TRANSITION TO THE GS OF 271DS AND     
+271DS3CL ALSO ALPHA DECAYS TO THE POSSIBLE ISOMERIC STATE IN 267HS. NO SF       
+271DS4CL EVENTS OBSERVED (1998HO13). PREDICTED BETA (1997MO25; FINITE-RANGE     
+271DS5CL DROPLET MODEL, FOLDED-Yukawa SINGLE PARTICLE POTENTIAL) AND SF         
+271DS6CL (1995HO27, SYSTEMATICS, AND 1997SM03, MACROSCOPIC-MICROSCOPIC MODEL)   
+271DS7CL HALF-LIVES MUCH LONGER THAN THOSE PREDICTED AND OBSERVED FOR ALPHA     
+271DS8CL EMISSION.                                                              
+                                                                                

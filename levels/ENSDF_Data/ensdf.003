@@ -1,0 +1,914 @@
+  3      COMMENTS                                                15NDS    201512
+  3    H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3  2 H CUT=30-Jun-2015$                                                       
+  3   C  TITL$NUCLEAR DATA SHEETS FOR A=3                                       
+  3   c  AUTH$J.E. Purcell{+#}, C.G. Sheu{+*}                                   
+  3   c  INST$Triangle Universities Nuclear Laboratory                          
+  3  #c       Durham, North Carolina 27708-0308                                 
+  3   c  INST${+#}Department of Physics and Astronomy                           
+  3  #c       Georgia State University                                          
+  3  #c       Atlanta, GA 30303, USA                                            
+  3   c  INST${+*}Department of Physics                                         
+  3  #c       Duke University                                                   
+  3  #c       Durham, NC 27708-0305, USA                                        
+  3   c  ABST$Compilation of information about the structure of A=3 systems.    
+  3  2c  \This review mainly summarizes the work presented in (2010Pu04) and has
+  3  3c  updates of mass, lifetime and nuclear moment data as noted in the text.
+  3   c  CUT$June 30, 2015                                                      
+  3   c  FUND$This work is supported by the US Department of Energy, office of  
+  3  xc  high energy and nuclear physics, under: contract no. DE-FG02-97ER41042 
+  3  xc  (North Carolina State University); contract nos. DE-FG02-97ER41033 and 
+  3  xc  DE-FG02-03ER41231 (Duke University).                                   
+  3   C  CIT$NDS 130 1 (2015)                                                   
+                                                                                
+  3      REFERENCES                                              15NDS    201512
+  3    R 1947BL31 JOUR PHRVA 71 373                                             
+  3    R 1947BL32 JOUR PHRVA 71 551                                             
+  3    R 1947SA33 JOUR CJREA 25 134                                             
+  3    R 1949DI31 JOUR PHRVA 76 283                                             
+  3    R 1949DO24 JOUR PHRVA 76 1529                                            
+  3    R 1950DI11 JOUR PHRVA 80 1                                               
+  3    R 1950HO80 JOUR RMPHA 22 291                                             
+  3    R 1950JE60 JOUR PHRVA 80 990                                             
+  3    R 1952KA47 JOUR PHRVA 87 785                                             
+  3    R 1954DE37 JOUR PHRVA 96 398                                             
+  3    R 1956CH79 JOUR PHRVA 103 211                                            
+  3    R 1958GR93 JOUR PHRVA 109 2091                                           
+  3    R 1958MA69 JOUR PHRVA 91 767                                             
+  3    R 1958PO64 JOUR AENGA 4 296                                              
+  3    R 1959PO78 JOUR PHRVA 115 450                                            
+  3    R 1961JO22 JOUR PPSOA 78 1056                                            
+  3    R 1961PI01 JOUR PHRVA 121 232                                            
+  3    R 1962GR39 JOUR CJPHA 40 402                                             
+  3    R 1963DA20 JOUR PHLTA 3 358                                              
+  3    R 1963DA21 JOUR NUPHA 45 423                                             
+  3    R 1963GR12 JOUR CJPHA 41 724                                             
+  3    R 1963WA19 JOUR PHRVA 132 1691                                           
+  3    R 1964BE45 JOUR PRBMD 133 117                                            
+  3    R 1965AJ03 JOUR PRLTA 14 444                                             
+  3    R 1965AN03 JOUR PRLTA 15 66                                              
+  3    R 1965BO43 JOUR PHLTA 15 243                                             
+  3    R 1965CO08 JOUR PHRVA 138 B57                                            
+  3    R 1965FE01 JOUR NUPHA 71 305                                             
+  3    R 1965ST07 JOUR PHRVA 138 B372                                           
+  3    R 1966CO22 JOUR PHLTA 22 612                                             
+  3    R 1966KO04 JOUR PHLTA 21 199                                             
+  3    R 1966TH10 JOUR PRLTA 17 701                                             
+  3    R 1967FU09 JOUR NCIBA 48 190                                             
+  3    R 1967GE05 JOUR NUPAB A96 397                                            
+  3    R 1967WO08 JOUR HPACA 40 946                                             
+  3    R 1968DE03 JOUR NUPAB A107 693                                           
+  3    R 1968FU06 JOUR NUPAB A115 1                                             
+  3    R 1968KA35 JOUR PHRVA 175 1358                                           
+  3    R 1968ME26 JOUR NSENA 34 195                                             
+  3    R 1968OH04 JOUR PHRVA 176 1163                                           
+  3    R 1968TO01 JOUR NUPAB A111 236                                           
+  3    R 1969BA29 JOUR PYLBB 29B 573                                            
+  3    R 1969BR38 JOUR PHRVA 187 1856                                           
+  3    R 1969SA21 JOUR NUPAB A138 417                                           
+  3    R 1969WI13 JOUR PRLTA 23 1181                                            
+  3    R 1970BA41 JOUR NUPAB A153 409                                           
+  3    R 1970BA68 JOUR CJPHA 48 3059                                            
+  3    R 1970KO24 JOUR NUPAB A153 652                                           
+  3    R 1970LE15 JOUR NUPAB A151 120                                           
+  3    R 1970MC20 JOUR PRLTA 25 884                                             
+  3    R 1970PH05 JOUR PYLBB 33 260                                             
+  3    R 1970SP05 JOUR PYLBB 32B 185                                            
+  3    R 1970ZI05 JOUR PYLBB 33B 471                                            
+  3    R 1971DA07 JOUR PRVCA C3 1798                                            
+  3    R 1971DI15 JOUR PYLBB 36B 208                                            
+  3    R 1971SC23 JOUR JPAGB A4 L105                                            
+  3    R 1972AG01 JOUR YAFIA 15 18                                              
+  3    R 1972BE11 JOUR NUPBB B39 371                                            
+  3    R 1972BE65 JOUR NCLTA 5 431                                              
+  3    R 1972CL04 JOUR NUPAB A183 51                                            
+  3    R 1972SE23 JOUR APNYA 74 250                                             
+  3    R 1972ST32 JOUR PRLTA 29 1745                                            
+  3    R 1973BA70 JOUR NUPAB A216 145                                           
+  3    R 1973ENVA JOUR NUPAB A214 1                                             
+  3    R 1973IS08 JOUR NUIMA 109 493                                            
+  3    R 1973PI01 JOUR NUPAB A203 369                                           
+  3    R 1973ST35 JOUR PRVCA 8 1539                                             
+  3    R 1973TI05 JOUR PYLBB 46B 369                                            
+  3    R 1974BE64 JOUR PRVCA C10 2221                                           
+  3    R 1974CE06 JOUR PYLBB 53B 247                                            
+  3    R 1974POZN JOUR BAPSA 19 1035 FC6,Poppe                                  
+  3    R 1974RO08 JOUR ZENAA 29 261                                             
+  3    R 1974SP08 JOUR NUPBB 78 345                                             
+  3    R 1975CA30 JOUR PRVCA C12 1428                                           
+  3    R 1975FI08 JOUR NUPAB A251 1                                             
+  3    R 1975SM02 JOUR PRVCA C11 1392                                           
+  3    R 1976BI05 JOUR PRLTA 36 942                                             
+  3    R 1976TR07 JOUR IANFA 40 2026                                            
+  3    R 1977BA47 JOUR YAFIA 26 249                                             
+  3    R 1977JA15 JOUR PRLTA 39 1601                                            
+  3    R 1977MC03 JOUR PRVCA C15 1396                                           
+  3    R 1977SZ02 JOUR PRVCA C15 1200                                           
+  3    R 1978AR05 JOUR PRLTA 40 1429                                            
+  3    R 1978EN02 JOUR NUPAB A310 1                                             
+  3    R 1979BI13 JOUR HPACA 52 415                                             
+  3    R 1979DA19 JOUR HPACA 52 414                                             
+  3    R 1979LI19 JOUR PRVCA 19 2063                                            
+  3    R 1979SA15 JOUR PRVCA C19 2035                                           
+  3    R 1979SK01 JOUR PRVCA C19 601                                            
+  3    R 1980AL31 JOUR YAFIA 32 1491                                            
+  3    R 1980BE22 JOUR NUPAB A341 414                                           
+  3    R 1980CR03 JOUR PRVCA 22 1184                                            
+  3    R 1980MI12 JOUR NUPAB 343 347                                            
+  3    R 1980PH01 JOUR PRVCA 22 384                                             
+  3    R 1981BO04 JOUR NUPAB 351 107                                            
+  3    R 1981CE01 JOUR NUPAB 352 343                                            
+  3    R 1981FA03 JOUR PRVCA 24 849                                             
+  3    R 1981KA41 JOUR JPHGB 7 L287                                             
+  3    R 1981KA43 JOUR PYLBB 107 23                                             
+  3    R 1981LU06 JOUR ZPAAD 303 115                                            
+  3    R 1981LU07 JOUR ZETFA 81 1158                                            
+  3    R 1981MC09 JOUR PRVCA 24 211                                             
+  3    R 1981SI18 JOUR PRVDA 23 649                                             
+  3    R 1981SK02 JOUR PRVCA 24 1791                                            
+  3    R 1981SM02 JOUR PYLBB 102 114                                            
+  3    R 1982BE10 JOUR PRVCA 25 1152                                            
+  3    R 1982BO06 JOUR PYLBB 109 262                                            
+  3    R 1982BR12 JOUR PRLTA 49 187                                             
+  3    R 1982CA15 JOUR PRLTA 49 986                                             
+  3    R 1982DI01 JOUR PYLBB 108 265                                            
+  3    R 1982JU01 JOUR PRVCA 25 2810                                            
+  3    R 1983DE47 JOUR YAFIA 38 1105                                            
+  3    R 1983DU01 JOUR PRVCA 27 71                                              
+  3    R 1983KA14 JOUR PRVCA 28 304                                             
+  3    R 1983SO10 JOUR PRVCA 28 2234                                            
+  3    R 1984BE46 JOUR PRVCA 30 1403                                            
+  3    R 1984NI16 JOUR PZETA 39 441                                             
+  3    R 1985BO34 JOUR PYLBB 159 217                                            
+  3    R 1985JU01 JOUR PRLTA 55 2261                                            
+  3    R 1985LI02 JOUR PRLTA 54 285                                             
+  3    R 1985OT02 JOUR NUPAB 436 688                                            
+  3    R 1985SI07 JOUR PRVCA 31 1891                                            
+  3    R 1985TAZK BOOK Advances in Mass Spectrometry,P343,Talrose               
+  3    R 1986BE44 JOUR IANFA 50 1936                                            
+  3    R 1986BE54 JOUR PZETA 44 498                                             
+  3    R 1986FR09 JOUR PYLBB 173 485                                            
+  3    R 1986IS01 JOUR PRLTA 56 317                                             
+  3    R 1986ST09 JOUR NUPAB 457 669                                            
+  3    R 1987AL10 JOUR YAFIA 45 1217                                            
+  3    R 1987BE30 JOUR PRLTA 59 1537                                            
+  3    R 1987BO07 JOUR PRLTA 58 2019                                            
+  3    R 1987BO40 JOUR RRPQA 32 497                                             
+  3    R 1987ER07 JOUR NUPAB 475 199                                            
+  3    R 1987KA51 JOUR PYLBB 187 198                                            
+  3    R 1987TI07 JOUR NUPAB 474 1                                              
+  3    R 1988AB04 JOUR JPHGB 14 Supplement S373                                 
+  3    R 1988AB05 JOUR JPHGB 14 903                                             
+  3    R 1988AL29 JOUR CJPHA 66 542                                             
+  3    R 1988BE02 JOUR NUPAB 477 131                                            
+  3    R 1988DI02 JOUR ADNDA 38 199                                             
+  3    R 1988FR01 JOUR PRVCA 37 364                                             
+  3    R 1988KA12 JOUR NUPAB 478 433c                                           
+  3    R 1988KA32 JOUR JUPSA 57 2873                                            
+  3    R 1988KO07 JOUR PYLBB 205 215                                            
+  3    R 1988RO21 JOUR ARNUA 38 185                                             
+  3    R 1989RE04 JOUR PRVCA 40 368                                             
+  3    R 1989ST05 JOUR PRVCA 39 1503                                            
+  3    R 1989VU01 JOUR NUPAB 499 429                                            
+  3    R 1990BA35 JOUR PRVCA 42 1751                                            
+  3    R 1990EN08 JOUR NUPAB 521 1                                              
+  3    R 1990FR18 JOUR PYLBB 247 197                                            
+  3    R 1990RO02 JOUR PRVCA 41 898                                             
+  3    R 1991BU12 JOUR PRLTA 67 2626                                            
+  3    R 1992AM04 JOUR PRLTA 69 253                                             
+  3    R 1992DA01 JOUR PRLTA 68 1112                                            
+  3    R 1992GE05 JOUR PRLTA 69 2447                                            
+  3    R 1992HO09 JOUR PYLBB 287 381                                            
+  3    R 1993AM09 JOUR YAFIA 56,No 10,1                                         
+  3    R 1993BA08 JOUR NUPAB 553 313c                                           
+  3    R 1993BR05 JOUR PRVCA 47 2064                                            
+  3    R 1993GE04 JOUR PRVCA 48 688                                             
+  3    R 1993VA04 JOUR PRLTA 70 2888                                            
+  3    R 1993WE03 JOUR PYLBB 300 210                                            
+  3    R 1993WU08 JOUR FBSYE 15 145                                             
+  3    R 1994AL54 JOUR PZETA 59 301                                             
+  3    R 1994AM07 JOUR NUPAB 579 596                                            
+  3    R 1994KO29 JOUR PRVCA 50 2695                                            
+  3    R 1995AY03 JOUR PRVCA 52 2851                                            
+  3    R 1995BO10 JOUR NUPAB 583 775c                                           
+  3    R 1995HI14 JOUR JPGPE 21 639                                             
+  3    R 1996CS02 JOUR PRVCA 53 1589                                            
+  3    R 1996MI11 JOUR PYLBB 379 67                                             
+  3    R 1996SC14 JOUR PRLTA 76 3088                                            
+  3    R 1997MA08 JOUR PRVCA 55 588                                             
+  3    R 1997RI07 JOUR PRVCA 55 2700                                            
+  3    R 1997SC31 JOUR PRVCA 56 2565                                            
+  3    R 1997SO27 JOUR JPGPE 23 1619                                            
+  3    R 1997YU01 JOUR PRVCA 55 1848                                            
+  3    R 1998CS02 JOUR NUPAB 631 783c                                           
+  3    R 1998DU07 JOUR PRLTA 80 4390                                            
+  3    R 1998EN04 JOUR NUPAB 633 1                                              
+  3    R 1998NA15 JOUR NIMAE 402 408                                            
+  3    R 1998PA22 JOUR PRVCA 58 645                                             
+  3    R 1999GR01 JOUR ZAANE 4 5                                                
+  3    R 1999GR31 JOUR PYLBB 471 113                                            
+  3    R 1999HA06 JOUR PRLTA 82 2258                                            
+  3    R 1999WI08 JOUR PRVCA 60 024002                                          
+  3    R 2000CH01 JOUR ARISE 52 601                                             
+  3    R 2000LU17 JOUR JRNBA 105 541                                            
+  3    R 2002CA28 JOUR NUPAB 706 203                                            
+  3    R 2002HE25 JOUR PRVCA 66 054001                                          
+  3    R 2002HO09 JOUR PRVCA 65 065501                                          
+  3    R 2002MA21 JOUR PRVCA 65 044006                                          
+  3    R 2002PR04 JOUR PRVCA 65 034611                                          
+  3    R 2003RO13 JOUR PRVCA 68 024602                                          
+  3    R 2003SC12 JOUR PRVCA 67 044005                                          
+  3    R 2003WI08 JOUR PRVCA 68 034002                                          
+  3    R 2004DE48 JOUR ADNDA 88 203                                             
+  3    R 2005AL15 JOUR PZETA 81 49                                              
+  3    R 2005GO26 JOUR PRPLC 415 89                                             
+  3    R 2005KR03 JOUR ZCCNE 40 447                                             
+  3    R 2005LA11 JOUR PRVCA 71 044004                                          
+  3    R 2005MA97 JOUR ZAANE 25 s01 311                                         
+  3    R 2006MA57 JOUR ARISE 64 1417                                            
+  3    R 2006MUZX BOOK Atlas of Neutron Resonances, 5ed., Elsevier              
+  3    R 2006NA35 JOUR KPSJA 49 1928                                            
+  3    R 2006NA49 JOUR EULEE 74 404                                             
+  3    R 2006PL09 JOUR PRVCA 74 037001                                          
+  3    R 2006WE03 JOUR PPNPD 57 22                                              
+  3    R 2008BY03 JOUR NIMAE 595 543                                            
+  3    R 2008IH01 JOUR PRVCA 78 024607                                          
+  3    R 2008TO12 JOUR JPGPE 35 125104                                          
+  3    R 2008TO20 JOUR FBSYE 43 213                                             
+  3    R 2008WA10 JOUR PRVCA 77 054611                                          
+  3    R 2010KI05 JOUR PRVCA 81 044003                                          
+  3    R 2010OT02 JOUR HYIND 196 3                                              
+  3    R 2010PU04 JOUR NUPAB 848 1                                              
+  3    R 2010WE01 JOUR PRVCA 81 024003                                          
+  3    R 2011AS10 JOUR PRVDA 84 112003                                          
+  3    R 2011FI11 JOUR RAACA 1 Sup. 305                                         
+  3    R 2011FR11 JOUR PRLTA 107 122502                                         
+  3    R 2011NE15 JOUR JTPLA 94 418                                             
+  3    R 2011PE08 JOUR PRVCA 83 034003                                          
+  3    R 2011SE06 JOUR PRVCA 83 061001                                          
+  3    R 2011SE17 JOUR JPCSD 312 082038                                         
+  3    R 2012CI01 JOUR PRVCA 85 017001                                          
+  3    R 2012MO42 JOUR RMPHA 84 1527                                            
+  3    R 2012TH01 JOUR ADNDA 98 43                                              
+  3    R 2012WA38 JOUR CPCHC 36 1603                                            
+  3    R 2013DR11 JOUR AHEPH 2013 39                                            
+  3    R 2013ER02 JOUR PRVCA 87 034003                                          
+  3    R 2013GU25 JOUR PPNLA 10 243                                             
+  3    R 2013LA14 JOUR PRLTA 110 202501                                         
+  3    R 2013SE09 JOUR JPCSD 445 012001                                         
+  3    R 2013ST06 JOUR ZAANE 49 36                                              
+  3    R 2013XU14 JOUR NUPAB 918 61                                             
+  3    R 2014BY01 JOUR NIMAE 737 248                                            
+  3    R 2014LA04 JOUR PRVCA 89 024002                                          
+  3    R 2014NA25 JOUR NDSBA 119 98                                             
+  3    R 2014OL01 JOUR CPCHC 38 090001                                          
+  3    R 2014SE13 JOUR PRVCA 89 064007                                          
+  3    R 2014WE04 JOUR PRVCA 89 054001                                          
+  3    R 2015BO02 JOUR PRVCA 91 035505                                          
+  3    R 2015MY03 JOUR PRLTA 114 013003                                         
+                                                                                
+  3NN    ADOPTED LEVELS                                          15NDS    201512
+  3NN  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3NN2 H CUT=30-Jun-2015$                                                       
+  3NN  Q                                                                        
+  3NN c  The experimental evidence reviewed in all three mass 3 evaluations     
+  3NN2c  (1975Fi08,1987Ti07,2010Pu04) is mostly against the existence of a      
+  3NN3c  bound state consisting of three neutrons. Some evidence of a possible  
+  3NN4c  three neutron resonance has been reported, but it has generally been   
+  3NN5c  weak and not reproducible or more likely due instead to two neutron    
+  3NN6c  final state interactions. See (1968Ka35) for a summary of the          
+  3NN7c  experimental situation concerning possible {+3}n systems as of 1968.   
+  3NN8c  A theoretical study reported in (1996Cs02,1998Cs02) using the complex  
+  3NN9c  scaling method predicts a J|p=3/2+ three neutron resonance at 14 MeV   
+  3NNac  with a width of 13 MeV.                                                
+  3NN c  A listing of the reactions in which attempts were made to observe bound
+  3NN2c  or resonant three neutron states follows.                              
+  3NN c                                                                         
+  3NN c  {+3}H(n,p){+3}n:                                                       
+  3NN2c  This reaction has been studied at several neutron energies. A possible 
+  3NN3c  {+3}n bound state with binding energy around 1 MeV seen in the 0|'     
+  3NN4c  proton spectrum was reported by (1965Aj03) but was not confirmed in the
+  3NN5c  subsequent similar experiments reported in (1966Th10,1967Fu09,1968De03)
+  3NN c                                                                         
+  3NN c  {+3}H({+3}H,{+3}He){+3}n,{+3}He({+3}H,{+3}He){+3}H:                    
+  3NN2c  Studies of these reactions with E({+3}H)=22.25 MeV are reported in     
+  3NN3c  (1968Oh04). With the {+3}H target, there was no indication of a bound  
+  3NN4c  {+3}n system in the outgoing {+3}He spectrum, but there was a          
+  3NN5c  suggestion of a possible broad resonance at around 1-1.5 MeV excitation
+  3NN6c  in the {+3}n system. With the {+3}He target, there was no evidence in  
+  3NN7c  the outgoing {+3}He spectrum of a resonance in the {+3}H system        
+  3NN8c  corresponding to the analogue of a bound {+3}n state.                  
+  3NN c                                                                         
+  3NN c  {+3}H(|p{+-},|g){+3}n:                                                 
+  3NN2c  Studies of this reaction with stopped pions have been reported in      
+  3NN3c  (1976Bi05,1979Bi13,1980Mi12). There was no evidence seen in the |g     
+  3NN4c  spectrum of {+3}n bound or resonance states. A shift in the outgoing   
+  3NN5c  |g spectrum possibly indicating resonant {+3}n structure is adequately 
+  3NN6c  explained as due to pair-wise two neutron final state interaction      
+  3NN7c  (1980Mi12).                                                            
+  3NN c                                                                         
+  3NN c  {+3}He(|p{+-},|p{++}){+3}n:                                            
+  3NN2c  This double charge exchange reaction has been studied with E(|p{+-})   
+  3NN3c  from 65-295 MeV                                                        
+  3NN4c  (1970Sp05,1974Sp08,1986St09,1997Yu01,1999Gr01,1999Gr31). A             
+  3NN5c  resonance-like structure reported in (1970Sp05,1974Sp08,1986St09) has  
+  3NN6c  been explained as most likely due to the final state interaction of two
+  3NN7c  outgoing neutrons (1970Ph05). As reported in (1999Gr01), a search for  
+  3NN8c  either bound or resonant {+3}n states was unsuccessful. The primary    
+  3NN9c  interest of the results reported in (1997Yu01,1999Gr31) was in the     
+  3NNac  double charge exchange mechanism, not on possible three neutron states.
+  3NN c                                                                         
+  3NN c  {+4}He(|p{+-},p){+3}n:                                                 
+  3NN2c  One study of this reaction is reported in (1968Ka35) with              
+  3NN3c  E(|p{+-})=140 MeV who report a possible resonance feature in the       
+  3NN4c  proton spectrum at an excitation energy in the 3-neutron system of     
+  3NN5c  about 15 MeV. Studies of this reaction are also reported in            
+  3NN6c  (1970Zi05,1973Ba70,1981Ce01) with stopped pions and in                 
+  3NN7c  (1977Ja15,1981Ka41,1981Ka43,1981Mc09,1983Ka14) with E(|p{+-}) ranging  
+  3NN8c  from 50-475 MeV. There was no mention of {+3}n states being observed in
+  3NN9c  any of these experiments. However, the focus of these experiments was  
+  3NNac  on pion-nucleon interaction and not on possible three neutron states. A
+  3NNbc  study of the reaction {+7}Li(|p{+-},{+4}He){+3}n with stopped |p{+-}   
+  3NNcc  is reported in (1977Ba47,1993Am09), but there is no mention of         
+  3NNdc  possible {+3}n states.                                                 
+  3NN c                                                                         
+  3NN c  Others:                                                                
+  3NN2c  The following reactions using heavy ions were studied in unsuccessful  
+  3NN3c  attempts to observe {+3}n states:                                      
+  3NN c  {+14}N(|p{+-},{+3}n){+8}B+{+3}H with stopped |p{+-} (1972Ag01)         
+  3NN c  {+7}Li(n,{+3}n){+5}Li, E(n)=14-19 MeV (1968Fu06,1970Ko24)              
+  3NN c  {+2}H({+14}C,{+13}N){+3}n, E({+14}C)=336 MeV (1995Bo10)                
+  3NN c  {+3}H({+7}Li,{+7}Be){+3}n and {+7}Li({+7}Li,{+11}C){+3}n,              
+  3NN2c  E({+7}Li)=65-82 MeV (1974Ce06,1987Al10,2005Al15)                       
+  3NN c  {+7}Li({+11}B,{+15}O){+3}n, E({+11}B)=52-88 MeV                        
+  3NN2c  (1986Be44,1986Be54,1987Bo40,1988Be02)                                  
+  3NN c                                                                         
+  3NN c  A study of the breakup of {+14}Be by a carbon target, E({+14}Be)=490   
+  3NN2c  MeV, in which attempts to produce and detect neutron clusters is       
+  3NN3c  reported in (2002Ma21,2005Ma97). No {+3}n clusters were observed, but  
+  3NN4c  there was a possible hint of a few {+4}n clusters.                     
+  3NN c                                                                         
+  3NN c  On the theoretical side, an early study of the {+3}n system using      
+  3NN2c  Faddeev methods is reported in (1979Li19) and a shell model type       
+  3NN3c  calculation is reported in (1980Be22). These articles also reference   
+  3NN4c  earlier {+3}n system calculations. A calculation reported in (1996Cs02)
+  3NN5c  using the complex scaling method obtained a resonance in the {+3}n     
+  3NN6c  system with J|p=3/2+ and an energy of 14 MeV and a width of 13 MeV. A  
+  3NN7c  study is reported in (1997So27) using the hyperspherical method with   
+  3NN8c  simplified two particle interactions of J|p=1/2- {+3}n states, which   
+  3NN9c  they consider to be the most likely spin-and-parity value of such      
+  3NNac  states.                                                                
+  3NN c                                                                         
+  3NN c  Three recent studies looking for possible bound or resonant {+3}n      
+  3NN2c  states are reported in (1999Wi08,2002He25,2005La11). As expressed in   
+  3NN3c  (2005La11), modern nucleon-nucleon interactions and calculational      
+  3NN4c  techniques do not predict any observable {+3}n bound states or         
+  3NN5c  resonances.                                                            
+                                                                                
+  3H     ADOPTED LEVELS                                          15NDS    201512
+  3H   H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3H 2 H CUT=30-Jun-2015$                                                       
+  3H   XA1H(6HE,A)                                                              
+  3H   XB2H(N,G) E=THERMAL                                                      
+  3H   XE2H(N,N)                                                                
+  3H   XF3H(G,N),(G,NN)                                                         
+  3H   XD3H(E,E)                                                                
+  3H   Q 18.5906   326257.233 2                        2012WA38                 
+  3H  c  The discovery of hydrogen isotope {+3}H with an estimate of its mass   
+  3H 2c  was reported in 1934; see (2012Th01) for a historical review. In       
+  3H 3c  (1947Bl31,1947Bl32) it is shown that the spin of {+3}H is 1/2 and the  
+  3H 4c  ratio of the magnetic moment of {+3}H to that of the proton is found to
+  3H 5c  be 1.067 {I1}. For the {+3}H spin, see also (1949Di31).                
+  3H  c  Calculations show that the ground state wave functions of {+3}H and    
+  3H 2c  {+3}He consist of a spatially symmetric S state (|?90%), a D state     
+  3H 3c  (|?9%), a mixed symmetry S' state (|?1%) and a small P state (<0.1%).  
+  3H 4c  See (1979Sa15,1986Is01,1987Er07,1993Wu08,2002Ho09).                    
+  3H  c  The ratio |c{-t} of the asymptotic D state to S state of {+3}H is      
+  3H 2c  -0.0418 {I31}. This value is the inverse square of the uncertainty     
+  3H 3c  weighted average of the two most recent measurements                   
+  3H 4c  (1993Ge04,1994Ko29). The following table lists references reporting    
+  3H 5c  values for |c{-t}:                                                     
+  3H  c                                                                         
+  3H  T    Reference    |c{-t}      Comments                                    
+  3H 2T  1981Bo04   -0.048 7    2H(pol d,p)3H, E{-d}=13 MEV                     
+  3H 3T  1982Bo06   -0.051 5    2H(pol d,p)3H, E{-d}=7-13 MEV                   
+  3H 4T  1989Vu01   -0.050 6    4HE(pol d,3HE)3H, E{-d}=32-50 MEV               
+  3H 5T  1992Da01   -0.043 2    DWBA analysis of sub-Coulomb (pol d,t)          
+  3H 6T                         reactions; also see (1992Ge05), who argue that  
+  3H 7T                         the uncertainty should be 0.004, not 0.002      
+  3H 8T  1993Ge04   -0.0431 25  DWBA analysis of sub-Coulomb (pol d,t) reactions
+  3H aT  1994Ko29   -0.0411 18  DWBA analysis of sub-Coulomb (pol d,t) reactions
+  3H  c                                                                         
+  3H  c  Also see (1988Fr01) where it was noted that there is a strong          
+  3H 2c  correlation between the triton and deuteron asymptotic ratios. Using   
+  3H 3c  several models, they obtained |c{-t}/|c{-d}=1.68 {I4}. Using           
+  3H 4c  this ratio value and |c{-d}=0.0256 {I4} from (1990Ro02) gives          
+  3H 5c  |c{-t}=-0.0430 {I12}.                                                  
+  3H  c  The charge and magnetic rms radii for {+3}H are r{-c}=1.755 fm {I86}   
+  3H 2c  and r{-m}=1.840 fm {I181} (1994Am07). See (2005Go26) for electric and  
+  3H 3c  magnetic form factors for {+3}H and {+3}He as well as isoscalar and    
+  3H 4c  isovector versions and comparison with theory. Also see the reaction   
+  3H 5c  {+3}H(e,e){+3}H below for more details.                                
+  3H  c  Triton magnetic moment, |m{-t}=+2.978962467 {I26} |m{-N}. This value   
+  3H 2c  is obtained from a measurement of the ratio of the triton to proton    
+  3H 3c  magnetic moments |m{-t}/|m{-p}=1.0666399151 {I30} (2011Ne15) and the   
+  3H 4c  value of the proton magnetic moment |m{-p}=+2.792847356 {I23} |m{-N}   
+  3H 5c  reported in (2014Ol01). Also see Table XLI of (2012Mo42) which gives   
+  3H 6c  |m{-t}=2.978962448 {I38}.                                              
+  3H   L 0.0         1/2+              12.32 Y   2                              
+  3H 2 L XREF=AB                                                                
+  3H 2 L %B-=100                                                                
+  3H 3 L MOMM1=+2.978962467 26                                                  
+  3H  cL MOMM1$from |m{-t}/|m{-p}=1.0666399151 {I30} (2011Ne15) and             
+  3H 2cL |m{-p}=+2.792847356 {I23} |m{-N} (2014Ol01)                            
+  3H  cL ${+3}H mass excess: 14949.8061 keV {I22} (2012Wa38)                    
+  3H  cL ${+3}H binding energy: 8481.7986 keV {I24}; S(n)=6257.2327 keV {I22}   
+  3H 2cL using mass excess values from (2012Wa38).                              
+  3H  cL T$12.32 y {I2}=4500 d {I8}=3.888|*10{+8} s {I7}.                       
+  3H  cL T$The half-life value given here comes from (2000Ch01,2000Lu17).       
+  3H 2cL (2000Ch01) analyzed 16 measurements between 1940 and 1991 of {+3}H     
+  3H 3cL half-life, rejected 3 and averaged the rest that ranged from 12.1      
+  3H 4cL y to 12.58 y. They obtained a half-life of 12.32 y {I2}. The authors   
+  3H 5cL of (2000Lu17) recommend using the day as the time unit since it is     
+  3H 6cL exactly defined in terms of the second. The same data were reanalyzed  
+  3H 7cL using a different method as reported in (2006Ma57) resulting in        
+  3H 8cL T{-1/2}=4497 d {I4} or 12.31 y {I1}.                                   
+                                                                                
+  3H     1H(6HE,A)                     1994AL54,2003RO13         15NDS    201512
+  3H   H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3H 2 H CUT=30-Jun-2015$                                                       
+  3H  c  Studies of this reaction have been reported in (1994Al54:              
+  3H 2c  E({+6}He)=19.3 MeV), and (2003Ro13: E({+6}He)=23.9 MeV). The outgoing  
+  3H 3c  |a spectra in both studies had peaks corresponding the ground state of 
+  3H 4c  {+3}H as well as resonance-like structures that would correspond to an 
+  3H 5c  excited state in {+3}H at about 7 MeV with a width less than 1 MeV. It 
+  3H 6c  seems likely that the higher energy structure does not corresponds to a
+  3H 7c  true {+3}H resonance. It does not show up in n-d scattering, for       
+  3H 8c  example. Also, analogous structure in {+3}He was not seen in the       
+  3H 9c  reaction {+1}H({+6}Li,|a){+3}He, E({+6}Li)=30 MeV, (1994Al54).         
+  3H ac  Alternative interpretations of the resonance-like structure at 7 MeV   
+  3H bc  are given in (2003Ro13).                                               
+  3H   L 0.0         1/2+                                                       
+                                                                                
+  3H     2H(N,N)                                                 15NDS    201512
+  3H   H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3H 2 H CUT=30-Jun-2015$                                                       
+  3H  c  Total cross section:                                                   
+  3H  c  Fig. 1 in (1972St32) and Fig. 2 in (1973St35) show the measured total  
+  3H 2c  n-{+2}H cross section below E{-n}=1 MeV. From a peak value of about    
+  3H 3c  3.4 b at zero energy (reported to be 3.390 b {I12} in (1971Di15), it   
+  3H 4c  falls monotonically to about 2.9 b at 1 MeV. As Figs. 4, 5 and 6 in    
+  3H 5c  (1972Cl04) show, the total n-{+2}H cross section continues to fall     
+  3H 6c  monotonically as the neutron energy increases, dropping to about 1 b   
+  3H 7c  at 10 MeV and 0.6 b at 20 MeV. A summary of total n-{+2}H total cross  
+  3H 8c  sections for E{-n}=1 to 17 MeV is given in (1971Da07). Table 2.3.1a in 
+  3H 9c  (1975Fi08) lists more than 50 references related to total n-{+2}H      
+  3H ac  cross sections for energies from thermal to near 300 GeV. Two          
+  3H bc  additional references are given in (1987Ti07). Cross sections for      
+  3H cc  thermal neutrons are reported in (1975Ca30) and from near zero to 20   
+  3H dc  MeV in (1980Ph01), along with total cross sections for neutrons on H   
+  3H ec  and {+3}H.                                                             
+  3H  c                                                                         
+  3H  c  Scattering lengths:                                                    
+  3H  c  Frequently quoted experimental values for the low energy doublet and   
+  3H 2c  quartet n+d scattering lengths are                                     
+  3H 3c  (1971Di15,1975Fi08,1987Ti07,1990Fr18,2003Wi08):                        
+  3H 4c  {+2}a{-nd}=0.65 fm {I4} and {+4}a{-nd}=6.35 fm {I2}. Calculations      
+  3H 5c  related to n+d scattering and {+3}H structure with various             
+  3H 6c  interactions, as noted in (2003Sc12), have resulted in a scattering of 
+  3H 7c  values of {+2}a{-nd}. In contrast, the values obtained for {+4}a{-nd}  
+  3H 8c  tend to be nearly constant at around 6.34 fm. These authors used an    
+  3H 9c  average calculated value {+4}a{-nd}=6.346 fm {I7} to deduce a value    
+  3H ac  {+2}a{-nd}=0.645|+0.003(exp)|+0.007(theory) fm. This value of          
+  3H bc  {+2}a{-nd} has been used as input in calculations using three-body     
+  3H cc  interactions; see (2006Pl09,2010Ki05).                                 
+  3H  c                                                                         
+  3H  c  Elastic scattering:                                                    
+  3H  c  In Tables 2.3.1 b and 2.3.1 c of the first A=3 review (1975Fi08), there
+  3H 2c  are over 60 publications reporting results from n+d elastic scattering,
+  3H 3c  about 1/3 of which reported using polarized neutrons. Neutron energies 
+  3H 4c  ranged from less than 0.1 eV to over 150 MeV. Similarly, in the second 
+  3H 5c  A=3 review (1987Ti07), about 20 publications reported n+d elastic      
+  3H 6c  scattering results for neutron energies from 2 to 800 MeV, about 2/3 of
+  3H 7c  which used polarized neutrons. In Table 3.2 of the third A=3 review,   
+  3H 8c  close to 40 publications are referenced that report n+d elastic        
+  3H 9c  scattering results. Most used polarized neutrons and some also used    
+  3H ac  polarized targets. The neutron energies ranged from 11 meV to 250 MeV. 
+  3H  c  Elastic n+d scattering phase shifts for energies up to 24 MeV are shown
+  3H 2c  in Fig. 14 of (1972Se23). However, see comments in (1975Fi08) as well  
+  3H 3c  as in (1987Ti07) on this subject.                                      
+  3H  c  A major issue in n+d scattering is the so-called analyzing power puzzle
+  3H 2c  in which the calculated and measured values for the analyzing power    
+  3H 3c  A{-y} do not agree. This effect is also seen in p+d scattering as      
+  3H 4c  well. See (2008To20) for a discussion of the puzzle.                   
+  3H  c  The following are publications dealing with n+d elastic scattering     
+  3H 2c  since the third A=3 review:                                            
+  3H  c  2010We01: Table 1 lists references studying n-d analyzing power for n-d
+  3H 2c  scattering for neutron energies from 1.2 to 30 MeV with a gap between  
+  3H 3c  16 and 30 MeV. Fig. 8 gives A{-y}(|q) results of this experiment plus  
+  3H 4c  calculation. The analyzing power puzzle is still present.              
+  3H  c  2011Fr11: Reports differential cross sections for both n+{+2}H and     
+  3H 2c  n+{+3}H elastic scattering  at E{-n}=14.1 MeV.                         
+  3H  c  2013Er02: Reports study of n+d elastic scattering for E{-n}=135-250 MeV
+  3H  c  2014We04: Reports measurements of analyzing power for n+d scattering at
+  3H 2c  E{-n}=22.5 MeV. Results shown in Fig. 4 and corresponding discussion   
+  3H 3c  show that the analyzing power puzzle is still present.                 
+  3H  c  2014Na25: Studied n+d scattering, E{-n}=0.1-2 MeV.                     
+                                                                                
+  3H     2H(N,G) E=THERMAL             1982JU01                  15NDS    201512
+  3H   H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3H 2 H CUT=30-Jun-2015$                                                       
+  3H  C  TARGET JPI=1+.                                                         
+  3H  c  The value for the cross section for thermal neutron capture by {+2}H   
+  3H 2c  recommended in (2006MuZX) is |s(E{-thermal},|g)=0.508 mb {I15}.        
+  3H 3c  However, note that the value recommended in (2011Fi11) is              
+  3H 4c  |s(E{-thermal},|g)=0.549 mb {I10}.                                     
+  3H  c  Articles containing measurements of neutron capture by {+2}H:          
+  3H  c                                                                         
+  3H  T  Reference              Comments                                        
+  3H 2T  1947Sa33           Measured thermal neutron capture cross section,     
+  3H +T  \ 0.46 mb {I11}                                                        
+  3H 3T  1952Ka47           Measured thermal neutron capture cross section,     
+  3H +T  \ 0.57 mb {I1}                                                         
+  3H 4T  1968Me26           Measured thermal neutron capture cross section,     
+  3H +T  \ 0.521 mb {I9}                                                        
+  3H 5T  1973Is08           Measured thermal neutron capture cross section,     
+  3H +T  \ 0.55 mb {I1}; note-this                                              
+  3H 6T                     reference also includes other thermal cross section 
+  3H +T  \ measurements from the                                                
+  3H 7T                     1960's not readily available today                  
+  3H 3T  1980Al31           Measured effective thermal neutron capture cross    
+  3H +T  \ section                                                              
+  3H 8T  1982Ju01           Measured thermal neutron capture cross section,     
+  3H +T  \ 0.508 mb {I15}                                                       
+  3H 9T  1988Ab04, 1988Ko07 Studied capture of polarized thermal neutrons;      
+  3H +T  \ obtained photon polarization                                         
+  3H aT                     parameter R=-0.42 {I3}                              
+  3H bT  1988Al29           Slow, polarized neutrons, study of parity violation 
+  3H cT  1998Na15           Measured capture cross section to be 2.12 |mb {I35} 
+  3H +T  \ at E{-n}=30.5 keV                                                    
+  3H dT                     and 2.04 |mb {I3} at 54.2 keV                       
+  3H eT  2006Na35           Measured capture cross section to be 2.23 |mb {I34} 
+  3H +T  \ at E{-n}=30.5 keV,                                                   
+  3H fT                     1.99 |mb {I25} at 54.2 keV, 3.76 |mb {I41} at 531   
+  3H +T  \ keV                                                                  
+  3H  c                                                                         
+  3H  cL E,J,T$From Adopted Levels                                              
+  3H  CG RI $ INTENSITY PER 100 NEUTRON CAPTURES.                               
+  3H   N 1                                                                      
+  3H  PN                                                                     5  
+  3H   L 0.0         1/2+              12.32 Y   2                              
+  3H   L 6257.2482 241/2+,3/2+                                                 S
+  3H  CL J         FROM S-WAVE NEUTRON CAPTURE                                  
+  3H   G 6250.258  3 100                                                        
+  3H  CG E         FROM LEVEL-ENERGIES DIFFERENCE                               
+                                                                                
+  3H     3H(G,N),(G,NN)                                          15NDS    201512
+  3H   H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3H 2 H CUT=30-Jun-2015$                                                       
+  3H  c  The earliest reported studies of the {+3}H photodisintegration cross   
+  3H 2c  section are (1965Bo43) and (1966Ko04). A summary of the experimental   
+  3H 3c  cross sections for the photodisintegration of {+3}H up to 1981 is      
+  3H 4c  given in (1981Fa03). Fig. 10 in this reference gives the cross section 
+  3H 5c  for {+3}H(|g,n){+2}H from threshold (6.25 MeV) to about 28 MeV. The    
+  3H 6c  cross section has a peak value of about 0.9 mb at 12 MeV and falls     
+  3H 7c  slowly at higher energies. Fig. 11 in the same reference gives the     
+  3H 8c  cross section for {+3}H(|g,2n){+1}H from threshold (8.48 MeV) to about 
+  3H 9c  28 MeV. It reaches a peak of about 0.9 m at about 15 MeV then falls    
+  3H ac  slowly. The total cross section is shown in Fig. 13. A measurement of  
+  3H bc  the total {+3}H photodisintegration cross section for energies from 15 
+  3H cc  MeV to 36 MeV is reported in (1981Sk02).                               
+                                                                                
+  3H     3H(E,E)                                                 15NDS    201512
+  3H   H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3H 2 H CUT=30-Jun-2015$                                                       
+  3H  c  The following table lists references for electron scattering from      
+  3H 2c  {+3}H:                                                                 
+  3H  c                                                                         
+  3H  T    Reference   Q{+2}(fm{+-2})         Comments                          
+  3H 2T  1965Co08    1-8              r{-c}=1.70 FM 5, r{-m}=1.70 FM 5          
+  3H 3T  1982Be10    0.29-1.0         r{-c}=1.67 FM 6                           
+  3H 4T  1984Be46    0.0477-2.96      r{-c}=1.68 FM 3, r{-m}=1.72 FM 6          
+  3H 5T  1985Ju01    0.3-31.3         Measured charge and magnetic form factors;
+  3H 6T                               r{-c}=1.76 FM 4, r{-m}=1.72 FM 4          
+  3H 7T  1987Be30    0.09-8.26        Measured isoscalar and isovector form     
+  3H +T  \ factors                                                              
+  3H  c                                                                         
+  3H  c  In (1994Am07), the three experiments reported in                       
+  3H 2c  (1982Ca15,1985Ju01,1992Am04) for electron scattering from {+3}H and    
+  3H 3c  {+3}He are described and a complete set of cross sections, electric and
+  3H 4c  magnetic form factors are obtained. Also, T=0, 1 form factors are      
+  3H 5c  obtained and compared with A=2, 4 form factors. See (2005Go26) for     
+  3H 6c  electric and magnetic form factors for {+3}H and {+3}He as well as     
+  3H 7c  T=0, 1 form factors and comparison with theory.                        
+  3H   L 0.0         1/2+                                                       
+                                                                                
+  3HE    ADOPTED LEVELS                                          15NDS    201512
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE  XA1H(6LI,A)                                                              
+  3HE  XB2H(P,G)                                                                
+  3HE  XF2H(P,P),(P,N),1H(D,D),(D,N),                                           
+  3HE  XC3H B- DECAY                                                            
+  3HE  XE3HE(G,P),3HE(G,N)                                                      
+  3HE  XD3HE(E,E)                                                               
+  3HE  Q                       5493.477 2              2012WA38                 
+  3HE c  The isotope {+3}He was probably first observed in 1933-34. See         
+  3HE2c  (2012Th01) and references therein. That {+3}He has spin 1/2 is reported
+  3HE3c  in (1949Do24,1950Di11).                                                
+  3HE c  Calculations show that the ground state wave functions of {+3}H and    
+  3HE2c  {+3}He consist of a spatially symmetric S state (|?90%), a D state     
+  3HE3c  (|?9%), a mixed symmetry S' state (|?1%) and a small P state (<0.1%).  
+  3HE4c  See (1979Sa15,1986Is01,1987Er07,1993Wu08,2002Ho09).                    
+  3HE c  The ratio |c{-t} of the asymptotic D state to S state of {+3}He is     
+  3HE2c  -0.0389 {I42}. This value is the inverse square of the uncertainty     
+  3HE3c  weighted average of the two most recent measurements                   
+  3HE4c  (1995Ay03,1997Ri07,1997Sc31).                                          
+  3HE c  The charge and magnetic rms radii for {+3}He are r{-c}=1.959 fm {I30}  
+  3HE2c  and r{-m}=1.965 fm {I153} (1994Am07). See (2005Go26) for electric and  
+  3HE3c  magnetic form factors for {+3}H and {+3}He as well as T=0, 1 form      
+  3HE4c  factors and comparison with theory. See the reaction {+3}He(e,e){+3}He 
+  3HE5c  below for more details.                                                
+  3HE c  The magnetic moment, |m=-2.127625306 {I25}, is from Table XLI of       
+  3HE2c  (2012Mo42)                                                             
+  3HE  L 0.0         1/2+              STABLE                                   
+  3HE2 L XREF=ABCD                                                              
+  3HE2 L MOMM1=-2.127625306 25 (2012Mo42)                                       
+  3HE cL ${+3}He Mass excess: 14931.2155 keV {I23} (2012Wa38)                   
+  3HE cL ${+3}He binding energy: 7718.0428 keV {I23}; S(p)=5493.4768 keV {I23}  
+  3HE2cL using mass excess values from (2012Wa38)                               
+                                                                                
+  3HE    3H B- DECAY                                             15NDS    201512
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE c  Measurements of the |b-decay spectrum of tritium in solid              
+  3HE2c  tritiated valine by (1981Lu06,1985Bo34) indicated a nonzero electron   
+  3HE3c  antineutrino mass within the limits from 20 eV to 45 eV.               
+  3HE cB $The Q value for this decay process is given in (2012Wa38) to be       
+  3HE2cB 18.591 keV {I1}. The |b decay of {+3}H is 100% to the ground state of  
+  3HE3cB {+3}He. As stated earlier, the half-life of {+3}H is 12.32 y {I2}. This
+  3HE4cB gives log| {Ift}=3.0524 {I7} and the average E{-|b}=5.68 keV.          
+  3HE cB $Measurements of {+3}H |b-decay end point energy (EPE) or {+3}H-{+3}He 
+  3HE2cB mass difference (MD): [Note: Table VII in (1950Ho80) lists eight       
+  3HE3cB measurements of EPE prior to 1950 ranging from 12 keV {I5} to 18.9 keV 
+  3HE4cB {I5}.]                                                                 
+  3HE cB E         A review of early work is found in (1973Pi01).               
+  3HE TB                                                                        
+  3HE4TB Reference Energy (KEV) Comment                                         
+  3HE2TB 1950JE60  18.6 2      Calorimetry, measured average energy, deduced    
+  3HE+TB \ ^EPE                                                                 
+  3HE5TB 1959Po78  18.61 10    ^EPE, double lens spectrometer                   
+  3HE3TB 1969SA21  18.72 5     ^EPE; retarding electrostatic field              
+  3HE4TB 1970LE15  18.540 95   ^EPE, 3H implantation                            
+  3HE5TB 1972BE11  18.610 16   ^EPE, magnetic-electrostatic spectrometer        
+  3HE6TB 1972BE11  18.651 16   ^MD, magnetic-electrostatic spectrometer         
+  3HE7TB 1973PI01  18.538 0    ^EPE, magnetic spectrometer                      
+  3HE8TB 1974RO08  18.648 26   ^EPE, magnetic spectrometer                      
+  3HE9TB 1975SM02  18.600 7    ^MD, mass spectrometer, 3H, 3HE masses measured  
+  3HEaTB 1976TR07  18.575 13   ^EPE, magnetic spectrometer                      
+  3HEbTB 1981LU07  18.577 13   ^EPE, magnetic spectrometer                      
+  3HEvTB 1981SI18  18.567 5    ^EPE, 3H implantation                            
+  3HEdTB 1981SM02  18.573 7    ^MD, mass spectrometer; reconsider (1975SM02)    
+  3HE+TB \ results                                                              
+  3HEeTB 1982DI01  18.594 25   ^EPE, ion implantation reconsider                
+  3HEfTB 1983DE47  18.562 6    ^EPE, thermal diffusion                          
+  3HEhTB 1984NI16  18.584 4    ^MD, ion cyclotron resonance                     
+  3HEiTB 1985BO34  18.5842 16  ^EPE, magnetic-electrostatic spectrometer        
+  3HEjTB 1985LI02  18.599 2    ^MD, ion cyclotron resonance                     
+  3HEkTB 1985SI07  18.577 7    ^EPE, 3H implantation                            
+  3HElTB 1985TAZK  18.582 3    ^MD                                              
+  3HEmTB 1986FR09  18.5823 1   ^EPE, magnetic spectrometer                      
+  3HEoTB 1987BO07  18.5793 8   ^EPE, |b spectrometer                            
+  3HEpTB 1987KA51  18.593 5    ^EPE, |b spectrometer; also see                  
+  3HE+TB \ (1988KA12,1988KA32)                                                  
+  3HEqTB 1989RE04  18.590 8    ^EPE, reconsideration of earlier results         
+  3HErTB 1989ST05  18.5890 26  ^MD, |b spectrometer                             
+  3HEsTB 1991BU12  18.595 6    ^MD, bremsstrahlung                              
+  3HEtTB 1992HO09  18.57332 18 ^EPE, |b spectrometer                            
+  3HEuTB 1993VA04  18.5901 17  ^MD, Penning trap mass spectrometer              
+  3HEvTB 1993WE03  18.5748 6   ^EPE, |b spectrometer, also see (1993BA08)       
+  3HEwTB 1995HI14  18.597  14  ^MD, magnetic spectrometer                       
+  3HExTB 2006NA49  18.5898 12  ^MD, Penning trap mass spectrometer              
+  3HEyTB 2015MY03  18.59201 7  ^MD, cyclotron frequency ratio                   
+  3HEzTB                                                                        
+  3HE cB $The |b spectrum end point energy differs from the {+3}H-{+3}He mass   
+  3HE2cB difference due to the recoil energy, the final state of the residual   
+  3HE3cB system and the mass of the emitted but not detected anti-electron      
+  3HE4cB neutrino. In the table above, most of the references that measured the 
+  3HE5cB end point energy (EPE) also put upper limits on the neutrino mass.  An 
+  3HE6cB early history of the role that the |b decay of {+3}H has played in     
+  3HE7cB attempts to measure the neutrino mass can be found in (1988Ro21). Fig. 
+  3HE8cB 1 in this article is a graph of the {+3}H |b spectrum near the EPE for 
+  3HE9cB the electron neutrino masses of 0 and 30 eV. Fig. 1 in (2006We03) and  
+  3HEacB Fig. 3 in (2013Dr11) show the |b spectrum near the end point energy    
+  3HEbcB for electron neutrino masses of 0 and 1 eV. Modern refinements of these
+  3HEccB measurements have resulted in the upper limit of the electron neutrino 
+  3HEdcB mass being just over 2 eV; see (2005Kr03,2010Ot02,2011As10,2013Dr11).  
+  3HE cB $Studies of atomic and molecular effects on the {+3}H |b spectrum near 
+  3HE2cB the end point energy are reported in (1971Sc23,2010Ot02,2015Bo02).     
+  3HE  N                         1.0     1.0                                    
+  3H   P 0.0         1/2+              12.32 Y   2              18.5906   32    
+  3HE  L 0.0         1/2+              STABLE                                   
+  3HE  B             100.0                3.0524  8                             
+  3HES B EAV=5.6817 12                                                          
+  3HE cB EAV       weight-average heat output 0.3233 {I10} W/|g from            
+  3HE2cB (0.321 {I3} (1950Je60)), (0.321 {I1} (1958Gr93)), (0.312 {I1}          
+  3HE3cB (1958Po64)), (0.3240 {I9} (1961Pi01)), (0.3244 {I13} (1961Jo22)).      
+                                                                                
+  3HE    1H(6LI,A)                     1994AL54                  15NDS    201512
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE c  Reference (1994Al54) reports a study of this reaction. The |a spectrum 
+  3HE2c  showed {+3}He ground state but no excited states.                      
+  3HE  L 0.0         1/2+                                                       
+                                                                                
+  3HE    2H(P,G)                                                 15NDS    201512
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE c  The low energy cross sections, or S(E) factors, of this reaction have  
+  3HE2c  important astrophysical implications. Graph 1a in (2004De48) shows S(E)
+  3HE3c  for E from about 2 keV up to 9 MeV. S(0) was determined to be 0.223    
+  3HE4c  eV~*b {I10}, 60.1% of which is due to M1 capture and 39.9% is E1       
+  3HE5c  capture. The graph results from an R-matrix analysis of results        
+  3HE6c  compiled from (1962Gr39,1963Gr12,1963Wa19,1967Wo08,1970Ba68,1979Sk01,  
+  3HE7c  \1997Ma08,1997Sc31,2002Ca28). A later determination of S(E) for this   
+  3HE8c  same energy range is given in (2013Xu14). Also see (2014By01). In      
+  3HE9c  addition to the experimental results used by (2004De48) the following  
+  3HEac  articles were cited: (1967Ge05,1996Sc14,1997Ma08,2002Ca28,             
+  3HEbc  2008By03,1964Be45,1965Fe01,1965St07,1973Ti05). The last four           
+  3HEcc  references in this list actually studied the inverse reaction          
+  3HEdc  {+3}He(|g,p){+2}H. The value of S(0) determined by (2013Xu14) is 0.21  
+  3HEec  eV~*b {I4}.                                                            
+  3HE  L 0.0         1/2+                                                       
+                                                                                
+  3HE    2H(P,P),(P,N),1H(D,D),(D,N),                            15NDS    201512
+  3HE2   (D,PP)                                                                 
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE c  A very large number of both experimental and theoretical studies of    
+  3HE2c  elastic and inelastic deuteron-proton scattering have been reported.   
+  3HE c  The total p-d cross section has a steep drop at low proton energies to 
+  3HE2c  a minimum of about 55 mb at 400 MeV, then rises to about 80 mb at 1500 
+  3HE3c  MeV and drops slowly from there, as the following table shows. Also    
+  3HE4c  see Fig. 7 in reference a) below.                                      
+  3HE c                                                                         
+  3HE T  Ep(MEV)            |s{-t} (MB)                Comment                  
+  3HE2T    40           |?290              Fig. 4 of Ref. e)                    
+  3HE3T    77            146    7         Ref. d)                               
+  3HE4T   208             61.0 40         Ref. b)                               
+  3HE5T   315             56.8 50         Ref. b)                               
+  3HE6T   380             53.2 20         Ref. a), uncertainty approximate      
+  3HE7T   408             55.6 30         Ref. c)                               
+  3HE8T   590             66.8 20         Ref. a), uncertainty approximate      
+  3HE9T   810             76.0 20         Ref. a), uncertainty approximate      
+  3HEaT  1060             78.3 24         Ref. a), uncertainty approximate      
+  3HEbT  1260             80.3 20         Ref. a), uncertainty approximate      
+  3HEcT  1480             80.8 26         Ref. a), uncertainty approximate      
+  3HEdT  2000             78.7 30         Ref. a), uncertainty approximate      
+  3HEeT  2600             74.2 33         Ref. a), uncertainty approximate      
+  3HEfT  -----------------------------------------------------------------      
+  3HEgT  a) (1956Ch79).                                                         
+  3HEhT  b) (1954De37).                                                         
+  3HEiT  c) (1958Ma69).                                                         
+  3HEjT  d) (1963Da20).                                                         
+  3HEkT  e) (1963Da21).                                                         
+  3HE c                                                                         
+  3HE c  Table 3.4.1 in (1975Fi08) shows over 120 references of p+d break-up    
+  3HE2c  reactions with either proton beams with energies from 3.4 MeV to 24    
+  3HE3c  GeV or deuteron beams with energies from 7.5 MeV to 190 MeV. Similarly,
+  3HE4c  Table 3.11 in (1987Ti07) lists 41 references for p-d breakup reaction  
+  3HE5c  studies for proton energies from 3.82 MeV to 800 MeV or deuteron       
+  3HE6c  energies from 7.12 MeV to 7.5 MeV; some beams were polarized. Likewise,
+  3HE7c  Table 3.13 in (2010Pu04) lists 37 breakup reaction references with     
+  3HE8c  proton energies from 13 MeV to 1 GeV or deuteron energies from 52 MeV  
+  3HE9c  to 270 MeV. Many of these studies used either polarized beams or, in   
+  3HEac  some instances both beam and target were polarized. Vector and tensor  
+  3HEbc  analyzing powers as well as cross sections were measured and compared  
+  3HEcc  with modern theories.                                                  
+  3HE c  The number of references for elastic p-d scattering is also large. In  
+  3HE2c  Table 3.5.1b, there are about 80 references of elastic differential    
+  3HE3c  cross section measurements with proton energies from 0.2 MeV to 70 GeV 
+  3HE4c  or deuteron energies from 0.96 MeV to 433 MeV. In Table 3.12 of        
+  3HE5c  (1987Ti07), 35 references are listed giving differential cross         
+  3HE6c  sections, vector and tensor analyzing powers and other polarizations   
+  3HE7c  observables for proton energies from 0.4 MeV to 1 GeV or deuteron      
+  3HE8c  energies from 3 MeV to 5 GeV. In Table 3.14 in (2010Pu04), a list is   
+  3HE9c  given of about 80 studies of p-d elastic scattering with proton        
+  3HEac  energies from 0.2 MeV to 3.5 GeV or deuteron energies from 0.48 MeV to 
+  3HEbc  4.9 MeV, most involving polarized beams and in a few instances both    
+  3HEcc  beams and targets. Differential cross sections, vector and tensor      
+  3HEdc  analyzing powers were measured and compared to modern theories.        
+  3HE c  A brief summary of recent p-d (and n-d) scattering measurements,       
+  3HE2c  including polarization observables, is presented in (2013Se09). In     
+  3HE3c  (2011Se06,2011Se17,2014Se13), measurements are reported of elastic d-p 
+  3HE4c  scattering with vector and tensor polarized deuterons at 250 and 294   
+  3HE5c  MeV per nucleon. Comparisons with theory with best NN and NNN forces   
+  3HE6c  result in large discrepancies at back angles. Studies of elastic       
+  3HE7c  scattering {+1}H(d,d){+1}H at E{-d}=500, 700 and 880 MeV are reported  
+  3HE8c  in (2013Gu25). At lower energies, as reported in (2012Ci01,2013St06),  
+  3HE9c  it was found that NNN and Coulomb forces played only a small role in   
+  3HEac  {+1}H(d,d){+1}H, and in {+1}H(d,pp)n, at E{-d}=100, 130 MeV.           
+  3HE c  In contrast with neutron-deuteron low energy scattering where the      
+  3HE2c  doublet and quartet scattering lengths, {+2}a{-nd} and {+4}a{-nd} are  
+  3HE3c  reasonably well known, the corresponding quantities for                
+  3HE4c  proton-euteron scattering are more uncertain. This is discussed in the 
+  3HE5c  {+3}He, reaction 7 section in (2010Pu04) where the conclusion is given 
+  3HE6c  that {+2}a{-pd} is approximately zero and {+4}a{-pd} is approximately  
+  3HE7c  14 fm both with significant uncertainties.                             
+  3HE c  As mentioned in the {+2}H(n,n) section, a major issue in p+d           
+  3HE2c  scattering, as in n+d scattering, is the analyzing power puzzle in     
+  3HE3c  which the calculated and measured values of  A{-y} and {Ii}T{-11}      
+  3HE4c  (vector and tensor analyzing powers) do not agree. For more on the     
+  3HE5c  analyzing power puzzle in p+d scattering,                              
+  3HE6c  see (2008To12,2008To20,2014We04).                                      
+                                                                                
+  3HE    3HE(G,P),3HE(G,N)                                       15NDS    201512
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE c  Table 3.8.1 in (1975Fi08) lists over 20 articles for the two-body      
+  3HE2c  breakup reaction {+3}H(|g,p){+2}H for E{-|g}=threshold (5.49 MeV) to   
+  3HE3c  800 MeV. In Fig. 2 of (1965Fe01) for example, the total cross section  
+  3HE4c  for this reaction is shown to rise from threshold to a maximum of about
+  3HE5c  1 mb at around 12 MeV and drops slowly from there. Also, studies of    
+  3HE6c  this reaction are reported in (1982Br12,1983So10) for E{-|g} from      
+  3HE7c  150-350 MeV. The reaction {+2}H(p,|g){+3}He was also studied and no    
+  3HE8c  evidence of time reversal invariance was found. In the third mass 3    
+  3HE9c  evaluation, (2010Pu04), there are seven additional articles reporting  
+  3HEac  measurements of two-body photodisintegration for E{-|g} from 10.2 MeV  
+  3HEbc  to 800 MeV.                                                            
+  3HE c  Table 3.8.2 in (1975Fi08) lists 9 articles dealing with the three-body 
+  3HE2c  breakup reaction {+3}He(|g,n)pp for |g energies from threshold         
+  3HE3c  (7.7 MeV) to 170 MeV. The reference (1988Di02) is an atlas of          
+  3HE4c  photoneutron cross sections for a number of nuclei. For the {+3}He     
+  3HE5c  reaction {+3}He(|g,n)pp, the authors of (1988Di02) quote results from  
+  3HE6c  (1974Be64) and (1981Fa03). Additional articles reporting three-body    
+  3HE7c  photodisintegration are listed in (2010Pu04) for E{-|g} from 10 MeV to 
+  3HE8c  1,550 MeV. The reference (2014La04) reports the results of a study of  
+  3HE9c  the reaction {+3}He(|g,n)pp at E{-|g}=12.8, 14.7 MeV. Fig. 12 of this  
+  3HEac  reference shows their own results plus a collection of all prior       
+  3HEbc  results of this reaction for E{-|g} from threshold to 30 MeV: The total
+  3HEcc  cross section starts from zero at threshold, grows to about 1 mb at 16 
+  3HEdc  MeV and drops slowly from there. Two additional articles reporting     
+  3HEec  studies of the three-body breakup reaction with similar energies are   
+  3HEfc  (2011Pe08,2013La14).                                                   
+                                                                                
+  3HE    3HE(E,E)                                                15NDS    201512
+  3HE  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3HE2 H CUT=30-Jun-2015$                                                       
+  3HE c  The following table lists references for electron scattering from      
+  3HE2c  {+3}He:                                                                
+  3HE c                                                                         
+  3HE T    Reference     Q{+2}(fm{+-2})          Comments                       
+  3HE2T  1965Co08      1-8          r{-c}=1.87 FM 5, r{-m}=1.79 FM 10           
+  3HE3T  1970Mc20,     |<20          Measured charge and magnetic form factors; 
+  3HE4T  1977Mc03                   r{-c}=1.88 FM 5, r{-m}=1.95 FM 11           
+  3HE5T  1972Be65      8.8-15.6     Measured charge and magnetic form factors   
+  3HE6T  1977Sz02      0.032-0.34   r{-c}=1.89 FM 5                             
+  3HE7T  1978Ar05      18-77        Measured structure function                 
+  3HE8T  1982Ca15      7.3-31.7     Measured magnetic form factor               
+  3HE9T  1983Du01      0.7-11       r{-c}=1.935 FM 30, r{-m}=1.935 FM 40        
+  3HEaT  1985Ot02      0.2-3.7      r{-c}=1.976 FM 15, r{-m}=1.99 FM 6          
+  3HEbT  1987Be30      0.09-8.26    Measured isoscalar, isovector form factors  
+  3HEcT  1992Am04      1.0-25.6     Measured charge and magnetic form factors   
+  3HE c                                                                         
+  3HE c  In (1994Am07), the three experiments reported in                       
+  3HE2c  (1982Ca15,1985Ju01,1992Am04) for electron scattering from {+3}H and    
+  3HE3c  {+3}He are described and a complete set of cross sections, electric    
+  3HE4c  and magnetic form factors are obtained. Also, T=0, 1 form factors are  
+  3HE5c  obtained and compared with A=2, 4 form factors. Also see (2005Go26)    
+  3HE6c  for electric and magnetic form factors for {+3}H and {+3}He as well as 
+  3HE7c  T=0, 1 form factors and comparison with theory.                        
+  3HE  L 0.0         1/2+                                                       
+                                                                                
+  3LI    ADOPTED LEVELS                                          15NDS    201512
+  3LI  H TYP=FUL$AUT=J.E. Purcell{+#}, C.G. Sheu{+*}$CIT=NDS 130 1 (2015)$      
+  3LI2 H CUT=30-Jun-2015$                                                       
+  3LI  Q                                                                        
+  3LI c  Similarly to the three neutron case, there is no firm evidence for a   
+  3LI2c  three proton state. A theoretical study reported in (1996Cs02,1998Cs02)
+  3LI3c  using the complex scaling method predicts a 3/2+ three proton resonance
+  3LI4c  at 15 MeV with a width of 14 MeV.                                      
+  3LI c  A listing of reactions in which attempts were made to observe bound or 
+  3LI2c  resonant three proton states follows:                                  
+  3LI c                                                                         
+  3LI c  {+2}H(p,|p{+-}){+3}Li: Studies of this reaction are reported in        
+  3LI2c  (1969Br38,1979Da19,1980Cr03,1988Ab05,1990Ba35,1998Du07,1999Ha06) for   
+  3LI3c  proton energies from 353 MeV to 2.7 GeV. There were no reports of three
+  3LI4c  proton resonant states.                                                
+  3LI c                                                                         
+  3LI c  {+3}He(p,n){+3}Li: Studies of this reaction are reported in            
+  3LI2c  (1965An03,1966Co22,1969Ba29,1969Wi13,1974PoZN,1993Br05,1996Mi11,       
+  3LI3c  1998Pa22,2002Pr04,2008Ih01,2008Wa10) for proton energies from 13.1 MeV 
+  3LI4c  to 346 MeV. Possible evidence for a three proton resonance was reported
+  3LI5c  in (1969Wi13,2008Wa10), but the observed enhancement in the cross      
+  3LI6c  section has been interpreted as the probable result of final state     
+  3LI7c  interactions (1970Ph05), not a true resonance.                         
+  3LI c                                                                         
+  3LI c  {+3}He({+3}He,t){+3}Li: Studies of this reaction at E({+3}He)=44 MeV   
+  3LI2c  (1968To01) and E({+3}He)=53 MeV reported no evidences of a three proton
+  3LI3c  resonance.                                                             
+  3LI c                                                                         
+  3LI c  {+6}Li({+3}He,{+6}He){+3}Li: A study of this reaction is reported in   
+  3LI2c  (1970Ba41), E({+3}He)=53 MeV. No evidence of a three proton state was  
+  3LI3c  observed.                                                              
+                                                                                

@@ -1,0 +1,736 @@
+281      COMMENTS                                                05NDS    200512
+281    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+281  2 H CUT=12-Aug-2005$                                                       
+281   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+281   C  AUTH$M. GUPTA(a)                                                       
+281   C  INST$National Nuclear Data Center                                      
+281  #C       Brookhaven National Laboratory                                    
+281  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+281  #C                                                                         
+281   c  INST$Manipal Academy of Higher Education,                              
+281  #c  Manipal, KA 576 104, INDIA                                             
+281  #c  e-mail: mohini.gupta@manipal.edu                                       
+281   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+281  #c  Manipal, KA 576 104, INDIA                                             
+281   C  AUTH$THOMAS W. BURROWS                                                 
+281   C  INST$National Nuclear Data Center                                      
+281  #C       Brookhaven National Laboratory                                    
+281  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+281  #C       e-mail: burrows@bnl.gov                                           
+281   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+281  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+281  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+281  4C  RECEIVED BY August 12, 2005.                                           
+281   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+281  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+281  3C  DATE WERE CONSIDERED.                                                  
+281   C  CIT$NDS 106, 251 (2005)                                                
+281   c  COMM$                                                                  
+281  @c  {UAcronyms and notations used in this evaluation:}                     
+281  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+281  #c  BGS Berkeley Gas Filled Separator                                      
+281  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+281  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+281  #c  EVR Evaporation Residue                                                
+281  #c  GARIS Gas-filled Recoil Ion Separator                                  
+281  #c  RILAC RIKEN Linear Accelerator facility                                
+281  #c  SHIP Separator for Heavy Ion reaction Products                         
+281  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+281  2c  and detection of previous EVR or |a                                    
+281  #c  TKE Total Kinetic Energy                                               
+281  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+281  2c  Reactions, JINR, Dubna, Russia                                         
+281  #c                                                                         
+281  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+281  2c  (Z=110-112,114,116,118):}                                              
+281  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+281  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+281  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+281  5c  the evaluators have relied on the judgement of the JWP in              
+281  6c  determining the strength of the arguments made in the various papers.  
+281  7c  In the cases where there are new data or where the JWP has not yet     
+281  8c  assigned a priority of discovery for an element, the evaluators have   
+281  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+281  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+281  Bc  the data.                                                              
+281  #c                                                                         
+281  #c  In the above context, with respect to Z=112 and the collective works of
+281  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+281  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+281  4c  references therein.                                                    
+281  #c                                                                         
+281  @c                                                                         
+281  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+281  2c  discovery of an element and not a specific nuclide. The purpose of     
+281  3c  this evaluation is to present the "best" set of nuclear properties     
+281  4c  for those nuclides reported between A=266 and A=294 based on data      
+281  5c  currently available and {Bnot} to establish a priority of discovery for
+281  6c  any element.                                                           
+281  !c                                                                         
+281  #c  It is well known that alpha decay chains seen                          
+281  ac  in cold fusion reactions tend to terminate in known mass regions.      
+281  2c  The method of |a-|a or |a-SF correlations for identifying the          
+281  3c  parent has therefore been used with confidence.                        
+281  3c  Experiments carried out with hot fusion reactions,                     
+281  4c  result in alpha decay chains beginning and ending with hitherto unknown
+281  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+281  6c  in an attempt to identify the parent and daughters. The latter method  
+281  7c  is not as accurate as the first since a greater probability of         
+281  8c  randomness is inherant to the technique. As such, independent          
+281  9c  verification and confirmation of the data gains added importance.      
+281  ac  These facts should be taken into account when considering the suggested
+281  ac  properties of nuclei created following a hot fusion reaction as for    
+281  ac  the synthesis of Z=114 and above.                                      
+281  #c                                                                         
+281  #c  Finally, with regard to the some of the                                
+281  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+281  ac  2004Mo15 have pointed out that mass assignments which are based        
+281  ac  on the excitation energy of the compound nucleus may be off by a       
+281  ac  single unit. This may also be due in part to uncertainties in the beam 
+281  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+281  ac  Once again, collateral information is required to establish the charge 
+281  ac  and approximate A of the nucleus.                                      
+281  #c                                                                         
+281  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+281  2c  have not been adopted, the evaluators have used the approximations in  
+281  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+281  4c  exponential distribution to estimate the standard uncertainty (68%     
+281  5c  confidence level) in T{-1/2}:                                          
+281  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+281  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+281  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+281  9c  of events. For one and two events, the exact values given in Table 1   
+281  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+281  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+281  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+281  #c                                                                         
+281  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+281  ac  Calculations of T{-1/2}                                                
+281  2c  performed in the present evaluation used the relationship:             
+281  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+281  #c  where Z refers to the atomic                                           
+281  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+281  6c  and:                                                                   
+281  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+281  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+281  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+281  3c  parameter set used in these evaluations. We note that these systematics
+281  6c  are only an indication of |a-decay half-lives from the ground state    
+281  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+281  8c  the element under consideration. The use of this formalism in the      
+281  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+281  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+281  ac  estimate a Hindrance Factor (HF) for a given transition,               
+281  ac  attributable to the odd neutron or proton. This quantity is            
+281  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+281  ac  The HF so computed is an approximate indication.                       
+281  #c                                                                         
+281  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+281  2c  References.                                                            
+281  #c                                                                         
+281  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+281  2c  trans-fermium elements is the manifestation of shell effects in the    
+281  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+281  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+281  5c  important as QF is expected to play a greater role on the hindrance of 
+281  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+281  7c  the "island" of stability. An understanding of this mechanism is       
+281  8c  necessary to establishing the most favorable reactions for producing   
+281  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+281  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+281  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+281  Cc  to both the mass asymmetry in the entrance channel as well as the      
+281  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+281  Ec  deformations of target/projectile nuclei and their relative orientation
+281  Fc  to each other in the process of CN formation, may also play an         
+281  Gc  important role in reducing the probability of forming a compound       
+281  Hc  system. In the face of extremely low yields and a steep decrease of    
+281  Ic  production cross-sections already in evidence with available stable    
+281  Jc  beam-target combinations, the influence of all possible mitigating     
+281  Kc  factors must be accurately determined in order to                      
+281  Lc  optimize the probability of successful fusion. The formation of a      
+281  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+281  Nc  survives QF going on to form a compact compound system which must then 
+281  Oc  face competition from fission.                                         
+281  #c                                                                         
+281  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+281  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+281  3c  in collaboration with investigators from Belgium, France, and Italy.   
+281  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+281  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+281  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+281  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+281  8c  spectrometer "Corset". These experiments were inspired by              
+281  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+281  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+281  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+281  Cc  such experiments are planned or underway to investigate the various    
+281  Dc  effects.                                                               
+281  #c                                                                         
+281  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+281  2c  and references cited in these papers.                                  
+281  #c                                                                         
+281  !c  {UExperimental Estimates of Fission Barriers:}                         
+281  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+281  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+281  4c  the experimentally derived barrier heights are respectively:           
+281  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+281  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+281  #c                                                                         
+281  #c  2002It04, in an analysis of available experimental data, derive the    
+281  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+281  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+281  #c                                                                         
+281  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+281  2c  Two possibilities have been proposed in an attempt to understand the   
+281  ac  the {+289}114, {+287}114 observations:                                 
+281  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+281  ac  belongs to a rare decay mode originating from                          
+281  4c  an isomeric state, or that                                             
+281  #c  (ii) the sequence may actually originate from                          
+281  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+281  7c  Levels).                                                               
+281  #c  The evaluators believe that further investigations                     
+281  ac  are required to support either hypothesis.                             
+281  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+281  9c  unobserved. Also, T{-1/2}                                              
+281  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+281  ac  is much larger than that observed by 2004Og12 and                      
+281  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+281  ac  agreement. Such inconsistencies need to be better understood.          
+281  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+281  2c  respects. 2004OgZZ report more statistics in some cases.               
+281  #c                                                                         
+281  @c  {UOther comments on {+289}114 and {+283}112}                           
+281  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+281  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+281  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+281  4c  classified the evidence as being "very weak",                          
+281  5c  with no convincing supporting arguments for the possible production of 
+281  6c  SHE. We make the following general observations:                       
+281  #c                                                                         
+281  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+281  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+281  ac  by the Dubna-JINR collaborations for all isotopes of                   
+281  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+281  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+281  ac  {+287}114 (15 events) and {+286}114                                    
+281  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+281  ac  the |?34 min decay sequence postulated as originating from             
+281  5c  a rare decay mode of {+289}114, does not seem very likely.             
+281  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+281  7c  {+289}114 decays observed are genetically linked                       
+281  8c  and not the result of a background decay sequence. These               
+281  BC  discrepancies have to be resolved, along with some others.             
+281  #c                                                                         
+281  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+281  ac  (see also 2004Og02) with VASSILISSA, have not                          
+281  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+281  3c  lack of internal consistency through the collective measurements       
+281  ac  and the data are inconclusive as pointed                               
+281  4c  out by experimenters (reasons given in each paper). Decay properties of
+281  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+281  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+281  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+281  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+281  8c  by them. See {+283}112 Adopted Levels for details.                     
+281  #c                                                                         
+281  #c  These observations by the experimenters are consistent with the        
+281  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+281  3c  of the various arguments put                                           
+281  3c  forward therein, the following comments may be made here:              
+281  #c                                                                         
+281  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+281  #c  190 MeV and 212 MeV (1999Og05)                                         
+281  #c  65 MeV and 170 MeV  (2004Og02)                                         
+281  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+281  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+281  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+281  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+281  4c  plane and side detectors). With one exception, all the energies        
+281  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+281  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+281  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+281  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+281  9c  the second experiment) after EVR implantation resulted in              
+281  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+281  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+281  #c                                                                         
+281  #c  2. 2000Ar03 statement that correlations  between the fission events    
+281  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+281  3c  'backward' analysis of the data was reported in                        
+281  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+281  5c  evidently in contradiction with those made by the                      
+281  6c  experimenters. A more complete analysis would be beneficial.           
+281  #c                                                                         
+281  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+281  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+281  ac  quoted from an earlier                                                 
+281  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+281  4c  assignments. The proposed assignment of Z=114 to both parents may      
+281  5c  be incorrect taking into account new data which do not support         
+281  6c  these observations and for reasons already mentioned.                  
+281  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+281  !c                                                                         
+281  #c  CONCLUSIONS:                                                           
+281  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+281  ac  are not conclusive. Overall, the                                       
+281  2c  results from the VASSILISSA experiments are at variance with data from 
+281  3c  experiments using DGFRS. The latter investigations are done using      
+281  4c  more stringent methods, and have greater statistics, offering better   
+281  5c  internal consistency. Some obvious discrepancies and other             
+281  ac  inconsistencies between the two sets of                                
+281  6c  data remain and need to be resolved or adequately explained as does the
+281  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+281  8c  by 2005Gr19 and 2002Lo11.                                              
+281  #c                                                                         
+281  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+281  2c  from earlier work are not reproduced to date.                          
+281  #c                                                                         
+281  @c  {UTheoretical Calculations:}                                           
+281  @c  1995Mo29: |b2 based on the finite-range droplet                        
+281  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+281  3c  with "global" parameters.                                              
+281  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+281  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+281  3c  J|p simultaneously obtained with the calculated masses and             
+281  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+281  5c  A=239.                                                                 
+281  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+281  2c  model for the macroscopic part and the Strutinski shell correction,    
+281  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+281  4c  part.                                                                  
+281  @c  2005GaZX: |b2 based on self consistent calculations                    
+281  2c  within the framework of the Relativistic Mean Field (RMF)              
+281  3c  theory with very few "globally" fit parameters and employing the       
+281  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+281  5c  sets in use exhibit similar systematics, these results are expected to 
+281  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+281  #c                                                                         
+281  @c  {UOther Measurements:}                                                 
+281  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+281  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+281  3c  (Blocking technique in single crystals).                               
+281  #c                                                                         
+281   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+281  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+281  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+281  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+281  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+281  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+281  7c  additional information that they readily provided during this          
+281  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+281  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+281  Ac  Singh for helpful discussions. We thank A. Marinov                     
+281  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+281  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+281  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+281  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+281  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+281  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+281  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+281  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+281  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+281  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+281  Lc  insights, and suggestions until her untimely demise are hereby         
+281  Mc  acknowledged.                                                          
+281   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+281  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+281  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+281      REFERENCES                                                       200512
+281    R 1966VI04 JOUR JINCA 28 741                                             
+281    R 1984SC13 JOUR ZPAAD 316 19                                             
+281    R 1987MU15 JOUR ZPAAD 328 49                                             
+281    R 1992BA77 JOUR PPNPD 29 453                                             
+281    R 1993LAZS CONF Dubna (Heavy Ion Physics) Proc,Vol2,P497                 
+281    R 1995MO29 JOUR ADNDA 59 185                                             
+281    R 1997MO25 JOUR ADNDA 66 131                                             
+281    R 1998DA24 JOUR ARNUA 48 401                                             
+281    R 1999GHZZ PC A Ghiorso                                                  
+281    R 1999NI03 JOUR PRLTA 83 1104                                            
+281    R 1999OG05 JOUR ZAANE 5 63                                               
+281    R 1999OG07 JOUR NATUA 400 242                                            
+281    R 1999OG10 JOUR PRLTA 83 3154                                            
+281    R 2000AR03 JOUR ZAANE 7 23                                               
+281    R 2000FI12 JOUR NDSBA 90 391                                             
+281    R 2000HOZZ REPT GSI 2000-1,P7,Hofmann                                    
+281    R 2000OG05 JOUR PRVCA 62 041604                                          
+281    R 2000OG07 JOUR YAFIA 63,No 10,1769                                      
+281    R 2000OGZR CONF Casta-Papiernicka (Dynamical Aspects of Nucl. Fiss.) Proc
+281    R 2000SC26 JOUR ZAANE 8 141                                              
+281    R 2000ZL02 JOUR ZAANE 8 81                                               
+281    R 2001AK11 JOUR NDSBA 94 131                                             
+281    R 2001KA70 JOUR PACHA 73 959                                             
+281    R 2001MOZU REPT RIKEN 2000 Annual,P60,Morimoto                           
+281    R 2001OG01 JOUR PRVCA 63 011301                                          
+281    R 2001OG06 JOUR YAFIA 64,No 8,1427                                       
+281    R 2002HI20 JOUR PRLTA 89 282701                                          
+281    R 2002IT04 JOUR PRVCA 65 044602                                          
+281    R 2002LO11 JOUR PPNPD 48 123                                             
+281    R 2002LO15 JOUR PRVCA 66 044617                                          
+281    R 2002NI10 JOUR PRLTA 89 039901                                          
+281    R 2002OG09 JOUR ZAANE 15 201                                             
+281    R 2003AU02 JOUR NUPAB 729 3                                              
+281    R 2003AU03 JOUR NUPAB 729 337                                            
+281    R 2003GR26 JOUR ZAANE 18 633                                             
+281    R 2003KA71 JOUR PACHA 75 1601                                            
+281    R 2003MU15 JOUR YAFIA 66 1051                                            
+281    R 2003MU26 JOUR APOBB 34 2073                                            
+281    R 2004DA11 JOUR NUPAB 734 148                                            
+281    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+281    R 2004IT05 JOUR NUPAB 734 136                                            
+281    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+281    R 2004MO15 JOUR NUPAB 734 188                                            
+281    R 2004OG02 JOUR ZAANE 19 3                                               
+281    R 2004OG03 JOUR PRVCA 69 021601                                          
+281    R 2004OG07 JOUR PRVCA 69 054607                                          
+281    R 2004OG10 JOUR PTPSA 154 406                                            
+281    R 2004OG12 JOUR PRVCA 70 064609                                          
+281    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+281    R 2004PRZW PREPRINT Prokhorova                                           
+281    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+281    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+281    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+281DS    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+281DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+281DS2 H CUT=12-Aug-2005$                                                       
+281DS  Q -1.7E3    SY5.1E3   SY          9.32E3  SY    2012WA38                 
+281DS CQ Note: Current evaluation has used the following Q record               
+281DS  Q -3080     SY 5960   SY           9.05E3    LE 2003AU03,2004OG12        
+281DS CQ Q-$ESTIMATED UNCERTAINTY=1180 KEV                                      
+281DS CQ SN$ESTIMATED UNCERTAINTY=1120 KEV                                      
+281DS CQ QA$ESTIMATED BY 2004OG12. OTHER: QA LE 9.00 MEV FROM 2004OGZZ;         
+281DS2CQ 2003AU03 ADOPTED 8.96 MEV 5 BASED ON THE DATA OF 1999OG10.             
+281DS C  2000FI12 CITE 1999GHZZ. THE EVALUATORS BELIEVE THAT THE DATA IN THIS   
+281DS2C  PRIVATE COMMUNICATION CORRESPONDS TO THAT PUBLISHED IN 1999OG10.       
+281DS C  1999OG10: IN DUBNA, USING THE ^U400 CYCLOTRON AND THE ^DGFRS. THIS     
+281DS2C  NUCLEUS PRODUCED AFTER TWO ALPHA-DECAYS ORIGINATING FROM PARENT 28914  
+281DS3C  OBSERVED IN A SINGLE EVENT {IVIA} THE 3{In} CHANNEL IN THE REACTION    
+281DS4C  244PU+48CA WITH A CROSS-SECTION AP 1 PICOBARN. THE ASSIGNMENTS ARE     
+281DS5C  TENTATIVE AS THIS PARTICULAR DECAY SEQUENCE HAS NOT BEEN REPRODUCED IN 
+281DS6C  SUBSEQUENT EXPERIMENTS TO DATE. THE EVENT IS CHARACTERIZED BY AN ALPHA 
+281DS7C  EMITTED WITH  E1=9.71 MEV, AND A LONG LIFETIME OF t1=30.4 S ATTRIBUTED 
+281DS8C  TO THE 28914 PARENT. THE GRANDDAUGHTER, 281DS HAS THE PROPERTIES:      
+281DS9C  E3=8.83 MEV; t3=1.6 M. THE EVALUATORS NOTE THAT THIS IS THE ONLY       
+281DSAC  OBSERVATION OF ALPHA-DECAY FROM THIS ISOTOPE OF DS, WHICH IS OTHERWISE 
+281DSBC  EXPECTED TO FISSION. 1999OG10 SUGGEST THAT THE  ENTIRE CHAIN, IF       
+281DSCC  VERIFIED, REPRESENTS A RARE (ISOMERIC) ALPHA-DECAY MODE OF 28914,      
+281DSDC  POSSIBLY ALSO OF 281DS. THE DECAY SEQUENCE AND ALL CONSTITUENT         
+281DSEC  ASSIGNMENTS ARE CONSIDERED TENTATIVE BY THE EVALUATORS.                
+281DS C  2000OG05: EXPERIMENTS DONE AT DUBNA WITH 244PU+48CA AT 236 MEV WITH    
+281DS2C  IMPROVED SENSITIVITY OF >2 ORDERS OF MAGNITUDE OVER PREVIOUS ATTEMPTS, 
+281DS3C  FOR PICOBARN CROSS-SECTIONS EXPECTED IN THE PRODUCTION OF Z=114.       
+281DS4C  THE ^U400 CYCLOTRON WAS USED WITH ^DGFRS (2000OGZR, 1993LAZS).         
+281DS5C  OBSERVED TWO IDENTICAL THREE-MEMBER DECAY SEQUENCES AT A 48CA BEAM     
+281DS6C  ENERGY OF 237.6 AND 237.0 MEV AT TARGET-CENTER CORRESPONDING TO        
+281DS7C  EXCITATION ENERGIES OF 33.6-39.7 MEV AND 33.2-39.1 MEV OF THE {+292}114
+281DS8C  ^CN RESPECTIVELY. PARENT INITIALLY ASSIGNED TO 28814 {IVIA} THE 4{IN}  
+281DS9C  CHANNEL, AND REASSIGNED TO 28914 IN 2004OG07. 281DS TERMINATES THE     
+281DSAC  |a1-|a2-SF CHAIN WITH AN AVERAGE E(TOT)= 217 MEV FOR THE               
+281DSBC  FISSION FRAGMENTS: E1(SF-TOT)=221 MEV WITH  t(SF)=14.26 S AND          
+281DSCC  E2(SF-TOT)=213 MEV WITH t(SF)=7.44 S RESPECTIVELY. SEE ALSO 2000OG07   
+281DSDC  FOR MORE DETAILS OF THIS EXPERIMENT.                                   
+281DS C  2004OG07: Z=116 PARENT NUCLEI PRODUCED IN THE REACTION 248CM+48CA      
+281DS2C  AND REPORTED VIA 2001OG01, 2001OG06 AND DISCUSSED IN 2002OG09 ARE      
+281DS2C  REASSIGNED TO 29316 IN THE 3N CHANNEL. THE SF EVENTS TERMINATING THE   
+281DS3C  ALPHA-DECAY CHAIN CORRESPOND TO 281DS. ALSO OBSERVED HERE WERE THREE   
+281DS4C  ALPHA-DECAY SEQUENCES ORIGINATING FROM 28914 PRODUCED IN THE REACTION  
+281DS5C  244PU+48CA: TWO EVENTS AT E=243 MEV AND ONE EVENT AT E=250 MEV.        
+281DS6C  281DS TERMINATES THE ^EVR-|a1-|a2-SF CHAIN WITH AN AVERAGE ENERGY      
+281DS7C  OF 158 MEV. (SEE 28914 ADOPTED LEVELS FOR DETAILS).                    
+281DS D  EXPERIMENTS DESIGNED TO INVESTIGATE Z=116 BY DIRECT SYNTHESIS          
+281DS2D  ALSO TO LEND SUPPORT TO |a-DECAY DAUGHTERS OF Z=118 AS REPORTED IN     
+281DS3D  2002OGZX AND 2003OGZZ.                                                 
+281DS C  2004OG12: AS ALPHA-DECAY GRAND-DAUGHTER OF 28914.                      
+281DS2C  THREE ALPHA-DECAY SEQUENCES IN THE REACTION 244PU(48CA,3N)             
+281DS3C  WERE ATTRIBUTED TO THE NUCLEUS 28914; TWO EVENTS WERE RECORDED AT      
+281DS4C  A BEAM ENERGY OF 243 MEV (SECOND ASSIGNMENT TENTATIVE) AND ONE AT      
+281DS5C  250 MEV (NOT CONCLUSIVE). IN ALL CASES 281DS TERMINATED THE            
+281DS6C  ^EVR-|a1-SF SEQUENCE. (SEE 28512 AND 28914 Adopted Levels FOR DETAILS).
+281DS7C  EXPERIMENTERS QUOTE T(SF)= 9.6 S +50-25 FOR A TOTAL OF 8 EVENTS.       
+281DS C  2004OGZZ: REPORT TWO ^EVR-|a1-|a2-|a3-SF CHAINS SPANNING ABOUT 10 TO 80
+281DS2C  S PRODUCED IN THE REACTION 248CM+48CA AT E=247 MEV. THE EXPERIMENTERS  
+281DS3C  NOTE THAT THESE CHAINS ARE SIMILAR TO THOSE OBSERVED AT A LOWER ENERGY 
+281DS4C  IN 2001OG01, 2001OG06, AND ALSO DISCUSSED IN 2002OG09.                 
+281DS5C  IN BOTH CASES THE PARENT WAS 29316 AND THE 281DS TERMINATED THE        
+281DS6C  SEQUENCE WITH SF.  (SEE ALSO 29316 Adopted Levels FOR DETAILS).        
+281DS7C  A TOTAL OF 10 ALPHA DECAY EVENTS WERE CONSIDERED IN THE ESTIMATION OF  
+281DS8C  THE HALF-LIFE OF 11.1 S +5.0-2.7, REVISED OVER THE VALUE QUOTED IN     
+281DS9C  2004OG12. EXPERIMENTERS ESTIMATE QA LE 9.05 MEV FOR THE UNOBSERVED     
+281DSAC  |a-DECAY BRANCH. 2004OG12 AND 2004OGZZ ARE IDENTICAL IN MOST RESPECTS. 
+281DSBC  2004OGZZ REPORT MORE STATISTICS IN SOME CASES.                         
+281DS C  OTHER: 1999OG07, 2000OG07, 2004OG10.                                   
+281DS D  EVALUATORS BELIEVE THAT 2004MO15 REPORT DATA PRIOR TO REASSIGNMENT.    
+281DS D  2002OG09 CONSOLIDATES DATA FROM ALL EARLIER EXPERIMENTS. NO NEW DATA.  
+281DS C  THEORY: SEE Nuclear Science References                                 
+281DS C  ASSIGNMENT: GRANDDAUGHTER OF 28914 PRODUCED BY 244PU(48CA,3N) E=236 MEV
+281DS2C  (1999OG10)?, E=237, 238 MEV (2000OG05). GREAT-GRANDDAUGHTER OF 29316   
+281DS3C  248CM(48CA,3N) E=240 MEV (2001OG01,2001OG06). THE EVALUATORS CONSIDER  
+281DS4C  THE ASSIGNMENTS OF 29316 AND 28914 AS TENTATIVE; SEE RESPECTIVE Adopted
+281DS5C  Levels FOR DETAILS.                                                    
+281DS  XA28512 A DECAY: TENTATIVE                                               
+281DS  L X                             9.6 S     +50-25                        ?
+281DS CL J$3/2+ FROM 1997MO25 (THEORY)                                          
+281DS CL T$FROM 8 SF EVENTS (2004OG12). Other: 11.1 S +5.0-2.7 FOR 10 EVENTS    
+281DSaCL FROM 2004OGZZ.                                                         
+281DS3 L %SF AP 100 (2004OG12)                                                  
+281DS CL $B2(THEORY): 0.108 FROM 1995MO29; 0.137 FROM 2003MU15; 0.159 FROM      
+281DS2CL 2005GAZX                                                               
+281DSX L XREF=A                                                                 
+                                                                                
+281DS    28512 A DECAY: TENTATIVE      2004OG12                  05NDS    200512
+281DS  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+281DS2 H CUT=12-Aug-2005$                                                       
+281DS C  SEE 28512 Adopted Levels FOR DETAILS.                                  
+28512  P X                                 34 S  +17-9               9290 60    
+28512 CP T$FROM 2004OG12                                                        
+28512 CP QP$FROM 2004OG12                                                       
+281DS  N                          1    AP                                       
+281DS  L X                             9.6 S     +50-25                        ?
+281DS CL E,T$FROM THE Adopted Levels.                                           
+281DS  A 9.16E+3   6                                                           ?
+281DS CA E$FROM 2004OG12                                                        
+                                                                                
+281RG    COMMENTS                                                ENSDF    201008
+281RG  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+281RG C  TITL$NUCLEAR DATA SHEETS FOR 281RG                                     
+281RG c  AUTH$M. GUPTA                                                          
+281RG c  INST$Manipal University,                                               
+281RG#c       Manipal, KA 576 104, INDIA                                        
+281RG c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+281RG2c  (2005Gu33) has been updated to include the recently reported           
+281RG3c  production of {+293}117 and its daughters by 2010Og01.                 
+281RG#c                                                                         
+281RG#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+281RGxc  used                                                                   
+281RGxc  in this evaluation. The purpose of this evaluation is to present the   
+281RG3c  "best" set of nuclear properties for those nuclides reported between   
+281RG4c  A=266 and A=294 based on data currently available and {Bnot} to        
+281RG5c  establish a priority of discovery for any element.                     
+281RG c  CUT$August 1, 2010. All references relevant to the production of       
+281RG2c  {+281}Rg entered into the Nuclear Science References                   
+281RG3c  File and papers and private communications received by this date were  
+281RGxc  considered.                                                            
+281RG c  ACKN$The evaluator is very grateful to B. Singh and J. Choquette,      
+281RG2c  McMaster University for compiling these data into XUNDL.               
+281RG C  CIT$ENSDF                                                              
+                                                                                
+281RG    ADOPTED LEVELS: Tentative                               ENSDF    201008
+281RG  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+281RG  Q -3.2E3    SY6.9E3   SY2.6E3   SY9.8E3   SY    2012WA38                 
+281RG CQ Note: Current evaluation has used the following Q record               
+281RG  Q -3646     SY 7124   SY 2094   SY  9640     SY 2009AuZZ                 
+281RG CQ Q-$ESTIMATED UNCERTAINTY=1356 KEV                                      
+281RG CQ SN$ESTIMATED UNCERTAINTY=1080 KEV                                      
+281RG CQ SP$ESTIMATED UNCERTAINTY=1260 KEV                                      
+281RG CQ QA$ESTIMATED UNCERTAINTY=300 KEV.                                      
+281RG c  2010Og01: This nuclide produced as the |a-decay great grand-daughter of
+281RGac  {+293}117 terminating the decay chain by SF. The reaction              
+281RGac  used was {+249}Bk({+48}Ca,3n), with E(Lab)=252 MeV at target center.   
+281RGac  This corresponded to an excitation energy of 39 MeV near the expected  
+281RGac  maximum                                                                
+281RGac  for the sum of 3n and 4n evaporation channels.                         
+281RG2c  All experiments were carried out at Dubna, Russia, in collaboration    
+281RG3c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+281RGac  University in USA, for a period of 70 days from July 27 - October 23,  
+281RGac  2009. See adopted levels for {+293}117 for experimental details.       
+281RGac  strip. Of the 5 events observed all the decay chains ended with SF     
+281RGac  attributed to the current nucleus.                                     
+281RGac  No details of the individual events are reported.                      
+281RG t  {TV}Average values for |a decay energies and decay times are provided: 
+281RG3t  E{-|a1}=11.03 MeV {I8}, t{-1}=21 ms                                    
+281RG+t        - {TV}assigned to {+293}117 decay                                
+281RG4t  E{-|a2}=10.31 MeV {I9}, t{-2}=0.32 s                                   
+281RG+t       - {TV}assigned to {+289}115 decay                                 
+281RG5t  E{-|a3}= 9.74 MeV {I8} and 9.48 MeV {I11}, t{-3}=7.9 s                 
+281RG+t    - {TV}assigned to {+285}113 decay                                    
+281RG6t  E(SF)=218 MeV {I5}, t(SF)=38 s    - {TV}assigned to {+281}Rg decay.    
+281RG c  The randomness factors (1984Sc13) were determined by simulating each   
+281RGac  of the five observed decay chains using extended intervals of time     
+281RGac  (|Dt |> 5T{-1/2}), energy and position (exceeding 4.7 standard         
+281RGac  deviations). The estimates are 6|*10{+-6}, 10{+-3}, 10{+-5},           
+281RGac  3|*10{+-11} and 3|*10{+-11}.                                           
+281RG c  Theory: see Nuclear Science References.                                
+281RG c  Assignment: {+249}Bk({+48}Ca,4n), E(Lab)=252 MeV at target center      
+281RG2c  (2010Og01). The evaluator suggests that the                            
+281RG5c  properties attributed to {+293}117 and its daughters should be         
+281RG6c  considered as tentative until confirmed independently. The SF          
+281RGac  half-life is derived by the experimenters                              
+281RGac  from the events observed for which details are not provided.           
+281RG  XA28513 A DECAY (5.5 S)                                                  
+281RG  L X                             26 S      +25-8                          
+281RG CL $T(SF):reported by 2010Og01.                                           
+281RG CL $T(SF)(theory): 42 ms from 2010So12.                                   
+281RG CL $^TKE: 218 MeV {I5} from two measured fragments.                       
+281RG2 L %SF AP 100$ %A=?                                                       
+281RG CL %A$no |a decay events observed.                                        
+281RG CL $Q(|a)(theory)=10370 keV from 2010So12.                                
+281RG CL J$:|W(p)=13/2+ FROM 1997MO25 (theory)                                  
+281RG CL $B2:0.099FROM 1995MO29;0.147 FROM 2003MU15 (theory)                    
+281RGX L XREF=A                                                                 
+                                                                                
+281RG    28513 A DECAY (5.5 S)         2010Og01                  ENSDF    201008
+281RG  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+281RG CL           {+281}Rg IS FED BY TWO LEVELS FROM PARENT {+285}113.         
+281RG2CL BOTH PARENT STATES ARE DESCRIBED BY A COMBINED HALF-LIFE.              
+281RG3CL NO ASSUMPTIONS ABOUT A                                                 
+281RG4CL GROUND STATE ARE MADE BY THE EXPERIMENTERS.                            
+281RG CL           ALPHA ENERGIES FROM ADOPTED LEVELS                           
+28513  P X                             5.5 S     +50-18         9.615           
+28513 CP QP$9615 keV {I110}                                                     
+285132CP corresponding to E|a=9.480 MeV {I110} from (2010Og01).                 
+28513 cP E,T$from Adopted Levels                                                
+281RG  N                       1.0     AP                                       
+281RG  L X                             26 S      +25-8                         ?
+281RG CL $T(SF):reported by 2010Og01.                                           
+281RG  A 9480                                                                   
+281RG CA E$9840 keV {I110}                                                      
+281RG  A 9740      80                                                           
+                                                                                
+281CN    COMMENTS                                                ENSDF    201511
+281CN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-OCT-2015                     
+281CN C  TITL$NUCLEAR DATA SHEETS FOR 281CN                                     
+281CN c  AUTH$BALRAJ SINGH                                                      
+281CN c  INST$Department of Physics and Astronomy,                              
+281CN#c       McMaster University, Hamilton, Ontario,                           
+281CN#c       Canada, L8S 4M1                                                   
+281CN c  ABST$Information about the identification and half-life of the {+281}Cn
+281CN2c  nuclide from events related to |a decay of {+285}Fl (2010El06,2015Ut02)
+281CN3c  is presented. In the previous evaluation of A=281 nuclides (2005Gu33), 
+281CN4c  this nuclide was classified as unobserved.                             
+281CN c  CUT$Literature available up to Oct 31, 2015 has been consulted.        
+281CN C  CIT$ENSDF                                                              
+281CN c  FUND$Work supported by the Office of Nuclear Physics, Office of        
+281CNxc  Science of the DOE of the U.S.A.                                       
+                                                                                
+281CN    ADOPTED LEVELS                                          ENSDF    201511
+281CN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-OCT-2015$                    
+281CN  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+281CN2 H CUT=12-Aug-2005$                                                       
+281CN  Q -3480     SY   5650 SY  3000  SY  10460 50    2012WA38                 
+281CN cQ $Estimated uncertainties (2012Wa38)=800 for Q(|b{+-}), 700 for S(n),   
+281CNxcQ 680 for S(p)                                                           
+281CN cQ $S(2n)=13160 {I610}, S(2p)=5590 {I710} (syst,2012Wa38)                 
+281CN c  2010El06: first identification of {+281}Cn nuclide in the |a-decay     
+281CN2c  chain of {+285}Fl nuclide. The {+285}Fl nuclide was produced in        
+281CN3c  {+242}Pu({+48}Ca,5n) at E=256 MeV from LBNL cyclotron facility.        
+281CN4c  Evaporation residues were separated by BGS based on magnetic           
+281CN5c  rigidities. Signals from multiwire proportional counters (MWPC) and    
+281CN6c  focal plane detector (FPD) were used to distinguish implantation events
+281CN7c  from radioactive decay events in the FPD. Z=114 events were identified 
+281CN9c  by detecting time and position correlated events corresponding to their
+281CNAc  implantation and subsequent radioactive decay chain terminating in     
+281CNBc  SF decay of {+265}Rf.                                                  
+281CN c  2015Ut02: production of {+281}Cn in {+285}Fl -> {+281}Cn -> {+277}Ds ->
+281CN2c  {+273}Hs -> {+269}Sg -> {+265}Rf decay chain.                          
+281CN3c  {+285}Fl produced in {+240}Pu({+48}Ca,3n),E=245,250 MeV at FLNR-JINR.  
+281CN4c  E=245,250 MeV from U400 cyclotron at FLNR-JINR facility.               
+281CN5c  Targets={+240}Pu enriched to 98.97% at ORNL facility, and 92%          
+281CN6c  enriched at JINR facility, with average thickness of 0.39 mg/cm{+2}    
+281CN7c  {I4} for mixed ORNL/JINR {+240}Pu material. Evaporation residues (ERs) 
+281CN8c  were separated from the incident beam ions, scattered particles, and   
+281CN9c  transfer reaction products by the DGFRS based on magnetic rigidities.  
+281CNAc  Recoils passed through a tof system of two multiwire proportional      
+281CNBc  counters (MWPCs), and were implanted in the DSSD detector system       
+281CNCc  (0.3-mm thick double-sided silicon strip detectors) placed at the      
+281CNDc  final focus of the DGFRS. Events related to Z=114 were identified by   
+281CNEc  detecting time and position correlated events corresponding to their   
+281CNFc  implantation and subsequent |a-decay chain terminating in SF decay.    
+281CN c                                                                         
+281CN c  Earlier identification of {+293}118 in {+208}Pb({+86}Kr,n) reaction at 
+281CN2c  E=449 MeV, and subsequent alpha daughters {+289}Lv, {+285}Fl, {+281}Cn,
+281CN3c  {+277}Ds, {+273}Hs (1999Ni03) from LBNL and cited in 2000Fi12          
+281CN4c  Nuclear Data Sheets-evaluation was retracted in 2002Ni10, and was not  
+281CN5c  confirmed in a repeated experiment at LBNL (2003Gr26). Also, 2001MoZU  
+281CN6c  and 2000HoZZ found no evidence for {+293}118 in {+208}Pb({+86}Kr,n)    
+281CN7c  reaction at 457.6 MeV (2001MoZU) and at 453.9 and 456.7 MeV            
+281CN8c  (2000HoZZ). The statistical analysis by 2000Sc26 indicated that the    
+281CN9c  data of 1999Ni03 did not originate from radioactive decays with an     
+281CNAc  error probability of less than 5%.                                     
+281CN c  Nuclear structure theory: 2014Sh15, 2001Re13, 2000Me20, 2000Pa12,      
+281CN2c  1999Cw01, 1999Sm08, 1998Ba05.                                          
+281CN c  Consult NSR database for several references on theoretical calculations
+281CN2c  of |a decay half-lives and Q values.                                   
+281CN  XA285FL A DECAY (0.15 S)                                                 
+281CN  L 0                              0.13 S   +12-4                          
+281CN2 L %A AP 100                                                              
+281CNX L XREF=A                                                                 
+281CN cL E$observed events and |a decays are assumed to correspond to the       
+281CN2cL ground state of {+281}Cn                                               
+281CN cL T$measured by 2015Ut02 from observation of three events in their work  
+281CN2cL and one event in 2010El06. Theoretical |a decay half-life=1.9 s,       
+281CN5cL |b-decay half-life>100 s (1997Mo25)                                    
+281CN cL J$3/2+ from systematics in 2012Au07 and in theoretical calculations    
+281CN2cL of 1997Mo25                                                            
+281CN cL $Measured E|a=10.30 MeV {I4} from {+281}Cn decay (2015Ut02)            
+                                                                                
+281CN    285FL A DECAY (0.15 S)        2010EL06,2015UT02         ENSDF    201511
+281CN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-OCT-2015$                    
+281CN c  2010El06: {+285}Fl nuclide produced in {+242}Pu({+48}Ca,5n) at         
+281CN2c  E=256 MeV from LBNL cyclotron facility. Evaporation residues were      
+281CN3c  separated by BGS based on magnetic rigidities. Signals from            
+281CN4c  multiwire proportional counters (MWPC) and focal plane detector (FPD)  
+281CN5c  were used to distinguish implantation events from radioactive decay    
+281CN6c  events in the FPD. Z=114 events were identified by detecting time      
+281CN7c  and position correlated events corresponding to their implantation     
+281CN8c  and subsequent radioactive decay chain terminating in SF decay.        
+281CN t  Decay chain (2010El06): evaporation residues at 15.97 MeV {I4}         
+281CN t  E{-|a1}=1.64 MeV {I10},  t{-1}=0.181 s,   -assigned to {+285}Fl decay  
+281CN t  E{-|a2}=10.31 MeV {I4},  t{-2}=0.140 s,   -assigned to {+281}Cn decay  
+281CN t  E{-|a3}=10.57 MeV {I4},  t{-3}=8.21 ms,   -assigned to {+277}Ds decay  
+281CN t  E{-|a4}=9.59 MeV {I4},   t{-4}=346 ms,    -assigned to {+273}Hs decay  
+281CN t  E{-|a5}=8.57 MeV {I10},  t{-4}=185 s,     -assigned to {+269}Sg decay  
+281CN t  E(SF)=208.1 MeV,         t(SF)=152 s,     -assigned to {+265}Rf decay  
+281CN c  2015Ut02: {+285}Fl produced in {+239},{+240}Pu({+48}Ca,2n),            
+281CN2c  E=245,250 MeV at U400 cyclotron at FLNR-JINR facility.                 
+281CN3c  Targets={+240}Pu enriched to 98.97% at ORNL facility, and 92%          
+281CN4c  enriched at JINR facility, with average thickness of 0.39 mg/cm{+2}    
+281CN5c  {I4} for mixed ORNL/JINR {+240}Pu material. Evaporation residues (ERs) 
+281CN6c  were separated from the incident beam ions, scattered particles, and   
+281CN7c  transfer reaction products by the DGFRS based on magnetic rigidities.  
+281CN8c  Recoils passed through a tof system of two multiwire proportional      
+281CN9c  counters (MWPCs), and were implanted in the DSSD detector system       
+281CNAc  (0.3-mm thick double-sided silicon strip detectors) placed at the      
+281CNBc  final focus of the DGFRS. Events related to Z=114 were identified by   
+281CNCc  detecting time and position correlated events corresponding to their   
+281CNDc  implantation and subsequent |a-decay chain terminating in SF decay.    
+281CNEc  {+239}Pu target was 98.2% enriched obtained from JINR facility,        
+281CNFc  thickness=0.50 mg/cm{+2} {I5}                                          
+281CN t  Decay chain #1 (2015Ut02): evaporation residues at 12.56 MeV           
+281CN t  E{-|a1}=10.457 MeV {I50}, t{-1}=0.3998 s  -assigned to {+285}Fl decay  
+281CN t  E{-|a2}=10.292 MeV {I50}, t{-2}=0.0889 s  -assigned to {+281}Cn decay  
+281CN t  E{-|a3}=10.461 MeV {I156}, t{-3}=3.852 ms -assigned to {+277}Ds decay  
+281CN t  E{-|a4}=9.529 MeV {I50}, t{-4}=1.2136 s   -assigned to {+273}Hs decay  
+281CN t  E{-|a5}=8.448 MeV {I263}, t{-5}=521.84 s  -assigned to {+269}Sg decay  
+281CN t  E(SF)=218 MeV, t(SF)=10.37 s              -assigned to {+265}Rf decay  
+281CN t                                                                         
+281CN t  Decay chain #2 (2015Ut02): evaporation residues at 10.20 MeV           
+281CN t  E{-|a1}=10.391 MeV {I62}, t{-1}=0.2525 s  -assigned to {+285}Fl decay  
+281CN t  E{-|a2}=1.73 MeV, t{-2}=0.3684 s          -assigned to {+281}Cn decay  
+281CN t  E{-|a3}=10.536 MeV {I167}, t{-3}=8.282 ms -assigned to {+277}Ds decay  
+281CN t  E{-|a4}=9.462 MeV {I62}, t{-4}=1.9517 s   -assigned to {+273}Hs decay  
+281CN t  E{-|a5}=8.482 MeV {I62}, t{-5}=95.42 s    -assigned to {+269}Sg decay  
+281CN t  E(SF)=220 MeV, t(SF)=99.95 s              -assigned to {+265}Rf decay  
+281CN t                                                                         
+281CN t  Decay chain #3 (2015Ut02): evaporation residues at 9.98 MeV            
+281CN t  E{-|a1}=10.359 MeV {I61}, t{-1}=0.0432 s  -assigned to {+285}Fl decay  
+281CN t  E{-|a2}=10.179 MeV {I220}, t{-2}=0.1433 s -assigned to {+281}Cn decay  
+281CN t  E{-|a3}=10.237 MeV {I220}, t{-3}=3.223 ms -assigned to {+277}Ds decay  
+281CN t  E{-|a4}=9.475 MeV {I61}, t{-4}=0.9013 s   -assigned to {+273}Hs decay  
+281CN t  E{-|a5}=missing, t{-5}=0.9013 s           -assigned to {+269}Sg decay  
+281CN t  E(SF)=166 MeV, t(SF)=491.06 s             -assigned to {+265}Rf decay  
+285FL  P  0                             0.15 S   +14-5           10.56E3  5     
+285FL cP E$Assumed to be the g.s.                                               
+285FL cP QP$From measured E|a=10.41 MeV {I5} (2015Ut02). Other:                 
+285FL2cP 10520 {I200} (syst,2012Wa38)                                           
+285FL cP T$measured by 2015Ut02 from observation of three events in their work  
+285FL2cP and one event in 2010El06.                                             
+281CN  N                         1     AP                                       
+281CN cN BR$%|a |? 100                                                          
+281CN  L  0                             0.13 S   +12-4                          
+281CN cL E$assumed to be the g.s.                                               
+281CN  A 10.41E3   5                                                            
+281CN cA E$from 2015Ut02                                                        
+                                                                                

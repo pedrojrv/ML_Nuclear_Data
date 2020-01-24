@@ -1,0 +1,1760 @@
+  7      COMMENTS                                                02NP     200212
+  7    H TYP=FUL$AUT=D.R. Tilley, et al$CUT=23-Aug-2001$CIT=NP A708, 3 (2002)$  
+  7   C  TITL$ABSTRACT FOR A=7                                                  
+  7   c  AUTH$D.R. Tilley, J.H. Kelley                                          
+  7   c  INST$Triangle Universities Nuclear Laboratory                          
+  7  #c       Durham, NC 27708 and Dept. of Physics, North Carolina             
+  7  #c       State University, Raleigh, |a(N) 27695                            
+  7   c  AUTH$C.M. Cheves, J.L. Godwin, G. Sheu,H.R. Weller                     
+  7   c  INST$Triangle Universities Nuclear Laboratory                          
+  7  #c       Durham, NC 27708 and Dept. of Physics, Duke University            
+  7  #c       Durham, NC 27708                                                  
+  7   c  AUTH$G.M. Hale                                                         
+  7   c  INST$Los Alamos National Laboratory, Los Alamos, NM 87545              
+  7   c  AUTH$H.M. Hoffmann                                                     
+  7   c  INST$Universiteat Erlangen-Neurenberg, Germany                         
+  7   c  ABST$Compilation of energy levels of A=7 nuclei, with emphasis on the  
+  7  2c  review of material leading to information about structure of the A=7   
+  7  3c  system. This work is a summary of 2002Ti10, D.R. Tilley, C.M. Cheves,  
+  7  4c  J.L. Godwin, G.M. Hale, H.M. Hofmann, J.H. Kelley, G. Sheu and H.R.    
+  7  5c  Weller, Nuclear Physics A 708 (2002) 3.                                
+  7   c  CUT$August 23, 2001.                                                   
+  7   c  FUND$This work is supported by the US Department of Energy, Office of  
+  7  xc  High Energy and Nuclear Physics, under: contract no. DEFGO2-97-ER41042 
+  7  xc  (North Carolina State University); contract no. DEFGO2-97-ER41033      
+  7  xc  (Duke University)                                                      
+  7   C  CIT$NP A708, 3 (2002)                                                  
+                                                                                
+  7      REFERENCES                                              02NP     200302
+  7    R 1949SE20 JOUR PHRVA 75 39                                              
+  7    R 1949TU06 JOUR PHRVA 76 148                                             
+  7    R 1949WI13 JOUR PHRVA 76 614                                             
+  7    R 1950VA01 JOUR PHRVA 79 900                                             
+  7    R 1951DI12 JOUR PPSOA 64A 902                                            
+  7    R 1953KR16 JOUR PHRVA 90 610                                             
+  7    R 1955RE16 JOUR PHRVA 98 1289                                            
+  7    R 1956BO36 JOUR JPRAA 17 363                                             
+  7    R 1956NE13 JOUR PHRVA 103 1758                                           
+  7    R 1957SL01 JOUR PHRVA 108 809                                            
+  7    R 1957WR37 JOUR NSENA 2 427                                              
+  7    R 1958MI92 JOUR PHRVA 112 2048                                           
+  7    R 1962TA11 JOUR CJPHA 40 926                                             
+  7    R 1963HA53 JOUR PHRVA 132 2607                                           
+  7    R 1963MC09 JOUR PHRVA 130 2034                                           
+  7    R 1963TO04 JOUR PHRVA 130 1112                                           
+  7    R 1964JE01 JOUR NUPHA 50 516                                             
+  7    R 1964KR04 JOUR KERNA 7 748                                              
+  7    R 1965BA39 JOUR PHLTA 19 35                                              
+  7    R 1965CH11 JOUR NUPHA 66 230                                             
+  7    R 1965EN01 JOUR NUPHA 72 449                                             
+  7    R 1965GL03 JOUR NUPHA 63 650                                             
+  7    R 1965HA17 JOUR NUPHA 69 81                                              
+  7    R 1965HA19 JOUR NUPHA 69 241                                             
+  7    R 1965OG03 JOUR YAFIA 2 670                                              
+  7    R 1966CE05 JOUR PHRVA 152 950                                            
+  7    R 1966HA09 JOUR NUPHA 75 592                                             
+  7    R 1966PA11 JOUR PHRVA 147 774                                            
+  7    R 1966SC26 JOUR NUPHA 88 373                                             
+  7    R 1967CA02 JOUR NUPAB A92 222                                            
+  7    R 1967CO01 JOUR NUPAB A91 273                                            
+  7    R 1967HA08 JOUR NUPAB A92 260                                            
+  7    R 1967LO07 JOUR PRLTA 19 1141                                            
+  7    R 1967MC14 JOUR PRLTA 19 1442                                            
+  7    R 1967MO21 JOUR NUPAB A103 238                                           
+  7    R 1967SP10 JOUR PHRVA 163 964                                            
+  7    R 1967VE01 JOUR PHRVA 153 1127                                           
+  7    R 1968BA41 JOUR NUPAB A120 297                                           
+  7    R 1968BR23 JOUR PHRVA 174 1247                                           
+  7    R 1968DU09 JOUR NUPAB A122 153                                           
+  7    R 1968HO03 JOUR NUPAB A107 139                                           
+  7    R 1968IV01 JOUR NUPAB A110 441                                           
+  7    R 1968LU02 JOUR NUPAB A109 676                                           
+  7    R 1968MA02 JOUR NUPAB A106 251                                           
+  7    R 1968SP01 JOUR NUPAB A113 395                                           
+  7    R 1968VA02 JOUR NUPAB A106 138                                           
+  7    R 1969AN25 JOUR NUPAB A139 10                                            
+  7    R 1969DE28 JOUR YAFIA 10 1116                                            
+  7    R 1969DO02 JOUR NUPAB A129 577                                           
+  7    R 1969HO39 JOUR PHNOA 3 215                                              
+  7    R 1969HU05 JOUR NUPAB A127 417                                           
+  7    R 1969LE22 JOUR KPSJA 2 1                                                
+  7    R 1969MA13 JOUR JUPSA 26 1344                                            
+  7    R 1969OR01 JOUR NUPAB A139 226                                           
+  7    R 1969PE22 JOUR NUPAB A129 209                                           
+  7    R 1969PI11 JOUR NUPAB A136 496                                           
+  7    R 1969PR04 JOUR NUPAB A131 679                                           
+  7    R 1969ST02 JOUR PHRVA 178 2024                                           
+  7    R 1969TAZX REPT AECL-3512,P29,Taylor                                     
+  7    R 1970GA07 JOUR PRVCA C1 1333                                            
+  7    R 1970JA17 JOUR NUPAB A153 49                                            
+  7    R 1970JO21 JOUR PRVCA C2 1616                                            
+  7    R 1970LA14 JOUR NUPAB A152 516                                           
+  7    R 1970MUZU CONF 70-10-02,P452                                            
+  7    R 1970PO03 JOUR NUPAB A147 65                                            
+  7    R 1970SC23 JOUR NUPAB A153 97                                            
+  7    R 1970SP02 JOUR NUPAB A145 449                                           
+  7    R 1970TH08 JOUR NUPAB A155 659                                           
+  7    R 1971KO24 JOUR NUPAB A175 156                                           
+  7    R 1971MA44 JOUR NUPAB A172 166                                           
+  7    R 1971PI06 JOUR AUJPA 24 459                                             
+  7    R 1971SA27 JOUR APOBB B2 473                                             
+  7    R 1971SC16 JOUR NUPAB A173 449                                           
+  7    R 1971VA20 JOUR NUPAB A174 173                                           
+  7    R 1972BO02 JOUR PRVCA C5 284                                             
+  7    R 1972CA04 JOUR AJPIA 40 9                                               
+  7    R 1972OP01 JOUR NUPAB A180 569                                           
+  7    R 1972SZ02 JOUR NUPAB A195 527                                           
+  7    R 1973AN31 JOUR PZETA 18 501                                             
+  7    R 1973HI03 JOUR PYLBB 44B 50                                             
+  7    R 1973KE13 JOUR NUPAB A210 502                                           
+  7    R 1973KU19 JOUR YAFIA 18 20                                              
+  7    R 1973LI02 JOUR NUPAB A199 513                                           
+  7    R 1973PO10 JOUR IJARA 24 471                                             
+  7    R 1973SO08 JOUR PRLTA 31 1359                                            
+  7    R 1973WO06 JOUR PRLTA 31 607                                             
+  7    R 1974AJ01 JOUR NUPAB A227 1                                             
+  7    R 1974BU16 JOUR PRVCA C10 1299                                           
+  7    R 1974CR05 JOUR NSENA 55 450                                             
+  7    R 1974GO24 JOUR YAFIA 20 261                                             
+  7    R 1974GO26 JOUR IJARA 25 373                                             
+  7    R 1975AZ02 JOUR YAFIA 22 225                                             
+  7    R 1975HO01 JOUR NUPAB A237 111                                           
+  7    R 1975LA16 JOUR IJARA 26 131                                             
+  7    R 1975MC02 JOUR PRVCA C11 370                                            
+  7    R 1976BA63 JOUR ADNDA 18 433                                             
+  7    R 1976BO45 JOUR RRPQA 21 775                                             
+  7    R 1976DO10 JOUR RRPQA 21 967                                             
+  7    R 1976PO06 JOUR PRVCA C14 438                                            
+  7    R 1976SE06 JOUR PRVCA C13 2149                                           
+  7    R 1976WA12 JOUR NUPAB A269 286                                           
+  7    R 1976WO11 JOUR PRVCA C14 815                                            
+  7    R 1977BA37 JOUR PYLBB 69B 433                                            
+  7    R 1977BA51 JOUR PRVCA C16 1526                                           
+  7    R 1977EL09 JOUR PRVCA C16 1744                                           
+  7    R 1977FE05 JOUR CJPHA 55 428                                             
+  7    R 1977GL05 JOUR NUPAB A286 31                                            
+  7    R 1977NEZX JOUR BAPSA 22 551 BJ1,Nelson                                  
+  7    R 1977SL02 JOUR APOBB B8 227                                             
+  7    R 1978BA75 JOUR HPACA 51 680                                             
+  7    R 1978DE13 JOUR YAFIA 27 882                                             
+  7    R 1978DY01 JOUR PRVCA C18 2316                                           
+  7    R 1978GL01 JOUR PRLTA 40 748                                             
+  7    R 1978LU05 JOUR NUPAB A297 189                                           
+  7    R 1978MO09 JOUR ZPAAD A287 211                                           
+  7    R 1978NA05 JOUR NUPAB A296 431                                           
+  7    R 1978WIZO JOUR BAPSA 23 951 EC1,Williams                                
+  7    R 1979AJ01 JOUR NUPAB A320 1                                             
+  7    R 1979BR04 JOUR NUPAB A314 207                                           
+  7    R 1979BU17 JOUR IANFA 43 158                                             
+  7    R 1979GO07 JOUR NUPAB A320 296                                           
+  7    R 1979HO11 JOUR NSENA 69 22                                              
+  7    R 1979KN01 JOUR NSENA 69 223                                             
+  7    R 1979NA04 JOUR PRLTA 42 1465                                            
+  7    R 1979RI12 JOUR PRVCA C20 1583                                           
+  7    R 1979RU07 JOUR NSENA 71 280                                             
+  7    R 1979ST03 JOUR PRVCA C19 1159                                           
+  7    R 1980DE43 JOUR IANFA 44 2375                                            
+  7    R 1980IS10 JOUR YAFIA 32 11                                              
+  7    R 1980NE11 JOUR IANFA 44 1093                                            
+  7    R 1980OL06 JOUR NSENA 74 219                                             
+  7    R 1980TI05 JOUR YAFIA 31 1396                                            
+  7    R 1980ZE03 JOUR PRVCA 22 1534                                            
+  7    R 1980ZH05 JOUR YTHLD 2 219                                              
+  7    R 1981AL03 JOUR PRVCA 23 473                                             
+  7    R 1981AS07 JOUR PRVCA 23 2173                                            
+  7    R 1981BA37 JOUR NUPAB 368 74                                             
+  7    R 1981BA38 JOUR NUPAB 368 93                                             
+  7    R 1981BIZW REPT IPN 1981 Annual,PN94,Bimbot                              
+  7    R 1981BO03 JOUR PRLTA 46 218                                             
+  7    R 1981CH12 JOUR NUPAB 364 43                                             
+  7    R 1981YU01 JOUR YTHLD 3 155                                              
+  7    R 1982BI06 JOUR PYLBB 114 311                                            
+  7    R 1982BU09 JOUR PRVCA 26 713                                             
+  7    R 1982CHZF REPT NBS-SP-626,P100,Christmas                                
+  7    R 1982COZU REPT NEANDC(OR)-157/U,P30,Conde                               
+  7    R 1982GI01 JOUR NUPAB 377 389                                            
+  7    R 1982LA09 JOUR NCLTA 33 433                                             
+  7    R 1982PE06 JOUR NUPAB 383 355                                            
+  7    R 1982RUZV REPT NBS-SP-626,P5,Rutledge                                   
+  7    R 1982SM02 JOUR NUPAB 373 305                                            
+  7    R 1982WA02 JOUR PRVCA 25 762                                             
+  7    R 1983BA15 JOUR PRVCA 27 1724                                            
+  7    R 1983BR32 JOUR PRLTA 51 1320                                            
+  7    R 1983DA14 JOUR PRVCA 28 885                                             
+  7    R 1983DO07 JOUR PRVCA 28 875                                             
+  7    R 1983KU10 JOUR NUPAB 405 627                                            
+  7    R 1983LI07 JOUR PYLBB 121 377                                            
+  7    R 1983MA34 JOUR PRVCA 28 879                                             
+  7    R 1983NO03 JOUR PRVCA 27 1728                                            
+  7    R 1983RI01 JOUR NUPAB 394 428                                            
+  7    R 1983SE07 JOUR PRLTA 50 1831                                            
+  7    R 1983VD03 JOUR IANFA 47 2219                                            
+  7    R 1984AJ01 JOUR NUPAB 413 1                                              
+  7    R 1984AN16 JOUR YAFIA 40 53                                              
+  7    R 1984BR03 JOUR JPHGB 10 363                                             
+  7    R 1984DA22 JOUR PRVCA 30 1999                                            
+  7    R 1984DO16 JOUR NUIMA 224 97                                             
+  7    R 1984EV01 JOUR CJPHA 62 1139                                            
+  7    R 1984FI10 JOUR NUPAB 423 121                                            
+  7    R 1984SK01 JOUR NUPAB 414 141                                            
+  7    R 1984ZA07 JOUR YAFIA 39 1081                                            
+  7    R 1985AL29 JOUR IANFA 49 2115                                            
+  7    R 1985CE12 JOUR NUPAB 441 477                                            
+  7    R 1985CH37 JOUR JNSTA 22 771                                             
+  7    R 1985DE17 JOUR NUPAB 438 112                                            
+  7    R 1985DI08 JOUR ZPAAD 320 649                                            
+  7    R 1985FR01 JOUR NUPAB 433 351                                            
+  7    R 1985KO29 JOUR IANFA 49 1026                                            
+  7    R 1985KO47 JOUR NIMBE 12 325                                             
+  7    R 1985SE17 JOUR NUPAB 442 215                                            
+  7    R 1985ZIZY REPT ECN FYS/RASA-85/19,Zijp                                  
+  7    R 1986AN29 JOUR PRLTA 57 2375                                            
+  7    R 1986CH24 JOUR RAEFB 92 227                                             
+  7    R 1986CO02 JOUR PRVCA 33 915                                             
+  7    R 1986ER05 JOUR YAFIA 43 1359                                            
+  7    R 1986HA27 JOUR NUPAB 456 253                                            
+  7    R 1986PE05 JOUR NUPAB 453 542                                            
+  7    R 1986SI18 JOUR NUPAB 458 387                                            
+  7    R 1987BO40 JOUR RRPQA 32 497                                             
+  7    R 1987BU27 JOUR IANFA 51 615                                             
+  7    R 1987CO02 JOUR PRVCA 35 126                                             
+  7    R 1987HE24 JOUR NIMAE 257 97                                             
+  7    R 1987KA17 JOUR PRVCA 36 425                                             
+  7    R 1987SC08 JOUR NSENA 96 159                                             
+  7    R 1987TO06 JOUR NUPAB 463 429c                                           
+  7    R 1987WI09 JOUR PRVCA 35 1734                                            
+  7    R 1988AJ01 JOUR NUPAB 490 1                                              
+  7    R 1988AN06 JOUR NUPAB 482 331c                                           
+  7    R 1988BE34 JOUR IANFA 52 100                                             
+  7    R 1988BO15 JOUR JPHGB 14 Supplement S399                                 
+  7    R 1988HA25 JOUR PRVCA 38 525                                             
+  7    R 1988KO03 JOUR PRVCA 37 917                                             
+  7    R 1988SA13 JOUR NIMBE 30 123                                             
+  7    R 1989CE03 JOUR CZYPA 39 1263                                            
+  7    R 1989DM02 JOUR IANFA 53 161                                             
+  7    R 1989GU13 JOUR NIMAE 277 458                                            
+  7    R 1989HA18 JOUR NUPAB 496 205                                            
+  7    R 1989KA30 JOUR NUPAB 501 108                                            
+  7    R 1989LI09 JOUR PYLBB 219 394                                            
+  7    R 1989OS06 JOUR YAFIA 50 656                                             
+  7    R 1989SZ02 JOUR ZPAAD 333 271                                            
+  7    R 1989TO04 JOUR NUPAB 493 1                                              
+  7    R 1990CH03 JOUR PRVCA 41 1062                                            
+  7    R 1990LI21 JOUR PYLBB 244 173                                            
+  7    R 1990RA08 JOUR PRVCA 41 1920                                            
+  7    R 1991AL04 JOUR ARISE 42 155                                             
+  7    R 1991AN17 JOUR ZPAAD 340 105                                            
+  7    R 1991GAZV CONF Minsk,P317,Gaidaenko                                     
+  7    R 1991GL01 JOUR PRVCA 43 1664                                            
+  7    R 1991KO41 JOUR IANFA 55 149                                             
+  7    R 1991RI03 JOUR JPGPE 17 35                                              
+  7    R 1991SZ06 JOUR NUPAB 531 77                                             
+  7    R 1991WE11 JOUR NSENA 109 113                                            
+  7    R 1991YO04 JOUR NUPAB 533 321                                            
+  7    R 1992RA09 JOUR YAFIA 55 310                                             
+  7    R 1992RA12 JOUR PRVCA 46 366                                             
+  7    R 1992WA09 JOUR PRVCA 45 2328                                            
+  7    R 1992ZU03 JOUR BRSPE 56 44                                              
+  7    R 1993AN06 JOUR ZPAAD 345 231                                            
+  7    R 1993CE02 JOUR PRVCA 47 1178                                            
+  7    R 1993MO11 JOUR PRVCA 48 1420                                            
+  7    R 1993SC20 JOUR NSENA 114 352                                            
+  7    R 1994DO32 JOUR BRSPE 58 1910                                            
+  7    R 1994LY02 JOUR BRSPE 58 1915                                            
+  7    R 1994ME01 JOUR PRVCA 49 320                                             
+  7    R 1994SA72 JOUR NIMAE 353 699                                            
+  7    R 1995AU04 JOUR NUPAB 595 409                                            
+  7    R 1995HU17 JOUR NIMAE 356 397                                            
+  7    R 1995SK01 JOUR NUPAB 581 93                                             
+  7    R 1995YA12 JOUR PRVCA 52 2535                                            
+  7    R 1996BU06 JOUR YAFIA 59,No 1,33                                         
+  7    R 1996BU22 JOUR YAFIA 59,No 3,395                                        
+  7    R 1996FIZY BOOK Table of Isotopes, 8th Ed., John Wiley and Sons          
+  7    R 1996JA10 JOUR PRVCA 54 423                                             
+  7    R 1997AU04 JOUR NUPAB 624 1                                              
+  7    R 1997CZ04 JOUR NUPAB 621 119c                                           
+  7    R 1997DE54 JOUR NIMAE 388 443                                            
+  7    R 1997NO04 JOUR PRVCA 56 1144                                            
+  7    R 1997YA02 JOUR PRVCA 55 1890                                            
+  7    R 1998BO38 JOUR NCIAA 111 841                                            
+  7    R 1998FI02 JOUR PRVDA 58 063506                                          
+  7    R 1998GA08 JOUR PRVCA 57 2017                                            
+  7    R 1998GO30 JOUR BRSPE 62 1781                                            
+  7    R 1998IB02 JOUR JNSTA 35 843                                             
+  7    R 1999BO26 JOUR PPNPD 42 17                                              
+  7    R 1999HU20 JOUR EPSLA 171 325                                            
+  7    R 1999KO14 JOUR PRLTA 82 3581                                            
+  7    R 1999NA02 JOUR NIMAE 420 218                                            
+  7    R 1999RA12 JOUR PYLBB 455 69                                             
+  7    R 1999VE03 JOUR YAFIA 62,No 3,565                                        
+  7    R 2000EL08 JOUR NIMBE 168 305                                            
+  7    R 2000GO03 JOUR NIMAE 441 438                                            
+  7    R 2000HE14 JOUR NIMAE 450 35                                             
+  7    R 2000KO46 JOUR PHSTB T88 199                                            
+  7    R 2001BO35 JOUR PRVCA 64 024312                                          
+  7    R 2001BO50 JOUR YAFIA 64,No 9,1698                                       
+  7    R 2001MA05 JOUR NUPAB 679 462                                            
+  7    R 2001NA29 JOUR PRLTA 87 122502                                          
+  7    R 2002GL03 JOUR FECAA 33 261                                             
+  7    R 2002KO24 JOUR YAFIA 65 696                                             
+  7    R 2002TI10 JOUR NUPAB 708 3                                              
+                                                                                
+  7H     ADOPTED LEVELS                                          ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H   XA1H(8HE,PP)                                                             
+  7H   XB2H(8HE,3HE)                                                            
+  7H   XC7LI(PI-,PI+)                                                           
+  7H   XD9BE(PI-,PP)                                                            
+  7H   XE11B(PI-,P3HE)                                                          
+  7H   XF12C(8HE,13N)                                                           
+  7H   Q 23.1E3    SY 0.8E3  SY                        2017WA10                 
+  7H  c  As discussed in 2003Ko11, it is unlikely that {+7}H exists as a bound  
+  7H 2c  state, but a resonant state near the {+3}H+4n threshold with J|p=1/2+  
+  7H 3c  seems likely. Such a state would likely decay either into five outgoing
+  7H 4c  particles ({+3}H+4n) or two particles ({+3}H+{+4}n) if the             
+  7H 5c  tetraneutron exists.                                                   
+  7H  c  An early shell model calculation (1985Po10) obtained J|p=1/2+ for the  
+  7H 2c  {+7}H ground state in two different models. Calculations using the     
+  7H 3c  hyperspherical functions method (2002Ti05,2004Ti02) predicted a {+7}H  
+  7H 4c  resonance several MeV above the {+3}H+4n threshold. A coupled channels 
+  7H 5c  calculation is reported in 2004Ao05 treating {+7}H as a combination of 
+  7H 6c  both a triton plus four neutrons and as a proton plus three dineutrons.
+  7H 7c  The calculated ground state binding energy is about 1.5 MeV,           
+  7H 8c  which is about 7 MeV above the {+3}H+4n threshold.                     
+  7H 9c  A calculation reported in 2009Ao03 using the                           
+  7H ac  generator coordinate method that included basis states with a          
+  7H bc  triton and two dineutrons as well as basis states with a triton and 4  
+  7H cc  neutrons obtained a {+7}H ground state with a binding energy of about  
+  7H dc  3 MeV, which is about 5.5 MeV above the {+3}H+4n threshold.            
+  7H ec  Four neutron emission by {+7}H is discussed in 2011Gr13.               
+  7H  c  Note: Present observations indicate a {+7}H ground state that lies     
+  7H 2c  near the {+3}H+4n threshold; this threshold corresponds to a           
+  7H 3c  binding energy of about 8.5 MeV.                                       
+  7H 4c  In the following reactions, resonance energies in {+7}H are given      
+  7H 5c  relative to the {+3}H+4n threshold.                                    
+  7H  CL T$LABEL=|G                                                             
+  7H  cL S$LABEL=E{-res}({+3}H+4n)(MeV)                                         
+  7H   L 0           (1/2+)            0.09 MEV  +94-6          0.57      42    
+  7H 2 L XREF=AEF                                                               
+  7H  cL $Decay mode not specified. Decay is either to {+3}H+4n or to           
+  7H 2cL {+3}H+{+4}n                                                            
+  7H  cL E$From E{-res}({+3}H+4n)=0.57 MeV {I+42-21}.                           
+  7H  cL $Using E{-res}=0.57 MeV {I+42-21} and assuming the observed resonance  
+  7H 2cL is the {+7}H ground state, the {+7}H mass excess is |DM=47.81 {I+42-21}
+  7H 3cL MeV; this compares with |DM=49.14 {I100} MeV given in 2017Wa10. The    
+  7H 4cL corresponding binding energy is E{-b}=7.91 {I+21-42} MeV.              
+  7H  cL $Using |G=0.09 MeV {I+94-6}, the half life is 0.51|*10{+-20} {I+152-4} 
+  7H 2cL s; this compares with T{-1/2}=0.500|*10{+-21} s given in 2016 NUBASE   
+  7H 3cL (2017Au03).                                                            
+  7H  cL J$Given that {+9}Li with 3 protons and 6 neutrons has J|p=3/2- and     
+  7H 2cL {+11}B with 5 protons and 6 neutrons also has J|p=3/2- as expected for 
+  7H 3cL two s 1/2 protons and one and three p 3/2 protons respectively, it is  
+  7H 5cL reasonable to assume that {+7}H ground state with 1 proton and 6       
+  7H 6cL neutrons would have J|p=1/2+.                                          
+  7H   L 15E3                          2 MEV                     16            ?
+  7H 2 L XREF=D                                                                 
+  7H   L 20E3                          5 MEV                     21            ?
+  7H 2 L XREF=D                                                                 
+                                                                                
+  7H     1H(8HE,PP)                    2003Ko11,2003Ko68         ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H  c  2003Ko11,2003Ko68: A kinematic reconstruction of the 2p momenta        
+  7H 2c  permitted a reconstruction of the {+7}H excitation spectrum;           
+  7H 3c  a resonant state is found near the {+3}H+4n threshold.                 
+  7H  c  This is the first report of a resonant state in {+7}H.                 
+  7H   L 0           (1/2+)            23E-24 S  6                              
+  7H  cL T$ from estimated (by 2003Au02) |G=20 MeV {I5} from figure 5           
+  7H 2cL of 2003Ko11                                                            
+                                                                                
+  7H     2H(8HE,3HE)                   2004Go26,2010Ni10         ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H  c  2004Go26: Deduced that the lower limit for the {+7}H breakup           
+  7H 2c  energy is 50-100 keV above the {+3}H+4n threshold.                     
+  7H  c  2007Te12: Structure in missing mass spectrum includes possible {+7}H   
+  7H 2c  state in 0-3 MeV range.                                                
+  7H  c  2007GoZY: No clear evidence for {+7}H resonances is seen.              
+  7H  c  2010Ni10,2010NiZT: The missing mass spectrum exibits a shoulder        
+  7H 2c  at around 2 MeV, relative to the {+3}H+4n threshold, as well as        
+  7H 3c  a maximum around 10.5 MeV.                                             
+                                                                                
+  7H     7LI(PI-,PI+)                  1981Ev01,2007Fo05         ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H  c  1981Ev01:                                                              
+  7H 2c  In this early study of the {+7}Li(|p{+-},|p{++}){+7}H reaction         
+  7H 3c  no evidence of resonances in {+7}H was seen in the                     
+  7H 4c  spectrum of outgoing |p{++}, but the                                   
+  7H 5c  histogram of the outgoing |p{++} favored a final state as a triton +   
+  7H 6c  {+4}n (tetraneutron) over a                                            
+  7H 7c  triton+4 neutrons or a proton+six neutrons.                            
+  7H  c  2007Fo05: Some structure in the cross section is reported, but there is
+  7H 2c  no explicit mention of {+7}H states.                                   
+                                                                                
+  7H     9BE(PI-,PP)                   2009Gu17                  ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H  c  2000Ko46,2007Gu24,2009Gu17: The missing mass spectrum did not show a   
+  7H 2c  resonance near zero but showed evidence of                             
+  7H 3c  two possible broad resonances near 16                                  
+  7H 4c  and 21 MeV, with |G=2 and 5 MeV, respectively.                         
+  7H  CL T$LABEL=|G                                                             
+  7H  cL S$LABEL=E{-res}({+3}H+4n)(MeV)                                         
+  7H   L 15E3                          2 MEV                     16            ?
+  7H   L 20E3                          5 MEV                     21            ?
+                                                                                
+  7H     11B(PI-,P3HE)                 2007Gu24,2009Gu17         ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H  c  2007Gu24,2009Gu17: The missing mass spectrum shows a possible          
+  7H 2c  {+7}H resonance just above threshold.                                  
+  7H   L 0                                                                     ?
+                                                                                
+  7H     12C(8HE,13N)                  2008Ca22                  ENSDF    201903
+  7H   H TYP=FUL$AUT=J.E. Purcell, C.G. Sheu$CUT=23-March-2017$CIT=ENSDF$       
+  7H  c  2007Ca28,2007Ca47,2008Ca22: Using a ,                                  
+  7H 2c  The {+12}C({+8}He,{+13}N){+7}H proton transfer reaction was            
+  7H 3c  studied by impinging an E({+8}He)=15.4 MeV/nucleon beam on a           
+  7H 4c  C{-4}H{-10} gas target. The {+13}N and tritium (from {+7}H decay)      
+  7H 5c  charged reaction products were detected in coincidence mode.           
+  7H 6c  Seven events were associated with {+7}H.                               
+  7H 7c  The energy of the ground state {+7}H resonance was                     
+  7H 8c  determined to be E{-res}=0.57 {I+42-21} MeV above the {+3}H+4n         
+  7H 9c  breakup threshold with a width of |G=0.09 MeV {I+94-6}. The            
+  7H ac  uncertainties in E{-res} and |G are large because of the small number  
+  7H bc  of observed events.                                                    
+  7H  CL T$LABEL=|G                                                             
+  7H  cL S$LABEL=E{-res}({+3}H+4n)(MeV)                                         
+  7H   L 0                             0.09 MEV  +94-6          0.57      42    
+  7H  cL E$ The resonance at 0.57 MeV {I+42-21} above the {+3}H+4n threshold    
+  7H  cL T$ |G=0.09 MeV {I+94-6} gives half-life of 0.44|*10{+-21} s to         
+  7H 2cL 15|*10{+-21} s                                                         
+  7H  cL $ d|s/d|W=40 |mb/sr {I+58-31}                                          
+                                                                                
+  7HE    ADOPTED LEVELS                2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE  XA1H(8HE,D)                                                              
+  7HE  XB7LI(PI-,G)                                                             
+  7HE  XC7LI(N,P)                                                               
+  7HE  XD7LI(T,3HE)                                                             
+  7HE  XE7LI(7LI,7BE),(11B,11C)                                                 
+  7HE  XF9BE(14C,16O),(15N,17F)                                                 
+  7HE  XG10B(PI-,PD)                                                            
+  7HE  XH12C(8HE,6HE+N)                                                         
+  7HE  Q 11166     8 -410    8 2.31E4  3               2012WA38                 
+  7HE CQ Note: Current evaluation has used the following Q record               
+  7HE  Q 11202     30-445    30 23.04E3 26             1995AU04                 
+  7HE  L 0.0         (3/2)-            150 KEV   20                             
+  7HE2 L ISPIN=3/2 $ %N=?                                                       
+  7HE3 L XREF=ABCDEFGH                                                          
+  7HE CL WIDTH     FROM 7LI(T,3HE)                                              
+  7HE  L 2.92E3     9 (5/2-)           1.99 MEV  17                             
+  7HE2 L ISPIN=3/2 $ %N=?                                                       
+  7HE3 L XREF=EFG                                                               
+  7HE  L 5.8E3      3                  4 MEV      1                            ?
+  7HE2 L %N=?                                                                   
+  7HE3 L XREF=EFG                                                               
+                                                                                
+  7HE    1H(8HE,D)                     2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1999KO14: 1H(8HE,^d) E=50 MEV/NUCLEON, MEASURED SIGMA(THETA),          
+  7HE2C  DEUTERON SPECTRA, ND^-, (HE)D^-COIN. 7HE DEDUCED EXCITED STATE         
+  7HE3C  ENERGY, ^width, POSSIBLE J, PI.                                        
+  7HE C  2000KO46: 1H(8HE,^d) E NOT GIVEN, MEASURED                             
+  7HE2C  DEUTERON SPECTRA, (HE)D^-COIN. 7HE DEDUCED EXCITED STATE ENERGY,       
+  7HE3C  ^width, POSSIBLE J, PI. 1H(8HE,2P), 7H DEDUCED POSSIBLE RESONANCE.     
+  7HE C  2002KO24: 1H(8HE,^d) E=50 MEV/NUCLEON, MEASURED PARTICLE SPECTRA.      
+  7HE2C  7HE DEDUCED EXCITED STATE.                                             
+  7HE  L 2.9E3     3  (5/2-)           2.2 MEV    3                             
+  7HE2 L WIDTHA/WIDTH=0.7 2                                                     
+                                                                                
+  7HE    7LI(PI-,G)                    2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1986PE05: 7LI(PI-,G) E AT REST, MEASURED E{-GAMMA}, I{-GAMMA}. 7HE     
+  7HE2C  DEDUCED IAS TRANSITION ISOVECTOR M1 CHARACTER, BRANCHING RATIO.        
+  7HE  L 0                                                                      
+                                                                                
+  7HE    7LI(N,P)                      2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1971KO24: 7LI(N,P) E=19 MEV, MEASURED SIGMA(THETA).                    
+  7HE C  1973LI02: 7LI(N,P) E=14.8 MEV, MEASURED SIGMA(E{-P},THETA).            
+  7HE C  1983BR32: 7LI(N,P) E{-N}=60 MEV, MEASURED LARGE STRUCTURE AT HIGH      
+  7HE2C  EXCITATIONS WHICH IS ANALOG OF STATE IN 7LI AT 31 MEV.                 
+  7HE C  1984BR03; 7LI(N,P) E=60 MEV, MEASURED SIGMA(THETA), 7HE DEDUCED L=1    
+  7HE2C  DIPOLE STRENGTH CONTRIBUTION.                                          
+  7HE C  1987HE24: 7LI(N,P) E=198 MEV, MEASURED SIGMA(E{-P}), SIGMA(THETA{-P}). 
+  7HE  L 0                             0.2 MEV   LT                             
+  7HE  L 6E3       AP                                                          ?
+  7HE  L 20.E3      1                  9 MEV     2                             ?
+  7HE CL           POSSIBLE MULTIPLET                                           
+                                                                                
+  7HE    7LI(T,3HE)                    2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1969ST02: 7LI(T,3HE) E=22 MEV, MEASURED Q, SIGMA(E(3HE),THETA). 7HE    
+  7HE2C  DEDUCED GROUND STATE LEVEL-WIDTH.                                      
+  7HE  L 0                             160 KEV   30                             
+                                                                                
+  7HE    7LI(7LI,7BE),(11B,11C)        2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1985AL29: 7LI(7LI,7BE) E=70 MEV, MEASURED SIGMA(E(7BE)). 7HE DEDUCED   
+  7HE2C  POSSIBLE LEVEL.                                                        
+  7HE C  1987BO40: 7LI(11B,11C) E{-C.M.}=34.2 MEV, MEASURED ENERGY SPECTRA,     
+  7HE2C  SIGMA(THETA). 7HE DEDUCED LEVELS, GAMMA.                               
+  7HE C  1988BE34: 7LI(11B,11C) E=88, 87 MEV, MEASURED EJECTILE SPECTRA. 7HE    
+  7HE2C  DEDUCED LEVELS, PARAMETERS.                                            
+  7HE C  2001NA29: 7LI(7LI,7BE) E=65 MEV/NUCLEON, MEASURED PARTICLE SPECTRA,    
+  7HE2C  SIGMA(THETA). 7HE DEDUCED RESONANCE FEATURE, ALPHA^-CLUSTER STRUCTURE. 
+  7HE  L 0                                                                      
+                                                                                
+  7HE    9BE(14C,16O),(15N,17F)        2002TI10,2001BO35         02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1987BO40: 9BE(14C,16O) E{-C.M.}=60.26 MEV, MEASURED ENERGY SPECTRA     
+  7HE2C  SIGMA(THETA). 7HE DEDUCED LEVELS, WIDTH.                               
+  7HE C  1988BE34: 9BE(14C,16O) E=152.6,158 MEV, MEASURED EJECTILE SPECTRA.     
+  7HE2C  7HE DEDUCED LEVELS, PARAMETERS.                                        
+  7HE C  1998BO38: 9BE(15N,17F) E=240 MEV, MEASURED PARTICLE SPECTRA. 7HE       
+  7HE2C  DEDUCED RESONANCES, J, PI.                                             
+  7HE C  1999BO26: 9BE(15N,17F) E=240 MEV, MEASURED RESIDUAL NUCLEI SPECTRA.    
+  7HE2C  7HE DEDUCED LEVELS, POSSIBLE J, PI.                                    
+  7HE C  2001BO35: 9BE(15N,17F) E=240, 318.5 MEV, MEASURED PARTICLE SPECTRA,    
+  7HE2C  ANGULAR DISTRIBUTIONS. 7HE DEDUCED LEVELS, J, PI, RESONANCE            
+  7HE3C  PARAMETERS.                                                            
+  7HE  L 0                             140 KEV    2                             
+  7HE  L 3.00E3     9                  1.7 MEV    2                             
+  7HE CL E         AVERAGE OF 2.9 MEV 5, 3.2 MEV 2 AND 3.2 MEV 2                
+  7HE CL WIDTH     AVERAGE OF 1.5 MEV 5, 1.5 MEV 2 AND 1.9 MEV 2                
+  7HE  L 5.8E3      3                  4 MEV      1                             
+                                                                                
+  7HE    10B(PI-,PD)                   2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  1998GO30: 10B(PI-,^pd) E AT REST, MEASURED MISSING MASS SPECTRA. 7HE   
+  7HE2C  DEDUCED EXCITED LEVELS, ^widths.                                       
+  7HE  L 2.8E3      2                  2.0 MEV   AP                             
+                                                                                
+  7HE    12C(8HE,6HE+N)                2002TI10                  02NP     200302
+  7HE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7HE2 H CUT=23-Aug-2001$                                                       
+  7HE C  2001MA05: C(6HE,N ALPHA) E=240 MEV/NUCLEON, MEASURED RELATIVE ENERGY   
+  7HE2C  SPECTRA, SIGMA(THETA). 7HE DEDUCED RESONANCE FEATURES.                 
+  7HE  L 0             (3/2-)          160 KEV                                 ?
+  7HE  L 0.8E3      2  (1/2-)          1.0 MEV    2                            ?
+                                                                                
+  7LI    ADOPTED LEVELS, GAMMAS        1988AJ01,2002TI10         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI  XA7BE EC DECAY                                                           
+  7LI  XB3H(A,N)                                                                
+  7LI  XC3H(A,A)                                                                
+  7LI  XD4HE(3HE,PI+)                                                           
+  7LI  XE6LI(N,N)                                                               
+  7LI  XF6LI(P,PI+)                                                             
+  7LI  XG6LI(D,P)                                                               
+  7LI  XH7LI(G,N),(G,2N)                                                        
+  7LI  XI7LI(E,E'),(E,EP)                                                       
+  7LI  XJ7LI(PI+,PI+'),(PI-,PI-')                                               
+  7LI  XK7LI(N,N)                                                               
+  7LI  XL7LI(P,P)                                                               
+  7LI  XM7LI(3HE,3HE),(3HE,PD)                                                  
+  7LI  XN7LI(A,A),(A,A')                                                        
+  7LI  XO7LI(A,2A)                                                              
+  7LI  XP7LI(12C,12C)                                                           
+  7LI  XQ9BE(PI-,2N)                                                            
+  7LI  XR9BE(P,3HE),(P,PD)                                                      
+  7LI  XS9BE(D,A)                                                               
+  7LI  XT9BE(D,TA)                                                              
+  7LI  XU10B(N,A)                                                               
+  7LI  XV11B(A,8BE)                                                             
+  7LI  XW14N(N,2A)                                                              
+  7LI  XX6LI(N,G) E=THERMAL                                                     
+  7LI  XY7LI(G,G')                                                              
+  7LI  XZ7BE(N,P)                                                               
+  7LI  Xa11BE B-A DECAY                                                         
+  7LI  Q -861.89   8 7251      9973.96 5 -2468         2012WA38                 
+  7LI CQ Note: Current evaluation has used the following Q record               
+  7LI  Q -861.8     7 7249.9 7 9975.4  11-2467.0 5     1995AU04                 
+  7LI CG E         FROM E(LEVEL) DIFFERENCE; RECOIL CORRECTION APPLIED          
+  7LI CG RI        RELATIVE PHOTON BRANCHING FROM EACH LEVEL                    
+  7LI C  SEE 1984AJ01 FOR 6LI+N RESONANCE PARAMETERS                            
+  7LI  L 0.0         3/2-                STABLE                                 
+  7LI2 L ISPIN=1/2$MOMM1=+3.2564268 17 (1996FIZY) $MOME2=-0.0406 8              
+  7LI3 L XREF=ABDFGHIJKLMNPQRSUVWXYZa                                           
+  7LI  L 477.612    31/2-              73 FS     2                              
+  7LI2 L ISPIN=1/2$BE2=8.3E-4 5                                                 
+  7LI3 L XREF=ADFGIJKLMNPQRSUVWXYZa                                             
+  7LI CL T         SEE TABLE 7.2: ENERGY LEVELS OF 7LI (1979AJ01), AND TABLE    
+  7LI2CL 7.5: LEVELS OF 7LI FROM 7LI(E,E') (1988AJ01) AND THE REACTION:         
+  7LI3CL 9BE(D,A), (D,2A)                                                       
+  7LI  G 477.595               M1(+E2)                                          
+  7LI2 G WIDTHG=6.30E-3 EV 31$BM1W=2.75 14$BE2W=19.7 12                         
+  7LI  L 4630      9 7/2-              93 KEV    8                              
+  7LI2 L ISPIN=1/2 $ %3H=? $ %A=?                                               
+  7LI3 L XREF=CDFGIJKLMNOPRSTUVW                                                
+  7LI CL           A R-MATRIX FIT TO 6LI(N,N),(N,T), 4HE(T,N),(T,T) DATA        
+  7LI2CL INDICATES E{-X}=4652 +/- AP 5% AND WIDTH = 69 KEV (2002TI10)           
+  7LI  G 4628                  E2                                               
+  7LI2 G WIDTHG=6E-3 EV$BE2W=4.3                                                
+  7LI  L 6680      505/2-              0.88 MEV  +20-10                         
+  7LI2 L ISPIN=1/2 $ %3H=? $ %A=?                                               
+  7LI3 L XREF=CFGIJKNOTVW                                                       
+  7LI CL           A R-MATRIX FIT TO 6LI(N,N),(N,T), 4HE(T,N),(T,T) DATA        
+  7LI2CL INDICATES E{-X}= 6604 +/- AP 5% AND WIDTH = 918 KEV (2002TI10)         
+  7LI  L 7459.5    105/2-              89 KEV    7                              
+  7LI2 L ISPIN=1/2 $ %N=? $ %3H=? $ %A=?                                        
+  7LI3 L XREF=BCEFGHIJKLNOQRSTV                                                 
+  7LI CL           A R-MATRIX FIT TO 6LI(N,N),(N,T), 4HE(T,N),(T,T) DATA        
+  7LI2CL INDICATES E{-X}= 7454 +/- AP 5% AND WIDTH = 80 (2002TI10)              
+  7LI  L 9.67E+3   107/2-              400 KEV   AP                             
+  7LI2 L ISPIN=1/2 $%N=? $ %3H=? $ %A=?                                         
+  7LI3 L XREF=BCGJLNT                                                           
+  7LI CL           A R-MATRIX FIT TO 6LI(N,N),(N,T), 4HE(T,N),(T,T) DATA        
+  7LI2CL INDICATES E{-X}= 9.57E3 +/- AP 5% AND WIDTH = 437 (2002TI10)           
+  7LI  L 9850        3/2-              1200 KEV  AP                             
+  7LI2 L ISPIN=1/2 $ %N=? $ %A=?                                                
+  7LI3 L XREF=EQ                                                                
+  7LI CL           A R-MATRIX FIT TO 6LI(N,N),(N,T), 4HE(T,N),(T,T) DATA        
+  7LI2CL INDICATES E{-X}=8750 +/- AP 5% AND WIDTH = 4712 KEV (2002TI10).        
+  7LI3CL IN ADDITION, THIS R-MATRIX FIT SUGGESTS A LEVEL AT E{-X}=9.09 MEV      
+  7LI4CL WITH JPI=1/2-, ISPIN=1/2 AND WIDTH=2752 KEV.                           
+  7LI  L 11240     303/2-              260 KEV   35                             
+  7LI2 L ISPIN=3/2 $ %N=? $ %P=?                                                
+  7LI3 L XREF=EIR                                                               
+  7LI  L 13700                         500 KEV   AP                             
+  7LI2 L %N=?                                                                   
+  7LI3 L XREF=H                                                                 
+  7LI  L 14700                         700 KEV   AP                             
+  7LI2 L %N=?                                                                   
+  7LI3 L XREF=H                                                                 
+  7LI CL E         SEE ALSO REACTIONS: 6LI(N,N); 6LI(N,A); 7LI(G,N), (G,2N),    
+  7LI2CL (G,P), (G,PN), (G,D), (G,T); 7LI(3HE,3HE), (3HE,PD); AND 9BE(N,T)      
+  7LI3CL FOR ADDITIONAL STATES.                                                 
+                                                                                
+  7LI    7BE EC DECAY                  2002TI10                  02NP     200302
+  7LI  H TYP=MOD$AUT=J. Tuli$DAT=1-Jul-2009$COM=Ran logft$                      
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1949SE20: EXPERIMENTS ON THE EFFECT OF ATOMIC ELECTRONS ON THE DECAY   
+  7LI2C  CONSTANT OF 7BE.                                                       
+  7LI C  1953KR16: COMPARISON OF THE VALUES OF THE DISINTEGRATION CONSTANT OF   
+  7LI2C  7BE IN Be, Be^O AND Be^F{-2}.                                          
+  7LI C  1956BO36: NOUVELLE DETERMINATION ^de ^la DIFFERENCE DES PERIODES ^de   
+  7LI2C  7BE MATALLIQUE ^et ^de 7BE^F{-2}.                                      
+  7LI C  1970JO21: 7BE, MEASURED T IN CHEMICAL COMPOUNDS, DEDUCED RELATIVE      
+  7LI2C  ELECTRON DENSITY AT NUCLEUS.                                           
+  7LI C  1972SZ02: 10BE(P,ALPHA) E=60-180 KEV, MEASURED SIGMA(E), BRANCHING     
+  7LI2C  RATIO FOR 7BE(EC)7LI, SOLID-STATE DETECTORS.                           
+  7LI C  1998GA08: 7BE(EC)[FROM ^Be PROTON IRRADIATION], MEASURED K, L CAPTURE  
+  7LI2C  X-RAY SPECTRA. HIGH EFFICIENCY CALORIMETER.                            
+  7LI C  1999HU20: 7BE(EC), MEASURED E{-GAMMA}, I{-GAMMA} AND ^T{-1/2}, DEDUCED 
+  7LI2C  DEPENDENCE ON CHEMICAL ENVIRONMENT.                                    
+  7LI C  1999RA12: 7BE(EC)[FROM LI(P,X)], MEASURED T FOR SOURCE IMPLANTED IN    
+  7LI2C  AU AND Al{-2}^O{-3}.                                                   
+  7LI c            The decay scheme is complete since only levels in            
+  7LI2c       {+7}Li below the decay energy are populated.                      
+  7LI c            Evaluation by R. G. Helmer and E. Schonfeld, 1996 and        
+  7LI2c       edited in December 2000.                                          
+  7LI3c       This evaluation was done as part of a collaboration of evaluators 
+  7LI4c       from Laboratoire National Henri Becquerel (LNHB) in France;       
+  7LI5c       Physikalisch-Technische Bundesanstalt (PTB) in Germany; HMS       
+  7LI6c       Sultan and AEA Technology in the United Kingdom; Khlopin Radium   
+  7LI7c       Institute (KRI) in Russia; Centro de Investigaciones              
+  7LI8c       Energeticas, Medioambientales, y Tecnologicas (CIEMAT) and        
+  7LI9c       Universidad Nacional a Distancia (UNED) in Spain; and Brookhaven  
+  7LI0c       National Laboratory (BNL), Lawrence Berkeley National Laboratory  
+  7LIAc       (LBNL), and Idaho National Engineering and Environmental          
+  7LIBc       Laboratory (INEEL) in the United States.                          
+  7LI  N 1.0                    1.0                                             
+  7BE  P 0.0           3/2-            53.22 D   6               861.815  18    
+  7LI  L    0.0       3/2-                                                      
+  7LI  E                         89.56 4  3.324   1                             
+  7LIS E CK=0.9700$CL=0.03004$                                                  
+  7LI  L  477.612   3 1/2-             72.8 FS   20                             
+  7LI  E                         10.44 4  3.556  2                              
+  7LIS E CK=0.9700$CL=0.03004$                                                  
+  7LI cE IE        Adopted weighted average of 10 {I+20-7} [L. H.               
+  7LI2cE      Rumbaugh et al., Phys. Rev. 54 (1938) 657],                       
+  7LI3cE      10.7 {I20} (1949Wi13), 11.8 {I12} (1949Tu06), 12.3 {I6}           
+  7LI4cE      (1951Di12), 10.35 {I8} (1969TaZX), 10.47 {I20} (1970MuZU),        
+  7LI5cE      10.42 {I18} (1973Po10), 10.35 {I8} (1974Go26), 10.10 {I45}        
+  7LI6cE      (1983Ba15), 10.61 {I23} (1983Da14), 10.6 {I5} (1983Do07),         
+  7LI7cE      10.9 {I11} (1983Ku10), 10.7 {I2} (1983Ma34), 9.8 {I5}             
+  7LI8cE      (1983No03), 11.4 {I7} (1984Ev01), 10.61 {I17} (1984Fi10), and     
+  7LI9cE      10.49 {I7} (1984Sk01).  The weighted average of these             
+  7LI0cE      values is 10.444 with an internal uncertainty of 0.039, a         
+  7LIAcE      reduced-|h{+2} of 1.35, and an external uncertainty of 0.045.     
+  7LI cE IE        The adopted branching is dominated by the values of          
+  7LI2cE      1969TaZX, 1974Go24, and 1984Sk01 which contribute 23%, 23%,       
+  7LI3cE      and 30% of the relative weight, respectively. The largest         
+  7LI4cE      contribution to the reduced-|h{+2} is 0.6 from 1951Di12.          
+  7LI cE IE        Values not used are: 10.32 {I16} (1962Ta11, replaced by      
+  7LI2cE      1969TaZX), 10.5 {I2} [W. Poenitz, J. Nucl. Energy 20 (1966)       
+  7LI3cE      825, replaced by 1973Po10].                                       
+  7LI  G  477.6035 20 10.44  4  M1(+E2)   0.20   20    7.3E-7 11                
+  7LI cG E         from evaluation of 2000He14.                                 
+  7LI cG MR        from measured |a value (1964Kr04)                            
+  7LI cG CC        measured value (1964Kr04).  Theoretical value interpolated   
+  7LI2cG      from tables of 1976Ba63 are 7.73x10{+-7} for M1 and 2.96x10{+-6}  
+  7LI3cG      for E2.                                                           
+                                                                                
+  7LI    11BE B-A DECAY                1971Al07,1981Al03,1982Mi08         201404
+  7LI  H TYP=UPD$AUT=G. Sheu and J. Kelley$CUT=22-January-2014$CIT=ENSDF$       
+  7LI2 H COM=Updated data set since last full evaluation$                       
+  7LI c  1971Al07: {+11}Be |b-decay activity was produced in the                
+  7LI2c  {+9}Be(t,p){+11}Be reaction by bombarding 50 |mg/cm{+2} targets with   
+  7LI3c  3.0-MeV tritons. Ge(Li) and NaI(Tl) detectors and Si detectors were    
+  7LI4c  used to measure |g-rays and |a-particles. Eight |g-ray transitions and 
+  7LI5c  T{-1/2}=13.6 s {I6} were measured. In general, the decay intensities   
+  7LI6c  to {+11}B levels are deduced by balancing the observed |g-ray          
+  7LI7c  transitions and |g-decay branching ratios (BRs) with the observed rate 
+  7LI8c  of |b-rays. The strongest {+11}B transition is the 2125-keV |g ray from
+  7LI9c  the first excited state to the ground state, which is directly fed and 
+  7LIac  fed from higher-lying states.                                          
+  7LI c  The delayed |a-particle spectrum was also measured. The interpretation 
+  7LI2c  of this spectrum was complicated because the produced {+11}Be activity 
+  7LI3c  was implanted into the target, and the observed energy                 
+  7LI4c  depended on implantation depth, {+11}B parent level, emission angle    
+  7LI5c  etc.. Analysis of the spectrum appeared most consistent with emission  
+  7LI6c  from {+11}B*(9870). Two other potential |a-emitting states at          
+  7LI7c  {+11}B*(10250,10380) were unfavored.                                   
+  7LI c  The delayed |a BR of 3.0% {I7} from {+11}B*(9870) to {+7}Li{-g.s.} was 
+  7LI2c  deduced, based on an analysis that found an intensity of 33% {I3} for  
+  7LI3c  the 2125-keV |g ray. Observed delayed |a-particles were not found in   
+  7LI4c  coincidence with 478-keV |g-rays from the first excited state of       
+  7LI5c  {+7}Li, but |a-particle emission to the {+7}Li*(478) level             
+  7LI6c  could not be excluded because the relatively thick targets could       
+  7LI7c  absorb the alphas before they reached the detector.                    
+  7LI8c  An upper limit of |< 5% feeding to the excited state was suggested.    
+  7LI c  1981Al03: {+11}Be |b-delayed particle decays were measured using the   
+  7LI2c  {+9}Be(t,p){+11}Be at E{-t}=3.4 MeV. The study was focused on          
+  7LI3c  measuring the |b-delayed |a-particle branch. Thin {+9}Be foils         
+  7LI4c  contained in a Helium-jet system permitted the capture of produced     
+  7LI5c  activity in the He cell; the activity was then deposited on a counting 
+  7LI6c  tape. The activity was transported to a counting area where Si and     
+  7LI7c  NaI(Tl) detectors were used to measure delayed particles and |g-rays.  
+  7LI c  |a particles and corresponding {+7}Li recoils ions were observed       
+  7LI2c  both in singles and in coincidence with 478 keV |g-rays.               
+  7LI3c  The |a-particle energy spectrum was unambiguously assigned to decay    
+  7LI4c  from  {+11}B*(9870). The charged-particle spectrum observed            
+  7LI5c  in coincidence with E{-|g}=485 keV {I10} provided evidence that some   
+  7LI6c  small branching takes place from {+11}B*(9875) to the first            
+  7LI7c  excited {+7}Li*(478) state; the BR for this decay is 12.6% {I12}. It is
+  7LI8c  then concluded that the BR of {+11}B*(9875) to {+7}Li{-g.s.} is 87.4%  
+  7LI9c  {I12}. Compared with the well known E{-|g}=2125 keV intensity (I=0.33  
+  7LIac  {I3}) and various cascades observed in the {+11}Be(|b{+-}) decay       
+  7LIbc  scheme, the BR of 2.9% {I4} to {+11}B*(9875) was deduced.              
+  7LI c  1982Mi08: {+11}Be |b-decay |g-ray activities were studied in the       
+  7LI2c  {+9}Be(t,p){+11}Be reaction by bombarding a {+9}Be foil with 3.0-MeV   
+  7LI3c  tritons. Ge(Li) and NaI(Tl) detectors and Pilot-B scintillation crystal
+  7LI4c  were used to measure singles |g-ray, |g-|g coincidence and |b spectra  
+  7LI5c  and |b-|g coincidences, respectively.                                  
+  7LI c  The intensity of 2125-keV |g-decay of 0.370 {I25} was deduced.         
+  7LI2c  Authors adopted the value of 0.355 {I18}, which is the average         
+  7LI3c  of their value and the previous value of 0.33 {I3} (1971Al07).         
+  7LI c  Comments: By normalizing the I{-|a}/I{-2125|g} of (1981Al03) to the    
+  7LI2c  2125-keV |g-decay intensity=0.355 {I18} from (1982Mi08) a more precise 
+  7LI3c  value of the |b-delayed |a-decay intensity, I{-|a}=0.031 {I4}, was     
+  7LI4c  obtained. In (1981Al02) {+11}B*(9875) was found to decay with BR of    
+  7LI5c  87.4% {I12} and 12.6% {I12} to {+7}Li*(0,478), respectively.           
+ 11BE  P 0           1/2+              13.76 S   7              2845.15   61    
+ 11BE cP T$from weighted average of 13.81 s {I8} (1970Al21) and 13.57 s {I15}   
+ 11BE2cP (1959Wi49).                                                            
+ 11BE cP QP$from 2012Wa38.                                                      
+  7LI cL E,J$From Adopted dataset for {+7}Li in ENSDF database.                 
+  7LI  N 32.258    1           0.031   4               1.0                      
+  7LI PN                                                                     3  
+  7LI  L 0.0         3/2-                                                       
+  7LI  DA769.3     262.71    399873                                             
+  7LI  L 477.612   3 1/2-                                                       
+  7LI  G 477.6       0.39                                                       
+  7LI  DA465.4     260.39    4 9873                                             
+                                                                                
+  7LI    3H(A,N)                       2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1967SP10: 3H(ALPHA,N) E=4-18 MEV, MEASURED SIGMA(E,THETA). 7LI DEDUCED 
+  7LI2C  LEVELS, J, PI.                                                         
+  7LI  L 7.46E3                                                                 
+  7LI  L 9.6E3                                                                  
+                                                                                
+  7LI    3H(A,A)                       2002TI10,1967SP10         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1967SP10: 3H(A,A) E=4-18 MEV, MEASURED SIGMA(E,THETA), 7LI DEDUCED     
+  7LI2C  LEVELS, J, PI.                                                         
+  7LI C  1968IV01: 3H(A,A) E=3-11 MEV, MEASURED SIGMA(E,THETA), 7LI DEDUCED     
+  7LI2C  LEVELS, J, PI, L.                                                      
+  7LI C  1982COZU: 3H(A,A) E=11.5-17 MEV, MEASURED SIGMA(THETA). 7LI DEDUCED    
+  7LI2C  RESONANCES.                                                            
+  7LI C  1988SA13: 3H(A,A) E=0.5-2.5 MEV, MEASURED RECOIL SIGMA(THETA{-t}).     
+  7LI CL L$LABEL= ^l{-ALPHA}                                                    
+  7LI  L 4.65E3     2 7/2-                             3                        
+  7LI CL           THETA{+2}{-ALPHA}=0.57 4                                     
+  7LI  L 6.64E3    10 5/2-                             3                        
+  7LI CL           THETA{+2}{-ALPHA}=1.36 13 AND THETA{+2}{-N0}=0.000 2         
+  7LI  L 6.79E3     9 5/2-                             3                        
+  7LI CL           THETA{+2}{-ALPHA}=0.52                                       
+  7LI  L 7.47E3     3 5/2-                             3                        
+  7LI CL           THETA{+2}{-ALPHA}=0.011 1 AND  THETA{+2}{-N0}=0.26 2         
+  7LI  L 9.67E3    10 7/2-                             3                        
+  7LI CL           THETA{+2}{-ALPHA}=0.53 22 AND THETA{+2}{-N1}=2.3 7           
+                                                                                
+  7LI    4HE(3HE,PI+)                  2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1981BIZW: 4HE(3HE,PI+) E=270 MEV, MEASURED SIGMA(E{-PI+}).             
+  7LI C  1982BI06: 4HE(3HE,PI+) E=266.5, 280.5 MEV, MEASURED SIGMA(E{-PI+}).    
+  7LI2C  SIGMA(THETA).                                                          
+  7LI  L 0                                                                      
+  7LI CL           UNRESOLVED                                                   
+  7LI  L 0.48E3                                                                 
+  7LI CL           UNRESOLVED                                                   
+  7LI  L 4.63E3                                                                 
+                                                                                
+  7LI    6LI(N,N)                      2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1967CO01: 6LI(N,N),(N,N') E=10 MEV, MEASURED SIGMA(E{-N'},THETA).      
+  7LI C  1969PR04: 6LI(N,N') E=4.1 TO 7.9 MEV, MEASURED SIGMA(E). 7LI DEDUCED   
+  7LI2C  LEVELS, J, PI, L, ^T, LEVEL-WIDTH, GAMMA{+2}.                          
+  7LI C  1975HO01: 6LI(POL N,N) E=2-5 MEV, MEASURED ^A(E,THETA). 7LI LEVELS     
+  7LI2C  DEDUCED LEVEL-WIDTH. R-MATRIX ANALYSIS.                                
+  7LI C  1979KN01: 6LI(N,N) E=4-7.5 MEV, MEASURED SIGMA(THETA).                 
+  7LI C  1981CH12: 6LI(N,N),(POL N,N) E=2-4 MEV, MEASURED ^A(E,THETA),          
+  7LI2C  SIGMA(E{-THETA}). 7LI RESONANCES DEDUCED WIDTH, J, PI.                 
+  7LI C  1982SM02: 6LI(N,N) E=0.1-4.8 MEV MEASURED SIGMA(TOTAL), SIGMA(THETA),  
+  7LI2C  6LI(N,N') E=3.5-4 MEV, MEASURED SIGMA(THETA). R-MATRIX INTERPRETATION. 
+  7LI C  1986CH24: 6LI(N,N),(N,N') E=14.2 MEV, MEASURED SIGMA(THETA).           
+  7LI C  1988HA25: 6LI(N,N),(N,N') E=24 MEV, MEASURED SIGMA(THETA).             
+  7LI  L 7459.5    10                                                           
+  7LI CL           SIGMA=11.2 B 2                                               
+  7LI  L 9850      AP 3/2-             1.20 MEV  AP                            ?
+  7LI  L 10.25E3   10 3/2-             1.40 MEV  10                             
+  7LI2 L ISPIN=1/2                                                              
+  7LI  L 11.19E3    5 3/2-             0.27 MEV   5                             
+  7LI2 L ISPIN=3/2                                                              
+                                                                                
+  7LI    6LI(N,G) E=THERMAL            1985KO47                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI c  Target J|p=1+.                                                         
+  7LI C  1968SP01: 6LI(N,G) E=THERMAL, MEASURED E{-GAMMA}, I{-GAMMA}.           
+  7LI2C  DEDUCED Q. 7LI DEDUCED LEVELS, BRANCHINGS.                             
+  7LI C  1970SP02: 6LI(N,G) E=THERMAL, MEASURED E{-GAMMA}, I{-GAMMA}.           
+  7LI2C  DEDUCED Q.                                                             
+  7LI C  1972OP01: 6LI(N,G) E=THERMAL, MEASURED E{-GAMMA}, I{-GAMMA}.           
+  7LI C  1978GL01: 6LI(POL. ^n,G) E=SLOW, MEASURED SPIN^-DEPENDENT SIGMA.       
+  7LI C  1997NO04: 6LI(N,G) E LE 2 MEV, ANALYZED REACTION RATES.                
+  7LI C  THRESHOLD Q = 7251.02 9 KEV (1985KO47).                                
+  7LI c  1985Ko47: measured E|g, I|g; deduced Q.                                
+  7LI c  Evaluated S(n)=7249.96 keV {I9} (1995Au04).                            
+  7LI cL E         From E|g using least-squares fit to E|g's.                   
+  7LI cL J(B),T    From 1996FiZY                                                
+  7LI cG E(A),M    From 1996FiZY                                                
+  7LI cG E(B)      From level-energy differences                                
+  7LI cG RI        Intensities per 100 neutron captures from 1985Ko47           
+  7LI  N 1                                                                      
+  7LI PN                                                                        
+  7LI  L 0.0         3/2-              STABLE                                   
+  7LI3 L FLAG=B$                                                                
+  7LI  L    477.6123 1/2-              73 FS     2                              
+  7LI3 L FLAG=B$                                                                
+  7LI  G 477.595   3 38      2 M1(+E2)                                          
+  7LI3 G FLAG=A$ FL=0.0                                                         
+  7LI  L    7249.969 1/2+,3/2+                                                 S
+  7LI cL J         from s-wave neutron capture                                  
+  7LI  G 6768.81   5 38      2                                                  
+  7LI3 G FLAG=B$ FL=477.612                                                     
+  7LI  G 7245.91   5 62      2                                                  
+  7LI3 G FLAG=B$ FL=0.0                                                         
+                                                                                
+  7LI    6LI(P,PI+)                    2002TI10,1979AJ01         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1977BA37: 6LI(P,PI+) E=600 MEV, MEASURED SIGMA(THETA).                 
+  7LI C  1978WIZO: 6LI(P,PI+) E=800 MEV, MEASURED SIGMA.                        
+  7LI C  1981BIZW: 6LI(P,PI+) E=201 MEV, MEASURED SIGMA(E{-PI+}).               
+  7LI C  2001BO50: 6LI(P,PI+X) E AT 4.5, 8.9 GEV/^c/NUCLEON, MEASURED PION AND  
+  7LI2C  PROTON PRODUCTION SIGMA.                                               
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+  7LI  L 6.68E3                                                                 
+  7LI  L 7.46E3                                                                 
+                                                                                
+  7LI    6LI(D,P)                      2002TI10,1974AJ01         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1968DU09: 6LI(D,P),(POL D,P) E=2.1-10.9 MEV, MEASURED                  
+  7LI2C  SIGMA(E,E{-P},THETA), ^A(E,E{-P},THETA).                               
+  7LI C  1969HO39: 6LI(D,P) E=1.8 MEV, MEASURED SIGMA(E{-P},THETA), 7LI DEDUCED 
+  7LI2C  LEVELS, LEVEL-WIDTH.                                                   
+  7LI C  1969LE22: 6LI(D,P GAMMA) E=40-130 KEV, MEASURED SIGMA(E,E{-P},         
+  7LI2C  E{-GAMMA}), 7LI DEDUCED LEVELS.                                        
+  7LI C  1970PO03: 6LI(D,P) E=4.5-5.5 MEV, MEASURED SIGMA(E,THETA),             
+  7LI2C  SIGMA(E,E{-P},THETA).                                                  
+  7LI C  1975MC02: 6LI(D,P) E=0.5-3.4 MEV, MEASURED SIGMA(E,THETA).             
+  7LI C  1977EL09: 6LI(D,P) E=0.1-1.0 MEV, MEASURED SIGMA(E,THETA).             
+  7LI C  1977GL05: 6LI(POL D,P) E=0.6, 0.96 MEV, MEASURED ^A{-Y}, ^A(THETA).    
+  7LI C  1981BO03: 6LI(D,P) E=100-180 KEV, MEASURED SIGMA(E).                   
+  7LI C  1981YU01: 6LI(D,P) E=9.05 MEV, MEASURED SIGMA(THETA).                  
+  7LI C  1993CE02: 6LI(D,P) E{-c.m.}=20-135 KEV, MEASURED SPECTRA.              
+  7LI C  1997CZ04: 6LI(D,P) E=65-135 KEV, MEASURED CHARGED PARTICLE SPECTRA.    
+  7LI C  2000EL08: 6LI(D,P) E=0.7-3.4 MEV, MEASURED E{-GAMMA},I{-GAMMA}.        
+  7LI  L 0            3/2-                                      0.90            
+  7LI  L 477        2 1/2-                                      1.15            
+  7LI  L 4630       9                  93 KEV     8                             
+  7LI  L 7464      10                  91 KEV     8                             
+  7LI  L 9.6E3                         0.5 MEV    1                             
+                                                                                
+  7LI    7LI(G,G')                     2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1969DE28: 7LI(GAMMA,GAMMA^') E LT 18-32 MEV, MEASURED                  
+  7LI2C  SIGMA(E{-GAMMA^'}), SIGMA(E,E{-^t}).                                   
+  7LI C  1980IS10: 7LI(GAMMA,GAMMA^') E=32 MEV BREMSSTRAHLUNG, MEASURED         
+  7LI2C  E{-GAMMA}. DEDUCED INTEGRATED SIGMA.                                   
+  7LI  L 0.48E3                        74 FS      4                             
+                                                                                
+  7LI    7LI(G,N),(G,2N)               2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1965HA19: 7LI(G,N) E{-GAMMA} AP 6-30 MEV, MEASURED ACTIVATION CURVE    
+  7LI2C  USING BREMSSTRAHLUNG, OBATAINED SIGMA(E) WITH DE=0.5, 1.0 MEV.         
+  7LI C  1977FE05: 7LI(G,N) E=13-25 MEV BREMSSTRAHLUNG, MEASURED SIGMA(E).      
+  7LI C  1978DE13: 7LI(G,N) E LE 30 MEV, E LE 55 MEV, MEASURED INTEGRAL SIGMA.  
+  7LI C  1983SE07: 7LI(G,N) E=60-120 MEV, MEASURED SIGMA(THETA), RATIOS, DEDUCED
+  7LI2C  REACTION MECHANISM.                                                    
+  7LI C  1985SE17: 7LI(G,N) E=60-130 MEV BREMSSTRAHLUNG, MEASURED SIGMA(E),     
+  7LI2C  SIGMA(THETA).                                                          
+  7LI C  1986SI18: 7LI(G,N) E=7.25-19.5 MEV BREMSSTRAHLUNG, MEASURED            
+  7LI2C  PHOTONEUTRON YIELD CURVE, DEDUCED NEUTRON PRODUCTION SIGMA.            
+  7LI C  1989KA30: 7LI(G,N) E=7-9 MEV, MEASURED BREMSSTRAHLUNG YIELD, DEDUCED   
+  7LI2C  SIGMA(E).                                                              
+  7LI  L 7.46E3                                                                 
+  7LI  L 13.75E3    3                  500 KEV   AP                             
+  7LI  L 14.65E3    3                  700 KEV   AP                             
+  7LI  L 17.E3                                                                 ?
+                                                                                
+  7LI    7LI(E,E'),(E,EP)              2002TI10,1974AJ01         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1965CH11: 7LI(E,E') E=3 MEV, MEASURED SIGMA(E{-^e'}).                  
+  7LI C  1969HU05: 7LI(E,E') E=60-130 MEV, MEASURED RELATIVE SIGMA(E{-^e'},     
+  7LI2C  THETA), DEDUCED FORM FACTORS.                                          
+  7LI C  1971VA20: 7LI(E,E),(E,E') E=25-90 MEV, MEASURED SIGMA(E, THETA=        
+  7LI2C  90-150 DEG). 7LI DEDUCED PARAMETERS OF NUCLEAR MAGNETIZATION, CHARGE   
+  7LI3C  DISTRIBUTION.                                                          
+  7LI C  1973AN31: 7LI(E,E'P) E=1200 MEV, MEASURED SIGMA(E{-P},THETA),          
+  7LI2C  PE'(THETA). 7LI DEDUCED WAVEFUNCTION.                                  
+  7LI C  1973HI03: 7LI(E,E'P) MEASURED SIGMA(E{-^e},E{-P}).                     
+  7LI C  1973KU19: 7LI(E,E') E=1184 MEV, MEASURED SIGMA(THETA).                 
+  7LI C  1978NA05: 7LI(E,EP) E=700 MEV, MEASURED SIGMA(E{-P},THETA(P)), DEDUCED 
+  7LI2C  PROTON SPECTRAL FUNCTIONS. DWIA CALCULATION.                           
+  7LI C  1980TI05: 7LI(E,E') E=450-1096 MEV, MEASURED SIGMA(THETA,E(^e')),      
+  7LI2C  LONGITUDINAL, TRANSVERSE COMPONENTS.                                   
+  7LI C  1982BU09: 7LI(E,E') E=40-74 MEV, MEASURED SIGMA(THETA), TRANSVERSE     
+  7LI2C  FORM FACTORS. 7LI DEDUCED M1 TRANSITION WIDTH.                         
+  7LI C  1983LI07: 7LI(E,E),(E,E') E=90-300 MEV, MEASURED M1, M3, E2 FORM       
+  7LI2C  FACTORS. SHELL MODEL INTERPRETATION.                                   
+  7LI C  1984DO16: 7LI(E,E) E=190 MEV, MEASURED SIGMA(THETA=180 DEG), 7LI(E,E') 
+  7LI2C  E LE 140 MEV, MEASURED TRANSVERSE FORM FACTORS.                        
+  7LI C  1989LI09: 7LI(E,E),(E,E') E=80-680 MEV, MEASURED LONGITUDINAL,         
+  7LI2C  TRANSVERSE FORM FACTORS.                                               
+  7LI C  1990LI21: 7LI(E,E') E=80-680 MEV, MEASURED ELECTROMAGNETIC FORM        
+  7LI2C  FACTORS, DEDUCED MULTI-NUCLEON DEGREES OF FREEDOM ROLE.                
+  7LI C  1996BU22: 7LI(^e,^e'^X) E=104-262 MEV, MEASURED ELECTRON SPECTRA       
+  7LI2C  FOLLOWING DISINTEGRATION. SUM RULE ANALYSIS.                           
+  7LI  L 0                                                                      
+  7LI  L 0.48E3       1/2-                                                      
+  7LI2 L ISPIN=1/2 $ WIDTHG0=6.30E-3 EV 31                                      
+  7LI  L 4.63E3     5 7/2-                                                      
+  7LI2 L ISPIN=1/2                                                              
+  7LI  L 6.6E3      1 5/2-             880 KEV   20                             
+  7LI2 L ISPIN=1/2                                                              
+  7LI  L 7.50E3     8 5/2-                                                      
+  7LI2 L ISPIN=1/2 $ WIDTHG0=0.6 EV 3                                           
+  7LI  L 11.25E3      3/2-             0.20 MEV  10                             
+  7LI2 L ISPIN=3/2 $ WIDTHG0=1.3 EV 4                                           
+                                                                                
+  7LI    7LI(PI+,PI+'),(PI-,PI-')      2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1978DY01: 7LI(PI+,PI+) E=50 MEV, MEASURED SIGMA(THETA), DEDUCED        
+  7LI2C  ISOTOPIC EFFECTS. OPTICAL MODEL ANALYSIS.                              
+  7LI C  1979NA04: LI(PI+,PI+),(PI-,PI-),(PI+,X),(PI-,X) E=125 MEV, MEASURED    
+  7LI2C  SIGMA(THETA), DEDUCED ABSORPTION SIGMA, NATURAL TARGET.                
+  7LI C  1981AS07: LI(PI+,PI+'),(PI+,X) E=85-315 MEV; LI(PI-,PI-'),(PI-,X)      
+  7LI2C  E=125, 165 MEV, MEASURED SIGMA(THETA), DEDUCED SIGMA(ABSORPTION),      
+  7LI3C  REACTION MECHANISM, NATURAL TARGET.                                    
+  7LI C  1982GI01: 7LI(PI+,PI+),(PI+,PI+'),(PI-,PI-),(PI-,PI-') E=143 MEV,      
+  7LI2C  MEASURED SIGMA(THETA), SIGMA(E{-PI}). 7LI DEDUCED NEUTRON, PROTON      
+  7LI2C  RADII, DEFORMATIONS.                                                   
+  7LI C  1990CH03: 7LI(PI,PI') P{-PI}=800 MEV/^c, MEASURED SIGMA(THETA=15 DEG)  
+  7LI2C  FOR FIRST EXCITED STATE (478-KEV).                                     
+  7LI C  1994ME01: 7LI(PI+,PI+) E=134, 164, 194 MEV, MEASURED INCLUSIVE         
+  7LI2C  ANALYZING POWERS ^iT{-11}(THETA), SIGMA(THETA).                        
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+  7LI  L 6.68E3                                                                 
+  7LI  L 7.46E3                                                                 
+  7LI  L 9.67E3                                                                 
+                                                                                
+  7LI    7LI(N,N)                      2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1968HO03: 7LI(N,N),(N,N') E=3.35, 4.84 MEV, MEASURED                   
+  7LI2C  SIGMA(E{-N'},THETA).                                                   
+  7LI C  1979HO11: 7LI(N,N),(N,N') E=7-14 MEV, MEASURED SIGMA(THETA). INTEGRAL  
+  7LI2C  SIGMA.                                                                 
+  7LI C  1979KN01: 7LI(N,N) E=4-7.5 MEV, MEASURED SIGMA(THETA), DEDUCED         
+  7LI2C  DISAGREEMENT BETWEEN OBSERVED, EVALUATED SIGMA FOR 7LI.                
+  7LI C  1980OL06: 7LI(N,N'GAMMA) E=0.5-5 MEV, MEASURED E{-GAMMA}, I{-GAMMA},   
+  7LI2C  SIGMA{-TOT}(E{-GAMMA}), GE(LI) DETECTOR.                               
+  7LI C  1985CH37: 7LI(N,N),(N,N'),(N,NT) E=5.4, 6, 14.2 MEV, MEASURED          
+  7LI2C  SIGMA(THETA), SIGMA(THETA{-1},THETA{-2}), DEDUCED REACTION SIGMA.      
+  7LI C  1987SC08: 7LI(N,N) E=6.82-9.8 MEV, MEASURED SIGMA(THETA).              
+  7LI C  1988HA25: 7LI(N,N),(N,N') E=24 MEV, MEASURED SIGMA(THETA). 7LI DEDUCED 
+  7LI2C  TRANSITION DENSITIES.                                                  
+  7LI C  1991AL04: 7LI(N,N'GAMMA) E=0.5-3. MEV, MEASURED E{-GAMMA}, I{-GAMMA},  
+  7LI2C  SIGMA(THETA), DEDUCED SIGMA(E).                                        
+  7LI C  1995HU17: 7LI(N,N'GAMMA) E=9, 9.5, 10 MEV, MEASURED SIGMA(THETA{-N}),  
+  7LI2C  DOPPLER BROADENED GAMMA SPECTRA. DWBA ANALYSIS.                        
+  7LI C  1998IB02: 7LI(N,XN) E=11.5, 18.0 MEV, MEASURED NEUTRON SPECTRA,        
+  7LI2C  SIGMA(E{-N},THETA), SIGMA(THETA).                                      
+  7LI  L 0                                                                      
+  7LI  L 477.                                                                   
+  7LI  L 4.63E3                                                                 
+  7LI  L 6.68E3                                                                 
+                                                                                
+  7LI    7LI(P,P)                      2002TI10,1984AJ01,1974AJ0102NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1965GL03: 7LI(P,P),(P,P') E=2.5-12 MEV, MEASURED SIGMA(E,THETA), 7LI   
+  7LI2C  DEDUCED LEVELS, J, PI, LEVEL-WIDTH.                                    
+  7LI C  1965HA17: 7LI(P,P') E=185 MEV, MEASURED SIGMA(E{-P},THETA), 7LI DEDUCED
+  7LI2C  LEVELS, LEVEL-WIDTH.                                                   
+  7LI C  1968MA02: 7LI(P,P') E=50 MEV, MEASURED PROTON SPECTRUM. 7LI DEDUCED    
+  7LI2C  LEVELS.                                                                
+  7LI C  1971MA44: 7LI(P,P') E=49.75 MEV, MEASURED SIGMA(THETA), P(THETA).      
+  7LI C  1976DO10: 7LI(P,P'GAMMA) E=4.0, 4.23, 4.40 MEV, MEASURED DSA, 7LI      
+  7LI2C  LEVELS DEDUCED WIDTH.                                                  
+  7LI C  1982PE06: 7LI(P,P),(P,P') E=24.4 MEV, MEASURED SIGMA(E{-P'}),          
+  7LI2C  SIGMA(THETA). 7LI(P,P),(P,P'),(P,N) E=24-50 MEV, ANALYZED DATA.        
+  7LI C  1987TO06: 7LI(POL P,P') E=65 MEV, MEASURED SIGMA(E{-P'}),              
+  7LI2C  SIGMA(THETA{-P'},E{-P'}), ANALYZING POWER.                             
+  7LI C  1989TO04: 7LI(POL P,P') E=65, 80 MEV, MEASURED SIGMA(THETA), A(THETA). 
+  7LI C  1991GL01: 7LI(POL P,P),(POL P,P') E=200 MEV, MEASURED SIGMA(THETA),    
+  7LI2C  ^A{-Y}(THETA). 6,7LI DEDUCED RADIAL DENSITY SHAPE DIFFERENCES.         
+  7LI  L 0            3/2-                                                      
+  7LI2 L ISPIN=1/2                                                              
+  7LI  L 0.41E3    5  1/2-                                                      
+  7LI2 L ISPIN=1/2                                                              
+  7LI2 L BE2=10.5E-4 20                                                         
+  7LI  L 4.56E3    5  7/2-             160 KEV   50                             
+  7LI2 L ISPIN=1/2                                                              
+  7LI2 L BE2=28E-4 5                                                            
+  7LI  L 5.48E3    5                                                           ?
+  7LI  L 6.45E3    5                   500 KEV   100                            
+  7LI2 L BE2=4.5E-4 23                                                          
+  7LI  L 7.57E3    10                                                           
+  7LI  L 9.56E3    10                  450 KEV   50                             
+  7LI  L 11.17E3   10                  500 KEV   50                             
+  7LI  L 12.50E3   10                  200 KEV   50                             
+  7LI  L 13.57E3   10                  750 KEV   50                             
+                                                                                
+  7LI    7LI(3HE,3HE),(3HE,PD)         2002TI10,1988AJ01,1984AJ0102NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1970SC23: 7LI(3HE,3HE) E=11.0 MEV, MEASURED SIGMA(THETA).              
+  7LI C  1976WA12: 7LI(3HE,3HE) E=37.5 MEV, MEASURED ABSOLUTE COIN SIGMA(E{-1}, 
+  7LI2C  THETA{-1},THETA{-2}). CLUSTER PROBABILITIES, MOMENTUM DISTRIBUTION.    
+  7LI C  1979GO07: 7LI(3HE,3HE) E=44.04 MEV, MEASURED SIGMA(THETA).             
+  7LI C  1981BA37: 7LI(POL 3HE,3HE),(POL 3HE,3HE') E=33.3 MEV, MEASURED         
+  7LI2C  SIGMA(THETA), ^A(THETA), REACTION MECHANISM.                           
+  7LI C  1985FR01: 7LI(3HE,3HE) E=120 MEV, MEASURED SIGMA(E{-1},E{-2},THETA{-1},
+  7LI2C  THETA{-2}), DEDUCED RESIDUALS MISSING MASS SPECTRA.                    
+  7LI C  1994DO32: 7LI(3HE,X),(3HE,3HE') E=93 MEV, MEASURED PROTON, DEUTERON,   
+  7LI2C  ALPHA, TRITON, 3HE YIELDS VS THETA, SIGMA(THETA,E), DEDUCED BREAKUP    
+  7LI3C  MECHANISM DOMINANCE.                                                   
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+  7LI  L 17.8E3     5                                                          ?
+  7LI  L 40.5E3     5                  2.5 MEV    5                            ?
+                                                                                
+  7LI    7LI(A,A),(A,A')               2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1969MA13: 7LI(A,A),(A,A') E=29.4 MEV, MEASURED SIGMA(E{-ALPHA'},THETA),
+  7LI2C  7LI LEVELS DEDUCED DEFORMATION PARAMETERS.                             
+  7LI C  1970LA14: 7LI(A,TA) E=50 MEV, MEASURED SIGMA(E{-^t},THETA{-^t}),       
+  7LI2C  SIGMA(E{-^t},E{-A},THETA{-^t},THETA(A)). 7LI DEDUCED LEVELS.           
+  7LI C  1973KE13: 7LI(A,A),(A,A') E=8.6-12.5 MEV, 17.0-22.5 MEV, MEASURED      
+  7LI2C  SIGMA(E,E{-A'},THETA). TRITON-EXCHANGE ANALYZED.                       
+  7LI C  1985DI08: 7LI(A,A') E=35.3 MEV, MEASURED SIGMA(E{-A}), SIGMA(THETA).   
+  7LI2C  7LI LEVELS DEDUCED DEFORMATION, ISOSCALAR ^B(LAMBDA). COLLECTIVE       
+  7LI3C  COUPLED-CHANNELS ANALYSIS.                                             
+  7LI C  1987BU27: 7LI(A,A') E=50.5 MEV, MEASURED SIGMA.                        
+  7LI C  1989DM02: 7LI(ALPHA,ALPHA'^t) E=80 MEV, MEASURED CORRELATION ANGLES.   
+  7LI2C  7LI LEVEL DEDUCED M-SUBSTATE                                           
+  7LI3C  DENSITY MATRIX.                                                        
+  7LI C  1991KO41: 7LI(A,A') E=27.2 MEV, MEASURED TARGET POLARIZATION TENSOR    
+  7LI2C  VS. THETA. DEDUCED REACTION MECHANISM.                                 
+  7LI C  1996BU06: 7LI(A,A),(A,A') E=50.5 MEV, MEASURED SIGMA(THETA), 7LI       
+  7LI2C  DEDUCED ALPHA^d-,ALPHA^t- CLUSTER SPECTROSCOPIC FACTORS.               
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+  7LI  L 6.68E3                                                                 
+  7LI  L 7.46E3                                                                 
+  7LI  L 9.67E3                                                                 
+                                                                                
+  7LI    7LI(A,2A)                     2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1969DO02: 7LI(A,2A) E=25 MEV, MEASURED SIGMA(E{-ALPHA^1},E{-ALPHA^2},  
+  7LI2C  THETA{-1},THETA{-2}).                                                  
+  7LI C  1969PI11: 7LI(A,2A) E=55 MEV, MEASURED SIGMA(E{-ALPHA^1},E{-ALPHA^2},  
+  7LI2C  THETA{-1},THETA{-2}).                                                  
+  7LI C  1970JA17: 7LI(A,2A) E=64 MEV, MEASURED SIGMA(E{-ALPHA^1},E{-ALPHA^2},  
+  7LI2C  THETA{-1},THETA{-2}).                                                  
+  7LI C  1980ZH05: 7LI(A,2A) E=18 MEV, MEASURED ^ALPHA^ALPHA^-(THETA), DEDUCED  
+  7LI2C  QUASIFREE SCATTERING EFFECT. 7LI DEDUCED CLUSTER PROBABILITIES.        
+  7LI C  1985KO29: 7LI(A,2A) E=27.2 MEV, MEASURED SIGMA(E{-ALPHA^1},            
+  7LI2C  THETA{-ALPHA^1},THETA{-ALPHA^2}), DEDUCED REACTION MECHANISM.          
+  7LI C  1992WA09: 7LI(A,2A) E=77-119 MEV, MEASURED ABSOLUTE SIGMA(THETA{-1},   
+  7LI2C  THETA{-2},E{-1}), DEDUCED REACTION MECHANISM. 7LI DEDUCED TRITON       
+  7LI3C  MOMENTUM DISTRIBUTION.                                                 
+  7LI  L 4.63E3                                                                 
+  7LI  L 6.68E3                                                                 
+  7LI  L 7.46E3                                                                 
+                                                                                
+  7LI    7LI(12C,12C)                  2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1979BR04: 12C(7LI,7LI) E=89 MEV, MEASURED SIGMA(THETA).                
+  7LI C  1980ZE03: 12C(7LI,7LI),(7LI,7LI') E=63,78.7 MEV, MEASURED SIGMA(THETA).
+  7LI2C  7LI LEVEL DEDUCED DEFORMATION LENGTH.                                  
+  7LI C  1986CO02: 7LI(12C,12C) E=58.4 MEV, MEASURED PARTICLE SPECTRA,          
+  7LI2C  SIGMA(THETA), 7LI LEVELS DEDUCED DEFORMATION LENGTHS, EXCITATION       
+  7LI2C  MECHANISMS, RELATIVE SIGMA.                                            
+  7LI C  1987CO02: 13C(7LI,7LI),(7LI,7LI') E=34 MEV, MEASURED SIGMA(E(7LI)),    
+  7LI2C  SIGMA(THETA), 7LI LEVELS DEDUCED EXCITATION MECHANISM.                 
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+                                                                                
+  7LI    7BE(N,P)                      2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1988BO15: 7BE(N,P) E AP 0.02-10 EV, MEASURED SIGMA(E). R^-MATRIX FIT.  
+  7LI C  1988KO03: 7BE(N,P) E=0.025-13500 EV, MEASURED SIGMA.                   
+  7LI C  1989CE03: 7BE(N,P) E=THERMAL, 2 KEV, MEASURED SIGMA. 7LI LEVELS DEDUCED
+  7LI2C  PROTON BRANCHING RATIOS.                                               
+  7LI C  1991AN17: 7BE(N,P) E=24.5 KEV, MEASURED REACTION SIGMA.                
+  7LI C  1991RI03: 7BE(N,P) E=LOW, ANALYZED REACTION RATE. DEDUCED              
+  7LI2C  NUCLEOSYNTHESIS.                                                       
+  7LI C  1998FI02: 7BE(N,P) E NOT GIVEN, ANALYZED REACTION RATE UNCERTAINTIES.  
+  7LI2C  DEDUCED ELEMENTAL ABUNDANCES                                           
+  7LI3C  FROM PRIMORDIAL NUCLEOSYNTHESIS.                                       
+  7LI C  2002GL03: 7BE(N,P) E=LOW, ANALYZED SIGMA, PARTICLE SPECTRA, RESONANCE  
+  7LI2C  PARAMETERS.                                                            
+  7LI  L 0                                                                      
+  7LI  L 477                                                                    
+                                                                                
+  7LI    9BE(PI-,2N)                   2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1977BA51: 9BE(PI-,2N) E=0 MEV, MEASURED REACTION RATE, DEDUCED         
+  7LI2C  EXCITATION SPECTRA, RECOIL MOMENTUM.                                   
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 7.46E3                                        0                        
+  7LI  L 10.25E3                                       0                        
+                                                                                
+  7LI    9BE(P,3HE),(P,PD)             2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1966CE05: 9BE(P,3HE) E=43.7 MEV, MEASURED SIGMA(THETA), EXCITED ENERGY 
+  7LI2C  SPECTRA.                                                               
+  7LI C  1967MC14: 9BE(P,3HE) E{-P}=45 MEV, THE LOWEST 7LI ^T=3/2 LEVEL, WIDTH. 
+  7LI C  1983RI01: 9BE(POL P,3HE) E=23.06 MEV, MEASURED A(THETA).               
+  7LI C  1985DE17: 9BE(P,PD) E=58 MEV, MEASURED SIGMA(THETA{-P},E{-P},          
+  7LI2C  THETA{-D}).                                                            
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+  7LI  L 7.46E3                                        0,2                      
+  7LI  L 11.28E3    4 3/2-             260 KEV   50                             
+  7LI2 L ISPIN=3/2                                                              
+                                                                                
+  7LI    9BE(D,TA)                     2002TI10,1991SZ06         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1973SO08: 9BE(D,ALPHA^t) E=26.3 MEV, MEASURED SIGMA(E{-^t},E{-ALPHA}). 
+  7LI2C  7LI DEDUCED RESONANCES, J, PI, LEVEL-WIDTH.                            
+  7LI C  1980NE11: 9BE(D,ALPHA^t) E=3, 4 MEV, MEASURED(E{-^t},THETA{-^t},       
+  7LI2C  THETA{-ALPHA1},E{-ALPHA1},THETA{-ALPHA2},E{-ALPHA2}). 7LI RESONANCE    
+  7LI3C  DEDUCED ASYMMETRIC DECAY.                                              
+  7LI C  1982LA09: 9BE(D,ALPHA^t) E=2.5 MEV, MEASURED SIGMA(E{-^t},THETA{-^t},  
+  7LI2C  THETA{-ALPHA}), DEDUCED NO QUASIFREE EFFECTS. 7LI LEVELS DEDUCED GAMMA,
+  7LI3C  DECAY MECHANISM.                                                       
+  7LI C  1991SZ06: 9BE(D,ALPHA^t) E=7 MEV, MEASURED SIGMA(E{-1},E{-2},THETA{-1},
+  7LI2C  THETA{-2}), EXCITED SPECTRA OF 7LI AND 8BE.                            
+  7LI  L 4.63E3                                                                 
+  7LI  L 6750      20                  0.87 MEV  20                             
+  7LI  L 7.46E3                                                                 
+  7LI  L 9360      50                  0.8 MEV    2                             
+                                                                                
+  7LI    9BE(D,A)                      2002TI10,1987KA17         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1966HA09: 9BE(D,A) E=11 MEV, MEASURED SIGMA(E{-ALPHA},THETA). 7LI      
+  7LI2C  DEDUCED LEVELS.                                                        
+  7LI C  1971SA27: 9BE(D,A) E=0.9-2.2 MEV, MEASURED SIGMA(E,THETA), DISCUSS     
+  7LI2C  REACTION MECHANISM.                                                    
+  7LI C  1976BO45: 9BE(D,A) E=0.9-2.5 MEV, MEASURED SIGMA(E,E{-ALPHA},THETA).   
+  7LI C  1977SL02: 9BE(D,A) E=2.25-3.1 MEV, MEASURED SIGMA(E,E{-ALPHA}).        
+  7LI C  1980DE43: 9BE(POL D,A) E=1.4-2.6 MEV, MEASURED SIGMA(THETA,E),         
+  7LI2C  ^A{-Y}(THETA,E).                                                       
+  7LI C  1984AN16: 9BE(POL D,A) E=2-2.8 MEV, MEASURED SIGMA(THETA),             
+  7LI2C  ^A{-Y}(THETA), DEDUCED REACTION MECHANISM.                             
+  7LI C  1987KA17: 9BE(D,A) E=50 MEV, MEASURED SIGMA(THETA{-ALPHA},E{-ALPHA}).  
+  7LI2C  7LI DEDUCED RESONANCE, ANALOG CHARACTERISTICS.                         
+  7LI C  1989SZ02: 9BE(D,A) E=6.7-7.5 MEV, MEASURED SIGMA(THETA,E), DEDUCED     
+  7LI2C  REACTION MECHANISM. 7LI DEDUCED CLUSTER SPECTROSCOPIC AMPLITUDES.      
+  7LI C  1994LY02: 9BE(POL D,A) E=1.3-3.1 MEV, MEASURED VECTOR ANALYZING        
+  7LI2C  ^A{-Y}(THETA,E), DEDUCED DIRECT, RESONANT INTERACTIONS INTERFACE       
+  7LI3C  EVIDENCE.                                                              
+  7LI C  1997YA02: 9BE(D,A) E{-C.M.}=57-139 KEV, MEASURED ENERGY SPECTRA, SIGMA(
+  7LI2C  THETA), DEDUCED SIGMA, ASTROPHYSICAL ^S-FACTOR VS E.                   
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                        93 KEV    25                             
+  7LI  L 6.68E3                                                                 
+  7LI  L 7.46E3                        80 KEV    20                             
+  7LI  L 9.67E3                                                                 
+  7LI  L 9.85E3                                                                 
+  7LI  L 18E3       1                  5 MEV     1                              
+                                                                                
+  7LI    10B(N,A)                      2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1967CA02: 10B(N,AG) E=THERMAL, MEASURED E{-GAMMA}, 7LI DEDUCED LEVELS, 
+  7LI2C  T.                                                                     
+  7LI C  1969AN25: 10B(N,A) E=14.4 MEV, MEASURED SIGMA(E{-ALPHA},THETA).        
+  7LI C  1972CA04: 10B(N,A) E FROM 241AM/^Be SOURCE, MEASURED DOPPLER SHIFT.    
+  7LI2C  7LI LEVEL DEDUCED T.                                                   
+  7LI C  1976SE06: 10B(N,A) E=0.2-1.25 MEV, MEASURED SIGMA(E,E{-ALPHA},THETA).  
+  7LI C  1978MO09: 10B(N,A) E=13.9 MEV, MEASURED SIGMA(E{-ALPHA},THETA).        
+  7LI C  1979ST03: 10B(N,A) E=THERMAL, 2, 24 KEV, MEASURED SIGMA(THETA), 7LI    
+  7LI2C  LEVELS DEDUCED ALPHA-BRANCHING RATIO.                                  
+  7LI C  1986ER05: 10B(POL N,ALPHA) E=THERMAL, MEASURED SIGMA(THETA), ASYMMETRY.
+  7LI2C  7LI LEVELS DEDUCED P-ADD ASYMMETRY UPPER LIMITS.                       
+  7LI C  1991WE11: 10B(N,A),(N,AG) E=0.2-1 MEV, MEASURED SIGMA(E). 7LI DEDUCED  
+  7LI2C  GROUND TO EXCITED STATE TRANSITION RATIO.                              
+  7LI C  1993SC20: 10B(N,A) E=0.2-4 MEV, MEASURED RELATIVE REACTION SIGMA.      
+  7LI C  1994SA72: 10B(N,ALPHA) E=COLD, THERMAL, MEASURED I{-GAMMA}, LINE SHAPES
+  7LI2C  FOLLOWING RESIDUAL DECAY.                                              
+  7LI C  1999VE03: 10B(POL N,ALPHA) E=REACTOR, MEASURED GAMMA ASYMMETRY. 7LI    
+  7LI2C  TRANSITION DEDUCED PARITY-VIOLATING.                                   
+  7LI C  2000GO03: 10B(N,A) E=THERMAL, MEASURED E{-ALPHA},I{-ALPHA}, DEDUCED    
+  7LI2C  BRANCHING RATIO.                                                       
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                        70.7 FS   34                             
+  7LI  L 4.63E3                                                                 
+                                                                                
+  7LI    11B(A,8BE)                    2002TI10,1976WO11         02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1973WO06: 11B(A,8BE) E=65 MEV, MEASURED SIGMA(E(8BE)), SIGMA(THETA).   
+  7LI C  1976WO11: 11B(A,8BE) E=65-72.5 MEV, MEASURED SIGMA(E(8BE),THETA). 7LI  
+  7LI2C  LEVELS DEDUCED ABSOLUTE, RELATIVE ^S, ALPHA, L.                        
+  7LI C  E{ALPHA}=72.5 MEV                                                      
+  7LI  L 0                                                      0.19            
+  7LI  L 0.52E3    5                                                            
+  7LI  L 4.64E3    3                                            0.34            
+  7LI  L 6.68E3                                                                 
+  7LI  L 7.46E3    7                                                            
+                                                                                
+  7LI    14N(N,2A)                     2002TI10                  02NP     200302
+  7LI  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7LI2 H CUT=23-Aug-2001$                                                       
+  7LI C  1967MO21: 14N(N,2A) E=14.1 MEV, MEASURED SIGMA, DEDUCED SIGMA FOR      
+  7LI2C  E=15.7 MEV.                                                            
+  7LI C  1971SC16: 14N(N,2A) E=14.1 MEV, MEASURED SIGMA FOR DIFFERENT           
+  7LI2C  INTERMEDIATE STATES. 7LI DEDUCED LEVELS, J.                            
+  7LI  L 0                                                                      
+  7LI  L 0.48E3                                                                 
+  7LI  L 4.63E3                                                                 
+                                                                                
+  7BE    ADOPTED LEVELS, GAMMAS        2002TI10                  02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE  XA4HE(3HE,3HE),(3HE,P)                                                   
+  7BE  XB6LI(P,P),(P,2P),(P,PA)                                                 
+  7BE  XC6LI(D,N)                                                               
+  7BE  XD6LI(3HE,D)                                                             
+  7BE  XE6LI(A,T)                                                               
+  7BE  XF7LI(P,N)                                                               
+  7BE  XG7LI(3HE,T)                                                             
+  7BE  XH7LI(6LI,6HE)                                                           
+  7BE  XI9BE(P,T)                                                               
+  7BE  XJ10B(P,A)                                                               
+  7BE  Q -1.191E4  3 10677   6 5606.85 7 -1587.137     2012WA38                 
+  7BE CQ Note: Current evaluation has used the following Q record               
+  7BE  Q -12101.   70  10676 5  5605.8 7 -1586.6 5     1995AU04                 
+  7BE CG E         FROM E(LEVEL) DIFFERENCE; RECOIL CORRECTION APPLIED.         
+  7BE  L 0.0         3/2-              53.22 D   6                              
+  7BE2 L ISPIN=1/2 $ %EC=100                                                    
+  7BE3 L XREF=CDEFGHIJ                                                          
+  7BE cL T         The {+7}Be half-life has been observed to vary depending on  
+  7BE2cL      the chemical form of the {+7}Be.  Some of these measured          
+  7BE3cL      variations are:                                                   
+  7BE tL $      Reference    Forms compared                 (|D|lx1.0e{+4})/|l  
+  7BE tL $      1949Se20     Be - BeO                              1.5  (9)     
+  7BE tL $      1953Kr16     Be - BeO                              1.3  (5)     
+  7BE tL $                   BeO- BeF{-2}                          6.1  (6)     
+  7BE tL $                   Be - BeF{-2}                          7.4  (5)     
+  7BE tL $      1956Bo36     Be - BeF{-2}                         12    (1)     
+  7BE tL $      1970Jo21     BeO- BeF{-2}                         11.3  (6)     
+  7BE tL $                   BeO- BeBr{-2}                        14.7  (6)     
+  7BE tL $                   BeO- Be{-4}O(CH{-3}COO){-6}          -7.2  (6)     
+  7BE tL $                   BeO- Be(C{-5}H{-5}){-2}               8.0  (7)     
+  7BE tL $                   BeO- Be(OH{-2}){-4}                  -3.7  (8)     
+  7BE tL $                   BeF{-2}- Be{-4}O(CH{-3}COO){-6}     -18.5  (8)     
+  7BE tL $                   Be(C{-5}H{-5}){-2}- Be(OH{-2}){-4}  -11.7  (11)    
+  7BE tL $      1999Hu20     BeO - Be(OH){-2}                   -149.           
+  7BE tL $                   BeO - Be{+2+}(OH{-2}){-4}           -98.           
+  7BE tL $      1992Ra12     Be in Au - Be in Al{-2}O{-3}         72.   (7)     
+  7BE cL           Excluding the much larger changes reported by 1999Hu20 and   
+  7BE2cL      1999Ra12, these measured changes range from 0.01% to 0.2%, or     
+  7BE3cL      from 0.005 to 0.10 days, or 0.08 day if the organic compounds     
+  7BE4cL      are also omitted.                                                 
+  7BE cL T         Adopted 53.22 d 6 from Limitation of Relative Statistical    
+  7BE2cL      Weight (LRSW) (1985ZiZY, 1992Ra09) analysis of 53 d {I2}          
+  7BE3cL      (1940hI01), 52.93 d {I22} (1949Se20), 53.61 d {I17} (1953Kr16),   
+  7BE4cL      53.0 d {I4} (1956Bo36), 53.5 d {I2} (1957Wr37), 53.1 d {I3}       
+  7BE5cL      (1965En01), 53.52 d {I10} (1970Jo21), 53.0 d {I3} (1974Cr05),     
+  7BE6cL      53.17 d {I2} (1975La16), 53.16 d {I1} (1982ChZF), 53.284 d {I4}   
+  7BE7cL      (1982RuZV), and 53.12 d {I7} (1996Ja10).  In this analysis the    
+  7BE7cL      uncertainty of 1982RuZV value                                     
+  7BE8cL      was increased from 0.004 to 0.0088 so that its relative weight    
+  7BE9cL      was reduced from 83% to 50%.  The weighted average of these       
+  7BE0cL      values is 53.225 with an internal uncertainty of 0.006, a         
+  7BEAcL      reduced-|h{+2} of 10.5, and an external uncertainty of 0.020.     
+  7BEBcL      This uncertainty increased by the LRSW method to 0.06 so that     
+  7BECcL      the most precise value of 53.284 is included; this uncertainty    
+  7BEDcL      also includes the next most precise value of 53.16.               
+  7BE cL T         The adopted half-life is dominated by the values of 1975La16,
+  7BE2cL      1982ChZF, and 1982RuZV which contribute 10%, 39%, and 50% of the  
+  7BE3cL      relative weight, respectively.  The values of 1982ChZF and        
+  7BE4cL      1982RuZV differ by |? 10 |s and contribute 3.8 and 4.1 to the     
+  7BE5cL      reduced-|h{+2} value of 10.5.  Since these three values differ    
+  7BE6cL      by 0.12 days and the chemical forms in the latter two cases are   
+  7BE7cL      not known, the chemical variation data in the above table suggest 
+  7BE8cL      that some of this difference may be due to chemical affects.  This
+  7BE9cL      suggests that the adopted uncertainty of 0.06 days is reasonable  
+  7BE0CL      for general use.                                                  
+  7BE cL T         Values not used are: 54.5 d (J. F. Bonner, Jr., AEC report   
+  7BE2cL      AECU-107 as quoted in 1953Kr16, no uncertainty); and 54.3 d {I5}  
+  7BE3cL      (Bouchez, Daudel, Daudel, and Muxart, J. Phys. et Radium 8 (1947) 
+  7BE4cL      336 as quoted in 1953Kr16, replaced by value of 1956Bo36); and    
+  7BE5cL      53.694 d {I6}, 53.416 d {I6}, and 54.226 d {I6} (1999Hu20).  The  
+  7BE6cL      values of 1999Hu20 have very small uncertainties and have very    
+  7BE7cL      large variations, up to 1.5%, with chemical form which need to    
+  7BE8cL      be confirmed.  If this large shift is correct, it would           
+  7BE8cL      invalidate the uncertainty of our adopted value.                  
+  7BE  L 429.08    101/2-              133 FS    17                             
+  7BE2 L ISPIN=1/2                                                              
+  7BE3 L XREF=CDEFGHIJ                                                          
+  7BE  G 429.07                M1                                               
+  7BE2 G WIDTHG=3.43E-3 EV 45$BM1W=2.07 27                                      
+  7BE  L 4570      507/2-              175 KEV   7                              
+  7BE2 L ISPIN=1/2 $ %3HE=? $ %A=?                                              
+  7BE3 L XREF=ADEFGHIJ                                                          
+  7BE  L 6.73E+3   105/2-              1.2 MEV                                  
+  7BE2 L ISPIN=1/2 $ %3HE=? $ %A=?                                              
+  7BE3 L XREF=ACFI                                                              
+  7BE  L 7210      605/2-              0.40 MEV   5                             
+  7BE2 L ISPIN=1/2 $ %P=? $ %3HE=? $ %A=?                                       
+  7BE3 L XREF=ABCFH                                                             
+  7BE  L 9.27E+3   107/2-                                                       
+  7BE2 L ISPIN=1/2 $ %P=? $ %3HE=? $ %A=?                                       
+  7BE3 L XREF=A                                                                 
+  7BE  L 9900        3/2-              1.8 MEV   AP                             
+  7BE2 L ISPIN=1/2 $ %P=? $ %3HE=? $ %A=?                                       
+  7BE3 L XREF=AB                                                                
+  7BE  L 11010     303/2-              320 KEV   30                             
+  7BE2 L ISPIN=3/2 $ %P=? $ %3HE=? $ %A=?                                       
+  7BE3 L XREF=ABFI                                                              
+  7BE  L 17000       1/2-              6.5 MEV   AP                             
+  7BE2 L ISPIN=1/2 $ %3HE=?                                                     
+  7BE3 L XREF=A                                                                 
+  7BE CL E         FOR POSSIBLE STATES AT HIGHER ENERGIES SEE 4HE(3HE,3HE),     
+  7BE2CL (3HE,P); 6LI(P,P), (P,2P), (P,PA) REACTIONS.                           
+                                                                                
+  7BE    4HE(3HE,3HE),(3HE,P)          2002TI10,1984AJ01         02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1958MI92: SCATTERING OF 3HE FROM 4HE AND STATES IN 7BE.                
+  7BE C  1963TO04: SCATTERING OF 3HE FROM 4HE, DEDUCED NUCLEAR PROPERTIES.      
+  7BE C  1967HA08: 4HE(3HE,P) E=13.81-18.45 MEV, MEASURED SIGMA(E), 7BE DEDUCED 
+  7BE2C  LEVELS, J, PI, L, ^T, LEVEL-WIDTH, ^S.                                 
+  7BE C  1967SP10: 4HE(3HE,3HE) E=4.6-14.75,14.74-18 MEV, 4HE(3HE,P) E=8-18 MEV,
+  7BE2C  MEASURED SIGMA(E,THETA). 7BE DEDUCED LEVELS, J, PI.                    
+  7BE C  1978BA75: 4HE(3HE,3HE) E=18-70 MEV, MEASURED SIGMA(THETA). PHASE SHIFT 
+  7BE2C  ANALYSIS.                                                              
+  7BE C  1978LU05: 4HE(POL 3HE,3HE) E=18-32 MEV, MEASURED ^A(THETA), DEDUCED    
+  7BE2C  PHASE SHIFTS. 7BE DEDUCED LEVEL, J, PI.                                
+  7BE C  1989OS06: 3HE(A,A) E=56.3-95.5 MEV, MEASURED SIGMA(THETA), PHASE SHIFTS
+  7BE2C  VS E. 7BE DEDUCED RESONANCE PARAMENTERS.                               
+  7BE C  1992ZU03: 3HE(A,A) E{-C.M.}=11-41 MEV, ANALYZED PHASE SHIFTS VS E. 7BE 
+  7BE2C  DEDUCED RESONANCES. J, PI, GAMMA. ^R-MATRIX, ^S-MATRIX, PADE           
+  7BE3C  APPROXIMATION.                                                         
+  7BE C  1993MO11: 4HE(3HE,3HE) E=1.2-3 MEV, MEASURED SIGMA(THETA).             
+  7BE CL L$LABEL= ^l{-ALPHA}                                                    
+  7BE  L 4.57E3     5 7/2-                             3                        
+  7BE CL           THETA{+2}{-ALPHA}=0.70 4                                     
+  7BE  L 6.73E3    10 5/2-                             3                        
+  7BE CL           THETA{+2}{-ALPHA}=1.36 13 AND THETA{+2}{-P}=0.000 2          
+  7BE  L 7.21E3     6 5/2-                             3                        
+  7BE CL           THETA{+2}{-ALPHA}=0.010 1 AND THETA{+2}{-P}=0.26 2           
+  7BE  L 9.27E3    10 7/2-                             3                        
+  7BE CL           THETA{+2}{-ALPHA}=0.70 26 AND THETA{+2}{-P}=0.29 +9-18       
+  7BE  L 10.0E3       3/2-             1.8 MEV         1                        
+  7BE  L 10.0E3    AP 1/2-                                                      
+  7BE2 L ISPIN=1/2                                                              
+  7BE CL WIDTH     BROAD                                                        
+  7BE  L 11.00E3    5 3/2-             0.40 MEV  5     1                        
+  7BE2 L ISPIN=3/2                                                              
+  7BE CL           THETA{+2}{-P2}=0.13 2                                        
+  7BE  L 16.7E3    AP 1/2-             6.5 MEV                                 ?
+  7BE  L 31.1E3    10 9/2+             8.5 MEV   25                             
+  7BE CL           FROM R-MATRIX ANALYSIS.                                      
+  7BE  L 34.1E3    1511/2-             10.5 MEV  30                             
+  7BE CL           FROM R-MATRIX ANALYSIS.                                      
+                                                                                
+  7BE    6LI(P,P),(P,2P),(P,PA)        2002TI10,1995SK01,1989HA1802NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1963HA53: 6LI(P,P) E=2.4-12 MEV, MEASURED SIGMA(THETA). 7BE DEDUCED    
+  7BE2C  LEVELS.                                                                
+  7BE C  1963MC09: 6LI(P,P) E=0.45-2.9 MEV, MEASURED SIGMA(THETA). 7BE DEDUCED  
+  7BE2C  LEVELS.                                                                
+  7BE C  1967HA08: 6LI(P,P') E=4.26-9.40 MEV, MEASURED SIGMA(E,THETA). 7BE      
+  7BE2C  DEDUCED LEVELS, J, PI, L, ^T LEVEL-WIDTH, ^S.                          
+  7BE C  1968VA02: 6LI(P,PD),(P,PA),(P,DA), E=9,10 MEV, MEASURED SIGMA(E{-P},   
+  7BE2C  E{-D},E{-ALPHA},THETA{-D},THETA{-ALPHA}).                              
+  7BE C  1969PE22: 6LI(POL P,P) E=1.2-3.2 MEV, MEASURED PROTON POLARIZATION,    
+  7BE2C  DEDUCED PHASE SHIFTS FOR E=0.5-5.6 MEV.                                
+  7BE C  1977NEZX: 6LI(P,P),(P,P') E=14 MEV, MEASURED SIGMA. 7BE DEDUCED        
+  7BE2C  RESONANCE.                                                             
+  7BE C  1983VD03: 6LI(P,2P) E=47-70 MEV, MEASURED SIGMA(THETA{-1},THETA{-2}) VS
+  7BE2C  RELATIVE, SUMMED PROTON ENERGIES.                                      
+  7BE C  1989HA18: 6LI(POL P,P) E=1.6-10 MEV, MEASURED SIGMA(E,THETA),          
+  7BE2C  ^A(E,THETA). 6LI(POL P,P') E=5.9 MEV, MEASURED SIGMA(THETA), ^A(THETA).
+  7BE3C  7BE DEDUCED RESONANCES. GAMMA, GAMMA(P), J, PI.                        
+  7BE C  1995SK01: 6LI(POL P,P) E=0.4-2.2 MEV, MEASURED ANALYZING POWER ^A{-Y}, 
+  7BE2C  SIGMA(THETA). 7BE DEDUCED RESONANCE PARAMETERS WIDTH, WIDTH{-P}, J, PI.
+  7BE  L 7.2E3     1   5/2-            0.40 MEV   5                             
+  7BE2 L           WIDTHP=0.19 MEV 5                                            
+  7BE  L 9.29E3    31                  1.93 MEV  96                             
+  7BE2 L           WIDTHP=0.47 MEV 33                                           
+  7BE  L 9.81E3    12                  2.21 MEV  29                             
+  7BE2 L           WIDTHP=1.65 MEV 25                                           
+  7BE CL WIDTH     1988AJ01 ADOPTED WIDTH AP 1.8 MEV BASED ON (P,P'); 2002TI10  
+  7BE2CL HAS CONTINUED TO ACCEPT WIDTH AP 1.8 MEV RATHER THAN ACCEPT THOSE      
+  7BE3CL PRESENTED HERE WHICH ARE FROM 6LI+P PHASE SHIFT ANALYSIS.              
+  7BE  L 10.00E3   17                  1.68 MEV  58                             
+  7BE2 L           WIDTHP=0.42 MEV 14                                           
+  7BE  L 11.E3     AP  3/2-                                                     
+  7BE  L 12.4E3    13                  5.0 MEV   32                             
+  7BE2 L           WIDTHP=1.8 MEV 10                                            
+                                                                                
+  7BE    6LI(D,N)                      2002TI10,1974AJ01         02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1956NE13: 6LI(D,N) E{-D}=400, 600, 1500 KEV, MEASURED THE ANGULAR      
+  7BE2C  CORRELATION OF N-GAMMA.                                                
+  7BE C  1957SL01, 6LI(D,N) E{-D}=1-5.5 MEV, TWO BROAD THRESHOLDS WERE OBSERVED 
+  7BE2C  CORRESPONDING TO LEVELS IN 7BE, WIDTH.                                 
+  7BE C  1966SC26: 6LI(D,N) E=0.24-0.84 MEV, MEASURED SIGMA(E,THETA).           
+  7BE C  1970GA07: 6LI(D,N) E=12-17 MEV, MEASURED SIGMA(E,E(7BE),THETA(7BE)).   
+  7BE2C  7BE LEVELS DEDUCED ^S.                                                 
+  7BE C  1970TH08: 6LI(D,N{-0}),(D,N{-1}) E=2.5-3.7 MEV, MEASURED PN(E,THETA    
+  7BE2C  =10-140 DEG).                                                          
+  7BE C  1975AZ02: 6LI(D,N) E=13.9, 15.25 MEV, MEASURED SIGMA(E{-N},THETA).     
+  7BE C  1977EL09: 6LI(D,N) E=0.2-0.9 MEV, MEASURED SIGMA(E,THETA).             
+  7BE C  1979RU07: 6LI(D,N) E=0.4-10 MEV, MEASURED SIGMA(E).                    
+  7BE C  1985CE12: 6LI(D,N) E=50-160 KEV, MEASURED THICK TARGET GAMMA-RAY       
+  7BE2C  YIELDS.                                                                
+  7BE C  1997CZ04: 6LI(D,N) E=65-135 KEV, MEASURED CHARGED PARTICLE SPECTRA.    
+  7BE  L 0                                                                      
+  7BE  L 429.9       1/2-                                                       
+  7BE CL E         FROM RECOIL CORRECTION.                                      
+  7BE  G 428.9     20                                                           
+  7BE  L 6.5E+3                         1.2 MEV                                 
+  7BE  L 7.2E+3                         0.5 MEV                                 
+                                                                                
+  7BE    6LI(3HE,D)                    2002TI10,1974AJ01         02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1968LU02: 6LI(3HE,D) E=8, 10, 14, 18 MEV, MEASURED SIGMA(E,THETA).     
+  7BE C  1979BU17: 6LI(3HE,D) E=0.7-2 MEV MEASURED SIGMA(E,THETA).              
+  7BE C  1981BA38: 6LI(POL 3HE,D) E=33.3 MEV, MEASURED SIGMA(THETA), ^A(THETA). 
+  7BE2C  7BE LEVELS DEDUCED ^S.                                                 
+  7BE CL S$LABEL= S{-REL.}                                                      
+  7BE  L 0                                                      1               
+  7BE  L 0.43E3                                                 1.55            
+  7BE  L 4.57E3                                                                 
+                                                                                
+  7BE    6LI(A,T)                      1974AJ01                  02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1965OG03: 6LI(A,T), 6LI MEASURED, DEDUCED 7BE LEVELS.                  
+  7BE C  1991GAZV: 6LI(A,TA) E=96 MEV, MEASURED SIGMA(THETA{-1},THETA{-2}).     
+  7BE  L 0                                                                      
+  7BE  L 0.43E3                                                                 
+  7BE  L 4.57E3                                                                 
+  7BE  L 5.0E3      3                                                          ?
+                                                                                
+  7BE    7LI(P,N)                      2002TI10,1988AJ01,1974AJ0102NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1965BA39: 7LI(P,N) MEASURED NOT ABSTRACTED, 7BE DEDUCED LEVELS.        
+  7BE C  1966PA11: 7LI(P,N) E=3.0 MEV, MEASURED THE LIFETIME 1ST EXCITED STATE  
+  7BE2C  OF 7BE WITH DOPPLER-SHIFT ATTENUATION METHOD.                          
+  7BE C  1967LO07: 7LI(P,N) E=23-52 MEV, MEASURED SIGMA(E).                     
+  7BE C  1968BA41: 7LI(P,N) E=30, 50 MEV, MEASURED SIGMA(E,E{-N},THETA). 7BE    
+  7BE2C  DEDUCED LEVELS.                                                        
+  7BE C  1972BO02: 7LI(P,NG) E=2.7 MEV, MEASURED E{-GAMMA}. 7BE DEDUCED LEVELS. 
+  7BE C  1974BU16: 7LI(P,N) E<3.8 MEV, MEASURED SIGMA(E,E{-N},THETA).           
+  7BE C  1976DO10: 7LI(P,NG) E=4.0, 4.23, 4.40 MEV, MEASURED DSA, 7BE LEVELS    
+  7BE2C  DEDUCED WIDTH.                                                         
+  7BE C  1976PO06: 7LI(P,N) E=4.2-26 MEV, MEASURED SIGMA(E,THETA) TO 7BE GROUND 
+  7BE2C  STATE, FIRST EXCITED STATE, THETA=3.5-159 DEG.                         
+  7BE C  1982WA02: 7LI(P,N) E=60-200 MEV, MEASURED TOTAL REACTION SIGMA VS E.   
+  7BE C  1984DA22: 7LI(P,N) E=60-480 MEV, MEASURED REACTION SIGMA.              
+  7BE C  1989GU13: 7LI(P,N) E=16, 20, 24 MEV, MEASURED NEUTRON SPECTRA, DEDUCED 
+  7BE2C  ABSOLUTE NEUTRON COUNTING EFFICIENCY.                                  
+  7BE C  1990RA08: 7LI(P,N),(POL P,N) E=60-200 MEV, MEASURED SIGMA(THETA). 7BE  
+  7BE2C  DEDUCED BRANCHING RATIO, GAMOW-TELLER TRANSITION STRENGTH.             
+  7BE C  1995YA12: 7LI(P,N) E=186 MEV, MEASURED SIGMA(THETA,E{-N}), DEDUCED     
+  7BE2C  QUASIFREE REACTION CONTRIBUTION IN GIANT RESONANCE REGION, DL=1        
+  7BE3C  TRANSITIONS ENERGY SPECTRA.                                            
+  7BE C  1997DE54: 7LI(P,N) E=2.7-4 MEV, MEASURED ZERO-DEGREE SIGMA(E{-P},      
+  7BE2C  THETA), DEDUCED DETECTOR CHARACTERISTICS.                              
+  7BE C  1999NA02: 7LI(P,N) E=70-210 MEV, MEASURED NEUTRON SPECTRA. QUASI-      
+  7BE2C  MONOENERGETIC NEUTRON FIELD.                                           
+  7BE  L 0            3/2-                                                      
+  7BE2 L ISPIN=1/2                                                              
+  7BE  L 429.20    10 1/2-             133 FS    25                             
+  7BE2 L ISPIN=1/2                                                              
+  7BE  L 4.61E3     7                                                           
+  7BE  L 6.51E3                                                                 
+  7BE  L 7.21E3     6                                                           
+  7BE  L 9.6E3      3                                                           
+  7BE  L 10.79E3                                                                
+  7BE  L 11.3E3     2                                                          ?
+  7BE  L 12.3E3     2                                                          ?
+  7BE  L 13.24E3   15                                                          ?
+  7BE  L 14.39E3   15                                                          ?
+  7BE  L 15.3E3     2                                                          ?
+  7BE  L 16.3E3     2                                                          ?
+  7BE  L 18.3E3     2                                                          ?
+  7BE  L 19.7E3     3                                                          ?
+  7BE  L 20.5E3     2                                                          ?
+                                                                                
+  7BE    7LI(3HE,T)                    2002TI10                  02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1969OR01: 7LI(3HE,T) E=2.0-4.2 MEV, MEASURED SIGMA(E,E{-t},THETA),     
+  7BE2C  DEDUCED CLUSTER REDUCED WIDTHS.                                        
+  7BE C  1971PI06: 7LI(3HE,T), E=15 MEV, MEASURED SIGMA(E{-t},THETA), 7BE       
+  7BE2C  DEDUCED LEVELS, LEVEL-WIDTH.                                           
+  7BE C  1981BA37: 7LI(POL 3HE,T) E=33.3 MEV, MEASURED SIGMA(THETA), ^A(THETA). 
+  7BE  L 0                                                                      
+  7BE  L 0.43E3                                                                 
+  7BE  L 4.57E3                        175 KEV    7                             
+                                                                                
+  7BE    7LI(6LI,6HE)                  2002TI10                  02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1986AN29: 7LI(6LI,6HE) E=200 MEV, MEASURED SIGMA(E(6HE)), SIGMA(THETA).
+  7BE2C  7BE LEVELS DEDUCED SIGMA, GAMOW-TELLER TRANSITION STRENGTH CORRELATION.
+  7BE C  1987WI09: 7LI(6LI,6HE) E=14, 25, 35 MEV/NUCLEON, MEASURED              
+  7BE2C  SIGMA(E(6HE)), SIGMA(THETA), DEDUCED REACTION MECHANISM. 7BE DEDUCED   
+  7BE3C  GAMOW-TELLER TRANSITION STRENGTHS, LEVEL EXCITATION MECHANISM.         
+  7BE C  1988AN06: 7LI(6LI,6HE) E=25, 35 MEV/NUCLEON, MEASURED SIGMA(E(6HE)),   
+  7BE2C  REACTION MECHANISM.                                                    
+  7BE  L 0                                                                      
+  7BE  L 0.43E3                                                                 
+  7BE  L 4.57E3                                                                 
+  7BE  L 7.21E3                                                                 
+                                                                                
+  7BE    9BE(P,T)                      2002TI10,1984AJ01         02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1966CE05: 9BE(P,T) E=43.7 MEV, MEASURED ANGULAR DISTRIBUTIONS OF       
+  7BE2C  TRITONS. 7BE DEDUCED LEVELS.                                           
+  7BE C  1967VE01: 9BE(P,T) E=46 MEV, MEASURED ANGULAR DISTRIBUTIONS OF         
+  7BE2C  TRITONS, 7BE DEDUCED LEVELS.                                           
+  7BE C  1968BR23: 9BE(P,T) MEASURED NOT ABSTRACTED, 7BE DEDUCED LEVELS.        
+  7BE C  1984ZA07: 9BE(P,T) E=50, 72 MEV, MEASURED SIGMA(THETA), DEDUCED        
+  7BE2C  REACTIONS MECHANISM. 7BE LEVELS DEDUCED ^S.                            
+  7BE  L 0                                                                      
+  7BE  L 0.43E3                                                                 
+  7BE  L 4.57E3                                                                 
+  7BE  L 6.51E3                                                                 
+  7BE  L 11.01E3    4 3/2-             298 KEV   25                             
+  7BE2 L ISPIN=3/2                                                              
+                                                                                
+  7BE    10B(P,A)                      2002TI10,1974AJ01         02NP     200302
+  7BE  H TYP=FUL$AUT=HU, TILLEY, KELLEY, GODWIN et al.$CIT=NP A708, 3 (2002)$   
+  7BE2 H CUT=23-Aug-2001$                                                       
+  7BE C  1950VA01: 10B(P,A) E=1.79 MEV, MEASURED GROUND STATE AND FIRST EXCITED 
+  7BE2C  STATE OF 7BE.                                                          
+  7BE C  1955RE16: 10B(P,A) E=6.05, 8.78 MEV, MEASURED ALPHA SPECTRA FOR THETA= 
+  7BE2C  30, 60, 120 DEG. 7BE DEDUCED LEVELS.                                   
+  7BE C  1964JE01: 10B(P,A) E{-P}=2.8-7.0 MEV, MEASURED ANGULAR DISTRIBUTION.   
+  7BE2C  DEDUCED NUCLEAR PROPERTIES.                                            
+  7BE C  1979RI12: 10B(P,AG) E=2.0-4.1 MEV, MEASURED E{-GAMMA}, I{-GAMMA}.      
+  7BE C  1986HA27: 10B(P,A) E=18-45 MEV, MEASURED SIGMA(E,THETA). 7BE LEVELS    
+  7BE2C  SPECTROSCOPIC FACTORS.                                                 
+  7BE C  1991YO04: 10B(P,A) E=120-480 KEV, MEASURED SIGMA(E,THETA) DEDUCED      
+  7BE2C  SIGMA(E), ASTROPHYSICAL ^S-FACTOR, THERMONUCLEAR REACTION RATE.        
+  7BE C  1993AN06: 10B(P,A) E{-C.M.}=17-134 KEV, MEASURED SPECTRA, ALPHA YIELD, 
+  7BE2C  DEDUCED ABSOLUTE ASTROPHYSICAL ^S-FACTOR VS E, ELECTRON SCREENING ROLE.
+  7BE  L 0                                                                      
+  7BE  L 428.89    13                                                           
+  7BE  L 4.72E3     8                                                           
+  7BE  L 6.27E3    10                                                           
+  7BE  L 7.21E3    10                                                           
+  7BE  L 14.6E3     3                                                          ?
+                                                                                
+  7B     ADOPTED LEVELS                                          ENSDF    201406
+  7B   H TYP=FUL$AUT=J. Kelley, C.G. Sheu$CUT=01-June-2014$CIT=ENSDF$           
+  7B   Q             27.7E3  20-2013   25-3.4E3   20   2012Wa38                 
+  7B  c  Evidence of the unbound {+7}B nucleus is observed in three             
+  7B 2c  measurements. Each of these measurements is complicated by backgrounds,
+  7B 3c  which affect the extraction of ground state properties. Since {+7}B is 
+  7B 4c  unbound to 1p, 2p and 3p emission, the {+7}Li(|p{++},|p{+-})           
+  7B 5c  measurements of (1981SeZR) are complicated by multi-body breakups that 
+  7B 6c  add a phase-space background component to their analyzed spectra. The  
+  7B 7c  {+10}B({+3}He,{+6}He) measurements of (1967Mc14) were complicated by a 
+  7B 8c  rather large {+11}B({+3}He,{+6}He) background of {+8}B states along    
+  7B 9c  with a multi-body breakup phase-space background component. Finally,   
+  7B ac  the kinematically complete {+7}B analysis of {+9}Be({+9}C,{+7}B)       
+  7B bc  reactions of (2011Ch32) are "contaminated" by {+9}Be({+9}C,{+8}C)      
+  7B cc  events where one proton is unobserved.                                 
+  7B  c  The corrections applied in 2012Ch32 appear to be the smallest, and     
+  7B 2c  arguably most reliable, which perhaps explains that the 2012Wa38       
+  7B 3c  mass evaluation has based the {+7}B mass excess on this value alone.   
+  7B 4c  Without further experimental information, it is agreed that this is the
+  7B 5c  best decision.                                                         
+  7B  c                                                                         
+  7B  c  Mass predictions and comparison with T=3/2 isobaric analog states are  
+  7B 2c  found in (1965De08, 1988Co15, 1997Po12, 2011Ch53). See (1974Ir04,      
+  7B 3c  1993Po11, 1997Ba54, 1998Na17, 2001Co21, 2006Wi07, 2007Ma79) for broad  
+  7B 4c  analyses of {+7}B and other p-shell nuclei, and see (2006Ca35,         
+  7B 5c  2007Do01, 2007Ca31, 2011My03, 2012My04) for more specific analysis on  
+  7B 6c  {+7}B and nearby nuclides.                                             
+  7B  c  The connection between wave-function diffuseness and proton decay is   
+  7B 2c  analyzed in 1997Ab27.                                                  
+  7B   XA7LI(PI+,PI-)                                                           
+  7B   XB9BE(9C,7B)                                                             
+  7B   XC10B(3HE,6HE)                                                           
+  7B  cL T$LABEL=|G                                                             
+  7B   L 0           (3/2-)            801 KEV   20                             
+  7B 2 L XREF=ABC $ ISPIN=(3/2) $ %P AP 100                                     
+  7B  cL J$From systematics.                                                    
+  7B  cL $All decay paths emit protons. The intensity for decay to              
+  7B 2cL p+{+6}Be{-g.s.} is (81 |+ {I10})%. Proton decay to {+6}Be*(1.6 MeV) is 
+  7B 3cL suppressed. Decay to 2p+{+5}Li and 3p+{+4}He are other open channels.  
+                                                                                
+  7B     7LI(PI+,PI-)                  1981SEZR                  ENSDF    201406
+  7B   H TYP=FUL$AUT=J. Kelley, C.G. Sheu$CUT=01-June-2014$CIT=ENSDF$           
+  7B  c  An apparently unpublished experimental result on {+7}Li(|p{++},|p{+-}) 
+  7B 2c  is contained in a conference proceedings overview of pion induced      
+  7B 3c  measurements carried out at the EPICS facility at LAMPF.               
+  7B  c  The review indicates a 180 MeV |p{++} beam impinged on a {+7}Li target,
+  7B 2c  and the reaction |p{+-} particles were momentum analyzed in a QQQDD    
+  7B 3c  magnetic spectrometer. The missing mass spectrum is deduced.           
+  7B  c  The missing mass spectrum shows a clear indication of the ground state,
+  7B 2c  with some indication of a possible excited state. However, a broad     
+  7B 3c  continuum background, attributed to multi-body phase-space breakups    
+  7B 4c  could not be well fit with reasonable assumptions for {+4}He+3p,       
+  7B 5c  {+5}Li+2p and {+6}Be+p contributions. A best fit to the data indicated 
+  7B 6c  a mass excess of |DM=27.80 MeV {I10} with |G=1.2 MeV {I2} for the      
+  7B 7c  ground state, and suggestve evidence for a narrower excited state at   
+  7B 8c  E{-x} |? 1.5 MeV.                                                      
+  7B  c  See other measurements and analysis of partial cross sections in       
+  7B 2c  (1984Gr27, 1985La20, 1989Gr06, 1998Pa40, 2000Dr19, 2007Fo05).          
+  7B  cL T$LABEL=|G                                                             
+  7B   L 0                             1.2 MEV   2                              
+  7B  cL $Analysis of the missing mass spectrum indicates |DM=27.80 MeV {I10}.  
+  7B   L 1.5E3     AP                                                          ?
+                                                                                
+  7B     9BE(9C,7B)                    2011CH32                  ENSDF    201406
+  7B   H TYP=FUL$AUT=J. Kelley, C.G. Sheu$CUT=01-June-2014$CIT=ENSDF            
+  7B  c  The authors impinged a 70 MeV/A {+9}C beam on a thick {+9}Be target and
+  7B 2c  detected ejected reaction products with a large area position sensitive
+  7B 3c  |DE-E array. Reconstruction of the complete kinematics permitted an    
+  7B 4c  analysis of excitation energies, decay pathways and associated         
+  7B 5c  branching ratios for several nuclei.                                   
+  7B  c  A beam of 150 MeV/nucleon {+16}O ions was fragmented in a thick {+9}Be 
+  7B 2c  target to produce a 70 MeV/nucleon {+9}C beam in the NSCL A1900        
+  7B 3c  fragment separator. The {+9}C beam impinged on a 1mm thick {+9}Be      
+  7B 4c  target and reaction products were detected in 14 position sensitive    
+  7B 5c  |DE-E elements of the HiRA array. The coincident reaction products     
+  7B 6c  were analyzed via kinematic energy reconstruction to evaluate          
+  7B 7c  excitation energies and decay paths.                                   
+  7B  c  The {+7}B{-g.s.} is observed in the 3p+|a decay spectrum, which is     
+  7B 2c  significantly contaminated by {+8}C events (4p+|a) where one proton is 
+  7B 3c  not detected. The {+7}B excitation energy spectrum is "corrected" for  
+  7B 4c  {+8}C events and a broad background is also considered.                
+  7B  cL T$LABEL=|G                                                             
+  7B   L 0           (3/2-)            801 KEV   20                             
+  7B 2 L ISPIN=(3/2)                                                            
+  7B  cL J$From Adopted Levels.                                                 
+  7B  cL $A kinematic reconstruction of |a+3p events indicates a state at mass  
+  7B 2cL excess=27677 keV {I25}, which is |? 250 keV lower than the accepted    
+  7B 3cL value for {+7}B{-g.s.} (27.94 MeV {I10}). A width of |G=800 keV {I20}  
+  7B 4cL was deduced, which compares with 1.4 MeV {I2} from 1967Mc14.           
+  7B  cL $The decay path was evaluated to determine the fraction of             
+  7B 2cL {+7}B{-g.s.} --> p+{+6}Be{-g.s.} decay events. Initial analysis        
+  7B 3cL indicated a (54 |+ {I6})% probability for p+{+6}Be{-g.s.} events in the
+  7B 4cL data, though after correction for a broad background component a final 
+  7B 5cL ratio of {+7}Be{-g.s.} --> (81 |+ {I10})% p+{+6}Be{-g.s.} is deduced.  
+  7B 6cL This appears consistent with a shell model spectroscopic factor        
+  7B 7cL prediction S=0.688.                                                    
+  7B  cL $Discussion on the p+{+6}Be*(1.67 MeV; J|p=2+) decay branch is given.  
+  7B 2cL The p+{+6}Be(2+) configuration is expected to be 3 times larger than   
+  7B 3cL the p+{+6}Be{-g.s.}(0+) configuration in {+7}B{-g.s.}; however the     
+  7B 4cL p+{+6}Be(2+) channel is suppressed due to a smaller barrier penetration
+  7B 5cL factor.                                                                
+                                                                                
+  7B     10B(3HE,6HE)                  1967MC14                  ENSDF    201406
+  7B   H TYP=FUL$AUT=J. Kelley, C.G. Sheu$CUT=01-June-2014$CIT=ENSDF            
+  7B  c  The authors impinged a 50 MeV {+3}He beam, from the Berkeley 88-inch   
+  7B 2c  cyclotron, on a 93% enriched 280 |mg/cm{+2} {+10}B target and measured 
+  7B 3c  the ejected {+6}He ions produced in the {+10}B({+3}He,{+6}He){+7}B     
+  7B 4c  reaction. The products were measured using a pair of                   
+  7B 5c  |DE{-1}-|DE{-2}-E-E{-veto} Si detector telescopes that were positioned 
+  7B 6c  at |q{-lab}=10 \|', 14.1 \|' and 19.65 \|'.                            
+  7B  c  The {+6}He energy spectra indicated {+11}B({+3}He,{+6}He){+8}B         
+  7B 2c  contamination, hence the corresponding spectra was measured and was    
+  7B 3c  subtracted. A peak interpreted as the {+7}B ground state was observed, 
+  7B 4c  superimposed on a 2p+{+5}Li and 3p+{4}He phase-space distribution.     
+  7B  c  The mass excess was found as |DM=27.94 MeV {I10} with |G=1.4 MeV {I2}. 
+  7B 2c  A comparison of the A=7 T=3/2 IMME mass equation parameters was also   
+  7B 3c  given.                                                                 
+  7B   L 0                             1.4 MEV   2                              
+  7B  cL $Level observed in background subtracted {+6}He energy spectrum. The   
+  7B 2cL ground state energy corresponds to |DM=27.94 MeV {I10}.                
+                                                                                

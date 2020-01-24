@@ -1,0 +1,634 @@
+266      COMMENTS                                                19NDS    201902
+266    H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266   C  TITL$NUCLEAR DATA SHEETS FOR A=266                                     
+266   c  AUTH$BALRAJ SINGH                                                      
+266   c  INST$Department of Physics and Astronomy, McMaster                     
+266  #c       University, Hamilton, Ontario, L8S 4M1, Canada.                   
+266   c  ABST$The production, identification and half-life of {+266}Db,         
+266  2c  {+266}Sg, {+266}Bh, {+266}Hs and {+266}Mt, the experimentally          
+266  3c  identified nuclides with A=266 are presented, superseding information  
+266  4c  in the previous ENSDF and NDS update of A=266 by 2005Gu33.             
+266  5c  Identification of {+266}Lr from |a decay of {+270}Db has been          
+266  6c  proposed by 2014Kh04 from experiments at GSI, but complete details     
+266  7c  and analyses of all the four decay chains reported in this experiment  
+266  8c  have not yet been published, and discussion in 2015Og05 review article 
+266  9c  considering their work from Dubna (2013Og04, 2011Og04) and from GSI    
+266  Ac  (2014Kh04) still concluded that {+270}Db decayed dominantly by SF mode,
+266  Bc  in contrast with dominant |a decay mode proposed by 2014Kh04.          
+266   c  Experiments carried out at FLNR-JINR-Dubna in collaboration            
+266  2c  with LLNL and ORNL, GSI-SHIP facility, RIKEN, and LBNL facilities:     
+266  3c  {+266}Db from the |a-decay of {+282}Nh in two correlated decay chains  
+266  4c  at Dubna; {+266}Sg as |a-daughter of {+270}Hs in 12 correlated decay   
+266  5c  chains at Dubna and GSI; {+266}Bh in |a decay of {+278}Nh in three     
+266  6c  correlated decay chains observed at RIKEN, and also directly with one  
+266  7c  event in {+249}Bk({+22}Ne,5n) at LBNL, and with four events in         
+266  8c  {+243}Am({+26}Mg,3n) at HIRFL-Lanzhou; {+266}Hs as                     
+266  9c  |a-daughter of {+270}Ds at GSI in two different experiments, six       
+266  Ac  correlated decays in the first, and 25 decay chains in the second      
+266  Bc  experiment, the analysis of which has not been fully reported          
+266  Cc  as yet; and {+266}Mt directly in {+209}Bi({+58}Fe,n) reaction at GSI   
+266  Dc  in two different experiments, observing three events in the first      
+266  Ec  experiment and 12 events in the second, also produced in               
+266  Fc  {+208}Pb({+59}Co,n) reaction at LBNL, observing five correlated        
+266  Gc  decay chains.                                                          
+266  Hc  Recent review articles: 2017Og01, 2016Ho09, 2016Ho06 (for fission      
+266  Ic  barriers), 2015Og05, 2015Og07, 2015Mo25, 2015OgZX, 2013Th02; also      
+266  Jc  2000Ho27 for {+266}Sg and {+266}Mt. See 2016Ka49 for IUPAC technical   
+266  Kc  discussions for the discovery of Z=117 (Ts) and Z=113 (Nh), and        
+266  Lc  2001Ka70 for Z=110-112.                                                
+266  @c  A special issue of Nuclear Physics A444 (2015) is devoted to           
+266  2c  research on super-heavy elements (SHE) with 27 articles. In particular,
+266  3c  see article by 2015Ko20 on mass spectrometric searches for superheavy  
+266  4c  elements in terrestrial matter. See also Proceedings of Nobel Symposium
+266  5c  NS160 'Chemistry and Physics of Heavy and Superheavy Elements'         
+266  6c  published in Eur. Phys. Jour. Web of Conferences 131 (2016), in        
+266  7c  particular 2016UtZZ, 2016DmZZ and 2016HoZY.                            
+266   c  CUT$January 31, 2019, based on retrievals from the Nuclear Science     
+266  2c  References (NSR) database (2011Pr03)                                   
+266   c  ACKN$                                                                  
+266   c  COMM$                                                                  
+266   C  CIT$NDS 156, 70 (2019)                                                 
+266   c  FUND$Work supported by the office of Science, Department of Energy,    
+266  2c  USA, through a contract from Brookhaven National Laboratory, Upton,    
+266  3c  New York, USA.                                                         
+                                                                                
+266LR    ADOPTED LEVELS:TENTATIVE                                19NDS    201902
+266LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266LR  Q  1550     SY 4680   SY 4680   CA 7570   SY    2017WA10,1997MO25        
+266LR cQ $Q(|b{+-}), S(n) and Q(|a) from 2017Wa10. S(p) from 1997Mo25           
+266LR cQ $Estimated uncertainties (2017Wa10): |DQ(|b{+-})=750, |DS(n)=800,      
+266LR2cQ |DQ(|a)=300                                                            
+266LR cQ $S(2n)=10900 {I730} (syst,2017Wa10). S(2p)=11180 (theoretical,1997Mo25)
+266LR c  2014Kh04: possible identification of {+266}Lr nuclide from |a decay    
+266LR2c  chain: {+294}Ts |) {+290}Mc |) {+286}Nh |) {+282}Rg |) {+278}Mt |)     
+266LR3c  {+274}Bh |) {+270}Db |) {+266}Lr; {+294}Ts formed and identified in    
+266LR4c  reaction {+249}Bk({+48}Ca,3n),E=252.1, 254.0, 258.0 MeV. Four events   
+266LR5c  were assigned to the decay of {+294}Ts, but only two events discussed  
+266LR6c  in the paper. Complete analysis of this work has not yet been          
+266LR7c  published, see reference 36 in 2014Kh04. Experiments were done at      
+266LR8c  the accelerator complex of GSI using Gas-filled Trans-Actinide         
+266LR9c  Separator and Chemistry Apparatus (TASCA). The detector system         
+266LRAc  consisted of multiwire proportional counter (MWPC) and a focal plane   
+266LRBc  detector box (FPDB) with a double-sided silicon strip detector (DSSSD),
+266LRCc  and eight DSSSDs mounted perpendicular in the backward hemisphere of   
+266LRDc  the stop detector to form a five-sided box. See details of the two     
+266LRDc  correlated events in {+294}Ts Adopted Levels. The dominant (83%) |a    
+266LREc  decay mode of {+270}Db is in disagreement with the conclusions in      
+266LRFc  2015Og05 review article, considering their work from Dubna             
+266LRGc  (2013Og04,2011Og04) and from GSI (2014Kh04) that {+270}Db decayed      
+266LRHc  dominantly by SF mode                                                  
+266LR c                                                                         
+266LR c  For theoretical studies, consult Nuclear Science References (NSR)      
+266LR2c  database at NNDC, BNL for 18 primary references dealing with the       
+266LR3c  half-lives and other aspects of nuclear structure in this mass region  
+266LR  XA270DB A DECAY:TENTATIVE                                                
+266LR  L  0                             11 H     +21-5                         ?
+266LR2 L %SF=100 (2014Kh04)                                                     
+266LRX L XREF=A                                                                 
+266LR cL E$observed activity is assumed to correspond to the g.s. of {+266}Lr   
+266LR cL T$measured by 2014Kh04. The |a decay mode is less likely as suggested  
+266LR2cL by the theoretical half-life of 10{+10.7} y for |a decay (1997Mo25)    
+                                                                                
+266LR    270DB A DECAY:TENTATIVE       2014KH04                  19NDS    201902
+266LR  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+270DB  P  0                             1.0 H    +19-4           8.02E3   3     
+270DB cP E$Assumed ground state of {+270}Db, but the level is uncertain.        
+270DB cP T$Measured by 2014Kh04, who also list half-life of 1.1 h {I+15-4} by   
+270DB2cP combining their measured value with 17 h {I+15-6} measured by 2013Og04 
+270DB cP QP$From measured E|a=7.90 MeV {I3} (2014Kh04), if reported |a          
+270DB2cP transition is g.s. to g.s. 2017Wa10 give 8260 {I200} from systematics  
+266LR  N                        0.83                                            
+266LR cN BR$%|a=83, %SF=17 (2014Kh04). This decay mode is in disagreement       
+266LR2cN with conclusions of 2015Og05 review article where dominant decay mode  
+266LR3cN is assigned as SF.                                                     
+266LR  L 0                              11 H     +21-5                         ?
+266LR cL T$from Adopted Levels                                                  
+266LR  A  7.90E3   3                                                            
+266LR cA E$assumed g.s. to g.s. transition                                      
+                                                                                
+266DB    ADOPTED LEVELS                                          19NDS    201902
+266DB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266DB  Q -880      SY 5820   SY 3240   SY 8210   SY    2017WA10                 
+266DB cQ $Estimated uncertainties (2017Wa10): |DQ(|b{+-})=370, |DS(n)=360,      
+266DB2cQ |DS(p)=460, |DQ(|a)=200                                                
+266DB cQ $S(2n)=12770 {I370}, S(2p)=8220 {I520} (syst, 2017Wa10).               
+266DB c  2007Og02, 2013Og01 (also 2011Og07, 2012OgZZ, 2007Og05, 2007Og01):      
+266DB2c  {+266}Db produced in the |a decay chain:                               
+266DB3c  {+282}Nh |) {+278}Rg |) {+274}Mt |) {+270}Bh |) {+266}Db, where        
+266DB4c  {+282}Nh was formed in {+237}Np({+48}Ca,3n),E=244 MeV at               
+266DB5c  FLNR-JINR-Dubna, in collaboration with LLNL. See {+282}Nh Adopted      
+266DB6c  Levels for details of two decay chains observed.                       
+266DB c                                                                         
+266DB c  For theoretical studies, consult Nuclear Science References (NSR)      
+266DB2c  database at NNDC, BNL for 37 primary references dealing with the       
+266DB3c  half-lives and other aspects of nuclear structure in this mass region  
+266DB  XA270BH A DECAY (1.0 M)                                                  
+266DB  L 0                              0.4 H    +17-2                          
+266DB2 L %SF AP 100 $%A=? $ %EC=?                                               
+266DBX L XREF=A                                                                 
+266DB cL $The SF decay mode was observed, but |a decay and/or |e+|b{++} modes   
+266DB2cL are not excluded (2017Og01)                                            
+266DB cL J$1-,2- from |W(proton)=1/2- and |W(neutron)=3/2+ (1997Mo25, theory)   
+266DB cL T$22 min {I+105-10} (2017Og01 and 2015Og05 reviews) based on data for  
+266DB2cL one decay chain observed in 2007Og02                                   
+                                                                                
+266DB    270BH A DECAY (1.0 M)         2007OG02,2007OG01,2013OG0119NDS    201902
+266DB  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+270BH  P 0                             1.0 M     +49-5          9060      50    
+270BH cP T$From {+270}Bh Adopted Levels                                         
+266DB  N                       1.0     AP                                       
+266DB cN BR$Only |a decay of {+270}Bh observed                                  
+266DB  L 0                              0.4 H    +17-2                          
+266DB cL T$from Adopted Levels                                                  
+266DB  A 8.93E3    8                                                            
+266DB cA E$from {+270}Bh |a decay (2017Og01 and 2015Og05 reviews) based on data 
+266DB2cA in 2007Og02. Assumed as g.s. to g.s. |a transition                     
+                                                                                
+266SG    ADOPTED LEVELS                                          19NDS    201902
+266SG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266SG  Q -4490     SY 7250   SY 4150   SY 8800   SY    2017WA10                 
+266SG cQ $Estimated uncertainties (2017Wa10): |DQ(|b{+-})=290, |DS(n)=270,      
+266SG2cQ |DS(p)=330, |DQ(|a)=100                                                
+266SG cQ $S(2n)=13310 {I370}, S(2p)=7040 {I440} (syst, 2017Wa10).               
+266SG c  2006Dv01, 2008Dv02: {+266}Sg produced as |a-daughter of {+270}Hs,      
+266SG2c  which was formed in {+248}Cm({+26}Mg,4n),E=193,185 MeV reaction at GSI,
+266SG3c  and assignment to the isotope made through the observation of four     
+266SG4c  correlated (|a-SF) decay chains in 2006Dv01, and two in 2008Dv02       
+266SG5c  which were attributed to {+270}Hs on the basis of |a-SF correlations.  
+266SG6c  These studies negated the discovery of {+266}Sg, published in several  
+266SG7c  articles (2003Tu05, 2003Du27, 2002Du21, 2001Hu22, 1998Tu01, 1997Sc48,  
+266SG8c  1997Sc49 from the GSI group; and 1995Og02, 1994La22, 1994Lo27,         
+266SG9c  1994La22, 1994Og04 from the Dubna-LLNL group), and assigned the events 
+266SGAc  in these earlier studies to {+269}Hs decaying by |a decay to {+265}Sg, 
+266SGBc  which also decays partially by |a. See {+270}Hs Adopted Levels for     
+266SGCc  history of six correlated decay chains observed in the above two works.
+266SG c                                                                         
+266SG c  2013Og03: {+266}Sg produced as |a-daughter of {+270}Hs isotope, which  
+266SG2c  was formed in {+226}Ra({+48}Ca,4n) reaction E({+48}Ca)=229, 234, 241   
+266SG3c  MeV at Dubna. This study confirmed conclusions of the GSI experiments  
+266SG4c  by 2006Dv01 and 2008Dv02. See {+270}Hs Adopted Levels for history of   
+266SG5c  six correlated decay chains observed by 2013Og03.                      
+266SG c                                                                         
+266SG c  {BEarlier studies} where either direct production of {+266}Sg or       
+266SG2c  through the |a decay of {+270}Hs was claimed in the first experiments  
+266SG3c  at Dubna, and later at GSI, but later these activities were            
+266SG4c  reassigned to {+265}Sg or {+269}Hs by 2006Dv01 and 2008Dv02 at GSI,    
+266SG5c  and confirmed in 2013Og03 at Dubna. The following studies are listed   
+266SG6c  here only from the historical perspective of search for {+266}Sg       
+266SG7c  during 1994-2004 at Dubna and GSI.                                     
+266SG c                                                                         
+266SG c  1994La22 (also 1994Lo27, 1994Og04, 1995Og02): {+248}Cm({+22}Ne,4n),    
+266SG2c  E=116,121 MeV at Dubna. Six |a-SF correlated events were reported.     
+266SG3c  The |a-decay half-life of {+266}Sg was suggested as 10-30 s, with |a   
+266SG4c  decay as the primary mode (%|a|>50), E|a=8.63 MeV {I5}.                
+266SG c                                                                         
+266SG c  1997Sc48, 1997Sc49, 1998Tu01: {+248}Cm({+22}Ne,4n),E=121 MeV at GSI    
+266SG2c  using UNILAC accelerator and On-Line Gas chemistry Apparatus (OLGA).   
+266SG3c  Four |a-SF decay chains were assigned to the decay of {+266}Sg.        
+266SG4c  The |a-decay half-life of {+266}Sg was reported as 21 s {I+20-12}, with
+266SG5c  E|a=8.77 MeV {I4}, and the decay of {+266}Sg through |a and SF modes.  
+266SG c                                                                         
+266SG c  2001Hu22: chemistry-related experiments at GSI using the same reaction 
+266SG2c  as in 1998Tu01. Two decay chains reported with |a-decay half-life of   
+266SG3c  21.1 s and E|a=8.66 and 8.70 MeV.                                      
+266SG c                                                                         
+266SG c  2002Du21, 2003Du27, 2003Tu05 (also 2003Kr24 review): two |a-|a-SF      
+266SG2c  correlated decay chains ({+270}Hs |) {+266}Sg |) {+262}Rf) were        
+266SG3c  reported using the {+248}Cm({+26}Mg,4n),E=143.7-146.8 MeV reaction and 
+266SG4c  chemistry techniques at GSI.                                           
+266SG c                                                                         
+266SG c  2004Vo24: this experiment reports mainly the chemistry of Z=108        
+266SG2c  (Hs) element through the formation of {+269}Hs or {+270}Hs in          
+266SG3c  {+248}Cm({+26}Mg,4n) at GSI. Three |a-|a-SF correlated events were     
+266SG4c  assigned to the decay of {+269}Hs or {+270}Hs.                         
+266SG c                                                                         
+266SG c  For theoretical studies, consult Nuclear Science References (NSR)      
+266SG2c  database at NNDC, BNL for 105 primary references dealing with the      
+266SG3c  half-lives and other aspects of nuclear structure in this mass region  
+266SG  XA270HS A DECAY (7.6 S)                                                  
+266SG  L 0           0+                0.34 S    +19-9                          
+266SG2 L %SF=100                                                                
+266SGX L XREF=A                                                                 
+266SG cL $Only the SF decay mode observed by 2013Og03 (Dubna group),            
+266SG2cL 2008Dv02 and 2006Dv01 (GSI group). See comment for T{-1/2}             
+266SG cL T$weighted average of 0.28 s {I+19-8} (2013Og03) and 0.36 s {I+25-10}  
+266SG2cL (2008Dv02) for SF decay of {+266}Sg.                                   
+266SG3cL In several earlier publications (2003Tu05, 2003Du27, 2002Du21,         
+266SG4cL 2001Hu22, 1998Tu01, 1997Sc48, 1997Sc49 from the GSI group; and         
+266SG5cL 1995Og02, 1994La22, 1994Lo27, 1994La22, 1994Og04 from the Dubna-LLNL   
+266SG6cL group), |a decay mode was also reported, and the half-life for |a      
+266SG7cL decay was reported as |?21 s, but 2006Dv01 reassigned the events       
+266SG8cL observed in all the earlier studies listed above to {+265}Sg.          
+                                                                                
+266SG    270HS A DECAY (7.6 S)         2006DV01,2008DV02,2013OG0319NDS    201902
+266SG  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266SG cA $Assuming HF=1 for g.s. to g.s. |a transition, deduced                 
+266SG2cA r{-0}({+266}Sg)=1.471 {I20}                                            
+270HS  P 0           0+                7.6 S     +49-22         9070      40    
+270HS cP T$From {+270}Hs Adopted Levels                                         
+270HS cP QP$From 2017Wa10                                                       
+266SG  N                       0.75    25                                       
+266SG cN BR$%|a|>50 for the decay of {+270}Hs                                   
+266SG  L 0           0+                0.28 S    +19-8                          
+266SG cL T$from the Adopted Levels.                                             
+266SG  A 9020      80                                                           
+266SG cA E$from 2013Og03.                                                       
+266SG2cA Assumed as g.s. to g.s. |a transition                                  
+                                                                                
+266BH    ADOPTED LEVELS                                          19NDS    201902
+266BH  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266BH  Q -3030     SY 6380   SY 1980   SY 9220   40    2017WA10                 
+266BH cQ $Estimated uncertainties (2017Wa10): |DQ(|b{+-})=170, |DS(n)=290,      
+266BH2cQ |DS(p)=200, |DQ(|a)=80                                                 
+266BH cQ $Q(|a) from E|a=9.08 MeV {I4} (2004Mo42). Others: 9.43 MeV from        
+266BH2cQ E|a=9.29 MeV (2000Wi15), 9430 {I80} (syst, 2017Wa10)                   
+266BH cQ $S(2n)=14100 {I240}, S(2p)=5840 {I290} (syst, 2017Wa10).               
+266BH c  2000Wi15: chemical investigation aimed at the study of {+266,267}Bh.   
+266BH2c  Reaction: {+249}Bk({+22}Ne,5n) at the 88-inch cyclotron of LBNL which  
+266BH4c  provided the {+22}Ne{+(6+)} beam at energies of 148 and 153 MeV        
+266BH5c  corresponding to 116-118 MeV and 122-124 MeV respectively in the       
+266BH6c  target. The target was 0.81 mg/cm{+2} {+249}Bk as oxide                
+266BH7c  prepared by the molecular plating technique.                           
+266BH8c  Chemical separation prior to this ensured that less than 0.5% of       
+266BH9c  {+249}Cf was present. Reaction products collected in a recoil chamber  
+266BHAc  located directly behind the target. This chamber was continuously      
+266BHBc  swept with He gas containing KCl aerosols to collect the products.     
+266BHCc  The products were then guided through a TEFLON capillary (1.4 mm,      
+266BHDc  7 min in length) to the merry-go-round (MG) rotating wheel system.     
+266BHEc  One decay chain of {+266}Bh was observed at the higher beam energy     
+266BHFc  of 122-124 MeV followed by an |a-decay sequence. The cross-section     
+266BHGc  estimated for the 5n-reaction channel was 25-250 pb,                   
+266BHHc  based on an expected unhindered half-life of T{-1/2}|?0.5 s for this   
+266BHIc  nuclide with Q(|a)=9.29 MeV. Due to the experimental set-up, this      
+266BHJc  cross-section was strongly dependent on the assumed {+267}Bh half-life.
+266BHKc  The estimated half-life for {+266}Bh was T{-1/2}|?1-10 s; suggested    
+266BHLc  value is within 1 s. Fission decay properties of {+266}Bh and {+267}Bh 
+266BHMc  could not be determined due to contamination from {+256}Fm SF decay.   
+266BH c  Event #1:                                                              
+266BH c  E{-|a1}=9290 keV, t{-1}=0.87 s, assigned to {+266}Bh                   
+266BH c  E{-|a2}=8540 keV, t{-2}=27.83 s, assigned to {+262}Db                  
+266BH c  E{-|a3}=8740 keV, t{-3}=0.04 s, assigned to {+258}Lr                   
+266BH c                                                                         
+266BH c  2004Mo42, 2007Mo43, 2012Mo25: {+266}Bh produced as                     
+266BH2c  |a-great-granddaughter of {+278}Nh, which was formed in                
+266BH3c  {+209}Bi({+70}Zn,n) E=349 MeV reaction at RIKEN. See {+278}Nh          
+266BH4c  Adopted Levels for details of three correlated decay chains observed.  
+266BH5c  Results are summarized by 2015Mo25.                                    
+266BH d  2005MoZS, 2006MoZV, 2006MoZV, 2007MoZY, 2009MoZU and 2010MoZV reports  
+266BH2d  superseded by published articles: 2004Mo42, 2007Mo43 and 2012Mo25.     
+266BH c                                                                         
+266BH c  2006Qi03: {+266}Bh produced directly in {+243}Am({+26}Mg,3n),E=162 MeV 
+266BH2c  reaction (126 MeV at mid target) at HIRFL, Lanzhou facility. Total of  
+266BH3c  four |a-|a-|a correlated decay chains were observed. Deduced average   
+266BH4c  E|a, T{-1/2} of {+266}Bh decay and production |s.                      
+266BH c  History of decay chains in 2006Qi03:                                   
+266BH c  Event #1:                                                              
+266BH c  E{-|a1}=8989 keV, t{-1}=1.13 s, assigned to {+266}Bh                   
+266BH c  E{-|a2}=8459 keV, t{-2}=33.52 s, assigned to {+262}Db                  
+266BH c                                                                         
+266BH c  Event #2:                                                              
+266BH c  E{-|a1}=9071 keV, t{-1}=0.79 s, assigned to {+266}Bh                   
+266BH c  E{-|a2}=8604 keV, t{-2}=34.14 s, assigned to {+262}Db                  
+266BH c                                                                         
+266BH c  Event #3:                                                              
+266BH c  E{-|a1}=8959 keV, t{-1}=0.51 s, assigned to {+266}Bh                   
+266BH c  E{-|a2}=8542 keV, t{-2}=29.23 s, assigned to {+262}Db                  
+266BH c  E{-|a3}=8641 keV, t{-3}=5.07 s, assigned to {+258}Lr                   
+266BH c                                                                         
+266BH c  Event #4:                                                              
+266BH c  E{-|a1}=9106 keV, t{-1}=1.52 s, assigned to {+266}Bh                   
+266BH c  E{-|a2}=8518 keV, t{-2}=53.09 s, assigned to {+262}Db                  
+266BH c  Other: 1987ScZR                                                        
+266BH c                                                                         
+266BH c  For theoretical studies, consult Nuclear Science References (NSR)      
+266BH2c  database at NNDC, BNL for 42 primary references dealing with the       
+266BH3c  half-lives and other aspects of nuclear structure in this mass region  
+266BH  XA270MT A DECAY (0.48 S)                                                 
+266BH  L 0                             2.1 S     +29-8                          
+266BH2 L %A AP 100 $ %SF=?                                                      
+266BHX L XREF=A                                                                 
+266BH cL J$2-,3- from |W(proton)=5/2-, |W(neutron)=1/2+ (1997Mo25,theory)       
+266BH cL T$from mean lifetime=3.0 s {I+42-11} (2015Mo25 review article, analysis
+266BH2cL of three correlated decay chains observed in 2004Mo42, 2007Mo43        
+266BH3cL and 2012Mo25 at RIKEN). Others: 0.66 s {I+59-26} (2006Qi03),           
+266BH4cL 0.6 s {I+29-3} (2000Wi15).                                             
+266BH cL $E|a=9.08 MeV {I4} (2004Mo42), 9.77 MeV {I4} (2007Mo43), 9.39 MeV {I6} 
+266BH2cL (2012Mo25), 9.03 MeV {I8} (2006Qi03) from |a decay of {+266}Bh.        
+266BH3cL Unweighted average of all the values is 9.32 MeV {I17} (evaluator).    
+                                                                                
+266BH    270MT A DECAY (0.48 S)        2004MO42                  19NDS    201902
+266BH  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266BH c  See {+270}Mt Adopted Levels for details.                               
+270MT  P 0                             0.48 S    +66-18         10180     50    
+270MT cP T$From {+270}Mt Adopted Levels                                         
+270MT cP QP$From 2017Wa10                                                       
+266BH  N                       1.0     AP                                       
+266BH cN BR$Only |a decay of {+270}Mt observed                                  
+266BH  L 0                             2.1 S     +29-8                          
+266BH cL T$from Adopted Levels                                                  
+266BH  A 10.15E3   11                                                           
+266BH cA E$unweighted average of 10.03 MeV {I7} (2004Mo42) and 10.26 MeV {I7}   
+266BH2cA (2012Mo25). Other: E|a=10030 {I50} from Q(|a)=10180 {I50} in 2017Wa10  
+266BH2cA decay of {+270}Mt. Assumed as g.s. to g.s. |a transition               
+                                                                                
+266HS    ADOPTED LEVELS, GAMMAS                                  19NDS    201902
+266HS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266HS  Q -6830     SY 7840   50 2570   SY 10346  16    2017WA10                 
+266HS cQ $Estimated uncertainties (2017Wa10): |DQ(|b{+-})=310, |DS(p)=240.      
+266HS cQ $S(2n)=14570 {I50}, S(2p)=4220 {I290} (syst), Q(|ep)=1050 {I130} (syst)
+266HS2cQ (2017Wa10)                                                             
+266HS c  2001Ho06 (also 2002Ho11, 2011Ac01, 2015Mu16 review): {+266}Hs produced 
+266HS2c  as |a daughter of {+270}Ds, which was formed in                        
+266HS3c  {+207}Pb({+64}Ni,n),E=317 MeV using UNILAC accelerator facility and    
+266HS3c  SHIP separator at GSI. Experiments performed under an international    
+266HS4c  collaboration between laboratories in Germany, Slovakia, Poland, and   
+266HS5c  Russia. Of the eight correlated events detected, six events involved   
+266HS6c  EVR-|a1-|a2-SF correlations, and two EVR-|a2-SF. Two groups for the    
+266HS7c  six |a-decays assigned to {+270}Ds as follows: events #1, #2, and #3   
+266HS8c  belonged to the g.s., and events #4, #5, and #6 to states              
+266HS9c  originating from a K-isomer (as in the case of the longest half-life   
+266HSAc  in event #6) or |g-decay. No fission event was observed which could    
+266HSBc  have been assigned to {+266}Hs. See details for {+270}Ds Adopted       
+266HSCc  Levels for history of eight decay chains assigned to {+270}Ds |)       
+266HSDc  {+266}Mt |a-|a sequence. 2001Ho06 considered the possibility of        
+266HSEc  existence of an isomeric state, analogous to the one in {+270}Ds.      
+266HS c  2012Ac04: 25 additional decay chains were observed at GSI using the    
+266HS2c  same reaction and SHIP separator as in 2001Ho06. These chains were of  
+266HS3c  three different types of correlations: EVR-|a-|a-SF, EVR-|a-SF, and    
+266HS4c  EVR-|a-|a-|a-SF. Complete analysis of these data are yet to be         
+266HS5c  published as mentioned in author's review articles 2017Ac02 and        
+266HS6c  2015Ac04. Revised half-life of {+270}Ds |a decay was deduced in this   
+266HS7c  work. These experiments are also briefly described by D. Ackermann     
+266HS8c  et al., in GSI Annual Scientific reports (GSI-2010, p200 (published    
+266HS9c  in 2011), and GSI-2011, p208 (published in 2012)). Isomeric state      
+266HSAc  in {+266}Hs is proposed in these studies                               
+266HS c                                                                         
+266HS c  For theoretical studies, consult Nuclear Science References (NSR)      
+266HS2c  database at NNDC, BNL for 112 primary references dealing with the      
+266HS3c  half-lives and other aspects of nuclear structure in this mass region  
+266HS  XA270DS A DECAY (0.20 MS)                                                
+266HS  XB270DS A DECAY (3.9 MS)                                                 
+266HS  L 0           0+                2.97 MS   +78-51                         
+266HS2 L %A=76 9$ %SF=24 9 (2012Ac04)                                           
+266HSX L XREF=A                                                                 
+266HS cL $SF branch from a larger number of decay chains observed in            
+266HS2cL 2012Ac04, but complete analysis of these results is not available      
+266HS3cL as yet. Other: fission branch estimated as within 1.4%                 
+266HS2cL in the absence of observed SF for this nucleus (2001Ho06).             
+266HS cL E$the observed |a activity is assumed to correspond to the ground      
+266HS2cL state of {+266}Hs                                                      
+266HS cL T$from 2012Ac04, which probably includes data from 25 decay chains     
+266HS2cL observed in this work, details of which have not been published as     
+266HS3cL yet, and also the eight events from the previous GSI work (2001Ho06).  
+266HS4cL Other: 2.3 ms {I+13-4} (2001Ho06).                                     
+266HS  L 85        AP                                                           
+266HSX L XREF=B                                                                 
+266HS  L 712       AP                                                           
+266HSX L XREF=B                                                                 
+266HS  L 930       AP                                                           
+266HSX L XREF=B                                                                 
+266HS  G 218                                                                    
+266HS cG $2001Ho06 note that E|g is close to the theoretical energy of 299 keV  
+266HS2cG from the yrast 8+ to 6+ levels in {+266}Hs                             
+266HS  L 1200      AP                   1.2 M    +59-6                       M  
+266HSX L XREF=B                                                                 
+266HS2 L %A AP 100                                                              
+266HS cL E$from 2017Ac02 and 2015Ac04 review articles. Others: 1100 keV {I70}   
+266HS2cL (2017Au03, NUBASE-2016), 1404 keV {I97} (2015Ko14, K-isomer evaluation)
+266HS cL J$9- proposed from systematics (2017Au03,2015Ko14) with                
+266HS2cL possible configuration=|n7/2[613]~#|n11/2[725] in 2015Ko14             
+266HS cL T$74 s {I+354-34} (2012Ac04).                                          
+                                                                                
+266HS    270DS A DECAY (0.20 MS)       2001HO06,2012AC04         19NDS    201902
+266HS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266HS cA $Assuming HF=1 for g.s. to g.s. |a transition, deduced                 
+266HS2cA r{-0}({+266}Hs)=1.472 {I16}                                            
+270DS  P 0           0+                0.20 MS   +7-4             11117   28    
+270DS cP T$From {+270}Ds Adopted Levels                                         
+270DS cP QP$From 2017Wa10                                                       
+266HS  N                       1.0     AP                                       
+266HS  L 0           0+                2.97 MS   +78-51                         
+266HS cL T$from Adopted Levels                                                  
+266HS  A 11.03E3    5                                                           
+266HS cA E$from 2001Ho06. Assumed as g.s. to g.s. |a transition. Other:         
+266HS2cA preliminary Q(|a)=11.25 MeV (2012Ac04), fully analyzed results of this 
+266HS3cA work are not yet available.                                            
+                                                                                
+266HS    270DS A DECAY (3.9 MS)        2001HO06,2012AC04         19NDS    201902
+266HS  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266HS cL E$Deduced by evaluator from |a-energy differences and |?1130 keV       
+266HS2cL for the isomer in {+270}Ds, except where noted otherwise.              
+270DS  P 1.13E3    AP (9-,10-)         3.9 MS    +15-8            11117   50    
+270DS cP E,J,T$From {+270}Ds Adopted Levels. Other: 6.0 ms {I+82-22} (2001Ho06) 
+270DS cP QP$From 2017Wa10                                                       
+266HS  N                       0.7     AP                                       
+266HS cN BR$%IT|?30 seems possible, but could not be definitely established in  
+266HS2cN 2001Ho06.                                                              
+266HS  L 85        AP                                                           
+266HS  A 12.15E3   5                                                            
+266HS cA $HF=37 (2001Ho06)                                                      
+266HS  L 712       AP                                                           
+266HS cL $Level from 218|g from 930 level                                       
+266HS  L 930       AP                                                           
+266HS  A 11.15E3   2                                                        C   
+266HS cA $This |a is in coincidence with 218|g in {+266}Hs                      
+266HS  G 218                                                                 C  
+266HS cG $218|g in coincidence with 11.15 MeV |a                                
+266HS cG $2001Ho06 note that E|g is close to the theoretical energy of 299 keV  
+266HS2cG from the yrast 8+ to 6+ levels in {+266}Hs                             
+266HS  L 1200      AP                   1.2 M    +59-6                       M  
+266HS cL E$from 2017Ac02 and 2015Ac04 review articles.                          
+266HS cL T$74 s {I+354-34} from 2012Ac04.                                       
+266HS  A 10.95E3   2                                                            
+                                                                                
+266MT    ADOPTED LEVELS                                          19NDS    201902
+266MT  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 156, 70 (2019)$CUT=31-Jan-2019$       
+266MT  Q             6790    SY 230    SY 10996  25    2017WA10                 
+266MT cQ $Estimated uncertainties (2017Wa10): |DS(n)=550, |DS(p)=310            
+266MT cQ $S(2p)=2670 {I350}, Q(|ep)=4260 {I390} (syst,2017Wa10).                
+266MT2cQ S(2n)=15510 (theory, 1997Mo25)                                         
+266MT cQ $2018It04 deduced mass excess of {+266}Mt as 127803 keV {I152} using   
+266MT2cQ Q(|a) from 2017Wa10, where mass excess is given as 127962 keV {I306}   
+266MT3cQ from systematic trend.                                                 
+266MT c  1982Mu15, 1984Mu07, 1988Mu15, 1989Mu16: {+266}Mt produced in           
+266MT2c  {+209}Bi({+58}Fe,n),E=5.15, 5.17 MeV/nucleon using SHIP separator      
+266MT3c  at GSI. One decay chain reported by 1982Mu15 and 1984Mu07. Two         
+266MT4c  additional decay chains were reported by 1988Mu15. Results also        
+266MT5c  summarized in 1989Mu16 review article.                                 
+266MT c  Event #1: 1982Mu15, 1984Mu07:                                          
+266MT c  E{-|a1}=11.10 MeV {I4}, |Dt{-1}=5.0 ms, assigned to {+266}Mt           
+266MT c  E{-|a2}=1.14 MeV (escaped), |Dt{-2}=22.3 ms, assigned to {+262}Bh      
+266MT c  |e, |Dt{-3}=12.9 s, assigned to {+258}Db, decays to {+258}Rf by |e     
+266MT c  E{-SF}=232 MeV for dominant SF decay of {+258}Rf.                      
+266MT c                                                                         
+266MT c  Event #2: 1988Mu15, 1989Mu16:                                          
+266MT c  E{-|a1}=5.8 MeV (escaped), |Dt{-1}=4.8 ms, assigned to {+266}Mt        
+266MT c  E{-|a2}=10.21 MeV, |Dt{-2}=13.2 ms, assigned to {+262}Bh               
+266MT c  E{-|a3}=1.4 MeV (escaped), |Dt{-3}=9.3 s, assigned to {+258}Db         
+266MT c  |e decay of {+254}Lr to {+254}No                                       
+266MT c  E{-|a4}=8.10 MeV, |Dt{-4}=96 s, assigned to {+254}No, which |a         
+266MT2c  decays to {+250}Fm                                                     
+266MT c                                                                         
+266MT c  Event #3: 1988Mu15, 1989Mu16:                                          
+266MT c  Missed detection of |a particles from the decay of {+266}Mt            
+266MT c  E{-|a2}=10.34 MeV, |Dt{-2}=4.0 ms, assigned to {+262}Bh                
+266MT c  E{-|a3}=9.01 MeV, |Dt{-3}=2.9 s, assigned to {+258}Db, , which |a      
+266MT2c  decays to {+254}Lr                                                     
+266MT c                                                                         
+266MT c  1984Og03: {+209}Bi({+58}Fe,n),E=5.5 MeV/nucleon using U400 cyclotron   
+266MT2c  at JINR-Dubna, followed by off-line detection of long-lived daughters  
+266MT3c  by radiochemical separation of Cm, Cf, Es, and Fm. Detected one track  
+266MT4c  of {+258}Db (possibly originating from the |a-|a decay chain of        
+266MT5c  {+266}Mt), and seven |a decays from {+246}Cf (T{-1/2}=35 h {I+39-14}). 
+266MT c                                                                         
+266MT c  1997Ho14 (also 1999He11 review article): {+266}Mt produced in          
+266MT2c  {+209}Bi({+58}Fe,n),E=287.6, 289.8, and 292.0 MeV using the UNILAC     
+266MT3c  and SHIP at GSI. Measured excitation functions and production          
+266MT4c  cross sections                                                         
+266MT c  History of 12 |a-|a-|a decay chains observed by 1997Ho14:              
+266MT c  Event #1:                                                              
+266MT c  E{-|a1}=10814 keV, |Dt{-1}=1.8 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=10213 keV, |Dt{-2}=11.5 ms, assigned to {+262}Bh               
+266MT c  |e, |Dt{-3}=1.18 s  - assigned to {+258}Db                             
+266MT c  Event #2:                                                              
+266MT c  E{-|a1}=10661 keV, |Dt{-1}=1.1 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=9834 keV, |Dt{-2}=14.1 ms, assigned to {+262}Bh                
+266MT c  E{-|a3}=9387 keV, |Dt{-3}=9.6 s, assigned to {+258}Db                  
+266MT c  Event #3:                                                              
+266MT c  E{-|a1}=10576 keV, |Dt{-1}=0.4 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=10379 keV, |Dt{-2}=16.7 ms, assigned to {+262}Bh               
+266MT c  E{-|a3}=9189 keV, |Dt{-3}=2.2 s, assigned to {+258}Db                  
+266MT c  Event #4:                                                              
+266MT c  E{-|a1}=10561 keV, |Dt{-1}=1.9 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=10443 keV, |Dt{-2}=18.4 ms, assigned to {+262}Bh               
+266MT c  E{-|a3}=9380 keV, |Dt{-3}=0.60 s, assigned to {+258}Db                 
+266MT c  Event #5:                                                              
+266MT c  E{-|a1}=10809 keV, |Dt{-1}=1.3 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=9763 keV, |Dt{-2}=255 ms, assigned to {+262}Bh                 
+266MT c  |e decay, |Dt{-3}=11.2 s, assigned to {+258}Db                         
+266MT c                                                                         
+266MT c  Event #6:                                                              
+266MT c  E{-|a1}=11739 keV, |Dt{-1}=7.8 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=6.4 MeV (escaped), |Dt{-2}=6.9 ms, assigned to {+262}Bh        
+266MT c  E{-|a3}=9179 keV, |Dt{-3}=1.85 s, assigned to {+258}Db                 
+266MT c  Event #7:                                                              
+266MT c  E{-|a1}=10456 keV, |Dt{-1}=4.5 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=10372 keV, |Dt{-2}=17.3 ms, assigned to {+262}Bh               
+266MT c  E{-|a3}=1.0 MeV (escaped), |Dt{-3}=11.2 s, assigned to {+258}Db        
+266MT c  Event #8:                                                              
+266MT c  E{-|a1}=11306 keV, |Dt{-1}=2.0 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=10001 keV, |Dt{-2}=45 ms, assigned to {+262}Bh                 
+266MT c  E{-|a3}=0.6 MeV (escaped), |Dt{-3}=1.38 s, assigned to {+258}Db        
+266MT c  Event #9:                                                              
+266MT c  E{-|a1}=10484 keV, |Dt{-1}=0.2 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=9902 keV, |Dt{-2}=7.5 ms, assigned to {+262}Bh                 
+266MT c  |e decay, |Dt{-3}=7.0 s, assigned to {+258}Db                          
+266MT c  Event #10:                                                             
+266MT c  E{-|a1}=11682 keV, |Dt{-1}=0.2 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=9831 keV, |Dt{-2}=278 ms, assigned to {+262}Bh                 
+266MT c  E{-|a3}=1.1 MeV (escaped), |Dt{-3}=0.11 s, assigned to {+258}Db        
+266MT c  Event #11:                                                             
+266MT c  E{-|a1}=10859 keV, |Dt{-1}=0.7 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=9803 keV, |Dt{-2}=21.1 ms, assigned to {+262}Bh                
+266MT c  Event #12:                                                             
+266MT c  E{-|a1}=10848 keV, |Dt{-1}=2.5 ms, assigned to {+266}Mt                
+266MT c  E{-|a2}=10143 keV, |Dt{-2}=225 ms, assigned to {+262}Bh                
+266MT c  E{-|a3}=9064 keV, |Dt{-3}=4.19 s, assigned to {+258}Db                 
+266MT c  1997Ho14 obtain T{-1/2}=1.7 ms {I+6-4} from the arithmetic mean of 14  
+266MT2c  decay times.                                                           
+266MT c                                                                         
+266MT c  2009Ne02: {+208}Pb({+59}Co,n),E=291.5 MeV from the 88-Inch Cyclotron at
+266MT2c  LBNL, using the Berkeley Gas Separator to separate the                 
+266MT3c  evaporation residues. Measured |a decays and spontaneous fission       
+266MT4c  events using a multiwire proportional counter (MWPC).                  
+266MT c                                                                         
+266MT c  History of five correlated decay chains observed in 2009Ne02:          
+266MT c  Event #1: Energy of the evaporation residue=21.6 MeV                   
+266MT c  E{-|a1}=11260 keV, |Dt{-|a1}=15 ms, assigned to {+266}Mt               
+266MT c  E{-|a2}=3090 keV (escaped), |Dt{-|a2}=2 ms, assigned to {+262}Bh       
+266MT c  E{-|a3}=6880 keV (partial), |Dt{-|a3}=15.035 s, assigned to {+258}Db   
+266MT c  {+254}Lr decays by |e to {+254}No                                      
+266MT c  E{-|a4}=8060 keV, |Dt{-|a4}=26.990 s, assigned to {+254}No             
+266MT c  E{-|a5}=7400 keV, |Dt{-|a5}=25.812 min, assigned to {+250}Fm           
+266MT c                                                                         
+266MT c  Event #2: Energy of the evaporation residue=24.1 MeV                   
+266MT c  E{-|a1}=2180 keV (escaped), |Dt{-|a1}=7 ms, assigned to {+266}Mt       
+266MT c  E{-|a2}=10380 keV, |Dt{-|a2}=38 ms, assigned to {+262}Bh               
+266MT c  E{-|a3}=1153 keV (escaped), |Dt{-|a3}=5.577 s, assigned to {+258}Db    
+266MT c  E{-|a4}=8450 keV, |Dt{-|a4}=17.908 s, assigned to {+254}Lr             
+266MT c                                                                         
+266MT c  Event #3: Energy of the evaporation residue=23.1 MeV                   
+266MT c  E{-|a1}=4340 keV (escaped), |Dt{-|a1}=0.6 ms, assigned to {+266}Mt     
+266MT c  E{-|a2}=10060 keV, |Dt{-|a2}=1 ms, assigned to {+262}Bh                
+266MT c  E{-|a3}=9250 keV, |Dt{-|a3}=1.364 s, assigned to {+258}Db              
+266MT c  E{-|a4}=8490 keV, |Dt{-|a4}=9.013 s, assigned to {+254}Lr              
+266MT c  E{-|a5}=7780 keV, |Dt{-|a5}=16.610 s, assigned to {+250}Md             
+266MT c                                                                         
+266MT c  Event #4: Energy of the evaporation residue=23.1 MeV                   
+266MT c  E{-|a1}=10670 keV, |Dt{-|a1}=0.2 ms, assigned to {+266}Mt              
+266MT c  E{-|a2}=8150 keV (partial), |Dt{-|a2}=185 ms, assigned to {+262}Bh     
+266MT c  E{-|a3}=1450 keV (escaped), |Dt{-|a3}=7.804 s, assigned to {+258}Db    
+266MT c  {+254}Lr decays by |e to {+254}No                                      
+266MT c  E{-|a4}=8050 keV, |Dt{-|a4}=9.412 s, assigned to {+254}No              
+266MT c  E{-|a5}=7570 keV , |Dt{-|a5}=36.260 min, assigned to {+250}Fm          
+266MT c                                                                         
+266MT c  Event #5: Energy of evaporation residue=23.1 MeV                       
+266MT c  E{-|a1}=1140 keV (escaped), |Dt{-|a1}=0.5 ms, assigned to {+266}Mt     
+266MT c  E{-|a2}=10070 keV, |Dt{-|a2}=39 ms, assigned to {+262}Bh               
+266MT c  E{-|a3}=1440 keV (escaped), |Dt{-|a3}=8.786 s, assigned to {+258}Db    
+266MT c  E{-|a4}=8450 keV, |Dt{-|a4}=13.759 s, assigned to {+254}Lr             
+266MT c  {+250}Mo decays by |e to {+250}Fm                                      
+266MT c  E{-|a5}=7440 keV, |Dt{-|a5}=7.495 min, assigned to {+250}Fm            
+266MT c                                                                         
+266MT c  Possible isomerism in {+266}Mt: isomeric activity decaying by |a is    
+266MT2c  proposed by 1997Ho14 and 1999He11 in view of the large spread in       
+266MT3c  measured E|a values (10.484 to 11.739 MeV) and mean lifetimes (ranging 
+266MT4c  from 0.2 to 7.8 ms) for 14 events in 1997Ho14 (including two from      
+266MT5c  1988Mu15 and 1984Mu07) and five from 2009Ne02, and also existence of   
+266MT6c  two |a-decaying activities of {+262}Bh, |a daughter of {+266}Mt. Also  
+266MT7c  note a comment by 1997Ho14 that events #5, #10 and #12 were correlated 
+266MT8c  to three |a decays of {+266}Mt near 10.8 MeV, possibly decays from a   
+266MT9c  level different from the other transitions. 2017Au03 (NUBASE-2016)     
+266MTAc  adopted g.s. of {+266}Mt with T{-1/2}=1.2 ms {I4}, based on lifetime   
+266MTBc  data from ten events in 1997Ho14; and isomer in {+266}Mt at 1140 keV   
+266MTCc  {I80} with T{-1/2}=6 ms {I3}, based on data from three events in       
+266MTDc  1997Ho14. 2017Au03 and 2017Wa10 did not refer to 2009Ne02 work where   
+266MTEc  five additional events were reported. In the opinion of the evaluator, 
+266MTFc  a definite evidence for an isomer in {+266}Mt is lacking, and further  
+266MTGc  experiments on this isotope are warranted.                             
+266MT c                                                                         
+266MT c  For theoretical studies, consult Nuclear Science References (NSR)      
+266MT2c  database at NNDC, BNL for 44 primary references dealing with the       
+266MT3c  half-lives and other aspects of nuclear structure in this mass region  
+266MT  L 0                             2.1 MS    7                              
+266MT2 L %A>75 $%SF<25 (2009Ne02)                                               
+266MT cL $No evidence was found for |e or SF decay modes (2009Ne02,1997Ho14).   
+266MT2cL The SF events detected in 1984Og03 were interpreted as being from      
+266MT3cL {+258}Rf decay, the |e decay daughter of {+258}Sg, the |a              
+266MT4cL grand-daughter of {+266}Mt. From the systematics of SF decay           
+266MT5cL half-lives, 1984Og03 suggested that {+266}Mt decays mostly by |a.      
+266MT cL E$the observed SF or |a activity is assumed to correspond to the ground
+266MT2cL state of {+266}Mt, although, as stated in 1997Ho14 and 1999He11,       
+266MT3cL isomeric activity is also possible                                     
+266MT cL T$weighted average of 3.3 ms {I+25-10} (2009Ne02, from five decay      
+266MT2cL chains) and 1.7 ms {I+6-4} (1997Ho14, from 14 decay chains, including  
+266MT3cL one each from 1988Mu15 and 1984Mu07). The half-life is assigned to     
+266MT4cL one activity, but as stated in 1997Ho14 and 1999He11,                  
+266MT5cL isomeric activity is also possible                                     
+266MT cL J$1+,10+ from |W(proton)=11/2+, |W(neutron)=9/2+ (1997Mo25, theory)    
+266MT cL $E|a=11.26 and 10.67 MeV (2009Ne02), 10.484 to 11.739 MeV in 1997Ho14. 
+266MT2cL From all the 15 decay chains, where full energy |a decay from {+266}Mt 
+266MT3cL was recorded, unweighted average E|a=10.86 MeV {I10}. 2017Wa10 and     
+266MT4cL 2017Hu03 adopt Q(|a)({+266}Mt decay)=10996 {I25} (implying             
+266MT5cL E|a=10831 {I25}) by taking average of four measured E|a values 10859,  
+266MT6cL 10848, 10809 and 10814 keV in 1997Ho14; and also adopt                 
+266MT7cL Q(|a)=11920 {I50} for an isomer in {+266}Mt from an event with measured
+266MT8cL E|a=11739 keV in 1997Ho14. However, note that the procedure adopted in 
+266MT9cL 2017Hu03 is at variance with a comment by 1997Ho14 that events #5,     
+266MTAcL #10 and #12 were correlated to three |a decays of {+266}Mt near 10.8   
+266MTBcL MeV, possibly decays from a level different from the other transitions.
+266MT cL $Production |s=7.5 pb {I27} (maximum); |s(287.6 MeV)=7.4 pb {I+48-33}, 
+266MT2cL |s(289.8 MeV)=6.1 pb {I+49-29}, and |s(292.0)=2.5 pb {I+25-14}         
+266MT3cL (1997Ho14). Measured |s=7.7 pb {I+52-33} at E*=14.9 MeV (2009Ne02).    
+266MT4cL Earlier value: |s=10 pb {I+10-6} (1988Mu15, also includes 1984Mu07).   
+                                                                                

@@ -1,0 +1,684 @@
+  1      COMMENTS                                                05NDS    200601
+  1    H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1   C  TITL$NUCLEAR DATA SHEETS FOR A=1                                       
+  1   c  AUTH$BALRAJ SINGH                                                      
+  1   c  INST$Department of Physics and Astronomy, McMaster University,         
+  1  2c  Hamilton, Ontario L8S 4M1, Canada                                      
+  1  #c                                                                         
+  1   c  ABST$Nuclear data (J|p, half-life, moments, etc.) for neutron and      
+  1  2c  proton are given with bibliographic information. Most values are       
+  1  3c  adopted from a recent evaluation by 2004Ei01 (S. Eidelman et al.       
+  1  4c  (Particle Data Group), Phys. Lett. B 592, 1 (2004)                     
+  1  5c  (URL=http://pdg.lbl.gov)).                                             
+  1   c  It should be noted that the adopted mean lifetime of 885.7 s {I8}      
+  1  2c  (2004Ei01) for free neutron decay differs significantly                
+  1  3c  (by 6.5 standard deviations) from a recently measured value of         
+  1  4c  878.5 s {I7} (2005Se01), but agrees well with another recent           
+  1  5c  value of 886.3 s {I34} (2005Ni13)                                      
+  1   c  CUT$ October 31, 2005.                                                 
+  1   c  FUND$This work was supported by the Natural Sciences and Engineering   
+  1  xc  Research Council (NSERC) of Canada, and by the Office of Science,      
+  1  xc  Department of Energy of the United States.                             
+  1   C  CIT$NDS 106, 601 (2005)                                                
+                                                                                
+  1      REFERENCES                                              05NDS    200601
+  1    R 1927DE01 JOUR PRLAA 115 483                                            
+  1    R 1929MU01 JOUR TFSOA 25 634                                             
+  1    R 1930HE02 JOUR ZEPYA 64 151                                             
+  1    R 1932CH02 JOUR NATUA 129 312                                            
+  1    R 1935CH01 JOUR PRLAA 151 479                                            
+  1    R 1937SC09 JOUR PHRVA 52 1250                                            
+  1    R 1938PO08 JOUR PHRVA 54 827                                             
+  1    R 1939KE12 JOUR PHRVA 56 728                                             
+  1    R 1948BL29 JOUR PHRVA 74 1025                                            
+  1    R 1949RO15 JOUR PHRVA 76 980                                             
+  1    R 1949TA01 JOUR PHRVA 75 1481                                            
+  1    R 1950BL73 JOUR PHRVA 80 305                                             
+  1    R 1950HA67 JOUR PHRVA 79 888                                             
+  1    R 1950RO15 JOUR PHRVA 78 311                                             
+  1    R 1950SN68 JOUR PHRVA 78 310                                             
+  1    R 1950ST88 JOUR HPACA23 63                                               
+  1    R 1950TH07 JOUR PHRVA 78 787                                             
+  1    R 1951GA31 JOUR PHRVA 83 996                                             
+  1    R 1951JE10 JOUR PHRVA 81 1040                                            
+  1    R 1951RO25 JOUR PHRVA 83 349                                             
+  1    R 1951SO34 JOUR PHRVA 82 697                                             
+  1    R 1954ST90 JOUR PHRVA 96 983                                             
+  1    R 1955CO36 JOUR PHRVA 99 1622                                            
+  1    R 1956CO57 JOUR PHRVA 104 283                                            
+  1    R 1956TR19 JOUR BAPSA 1 220,UA8,Trigger                                  
+  1    R 1956WI41 JOUR ANPYA 19 329                                             
+  1    R 1956WI46 JOUR PHRVA 103 620                                            
+  1    R 1958DR05 JOUR PRLTA 1 413                                              
+  1    R 1959DA06 JOUR PHRVA 114 285                                            
+  1    R 1959LI54 JOUR PHRVA 116 633                                            
+  1    R 1959SO15 JOUR NUPHA 10 395                                             
+  1    R 1960CL06 JOUR CJPHA 38 693                                             
+  1    R 1961BO11 JOUR PHRVA 123 242                                            
+  1    R 1961CA20 JOUR ZEINA 69 191                                             
+  1    R 1962PI04 JOUR PHRVA 127 787                                            
+  1    R 1962YA07 JOUR IZTEA No 5,24                                            
+  1    R 1962YA08 JOUR IZTEA No 6,28                                            
+  1    R 1963SA04 JOUR PPSOA 272A 79                                            
+  1    R 1963SA05 JOUR PRLAA 272 103                                            
+  1    R 1963VI04 JOUR NATUA 198 1188                                           
+  1    R 1965LI09 JOUR NUPHA 67 193                                             
+  1    R 1965MA25 JOUR ZETFA 48 416                                             
+  1    R 1966AL02 JOUR NUPHA 77 449                                             
+  1    R 1966BE50 JOUR CHDBA 262 780                                            
+  1    R 1966GO02 JOUR NUPHA 75 549                                             
+  1    R 1966MY01 JOUR PRLTA 17 405                                             
+  1    R 1967CH27 JOUR PYLBB 26 11                                              
+  1    R 1967GR32 JOUR YAFIA 6 329                                              
+  1    R 1967MA17 JOUR PHRVA 156 1062                                           
+  1    R 1967PE09 JOUR NATUA 213 586                                            
+  1    R 1968KL02 JOUR ZEPYA 208 28                                             
+  1    R 1969CH05 JOUR PYLBB 28B 411                                            
+  1    R 1969FU11 JOUR NDSAA A5 433                                             
+  1    R 1970AP01 JOUR RRPQA 15 343                                             
+  1    R 1970BR39 JOUR PRVCA C2 1579                                            
+  1    R 1970CH08 JOUR PRVCA C1 1693                                            
+  1    R 1970ER07 JOUR YAFIA 12 323                                             
+  1    R 1970ER08 JOUR YAFIA 11 1049                                            
+  1    R 1970ER10 JOUR PYLBB 34B 351                                            
+  1    R 1970FY01 JOUR PRLTA 25 1469                                            
+  1    R 1970GA21 JOUR PRLTA 25 1581                                            
+  1    R 1970TI04 JOUR YAFIA 11 946                                             
+  1    R 1971ER10 JOUR ZFPRA 13 356                                             
+  1    R 1971FU17 JOUR IANFA 35 211                                             
+  1    R 1971ST26 JOUR PRVCA C4 1541                                            
+  1    R 1972CH36 JOUR PRVDA 5 1628                                             
+  1    R 1972LU05 JOUR PRLTA 29 665                                             
+  1    R 1972MA81 JOUR ZETFA 63 3                                               
+  1    R 1972SA16 JOUR PYLBB 39B 509                                            
+  1    R 1972TI03 JOUR YAFIA 15 649                                             
+  1    R 1972WI02 JOUR PLRAA A5 83                                              
+  1    R 1972WI10 JOUR PRLTA 28 1063                                            
+  1    R 1973DR12 JOUR PRVDA D7 3147                                            
+  1    R 1973SA04 JOUR NUPAB A203 388                                           
+  1    R 1974BA59 JOUR PYLBB 52B 122                                            
+  1    R 1974BA92 JOUR PZETA 19 777                                             
+  1    R 1974BO16 JOUR NUPAB A222 269                                           
+  1    R 1974ER09 JOUR PZETA 20 745                                             
+  1    R 1974GU06 JOUR HPACA 46 772                                             
+  1    R 1974HE12 JOUR PRVCA C10 479                                            
+  1    R 1974PE07 JOUR JPAGB 7 167                                              
+  1    R 1974PO01 JOUR PRLTA 32 118                                             
+  1    R 1974ST09 JOUR PRLTA 33 41                                              
+  1    R 1975BA18 JOUR YAFIA 21 689                                             
+  1    R 1975DI05 JOUR PYLBB 57B 201                                            
+  1    R 1975DO19 JOUR PRVDA 11 510                                             
+  1    R 1975ER10 JOUR UFNAA 116 145                                            
+  1    R 1975KR18 JOUR PYLBB 55B 175                                            
+  1    R 1975PH03 JOUR PRLTA 35 1619                                            
+  1    R 1976FU06 JOUR JPCRB 5 835                                              
+  1    R 1976ST24 JOUR PRVDA 13 2469                                            
+  1    R 1977GR19 JOUR PYLBB 71B 297                                            
+  1    R 1978BO42 JOUR PZETA 28 328                                             
+  1    R 1978ER06 JOUR YAFIA 28 98                                              
+  1    R 1978KU17 JOUR PYLBB 72 422                                             
+  1    R 1978MA33 JOUR PRVCA C18 331                                            
+  1    R 1978ST30 JOUR PRVDA 18 3970                                            
+  1    R 1979AL30 JOUR PZETA 29 794                                             
+  1    R 1979ER08 JOUR YAFIA 30 692                                             
+  1    R 1979GR25 JOUR PRVDA 20 2139                                            
+  1    R 1980AL17 JOUR NUPAB A341 269                                           
+  1    R 1980BY01 JOUR PYLBB 92B 274                                            
+  1    R 1980KO47 JOUR PZETA 31 257                                             
+  1    R 1980SI01 JOUR NUPAB A333 381                                           
+  1    R 1981AL10 JOUR PYLBB 102 13                                             
+  1    R 1981GR24 JOUR MTRGA 17 83                                              
+  1    R 1981WA13 JOUR NCIAA 63 57                                              
+  1    R 1982GR27 JOUR MTRGA 18 93                                              
+  1    R 1982RO12 JOUR PRLTA 49 1139                                            
+  1    R 1982WI03 JOUR NUPAB 377 474                                            
+  1    R 1983BO11 JOUR PRLTA 50 1431                                            
+  1    R 1983MA84 JOUR ZETFA 84 1978                                            
+  1    R 1984BO28 JOUR JPQCA 3 21                                               
+  1    R 1984BO29 JOUR JPQCA 3 27                                               
+  1    R 1984LI11 JOUR JPQCA 3 37                                               
+  1    R 1984MO15 JOUR JPQCA 3 13                                               
+  1    R 1984OC01 JOUR PRLTA 53 1627                                            
+  1    R 1984PE04 JOUR PYLBB 136 327                                            
+  1    R 1985BA30 JOUR PRVCA 32 239                                             
+  1    R 1985SI02 JOUR PRVCA 31 575                                             
+  1    R 1986AG06 JOUR NIMAE 249 261                                            
+  1    R 1986AL35 JOUR PZETA 44 360                                             
+  1    R 1986BO04 JOUR PRLTA 56 919                                             
+  1    R 1986KO36 JOUR PZETA 44 444                                             
+  1    R 1986MA52 JOUR PRVCA 34 1433                                            
+  1    R 1987KI07 JOUR NUPAB 463 87c                                            
+  1    R 1988KL01 JOUR ZPCFD 37 179                                             
+  1    R 1988LA04 JOUR PRLTA 60 995                                             
+  1    R 1988SP05 JOUR ZETFA 94 1                                               
+  1    R 1989AN15 JOUR NIMAE 284 101                                            
+  1    R 1989BY04 JOUR NIMAE 284 116                                            
+  1    R 1989CH51 JOUR PRLTA 63 2559                                            
+  1    R 1989DO17 JOUR NIMAE 284 123                                            
+  1    R 1989ER08 JOUR NIMAE 284 89                                             
+  1    R 1989KH07 JOUR NIMAE 284 98                                             
+  1    R 1989KO39 JOUR NUPAB 503 473                                            
+  1    R 1989MA34 JOUR PRLTA 63 593                                             
+  1    R 1989MA58 JOUR NIMAE 284 111                                            
+  1    R 1989PA27 JOUR ZPCFD 45 25                                              
+  1    R 1989PH02 JOUR PYLBB 224 348                                            
+  1    R 1989SC37 JOUR NIMAE 284 120                                            
+  1    R 1989TH08 JOUR NIMAE 284 40                                             
+  1    R 1989VO12 JOUR NIMAE 284 127                                            
+  1    R 1990AL38 JOUR PZETA 52 984                                             
+  1    R 1990BY05 JOUR PRLTA 65 289                                             
+  1    R 1990ER10 JOUR YAFIA 52 1583                                            
+  1    R 1990FR20 JOUR JPQCA 6 239                                              
+  1    R 1990GA32 JOUR YAFIA 52 1653                                            
+  1    R 1990GI02 JOUR PRLTA 64 622                                             
+  1    R 1990GR06 JOUR JPGPE 16 L75                                             
+  1    R 1990PL03 JOUR NUPAB 510 740                                            
+  1    R 1990SM01 JOUR PYLBB 234 191                                            
+  1    R 1991BE53 JOUR PYLBB 269 227                                            
+  1    R 1991BO21 JOUR NUPAB 527 339c                                           
+  1    R 1991DE19 JOUR NUPAB 527 341c                                           
+  1    R 1991ER04 JOUR PYLBB 263 33                                             
+  1    R 1991FE04 JOUR NUPAB 527 341c                                           
+  1    R 1991GA06 JOUR PYLBB 253 283                                            
+  1    R 1991IG01 JOUR YAFIA 53 1297                                            
+  1    R 1991MC12 JOUR NIMBE 56/57 496                                          
+  1    R 1992AL02 JOUR PYLBB 276 242                                            
+  1    R 1992NE11 JOUR ZETFA 102 740                                            
+  1    R 1992SC02 JOUR JPGPE 18 1                                               
+  1    R 1992ZI01 JOUR PYLBB 278 34                                             
+  1    R 1993AD10 JOUR JPGPE 19 L139                                            
+  1    R 1993AN04 JOUR NUPAB 553 713c                                           
+  1    R 1993HA31 JOUR PRVCA 48 1497                                            
+  1    R 1993MA62 JOUR PZETA 57 77                                              
+  1    R 1993SI29 JOUR PRVDA 48 29                                              
+  1    R 1994AN34 JOUR PRVDA 50 5491                                            
+  1    R 1994BO54 JOUR PRVDA 49 3091                                            
+  1    R 1994DO27 JOUR EULEE 26 253                                             
+  1    R 1994KU46 JOUR PZETA 60 311                                             
+  1    R 1994WA32 JOUR PRVDA 49 5671                                            
+  1    R 1995AB02 JOUR PRLTA 74 346                                             
+  1    R 1995AB19 JOUR PRLTA 75 25                                              
+  1    R 1995BY02 JOUR PHSTB T59 311                                            
+  1    R 1995IG08 JOUR PZETA 62 3                                               
+  1    R 1995KU30 JOUR PRLTA 75 794                                             
+  1    R 1995MA68 JOUR PRVCA 52 2097                                            
+  1    R 1995SC20 JOUR PYLBB 349 427                                            
+  1    R 1996AB02 JOUR PRLTA 76 587                                             
+  1    R 1996AI07 JOUR NUPBB 468 3                                              
+  1    R 1996AL25 JOUR YAFIA 59,No 7,1204                                       
+  1    R 1996BL03 JOUR PRLTA 76 1023                                            
+  1    R 1996BO58 JOUR PZETA 64 382                                             
+  1    R 1996BY03 JOUR EULEE 33 187                                             
+  1    R 1996HU12 JOUR NIMAE 372 135                                            
+  1    R 1996MO04 JOUR PYLBB 371 181                                            
+  1    R 1996PE19 JOUR PYLBB 384 37                                             
+  1    R 1997AB32 JOUR PYLBB 407 212                                            
+  1    R 1997BL12 JOUR PRLTA 79 4337                                            
+  1    R 1997HU08 JOUR NUPAB 620 385                                            
+  1    R 1997KA77 JOUR PHYCE 282-287 2063                                       
+  1    R 1997LI01 JOUR NUPAB 612 53                                             
+  1    R 1997MU11 JOUR PRLTA 78 3824                                            
+  1    R 1997SE18 JOUR CHPLB 277 142                                            
+  1    R 1997WA28 JOUR CHPLB 268 387                                            
+  1    R 1998AB38 JOUR PRVDA 58 112003                                          
+  1    R 1998AD21 JOUR NIMAE 419 60                                             
+  1    R 1998AL14 JOUR PYLBB 427 217                                            
+  1    R 1998BL05 JOUR NUPAB 631 680c                                           
+  1    R 1998GR09 JOUR NIMAE 404 381                                            
+  1    R 1998HU02 JOUR PRLTA 80 468                                             
+  1    R 1998NO03 JOUR NUPAB 629 213c                                           
+  1    R 1998SA07 JOUR NUPAB 629 171c                                           
+  1    R 1998SE11 JOUR ZETFA 113 1963                                           
+  1    R 1998SH31 JOUR PRLTA 81 3319                                            
+  1    R 1998ST17 JOUR PRVDA 58 032003                                          
+  1    R 1998VA23 JOUR YAFIA 61,No 8,1409                                       
+  1    R 1998ZL01 JOUR NUPAB 631 622c                                           
+  1    R 1999AN06 JOUR PRLTA 82 1096                                            
+  1    R 1999AN29 JOUR PYLBB 458 529                                            
+  1    R 1999AU08 JOUR HYIND 118 59                                             
+  1    R 1999HA03 JOUR PRLTA 82 904                                             
+  1    R 1999HU21 JOUR NUPAB 654 949c                                           
+  1    R 1999KU36 JOUR NUPAB 654 517c                                           
+  1    R 1999MC01 JOUR PRVDA 59 052004                                          
+  1    R 1999NA46 JOUR HYIND 118 45                                             
+  1    R 1999QU01 JOUR NUPAB 654 543c                                           
+  1    R 1999RO30 JOUR NUPAB 654 547c                                           
+  1    R 1999RO31 JOUR NUPAB 654 592c                                           
+  1    R 1999SC21 JOUR CHPLB 303 453                                            
+  1    R 1999WI15 JOUR NUPAB 660 232                                            
+  1    R 1999YA08 JOUR PRLTA 82 4775                                            
+  1    R 1999ZI01 JOUR PYLBB 455 62                                             
+  1    R 2000AL29 JOUR PRLTA 85 1819                                            
+  1    R 2000AL39 JOUR PRVCA 62 064001                                          
+  1    R 2000AN34 JOUR PYLBB 493 19                                             
+  1    R 2000AR01 JOUR NIMAE 440 511                                            
+  1    R 2000AR07 JOUR PYLBB 483 15                                             
+  1    R 2000AR17 JOUR ZCCNE 17 67                                              
+  1    R 2000BE56 JOUR PYLBB 493 12                                             
+  1    R 2000BO01 JOUR ZDDNE 8 59                                               
+  1    R 2000BO13 JOUR NUPAB 663-664 297c                                       
+  1    R 2000BO58 JOUR HYIND 127 149                                            
+  1    R 2000DA01 JOUR NIMAE 440 543                                            
+  1    R 2000FR07 JOUR NUPAB 663-664 389c                                       
+  1    R 2000FR12 JOUR PHSTB T87 14                                             
+  1    R 2000HA09 JOUR NIMAE 440 479                                            
+  1    R 2000HI04 JOUR NUPAB 663-664 533c                                       
+  1    R 2000IW01 JOUR NUPAB 670 190c                                           
+  1    R 2000JO02 JOUR PRLTA 84 1398                                            
+  1    R 2000JO03 JOUR NIMAE 440 648                                            
+  1    R 2000KE05 JOUR NUPAB 666-667 44c                                        
+  1    R 2000LA08 JOUR ZDDNE 8 385                                              
+  1    R 2000LI42 JOUR PRVCA 62 055501                                          
+  1    R 2000LO03 JOUR PRVCA 61 054002                                          
+  1    R 2000ME30 JOUR PRLTA 84 1673                                            
+  1    R 2000NI06 JOUR PRLTA 85 1182                                            
+  1    R 2000NI07 JOUR PRLTA 85 1186                                            
+  1    R 2000OL09 JOUR PHSTB T87 7                                              
+  1    R 2000PE12 JOUR NUPAB 663-664 38c                                        
+  1    R 2000PI04 JOUR NIMAE 440 517                                            
+  1    R 2000PO33 JOUR HYIND 127 161                                            
+  1    R 2000RA07 JOUR NUPAB 666-667 106c                                       
+  1    R 2000RE02 JOUR NIMAE 440 535                                            
+  1    R 2000RO08 JOUR PYLBB 479 381                                            
+  1    R 2000RO09 JOUR NUPAB 663-664 293c                                       
+  1    R 2000RO21 JOUR PRLTA 85 708                                             
+  1    R 2000SC09 JOUR PRLTA 84 3270                                            
+  1    R 2000SH19 JOUR ZCCNE 13 255                                             
+  1    R 2000SO05 JOUR NUPAB 663-664 939c                                       
+  1    R 2000SP02 JOUR PRLTA 84 1106                                            
+  1    R 2000WA06 JOUR PRVDA 61 072004                                          
+  1    R 2000WA33 JOUR PRVDA 62 092003                                          
+  1    R 2000WI06 JOUR NUPAB 663-664 537c                                       
+  1    R 2000WI11 JOUR PHSTB T87 26                                             
+  1    R 2001AL33 JOUR PRVCA 64 034003                                          
+  1    R 2001AN16 JOUR PYLBB 509 211                                            
+  1    R 2001BE70 JOUR PRLTA 87 272301                                          
+  1    R 2001BR15 JOUR PRVCA 63 055502                                          
+  1    R 2001ES10 JOUR PYLBB 522 233                                            
+  1    R 2001FE10 JOUR PHYBE 297 293                                            
+  1    R 2001GA28 JOUR PYLBB 503 245                                            
+  1    R 2001GA51 JOUR PRVCA 64 038202                                          
+  1    R 2001GE11 JOUR ASJOA 551 L193                                           
+  1    R 2001IO03 JOUR PHYBE 297 303                                            
+  1    R 2001MO41 JOUR YAFIA 64,No 11,2040                                      
+  1    R 2001OL04 JOUR ZAANE 10 207                                             
+  1    R 2001PI04 JOUR NUPAB 684 333c                                           
+  1    R 2001PO27 JOUR ZAANE 12 125                                             
+  1    R 2001RA10 JOUR PRVCA 63 044001                                          
+  1    R 2001SC40 JOUR ZCCNE 21 473                                             
+  1    R 2001TR12 JOUR PYLBB 505 59                                             
+  1    R 2001VA14 JOUR NUPAB 684 324c                                           
+  1    R 2001VA32 JOUR NIMAE 474 209                                            
+  1    R 2001WA01 JOUR PRVCA 63 014004                                          
+  1    R 2001WE09 JOUR PRVCA 63 064001                                          
+  1    R 2001WI16 JOUR PRLTA 87 042701                                          
+  1    R 2001WO09 JOUR NUPAB 690 310c                                           
+  1    R 2001WO12 JOUR ZAANE 12 231                                             
+  1    R 2001YA04 JOUR NUPAB 684 400c                                           
+  1    R 2001ZI02 JOUR EULEE 53 183                                             
+  1    R 2002AB14 JOUR PRLTA 88 211801                                          
+  1    R 2002BA41 JOUR APOBB 33 805                                             
+  1    R 2002BE79 JOUR PZETA 76 392                                             
+  1    R 2002BO01 JOUR PRVCA 65 014004                                          
+  1    R 2002BY02 JOUR JPGPE 28 1325                                            
+  1    R 2002CA13 JOUR PRVCA 65 032202                                          
+  1    R 2002CH19 JOUR PHYBE 315 281                                            
+  1    R 2002CH48 JOUR PRVDA 66 032004                                          
+  1    R 2002DA22 JOUR ZCCNE 25 55                                              
+  1    R 2002DI10 JOUR NPBSE 105 117                                            
+  1    R 2002GA07 JOUR PRLTA 88 092301                                          
+  1    R 2002GR18 JOUR PHSTB T99 173                                            
+  1    R 2002HU04 JOUR PRVCA 65 031001                                          
+  1    R 2002JO04 JOUR NUPAB 699 124c                                           
+  1    R 2002KL14 JOUR NIMAE 489 282                                            
+  1    R 2002VA11 JOUR PRLTA 89 012001                                          
+  1    R 2002ZE02 JOUR PRLTA 88 091802                                          
+  1    R 2003AB19 JOUR ZAANE 17 595                                             
+  1    R 2003AN01 JOUR PYLBB 553 18                                             
+  1    R 2003AN33 JOUR NUPAB 721 849c                                           
+  1    R 2003AU03 JOUR NUPAB 729 337                                            
+  1    R 2003BA23 JOUR PRLTA 90 142301                                          
+  1    R 2003BA42 JOUR PYLBB 563 23                                             
+  1    R 2003BE47 JOUR PRVCA 68 034004                                          
+  1    R 2003CA46 JOUR FIZBE 12 81                                              
+  1    R 2003CH55 JOUR PYLBB 573 46                                             
+  1    R 2003DE25 JOUR PRLTA 91 152302                                          
+  1    R 2003DM02 JOUR PRLTA 91 212303                                          
+  1    R 2003GO12 JOUR PHSTB T104 94                                            
+  1    R 2003KI10 JOUR KPSJA 43 S78                                             
+  1    R 2003KO08 JOUR ZAANE 16 259                                             
+  1    R 2003MA28 JOUR PHSTB T104 49                                            
+  1    R 2003MA73 JOUR HYIND 146-147 343                                        
+  1    R 2003PE21 JOUR ZAANE 17 317                                             
+  1    R 2003PE34 JOUR PRAMC 61 827                                             
+  1    R 2003RO23 JOUR ZAANE 18 555                                             
+  1    R 2003SC12 JOUR PRVCA 67 044005                                          
+  1    R 2003SO25 JOUR NUPAB 721 469c                                           
+  1    R 2003VA04 JOUR PZETA 77 207                                             
+  1    R 2003ZD01 JOUR PYLBB 553 135                                            
+  1    R 2004AH03 JOUR PRLTA 92 102004                                          
+  1    R 2004AL30 JOUR ZAANE 22 125                                             
+  1    R 2004AN10 JOUR PRVCA 69 065501                                          
+  1    R 2004BU01 JOUR PYLBB 579 245                                            
+  1    R 2004CH38 JOUR PRVCA 70 015206                                          
+  1    R 2004EI01 JOUR PYLBB 592 1                                              
+  1    R 2004LA20 JOUR PRLTA 93 122001                                          
+  1    R 2004MA50 JOUR PRLTA 93 022002                                          
+  1    R 2004MA71 JOUR PRVCA 70 024004                                          
+  1    R 2004ME14 JOUR PYLBB 597 243                                            
+  1    R 2004PE18 JOUR NIMAE 527 432                                            
+  1    R 2004SO03 JOUR PYLBB 581 49                                             
+  1    R 2005AK09 JOUR ZCCNE 44 1                                               
+  1    R 2005AL01 JOUR ZAANE 23 351                                             
+  1    R 2005AR21 JOUR PRLTA 95 092001                                          
+  1    R 2005BA25 JOUR ZAANE 24 s02 35                                          
+  1    R 2005BA50 JOUR PRVCA 71 054002                                          
+  1    R 2005BA58 JOUR NUPAB 755 249c                                           
+  1    R 2005BA69 JOUR CJPHA 83 351                                             
+  1    R 2005BE40 JOUR PRLTA 94 212302                                          
+  1    R 2005BO35 JOUR JRNBA 110 461                                            
+  1    R 2005BR16 JOUR NPBSE 146 77                                             
+  1    R 2005BY03 JOUR JRNBA 110 395                                            
+  1    R 2005BY04 JOUR JRNBA 110 415                                            
+  1    R 2005DA29 JOUR NUPAB 755 281c                                           
+  1    R 2005DZ03 JOUR JRNBA 110 339                                            
+  1    R 2005ES01 JOUR NUPAB 747 511                                            
+  1    R 2005GU18 JOUR NPBSE 146 82                                             
+  1    R 2005HA32 JOUR PRLTA 94 242001                                          
+  1    R 2005HA37 JOUR NUPAB 755 257c                                           
+  1    R 2005IL01 JOUR NUPAB 755 455c                                           
+  1    R 2005JO02 JOUR PRVCA 71 024002                                          
+  1    R 2005KA25 JOUR CJPHA 83 405                                             
+  1    R 2005KI03 JOUR ZAANE 24 s02 39                                          
+  1    R 2005MA13 JOUR PRLTA 94 082001                                          
+  1    R 2005MA19 JOUR ZAANE 24 s02 47                                          
+  1    R 2005MA25 JOUR PRLTA 94 152001                                          
+  1    R 2005MA44 JOUR PPNPD 55 320                                             
+  1    R 2005MA48 JOUR NUPAB 755 245c                                           
+  1    R 2005MO16 JOUR RMPHA 77 1                                               
+  1    R 2005NI13 JOUR PRVCA 71 055502                                          
+  1    R 2005PA39 JOUR NUPAB 755 241c                                           
+  1    R 2005PU02 JOUR PRVCA 71 055202                                          
+  1    R 2005QA01 JOUR PRLTA 94 142301                                          
+  1    R 2005SA06 JOUR PRLTA 94 082303                                          
+  1    R 2005SE01 JOUR PYLBB 605 72                                             
+  1    R 2005SE04 JOUR ZAANE 24 s01 55                                          
+  1    R 2005SE17 JOUR JRNBA 110 333                                            
+  1    R 2005SP02 JOUR ZAANE 24 s02 51                                          
+  1    R 2005ST24 JOUR ADNDA 90 75                                              
+  1    R 2005WI17 JOUR JRNBA 110 327                                            
+                                                                                
+  1NN    ADOPTED LEVELS                                          05NDS    200601
+  1NN  H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1NN c  Neutron discovered by 1932Ch02.                                        
+  1NN c  Instability of free neutron first proposed by 1935Ch01                 
+  1NN c  The April 2004 conference (Gaithersburg, Maryland) proceedings         
+  1NN2c  published in the Journal of Research, National Institute of            
+  1NN3c  Standards and Technology, Volume 110, No. 3 and 4, May-August 2005     
+  1NN4c  is devoted to neutron measurements.                                    
+  1NN c  Reactions:                                                             
+  1NN c  (e,e): 1982Ro12: measured magnetic form factor                         
+  1NN c  (p,p): 1978Ma33: measured proton polarization                          
+  1NN c  (pol p,p): 1985Ba30: measured spin polarization                        
+  1NN  Q 782.347   1                                   2012WA38                 
+  1NN CQ Note: Current evaluation has used the following Q record               
+  1NN  Q 782.347   1                                   2003AU03                 
+  1NN cQ Q-$ other: 782.33278 keV {I5} from adopted (by 2004Ei01)               
+  1NN2cQ mass(neutron)-mass(proton)=1293.3317 keV {I5} and                      
+  1NN3cQ mass(electron)=510.99892 keV {I4}                                      
+  1NN  L 0.0         1/2+              613.9 S   6                              
+  1NN2 L %B-=100$                                                               
+  1NN2 L MOMM1=-1.9130427 5 (2004EI01)$                                         
+  1NN cL $ Electric dipole moment d <0.63|*10{+-25} ecm (2004Ei01,1999Ha03).    
+  1NN cL $ Mean square charge radius <r{+2}>=-0.1161 fm{+2} {I22} (2004Ei01)    
+  1NN cL J$measurements: 1954St90, 1950Ha67, 1937Sc09                           
+  1NN cL T$ for free neutron decay, from evaluated mean lifetime=885.7 s {I8}   
+  1NN2cL (2004Ei01). A recent measurement using an in-beam technique of         
+  1NN3cL trapped protons in a cold neutron beam gives mean lifetime=886.3 s     
+  1NN4cL {I12} (stat) {I32} (syst) (2005Ni13, also 2005Wi17). But another       
+  1NN5cL measurement using ultracold neutrons and gravitational trap gives mean 
+  1NN6cL lifetime of 878.5 s {I7} {I3} (2005Se01, also 2005Se17) which differs  
+  1NN7cL by 6.5 |s's from the value adopted by 2004Ei01. Measurement by         
+  1NN8cL 2003Va04 using neutrons in a non-uniform magnetic field reports mean   
+  1NN9cL lifetime of 900.01 s {I15}, which represents an average of two sets of 
+  1NN8cL values: one set giving 886.95 s {I15} and 888.87 s {I15}, the other    
+  1NN9cL set giving 911.08 s {I15} and 913.01 s {I15}. Other:                   
+  1NNAcL Mean lifetime=833 s {I+74-63} (2005Dz03)                               
+  1NN cL T$ the value from 2004Ei01 represents an average of the following      
+  1NN3cL measured mean lifetimes: 886.8 s {I12} {I32} (2003De25);               
+  1NN4cL 885.4 s {I9} {I4} (2000Ar07,2000Ar01); 889.2 s {I30} {I38} (1996By03:  
+  1NN5cL reanalysis of 1990By05,1989By04,1980By01); 882.6 s {I27}               
+  1NN6cL (1993Ma62); 888.4 s {I31} {I11} (1992Ne11,1989Kh07);                   
+  1NN7cL 887.6 s {I30} (1989Ma34,1989Ma58,1986Ag06); 891 s {I9} (1988Sp05,      
+  1NN8cL 1978Bo42). Others: 881.0 s {I30} (2000Pi04,preliminary result),        
+  1NN9cL 660 s {I+290-170} (2001Br15,magnetic trapping of ultracold neutrons);  
+  1NNAcL 888.4 s {I29} (1990Al38); 893.6 s {I38} {I37}                          
+  1NNBcL (1990By05); 878 s {I31} (1989Ko39,1989Sc37); 877 s {I10}               
+  1NNCcL (1989Pa27,1989An15); 876 s {I21} (1988La04); ; 903 s {I13}             
+  1NNDcL (1986Ko36); 937 s {I18} (1980By01); 875 s {I95} (1980Ko47); 881 s {I8} 
+  1NNEcL (1978Bo42) and 918 s {I14} (1972Ch36,1967Ch27). See reviews            
+  1NNFcL by 2004Ei01, 1995By02, 1992Sc02, 1990Fr20, 1989Er08 (also 1975Er10)    
+  1NNGcL for methods and other details used in these measurements.              
+  1NNHcL Earlier measurements: 1978Ku17, 1959Da06, 1959So15,                    
+  1NNIcL 1951Ro25, 1950Ro15, 1950Sn68.                                          
+  1NN cL T$ Other references relevant to discussion of T{-1/2}                  
+  1NN2cL measurements: 1996Bo58, 1995Ig08 (also 1991Ig01), 1994Do27, 1991Ga06   
+  1NN3cL (also 1990Ga32), 1990Gr06, 1984Li11, 1982Wi03                          
+  1NN cL T$ For bound neutron decay, mean lifetime (|t)>1.9 |*10{+29} y         
+  1NN2cL (2004Ei01,2004Ah03). Others: 2000Wa33, 2000Wa06, 1999Mc01, 1989Ph02.   
+  1NN3cL See also 'adopted levels' for {+1}H. Possible decay modes are          
+  1NN4cL listed in detail by 2004Ei01                                           
+  1NN cL MOMM1$ 2004Ei01 adopt value from 2005Mo16 (2002 CODATA                 
+  1NN2cL (http://physics.nist.gov/constants)) recommended value.                
+  1NN3cL Measurements are by NMR method: 1979Gr25 (also 1982Gr27,               
+  1NN4cL 1977Gr19), 1956Co57, 1949Ro15 (also 1950St88), 1948Bl29, 1938Po08.     
+  1NN5cL See also reviews by 2005St24, 1976Fu06 and 1969Fu11.                   
+  1NN cL $ Electric dipole moment measurements: 2001Fe10, 1999Ha03              
+  1NN2cL (also 2000Ha09,1998Va23,1998Gr09), 1996Al25 (also 1992Al02),           
+  1NN3cL 1990Sm01 (also 1989Th08), 1986Al35, 1984Pe04 (also 1984Mo15),          
+  1NN4cL 1981Al10 (also 1980Al17), 1979Al30, 1973Dr12, 1970Ap01.                
+  1NN5cL Others related measurements: 2001Io03, 2000Sc09                        
+                                                                                
+  1H     ADOPTED LEVELS                                          05NDS    200601
+  1H   H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1H   Q                                                                        
+  1H  c  For scattering reactions: (|g,|g'); (e,e'); (p,p');                    
+  1H 2c  (n,n'), see separate datasets                                          
+  1H  c  {+1}H(|n,|n'): 2002Ze02: measured ratio of neutral to charged current  
+  1H 2c  cross sections                                                         
+  1H  c  Mesic atom: 2003Ma73, 2003Go12, 2003An33, 2001Sc40, 2000Po33           
+  1H  c  The x-ray spectra from Kaonic atom: 2005Il01, 2005Be40, 2000Iw01,      
+  1H 2c  1999Na46                                                               
+  1H  c  Hyperfine structure for muonic atom: 2005Ba69                          
+  1H  c  Anti-protonic x rays: 2000Bo58, 1999Au08                               
+  1H   XA1NN B- DECAY (613.9 S)                                                 
+  1H   L 0.0         1/2+               STABLE                                  
+  1H X L XREF=A                                                                 
+  1H 2 L MOMM1=+2.792847351 28 (2004EI01)                                       
+  1H  cL $ Electric dipole moment<0.54|*10{+-23} ecm {I6}                       
+  1H xcL (2004Ei01,2003Dm02). Other: 1989Ch51                                   
+  1H  cL $ Charge radius=0.870 fm {I8} (2004Ei01). Measurements:                
+  1H 2cL 2001Es10, 2000Me30, 2000Ro08                                           
+  1H  cL J$measurements: 1930He02, 1929Mu01, 1927De01                           
+  1H  cL T$>2.1|*10{+29} y (independent of decay mode) (2004Ei01,2004Ah03).     
+  1H 2cL T>10{+31} to 10{+33} y for mode-dependent decays (2004Ei01)            
+  1H 2cL Measurements: 2004Ah03, 2003Ba42, 2003Zd01, 2001Tr12, 2000Be56,        
+  1H 3cL 1999Mc01, 1998Sh31, 1998Al14, 1991Be53, 1989Ph02. Possible decay       
+  1H 4cL modes are listed in detail by 2004Ei01                                 
+  1H  cL MOMM1$ 2004Ei01 adopt value from 2005Mo16 (2002 CODATA                 
+  1H 2cL (http://physics.nist.gov/constants)) recommended value.                
+  1H  cL MOMM1$ NMR method. Measurements:                                       
+  1H 2cL 1981Gr24, 1975Ph03, 1974Pe07, 1974Gu06, 1972Wi02, 1972Ma81             
+  1H 3cL (reevaluation by 1983Ma84), 1972Lu05, 1970Fy01, 1968Kl02, 1967Pe09,    
+  1H 4cL 1967Ma17, 1966My01, 1966Be50, 1965Ma25, 1963Sa04, 1963Sa05, 1963Vi04,  
+  1H 5cL 1962Ya08, 1962Ya07, 1962Pi04, 1961Ca20, 1961Bo11, 1959Li54, 1958Dr05,  
+  1H 6cL 1956Wi46, 1956Wi41, 1956Tr19, 1955Co36, 1951Ga31, 1951Je10, 1951So34,  
+  1H 7cL 1950Th07, 1950Bl73, 1950St88 (also 1949Ro15), 1949Ta01, 1939Ke12.      
+  1H 8cL See also reviews by 2005St24, 1976Fu06 and 1969Fu11. Other related     
+  1H 9cL measurements: 2005Ka25, 2001Ge11, 2000La08, 1999Sc21, 1998Hu02,        
+  1H AcL 1998Ad21, 1997Ka77, 1997Se18, 1997Wa28                                 
+                                                                                
+  1H     1NN B- DECAY (613.9 S)                                  05NDS    200601
+  1H   H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1H  c  Parameters for free neutron decay (see complete details in 2004Ei01):  
+  1H  c  g{-A}/g{-V}=-1.2695 {I29} (2004Ei01).                                  
+  1H  c  |b Asymmetry parameter (neutron spin, electron momentum)               
+  1H 2c  A=-0.1173 {I13} (2004Ei01). In 2005Se01, -0.1189 {I7} is favored.      
+  1H  c  Antineutrino Asymmetry parameter (neutron spin, antineutrino momentum) 
+  1H 2c  B=0.983 {I4} (2004Ei01).                                               
+  1H  c  Electron-antineutrino angular-correlation coefficient                  
+  1H 2c  a=-0.103 {I4} (2004Ei01).                                              
+  1H  c  Triple correlation coefficient (component of neutron spin              
+  1H 2c  perpendicular to the decay plane in |b decay)                          
+  1H 3c  D=-0.0006 {I10} (2004Ei01).                                            
+  1H  c  Phase of g{-A} relative to g{-V}, |f{-AV}=180.08|' {I10} (2004Ei01).   
+  1H  c  Measurements:                                                          
+  1H  c  Limit on T (time-reversal) violation in free neutron decay: 2005Bo35,  
+  1H 2c  2004So03 (polarized neutron), 2003So25 (measured electron and proton   
+  1H 3c  energies, electron-proton coin), 2000Jo03 (polarized neutron)          
+  1H  c  Beta asymmetry parameter: 2002Ab14, 2000Re02, 1997Li01, 1997Ab32,      
+  1H 2c  1995Sc20, 1991Er04, 1990Er10, 1989Do17, 1988Kl01, 1986Bo04, 1984Bo28,  
+  1H 3c  1979Er08, 1975Kr18,  1971Er10, 1969Ch05                                
+  1H  c  g{-A}/g{-V} from measurement of Both P-odd correlations:               
+  1H 2c  2001Mo41                                                               
+  1H  c  Antineutrino asymmetry parameter: 1998Se11, 1995Ku30, 1994Ku46,        
+  1H 2c  1970Er10, 1970Er07, 1970Ch08, 1969Ch05, 1960Cl06                       
+  1H  c  Electron-antineutrino angular-correlation coefficient: 2005By03,       
+  1H 2c  2004So03, 2002By02, 2000Da01, 1978St30, 1975Do19, 1967Gr32             
+  1H  c  Triple correlation coefficient: 1989Vo12, 1984Bo29, 1978Er06,          
+  1H 2c  1976St24, 1974St09, 1974Er09, 1970Er08, 1960Cl06                       
+  1H  c  Proton-electron correlations from polarized neutron decay:             
+  1H 2c  2000Jo03, 2000Li42                                                     
+  1H  c  Radiative decay mode, upper limit: 2005By04, 2002Be79                  
+  1H  c  Neutrino-antineutrino oscillation time, lower limit: 2002Ch48          
+  1NN  P 0.0           1/2+            613.9 S   6              782.347   1     
+  1NN cP T$613.9 s {I6} (from evaluation of 2004Ei01). References for           
+  1NN2cP measurements are listed under 'Adopted levels' for neutron.            
+  1NN cP QP$ From 2003Au03. From adopted (by 2004Ei01) masses of neutron,       
+  1NN2cP proton and electron and conversion factor from a.m.u. scale to         
+  1NN3cP keV as adopted by 2004Ei01, Q{+-}=782.33279 keV {I7}                   
+  1H   N                       1.0       1.0                                    
+  1H   L 0.0           1/2+                                                     
+  1H   B             100                  3.0170 5                              
+  1H S B EAV= 301.37                                                            
+                                                                                
+  1H     1H(G,G'),(G,G),(POL G,G)                                05NDS    200601
+  1H   H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1H  c  Measured cross sections, recoil proton spectra, p|g coin; deduced      
+  1H 2c  nuclear structure parameters, polarization transfer asymmetry,         
+  1H 3c  electromagnetic polarizability, etc.                                   
+  1H  c  (|g,|g'):                                                              
+  1H  c  2005Da29 (E=high); 2003Ko08 (E=200-400 MeV); 2001Wo09 (E=200-800 MeV); 
+  1H 2c  2001Ol04 (E=55-165 MeV); 2001Ga28 (E=250-800 MeV); 2000Ke05            
+  1H 3c  (E=high); 1999Wi15 (E=200-410 MeV); 1975Ba18 (E=70-110 MeV)            
+  1H  c                                                                         
+  1H  c  (pol |g,|g):                                                           
+  1H  c  2005Ha32 (E=3.2 GeV); 1998Sa07,1997Bl12 (E=265,323 MeV); 1996Bl03      
+  1H 2c  (E=213-333 MeV); 1993Ad10 (E=0.5-1 GeV)                                
+  1H  c                                                                         
+  1H  c  (|g,|g):                                                               
+  1H  c  2002Ca13 (E=200-470 MeV); 2001Wo12 (E=213-333 MeV); 1997Hu08           
+  1H 2c  (E=200-500 MeV); 1996Pe19 (E=200-410 MeV); 1996Mo04 (E=250-500 MeV);   
+  1H 3c  1996Hu12 (E=350 MeV); 1995Ma68 (E=70-148 MeV); 1993Ha31                
+  1H 4c  (E=136-289 MeV); 1992Zi01 (E=98,132 MeV); 1991Fe04 (E=32-70 MeV);      
+  1H 5c  1991De19 (E=145-280 MeV); 1985Si02 (E=0.9-1.15 GeV); 1981Wa13          
+  1H 6c  (E=400-1000 MeV); 1974Ba92,1974Ba59 (E=70-110 MeV)                     
+                                                                                
+  1H     1H(E,E'),(POL E,E'),(E,E),                              05NDS    200601
+  1H 2   (POL E,E'),(E,E'G)                                                     
+  1H   H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1H  c  Measured recoil proton spectra and polarizations, electromagnetic      
+  1H 2c  form factors, parity-violating single spin asymmetry,                  
+  1H 3c  missing mass spectra, etc.                                             
+  1H  c                                                                         
+  1H  c  (pol e,e'):                                                            
+  1H  c  2005Ha37 (E=high); 2004Ma50 (E=854.3 MeV); 2003Ki10 (E=4.25 GeV);      
+  1H 2c  2004Ma50 (E=854.3 MeV); 2003An01 (E=29.1,32.3 GeV); 2002Va11,2001Va32, 
+  1H 3c  2001Va14 (E=720 MeV); 2002Jo04 (E=high); 2002Ga07 (E=high); 2000Ro21   
+  1H 4c  (E=855 MeV); 2000Ro09,1999Ro31 (E=39,48 GeV); 2000Bo13,2000Bo01        
+  1H 5c  (E=29,32 GeV); 2000An34 (E=48 GeV); 1999Qu01 (E=high); 1999An29        
+  1H 6c  (E=38.8 GeV); 1998Ab38,1996Ab02,1995Ab19,1995Ab02                      
+  1H 7c  (E=9.7,16.2,29.1 GeV)                                                  
+  1H  c                                                                         
+  1H  c  (e,e'):                                                                
+  1H  c  2000Ni07,2000Ni06 (E=2.4-4 GeV); 1998St17 (E=9.8 GeV);                 
+  1H 2c  1991Bo21 (E=1.4-10 GeV); 1990Gi02 (E=645 MeV); 1984Oc01 (E=730 MeV);   
+  1H 3c  1983Bo11 (E=8.7-20 GeV); 1975Di05 (E=4.5-19.5 GeV); 1974Po01           
+  1H 4c  (E=20 GeV/c); 1972Ti03,1970Ti04 (E=1.18 GeV)                           
+  1H  c                                                                         
+  1H  c  (e,e'|g):                                                              
+  1H  c  2005Ak09: (e{++},e{++}'|g) E=high, measured Compton scattering         
+  1H  c  2004La20 (E=4.03 GeV); 2003Ki10 (E=4.25 GeV); 2003Ch55 (E=high);       
+  1H 2c  2002Di10 (E=high); 2000Fr07; 1999Ro30 (E=750-855 MeV)                  
+  1H  c                                                                         
+  1H  c  (pol e,e):                                                             
+  1H  c  2005Sp02 (E=200 MeV); 2005Pu02 (E=0.934-4.091 GeV); 2005Pa39,2005Ma48  
+  1H 2c  (E=3 GeV); 2005Ma44,2005Ma25,2005Ma19,2005Ma13 (E=569.31,855.15 MeV);  
+  1H 3c  2005Ki03 (E=3 GeV); 2005Ba58,2005Ba25 (E=854.3 MeV); 2004An10          
+  1H 4c  (E=3.3 GeV); 2003Pe34,2003Pe21 (E=high); 2001We09 (E=200 MeV);         
+  1H 5c  2001Po27 (E=854.4 MeV); 2001Pi04 (E=200 MeV); 2001Ga51 (E=1.0-4.1 GeV);
+  1H 6c  2001An16 (E=3.3 GeV); 2000Sp02 (E=200 MeV); 2000So05, 2000Ra07;        
+  1H 7c  2000Pe12 (E=0.94-4.106 GeV); 2000Jo02 (E=0.934-4.090 GeV); 1999An06;   
+  1H 8c  1997Mu11.                                                              
+  1H  c                                                                         
+  1H  c  (e,e):                                                                 
+  1H  c  2005Se04,2005Qa01 (E=1.9-4.7 GeV); 2005Ar21 (E=3.03 GeV);              
+  1H 2c  2004Ch38 (E=1.1-5.5 GeV); 1999Ku36; 1996Ai07; 1994Wa32; 1994Bo54;      
+  1H 3c  1994An34; 1993Si29; 1993An04; 1991Mc12; 1990Pl03; 1980Si01;            
+  1H 4c  1974Bo16; 1970Ti04                                                     
+                                                                                
+  1H     1H(N,N),(POL N,N),(N,N'),                               05NDS    200601
+  1H 2   (POL N,N'),(N,N'G)                                                     
+  1H   H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1H  c  For (n,n) and (pol n,n), only the references from the year             
+  1H 2c  2000 onwards are given. Consult NSR database at www.nndc.bnl.gov for   
+  1H 3c  about 110 additional primary references published before the year 2000 
+  1H  c  Measurements of analyzing powers, neutron spectra, cross sections,     
+  1H 2c  proton-neutron bremsstrahlung, etc.:                                   
+  1H  c  (pol n,n):                                                             
+  1H  c  2002Da22 (E=270-570 MeV); 2001Zi02, 1999Zi01 (E=low); 2001Wa01         
+  1H 2c  (E=5-20 MeV); 2000Wi06 (E=187 MeV); 2000Fr12, 2000Ar17 (E=260-535 MeV) 
+  1H  c                                                                         
+  1H  c  (n,n):                                                                 
+  1H  c  2005Sa06, 2004Pe18 (E=194 MeV); 2005Jo02, 2004Me14, 2002Kl14           
+  1H 2c  (E=96 MeV); 2003Sc12 (E=low); 2002Bo01 (E=10 MeV); 2001Ra10            
+  1H 3c  (E=96 MeV); 2000Ol09 (E=96,162 MeV)                                    
+  1H  c                                                                         
+  1H  c  (n,n'): 2002Ch19, 1971Fu17 (E=14.4 MeV), 1965Li09 (E=4 MeV)            
+  1H  c  (pol n,n'): 2000Sh19 (E=1.59-2.2 GeV)                                  
+  1H  c  (n,n'|g): 2003Ma28 (E=175-550 MeV); 1970Br39 (E=208 MeV)               
+                                                                                
+  1H     1H(P,P'),(POL P,P'),(P,P),                              05NDS    200601
+  1H 2   (POL P,P),(P,P'G),(POL P,P'G)                                          
+  1H   H TYP=FUL$AUT=BALRAJ SINGH$CIT=NDS 106, 601 (2005)$CUT=31-Oct-2005$      
+  1H  c  For (p,p) and (pol p,p), only the references from the year             
+  1H 2c  2000 onwards are given. Consult NSR database at www.nndc.bnl.gov for   
+  1H 3c  about 200 additional primary references published before the year 2000 
+  1H  c  Measurement of proton-proton bremsstrahlung in (p,p'), (pol p,p'),     
+  1H 2c  (p,p'|g), (pol p,p'|g):                                                
+  1H  c  2004Ma71, 2002Hu04 (also 2003Ca46,2002Ba41,1999Hu21): E(pol p)=190 MeV.
+  1H 2c  Measured E|g, I|g, |g|g, |g(|q), pp|g coin, |s(|q), A{-y}(|q)          
+  1H  c  2002Gr18, 1998No03: E(p)=400 MeV. Measured missing mass spectra,       
+  1H 2c  angular distributions                                                  
+  1H  c  2001Wi16: E(pol p)=203 MeV. Measured polarization transfer             
+  1H  c  2001Ya04, 1999Ya08: E(pol p)=389 MeV. Measured bremsstrahlung |s(|q),  
+  1H 2c  analyzing powers                                                       
+  1H  c  1998Zl01: E(p)=310 MeV. Measured E|g, Ep, pp|g coin, |s(|q)            
+  1H  c  1998Bl05: E(p)=797 MeV/c, measured bremmstrahlung                      
+  1H  c  1987Ki07: E(pol p)=280 MeV. Measured analyzing powers.                 
+  1H  c  1986Ma52: E(pol p)=500 MeV. Measured A{-y}(|q), spin-rotation          
+  1H 2c  depolarization parameters                                              
+  1H  c  Others: 1974He12 (E(p)=5-158 MeV), 1973Sa04 (also 1972Sa16)            
+  1H 2c  (E(p)=51.8 MeV), 1972Wi10 (E(p)=156 MeV), 1971St26 (E(p)=20 MeV),      
+  1H 3c  1970Ga21 (E(p)=64.4 MeV), 1966Go02 (E(p)=158 MeV),                     
+  1H 4c  1966Al02 (E(p)=380 MeV)                                                
+  1H  c                                                                         
+  1H  c  (pol p,p): measured analyzing powers, spin correlation coefficients:   
+  1H  c  2005Gu18, 2004Bu01 (E=200 GeV); 2005Br16 (E=4-100 GeV); 2005Ba50,      
+  1H 2c  2005Al01 (E=0.45-2.5 GeV); 2003Ro23 (E=0.8-2.5 GeV); 2003Be47,         
+  1H 3c  2001Be70 (E=221.3 MeV); 2003Ba23 (E=2.1 GeV); 2001Al33, 2000Al39       
+  1H 4c  (E=795, 1979-2795 MeV); 2000Wi11 (E=198 MeV); 2000Lo03 (E=197 MeV),    
+  1H 5c  2000Hi04 (E=0.8-3.4 GeV/c); 2000Al29 (E=0.45-2.5 GeV)                  
+  1H  c                                                                         
+  1H  c  (p,p): 2004Al30 (E=0.23-2.59 GeV); 2003Ab19 (E=292.2-298.1 MeV);       
+                                                                                

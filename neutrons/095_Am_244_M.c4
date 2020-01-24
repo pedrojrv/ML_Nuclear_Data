@@ -1,0 +1,60 @@
+#ENTRY      14047
+#AUTHOR1    E.K.Hulet+
+#YEAR       1961
+#INSTITUTE  (1USAMIT)
+#TITLE      Thermal neutron fission cross sections ofU232,Pu236,
+#+          Pu237 and Am244
+#AUTHOR(S)  E.K.Hulet, H.I.West, M.S.Coops
+#REF-CODE   (P,WASH-1033,28,1961)
+#REFERENCE  Prog. Washington AEC Office Reports
+#+          No.1033, p.28, 1961
+#DATASETS   4
+#
+#DATASET    14047005
+#DATE       20050901
+#REACTION   95-AM-244-M(N,F),,SIG
+#PROJ       1
+#TARG       95244 M
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 95244M  3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 95244M  3  18    0.025000          1440.000                                                E.K.Hulet,ET.AL. (61)    14047  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V1002656
+#DATE       20120803
+#REACTION   95-AM-244-M(N,F),,SIG,,,RECOM
+#PROJ       1
+#TARG       95244 M
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 95244M  3  18   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 95244M  3  18    0.025300          1600.000 300.0000                                       S.F.Mughabghab (06)      V1002656
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

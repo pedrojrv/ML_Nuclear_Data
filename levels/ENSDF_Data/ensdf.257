@@ -1,0 +1,796 @@
+257      COMMENTS                                                13NDS    201309
+257    H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257  2 H CUT=1-Mar-2012$                                                        
+257   C  TITL$NUCLEAR DATA SHEETS FOR A=251, 253, 255, 257, 259                 
+257   C  AUTH$E. BROWNE                                                         
+257   C  INST$Guest appointment at                                              
+257  #C  Lawrence Berkeley National Laboratory                                  
+257  #C  under subcontract with National Nuclear Data Center,                   
+257  #C  Brookhaven National Laboratory                                         
+257  #C  Upton, New York 11973-5000, USA                                        
+257   C  AUTH$J. K. TULI                                                        
+257   C  INST$National Nuclear Data Center                                      
+257  #C  Brookhaven National Laboratory                                         
+257  #C  Upton, New York 11973-5000, USA                                        
+257   c  ABST$The evaluators present in this publication spectroscopic data and 
+257  2c  level schemes from radioactive decay and nuclear reaction studies for  
+257  3c  all known nuclei with mass numbers A=251, 253, 255, 257, and 259.      
+257   c  Nuclei in this mass region usually have quadrupole deformation, and    
+257  2c  their nuclear structure has been interpreted in terms of the           
+257  3c  collective model.                                                      
+257   c  The following are highlights in this evaluation:                       
+257  2c  A study of the {+209}Bi({+48}Ca,2n) nuclear reaction has identified    
+257  3c  two isomers of {+255}Lr with half-lives of 31.1 s and 2.54 s,          
+257  4c  respectively, as well as members of several rotational bands up to     
+257  5c  spin J=27/2 (2009Ke01,2009Je02).                                       
+257   c  Members of the 1/2[521] rotational band in {+251}Md up to spin/parity  
+257  2c  J|p=45/2- have been observed in the alpha decay of the {+255}Lr        
+257  3c  isomers mentioned above (2006Ch52,2008Ha31,2008An16) and also          
+257  4c  populated in the {+205}Tl({+48}Ca,2n) nuclear reaction (2007Ch26),     
+257  5c  thus significantly improving the knowledge of the {+251}Md level       
+257  6c  scheme.                                                                
+257   c  A rotational structure based on the J|p=11/2- state up to the          
+257  2c  J|p=23/2- state has been identified in {+257}Rf                        
+257  3c  (2010Be16,2009Qi04).                                                   
+257   C  CUT$The following are data cutoff dates in this evaluation:            
+257  2C  January 2012 for A=251, March 2012 for A=253, November 2011 for A=255, 
+257  3C  March 2012 for A=257, and August 2011 for A=259.                       
+257   C  The theoretical conversion coefficients for G rays given in this       
+257  2C  evaluation are from 2002Ba85 and have been interpolated using          
+257  3C  the computer code ^BRICC (Band Raman Internal Conversion               
+257  4C  Coefficients) (2008Ki07).                                              
+257   C  ACK$The evaluators are grateful to the ^XUNDL database compilers       
+257  2C  (^B. Singh, and colleagues) for the compilation of some data sets.     
+257   C  FUND$Research sponsored by Office of Nuclear Physics, Office of        
+257  2C  Science, ^US Department of Energy, under contract ^DE-^AC02-98^CH10946.
+257   C  CIT$NDS 114, 1041 (2013)                                               
+257   c  r{-0} used in the calculation of hindrance factors (HF) in |a decay    
+257  2c  have been obtained by extrapolation from the r{-0} listed in 1998Ak04. 
+                                                                                
+257      REFERENCES                                              13NDS    201309
+257    R 1964HU02 JOUR PRLTA 13 343                                             
+257    R 1965SI14 JOUR PHRVA 140 B277                                           
+257    R 1966RG01 JOUR PHRVA 148 1192                                           
+257    R 1967AS02 JOUR PHRVA 158 1073                                           
+257    R 1967GH01 JOUR PRLTA 18 401                                             
+257    R 1969GH01 JOUR PRLTA 22 1317                                            
+257    R 1970ES02 JOUR PRVCA C2 1058                                            
+257    R 1970FI12 JOUR NUPAB A154 407                                           
+257    R 1970FL16 JOUR AENGA 29 243                                             
+257    R 1970GH01 JOUR PYLBB 32B 95                                             
+257    R 1971DR01 JOUR YAFIA 13 251                                             
+257    R 1971ES01 JOUR PRVCA C4 632                                             
+257    R 1971FL02 JOUR NUPAB A160 181                                           
+257    R 1971GH01 JOUR PRVCA C4 1850                                            
+257    R 1971GH03 JOUR NATUA 229 603                                            
+257    R 1971HO16 JOUR NUPAB A169 641                                           
+257    R 1973BE33 JOUR PRLTA 31 647                                             
+257    R 1973WI03 JOUR JINCA 35 1063                                            
+257    R 1974BEWM REPT ORNL-4976,P37,Bemis                                      
+257    R 1976BEYM REPT ORNL-5137,P73,Bemis, Jr.                                 
+257    R 1976OG02 JOUR NUPAB A273 505                                           
+257    R 1984MU17 JOUR ZPAAD 317 235                                            
+257    R 1984OG03 JOUR RAACA 37 113                                             
+257    R 1985HE06 JOUR ZPAAD 321 317                                            
+257    R 1985HE22 JOUR ZPAAD 322 557                                            
+257    R 1985LO17 JOUR ZPAAD 322 695                                            
+257    R 1985MU11 JOUR ZPAAD 322 227                                            
+257    R 1985SO03 JOUR PRVCA 31 1801                                            
+257    R 1986HE28 JOUR JCOMA 122 445                                            
+257    R 1986PO15 JOUR ZPAAD 325 435                                            
+257    R 1987MU15 JOUR ZPAAD 328 49                                             
+257    R 1987PO22 JOUR RADKA 29 447                                             
+257    R 1988IO05 JOUR RRPQA 33 1075                                            
+257    R 1989MU09 JOUR ZPAAD 333 163                                            
+257    R 1991PO17 JOUR RADKA 33 3                                               
+257    R 1992AN16 JOUR ZPAAD 344 225                                            
+257    R 1992BU03 JOUR JPGPE 18 143                                             
+257    R 1993BU09 JOUR ADNDA 54 53                                              
+257    R 1993MO18 JOUR NUPAB 563 21                                             
+257    R 1994CW01 JOUR PYLBB 322 304                                            
+257    R 1994CW02 JOUR NUPAB 573 356                                            
+257    R 1994LA22 JOUR PRLTA 73 624                                             
+257    R 1994LO27 JOUR JALCE 213/214 61                                         
+257    R 1995MO29 JOUR ADNDA 59 185                                             
+257    R 1996HO13 JOUR ZPAAD 354 229                                            
+257    R 1996KA66 JOUR RAACA 72 169                                             
+257    R 1997HE29 JOUR ZPAAD 359 415                                            
+257    R 1997HO13 JOUR ZPAAD 358 125                                            
+257    R 1997MO25 JOUR ADNDA 66 131                                             
+257    R 1997PA22 JOUR JPGPE 23 939                                             
+257    R 1998AD06 JOUR NUPAB 633 409                                            
+257    R 1999AD05 JOUR PYLBB 451 289                                            
+257    R 1999AR21 JOUR NDSBA 88 155                                             
+257    R 1999CH42 JOUR PRAMC 53 619                                             
+257    R 1999HE07 JOUR APSVC 49 43                                              
+257    R 1999HE11 JOUR JPGPE 25 877                                             
+257    R 1999SM02 JOUR PRVCA 59 2634                                            
+257    R 2000AD15 JOUR NUPAB 678 24                                             
+257    R 2000DE09 JOUR PRVCA 61 034606                                          
+257    R 2000HO27 JOUR PACHA 72 1525                                            
+257    R 2000LA34 JOUR PRVCA 62 064307                                          
+257    R 2000PA12 JOUR JPGPE 26 L65                                             
+257    R 2000SM01 JOUR PRVCA 61 011601                                          
+257    R 2000SY01 JOUR RAACA 88 837                                             
+257    R 2001DE23 JOUR PPNPD 46 303                                             
+257    R 2001HE35 JOUR ZAANE 12 57                                              
+257    R 2001MO07 JOUR NUPAB 683 266                                            
+257    R 2001NG04 JOUR JRNCD 250 255                                            
+257    R 2001RE13 JOUR NUPAB 689 691                                            
+257    R 2001SM06 JOUR PRVCA 63 044607                                          
+257    R 2001ZA10 JOUR PRVCA 64 034606                                          
+257    R 2002HEZS REPT ANL-02/15,P43,Heinz                                      
+257    R 2002HO11 JOUR ZAANE 14 147                                             
+257    R 2002RE37 JOUR JNRSA 3,No 1,195                                         
+257    R 2003BE67 JOUR APOBB 34 1909                                            
+257    R 2003DE17 JOUR PRVCA 67 054317                                          
+257    R 2003GA34 JOUR PRVCA 68 044316                                          
+257    R 2003SW01 JOUR APOBB 34 2049                                            
+257    R 2003TU05 JOUR ZAANE 17 505                                             
+257    R 2003ZU02 JOUR YAFIA 66 242                                             
+257    R 2004AD32 JOUR APHPF 19 87                                              
+257    R 2004CH31 JOUR NUPAB 734 E13                                            
+257    R 2004HE23 JOUR APHPF 19 133                                             
+257    R 2004HEZZ REPT GSI 2004-1,P3,Hessberger                                 
+257    R 2004MU27 JOUR APHPF 19 139                                             
+257    R 2004PA31 JOUR APHPF 19 145                                             
+257    R 2004PA40 JOUR APOBB 35 2447                                            
+257    R 2004PE23 JOUR ZAANE 22 271                                             
+257    R 2004RO01 JOUR ANEND 31 323                                             
+257    R 2004XU02 JOUR PRVCA 69 024614                                          
+257    R 2005AS05 JOUR PRLTA 95 102502                                          
+257    R 2005FE05 JOUR CPLEE 22 846                                             
+257    R 2005GUZU CONF Peterhof(EXON-2004) Proc,P261,Gupta                      
+257    R 2005KA42 JOUR YAFIA 68 1491                                            
+257    R 2005PA13 JOUR NPBSE 142 98                                             
+257    R 2005PA73 JOUR APOBB 36 3115                                            
+257    R 2005RE16 JOUR NUPAB 759 64                                             
+257    R 2005SM02 JOUR IMPEE 14 373                                             
+257    R 2005ST16 JOUR NIMAE 543 509                                            
+257    R 2005SW01 JOUR PRVCA 71 014602                                          
+257    R 2005XU03 JOUR NUPAB 753 174                                            
+257    R 2005ZH24 JOUR JPGPE 31 959                                             
+257    R 2005ZU02 JOUR ZAANE 23 249                                             
+257    R 2006CH63 JOUR RJPHE 51 853                                             
+257    R 2006MA78 JOUR PRVCA 74 057601                                          
+257    R 2006XU04 JOUR PRVCA 74 014304                                          
+257    R 2007FE17 JOUR PRVCA 76 044606                                          
+257    R 2007SA28 JOUR BRSPE 71 380                                             
+257    R 2007ST12 JOUR APOBB 38 1561                                            
+257    R 2007ZH41 JOUR PRVCA 76 047304                                          
+257    R 2008DO12 JOUR PRVCA 77 064310                                          
+257    R 2008DR05 JOUR PRVCA 78 024605                                          
+257    R 2008DU09 JOUR PRVCA 77 064320                                          
+257    R 2008DV02 JOUR PRLTA 100 132503                                         
+257    R 2008GA08 JOUR PRVCA 77 034603                                          
+257    R 2008GA25 JOUR PRVCA 78 034604                                          
+257    R 2008RO06 JOUR PRVCA 77 037602                                          
+257    R 2008SA24 JOUR NSENA 160 190                                            
+257    R 2008TH05 JOUR ZAANE 36 227                                             
+257    R 2008ZA07 JOUR PRVCA 78 034610                                          
+257    R 2009DO22 JOUR CPCHC 33 s01 5                                           
+257    R 2009HE20 JOUR ZAANE 41 145                                             
+257    R 2009JE01 JOUR PRVCA 79 031303                                          
+257    R 2009QI04 JOUR PRVCA 79 064319                                          
+257    R 2009SA25 JOUR NUPAB 825 159                                            
+257    R 2009ZH36 JOUR PRVCA 80 054607                                          
+257    R 2010AD19 JOUR PRVCA 82 054304                                          
+257    R 2010BE16 JOUR PRVCA 81 064325                                          
+257    R 2010DO08 JOUR NUPAB 832 198                                            
+257    R 2010HE11 JOUR ZAANE 43 175                                             
+257    R 2010LI32 JOUR NUPAB 834 353c                                           
+257    R 2010NI02 JOUR PRVCA 81 024315                                          
+257    R 2010SA36 JOUR PRVCA 82 064605                                          
+257    R 2010SE10 JOUR NUPAB 834 357c                                           
+257    R 2010SI27 JOUR RJPHE 55 1088                                            
+257    R 2010ST14 JOUR ZAANE 45 275                                             
+257    R 2010WA39 JOUR PRVCA 82 054605                                          
+257    R 2011AD15 JOUR PRVCA 84 024324                                          
+257    R 2011AN13 JOUR ZAANE 47 62                                              
+257    R 2011AUZZ PC G Audi,4/30/2011                                           
+257    R 2011CA08 JOUR IMPEE 20 308                                             
+257    R 2011CA14 JOUR PRVCA 83 054602                                          
+257    R 2011HA13 JOUR PRVCA 83 034602                                          
+257    R 2011HE12 JOUR RAACA 99 441                                             
+257    R 2011ME01 JOUR ADNDA 97 134                                             
+257    R 2011QI12 JOUR PRVCA 84 064307                                          
+257    R 2011SA40 JOUR PRVCA 84 024609                                          
+257    R 2011WA41 JOUR PRVCA 84 061601                                          
+257    R 2011ZH36 JOUR PRVCA 84 044312                                          
+257    R 2012CA06 JOUR APOBB 43 297                                             
+257    R 2012PO01 JOUR JPGPE 39 015105                                          
+257    R 2012SA05 JOUR NUPAB 877 1                                              
+257    R 2012WA38 JOUR CPCHC 36 1603                                            
+                                                                                
+257ES    ADOPTED LEVELS                                          13NDS    201309
+257ES  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257ES2 H CUT=1-Mar-2012$                                                        
+257ES D  Modified by E. Browne (March 19, 2012).                                
+257ES  Q 813       SY 5855   SY 4926   SY 6050   SY    2012WA38                 
+257ES cQ           Estimated |DQ(|b{+-})=411, |DS(n)=423, |DS(p)=517,           
+257ESxcQ |DQ(|a)=200 (2012Wa38)                                                 
+257ES c                                                                         
+257ES c  Calculations, compilations:                                            
+257ES c  Ground state properties: 1997Mo25, 1995Mo29, 2011Me01                  
+257ES c  Single-particle Nilsson levels: 1994Cw02                               
+257ES C  QA, T: 2011Sa40                                                        
+257ES c                                                                         
+257ES c  1994Cw02 have calculated the following single-particle level sequence: 
+257ES2c  g.s., 7/2[633]; 0.18 MeV, 7/2[514]; 0.30 MeV, 3/2[521]; 0.30 MeV,      
+257ES3c  1/2[521]; 0.46 MeV, 5/2[642]; 0.50 MeV, 1/2[660]; 0.62 MeV,            
+257ESxc  3/2[651]                                                               
+257ES  L 0.0                             7.7 D   2                              
+257ES2 L %B-=?$ %SF=?                                                           
+257ES cL J         possibly 7/2[633] from analogy with {+253}Es                 
+257ES cL T         from 1987Po22, 1991Po17 (followed |g rays accompanying       
+257ES2cL |b-decay). Other: 8.7 d {I9} (followed neutron activity from SF,       
+257ESxcL 1987Po22)                                                              
+257ES cL %A        calculated T{-1/2}(|a)|?2|*10{+6} d (1997Mo25)               
+                                                                                
+257FM    ADOPTED LEVELS                                          13NDS    201309
+257FM  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257FM2 H CUT=1-Mar-2012$                                                        
+257FM D  Modified by E. Browne (March 19, 2012)                                 
+257FM  Q -406      7  4968   6  5886   SY 6863.6 14    2012WA38                 
+257FM cQ           Estimated |DS(p)=100 (2012Wa38)                              
+257FM c                                                                         
+257FM c  Calculations, compilations:                                            
+257FM c  |a decay: 1993Bu09, 2003De17                                           
+257FM c  Spontaneous Fission: 2009Zh36, 2008Sa24, 2005Ka42, 2005Re16,           
+257FM2c  2004Ro01, 2001Ng04                                                     
+257FM c  Ground state properties: 1997Mo25, 1995Mo29                            
+257FM c  Heavy cluster spontaneous emission: 1986Po15                           
+257FM c  Pion decay: 1988Io05                                                   
+257FM c  Single-particle Nilsson levels: 1994Cw02, 2005Pa73, 2000Pa12           
+257FM C  QA, T: 2011Zh36, 2010Ni02, 2009Sa25, 2008Do12, 2005GuZU                
+257FM C  Calculated neutron-separation energy: 2004Pa31.                        
+257FM c                                                                         
+257FM c  1994Cw02 calculate the following single-particle level sequence:       
+257FM2c  g.s., 7 /2[613]; 0.00 MeV, 11/2[725]; 0.02 MeV, 3/2[622]; 0.07 MeV,    
+257FM3c  1/2[620]; 0.20 MeV, 9/2[615].                                          
+257FM  XA257MD EC DECAY                                                         
+257FM  L 0.0         (9/2+)            100.5 D   2                              
+257FMX L XREF=A                                                                 
+257FM2 L %A=99.790 4$%SF=0.210 4                                                
+257FM cL J         from favored |a HF to (9/2+) in {+253}Cf, configuration=(|n  
+257FMxcL 9/2[615])                                                              
+257FM cL T         from 1973Wi03. Others: 85 d {I25} (1967As02), 94 d {I10}     
+257FM2cL (1966Rg01), 80 d {I5} (1965Si14), 79 d {I8} (1964Hu02)                 
+257FM CL %SF$From |a/SF=475 {I10} (1973Wi03,2000Ho27); others: 1967As02,        
+257FM2CL 1966Rg01, 1964Hu02, 1965Si14. Nucleus is |b{+-}, |e stable.            
+                                                                                
+257FM    257ES B- DECAY                                          13NDS    201309
+257FM  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257FM2 H CUT=1-Mar-2012$                                                        
+257FM D  Modified by E. Browne (March 20, 2012).                                
+257ES  P 0.0                             7.7 D   2              813       SY    
+257FM  N                       1       LT                                       
+257FM PN                                                                     5  
+257FM c  Decay scheme has not been studied.                                     
+257FM c  1987Po22, 1991Po17 observed several |g rays                            
+257FM2c  in a mixed Es source (produced by Cf(n,|g)) which they assigned to     
+257FM3c  the |b{+-} decay of {+257}Es.                                          
+257FM cG E         From 1987Po22, uncertainty from 1991Po17                     
+257FM cG RI        From 1991Po17; relative intensity                            
+257FM  G    6.5                                                                 
+257FM  G    7.3                                                                 
+257FM  G   25.7    3   100   10                                                 
+257FM  G   45.2                                                                 
+257FM  G   46.0    5    21   2                                                  
+257FM  G   49.0         17   2                                                  
+                                                                                
+257FM    257MD EC DECAY                1993MO18                  13NDS    201309
+257FM  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257FM2 H CUT=1-Mar-2012$                                                        
+257FM D  Modified by E. Browne (March 20, 2012)                                 
+257MD  P  0.0         (7/2-)           5.52 H    5                407     6     
+257FM  N                       0.85    3 1.176                                  
+257FM c  1993Mo18: {+254}Es+{+18}O E=105 MeV, {+254}Es+{+22}Ne E=126 MeV, ms;   
+257FM2c  measured |a, K| x ray, SF, T{-1/2}.                                    
+257FM c  K| x ray(Fm)/7074|a({+257}Md)=2.81 {I6} (K|a{-2}| x ray=0.91 {I4},     
+257FM2c  K|a{-1}| x ray=1.26 {I3}, K|b| x ray=0.64 {I4}); no |g rays observed   
+257FM3c  (1993Mo18). This measurement of K| x ray intensity gives I(K| x        
+257FM4c  ray)=0.527 {I11} per |e decay. From level scheme, with 100% |e to      
+257FMxc  g.s., I(K| x ray)=0.597 {I4} per |e decay (evaluator)                  
+257FM  L 0.0          (9/2+)           100.5 D   2                              
+257FM CL T         From Adopted Levels.                                         
+257FM  E                          100  LE   5.4  GE                             
+257FMS E  CK=0.609 4 $CL=0.279 3 $CM+=0.1113 14                                 
+                                                                                
+257MD    ADOPTED LEVELS                                          13NDS    201309
+257MD  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257MD2 H CUT=1-Mar-2012$                                                        
+257MD D  Modified by E. Browne (March 20, 2012)                                 
+257MD  Q -1253     7  6531   SY 3779   7  7558   1     2012WA38                 
+257MD CQ $DSP=123 (SYST,2012Wa38)                                               
+257MD c                                                                         
+257MD c  Calculations, compilations:                                            
+257MD c  |a decay: 1993Bu09                                                     
+257MD c  Ground state properties: 1997Mo25, 1995Mo29                            
+257MD C  Single-particle Nilsson levels: 1994Cw02, 2010Ad19, 2008Do12,          
+257MD2C  2004Pa40.                                                              
+257MD C  QA, T: 2012Sa05, 2011Sa40                                              
+257MD c                                                                         
+257MD c  1994Cw02 calculate the following single-particle level sequence:       
+257MD2c  g.s., 1/2[521], 0.17 MeV, 7/2[514]; 0.39 MeV, 7/2[633]; 0.54 MeV,      
+257MD3c  9/2[624]; 0.80 MeV, 3/2[521]; 0.87 MeV, 1/2[660].                      
+257MD  L 0.0         (7/2-)            5.52 H    5                              
+257MD2 L %EC=85 3$ %A=15 3$ %SF<1                                               
+257MD cL J         favored |a decay to (7/2-) level in {+253}Es suggests        
+257MD2cL configuration=(|p 7/2[514])                                            
+257MD cL T         from 1993Mo18. Others: 5.0 h {I3} (1971Ho16), 5.4 h {I5}     
+257MD2cL (1970Fi12) other: 3.0 h {I5} (1965Si14).                               
+257MD cL $%|e from 1993Mo18, from ingrowth of {+257}Fm |a after mass            
+257MD2cL separation.                                                            
+257MD CL %A        |a/(|e+|a)|<0.26 (1971Ho16), 0.10 {I3} (1970Fi12)            
+257MD CL %SF       From T(SF) GE 23 d (1993Mo18), recommended value (2000Ho27). 
+257MD2CL Other values: T(SF) GT 6.1 d (1971Ho16); T(SF) GT 2.9 d (1965Si14).    
+257MDxCL  Calculated, T1/2(SF);|?3|*10{+5} h (1985Lo17)                         
+                                                                                
+257NO    ADOPTED LEVELS                                          13NDS    201309
+257NO  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257NO2 H CUT=1-Mar-2012$                                                        
+257NO D  Modified by E. Browne (March 30, 2012)                                 
+257NO  Q -2357     45 5645   104495    SY8477    6     2012WA38                 
+257NO CQ $DSP=123 SY (2012Wa38)                                                 
+257NO c                                                                         
+257NO c  Calculations, compilations:                                            
+257NO c  Binding energy: 1997Pa22                                               
+257NO c  Favored |a decay: 1993Bu09                                             
+257NO c  Ground state properties: 1997Mo25, 1995Mo29                            
+257NO c  Single-particle Nilsson states: 2005Pa13, 2003Be67, 1994Cw02           
+257NO C  QA, half-life: 2012Po01, 2011Ad15, 2010Si27, 2009Do22, 2009Sa25,       
+257NO2C  2008Do12, 2007Sa28, 2007Zh41, 2006Ma78, 2006Ma78, 2006Ch63, 2001Re13.  
+257NO3C  SN: 2004Pa31, 2003Ga34.                                                
+257NO c                                                                         
+257NO c  1994Cw02 have calculated the following single-particle level sequence: 
+257NO2c  g.s., 1/2[620]; 0.01 MeV, 3/2[622]; 0.09 MeV, 11/2[725]; 0.12 MeV,     
+257NO3c  7/2[613]; 0.47 MeV, 9/2[615].                                          
+257NO  XA261RF A DECAY (70 S)                                                   
+257NO  XB261RF A DECAY (2.1 S)                                                  
+257NO  L 0           (3/2+)            24.5 S    5                              
+257NOX L XREF=AB                                                                
+257NO2 L %A=85 15$%EC LE 30$%SF LT 1.5                                          
+257NO CL           Only |a decay has been observed. %SF from T(SF) GT 28 min    
+257NO2CL (2000Ho27,2000La34). %EC estimated in 2002Ho11.                        
+257NO dL           Calculated T{-1/2}(|a)|?200 s (1990Ha26)                     
+257NO cL J         Favored |a decay to 3/2+ {I3}/2[622] at 124 keV              
+257NO2cL in {+253}Fm (2005As05).                                                
+257NO cL T         From 2005As05. Other values: 24 s {I3} (2011Ha13),           
+257NO2cL 26 s {I2} (1970Es02), 23 s {I2} (1967Gh01),                            
+257NO3cL 25 s {I3} (2000La34).                                                  
+257NO cL           Calculated T{-1/2}(SF)|?30 s (1985Lo17).                     
+257NO  L   0.0+X                                                                
+257NOX L XREF=A                                                                 
+257NO cL E         x=239 {I36} from {+261}Rf |a decay (70 s)                    
+                                                                                
+257NO    261RF A DECAY (70 S)          2008DU09                  13NDS    201309
+257NO  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257NO2 H CUT=1-Mar-2012$                                                        
+257NO D  Modified by E. Browne (March 29, 2012)                                 
+261RF  P 0.0                           70 S      3               8648     36    
+261RF CP QP$From 2011AuZZ.                                                      
+261RF CP T$ Weighted average of 68 S 3 (2008Du09), 65 S 10 (1999Ar21,1970Gh01), 
+261RF2CP 78 S +11-6 (1996Ka66,2000Ho27,2002Ho11),                               
+261RF3CP and 75 S 7 (1996Ka66,2000Sy01).                                        
+261RF3CP Others: 65 S (1994Lo27,1994La22), 20 S +110-10 (2008Dv02),             
+261RF4CP 71 S +342-33 (2008Ga08).                                               
+257NO  N                        0.90   10                                       
+257NO CN BR        From %SF LE 11 (2008Du09,2002Ho11,2000Ho27,1996Ka66).        
+257NO2CN Other: %EC+B+ LT 15 (1999Ar21,1970Gh01).                               
+257NO c  1970Gh01: {+248}Cm({+18}O,5n){+261}Rf; parent of {+257}No.             
+257NO cA HF        r{-0}({+257}No)=1.475 {I20}                                  
+257NO  L  0.0+X                                                                 
+257NO cL E         x=239 {I36} from Q(|a)=8648 {I36} (systematics,2011AuZZ)     
+257NO2cL and E|a; based on the assumption that the 70 s activity is the g.s. of 
+257NOxcL {+261}Rf                                                               
+257NO  A 8280      20 100    AP   1.3  AP                                       
+257NO cA E,IA$from 1970Gh01, 2002Ho11                                           
+                                                                                
+257NO    261RF A DECAY (2.1 S)         2011HA13                  13NDS    201309
+257NO  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257NO2 H CUT=1-Mar-2012$                                                        
+257NO D  New Dataset (E. Browne, March 29, 2012).                               
+261RF  P 0+Y                           2.1 S     4              8651      50    
+261RF CP QP$From EA=8250 keV 50 (2011Ha13).                                     
+261RF CP T$Weighted average of 1.9 S 4 (2011Ha13), 3 S 1 (2008Du09),            
+261RF2CP 4.2 S +34-13 (2003Tu05,2002Ho11). Other: 3.26 S (1996Ho13).            
+257NO  N                       0.27    6                                        
+257NO CN BR$From 2011Ha13. Others: %A=9, %SF=91 (2008Du09),                     
+257NO2CN %SF AP 40 (2003Tu05,2002Ho11), %SF=73 6 (2011Ha13).                    
+257NO C  {+248}Cm{+18}O,5n){+261}Rf parent of {+257}No (2011Ha13).              
+257NO  L 0                             24.5 S    5                              
+257NO CL T$From Adopted Levels. Other values: 24 S 3, 22 S +14-6 (2011Ha13);    
+257NO2CL 10.3 s (2002Ho11).                                                     
+257NO  A 8520      50 100                                                       
+257NO CA E,IA$From 2011Ha13. Other: 2002Ho11                                    
+                                                                                
+257LR    ADOPTED LEVELS                                          13NDS    201309
+257LR  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257LR2 H CUT=1-Mar-2012$                                                        
+257LR D  Modified by E. Browne (April 5, 2012)                                  
+257LR  Q -3261     SY7211    SY2506    SY9008    SY    2012WA38                 
+257LR CQ $DQ-=45 SY, DSN=94 SY, DSP=45 SY, DQA=31 (2012Wa38)                    
+257LR c                                                                         
+257LR c  Calculations, compilations:                                            
+257LR c  Favored |a decay: 1993Bu09                                             
+257LR c  g.s. properties: 1997Mo25, 1995Mo29                                    
+257LR c  Single-particle Nilsson levels: 2004Pa40, 1994Cw02                     
+257LR C  QA, T: 2011Sa40, 2010Si27, 2009Do22, 2008Do12, 2008Ro06, 2007Zh41,     
+257LR2C  2002Re37, 2001Mo07.                                                    
+257LR c  1994Cw02 calculate the following single-particle level sequence:       
+257LR2c  g.s. 7/2[514], 0.13 MeV {I9}/2[624], 0.13 MeV {I1}/2[521], 0.75 MeV    
+257LR3c  {I5}/2[512], 0.83 MeV {I7}/2[633]                                      
+257LR c                                                                         
+257LR c  Assignment: produced by {+249}Cf({+15}N,|a3n), {+250}Cf({+14}N,|a2n)   
+257LR2c  excit; parent of {+253}Md (1971Es01)                                   
+257LR  XA261DB A DECAY                                                          
+257LR  XB257RF EC DECAY (4.4 S)                                                 
+257LR  XC257RF EC DECAY (4.1 S)                                                 
+257LR  L 0                             4 S       AP                             
+257LRX L XREF=BC                                                                
+257LR2 L %A LE 100$%EC LT 15$%SF LT 0.033                                       
+257LR cL %EC+%B+   <15 (1971Es01) from absence of {+257}No |a's.                
+257LR cL %SF       From 1970Fl16, 2000Ho27. T{-1/2}(SF)>1|*10{+5} s (1971Fl02). 
+257LRxcL Calculated T{-1/2}(SF)|?30 s (1985Lo17)                                
+257LR cL J         favored |a decay to                                          
+257LR2cL {+253}Md feeds two levels separated by |?65 keV (65 {I40}); if this    
+257LR3cL indicates a rotational band then the band-head probably has            
+257LR4cL 5/2|<J|<11/2. The possible Nilsson assignments are:                    
+257LR5cL 9/2[624], 7/2[514] and 1/2[512] (see above for calculations by         
+257LR6cL 1994Cw01).                                                             
+257LR cL T$1997He29: 3.3 s {I+5-4} from 887|a(t), 4.3 s {I+13-8} 8810|a(t);     
+257LR2cL 4.1 s {I+24-13} (2009Qi04).                                            
+257LR2cL Others: 0.646 s {I25} from 1976BeYM, 0.6 s {I1} (1971Es01)             
+257LR  L  1.5E+2   10                                                           
+257LRX L XREF=ABC                                                               
+257LR cL E         from {+261}Db |a decay                                       
+                                                                                
+257LR    257RF EC DECAY (4.4 S)        2010ST14                  13NDS    201309
+257LR  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257LR2 H CUT=1-Mar-2012$                                                        
+257RF  P 0           (1/2+)            4.4 S     +6-5           3261      SY    
+257RF CP J$From Adopted Levels. Possible CONF=1/2+[620].                        
+257RF CP T$From 2009Qi04                                                        
+257LR  N                       0.194   14                                       
+257LR CN BR$From 2010St14                                                       
+257LR  L 0.0                           4 S       AP                             
+257LR CL T$From Adopted Levels.                                                 
+                                                                                
+257LR    257RF EC DECAY (4.1 S)        2009QI04                  13NDS    201309
+257LR  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257LR2 H CUT=1-Mar-2012$                                                        
+257RF  P 75        AP(11/2-)           4.1 S     4              3261      SY    
+257RF CP E,J$From Adopted Levels. Possible CONF=11/2-[725].                     
+257RF CP T$From 2009Qi04                                                        
+257LR  N                       0.11    2                                        
+257LR CN BR$From Adopted Levels                                                 
+257LR  L 0.0                           4 S       AP                             
+257LR CL T$From Adopted Levels.                                                 
+                                                                                
+257LR    261DB A DECAY                 1971GH01                  13NDS    201309
+257LR  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257LR2 H CUT=1-Mar-2012$                                                        
+257LR D  Slightly modified by E. Browne (April 5, 2012)                         
+257LR c  Others: 1971Dr01, 1971Fl02                                             
+261DB  P 0.0                           1.8 S     4              9218      SY    
+257LR  N                        0.75   25                                       
+257LR  L  1.5E+2   10                                                           
+257LR cL E         from Q(|a)=9218 {I101} (systematics,2012Wa38) and measured   
+257LRxcL E|a                                                                    
+257LR  A 8930         100        2     AP                                       
+257LR cA HF        r{-0}({+257}Lr)=1.470 {I20}                                  
+                                                                                
+257RF    ADOPTED LEVELS, GAMMAS                                  13NDS    201309
+257RF  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257RF2 H CUT=1-Mar-2012$                                                        
+257RF D  Modified by E. Browne (April, 2012)                                    
+257RF  Q -4341     SY6426    213168    849083    8     2012WA38                 
+257RF CQ           Estimated DQ-=203 (2012Wa38)                                 
+257RF c                                                                         
+257RF c  Calculations, compilations:                                            
+257RF C  Half-life: 2012Po01, 2011He12,                                         
+257RF2C  2010Si27, 2008Do12, 2008Ro06, 2007Zh41,                                
+257RF3C  2006Xu04, 2005Xu03, 2005Zh24, 2004Xu02, 2001Re13                       
+257RF C  QA: 2011Ad15, 2009Do22, 2008Do12, 2008Ro06                             
+257RF C  208PB(50TI,N), measured SIGMA: 2011Ca08, 2011Ca14, 2011Wa41,           
+257RF2C  2010Li32, 2010Wa39, 2008Za07, 2007Fe17, 2005Fe05, 2005Sm02,            
+257RF3C  2005Sw01, 2004Ad32, 2004Ch31, 2003Sw01, 2001De23, 2001Sm06,            
+257RF4C  2001Za10, 2000Ad15, 2000De09, 2000Sm01, 1999Ad05, 1999Ch42,            
+257RF5C  1999Sm02, 1998Ad06                                                     
+257RF C  Rf XK energies: 2008Th05                                               
+257RF C  Masses: 2004Mu27                                                       
+257RF C  Spontaneous fission half-life: 2004Ro01, 2003Zu02                      
+257RF c  Favored |a decay: 1993Bu09, 1992Bu03                                   
+257RF c  g.s. properties: 1997Mo25, 1995Mo29                                    
+257RF c  Single-particle Nilsson levels: 2010Se10, 2005Pa73, 1994Cw02           
+257RF c                                                                         
+257RF c  1994Cw02 calculate the following                                       
+257RF2c  single-particle level sequence:                                        
+257RF3c  g.s., 1/2[620]; 0.09 MeV, 3/2[622]; 0.21 MeV, 11/2[725]; 0.28 MeV,     
+257RF4c  7/2[613]; 0.46 MeV, 9/2[734]; 0.69 MeV, 9/2[615]; 0.87 MeV,            
+257RFxc  7/2[624].                                                              
+257RF c                                                                         
+257RF c  Assignment: {+249}Cf({+12}C,4n) excit, parent of {+253}No              
+257RF2c  (1969Gh01,1973Be33). {+208}Pb({+50}Ti,n) E({+50}Ti)=4.75-4.85          
+257RFxc  MeV/nucleon, parent of {+253}No (1985He06).                            
+257RF c                                                                         
+257RF c  The 4.4 s (1/2+) isomer is populated in the alpha decay of             
+257RF2c  0.18 s {+261}Sg; the 4.1 s (11/2-) isomer, however, is not populated   
+257RF3c  in the decay of 0.18 s {+261}Sg (1997He29).                            
+257RF CL BAND(A)$ROTATIONAL BAND (11/2-[725])                                   
+257RF  XA261SG A DECAY                                                          
+257RF  XB208PB(50TI,NG)                                                         
+257RF CL E$From 208PB(50TI,NG), unless otherwise noted (2010Be16,2009Qi04).     
+257RF CL J         Based on rotational-band structure, unless otherwise noted.  
+257RF  L 0.0          (1/2+)           4.4 S     +6-5                           
+257RF2 L %A=79.3 14$%EC=19.4 14$%SF=1.3 3 (2010ST14)                            
+257RF2 L XREF=AB                                                                
+257RF CL J         In analogy with N=153 nuclei 249CM and 251CF                 
+257RF2CL (CONF=1/2+[620]). Calculations in 1994Cw01 predict this                
+257RF3CL single-particle Nilsson configuration.                                 
+257RF CL T         From 2009Qi04, recommended value in 2010Be16.                
+257RF2CL Other values: 5.5 S 4 (2010St14); 4.8 S 2 (2010Be16);                  
+257RF3CL 7.2 S +13-11 (2008Dr05); 4.3 S +13-8 (1985He06);                       
+257RF4CL 3.8 S 8 (1985So03); 4.8 S 3 (1974BeWM);                                
+257RF5CL 4.8 S 5 (1971Gh03); 4.5 S 10 (1969Gh01).                               
+257RF  L 50        1  [5/2+]                                                    
+257RF2 L XREF=A                                                                 
+257RF  L 75        AP (11/2-)          4.1 S     4                          AM  
+257RF2 L XREF=B                                                                 
+257RF CL J         Supported by alpha-hindrance factor HF=21 to 253NO GS        
+257RF2CL (9/2-[734]). T=4.1 s is consistent with this JPI assignment.           
+257RF CL T$From 2009Qi04, recommended in 2010Be16. Other values:                
+257RF2CL 4.9 S 7 (2010St14), 4.6 S 3 (other value in 2010Be16),                 
+257RF3CL 4.1 S +7-6 (2008Dr05).                                                 
+257RF2 L %A=88 2$%EC=11 2$%SF LE 1.4                                            
+257RF CL           From 1997He29, 1999He11.                                     
+257RF CL           Decay branchings measured for a combined source              
+257RF2CL of 257RF (4.4 s) and 257RF (4.1 s): %SF=2 1 (2009Qi04),                
+257RF3CL %SF LT 3.5 (1985He06),                                                 
+257RF4CL %SF= 14 9 (1985So03), %SF AP 12 (1984Og03). Other: 2000Ho27.           
+257RF  L 148       1   (13/2-)                                              A   
+257RF2 L XREF=B                                                                 
+257RF  G 73                                                                     
+257RF  L 157       1   (3/2+)                                                   
+257RF CL           Possible CONF=3/2+[622]                                      
+257RF2 L XREF=A                                                                 
+257RF  G 107.3                 [M1]                                             
+257RF  G 157       1                                                            
+257RF  L 234       1  (15/2-)                                               A   
+257RF2 L XREF=B                                                                 
+257RF  G 86        1                                                            
+257RF  G 159       1                                                            
+257RF  L 334       1  (17/2-)                                               A   
+257RF2 L XREF=B                                                                 
+257RF  G 100       1                                                            
+257RF  G 186       1                                                            
+257RF  L 446       1  (19/2-)                                               A   
+257RF2 L XREF=B                                                                 
+257RF  G 112       1                                                            
+257RF  G 212       1                                                            
+257RF  L 572       1  (21/2-)                                               A   
+257RF2 L XREF=B                                                                 
+257RF  G 126       1                                                            
+257RF  G 238       1                                                            
+257RF  L 711       1  (23/2-)                                               A   
+257RF2 L XREF=B                                                                 
+257RF  G 139       1                                                            
+257RF  G 265       1                                                            
+257RF  L 1157      1  (21/2,23/2)      139.9 US  77                             
+257RF2 L XREF=B                                                                 
+257RF CL J         G rays to (21/2-) and (23/2-) in 257RF.                      
+257RF2CL T=140 US is expected for DK=5 or 6 transitions (2010Be16).             
+257RF CL T$From 2010Be16. Other values: 160 US +42-31 (2009Qi04);               
+257RF2CL 109 US 13 (2009Je01).                                                  
+257RF CL E         E AP 1125 keV, measured with conversion electrons added      
+257RF2CL to the energies of coincident G rays, agrees with value                
+257RF3CL from decay scheme.                                                     
+257RF  G 446       1                                                            
+257RF  G 585       1                                                            
+                                                                                
+257RF    261SG A DECAY                 2010ST14,2007ST12         13NDS    201309
+257RF  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257RF2 H CUT=1-Mar-2012$                                                        
+257RF D  Modified by E. Browne (April, 2012)                                    
+257RF C  2010ST14, 2007ST12: 261SG activity was produced in the 208PB(54CR,N)   
+257RF2C  reaction at E=258 MeV. The evaporation residues were extracted from    
+257RF3C  the beam by the velocity filter ^SHIP. Measured alpha particles from   
+257RF4C  261SG, 257RF, and 253NO decay using silicon detectors, and G rays      
+257RF5C  using an array of Ge clover detectors.                                 
+257RF C  2010Be16: Experiments were performed at the 88-Inch Cyclotron of the   
+257RF2C  Lawrence Berkeley National Laboratory using the Berkeley Gas-filled    
+257RF3C  Separator (^BGS). The 261SG activity was produced in the               
+257RF4C  208PB(54CR,N) reaction at E=261 MeV.                                   
+257RF5C  Others: 2004He23, 1997Ho13, 1987MU15, 1985MU11, 1984Og03               
+261SG  P 0.0          (3/2+)           178 MS    14             9714      15    
+261SG CP T         From 2010Be16. Other value: 184 MS 5 (2007St12,2010St14);    
+261SG2CP 0.26 S +11-6 (1985Mu11,1984Mu17); 0.11 S +14-4 (1987Mu15).             
+257RF  L 0.0          (1/2+)           4.4 S     +6-5                           
+257RF CL T         From Adopted Levels                                          
+257RF CL           Possible configuration 1/2+[620]                             
+257RF  L 50        1  [5/2+]                                                    
+257RF  L 157       1  (3/2+)                                                    
+257RF CL           Possible configuration 3/2+[622]                             
+257RF  A 9410      10                                                           
+257RF CA E         From 2010St14                                                
+257RF  G 107.3                 [M1]                                             
+257RF2 G FL=50                                                                  
+257RF CG E$From 2010St14                                                        
+257RF  G 157       1                                                            
+257RF2 G FL=0.0                                                                 
+257RF CG E$From 2010St14                                                        
+                                                                                
+257RF    208PB(50TI,NG)                2010BE16,2009QI04         13NDS    201309
+257RF  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257RF2 H CUT=1-Mar-2012$                                                        
+257RF D  Modified by E. Browne (April, 2012)                                    
+257RF C  2010Be16: Experiments were performed at the 88-Inch Cyclotron of       
+257RF2C  the Lawrence Berkeley National Laboratory using the Berkeley Gas-filled
+257RF3C  Separator (^BGS). Beam energy: 238 MeV. Measured G-ray energies using a
+257RF4C  high-purity germanium clover detector, alpha particles and conversion  
+257RF5C  electrons with a silicon strip detector (^DSSD).                       
+257RF C  2009Qi04: Experiments were performed at the ^ATLAS cyclotron from the  
+257RF2C  Argonne National Laboratory using the Argonne Fragment Mass Analyzer.  
+257RF3C  Beam energy: 233 MeV. Particles were detected using a silicon strip    
+257RF4C  detector (^DSSD) and a Parallel Grid Avalanch Counter (^PGAC).         
+257RF5C  G rays were detected with high-purity germanium detectors.             
+257RF6C  Measured G rays, alpha-conversion electron correlated events.          
+257RF7C  Others: 2008Dr05, 2005ST16, 2002HeZS.                                  
+257RF CL E         Deduced by evaluators from G-ray energies.                   
+257RF2CL Uncertainties in the level energies are from                           
+257RF3CL G-ray energies only. They do not include a systematic value            
+257RF4CL of AP 30 keV from the 75-keV level (2010Be16)                          
+257RF CL BAND(A)$ROTATIONAL BAND (11/2-[725])                                   
+257RF CG E$From 2010Be16. DE=1 keV for all G rays is an estimate.               
+257RF CL J         From Adopted Levels, Gammas.                                 
+257RF  L 0.0          (1/2+)           4.4 S     +6-5                           
+257RF CL           Possible configuration 1/2+[620]                             
+257RF CL T         From Adopted Levels                                          
+257RF  L 75        AP (11/2-)          4.1 S     4                          AM  
+257RF CL T         From Adopted Levels                                          
+257RF CL           Possible configuration 11/2-[725]                            
+257RF CL E         From EA(167)=8778 keV 20, EA(gs)=9016 keV 20 (2009Qi04),     
+257RF2CL EG(167)=167.5 keV 5 (2011An13) in 253NO. Thus                          
+257RF3CL E(75)= (9016 - 8778)x 257/253 - 167.5 =75 keV                          
+257RF  L 148       1  (13/2-)                                               A   
+257RF  G 73        1                                                            
+257RF  L 234       1  (15/2-)                                               A   
+257RF  G 86        1                                                            
+257RF  G 159       1                                                            
+257RF  L 334       1  (17/2-)                                               A   
+257RF  G 100       1                                                            
+257RF  G 186       1                                                            
+257RF  L 446       1  (19/2-)                                               A   
+257RF  G 112       1                                                            
+257RF  G 212       1                                                            
+257RF  L 572       1  (21/2-)                                               A   
+257RF  G 126       1                                                            
+257RF  G 238       1                                                            
+257RF  L 711       1  (23/2-)                                               A   
+257RF  G 139       1                                                            
+257RF  G 265       1                                                            
+257RF  L 1157      1  (21/2,23/2)      139.9 US  77                             
+257RF CL T$From 2010Be16. Other values: 160 US +42-31 (2009Qi04);               
+257RF2CL 109 US 13 (2009Je01).                                                  
+257RF CL E         E AP 1125 keV, measured with conversion electrons added      
+257RF2CL to the energies of coincident G rays, agrees with value                
+257RF3CL from decay scheme.                                                     
+257RF  G 446       1                                                            
+257RF  G 585       1                                                            
+                                                                                
+257DB    ADOPTED LEVELS, GAMMAS                                  13NDS    201309
+257DB  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257DB2 H CUT=1-Mar-2012$                                                        
+257DB D  Modified by E. Browne (April, 2012)                                    
+257DB  Q             8362    SY1303    SY9206    20    2012WA38                 
+257DB CQ           DSN=314, DSP=204 (2012Wa38)                                  
+257DB c  Calculations, compilations:                                            
+257DB C  Calculated T: 2012Po01, 2011Qi12, 2011He12, 2010Do08, 2010Sa36,        
+257DB2C  2010Si27.                                                              
+257DB c  Favored |a decay: 1993Bu09                                             
+257DB c  g.s. properties: 1997Mo25, 1995Mo29                                    
+257DB C  Calculated QA: 2011Sa40, 2010Ad19, 2009Do22, 2008Do12, 2008Ro06,       
+257DB2C  2007Zh41.                                                              
+257DB c  Single-particle Nilsson levels: 2004Pa40, 2004HeZZ, 1994Cw02.          
+257DB c                                                                         
+257DB c  1994Cw02 calculate the following single-particle Nilsson level         
+257DB2c  sequence: g.s., 9/2[624]; 0.23 MeV, 7/2[514]; 0.29 MeV, 5/2[512];      
+257DBxc  0.46 MeV, 1/2[521].                                                    
+257DB c                                                                         
+257DB C  Spontaneous fission: 2004Pe23.                                         
+257DB C  Assignment: 209BI(50TI,2N), parent of 253LR                            
+257DB2C  (1985He22,1986He28,2001He35,2008Ga25), measured SIGMA                  
+257DB3C  (2012Ca06,2005Zu02,2004Ad32). 236U(27AL,6N), parent of 253LR (1992An16)
+257DB c  The 5-s activity assigned to {+257}Db by 1976Og02 was                  
+257DB2c  reassigned to {+258}Rf and {+258}Db by 1986He28                        
+257DB  XA261BH A DECAY                                                          
+257DB cL E(A)      %|a, %SF, %|e+%|b{++}: 1999He11, 2001He35 determined %SF|<6  
+257DB2cL for presumably combined decay of two isomers.                          
+257DB3cL 1985He22, 1986He28, 2000Ho27 determined %|a=83 {I11} and               
+257DB4cL %SF=17 {I11} for the combined decay of the 2.3 s and 0.67 s isomers.   
+257DB5CL %SF AP 20 (1976Og02)                                                   
+257DB5cL From log| {Ift}|?6 and Q(|e)|?4500 T{-1/2}(|e+|b{++})|?200 s.          
+257DB6cL Therefore, %|e+%|b{++} is expected to be small.                        
+257DB  L    0.0       (9/2+)           2.3 S     2                          A   
+257DB2 L XREF=A                                                                 
+257DB CL J         Predicted CONF=9/2+[624]                                     
+257DB CL T$From 2009He20                                                        
+257DB2 L %A GE 94$ %SF LE 6                                                     
+257DB CL %A,%SF    From 2001He35                                                
+257DB CL $Emitted alpha particles: 9063 keV {I20}, 8956 keV {I20} (2010He11);   
+257DB2CL 9066 keV {I20}, 8965 keV {I20}, 8874 keV {I20}? (2009He20);            
+257DB3CL 9074 keV {I10}, 8967 keV {I15} (2001He35).                             
+257DB4CL Others: 1999He07, 1986He28, 1985He22.                                  
+257DB  L 250       AP (7/2-)                                                    
+257DB2 L XREF=A                                                                 
+257DB CL J         Predicted CONF=7/2-[514]                                     
+257DB CL E         EG=225.3 keV observed in AG COIN measurement (2010He11).     
+257DB  L 370       AP (1/2-)           0.67 S    6                           M  
+257DB2 L %A GE 87$ %SF LE 13                                                    
+257DB CL %A,%SF    From 2001He35                                                
+257DB2 L XREF=A                                                                 
+257DB CL J         Predicted CONF= 1/2-[521]                                    
+257DB CL T         From 2009He20. See 261BH A DECAY for other values.           
+257DB CL           Emitted alpha particles: 9168 keV {I20} (2010He11);          
+257DB2CL 9155 keV {I20} (2009He20); 9163 keV {I10} (2001He35).                  
+257DB3CL Others: 1999He07, 1986He28, 1985He22.                                  
+257DB  L 470       AP [3/2-]                                                    
+257DB2 L XREF=A                                                                 
+257DB CL J         Expected 3/2 member of 1/2-[521] rotational band.            
+257DB  G 100       AP                                                          S
+257DB  L 600       AP (5/2-)                                                    
+257DB2 L XREF=A                                                                 
+257DB CL J         Predicted CONF=5/2-[512]                                     
+257DB CL           Emitted alpha particles: 10000 keV (IA=100%)(2010He11).      
+257DB  G 160       AP          [M1]                                            S
+257DB2 G FL=470                                                                 
+257DB  G 230       AP          [E2]                                            S
+257DB  G 350       AP          [M1]                                            S
+                                                                                
+257DB    261BH A DECAY                 2010HE11                  13NDS    201309
+257DB  H TYP=FUL$AUT=E. BROWNE, J. K. TULI$CIT=NDS 114, 1041 (2013)$            
+257DB2 H CUT=1-Mar-2012$                                                        
+257DB D  Modified by E. Browne (April, 2012)                                    
+257DB C  261BH produced by the 209BI(54CR,2N), E=271 MeV, nuclear reaction      
+257DB2C  bombarding targets on a rotating wheel. Evaporation residues were      
+257DB3C  detected with position-sensitive silicon detectors, alpha particles    
+257DB4C  with silicon detectors, and G rays with a germanium clover detector    
+257DB5C  of four crystals.  Measured EG, X rays, AG COIN, half-lives,           
+257DB6C  alpha-decay branching ratios.  Detected DB XK at 136.5-, 138.5-, and   
+257DB7C  a G ray at 225.3 keV in AG COIN measurements. No evidence for an       
+257DB8C  isomer in 261BH was found.                                             
+261BH  P 0.0          (5/2-)           11.8 MS   +39-24         10502     50    
+261BH CP QP        From 2011AuZZ.                                               
+261BH CP J         Predicted CONF=5/2-[512]                                     
+261BH CP T         From 2010He11                                                
+257DB  L 0.0          (9/2+)           2.3 S     2                              
+257DB CL J         Predicted CONF=9/2+[624]                                     
+257DB CL T         From 2009He20. Other values: 1.5 S +9-4 (2010He11);          
+257DB2CL 1.82 S +27-21 (2008Ga25); 1.50 S +19-15 (2001He35);                    
+257DB3CL Others: 1999He11, 1989Mu09                                             
+257DB  L 250       AP (7/2-)                                                    
+257DB CL J         Predicted CONF=7/2-[514]                                     
+257DB  G 250       AP          (E1)                                            S
+257DB CG E         EG=225.3 keV observed in AG COIN measurement may be          
+257DB2CG transition from 7/2- to 9/2+. EG AP 250 keV used here.                 
+257DB  L 370       AP (1/2-)           0.67 S    6                           M  
+257DB CL J         Predicted CONF=1/2-[521]                                     
+257DB CL T         From 2009He20. Other values: 0.36 S +22-9 (2010He11);        
+257DB2CL 0.58 S +13-9 (2008Ga25); 0.76 S +15-11 (2001He35).                     
+257DB CL E         Based on EL(5/2-) AP 600 keV and EL(5/2-) - EL(1/2-) AP 230  
+257DB2CL keV, using an estimated 70 keV for E(ce) of the 470-keV (3/2-) to      
+257DB3CL 370- keV (1/2-) expected G-ray transition.                             
+257DB  L 470       AP (3/2-)                                                    
+257DB CL E$Predicted from theory: 3/2 member of 1/2-[521] rotational band.      
+257DB  G 100       AP          [M1]                                            S
+257DB  L 600       AP (5/2-)                                                    
+257DB CL J         Predicted CONF=5/2-[512]                                     
+257DB CL E         Estimated from QA=10502 keV (2011AuZZ) and EA=9900-10400 keV 
+257DB2CL to this level.                                                         
+257DB  A 10.0E3    AP 100                                                       
+257DB  G 160       AP          [M1]                                            S
+257DB2 G FL=470                                                                 
+257DB  G 230       AP          [E2]                                            S
+257DB  G 350       AP          [M1]                                            S
+                                                                                

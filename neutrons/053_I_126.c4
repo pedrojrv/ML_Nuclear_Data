@@ -1,0 +1,127 @@
+#ENTRY      10546
+#AUTHOR1    M.F.Elgart+
+#YEAR       1975
+#INSTITUTE  (1USABLN)
+#TITLE      Neutron-Absorption Cross Sections of Some Radioactive
+#+          Nuclides
+#AUTHOR(S)  M.F.Elgart, H.F.Finston, R.Rundberg,
+#+          E.T.Williams, A.H.Bond Jr, E.Yellin
+#REF-CODE   (J,NSE,58,291,197511)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.58, p.291, 1975
+#DATASETS   2
+#
+#DATASET    10546004
+#DATE       20040501
+#REACTION   53-I-126(N,ABS),,SIG
+#PROJ       1
+#TARG       53126
+#MF         3
+#MT         101
+#DATA-HDR   DATA
+#C4BEGIN    [    1 53126   3 101 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 53126   3 101 A  0.025300          9000.000 5000.000                                       M.F.Elgart,ET.AL. (75)   10546  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10728
+#AUTHOR1    M.F.Elgart
+#YEAR       1971
+#INSTITUTE  (1USABLN)
+#TITLE      The thermal neutron capture cross sections of some
+#+          reactor-produced radionuclides.
+#AUTHOR(S)  M.F.Elgart
+#REF-CODE   (T,ELGART,1971)
+#REFERENCE  Thes. Thesis or dissertation
+#+          Name.Elgart, 1971
+#DATASETS   6
+#
+#DATASET    10728002
+#DATE       20090903
+#REACTION   53-I-126(N,G)53-I-127,,SIG,,MXW
+#PROJ       1
+#TARG       53126
+#MF         3
+#MT         102
+#PRODUCT    53-I-127
+#DATA-HDR   DATA
+#C4BEGIN    [    1 53126   3 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 53126   3 102 A  0.025300          5960.000 450.0000                                       M.F.Elgart (71)          10728  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V1002032
+#DATE       20120803
+#REACTION   53-I-126(N,G)53-I-127,,SIG,,,RECOM
+#PROJ       1
+#TARG       53126
+#MF         3
+#MT         102
+#PRODUCT    53-I-127
+#DATA-HDR   DATA
+#C4BEGIN    [    1 53126   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 53126   3 102    0.025300          5960.000                                                S.F.Mughabghab (06)      V1002 32
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10728
+#AUTHOR1    M.F.Elgart
+#YEAR       1971
+#INSTITUTE  (1USABLN)
+#TITLE      The thermal neutron capture cross sections of some
+#+          reactor-produced radionuclides.
+#AUTHOR(S)  M.F.Elgart
+#REF-CODE   (T,ELGART,1971)
+#REFERENCE  Thes. Thesis or dissertation
+#+          Name.Elgart, 1971
+#DATASETS   6
+#
+#DATASET    10728003
+#DATE       20090903
+#REACTION   53-I-126(N,G)53-I-127,,RI
+#PROJ       1
+#TARG       53126
+#MF         213
+#MT         102
+#PRODUCT    53-I-127
+#DATA-HDR   DATA
+#C4BEGIN    [    1 53126 213 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 53126 213 102 A  0.500000 1.5000+7 40600.00 3050.000                                       M.F.Elgart (71)          10728  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

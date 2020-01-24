@@ -1,0 +1,759 @@
+285      COMMENTS                                                05NDS    200512
+285    H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+285  2 H CUT=12-Aug-2005$                                                       
+285   C  TITL$NUCLEAR DATA SHEETS FOR A=266-294                                 
+285   C  AUTH$M. GUPTA(a)                                                       
+285   C  INST$National Nuclear Data Center                                      
+285  #C       Brookhaven National Laboratory                                    
+285  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+285  #C                                                                         
+285   c  INST$Manipal Academy of Higher Education,                              
+285  #c  Manipal, KA 576 104, INDIA                                             
+285  #c  e-mail: mohini.gupta@manipal.edu                                       
+285   c  PERM(a)$Permanent address: Manipal Academy of Higher Education,        
+285  #c  Manipal, KA 576 104, INDIA                                             
+285   C  AUTH$THOMAS W. BURROWS                                                 
+285   C  INST$National Nuclear Data Center                                      
+285  #C       Brookhaven National Laboratory                                    
+285  #C       Upton, ^NY 11973-5000, ^U.^S.^A.                                  
+285  #C       e-mail: burrows@bnl.gov                                           
+285   C  ABST$The 2000 Nuclear Data Sheets for A=267-293 (2000FI12) AND PART    
+285  2C  (A=266) OF  THE 2001 Nuclear Data Sheets for 250,254,258,262,266       
+285  3C  (2001AK11) HAVE BEEN REVISED USING EXPERIMENTAL DECAY AND REACTION DATA
+285  4C  RECEIVED BY August 12, 2005.                                           
+285   C  CUT$August 12, 2005; ALL REFERENCES ENTERED INTO THE Nuclear Science   
+285  2C  References File AND PAPERS AND PRIVATE COMMUNICATIONS RECEIVED BY THIS 
+285  3C  DATE WERE CONSIDERED.                                                  
+285   C  CIT$NDS 106, 251 (2005)                                                
+285   c  COMM$                                                                  
+285  @c  {UAcronyms and notations used in this evaluation:}                     
+285  #c  |b2 Quadrupole deformation of the nuclear ground state                 
+285  #c  BGS Berkeley Gas Filled Separator                                      
+285  #c  DGFRS Dubna Gas Filled Recoil Separator at the Flerov Laboratory of    
+285  2c  Nuclear Reactions, JINR, Dubna, Russia                                 
+285  #c  EVR Evaporation Residue                                                
+285  #c  GARIS Gas-filled Recoil Ion Separator                                  
+285  #c  RILAC RIKEN Linear Accelerator facility                                
+285  #c  SHIP Separator for Heavy Ion reaction Products                         
+285  #c  t, t{-n}, and t{-SF} Time delay between detection of |a or SF fragment 
+285  2c  and detection of previous EVR or |a                                    
+285  #c  TKE Total Kinetic Energy                                               
+285  #c  VASSILISSA Electrostatic separator at the Flerov Laboratory of Nuclear 
+285  2c  Reactions, JINR, Dubna, Russia                                         
+285  #c                                                                         
+285  @c  {UIUPAC/IUPAP Transfermium Working Group and Joint Working Party       
+285  2c  (Z=110-112,114,116,118):}                                              
+285  2c  Where no substantially new data exist or the IUPAC/IUPAP Joint Working 
+285  3c  Party (JWP) Technical Reports (2001Ka70,2003Ka71) have already assigned
+285  4c  a priority of discovery for an element (Z=110 or Ds and Z=111 or Rg),  
+285  5c  the evaluators have relied on the judgement of the JWP in              
+285  6c  determining the strength of the arguments made in the various papers.  
+285  7c  In the cases where there are new data or where the JWP has not yet     
+285  8c  assigned a priority of discovery for an element, the evaluators have   
+285  9c  attempted to follow the guidelines of the IUPAC/IUPAP Transfermium     
+285  Ac  Working Group (TWG) as detailed in 1992Ba77 in their assessments of    
+285  Bc  the data.                                                              
+285  #c                                                                         
+285  #c  In the above context, with respect to Z=112 and the collective works of
+285  2c  A. Marinov {Iet. al.}, the reader is referred to 1992Ba77, 2001Ka70,   
+285  3c  and 2003Ka71, the response by the experimenters (2004MaZS), and        
+285  4c  references therein.                                                    
+285  #c                                                                         
+285  @c                                                                         
+285  #c  Note that the TWG and JWP are primarily concerned with the priority of 
+285  2c  discovery of an element and not a specific nuclide. The purpose of     
+285  3c  this evaluation is to present the "best" set of nuclear properties     
+285  4c  for those nuclides reported between A=266 and A=294 based on data      
+285  5c  currently available and {Bnot} to establish a priority of discovery for
+285  6c  any element.                                                           
+285  !c                                                                         
+285  #c  It is well known that alpha decay chains seen                          
+285  ac  in cold fusion reactions tend to terminate in known mass regions.      
+285  2c  The method of |a-|a or |a-SF correlations for identifying the          
+285  3c  parent has therefore been used with confidence.                        
+285  3c  Experiments carried out with hot fusion reactions,                     
+285  4c  result in alpha decay chains beginning and ending with hitherto unknown
+285  5c  nuclei, thereby necessitating the use of EVR-|a or EVR-SF correlations 
+285  6c  in an attempt to identify the parent and daughters. The latter method  
+285  7c  is not as accurate as the first since a greater probability of         
+285  8c  randomness is inherant to the technique. As such, independent          
+285  9c  verification and confirmation of the data gains added importance.      
+285  ac  These facts should be taken into account when considering the suggested
+285  ac  properties of nuclei created following a hot fusion reaction as for    
+285  ac  the synthesis of Z=114 and above.                                      
+285  #c                                                                         
+285  #c  Finally, with regard to the some of the                                
+285  ac  hot fusion studies conducted by the Dubna-Livermore collaboration,     
+285  ac  2004Mo15 have pointed out that mass assignments which are based        
+285  ac  on the excitation energy of the compound nucleus may be off by a       
+285  ac  single unit. This may also be due in part to uncertainties in the beam 
+285  ac  energy and calculated mass excesses of the expected super heavy nuclei.
+285  ac  Once again, collateral information is required to establish the charge 
+285  ac  and approximate A of the nucleus.                                      
+285  #c                                                                         
+285  @c  {U|DT{-1/2} Estimates:} Where the half-lives as given by the authors   
+285  2c  have not been adopted, the evaluators have used the approximations in  
+285  3c  equation 18 of 1984Sc13 for three or more events, assuming an          
+285  4c  exponential distribution to estimate the standard uncertainty (68%     
+285  5c  confidence level) in T{-1/2}:                                          
+285  #c                   |t{-u}/t{-m}|?1/(1-z/|6n),   |t{-l}/t{-m}|?1/(1+z/|6n)
+285  #c  where |t{-u}=upper uncertainty, |t{-l}=lower uncertainty,              
+285  8c  t{-m}=average mean time, z=1 for a 68% confidence level, and n=number  
+285  9c  of events. For one and two events, the exact values given in Table 1   
+285  Ac  have been used: |t{-l}/t{-m}=0.543 and |t{-u}/t{-m}=5.79 for n=1 and   
+285  Bc  |t{-l}/t{-m}=0.606 and |t{-u}/t{-m}=2.82 for n=2. Note that except for 
+285  Cc  the one event |t{-u}/t{-m}, the approximations are accurate within 10%.
+285  #c                                                                         
+285  @c  {UViola-Seaborg Systematics (1966Vi04 and references therein):}        
+285  ac  Calculations of T{-1/2}                                                
+285  2c  performed in the present evaluation used the relationship:             
+285  #c             log| T{-1/2}(|a)=(aZ+b)Q{+-1/2}+(cZ+d)                      
+285  #c  where Z refers to the atomic                                           
+285  5c  number of the parent nucleus, Q is the Q-value of the |a-decay in MeV  
+285  6c  and:                                                                   
+285  #c             a=1.78722, b=-21.398, c=-0.25488, and d=-28.423.            
+285  #c  The parameters were obtained by a fit to 65 even-even nuclei with Z>82 
+285  2c  and N>126 (2004OgZZ). Values are revised here in accordance with the   
+285  3c  parameter set used in these evaluations. We note that these systematics
+285  6c  are only an indication of |a-decay half-lives from the ground state    
+285  7c  of a given even-Z(parent), rather than specific to any isotope of the  
+285  8c  the element under consideration. The use of this formalism in the      
+285  ac  case of odd and odd-odd nuclei is to be taken as qualitative. Some     
+285  ac  experimenters ({Ie.g.}, 2004OG03) use T{-1/2}(calc) so derived to      
+285  ac  estimate a Hindrance Factor (HF) for a given transition,               
+285  ac  attributable to the odd neutron or proton. This quantity is            
+285  ac  then given by the ratio of  T|a(expt) to T|a(calc).                    
+285  ac  The HF so computed is an approximate indication.                       
+285  #c                                                                         
+285  @c  {UOthers (Phenomenological parametrizations):} See Nuclear Science     
+285  2c  References.                                                            
+285  #c                                                                         
+285  @c  {UFusion-Fission Dynamics:} An emerging topic of interest in the       
+285  2c  trans-fermium elements is the manifestation of shell effects in the    
+285  3c  mass energy distributions (MED) of heavy nuclei as reflected in their  
+285  4c  fission and quasi-fission (QF) signatures. Studies of this type are    
+285  5c  important as QF is expected to play a greater role on the hindrance of 
+285  6c  fusion as one attempts to synthesis heavier nuclei in the approach to  
+285  7c  the "island" of stability. An understanding of this mechanism is       
+285  8c  necessary to establishing the most favorable reactions for producing   
+285  9c  heavy elements. Another unexpected hindrance to fusion was discovered  
+285  Ac  by the Canberra group (1998Da24) in much lighter, asymmetric systems   
+285  Bc  leading to the formation of CN {+216}Ra*. This was found to be related 
+285  Cc  to both the mass asymmetry in the entrance channel as well as the      
+285  Dc  on-set of QF. It is thought that (closed) shell structure, as well as  
+285  Ec  deformations of target/projectile nuclei and their relative orientation
+285  Fc  to each other in the process of CN formation, may also play an         
+285  Gc  important role in reducing the probability of forming a compound       
+285  Hc  system. In the face of extremely low yields and a steep decrease of    
+285  Ic  production cross-sections already in evidence with available stable    
+285  Jc  beam-target combinations, the influence of all possible mitigating     
+285  Kc  factors must be accurately determined in order to                      
+285  Lc  optimize the probability of successful fusion. The formation of a      
+285  Mc  super-heavy element (SHE) will be possible only if the di-nucleus      
+285  Nc  survives QF going on to form a compact compound system which must then 
+285  Oc  face competition from fission.                                         
+285  #c                                                                         
+285  #c  Recently (2004PrZW), a series of experiments designed to investigate   
+285  2c  fusion-fission dynamics have been carried out at FLNR-JINR in Dubna    
+285  3c  in collaboration with investigators from Belgium, France, and Italy.   
+285  4c  Nascent compound nuclei were formed in the range Z=102-122 in the      
+285  5c  reactions {+26}Mg+{+248}Cm; {+48}Ca with {+208}Pb, {+232}Th, {+238}U,  
+285  6c  {+244}Pu, and {+248}Cm; and {+58}Fe with {+208}Pb, {+232}Th, {+244}Pu, 
+285  7c  and {+248}Cm using the U400 cyclotron and the double-arm tof           
+285  8c  spectrometer "Corset". These experiments were inspired by              
+285  9c  the use of similar targets in the synthesis of Z=112, Z=114, and Z=116 
+285  Ac  at Dubna. QF was observed in nuclei {+286}112 to {+296}116 and         
+285  Bc  multi-modal fission in the case of both {+274}Hs and {+256}No. Many    
+285  Cc  such experiments are planned or underway to investigate the various    
+285  Dc  effects.                                                               
+285  #c                                                                         
+285  @c  {UOthers (Fusion-Fission Dynamics):} 2002Hi20, 2004Da11, and 2004It05  
+285  2c  and references cited in these papers.                                  
+285  #c                                                                         
+285  !c  {UExperimental Estimates of Fission Barriers:}                         
+285  #c  1987Mu15 deduce fission barriers (B{-f}) for (N-Z)=48 isotopes.        
+285  3c  For Z=92, 94, 96, 98, 100, 102, 104, 106, and 108                      
+285  4c  the experimentally derived barrier heights are respectively:           
+285  5c  B{-f}=6.23, 6.47, 6.35, 6.17, 6.03, 6.24, 6.64, 6.89, and 6.68 MeV     
+285  6c  (|+ 0.01 MeV). See 1987Mu15 for details.                               
+285  #c                                                                         
+285  #c  2002It04, in an analysis of available experimental data, derive the    
+285  2c  {+283-286}112, {+288-292}114, and {+292-296}116 fission                
+285  3c  barrier heights of |>5.5, |>6.7, and |>6.4 MeV, respectively.          
+285  #c                                                                         
+285  @c  {UDubna data on {+289}114, {+287}114, and {+283}112:}                  
+285  2c  Two possibilities have been proposed in an attempt to understand the   
+285  ac  the {+289}114, {+287}114 observations:                                 
+285  #c  (i) that the single {+289}114 chain seen by the DGFRS group            
+285  ac  belongs to a rare decay mode originating from                          
+285  4c  an isomeric state, or that                                             
+285  #c  (ii) the sequence may actually originate from                          
+285  6c  {+290}114|){+286}112|){+282}Ds|){+278}Hs (SF) (See {+290}114 Adopted   
+285  7c  Levels).                                                               
+285  #c  The evaluators believe that further investigations                     
+285  ac  are required to support either hypothesis.                             
+285  #c  Thus, {+290}114, {+286}112, {+282}Ds and {+278}Hs remain               
+285  9c  unobserved. Also, T{-1/2}                                              
+285  Ac  for {+287}114 as seen by 1999Og07 (data from the VASSILISSA separator) 
+285  ac  is much larger than that observed by 2004Og12 and                      
+285  Bc  2004OgZZ (15 data points, using DGFRS), although the E|a is in         
+285  ac  agreement. Such inconsistencies need to be better understood.          
+285  #c  Note that the two papers, 2004Og12 and 2004OgZZ are identical in many  
+285  2c  respects. 2004OgZZ report more statistics in some cases.               
+285  #c                                                                         
+285  @c  {UOther comments on {+289}114 and {+283}112}                           
+285  #c  2000Ar03, who analyzed the data for the 34-min decay chain of {+289}114
+285  3c  (DGFRS data from 1999Og10), {+287}114, and the SF events reported      
+285  ac  for {+283}112 (VASSILISSA data from 1999Og05 and 1999Og07),            
+285  4c  classified the evidence as being "very weak",                          
+285  5c  with no convincing supporting arguments for the possible production of 
+285  6c  SHE. We make the following general observations:                       
+285  #c                                                                         
+285  #c  A total of 46 events (Table IV, 2004Og12), with 5 more events bringing 
+285  ac  the total to 51 decays (Table V: 2004OgZZ), have since been reported   
+285  ac  by the Dubna-JINR collaborations for all isotopes of                   
+285  2c  Z=114. From the largest number of events as reported in  2004OgZZ,     
+285  ac  the isotopes observed are {+289}114 (9 events), {+288}114 (16 events), 
+285  ac  {+287}114 (15 events) and {+286}114                                    
+285  4c  (11 |a + 5 SF events). Taking all the data into consideration,         
+285  ac  the |?34 min decay sequence postulated as originating from             
+285  5c  a rare decay mode of {+289}114, does not seem very likely.             
+285  6c  On the other hand, a statistical analysis by 2000Zl02 suggests that the
+285  7c  {+289}114 decays observed are genetically linked                       
+285  8c  and not the result of a background decay sequence. These               
+285  BC  discrepancies have to be resolved, along with some others.             
+285  #c                                                                         
+285  #c  {+283}112: The six SF events reported {Ivia} 1999Og05 and 1999Og07 have
+285  ac  (see also 2004Og02) with VASSILISSA, have not                          
+285  2c  been reproduced in experiments done with DGFRS. There appears to be a  
+285  3c  lack of internal consistency through the collective measurements       
+285  ac  and the data are inconclusive as pointed                               
+285  4c  out by experimenters (reasons given in each paper). Decay properties of
+285  5c  parent {+287}114 may be similar to those noted in 2004Og12 but those   
+285  6c  of the daughter {+283}112 differ. Also, 2005Gr19 and 2002Lo15 reported 
+285  7c  no SF decays or EVR-|a-|a correlations with |Dt(EVR-|a)<20 s or        
+285  8c  |Dt(|a-|a)<20 s in any of the {+48}Ca + {+238}U irradiations performed 
+285  8c  by them. See {+283}112 Adopted Levels for details.                     
+285  #c                                                                         
+285  #c  These observations by the experimenters are consistent with the        
+285  2c  findings of 2000Ar03 which offer a more detailed analysis. However,    
+285  3c  of the various arguments put                                           
+285  3c  forward therein, the following comments may be made here:              
+285  #c                                                                         
+285  #c  1. Total TKE's from the two presumed Z=112 fragments are in each case: 
+285  #c  190 MeV and 212 MeV (1999Og05)                                         
+285  #c  65 MeV and 170 MeV  (2004Og02)                                         
+285  #c  195 MeV and 165 MeV (1999Og07: Daughters of {+287}114)                 
+285  #c  TKE for Z=112 (2004Og12; {+282}112 observed as daughter in four events 
+285  2c  of nine attributed to {+286}114 (Page 8, Table II(c)) is measured at   
+285  3c  213 MeV and 211 MeV (two events, # 1 & 9, registered in both focal     
+285  4c  plane and side detectors). With one exception, all the energies        
+285  5c  measured in the three papers (1999Og05, 1999Og07, and 2004Og02)        
+285  6c  are, in fact, lower than would be expected for this mass range (Z=112  
+285  7c  or Hs) as pointed out in 2000Ar03. However, a direct mass analysis     
+285  8c  undertaken by the experimenters (2004OG02) of the two SF nuclei (from  
+285  9c  the second experiment) after EVR implantation resulted in              
+285  ac  A=285.1 {I41}. The result is in agreement with EVR's produced in       
+285  bc  {+48}Ca+{+238}U|){+286}112*.                                           
+285  #c                                                                         
+285  #c  2. 2000Ar03 statement that correlations  between the fission events    
+285  2c  and preceding signals (recoils/|a's) are random.  Note that a          
+285  3c  'backward' analysis of the data was reported in                        
+285  4c  1999Og07 and in the other papers. These statements by 2000Ar03 are     
+285  5c  evidently in contradiction with those made by the                      
+285  6c  experimenters. A more complete analysis would be beneficial.           
+285  #c                                                                         
+285  #c  3. The experimenters rely on two Z=114 chains (one measured in the     
+285  2c  1999Og07); the |?34 min sequence tentatively attributed to {+289}114   
+285  ac  quoted from an earlier                                                 
+285  3c  experiment (and not seen since) is invoked in support of daughter Z=112
+285  4c  assignments. The proposed assignment of Z=114 to both parents may      
+285  5c  be incorrect taking into account new data which do not support         
+285  6c  these observations and for reasons already mentioned.                  
+285  7c  Hence, the Z=112 daughter is also possibly incorrect.                  
+285  !c                                                                         
+285  #c  CONCLUSIONS:                                                           
+285  #c  Properties of Z=112 as proposed in 1999Og05, 1999Og07 and 2004Og02     
+285  ac  are not conclusive. Overall, the                                       
+285  2c  results from the VASSILISSA experiments are at variance with data from 
+285  3c  experiments using DGFRS. The latter investigations are done using      
+285  4c  more stringent methods, and have greater statistics, offering better   
+285  5c  internal consistency. Some obvious discrepancies and other             
+285  ac  inconsistencies between the two sets of                                
+285  6c  data remain and need to be resolved or adequately explained as does the
+285  7c  lack of events observed in the {+48}Ca + {+238}U irradiations performed
+285  8c  by 2005Gr19 and 2002Lo11.                                              
+285  #c                                                                         
+285  #c  Properties of {+287}114 as observed in 1999Og07 and {+289}114 quoted   
+285  2c  from earlier work are not reproduced to date.                          
+285  #c                                                                         
+285  @c  {UTheoretical Calculations:}                                           
+285  @c  1995Mo29: |b2 based on the finite-range droplet                        
+285  2c  macroscopic model and folded-Yukawa single-particle microscopic model  
+285  3c  with "global" parameters.                                              
+285  @c  1997Mo25: |b-decay properties based on the finite-range droplet model  
+285  2c  and folded-Yukawa single particle potential. Odd-proton and odd-neutron
+285  3c  J|p simultaneously obtained with the calculated masses and             
+285  4c  deformations in 1995Mo29. Global parameterization from {+16}O through  
+285  5c  A=239.                                                                 
+285  @c  2003Mu15, 2003Mu26: |b2 based on Yukawa-plus-exponential               
+285  2c  model for the macroscopic part and the Strutinski shell correction,    
+285  3c  with the Wood-Saxon single-particle potential, for the microscopic     
+285  4c  part.                                                                  
+285  @c  2005GaZX: |b2 based on self consistent calculations                    
+285  2c  within the framework of the Relativistic Mean Field (RMF)              
+285  3c  theory with very few "globally" fit parameters and employing the       
+285  4c  frequently used NL3 Lagrangian parameter set. Since other parameter    
+285  5c  sets in use exhibit similar systematics, these results are expected to 
+285  6c  be representative. |b2 to three decimal places are taken from 2005GaZY.
+285  #c                                                                         
+285  @c  {UOther Measurements:}                                                 
+285  @c  2004DrZZ has found evidence for Z=120 compound nucleus formation from  
+285  2c  lifetime measurements for {+238}U on natural Ni at E=6.62 MeV/A        
+285  3c  (Blocking technique in single crystals).                               
+285  #c                                                                         
+285   c  ACKN$The evaluators are very grateful to G. Munzenburg, S. Hofmann, A. 
+285  2c  Turler, M. Schaedel, and A. Yakushev (GSI/Germany); K. Morita          
+285  3c  (RIKEN/Japan); Yu.Ts. Oganessian, M.G. Itkis, E.M. Kozulin, V.         
+285  4c  Utyonkov, and A. Yeremin (JINR-Dubna/Russia); P.A. Wilk (LLNL/USA);    
+285  5c  R.B. Firestone and K.E. Gregorich (LBNL/USA) and A. Drouart            
+285  6c  (CEA-Saclay/France) for the useful discussions as well as all the      
+285  7c  additional information that they readily provided during this          
+285  8c  evaluation; to the compilers of the XUNDL datasets (J. Roediger and B. 
+285  9c  Singh, McMaster University/Canada) used in this evaluation; and to B.  
+285  Ac  Singh for helpful discussions. We thank A. Marinov                     
+285  BC  (Racah Institute/Israel) for keeping us updated on their work. We also 
+285  Cc  thank R. Arcilla, J. Totans, and the other staff of the National       
+285  Dc  Nuclear Data Center for their assistance in preparing this evaluation. 
+285  Ec  In addition, one of the us (MG) is grateful to J.K. Tuli, P.           
+285  Fc  Oblozinsky, and N. Holden (BNL/USA); A.L. Nichols (IAEA/Vienna);       
+285  Gc  A.K. Jain (Indian Institute of Technology-Roorkee/India); E. Browne    
+285  Hc  (LBNL/USA); Y.K. Gambhir (Indian Institute of                          
+285  Ic  Technology-Bombay/India); and A. Sobiczewski (Soltan Institute,        
+285  Jc  Poland). Finally, this evaluation also owes its existence to the late  
+285  Kc  Y.A. Akovali (ORNL/USA) and her constant encouragement, valuable       
+285  Lc  insights, and suggestions until her untimely demise are hereby         
+285  Mc  acknowledged.                                                          
+285   C  FUND$THIS WORK WAS PERFORMED UNDER THE AUSPICES OF THE ^U.^S.          
+285  2C  Department of Energy, Contract No. ^DE-^AC02-98^CH10886, and Brookhaven
+285  3C  National Laboratory Contract No. 92389.                                
+                                                                                
+285      REFERENCES                                                       200512
+285    R 1966VI04 JOUR JINCA 28 741                                             
+285    R 1984SC13 JOUR ZPAAD 316 19                                             
+285    R 1987MU15 JOUR ZPAAD 328 49                                             
+285    R 1992BA77 JOUR PPNPD 29 453                                             
+285    R 1993LAZS CONF Dubna (Heavy Ion Physics) Proc,Vol2,P497                 
+285    R 1995MO29 JOUR ADNDA 59 185                                             
+285    R 1995SMZY CONF St. Petersburg (Low Energy Nuclear Dynamics) Proc,P313   
+285    R 1996MY01 JOUR NUPAB 601 141                                            
+285    R 1997MO25 JOUR ADNDA 66 131                                             
+285    R 1997SM03 JOUR PRVCA 56 812                                             
+285    R 1998DA24 JOUR ARNUA 48 401                                             
+285    R 1999CW01 JOUR PRLTA 83 1108                                            
+285    R 1999NI03 JOUR PRLTA 83 1104                                            
+285    R 1999OG05 JOUR ZAANE 5 63                                               
+285    R 1999OG07 JOUR NATUA 400 242                                            
+285    R 1999OG10 JOUR PRLTA 83 3154                                            
+285    R 2000AR03 JOUR ZAANE 7 23                                               
+285    R 2000BE04 JOUR PRVCA 61 031302                                          
+285    R 2000FI12 JOUR NDSBA 90 391                                             
+285    R 2000HOZZ REPT GSI 2000-1,P7,Hofmann                                    
+285    R 2000OG05 JOUR PRVCA 62 041604                                          
+285    R 2000OG07 JOUR YAFIA 63,No 10,1769                                      
+285    R 2000OGZR CONF Casta-Papiernicka (Dynamical Aspects of Nucl. Fiss.) Proc
+285    R 2000SC26 JOUR ZAANE 8 141                                              
+285    R 2000ZL02 JOUR ZAANE 8 81                                               
+285    R 2001AK11 JOUR NDSBA 94 131                                             
+285    R 2001KA70 JOUR PACHA 73 959                                             
+285    R 2001MOZU REPT RIKEN 2000 Annual,P60,Morimoto                           
+285    R 2001OG01 JOUR PRVCA 63 011301                                          
+285    R 2001OG06 JOUR YAFIA 64,No 8,1427                                       
+285    R 2002HI20 JOUR PRLTA 89 282701                                          
+285    R 2002IT04 JOUR PRVCA 65 044602                                          
+285    R 2002LO11 JOUR PPNPD 48 123                                             
+285    R 2002LO15 JOUR PRVCA 66 044617                                          
+285    R 2002NI10 JOUR PRLTA 89 039901                                          
+285    R 2002OG09 JOUR ZAANE 15 201                                             
+285    R 2003AU02 JOUR NUPAB 729 3                                              
+285    R 2003AU03 JOUR NUPAB 729 337                                            
+285    R 2003GR26 JOUR ZAANE 18 633                                             
+285    R 2003KA71 JOUR PACHA 75 1601                                            
+285    R 2003MU15 JOUR YAFIA 66 1051                                            
+285    R 2003MU26 JOUR APOBB 34 2073                                            
+285    R 2004DA11 JOUR NUPAB 734 148                                            
+285    R 2004DRZZ PREPRINT DAPNIA-04-298,Drouart,10/2004                        
+285    R 2004IT05 JOUR NUPAB 734 136                                            
+285    R 2004MAZS PREPRINT nucl-ex/0411017,11/9/2004                            
+285    R 2004MO15 JOUR NUPAB 734 188                                            
+285    R 2004OG02 JOUR ZAANE 19 3                                               
+285    R 2004OG03 JOUR PRVCA 69 021601                                          
+285    R 2004OG05 JOUR NUPAB 734 109                                            
+285    R 2004OG07 JOUR PRVCA 69 054607                                          
+285    R 2004OG10 JOUR PTPSA 154 406                                            
+285    R 2004OG12 JOUR PRVCA 70 064609                                          
+285    R 2004OGZZ REPT JINR-E7-2004-160,Oganessian                              
+285    R 2004PRZW PREPRINT Prokhorova                                           
+285    R 2004RO03 JOUR NUPAB 730 355                                            
+285    R 2005GAZX PREPRINT nucl-th/0505067,5/26/2005                            
+285    R 2005GAZY PC Y K Gambhir,6/17/2005                                      
+285    R 2005GR19 JOUR PRVCA 72 014605                                          
+                                                                                
+285CN    ADOPTED LEVELS: TENTATIVE                               05NDS    200512
+285CN  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+285CN2 H CUT=12-Aug-2005$                                                       
+285CN  Q -2.4E3    SY5.3E3   SY          9.32E3  5     2012WA38                 
+285CN CQ Note: Current evaluation has used the following Q record               
+285CN  Q -4310     SY 6470   SY            9290     60 2003AU03,2004OG12        
+285CN CQ Q-$ESTIMATED UNCERTAINTY=1220 KEV                                      
+285CN CQ SN$ESTIMATED UNCERTAINTY=1120 KEV                                      
+285CN CQ QA$FROM EA=9.16 MEV 6 (2004OG12). OTHER: 8.79 MEV 5 (2003AU03. SYST.); 
+285CNaCQ EA=9.15 MEV 5, QA=9.28 MEV 5 (2004OGZZ).                               
+285CN C  AS DAUGHTER NUCLEUS OF 28914: SEE 28914 Adopted Levels.                
+285CN C  ALL ASSIGNMENTS FOR THIS NUCLEUS AS THE ALPHA-DECAY DAUGHTER OF Z=114  
+285CN2C  STAND REVISED IN 2004OG07. THE EVALUATORS PRESENT RESULTS PRIOR TO     
+285CN3C  2004OG07 WITH THE ORIGINAL NOMENCLATURE.                               
+285CN C  1999OG10: Z=114 PRODUCED BY THE DUBNA GROUP IN THE 3{IN} EVAPORATION   
+285CN2C  CHANNEL USING 244PU+48CA AT 236 MEV PROVIDED BY THE ^U400 CYCLOTRON    
+285CN3C  IN NOVEMBER-DECEMBER 1998. ^EVR's WERE SEPARATED  BY THE ^DGFRS        
+285CN4C  (1993LAZS). 40% OF THE RECOILING Z=114 NUCLEI EXPECTED TO BE IMPLANTED 
+285CN4C  IN THE FOCAL PLANE DETECTOR. THREE SF EVENTS SEEN: ONE EVENT ASSIGNED  
+285CN5C  TO 0.9 MS {+244mf}AM, THE PRODUCT OF TRANSFER REACTIONS. SECOND EVENT: 
+285CN6C  INFORMATION WAS LOST. THIRD SF EVENT WAS RESOLVED INTO A               
+285CN7C  POSITION-CORRELATED DECAY CHAIN WITH ^E1=9.71 MEV, t1=30.4 S; 285CN:   
+285CN8C  ^E2=8.67 MEV, t2=15.4 M; 281DS: ^E3=8.83 MEV, t3=1.6 M FOLLOWED BY THE 
+285CN9C  TWO SF FRAGMENTS WITH ^E(TOT)=172 MEV FROM 277HS. HINDRANCE FACTORS OF 
+285CNAC  1-10 WERE ASSUMED FOR ALPHA-DECAYS OF ODD-N NUCLEI. TENTATIVE          
+285CNBC  ASSIGNMENT OF PARENT 28914 MADE IN AGREEMENT WITH CALCULATIONS BY      
+285CNCC  Smolanczuk (1997SM03) AND CORRESPONDING TO A CROSS-SECTION OF          
+285CNDC  1 pb. THIS DECAY SEQUENCE AND ALL CONSTITUENT ASSIGNMENTS ARE          
+285CNEC  CONSIDERED TENTATIVE BY THE EVALUATORS.                                
+285CN D  2000FI12 OBSERVED THAT A POSSIBLE ASSIGNMENT TO 29013 OR 287CN         
+285CN2D  DECAY CHAIN CANNOT BE RULED OUT. THE PROBABILITY OF THIS BEING AN      
+285CN3D  ACCIDENTAL DECAY CHAIN WAS ESTIMATED TO BE 1E-5 BY THE AUTHORS.        
+285CN C  2000OG05: EXPERIMENTS CONTINUED AT DUBNA WITH 244PU+48CA AT 236 MEV AS 
+285CN2C  BEFORE BUT IMPROVED SENSITIVITY OF >2 ORDERS OF MAGNITUDE OVER PREVIOUS
+285CN3C  ATTEMPTS, FOR PICOBARN CROSS-SECTIONS EXPECTED IN THE PRODUCTION OF    
+285CN4C  Z=114. THESE EXPERIMENTS WERE DONE FROM JUNE TO OCTOBER 1999           
+285CN5C  INCORPORATING AN UPGRADED DATA ACQUISITION                             
+285CN6C  SYSTEM WHICH ALLOWED FOR A CORRELATION BETWEEN THE TARGET SECTOR       
+285CN7C  GIVING RISE TO A SPECIFIC RECOIL AND THE EXCITATION ENERGY AT TARGET   
+285CN8C  CENTER FOR THE SAME EVENT. THE ^U400 CYCLOTRON WAS USED WITH ^DGFRS    
+285CN9C  (2000OGZR, 1993LAZS). OBSERVED TWO IDENTICAL THREE-MEMBER DECAY        
+285CNAC  SEQUENCES CORRESPONDING TO TWO SF EVENTS AT A 48CA BEAM ENERGY OF      
+285CNBC  237.6 AND 237.0 MEV AT TARGET-CENTER CORRESPONDING TO EXCITATION       
+285CN3C  ENERGIES OF 33.6-39.7 MEV AND 33.2-39.1 MEV OF THE {+292}114 ^CN,      
+285CN4C  RESPECTIVELY. TWO SF EVENTS WERE RECORDED AS COINCIDENT SIGNALS WITH   
+285CN5C  ENERGIES ^E1(TOT)=221 MEV AND ^E2(TOT)=213 MEV. UPON THE TIME-REVERSED 
+285CN6C  RECONSTRUCTION OF ALL DATA, TWO ALPHA DECAY CHAINS, CONSISTENT WITH    
+285CN7C  EACH OTHER WERE REPORTED AND THOUGHT TO ORIGINATE FROM 28814 {IVIA} THE
+285CN8C  4{IN} CHANNEL. THESE WERE REASSIGNED TO 28914 IN 2004OG07 AND 2004OG12.
+285CN9C  THE DECAYS PROCEED AS FOLLOWS: E1(|a)=9.87 MEV, t1=0.77 S;             
+285CNAC  E2(|a)=9.21 MEV, t2=10.34 S; E3(SF-TOT)=221 MEV, t(SF)=14.26 S FOR THE 
+285CNBC  FIRST CHAIN AND E1(|a)=9.80 MEV, t1=4.58 S; E2(|a)=9.13 MEV,           
+285CNCC  t2=18.01 S; E3(SF-TOT)=213 MEV, t(SF)=7.44 S FOR THE SECOND CHAIN      
+285CNDC  RESPECTIVELY. THE SECOND EVENT IN EACH CHAIN IS 285CN. IT WAS OBSERVED 
+285CNEC  THAT LIFE-TIMES OF NUCLEI Z GE DS WERE CONSIDERABLY INCREASED OVER     
+285CNFC  PREDICTIONS WITH INCREASING NEUTRON NUMBER. THE EXPERIMENTS WERE       
+285CNGC  COLLECTIVELY OFFERED AS PROOF OF ENHANCED STABILITY IN THE REGION      
+285CNHC  AROUND Z=114 AND N=184, WHERE SHELL CLOSURE HAS BEEN THEORIZED TO      
+285CNIC  EXIST.                                                                 
+285CN D  2000OG07: NO NEW DATA. INTERESTING DETAILS OF ALL EARLIER EXPERIMENTS. 
+285CN C  2001OG01, 2001OG06:  REPORT ALPHA DECAY CHAINS INITIALLY ASSIGNED TO   
+285CN2C  THE EVEN-EVEN NUCLEUS 29216 AND DAUGHTERS FROM THE 248CM+48CA REACTION 
+285CN3C  THOUGHT TO BE {IVIA} THE 4{In} EVAPORATION CHANNEL. THESE WERE         
+285CN4C  SUBSEQUENTLY REASSIGNED TO 29316 HENCE |a-DECAY GRAND-DAUGHTER IS      
+285CN5C  285CN. SEE 29316 Adopted Levels FOR DETAILS.                           
+285CN C  ^IUPAP/^IUPAC ^JWP ASSESSMENT (2003KA71): DISCOVERY of Z=112 WAS       
+285CN2C  NOT YET WARRANTED DUE TO UNSECURED CONNECTIONS TO KNOWN DESCENDENTS AND
+285CN3C  THE ABSENCE OF FURTHER ELEMENTAL SIGNATURES SUCH AS X-RAYS.            
+285CN C  2004OG07, 2004OG12: SEE 28914 Adopted Levels FOR DETAILS. A SERIES OF  
+285CN2C  EXPERIMENTS USING MORE STRINGENT METHODS (1992BA77,2004OG05) WERE      
+285CN3C  CARRIED OUT SINCE ALL THESE CHAINS PASSED THROUGH AND ENDED IN         
+285CN4C  HITHERTO UNKNOWN REGIONS. BOMBARDING ENERGIES OF 48CA ON 244PU WERE    
+285CN5C  HIGHER THAN THOSE USED EARLIER. AT 243 MEV TWO DECAY CHAINS WERE       
+285CN6C  OBSERVED OF THE TYPE |a-|a-SF. A TENTATIVE (DUE TO THE HIGH RANDOMNESS 
+285CN7C  PROBABILITY OF ABOUT 40%) ASSIGNMENT OF 28914 WAS MADE; TENTATIVE      
+285CN8C  ALPHA-DECAY DAUGHTER 285CN (BEAM OFF CONDITION) WITH EA=9.16 MEV 6.    
+285CN9C  THREE OTHER SIMILAR EVENTS WITH A SMALLER PROBABILITY OF RANDOMNESS OF 
+285CNAC  18%, 2% AND 6% WERE DETECTED AT THIS ENERGY. TWO SUCH IDENTICAL DECAY  
+285CNBC  CHAINS HAD PREVIOUSLY BEEN SEEN IN 2000OG05 AND 2000OG07 AT THE LOWER  
+285CNCC  ENERGY OF 236 MEV (SEE THE 29316 Adopted Levels) WITH THE REACTION     
+285CNDC  248CM+48CA. AT AN ENERGY OF 250 MEV, ONE MORE SUCH EVENT WAS OBSERVED; 
+285CNEC  NONE AT 257 MEV.                                                       
+285CN C  ASSIGNMENTS: SHORTER |a-SF CHAIN TO 28814 {IVIA} THE 4{IN} CHANNEL;    
+285CN2C  TWO DIFFERENT |a-|a-SF CHAINS TO THE E-O ISOTOPES 28914 AND 28714      
+285CN3C  {IVIA} THE 3{IN} AND 5{IN} CHANNELS RESPECTIVELY. IN THE LONGER CHAINS 
+285CN4C  |a-|a-SF (8 EVENTS) ALL 285CN DAUGHTER NUCLEI ALPHA DECAY WITH         
+285CN5C  T(ALPHA)=34 S +17-9.                                                   
+285CN C  2004OGZZ REPORT TWO ^EVR-|a1-|a2-|a3-SF CHAINS SPANNING ABOUT 10 TO 80 
+285CN2C  S PRODUCED IN THE REACTION 248CM+48CA AT E=247 MEV. THE EXPERIMENTERS  
+285CN3C  NOTE THAT THESE CHAINS ARE SIMILAR TO THOSE OBSERVED AT A LOWER ENERGY 
+285CN4C  IN 2001OG01, 2001OG06, AND ALSO DISCUSSED IN 2002OG09.                 
+285CN5C  IN BOTH CASES THE PARENT WAS 29316 AND |a3 WAS ATTRIBUTED TO 285CN.    
+285CN6C  A TOTAL OF 10 (ALPHA) DECAY EVENTS WERE CONSIDERED IN THE ESTIMATION   
+285CN7C  OF THE HALF-LIFE OF T1/2=29 S +13-7. 2004OG12 AND 2004OGZZ ARE         
+285CN8C  IDENTICAL IN MOST RESPECTS. 2004OGZZ REPORT MORE STATISTICS IN SOME    
+285CN9C  SOME CASES.                                                            
+285CN C  OTHER: 1999OG07, 2000OG07, 2004OG10.                                   
+285CN C  THEORY: 1995SMZY, 1997SM03, 1997MO25, 1996MY01, 1999CW01, 2000BE04,    
+285CN2C  AND 2004RO03. SEE ALSO Nuclear Science References.                     
+285CN C  REVISED ASSIGNMENTS: PREVIOUSLY OBSERVED ALPHA DECAY DAUGHTERS FROM    
+285CN2C  2000OG05, ALSO MENTIONED IN 2000OG07, AS SEEN IN THE REACTION          
+285CN3C  244PU+48CA ARE BELIEVED TO BE 285CN.                                   
+285CN C  ASSIGNMENT: DAUGHTER OF 28914 PRODUCED BY 244PU(48CA,3N) E=236 MEV     
+285CN2C  (1999OG10, 2000OG05) AND E=243 AND 250 MEV (2004OG07, 2004OG12).       
+285CN3C  GRANDDAUGHTER OF 29316 PRODUCED BY 248CM(48CA,3N) E=240 MEV (2001OG01, 
+285CN4C  2001OG06). THE EVALUATORS CONSIDER THE ASSIGNMENTS OF 29316 AND 28914  
+285CN5C  AND DAUGHTERS AS TENTATIVE. SEE RESPECTIVE Adopted Levels FOR DETAILS. 
+285CN  XA28914 A DECAY: TENTATIVE                                               
+285CN  L X                             34 S      +17-9                         ?
+285CN CL J$5/2+ FROM 1997MO25 (THEORY) AND 2003AU02 (SYSTEMATICS)               
+285CN CL T$FROM 8/8 EVENTS (2004OG12).                                          
+285CNaCL OTHER: 29 S +13-7 PER 10/10 EVENTS (HALF-LIVES/ALPHA ENERGIES) FROM    
+285CNaCL 2004OGZZ.                                                              
+285CN2CL T(CALC)=48 S FROM Viola-Seaborg SYSTEMATICS FOR QA=9.28 MEV.           
+285CN2 L %A AP 100                                                              
+285CN CL %A$FROM 8/8 EVENTS                                                     
+285CN CL $B2(THEORY): 0.089 FROM 1995MO29; 0.122 FROM 2003MU15; 0.143 FROM      
+285CN2CL 2005GAZX                                                               
+285CNX L XREF=A                                                                 
+                                                                                
+285CN    28914 A DECAY: TENTATIVE      2004OG12                  05NDS    200512
+285CN  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+285CN2 H CUT=12-Aug-2005$                                                       
+285CN C  SEE 28914 ADOPTED LEVELS FOR DETAILS.                                  
+28914  P X                             2.7 S     +14-7           9960     60    
+28914 CP T$FROM 2004OG12                                                        
+28914 CP QP$FROM 2004OG12                                                       
+285CN  N                       1.0     AP                                       
+285CN  L X                             34 S      +17-9                         ?
+285CN CL E,T$FROM THE Adopted Levels.                                           
+285CN  A 9.82E3    6                                                           ?
+                                                                                
+28513    COMMENTS                                                ENSDF    201008
+28513  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+28513 C  TITL$NUCLEAR DATA SHEETS FOR 28513                                     
+28513 c  AUTH$M. GUPTA                                                          
+28513 c  INST$Manipal University,                                               
+28513#c       Manipal, KA 576 104, INDIA                                        
+28513 c  ABST$The ENSDF file corresponding to Nuclear Data Sheets for A=266-294 
+285132c  (2005Gu33) has been updated to include the recently reported           
+285133c  production of {+293}117 and its daughters by 2010Og01.                 
+28513#c                                                                         
+28513#c  See 2005Gu33 for acronyms and notations and evaluation methodology     
+28513xc  used                                                                   
+28513xc  in this evaluation. The purpose of this evaluation is to present the   
+285133c  "best" set of nuclear properties for those nuclides reported between   
+285134c  A=266 and A=294 based on data currently available and {Bnot} to        
+285135c  establish a priority of discovery for any element.                     
+28513 c  CUT$August 1, 2010. All references relevant to the production of       
+285132c  {+285}13 or its daughters entered into the Nuclear Science References  
+285133c  File and papers and private communications received by this date were  
+28513xc  considered.                                                            
+28513 c  ACKN$The evaluator is very grateful to B. Singh and J. Choquette,      
+285132c  McMaster University for compiling these data into XUNDL.               
+28513 C  CIT$ENSDF                                                              
+                                                                                
+28513    ADOPTED LEVELS: Tentative                               ENSDF    201008
+28513  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+28513  Q -3.6E3    SY7.1E3   SY2.1E3   SY1.003E4 5     2012WA38                 
+28513 CQ Note: Current evaluation has used the following Q record               
+28513  Q -4626     SY 7254   SY 1375   SY  10020    SY 2009AuZZ                 
+28513 CQ Q-$ESTIMATED UNCERTAINTY=1421 KEV                                      
+28513 CQ SN$ESTIMATED UNCERTAINTY=1122 KEV                                      
+28513 CQ SP$ESTIMATED UNCERTAINTY=1296 KEV                                      
+28513 CQ QA$ESTIMATED UNCERTAINTY=300 KEV.                                      
+28513aCQ OTHERS: 9615 keV {I110} from E|a=9480 keV {I110} and 9879 keV {I80}    
+28513aCQ from 9740 keV {I80} from 2010Og01.                                     
+28513 c  2010Og01: This nuclide produced as the |a-decay grand-daughter of      
+28513ac  {+293}117 in                                                           
+28513ac  the reaction {+249}Bk({+48}Ca,3n), E(Lab)=252 MeV at target center.    
+28513ac  This corresponded to an excitation energy of 39 MeV near the expected  
+28513ac  maximum                                                                
+28513ac  for the sum of 3n and 4n evaporation channels.                         
+285132c  All experiments were carried out at Dubna, Russia, in collaboration    
+285133c  with RIAR (Russia) and LLNL; ORNL; University of Nevada and Vanderbilt 
+28513ac  University in USA, for a period of 70 days from July 27 - October 23,  
+28513ac  2009. See adopted levels for {+293}117 for experimental details.       
+28513ac  strip. Two alpha decay energies are attributed to this nucleus         
+28513ac  corresponding to a single decay life time.                             
+28513ac  No details of the individual events or 'groups' are reported.          
+28513 t  {TV}Average values for |a decay energies and decay times are provided: 
+285133t  E{-|a1}=11.03 MeV {I8}, t{-1}=21 ms                                    
+28513+t        - {TV}assigned to {+293}117 decay                                
+285134t  E{-|a2}=10.31 MeV {I9}, t{-2}=0.32 s                                   
+28513+t       - {TV}assigned to {+289}115 decay                                 
+285135t  E{-|a3}= 9.74 MeV {I8} and 9.48 MeV {I11}, t{-3}=7.9 s                 
+28513+t    - {TV}assigned to {+285}113 decay                                    
+285136t  E(SF)=218 MeV {I5}, t(SF)=38 s    - {TV}assigned to {+281}Rg decay.    
+28513 c  The randomness factors (1984Sc13) were determined by simulating each   
+28513ac  of the five observed decay chains using extended intervals of time     
+28513ac  (|Dt |> 5T{-1/2}), energy and position (exceeding 4.7 standard         
+28513ac  deviations). The estimates are 6|*10{+-6}, 10{+-3}, 10{+-5},           
+28513ac  3|*10{+-11} and 3|*10{+-11}.                                           
+28513 c  Theory: see Nuclear Science References.                                
+28513 c  Assignment: {+249}Bk({+48}Ca,4n), E(Lab)=252 MeV at target center      
+285132c  (2010Og01). The evaluator suggests that the                            
+285135c  properties attributed to {+293}117 and its daughters should be         
+285136c  considered as tentative until confirmed independently. The half-lives  
+28513ac  and Q(|a) are derived by the experimenters                             
+28513ac  from the events observed for which details are not provided.           
+28513 CL           TWO DECAY STATES ARE REPORTED, DESCRIBED BY A SINGLE         
+28513ACL HALF-LIFE.                                                             
+28513 CL           NO ASSUMPTIONS ARE MADE REGARDING WHICH, IF EITHER,          
+28513ACL IS THE GROUND STATE.                                                   
+28513  XA28915 A DECAY (0.22 MS)                                                
+28513  L X                             5.5 S     +50-18                        ?
+28513 CL T$reported by 2010Og01.                                                
+28513 CL $Q(|a):9.615 MeV {I110} from EA=9.48 MeV {I11}.                        
+28513 CL $T(CALC): 2 S FROM  Viola-Seaborg SYSTEMATICS assuming QA=9.879 MeV    
+28513aCL and 10 S assuming QA=9.615 MeV.                                        
+28513 CL $T(theory): 0.84 s from 2010So12.                                      
+285132 L %A AP 100$ %SF=?                                                       
+28513 CL %A$no SF events observed.                                              
+28513 CL $Q(|a)(theory)=10100 keV from 2010So12.                                
+28513 CL J$:|W(p)=7/2- FROM 1997MO25 (theory)                                   
+28513 CL $B2:0.072 FROM 1995MO29;0.132 FROM 2003MU15 (theory)                   
+28513X L XREF=A                                                                 
+28513  L   X+264                                                                
+28513 cL E$264 {I136} keV from |DE(|a)                                          
+28513 cL $Q(|a):9.879 MeV {I80} from E(|a)=9.74 MeV {I8}.                       
+28513X L XREF=A                                                                 
+                                                                                
+28513    28915 A DECAY (0.22 MS)       2010Og01                  ENSDF    201008
+28513  H TYP=FUL$AUT=M. GUPTA$CUT=1-August-2010$CIT=ENSDF$                      
+28915  P X                             0.22 MS   +26-8          10.455    90    
+28915 CP T$from 2010Og01.                                                       
+28915 CP QP$corresponding to E|a=10.31 MeV {I9} "average" of three events       
+28915aCP from (2010Og01).                                                       
+28513  N                       1.0     AP                                       
+28513  L X                             5.5 S     +50-18                        ?
+28513  A 10.31     9                                                            
+28513 CA E$"average" of 3 events from 2010Og01.                                 
+28513  L X+264                                                                  
+28513 CL E,T$from Adopted levels                                                
+                                                                                
+285FL    COMMENTS                                                ENSDF    201511
+285FL  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-OCT-2015                     
+285FL C  TITL$NUCLEAR DATA SHEETS FOR 285FL                                     
+285FL c  AUTH$BALRAJ SINGH                                                      
+285FL c  INST$Department of Physics and Astronomy,                              
+285FL#c       McMaster University, Hamilton, Ontario,                           
+285FL#c       Canada, L8S 4M1                                                   
+285FL c  ABST$Information about the identification and half-life of the {+285}Fl
+285FL2c  nuclide from 2010El06 and 2015Ut02 is presented. In the previous       
+285FL3c  evaluation of A=285 nuclides (2005Gu33), this nuclide was classified   
+285FL4c  as unobserved.                                                         
+285FL c  CUT$Literature available up to Oct 31, 2015 has been consulted.        
+285FL C  CIT$ENSDF                                                              
+285FL c  FUND$Work supported by the Office of Nuclear Physics, Office of        
+285FLxc  Science of the DOE of the U.S.A.                                       
+                                                                                
+28514    ADOPTED LEVELS: NOT OBSERVED                            05NDS    200512
+28514  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+285142 H CUT=12-Aug-2005$                                                       
+28514  Q                       2.7E3   SY1.052E4 SY    2012WA38                 
+28514 CQ Note: Current evaluation has used the following Q record               
+28514  Q                       2060    SY11000   SY    2003AU03                 
+28514 CQ SP$ESTIMATED UNCERTAINTY=1300 KEV                                      
+28514 CQ QA$ESTIMATED UNCERTAINTY=200 KEV                                       
+28514 C  THE DATA OF 1999NI03 CITED BY 2000FI12 HAVE BEEN RETRACTED (2002NI10)  
+285142C  AND HAVE NOT BEEN CONFIRMED IN A REPEATED EXPERIMENT AT ^LBNL          
+285143C  (2003GR26). ALSO, 2001MOZU AND 2000HOZZ FOUND NO EVIDENCE FOR 29318 IN 
+285144C  208PB(86Kr,N) REACTION AT 457.6 MEV (2001MOZU) AND AT 453.9 AND        
+285145C  456.7 MEV (2000HOZZ). THE STATISTICAL ANALYSIS OF 2000SC26 ALSO        
+285146C  INDICATE THAT THE DATA OF 1999NI03 DO NOT ORIGINATE FROM RADIOACTIVE   
+285147C  DECAYS WITH AN ERROR PROBABILITY OF LESS THAN 5%.                      
+28514 C  2003AU02 SUGGEST 3/2+ BASED ON SYSTEMATICS                             
+                                                                                
+285FL    ADOPTED LEVELS                                          ENSDF    201511
+285FL  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=31-OCT-2015$                    
+285FL  H TYP=FUL$AUT=M. GUPTA, THOMAS W. BURROWS$CIT=NDS 106, 251 (2005)$       
+285FL2 H CUT=12-Aug-2005$                                                       
+285FL  Q                6310 CA  2710  SY  10520 SY    2012WA38,1997MO25        
+285FL cQ $S(n) from 1997Mo25. S(p) and Q(|a) from 2012Wa38                      
+285FL cQ $Estimated uncertainties (2012Wa38)=720 for S(p), 200 for Q(|a)        
+285FL cQ $S(2n)=14100 (1997Mo25,theory), S(2p)=4920 {I750} (syst,2012Wa38)      
+285FL c  2010El06: first identification of the {+285}Fl nuclide produced in     
+285FL3c  {+242}Pu({+48}Ca,5n) at E=256 MeV from LBNL cyclotron facility.        
+285FL4c  Evaporation residues were separated by BGS based on magnetic           
+285FL5c  rigidities. Signals from multiwire proportional counters (MWPC) and    
+285FL6c  focal plane detector (FPD) were used to distinguish implantation events
+285FL7c  from radioactive decay events in the FPD. Z=114 events were identified 
+285FL9c  by detecting time and position correlated events corresponding to their
+285FLAc  implantation and subsequent radioactive decay chain terminating in     
+285FLBc  SF decay of {+265}Rf.                                                  
+285FL t  Decay chain (2010El06): evaporation residues at 15.97 MeV {I4}         
+285FL t  E{-|a1}=1.64 MeV {I10},  t{-1}=0.181 s,   -assigned to {+285}Fl decay  
+285FL t  E{-|a2}=10.31 MeV {I4},  t{-2}=0.140 s,   -assigned to {+281}Cn decay  
+285FL t  E{-|a3}=10.57 MeV {I4},  t{-3}=8.21 ms,   -assigned to {+277}Ds decay  
+285FL t  E{-|a4}=9.59 MeV {I4},   t{-4}=346 ms,    -assigned to {+273}Hs decay  
+285FL t  E{-|a5}=8.57 MeV {I10},  t{-4}=185 s,     -assigned to {+269}Sg decay  
+285FL t  E(SF)=208.1 MeV,         t(SF)=152 s,     -assigned to {+265}Rf decay  
+285FL c  2015Ut02: {+285}Fl produced in {+239},{+240}Pu({+48}Ca,2n),            
+285FL2c  E=245,250 MeV at U400 cyclotron at FLNR-JINR facility.                 
+285FL3c  Targets={+240}Pu enriched to 98.97% at ORNL facility, and 92%          
+285FL4c  enriched at JINR facility, with average thickness of 0.39 mg/cm{+2}    
+285FL5c  {I4} for mixed ORNL/JINR {+240}Pu material. Evaporation residues (ERs) 
+285FL6c  were separated from the incident beam ions, scattered particles, and   
+285FL7c  transfer reaction products by the DGFRS based on magnetic rigidities.  
+285FL8c  Recoils passed through a tof system of two multiwire proportional      
+285FL9c  counters (MWPCs), and were implanted in the DSSD detector system       
+285FLAc  (0.3-mm thick double-sided silicon strip detectors) placed at the      
+285FLBc  final focus of the DGFRS. Events related to Z=114 were identified by   
+285FLCc  detecting time and position correlated events corresponding to their   
+285FLDc  implantation and subsequent |a-decay chain terminating in SF decay.    
+285FLEc  {+239}Pu target was 98.2% enriched obtained from JINR facility,        
+285FLFc  thickness=0.50 mg/cm{+2} {I5}                                          
+285FL t  Decay chain #1 (2015Ut02): evaporation residues at 12.56 MeV           
+285FL t  E{-|a1}=10.457 MeV {I50}, t{-1}=0.3998 s  -assigned to {+285}Fl decay  
+285FL t  E{-|a2}=10.292 MeV {I50}, t{-2}=0.0889 s  -assigned to {+281}Cn decay  
+285FL t  E{-|a3}=10.461 MeV {I156}, t{-3}=3.852 ms -assigned to {+277}Ds decay  
+285FL t  E{-|a4}=9.529 MeV {I50}, t{-4}=1.2136 s   -assigned to {+273}Hs decay  
+285FL t  E{-|a5}=8.448 MeV {I263}, t{-5}=521.84 s  -assigned to {+269}Sg decay  
+285FL t  E(SF)=218 MeV, t(SF)=10.37 s              -assigned to {+265}Rf decay  
+285FL t                                                                         
+285FL t  Decay chain #2 (2015Ut02): evaporation residues at 10.20 MeV           
+285FL t  E{-|a1}=10.391 MeV {I62}, t{-1}=0.2525 s  -assigned to {+285}Fl decay  
+285FL t  E{-|a2}=1.73 MeV, t{-2}=0.3684 s          -assigned to {+281}Cn decay  
+285FL t  E{-|a3}=10.536 MeV {I167}, t{-3}=8.282 ms -assigned to {+277}Ds decay  
+285FL t  E{-|a4}=9.462 MeV {I62}, t{-4}=1.9517 s   -assigned to {+273}Hs decay  
+285FL t  E{-|a5}=8.482 MeV {I62}, t{-5}=95.42 s    -assigned to {+269}Sg decay  
+285FL t  E(SF)=220 MeV, t(SF)=99.95 s              -assigned to {+265}Rf decay  
+285FL t                                                                         
+285FL t  Decay chain #3 (2015Ut02): evaporation residues at 9.98 MeV            
+285FL t  E{-|a1}=10.359 MeV {I61}, t{-1}=0.0432 s  -assigned to {+285}Fl decay  
+285FL t  E{-|a2}=10.179 MeV {I220}, t{-2}=0.1433 s -assigned to {+281}Cn decay  
+285FL t  E{-|a3}=10.237 MeV {I220}, t{-3}=3.223 ms -assigned to {+277}Ds decay  
+285FL t  E{-|a4}=9.475 MeV {I61}, t{-4}=0.9013 s   -assigned to {+273}Hs decay  
+285FL t  E{-|a5}=missing, t{-5}=0.9013 s           -assigned to {+269}Sg decay  
+285FL t  E(SF)=166 MeV, t(SF)=491.06 s             -assigned to {+265}Rf decay  
+285FL C                                                                         
+285FL c  Earlier identification of {+293}118 in {+208}Pb({+86}Kr,n) reaction at 
+285FL2c  E=449 MeV, and subsequent alpha daughters {+289}Lv, {+285}Fl, {+281}Cn,
+285FL3c  {+277}Ds, {+273}Hs (1999Ni03) from LBNL and cited in 2000Fi12          
+285FL4c  Nuclear Data Sheets-evaluation was retracted in 2002Ni10, and was not  
+285FL5c  confirmed in a repeated experiment at LBNL (2003Gr26). Also, 2001MoZU  
+285FL6c  and 2000HoZZ found no evidence for {+293}118 in {+208}Pb({+86}Kr,n)    
+285FL7c  reaction at 457.6 MeV (2001MoZU) and at 453.9 and 456.7 MeV            
+285FL8c  (2000HoZZ). The statistical analysis by 2000Sc26 indicated that the    
+285FL9c  data of 1999Ni03 did not originate from radioactive decays with an     
+285FLAc  error probability of less than 5%.                                     
+285FL c  Nuclear structure theory: 2014Bi06, 2014Sh15, 2004Li32, 2001Re13,      
+285FL2c  2000Me20, 2000Pa12, 1999Cw01, 1999Sm08.                                
+285FL c  Consult NSR database for several references on theoretical calculations
+285FL2c  of |a decay half-lives and Q values.                                   
+285FL  L 0                              0.15 S   +14-5                          
+285FL2 L %A AP 100                                                              
+285FL cL E$observed events and deduced half-life are assumed to correspond to   
+285FL2cL the ground state of {+285}Fl                                           
+285FL cL T$measured by 2015Ut02 from three events from their study and one from 
+285FL2cL 2010El06. Theoretical |a decay half-life=2000 s, |b-decay              
+285FL3cL half-life>100 s (1997Mo25)                                             
+285FL cL J$3/2+ in theoretical calculations of 1997Mo25                         
+285FL cL $Measured E|a=10.41 MeV {I5}, emitted by {+285}Fl decay (2015Ut02)     
+285FL cL $Production |s=2.5 pb {I+19-14} (2015Ut02) at E({+48}Ca)=245 MeV.      
+285FL2cL Production |s in {+239}Pu({+48}Ca,2n) reaction was low by an order     
+285FL3cL of magnitude                                                           
+                                                                                
