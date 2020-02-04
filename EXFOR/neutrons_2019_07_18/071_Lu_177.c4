@@ -1,0 +1,101 @@
+#ENTRY      22915
+#AUTHOR1    G.Belier+
+#YEAR       2006
+#INSTITUTE  (2FR BRC)
+#TITLE      Thermal neutron capture cross section for the K-isomer
+#+          177mLu
+#AUTHOR(S)  G.Belier, O.Roig, J.-M.Daugas,
+#+          O.Giarmana, V.Meot, A.Letourneau,
+#+          F.Marie, Y.Foucher, J.Aupiais,
+#+          D.Abt, Ch.Jutier, G.Le Petit,
+#+          C.Bettoni, A.Gaudry, Ch.Veyssiere,
+#+          E.Barat, T.Dautremer, J.-Ch.Trama
+#REF-CODE   (J,PR/C,73,014603,2006)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.73, p.014603, 2006
+#DATASETS   6
+#
+#DATASET    22915007
+#DATE       20120604
+#REACTION   71-LU-177(N,G)71-LU-178-M,,SIG
+#PROJ       1
+#TARG       71177
+#MF         3
+#MT         102
+#PRODUCT    71-LU-178-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 71177   3 102M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 71177   3 102M   0.025300          880.0000 75.00000                                       G.Belier,ET.AL. (06)     22915  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41011
+#AUTHOR1    V.P.Vertebnyy+
+#YEAR       1987
+#INSTITUTE  (4UKRIJI)
+#TITLE      INVESTIGATION OF THE NEUTRON INTERACTION WITH
+#+          RADIOACTIVE LU-177 NUCLEUS AND STABLE LU-175 AND
+#+          LU-176 NUCLEI
+#AUTHOR(S)  V.P.Vertebnyy, P.N.Vorona, A.I.Kal'chenko,
+#+          V.G.Krivenko, L.E.Chervonnaya, V.Yu.Chervyakov
+#REF-CODE   (C,87KIEV,2,204,198709)
+#REFERENCE  Conf. 1.Int.Conf.on Neutron Physics, Kiev,14-18 Sep 1987
+#+          Vol.2, p.204, 1987
+#DATASETS   5
+#
+#DATASET    41011004
+#DATE       20020701
+#REACTION   71-LU-177(N,G)71-LU-178,,SIG,,MXW,DERIV
+#PROJ       1
+#TARG       71177
+#MF         3
+#MT         102
+#PRODUCT    71-LU-178
+#DATA-HDR   DATA
+#C4BEGIN    [    1 71177   3 102   ]
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 71177   3 102    0.025300          1000.000 300.0000                                       V.P.VERTEBNYY,ET.AL. (87)41011  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V1002356
+#DATE       20160406
+#REACTION   71-LU-177(N,G)71-LU-178,,SIG,,,RECOM
+#PROJ       1
+#TARG       71177
+#MF         3
+#MT         102
+#PRODUCT    71-LU-178
+#DATA-HDR   DATA
+#C4BEGIN    [    1 71177   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 71177   3 102    0.025300          1000.000 300.0000                                       S.F.Mughabghab (06)      V1002356
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

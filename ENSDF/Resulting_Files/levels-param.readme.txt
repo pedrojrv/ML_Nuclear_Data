@@ -1,0 +1,84 @@
+Directory: levels/
+File:      levels-param.readme (August, 2015)
+Updated on October 2016 to correct an error in N0 discovered by O. Litaize (CEA)
+********************************************************************************
+
+
+			   levels-param.dat
+
+	  Constant temperature fit of nuclear level schemes
+             based on ENSDF source files (April 2014)		   
+         *************************************************
+	  
+
+
+Content
+-------
+Results of the constant temperature (CT) fit of nuclear level
+schemes. The main purpose of the file is to provide cut-off energies
+defining completeness of level schemes (Umax) and completeness of spin
+assignment (Uc) for a given isotope. Included are the parameters that
+can be used in level density calculations with constant temperature
+formula. Other parameters define quality of the decay scheme and of
+the constant temperature fit.  Details of the fitting procedure can be
+found in the report INDC(NDS)-416, in the RIPL-2 TECDOC, and in the 
+RIPL paper (Nuclear Data Sheets 2009)
+
+
+Format:
+* NOTE on the August 2015 version * 
+the Nox, Xm, Ex field are now obsolete. In this RIPL-Discrete Levels 
+release the "+X" energies were removed. These fields are still present in
+levels-param.dat, with default values, to provide backward-compatibility. 
+------
+Each record of the file contains:
+
+   Z    : charge number
+   A    : mass number
+   El   : elemental symbol
+   T    : temperature T in the CT model
+   dT   : uncertainty of T
+   U0   : back-shift in CT model
+   dU0  : uncertainty of U0
+   Nlev : number of levels in the ENSDF data set
+   Nmax : maximum level number up to which the level scheme is complete
+   N0   : minimum level number from which the fit is considered
+   Nc   : number of level at which unique spin sequence ends
+   Umax : energy corresponds to Nmax
+   Uc   : energy corresponds to Nc
+   Chi  : measure of the quality of fit (blank if there was no fit)
+   Fit  : =* if the record comes from the fit of pre-selected nuclei, which
+            provided the T(A) function
+          = blank if there was no fit
+   Flag : ='F' if Chi>0.05 (bad fit)
+          = blank otherwise
+   NoX  : number of levels with +X, +Y, +Z ... notation (X,Y,Z... are
+          unknown energy values)
+   Xm   : level number where the first +X, +Y, +Z ... notation appears
+   Ex   : level energy where the first +X, +Y, +Z ... notation appears
+   sigma: spin cut-off values extracted from the discrete level library
+
+The corresponding FORTRAN format is
+(2i4,1x,a2,4(1x,f9.5),4i4,1x,f8.5,1x,f8.5,(1x,e10.3),1x,A1,1x,A1,2i4,f7.4,1x,f6.3)
+
+level-param.dat can be read with the following FORTRAN code
+
+character el*2,char*1,flag
+integer z,a,nlev,nmin,nc,NoX,Xm
+real tfitted,td,u0,du0,umax0,uc,chi,EX,sigma
+open(1,file='level-param.dat',status='old')
+read(1,*)
+read(1,*)
+read(1,*)
+read(1,*)
+do while(.not.eof(1))
+read(1,100)
+z,a,el,tfitted,td,u0,du0,nlev,nmax,nmin,nc,umax0,uc,chi,char,flag,NoX,Xm,EX,sigma
+write(*,100)
+z,a,el,tfitted,td,u0,du0,nlev,nmax,nmin,nc,umax0,uc,chi,char,flag,NoX,Xm,EX,sigma
+enddo
+100 
+format(2i4,1x,a2,4(1x,f9.5),4i4,1x,f8.5,1x,f8.5,(1x,e10.3),1x,A1,2i4,f7.4,1x,f6.3)
+END
+
+

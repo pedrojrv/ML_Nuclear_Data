@@ -1,0 +1,447 @@
+#ENTRY      D5003
+#AUTHOR1    M.P.Bilaniuk+
+#YEAR       1981
+#INSTITUTE  (4UKRIJD)
+#TITLE      Deuteron and Alpha-Particle total reaction cross
+#+          sections for nuclei with A-50
+#AUTHOR(S)  M.P.Bilaniuk, V.V.Tokarevskii, V.S.Bulkin,
+#+          L.V.Dubar, O.F.Nemets, L.I.Slyusarenko
+#REF-CODE   (J,JP/G,7,1699,1981)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.7, p.1699, 1981
+#DATASETS   12
+#
+#DATASET    D5003008
+#DATE       20040406
+#REACTION   21-SC-45(D,NON),,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   3   3 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   3   3 A  1.3600+7          1.356000 0.057000                                       M.P.Bilaniuk,ET.AL. (81) D5003  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4257
+#AUTHOR1    A.Hermanne+
+#YEAR       2012
+#INSTITUTE  (2BLGVUB)
+#TITLE      Cross sections of deuteron induced reactions on 45Sc
+#+          up to 50 MeV: Experiments and comparison with
+#+          theoretical codes
+#AUTHOR(S)  A.Hermanne, R.Adam-Rebeles, F.Tarkanyi,
+#+          S.Takacs, M.P.Takacs, J.Csikai,
+#+          A.Ignatyuk
+#REF-CODE   (J,NIM/B,270,106,2012)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.270, p.106, 2012
+#DATASETS   6
+#
+#DATASET    D4257003
+#DATE       20120501
+#REACTION   21-SC-45(D,2N)22-TI-45,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         16
+#PRODUCT    22-TI-45
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   3  16   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   3  16    4700000. 900000.0 5.0000-4 1.0000-4                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    7600000. 800000.0 0.098000 0.015000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    9900000. 700000.0 0.171000 0.026000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    1.1800+7 600000.0 0.249000 0.037000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    1.3500+7 500000.0 0.278000 0.042000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    1.5100+7 500000.0 0.346000 0.052000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    1.6600+7 400000.0 0.301000 0.045000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    1.8000+7 400000.0 0.370000 0.055000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    1.9300+7 300000.0 0.292000 0.044000                                       A.Hermanne,ET.AL. (12)   D4257  3
+ 1002 21045   3  16    2.0500+7 300000.0 0.319000 0.048000                                       A.Hermanne,ET.AL. (12)   D4257  3
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4257
+#AUTHOR1    A.Hermanne+
+#YEAR       2012
+#INSTITUTE  (2BLGVUB)
+#TITLE      Cross sections of deuteron induced reactions on 45Sc
+#+          up to 50 MeV: Experiments and comparison with
+#+          theoretical codes
+#AUTHOR(S)  A.Hermanne, R.Adam-Rebeles, F.Tarkanyi,
+#+          S.Takacs, M.P.Takacs, J.Csikai,
+#+          A.Ignatyuk
+#REF-CODE   (J,NIM/B,270,106,2012)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.270, p.106, 2012
+#DATASETS   6
+#
+#DATASET    D4257002
+#DATE       20160503
+#REACTION   21-SC-45(D,3N)22-TI-44,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         17
+#PRODUCT    22-TI-44
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   3  17   ]
+#DATA       18
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   3  17    2.0600+7 1000000. 4.8000-3 1.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    2.3000+7 900000.0 9.3000-3 1.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    2.5200+7 800000.0 0.012800 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    2.7300+7 700000.0 0.017300 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    2.9300+7 700000.0 0.019900 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    3.1200+7 600000.0 0.019200 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    3.3000+7 600000.0 0.019400 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    3.4800+7 500000.0 0.021000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    3.6500+7 500000.0 0.021300 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    3.8100+7 400000.0 0.018200 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    3.9700+7 400000.0 0.017800 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.1200+7 400000.0 0.015800 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.2800+7 300000.0 0.014600 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.4200+7 300000.0 0.014900 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.5700+7 300000.0 0.012100 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.7000+7 300000.0 0.013200 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.8400+7 200000.0 0.013300 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+ 1002 21045   3  17    4.9800+7 200000.0 0.011400 1.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  2
+#/DATA      18
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4257
+#AUTHOR1    A.Hermanne+
+#YEAR       2012
+#INSTITUTE  (2BLGVUB)
+#TITLE      Cross sections of deuteron induced reactions on 45Sc
+#+          up to 50 MeV: Experiments and comparison with
+#+          theoretical codes
+#AUTHOR(S)  A.Hermanne, R.Adam-Rebeles, F.Tarkanyi,
+#+          S.Takacs, M.P.Takacs, J.Csikai,
+#+          A.Ignatyuk
+#REF-CODE   (J,NIM/B,270,106,2012)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.270, p.106, 2012
+#DATASETS   6
+#
+#DATASET    D4257007
+#DATE       20120501
+#REACTION   21-SC-45(D,P)21-SC-46,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         103
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   3 103   ]
+#DATA       30
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   3 103    1270000. 100000.0 0.029000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4700000. 900000.0 0.326000 0.033000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    7600000. 800000.0 0.326000 0.033000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    9900000. 700000.0 0.284000 0.028000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.1800+7 600000.0 0.222000 0.022000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.3500+7 500000.0 0.179000 0.018000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.5000+7 1100000. 0.164000 0.016000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.5100+7 500000.0 0.161000 0.016000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.6600+7 400000.0 0.128000 0.013000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.7900+7 1000000. 0.115000 0.012000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.8000+7 400000.0 0.126000 0.013000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    1.9300+7 300000.0 0.102000 0.010000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    2.0500+7 300000.0 0.099000 0.010000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    2.0600+7 1000000. 0.095000 0.010000                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    2.3000+7 900000.0 0.079000 8.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    2.5200+7 800000.0 0.070000 7.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    2.7300+7 700000.0 0.059000 6.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    2.9300+7 700000.0 0.055000 5.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    3.1200+7 600000.0 0.051000 5.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    3.3000+7 600000.0 0.047000 5.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    3.6500+7 500000.0 0.038000 4.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    3.8100+7 400000.0 0.033000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    3.9700+7 400000.0 0.034000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.1200+7 400000.0 0.032000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.2800+7 300000.0 0.030000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.4200+7 300000.0 0.030000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.5700+7 300000.0 0.025000 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.7000+7 300000.0 0.027000 3.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.8400+7 200000.0 0.023000 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+ 1002 21045   3 103    4.9800+7 200000.0 0.023000 2.0000-3                                       A.Hermanne,ET.AL. (12)   D4257  7
+#/DATA      30
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0881
+#AUTHOR1    N.K.Skobelev+
+#YEAR       2011
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Excitation functions for the radionuclide 46Sc
+#+          produced in the irradiation of 45Sc with deuterons
+#+          and 6He.
+#AUTHOR(S)  N.K.Skobelev, A.A.Kulko, V.Kroha,
+#+          V.Burjan, Z.Hons, A.V.Daniel,
+#+          N.A.Demekhina, R.Kalpakchieva, A.Kugler,
+#+          J.Mrazek, Yu.E.Penionzhkevich, S.Piskor,
+#+          Yu.G.Sobolev, E.Simeckova
+#REF-CODE   (J,JP/G,38,035106,2011)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.38, p.035106, 2011
+#DATASETS   4
+#
+#DATASET    A0881002
+#DATE       20110604
+#REACTION   21-SC-45(D,P)21-SC-46,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         103
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   3 103 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       18
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   3 103 A  1.1590+7 120000.0 0.217000 8.6000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  1.0410+7 140000.0 0.243000 6.8000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  9000000. 170000.0 0.292000 0.011100                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  7260000. 230000.0 0.344000 9.3000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  7220000. 230000.0 0.358000 2.2000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  5820000. 260000.0 0.399000 3.2000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  5800000. 260000.0 0.369000 3.3000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  4630000. 330000.0 0.293000 4.5000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  3910000. 330000.0 0.248000 2.2000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  3520000. 390000.0 0.169000 3.6000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  2880000. 410000.0 0.135000 4.0000-4                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  2510000. 490000.0 0.079700 4.1000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  2460000. 50000.00 0.038000 6.0000-4                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  2270000. 480000.0 0.060100 2.4000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  2000000. 620000.0 0.028600 1.2000-3                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  1950000. 50000.00 8.2000-3 2.0000-4                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  1450000. 50000.00 8.0000-4 6.5000-5                                       N.K.Skobelev,ET.AL. (11) A0881  2
+ 1002 21045   3 103 A  810000.0 50000.00 1.3700-6 5.0000-7                                       N.K.Skobelev,ET.AL. (11) A0881  2
+#/DATA      18
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0881
+#AUTHOR1    N.K.Skobelev+
+#YEAR       2011
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Excitation functions for the radionuclide 46Sc
+#+          produced in the irradiation of 45Sc with deuterons
+#+          and 6He.
+#AUTHOR(S)  N.K.Skobelev, A.A.Kulko, V.Kroha,
+#+          V.Burjan, Z.Hons, A.V.Daniel,
+#+          N.A.Demekhina, R.Kalpakchieva, A.Kugler,
+#+          J.Mrazek, Yu.E.Penionzhkevich, S.Piskor,
+#+          Yu.G.Sobolev, E.Simeckova
+#REF-CODE   (J,JP/G,38,035106,2011)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.38, p.035106, 2011
+#DATASETS   4
+#
+#DATASET    A0881003
+#DATE       20110604
+#REACTION   21-SC-45(D,T)21-SC-44,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         105
+#PRODUCT    21-SC-44
+#DATA-HDR   DATA DATA-MAX
+#C4BEGIN    [ 1002 21045   3 105 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   3 105 A  1.1590+7 120000.0 3.1800-3 3.4000-4                                       N.K.Skobelev,ET.AL. (11) A0881  3
+ 1002 21045   3 105 A  1.0410+7 140000.0 1.7800-3 3.0000-5                                       N.K.Skobelev,ET.AL. (11) A0881  3
+ 1002 21045   3 105 A  9000000. 170000.0 1.2400-3 1.4000-4                                       N.K.Skobelev,ET.AL. (11) A0881  3
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4257
+#AUTHOR1    A.Hermanne+
+#YEAR       2012
+#INSTITUTE  (2BLGVUB)
+#TITLE      Cross sections of deuteron induced reactions on 45Sc
+#+          up to 50 MeV: Experiments and comparison with
+#+          theoretical codes
+#AUTHOR(S)  A.Hermanne, R.Adam-Rebeles, F.Tarkanyi,
+#+          S.Takacs, M.P.Takacs, J.Csikai,
+#+          A.Ignatyuk
+#REF-CODE   (J,NIM/B,270,106,2012)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.270, p.106, 2012
+#DATASETS   6
+#
+#DATASET    D4257006
+#DATE       20160503
+#REACTION   21-SC-45(D,X)21-SC-44-G,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         9000
+#PRODUCT    21-SC-44-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   39000G  ]
+#DATA       27
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   39000G   9900000. 700000.0 2.0000-4 1.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.1800+7 600000.0 6.0000-4 1.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.3500+7 500000.0 1.0000-3 1.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.5100+7 500000.0 1.4000-3 2.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.6600+7 400000.0 1.9000-3 3.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.7900+7 1000000. 9.6000-3 1.4000-3           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.8000+7 400000.0 3.7000-3 6.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   1.9300+7 300000.0 6.3000-3 9.0000-4           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   2.0500+7 300000.0 0.010700 1.6000-3           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   2.0600+7 1000000. 0.023000 3.0000-3           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   2.3000+7 900000.0 0.053000 8.0000-3           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   2.5200+7 800000.0 0.087000 0.013000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   2.7300+7 700000.0 0.086000 0.013000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   2.9300+7 700000.0 0.127000 0.019000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   3.1200+7 600000.0 0.161000 0.024000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   3.3000+7 600000.0 0.131000 0.020000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   3.4800+7 500000.0 0.123000 0.018000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   3.6500+7 500000.0 0.124000 0.019000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   3.8100+7 400000.0 0.131000 0.020000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   3.9700+7 400000.0 0.098000 0.015000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.1200+7 400000.0 0.122000 0.018000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.2800+7 300000.0 0.133000 0.020000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.4200+7 300000.0 0.105000 0.016000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.5700+7 300000.0 0.098000 0.015000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.7000+7 300000.0 0.140000 0.021000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.8400+7 200000.0 0.105000 0.016000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+ 1002 21045   39000G   4.9800+7 200000.0 0.130000 0.019000           21044.0                     A.Hermanne,ET.AL. (12)   D4257  6
+#/DATA      27
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4257
+#AUTHOR1    A.Hermanne+
+#YEAR       2012
+#INSTITUTE  (2BLGVUB)
+#TITLE      Cross sections of deuteron induced reactions on 45Sc
+#+          up to 50 MeV: Experiments and comparison with
+#+          theoretical codes
+#AUTHOR(S)  A.Hermanne, R.Adam-Rebeles, F.Tarkanyi,
+#+          S.Takacs, M.P.Takacs, J.Csikai,
+#+          A.Ignatyuk
+#REF-CODE   (J,NIM/B,270,106,2012)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.270, p.106, 2012
+#DATASETS   6
+#
+#DATASET    D4257005
+#DATE       20120501
+#REACTION   21-SC-45(D,X)21-SC-44-M,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         9000
+#PRODUCT    21-SC-44-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   39000M  ]
+#DATA       26
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   39000M   1.1800+7 600000.0 1.6000-3 2.0000-4           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   1.3500+7 500000.0 2.0000-3 2.0000-4           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   1.5000+7 1100000. 3.4000-3 3.0000-4           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   1.6600+7 400000.0 3.9000-3 4.0000-4           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   1.7900+7 1000000. 7.7000-3 8.0000-4           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   1.8000+7 400000.0 7.9000-3 8.0000-4           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   1.9300+7 300000.0 0.019000 2.0000-3           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   2.0500+7 300000.0 0.034000 3.0000-3           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   2.0600+7 1000000. 0.034000 3.0000-3           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   2.3000+7 900000.0 0.082000 8.0000-3           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   2.5200+7 800000.0 0.130000 0.013000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   2.7300+7 700000.0 0.156000 0.016000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   2.9300+7 700000.0 0.185000 0.018000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   3.1200+7 600000.0 0.197000 0.020000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   3.3000+7 600000.0 0.200000 0.020000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   3.4800+7 500000.0 0.195000 0.020000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   3.6500+7 500000.0 0.174000 0.017000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   3.8100+7 400000.0 0.162000 0.016000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   3.9700+7 400000.0 0.170000 0.017000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.1200+7 400000.0 0.161000 0.016000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.2800+7 300000.0 0.151000 0.015000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.4200+7 300000.0 0.150000 0.015000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.5700+7 300000.0 0.125000 0.012000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.7000+7 300000.0 0.138000 0.014000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.8400+7 200000.0 0.119000 0.012000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+ 1002 21045   39000M   4.9800+7 200000.0 0.123000 0.012000           21044.7                     A.Hermanne,ET.AL. (12)   D4257  5
+#/DATA      26
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4257
+#AUTHOR1    A.Hermanne+
+#YEAR       2012
+#INSTITUTE  (2BLGVUB)
+#TITLE      Cross sections of deuteron induced reactions on 45Sc
+#+          up to 50 MeV: Experiments and comparison with
+#+          theoretical codes
+#AUTHOR(S)  A.Hermanne, R.Adam-Rebeles, F.Tarkanyi,
+#+          S.Takacs, M.P.Takacs, J.Csikai,
+#+          A.Ignatyuk
+#REF-CODE   (J,NIM/B,270,106,2012)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.270, p.106, 2012
+#DATASETS   6
+#
+#DATASET    D4257004
+#DATE       20120501
+#REACTION   21-SC-45(D,X)21-SC-43,,SIG
+#PROJ       1002
+#TARG       21045
+#MF         3
+#MT         9000
+#PRODUCT    21-SC-43
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 21045   39000   ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 21045   39000    3.1200+7 600000.0 6.0000-3 1.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    3.3000+7 600000.0 9.0000-3 1.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    3.4800+7 500000.0 0.015000 2.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    3.6500+7 500000.0 0.021000 3.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    3.8100+7 400000.0 0.029000 3.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    3.9700+7 400000.0 0.042000 4.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.1200+7 400000.0 0.050000 5.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.2800+7 300000.0 0.053000 5.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.4200+7 300000.0 0.068000 7.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.5700+7 300000.0 0.062000 6.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.7000+7 300000.0 0.070000 7.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.8400+7 200000.0 0.069000 7.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+ 1002 21045   39000    4.9800+7 200000.0 0.067000 7.0000-3           21043.9                     A.Hermanne,ET.AL. (12)   D4257  4
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#

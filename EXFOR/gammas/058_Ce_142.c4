@@ -1,0 +1,205 @@
+#ENTRY      L0188
+#AUTHOR1    A.Sauerwein+
+#YEAR       2014
+#INSTITUTE  (2GERFRK)
+#TITLE      Determination of the 142Ce(gamma,n) cross section
+#+          using quasi-monoenergetic Compton backscattered gamma
+#+          rays
+#AUTHOR(S)  A.Sauerwein, K.Sonnabend, M.Fritzsche,
+#+          J.Glorius, E.Kwan, N.Pietralla,
+#+          C.Romig, G.Rusev, D.Savran,
+#+          L.Schnorrenberger, A.P.Tonchev, W.Tornow,
+#+          H.R.Weller
+#REF-CODE   (J,PR/C,89,035803,2014)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.89, p.035803, 2014
+#DATASETS   1
+#
+#DATASET    L0188002
+#DATE       20140303
+#REACTION   58-CE-142(G,N)58-CE-141,,SIG
+#PROJ       0
+#TARG       58142
+#MF         3
+#MT         4
+#PRODUCT    58-CE-141
+#DATA-HDR   DATA
+#C4BEGIN    [    0 58142   3   4   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    0 58142   3   4    7640000.          0.010210 2.4000-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+    0 58142   3   4    8149000.          0.022080 4.6400-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+    0 58142   3   4    8465000.          0.020100 4.3300-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+    0 58142   3   4    8758000.          0.025320 4.6000-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+    0 58142   3   4    9102000.          0.030160 5.4500-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+    0 58142   3   4    9315000.          0.029820 4.9300-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+    0 58142   3   4    9669000.          0.039320 6.9800-3                                       A.Sauerwein,ET.AL. (14)  L0188  2
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      M0972
+#AUTHOR1    V.V.Varlamov+
+#YEAR       2017
+#INSTITUTE  (4RUSMOS)
+#TITLE      Comparison of partial photoneutron reaction cross
+#+          sections reliability for 140,142Ce.
+#AUTHOR(S)  V.V.Varlamov, V.A.Barbaryan, N.N.Peskov
+#REF-CODE   (C,2017ALMATY,,26,2017)
+#REFERENCE  Conf. Int.Conf.Nucl.Spectroscopy Nucl.Struct., Almaty, 2017
+#+          p.26, 2017
+#DATASETS   2
+#
+#DATASET    M0972007
+#DATE       20180804
+#REACTION   58-CE-142(G,2N)58-CE-140,,SIG,,,EVAL
+#PROJ       0
+#TARG       58142
+#MF         3
+#MT         16
+#PRODUCT    58-CE-140
+#DATA-HDR   DATA
+#C4BEGIN    [    0 58142   3  16 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [EVAL]  Evaluated data
+#DATA       40
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    0 58142   3  16 D  1.2910+7          6.8700-3 7.5000-4                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.3180+7          0.026480 2.8400-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.3450+7          0.055550 5.8700-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.3720+7          0.096070 9.9700-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.3990+7          0.128220 0.013230                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.4260+7          0.156950 0.016110                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.4530+7          0.190690 0.019490                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.4800+7          0.207630 0.021210                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.5070+7          0.215400 0.022000                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.5340+7          0.221360 0.022620                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.5620+7          0.229070 0.023440                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.5890+7          0.216810 0.022290                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.6160+7          0.210480 0.021690                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.6430+7          0.192280 0.019980                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.6700+7          0.177520 0.018620                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.6970+7          0.171670 0.018090                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.7240+7          0.153630 0.016410                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.7510+7          0.138920 0.015120                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.7780+7          0.126320 0.014000                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.8050+7          0.117760 0.013270                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.8330+7          0.102720 0.011990                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.8600+7          0.097700 0.011610                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.8870+7          0.095360 0.011460                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.9140+7          0.089290 0.011000                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.9410+7          0.079530 0.010270                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.9680+7          0.073920 9.9000-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  1.9950+7          0.072310 9.8300-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.0220+7          0.063160 9.2300-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.0490+7          0.065560 9.3500-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.0760+7          0.063990 9.2900-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.1040+7          0.056380 8.8500-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.1310+7          0.057550 8.9800-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.1580+7          0.042240 8.0100-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.1850+7          0.052510 8.7800-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.2120+7          0.044500 8.3900-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.2390+7          0.058360 9.2600-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.2660+7          0.026910 7.7400-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.2930+7          0.054040 9.1100-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.3200+7          0.056830 9.3400-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+    0 58142   3  16 D  2.3470+7          0.037480 8.3700-3                                       V.V.Varlamov,ET.AL. (17) M0972  7
+#/DATA      40
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      L0042
+#AUTHOR1    A.Lepretre+
+#YEAR       1976
+#INSTITUTE  (2FR SAC)
+#TITLE      A study of the giant dipole resonance in doubly even
+#+          tellurium and cerium isotopes.
+#AUTHOR(S)  A.Lepretre, H.Beil, R.Bergere,
+#+          P.Carlos, J.Fagot, A.De Miniac,
+#+          A.Veyssiere, H.Miyase
+#REF-CODE   (J,NP/A,258,350,76)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.258, p.350, 1976
+#DATASETS   6
+#
+#DATASET    L0042019
+#DATE       19970103
+#REACTION   58-CE-142(G,X)0-NN-1,,SIG
+#PROJ       0
+#TARG       58142
+#MF         3
+#MT         9000
+#PRODUCT    0-NN-1
+#DATA-HDR   DATA
+#C4BEGIN    [    0 58142   39000   ]
+#DATA       59
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    0 58142   39000    7760000.          0.027800 6.3077-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    8030000.          0.039400 6.6490-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    8300000.          0.037800 6.6492-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    8570000.          0.029900 6.5059-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    8840000.          0.043000 6.9010-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    9110000.          0.039700 6.8491-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    9380000.          0.051600 7.2707-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    9650000.          0.044100 7.0696-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    9920000.          0.064800 7.8526-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.0200+7          0.064600 7.8936-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.0470+7          0.080900 8.6360-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.0740+7          0.075500 8.4319-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.1010+7          0.097100 9.4881-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.1280+7          0.093700 9.3546-3               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.1550+7          0.110400 0.010241               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.1820+7          0.128500 0.011264               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.2090+7          0.135200 0.013609               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.2360+7          0.165800 0.015281               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.2630+7          0.185500 0.016444               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.2910+7          0.229200 0.019039               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.3180+7          0.264800 0.021259               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.3450+7          0.308600 0.024049               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.3720+7          0.384300 0.028958               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.3990+7          0.427400 0.031835               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.4260+7          0.475600 0.035075               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.4530+7          0.529700 0.038734               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.4800+7          0.546400 0.039899               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.5070+7          0.552300 0.040341               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.5340+7          0.553400 0.040461               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.5620+7          0.545400 0.039975               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.5890+7          0.504200 0.037281               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.6160+7          0.489500 0.036362               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.6430+7          0.437000 0.032985               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.6700+7          0.394500 0.030312               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.6970+7          0.381500 0.029554               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.7240+7          0.341400 0.027119               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.7510+7          0.302000 0.024807               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.7780+7          0.274600 0.023290               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.8050+7          0.256000 0.022328               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.8330+7          0.223300 0.020641               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.8600+7          0.212400 0.020177               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.8870+7          0.207300 0.020032               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.9140+7          0.194100 0.019495               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.9410+7          0.172900 0.018612               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.9680+7          0.160700 0.018202               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    1.9950+7          0.157200 0.018187               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.0220+7          0.137300 0.017513               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.0490+7          0.145700 0.017974               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.0760+7          0.142200 0.017969               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.1040+7          0.125300 0.017506               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.1310+7          0.127900 0.017736               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.1580+7          0.096000 0.016876               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.1850+7          0.116700 0.017645               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.2120+7          0.098900 0.017259               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.2390+7          0.129700 0.018379               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.2660+7          0.059800 0.016674               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.2930+7          0.120100 0.018349               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.3200+7          0.126300 0.018693               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+    0 58142   39000    2.3470+7          0.083300 0.017632               1.9                     A.LEPRETRE,ET.AL. (76)   L0042 19
+#/DATA      59
+#/DATASET
+#/ENTRY
+#
+#

@@ -1,0 +1,987 @@
+#ENTRY      D5003
+#AUTHOR1    M.P.Bilaniuk+
+#YEAR       1981
+#INSTITUTE  (4UKRIJD)
+#TITLE      Deuteron and Alpha-Particle total reaction cross
+#+          sections for nuclei with A-50
+#AUTHOR(S)  M.P.Bilaniuk, V.V.Tokarevskii, V.S.Bulkin,
+#+          L.V.Dubar, O.F.Nemets, L.I.Slyusarenko
+#REF-CODE   (J,JP/G,7,1699,1981)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.7, p.1699, 1981
+#DATASETS   12
+#
+#DATASET    D5003009
+#DATE       20040406
+#REACTION   22-TI-48(D,NON),,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3   3 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3   3 A  1.3600+7          1.329000 0.048000                                       M.P.Bilaniuk,ET.AL. (81) D5003  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4102
+#AUTHOR1    W.H.Burgus+
+#YEAR       1954
+#INSTITUTE  (1USALRL)
+#TITLE      Cross sections for the reactions Ti48(d,2n)V48,
+#+          Cr52(d,2n)Mn52 and Fe56(d,2n)Co56.
+#AUTHOR(S)  W.H.Burgus, G.A.Cowan, J.W.Hadley,
+#+          W.Hess, T.Shull, M.L.Stevenson,
+#+          H.F.York
+#REF-CODE   (J,PR,95,750,1954)
+#REFERENCE  Jour. Physical Review
+#+          Vol.95, p.750, 1954
+#DATASETS   2
+#
+#DATASET    D4102002
+#DATE       20160503
+#REACTION   22-TI-48(D,2N)23-V-48,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         16
+#PRODUCT    23-V-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3  16   ]
+#DATA       31
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3  16    2240000.          0.000000                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    3030000.          0.016000                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    4030000.          0.024960                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    5070000.          0.028800                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    5530000. 370000.0 0.030080 3.8400-3                                       W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    6060000.          0.030080                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    6980000.          0.032640                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    7970000.          0.040320                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    8410000.          0.046720                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    8820000.          0.068480                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    9150000.          0.099200                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    9450000.          0.135680                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    9760000.          0.164480                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.0110+7          0.193280                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.0450+7 220000.0 0.215040 8.6400-3                                       W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.0650+7          0.229760                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.1010+7          0.249600                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.1410+7          0.270720                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.1920+7          0.291840                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.2540+7          0.312960                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.3120+7          0.328320                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.3910+7          0.346240                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.4320+7          0.353920                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.4680+7 330000.0 0.359040 9.2800-3                                       W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.5360+7          0.366080                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.6150+7          0.371200                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.6920+7          0.372480                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.7910+7          0.367360                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.8780+7          0.358400                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    1.9520+7          0.350080                                                W.H.Burgus,ET.AL. (54)   D4102  2
+ 1002 22048   3  16    2.0380+7 250000.0 0.341120 8.6400-3                                       W.H.Burgus,ET.AL. (54)   D4102  2
+#/DATA      31
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0522
+#AUTHOR1    H.I.West Jr+
+#YEAR       1993
+#INSTITUTE  (1USALRL)
+#TITLE      Excitation Functions for the Nuclear Reactions on
+#+          Titanium Leading to the Production of 48V, 44Sc, and
+#+          47Sc, by Proton, Deuteron and Triton Irradiations at
+#+          0-35 MeV
+#AUTHOR(S)  H.I.West Jr, R.G.Lanier, M.G.Mustafa
+#REF-CODE   (R,UCRL-ID-115738,(3),1,199311)
+#REFERENCE  Rept. U.C., Lawrence Rad.Lab. (Berkeley and Livermore)
+#+          No.115738,(3), p.1, 1993
+#DATASETS   14
+#
+#DATASET    C0522008
+#DATE       19990601
+#REACTION   22-TI-48(D,2N)23-V-48,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         16
+#PRODUCT    23-V-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3  16   ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3  16    7317000.          0.000000                                                H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    7459000.          6.6600-4 2.1000-5                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    7820000.          5.4300-3 1.7000-4                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    8240000.          0.019350 6.1000-4                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    8840000.          0.058100 1.8000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    9330000.          0.100400 3.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.0010+7          0.164900 5.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.0560+7          0.202800 6.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.0860+7          0.230000 7.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.1950+7          0.303000 0.010000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.3930+7          0.391000 0.012000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.5500+7          0.431000 0.014000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.5990+7          0.420000 0.013000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.7950+7          0.434000 0.014000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    1.9920+7          0.400000 0.013000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    2.1730+7          0.368000 0.012000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    2.3350+7          0.318000 0.010000                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    2.4890+7          0.260800 8.3000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    2.6540+7          0.221200 7.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    2.8090+7          0.188800 6.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    2.9700+7          0.158300 4.7000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    3.1310+7          0.132700 4.2000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    3.2970+7          0.118400 3.7000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+ 1002 22048   3  16    3.4560+7          0.106500 3.4000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  8
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0522
+#AUTHOR1    H.I.West Jr+
+#YEAR       1993
+#INSTITUTE  (1USALRL)
+#TITLE      Excitation Functions for the Nuclear Reactions on
+#+          Titanium Leading to the Production of 48V, 44Sc, and
+#+          47Sc, by Proton, Deuteron and Triton Irradiations at
+#+          0-35 MeV
+#AUTHOR(S)  H.I.West Jr, R.G.Lanier, M.G.Mustafa
+#REF-CODE   (R,UCRL-ID-115738,(3),1,199311)
+#REFERENCE  Rept. U.C., Lawrence Rad.Lab. (Berkeley and Livermore)
+#+          No.115738,(3), p.1, 1993
+#DATASETS   14
+#
+#DATASET    C0522007
+#DATE       19990601
+#REACTION   22-TI-48(D,2N)23-V-48,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         16
+#PRODUCT    23-V-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3  16   ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3  16    7600000.          3.7000-3 1.2000-4                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    8100000.          0.015500 4.9000-4                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    8230000.          0.019850 6.3000-4                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    8690000.          0.053600 1.7000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    9260000.          0.093900 3.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    9740000.          0.162200 5.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.1000+7          0.283800 8.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.1750+7          0.287000 9.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.2490+7          0.348000 0.011000                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.4290+7          0.412000 0.013000                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.7040+7          0.450000 0.014000                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.8480+7          0.440000 0.014000                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+ 1002 22048   3  16    1.9840+7          0.417000 0.013000                                       H.I.WEST JR,ET.AL. (93)  C0522  7
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4105
+#AUTHOR1    K.L.Chen+
+#YEAR       1964
+#INSTITUTE  (1USACOL)
+#TITLE      Comparison between reactions of alpha particles with
+#+          Scandium-45 and deuterons with Titanium-47.
+#AUTHOR(S)  K.L.Chen, J.M.Miller
+#REF-CODE   (J,PR,134,B1269,1964)
+#REFERENCE  Jour. Physical Review
+#+          Vol.134, p.B1269, 1964
+#DATASETS   18
+#
+#DATASET    D41050052
+#DATE       20020202
+#REACTION   22-TI-48(D,2N)23-V-48,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         16
+#PRODUCT    23-V-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3  16   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3  16    8800000.          0.033100                                                K.L.CHEN,ET.AL. (64)     D4105  52
+ 1002 22048   3  16    9500000.          0.078400                                                K.L.CHEN,ET.AL. (64)     D4105  52
+ 1002 22048   3  16    1.0800+7          0.144000                                                K.L.CHEN,ET.AL. (64)     D4105  52
+ 1002 22048   3  16    1.2100+7          0.256000                                                K.L.CHEN,ET.AL. (64)     D4105  52
+ 1002 22048   3  16    1.4900+7          0.317000                                                K.L.CHEN,ET.AL. (64)     D4105  52
+ 1002 22048   3  16    1.7700+7          0.334000                                                K.L.CHEN,ET.AL. (64)     D4105  52
+ 1002 22048   3  16    2.0300+7          0.258000                                                K.L.CHEN,ET.AL. (64)     D4105  52
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4105
+#AUTHOR1    K.L.Chen+
+#YEAR       1964
+#INSTITUTE  (1USACOL)
+#TITLE      Comparison between reactions of alpha particles with
+#+          Scandium-45 and deuterons with Titanium-47.
+#AUTHOR(S)  K.L.Chen, J.M.Miller
+#REF-CODE   (J,PR,134,B1269,1964)
+#REFERENCE  Jour. Physical Review
+#+          Vol.134, p.B1269, 1964
+#DATASETS   18
+#
+#DATASET    D41050051
+#DATE       20020202
+#REACTION   22-TI-48(D,A)21-SC-46,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         107
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3 107   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3 107    6900000.          0.023800                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    8800000.          0.031100                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    9500000.          0.034300                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    1.0800+7          0.040600                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    1.2100+7          0.041200                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    1.3300+7          0.039200                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    1.4900+7          0.024700                                                K.L.CHEN,ET.AL. (64)     D4105  51
+ 1002 22048   3 107    1.5900+7          0.017900                                                K.L.CHEN,ET.AL. (64)     D4105  51
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1128
+#AUTHOR1    K.L.Hall+
+#YEAR       1959
+#INSTITUTE  (1USAMHG)
+#TITLE      Determination of (d,alpha) reaction cross-sections
+#AUTHOR(S)  K.L.Hall, W.W.Meinke
+#REF-CODE   (J,JIN,9,193,1959)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.9, p.193, 1959
+#DATASETS   7
+#
+#DATASET    C1128005
+#DATE       20171102
+#REACTION   22-TI-48(D,A)21-SC-46,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         107
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3 107   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3 107    7000000. 800000.0 4.4000-4 3.7000-4                                       K.L.Hall,ET.AL. (59)     C1128  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4057
+#AUTHOR1    O.U.Anders+
+#YEAR       1960
+#INSTITUTE  (1USAMHG)
+#TITLE      Absolute (d,a)-reaction cross sections of zirconium,
+#+          molybdenum, titanium and sulfur
+#AUTHOR(S)  O.U.Anders, W.W.Meinke
+#REF-CODE   (J,PR,120,2114,1960)
+#REFERENCE  Jour. Physical Review
+#+          Vol.120, p.2114, 1960
+#DATASETS   8
+#
+#DATASET    D4057009
+#DATE       20060701
+#REACTION   22-TI-48(D,A)21-SC-46,,SIG
+#PROJ       1002
+#TARG       22048
+#MF         3
+#MT         107
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   3 107   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   3 107    7710000. 50000.00 0.028530 1.7118-3                                       O.U.Anders,ET.AL. (60)   D4057  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1070
+#AUTHOR1    J.M.Lohr+
+#YEAR       1974
+#INSTITUTE  (1USAWIS)
+#TITLE      Elastic scattering of 9-13 MeV vector polarized
+#+          deuterons
+#AUTHOR(S)  J.M.Lohr, W.Haeberli
+#REF-CODE   (J,NP/A,232,381,1974)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.232, p.381, 1974
+#DATASETS   8
+#
+#DATASET    C1070008
+#DATE       20041103
+#REACTION   22-TI-48(D,EL)22-TI-48,,DA,,RTH
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 22048   4   2  C]
+#DATA       66
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4   2  C 9000000.          1.166164          0.874619                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.987620          0.866025                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.859028          0.857167                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.392976          0.809016                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.288476          0.777145                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.230180          0.754709                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.169610          0.694658                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.163425          0.681998                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.122871          0.629319                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.104978          0.587784                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.084878          0.559192                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.047927          0.469470                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.048361          0.453989                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.023698          0.358366                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.013728          0.224949                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          0.011995          0.104526                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          9.9095-3         -0.052338                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          8.2256-3         -0.173651                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          5.8410-3         -0.309020                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          4.3235-3         -0.406739                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          3.0217-3         -0.529922                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          2.3285-3         -0.629323                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          1.9915-3 1.0771-4-0.731356                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 9000000.          2.1520-3         -0.809019                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.324028          0.838670                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.196405          0.809016                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.146042          0.754709                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.116873          0.694658                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.072867 4.0541-3 0.615660                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.045059          0.559192                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.023196          0.469470                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          0.012312          0.374605                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          8.9067-3          0.292370                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          7.9117-3          0.224949                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          6.8359-3          0.139171                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          5.7334-3          0.034897                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          5.1394-3         -0.052338                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          4.3788-3         -0.139175                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          3.5079-3         -0.224953                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.1821-3         -0.529922                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.0099-3 5.6156-5-0.601818                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.0239-3         -0.669133                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.1965-3         -0.719342                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.2176-3         -0.788013                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.2268-3         -0.829040                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          1.1788-3         -0.874622                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          9.2072-4         -0.933582                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.1000+7          7.0077-4         -0.965927                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          0.197684 8.6912-3 0.857167                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          0.108794          0.777145                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          0.067648          0.681998                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          0.029758          0.587784                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          0.012147          0.469470                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          6.4560-3          0.342019                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          3.7219-3 2.0394-4 0.224949                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          3.0022-3          0.087154                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          3.2358-3         -0.034902                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          2.4340-3         -0.173651                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          1.2035-3         -0.275640                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          4.8895-4         -0.529922                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          8.4582-4         -0.629323                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          9.6187-4         -0.719342                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          8.1272-4         -0.809019                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          6.3467-4         -0.882949                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          3.5225-4 2.0103-5-0.920506                              J.M.Lohr,ET.AL. (74)     C1070  8
+ 1002 22048   4   2  C 1.3000+7          2.7193-4         -0.965927                              J.M.Lohr,ET.AL. (74)     C1070  8
+#/DATA      66
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0227
+#AUTHOR1    W.Fitz+
+#YEAR       1970
+#INSTITUTE  (2GERMPH)
+#TITLE      Comparison of elastic deuteron scattering from
+#+          neighbouring nuclei
+#AUTHOR(S)  W.Fitz, J.Heger, R.Santo,
+#+          S.Wenneis
+#REF-CODE   (J,NP/A,143,113,1970)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.143, p.113, 1970
+#DATASETS   15
+#
+#DATASET    D0227011
+#DATE       20041002
+#REACTION   22-TI-48(D,EL)22-TI-48,,DA,,RTH
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 22048   4   2  C]
+#DATA       29
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4   2  C 1.1800+7 50000.00 4.192664 0.864340 0.937967                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 1.367198 0.281855 0.902683                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.424036 0.087417 0.860431                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.191647 0.039509 0.808000                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.150345 0.030994 0.758725                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.114371 0.023578 0.692193                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.071898 0.014822 0.626902                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.038835 8.0060-3 0.553826                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.021226 4.3759-3 0.476314                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 0.012749 2.6283-3 0.394662                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 8.9243-3 1.8398-3 0.313477                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 7.3375-3 1.5127-3 0.229385                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 5.8504-3 1.2061-3 0.143732                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 5.2543-3 1.0832-3 0.056604                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 4.7551-3 9.8029-4-0.035338                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 4.2781-3 8.8196-4-0.118164                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 3.5596-3 7.3383-4-0.208426                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 2.5810-3 5.3209-4-0.287865                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 1.6766-3 3.4563-4-0.369101                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 1.0656-3 2.1967-4-0.443699                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 8.2928-4 1.7096-4-0.523245                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 8.6351-4 1.7802-4-0.588917                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 9.7003-4 1.9998-4-0.657772                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 1.1617-3 2.3949-4-0.718493                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 1.2115-3 2.4976-4-0.779450                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 1.1359-3 2.3418-4-0.823733                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 9.7538-4 2.0108-4-0.867594                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 8.0862-4 1.6670-4-0.909238                              W.Fitz,ET.AL. (70)       D0227 11
+ 1002 22048   4   2  C 1.1800+7 50000.00 6.2855-4 1.2958-4-0.940289                              W.Fitz,ET.AL. (70)       D0227 11
+#/DATA      29
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0236
+#AUTHOR1    H.R.Burgi+
+#YEAR       1980
+#INSTITUTE  (2SWTETH)
+#TITLE      Global optical-model analysis of the elastic deuteron
+#+          scattering from medium heavy target nuclei
+#AUTHOR(S)  H.R.Burgi, W.Gruebler, J.Nurzynski,
+#+          V.Konig, P.A.Schmelzbach, R.Risler,
+#+          B.Jenny, R.A.Hardekopf
+#REF-CODE   (J,NP/A,334,413,1980)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.334, p.413, 1980
+#DATASETS   12
+#
+#DATASET    D0236007
+#DATE       20041002
+#REACTION   22-TI-48(D,EL)22-TI-48,,DA,,RTH
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 22048   4   2  C]
+#DATA       37
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4   2  C 1.2000+7          0.211605          0.820860                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.164408          0.774867                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.155075          0.735375                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.107165          0.683744                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.066378          0.634757                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.041938          0.578241                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.027185          0.523866                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.021265          0.470302                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.014659          0.411433                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          0.011090          0.344183                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          9.3103-3          0.285185                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          7.7876-3          0.219555                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          6.5913-3          0.152932                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          5.9918-3          0.090526                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          5.5477-3          0.027640                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          5.1140-3         -0.046795                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          4.8205-3         -0.103854                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          4.2297-3         -0.176572                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          3.4957-3         -0.236162                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          2.7418-3         -0.294210                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.9631-3         -0.349719                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.3780-3         -0.414219                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.0142-3         -0.462061                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          8.7547-4         -0.525177                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          9.0913-4         -0.578287                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.0404-3         -0.634598                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.1355-3         -0.682894                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.2519-3         -0.732307                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.2816-3         -0.770293                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.2615-3         -0.808609                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.1488-3         -0.846288                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.0040-3         -0.877064                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          8.4691-4         -0.904382                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          6.8100-4         -0.930291                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          5.4578-4         -0.950409                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          4.3038-4         -0.967136                              H.R.Burgi,ET.AL. (80)    D0236  7
+ 1002 22048   4   2  C 1.2000+7          1.8045-4         -0.996623                              H.R.Burgi,ET.AL. (80)    D0236  7
+#/DATA      37
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1067
+#AUTHOR1    E.Newman+
+#YEAR       1967
+#INSTITUTE  (1USAORL)
+#TITLE      Deuteron elastic scattering at 34.4 MeV
+#AUTHOR(S)  E.Newman, L.C.Becker, B.M.Freedom
+#REF-CODE   (J,NP/A,100,225,1967)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.100, p.225, 1967
+#DATASETS   18
+#
+#DATASET    C1067005
+#DATE       20041102
+#REACTION   22-TI-48(D,EL)22-TI-48,,DA,,RTH
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 22048   4   2  C]
+#DATA       23
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4   2  C 3.4400+7 10000.00 6.141364 0.921205 0.982287                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 2.472383 0.370857 0.972776                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 1.009201 0.151380 0.965926                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.269346 0.040402 0.954240                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.073678 0.011052 0.945518                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.163850 0.024578 0.933580                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.225095 0.033764 0.916363                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.232895 0.034934 0.898027                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.154052 0.023108 0.874619                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.117723 0.017658 0.866896                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.099553 0.014933 0.863395                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.049938 7.4906-3 0.847122                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 2.3475-3 3.5212-4 0.806960                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.013697 2.0546-3 0.744311                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 0.014768 2.2152-3 0.714472                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 9.3872-3 1.4081-3 0.673012                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 5.3142-3 7.9713-4 0.646789                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 1.6596-3 2.4894-4 0.592012                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 1.6537-3 2.4805-4 0.546101                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 1.6667-3 2.5000-4 0.499999                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 7.5877-4 1.1382-4 0.389122                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 1.1795-3 1.7693-4 0.305694                              E.Newman,ET.AL. (67)     C1067  5
+ 1002 22048   4   2  C 3.4400+7 10000.00 1.4995-3 2.2492-4 0.223248                              E.Newman,ET.AL. (67)     C1067  5
+#/DATA      23
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0225
+#AUTHOR1    F.Hinterberger+
+#YEAR       1968
+#INSTITUTE  (2GERBON)
+#TITLE      Elastic scattering of 52 MeV deuterons
+#AUTHOR(S)  F.Hinterberger, G.Mairle, U.Schmidt-Rohr,
+#+          G.J.Wagner, P.Turek
+#REF-CODE   (J,NP/A,111,265,1968)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.111, p.265, 1968
+#DATASETS   54
+#
+#DATASET    D02250151
+#DATE       20151004
+#REACTION   22-TI-48(D,EL)22-TI-48,,DA
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 22048   4   2  C]
+#DATA       67
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4   2  C 5.2000+7          0.576000          0.972370                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.239000          0.967709                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.081400          0.963162                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.048600          0.957822                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.089900          0.952661                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.144000          0.947210                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.180000          0.940881                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.196000          0.934825                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.188000          0.927836                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.152000          0.921185                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.116000          0.914254                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.077300          0.906308                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.036500          0.898794                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.017600          0.890213                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          7.1900-3          0.882127                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          4.8600-3          0.873772                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          8.9700-3          0.864274                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.014200          0.855364                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.018300          0.846193                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.021400          0.835807                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.022100          0.826098                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.020600          0.816137                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.016400          0.804893                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.013600          0.794414                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          9.5500-3          0.783693                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          6.6900-3          0.771624                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          5.3800-3          0.760405                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          4.5700-3          0.748955                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          5.5100-3          0.736096                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          8.7200-3          0.724171                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          9.0200-3          0.712025                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.010200          0.698414                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.011400          0.685818                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.012300          0.673012                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.011300          0.658689                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.011700          0.645457                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          0.010300          0.632028                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          8.6600-3          0.618407                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          7.3300-3          0.603207                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          6.2700-3          0.589195                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          5.6500-3          0.575004                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          5.3900-3          0.560638                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          4.8700-3          0.544638                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          4.5800-3          0.529918                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.8600-3          0.515037                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          4.0600-3          0.499999                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          4.1600-3          0.483281                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.9200-3          0.467928                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.8200-3          0.452433                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.7300-3          0.436800                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.6100-3          0.421034                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.5400-3          0.403544                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.2800-3          0.387514                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          2.5700-3          0.371366                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          2.4200-3          0.355105                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          2.0000-3          0.338736                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          1.8400-3          0.322264                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          1.5900-3          0.304031                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          1.1800-3          0.270599                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          1.2300-3          0.236836                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          1.1200-3          0.202785                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          9.7000-4          0.166767                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          7.5500-4          0.132254                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          6.8300-4          0.097581                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          5.6900-4          0.062788                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.9300-4          0.027919                              F.Hinterberger, (68)     D0225 151
+ 1002 22048   4   2  C 5.2000+7          3.3700-4         -6.9835-3                              F.Hinterberger, (68)     D0225 151
+#/DATA      67
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0225
+#AUTHOR1    F.Hinterberger+
+#YEAR       1968
+#INSTITUTE  (2GERBON)
+#TITLE      Elastic scattering of 52 MeV deuterons
+#AUTHOR(S)  F.Hinterberger, G.Mairle, U.Schmidt-Rohr,
+#+          G.J.Wagner, P.Turek
+#REF-CODE   (J,NP/A,111,265,1968)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.111, p.265, 1968
+#DATASETS   54
+#
+#DATASET    D02250152
+#DATE       20151004
+#REACTION   22-TI-48(D,EL)22-TI-48,,DA,,RTH
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   4   2  C]
+#DATA       67
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4   2  C 5.2000+7          0.575364          0.972370                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.239615          0.967709                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.081665          0.963162                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.048647          0.957822                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.089913          0.952661                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.143881          0.947210                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.179865          0.940881                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.195906          0.934825                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.188233          0.927836                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.152290          0.921185                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.116332          0.914254                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.077352          0.906308                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.036589          0.898794                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.017636          0.890213                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          7.1929-3          0.882127                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          4.8622-3          0.873772                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          8.9690-3          0.864274                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.014207          0.855364                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.018312          0.846193                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.021450          0.835807                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.022053          0.826098                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.020622          0.816137                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.016409          0.804893                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.013587          0.794414                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          9.5601-3          0.783693                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          6.6834-3          0.771624                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          5.3877-3          0.760405                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          4.5718-3          0.748955                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          5.5113-3          0.736096                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          6.7135-3          0.724171                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          9.0140-3          0.712025                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.010168          0.698414                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.011431          0.685818                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.012249          0.673012                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.011329          0.658689                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.011701          0.645457                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          0.010342          0.632028                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          8.6483-3          0.618407                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          7.3586-3          0.603207                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          6.2682-3          0.589195                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          5.6335-3          0.575004                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          5.3755-3          0.560638                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          4.8586-3          0.544638                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          4.5591-3          0.529918                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.8638-3          0.515037                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          4.0701-3          0.499999                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          4.1506-3          0.483281                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.9145-3          0.467928                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.8305-3          0.452433                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.7161-3          0.436800                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.6066-3          0.421034                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.5398-3          0.403544                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.2764-3          0.387514                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          2.5748-3          0.371366                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          2.4200-3          0.355105                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          2.0021-3          0.338736                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          1.8380-3          0.322264                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          1.5870-3          0.304031                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          1.1816-3          0.270599                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          1.2264-3          0.236836                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          1.1239-3          0.202785                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          9.6932-4          0.166767                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          7.5460-4          0.132254                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          6.8288-4          0.097581                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          5.6889-4          0.062788                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.9341-4          0.027919                              F.Hinterberger, (68)     D0225 152
+ 1002 22048   4   2  C 5.2000+7          3.3680-4         -6.9835-3                              F.Hinterberger, (68)     D0225 152
+#/DATA      67
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F0888
+#AUTHOR1    V.V.Okorokov+
+#YEAR       1971
+#INSTITUTE  (4RUSITE)
+#TITLE      Investigation of the nuclei 28Si,47,49V in (d,n)
+#+          reactions.
+#AUTHOR(S)  V.V.Okorokov, V.M.Serezhin, V.A.Smotryaev,
+#+          D.A.Tolchenkov, I.S.Trostin, Yu.N.Cheblukov,
+#+          V.S.Zolotarev, V.S.Romanov
+#REF-CODE   (J,YF,14,490,1971)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.14, p.490, 1971
+#DATASETS   4
+#
+#DATASET    F0888005
+#DATE       20080201
+#REACTION   22-TI-48(D,N)23-V-49,PAR,DA
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         51
+#PRODUCT    23-V-49
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1002 22048   4  51   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4  51    1.1200+7          1.0000-3 3.0000-4                   0.000000         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          2.7000-3                            1610000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          6.5000-3                            2300000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          1.8000-3                            3860000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          1.6000-3                            4480000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          1.9000-3                            4900000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          6.0000-4                            7380000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          5.5000-3                            7820000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          1.4000-3                            8140000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+ 1002 22048   4  51    1.1200+7          2.2000-3                            8880000.         LVLV.V.Okorokov,ET.AL. (71) F0888  5
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D5156
+#AUTHOR1    Yu.V.Gofman+
+#YEAR       1962
+#INSTITUTE  (4UKRIFU)
+#TITLE      Inelastic scattering of deuterons on silicon,
+#+          titanium, and iron nuclei
+#AUTHOR(S)  Yu.V.Gofman, O.F.Nemets
+#REF-CODE   (J,ZET,42,1013,1962)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.42, p.1013, 1962
+#DATASETS   3
+#
+#DATASET    D5156003
+#DATE       20190102
+#REACTION   22-TI-48(D,INL)22-TI-48,PAR,DA
+#PROJ       1002
+#TARG       22048
+#MF         4
+#MT         651
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 22048   4 651  C]
+#DATA       28
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   4 651  C 1.3600+7          0.030031 6.0161-3 0.969154          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          0.026790          0.956586          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          8.1025-3          0.945155          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          7.0194-3          0.925591          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          5.4513-3          0.912482          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          7.2634-3          0.893432          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          6.2496-3          0.870811          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          3.7180-3          0.846177          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          3.4724-3          0.823803          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          4.2334-3          0.802280          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          5.2323-3          0.777338          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          5.7183-3 4.8607-4 0.715936          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          4.1760-3          0.684255          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          2.9674-3          0.639930          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          2.0942-3          0.544724          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          9.4146-4          0.464969          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          6.5542-4          0.388071          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          8.6144-4          0.311881          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          1.0080-3 6.6582-5 0.215610          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          8.2120-4          0.131869          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          7.2616-4          0.039783          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          5.9970-4         -0.052642          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          4.9527-4         -0.137295          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          3.6168-4         -0.228161          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          3.6416-4         -0.313569          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          4.2324-4 3.0647-5-0.382886          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          4.0072-4         -0.459987          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+ 1002 22048   4 651  C 1.3600+7          2.7145-4         -0.527492          990000.0         LVLYu.V.Gofman,ET.AL. (62)  D5156  3
+#/DATA      28
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E1970
+#AUTHOR1    N.Matsuoka+
+#YEAR       1980
+#INSTITUTE  (2JPNOSA)
+#TITLE      Deuteron break-up in the fields of nuclei at 56 MeV
+#AUTHOR(S)  N.Matsuoka, M.Kondo, A.Shimizu,
+#+          T.Saito, S.Nagamachi, H.Sakaguchi,
+#+          A.Goto, F.Ohtani
+#REF-CODE   (J,NP/A,345,(1),1,198008)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.345, Issue.1, p.1, 1980
+#DATASETS   29
+#
+#DATASET    E1970005
+#DATE       20061204
+#REACTION   22-TI-48(D,P)22-TI-49,,DA/DE
+#PROJ       1002
+#TARG       22048
+#MF         6
+#MT         103
+#PRODUCT    22-TI-49
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 22048   6 103   ]
+#DATA       53
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 22048   6 103    5.6000+7          5.2170-9          0.986286          9428000. 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.2480-9          0.986286          1.0500+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.7730-9          0.986286          1.1580+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          6.2950-9          0.986286          1.2530+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          7.8070-9          0.986286          1.3490+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          9.3200-9          0.986286          1.4440+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.1330-8          0.986286          1.5510+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.4330-8          0.986286          1.6580+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.7820-8          0.986286          1.7530+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.1320-8          0.986286          1.8600+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.6790-8          0.986286          1.9550+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          3.1770-8          0.986286          2.0490+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          3.5260-8          0.986286          2.1440+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.0730-8          0.986286          2.2390+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.6210-8          0.986286          2.3580+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.0690-8          0.986286          2.4520+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.3700-8          0.986286          2.5590+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.6200-8          0.986286          2.6550+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.8200-8          0.986286          2.7500+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.8720-8          0.986286          2.8330+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.8750-8          0.986286          2.9410+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.7300-8          0.986286          3.0370+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.3860-8          0.986286          3.1330+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.0920-8          0.986286          3.2410+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.7980-8          0.986286          3.3490+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.4040-8          0.986286          3.4330+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.0100-8          0.986286          3.5050+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          3.6160-8          0.986286          3.5900+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          3.1740-8          0.986286          3.6860+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.8800-8          0.986286          3.7940+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.3870-8          0.986286          3.8900+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.0440-8          0.986286          3.9860+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.7990-8          0.986286          4.0820+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.5040-8          0.986286          4.1780+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.2600-8          0.986286          4.2740+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.2130-8          0.986286          4.3820+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.0180-8          0.986286          4.4900+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          9.2150-9          0.986286          4.5740+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          7.2680-9          0.986286          4.6930+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          6.3120-9          0.986286          4.8130+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          5.3460-9          0.986286          4.8970+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.3830-9          0.986286          4.9920+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          3.9180-9          0.986286          5.1000+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.9520-9          0.986286          5.1840+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.9820-9          0.986286          5.2910+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.5170-9          0.986286          5.3990+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          4.0260-9          0.986286          5.4820+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.5750-9          0.986286          5.6020+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          6.0710-9          0.986286          5.7090+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.6290-9          0.986286          5.7930+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.1640-9          0.986286          5.9010+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          2.1950-9          0.986286          6.0080+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+ 1002 22048   6 103    5.6000+7          1.2380-9          0.986286          6.1280+7 150000.0 E2N.Matsuoka,ET.AL. (80)   E1970  5
+#/DATA      53
+#/DATASET
+#/ENTRY
+#
+#

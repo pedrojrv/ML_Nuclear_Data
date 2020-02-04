@@ -1,0 +1,759 @@
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510443
+#DATE       20160202
+#REACTION   34-SE-76(A,N)36-KR-79,,SIG
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         4
+#PRODUCT    36-KR-79
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   3   4   ]
+#DATA       25
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   3   4    7800000.          0.062000 6.2000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    9100000.          0.091000 9.1000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.0400+7          0.116000 0.011600                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.1600+7          0.181000 0.018100                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.2800+7          0.230000 0.023000                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.4000+7          0.225000 0.022500                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.5000+7          0.384000 0.038400                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.5900+7          0.397000 0.039700                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.6700+7          0.397000 0.039700                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.7600+7          0.405000 0.040500                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.8400+7          0.382000 0.038200                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    1.9300+7          0.356000 0.035600                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.0200+7          0.368000 0.036800                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.1800+7          0.328000 0.032800                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.3200+7          0.221000 0.022100                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.4600+7          0.144000 0.014400                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.6000+7          0.084000 8.4000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.7200+7          0.069000 6.9000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.8300+7          0.048000 4.8000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    2.9500+7          0.038000 3.8000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    3.0700+7          0.041000 4.1000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    3.2000+7          0.032000 3.2000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    3.3100+7          0.033000 3.3000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    3.4100+7          0.033000 3.3000-3                                       V.N.Levkovski (91)       A0510443
+ 2004 34076   3   4    3.5300+7          0.028000 2.8000-3                                       V.N.Levkovski (91)       A0510443
+#/DATA      25
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2421
+#AUTHOR1    S.Fiebiger+
+#YEAR       2017
+#INSTITUTE  (2GERFRK)
+#TITLE      Alpha-induced reactions on selenium between 11 and 15
+#+          MeV
+#AUTHOR(S)  S.Fiebiger, Z.Slavkovska, U.Giesen,
+#+          K.Gobel, T.Heftrich, A.Heiske,
+#+          R.Reifarth, S.Schmidt, K.Sonnabend,
+#+          B.Thomas, M.Weigand
+#REF-CODE   (J,JP/G,44,075101,2017)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.44, p.075101, 2017
+#DATASETS   5
+#
+#DATASET    O2421009
+#DATE       20190105
+#REACTION   34-SE-76(A,N)36-KR-79,,SIG,,,DERIV
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         4
+#PRODUCT    36-KR-79
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   3   4   ]
+#X4DATATYPE [DERIV] Derived data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   3   4    1.2000+7 1000000. 0.247200 2.8000-3                                       S.Fiebiger,ET.AL. (17)   O2421  9
+ 2004 34076   3   4    1.4000+7 1000000. 0.397600 0.017800                                       S.Fiebiger,ET.AL. (17)   O2421  9
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510446
+#DATE       20160202
+#REACTION   34-SE-76(A,3N)36-KR-77,,SIG
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         17
+#PRODUCT    36-KR-77
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   3  17   ]
+#DATA       23
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   3  17    2.9500+7          0.012700 1.2700-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.0100+7          7.6000-3 7.6000-4                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.0700+7          0.017000 1.7000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.1400+7          0.015000 1.5000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.2000+7          0.028000 2.8000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.2500+7          0.023000 2.3000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.3100+7          0.038000 3.8000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.3600+7          0.041000 4.1000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.4100+7          0.057000 5.7000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.4700+7          0.067000 6.7000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.5300+7          0.074000 7.4000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.5700+7          0.084000 8.4000-3                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.6700+7          0.123000 0.012300                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.7600+7          0.175000 0.017500                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.8600+7          0.184000 0.018400                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    3.9500+7          0.260000 0.026000                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.0500+7          0.279000 0.027900                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.1500+7          0.312000 0.031200                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.2400+7          0.329000 0.032900                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.3400+7          0.335000 0.033500                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.4300+7          0.355000 0.035500                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.5200+7          0.345000 0.034500                                       V.N.Levkovski (91)       A0510446
+ 2004 34076   3  17    4.6000+7          0.345000 0.034500                                       V.N.Levkovski (91)       A0510446
+#/DATA      23
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510444
+#DATE       20160202
+#REACTION   34-SE-76(A,X)35-BR-78,,SIG
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-78
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   39000   ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   39000    2.0200+7          0.088000 8.8000-3           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.1800+7          0.142000 0.014200           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.3200+7          0.192000 0.019200           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.4600+7          0.225000 0.022500           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.6000+7          0.240000 0.024000           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.7200+7          0.294000 0.029400           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.8300+7          0.314000 0.031400           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    2.9500+7          0.362000 0.036200           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    3.0700+7          0.362000 0.036200           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    3.2000+7          0.348000 0.034800           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    3.3100+7          0.340000 0.034000           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    3.4100+7          0.316000 0.031600           35078.9                     V.N.Levkovski (91)       A0510444
+ 2004 34076   39000    3.5300+7          0.270000 0.027000           35078.9                     V.N.Levkovski (91)       A0510444
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510445
+#DATE       20160202
+#REACTION   34-SE-76(A,X)34-SE-75,,SIG
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         9000
+#PRODUCT    34-SE-75
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   39000   ]
+#DATA       31
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   39000    2.1800+7          7.2000-3 7.2000-4           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.3200+7          0.017000 1.7000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.4600+7          0.031000 3.1000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.6000+7          0.043000 4.3000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.7200+7          0.059000 5.9000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.7600+7          0.042000 4.2000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.8300+7          0.072000 7.2000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.8900+7          0.065000 6.5000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    2.9500+7          0.083000 8.3000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.0100+7          0.082000 8.2000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.0700+7          0.095000 9.5000-3           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.1400+7          0.125000 0.012500           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.2000+7          0.124000 0.012400           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.2500+7          0.130000 0.013000           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.3100+7          0.136000 0.013600           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.3600+7          0.134000 0.013400           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.4100+7          0.129000 0.012900           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.4700+7          0.134000 0.013400           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.5300+7          0.141000 0.014100           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.5700+7          0.146000 0.014600           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.6700+7          0.148000 0.014800           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.7600+7          0.167000 0.016700           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.8600+7          0.157000 0.015700           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    3.9500+7          0.159000 0.015900           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.0500+7          0.150000 0.015000           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.1500+7          0.143000 0.014300           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.2400+7          0.144000 0.014400           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.3400+7          0.134000 0.013400           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.4300+7          0.144000 0.014400           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.5200+7          0.116000 0.011600           34075.9                     V.N.Levkovski (91)       A0510445
+ 2004 34076   39000    4.6000+7          0.115000 0.011500           34075.9                     V.N.Levkovski (91)       A0510445
+#/DATA      31
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510447
+#DATE       20160202
+#REACTION   34-SE-76(A,X)35-BR-77,,SIG
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-77
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   39000   ]
+#DATA       23
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   39000    2.9500+7          0.039000 3.9000-3           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.0100+7          0.026000 2.6000-3           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.0700+7          0.062000 6.2000-3           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.1400+7          0.062000 6.2000-3           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.2000+7          0.091000 9.1000-3           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.2500+7          0.070000 7.0000-3           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.3100+7          0.133000 0.013300           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.3600+7          0.134000 0.013400           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.4100+7          0.175000 0.017500           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.4700+7          0.149000 0.014900           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.5300+7          0.205000 0.020500           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.5700+7          0.193000 0.019300           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.6700+7          0.275000 0.027500           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.7600+7          0.300000 0.030000           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.8600+7          0.335000 0.033500           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    3.9500+7          0.364000 0.036400           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.0500+7          0.400000 0.040000           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.1500+7          0.400000 0.040000           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.2400+7          0.450000 0.045000           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.3400+7          0.446000 0.044600           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.4300+7          0.472000 0.047200           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.5200+7          0.422000 0.042200           35077.9                     V.N.Levkovski (91)       A0510447
+ 2004 34076   39000    4.6000+7          0.422000 0.042200           35077.9                     V.N.Levkovski (91)       A0510447
+#/DATA      23
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510448
+#DATE       20160202
+#REACTION   34-SE-76(A,X)33-AS-74,,SIG
+#PROJ       2004
+#TARG       34076
+#MF         3
+#MT         9000
+#PRODUCT    33-AS-74
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   39000   ]
+#DATA       11
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   39000    3.6700+7          8.8000-4 8.8000-5           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    3.7600+7          1.6000-3 1.6000-4           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    3.8600+7          2.4000-3 2.4000-4           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    3.9500+7          4.8000-3 4.8000-4           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.0500+7          7.2000-3 7.2000-4           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.1500+7          0.010800 1.0800-3           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.2400+7          0.013000 1.3000-3           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.3400+7          0.014700 1.4700-3           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.4300+7          0.022000 2.2000-3           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.5200+7          0.020000 2.0000-3           33074.9                     V.N.Levkovski (91)       A0510448
+ 2004 34076   39000    4.6000+7          0.025000 2.5000-3           33074.9                     V.N.Levkovski (91)       A0510448
+#/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F0841
+#AUTHOR1    J.B.A.England+
+#YEAR       1982
+#INSTITUTE  (2UK BIR)
+#TITLE      The elastic scattering of 25 MeV alpha-particles and
+#+          neutron shell effects in the A=50 to A=93 mass region.
+#AUTHOR(S)  J.B.A.England, S.Baird, D.H.Newton,
+#+          T.Picazo, E.C.Pollacco, G.J.Pyle,
+#+          P.M.Rolph, J.Alabau, E.Casal,
+#+          A.Garcia
+#REF-CODE   (J,NP/A,388,573,1982)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.388, p.573, 1982
+#DATASETS   28
+#
+#DATASET    F0841025
+#DATE       20170801
+#REACTION   34-SE-76(A,EL)34-SE-76,,DA,,RTH
+#PROJ       2004
+#TARG       34076
+#MF         4
+#MT         2
+#PRODUCT    34-SE-76
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   4   2  C]
+#DATA       67
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   4   2  C 2.5000+7          147.5365          0.982277                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          52.80927          0.970084                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          29.34189          0.959457                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          14.79064          0.944789                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          7.019000          0.925024                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          4.145232          0.905672                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.647774          0.891924                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.456068          0.873662                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.790919          0.849791                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.523976          0.823512                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.371771          0.795198                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.243284          0.770724                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.117398          0.735044                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.072951          0.702239                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.066787          0.678620                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.049012          0.648929                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.028589          0.592968                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.016932          0.575161                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.011976          0.542528                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          0.010138          0.486853                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          8.8957-3          0.458478                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          5.5862-3          0.401387                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          3.2136-3          0.366224                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.6652-3          0.323321                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.6960-3          0.299855                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.7684-3          0.252389                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.5597-3          0.213216                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.0942-3          0.158794                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          7.0254-4          0.128759                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          3.1655-4          0.076073                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.3887-4          0.036781                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.9738-4         -5.2208-3                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          3.3873-4         -0.038564                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.9118-4         -0.094753                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.8189-4         -0.124695                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          9.3047-5         -0.169558                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          4.5918-5         -0.237688                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          5.3035-5         -0.269931                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          5.7652-5         -0.286025                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          7.6038-5         -0.318466                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          8.5315-5         -0.357393                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          6.2179-5         -0.393463                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          3.3139-5         -0.420088                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.1526-5         -0.461906                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.5978-5         -0.503173                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.8946-5         -0.538626                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.3515-5         -0.573436                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.5121-5 2.6008-6-0.606546                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.3607-5         -0.637964                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.8942-5         -0.673918                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          9.5832-6         -0.712273                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          5.5439-6 5.7242-7-0.748958                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          3.4975-6 3.6308-7-0.768509                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          5.2474-6         -0.795158                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          9.4420-6         -0.816241                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.2689-5         -0.844143                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.3748-5         -0.869410                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.1799-5         -0.888379                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          7.1555-6         -0.905126                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          3.6636-6 1.5673-7-0.916992                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.7205-6 3.0770-7-0.927968                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          4.9282-7 7.8936-8-0.950571                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          8.9579-7 1.2686-7-0.963211                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          2.0743-6 2.5440-7-0.974292                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          4.1543-6 4.3127-7-0.978582                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          5.9576-6 3.7815-7-0.987716                              J.B.A.England,ET.AL. (82)F0841 25
+ 2004 34076   4   2  C 2.5000+7          1.0226-5         -0.992610                              J.B.A.England,ET.AL. (82)F0841 25
+#/DATA      67
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1088
+#AUTHOR1    F.Ballester+
+#YEAR       1988
+#INSTITUTE  (2SPNVAL)
+#TITLE      Inelastic alpha-particle scattering on doubly even
+#+          selenium isotopes.
+#AUTHOR(S)  F.Ballester, E.Casal, J.B.A.England,
+#+          F.Moriano
+#REF-CODE   (J,JP/G,14,1103,1988)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.14, p.1103, 1988
+#DATASETS   6
+#
+#DATASET    O1088002
+#DATE       20040303
+#REACTION   34-SE-76(A,EL)34-SE-76,,DA,,RTH
+#PROJ       2004
+#TARG       34076
+#MF         4
+#MT         2
+#PRODUCT    34-SE-76
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   4   2  C]
+#DATA       62
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   4   2  C 2.5000+7          325.1155          0.988228                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          116.8387          0.980271                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          51.94519          0.968148                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          31.85807          0.962218                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          11.97674          0.943801                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          7.110364          0.930417                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.460124          0.909961                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.911556          0.889416                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.992096          0.864274                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.685743          0.844328                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.460605          0.823136                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.249037          0.786934                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.150158          0.762668                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.077132          0.705871                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.056003          0.671720                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.036210          0.637423                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.013517          0.569278                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.012194          0.531397                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          0.010888          0.492422                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          4.4022-3          0.417866                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.0338-3          0.359995                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.9630-3          0.332159                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.9171-3          0.289030                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.6786-3          0.238532                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          7.6139-4          0.154709                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.5627-4          0.099318                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.6443-4          0.040130                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.9017-4         -0.027924                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.4505-4         -0.064535                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.0110-4         -0.097585                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.4405-4         -0.113206                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.0520-4         -0.158160                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          5.6833-5         -0.204499                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          6.2856-5         -0.233448                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          7.8932-5         -0.277317                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          9.2933-5         -0.333809                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          6.5920-5         -0.369749                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.5467-5         -0.421038                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.6648-5         -0.481756                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.0052-5         -0.526958                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.6049-5         -0.559195                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.0460-5         -0.589199                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.3975-5         -0.625245                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.2196-5         -0.654743                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.1248-5         -0.694661                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          6.2995-6         -0.722969                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.7546-6         -0.754712                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          6.9550-6         -0.782610                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.0104-5         -0.799687                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.3765-5         -0.826100                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.5712-5         -0.846195                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.1379-5         -0.873774                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          7.9567-6         -0.891799                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          7.5204-6         -0.901834                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.0470-6 2.0470-7-0.927838                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          5.9690-7 1.3729-7-0.942643                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.1129-6 2.7822-7-0.954242                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          2.5346-6 2.2811-7-0.968149                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          3.9271-6         -0.971135                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          4.7808-6         -0.977784                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          6.6974-6         -0.983572                              F.Ballester,ET.AL. (88)  O1088  2
+ 2004 34076   4   2  C 2.5000+7          1.0822-5         -0.991672                              F.Ballester,ET.AL. (88)  O1088  2
+#/DATA      62
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1088
+#AUTHOR1    F.Ballester+
+#YEAR       1988
+#INSTITUTE  (2SPNVAL)
+#TITLE      Inelastic alpha-particle scattering on doubly even
+#+          selenium isotopes.
+#AUTHOR(S)  F.Ballester, E.Casal, J.B.A.England,
+#+          F.Moriano
+#REF-CODE   (J,JP/G,14,1103,1988)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.14, p.1103, 1988
+#DATASETS   6
+#
+#DATASET    O1088003
+#DATE       20040303
+#REACTION   34-SE-76(A,INL)34-SE-76,PAR,DA
+#PROJ       2004
+#TARG       34076
+#MF         4
+#MT         801
+#PRODUCT    34-SE-76
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 34076   4 801  C]
+#DATA       193
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 34076   4 801  C 2.5000+7          7.5000-3 2.2500-3 0.830984          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.8000-3          0.804893          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          0.010700          0.782608          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          0.010200          0.753563          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.0000-3          0.718126          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.0200-3          0.694658          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.4600-3          0.649447          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.3200-3          0.615660          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.0100-4          0.612906          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.7000-3          0.592012          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.1200-4          0.569278          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.3000-3          0.554843          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.8600-4          0.546101          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.8600-4          0.501509          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.7100-4          0.498486          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.8700-4          0.478691          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2500-3          0.474087          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-5 6.0000-6 0.463295          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.3000-4          0.461747          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          9.8000-4          0.441505          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.1000-5 2.1700-5 0.436800          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.0100-4          0.433658          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.6000-5 1.3200-5 0.422617          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3200-3          0.395544          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4000-5 8.4000-6 0.393940          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4200-4          0.384294          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3300-3          0.353473          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          9.0000-6 6.3000-6 0.351840          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          9.5000-5          0.342019          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0400-3          0.315647          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1000-5 5.5000-6 0.309015          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1500-4          0.305694          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2200-4          0.299039          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4900-4          0.270599          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.2000-5 6.6000-6 0.267237          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.0400-4          0.226649          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.6000-5          0.224949          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-5 7.2000-6 0.223248          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.7300-4          0.219844          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.5000-4          0.218141          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.3000-5 6.9000-6 0.183949          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.2700-4          0.180517          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3500-4          0.175365          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4000-5 8.4000-6 0.171927          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.5500-4          0.159879          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0500-4 8.4000-6 0.137443          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.4000-5 5.9200-6 0.135714          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-6 4.9000-6 0.132254          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.6000-4          0.130524          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.8000-4          0.101054          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.4000-5          0.092369          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.3000-5 5.8300-6 0.090631          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.1000-5 8.4000-6 0.088892          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.5700-4          0.055819          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.1000-6 2.4600-6 0.054077          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.7000-5 1.0800-5 0.040130          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.0000-5 4.0000-6 0.038386          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.9000-6 2.3400-6 5.2338-3          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.9800-4          3.4884-3          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.0000-6 4.0000-6 1.7432-3          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.4000-5 5.1200-6 0.000000          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.6000-5         -0.034902          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0500-4         -0.036646          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.2100-5 2.5680-6-0.038390          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1000-5 4.4000-6-0.040134          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.6000-5         -0.076721          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.8000-5         -0.081941          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.5000-5 4.0500-6-0.083680          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.0000-6 3.0000-6-0.085419          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.6000-5 4.8000-6-0.116673          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1100-4         -0.128798          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-5 7.2000-6-0.130529          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.8000-5         -0.132259          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.0000-6 4.0000-6-0.161606          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.2000-5 4.1600-6-0.170212          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3500-4         -0.171932          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.0000-6 4.0000-6-0.175369          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4200-4         -0.194237          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.2000-5 3.9600-6-0.211327          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.0000-6 4.8000-6-0.213033          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.5000-5 4.0000-6-0.216442          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1000-5 5.5000-6-0.252072          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.1200-5 2.5440-6-0.253760          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-6 4.2000-6-0.258821          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.3000-5         -0.268922          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.5000-5 4.0500-6-0.285691          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.3200-5         -0.289034          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.5000-6 1.7500-6-0.300708          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.6000-5         -0.333809          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0000-5 4.0000-6-0.335454          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.3200-5         -0.338740          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.6000-6 1.8400-6-0.342023          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.2700-5         -0.377843          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.1600-5         -0.381073          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.6000-6 9.6000-7-0.389127          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0000-5 4.0000-6-0.417870          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.1300-5         -0.419455          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.7000-6 2.6800-6-0.421038          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.1200-5         -0.424202          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.7300-5         -0.450880          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.7000-6 1.6080-6-0.453993          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.7000-5         -0.458652          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.3000-6 1.7200-6-0.460202          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.2000-5         -0.496976          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2200-5 9.7600-7-0.498490          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.3000-6 2.5800-6-0.500003          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.9000-6 1.9500-6-0.501513          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.8000-6 1.1400-6-0.525474          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.9000-6 1.5600-6-0.528441          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2800-5 1.0240-6-0.537302          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.3200-5         -0.560641          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2800-5 1.0240-6-0.562086          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.5000-6 1.8000-6-0.564970          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.8000-6 1.4000-6-0.570716          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.6000-5         -0.593421          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-6 9.6000-7-0.596227          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.0000-7 4.2000-7-0.600423          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4900-5         -0.604602          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.8000-6 1.4000-6-0.626606          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1600-5         -0.627965          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-6 8.4000-7-0.632032          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4400-5         -0.636081          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0000-6 6.0000-7-0.661314          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.5700-5         -0.662622          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.9500-5         -0.663929          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.2000-6 1.2800-6-0.665233          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.5300-5         -0.692146          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.3000-6 1.3800-6-0.698418          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.4000-6 8.4000-7-0.700912          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.6000-6         -0.702155          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-6         -0.722969          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.9600-5         -0.724174          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-6 7.2000-7-0.727775          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3000-6 6.5000-7-0.731356          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.6000-6 8.0000-7-0.752417          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.6000-6 6.4000-7-0.755856          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.6000-6         -0.762671          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.0000-7 4.0000-7-0.781523          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.7000-6         -0.782610          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.0000-7 3.2000-7-0.783696          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2000-5         -0.789086          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.2100-5         -0.806962          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          9.0000-7 5.4000-7-0.807992          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3000-6 6.5000-7-0.809019          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.2000-6         -0.810044          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.4000-6 7.0400-7-0.819154          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1000-6 4.4000-7-0.829040          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.5000-6         -0.831956          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.2000-6         -0.841513          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-6         -0.852642          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.4000-6 6.0000-7-0.853553          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-6         -0.855366          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.0000-6 5.0000-7-0.857169          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.8000-6         -0.874622          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.8000-6 3.9600-7-0.876308          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-7 4.2000-7-0.877148          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.2000-6         -0.879650          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.6000-6         -0.893373          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.8000-6 3.9600-7-0.894156          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.0000-6 3.0000-7-0.894936          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.7000-6         -0.895713          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          9.1000-6         -0.909963          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.7000-6 4.0800-7-0.912836          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.5000-6 5.0000-7-0.913547          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.4000-6         -0.914961          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1700-5         -0.929778          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.6000-6 7.8000-7-0.930419          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3000-6 6.5000-7-0.931057          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.5000-6         -0.932325          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.7000-6 8.5000-7-0.944378          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.4000-6         -0.944950          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1200-5         -0.945520          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.6000-6 1.0800-6-0.951058          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          7.0000-6         -0.954242          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          4.0000-6 1.0000-6-0.956815          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1200-5         -0.957321          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.2000-6 8.9600-7-0.957824          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.0000-6 8.0000-7-0.965927          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.1200-5         -0.967710          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.8000-6         -0.969017          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.2000-6 6.6000-7-0.969446          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.0000-7 4.2000-7-0.977046          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.2000-6         -0.977417          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          8.4000-6         -0.978148          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          9.0000-7 6.3000-7-0.978510          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.0000-6         -0.983572          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          6.6000-6         -0.985110          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.3000-6 5.9800-7-0.985409          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          1.3000-6 5.2000-7-0.985704          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          5.1000-6         -0.990024          560000.0         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.8000-6 8.4000-7-0.991672          1790000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          2.9000-6 8.1200-7-0.992115          1210000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+ 2004 34076   4 801  C 2.5000+7          3.7000-6 2.9600-7-0.992758          2430000.         LVLF.Ballester,ET.AL. (88)  O1088  3
+#/DATA      193
+#/DATASET
+#/ENTRY
+#
+#

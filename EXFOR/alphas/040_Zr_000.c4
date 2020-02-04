@@ -1,0 +1,733 @@
+#ENTRY      C0185
+#AUTHOR1    P.H.Stelson+
+#YEAR       1964
+#INSTITUTE  (1USAORL)
+#TITLE      Cross sections for (alpha,n) reactions for medium-
+#+          weight nuclei.
+#AUTHOR(S)  P.H.Stelson, F.K.Mcgowan
+#REF-CODE   (J,PR,133,B911,1964)
+#REFERENCE  Jour. Physical Review
+#+          Vol.133, p.B911, 1964
+#DATASETS   18
+#
+#DATASET    C0185025
+#DATE       20160301
+#REACTION   40-ZR-0(A,X)0-NN-1,,SIG,,,DERIV
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    0-NN-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000   ]
+#X4DATATYPE [DERIV] Derived data
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000    8800000.          6.3000-4 1.0000-4               1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    9000000.          9.0000-4 1.0000-4               1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    9200000.          1.3000-3 7.0000-5               1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    9400000.          1.8300-3                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    9600000.          2.6100-3                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    9800000.          4.3000-3                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    1.0000+7          5.9200-3                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    1.0200+7          8.5200-3                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    1.0400+7          0.012400                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    1.0600+7          0.017400                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    1.0800+7          0.022500                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+ 2004 40000   39000    1.1000+7          0.031000                        1.9                     P.H.Stelson,ET.AL. (64)  C0185 25
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592013
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)42-MO-93-M,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    42-MO-93-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000MC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000MC  2.4200+7 600000.0 0.060000 7.2000-3           42093.7                     T.Murata,ET.AL. (19)     E2592 13
+ 2004 40000   39000MC  2.3200+7 600000.0 0.056900 5.5000-3           42093.7                     T.Murata,ET.AL. (19)     E2592 13
+ 2004 40000   39000MC  2.2200+7 600000.0 0.063300 6.1000-3           42093.7                     T.Murata,ET.AL. (19)     E2592 13
+ 2004 40000   39000MC  2.1200+7 600000.0 0.062400 5.5000-3           42093.7                     T.Murata,ET.AL. (19)     E2592 13
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592014
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-96,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-96
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000 C ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000 C  2.7600+7 500000.0 4.8000-3 4.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592 14
+ 2004 40000   39000 C  2.5100+7 600000.0 2.6000-3 2.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592 14
+ 2004 40000   39000 C  2.4200+7 600000.0 1.9000-3 1.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592 14
+ 2004 40000   39000 C  2.3200+7 600000.0 1.2000-3 1.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592 14
+ 2004 40000   39000 C  2.2200+7 600000.0 7.3000-4 6.0000-5           41096.9                     T.Murata,ET.AL. (19)     E2592 14
+ 2004 40000   39000 C  2.1200+7 600000.0 3.5000-4 3.0000-5           41096.9                     T.Murata,ET.AL. (19)     E2592 14
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592015
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-95-M,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-95-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000MC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000MC  2.7600+7 500000.0 5.6000-4 5.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  2.5100+7 600000.0 5.6000-4 5.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  2.4200+7 600000.0 5.3000-4 5.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  2.3200+7 600000.0 5.2000-4 5.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  2.2200+7 600000.0 5.3000-4 5.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  2.1200+7 600000.0 4.9000-4 4.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  1.9700+7 700000.0 3.3000-4 4.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  1.8100+7 700000.0 2.4000-4 2.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+ 2004 40000   39000MC  1.6400+7 800000.0 1.2000-4 2.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592 15
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592016
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-95-G,IND,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-95-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000GC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000GC  2.7600+7 500000.0 3.9000-3 3.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  2.5100+7 600000.0 3.7000-3 3.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  2.4200+7 600000.0 3.7000-3 3.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  2.3200+7 600000.0 3.5000-3 3.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  2.2200+7 600000.0 3.4000-3 3.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  2.1200+7 600000.0 3.1000-3 2.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  1.9700+7 700000.0 2.1000-3 2.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  1.8100+7 700000.0 1.2000-3 1.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+ 2004 40000   39000GC  1.6400+7 800000.0 5.4000-4 5.0000-5           41095.0                     T.Murata,ET.AL. (19)     E2592 16
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592017
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-92-M,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-92-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000MC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000MC  2.7600+7 500000.0 0.018300 1.4000-3           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+ 2004 40000   39000MC  2.5100+7 600000.0 0.012900 1.0000-3           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+ 2004 40000   39000MC  2.4200+7 600000.0 9.9000-3 8.0000-4           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+ 2004 40000   39000MC  2.3200+7 600000.0 6.7000-3 5.0000-4           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+ 2004 40000   39000MC  2.2200+7 600000.0 3.9000-3 3.0000-4           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+ 2004 40000   39000MC  2.1200+7 600000.0 1.8000-3 1.0000-4           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+ 2004 40000   39000MC  1.9700+7 700000.0 2.8000-4 3.0000-5           41092.7                     T.Murata,ET.AL. (19)     E2592 17
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592003
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)42-MO-93-M,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    42-MO-93-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000MC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000MC  4.9400+7 700000.0 0.059900 5.3000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.8200+7 700000.0 0.063900 5.6000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.7100+7 700000.0 0.072900 6.4000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.5900+7 700000.0 0.082000 7.1000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.4800+7 700000.0 0.091700 8.0000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.3600+7 700000.0 0.099900 8.7000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.2300+7 700000.0 0.107800 9.4000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  4.1100+7 800000.0 0.112800 9.8000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  3.7900+7 800000.0 0.113500 9.9000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  3.4500+7 800000.0 0.109200 9.5000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  3.0900+7 900000.0 0.082200 7.2000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  2.6900+7 1000000. 0.059400 5.2000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  2.2500+7 1100000. 0.067400 5.9000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  2.0000+7 1200000. 0.055100 4.8000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  1.7400+7 1400000. 0.017100 1.5000-3           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  1.4400+7 1500000. 1.5000-3 1.0000-4           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+ 2004 40000   39000MC  1.0900+7 1800000. 9.0000-6 2.0000-6           42093.7                     T.Murata,ET.AL. (19)     E2592  3
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592004
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-96,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-96
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000 C ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000 C  4.9400+7 700000.0 8.3000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.8200+7 700000.0 8.3000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.7100+7 700000.0 8.4000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.5900+7 700000.0 8.4000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.4800+7 700000.0 8.2000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.3600+7 700000.0 8.4000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.2300+7 700000.0 8.5000-3 7.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  4.1100+7 800000.0 8.6000-3 8.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  3.7900+7 800000.0 9.3000-3 8.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  3.4500+7 800000.0 9.8000-3 9.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  3.0900+7 900000.0 8.8000-3 8.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  2.6900+7 1000000. 5.0000-3 4.0000-4           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  2.2500+7 1100000. 1.0300-3 9.0000-5           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+ 2004 40000   39000 C  2.0000+7 1200000. 1.3000-4 2.0000-5           41096.9                     T.Murata,ET.AL. (19)     E2592  4
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592005
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-95-M,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-95-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000MC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       16
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000MC  4.9400+7 700000.0 1.5000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.8200+7 700000.0 1.5000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.7100+7 700000.0 1.6000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.5900+7 700000.0 1.5000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.4800+7 700000.0 1.7000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.3600+7 700000.0 1.6000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.2300+7 700000.0 1.7000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  4.1100+7 800000.0 1.7000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  3.7900+7 800000.0 1.5000-3 2.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  3.4500+7 800000.0 1.0000-3 1.0000-4           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  3.0900+7 900000.0 7.0000-4 9.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  2.6900+7 1000000. 5.3000-4 7.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  2.2500+7 1100000. 5.5000-4 6.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  2.0000+7 1200000. 3.8000-4 5.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  1.7400+7 1400000. 1.9000-4 3.0000-5           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+ 2004 40000   39000MC  1.4400+7 1500000. 6.0000-5 2.1000-5           41095.7                     T.Murata,ET.AL. (19)     E2592  5
+#/DATA      16
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592006
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-95-G,IND,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-95-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000GC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000GC  4.9400+7 700000.0 0.024800 2.2000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.8200+7 700000.0 0.026100 2.3000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.7100+7 700000.0 0.026400 2.3000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.5900+7 700000.0 0.026900 2.3000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.4800+7 700000.0 0.026800 2.3000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.3600+7 700000.0 0.026500 2.3000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.2300+7 700000.0 0.025300 2.2000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  4.1100+7 800000.0 0.024300 2.1000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  3.7900+7 800000.0 0.018300 1.6000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  3.4500+7 800000.0 0.010800 1.0000-3           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  3.0900+7 900000.0 5.8000-3 5.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+ 2004 40000   39000GC  2.6900+7 1000000. 4.0000-3 4.0000-4           41095.0                     T.Murata,ET.AL. (19)     E2592  6
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592007
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-92-M,,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-92-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39000MC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39000MC  4.9400+7 700000.0 0.013600 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.8200+7 700000.0 0.013400 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.7100+7 700000.0 0.013500 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.5900+7 700000.0 0.013500 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.4800+7 700000.0 0.013500 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.3600+7 700000.0 0.013600 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.2300+7 700000.0 0.013900 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  4.1100+7 800000.0 0.014200 1.2000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  3.7900+7 800000.0 0.015600 1.4000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  3.4500+7 800000.0 0.018800 1.6000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  3.0900+7 900000.0 0.022400 1.9000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  2.6900+7 1000000. 0.018200 1.6000-3           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  2.2500+7 1100000. 5.0000-3 4.0000-4           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+ 2004 40000   39000MC  2.0000+7 1200000. 6.1000-4 6.0000-5           41092.7                     T.Murata,ET.AL. (19)     E2592  7
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592018
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)40-ZR-95,CUM,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9001
+#PRODUCT    40-ZR-95
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39001 C ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39001 C  2.7600+7 500000.0 5.4000-4 8.0000-5           40095.9                     T.Murata,ET.AL. (19)     E2592 18
+ 2004 40000   39001 C  2.5100+7 600000.0 2.7000-4 6.0000-5           40095.9                     T.Murata,ET.AL. (19)     E2592 18
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592019
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)40-ZR-89-G,CUM,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9001
+#PRODUCT    40-ZR-89-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39001GC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39001GC  2.7600+7 500000.0 8.2000-3 6.0000-4           40089.0                     T.Murata,ET.AL. (19)     E2592 19
+ 2004 40000   39001GC  2.5100+7 600000.0 2.0000-3 2.0000-4           40089.0                     T.Murata,ET.AL. (19)     E2592 19
+ 2004 40000   39001GC  2.4200+7 600000.0 8.9000-4 7.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 19
+ 2004 40000   39001GC  2.3200+7 600000.0 3.1000-4 2.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 19
+ 2004 40000   39001GC  2.2200+7 600000.0 8.3000-5 7.0000-6           40089.0                     T.Murata,ET.AL. (19)     E2592 19
+ 2004 40000   39001GC  2.1200+7 600000.0 1.7000-5 2.0000-6           40089.0                     T.Murata,ET.AL. (19)     E2592 19
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592008
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)41-NB-90,CUM,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9001
+#PRODUCT    41-NB-90
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39001   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39001    4.9400+7 700000.0 0.146500 0.012700           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.8200+7 700000.0 0.104700 9.1000-3           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.7100+7 700000.0 0.068700 6.0000-3           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.5900+7 700000.0 0.039600 3.4000-3           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.4800+7 700000.0 0.020000 1.8000-3           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.3600+7 700000.0 8.7000-3 8.0000-4           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.2300+7 700000.0 3.6000-3 4.0000-4           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    4.1100+7 800000.0 1.7000-3 2.0000-4           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+ 2004 40000   39001    3.7900+7 800000.0 6.4000-4 7.0000-5           41090.9                     T.Murata,ET.AL. (19)     E2592  8
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592009
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)40-ZR-95,CUM,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9001
+#PRODUCT    40-ZR-95
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39001 C ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39001 C  4.9400+7 700000.0 4.2000-3 4.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.8200+7 700000.0 3.9000-3 4.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.7100+7 700000.0 3.5000-3 3.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.5900+7 700000.0 3.4000-3 3.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.4800+7 700000.0 3.4000-3 3.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.3600+7 700000.0 3.0000-3 3.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.2300+7 700000.0 3.0000-3 3.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  4.1100+7 800000.0 2.8000-3 3.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  3.7900+7 800000.0 2.2000-3 2.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  3.4500+7 800000.0 1.9000-3 2.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  3.0900+7 900000.0 1.5000-3 2.0000-4           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+ 2004 40000   39001 C  2.6900+7 1000000. 5.8000-4 8.0000-5           40095.9                     T.Murata,ET.AL. (19)     E2592  9
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592010
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)40-ZR-89-G,CUM,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9001
+#PRODUCT    40-ZR-89-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39001GC ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       18
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39001GC  4.9400+7 700000.0 0.061600 5.3000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.8200+7 700000.0 0.060600 5.3000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.7100+7 700000.0 0.059900 5.2000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.5900+7 700000.0 0.059800 5.2000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.4800+7 700000.0 0.060300 5.2000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.3600+7 700000.0 0.061400 5.3000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.2300+7 700000.0 0.062200 5.4000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  4.1100+7 800000.0 0.062100 5.4000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  3.7900+7 800000.0 0.055100 4.8000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  3.4500+7 800000.0 0.039600 3.4000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  3.0900+7 900000.0 0.022300 1.9000-3           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  2.6900+7 1000000. 6.7000-3 6.0000-4           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  2.2500+7 1100000. 2.9000-4 3.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  2.0000+7 1200000. 1.1000-4 1.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  1.7400+7 1400000. 1.3000-4 1.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  1.4400+7 1500000. 1.1000-4 1.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  1.0900+7 1800000. 1.1000-4 1.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+ 2004 40000   39001GC  6400000. 2500000. 1.1000-4 1.0000-5           40089.0                     T.Murata,ET.AL. (19)     E2592 10
+#/DATA      18
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2592
+#AUTHOR1    T.Murata+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of Mo, Nb and Zr
+#+          radioisotopes from alpha-induced reaction on natZr
+#AUTHOR(S)  T.Murata, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba,
+#+          S.Takacs
+#REF-CODE   (J,ARI,144,47,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.144, p.47, 2019
+#DATASETS   18
+#
+#DATASET    E2592011
+#DATE       20190104
+#REACTION   40-ZR-0(A,X)40-ZR-88,CUM,SIG
+#PROJ       2004
+#TARG       40000
+#MF         3
+#MT         9001
+#PRODUCT    40-ZR-88
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 40000   39001   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 40000   39001    4.9400+7 700000.0 0.066100 5.8000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.8200+7 700000.0 0.060900 5.3000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.7100+7 700000.0 0.054200 4.7000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.5900+7 700000.0 0.046500 4.0000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.4800+7 700000.0 0.038600 3.4000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.3600+7 700000.0 0.030600 2.7000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.2300+7 700000.0 0.022300 2.0000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    4.1100+7 800000.0 0.014100 1.3000-3           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+ 2004 40000   39001    3.7900+7 800000.0 2.5000-3 3.0000-4           40088.9                     T.Murata,ET.AL. (19)     E2592 11
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#

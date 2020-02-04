@@ -1,0 +1,705 @@
+#ENTRY      C0151
+#AUTHOR1    H.I.West Jr+
+#YEAR       1993
+#INSTITUTE  (1USALRL)
+#TITLE      Bromine and iodine excitation-function measurements
+#+          with protons and deuterons at 3-17 MeV
+#AUTHOR(S)  H.I.West Jr, R.M.Nuckolls, B.Hudson,
+#+          B.Ruiz, R.G.Lanier, M.G.Mustafa
+#REF-CODE   (J,PR/C,47,248,9301)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.47, p.248, 1993
+#DATASETS   7
+#
+#DATASET    C0151003
+#DATE       19970101
+#REACTION   35-BR-81(P,N)36-KR-81,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         4
+#PRODUCT    36-KR-81
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3   4   ]
+#DATA       25
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3   4    2230000.          4.7000-4 2.0000-5                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    2800000.          2.9000-3 9.0000-5                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    3170000.          8.6600-3 3.5000-4                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    3940000.          0.045000 1.8000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    4530000.          0.117100 4.7000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    4880000.          0.146600 5.9000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    5550000.          0.210000 8.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    6290000.          0.359000 0.014000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    6870000.          0.448000 0.018000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    6990000.          0.456000 0.018000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    7050000.          0.429000 0.017000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    8100000.          0.579000 0.023000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    8360000.          0.634000 0.025000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    9060000.          0.660000 0.026000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    9110000.          0.705000 0.028000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    9540000.          0.704000 0.028000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.0060+7          0.724000 0.029000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.0980+7          0.617000 0.025000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.1090+7          0.578000 0.023000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.2290+7          0.434000 0.017000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.2360+7          0.401000 0.016000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.3520+7          0.278000 0.011000                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.4350+7          0.193300 7.7000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.5650+7          0.125400 5.0000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+ 1001 35081   3   4    1.6870+7          0.079700 3.1000-3                                       H.I.WEST JR,ET.AL. (93)  C0151  3
+#/DATA      25
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510155
+#DATE       20160202
+#REACTION   35-BR-81(P,3N)36-KR-79,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         17
+#PRODUCT    36-KR-79
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  17   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  17    2.4000+7          0.148000 0.014800                                       V.N.Levkovski (91)       A0510155
+ 1001 35081   3  17    2.4800+7          0.187000 0.018700                                       V.N.Levkovski (91)       A0510155
+ 1001 35081   3  17    2.5700+7          0.332000 0.033200                                       V.N.Levkovski (91)       A0510155
+ 1001 35081   3  17    2.6600+7          0.427000 0.042700                                       V.N.Levkovski (91)       A0510155
+ 1001 35081   3  17    2.7600+7          0.514000 0.051400                                       V.N.Levkovski (91)       A0510155
+ 1001 35081   3  17    2.8500+7          0.690000 0.069000                                       V.N.Levkovski (91)       A0510155
+ 1001 35081   3  17    2.9500+7          0.603000 0.060300                                       V.N.Levkovski (91)       A0510155
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0171
+#AUTHOR1    M.Diksic+
+#YEAR       1979
+#INSTITUTE  (1CANMCG)
+#TITLE      79Br and 81Br(p,xn) and (p,pxn) excitation functions
+#+          in the energy range 10-85 MeV
+#AUTHOR(S)  M.Diksic, J.-L.Galinier, H.Marshall,
+#+          L.Yaffe
+#REF-CODE   (J,PR/C,19,1753,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.19, p.1753, 1979
+#DATASETS   12
+#
+#DATASET    B0171003
+#DATE       20180505
+#REACTION   35-BR-81(P,3N)36-KR-79,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         17
+#PRODUCT    36-KR-79
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  17   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  17    2.5000+7 2000000. 0.140000 0.015000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    3.0000+7 2000000. 0.480000 0.051000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    3.5000+7 2000000. 0.440000 0.047000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    4.0000+7 2000000. 0.370000 0.039000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    4.5000+7 2000000. 0.220000 0.022000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    5.5000+7 2000000. 0.110000 0.011000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    6.0000+7 2000000. 0.080000 0.015000                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    6.5000+7 2000000. 0.050000 4.0000-3                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    7.5000+7 2000000. 0.053000 6.0000-3                                       M.Diksic,ET.AL. (79)     B0171  3
+ 1001 35081   3  17    8.5000+7 2000000. 0.035000 4.0000-3                                       M.Diksic,ET.AL. (79)     B0171  3
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0299
+#AUTHOR1    P.P.Strohal+
+#YEAR       1961
+#INSTITUTE  (1USACAR)
+#TITLE      EXCITATION FUNCTIONS OF (P,2 NUCLEON) REACTIONS
+#AUTHOR(S)  P.P.Strohal, A.A.Caretto
+#REF-CODE   (J,PR,121,1815,61)
+#REFERENCE  Jour. Physical Review
+#+          Vol.121, p.1815, 1961
+#DATASETS   15
+#
+#DATASET    C0299003
+#DATE       19881004
+#REACTION   35-BR-81(P,N+P)35-BR-80,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         28
+#PRODUCT    35-BR-80
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  28   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  28    2.5000+8          0.065600 4.9000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  3
+ 1001 35081   3  28    3.0000+8          0.066000 6.6000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  3
+ 1001 35081   3  28    3.5000+8          0.065300 4.8000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  3
+ 1001 35081   3  28    4.0000+8          0.064200 3.5000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  3
+ 1001 35081   3  28    4.4000+8          0.062000 2.0000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  3
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0299
+#AUTHOR1    P.P.Strohal+
+#YEAR       1961
+#INSTITUTE  (1USACAR)
+#TITLE      EXCITATION FUNCTIONS OF (P,2 NUCLEON) REACTIONS
+#AUTHOR(S)  P.P.Strohal, A.A.Caretto
+#REF-CODE   (J,PR,121,1815,61)
+#REFERENCE  Jour. Physical Review
+#+          Vol.121, p.1815, 1961
+#DATASETS   15
+#
+#DATASET    C02990041
+#DATE       19881004
+#REACTION   35-BR-81(P,N+P)35-BR-80-M,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         28
+#PRODUCT    35-BR-80-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  28M  ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  28M   2.5000+8          0.034400 4.3000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  41
+ 1001 35081   3  28M   3.0000+8          0.035000 4.0000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  41
+ 1001 35081   3  28M   3.5000+8          0.034500 4.3000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  41
+ 1001 35081   3  28M   4.0000+8          0.034200 2.3000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  41
+ 1001 35081   3  28M   4.4000+8          0.033400 3.5000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  41
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0299
+#AUTHOR1    P.P.Strohal+
+#YEAR       1961
+#INSTITUTE  (1USACAR)
+#TITLE      EXCITATION FUNCTIONS OF (P,2 NUCLEON) REACTIONS
+#AUTHOR(S)  P.P.Strohal, A.A.Caretto
+#REF-CODE   (J,PR,121,1815,61)
+#REFERENCE  Jour. Physical Review
+#+          Vol.121, p.1815, 1961
+#DATASETS   15
+#
+#DATASET    C0299005
+#DATE       19881004
+#REACTION   35-BR-81(P,N+P)35-BR-80-G,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         28
+#PRODUCT    35-BR-80-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  28G  ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  28G   2.5000+8          0.031200 4.5000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  5
+ 1001 35081   3  28G   3.0000+8          0.031000 4.2000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  5
+ 1001 35081   3  28G   3.5000+8          0.030800 3.6000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  5
+ 1001 35081   3  28G   4.0000+8          0.030000 3.0000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  5
+ 1001 35081   3  28G   4.4000+8          0.028600 4.4000-3                                       P.P.STROHAL,ET.AL. (61)  C0299  5
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0282
+#AUTHOR1    N.T.Porile+
+#YEAR       1963
+#INSTITUTE  (1USABNL)
+#TITLE      NUCLEAR STRUCTURE EFFECTS IN HIGH-ENERGY (P,PN)
+#+          REACTIONS
+#AUTHOR(S)  N.T.Porile, S.Tanaka
+#REF-CODE   (J,PR,130,1541,63)
+#REFERENCE  Jour. Physical Review
+#+          Vol.130, p.1541, 1963
+#DATASETS   10
+#
+#DATASET    C0282008
+#DATE       19881004
+#REACTION   35-BR-81(P,N+P)35-BR-80-G,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         28
+#PRODUCT    35-BR-80-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  28G  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  28G   2.9000+9          0.027700 3.0000-3                                       N.T.PORILE,ET.AL. (63)   C0282  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0282
+#AUTHOR1    N.T.Porile+
+#YEAR       1963
+#INSTITUTE  (1USABNL)
+#TITLE      NUCLEAR STRUCTURE EFFECTS IN HIGH-ENERGY (P,PN)
+#+          REACTIONS
+#AUTHOR(S)  N.T.Porile, S.Tanaka
+#REF-CODE   (J,PR,130,1541,63)
+#REFERENCE  Jour. Physical Review
+#+          Vol.130, p.1541, 1963
+#DATASETS   10
+#
+#DATASET    C0282009
+#DATE       19881004
+#REACTION   35-BR-81(P,N+P)35-BR-80-M,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         28
+#PRODUCT    35-BR-80-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3  28M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3  28M   2.9000+9          0.031500 3.4000-3                                       N.T.PORILE,ET.AL. (63)   C0282  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0171
+#AUTHOR1    M.Diksic+
+#YEAR       1979
+#INSTITUTE  (1CANMCG)
+#TITLE      79Br and 81Br(p,xn) and (p,pxn) excitation functions
+#+          in the energy range 10-85 MeV
+#AUTHOR(S)  M.Diksic, J.-L.Galinier, H.Marshall,
+#+          L.Yaffe
+#REF-CODE   (J,PR/C,19,1753,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.19, p.1753, 1979
+#DATASETS   12
+#
+#DATASET    B0171004
+#DATE       20180505
+#REACTION   35-BR-81(P,5N)36-KR-77,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         152
+#PRODUCT    36-KR-77
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3 152   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3 152    4.5000+7 2000000. 3.5000-3 1.1000-3                                       M.Diksic,ET.AL. (79)     B0171  4
+ 1001 35081   3 152    5.5000+7 2000000. 0.028000 4.0000-3                                       M.Diksic,ET.AL. (79)     B0171  4
+ 1001 35081   3 152    6.0000+7 2000000. 0.041000 6.0000-3                                       M.Diksic,ET.AL. (79)     B0171  4
+ 1001 35081   3 152    6.5000+7 2000000. 0.032000 4.0000-3                                       M.Diksic,ET.AL. (79)     B0171  4
+ 1001 35081   3 152    7.5000+7 2000000. 0.033000 4.0000-3                                       M.Diksic,ET.AL. (79)     B0171  4
+ 1001 35081   3 152    8.5000+7 2000000. 0.019000 2.0000-3                                       M.Diksic,ET.AL. (79)     B0171  4
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0171
+#AUTHOR1    M.Diksic+
+#YEAR       1979
+#INSTITUTE  (1CANMCG)
+#TITLE      79Br and 81Br(p,xn) and (p,pxn) excitation functions
+#+          in the energy range 10-85 MeV
+#AUTHOR(S)  M.Diksic, J.-L.Galinier, H.Marshall,
+#+          L.Yaffe
+#REF-CODE   (J,PR/C,19,1753,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.19, p.1753, 1979
+#DATASETS   12
+#
+#DATASET    B0171005
+#DATE       20180505
+#REACTION   35-BR-81(P,6N)36-KR-76,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         153
+#PRODUCT    36-KR-76
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   3 153   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   3 153    6.5000+7 2000000. 4.7000-4 3.0000-4                                       M.Diksic,ET.AL. (79)     B0171  5
+ 1001 35081   3 153    7.5000+7 2000000. 6.0000-3 2.1000-3                                       M.Diksic,ET.AL. (79)     B0171  5
+ 1001 35081   3 153    8.5000+7 2000000. 7.5000-3 1.5000-3                                       M.Diksic,ET.AL. (79)     B0171  5
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0035
+#AUTHOR1    J.W.Meadows+
+#YEAR       1956
+#INSTITUTE  (1USAHRV)
+#TITLE      Excitation functions and Yield Ratios for the Isomeric
+#+          Pairs Br80,80m, Co58,58m, and Sc44,44m Formed in
+#+          (p,pn) Reactions
+#AUTHOR(S)  J.W.Meadows, R.M.Diamond, R.A.Sharp
+#REF-CODE   (J,PR,102,190,1956)
+#REFERENCE  Jour. Physical Review
+#+          Vol.102, p.190, 1956
+#DATASETS   6
+#
+#DATASET    P0035007
+#DATE       20160802
+#REACTION   35-BR-81(P,X)35-BR-80-M,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-80-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39000M  ]
+#DATA       36
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39000M   150000.0          2.2000-3 4.3335-4           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   8500000.          2.6000-3 5.1214-4           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   1.6100+7          0.030000 5.9093-3           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   1.8400+7          0.044800 8.8246-3           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   1.9300+7          0.059700 0.011760           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   2.3500+7          0.139000 0.027380           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   2.6000+7          0.170000 0.033486           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   2.7100+7          0.173000 0.034077           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   3.1500+7          0.201000 0.039592           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   3.2400+7          0.170000 0.033486           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   3.2800+7          0.166000 0.032698           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   3.5300+7          0.170000 0.033486           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   4.0600+7          0.165000 0.032501           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   4.0700+7          0.146000 0.028759           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   4.4000+7          0.156000 0.030728           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   4.4600+7          0.144000 0.028365           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   5.1600+7          0.141000 0.027774           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   5.2000+7          0.137000 0.026986           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   5.7000+7          0.140000 0.027577           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   6.0000+7          0.150000 0.029547           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   6.2300+7          0.153000 0.030138           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   6.3900+7          0.148000 0.029153           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   6.7000+7          0.131000 0.025804           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   7.0000+7          0.134000 0.026395           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   7.0000+7          0.142000 0.027971           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   7.0000+7          0.157000 0.030925           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   7.1100+7          0.161000 0.031713           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   7.3100+7          0.147000 0.028956           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   7.7900+7          0.151000 0.029744           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   8.3000+7          0.127000 0.025016           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   8.5000+7          0.141000 0.027774           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   8.8000+7          0.115000 0.022652           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   9.0600+7          0.124000 0.024425           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   9.5100+7          0.112000 0.022061           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   9.6200+7          0.129000 0.025410           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+ 1001 35081   39000M   1.0000+8          0.113000 0.022258           35080.7                     J.W.Meadows,ET.AL. (56)  P0035  7
+#/DATA      36
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0035
+#AUTHOR1    J.W.Meadows+
+#YEAR       1956
+#INSTITUTE  (1USAHRV)
+#TITLE      Excitation functions and Yield Ratios for the Isomeric
+#+          Pairs Br80,80m, Co58,58m, and Sc44,44m Formed in
+#+          (p,pn) Reactions
+#AUTHOR(S)  J.W.Meadows, R.M.Diamond, R.A.Sharp
+#REF-CODE   (J,PR,102,190,1956)
+#REFERENCE  Jour. Physical Review
+#+          Vol.102, p.190, 1956
+#DATASETS   6
+#
+#DATASET    P0035008
+#DATE       20160802
+#REACTION   35-BR-81(P,X)35-BR-80-G,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-80-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39000G  ]
+#DATA       37
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39000G   1.0000+7          3.6000-3 7.0912-4           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   1.2500+7          0.010200 2.0092-3           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   1.5000+7          0.016200 3.1910-3           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   1.7500+7          0.027000 5.3184-3           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   2.0000+7          0.041600 8.1943-3           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   2.2400+7          0.064800 0.012764           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   2.5000+7          0.078400 0.015443           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   2.7500+7          0.084600 0.016664           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   3.0000+7          0.087200 0.017176           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   3.2500+7          0.086800 0.017098           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   3.5000+7          0.085800 0.016901           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   3.7500+7          0.085000 0.016743           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   4.0000+7          0.084000 0.016546           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   4.2400+7          0.083400 0.016428           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   4.5000+7          0.082600 0.016270           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   4.7500+7          0.081800 0.016113           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   5.0000+7          0.082400 0.016231           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   5.2500+7          0.082400 0.016231           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   5.5000+7          0.082400 0.016231           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   5.7500+7          0.082600 0.016270           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   5.9900+7          0.083000 0.016349           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   6.2400+7          0.082800 0.016310           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   6.5000+7          0.083000 0.016349           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   6.7500+7          0.083600 0.016467           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   7.0000+7          0.083600 0.016467           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   7.2500+7          0.083200 0.016388           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   7.4900+7          0.082600 0.016270           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   7.7500+7          0.082600 0.016270           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   7.9900+7          0.082000 0.016152           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   8.2500+7          0.081200 0.015995           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   8.4900+7          0.079800 0.015719           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   8.7500+7          0.078600 0.015482           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   9.0000+7          0.077400 0.015246           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   9.2500+7          0.075800 0.014931           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   9.4900+7          0.074600 0.014694           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   9.7500+7          0.073000 0.014379           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+ 1001 35081   39000G   1.0000+8          0.070800 0.013946           35080.0                     J.W.Meadows,ET.AL. (56)  P0035  8
+#/DATA      37
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0171
+#AUTHOR1    M.Diksic+
+#YEAR       1979
+#INSTITUTE  (1CANMCG)
+#TITLE      79Br and 81Br(p,xn) and (p,pxn) excitation functions
+#+          in the energy range 10-85 MeV
+#AUTHOR(S)  M.Diksic, J.-L.Galinier, H.Marshall,
+#+          L.Yaffe
+#REF-CODE   (J,PR/C,19,1753,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.19, p.1753, 1979
+#DATASETS   12
+#
+#DATASET    B0171002
+#DATE       20180505
+#REACTION   35-BR-81(P,X)35-BR-80-M,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-80-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39000M  ]
+#DATA       11
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39000M   1.5000+7 2000000. 0.023000 3.0000-3           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   2.0000+7 2000000. 0.060000 7.0000-3           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   2.5000+7 2000000. 0.110000 0.011000           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   3.0000+7 2000000. 0.130000 0.013000           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   3.5000+7 2000000. 0.120000 0.013000           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   4.0000+7 2000000. 0.110000 0.011000           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   4.5000+7 2000000. 0.110000 0.012000           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   5.0000+7 2000000. 0.100000 7.0000-3           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   6.5000+7 2000000. 0.096000 7.0000-3           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   7.5000+7 2000000. 0.085000 6.0000-3           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+ 1001 35081   39000M   8.5000+7 2000000. 0.077000 5.0000-3           35080.7                     M.Diksic,ET.AL. (79)     B0171  2
+#/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510156
+#DATE       20160202
+#REACTION   35-BR-81(P,X)35-BR-80-M,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-80-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39000M  ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39000M   1.8300+7          0.078000 7.8000-3           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   1.9300+7          0.089000 8.9000-3           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.0300+7          0.095000 9.5000-3           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.1400+7          0.104000 0.010400           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.2200+7          0.124000 0.012400           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.3100+7          0.133000 0.013300           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.4000+7          0.148000 0.014800           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.4800+7          0.165000 0.016500           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.5700+7          0.171000 0.017100           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.6600+7          0.167000 0.016700           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.7600+7          0.170000 0.017000           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.8500+7          0.165000 0.016500           35080.7                     V.N.Levkovski (91)       A0510156
+ 1001 35081   39000M   2.9500+7          0.158000 0.015800           35080.7                     V.N.Levkovski (91)       A0510156
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510157
+#DATE       20160202
+#REACTION   35-BR-81(P,X)35-BR-80-G,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-80-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39000G  ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39000G   1.8300+7          0.054000 5.4000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   1.9300+7          0.057000 5.7000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.0300+7          0.082000 8.2000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.1400+7          0.087000 8.7000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.2200+7          0.091000 9.1000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.3100+7          0.097000 9.7000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.4000+7          0.090000 9.0000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.4800+7          0.094000 9.4000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.5700+7          0.091000 9.1000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.6600+7          0.085000 8.5000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.7600+7          0.087000 8.7000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.8500+7          0.088000 8.8000-3           35080.0                     V.N.Levkovski (91)       A0510157
+ 1001 35081   39000G   2.9500+7          0.088000 8.8000-3           35080.0                     V.N.Levkovski (91)       A0510157
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0171
+#AUTHOR1    M.Diksic+
+#YEAR       1979
+#INSTITUTE  (1CANMCG)
+#TITLE      79Br and 81Br(p,xn) and (p,pxn) excitation functions
+#+          in the energy range 10-85 MeV
+#AUTHOR(S)  M.Diksic, J.-L.Galinier, H.Marshall,
+#+          L.Yaffe
+#REF-CODE   (J,PR/C,19,1753,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.19, p.1753, 1979
+#DATASETS   12
+#
+#DATASET    B0171007
+#DATE       20180505
+#REACTION   35-BR-81(P,X)35-BR-78,,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9000
+#PRODUCT    35-BR-78
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39000   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39000    3.5000+7 2000000. 6.1000-3 1.2000-3           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+ 1001 35081   39000    4.0000+7 2000000. 0.044000 5.0000-3           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+ 1001 35081   39000    4.5000+7 2000000. 0.160000 0.017000           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+ 1001 35081   39000    5.5000+7 2000000. 0.260000 0.026000           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+ 1001 35081   39000    6.5000+7 2000000. 0.210000 0.018000           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+ 1001 35081   39000    7.5000+7 2000000. 0.140000 0.016000           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+ 1001 35081   39000    8.5000+7 2000000. 0.120000 0.010000           35078.9                     M.Diksic,ET.AL. (79)     B0171  7
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0171
+#AUTHOR1    M.Diksic+
+#YEAR       1979
+#INSTITUTE  (1CANMCG)
+#TITLE      79Br and 81Br(p,xn) and (p,pxn) excitation functions
+#+          in the energy range 10-85 MeV
+#AUTHOR(S)  M.Diksic, J.-L.Galinier, H.Marshall,
+#+          L.Yaffe
+#REF-CODE   (J,PR/C,19,1753,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.19, p.1753, 1979
+#DATASETS   12
+#
+#DATASET    B0171010
+#DATE       20180505
+#REACTION   35-BR-81(P,X)35-BR-75,CUM,SIG
+#PROJ       1001
+#TARG       35081
+#MF         3
+#MT         9001
+#PRODUCT    35-BR-75
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 35081   39001   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 35081   39001    5.5000+7 2000000. 1.0000-4 2.0000-4           35075.9                     M.Diksic,ET.AL. (79)     B0171 10
+ 1001 35081   39001    6.5000+7 2000000. 3.0000-4 2.0000-4           35075.9                     M.Diksic,ET.AL. (79)     B0171 10
+ 1001 35081   39001    7.5000+7 2000000. 5.3000-3 1.1000-3           35075.9                     M.Diksic,ET.AL. (79)     B0171 10
+ 1001 35081   39001    8.5000+7 2000000. 0.020000 3.0000-3           35075.9                     M.Diksic,ET.AL. (79)     B0171 10
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#

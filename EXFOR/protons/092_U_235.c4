@@ -1,0 +1,2247 @@
+#ENTRY      A0854
+#AUTHOR1    O.I.Batenkov+
+#YEAR       2007
+#INSTITUTE  (4RUSRI)
+#TITLE      Comparison of prompt-fission neutron multiplicities and
+#+          energy spectra for intermediate energy proton-and
+#+          neutron-induced fission.
+#AUTHOR(S)  O.I.Batenkov, G.Boikov, V.Eismont,
+#+          M.Majorov, S.Soloviev, J.Blomgren,
+#+          W.Loveland
+#REF-CODE   (C,2007NICE,2,1085,2007)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci. and Technology, Nice 2007
+#+          Vol.2, p.1085, 2007
+#DATASETS   4
+#
+#DATASET    A0854004
+#DATE       20100604
+#REACTION   92-U-235(P,F),,NU
+#PROJ       1001
+#TARG       92235
+#MF         1
+#MT         452
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   1 452   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   1 452    5.0000+7          6.860000 0.060000                                       O.I.Batenkov,ET.AL. (07) A0854  4
+ 1001 92235   1 452    9.6000+7          8.570000 0.080000                                       O.I.Batenkov,ET.AL. (07) A0854  4
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194006
+#DATE       20100404
+#REACTION   92-U-235(P,NON),,SIG,,,DERIV
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3   3   ]
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3   3    2.2800+7          1.440000 0.100000                                       C.B.FULMER (59)          O0194  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2399
+#AUTHOR1    E.Gromova+
+#YEAR       2014
+#INSTITUTE  (4RUSRI)
+#TITLE      Study of proton and 3He induced reactions on 235U at
+#+          low energies
+#AUTHOR(S)  E.Gromova, V.Jakovlev, J.Aaltonen,
+#+          K.Helariutta, S.Salminen-Paatero, J.Bergman,
+#+          S.-J.Heselius, H.Penttila, J.Rissanen,
+#+          A.Saastamoinen
+#REF-CODE   (J,NDS,119,237,2014)
+#REFERENCE  Jour. Nuclear Data Sheets
+#+          Vol.119, p.237, 2014
+#DATASETS   10
+#
+#DATASET    O2399003
+#DATE       20190106
+#REACTION   92-U-235(P,N)93-NP-235,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         4
+#PRODUCT    93-NP-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3   4   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3   4    6540000. 140000.0 6.4000-5 1.1000-5                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    6540000. 140000.0 6.4000-5 1.0000-5                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    8290000. 120000.0 3.7000-4 7.0000-5                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    8290000. 120000.0 3.6000-4 6.0000-5                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    9000000. 300000.0 1.1100-3 6.0000-5                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    9820000. 100000.0 1.0700-3 1.3000-4                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    9820000. 100000.0 1.0300-3 1.1000-4                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    1.0400+7 200000.0 1.9200-3 9.0000-5                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    1.2900+7 200000.0 5.0000-3 3.0000-4                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    1.4030+7 140000.0 5.7000-3 3.0000-4                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    1.5080+7 120000.0 5.6000-3 3.0000-4                                       E.Gromova,ET.AL. (14)    O2399  3
+ 1001 92235   3   4    1.6080+7 110000.0 5.8000-3 3.0000-4                                       E.Gromova,ET.AL. (14)    O2399  3
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0230
+#AUTHOR1    Y.Y.Chu+
+#YEAR       1983
+#INSTITUTE  (1USABNL)
+#TITLE      COMPARISON OF THE (P,XN) CROSS SECTIONS FROM U-238,
+#+          U-235 AND TH-232 TARGETS IRRADIATED WITH 200 MEV
+#+          PROTONS.
+#AUTHOR(S)  Y.Y.Chu, M.L.Zhou
+#REF-CODE   (J,IRE,30,(2),1153,83)
+#REFERENCE  Jour. IEEE Transactions on Nuclear Science
+#+          Vol.30, Issue.2, p.1153, 1983
+#DATASETS   16
+#
+#DATASET    A0230004A
+#DATE       19861205
+#REACTION   92-U-235(P,N)93-NP-235,,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         4
+#PRODUCT    93-NP-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3   4   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3   4    2.0000+8          4.8000-4 5.0000-5                                       Y.Y.CHU,ET.AL. (83)      A0230  4A
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2399
+#AUTHOR1    E.Gromova+
+#YEAR       2014
+#INSTITUTE  (4RUSRI)
+#TITLE      Study of proton and 3He induced reactions on 235U at
+#+          low energies
+#AUTHOR(S)  E.Gromova, V.Jakovlev, J.Aaltonen,
+#+          K.Helariutta, S.Salminen-Paatero, J.Bergman,
+#+          S.-J.Heselius, H.Penttila, J.Rissanen,
+#+          A.Saastamoinen
+#REF-CODE   (J,NDS,119,237,2014)
+#REFERENCE  Jour. Nuclear Data Sheets
+#+          Vol.119, p.237, 2014
+#DATASETS   10
+#
+#DATASET    O2399005
+#DATE       20190106
+#REACTION   92-U-235(P,2N)93-NP-234,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         16
+#PRODUCT    93-NP-234
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  16   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  16    9000000. 300000.0 1.8800-4 9.0000-6                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    9820000. 100000.0 4.3000-4 5.0000-5                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    9820000. 100000.0 3.9000-4 2.0000-5                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    1.0400+7 200000.0 3.0600-3 1.3000-4                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    1.1700+7 200000.0 0.015400 7.0000-4                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    1.2900+7 200000.0 0.031100 8.0000-4                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    1.4030+7 140000.0 0.046000 2.0000-3                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    1.5080+7 120000.0 0.042000 2.0000-3                                       E.Gromova,ET.AL. (14)    O2399  5
+ 1001 92235   3  16    1.6080+7 110000.0 0.030100 9.0000-4                                       E.Gromova,ET.AL. (14)    O2399  5
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0230
+#AUTHOR1    Y.Y.Chu+
+#YEAR       1983
+#INSTITUTE  (1USABNL)
+#TITLE      COMPARISON OF THE (P,XN) CROSS SECTIONS FROM U-238,
+#+          U-235 AND TH-232 TARGETS IRRADIATED WITH 200 MEV
+#+          PROTONS.
+#AUTHOR(S)  Y.Y.Chu, M.L.Zhou
+#REF-CODE   (J,IRE,30,(2),1153,83)
+#REFERENCE  Jour. IEEE Transactions on Nuclear Science
+#+          Vol.30, Issue.2, p.1153, 1983
+#DATASETS   16
+#
+#DATASET    A0230004B
+#DATE       19861205
+#REACTION   92-U-235(P,2N)93-NP-234,,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         16
+#PRODUCT    93-NP-234
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  16    2.0000+8          6.8000-4 7.0000-5                                       Y.Y.CHU,ET.AL. (83)      A0230  4B
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0230
+#AUTHOR1    Y.Y.Chu+
+#YEAR       1983
+#INSTITUTE  (1USABNL)
+#TITLE      COMPARISON OF THE (P,XN) CROSS SECTIONS FROM U-238,
+#+          U-235 AND TH-232 TARGETS IRRADIATED WITH 200 MEV
+#+          PROTONS.
+#AUTHOR(S)  Y.Y.Chu, M.L.Zhou
+#REF-CODE   (J,IRE,30,(2),1153,83)
+#REFERENCE  Jour. IEEE Transactions on Nuclear Science
+#+          Vol.30, Issue.2, p.1153, 1983
+#DATASETS   16
+#
+#DATASET    A0230004C
+#DATE       19861205
+#REACTION   92-U-235(P,3N)93-NP-233,,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         17
+#PRODUCT    93-NP-233
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  17   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  17    2.0000+8          4.7000-4 5.0000-5                                       Y.Y.CHU,ET.AL. (83)      A0230  4C
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0241
+#AUTHOR1    N.N.Ajitanand+
+#YEAR       1987
+#INSTITUTE  (3INDTRM)
+#TITLE      Anomalous behavior of the proton-induced fission
+#+          cross sections of 235U and 238U at extreme sub-barrier
+#+          energies
+#AUTHOR(S)  N.N.Ajitanand, K.N.Iyengar, R.P.Anand,
+#+          D.M.Nadkarni, A.K.Mohanty
+#REF-CODE   (J,PRL,58,1520,1987)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.58, p.1520, 1987
+#DATASETS   2
+#
+#DATASET    C0241002
+#DATE       19980304
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18 A  1000000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+ 1001 92235   3  18 A  1500000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+ 1001 92235   3  18 A  2000000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+ 1001 92235   3  18 A  2500000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+ 1001 92235   3  18 A  3000000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+ 1001 92235   3  18 A  3500000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+ 1001 92235   3  18 A  4000000.          0.000000                                                N.N.AJITANAND,ET.AL. (87)C0241  2
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      T0296
+#AUTHOR1    J.R.Boyce+
+#YEAR       1974
+#INSTITUTE  (1USADKE)
+#TITLE      Absolute cross sections for proton-induced fission of
+#+          the uranium isotopes.
+#AUTHOR(S)  J.R.Boyce, T.D.Hayward, R.Bass,
+#+          H.W.Newson, E.G.Bilpuch, F.O.Purser,
+#+          H.W.Schmitt
+#REF-CODE   (J,PR/C,10,231,197407)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.10, p.231, 1974
+#DATASETS   7
+#
+#DATASET    T0296008
+#DATE       20040701
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       100
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18 D  5250000.          7.3827-6 5.7000-7                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  5500000.          1.6169-5 9.5000-7                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  5750000.          3.4537-5 1.3000-6                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  6000000.          6.8804-5 2.9000-6                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  6250000.          1.2604-4 4.0000-6                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  6500000.          2.3946-4 7.8000-6                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  6750000.          4.2617-4 8.5000-6                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  7000000.          7.7389-4 1.5000-5                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  7250000.          1.3070-3 2.6000-5                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  7500000.          2.1860-3 4.4000-5                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  7750000.          3.4682-3 6.9000-5                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  8000000.          5.3983-3 1.1000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  8250000.          8.0549-3 1.6000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  8500000.          0.011763 2.4000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  8750000.          0.016647 3.3000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  9000000.          0.022499 4.5000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  9250000.          0.030414 6.1000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  9500000.          0.039869 8.0000-4                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  9750000.          0.051246 1.0000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.0000+7          0.063397 1.3000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.0250+7          0.078159 1.6000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.0530+7          0.096141 1.9000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.0750+7          0.113280 2.3000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.1000+7          0.133630 2.7000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.1250+7          0.152630 3.1000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.1500+7          0.178140 3.6000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.1750+7          0.202400 4.0000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.2000+7          0.227570 4.6000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.2250+7          0.254760 5.1000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.2500+7          0.284580 5.7000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.2750+7          0.315470 6.3000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.3000+7          0.345350 6.9000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.3250+7          0.374850 7.5000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.3500+7          0.405170 8.1000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.3750+7          0.439280 8.8000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.4000+7          0.471490 9.4000-3                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.4250+7          0.507950 0.010000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.4500+7          0.545310 0.011000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.4750+7          0.572050 0.011000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.5000+7          0.612540 0.012000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.5250+7          0.636340 0.013000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.5500+7          0.687600 0.014000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.5750+7          0.713880 0.014000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.6000+7          0.752120 0.015000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.6250+7          0.770070 0.015000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.6500+7          0.810700 0.016000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.6750+7          0.865640 0.017000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.7000+7          0.888000 0.018000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.7250+7          0.933330 0.019000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.7500+7          0.950600 0.019000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.7750+7          0.987230 0.020000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.8000+7          1.002600 0.020000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.8250+7          1.041000 0.021000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.8500+7          1.047200 0.021000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.8750+7          1.083600 0.022000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.9000+7          1.088700 0.022000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.9250+7          1.125000 0.022000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.9500+7          1.124900 0.022000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  1.9750+7          1.156700 0.023000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.0000+7          1.164300 0.023000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.0250+7          1.195900 0.024000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.0500+7          1.205700 0.024000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.0750+7          1.232900 0.025000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.1000+7          1.250600 0.025000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.1250+7          1.270200 0.025000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.1500+7          1.283500 0.026000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.1750+7          1.301100 0.026000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.2000+7          1.307900 0.026000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.2250+7          1.329400 0.027000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.2500+7          1.345600 0.027000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.2750+7          1.362000 0.027000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.3000+7          1.380900 0.026000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.3250+7          1.391000 0.028000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.3500+7          1.401700 0.028000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.3750+7          1.425800 0.029000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.4000+7          1.440200 0.029000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.4250+7          1.454900 0.029000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.4500+7          1.459300 0.029000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.4750+7          1.464300 0.029000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.5000+7          1.491000 0.030000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.5250+7          1.506600 0.030000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.5500+7          1.520900 0.030000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.5750+7          1.524900 0.030000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.6000+7          1.548600 0.031000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.6250+7          1.542300 0.031000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.6500+7          1.550800 0.031000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.6750+7          1.555900 0.031000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.7000+7          1.585400 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.7250+7          1.571200 0.031000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.7500+7          1.587400 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.7750+7          1.606500 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.8000+7          1.627300 0.033000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.8250+7          1.626000 0.033000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.8500+7          1.637400 0.033000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.8750+7          1.641500 0.033000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.9000+7          1.586900 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.9250+7          1.590300 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.9500+7          1.593600 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  2.9750+7          1.608000 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+ 1001 92235   3  18 D  3.0000+7          1.602400 0.032000                                       J.R.Boyce,ET.AL. (74)    T0296  8
+#/DATA      100
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E1411
+#AUTHOR1    T.Ohtsuki+
+#YEAR       1991
+#INSTITUTE  (2JPNTMU)
+#TITLE      Mass yield curves in low-energy proton-induced fission
+#+          of 233U, 235U, 236U, 237Np, 239Pu, 242Pu, 244Pu,
+#+          241Am, and 243Am
+#AUTHOR(S)  T.Ohtsuki, Y.Nagame, K.Tsukada,
+#+          N.Shinohara, S.Baba, K.Hashimoto,
+#+          I.Nishinaka, K.Sueki, Y.Hatsukawa,
+#+          K.Hata, T.Sekine, I.Kanno,
+#+          H.Ikezoe, H.Nakahara
+#REF-CODE   (J,PR/C,44,(4),1405,199110)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.44, Issue.4, p.1405, 1991
+#DATASETS   9
+#
+#DATASET    E1411003
+#DATE       20061102
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    9000000.          4.6000-3 1.5000-3                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.0200+7          0.039200 0.010000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.1400+7          0.109900 0.035000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.2000+7          0.157600 0.040000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.2500+7          0.256000 0.054000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.3600+7          0.360100 0.065000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.4600+7          0.532000 0.090000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.5600+7          0.762900 0.080500                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+ 1001 92235   3  18    1.8000+7          1.199000 0.110000                                       T.Ohtsuki,ET.AL. (91)    E1411  3
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2019
+#AUTHOR1    G.B.Saha+
+#YEAR       1971
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion in the fission of 235U by
+#+          protons of energy 20-85 MeV
+#AUTHOR(S)  G.B.Saha, I.Tomita, L.Yaffe
+#REF-CODE   (J,CJC,49,2205,1971)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.49, p.2205, 1971
+#DATASETS   4
+#
+#DATASET    C2019006
+#DATE       20130804
+#REACTION   92-U-235(P,F)55-CS-134-M,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    55-CS-134-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18M   2.0000+7 2000000. 1.9000-3 2.0000-4           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   3.0000+7 2000000. 4.2000-3 5.0000-4           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   4.0000+7 2000000. 6.9000-3 8.0000-4           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   5.0000+7 2000000. 0.011000 1.0000-3           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   6.0000+7 2000000. 9.1000-3 1.1000-3           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   7.0000+7 2000000. 8.5000-3 1.0000-3           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   7.7000+7 2000000. 8.2000-3 1.0000-3           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+ 1001 92235   3  18M   8.5000+7 2000000. 7.7000-3 9.0000-4           55134.7                     G.B.Saha,ET.AL. (71)     C2019  6
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2019
+#AUTHOR1    G.B.Saha+
+#YEAR       1971
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion in the fission of 235U by
+#+          protons of energy 20-85 MeV
+#AUTHOR(S)  G.B.Saha, I.Tomita, L.Yaffe
+#REF-CODE   (J,CJC,49,2205,1971)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.49, p.2205, 1971
+#DATASETS   4
+#
+#DATASET    C2019007
+#DATE       20130804
+#REACTION   92-U-235(P,F)55-CS-134,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    55-CS-134
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7 2000000. 3.0000-3                    55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    3.0000+7 2000000. 6.1000-3 1.2000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    4.0000+7 2000000. 9.8000-3 2.0000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    5.0000+7 2000000. 0.016000 3.0000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    6.0000+7 2000000. 0.012000 2.0000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    7.0000+7 2000000. 0.012000 2.0000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    7.7000+7 2000000. 0.011000 2.0000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+ 1001 92235   3  18    8.5000+7 2000000. 9.5000-3 1.9000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0640
+#AUTHOR1    G.H.Mccormick+
+#YEAR       1954
+#INSTITUTE  (1USAORL)
+#TITLE      Fission and Total Reaction Cross Section For 22-MeV
+#+          Protons on Th-232, U-235,and U-238.
+#AUTHOR(S)  G.H.Mccormick, B.L.Cohen
+#REF-CODE   (J,PR,96,722,1954)
+#REFERENCE  Jour. Physical Review
+#+          Vol.96, p.722, 1954
+#DATASETS   3
+#
+#DATASET    O06400042
+#DATE       20001204
+#REACTION   92-U-235(P,F),,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.1500+7 350000.0 1.310000                                                G.H.MCCORMICK,ET.AL. (54)O0640  42
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194003
+#DATE       19950305
+#REACTION   92-U-235(P,F),,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.2800+7          1.280000 0.060000                                       C.B.FULMER (59)          O0194  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2019
+#AUTHOR1    G.B.Saha+
+#YEAR       1971
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion in the fission of 235U by
+#+          protons of energy 20-85 MeV
+#AUTHOR(S)  G.B.Saha, I.Tomita, L.Yaffe
+#REF-CODE   (J,CJC,49,2205,1971)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.49, p.2205, 1971
+#DATASETS   4
+#
+#DATASET    C2019005
+#DATE       20130804
+#REACTION   92-U-235(P,F)55-CS-132,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    55-CS-132
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    3.0000+7 2000000. 4.0000-4 1.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+ 1001 92235   3  18    4.0000+7 2000000. 1.0000-3 2.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+ 1001 92235   3  18    5.0000+7 2000000. 3.1000-3 4.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+ 1001 92235   3  18    6.0000+7 2000000. 4.7000-3 4.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+ 1001 92235   3  18    7.0000+7 2000000. 5.0000-3 4.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+ 1001 92235   3  18    7.7000+7 2000000. 5.5000-3 4.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+ 1001 92235   3  18    8.5000+7 2000000. 5.0000-3 4.0000-4           55132.9                     G.B.Saha,ET.AL. (71)     C2019  5
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0721
+#AUTHOR1    G.B.Saha+
+#YEAR       1969
+#INSTITUTE  (1CANMCG)
+#TITLE      Isomer ratios of Cs-134 formed in the fission of U-233
+#+          and U-235 by protons of energies 20-85 MeV.
+#AUTHOR(S)  G.B.Saha, I.Tomita, L.Yaffe
+#REF-CODE   (J,JIN,31,3731,1969)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.31, p.3731, 1969
+#DATASETS   4
+#
+#DATASET    O0721002
+#DATE       20001204
+#REACTION   92-U-235(P,F)55-CS-134-M,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    55-CS-134-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18M  ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18M   3.0000+7          4.2000-3 5.0000-4           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+ 1001 92235   3  18M   4.0000+7          6.9000-3 8.0000-4           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+ 1001 92235   3  18M   5.0000+7          0.011300 1.4000-3           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+ 1001 92235   3  18M   6.0000+7          9.1000-3 1.1000-3           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+ 1001 92235   3  18M   7.0000+7          8.5000-3 1.0000-3           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+ 1001 92235   3  18M   7.7000+7          8.2000-3 1.0000-3           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+ 1001 92235   3  18M   8.5000+7          7.7000-3 9.0000-4           55134.7                     G.B.Saha,ET.AL. (69)     O0721  2
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0721
+#AUTHOR1    G.B.Saha+
+#YEAR       1969
+#INSTITUTE  (1CANMCG)
+#TITLE      Isomer ratios of Cs-134 formed in the fission of U-233
+#+          and U-235 by protons of energies 20-85 MeV.
+#AUTHOR(S)  G.B.Saha, I.Tomita, L.Yaffe
+#REF-CODE   (J,JIN,31,3731,1969)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.31, p.3731, 1969
+#DATASETS   4
+#
+#DATASET    O0721003
+#DATE       20140102
+#REACTION   92-U-235(P,F)55-CS-134,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    55-CS-134
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    3.0000+7          6.1000-3 1.2000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+ 1001 92235   3  18    4.0000+7          9.8000-3 2.0000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+ 1001 92235   3  18    5.0000+7          0.015700 3.1000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+ 1001 92235   3  18    6.0000+7          0.012300 2.5000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+ 1001 92235   3  18    7.0000+7          0.011800 2.4000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+ 1001 92235   3  18    7.7000+7          0.011300 2.3000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+ 1001 92235   3  18    8.5000+7          9.5000-3 1.9000-3           55134.9                     G.B.Saha,ET.AL. (69)     O0721  3
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2019
+#AUTHOR1    G.B.Saha+
+#YEAR       1971
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion in the fission of 235U by
+#+          protons of energy 20-85 MeV
+#AUTHOR(S)  G.B.Saha, I.Tomita, L.Yaffe
+#REF-CODE   (J,CJC,49,2205,1971)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.49, p.2205, 1971
+#DATASETS   4
+#
+#DATASET    C2019003
+#DATE       20130804
+#REACTION   92-U-235(P,F)55-CS-130,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    55-CS-130
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    6.0000+7 2000000. 1.3000-3 4.0000-4           55130.9                     G.B.Saha,ET.AL. (71)     C2019  3
+ 1001 92235   3  18    7.0000+7 2000000. 1.3000-3 3.0000-4           55130.9                     G.B.Saha,ET.AL. (71)     C2019  3
+ 1001 92235   3  18    7.7000+7 2000000. 1.6000-3 3.0000-4           55130.9                     G.B.Saha,ET.AL. (71)     C2019  3
+ 1001 92235   3  18    8.5000+7 2000000. 2.0000-3 4.0000-4           55130.9                     G.B.Saha,ET.AL. (71)     C2019  3
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0632
+#AUTHOR1    H.M.Steiner+
+#YEAR       1956
+#INSTITUTE  (1USABRK)
+#TITLE      Proton-Induced Fission Cross Sections For U-238, U-
+#+          235, Th-232, Bi-209, and Au-197 at 100 to 340 MeV
+#AUTHOR(S)  H.M.Steiner, J.A.Jungerman
+#REF-CODE   (J,PR,101,807,1956)
+#REFERENCE  Jour. Physical Review
+#+          Vol.101, p.807, 1956
+#DATASETS   5
+#
+#DATASET    O0632003
+#DATE       20000401
+#REACTION   92-U-235(P,F),,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       19
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    1.1400+8 1500000. 1.665000 0.165000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.3000+8 1500000. 1.200000 0.040000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.3200+8 1500000. 1.505000 0.040000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.5400+8 1500000. 1.505000 0.050000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.5800+8 1500000. 1.350000 0.050000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.7800+8 1500000. 1.350000 0.030000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.8200+8 1500000. 1.310000 0.045000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.9100+8 1500000. 1.335000 0.035000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.9300+8 1500000. 1.320000 0.045000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    1.9300+8 1500000. 1.230000 0.020000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.1600+8 1500000. 1.270000 0.030000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.3000+8 1500000. 1.300000 0.025000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.4200+8 1500000. 1.350000 0.020000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.5400+8 1500000. 1.326000 0.040000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.6100+8 1500000. 1.355000 0.025000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.8700+8 1500000. 1.300000 0.035000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    2.9000+8 1500000. 1.235000 0.025000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    3.0200+8 1500000. 1.340000 0.025000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+ 1001 92235   3  18    3.3600+8 1500000. 1.295000 0.015000                                       H.M.STEINER,ET.AL. (56)  O0632  3
+#/DATA      19
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0707
+#AUTHOR1    V.A.Kon`shin+
+#YEAR       1965
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Cross section for the fission of Ta-181, Re, Pt,
+#+          Au-197, Pb, Bi-209, Th-232, U-235 and U-238 by
+#+          150-660 MeV protons
+#AUTHOR(S)  V.A.Kon'shin, E.S.Matusevitch, V.I.Regushevskii
+#REF-CODE   (J,YF,2,682,1965)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.2, p.682, 1965
+#DATASETS   9
+#
+#DATASET    O0707003
+#DATE       20000404
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    1.5000+8 5000000. 1.850000 0.220000                                       V.A.Kon'shin,ET.AL. (65) O0707  3
+ 1001 92235   3  18    3.9000+8 5000000. 1.450000 0.150000                                       V.A.Kon'shin,ET.AL. (65) O0707  3
+ 1001 92235   3  18    4.8000+8 5000000. 1.340000 0.134000                                       V.A.Kon'shin,ET.AL. (65) O0707  3
+ 1001 92235   3  18    6.6000+8 5000000. 1.340000 0.134000                                       V.A.Kon'shin,ET.AL. (65) O0707  3
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1447
+#AUTHOR1    A.A.Kotov+
+#YEAR       2006
+#INSTITUTE  (4RUSLIN)
+#TITLE      Energy dependence of proton induced fission cross
+#+          sections for heavy nuclei in the energy range 200-1000
+#+          MeV.
+#AUTHOR(S)  A.A.Kotov, L.A.Vaishnene, V.G.Vovchenko,
+#+          Yu.A.Gavrikov, V.V.Poliakov, M.G.Tverskoy,
+#+          O.Ya.Fedorov, Yu.A.Chestnov, A.I.Shchetkovskiy,
+#+          A.V.Shvedchikov, A.Yu.Doroshenko, T.Fukahori
+#REF-CODE   (J,PR/C,74,034605,2006)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.74, p.034605, 2006
+#DATASETS   8
+#
+#DATASET    O1447005
+#DATE       20070602
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0700+8          1.464000 0.083000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    3.0200+8          1.562000 0.094000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    4.0400+8          1.626000 0.138000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    5.0500+8          1.592000 0.102000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    6.1200+8          1.610000 0.124000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    7.0200+8          1.620000 0.131000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    8.0200+8          1.571000 0.090000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    8.9900+8          1.592000 0.096000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+ 1001 92235   3  18    1.0000+9          1.591000 0.113000                                       A.A.Kotov,ET.AL. (06)    O1447  5
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0605
+#AUTHOR1    R.Brandt+
+#YEAR       1972
+#INSTITUTE  (2ZZZCER)
+#TITLE      The Study of Nuclear Fission Induced by High-Energy
+#+          Protons
+#AUTHOR(S)  R.Brandt, F.Carbonara, E.Cieslak,
+#+          H.Piekarz, J.Piekarz, J.Zakrzewski
+#REF-CODE   (J,RPA,7,243,1972)
+#REFERENCE  Jour. Revue de Physique Appliquee
+#+          Vol.7, p.243, 1972
+#DATASETS   9
+#
+#DATASET    O0605004
+#DATE       20001204
+#REACTION   92-U-235(P,F),,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    5.9000+8          1.600000 0.320000                                       R.BRANDT,ET.AL. (72)     O0605  4
+ 1001 92235   3  18    1.800+10          1.050000 0.200000                                       R.BRANDT,ET.AL. (72)     O0605  4
+ 1001 92235   3  18    2.300+10          0.850000 0.130000                                       R.BRANDT,ET.AL. (72)     O0605  4
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0029
+#AUTHOR1    B.A.Bochagov+
+#YEAR       1978
+#INSTITUTE  (4RUSRI)
+#TITLE      Measurement of fission cross-sections by
+#+          bombarding U-238, U-235, Th-232, Bi-209, Pb-206-Pb-208,
+#+          Au-197, Ta-181, Yb and Sm with 1 GeV protons
+#AUTHOR(S)  B.A.Bochagov, V.S.Bychenkov, V.D.Dmitriev,
+#+          S.P.Mal'cev, A.I.Obukhov, N.A.Perfilov,
+#+          V.A.Udod, O.E.Shigaev
+#REF-CODE   (J,YF,28,572,197808)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.28, p.572, 1978
+#DATASETS   11
+#
+#DATASET    A0029002
+#DATE       20040602
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18 A  1.0000+9          1.443000 0.068000                                       B.A.Bochagov,ET.AL. (78) A0029  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0688
+#AUTHOR1    E.S.Matusevich+
+#YEAR       1968
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Cross sections for fission of Bi-209, U-235, U-238,
+#+          Np-237 and Pu-239 by 1-9 GeV protons
+#AUTHOR(S)  E.S.Matusevich, V.I.Regushevskii
+#REF-CODE   (J,YF,7,1187,1968)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.7, p.1187, 1968
+#DATASETS   5
+#
+#DATASET    O0688004
+#DATE       20120601
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    1.0000+9          0.670000 0.080000                                       E.S.Matusevich, (68)     O0688  4
+ 1001 92235   3  18    2.0000+9          0.620000 0.070000                                       E.S.Matusevich, (68)     O0688  4
+ 1001 92235   3  18    5.0000+9          0.520000 0.060000                                       E.S.Matusevich, (68)     O0688  4
+ 1001 92235   3  18    9.0000+9          0.530000 0.060000                                       E.S.Matusevich, (68)     O0688  4
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1028
+#AUTHOR1    V.I.Yurevich+
+#YEAR       2002
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Cross sections for Bi-209, Th-232, U-235, U-238 and
+#+          Np-237 fission induced by intermediate energy protons
+#+          and deuterons
+#AUTHOR(S)  V.I.Yurevich, V.A.Nikolaev, R.M.Yakovlev,
+#+          A.N.Sosnin
+#REF-CODE   (J,YF,65,1417,2002)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.65, p.1417, 2002
+#DATASETS   5
+#
+#DATASET    O1028004
+#DATE       20120604
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    1.0000+9          1.282000 0.141000                                       V.I.Yurevich,ET.AL. (02) O1028  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0230
+#AUTHOR1    Y.Y.Chu+
+#YEAR       1983
+#INSTITUTE  (1USABNL)
+#TITLE      COMPARISON OF THE (P,XN) CROSS SECTIONS FROM U-238,
+#+          U-235 AND TH-232 TARGETS IRRADIATED WITH 200 MEV
+#+          PROTONS.
+#AUTHOR(S)  Y.Y.Chu, M.L.Zhou
+#REF-CODE   (J,IRE,30,(2),1153,83)
+#REFERENCE  Jour. IEEE Transactions on Nuclear Science
+#+          Vol.30, Issue.2, p.1153, 1983
+#DATASETS   16
+#
+#DATASET    A0230004D
+#DATE       19861205
+#REACTION   92-U-235(P,4N)93-NP-232,,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         37
+#PRODUCT    93-NP-232
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  37   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  37    2.0000+8          1.4000-4 1.5000-5                                       Y.Y.CHU,ET.AL. (83)      A0230  4D
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2399
+#AUTHOR1    E.Gromova+
+#YEAR       2014
+#INSTITUTE  (4RUSRI)
+#TITLE      Study of proton and 3He induced reactions on 235U at
+#+          low energies
+#AUTHOR(S)  E.Gromova, V.Jakovlev, J.Aaltonen,
+#+          K.Helariutta, S.Salminen-Paatero, J.Bergman,
+#+          S.-J.Heselius, H.Penttila, J.Rissanen,
+#+          A.Saastamoinen
+#REF-CODE   (J,NDS,119,237,2014)
+#REFERENCE  Jour. Nuclear Data Sheets
+#+          Vol.119, p.237, 2014
+#DATASETS   10
+#
+#DATASET    O2399002
+#DATE       20190106
+#REACTION   92-U-235(P,G)93-NP-236-M,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         102
+#PRODUCT    93-NP-236-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3 102M  ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3 102M   6540000. 140000.0 1.2000-7 9.0000-8                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   6540000. 140000.0 1.7200-6 1.2000-7                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   8290000. 120000.0 2.9000-6 3.0000-7                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   8290000. 120000.0 4.7000-6 3.0000-7                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   9000000. 300000.0 1.2100-5 1.4000-6                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   9820000. 100000.0 2.3000-5 4.0000-6                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   9820000. 100000.0 2.5000-5 4.0000-6                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   1.0400+7 200000.0 7.0000-5 4.0000-6                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   1.1700+7 200000.0 1.6300-4 7.0000-6                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   1.2900+7 200000.0 1.9400-4 8.0000-6                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   1.4030+7 140000.0 2.3500-4 1.1000-5                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   1.5080+7 120000.0 2.4300-4 1.1000-5                                       E.Gromova,ET.AL. (14)    O2399  2
+ 1001 92235   3 102M   1.6080+7 110000.0 2.6000-4 1.2000-5                                       E.Gromova,ET.AL. (14)    O2399  2
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194021
+#DATE       20100404
+#REACTION   92-U-235(P,INL)92-U-235,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         103
+#PRODUCT    92-U-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3 103 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3 103 D  2.2800+7          0.068000 0.025000                                       C.B.FULMER (59)          O0194 21
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194018
+#DATE       20100404
+#REACTION   92-U-235(P,D)92-U-234,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         104
+#PRODUCT    92-U-234
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3 104 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3 104 D  2.2800+7          0.050000 5.0000-3                                       C.B.FULMER (59)          O0194 18
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194019
+#DATE       20100404
+#REACTION   92-U-235(P,T)92-U-233,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         105
+#PRODUCT    92-U-233
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3 105 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3 105 D  2.2800+7          0.011000 4.0000-3                                       C.B.FULMER (59)          O0194 19
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194020
+#DATE       20100404
+#REACTION   92-U-235(P,A)91-PA-232,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         107
+#PRODUCT    91-PA-232
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3 107 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3 107 D  2.2800+7          4.0000-3 1.0000-3                                       C.B.FULMER (59)          O0194 20
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0230
+#AUTHOR1    Y.Y.Chu+
+#YEAR       1983
+#INSTITUTE  (1USABNL)
+#TITLE      COMPARISON OF THE (P,XN) CROSS SECTIONS FROM U-238,
+#+          U-235 AND TH-232 TARGETS IRRADIATED WITH 200 MEV
+#+          PROTONS.
+#AUTHOR(S)  Y.Y.Chu, M.L.Zhou
+#REF-CODE   (J,IRE,30,(2),1153,83)
+#REFERENCE  Jour. IEEE Transactions on Nuclear Science
+#+          Vol.30, Issue.2, p.1153, 1983
+#DATASETS   16
+#
+#DATASET    A0230004E
+#DATE       19861205
+#REACTION   92-U-235(P,5N)93-NP-231,,SIG,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         152
+#PRODUCT    93-NP-231
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3 152   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3 152    2.0000+8          4.7000-5 6.0000-6                                       Y.Y.CHU,ET.AL. (83)      A0230  4E
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0413
+#AUTHOR1    A.Juliano+
+#YEAR       1967
+#INSTITUTE  (1USAPUR)
+#TITLE      Formation of Na-24 in the Interaction of 12 GeV Protons
+#+          With Isotopes of Uranium and Lead.
+#AUTHOR(S)  A.Juliano, N.T.Porile
+#REF-CODE   (J,JIN,29,2859,1967)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.29, p.2859, 1967
+#DATASETS   4
+#
+#DATASET    O0413003
+#DATE       20000403
+#REACTION   92-U-235(P,X)11-NA-24,CUM,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         9001
+#PRODUCT    11-NA-24
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   39001   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   39001    1.160+10          0.012000 1.0000-3           11024.9                     A.JULIANO,ET.AL. (67)    O0413  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0701
+#AUTHOR1    J.R.Boyce
+#YEAR       1972
+#INSTITUTE  (1USADKE)
+#TITLE      Proton Induced Fission Cross-Sections of the Uranium
+#+          Isotopes 233-U, 234-U, 235-U, 236-U, 238-U.
+#AUTHOR(S)  J.R.Boyce
+#REF-CODE   (T,BOYCE,1972)
+#REFERENCE  Thes. Thesis or dissertation
+#+          Name.Boyce, 1972
+#DATASETS   2
+#
+#DATASET    O0701007
+#DATE       20000404
+#REACTION   92-U-235(P,EL)92-U-235,,DA,,RTH
+#PROJ       1001
+#TARG       92235
+#MF         4
+#MT         2
+#PRODUCT    92-U-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   4   2  C]
+#DATA       25
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   4   2  C 1.3750+7          1.843432 0.025808 0.645457                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.885110 0.012392 0.503019                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.445663 6.2393-3 0.348571                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.232114 3.2496-3 0.171927                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.157276 2.2019-3-5.2382-3                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.103105 1.4435-3-0.171932                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.066977 9.3768-4-0.358371                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 1.3750+7          0.050261 7.0366-4-0.509044                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.194709 2.7259-3 0.499999                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.118155 1.6542-3 0.333805                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.067634 9.4687-4 0.177083                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.029663 4.1528-4-3.4928-3                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.019426 2.7197-4-0.190811                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.015418 2.1585-4-0.342023                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.0000+7          0.011135 1.5589-4-0.498490                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.199202 2.7888-3 0.646789                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.086472 1.2106-3 0.506033                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.060210 8.4294-4 0.340378                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.036712 5.1397-4 0.246997                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.023246 3.2544-4 0.168487                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.013534 1.8947-4-0.024434                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          9.7038-3 1.3585-4-0.180522                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          0.010043 1.4060-4-0.270603                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          5.0018-3 7.0026-5-0.351844                              J.R.BOYCE (72)           O0701  7
+ 1001 92235   4   2  C 2.5000+7          2.8563-3 3.9988-5-0.506036                              J.R.BOYCE (72)           O0701  7
+#/DATA      25
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      T0296
+#AUTHOR1    J.R.Boyce+
+#YEAR       1974
+#INSTITUTE  (1USADKE)
+#TITLE      Absolute cross sections for proton-induced fission of
+#+          the uranium isotopes.
+#AUTHOR(S)  J.R.Boyce, T.D.Hayward, R.Bass,
+#+          H.W.Newson, E.G.Bilpuch, F.O.Purser,
+#+          H.W.Schmitt
+#REF-CODE   (J,PR/C,10,231,197407)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.10, p.231, 1974
+#DATASETS   7
+#
+#DATASET    T0296009
+#DATE       20040701
+#REACTION   92-U-235(P,EL)92-U-235,,DA,,RTH
+#PROJ       1001
+#TARG       92235
+#MF         4
+#MT         2
+#PRODUCT    92-U-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   4   2  C]
+#DATA       25
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   4   2  C 1.3750+7          1.843432          0.645457                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.885110          0.503019                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.445663          0.348571                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.232114          0.171927                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.157276         -5.2382-3                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.103105         -0.171932                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.066977         -0.358371                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 1.3750+7          0.050261         -0.509044                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.194709          0.499999                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.118155          0.333805                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.067634          0.177083                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.029663         -3.4928-3                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.019426         -0.190811                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.015418         -0.342023                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.0000+7          0.011135         -0.498490                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.199202          0.646789                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.086472          0.506033                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.060210          0.340378                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.036712          0.246997                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.023246          0.168487                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.013561         -0.024434                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          9.7038-3         -0.180522                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          0.010043         -0.270603                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          4.9980-3         -0.351844                              J.R.Boyce,ET.AL. (74)    T0296  9
+ 1001 92235   4   2  C 2.5000+7          2.8563-3         -0.506036                              J.R.Boyce,ET.AL. (74)    T0296  9
+#/DATA      25
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194008
+#DATE       19950305
+#REACTION   92-U-235(P,EL)92-U-235,,DA,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         4
+#MT         2
+#PRODUCT    92-U-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   4   2   ]
+#DATA       36
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   4   2    2.2800+7          330.0000 8.580000 0.977046                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          127.0000 3.302000 0.966376                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          46.20000 1.201200 0.948323                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          18.40000 0.478400 0.926528                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          7.090000 0.184340 0.882947                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          3.010000 0.078260 0.841510                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          1.540000 0.040040 0.789083                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.939000 0.024414 0.736096                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.585000 0.015210 0.698414                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.315000 8.1900-3 0.623879                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.164000 4.2640-3 0.573575                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.107600 2.7976-3 0.481752                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.089600 2.3296-3 0.416279                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.072000 1.8720-3 0.332159                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.051000 1.3260-3 0.253756                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.031300 8.1380-4 0.149533                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.019500 5.0700-4 0.076717                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.012800 3.3280-4-0.031413                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.012100 3.1460-4-0.104531                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          0.010480 2.7248-4-0.192524                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          9.0600-3 2.3556-4-0.263876                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          6.7700-3 1.7602-4-0.350210                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          5.3400-3 1.3884-4-0.424202                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          4.3700-3 1.1362-4-0.496976                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          4.0600-3 1.0556-4-0.566409                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          3.2700-3 8.5020-5-0.630678                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          3.0400-3 7.9040-5-0.692146                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          3.2100-3 8.3460-5-0.698418                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          2.8200-3 7.3320-5-0.748958                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          2.6700-3 6.9420-5-0.805930                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          2.4000-3 6.2400-5-0.850813                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          2.1900-3 5.6940-5-0.882949                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          1.8200-3 4.7320-5-0.928487                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          1.7900-3 4.6540-5-0.949973                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          2.0000-3 5.2000-5-0.972371                              C.B.FULMER (59)          O0194  8
+ 1001 92235   4   2    2.2800+7          2.0700-3 5.3820-5-0.985110                              C.B.FULMER (59)          O0194  8
+#/DATA      36
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194012
+#DATE       19950305
+#REACTION   92-U-235(P,D)92-U-234,,DA,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         4
+#MT         104
+#PRODUCT    92-U-234
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   4 104   ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   4 104    2.2200+7          9.1400-3 1.9194-4 0.951594                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          8.7600-3 1.8396-4 0.921863                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          9.8200-3 2.0622-4 0.847122                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          9.9600-3 2.0916-4 0.790154                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          8.8900-3 1.8669-4 0.694658                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          7.6000-3 1.5960-4 0.503019                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          5.4800-3 1.1508-4 0.368123                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          4.8200-3 1.0122-4 0.275636                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          3.9000-3 8.1900-5 0.142627                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          3.5800-3 7.5180-5 8.7244-3                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          2.6200-3 5.5020-5-0.245310                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          1.4400-3 3.0240-5-0.475627                              C.B.FULMER (59)          O0194 12
+ 1001 92235   4 104    2.2200+7          1.2340-3 2.5914-5-0.612909                              C.B.FULMER (59)          O0194 12
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194016
+#DATE       19950305
+#REACTION   92-U-235(P,T)92-U-233,,DA,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         4
+#MT         105
+#PRODUCT    92-U-233
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   4 105   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   4 105    2.2200+7          2.7500-3          0.937282                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          3.0500-3          0.901077                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.6600-3          0.830012                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.2970-3          0.770513                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.5200-3          0.683273                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.2970-3          0.678159                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.3200-3 1.4520-4 0.566405                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.1550-3          0.463295                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          1.2240-3          0.345297                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          9.5700-4          0.223248                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          8.1600-4          0.118402                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          7.9300-4         -0.010474                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          5.2100-4         -0.263876                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          5.7700-4         -0.493944                              C.B.FULMER (59)          O0194 16
+ 1001 92235   4 105    2.2200+7          3.2300-4         -0.633383                              C.B.FULMER (59)          O0194 16
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0194
+#AUTHOR1    C.B.Fulmer
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Total reaction and elastic scattering cross sections
+#+          for 22.8-MeV protons on uranium isotopes
+#AUTHOR(S)  C.B.Fulmer
+#REF-CODE   (J,PR,116,418,1959)
+#REFERENCE  Jour. Physical Review
+#+          Vol.116, p.418, 1959
+#DATASETS   22
+#
+#DATASET    O0194014
+#DATE       19950305
+#REACTION   92-U-235(P,A)91-PA-232,,DA,,,EXP
+#PROJ       1001
+#TARG       92235
+#MF         4
+#MT         107
+#PRODUCT    91-PA-232
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   4 107   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   4 107    2.2200+7          2.4900-3          0.944376                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          1.4600-3          0.909961                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          8.4000-4          0.846193                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          6.6600-4          0.761538                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          4.9900-4          0.703394                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          5.2100-4          0.698414                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          4.7000-4 7.9900-5 0.583540                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          3.9000-4          0.475623                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          3.2800-4          0.358366                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          2.1500-4          0.243613                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          1.7600-4          0.139171                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          1.7600-4         -3.4928-3                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          1.2430-4         -0.250382                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          1.3360-4         -0.467932                              C.B.FULMER (59)          O0194 14
+ 1001 92235   4 107    2.2200+7          1.0000-4 5.0000-5-0.640112                              C.B.FULMER (59)          O0194 14
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      T0283
+#AUTHOR1    R.L.Ferguson+
+#YEAR       1973
+#INSTITUTE  (1USAORL)
+#TITLE      Systematics of Fragment Mass and Energy Distributions
+#+          For Proton-Induced Fission of U-233,U-235 and U-238.
+#AUTHOR(S)  R.L.Ferguson, F.Plasil, F.Pleasonton,
+#+          S.C.Burnett, H.W.Schmitt
+#REF-CODE   (J,PR/C,7,2510,1973)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.7, p.2510, 1973
+#DATASETS   1
+#
+#DATASET    T0283002
+#DATE       20040103
+#REACTION   92-U-235(P,F)MASS,CHN,FY
+#PROJ       1001
+#TARG       92235
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235 801  18   ]
+#DATA       339
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235 801  18    8000000.          3.0800-3                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          4.5000-3                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          5.1800-3                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          5.6500-3                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          6.9600-3                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          7.2100-3                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          9.1900-3                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.011520                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.013900                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.017800                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.019100                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.027400                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.035000                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.037500                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.042400                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.044700                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.048800                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.050600                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.054200                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.050700                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.050700                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.049900                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.050900                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.044400                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.044400                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.038700                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.035600                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.032700                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.025300                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.022800                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.018900                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.014300                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          0.010340                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          8.2700-3                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          7.8600-3                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          5.2900-3                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          4.0200-3                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          2.9500-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          2.6600-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          1.6200-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          8.1100-4                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          5.1900-4                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          7.1200-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          1.2800-4                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          8.5000-5                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          9.1000-5                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8000000.          9.0000-5                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.019500                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.021700                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.019200                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.021000                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.022900                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.026800                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.031900                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.037900                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.042800                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.049200                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.069600                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.085700                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.103700                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.117000                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.132000                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.135000                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.147000                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.155000                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.161000                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.156000                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.164000                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.159000                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.146000                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.151000                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.141000                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.123000                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.100200                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.092000                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.080200                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.063100                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.054100                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.044800                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.036500                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.026300                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.021000                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.016800                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          0.010390                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          9.7100-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          7.5000-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          2.9600-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          2.4500-3                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          2.7200-3                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          6.6100-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          1.0020-3                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          6.1900-4                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          3.8900-4                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          3.8900-4                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    8800000.          1.2900-4                   165.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          8.3200-3                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          8.6200-3                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          8.1900-3                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          9.1000-3                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          9.2700-3                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.010290                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.012550                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.015100                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.015900                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.018900                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.024100                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.029200                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.033500                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.037300                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.042100                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.049200                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.049300                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.052900                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.054800                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.052100                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.051300                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.051300                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.050500                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.047200                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.041100                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.041200                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.037900                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.029800                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.025100                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.021100                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.016900                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.014700                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          0.012200                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          9.1100-3                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          6.5700-3                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          5.0800-3                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          4.0600-3                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          3.2500-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          2.3000-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          1.3300-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          1.4700-3                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          6.5600-4                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          5.4300-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          3.3500-4                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          1.1700-4                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          2.6900-4                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          1.1300-4                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    9500000.          1.1300-4                   165.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          9.9600-3                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.010100                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.010100                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          9.3000-3                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.010900                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.012700                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.013600                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.016600                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.018700                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.021800                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.025800                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.031500                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.036200                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.038800                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.043000                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.047000                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.049600                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.050600                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.050700                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.050700                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.049600                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.049000                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.046600                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.046000                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.043000                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.038700                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.034300                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.028400                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.025200                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.021200                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.017600                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.013800                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          0.012300                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          9.3000-3                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          7.1000-3                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          5.7000-3                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          3.6200-3                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          2.8000-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          2.4000-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          1.8500-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          1.2500-3                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          9.2000-4                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          5.4000-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          5.1000-4                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          2.7800-4                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          1.9100-4                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          1.4100-4                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          5.9000-5                   165.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.0500+7          2.0000-5                   166.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.011900                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.013200                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.012300                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.012300                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.013500                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.014900                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.016000                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.018400                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.019400                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.022700                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.028000                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.030500                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.035700                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.039000                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.042500                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.044800                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.048100                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.047300                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.048200                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.050000                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.046700                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.048400                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.046000                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.042300                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.041600                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.036300                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.031600                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.028100                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.024000                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.019600                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.017400                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.014600                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          0.011500                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          9.2000-3                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          6.7000-3                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          5.9900-3                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          4.9600-3                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          3.2800-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          2.3300-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          1.7700-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          1.1700-3                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          9.2000-4                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          6.3000-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          3.1600-4                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          2.3600-4                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          1.6700-4                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          1.3200-4                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          5.9000-5                   165.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.1500+7          4.5000-5                   166.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.013700                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.015500                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.016100                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.016500                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.016500                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.016100                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.018800                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.019600                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.021300                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.025300                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.028600                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.033500                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.034700                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.042000                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.043700                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.044300                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.047600                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.046600                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.047000                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.047000                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.047600                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.045300                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.044600                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.041000                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.039000                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.034000                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.032900                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.028700                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.023000                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.019700                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.018400                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.014200                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          0.011300                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          8.2000-3                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          6.9000-3                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          5.3000-3                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          4.7000-3                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          3.3000-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          2.9800-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          1.9000-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          1.5000-3                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          1.1000-3                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          5.9000-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          3.2900-4                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          1.6200-4                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          1.6700-4                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          9.4000-5                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          3.3000-5                   165.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.2500+7          5.5000-5                   166.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.015800                   118.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.014800                   119.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.014800                   120.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.015900                   121.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.016700                   122.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.018200                   123.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.019200                   124.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.021400                   125.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.023700                   126.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.025900                   127.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.029800                   128.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.031900                   129.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.035500                   130.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.040800                   131.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.041500                   132.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.043800                   133.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.046200                   134.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.047800                   135.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.047900                   136.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.046300                   137.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.045600                   138.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.045600                   139.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.042600                   140.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.040500                   141.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.038500                   142.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.034200                   143.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.030300                   144.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.026900                   145.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.022700                   146.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.020100                   147.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.016700                   148.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.013300                   149.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          0.010850                   150.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          8.8300-3                   151.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          7.1900-3                   152.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          5.8500-3                   153.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          4.1500-3                   154.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          3.3200-3                   155.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          2.0100-3                   156.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          1.8500-3                   157.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          1.4300-3                   158.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          9.2900-4                   159.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          6.5900-4                   160.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          5.5500-4                   161.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          3.2500-4                   162.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          1.5000-4                   163.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          1.2600-4                   164.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          5.0000-5                   165.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+ 1001 92235 801  18    1.3000+7          2.5000-5                   166.0000                     R.L.Ferguson,ET.AL. (73) T0283  2
+#/DATA      339
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E1305
+#AUTHOR1    T.Ohtsuki+
+#YEAR       1989
+#INSTITUTE  (2JPNTMU)
+#TITLE      Systematic analysis of mass yield curves in low-energy
+#+          fission of actinides
+#AUTHOR(S)  T.Ohtsuki, Y.Hamajima, K.Sueki,
+#+          H.Nakahara, Y.Nagame, N.Shinohara,
+#+          H.Ikezoe
+#REF-CODE   (J,PR/C,40,(5),2144,198911)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.40, Issue.5, p.2144, 1989
+#DATASETS   40
+#
+#DATASET    E1305003
+#DATE       20050204
+#REACTION   92-U-235(P,F)MASS,CHN,FY
+#PROJ       1001
+#TARG       92235
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235 801  18   ]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235 801  18    1.2000+7          0.013570 1.3570-3          84.54000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.022020 2.2020-3          85.95000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.020510 2.0510-3          87.00000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.029950 2.9950-3          89.32000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.031590 3.1590-3          90.71000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.039040 3.9040-3          94.52000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.041040 4.1040-3          95.76000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.033080 3.3080-3          101.9000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.033250 3.3250-3          103.3000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.016880 1.6880-3          109.2000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.012210 1.2210-3          111.5000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          9.6300-3 9.6300-4          114.5000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.019070 1.9070-3          125.6000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.036540 3.6540-3          132.7000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.041340 4.1340-3          134.9000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.045910 4.5910-3          138.6000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.035290 3.5290-3          140.4000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.029240 2.9240-3          141.3000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.026110 2.6110-3          141.9000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          0.011090 1.1090-3          148.0000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+ 1001 92235 801  18    1.2000+7          7.4830-3 7.4830-4          150.1000                     T.Ohtsuki,ET.AL. (89)    E1305  3
+#/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0930
+#AUTHOR1    M.G.Itkis+
+#YEAR       1986
+#INSTITUTE  (4KASKAZ)
+#TITLE      On the fragment mass and compound excitation energy
+#+          dependence of prompt neutrons number
+#AUTHOR(S)  M.G.Itkis, V.N.Okolovich, M.I.Subbotin
+#REF-CODE   (J,IZK,,(6),40,1986)
+#REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
+#+          Issue.6, p.40, 1986
+#DATASETS   4
+#
+#DATASET    D0930008
+#DATE       20190101
+#REACTION   92-U-235(P,F)MASS,SEC,FY
+#PROJ       1001
+#TARG       92235
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235 801  18   ]
+#DATA       218
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235 801  18    1.8000+7          0.022232                   116.2000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.023247                   117.1400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.024696                   118.3800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.025433                   119.6800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.026905                   122.3000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.027784                   123.5900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.029934                   124.0700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.031241                   125.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.032833                   126.5500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.034698                   127.0600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.036290                   128.2800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.038025                   129.4900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.039189                   130.7500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.039794                   132.7600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.039549                   135.2000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.038420                   136.0000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.037005                   136.8300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.035448                   137.6700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.033463                   138.5600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.031204                   140.1600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.024793                   141.1300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.028078                   141.1500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.022249                   142.7600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.020401                   143.2800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.017994                   144.5500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.014719                   145.2200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.012449                   146.1300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          0.010618                   147.6900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          7.9090-3                   147.9600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          7.3560-3                   149.0400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          5.8040-3                   150.2300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          4.9660-3                   151.3500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          3.5520-3                   152.1800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          2.4280-3                   153.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          1.3160-3                   155.1500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    1.8000+7          6.6100-4                   158.6700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.023985                   117.0500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.024989                   119.0200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.026269                   120.9600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.027139                   123.2900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.028126                   124.2300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.029667                   125.1100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.032034                   125.5600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.032755                   127.2200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.034013                   127.7800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.035837                   128.9800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.037372                   129.5200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.038497                   130.4400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.039351                   131.7300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.039257                   134.5000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.037760                   136.3800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.036657                   136.8300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.035421                   137.6400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.034473                   139.1200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.032267                   140.0200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.030476                   140.8900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.027993                   141.8300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.025371                   142.7800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.022749                   143.7300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.020687                   144.9700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.018336                   145.5500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.015853                   146.4800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.013785                   147.3800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          0.011579                   148.2900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          9.9270-3                   149.1400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          8.4190-3                   150.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          7.1940-3                   151.8200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          6.2240-3                   151.9200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          4.9940-3                   153.0800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          3.8960-3                   153.8800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          2.5490-3                   156.4200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          1.8840-3                   158.2100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          1.0970-3                   161.0500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.0000+7          5.8100-4                   163.5200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.025907                   116.6000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.026206                   117.9500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.027060                   119.2500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.028192                   120.5200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.028651                   123.2300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.029926                   124.8300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.031047                   125.4200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.033160                   127.2800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.034313                   129.9300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.035433                   130.5100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.036410                   130.7600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.037136                   132.7600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.035471                   132.9200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.037595                   135.4800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.036368                   136.9800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.035402                   137.4100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.034313                   138.9000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.033081                   140.0500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.030861                   140.2600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.028935                   141.4800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.027563                   142.6500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.025210                   143.2200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.021475                   144.2700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.019543                   145.1400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.017612                   146.0200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.015120                   146.6000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.012638                   147.8700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          0.010851                   149.0800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          9.7520-3                   149.8700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          8.5240-3                   151.3700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          6.9980-3                   151.5200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          5.7600-3                   152.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          4.8000-3                   153.1100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          3.8500-3                   154.5800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          2.7720-3                   156.7500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          1.6840-3                   158.2300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          1.1560-3                   160.0100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.2000+7          6.5400-4                   163.5000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.027238                   118.2300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.029274                   120.4600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.027562                   120.6100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.030157                   122.1000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.029460                   123.2000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.030629                   124.8200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.031798                   126.4300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.033087                   126.6600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.033834                   128.6600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.035134                   129.5700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.035886                   131.9200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.036083                   135.3500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.034963                   136.8300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.034139                   138.9800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.032998                   139.0800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.031587                   140.2500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.030467                   141.7300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.026625                   142.7700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.023787                   144.0700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.022080                   144.5700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.020104                   146.1300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.017398                   146.7200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.014829                   146.9600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.012848                   148.1700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          0.010010                   149.4700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          8.7260-3                   149.5900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          7.3210-3                   151.0900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          5.1960-3                   152.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          6.3430-3                   152.5600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          4.2190-3                   153.7900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          2.9400-3                   154.2600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          2.2430-3                   155.3500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          1.2820-3                   157.8600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          4.5800-4                   160.0000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          6.3000-5                   162.1100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.6000+7          3.3000-5                   164.2100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.045520                   117.5900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.044527                   118.0200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.042963                   118.5100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.044718                   121.1100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.042863                   121.2800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.045728                   121.7100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.046776                   124.7100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.048077                   125.6300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.048257                   128.0200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.049574                   129.9700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.051303                   130.8500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.050759                   132.6200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.050369                   135.0700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.049551                   137.5600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.048415                   138.0100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.046719                   139.2000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.045308                   140.3700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.043886                   140.8400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.041905                   142.0600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.040346                   142.8900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.037799                   144.5000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.034665                   145.1400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.032382                   145.3500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.030406                   146.9100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.025993                   148.0000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.028281                   148.1400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.024582                   149.1600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.023314                   150.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.022189                   151.4500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.021063                   152.5900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.019356                   153.0900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.018374                   154.2200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.017819                   155.3000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.016419                   157.1600                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.015881                   159.2700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.014783                   162.1300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    2.8000+7          0.014535                   164.5700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.030041                   114.7800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.029949                   117.2100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.031485                   117.7100                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.030793                   117.8000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.032785                   120.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.033517                   122.3000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.033972                   124.3200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.035100                   125.2200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.036841                   129.1500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.036623                   132.2800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.035377                   132.4300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.034309                   134.6300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.031677                   134.9400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.030180                   136.5000                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.027978                   137.4500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.026052                   138.3700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.022050                   139.5300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.023995                   139.6500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.019867                   141.5200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.017664                   142.4700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.015732                   143.0400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.013266                   144.7200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.011749                   145.2400                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          0.010523                   146.4200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          9.1450-3                   146.9300                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          7.3510-3                   147.4900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          6.0060-3                   149.7200                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          4.6210-3                   149.8800                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          3.1440-3                   152.4700                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          2.3390-3                   153.9500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          1.2780-3                   156.4900                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          7.8300-4                   159.6500                     M.G.Itkis,ET.AL. (86)    D0930  8
+ 1001 92235 801  18    3.0000+7          1.6400-4                   163.5200                     M.G.Itkis,ET.AL. (86)    D0930  8
+#/DATA      218
+#/DATASET
+#/ENTRY
+#
+#

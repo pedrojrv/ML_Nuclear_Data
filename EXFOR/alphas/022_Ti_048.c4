@@ -1,0 +1,1474 @@
+#ENTRY      C0318
+#AUTHOR1    H.Vonach+
+#YEAR       1983
+#INSTITUTE  (1USALRL)
+#TITLE      (alpha,n) and total alpha-reaction cross sections for
+#+          Ti-48 and V-51
+#AUTHOR(S)  H.Vonach, R.C.Haight, G.Winkler
+#REF-CODE   (J,PR/C,28,2278,1983)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.28, p.2278, 1983
+#DATASETS   4
+#
+#DATASET    C0318004
+#DATE       20090903
+#REACTION   22-TI-48(A,NON),,SIG,,,CALC
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   3 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [CALC]  Calculated data
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   3 D  1.2871+7          0.840000 0.042000                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  1.1858+7          0.754000 0.038000                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  1.0849+7          0.645000 0.032000                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  9837000.          0.488000 0.024000                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  8831000.          0.323000 0.016000                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  7801000.          0.150000 7.0000-3                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  6792000.          0.044400 2.2000-3                                       H.Vonach,ET.AL. (83)     C0318  4
+ 2004 22048   3   3 D  5761000.          4.9000-3 2.6000-4                                       H.Vonach,ET.AL. (83)     C0318  4
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D5003
+#AUTHOR1    M.P.Bilaniuk+
+#YEAR       1981
+#INSTITUTE  (4UKRIJD)
+#TITLE      Deuteron and Alpha-Particle total reaction cross
+#+          sections for nuclei with A-50
+#AUTHOR(S)  M.P.Bilaniuk, V.V.Tokarevskii, V.S.Bulkin,
+#+          L.V.Dubar, O.F.Nemets, L.I.Slyusarenko
+#REF-CODE   (J,JP/G,7,1699,1981)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.7, p.1699, 1981
+#DATASETS   12
+#
+#DATASET    D5003003
+#DATE       20040406
+#REACTION   22-TI-48(A,NON),,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   3 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   3 A  2.7200+7          1.490000 0.041000                                       M.P.Bilaniuk,ET.AL. (81) D5003  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E1930
+#AUTHOR1    A.Iguchi+
+#YEAR       1960
+#INSTITUTE  (2JPNJPN)
+#TITLE      (alpha,n) cross sections for 48Ti and 51V
+#AUTHOR(S)  A.Iguchi, H.Amano, S.Tanaka
+#REF-CODE   (J,AEJ,2,(11),682,196011)
+#REFERENCE  Jour. Journal of the Atomic Energy Society of Japan
+#+          Vol.2, Issue.11, p.682, 1960
+#DATASETS   2
+#
+#DATASET    E1930002
+#DATE       20060402
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4   ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4    4811000.          0.038090 0.011670                                       A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    7840000.          0.256300                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    1.0080+7          0.479600                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    1.1860+7          0.606100                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    1.3570+7          0.662000 0.199000                                       A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    1.5370+7          0.593600                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    1.7440+7          0.397600                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    1.9370+7          0.247000                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    2.1860+7          0.150800                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    2.4230+7          0.111900                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    2.6210+7          0.073850                                                A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    2.8360+7          0.066770 0.021770                                       A.Iguchi,ET.AL. (60)     E1930  2
+ 2004 22048   3   4    3.0300+7          0.063510                                                A.Iguchi,ET.AL. (60)     E1930  2
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0061
+#AUTHOR1    A.J.Morton+
+#YEAR       1992
+#INSTITUTE  (3AULAML)
+#TITLE      The 48Ti(a,n)51Cr and 48Ti(a,p)51V cross sections
+#AUTHOR(S)  A.J.Morton, S.G.Tims, A.F.Scott,
+#+          V.Y.Hansper, C.I.W.Tingwell, D.G.Sargood
+#REF-CODE   (J,NP/A,537,167,1992)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.537, p.167, 1992
+#DATASETS   1
+#
+#DATASET    D0061002
+#DATE       20031105
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       30
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4 A  4986170.          3.4776-4 2.5269-4                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  5178750.          9.3620-4 3.6876-4                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  5371210.          2.0693-3 5.1444-4                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  5563530.          1.9381-3 1.0102-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  5745640.          5.2551-3 1.3087-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  5927670.          3.8522-3 1.3159-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  6099480.          8.0718-3 1.3119-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  6271250.          0.014031 1.6172-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  6442930.          0.015888 1.9189-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  6614550.          0.027607 2.8455-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  6776020.          0.029092 3.2282-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  6937440.          0.042054 3.5288-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  7098820.          0.051294 3.5296-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  7260140.          0.064624 5.1380-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  7411350.          0.074063 6.3398-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  7562530.          0.090890 6.7960-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  7713670.          0.103913 6.1968-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  7864780.          0.113353 6.9463-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8015850.          0.138118 7.9807-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8156821.          0.170594 9.9833-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8297780.          0.171574 9.5598-3                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8438710.          0.200528 0.010505                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8579620.          0.215255 0.011776                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8720500.          0.216556 0.013483                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8861350.          0.272141 0.016745                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  8992140.          0.262933 0.015312                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  9122910.          0.284163 0.015065                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  9253660.          0.330481 0.014342                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  9384390.          0.293646 0.017447                                       A.J.Morton,ET.AL. (92)   D0061  2
+ 2004 22048   3   4 A  9515100.          0.355789 0.017962                                       A.J.Morton,ET.AL. (92)   D0061  2
+#/DATA      30
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0951
+#AUTHOR1    C.N.Chang+
+#YEAR       1973
+#INSTITUTE  (1USAOSU)
+#TITLE      Total cross section measurements by x-ray detection of
+#+          electron-capture residual activity
+#AUTHOR(S)  C.N.Chang, J.J.Kent, J.F.Morgan,
+#+          S.L.Blatt
+#REF-CODE   (J,NIM,109,327,1973)
+#REFERENCE  Jour. Nuclear Instrum.and Methods in Physics Res.
+#+          Vol.109, p.327, 1973
+#DATASETS   1
+#
+#DATASET    C0951002
+#DATE       20040103
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4    5000000.          4.9600-6 7.9360-7                                       C.N.Chang,ET.AL. (73)    C0951  2
+ 2004 22048   3   4    6000000.          4.0000-3 6.4000-4                                       C.N.Chang,ET.AL. (73)    C0951  2
+ 2004 22048   3   4    7000000.          0.043000 6.0200-3                                       C.N.Chang,ET.AL. (73)    C0951  2
+ 2004 22048   3   4    8000000.          0.100400 0.014056                                       C.N.Chang,ET.AL. (73)    C0951  2
+ 2004 22048   3   4    9000000.          0.238000 0.033320                                       C.N.Chang,ET.AL. (73)    C0951  2
+ 2004 22048   3   4    1.0000+7          0.250400 0.035056                                       C.N.Chang,ET.AL. (73)    C0951  2
+ 2004 22048   3   4    1.1000+7          0.327200 0.045808                                       C.N.Chang,ET.AL. (73)    C0951  2
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1474
+#AUTHOR1    C.M.Baglin+
+#YEAR       2004
+#INSTITUTE  (1USABRK)
+#TITLE      Measurement pf 107Ag(alpha,gamma)111In cross sections
+#AUTHOR(S)  C.M.Baglin, E.R.Norman, R.M.Larimer,
+#+          G.A.Rech
+#REF-CODE   (C,2004SANTA,2,1370,2004)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Santa Fe 2004
+#+          Vol.2, p.1370, 2004
+#DATASETS   2
+#
+#DATASET    C1474002
+#DATE       20061201
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4   ]
+#DATA       11
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4    6584000. 197000.0 0.021530 2.1260-3                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    7134000. 127000.0 0.047010 5.3720-3                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    7701000. 162000.0 0.097460 8.0930-3                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    8048000. 226000.0 0.130900 0.012930                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    8123000. 104000.0 0.151800 0.016170                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    8326000. 197000.0 0.155800 3.9980-3                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    9246000. 174000.0 0.293900 0.024400                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    9292000. 162000.0 0.291300 0.028780                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    9547000. 104000.0 0.320600 0.029160                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    1.0392+7 127000.0 0.423800 0.048430                                       C.M.Baglin,ET.AL. (04)   C1474  2
+ 2004 22048   3   4    1.1161+7 133000.0 0.417100 0.037770                                       C.M.Baglin,ET.AL. (04)   C1474  2
+#/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510291
+#DATE       20160202
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4   ]
+#DATA       43
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4    7100000.          0.231000 0.023100                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    8600000.          0.326000 0.032600                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.0100+7          0.378000 0.037800                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.1300+7          0.460000 0.046000                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.2400+7          0.524000 0.052400                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.3500+7          0.627000 0.062700                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.4500+7          0.550000 0.055000                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.5400+7          0.576000 0.057600                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.6300+7          0.585000 0.058500                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.7200+7          0.519000 0.051900                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.8200+7          0.495000 0.049500                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    1.9100+7          0.423000 0.042300                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.0000+7          0.423000 0.042300                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.1600+7          0.266000 0.026600                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.3100+7          0.200000 0.020000                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.4500+7          0.112000 0.011200                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.5800+7          0.084000 8.4000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.7000+7          0.066000 6.6000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.7400+7          0.071000 7.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.8200+7          0.054000 5.4000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.8700+7          0.049000 4.9000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.9400+7          0.041000 4.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    2.9900+7          0.041000 4.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.0600+7          0.031000 3.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.1100+7          0.031000 3.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.1700+7          0.028000 2.8000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.2300+7          0.023000 2.3000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.2900+7          0.021000 2.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.3400+7          0.023000 2.3000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.4000+7          0.019000 1.9000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.4400+7          0.021000 2.1000-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.5500+7          0.016200 1.6200-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.6500+7          0.018400 1.8400-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.7500+7          0.016800 1.6800-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.8500+7          0.013200 1.3200-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    3.9400+7          0.013100 1.3100-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.0400+7          0.014500 1.4500-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.1300+7          0.012500 1.2500-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.2200+7          0.011400 1.1400-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.3100+7          0.011400 1.1400-3                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.4100+7          7.9000-3 7.9000-4                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.5000+7          9.6000-3 9.6000-4                                       V.N.Levkovski (91)       A0510291
+ 2004 22048   3   4    4.5800+7          7.1000-3 7.1000-4                                       V.N.Levkovski (91)       A0510291
+#/DATA      43
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0893
+#AUTHOR1    A.Oprea+
+#YEAR       2017
+#INSTITUTE  (3RUMBUC)
+#TITLE      Absolute cross sections of the 86Sr(a,n)89Zr
+#+          reaction at energies of astrophysical interest
+#AUTHOR(S)  A.Oprea, T.Glodariu, D.Filipescu,
+#+          I.Gheorghe, A.Mitu, M.Boromiza,
+#+          D.Bucurescu, C.Costache, I.Cata-Danil,
+#+          N.Florea, D.G.Ghita, A.Ionescu,
+#+          N.Marginean, R.Marginean, C.Mihai,
+#+          R.Mihai, A.Negret, C.Nita,
+#+          A.Olacel, S.Pascu, C.Sotty,
+#+          R.Suvaila, L.Stan, L.Stroe,
+#+          A.Serban, I.Stiru, S.Toma,
+#+          A.Turturica, S.Ujeniuc
+#REF-CODE   (J,EPJ/CS,146,01016,2017)
+#REFERENCE  Jour. EPJ Web of Conferences
+#+          Vol.146, p.01016, 2017
+#DATASETS   1
+#
+#DATASET    D0893003
+#DATE       20180304
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4 P ]
+#X4STATUS   [PRELM] Preliminary data
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4 P  7260000. 470000.0 0.085100 5.0000-3                                       A.Oprea,ET.AL. (17)      D0893  3
+ 2004 22048   3   4 P  8280000. 380000.0 0.247200 0.014500                                       A.Oprea,ET.AL. (17)      D0893  3
+ 2004 22048   3   4 P  9130000. 390000.0 0.370400 0.021700                                       A.Oprea,ET.AL. (17)      D0893  3
+ 2004 22048   3   4 P  9750000. 330000.0 0.420400 0.024600                                       A.Oprea,ET.AL. (17)      D0893  3
+ 2004 22048   3   4 P  1.0410+7 320000.0 0.407400 0.031600                                       A.Oprea,ET.AL. (17)      D0893  3
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0318
+#AUTHOR1    H.Vonach+
+#YEAR       1983
+#INSTITUTE  (1USALRL)
+#TITLE      (alpha,n) and total alpha-reaction cross sections for
+#+          Ti-48 and V-51
+#AUTHOR(S)  H.Vonach, R.C.Haight, G.Winkler
+#REF-CODE   (J,PR/C,28,2278,1983)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.28, p.2278, 1983
+#DATASETS   4
+#
+#DATASET    C0318002
+#DATE       20090903
+#REACTION   22-TI-48(A,N)24-CR-51,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         4
+#PRODUCT    24-CR-51
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3   4   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3   4    1.2871+7          0.698000 0.020940                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    1.1858+7          0.633000 0.018990                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    1.0849+7          0.544000 0.016320                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    9837000.          0.414000 0.012420                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    8831000.          0.275000 7.9750-3                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    7801000.          0.128000 3.7120-3                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    6792000.          0.037800 1.0962-3                                       H.Vonach,ET.AL. (83)     C0318  2
+ 2004 22048   3   4    5761000.          4.1500-3 1.4110-4                                       H.Vonach,ET.AL. (83)     C0318  2
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510292
+#DATE       20160202
+#REACTION   22-TI-48(A,3N)24-CR-49,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         17
+#PRODUCT    24-CR-49
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3  17   ]
+#DATA       25
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3  17    2.7400+7          1.4000-3 1.4000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    2.8200+7          1.4000-3 1.4000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    2.8700+7          2.0000-3 2.0000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    2.9400+7          1.8000-3 1.8000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    2.9900+7          2.2000-3 2.2000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.0600+7          4.7000-3 4.7000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.1100+7          4.7000-3 4.7000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.1700+7          5.8000-3 5.8000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.2300+7          5.8000-3 5.8000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.2900+7          9.5000-3 9.5000-4                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.3400+7          0.012400 1.2400-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.4000+7          0.020300 2.0300-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.4400+7          0.017600 1.7600-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.5500+7          0.025000 2.5000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.6500+7          0.027000 2.7000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.7500+7          0.033000 3.3000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.8500+7          0.039000 3.9000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    3.9400+7          0.047000 4.7000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.0400+7          0.063000 6.3000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.1300+7          0.082000 8.2000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.2200+7          0.077000 7.7000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.3100+7          0.072000 7.2000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.4100+7          0.085000 8.5000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.5000+7          0.082000 8.2000-3                                       V.N.Levkovski (91)       A0510292
+ 2004 22048   3  17    4.5800+7          0.061000 6.1000-3                                       V.N.Levkovski (91)       A0510292
+#/DATA      25
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510293
+#DATE       20160202
+#REACTION   22-TI-48(A,4N)24-CR-48,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         37
+#PRODUCT    24-CR-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   3  37   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   3  37    4.3200+7          8.0000-5 8.0000-6                                       V.N.Levkovski (91)       A0510293
+ 2004 22048   3  37    4.4100+7          1.2000-4 1.2000-5                                       V.N.Levkovski (91)       A0510293
+ 2004 22048   3  37    4.5000+7          1.5000-4 1.5000-5                                       V.N.Levkovski (91)       A0510293
+ 2004 22048   3  37    4.5800+7          1.9000-4 1.9000-5                                       V.N.Levkovski (91)       A0510293
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510295
+#DATE       20160202
+#REACTION   22-TI-48(A,X)21-SC-47,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         9000
+#PRODUCT    21-SC-47
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   39000   ]
+#DATA       31
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   39000    2.1600+7          1.1000-4 1.1000-5           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.3100+7          4.4000-4 4.4000-5           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.4500+7          1.3000-3 1.3000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.5800+7          2.6000-3 2.6000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.7000+7          2.9000-3 2.9000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.7400+7          2.1000-3 2.1000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.8200+7          4.4000-3 4.4000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.8700+7          4.3000-3 4.3000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.9400+7          5.3000-3 5.3000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    2.9900+7          5.8000-3 5.8000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.0600+7          8.0000-3 8.0000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.1100+7          7.3000-3 7.3000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.1700+7          0.010100 1.0100-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.2300+7          9.6000-3 9.6000-4           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.2900+7          0.013200 1.3200-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.3400+7          0.013000 1.3000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.4000+7          0.015100 1.5100-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.4400+7          0.014000 1.4000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.5000+7          0.016400 1.6400-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.5500+7          0.015900 1.5900-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.6500+7          0.018700 1.8700-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.7500+7          0.022000 2.2000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.8500+7          0.021000 2.1000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    3.9400+7          0.024000 2.4000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.0400+7          0.025000 2.5000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.1300+7          0.025000 2.5000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.2200+7          0.024000 2.4000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.3100+7          0.024000 2.4000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.4100+7          0.021000 2.1000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.5000+7          0.022000 2.2000-3           21047.9                     V.N.Levkovski (91)       A0510295
+ 2004 22048   39000    4.5800+7          0.019600 1.9600-3           21047.9                     V.N.Levkovski (91)       A0510295
+#/DATA      31
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0265
+#AUTHOR1    E.F.Neuzil+
+#YEAR       1963
+#INSTITUTE  (1USAWWS)
+#TITLE      Emission of Be7 and Competition Processes at 30 to
+#+          42 MeV
+#AUTHOR(S)  E.F.Neuzil, R.H.Lindsay
+#REF-CODE   (J,PR,131,1697,1963)
+#REFERENCE  Jour. Physical Review
+#+          Vol.131, p.1697, 1963
+#DATASETS   12
+#
+#DATASET    C0265012
+#DATE       20111105
+#REACTION   22-TI-48(A,X)4-BE-7,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         9000
+#PRODUCT    4-BE-7
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   39000  C]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   39000  C 2.9869+7          2.5800-6 5.1600-7            4007.9                     E.F.Neuzil,ET.AL. (63)   C0265 12
+ 2004 22048   39000  C 3.0543+7          6.6800-6 1.3360-6            4007.9                     E.F.Neuzil,ET.AL. (63)   C0265 12
+ 2004 22048   39000  C 3.2244+7          6.0800-6 1.2160-6            4007.9                     E.F.Neuzil,ET.AL. (63)   C0265 12
+ 2004 22048   39000  C 3.4010+7          2.4220-5 5.9800-6            4007.9                     E.F.Neuzil,ET.AL. (63)   C0265 12
+ 2004 22048   39000  C 3.7102+7          9.0530-5 2.0720-5            4007.9                     E.F.Neuzil,ET.AL. (63)   C0265 12
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510296
+#DATE       20160202
+#REACTION   22-TI-48(A,X)21-SC-46,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         9000
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   39000   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   39000    3.5500+7          2.2000-3 2.2000-4           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    3.6500+7          3.9000-3 3.9000-4           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    3.7500+7          8.1000-3 8.1000-4           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    3.8500+7          0.012800 1.2800-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    3.9400+7          0.016700 1.6700-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.0400+7          0.025000 2.5000-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.1300+7          0.030000 3.0000-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.2200+7          0.036000 3.6000-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.3100+7          0.044000 4.4000-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.4100+7          0.045000 4.5000-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.5000+7          0.057000 5.7000-3           21046.9                     V.N.Levkovski (91)       A0510296
+ 2004 22048   39000    4.5800+7          0.060000 6.0000-3           21046.9                     V.N.Levkovski (91)       A0510296
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0510
+#AUTHOR1    V.N.Levkovski
+#YEAR       1991
+#INSTITUTE  (4KASKAZ)
+#TITLE      Cross sections of medium mass nuclide activation
+#+          (A=40-100) by medium energy protons and
+#+          alpha-particles (E=10-50 MeV)
+#AUTHOR(S)  V.N.Levkovski
+#REF-CODE   (B,LEVKOVSKIJ,,,1991)
+#REFERENCE  Book. Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+#DATASETS   540
+#
+#DATASET    A0510294
+#DATE       20160202
+#REACTION   22-TI-48(A,X)23-V-48,,SIG
+#PROJ       2004
+#TARG       22048
+#MF         3
+#MT         9000
+#PRODUCT    23-V-48
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 22048   39000   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   39000    4.1300+7          5.2000-3 5.2000-4           23048.9                     V.N.Levkovski (91)       A0510294
+ 2004 22048   39000    4.2200+7          7.4000-3 7.4000-4           23048.9                     V.N.Levkovski (91)       A0510294
+ 2004 22048   39000    4.3100+7          0.011500 1.1500-3           23048.9                     V.N.Levkovski (91)       A0510294
+ 2004 22048   39000    4.4100+7          0.014600 1.4600-3           23048.9                     V.N.Levkovski (91)       A0510294
+ 2004 22048   39000    4.5000+7          0.022000 2.2000-3           23048.9                     V.N.Levkovski (91)       A0510294
+ 2004 22048   39000    4.5800+7          0.029000 2.9000-3           23048.9                     V.N.Levkovski (91)       A0510294
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2241
+#AUTHOR1    I.Kumabe+
+#YEAR       1964
+#INSTITUTE  (2JPNKTO)
+#TITLE      Elastic and inelastic scattering of 28.5 MeV alpha
+#+          particles by medium-weight nuclei
+#AUTHOR(S)  I.Kumabe, H.Ogata, M.Inoue,
+#+          Y.Okuma, J.Muto
+#REF-CODE   (J,JPJ,19,147,1964)
+#REFERENCE  Jour. Journal of the Physical Society of Japan
+#+          Vol.19, p.147, 1964
+#DATASETS   10
+#
+#DATASET    E2241006
+#DATE       20160505
+#REACTION   22-TI-48(A,EL)22-TI-48,,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4   2  C]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4   2  C 2.8500+7          1.980000          0.923344                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.646000          0.902960                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.222000          0.882783                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.107000          0.860030                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.104000          0.835807                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.095600          0.807475                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.057900          0.780430                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.018000          0.750572                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          9.7000-3          0.718490                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.016700          0.684292                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.020700          0.651568                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          0.013900          0.616348                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          3.8800-3          0.579991                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          6.9100-4          0.541414                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          2.9500-3          0.503622                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          4.5400-3          0.463604                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          4.1300-3          0.423566                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          2.2500-3          0.382360                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          5.6100-4          0.339721                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          1.3500-4          0.299872                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          6.8400-4          0.253081                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          1.0700-3          0.212176                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          9.6700-4          0.168143                              I.Kumabe,ET.AL. (64)     E2241  6
+ 2004 22048   4   2  C 2.8500+7          5.1000-4          0.123773                              I.Kumabe,ET.AL. (64)     E2241  6
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1632
+#AUTHOR1    D.K.Mcdaniels+
+#YEAR       1960
+#INSTITUTE  (1USAWAU)
+#TITLE      Alpha-particle excitation of quadrupole and octupole
+#+          surface modes in Ti,Fe,Ni,Zn and Sr
+#AUTHOR(S)  D.K.Mcdaniels, J.S.Blair, S.W.Chen,
+#+          G.W.Farwell
+#REF-CODE   (J,NP,17,614,1960)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.17, p.614, 1960
+#DATASETS   18
+#
+#DATASET    C1632014
+#DATE       20120703
+#REACTION   22-TI-48(A,EL)22-TI-48,,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4   2  C]
+#DATA       16
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4   2  C 4.1000+7          3.8750-3          0.688987                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          7.3490-3          0.663403                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          6.1350-3          0.639438                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          3.9100-3 6.0670-4 0.616073                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          2.8840-3          0.589900                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          8.6560-4          0.564390                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          1.0240-3          0.540386                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          1.9200-3 2.6110-4 0.512042                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          2.2210-3          0.483434                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          1.3520-3          0.426094                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          7.1190-4 1.0290-4 0.398748                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          4.3380-4          0.369745                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          6.2070-4 8.4300-5 0.310177                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          5.5420-4          0.275971                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          4.3240-4          0.244121                              D.K.McDaniels,ET.AL. (60)C1632 14
+ 2004 22048   4   2  C 4.1000+7          2.8830-4 4.7450-5 0.209275                              D.K.McDaniels,ET.AL. (60)C1632 14
+#/DATA      16
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      T0223
+#AUTHOR1    B.Fernandez+
+#YEAR       1970
+#INSTITUTE  (1USAWAU)
+#TITLE      Elastic scattering of alpha particles by intermediate-
+#+          mass nuclei
+#AUTHOR(S)  B.Fernandez, J.S.Blair
+#REF-CODE   (J,PR/C,1,523,197004)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.523, 1970
+#DATASETS   16
+#
+#DATASET    T0223007
+#DATE       20030404
+#REACTION   22-TI-48(A,EL)22-TI-48,,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4   2  C]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4   2  C 4.2000+7 40000.00 0.010550 9.0920-4 0.845727                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 5.3910-3 5.0390-4 0.841699                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 3.8540-3 4.2730-4 0.839619                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 2.2280-3 2.1910-4 0.837718                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 9.9750-4          0.835711                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 8.6190-4          0.833693                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 1.0990-3          0.831566                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 2.2220-3 1.9710-4 0.829525                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 2.6340-3 3.1770-4 0.827374                              B.Fernandez,ET.AL. (70)  T0223  7
+ 2004 22048   4   2  C 4.2000+7 40000.00 4.5470-3 3.0670-4 0.825212                              B.Fernandez,ET.AL. (70)  T0223  7
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0926
+#AUTHOR1    K.A.Kuterbekov+
+#YEAR       2002
+#INSTITUTE  (4KASKAZ)
+#TITLE      Elastic and inelastic scattering of alpha-particles
+#+          and 48,50-Ti nuclei structure
+#AUTHOR(S)  K.A.Kuterbekov, I.N.Kukhtina, A.Duisebaev,
+#+          T.K.Zholdybaev, A.Mukhametzhan
+#REF-CODE   (J,IZK,,(6),50,2002)
+#REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
+#+          Issue.6, p.50, 2002
+#DATASETS   5
+#
+#DATASET    D0926002
+#DATE       20190205
+#REACTION   22-TI-48(A,EL)22-TI-48,,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4   2  C]
+#DATA       116
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.136610 3.7000-3 0.912691                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.091505 1.9000-3 0.888216                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.022439 9.0000-4 0.874958                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.1145-3 3.0000-4 0.865763                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.6032-3 1.0000-4 0.863835                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.6592-3 2.0000-4 0.856177                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.012444 3.0000-4 0.846379                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.011805 6.5000-4 0.841416                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.019351 6.5000-4 0.836190                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.023125 7.0000-4 0.831081                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.024208 7.0000-4 0.825901                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.023548 7.0000-4 0.820551                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.030376 8.0000-4 0.815329                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.025507 5.0000-4 0.814115                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.026495 7.0000-4 0.810859                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.024821 7.0000-4 0.804271                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.021592 5.0000-4 0.798635                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.016194 5.0000-4 0.793034                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 0.012576 4.0000-4 0.787257                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 7.7375-3 3.0000-4 0.781520                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.9994-3 2.0000-4 0.775715                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6843-3 1.4000-4 0.769733                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.0500-3 1.3000-4 0.768618                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.9437-3 1.2000-4 0.767388                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3355-3 9.8000-5 0.765033                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3306-3 1.0200-4 0.763795                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1985-3 9.7000-5 0.762555                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1090-3 8.0000-5 0.760179                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1743-3 9.0000-5 0.757792                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.4616-3 9.5000-5 0.755281                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.7057-3 1.0000-4 0.752874                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.0182-3 1.0000-5 0.750457                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.1048-3 1.0000-4 0.748029                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6454-3 1.0000-4 0.744194                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.1230-3 1.4000-4 0.740452                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.4715-3 1.2000-4 0.736569                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.2209-3 1.8000-4 0.733017                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.9724-3 1.8000-4 0.729207                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.9867-3 2.2000-4 0.721518                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 8.3082-3 2.6000-4 0.717883                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 8.1558-3 1.7000-4 0.713739                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 8.5314-3 2.0000-4 0.711167                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 7.9960-3 1.7000-4 0.708585                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 7.6793-3 1.6000-4 0.705871                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 7.1357-3 1.4000-4 0.699288                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 6.7956-3 1.4000-4 0.695285                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.9563-3 2.3000-4 0.691386                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 6.9931-3 2.6000-4 0.688860                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 6.6934-3 2.6900-4 0.683783                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 6.3739-3 2.0000-4 0.681998                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.6978-3 1.5000-4 0.676490                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.5651-3 1.4000-4 0.672366                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.2892-3 1.5000-4 0.669648                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.5068-3 1.4000-4 0.666922                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.2897-3 1.4000-4 0.664186                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.8596-3 1.3000-4 0.661311                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6917-3 1.2000-4 0.657243                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.8197-3          0.653023                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.6510-3          0.650243                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.6637-3 8.6000-5 0.648783                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3966-3 8.0000-5 0.645990                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3790-3 9.6000-5 0.643188                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1880-3 7.7000-5 0.638901                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.4000-3 7.6000-5 0.637558                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1995-3 8.0000-5 0.636077                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1284-3 8.0000-5 0.633245                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3886-3 7.5000-5 0.630404                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3685-3 7.7000-5 0.626059                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.6617-3 8.0000-5 0.620326                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3982-3 7.8000-5 0.615936                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.9725-3 8.5000-5 0.613044                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.1815-3 9.0000-5 0.610144                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.1868-3 9.0000-5 0.605710                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.2364-3 9.0000-5 0.602789                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.4186-3 9.0000-5 0.599861                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.3588-3 1.0000-4 0.595383                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.5932-3 1.0000-4 0.593980                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.9418-3 1.0000-4 0.591027                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.7812-3 1.4000-4 0.588067                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.8307-3 9.0000-5 0.585098                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6542-3 9.8700-5 0.582122                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.9416-3 1.0000-4 0.579138                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.9389-3 9.7000-5 0.576146                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.8835-3 9.9000-5 0.573003                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6923-3 9.4000-5 0.566980                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.7637-3 9.7000-5 0.562515                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6990-3 9.6000-5 0.559481                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.4719-3 1.2000-4 0.556440                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.2616-3 8.5000-5 0.550334                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.3133-3 1.0400-4 0.545662                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.8507-3 9.8000-5 0.539505                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.7772-3 7.3000-5 0.534941                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3690-3 7.0000-5 0.530510                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3687-3 7.0000-5 0.525619                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.3278-3 7.0000-5 0.520859                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 1.1080-3 5.8000-5 0.516233                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 9.2338-4 7.0000-5 0.509941                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 7.5766-4 4.8000-5 0.506785                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 6.1738-4 4.3000-5 0.503622                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.2992-4 3.7000-5 0.500452                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.3346-4 4.0000-5 0.497276                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.9554-4 3.5000-5 0.492574                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.6833-4 3.4000-5 0.487706                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.6131-4 2.6000-5 0.484656                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.8414-4 2.5000-5 0.481446                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.1098-4 3.0000-5 0.478231                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.6610-4 2.0000-5 0.473318                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.8117-4 2.0000-5 0.470087                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 2.9734-4 2.0000-5 0.467003                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.3920-4 2.5000-5 0.463759                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 3.5786-4 6.5000-5 0.460508                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.1399-4 2.0000-5 0.455699                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.4171-4 1.9000-5 0.449162                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 4.1411-4 1.9000-5 0.442600                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 5.9799-4 2.8000-5 0.436015                              K.A.Kuterbekov, (02)     D0926  2
+ 2004 22048   4   2  C 5.0500+7 500000.0 6.0411-4 2.5000-5 0.432714                              K.A.Kuterbekov, (02)     D0926  2
+#/DATA      116
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1402
+#AUTHOR1    P.L.Roberson+
+#YEAR       1979
+#INSTITUTE  (1USAMRY)
+#TITLE      Nuclear Size Comparison of Even Titanium Isotopes
+#+          Using 140-MeV alpha-Particle Scattering
+#AUTHOR(S)  P.L.Roberson, D.A.Goldberg, N.S.Wall,
+#+          L.W.Woo, H.L.Chen
+#REF-CODE   (J,PRL,42,54,1979)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.42, p.54, 1979
+#DATASETS   3
+#
+#DATASET    C1402003
+#DATE       20060104
+#REACTION   22-TI-48(A,EL)22-TI-48,,DA,,RTH
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4   2  C]
+#DATA       51
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4   2  C 1.4000+8 500000.0 86.66071          0.997847 2.2888-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 35.56185          0.996821 2.7835-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 9.701021          0.995725 3.2246-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 2.369555          0.994170 3.7611-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.896861          0.992546 4.2558-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 1.733150          0.990413 4.8220-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 2.448648          0.988756 5.2214-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 2.000190          0.986572 5.6982-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 1.171365          0.984503 6.1214-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.328127          0.980955 6.7770-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.029328          0.978148 7.2598-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.061856          0.974370 7.8499-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.191888          0.971134 8.3268-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.298000          0.968148 8.7380-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.265770          0.964095 9.2685-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.177841          0.961262 9.6202-5                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.081832          0.957319 1.0091-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.029353          0.953191 1.0556-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.021733          0.948876 1.1021-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.039826          0.944376 1.1480-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.050237          0.940288 1.1882-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.058740          0.937889 1.2112-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.053040          0.934204 1.2451-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.038667          0.928486 1.2964-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.024482          0.923879 1.3357-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.013647          0.918446 1.3810-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 9.3397-3          0.912120 1.4311-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.011944          0.907777 1.4642-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.014276          0.900319 1.5193-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.015492          0.898027 1.5357-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.014961          0.893371 1.5685-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.014099          0.888617 1.6010-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 0.011421          0.882127 1.6442-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 8.2239-3          0.873772 1.6975-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 6.4671-3          0.861629 1.7717-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 7.2011-3          0.847122 1.8549-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 6.5191-3          0.829037 1.9521-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 4.3191-3          0.813100 2.0319-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 3.3448-3          0.797583 2.1052-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 3.0851-3          0.781520 2.1777-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 2.5475-3          0.761538 2.2623-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 1.8572-3          0.744311 2.3308-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 1.2957-3          0.724171 2.4071-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 9.6577-4          0.705871 2.4724-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 7.1880-4          0.684546 2.5442-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 5.2633-4          0.663925 2.6104-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 2.3829-4          0.621147 2.7356-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 5.5413-5          0.528437 2.9632-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 9.5575-6          0.433658 3.1452-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 2.0080-6          0.332159 3.2923-4                     P.L.Roberson,ET.AL. (79) C1402  3
+ 2004 22048   4   2  C 1.4000+8 500000.0 7.3468-7          0.226649 3.3996-4                     P.L.Roberson,ET.AL. (79) C1402  3
+#/DATA      51
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1507
+#AUTHOR1    Y.Tokimoto+
+#YEAR       2006
+#INSTITUTE  (1USATAM)
+#TITLE      Giant resonances in 46,48Ti
+#AUTHOR(S)  Y.Tokimoto, Y.W.Lui, H.L.Clark,
+#+          B.John, X.Chen, D.H.Youngblood
+#REF-CODE   (J,PR/C,74,044308,2006)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.74, p.044308, 2006
+#DATASETS   4
+#
+#DATASET    C1507004
+#DATE       20070202
+#REACTION   22-TI-48(A,EL)22-TI-48,,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         2
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4   2  C]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4   2  C 2.4000+8          72.95000 4.320000 0.998578                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          47.58000 2.818000 0.998177                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          28.04000 1.660000 0.997727                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          12.68000 0.991100 0.997244                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          5.286000 0.413200 0.996713                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.692000 0.100200 0.996154                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.624000 0.064760 0.995988                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.488900 0.019500 0.995473                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.509200 0.030150 0.995334                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.563800 0.044070 0.994778                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.749600 0.058590 0.994566                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.497000 0.144800 0.993853                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.991000 0.040090 0.993001                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          2.249000 0.217500 0.992143                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.991000 0.192500 0.991961                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.911000 0.076210 0.991236                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.950000 0.152500 0.990962                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.437000 0.057320 0.990224                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          1.497000 0.117000 0.990021                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.937600 0.037390 0.988975                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.450700 0.017970 0.987841                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.203800 0.015930 0.986723                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.088510 0.013300 0.985518                              Y.Tokimoto,ET.AL. (06)   C1507  4
+ 2004 22048   4   2  C 2.4000+8          0.097990 0.013010 0.984257                              Y.Tokimoto,ET.AL. (06)   C1507  4
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2241
+#AUTHOR1    I.Kumabe+
+#YEAR       1964
+#INSTITUTE  (2JPNKTO)
+#TITLE      Elastic and inelastic scattering of 28.5 MeV alpha
+#+          particles by medium-weight nuclei
+#AUTHOR(S)  I.Kumabe, H.Ogata, M.Inoue,
+#+          Y.Okuma, J.Muto
+#REF-CODE   (J,JPJ,19,147,1964)
+#REFERENCE  Jour. Journal of the Physical Society of Japan
+#+          Vol.19, p.147, 1964
+#DATASETS   10
+#
+#DATASET    E2241007
+#DATE       20160505
+#REACTION   22-TI-48(A,INL)22-TI-48,PAR,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         801
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4 801  C]
+#DATA       66
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4 801  C 2.8500+7          0.017500          0.902510          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          0.017700          0.881962          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          0.011200          0.861363          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          4.4400-3          0.837909          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.1300-3          0.807784          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.6200-3          0.779884          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          4.2700-3          0.748839          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.6600-3          0.718368          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.0600-3          0.683783          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          4.7700-4          0.649580          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.8400-4          0.618819          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.4800-3          0.577857          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.7400-3          0.539358          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.0700-3          0.502415          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.4800-4          0.461902          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.4400-4 1.7200-5 0.421984          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.8900-4          0.382682          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          5.9500-4          0.342346          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          5.8100-4          0.294205          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.8900-4 3.4300-5 0.250716          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.0300-4          0.212005          990000.0          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.8700-3          0.901983          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.7500-3 2.3900-4 0.879067          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.5800-3          0.858154          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.4400-3          0.830887          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.1700-3          0.807269          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          7.1900-4 8.5400-5 0.778133          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          9.1200-4          0.749533          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          9.9000-4          0.717640          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          8.0500-4 1.1000-4 0.683910          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          4.0700-4          0.647986          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.8400-4          0.614835          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.0100-4 1.3900-5 0.578711          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.1000-4          0.539945          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.0200-4          0.500603          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.6300-5          0.460818          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.2200-5 1.2800-5 0.422300          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.3400-5          0.378809          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          8.1800-5          0.338079          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.6800-5          0.294205          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.1000-5 1.4400-5 0.248350          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          5.9500-5          0.205007          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          4.8000-5          0.164013          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          5.1000-5          0.118749          2400000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.3300-3          0.901530          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.0300-3 3.9700-4 0.877146          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.1500-3          0.856537          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.6200-3          0.830984          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.6300-3          0.806857          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.7500-3          0.778243          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.6400-3          0.745243          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.3300-3          0.715448          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.0200-3          0.683273          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.1500-4 1.0300-4 0.644657          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          6.6400-4          0.610006          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          5.9400-4 9.2200-5 0.572002          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          5.1400-4          0.539211          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.3300-4          0.499092          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.6700-4          0.458338          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.8000-4 6.3600-5 0.418658          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          3.0800-4          0.373148          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          2.9100-4          0.333641          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.9400-4          0.301203          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.1200-4          0.251561          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.2500-4 2.4900-5 0.206031          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+ 2004 22048   4 801  C 2.8500+7          1.3400-4          0.160396          3300000.          E2I.Kumabe,ET.AL. (64)     E2241  7
+#/DATA      66
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1632
+#AUTHOR1    D.K.Mcdaniels+
+#YEAR       1960
+#INSTITUTE  (1USAWAU)
+#TITLE      Alpha-particle excitation of quadrupole and octupole
+#+          surface modes in Ti,Fe,Ni,Zn and Sr
+#AUTHOR(S)  D.K.Mcdaniels, J.S.Blair, S.W.Chen,
+#+          G.W.Farwell
+#REF-CODE   (J,NP,17,614,1960)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.17, p.614, 1960
+#DATASETS   18
+#
+#DATASET    C1632015
+#DATE       20120703
+#REACTION   22-TI-48(A,INL)22-TI-48,PAR,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         801
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4 801  C 4.1000+7          3.5020-3          0.688987          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          1.5580-3 2.7110-4 0.666011          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          9.7070-4          0.637826          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          1.0150-3 2.2240-4 0.616485          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          1.1470-3          0.588913          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          1.5710-3          0.563092          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          1.2390-3          0.536709          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          8.7420-4 1.6030-4 0.512341          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          6.8200-4          0.480069          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          4.8100-4          0.454766          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          5.0280-4          0.426409          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          5.4920-4          0.366987          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          4.6370-4          0.338901          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          3.8730-4          0.337587          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          2.5250-4 3.6780-5 0.311836          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          2.4390-4          0.276307          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+ 2004 22048   4 801  C 4.1000+7          1.5710-4 3.3040-5 0.208081          1000000.         EXCD.K.McDaniels,ET.AL. (60)C1632 15
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1632
+#AUTHOR1    D.K.Mcdaniels+
+#YEAR       1960
+#INSTITUTE  (1USAWAU)
+#TITLE      Alpha-particle excitation of quadrupole and octupole
+#+          surface modes in Ti,Fe,Ni,Zn and Sr
+#AUTHOR(S)  D.K.Mcdaniels, J.S.Blair, S.W.Chen,
+#+          G.W.Farwell
+#REF-CODE   (J,NP,17,614,1960)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.17, p.614, 1960
+#DATASETS   18
+#
+#DATASET    C1632016
+#DATE       20120703
+#REACTION   22-TI-48(A,INL)22-TI-48,PAR,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         801
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4 801  C]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4 801  C 4.1000+7          1.6030-4          0.563813          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          1.6950-4          0.537298          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          2.4000-4 7.6250-5 0.512791          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          1.8310-4          0.481752          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          2.0020-4          0.460198          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          1.7090-4          0.427987          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          1.0070-4 2.4670-5 0.399388          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          8.4980-5          0.369096          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          8.4920-5          0.338079          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          1.0630-4 2.6040-5 0.310841          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          1.3280-4          0.244629          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+ 2004 22048   4 801  C 4.1000+7          5.7120-5 1.9860-5 0.209958          3500000.         EXCD.K.McDaniels,ET.AL. (60)C1632 16
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0926
+#AUTHOR1    K.A.Kuterbekov+
+#YEAR       2002
+#INSTITUTE  (4KASKAZ)
+#TITLE      Elastic and inelastic scattering of alpha-particles
+#+          and 48,50-Ti nuclei structure
+#AUTHOR(S)  K.A.Kuterbekov, I.N.Kukhtina, A.Duisebaev,
+#+          T.K.Zholdybaev, A.Mukhametzhan
+#REF-CODE   (J,IZK,,(6),50,2002)
+#REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
+#+          Issue.6, p.50, 2002
+#DATASETS   5
+#
+#DATASET    D0926003
+#DATE       20190205
+#REACTION   22-TI-48(A,INL)22-TI-48,PAR,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         801
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4 801  C]
+#DATA       113
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.6023-3 7.0000-4 0.912620          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.5815-3 3.5000-4 0.888056          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.0338-3 5.0000-4 0.874789          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.6201-3 5.0000-4 0.865501          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 7.3638-3 2.6000-4 0.863659          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.1116-3 6.6000-4 0.855996          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.5797-3 3.0000-4 0.846193          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.4443-3 3.0000-4 0.841133          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.2287-3 2.0000-4 0.835999          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.3782-3 1.6000-4 0.830887          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 7.4210-4 1.7000-4 0.825803          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.5190-4 8.0000-5 0.820351          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.7370-4 1.0000-4 0.814925          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.2078-3 1.3000-4 0.813811          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.7510-4 1.0000-4 0.810553          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.9830-4 1.7000-4 0.803960          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.7504-3 1.3000-4 0.798320          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.3024-3 1.8000-4 0.792715          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.9078-3 1.7000-4 0.787150          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.3350-3 1.8000-4 0.781193          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.6128-3 1.9000-4 0.775385          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.7707-3 1.7000-4 0.769399          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.7250-3 1.8000-4 0.768283          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.1144-3 1.8000-4 0.767165          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.9042-3 1.7000-4 0.765370          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.8988-3 1.7000-4 0.764696          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.8568-3 1.7000-4 0.763457          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.8111-3 1.7000-4 0.762216          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.5161-3 1.5000-4 0.759838          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.4611-3 1.6000-4 0.757450          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.2888-3 1.4000-4 0.754938          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.2701-3 1.5000-4 0.752529          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.0524-3 1.5000-4 0.750110          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.7971-3          0.747566          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.6381-3 2.1000-4 0.743844          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.4871-3 1.2000-4 0.740100          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.8821-3 1.2000-4 0.732542          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.2381-3 1.0000-4 0.728729          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.5364-3 1.0000-4 0.721155          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.1531-3 6.0000-5 0.713494          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0171-3          0.707476          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0051-3 6.0000-5 0.705500          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0511-3          0.698914          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0614-3          0.695912          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.9410-4          0.690882          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.4371-3 1.0000-4 0.688227          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.4780-4          0.685563          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0014-3 1.0000-4 0.681487          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.2231-3          0.675975          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.4621-3          0.671978          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.3341-3          0.669130          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.6251-3          0.666401          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.0181-3          0.663664          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.5101-3          0.660918          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.8861-3          0.658163          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.6161-3          0.653023          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.2311-3          0.649713          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.5491-3          0.649447          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.3241-3          0.645457          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.7101-3          0.642653          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.3801-3          0.638364          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.4951-3          0.637020          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.5392-3 9.0000-5 0.635538          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.3997-3 1.0000-4 0.632704          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.6476-3 8.0000-5 0.629862          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.6421-3 8.0000-5 0.625514          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.4958-3 7.6000-5 0.619778          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.4708-3 8.0000-5 0.615385          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.5618-3 7.5000-5 0.612492          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.1620-3 8.5000-5 0.609591          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.1876-3 8.5000-5 0.605154          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0956-3 8.5000-5 0.602232          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0537-3 8.0000-5 0.599302          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 1.0215-3 7.0000-5 0.594822          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.4887-4 5.7000-5 0.593418          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.5144-4 6.0000-5 0.590464          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.9286-4 7.0000-5 0.587502          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.8606-4 4.6000-5 0.584532          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.1895-4 3.0000-5 0.581554          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.6604-4 4.7000-5 0.578569          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.4524-4 4.6000-5 0.575432          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.0196-4 4.5000-5 0.572431          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.2571-4 4.5000-5 0.566405          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 8.0590-4 3.3000-5 0.561938          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.8928-4 4.8000-5 0.558902          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.5099-4 4.7000-5 0.555859          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.5888-4 3.8000-5 0.549751          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.2658-4 4.5000-5 0.545077          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.2080-4 3.2000-5 0.538917          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.8780-4 4.0000-5 0.534351          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.3894-4 4.7000-5 0.529622          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.4156-4 4.9000-5 0.525025          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.8248-4 4.1000-5 0.520263          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.5634-4 4.3000-5 0.515635          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.5628-4 5.0000-5 0.509341          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 6.0035-4 4.6000-5 0.506183          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.5881-4 4.7000-5 0.503019          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.2355-4 3.3000-5 0.499848          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 5.2047-4 4.5000-5 0.496670          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.5118-4 3.3000-5 0.491966          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.5792-4 3.4000-5 0.487096          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.3343-4 2.5000-5 0.483892          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.6216-4 2.7000-5 0.480681          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 4.2001-4 3.1000-5 0.477464          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.1006-4 1.8000-5 0.472703          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.3783-4 1.9000-5 0.469470          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.3342-4 1.9000-5 0.466231          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.4360-4 2.2000-5 0.462985          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.0261-4 3.0000-5 0.459733          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.7090-4 1.7000-5 0.454611          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 3.3226-4 1.5000-5 0.448382          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.3241-4 1.4000-5 0.441974          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+ 2004 22048   4 801  C 5.0500+7 500000.0 2.3740-4 1.8000-5 0.435387          983000.0         LVLK.A.Kuterbekov, (02)     D0926  3
+#/DATA      113
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C1507
+#AUTHOR1    Y.Tokimoto+
+#YEAR       2006
+#INSTITUTE  (1USATAM)
+#TITLE      Giant resonances in 46,48Ti
+#AUTHOR(S)  Y.Tokimoto, Y.W.Lui, H.L.Clark,
+#+          B.John, X.Chen, D.H.Youngblood
+#REF-CODE   (J,PR/C,74,044308,2006)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.74, p.044308, 2006
+#DATASETS   4
+#
+#DATASET    C1507005
+#DATE       20070202
+#REACTION   22-TI-48(A,INL)22-TI-48,PAR,DA
+#PROJ       2004
+#TARG       22048
+#MF         4
+#MT         801
+#PRODUCT    22-TI-48
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 22048   4 801  C]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 22048   4 801  C 2.4000+8          0.261100 0.147700 0.996713          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.240700 0.066880 0.996135          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.147700 0.051360 0.995971          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.208700 0.048510 0.995453          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.144700 0.033640 0.995334          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.147700 0.034330 0.994778          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.111100 0.022280 0.994587          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.068170 0.031890 0.993830          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.051270 0.027610 0.990253          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.038560 0.025710 0.990080          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.054500 0.017470 0.988975          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.064130 0.018750 0.987841          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.073950 0.016020 0.986757          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.071000 0.015380 0.985553          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+ 2004 22048   4 801  C 2.4000+8          0.059120 0.011860 0.984226          980000.0         EXCY.Tokimoto,ET.AL. (06)   C1507  5
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
