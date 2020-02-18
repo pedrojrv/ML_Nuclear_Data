@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import xgboost as xgb
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, median_absolute_error
 import seaborn as sns
+import tensorflow as tf
 sns.set_style("darkgrid")
 
 def plot_xgb_training(dictionary, save=False, show=True):
