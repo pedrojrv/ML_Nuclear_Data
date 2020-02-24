@@ -7,26 +7,37 @@ from Utilities import EXFOR_utilities as exfor_utils
 from Utilities import ENDF_utilities as endf_utils
 from Utilities import Plotting_utilities as plot_utils
 
-endf_dir = "./ENDF/"
+endf_dir = "../ENDF/"
 figure_dir="./Figures/"
 log_E = True
+data_path = "/global/scratch/pedrovicentevz/ML_Data/working_xs_v2_unraw.csv"
 
-df, x_train, x_test, y_train, y_test, to_scale, scaler = exfor_utils.load_exfor(
-    ("../ML_Data/working_xs_v2_unraw.csv"), numerical=True, plotting_df=False, give_split=True, norm=True, log_e=log_E)
+df, x_train, x_test, y_train, y_test, to_scale, scaler = exfor_utils.load_exfor(data_path, 
+    numerical=True, plotting_df=False, give_split=True, norm=True, log_e=log_E)
 
 
-
+# For error and plotting
 new_data = exfor_utils.load_exfor_newdata(endf_dir + "Chlorine_Data/new_cl_np.csv", append_exfor=True, 
                                           df=df, protons=17, mass_number=35, MT="MT_103", log_e=log_E)
 endf_cl = endf_utils.load_endf(endf_dir + "Chlorine_Data/endf_Cl_np_all.csv", log_e=log_E)
 endf_u = endf_utils.load_endf(endf_dir + "Uranium_Data/endf_U_tot.csv", mev_to_ev=True, log_e=log_E)
 
 
-
-
+# XGBoost
 dtrain = xgb.DMatrix(x_train.values, y_train.values)
 dtest = xgb.DMatrix(x_test.values, y_test.values)
 evallist = [(dtrain, 'train'), (dtest, 'eval')]
+
+max_depths = [100, 200, 400, 700]
+learning_rates = [0.3, 0.1, 0.001]
+estimators = [100, 200, 400, 700]
+
+for md in max_depths:
+  for lr in learning_rates:
+    for es in estimators:
+        param = {'max_depth':md, 'eta':lr, 'objective':'reg:squarederror', "booster":"gbtree", 
+                    "tree_method":"auto", "verbosity":2, "gamma":0, "lambda":1}
+        num_round = es
 
 
 param = {'max_depth':20, 'eta':0.3, 'objective':'reg:squarederror', "booster":"gbtree", 
