@@ -6,18 +6,6 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, m
 import seaborn as sns
 sns.set_style("darkgrid")
 
-def plot_xgb_training(dictionary, save=False, show=True):
-    plt.figure(figsize=(10,8))
-    plt.plot(dictionary["eval"]["rmse"], label="Evaluation")
-    plt.plot(dictionary["train"]["rmse"], label="Training")
-    plt.legend()
-    plt.xlabel("Number of Estimators")
-    plt.ylabel("RMSE")
-    if save == True:
-        plt.title("XGBoost Training RMSE")
-        plt.savefig("./Figures/ENSDF/ENSDF_XGBoost_RMSE.png", bbox_inches="tight")
-    if show == False:
-        plt.close()    
 
 
 def plot_levels_axh(protons, neutrons, df, save=False):
