@@ -19,10 +19,10 @@
 #SBATCH --nodes=1
 #
 # Request cores (20, for example)
-#SBATCH --ntasks-per-node=20
+#SBATCH --ntasks-per-node=1
 #
 # Processors per task:
-#SBATCH --cpus-per-task=40
+#SBATCH --cpus-per-task=20
 #
 # Wall clock limit:
 #SBATCH --time=100:00:00

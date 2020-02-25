@@ -49,7 +49,10 @@ def load_exfor(datapath, numerical=False, plotting_df=False, give_split=False, f
             x_train[to_scale] = scaler.transform(x_train[to_scale])
             x_test[to_scale] = scaler.transform(x_test[to_scale])
         print("Finished.")
-        return df, df_plotting, x_train, x_test, y_train, y_test, to_scale, scaler
+        if plotting_df:
+            return df, df_plotting, x_train, x_test, y_train, y_test, to_scale, scaler
+        else:
+            return df, x_train, x_test, y_train, y_test, to_scale, scaler
     else:
         if plotting_df:
             return df, df_plotting
