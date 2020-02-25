@@ -16,13 +16,10 @@
 #SBATCH --partition=savio
 #
 # Request one node:
-#SBATCH --nodes=1
-#
-# Request cores (20, for example)
-#SBATCH --cpus-per-task=20
+#SBATCH --nodes=2
 #
 # Processors per task:
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks=40
 #
 # Wall clock limit:
 #SBATCH --time=100:00:00
@@ -35,7 +32,10 @@
 ## Command(s) to run (example):
 module load python
 source activate data_mining
-ipcluster start -n $SLURM_NTASKS &
-sleep 60 # wait until all engines have successfully started
+ipcontroller --ip='*' &
+sleep 60
+# next line will start as many ipengines as we have SLURM tasks because srun is a SLURM command
+srun ipengine &  
+sleep 60  # wait until all engines have successfully started
 ipython XGB_EXFOR.py > XGB_EXFOR.pyout
 ipcluster stop

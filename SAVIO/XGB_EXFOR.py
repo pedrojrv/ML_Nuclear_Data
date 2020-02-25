@@ -72,8 +72,8 @@ for md in max_depths:
             exfor_utils.predicting_nuclear_xs(df, "MT_103", 17, 35, models[name], 
                                               to_scale, scaler, endf=endf_cl, E_min=-4, E_max=7, N=0, 
                                               error_metrics=True, log_e=log_E, clf_type="xgb", save=False,
-                                              path=("./Figures/Chlorine_Predictions/" + name + "_xs.png"
-                                              path_add=("./Figures/Chlorine_Predictions/" + name + "_additional_xs.png")
+                                              path=("./Figures/Chlorine_Predictions/" + name + "_xs.png"),
+                                              path_add=("./Figures/Chlorine_Predictions/" + name + "_additional_xs.png"))
 
 for md in max_depths:
     for lr in learning_rates:
@@ -82,5 +82,5 @@ for md in max_depths:
             exfor_utils.predicting_nuclear_xs(df, "MT_1", 92, 235, models[name], to_scale, scaler, 
                                               endf=endf_u, E_min=-4, E_max=7, N=0, error_metrics=True, 
                                               log_e=log_E, clf_type="xgb", save=False,
-                                              path=("./Figures/Uranium_Predictions/" + name + "_xs.png"
+                                              path=("./Figures/Uranium_Predictions/" + name + "_xs.png"),
                                               path_add=("./Figures/Uranium_Predictions/" + name + "_additional_xs.png"))
