@@ -10,9 +10,9 @@ from Utilities import Plotting_utilities as plot_utils
 endf_dir = "../ENDF/"
 figure_dir="./Figures/"
 log_E = True
-data_path = "/global/scratch/pedrovicentevz/ML_Data/working_xs_v2_unraw.csv"
+data_path = "/global/scratch/pedrovicentevz/"
 
-df, x_train, x_test, y_train, y_test, to_scale, scaler = exfor_utils.load_exfor(data_path, 
+df, x_train, x_test, y_train, y_test, to_scale, scaler = exfor_utils.load_exfor((data_path + "ML_Data/working_xs_v2_unraw.csv"), 
     numerical=True, plotting_df=False, give_split=True, norm=True, log_e=log_E)
 
 
@@ -32,27 +32,55 @@ max_depths = [100, 200, 400, 700]
 learning_rates = [0.3, 0.1, 0.001]
 estimators = [100, 200, 400, 700]
 
+all_models_progress = {}
+all_models_best_iter = {}
+all_models_best_score = {}
+models = {}
+
 for md in max_depths:
-  for lr in learning_rates:
-    for es in estimators:
-        param = {'max_depth':md, 'eta':lr, 'objective':'reg:squarederror', "booster":"gbtree", 
+    for lr in learning_rates:
+        for es in estimators:
+            progress = {}
+            param = {'max_depth':md, 'eta':lr, 'objective':'reg:squarederror', "booster":"gbtree", 
                     "tree_method":"auto", "verbosity":2, "gamma":0, "lambda":1}
-        num_round = es
+            num_round = es
+            bst = xgb.train(param, dtrain, num_round, evallist, evals_result=progress, 
+                            verbose_eval=True, early_stopping_rounds=5)
+            all_models_progress[str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"] = progress
+            all_models_best_iter[str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"] = bst.best_iteration
+            all_models_best_score[str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"] = bst.best_score
+            models[str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"] = bst
 
 
-param = {'max_depth':20, 'eta':0.3, 'objective':'reg:squarederror', "booster":"gbtree", 
-         "tree_method":"auto", "verbosity":2, "gamma":0, "lambda":1}
-num_round = 50
-
-progress = dict()
+best_model_name = max(all_models_best_score, key=all_models_best_score.get)
+best_model = models[best_model_name]
+best_model.save_model('./Models/XGBoost/' + best_model_name + '.model')  # load data
 
 
-plot_utils.plot_xgb_training(progress)
+for md in max_depths:
+    for lr in learning_rates:
+        for es in estimators:
+            name = str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"
+            plot_utils.plot_xgb_training(all_models_progress[name], title=name, 
+                                         save=False, path=("./Figures/Model_Training_Progress/" + name + ".png"))
 
 
-bst = xgb.train(param, dtrain, num_round, evallist, evals_result=progress, 
-                verbose_eval=True, early_stopping_rounds=10)
+for md in max_depths:
+    for lr in learning_rates:
+        for es in estimators:
+            name = str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"
+            exfor_utils.predicting_nuclear_xs(df, "MT_103", 17, 35, models[name], 
+                                              to_scale, scaler, endf=endf_cl, E_min=-4, E_max=7, N=0, 
+                                              error_metrics=True, log_e=log_E, clf_type="xgb", save=False,
+                                              path=("./Figures/Chlorine_Predictions/" + name + "_xs.png"
+                                              path_add=("./Figures/Chlorine_Predictions/" + name + "_additional_xs.png")
 
-
-exfor_utils.predicting_nuclear_xs(df, "MT_103", 17, 35, bst, to_scale, scaler, additional_data=new_data, 
-                      endf=endf_cl, E_min=-4, E_max=7, N=2500, error_metrics=True, log_e=log_E, clf_type="xgb")
+for md in max_depths:
+    for lr in learning_rates:
+        for es in estimators:
+            name = str(es) + "_est_" + str(md) + "_depth_" + str(lr) + "_lr"
+            exfor_utils.predicting_nuclear_xs(df, "MT_1", 92, 235, models[name], to_scale, scaler, 
+                                              endf=endf_u, E_min=-4, E_max=7, N=0, error_metrics=True, 
+                                              log_e=log_E, clf_type="xgb", save=False,
+                                              path=("./Figures/Uranium_Predictions/" + name + "_xs.png"
+                                              path_add=("./Figures/Uranium_Predictions/" + name + "_additional_xs.png"))

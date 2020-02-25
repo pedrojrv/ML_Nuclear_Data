@@ -228,7 +228,7 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
 
 
 def predicting_nuclear_xs(df, MT, Z, M, clf, to_scale, scaler, additional_data=pd.DataFrame(), 
-    endf=pd.DataFrame(), E_min=0, E_max=0, N=0, error_metrics=False, log_e=False, clf_type=None):
+    endf=pd.DataFrame(), E_min=0, E_max=0, N=0, error_metrics=False, log_e=False, clf_type=None, save=False, path="", path_add=""):
     ''' 
     Used to plot predictions of the clf model for specific isotope (Z, M) and runs.
     MT is the reaction type (e.g 1 is total cross section)
@@ -298,6 +298,8 @@ def predicting_nuclear_xs(df, MT, Z, M, clf, to_scale, scaler, additional_data=p
     plt.yscale('log')
     if log_e == False:
         plt.xscale('log')
+    if save:
+        plt.savefig(path, bbox_inches="tight")
     plt.show()
     
     
@@ -332,6 +334,8 @@ def predicting_nuclear_xs(df, MT, Z, M, clf, to_scale, scaler, additional_data=p
             maximum_y = all_y.max() + all_y.max() * 0.05
             plt.ylim(minimum_y, maximum_y)
         plt.show()
+        if save:
+            plt.savefig(path_add, bbox_inches="tight")
     
     
     if error_metrics:

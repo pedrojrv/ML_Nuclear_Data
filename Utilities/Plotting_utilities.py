@@ -31,15 +31,15 @@ def cat_plot(features, df, groupby, top=10, save=False, path=''):
 	    	plt.savefig(path + '_{}.png'.format(i), bbox_inches='tight')
 
 
-def plot_xgb_training(dictionary, save=False, show=True):
+def plot_xgb_training(dictionary, save=False, show=True, title="", path=""):
     plt.figure(figsize=(10,8))
     plt.plot(dictionary["eval"]["rmse"], label="Evaluation")
     plt.plot(dictionary["train"]["rmse"], label="Training")
     plt.legend()
     plt.xlabel("Number of Estimators")
     plt.ylabel("RMSE")
+    plt.title(title)
     if save == True:
-        plt.title("XGBoost Training RMSE")
-        plt.savefig("./Figures/ENSDF/ENSDF_XGBoost_RMSE.png", bbox_inches="tight")
+        plt.savefig(path, bbox_inches="tight")
     if show == False:
         plt.close()    
