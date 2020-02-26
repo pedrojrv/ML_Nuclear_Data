@@ -8,6 +8,7 @@ from sklearn import preprocessing
 import xgboost as xgb
 
 def load_exfor(datapath, numerical=False, plotting_df=False, give_split=False, frac=0.2, norm=False, log_e=False):
+    """Loads and processes EXFOR data."""
     print("Reading data into dataframe...")
     df = pd.read_csv(datapath, dtype=dtype_exfor)
     print("Data read into dataframe!")
@@ -32,8 +33,8 @@ def load_exfor(datapath, numerical=False, plotting_df=False, give_split=False, f
                     "Target_Origin", "Compound_Origin"]
         df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
 
-        df = df[~((df["Target_Protons"] == 17) & (df["MT_103"] == 1) & 
-            (df["Target_Mass_Number"] == 35) & (df["Year"] < 1962))]
+        # df = df[~((df["Target_Protons"] == 17) & (df["MT_103"] == 1) & 
+        #     (df["Target_Mass_Number"] == 35) & (df["Year"] < 1962))]
         df = df.drop(columns=["Year"])
 
     if give_split:
@@ -89,6 +90,32 @@ def regression_error_metrics(v1, v2):
     print("The MSE is: ", mean_squared_error(v1, v2))
     print("The R2 Score is: ", r2_score(v1, v2))
     print("The MAE is: ", mean_absolute_error(v1, v2))
+
+
+
+def make_predictions(data, clf, clf_type):
+    if clf_type == "tf":
+        tf_dataset = tf.data.Dataset.from_tensor_slices((data)).batch(len(data))
+        pred_vector = clf.predict(tf_dataset)
+    elif clf_type == "xgb":
+        xg_dataset = xgb.DMatrix(data)
+        pred_vector = clf.predict(xg_dataset)
+    else:
+        pred_vector = clf.predict(data)
+    return pred_vector
+
+def expanding_inference_dataset(data, E_min, E_max, log_e, N):
+    if log_e:
+        # energy_range = np.log10(np.linspace(E_min, E_max, N))
+        energy_range = np.linspace(E_min, E_max, N)
+    else:
+        energy_range = np.linspace(E_min, E_max, N)
+    energy_to_add = pd.DataFrame({"Energy": energy_range})
+    for i in list(data.columns)[1:]:
+        energy_to_add[i] = data[i].values[1]
+    data = data.append(energy_to_add, ignore_index=True).sort_values(by='Energy', ascending=True)
+    return data
+
 
 
 
@@ -197,35 +224,6 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
             # Measuring metrics on predictions.
             print("NEW DATA: ENDF vs EXFOR:")
             regression_error_metrics(additio_data[["Data"]], endf_all_int[["Data"]].loc[indexes])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -382,31 +380,6 @@ def predicting_nuclear_xs(df, MT, Z, M, clf, to_scale, scaler, additional_data=p
             # Measuring metrics on predictions.
             print("NEW DATA: ENDF vs EXFOR:")
             regression_error_metrics(additio_data["Data"], y_hat3)
-
-
-
-def make_predictions(data, clf, clf_type):
-    if clf_type == "tf":
-        tf_dataset = tf.data.Dataset.from_tensor_slices((data)).batch(len(data))
-        pred_vector = clf.predict(tf_dataset)
-    elif clf_type == "xgb":
-        xg_dataset = xgb.DMatrix(data)
-        pred_vector = clf.predict(xg_dataset)
-    else:
-        pred_vector = clf.predict(data)
-    return pred_vector
-
-def expanding_inference_dataset(data, E_min, E_max, log_e, N):
-    if log_e:
-        # energy_range = np.log10(np.linspace(E_min, E_max, N))
-        energy_range = np.linspace(E_min, E_max, N)
-    else:
-        energy_range = np.linspace(E_min, E_max, N)
-    energy_to_add = pd.DataFrame({"Energy": energy_range})
-    for i in list(data.columns)[1:]:
-        energy_to_add[i] = data[i].values[1]
-    data = data.append(energy_to_add, ignore_index=True).sort_values(by='Energy', ascending=True)
-    return data
 
 
 # df.dtypes.apply(lambda x: x.name).to_dict()
