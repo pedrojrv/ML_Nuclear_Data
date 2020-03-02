@@ -1,96 +1,100 @@
 import pandas as pd
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 import xgboost as xgb
+import warnings
+# warnings.warn("Warning...........Message")
 
-def load_exfor(datapath, numerical=False, plotting_df=False, give_split=False, frac=0.2, norm=False, log_e=False):
+# If more columns are added we need to fix norm column indexing to not include one hot encoded features.
+# If we want dEnergy back we need to change load_exfor_newdata from [2:] to [3:] and do not drop it in load_Exfor
+
+empty_df = pd.DataFrame()
+
+def load_exfor(datapath, num=False, plot_df=False, split=False, frac=0.2, norm=False, log_e=False):
     """Loads and processes EXFOR data."""
     print("Reading data into dataframe...")
-    df = pd.read_csv(datapath, dtype=dtype_exfor)
-    print("Data read into dataframe!")
-
+    df = pd.read_csv(datapath, dtype=dtype_exfor).dropna()
     df = df[~(df.Energy == 0)]
-    df = df.dropna()
-
-    if plotting_df:
+    print("Data read into dataframe with shape: ", df.shape)
+    if plot_df:
+        print("Creating a copy of the dataframe...")
         df_plotting = df.copy()
-
     if log_e:
-        print("Transforming Energy to Log10(Energy)...")
-        df["Energy"] = np.log10(df["Energy"])
-        df["dEnergy"] = np.log10(df["dEnergy"])
-    if numerical:
-        print("Converting data to numerical...")
+        print("Transforming energy and it's uncertainty using Log10()...")
+        df[["Energy", "dEnergy"]] = np.log10(df[["Energy", "dEnergy"]])
+    if num:
+        print("Dropping unnecessary features and one-hot encoding categorical columns...")
         columns_drop = ["Reaction_Notation", "Title", "Institute", "Date", "Reference", "Out", "Target_Element", 
-                        "Target_Element_w_A", "Compound_EL", "EntrySubP", "EXFOR_Status"]
-        df = df.drop(columns=columns_drop)      
-
+                        "Target_Element_w_A", "Compound_EL", "EntrySubP", "EXFOR_Status", "Year", "dData", "dEnergy"]  
         cat_cols = ["Target_Meta_State", "MT", "I78", "Product_Meta_State", "Frame", "Target_Flag", 
                     "Target_Origin", "Compound_Origin"]
+        df.drop(columns=columns_drop, inplace=True)
+        norm_columns = len(df.columns) - len(cat_cols) - 1
         df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
-
-        # df = df[~((df["Target_Protons"] == 17) & (df["MT_103"] == 1) & 
-        #     (df["Target_Mass_Number"] == 35) & (df["Year"] < 1962))]
-        df = df.drop(columns=["Year"])
-
-    if give_split:
+    if split:
         print("Splitting dataset into training and testing...")
-        x_train, x_test, y_train, y_test = train_test_split(
-            df.drop(["Data", "dData"], axis=1), df["Data"], test_size=frac)
+        x_train, x_test, y_train, y_test = train_test_split(df.drop(["Data"], axis=1), df["Data"], test_size=frac)
         if norm:
-            # Specify columns to scale
-            print("Normalizing dataset..")
-            to_scale = list(x_train.columns)[:66]
-            scaler = preprocessing.StandardScaler().fit(x_train[to_scale])
-            # energy_scaler = preprocessing.StandardScaler().fit(x_train[["Energy"]])
+            print("Normalizing dataset...")
+            to_scale = list(x_train.columns)[:norm_columns]
+            scaler = preprocessing.PowerTransformer().fit(x_train[to_scale])
             x_train[to_scale] = scaler.transform(x_train[to_scale])
             x_test[to_scale] = scaler.transform(x_test[to_scale])
-        print("Finished.")
-        if plotting_df:
+        print("Finished. Resulting dataset has shape ", df.shape, 
+            "\nTraining and Testing dataset shapes are {} and {} respesctively.".format(x_train.shape, x_test.shape))
+        if plot_df:
             return df, df_plotting, x_train, x_test, y_train, y_test, to_scale, scaler
         else:
             return df, x_train, x_test, y_train, y_test, to_scale, scaler
     else:
-        if plotting_df:
+        print("Finished. Resulting dataset has shape ", df.shape)
+        if plot_df:
             return df, df_plotting
         else:
-            print("Finished")
             return df
 
 
-def load_exfor_samples(df, protons, mass_number, MT, nat_iso="I", one_hot=True):
-    """MT needs to be an integer if one_hot=True, string otherwise"""
+def load_exfor_samples(df, Z, A, MT, nat_iso="I", one_hot=True, scale=False, scaler=None, to_scale=[]):
     print("Extracting samples from dataframe.")
     if one_hot:
-        sample = df[(df["Target_Protons"] == protons) & (df[MT] == 1) & 
-                    (df["Target_Mass_Number"] == mass_number) & (df["Target_Flag_" + nat_iso] == 1)].sort_values(by='Energy', ascending=False)
+        sample = df[(df["Target_Protons"] == Z) & (df[MT] == 1) & (df["Target_Mass_Number"] == A) & 
+                    (df["Target_Flag_" + nat_iso] == 1)].sort_values(by='Energy', ascending=True)
     else:
-        sample = df[(df["Target_Protons"] == protons) & (df["MT"] == MT) & 
-                    (df["Target_Mass_Number"] == mass_number) & (df["Target_Flag"] == nat_iso)].sort_values(by='Energy', ascending=False)
-    print("Final Dataframe has shape: ", sample.shape)
+        sample = df[(df["Target_Protons"] == Z) & (df["MT"] == MT) & (df["Target_Mass_Number"] == A) & 
+                    (df["Target_Flag"] == nat_iso)].sort_values(by='Energy', ascending=True)
+    if scale:
+        print("Scaling dataset...")
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    print("EXFOR extracted DataFrame has shape: ", sample.shape)
     return sample
 
-def load_exfor_newdata(datapath, append_exfor=False, df=pd.DataFrame(), protons=0, 
-    mass_number=0, MT="MT_1", log_e=False):
-    new_data = pd.read_csv(datapath)
+
+def load_exfor_newdata(datapath, Z=0, A=0, MT="MT_1", new_df=empty_df, append_exfor=False, df=empty_df, nat_iso="I", one_hot=True, log_e=False):
+    if len(datapath) != 0:
+        new_data = pd.read_csv(datapath)
+    else:
+        new_data = new_df
     if log_e:
         new_data["Energy"] = np.log10(new_data["Energy"])
     if append_exfor:
-        isotope_exfor = load_exfor_samples(df, protons, mass_number, MT)
-        for i in list(isotope_exfor.columns)[4:]:
+        isotope_exfor = load_exfor_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+        for i in list(isotope_exfor.columns)[2:]:
             new_data[i] = isotope_exfor[i].values[1]
+        # new_data = new_data.astype(isotope_exfor.dtypes.to_dict())
+    if "dData" in list(new_data.columns):
+        new_data.drop(columns="dData", inplace=True)
+    print("Expanded Dataset has shape: ", new_data.shape)
     return new_data
 
 
 def regression_error_metrics(v1, v2):
     print("The MSE is: ", mean_squared_error(v1, v2))
-    print("The R2 Score is: ", r2_score(v1, v2))
+    # print("The R2 Score is: ", r2_score(v1, v2))
     print("The MAE is: ", mean_absolute_error(v1, v2))
-
 
 
 def make_predictions(data, clf, clf_type):
@@ -104,12 +108,14 @@ def make_predictions(data, clf, clf_type):
         pred_vector = clf.predict(data)
     return pred_vector
 
+
 def expanding_inference_dataset(data, E_min, E_max, log_e, N):
     if log_e:
         # energy_range = np.log10(np.linspace(E_min, E_max, N))
         energy_range = np.linspace(E_min, E_max, N)
     else:
         energy_range = np.linspace(E_min, E_max, N)
+        # energy_range = np.arange(E_min, E_max, N)
     energy_to_add = pd.DataFrame({"Energy": energy_range})
     for i in list(data.columns)[1:]:
         energy_to_add[i] = data[i].values[1]
@@ -117,15 +123,373 @@ def expanding_inference_dataset(data, E_min, E_max, log_e, N):
     return data
 
 
+def make_predictions_outside(df, Z, A, MT, clf, clf_type, scaler, to_scale, E_min, E_max, N, log_e=False, show=False):
+    # energy_range = pd.DataFrame({"Energy":np.linspace(E_min, E_max, N), "dEnergy":0})
+    # to_infer = load_exfor_newdata("", new_df=energy_range, append_exfor=True, 
+    #                                          df=df, Z=17, A=35, MT="MT_103", log_e=log_e)
+    to_infer = load_exfor_samples(df, Z, A, MT)
+    exfor = to_infer.copy()
+    to_infer.drop(columns=["Data"], inplace=True)
+    # to_infer = expanding_inference_dataset(to_infer, E_min, E_max, log_e, N)
+    if E_min != 0:
+        to_infer = expanding_inference_dataset(to_infer, E_min, E_max, log_e, N)
+    else:
+        to_infer = expanding_inference_dataset(to_infer, to_infer.Energy.min(), to_infer.Energy.max(), log_e, N) 
+    # exfor = load_exfor_samples(df, Z, A, MT)
+    # Applying standard scaler method 
+    to_infer[to_scale] = scaler.transform(to_infer[to_scale])
+
+    # Make Predictions
+    y_hat = make_predictions(to_infer.values, clf, clf_type)
+
+    # Returning features to original values for plotting
+    to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
+    if show:
+        plt.scatter(exfor.Energy, exfor.Data, alpha=0.5, c="g")
+        plt.plot(to_infer.Energy, y_hat)
+        plt.yscale('log')
+        plt.xscale('log')
+    return y_hat
 
 
-def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFrame(), endf=pd.DataFrame(), error_metrics=False,
-    save=False, interpolate=False, legend=True, alpha=0.7, one_hot=True, log_e=False, path='', references=False):
+def predicting_nuclear_xs(df, Z, A, MT, clf, to_scale, scaler, E_min=0, E_max=0, N=0, error=False, log_e=False, clf_type=None, 
+    endf=empty_df, new_data=empty_df, focus=False, save=False, show=True, path="", path_add=""):
+    ''' 
+    Used to plot predictions of the clf model for specific isotope (Z, A) and runs.
+    MT is the reaction type (e.g 1 is total cross section)
+    E_min and E_max are the energy region in which to make additional inferences.
+    '''
     # Extracting dataframe to make predictions and creating copy for evaluation
-    to_plot = load_exfor_samples(df, Z, M, MT, nat_iso=nat_iso, one_hot=one_hot)
+    endf_avaliable = True if endf.shape[0] != 0 else False
+    new_data_avaliable = True if new_data.shape[0] != 0 else False
+
+    to_infer = load_exfor_samples(df, Z, A, MT)
+    to_plot = to_infer.copy().sort_values(by='Energy', ascending=True)
+    to_infer = to_infer.drop(columns=["Data"])
+    if E_min != 0:
+        to_infer = expanding_inference_dataset(to_infer, E_min, E_max, log_e, N)
+    else:
+        to_infer = expanding_inference_dataset(to_infer, to_infer.Energy.min(), to_infer.Energy.max(), log_e, N) 
+
+    # Applying scaler method, making prediciton, and returning df to original scale
+    to_infer[to_scale] = scaler.transform(to_infer[to_scale])
+    to_plot[to_scale] = scaler.transform(to_plot[to_scale])
+    y_hat = make_predictions(to_infer.values, clf, clf_type)
+    y_hat2 = make_predictions(to_plot.drop(columns=["Data"]).values, clf, clf_type)
+    to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
+    to_plot[to_scale] = scaler.inverse_transform(to_plot[to_scale])
+
+    if show:
+        # Initializing Figure and Plotting 
+        plt.figure(figsize=(16,10))
+        alpha = 0.8
+        if endf_avaliable:
+            endf_eval = plt.plot(endf["Energy"], endf["Data"], alpha=alpha, c="orange", linestyle="--", label="ENDF")
+        true = plt.plot(to_plot["Energy"], to_plot["Data"], alpha=alpha, c='b', label="EXFOR", linestyle="--")
+        pred = plt.plot(to_infer["Energy"], y_hat, alpha=alpha, c="green", linestyle="-", label="ML", linewidth=5)
+        if new_data_avaliable:
+            new_data[to_scale] = scaler.transform(new_data[to_scale])
+            y_hat3 = make_predictions(new_data.drop(columns=["Data"]).values, clf, clf_type)
+            new_data[to_scale] = scaler.inverse_transform(new_data[to_scale])
+            pred_unseen = plt.scatter(new_data["Energy"], y_hat3, alpha=alpha, c="green", label="ML New Data")
+            unseen = plt.scatter(new_data["Energy"], new_data["Data"], alpha=alpha*0.5, c="b")
+
+        # SETTING PLOT LIMITS
+        if (new_data_avaliable and endf_avaliable): #if both 
+            plt.legend()
+            all_y = np.concatenate((to_plot["Data"].values.flatten(), y_hat[0].flatten(), 
+                endf["Data"].values.flatten(), new_data["Data"].values.flatten()))
+            minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+            maximum_y = all_y.max() + all_y.max() * 0.05
+            plt.ylim(minimum_y, maximum_y)
+        elif not new_data_avaliable and endf_avaliable: # if ENDF only
+            plt.legend((endf_eval, true, pred), ('ENDF', 'EXFOR', "EXFOR Pred"), loc='upper left')
+            all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"]))
+            minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+            maximum_y = all_y.max() + all_y.max() * 0.05
+            plt.ylim(minimum_y, maximum_y)
+        elif new_data_avaliable and not endf_avaliable: # if ADDITIONAL only
+            plt.legend((true, unseen, pred, pred_unseen), 
+                       ('EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='upper left')
+            all_y = np.concatenate((to_plot["Data"].values, y_hat, y_hat2, new_data["Data"].values))
+            minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+            maximum_y = all_y.max() + all_y.max() * 0.05
+            plt.ylim(minimum_y, maximum_y)
+        else: # if no ENDF and Additional
+            plt.legend((true, pred), ('EXFOR', "EXFOR Pred"), loc='upper left')    
+            all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2))
+            minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+            maximum_y = all_y.max() + all_y.max() * 0.05
+            plt.ylim(minimum_y, maximum_y)
+        plt.title('Cross Section Inference ' + MT)
+        plt.xlabel('Log10 Energy(MeV)')
+        plt.ylabel('Cross Section (b)')
+        plt.yscale('log')
+        if log_e == False:
+            plt.xscale('log')
+        if save:
+            plt.savefig(path, bbox_inches="tight")
+        plt.show()
+    
+        # Initializing Figure and Plotting
+        if focus:
+            plt.figure(figsize=(16,10))
+            pred_unseen = plt.scatter(new_data["Energy"], y_hat3, alpha=0.5, c="orange")
+            unseen = plt.scatter(new_data["Energy"], new_data["Data"], alpha=0.3, c="b")  
+            # unseen = plt.errorbar(new_data["Energy"], new_data["Data"], yerr=new_data["dData"], c='b', fmt='o', alpha=0.3)
+            if endf.shape[0] != 0:
+                endf_data = plt.plot(endf['Energy'], endf["Data"], c="g", alpha=0.3)
+            plt.title('Cross Section Inference ' + MT)
+            plt.xlabel('Log10 Energy(MeV)')
+            plt.ylabel('Cross Section (b)')
+            minimum_x = new_data["Energy"].min() - new_data["Energy"].min() * 0.001
+            maximum_x = new_data["Energy"].max() + new_data["Energy"].max() * 0.001
+            plt.xlim(minimum_x, maximum_x)
+            plt.yscale('log')
+            if endf.shape[0] != 0:
+                plt.legend((pred_unseen, unseen, endf_data), ("New Pred", "New", "ENDF"), loc='upper left')
+                all_y = np.concatenate((new_data["Data"].values,
+                                        endf[(endf['Energy'] >= minimum_x) & (endf['Energy'] <= maximum_x)]["Data"].values,
+                                        y_hat3[0].flatten()))
+                print(y_hat3)
+                minimum_y = all_y.min() - all_y.min() * 0.05
+                maximum_y = all_y.max() + all_y.max() * 0.05
+                plt.ylim(minimum_y, maximum_y)
+            else:
+                plt.legend((pred_unseen, unseen), ("New Pred", "New"), loc='upper left')
+                all_y = np.concatenate((new_data["Data"].values, y_hat3))
+                minimum_y = all_y.min() - all_y.min() * 0.05
+                maximum_y = all_y.max() + all_y.max() * 0.05
+                plt.ylim(minimum_y, maximum_y)
+            plt.show()
+            if save:
+                plt.savefig(path_add, bbox_inches="tight")
+    
+    if error:
+        endf_all_int = endf.copy()
+        to_plot_2 = to_plot.copy()
+        to_plot_2 = to_plot_2[to_plot_2.Energy > endf_all_int.Energy.min()]
+        # We start our index numbering after len(endf) that way it does not collide
+        indexes = np.arange(len(endf), len(endf) + len(to_plot_2))
+        # This will return a dataframe with non zero index 
+        to_plot_2.index = indexes
+        # energy_interest will carry previous indexes
+        energy_interest = to_plot_2[["Energy"]]
+        energy_interest["Data"] = np.nan
+        endf_all_int = endf_all_int.append(energy_interest, ignore_index=False)
+        endf_all_int = endf_all_int.sort_values(by=['Energy'])
+        endf_all_int["Data"] = endf_all_int["Data"].interpolate(limit_direction="forward")
+
+        # Measuring metrics on predictions.
+        print("ENDF vs EXFOR:")
+        regression_error_metrics(to_plot_2["Data"], endf_all_int[["Data"]].loc[indexes])
+
+        # Measuring metrics on predictions.
+        print("ML vs EXFOR:")
+        regression_error_metrics(to_plot["Data"], y_hat2)
+        
+        if new_data.shape[0] != 0:      
+            endf_all_int = endf.copy()
+            additio_data = new_data.copy()
+            indexes = np.arange(len(endf), len(endf) + len(additio_data))
+            additio_data.index = indexes
+            energy_interest_endf = additio_data[["Energy"]]
+            energy_interest_endf["Data"] = np.nan
+            endf_all_int = endf_all_int.append(energy_interest_endf, ignore_index=False)
+            endf_all_int = endf_all_int.sort_values(by=['Energy'])
+            endf_all_int["Data"] = endf_all_int["Data"].interpolate()
+
+            to_infer.reset_index(drop=True, inplace=True)
+            to_infer["Data"] = y_hat  
+            indexes_infer = np.arange(len(to_infer), len(to_infer) + len(additio_data))
+            additio_data.index = indexes_infer
+            energy_interest_infer = additio_data[["Energy"]]
+            energy_interest_infer["Data"] = np.nan
+            to_infer_all = to_infer.append(energy_interest_infer, ignore_index=False)
+            to_infer_all = to_infer_all.sort_values(by=['Energy'])
+            to_infer_all["Data"] = to_infer_all["Data"].interpolate()
+
+            # Measuring metrics on predictions.
+            print("NEW DATA: ENDF vs EXFOR:")
+            regression_error_metrics(additio_data["Data"], endf_all_int[["Data"]].loc[indexes])
+            
+
+            # Measuring metrics on predictions.
+            print("NEW DATA: ML vs EXFOR:")
+            # regression_error_metrics(additio_data["Data"], y_hat3)
+            regression_error_metrics(additio_data["Data"], to_infer_all[["Data"]].loc[indexes_infer])
+
+    # return to_infer_all
+
+
+# def predicting_nuclear_xs(df, Z, A, MT, clf, to_scale, scaler, E_min=0, E_max=0, N=0, error=False, log_e=False, clf_type=None, 
+#     endf=empty_df, new_data=empty_df, focus=False, save=False, path="", path_add=""):
+#     ''' 
+#     Used to plot predictions of the clf model for specific isotope (Z, A) and runs.
+#     MT is the reaction type (e.g 1 is total cross section)
+#     E_min and E_max are the energy region in which to make additional inferences.
+#     '''
+#     # Extracting dataframe to make predictions and creating copy for evaluation
+#     to_infer = load_exfor_samples(df, Z, A, MT)
+#     to_plot = to_infer.copy().sort_values(by='Energy', ascending=True)
+#     to_infer = to_infer.drop(columns=["Data"])
+
+#     if E_min != 0:
+#         to_infer = expanding_inference_dataset(to_infer, E_min, E_max, log_e, N)
+#     else:
+#         to_infer = expanding_inference_dataset(to_infer, to_infer.Energy.min(), to_infer.Energy.max(), log_e, N) 
+    
+#     # Applying scaler method 
+#     to_infer[to_scale] = scaler.transform(to_infer[to_scale])
+#     to_plot[to_scale] = scaler.transform(to_plot[to_scale])
+#     # Make Predictions
+#     y_hat = make_predictions(to_infer.values, clf, clf_type)
+#     # y_hat2 = make_predictions(to_plot.drop(columns=["Data"]).values, clf, clf_type)
+#     # Returning features to original values for plotting
+#     to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
+#     # to_plot[to_scale] = scaler.inverse_transform(to_plot[to_scale])
+#     # Initializing Figure and Plotting 
+#     plt.figure(figsize=(16,10))
+#     if endf.shape[0] != 0:
+#         endf_eval = plt.plot(endf["Energy"], endf["Data"], alpha=0.3, c="g")
+#     true = plt.scatter(to_plot["Energy"], to_plot["Data"], alpha=0.3, c='b')
+#     pred = plt.scatter(to_infer["Energy"], y_hat, alpha=0.5, c="orange")
+#     if new_data.shape[0] != 0:
+#         new_data[to_scale] = scaler.transform(new_data[to_scale])
+#         y_hat3 = make_predictions(new_data.drop(columns=["Data"]).values, clf, clf_type)
+
+
+#         new_data[to_scale] = scaler.inverse_transform(new_data[to_scale])
+#         print(new_data["MT_103"][0])
+        
+
+#         unseen = plt.scatter(new_data["Energy"], new_data["Data"], alpha=0.3, c="b")
+#         pred_unseen = plt.scatter(new_data["Energy"], y_hat3, alpha=0.5, c="r")
+
+#     # SETTING PLOT LIMITS
+#     if (new_data.shape[0] != 0 and endf.shape[0] != 0): #if both 
+#         plt.legend((endf_eval, true, unseen, pred, pred_unseen),
+#                    ('ENDF', 'EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='lower left')
+#         all_y = np.concatenate((to_plot["Data"].values.flatten(), y_hat[0].flatten(), y_hat2[0].flatten(), 
+#             endf["Data"].values.flatten(), new_data["Data"].values.flatten(), y_hat3[0].flatten()))
+#         # all_y = np.concatenate((to_plot["Data"].values.flatten(), y_hat[0].flatten(), 
+#         #     endf["Data"].values.flatten(), new_data["Data"].values.flatten(), y_hat3[0].flatten()))
+#         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+#         maximum_y = all_y.max() + all_y.max() * 0.05
+#         plt.ylim(minimum_y, maximum_y)
+#     elif new_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
+#         plt.legend((endf_eval, true, pred), ('ENDF', 'EXFOR', "EXFOR Pred"), loc='upper left')
+#         all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"]))
+#         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+#         maximum_y = all_y.max() + all_y.max() * 0.05
+#         plt.ylim(minimum_y, maximum_y)
+#     elif new_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
+#         plt.legend((true, unseen, pred, pred_unseen), 
+#                    ('EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='upper left')
+#         all_y = np.concatenate((to_plot["Data"].values, y_hat, y_hat2, new_data["Data"].values, y_hat3))
+#         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+#         maximum_y = all_y.max() + all_y.max() * 0.05
+#         plt.ylim(minimum_y, maximum_y)
+#     else: # if no ENDF and Additional
+#         plt.legend((true, pred), ('EXFOR', "EXFOR Pred"), loc='upper left')    
+#         all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2))
+#         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
+#         maximum_y = all_y.max() + all_y.max() * 0.05
+#         plt.ylim(minimum_y, maximum_y)
+#     plt.title('Cross Section Inference ' + MT)
+#     plt.xlabel('Log10 Energy(MeV)')
+#     plt.ylabel('Cross Section (b)')
+#     plt.yscale('log')
+#     if log_e == False:
+#         plt.xscale('log')
+#     if save:
+#         plt.savefig(path, bbox_inches="tight")
+#     plt.show()
+    
+#     # Initializing Figure and Plotting
+#     if focus:
+#         plt.figure(figsize=(16,10))
+#         pred_unseen = plt.scatter(new_data["Energy"], y_hat3, alpha=0.5, c="orange")
+#         unseen = plt.scatter(new_data["Energy"], new_data["Data"], alpha=0.3, c="b")  
+#         # unseen = plt.errorbar(new_data["Energy"], new_data["Data"], yerr=new_data["dData"], c='b', fmt='o', alpha=0.3)
+#         if endf.shape[0] != 0:
+#             endf_data = plt.plot(endf['Energy'], endf["Data"], c="g", alpha=0.3)
+#         plt.title('Cross Section Inference ' + MT)
+#         plt.xlabel('Log10 Energy(MeV)')
+#         plt.ylabel('Cross Section (b)')
+#         minimum_x = new_data["Energy"].min() - new_data["Energy"].min() * 0.001
+#         maximum_x = new_data["Energy"].max() + new_data["Energy"].max() * 0.001
+#         plt.xlim(minimum_x, maximum_x)
+#         plt.yscale('log')
+#         if endf.shape[0] != 0:
+#             plt.legend((pred_unseen, unseen, endf_data), ("New Pred", "New", "ENDF"), loc='upper left')
+#             all_y = np.concatenate((new_data["Data"].values,
+#                                     endf[(endf['Energy'] >= minimum_x) & (endf['Energy'] <= maximum_x)]["Data"].values,
+#                                     y_hat3[0].flatten()))
+#             print(y_hat3)
+#             minimum_y = all_y.min() - all_y.min() * 0.05
+#             maximum_y = all_y.max() + all_y.max() * 0.05
+#             plt.ylim(minimum_y, maximum_y)
+#         else:
+#             plt.legend((pred_unseen, unseen), ("New Pred", "New"), loc='upper left')
+#             all_y = np.concatenate((new_data["Data"].values, y_hat3))
+#             minimum_y = all_y.min() - all_y.min() * 0.05
+#             maximum_y = all_y.max() + all_y.max() * 0.05
+#             plt.ylim(minimum_y, maximum_y)
+#         plt.show()
+#         if save:
+#             plt.savefig(path_add, bbox_inches="tight")
+    
+#     if error:
+#         endf_all_int = endf.copy()
+#         to_plot_2 = to_plot.copy()
+#         to_plot_2 = to_plot_2[to_plot_2.Energy > endf_all_int.Energy.min()]
+#         # We start our index numbering after len(endf) that way it does not collide
+#         indexes = np.arange(len(endf), len(endf) + len(to_plot_2))
+#         # This will return a dataframe with non zero index 
+#         to_plot_2.index = indexes
+#         # energy_interest will carry previous indexes
+#         energy_interest = to_plot_2[["Energy"]]
+#         energy_interest["Data"] = np.nan
+#         endf_all_int = endf_all_int.append(energy_interest, ignore_index=False)
+#         endf_all_int = endf_all_int.sort_values(by=['Energy'])
+#         endf_all_int["Data"] = endf_all_int["Data"].interpolate(limit_direction="forward")
+
+#         # Measuring metrics on predictions.
+#         print("ENDF vs EXFOR:")
+#         regression_error_metrics(to_plot_2["Data"], endf_all_int[["Data"]].loc[indexes])
+
+#         # Measuring metrics on predictions.
+#         print("XS Tree vs EXFOR:")
+#         regression_error_metrics(to_plot["Data"], y_hat2)
+        
+#         if new_data.shape[0] != 0:        
+#             endf_all_int = endf.copy()
+#             additio_data = new_data.copy()
+#             indexes = np.arange(len(endf), len(endf) + len(additio_data))
+#             additio_data.index = indexes
+#             energy_interest = additio_data[["Energy"]]
+#             energy_interest["Data"] = np.nan
+#             endf_all_int = endf_all_int.append(energy_interest, ignore_index=False)
+#             endf_all_int = endf_all_int.sort_values(by=['Energy'])
+#             endf_all_int["Data"] = endf_all_int["Data"].interpolate()
+
+#             # Measuring metrics on predictions.
+#             print("NEW DATA: ENDF vs EXFOR:")
+#             regression_error_metrics(additio_data["Data"], endf_all_int[["Data"]].loc[indexes])
+            
+#             # Measuring metrics on predictions.
+#             print("NEW DATA: ENDF vs EXFOR:")
+#             regression_error_metrics(additio_data["Data"], y_hat3)
+
+
+def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=empty_df, error=False,
+    save=False, interpolate=False, legend=True, alpha=0.7, one_hot=True, log_e=False, path='', ref=False):
+    # Extracting dataframe to make predictions and creating copy for evaluation
+    to_plot = load_exfor_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
     # Initializing Figure and Plotting 
     plt.figure(figsize=(16,10))
-    if references:
+    if ref:
         fg = sns.FacetGrid(data=to_plot[["Energy", "Data", "Reference"]], hue='Reference', 
                            hue_order=to_plot["Reference"].unique(), aspect=1.5, legend_out=False, height=10)
         fg.map(plt.scatter, "Energy", "Data", alpha=alpha)
@@ -136,39 +500,39 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
                 sns.lineplot(to_plot["Energy"], to_plot["Data"], alpha=alpha*0.5, label="Interpolation", ci=None)
             if endf.shape[0] != 0:
                 sns.lineplot(endf["Energy"], endf["Data"], color="g", label="ENDF", alpha=alpha, ci=None)
-            if additional_data.shape[0] != 0:
-                sns.scatterplot(additional_data["Energy"], additional_data["Data"], color="r", 
+            if new_data.shape[0] != 0:
+                sns.scatterplot(new_data["Energy"], new_data["Data"], color="r", 
                                 alpha=0.5, label="New Data", ci=None)   
         else:
             if interpolate == True:
                 sns.lineplot(to_plot["Energy"], to_plot["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated")
             if endf.shape[0] != 0:
                 sns.lineplot(endf["Energy"], endf["Data"], color="orange", alpha=1.0, legend=False, ci=None, label="ENDF")
-            if additional_data.shape[0] != 0:
-                sns.scatterplot(additional_data["Energy"], additional_data["Data"], legend=False, ci=None, label="Additional Data") 
+            if new_data.shape[0] != 0:
+                sns.scatterplot(new_data["Energy"], new_data["Data"], legend=False, ci=None, label="Additional Data") 
     else:
         sns.scatterplot(to_plot["Energy"], to_plot["Data"], alpha=0.7, legend=False, label="EXFOR", ci=None, marker="o")
         if interpolate == True:
             sns.lineplot(to_plot["Energy"], to_plot["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated")
         if endf.shape[0] != 0:
             sns.lineplot(endf["Energy"], endf["Data"], color="orange", alpha=1.0, legend=False, ci=None, label="ENDF")
-        if additional_data.shape[0] != 0:
-            sns.scatterplot(additional_data["Energy"], additional_data["Data"], alpha=1.0, legend=False, ci=None, label="Additional Data")  
+        if new_data.shape[0] != 0:
+            sns.scatterplot(new_data["Energy"], new_data["Data"], alpha=1.0, legend=False, ci=None, label="Additional Data")  
         if legend:
             plt.legend()
     # Setting Figure Limits
-    if (additional_data.shape[0] != 0 and endf.shape[0] != 0): #if both 
-        all_y = np.concatenate((to_plot["Data"], endf["Data"], additional_data["Data"]))
+    if (new_data.shape[0] != 0 and endf.shape[0] != 0): #if both 
+        all_y = np.concatenate((to_plot["Data"], endf["Data"], new_data["Data"]))
         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
         maximum_y = all_y.max() + all_y.max() * 0.05
         plt.ylim(minimum_y, maximum_y)
-    elif additional_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
+    elif new_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
         all_y = np.concatenate((to_plot["Data"], endf["Data"]))
         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
         maximum_y = all_y.max() + all_y.max() * 0.05
         plt.ylim(minimum_y, maximum_y)
-    elif additional_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
-        all_y = np.concatenate((to_plot["Data"].values, additional_data["Data"].values))
+    elif new_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
+        all_y = np.concatenate((to_plot["Data"].values, new_data["Data"].values))
         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
         maximum_y = all_y.max() + all_y.max() * 0.05
         plt.ylim(minimum_y, maximum_y)
@@ -179,7 +543,7 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
         plt.ylim(minimum_y, maximum_y)
     # Formatting Figure
     if one_hot:
-        plt.title("{} Protons, {} Neutrons, {}".format(Z, M-Z, MT))
+        plt.title("{} Protons, {} Neutrons, {}".format(Z, A-Z, MT))
     else:
         plt.title("{} MT = {}".format(to_plot.Target_Element_w_A.values[0], MT))
     plt.xlabel('Energy(eV)')
@@ -191,7 +555,7 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
         plt.savefig(path + "EXFOR_{}_XS.png".format(to_plot.Target_Element_w_A.values[0]), bbox_inches='tight')
 
 
-    if error_metrics:
+    if error:
         endf_all_int = endf.copy()
         to_plot_2 = to_plot.copy()
         to_plot_2 = to_plot_2[to_plot_2.Energy > endf_all_int.Energy.min()]
@@ -210,9 +574,9 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
         print("ENDF vs EXFOR:")
         regression_error_metrics(to_plot_2["Data"], endf_all_int[["Data"]].loc[indexes])
 
-        if additional_data.shape[0] != 0:        
+        if new_data.shape[0] != 0:        
             endf_all_int = endf.copy()
-            additio_data = additional_data.copy()
+            additio_data = new_data.copy()
             indexes = np.arange(len(endf), len(endf) + len(additio_data))
             additio_data.index = indexes
             energy_interest = additio_data[["Energy"]]
@@ -224,162 +588,6 @@ def plot_exfor_w_references(df, MT, Z, M, nat_iso="I", additional_data=pd.DataFr
             # Measuring metrics on predictions.
             print("NEW DATA: ENDF vs EXFOR:")
             regression_error_metrics(additio_data[["Data"]], endf_all_int[["Data"]].loc[indexes])
-
-
-
-
-def predicting_nuclear_xs(df, MT, Z, M, clf, to_scale, scaler, additional_data=pd.DataFrame(), 
-    endf=pd.DataFrame(), E_min=0, E_max=0, N=0, error_metrics=False, log_e=False, clf_type=None, save=False, path="", path_add=""):
-    ''' 
-    Used to plot predictions of the clf model for specific isotope (Z, M) and runs.
-    MT is the reaction type (e.g 1 is total cross section)
-    E_min and E_max are the energy region in which to make additional inferences.
-    '''
-    # Extracting dataframe to make predictions and creating copy for evaluation
-    to_infer = load_exfor_samples(df, Z, M, MT)
-    to_plot = to_infer.copy().sort_values(by='Energy', ascending=True)
-    to_infer = to_infer.drop(columns=["Data", "dData"])
-
-    if N != 0:
-        to_infer = expanding_inference_dataset(to_infer, E_min, E_max, log_e, N)
-    
-    # Applying standard scaler method 
-    to_infer[to_scale] = scaler.transform(to_infer[to_scale])
-    to_plot[to_scale] = scaler.transform(to_plot[to_scale])
-    # Make Predictions
-    y_hat = make_predictions(to_infer.values, clf, clf_type)
-    y_hat2 = make_predictions(to_plot.drop(columns=["Data", "dData"]).values, clf, clf_type)
-    # Returning features to original values for plotting
-    to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
-    to_plot[to_scale] = scaler.inverse_transform(to_plot[to_scale])
-    # Initializing Figure and Plotting 
-    plt.figure(figsize=(16,10))
-    if endf.shape[0] != 0:
-        endf_eval = plt.plot(endf["Energy"], endf["Data"], alpha=0.3, c="g")
-    true = plt.scatter(to_plot["Energy"], to_plot["Data"], alpha=0.3, c='b')
-    pred = plt.scatter(to_infer["Energy"], y_hat, alpha=0.5, c="orange")
-    if additional_data.shape[0] != 0:
-        additional_data[to_scale] = scaler.transform(additional_data[to_scale])
-        y_hat3 = make_predictions(additional_data.drop(columns=["Data", "dData"]).values, clf, clf_type)
-        additional_data[to_scale] = scaler.inverse_transform(additional_data[to_scale])
-        unseen = plt.scatter(additional_data["Energy"], additional_data["Data"], alpha=0.3, c="b")
-        pred_unseen = plt.scatter(additional_data["Energy"], y_hat3, alpha=0.5, c="r")
-
-    # SETTING PLOT LIMITS
-    if (additional_data.shape[0] != 0 and endf.shape[0] != 0): #if both 
-        plt.legend((endf_eval, true, unseen, pred, pred_unseen),
-                   ('ENDF', 'EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='lower left')
-        all_y = np.concatenate((to_plot["Data"].values.flatten(), y_hat[0].flatten(), y_hat2[0].flatten(), 
-            endf["Data"].values.flatten(), additional_data["Data"].values.flatten(), y_hat3[0].flatten()))
-        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
-        maximum_y = all_y.max() + all_y.max() * 0.05
-        plt.ylim(minimum_y, maximum_y)
-    elif additional_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
-        plt.legend((endf_eval, true, pred), ('ENDF', 'EXFOR', "EXFOR Pred"), loc='upper left')
-        all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"]))
-        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
-        maximum_y = all_y.max() + all_y.max() * 0.05
-        plt.ylim(minimum_y, maximum_y)
-    elif additional_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
-        plt.legend((true, unseen, pred, pred_unseen), 
-                   ('EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='upper left')
-        all_y = np.concatenate((to_plot["Data"].values, y_hat, y_hat2, additional_data["Data"].values, y_hat3))
-        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
-        maximum_y = all_y.max() + all_y.max() * 0.05
-        plt.ylim(minimum_y, maximum_y)
-    else: # if no ENDF and Additional
-        plt.legend((true, pred), ('EXFOR', "EXFOR Pred"), loc='upper left')    
-        all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2))
-        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
-        maximum_y = all_y.max() + all_y.max() * 0.05
-        plt.ylim(minimum_y, maximum_y)
-    plt.title('Cross Section Inference ' + MT)
-    plt.xlabel('Log10 Energy(MeV)')
-    plt.ylabel('Cross Section (b)')
-    plt.yscale('log')
-    if log_e == False:
-        plt.xscale('log')
-    if save:
-        plt.savefig(path, bbox_inches="tight")
-    plt.show()
-    
-    
-    # Initializing Figure and Plotting
-    if additional_data.shape[0] != 0:
-        plt.figure(figsize=(16,10))
-        pred_unseen = plt.scatter(additional_data["Energy"], y_hat3, alpha=0.5, c="orange")
-        unseen = plt.scatter(additional_data["Energy"], additional_data["Data"], alpha=0.3, c="b")  
-        # unseen = plt.errorbar(additional_data["Energy"], additional_data["Data"], yerr=additional_data["dData"], c='b', fmt='o', alpha=0.3)
-        if endf.shape[0] != 0:
-            endf_data = plt.plot(endf['Energy'], endf["Data"], c="g", alpha=0.3)
-        plt.title('Cross Section Inference ' + MT)
-        plt.xlabel('Log10 Energy(MeV)')
-        plt.ylabel('Cross Section (b)')
-        minimum_x = additional_data["Energy"].min() - additional_data["Energy"].min() * 0.001
-        maximum_x = additional_data["Energy"].max() + additional_data["Energy"].max() * 0.001
-        plt.xlim(minimum_x, maximum_x)
-        plt.yscale('log')
-        if endf.shape[0] != 0:
-            plt.legend((pred_unseen, unseen, endf_data), ("New Pred", "New", "ENDF"), loc='upper left')
-            all_y = np.concatenate((additional_data["Data"].values,
-                                    endf[(endf['Energy'] >= minimum_x) & (endf['Energy'] <= maximum_x)]["Data"].values,
-                                    y_hat3[0].flatten()))
-            print(y_hat3)
-            minimum_y = all_y.min() - all_y.min() * 0.05
-            maximum_y = all_y.max() + all_y.max() * 0.05
-            plt.ylim(minimum_y, maximum_y)
-        else:
-            plt.legend((pred_unseen, unseen), ("New Pred", "New"), loc='upper left')
-            all_y = np.concatenate((additional_data["Data"].values, y_hat3))
-            minimum_y = all_y.min() - all_y.min() * 0.05
-            maximum_y = all_y.max() + all_y.max() * 0.05
-            plt.ylim(minimum_y, maximum_y)
-        plt.show()
-        if save:
-            plt.savefig(path_add, bbox_inches="tight")
-    
-    
-    if error_metrics:
-        endf_all_int = endf.copy()
-        to_plot_2 = to_plot.copy()
-        to_plot_2 = to_plot_2[to_plot_2.Energy > endf_all_int.Energy.min()]
-        # We start our index numbering after len(endf) that way it does not collide
-        indexes = np.arange(len(endf), len(endf) + len(to_plot_2))
-        # This will return a dataframe with non zero index 
-        to_plot_2.index = indexes
-        # energy_interest will carry previous indexes
-        energy_interest = to_plot_2[["Energy"]]
-        energy_interest["Data"] = np.nan
-        endf_all_int = endf_all_int.append(energy_interest, ignore_index=False)
-        endf_all_int = endf_all_int.sort_values(by=['Energy'])
-        endf_all_int["Data"] = endf_all_int["Data"].interpolate(limit_direction="forward")
-
-        # Measuring metrics on predictions.
-        print("ENDF vs EXFOR:")
-        regression_error_metrics(to_plot_2["Data"], endf_all_int[["Data"]].loc[indexes])
-
-        # Measuring metrics on predictions.
-        print("XS Tree vs EXFOR:")
-        regression_error_metrics(to_plot["Data"], y_hat2)
-        
-        if additional_data.shape[0] != 0:        
-            endf_all_int = endf.copy()
-            additio_data = additional_data.copy()
-            indexes = np.arange(len(endf), len(endf) + len(additio_data))
-            additio_data.index = indexes
-            energy_interest = additio_data[["Energy"]]
-            energy_interest["Data"] = np.nan
-            endf_all_int = endf_all_int.append(energy_interest, ignore_index=False)
-            endf_all_int = endf_all_int.sort_values(by=['Energy'])
-            endf_all_int["Data"] = endf_all_int["Data"].interpolate()
-
-            # Measuring metrics on predictions.
-            print("NEW DATA: ENDF vs EXFOR:")
-            regression_error_metrics(additio_data["Data"], endf_all_int[["Data"]].loc[indexes])
-            
-            # Measuring metrics on predictions.
-            print("NEW DATA: ENDF vs EXFOR:")
-            regression_error_metrics(additio_data["Data"], y_hat3)
 
 
 # df.dtypes.apply(lambda x: x.name).to_dict()
@@ -513,7 +721,7 @@ def DistributionPlot(RedFunction, BlueFunction, RedName, BlueName, Title):
     plt.show()
 
 # FROM 5 DT EXFOR V2
-# def predicting_nuclear_xs(MT, Z, M, clf, additional_data=pd.DataFrame(), endf=pd.DataFrame(), E_min=0, E_max=0, N=0):
+# def predicting_nuclear_xs(MT, Z, M, clf, new_data=empty_df, endf=empty_df, E_min=0, E_max=0, N=0):
 #     ''' 
 #     Used to plot predictions of the clf model for specific isotope (Z, M) and runs.
 #     MT is the reaction type (e.g 1 is total cross section)
@@ -551,33 +759,33 @@ def DistributionPlot(RedFunction, BlueFunction, RedName, BlueName, Title):
 #     true = plt.scatter(to_plot["Energy"], to_plot["Data"], alpha=0.3, c='b')
 #     pred = plt.scatter(to_infer["Energy"], y_hat, alpha=0.5, c="orange")
 
-#     if additional_data.shape[0] != 0:
-#         additional_data[to_scale] = scaler.transform(additional_data[to_scale])
-#         y_hat3 = clf.predict(additional_data.drop(columns=["Data", "dData"]))
-#         additional_data[to_scale] = scaler.inverse_transform(additional_data[to_scale])
-#         unseen = plt.scatter(additional_data["Energy"], additional_data["Data"], alpha=0.3, c="b")
-#         pred_unseen = plt.scatter(additional_data["Energy"], y_hat3, alpha=0.5, c="r")
+#     if new_data.shape[0] != 0:
+#         new_data[to_scale] = scaler.transform(new_data[to_scale])
+#         y_hat3 = clf.predict(new_data.drop(columns=["Data", "dData"]))
+#         new_data[to_scale] = scaler.inverse_transform(new_data[to_scale])
+#         unseen = plt.scatter(new_data["Energy"], new_data["Data"], alpha=0.3, c="b")
+#         pred_unseen = plt.scatter(new_data["Energy"], y_hat3, alpha=0.5, c="r")
 #     plt.yscale('log')
 #     plt.title('Cross Section Inference ' + MT)
 #     plt.xlabel('Log10 Energy(MeV)')
 #     plt.ylabel('Cross Section (b)')
-#     if (additional_data.shape[0] != 0 and endf.shape[0] != 0): #if both 
+#     if (new_data.shape[0] != 0 and endf.shape[0] != 0): #if both 
 #         plt.legend((endf_eval, true, unseen, pred, pred_unseen),
 #                    ('ENDF', 'EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='upper left')
-#         all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"], additional_data["Data"], y_hat3))
+#         all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"], new_data["Data"], y_hat3))
 #         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
 #         maximum_y = all_y.max() + all_y.max() * 0.05
 #         plt.ylim(minimum_y, maximum_y)
-#     elif additional_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
+#     elif new_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
 #         plt.legend((endf_eval, true, pred), ('ENDF', 'EXFOR', "EXFOR Pred"), loc='upper left')
 #         all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"]))
 #         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
 #         maximum_y = all_y.max() + all_y.max() * 0.05
 #         plt.ylim(minimum_y, maximum_y)
-#     elif additional_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
+#     elif new_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
 #         plt.legend((true, unseen, pred, pred_unseen), 
 #                    ('EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='upper left')
-#         all_y = np.concatenate((to_plot["Data"].values, y_hat, y_hat2, additional_data["Data"].values, y_hat3))
+#         all_y = np.concatenate((to_plot["Data"].values, y_hat, y_hat2, new_data["Data"].values, y_hat3))
 #         minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05 
 #         maximum_y = all_y.max() + all_y.max() * 0.05
 #         plt.ylim(minimum_y, maximum_y)
@@ -591,23 +799,23 @@ def DistributionPlot(RedFunction, BlueFunction, RedName, BlueName, Title):
     
     
 #     # Initializing Figure and Plotting
-#     if additional_data.shape[0] != 0:
+#     if new_data.shape[0] != 0:
 #         plt.figure(figsize=(16,10))
-#         pred_unseen = plt.scatter(additional_data["Energy"], y_hat3, alpha=0.5, c="orange")
+#         pred_unseen = plt.scatter(new_data["Energy"], y_hat3, alpha=0.5, c="orange")
 #         # unseen = plt.scatter(new_data["Energy"], new_data["Data"], alpha=0.5, label="New Data True", c="r")  
-#         unseen = plt.errorbar(additional_data["Energy"], additional_data["Data"], yerr=additional_data["dData"], c='b', fmt='o', alpha=0.3)
+#         unseen = plt.errorbar(new_data["Energy"], new_data["Data"], yerr=new_data["dData"], c='b', fmt='o', alpha=0.3)
 #         if endf.shape[0] != 0:
 #             endf_data = plt.plot(endf['Energy'], endf["Data"], c="g", alpha=0.3)
 #         plt.title('Cross Section Inference ' + MT)
 #         plt.xlabel('Log10 Energy(MeV)')
 #         plt.ylabel('Cross Section (b)')
-#         minimum_x = additional_data["Energy"].min() - additional_data["Energy"].min() * 0.001
-#         maximum_x = additional_data["Energy"].max() + additional_data["Energy"].max() * 0.001
+#         minimum_x = new_data["Energy"].min() - new_data["Energy"].min() * 0.001
+#         maximum_x = new_data["Energy"].max() + new_data["Energy"].max() * 0.001
 #         plt.xlim(minimum_x, maximum_x)
 #         plt.yscale('log')
 #         if endf.shape[0] != 0:
 #             plt.legend((pred_unseen, unseen, endf_data), ("New Pred", "New", "ENDF"), loc='upper left')
-#             all_y = np.concatenate((additional_data["Data"].values,
+#             all_y = np.concatenate((new_data["Data"].values,
 #                                     endf[(endf['Energy'] >= minimum_x) & (endf['Energy'] <= maximum_x)]["Data"].values,
 #                                     y_hat3))
 #             minimum_y = all_y.min() - all_y.min() * 0.05
@@ -615,7 +823,7 @@ def DistributionPlot(RedFunction, BlueFunction, RedName, BlueName, Title):
 #             plt.ylim(minimum_y, maximum_y)
 #         else:
 #             plt.legend((pred_unseen, unseen), ("New Pred", "New"), loc='upper left')
-#             all_y = np.concatenate((additional_data["Data"].values, y_hat3))
+#             all_y = np.concatenate((new_data["Data"].values, y_hat3))
 #             minimum_y = all_y.min() - all_y.min() * 0.05
 #             maximum_y = all_y.max() + all_y.max() * 0.05
 #             plt.ylim(minimum_y, maximum_y)
@@ -661,8 +869,8 @@ def DistributionPlot(RedFunction, BlueFunction, RedName, BlueName, Title):
     #     y_hat2 = clf.predict(to_plot.drop(columns=["Data", "dData"]))
 
 
-# def plot_exfor_endf(df, protons, mass_number, MT, endf_data, new_data=pd.DataFrame(), 
-#     error_metrics=False, log_e=False):
+# def plot_exfor_endf(df, protons, mass_number, MT, endf_data, new_data=empty_df, 
+#     error=False, log_e=False):
 #     to_plot = load_exfor_samples(df, protons, mass_number, MT)
 #     plt.figure(figsize=(15,10))
 #     # sns.scatterplot(to_plot["Energy"], to_plot["Data"], alpha=0.5, label="True", ci=None)
@@ -683,7 +891,7 @@ def DistributionPlot(RedFunction, BlueFunction, RedName, BlueName, Title):
 #         plt.xscale('log')
 #     plt.show()
     
-#     if error_metrics:
+#     if error:
 #         endf_all_int = endf_data.copy()
 #         to_plot_2 = to_plot.copy()
 #         to_plot_2 = to_plot_2[to_plot_2.Energy > endf_all_int.Energy.min()]
