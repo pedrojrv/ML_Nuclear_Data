@@ -1,0 +1,46 @@
+Directory: FISSION
+File:      empirical-barriers.readme (28 November 2008)
+*******************************************************
+
+                      empirical-barriers.dat
+                    Fission barrier parameters
+       (Provided by V. Maslov, Minsk, Belarus, 22 August 1997)
+       *******************************************************
+ 
+Contents
+--------
+The file contains double-humped fission barrier parameters, i.e 
+inner and outer barrier height and width. The pairing correlation function 
+required to estimate the nuclear level density at the fission saddle
+points is also given. The evaluated saddle point symmetry is described 
+by the following symbols:
+      S = symmetric 
+      GA= axially asymmetric (triaxial)
+      MA= mass asymmetric
+More details are given in the RIPL Handbook. 
+
+Format
+------
+Each record of the file contains Z,A,s,Syma,Ea,hwa,Symb,Eb,hwb,Deltaf
+defined as follows:
+
+     Z     : charge number
+     A     : mass number
+     s     : element symbol
+     Syma  : inner saddle point symmetry
+     Ea    : inner barrier height in [MeV]
+     hwa   : inner barrier curvature in [MeV]
+     Symb  : outer saddle point symmetry
+     Eb    : outer barrier height in [MeV]
+     hwb   : outer barrier curvature in [MeV]
+     Deltaf: pairing correlation function for saddle points
+             used for fission level density calculation in [MeV]
+
+The corresponding fortran format is (2i4,1x,a2,1x,2(3x,a2,2f8.2),f9.3)
+
+References
+----------
+G.N. Smirenkin (1993) IAEA-Report INDC(CCP)-359.
+
+
+

@@ -1,0 +1,81 @@
+Directory: optical/
+File:      optical.readme (January 31, 2010)
+********************************************
+
+
+                                   optical
+
+              Structure and contents of the optical model segment
+	           (provided by R. Capote on January 31, 2010)
+              ***************************************************
+ 
+SUMMARY of the RIPL-3 optical model database as of December 14, 2009
+
+Number of library entries 						 =         566
+Number of spherical potentials 					 =         459
+Number of coupled channel vibrational potentials =          10
+Number of coupled channel rigid rotor potentials =          93
+Number of coupled channel soft rotor  potentials =           4
+Number of dispersive potentials 				 =          49
+Number of potentials defined above 100 MeV 		 =         178
+Number of references 							 =         136
+-----------------------------------------------------------------------------
+
+The optical directory of RIPL-3 contains the files required for preparing
+inputs for optical model calculations and, in addition, one microscopic
+optical model code. The optical/ directory contains the phenomenological 
+OMP library and a library of deformation parameters useful for, e.g., DWBA
+calculations. It also contains a code for obtaining alpha-particle potentials
+in standard format, using a built-in model and volume integrals. 
+
+The directory is divided into four sub-directories, as follows:
+ 
+      optical/
+          optical.readme
+          om-utility.readme
+          om-utility.tgz
+          om-deformations.readme
+          om-deformations.dat
+          om-parameter-u.readme
+          om-parameter-u.dat
+          omp-index-ordered-by-Z.txt
+          omp-index-RIPL-ID.txt
+          references-RIPL-ID.txt
+          om-get-RIPL-3.zip					  
+		  om-alpha.tgz
+ 
+      om-utility/
+          add-omp/
+	      omp-summary/
+ 
+      om-microscopic/
+          mom.readme
+          mom.tgz
+          mom-manual.ps
+
+      om-alpha/
+          om-goriely.readme
+          om-goriely.tgz
+  	      om-kumar.readme
+	      om-kumar.tgz
+ 
+The om-utility codes are provided for creating convenient summaries (omp-summary/ 
+directory) of the optical model database (om-parameter-u.dat) and for adding or
+deleting potentials from the library (add-omp/ directory).
+
+The om-get directory contains a retrieval code and associated files that
+can be used to produce inputs for the SCAT2000, ECIS06 and OPTMAN optical model
+codes from the phenomenological OMP libraries.  
+
+The om-microscopic directory contains a microscopic optical model code from
+Bruyeres-le-Chatel, together with complete description of the contents and how
+to use the code.
+ 
+The om-alpha/ directory contains two codes By Kumar et al [1] and Demetriou et al [2] 
+for obtaining global alpha-particle potentials. 
+
+[1] A. Kumar and S. Kailas, Nucl. Phys. A776 (2006) 105-117
+[2] P. Demetriou, C. Grama and S. Goriely, Nucl. Phys. A707 (2002) 253-276
+
+
+

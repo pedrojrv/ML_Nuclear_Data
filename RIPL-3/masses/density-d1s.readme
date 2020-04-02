@@ -1,0 +1,65 @@
+Directory: MASSES
+File:      density-d1s.readme (10 December, 2007)
+*************************************************
+
+                              density-d1s/zxxx.dat
+Compilations of deformed proton and neutron densities based on the HFB model with D1S Gogny interaction
+                 (provided by S. Hilaire, 10 December, 2007)
+  ***********************************************************************  
+                      
+                 HFB PREDICTION OF DENSITY DISTRIBUTION 
+
+                               S. Hilaire         
+                 CEA/DAM, Bruyeres-le-Chatel (France)    
+                               M. Girod                     
+                 CEA/DAM, Bruyeres-le-Chatel (France)    
+ 
+
+Content
+--------
+
+The data file contains the predictions of the deformed density distribution obtained
+within the dHartree-Fock-Bogoliubov method with the D1S Gogny effective 
+interaction [1,2, and references therein]. The axial densities are expanded in terms 
+of spherical harmonics $Y_{\lambda0}$. The fout first multipoles are provided
+
+The present D1S compilation of neutron and proton densities includes all nuclei
+with N,Z>=8 and Z<=110 between the proton driplines and typically N<=190. 
+The densities are tabulated in the radius grid in steps of 0.1 fm up to a 
+maximum value of 20 fm.
+
+Format
+------
+Each isotopic chain is included in one unique file named by the elemental
+charge zxxx.dat in the density-d1s subdirectory.
+
+For each isotope of the considered element, we provide Z,A,s,beta2,nrho
+in the format
+(' Z=',i4,' A=',i4,2x,a2,' beta2=',f5.2,' nrho=',i4)
+     Z    : charge number
+     A    : mass number
+     s    : element symbol
+     beta2: quadrupole deformation parameter
+     nrho : number of radii provided in the table for the corresponding nucleus
+Followed by a title line and "nrho" lines with
+     r    : the nuclear radius in [fm] by steps of 0.1 fm
+     rhon0 : the neutron density in [fm^-3]
+     rhon2 : second multipole if the the neutron density harmonics expansion
+     rhon4 : fourth multipole if the the neutron density harmonics expansion
+     rhon6 : sixth multipole if the the neutron density harmonics expansion
+     rhon8 : eighth multipole if the the neutron density harmonics expansion
+     rhop0 : the proton density in [fm^-3]
+     rhop2 : second multipole if the the proton density harmonics expansion
+     rhop4 : fourth multipole if the the proton density harmonics expansion
+     rhop6 : sixth multipole if the the proton density harmonics expansion
+     rhop8 : eighth multipole if the the proton density harmonics expansion
+
+The corresponding fortran format is (f8.3,1p,10e15.6)
+
+References
+----------
+[1] J. Decharge and D. Gogny, Phys. Rev. C21, 1568 (1980)
+[2] S. Hilaire and M. Girod, Eur. Phys. J. A33, 237 (2007)
+
+Dates: Original 20 October 2008
+

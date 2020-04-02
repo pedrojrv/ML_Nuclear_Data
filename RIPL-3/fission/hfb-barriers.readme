@@ -1,0 +1,56 @@
+Directory: FISSION
+File:      hfb-barriers.readme (28 November 2008)
+*******************************************************
+
+                         hfb-barriers/zxxx.dat
+                          HFB fission path
+             (Provided by S. Goriely, November 28, 2008)
+       *******************************************************
+
+Contents
+--------
+The files contains the HFB predictions of the fission paths.
+The fission path corresponds to the most gently climbing or steepest
+descending path found and projected along one deformation parameter, namely
+the quadrupole deformation beta2. The fission paths are obtained within
+the HFB approach based on the BSk14 Skyrme force [1], which has proven
+its capacity to estimate the static fission barrier height with a
+relatively high degree of accuracy. In particular, the barriers
+determined from the present HFB-14 fission path reproduce the RIPL
+52 primary empirical barriers (i.e the highest barriers) of nuclei
+with 88 <= Z <= 96 (which are always less than 9 MeV high) with an
+rms deviation as low as 0.67 MeV. A similar accuracy is obtained
+(0.65 MeV) for the secondary RIPL barriers.
+
+The fission paths, i.e the energy between the ground state and the
+scission point as a function of the beta2, beta3 and beta4 deformation
+parameters, are provided for about 1000 nuclei with 90 <= Z <= 102 lying
+between the valley of beta-stability and the neutron drip line.
+The fission paths are included in the hfbpath/zxxx.dat file where
+xxx stands for the charge number Z.
+
+Format
+------
+Each record of the file, per isotope, contains
+- 4 title lines
+The 1st,3rd and 4th title lines  can be read using format (A52).
+The 2nd title line includes
+     Z     : charge number
+     A     : mass number
+     s     : element symbol
+     nbeta : number of beta2 deformation points
+     Egs   : Ground state binding energy in [MeV]
+The corresponding fortran format is (4x,i4,3x,i4,2x,a2,8x,i4,7x,f10.3)
+
+- nbeta data lines describing the fission path and including
+     beta2    : quadrupole deformation parameter
+     beta3    : octupole deformation parameter
+     beta4    : hexadecapole deformation parameter
+     E-Egs    : energy above ground state in [MeV]
+
+The corresponding fortran format is (4f10.3)
+
+References
+----------
+[1] S. Goriely, M. Samyn, J.M. Pearson, Phys. Rev. C75 (2007) 064312
+

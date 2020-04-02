@@ -1,0 +1,117 @@
+Directory: gamma/
+File:      photonuclear-parameters-exp.readme (November 19, 2007)
+*****************************************************************
+
+
+                         photonuclear-parameters-exp.dat
+
+               Parameters of Photonuclear Reaction Cross Sections
+
+                (prepared by V.Plujko on  November 19, 2007
+             from  Table of   Atlas of Giant Dipole Resonances
+            produced within IAEA  CRP "Compilation and Evaluation of
+                 Photonuclear Data for Applications", 2000)
+
+  ***************************************************************************
+
+Contents
+---------
+The data file is prepared from the Table of parameters of photonuclear reaction cross
+sections that was given in an Atlas of Giant Dipole Resonances produced within IAEA
+CRP "Compilation and Evaluation of Photonuclear Data for Applications"[1,2].
+
+It includes resonance parameters observed in photonuclear reactions measured by
+bremsstrahlung, quasimonoenergetic, and tagged photons. Table entries are organized by
+element, isotope, and reaction ordered by product from neutron to alpha. The file
+contains information on the parameters derived from the data for 82 elements (220
+isotopes and natural compositions) with atomic numbers from 1 to 95.There are altogether
+1317 entries.
+
+These resonance parameters were obtained  directly from experimental curves of the cross
+sections for various photonuclear reactions, no fitting to Lorentzian shape was performed.
+The indicated full width at half maximum (FWHM)taken for energy with maximal value of 
+cross section,  it means that, for example, in axially deformed nuclei this full width
+may be larger than a sum of the widths of any of two Lorentzians that would describe the 
+curve.  In cases where the experimental curve refers to a reaction channel with high 
+threshold or where the curve is truncated by lack of high energy data, the FWHM may be 
+smaller than the width of the Lorentzian curve.
+
+Numerical data presented for the reaction cross section (peak energy and peak cross section,
+see notations below) were obtained in [1,2] either directly from the relevant data set
+of the EXFOR  library, or estimated (together with the data for the peak width) using
+the graphs presented in the original papers or in the Photonuclear Data Abstract Sheets[3].
+
+Numerical data for the integrated cross section and its first moment were obtained either
+by reading from the original papers (when available), or by deducing from the EXFOR data sets,
+or by reading from the appropriate Table in Ref.[4]. Data sources were the international
+nuclear data library EXFOR containing experimental cross sections and the photonuclear data
+collections 1976-1995 [3,4] (220 isotopes and natural compositions) with atomic numbers from
+1 to 95. The entries for almost all the 600 photoneutron cross sections obtained with
+quasimonoenergetic photons [5] were also included.
+
+
+Format                                                                                                                                                                             Format
+------
+
+Data for each nuclides are given in several lines, that is equal to peak number.
+Each record for the same entry of the file contains:
+
+Z         charge of target nucleus
+A         mass number of target nucleus
+          (blank space denotes  natural composition of isotopes)
+El        symbol of isotope
+Reac      Reaction
+Nep       number of energy peaks
+E_{r}     Energies at cross section peaks (peak energies) in MeV
+Cs_{r}    Peaks of cross section in mb
+W         Full width at half maximum(FWHM) in MeV
+          extracted directly from experimental curve;
+          taken at the energy E_{r} with maximal Cs_{r}
+Egmax     Upper limit of integration in MeV
+s_{int}   Integrated cross section in MeV * mb
+s-1_{int} First moment of the integrated cross section in mb
+Reference+First author   Original paper and  name of the first author
+EXFOR#                   8 digit entry&subentry number of data-file of EXFOR library
+
+The FORTRAN format is (2I4,1X,A2,3x,A5,I3,1x,8F8.2)
+for input in every line of all columns except two last ones.
+If the cross section has more than one peak, the E_{r}, Cs_{r} columns will have more
+than one line for the same entry.
+
+The usual notations are used for reactions and reaction products [1], specifically
+(g,abs) stands for photoabsorption,  (g, xn) - neutron yield, (g,sn)- total neutron
+production, (g,1n),(g,2n) and(g,3n) denote single, double and triple neutron productions,
+(g,p) - proton emission, (g,d) - deuteron and (g,a)- alpha emissions,
+and (g,F) - photofission .
+
+Original symbol ">" (indicated in the Table from [1,2] that in the line is given only
+lower limit for the FWHM) is shifted to column "Reference+First author".
+In the row "53     127  I   g,3n ...", symbol  "<" for s_{int} is omitted.
+The values  E_{r}, Cs_{r} and  W are rounded off the first digit after decimal point.
+
+In the case many sets of the quantities  Egmax,  s_{int} and  s-1_{int}, only one set
+of these quantities is kept that corresponds to minimal value of upper limit of
+integration from the range Egmax >=  E_{r}+ W or from Egmax >=  E_{r}, when  the
+values in range Egmax <  E_{r}+ W were only indicated in original table[1,2].
+
+
+References
+----------
+[1] M.B.Chadwick, P.Oblozinsky, A.I.Blokhin, T.Fukahori, Y.Han, Y. O.Lee,
+    M.N.Martins, S.F.Mughabghab, V.V.Varlamov, B.Yu, J.Zhang.
+    Handbook on photonuclear data for application. Cross sections and spectra.
+    IAEA TECDOC 1178, Vienna, 2000; http://www nds.iaea.org/photonuclear/.
+[2] A.V. Varlamov, V.V. Varlamov, D.S.Rudenko, M.E.Stepanov.
+    Atlas of giant dipole resonances.Parameters and graphs of
+    photonuclear reaction cross sections. IAEA Technical report INDC(NDS)-394,
+    Vienna,1999; http://depni.npi.msu.su/cdfe/
+[3] E.G. Fuller and H. Gerstenberg.Photonuclear data   abstract sheets
+    1955-1982. Report of the US National Bureau of
+    Standards, NBSIR 83 2742, vol. I XV (1983 1986), National Institute for
+    Standards and Technology, Gaithersburg.
+[4] V.V. Varlamov and V.V. Sapunenko.Photonuclear data index 1976-1995,
+    Technical Report Moskovskogo Universiteta,Izdatelstvo Moskovskogo Universiteta,
+    Moscow State University, Moscow, Russia,1996;http://depni.npi.msu.su/cdfe/.
+[5] S.S. Dietrich and B.L. Berman. Atlas of photoneutron cross sections
+    obtained with monoenergetic photons. Atomic Data and Nuclear Data Tables
+    38,199(1988).

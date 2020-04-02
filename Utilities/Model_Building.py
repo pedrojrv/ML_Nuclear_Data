@@ -1,19 +1,28 @@
 import pandas as pd
 import numpy as np
+
+
 from sklearn import tree
 from sklearn.tree import plot_tree
 from sklearn.tree import DecisionTreeRegressor
-
-
-
 def train_tree(max_depth, x_train, y_train):
 	xs_tree = tree.DecisionTreeRegressor(max_depth=max_depth)
 	xs_tree.fit(x_train, y_train)
-	print("The depth of the three is: ", xs_tree_2.get_depth())
+	print("The depth of the three is: ", xs_tree.get_depth())
 
-	xs_test_pred = xs_tree_2.predict(x_test)
+	xs_test_pred = xs_tree.predict(x_test)
 	print("Testing MSE: ", mean_squared_error(xs_test_pred, y_test))
 	print("Testing R2-Score: ", r2_score(xs_test_pred, y_test))
+
+
+
+from sklearn.neighbors import KNeighborsRegressor
+
+def train_knn(x, y, neigh, weight="uniform", metric="minkowski"):
+    knn = KNeighborsRegressor(n_neighbors=neigh, weights=weight, metric=metric, metric_params=None, n_jobs=-1)
+    knn.fit(x, y)
+    return knn
+
 
 
 import tensorflow as tf

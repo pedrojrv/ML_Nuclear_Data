@@ -1,0 +1,82 @@
+Directory: MASSES
+File:      mass-hfb14.readme (10 December, 2007)
+*************************************************
+
+                               mass-hfb14.dat
+       Compilations of ground state properties based on the HFB model
+                 (provided by S. Goriely, 10 December, 2007)
+  ***********************************************************************  
+                      
+                 HFB PREDICTION OF GROUND-STATES PROPERTIES 
+
+                               S. Goriely         
+                 Universite Libre de Bruxelles (Belgium)
+                               M. Samyn                     
+                 Universite Libre de Bruxelles (Belgium)
+                               M. Pearson                                
+                 Universite de Montreal, Quebec (Canada)
+ 
+
+Content
+--------
+
+The data file contains the predictions of the ground state properties obtained
+within the Hartree-Fock-Bogoliubov method. In the framework of the HFB theory, 
+a 10-parameter Skyrme force, along with a 4-parameter delta-function pairing 
+force (with blocking for odd nuclei) and a 3-parameter Wigner term, is fitted 
+to all the 1888 measured masses of nuclei with N and Z >= 8.
+The Skyrme force, BSk14, is a standard Skyrme force which is characterized by 
+the following nuclear matter properties: the energy per nucleon at equilibrium 
+in symmetric nuclear matter av=-15.853 MeV, the corresponding density 
+rho0=0.1586fm-3, the isoscalar effective mass M*/M=0.80, the isovector effective
+mass M*/M=0.78 and the symmetry coefficient J=30MeV.
+All details about the BSk14 force and HFB model can be found in [1] and references 
+therein. The final rms error of this fit is 0.729 MeV for the 2149 masses of 
+nuclei with Z,N >= 8 included in the Audi et al. compilation of 2003 [2]. 
+The HFB14 mass model has also been fitted to the fission data through the 
+adjustment of a vibrational term in the phenomenological collective correction. 
+The 52 primary fission barriers lower than 9 MeV and compiled in RIPL-3 are 
+reproduced with an rms deviation of 0.67 MeV and the 45 secondary barriers 
+with an rms of 0.65 MeV.
+
+The present HFB-14 compilation includes 8508 nuclei with N,Z>=8 and Z<=110 between the
+proton and neutron driplines. The table also includes the experimental masses and the 
+corresponding error when available [2], the calculated masses, the deformation parameters 
+and density distribution parameters. The density distribution parameters are determined 
+fitting the HFB distribution by a simple Fermi function. The amplitude is determined 
+from the conservation of nucleon number assuming spherical symmetry. The full tabulated 
+density distributions assuming spherical symmetry can be found in the density-hfb 
+subdirectory for the same set of nuclei.
+
+Format
+------
+Each record of the file contains Z,A,s,fl,Mexp,Err,Mth,beta2,beta4,rhon,rn,an,rhop,rp,ap 
+defined as follows:
+
+     Z    : charge number
+     A    : mass number
+     s    : element symbol
+     fl   : flag corresponding to 0 if no experimental data available
+                                  1 for a mass excess recommended by Audi et al. (2007) 
+                                  2 for a measured mass from Audi et al. (2007) 
+     Mexp : experimental or recommended atomic mass excess in MeV of Audi et al. (2007) 
+     Err  : error on the experimental or recommended atomic mass excess in MeV of Audi et al. (2007) 
+     Mth  : calculated HFB-14 atomic mass excess in MeV 
+     beta2: calculated quadrupole deformation of the nuclear ground-state
+     beta4: calculated hexadecapole deformation of the nuclear ground-state
+     rhon : calculated amplitude of the neutron density distribution in fm^-3 
+     rn   : calculated radius of the neutron density distribution in fm 
+     an   : calculated diffuseness of the neutron density distribution in fm 
+     rhop : calculated amplitude of the proton density distribution in fm^-3 
+     rp   : calculated radius of the proton density distribution in fm 
+     ap   : calculated diffuseness of the proton density distribution in fm 
+
+The corresponding fortran format is (2i4,1x,a2,1x,i1,3f10.3,2f8.3,6f9.4)
+
+References
+----------
+[1] S. Goriely, M. Samyn, and J.M. Pearson, (2007) Phys. Rev. C75, 064312 
+[2] G. Audi, A.H. Wapstra, and C. Thibault (2003) Nucl. Phys. A729, 337
+
+Dates: Original 10 December, 2007
+

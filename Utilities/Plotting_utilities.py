@@ -25,7 +25,7 @@ def cat_plot(features, df, groupby, top=10, save=False, path=''):
 	    for_plotting = df[[i, groupby]].drop_duplicates()
 	    sns.catplot(x=i, kind="count", data=for_plotting, 
 	            order=for_plotting[i].value_counts().iloc[:top].index, 
-	            palette="deep", height=15, aspect=2);
+	            palette="GnBu_r", height=15, aspect=2);
 	    plt.title("{} Distribution".format(i))
 	    if save:
 	    	plt.savefig(path + '_{}.png'.format(i), bbox_inches='tight')

@@ -1,0 +1,279 @@
+Directory: gamma/
+File:      gdr-parameters&errors-exp.readme (May 27, 2008)
+***********************************************************
+
+
+    gdr-parameters&errors-exp-SLO.dat; gdr-parameters&errors-exp-MLO.dat
+
+      Experimental values and errors of Giant Dipole Resonance parameters
+                (provided by V. Plujko on May 27, 2008)
+  ***************************************************************************
+
+                     GIANT DIPOLE RESONANCE PARAMETERS
+
+      Vladimir A. Plujko; Alexandr N. Gorbachenko; Elizaveta V. Kulich
+
+       Nuclear Physics Department, Taras Shevchenko National University,
+                                  Kiev, Ukraine
+
+Contents
+--------
+The values and errors of giant dipole resonance (GDR) parameters are presented
+which were obtained by a fit of the theoretical photoabsorption cross sections
+to the experimental data  for 121 nuclides from 12-C through 239-Pu.
+
+The values and errors of the shape parameters  of the Lorentzian-like curves
+corresponding to the giant dipole resonance excitation  are presented.
+The parameters and their errors were obtained by a fit of the theoretical
+photoabsorption cross sections to the experimental data  for 121 nuclides
+from 12-C through 239-Pu. If the experimental cross sections coinside with
+the total photoabsorption cross section, the shape parameters are correspond
+to the overall structure characteristic of the giant dipole resonance(GDR),i.e,
+the GDR parameters. The accuracy of approximation GDR parameters by the shape
+parameters depends on range of accuracy  of approximation of the total
+photoabsorption cross section by used  experimental cross sections.
+
+The theoretical photoabsorption cross sections  were taken as a sum of the cross
+section corresponding to excitation of the GDR and quasideutron contribution to
+the total cross section. The GDR component of the photoabsorption cross section
+was calculated within standard Lorentzian model(SLO)[1,2] and modified Lorentzian
+ model(MLO1)[2,3]; the corresponding data-files are named as
+"gdr-parameters&errors-exp-SLO.dat" and "gdr-parameters&errors-exp-MLO.dat". An
+approximation of axially deformed nuclei were adopted for the most deformed nuclei
+ [2]; like in [4], some deformed nuclei considered as spherical ones, when cross
+sections can be approximated by a single resonance curve. Quasideutron component
+was calculated within framework of the model of Refs.[5,7].
+
+Experimental photonuclear cross sections  were taken from the EXFOR data base[7].
+If  measured and evaluated data on the total photoabsorption cross section
+CS(g,abs) for given nuclide were absent in the data base,  the total photoneutron
+cross section CS(g,sn) was taken instead of the CS(g,abs) that is realized with a good
+accuracy at small contributions of the photo-charged-particle reaction cross
+sections  and photofission. In the absence of the EXFOR data for  the CS(g,sn),
+the total photoneutron cross section was evaluated as a combination
+of the available experimental cross-sections on the inclusive photoneutron yield
+cross section CS(g ,xn) and photoneutron cross  sections with ejection of
+different number of neutrons (see below in symbol explanation of the part "FORMAT").
+
+In the absence of the errors in the data base for cross-sections, two methods
+were used for estimation of the relative errors, namely, approximations of energy-
+depended relative error and constant relative error. As it can be seen from
+experimental data that, as a rule, the relative errors are dependent on gamma-ray energy:
+they have minimal value near the peak energy and maximal values on the the tails.
+Therefore, such energy-dependent behaviour of errors was used for their estimation.
+Specifically, the following expressions were adopted for estimation of relative errors
+(RECS). Triangular form was used for estimation of relative errors (RECS) in spherical
+nuclei, and relative error at gamma-ray energy Eg was taken in the form:
+RECS(Eg)=RECS_min+b|E1-Eg| with b=(RECS_max-RECS_min)/(E1-Eg1ow), where RECS_min = 0.1,
+RECS_max =0.5 are minimal and maximal values of the error; E1 energy of cross section
+peak; Eg1ow the smallest value of experimental gamma-ray energy. Trapezoidal shape of
+relative error was used  in deformed nuclei: RECS(Eg)=RECS_min+b(E1-Eg) at Eg < E1,
+RECS(Eg)=RECS_min at E1 <Eg < E2 and RECS(Eg)= RECS_min+b(Eg-E2) if Eg > E2. The
+energy-dependent relative errors were adopted in all mentioned above cases, except the
+isotopes  14-C and 18-O. Due to problems  with minimization, the constant relative error
+(10%) was taken for data on these two isotopes.
+
+The least square method with minimization of  the $\chi ^2$- value was used for
+obtaining the shape parameters  of the Lorentzian-like curves. The minimization was
+performed by the use of the MINUIT package [8]. The parameter errors are estimated
+mean square deviation  of the parameters calculated within MINUIT code by the use
+of MINOS procedure[8].
+
+Format
+------
+
+Data for each nuclides are given in two lines and  each record of the file contains:
+
+   Z  : atomic number
+   A  : mass number
+   El : symbol of element
+   Reac: Type of experimental data used for fitting
+         0 experimental GS(g,abs);
+         1 experimental GS(g,abs) with energy-dependent errors;
+         2 evaluated CS(g,abs) with energy-dependent errors;
+         3 experimental CS(g,sn);
+         4 evaluated CS(g,sn) as combination of the experimental cross-sections:
+           CS(g,sn)=(CS(g,xn)+CS(g,1n))/2 with absolute error
+           AECS(g,sn)=SQRT(AECS(g,xn)+AECS(g,1n))/2;
+         5 evaluated CS(g,sn) as combination of the experimental cross-sections:
+           CS(g,sn)=CS(g,xn)-CS(g,1n) with absolute error
+           AECS(g,sn)=SQRT(AECS(g,xn)+AECS(g,1n));
+         6 evaluated CS(g,sn) as thecombination of the experimental cross-sections:
+           CS(g,sn)=CS(g,1n)+CS(g,2n) with absolute error
+           AECS(g,sn)=SQRT(AECS(g,1n)+AECS(g,2n));
+         7 evaluated CS(g,sn) as combination of the experimental cross-sections:
+           CS(g,sn)=CS(g,1n)+CS(g,2n)+CS(g,3n) with absolute error
+           AECS(g,sn)=SQRT(AECS(g,1n)+AECS(g,2n)+AECS(g,3n));
+         8 evaluated CS(g,sn) as combination of the experimental cross-sections:
+           CS(g,sn)=CS(g,1n)+CS(g,2n)+CS(g,F) with absolute error
+           AECS(g,sn)=SQRT(AECS(g,1n)+AECS(g,2n)+AECS(g,F));
+         9 evaluated CS(g,sn) as combination of the experimental cross-sections:
+           CS(g,sn)=(CS(g,xn)+CS(g,1n)+CS(g,F))/2 with absolute error
+           AECS(g,sn)=SQRT((AECS(g,xn)+AECS(g,1n)+AECS(g,F))/4);
+        10 experimental CS(g,1n)
+   E1
+   Err: energy of the first peak, MeV (the first line of the entry)
+        standard deviation for the energy, MeV (the second line of the entry)
+   CS1
+   Err: peak cross section of the first peak, mb(the first line of the entry)
+        standard deviation for the first peak, mb (the second line of the entry)
+
+   W1
+   Err: full width at half-maximum for the first peak, MeV (the first line of the entry)
+        standard deviation for the width, MeV (the second line of the entry)
+   E2
+   Err: energy of the second peak, MeV (the first line of the entry)
+        standard deviation for the energy, MeV (the second line of the entry)
+   CS2
+   Err: peak cross section of the second peak, mb(the first line of the entry)
+        standard deviation for the second peak, mb (the second line of the entry)
+   W2
+   Err: full width at half-maximum for the second peak, MeV (the first line of the entry)
+        standard deviation for the width, MeV (the second line of the entry)
+   E_{min}: lower energy limit of fitting interval, MeV
+   E_{max}: upper energy limit of fitting interval, MeV
+   Ref: references on the experimental data; the list is given below
+
+The following formats are used for the first and second lines of the same data set entry:
+
+FORMAT(2X,I2,X,I3,X,A2,X,I2,X,F5.2,2X,F5.1,2X,F5.2,2X,F5.2,2X,F5.1,3X,F5.2,X,F4.1,3X,F4.1,2X,A5)
+FORMAT(15X,F5.2,2X,F5.1,2X,F5.2,2X,F5.2,2X,F5.1,3X,F5.2)
+
+
+References
+---------------------------
+1. J. Kopecky, in  Handbook for calculations of nuclear reaction
+   data. Reference Input Parameter Library (RIPL), IAEA-TEDOC-1034, 1998,
+   Ch.6; http://www-nds.iaea.or.at/ripl/.
+2. T. Belgya, O. Bersillon, R. Capote, T. Fukahori, G. Zhigang, S. Goriely, M. Herman,
+   A.V. Ignatyuk, S. Kailas. A. Koning, P. Oblozinsky, V. Plujko, P. Young.
+   Handbook for calculations of nuclear reaction data: Reference Input Parameter Library-2,
+   IAEA-TECDOC-1506, Vienna, 2006, Ch.7.
+3. V.A. Plujko, I.M. Kadenko, E.V. Kulich, S. Goriely, O.I. Davidovskaya, O.M. Gorbachenko,
+   in Proceeding of Workshop on Photon Strength Functions and Related Topics, Prague, Czech
+   Republic, June 17-20, 2007, Proceedings of Science, PSF07, 2008, and
+   http://arxiv.org/abs/0802.2183.
+4. S.S.Dietrich, B.L.Berman; At. Data Nucl. Data Tables., 199, 38(1988).
+5. M.B. Chadwick, P. Oblozinsky, P.E. Hodgson, G. Reffo. Phys.Rev. C44(1991)814.
+6. M.B.Chadwick, P.Oblozinsky, A.I.Blokhin, T.Fukahori, Y.Han, Y. O.Lee,
+   M.N.Martins, S.F.Mughabghab, V.V.Varlamov, B.Yu, J.Zhang.
+   Handbook on photonuclear data for application. Cross sections and spectra.
+   IAEA TECDOC 1178, Vienna, 2000; http://www nds.iaea.org/photonuclear/.
+7. Experimental Nuclear Reaction Data Library EXFOR; http://www-nds.iaea.org/exfor/
+8. CERN Program Library, MINUIT (D506), Function Minimization and Error Analysis;
+   http://wwwasdoc.web.cern.ch/wwwasdoc/cernlib.html;
+   http://wwwasdoc.web.cern.ch/wwwasdoc/minuit/minmain.html
+
+
+References in data files
+---------------------------
+62Fu1  S. C. Fultz, R. L. Bramblett, J. T. Caldwell, N. E. Hansen,
+       C. P. Jupiter; Phys. Rev., 128, 2345(1962).
+62Fu2  S. C. Fultz, R. L. Bramblett, J. T. Caldwell, N. A. Kerr;
+       Phys. Rev., 127, 1273(1962).
+63Br1  R. L. Bramblett, J. T. Caldwell, G. F. Auchampaugh,
+       S. C. Fultz; Phys. Rev., 129, 2723(1963).
+63Bur  N. A. Burgov, G. V. Danilyan, B. S. Dolbilkin, L. E. Lazareva,
+       F.A.Nikolaev; Zhur. Eksper. Teoret. Fiz. 45,(6),1694(1963).
+64Bo3  C. D. Bowman, G. F. Auchampaugh, S. C. Fultz; Phys. Rev., 133,
+       B676(1964).
+64Br1  R. L. Bramblett, J. T. Caldwell, R. R. Harvey, S. C. Fultz;
+       Phys. Rev., 133, B869(1964).
+64Fu1  S. C. Fultz, R. L. Bramblett, J. T. Caldwell, R. R. Harvey;
+       Phys. Rev., 133, B1149(1964).
+64Ha2  R. R. Harvey, J. T. Caldwell, R. L. Bramblett, S. C. Fultz;
+       Phys. Rev., 136, B126(1964).
+65Wyc  J. M. Wyckoff, B. Ziegler, H. W. Koch, R. Uhlig;
+       Phys. Rev. B137, 576(1965).
+66Ax1  P. Axel, J. Miller, C. Schuhl, G. Tamas, C. Tzara;
+       J. Physique, 27,262(1966).
+66Br1  R. L. Bramblett, J. T. Caldwell, B. L. Berman, R. R. Harvey,
+       S. C. Fultz; Phys. Rev., 148, 1198(1966)
+67Be2  B. L. Berman, J. T. Caldwell, R. R. Harvey, M. A. Kelly,
+       R. L. Bramblett, S. C. Fultz; Phys. Rev., 162, 1098(1967).
+68Be5  R.Bergere, R. Beil, A. Veyssiere; Nucl. Phys. A121,
+       463(1968).
+68Su1  R. E. Sund, M. P. Baker, L. A. Kull, R. B. Walton; Phys.
+       Rev., 176, 1366(1968).
+69Be1  B. L. Berman, R. L. Bramblett, J. T. Caldwell, H. S. Davis,
+       M. A. Kelly, S. C. Fultz; Phys. Rev., 177, 1745(1969).
+69Be6  R. Bergere, H. Beil, P. Carlos, A. Veyssiere; Nucl. Phys.,
+       A133, 417(1969).
+69Be8  B. L. Berman, M. A. Kelly, R. L. Bramblett, J. T. Caldwell,
+       H. S. Davis, S. C. Fultz; Phys. Rev., 185, 1576(1969).
+69Fu1  S. C. Fultz, B. L. Berman, J. T. Caldwell, R. L. Bramblett,
+       M. A. Kelly; Phys. Rev., 186, 1255(1969).
+69Bez  N. Bezic, D. Brajnik, D. Jamnik, G. Kernel;
+       Nucl. Phys. A128, 426(1969).
+70Be8  B. L. Berman, S. C. Fultz, J. T. Caldwell, M. A. Kelly,
+       S. S. Dietrich; Phys. Rev., C2, 2318(1970).
+70Su1  R. E. Sund, V. V. Verbinski, H. Weber, L. A. Kull; Phys.
+       Rev., C2, 1129(1970).
+70Ve1  A. Veyssiere, H. Beil, R. Bergere, P. Carlos, A. Lepretre;
+       Nucl. Phys. A159, 561(1970).
+71Be4  H. Beil, R. Bergere, P. Carlos, A. Lepretre, A. Veyssiere,
+       A. Parlag; Nucl. Phys. A172, 426(1971).
+71Ca1  P. Carlos, H. Beil, R. Bergere, A. Lepretre, A. Veyssiere;
+       Nucl. Phys. A172, 437(1971).
+71Le1  A. Lepretre, H. Beil, R. Bergere, P. Carlos, A. Veyssiere,
+       M. Sugawara; Nucl. Phys. A175, 609(1971).
+72Yo   L. M. Young, Ph.D. Thesis, University of Illinois(1972),
+       unpublished.
+73Ve1  A. Veyssiere, H. Reil, R. Bergere, P. Carlos, A. Lepretre,
+       k. kernbach; Nucl. Phys. A199, 45(1973).
+74Be3  H. Beil, R. Bergere, P. Carlos, A. Lepretre, A. De Miniac,
+       A. Veyssiere; Nucl. Phys. A227, 427(1974).
+74Ca5  P. Carlos, H. Beil, R. Bergere, A. Lepretre, A. De Miniac,
+       A. Veyssiere; Nucl. Phys. A225, 171(1974).
+74Fu3  S. C. Fultz, R. A. Alvarez, B. L. Berman, P. Meyer; Phys.
+       Rev., C10, 608(1974).
+74Le1  A. Lepretre, H. Beil, R. Bergere, P. Carlos, A. De Miniac,
+       A. Veyssiere, K. Kernbach; Nucl. Phys. A219, 39(1974).
+74Ve1  A. Veyssiere, H. Beil, R. Bergere, P. Carlos, A. Lepretre,
+       A. De Miniac; Nucl. Phys. A227, 513(1974).
+75Ve5  A. Veyssiere, H. Beil, R. Bergere, P. Carlos, A. Lepretre,
+       A. De Miniac; J. Physique 36, L-267(1975).
+75Ahr  J. Ahrens, H. Borchert, K. H. Czock, H. B. Eppler, H. Gimm,
+       H. Gundrum,M. Kroning, P. Riehn, G. Sita Ram, A. Zieger,
+       B. Ziegler; Nucl. Phys. A251, 479(1975).
+76Ca1  P. Carlos, H. Beil, R. Bergere, J. Fagot, A. Lepretre,
+       A. Veyssiere, G. V. Solodukhov; Nucl. Phys. A258, 365(1976).
+76Le2  A. Lepretre, H. Beil, R. Bergere, P. Carlos, J. Fagot, A. De
+       Miniac, A. Veyssiere, H. Miyase; Nucl. Phys. A258, 350(1976).
+76Gur  G. M. Gurevich, L. E. Lazareva, V. M. Mazur, G. V. Solodukhov,
+       B. A. Tulupov; Nucl. Phys. A273, 326(1976).
+77Wei  J.Weise, M.N.Thompson, K.Shoda, H.Tsubata; Austr. J. Phys.,
+       30, 401(1977) (see also IAEA-TECDOC-1178, IAEA, October 2000.)
+78Gur  G. M. Gurevich, L. E. Lazareva, V. M. Mazur, G. V. Solodukhov;
+       Prob. Yad. Fiz. Kosm. Luch. 8, 106(1978).
+78Nor  J. W. Norbury, M. N. Thompson, K. Shoda, H. Tsubota;
+       Australian Jour. of Phys. 31, 471(1978).
+79Al2  R. A. Alavarez, B. L. Berman, D. D. Faul, F. H. Lewis, Jr.,
+       P. Meyer; Phys. Rev., C20, 128(1979).
+79Be4  B. L. Berman, D. D. Faul, R. A. Alvarez, P. Meyer, D. L. Olson;
+       Phys. Rev., C19, 1205(1979).
+80Ca1  J. T. Caldwell, E. J. Dowdy, B. L. Berman, R. A. Avarez,
+       P. Meyer; Phys. Rev., C21, 1215(1980).
+81Ram  S.Raman, O.Shahal, G.G. Slauther; Phys.Rev. C23, 2794(1981).
+81Gur  G. M. Gurevich, L. E. Lazareva, V. M. Mazur, S. Yu. Merkulov,
+       G. V. Solodukhov, V. A. Tyutin; Nucl. Phys. A351, 257(1981).
+86Be1  B. L. Berman, R. E. Pywell, M. N. Thompson, K. G. Mcneill,
+       J. W. Jury, J. G. Woodworth; Bull. Am. Phys. Soc. 31, 855(1986).
+86Be2  B. L. Berman, J. T. Caldwell, E. J. Dowdy, S. S. Dietrich,
+       P. Meyer, R. A. Alvarez; Phys. Rev., C34, 2201(1986).
+89Bat  A. D. Bates, R. P. Rassool, E. A. Milne, M. N. Thompson, K. G. Mcneil;
+       Phys. Rev. C40, 506(1989).
+92Kop  J.Kopecky, M.Uhl, R.E.Chrien; Preprint ECN-RX--92-011,
+       April 1992.
+95Li1  Liu Jianfen and Su Zongdi; J. Chinese Nucl. Phys., 16,
+       560(1995).
+02Ish  B. S. Ishkhanov, I. M. Kapitonov, E. I. Lileeva, E. V. Shirokov,
+       V. A. Erokhova, M. A. Elkin, A. V. Izotova;
+       Moscow State Univ.Inst.of Nucl.Phys. Reports, No.2002, 27/711(2002).
+03Er   V. A. Erokhova, M. A. Elkin, A. V. Izotova, B. S. Ishkhanov,
+       I. M. Kapitonov, E. I. Lilieva, E. V. Shirokov;
+       Izv. Ros. Akad. Nauk, Ser.Fiz. 67, 1479(2003).
+03Var  V. V. Varlamov, M. E. Stepanov, V. V. Chesnokov;
+       Izv. Ros. Akad. Nauk, Ser.Fiz. 67, 656(2003).
+08Var  V. V. Varlamov (private communication, 2008).
+

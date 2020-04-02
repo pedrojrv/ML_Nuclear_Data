@@ -1,0 +1,60 @@
+Directory: densities/total/
+File:      shellcor-ms.readme (April 30, 2002)
+***********************************************
+
+
+			   shellcor-ms.dat
+
+	Shell corrections of the Myers-Swiatecki mass formula
+	   (provided by A. V. Ignatyuk on April 30, 2002 )
+        *****************************************************
+
+
+Content
+-------
+Shell corrections calculated with the Myers-Swiatecki mass formula
+[1].  These corrections are widely used for systematics of the level
+density parameters and are defined as
+
+    Eshell(Z,A) = Eexp(Z,A) - Eld(Z,A,0),
+
+where Eexp is the experimental value of the atomic mass excess and Eld
+is the energy calculated within the liquid-drop model with the
+parameters recommended by Myers-Switecki [1] for a spherical shape of
+nuclei. For nuclei with no experimental mass excess the predictions of
+Myers-Swiatecki formula are used as Eexp.
+
+Some systematics of the level density parameters prefer to use shell
+corrections estimated taking into account ground state deformations of
+atomic nuclei. The corresponding shell corrections can be estimated as
+
+    EDshell(Z,A,def) = Eshell(Z,A) - Dcor(Z,A,bet),
+
+where Dcor is the deformation energy calculated within the liquid drop
+model for the set of deformation parameters (bet) determining a
+nuclear shape.  In the present file the deformation corrections Decor
+were calculated for the deformation parameters bet2 and bet4 estimated
+from the Moeller-Nix mass formula (Segment 1). Therefore, these
+corrections can also be used for transforming the Moeller-Nix shell
+corrections into the corresponding deformed Moeller-Nix corrections.
+
+
+Format
+------
+Each record of the file contains:
+
+   Z    : charge number
+   A    : mass number
+   El   : element symbol
+   Shell: shell correction calculated in accordance with the
+          given above formula in MeV
+   Dcor : correction for the deformed nuclear shape in MeV
+   bet2 : quadrupole  parameter of the nuclear ground-state deformation
+   bet4 : hexadecapole parameter of the nuclear ground-state deformation
+
+The corresponding FORTRAN format is (2i4,1x,a2,2(1x,f8.3),2(f6.3)).
+
+
+References
+----------
+[1] W. D. Myers and W. J. Swiatecki. Ark. Fizik, 36(1967)343.

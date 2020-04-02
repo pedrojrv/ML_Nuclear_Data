@@ -1,0 +1,35 @@
+Directory: densities/total/
+File:      level-densities-egsm-norm.readme (Dec 31, 2008)
+**********************************************************
+         	 
+
+                      level-densities-egsm-norm.dat
+
+              Normalization factors for level density parameters
+                    Enhanced Generalized Superfluid Model
+	               (provided by M. Herman on Dec 31, 2008 )
+             *****************************************************
+
+
+Content
+-------
+Normalization factors that can be applied to the level density parameter 'a' 
+to improve precision of the global systematics. These factors were obtained
+for 83 individual elements (8<Z<99) by calculating ratio between experimental 
+and systematics' value of 'a' at neutron binding and averaging these ratios 
+over the whole isotopic chain. The factors are intended to be used for nuclei 
+for which there is no experimental value for S-wave resonance spacing (otherwise 
+EGSM code normalizes systematics to reproduce experimental 'a' as given in the 
+file 'level-densities-egsm.dat'). 
+
+The average (over Z) value of the normalization factor is 1.00 +- 0.06 (one
+standard deviation).
+
+Format
+------
+Each record of the file contains:
+
+   Z      :  atomic number of the nucleus
+   factor :  normalization factor
+
+The corresponding FORTRAN format is (i5,f8.4).

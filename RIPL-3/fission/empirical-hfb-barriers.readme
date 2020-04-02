@@ -1,0 +1,53 @@
+Directory: FISSION
+File:      empirical-hfb-barriers.readme (28 November 2008)
+*******************************************************
+
+                      empirical-hfb-barriers.dat
+               Fission barrier and level density parameters
+         (Provided by S. Goriely & M. Sin, November 28, 2008)
+       ********************************************************
+ 
+Contents
+--------
+The file contains the HFB fission barrier parameters and renormalization factors
+of the microscopic nuclear level density (NLD) obtained by fitting the 
+neutron-induced fission cross section [1]. The HFB fission path [2] have been 
+used initially and both the inner and outer barrier heights adjusted 
+independently. For the lightest actinides (Th,Pa,U) three barriers are estimated.
+The barrier width is either the one predicted by the HFB model or for the some
+Th, Pa, Am or Cm cases the value adjusted to optimize the fission cross section.
+As far as the NLD are concerned, the HFB plus combinatorial model [3] is used 
+at each fission saddle points. In some cases, the NLD have been renormalized 
+through the alpha and delta parameter (see TecDoc) to optimize the fit to 
+the fission cross section. The corresponding alpha and delta values are also 
+given in the present file. 
+More details are given in the RIPL-3 Handbook. 
+
+Format
+------
+Each record of the file contains 
+
+     Z        : charge number
+     N        : neutron number
+     A        : mass number
+     s        : element symbol
+     Bin      : inner barrier height [MeV] 
+     hwin     : inner barrier curvature [MeV]
+     alphain  : alpha renormalization factor for the NLD at the inner saddle point [MeV^(-1/2)]
+     deltain  : delta renormalization factor for the NLD at the inner saddle point [MeV]
+     Bout     : outer barrier height [MeV] 
+     hwout    : outer barrier curvature [MeV]
+     alphaout : alpha renormalization factor for the NLD at the outer saddle point [MeV^(-1/2)]
+     deltaout : delta renormalization factor for the NLD at the outer saddle point [MeV]
+     Bout2    : third (outer) barrier height [MeV] 
+     hwout2   : third (outer) barrier curvature [MeV]
+     alphaout2: alpha renormalization factor for the NLD at the third saddle point [MeV^(-1/2)]
+     deltaout2: delta renormalization factor for the NLD at the third saddle point [MeV]
+
+The corresponding fortran format is (3i4,1x,a2,12f8.2)
+
+References
+----------
+[1] S. Goriely, S. Hilaire, A.J. Koning, M. Sin, R. Capote, Phys. Rev. C (2008) submitted
+[2] S. Goriely, M. Samyn, J.M. Pearson, Phys. Rev. C75 (2007) 064312
+[3] S. Goriely, S. Hilaire, A.J. Koning, Phys. Rev. C (2008) in press
