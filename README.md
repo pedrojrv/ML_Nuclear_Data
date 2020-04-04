@@ -3,7 +3,7 @@
 Python tools to process nuclear data and test ML models in benchmark calculations.
 
 - EXFOR_Parsing_Utilities.py: provides tools to process EXFOR C4 files into a format useful for futher data processing and ML applications.
-- AME_Parsing_Utilities.py: provides tools to process the Atomic Mass Evaluation files. The resulting data files can be use in conjunction with the EXFOR files or independently. 
+- AME_Parsing_Utilities.py: provides tools to process the Atomic Mass Evaluation files. The resulting data files can be use in conjunction with the EXFOR files or independently.
 
 
 ## Quick-Start: Creating Datasets
@@ -17,7 +17,7 @@ You'll need the proccessed AME files to create the EXFOR csv since the informati
 
 `python -c "from Utilities import EXFOR_Parsing_Utilities as exfor_parsing; exfor_parsing.get_all("./AME")"`
 
-After having your dataset created you are welcome to use any other packages to traing your models on this dataset. 
+After having your dataset created you are welcome to use any other packages to traing your models on this dataset.
 
 ## Quick-Start: Testing your ML algorithms
 
@@ -25,3 +25,11 @@ After having your dataset created you are welcome to use any other packages to t
 - GET STATISTICS FROM PREDICTINS ERRORS AMONGST EACH OTHER
 - COMPILE ACE FILES IN CURRENT GRID
 - RUN BENCHMARKS AND GET RESULTS NO TONLY KEFF
+
+
+ADD VERBOSITY FUNCTIONS
+
+
+Packages needed `natsort`
+
+`python ./nucml/exfor/parsing_utilities.py "./AME"`
