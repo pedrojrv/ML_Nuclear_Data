@@ -64,7 +64,7 @@ def load_endf(element, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True):
         return None
 
 
-def load_exfor(mode="neutrons", plot_df=False, basic=False, num=False, frac=0.2, elemental=False, Z=0, nat_iso="I"):
+def load_exfor(mode="neutrons", plot_df=False, low_en=False, basic=False, num=False, frac=0.2, elemental=False, Z=0, nat_iso="I"):
     datapath = r"C:\Users\Pedro\Desktop\ML_Nuclear_Data" + r"\ML_Data\EXFOR_" + mode + r"\EXFOR_" + mode + "_MF3_AME_no_NaNRaw.csv"
     print(datapath)
     
@@ -74,7 +74,8 @@ def load_exfor(mode="neutrons", plot_df=False, basic=False, num=False, frac=0.2,
     df = df[~df.Reaction_Notation.str.contains("WTR")]
     df = df[~df.Title.str.contains("DERIV")]
     df = df[~(df.Energy == 0)]
-
+    if low_en:
+        df = df[df.Energy < 2.0E7]
     if elemental:
         df = load_exfor_element(df, Z, nat_iso=nat_iso, one_hot=False, scale=False, scaler=None, to_scale=[])
     if plot_df:

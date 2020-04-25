@@ -224,7 +224,7 @@ def predicting_nuclear_xs(df, Z, A, MT, clf, to_scale, scaler, E_min=0, E_max=0,
         elif not new_data_avaliable and endf_avaliable: # if ENDF only
             # plt.legend((endf_eval, true, pred), ('ENDF', 'EXFOR', "EXFOR Pred"), loc='upper left')
             plt.legend()
-            all_y = np.concatenate((to_plot["Data"], y_hat, y_hat2, endf["Data"]))
+            all_y = np.concatenate((to_plot["Data"].values, y_hat[0].flatten(), y_hat2[0].flatten(), endf["Data"].values))
             minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05
             maximum_y = all_y.max() + all_y.max() * 0.05
             plt.ylim(minimum_y, maximum_y)
