@@ -347,7 +347,7 @@ def predicting_nuclear_xs(df, Z, A, MT, clf, to_scale, scaler, E_min=0, E_max=0,
 # endf_all_int -> endf_copy
 
 def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=empty_df, error=False,
-    save=False, interpolate=False, legend=True, alpha=0.7, one_hot=True, log_e=False, path='', ref=False):
+    save=False, interpolate=False, legend=True, alpha=0.7, one_hot=True, log_plot=False, path='', ref=False):
     """
     Plots Cross Section for a particular Isotope with or without references. 
     If Ref is true then EXFOR will be ploted per experimental campaign (one color for each)
@@ -360,7 +360,6 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
         fg = sns.FacetGrid(data=exfor_sample[["Energy", "Data", "Reference"]], hue='Reference',
                            hue_order=exfor_sample["Reference"].unique(), aspect=1.5, legend_out=False, height=10)
         fg.map(plt.scatter, "Energy", "Data", alpha=alpha)
-
         if legend:
             fg.add_legend()
             if interpolate == True:
@@ -378,6 +377,9 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
             if new_data.shape[0] != 0:
                 sns.scatterplot(new_data["Energy"], new_data["Data"], legend=False, ci=None, label="Additional Data")
     else:
+        plt.figure(figsize=(15,10))
+        if log_plot:
+            plt.xscale('log')
         sns.scatterplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha, legend=False, label="EXFOR", ci=None, marker="o")
         if interpolate == True:
             sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated")
@@ -392,8 +394,9 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
     plt.xlabel('Energy(eV)')
     plt.ylabel('Cross Section (b)')
     plt.yscale('log')
-    if not log_e:
-        plt.xscale('log')
+    if ref:
+        if log_plot:
+            plt.xscale('log')
     if save:
         plt.savefig(path + "EXFOR_{}_XS.png".format(exfor_sample.Target_Element_w_A.values[0]), bbox_inches='tight')
     if error:
@@ -401,7 +404,6 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
             exfor_endf = get_error_endf_exfor(endf, exfor_sample)
             if new_data.shape[0] != 0:
                 exfor_endf_new_data = get_error_endf_new(endf, new_data)
-
             return exfor_endf
 
 

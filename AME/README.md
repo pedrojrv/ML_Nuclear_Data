@@ -35,6 +35,4 @@ This directory contains files related to the Atomic Mass Evaluation. The followi
 ## Re-creating CSV Files
 If for some reason the CREATED csv files are not avaliable, as long as the other text files are avaliable they can be recreated using the following command on the terminal (it assumes you are in the NucML directory):
 
-<!-- `python -c "from Utilities import AME_parsing_utilities as ame; ame.get_all('./AME')"` -->
-
 `python ./nucml/ame/parsing_utilities.py "./AME"`

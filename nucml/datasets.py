@@ -4,9 +4,13 @@ from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 import os.path
 from pathlib import Path
+import os
 
-# TO DO: MAKE PATH ABSOLUTE
-def load_ame(nan=False):
+# ml_nuclear_path = "/Users/pedrovicentevaldez/Desktop/ML_Nuclear_Data/"
+ame_dir_path = os.path.abspath("../AME/")
+
+# TO DO: MAKE PATH ABSOLUTE FOR WINDOWS AND MAC
+def load_ame(path=ame_dir_path, nan=False):
     """Loads the Atomic Mass Evaluation 2016 data.
 
     Args:
@@ -18,11 +22,11 @@ def load_ame(nan=False):
 
     """
     if nan:
-        # path="../AME/AME_final_properties_w_NaN.csv"
-        path=r"C:\Users\Pedro\Desktop\ML_Nuclear_Data\AME\AME_final_properties_w_NaN.csv"
+        ame_file_path = os.path.join(path, "AME_final_properties_w_NaN.csv")
     else:
-        path=r"C:\Users\Pedro\Desktop\ML_Nuclear_Data\AME\AME_final_properties_no_NaN.csv"
-    ame = pd.read_csv(path)
+        ame_file_path = os.path.join(path, "AME_final_properties_no_NaN.csv")
+    print("Reading and loading Atomic Mass Evaluation files from: \n {}".format(ame_file_path))
+    ame = pd.read_csv(ame_file_path)
     return ame
 
 def load_endf(element, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True):
@@ -39,9 +43,7 @@ def load_endf(element, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True):
         None: if file does not exist. This might also be raised if the arguments are not formated correctly.
 
     """
-    path = r"C:\Users\Pedro\Desktop\ML_Nuclear_Data" + r"\ML_Data\ENDF_" + mode + r"\\" + \
-            element +  r"\endfb8.0\tables\xs\n-" + element + "-" + MT + ".endfb8.0"
-    # path = "../ML_Data/ENDF/neutron/" + element + "/endfb8.0/tables/xs/n-" + element + "-" + MT + ".endfb8.0"
+    path = os.path.abspath("../ML_Data/ENDF_" + mode + "/" + element + "/endfb8.0/tables/xs/n-" + element + "-" + MT + ".endfb8.0")
     print(path)
     file = Path(path)
     if file.is_file():
@@ -64,8 +66,8 @@ def load_endf(element, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True):
         return None
 
 
-def load_exfor(mode="neutrons", plot_df=False, low_en=False, basic=False, num=False, frac=0.2, elemental=False, Z=0, nat_iso="I"):
-    datapath = r"C:\Users\Pedro\Desktop\ML_Nuclear_Data" + r"\ML_Data\EXFOR_" + mode + r"\EXFOR_" + mode + "_MF3_AME_no_NaNRaw.csv"
+def load_exfor(copy=False, low_en=False, basic=False, num=False, frac=0.2, mode="neutrons"):
+    datapath = os.path.abspath("../ML_Data/EXFOR_" + mode + "/EXFOR_" + mode + "_MF3_AME_no_NaNRaw.csv")
     print(datapath)
     
     """Loads and processes EXFOR data."""
@@ -74,13 +76,17 @@ def load_exfor(mode="neutrons", plot_df=False, low_en=False, basic=False, num=Fa
     df = df[~df.Reaction_Notation.str.contains("WTR")]
     df = df[~df.Title.str.contains("DERIV")]
     df = df[~(df.Energy == 0)]
+    df = df[~(df.Data == 0)]
     if low_en:
         df = df[df.Energy < 2.0E7]
-    if elemental:
-        df = load_exfor_element(df, Z, nat_iso=nat_iso, one_hot=False, scale=False, scaler=None, to_scale=[])
-    if plot_df:
+
+    # df["Energy"] = np.log10(df["Energy"])
+    # df["Data"] = np.log10(df["Data"])
+
+    
+    if copy:
         print("Creating a copy of the dataframe...")
-        df_plotting = df.copy()
+        df_copy = df.copy()
     if basic:
         basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Target_Protons", "Frame",
                       "Target_Neutrons", "Target_Mass_Number", "Target_Flag"]
@@ -103,36 +109,24 @@ def load_exfor(mode="neutrons", plot_df=False, low_en=False, basic=False, num=Fa
         x_train, x_test, y_train, y_test = train_test_split(df.drop(["Data"], axis=1), df["Data"], test_size=frac)
         print("Normalizing dataset...")
         to_scale = list(x_train.columns)[:norm_columns]
+        to_scale.remove("Energy")
+        # POWER TRANSFORMER
         scaler = preprocessing.PowerTransformer().fit(x_train[to_scale])
         x_train[to_scale] = scaler.transform(x_train[to_scale])
         x_test[to_scale] = scaler.transform(x_test[to_scale])
         print("Finished. Resulting dataset has shape ", df.shape,
             "\nTraining and Testing dataset shapes are {} and {} respesctively.".format(x_train.shape, x_test.shape))
-        if plot_df:
-            return df, df_plotting, x_train, x_test, y_train, y_test, to_scale, scaler
+        if copy:
+            return df, df_copy, x_train, x_test, y_train, y_test, to_scale, scaler
         else:
             return df, x_train, x_test, y_train, y_test, to_scale, scaler
     else:
         print("Finished. Resulting dataset has shape ", df.shape)
-        if plot_df:
-            return df, df_plotting
+        if copy:
+            return df, df_copy
         else:
             return df
 
-def load_exfor_element(df, Z, nat_iso="I", one_hot=True, scale=False, scaler=None, to_scale=[]):
-    """
-    Loads EXFOR data for a particular element (includes all isotopes)
-    """
-    print("Extracting samples from dataframe.")
-    if one_hot:
-        sample = df[(df["Target_Protons"] == Z) & (df["Target_Flag_" + nat_iso] == 1)].sort_values(by='Energy', ascending=True)
-    else:
-        sample = df[(df["Target_Protons"] == Z) & (df["Target_Flag"] == nat_iso)].sort_values(by='Energy', ascending=True)
-    if scale:
-        print("Scaling dataset...")
-        sample[to_scale] = scaler.transform(sample[to_scale])
-    print("EXFOR extracted DataFrame has shape: ", sample.shape)
-    return sample
 
 
 # df.dtypes.apply(lambda x: x.name).to_dict()

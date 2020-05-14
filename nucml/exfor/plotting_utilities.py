@@ -6,7 +6,7 @@ import seaborn as sns
 empty_df = pd.DataFrame()
 
 def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=empty_df, error=False,
-    save=False, interpolate=False, legend=True, alpha=0.7, one_hot=True, log_e=False, path='', ref=False):
+    save=False, interpolate=False, legend=True, alpha=0.7, one_hot=True, log_plot=False, path='', ref=False):
     # Extracting dataframe to make predictions and creating copy for evaluation
     to_plot = load_exfor_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
     # Initializing Figure and Plotting
@@ -71,7 +71,7 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
     plt.xlabel('Energy(eV)')
     plt.ylabel('Cross Section (b)')
     plt.yscale('log')
-    if log_e == False:
+    if log_plot:
         plt.xscale('log')
     if save == True:
         plt.savefig(path + "EXFOR_{}_XS.png".format(to_plot.Target_Element_w_A.values[0]), bbox_inches='tight')

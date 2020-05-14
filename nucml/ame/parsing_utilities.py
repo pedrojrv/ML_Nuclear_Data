@@ -3,17 +3,19 @@ import numpy as np
 import os
 import logging as log
 
+ame_dir_path = os.path.abspath("../AME/")
 
-def read_mass16(ame_dir):
-    """This function reads the mass16.txt file and creates a formatted CSV file.
-
+def read_mass16(path=ame_dir_path):
+    """
+    This function reads the mass16.txt file and creates a formatted CSV file.
     Args:
         ame_dir (str): Path to the Atomic Mass Evaluation directory.
 
     Returns:
         None
     """
-    filename = ame_dir + "/For_Extraction/mass16_toparse.txt"
+    filename = os.path.join(path, "For_Extraction/mass16_toparse.txt")
+    # TO DELETE: filename = ame_dir + "/For_Extraction/mass16_toparse.txt"
     print("MASS16: Reading {}...".format(filename))
 
     ### The data is fortran formated with the following structure:
@@ -49,7 +51,7 @@ def read_mass16(ame_dir):
 
     data["Element_w_A"] = data["A"].astype(str) + data["EL"]
 
-    csv_name = ame_dir + "/AME_atomic_masses_v1.csv"
+    csv_name = os.path.join(path, "AME_atomic_masses_v1.csv")
     print("MASS16: Saving to {}...".format(csv_name))
     data.to_csv(csv_name, index=False)
     print("MASS16: Finished.")
@@ -57,7 +59,7 @@ def read_mass16(ame_dir):
 
 
 
-def read_rct1(ame_dir):
+def read_rct1(path=ame_dir_path):
     """This function reads the rct1.txt file and creates a formatted CSV file.
 
     Args:
@@ -66,7 +68,7 @@ def read_rct1(ame_dir):
     Returns:
         None
     """
-    filename = ame_dir + "/For_Extraction/rct1_16_toparse.txt"
+    filename = os.path.join(path, "For_Extraction/rct1_16_toparse.txt")
     print("RCT1: Reading {}...".format(filename))
 
     formatting = ((0,1),(1,4),(4,5),(5,8),(8,11),(11,12),(12,22),(22,30),(30,40),
@@ -100,13 +102,13 @@ def read_rct1(ame_dir):
     rct1["Element_w_A"] = rct1["A"].astype(str) + rct1["EL"]
     rct1.drop(columns=["Page_Feed", "A", "EL", "Z", "N"], inplace=True)
 
-    csv_name = ame_dir + "/AME_atomic_masses_v1_rct1.csv"
+    csv_name = os.path.join(path, "AME_atomic_masses_v1_rct1.csv")
     print("RCT1: Saving to {}...".format(csv_name))
     rct1.to_csv(csv_name, index=False)
     print("RCT1: Finished.")
     return None
 
-def read_rct2(ame_dir):
+def read_rct2(path=ame_dir_path):
     """This function reads the rct2.txt file and creates a formatted CSV file.
 
     Args:
@@ -115,7 +117,7 @@ def read_rct2(ame_dir):
     Returns:
         None
     """
-    filename = ame_dir + "/For_Extraction/rct2_16_toparse.txt"
+    filename = os.path.join(path, "For_Extraction/rct2_16_toparse.txt")
     print("RCT2: Reading {}...".format(filename))
 
     formatting = ((0,1),(1,4),(4,5),(5,8),(8,11),(11,12),(12,22),(22,30),(30,40),
@@ -150,13 +152,13 @@ def read_rct2(ame_dir):
     rct2["Element_w_A"] = rct2["A"].astype(str) + rct2["EL"]
     rct2.drop(columns=["Page_Feed", "A", "EL", "Z", "N"], inplace=True)
 
-    csv_name = ame_dir + "/AME_atomic_masses_v1_rct2.csv"
+    csv_name = os.path.join(path, "AME_atomic_masses_v1_rct2.csv")
     print("RCT2: Saving to {}...".format(csv_name))
     rct2.to_csv(csv_name, index=False)
     print("RCT2: Finished.")
     return None
 
-def merge_mass_rct(ame_dir, add_qvalues=True):
+def merge_mass_rct(path=ame_dir_path, add_qvalues=True):
     """Reads the proccessed mass16, rct1, and rct2 files and merges them while
     adding other reaction Q-values if needed. It creates a CSV file when finished.
 
@@ -195,9 +197,9 @@ def merge_mass_rct(ame_dir, add_qvalues=True):
         None
     """
     print("Reading mass16, rct1, and rct2 CSV files...")
-    data = pd.read_csv(ame_dir + "/AME_atomic_masses_v1.csv")
-    rct1 = pd.read_csv(ame_dir + "/AME_atomic_masses_v1_rct1.csv")
-    rct2 = pd.read_csv(ame_dir + "/AME_atomic_masses_v1_rct2.csv")
+    data = pd.read_csv(os.path.join(path, "AME_atomic_masses_v1.csv"))
+    rct1 = pd.read_csv(os.path.join(path, "AME_atomic_masses_v1_rct1.csv"))
+    rct2 = pd.read_csv(os.path.join(path, "AME_atomic_masses_v1_rct2.csv"))
 
     if len(rct1.Element_w_A.unique()) == len(rct2.Element_w_A.unique()) == len(data.Element_w_A.unique()):
         df_final = pd.merge(data, rct1, on='Element_w_A')
@@ -232,7 +234,7 @@ def merge_mass_rct(ame_dir, add_qvalues=True):
             df_final["Q(3He,a)"] = -1 * df_final["S(n)"] + 20577.6194
             df_final["Q(t,a)"] = -1 * df_final["S(p)"] + 19813.8649
         print("Saving to CSV...")
-        csv_name = ame_dir + "/AME_atomic_masses_v2.csv"
+        csv_name = os.path.join(path, "AME_atomic_masses_v2.csv")
         print("Saving to {}...".format(csv_name))
         df_final.to_csv(csv_name, index=False)
         print("Finished merging CSV files.")
@@ -241,7 +243,7 @@ def merge_mass_rct(ame_dir, add_qvalues=True):
         print("Shapes not compatible.")
         return None
 
-def create_natural_element_data(ame_dir, fillna=True, mode="isotopic"):
+def create_natural_element_data(path=ame_dir_path, fillna=True, mode="isotopic"):
     """Creates natural element data by averaging isotopic data. Additionally it
     adds a flag to indicate rows which correspond to isotopic or natural data.
 
@@ -255,11 +257,11 @@ def create_natural_element_data(ame_dir, fillna=True, mode="isotopic"):
     Returns:
         None.
     """
-    filename = ame_dir + "/AME_atomic_masses_v2.csv"
+    filename = os.path.join(path, "AME_atomic_masses_v2.csv")
     print("Reading {}...".format(filename))
     ame = pd.read_csv(filename)
 
-    periodic = ame_dir + "/For_Extraction/periodic_table.csv"
+    periodic = os.path.join(path, "For_Extraction/periodic_table.csv")
     print("Reading {}...".format(periodic))
     masses_natural = pd.read_csv(periodic).rename(
         columns={'NumberofNeutrons':'Neutrons', 'NumberofProtons':'Protons', 'AtomicMass':'Atomic_Mass_Micro', 'Symbol':'EL'})
@@ -273,8 +275,8 @@ def create_natural_element_data(ame_dir, fillna=True, mode="isotopic"):
     masses_natural["A"] = masses_natural["Mass_Number"] * 0
 
     print("Saving natural element information...")
-    masses_natural.to_csv(ame_dir + "/For_Extraction/natural_element_masses.csv", index=False)
-    natural = pd.read_csv(ame_dir + "/For_Extraction/natural_element_masses.csv")
+    masses_natural.to_csv(os.path.join(path, "For_Extraction/natural_element_masses.csv"), index=False)
+    natural = pd.read_csv(os.path.join(path, "For_Extraction/natural_element_masses.csv"))
 
     natural.columns = ["N", "Z", "A", "EL", "Atomic_Mass_Micro", "Neutrons", "Mass_Number"]
     natural["Neutrons"] = natural["Mass_Number"] - natural["Z"]
@@ -295,8 +297,8 @@ def create_natural_element_data(ame_dir, fillna=True, mode="isotopic"):
     result.Mass_Number = result.Mass_Number.astype(int)
     result["O"].fillna(value="Other", inplace=True)
     result = result.drop(columns=["Element_w_A"])
-
-    csv_name = ame_dir + "/AME_final_properties_w_NaN.csv"
+    
+    csv_name = os.path.join(path, "AME_final_properties_w_NaN.csv")
     print("Saving final CSV file to {}...".format(csv_name))
     result.to_csv(csv_name, index=False)
 
@@ -307,13 +309,14 @@ def create_natural_element_data(ame_dir, fillna=True, mode="isotopic"):
             for i in range(0,119):
                 result[result["Z"] == i] = result[result["Z"] == i].fillna(result[result["Z"] == i].mean())
         result.fillna(result.mean(), inplace=True)
-        csv_name = ame_dir + "/AME_final_properties_no_NaN.csv"
+
+        csv_name = os.path.join(path, "AME_final_properties_no_NaN.csv")
         print("Saving imputed final CSV file to {}...".format(csv_name))
         result.to_csv(csv_name, index=False)
     print("Finished.")
     return None
 
-def get_all(ame_dir, fillna=True, add_qvalues=True, mode="isotopic"):
+def get_all(path=ame_dir_path, fillna=True, add_qvalues=True, mode="isotopic"):
     """Creates 5 CSV files: Proccesed (1) mass16, (2) rct1, and (3) rct2 files. It then creates
     a (4) single CSV merging the first three CSV files. It then creates (5) a proccesed CSV file
     containing isotpic and natural element data with NaN values. If wanted a (6) copy of the fifth
@@ -357,14 +360,13 @@ def get_all(ame_dir, fillna=True, add_qvalues=True, mode="isotopic"):
     Returns:
         None
     """
-    read_mass16(ame_dir)
-    read_rct1(ame_dir)
-    read_rct2(ame_dir)
-    merge_mass_rct(ame_dir, add_qvalues=add_qvalues)
-    create_natural_element_data(ame_dir, fillna=fillna, mode=mode)
+    read_mass16(path)
+    read_rct1(path)
+    read_rct2(path)
+    merge_mass_rct(path, add_qvalues=add_qvalues)
+    create_natural_element_data(path, fillna=fillna, mode=mode)
     return None
 
 
 if __name__ == "__main__":
-    import sys
-    get_all(sys.argv[1])
+    get_all(path=ame_dir_path)
