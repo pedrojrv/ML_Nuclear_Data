@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "train.py", line 210, in <module>
+    wandb.init(project=WANDB_PROJECT_NAME, name=RUN_NAME, sync_tensorboard=True, reinit=True, group=GROUP_NAME, id=RUN_NAME)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\wandb\__init__.py", line 1303, in init
+    as_defaults=not allow_val_change)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\wandb\wandb_config.py", line 333, in _update
+    self.persist()
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\wandb\wandb_config.py", line 238, in persist
+    conf_file.write(str(self))
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\wandb\wandb_config.py", line 374, in __str__
+    allow_unicode=True, encoding='utf-8')
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\__init__.py", line 290, in dump
+    return dump_all([data], stream, Dumper=Dumper, **kwds)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 48, in represent_data
+    node = self.yaml_representers[data_types[0]](self, data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 207, in represent_dict
+    return self.represent_mapping('tag:yaml.org,2002:map', data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 118, in represent_mapping
+    node_value = self.represent_data(item_value)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 48, in represent_data
+    node = self.yaml_representers[data_types[0]](self, data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 207, in represent_dict
+    return self.represent_mapping('tag:yaml.org,2002:map', data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 118, in represent_mapping
+    node_value = self.represent_data(item_value)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "C:\Users\Pedro\Anaconda3\envs\data_mining_gpu\lib\site-packages\yaml\representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', OrderedDict([('cli_version', '0.9.3'), ('code_path', 'code/wandbCometHybrid/train.py'), ('is_jupyter_run', False), ('is_kaggle_kernel', False), ('python_version', '3.7.7'), ('framework', 'xgboost')]))

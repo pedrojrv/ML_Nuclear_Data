@@ -1,0 +1,37 @@
+2020-07-20 15:55:18,071 INFO    MainThread:19944 [wandb_agent.py:run():194] Running runs: []
+2020-07-20 15:55:18,416 INFO    MainThread:19944 [wandb_agent.py:_process_command():256] Agent received command: run
+2020-07-20 15:55:18,416 INFO    MainThread:19944 [wandb_agent.py:_command_run():286] Agent starting run with config:
+	layer_10_size: 949
+	layer_1_size: 671
+	layer_2_size: 853
+	layer_3_size: 459
+	layer_4_size: 537
+	layer_5_size: 286
+	layer_6_size: 422
+	layer_7_size: 549
+	layer_8_size: 672
+	layer_9_size: 331
+	learning_rate: 1.0007242956775302
+	lr_decay_epochs: 20
+	lr_schedule_type: plateau
+2020-07-20 15:55:18,420 DEBUG   MainThread:19944 [wandb_config.py:_load_defaults():150] wandb dir not provided, skipping defaults
+2020-07-20 15:55:18,532 INFO    MainThread:19944 [wandb_agent.py:_command_run():325] About to run command: python wandb_train.py --layer_10_size=949 --layer_1_size=671 --layer_2_size=853 --layer_3_size=459 --layer_4_size=537 --layer_5_size=286 --layer_6_size=422 --layer_7_size=549 --layer_8_size=672 --layer_9_size=331 --learning_rate=1.0007242956775302 --lr_decay_epochs=20 --lr_schedule_type=plateau
+2020-07-20 15:55:23,536 INFO    MainThread:19944 [wandb_agent.py:run():194] Running runs: ['g3jf18kn']
+2020-07-20 15:55:28,692 INFO    MainThread:19944 [wandb_agent.py:run():209] Cleaning up finished run: g3jf18kn
+2020-07-20 15:55:29,042 INFO    MainThread:19944 [wandb_agent.py:_process_command():256] Agent received command: run
+2020-07-20 15:55:29,043 INFO    MainThread:19944 [wandb_agent.py:_command_run():286] Agent starting run with config:
+	layer_10_size: 514
+	layer_1_size: 575
+	layer_2_size: 354
+	layer_3_size: 362
+	layer_4_size: 276
+	layer_5_size: 343
+	layer_6_size: 276
+	layer_7_size: 651
+	layer_8_size: 111
+	layer_9_size: 407
+	learning_rate: 1.000817562909363
+	lr_decay_epochs: 0
+	lr_schedule_type: plateau
+2020-07-20 15:55:29,048 DEBUG   MainThread:19944 [wandb_config.py:_load_defaults():150] wandb dir not provided, skipping defaults
+2020-07-20 15:55:29,176 INFO    MainThread:19944 [wandb_agent.py:_command_run():325] About to run command: python wandb_train.py --layer_10_size=514 --layer_1_size=575 --layer_2_size=354 --layer_3_size=362 --layer_4_size=276 --layer_5_size=343 --layer_6_size=276 --layer_7_size=651 --layer_8_size=111 --layer_9_size=407 --learning_rate=1.000817562909363 --lr_decay_epochs=0 --lr_schedule_type=plateau
