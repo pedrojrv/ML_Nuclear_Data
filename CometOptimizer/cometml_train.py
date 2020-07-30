@@ -34,7 +34,7 @@ config = {
     "algorithm": "bayes",
     "name": "Optimize EXFOR B1 Network",
     "spec": {
-        "maxCombo": 10,          # Limit of Paramter Combinatios to Try 
+        "maxCombo": 0,          # Limit of Paramter Combinatios to Try 
         "objective": "minimize", 
         "metric": "loss",
         "gridSize": 10,          # Number of bins per parameter when creating grid
@@ -56,7 +56,7 @@ config = {
 
         "activation_fn": {"type": "categorical", "values": ["relu"]},
         "batch_size": {"type": "discrete", "values": [500]},
-        "learning_rate": {"type": "float", "min": 0.0005, "max": 0.005, "scalingType": "loguniform"},
+        "learning_rate": {"type": "float", "min": 0.0005, "max": 0.003, "scalingType": "loguniform"},
         "epochs" : {"type": "discrete", "values": [150]},
         "scaler_type": {"type": "categorical", "values": ["std"]},
         "dataset_type" : {"type": "discrete", "values": [1]},
@@ -208,26 +208,26 @@ for experiment in opt.get_experiments():
             metrics=['mae', experiment.get_parameter("loss_metric")])
 
 
-    train_dataset = tf.data.Dataset.from_tensor_slices((x_train.values, y_train.values))
-    test_dataset = tf.data.Dataset.from_tensor_slices((x_test.values, y_test.values))
-    train_dataset = train_dataset.shuffle(len(x_train)).batch(experiment.get_parameter("batch_size")).prefetch(1)
-    test_dataset = test_dataset.batch(experiment.get_parameter("batch_size"))
+    # train_dataset = tf.data.Dataset.from_tensor_slices((x_train.values, y_train.values))
+    # test_dataset = tf.data.Dataset.from_tensor_slices((x_test.values, y_test.values))
+    # train_dataset = train_dataset.shuffle(len(x_train)).batch(experiment.get_parameter("batch_size")).prefetch(1)
+    # test_dataset = test_dataset.batch(experiment.get_parameter("batch_size"))
 
 
-    history = model.fit(train_dataset,
-        steps_per_epoch = STEPS_PER_EPOCH,
-        epochs = experiment.get_parameter("epochs"),
-        validation_data=test_dataset,
-        callbacks=get_callbacks("", logs_dir_name=LOGGING_DIR, lr_method=experiment.get_parameter("lr_schedule_type")),
-        verbose=0)
-
-    # history = model.fit(x_train.values, y_train.values,
-    #     batch_size = experiment.get_parameter("batch_size"),
+    # history = model.fit(train_dataset,
     #     steps_per_epoch = STEPS_PER_EPOCH,
     #     epochs = experiment.get_parameter("epochs"),
-    #     validation_data=(x_test.values, y_test.values),
+    #     validation_data=test_dataset,
     #     callbacks=get_callbacks("", logs_dir_name=LOGGING_DIR, lr_method=experiment.get_parameter("lr_schedule_type")),
-    #     verbose=0)   
+    #     verbose=0)
+
+    history = model.fit(x_train.values, y_train.values,
+        batch_size = experiment.get_parameter("batch_size"),
+        steps_per_epoch = STEPS_PER_EPOCH,
+        epochs = experiment.get_parameter("epochs"),
+        validation_data=(x_test.values, y_test.values),
+        callbacks=get_callbacks("", logs_dir_name=LOGGING_DIR, lr_method=experiment.get_parameter("lr_schedule_type")),
+        verbose=0)   
     
     experiment.log_metric("loss", history.history['loss'][-1])
 

@@ -11,6 +11,7 @@ ame_originals_path = os.path.abspath("../AME/Originals/")
 def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
     """Reads the mass16.txt file and creates a formatted CSV file. The Mass 16 file contains a variety of 
     features including atomic mass, mass excess, binding energy, beta decay energy, and more.
+    For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
     
     It  is parse base on the Fortran formatting:
     a1,i3,i5,i5,i5,1x,a3,a4,1x,f13.5,f11.5,f11.3,f9.3,1x,a2,f11.3,f9.3,1x,i3,1x,f12.5,f11.5
@@ -19,7 +20,7 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
     1,4,9,14,19,20,23,27,28,41,52,63,72,73,75,86,95,96,99,100,112,123
 
     Args:
-        directory (str): path to the Atomic Mass Evaluation directory where the mass16_toparse.txt file is located.
+        originals_directory (str): path to the Atomic Mass Evaluation directory where the mass16_toparse.txt file is located.
         saving_directory (str): path to save resulting formatted csv file.
 
     Returns:
@@ -77,12 +78,13 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
 def read_rct1(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
     """Reads the rct1-16.txt file and creates a formatted CSV file. The rct1-16 file contains a variety of 
     features including neutron and proton separation energies and q-values for a variety of reactions.
+    For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
     
     It  is parse base on the Fortran formatting:
     a1,i3,1x,a3,i3,1x,6(f10.2,f8.2)
 
     Args:
-        directory (str): path to the Atomic Mass Evaluation directory where the rct1-16.txt file is located.
+        originals_directory (str): path to the Atomic Mass Evaluation directory where the rct1-16.txt file is located.
         saving_directory (str): path to save resulting formatted csv file.
 
     Returns:
@@ -132,12 +134,13 @@ def read_rct1(originals_directory=ame_originals_path, saving_directory=ame_dir_p
 def read_rct2(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
     """Reads the rct2-16.txt file and creates a formatted CSV file. The rct2-16 file contains a variety of 
     features including neutron and proton separation energies and q-values for a variety of reactions.
-    
+    For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
+
     It  is parse base on the Fortran formatting:
     a1,i3,1x,a3,i3,1x,6(f10.2,f8.2)
 
     Args:
-        directory (str): path to the Atomic Mass Evaluation directory where the rct2-16.txt file is located.
+        originals_directory (str): path to the Atomic Mass Evaluation directory where the rct2-16.txt file is located.
         saving_directory (str): path to save resulting formatted csv file.
 
     Returns:
@@ -190,10 +193,11 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
     """Reads the proccessed mass16, rct1, and rct2 files and merges them while adding other reaction 
     Q-values if needed. It creates one main CSV file when finished. This assumes the three files 
     were created using the read_mass(), read_rct1(), and read_rct2() functions.
+    For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
 
     Args:
         directory (str): Path to the Atomic Mass Evaluation directory where 
-            the mass16, rct2, and rct2 files are saved. The length of all three 
+            the processed mass16, rct2, and rct2 files are saved. The length of all three 
             files must be the same.
         saving_directory (str): path to directory where the resulting formatted 
             csv file will be saved.
@@ -283,17 +287,24 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
         logging.error("MERGE: One of the three files does not exists in the given directory.")
     return None
 
-def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, mode="isotopic"):
+def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_originals_path, 
+    saving_directory=ame_dir_path, fillna=True, mode="elemental", fill_value=0):
     """Creates natural element data by averaging isotopic data. Additionally it
     adds a flag to indicate rows which correspond to isotopic or natural data.
 
     Args:
-        directory (str): path to the Atomic Mass Evaluation directory where the 
-            AME_all_merged.csv file is located.
-        fillna (bool): if True, missing values are filled. For NaN values not filled by the
-            used "mode", then the filling method is just the mean of the entire dataset.
+        directory (str): path to the Atomic Mass Evaluation directory where 
+            the AME_all_merged.csv file is located.
+        originals_directory (str): path to the Atomic Mass Evaluation directory where the 
+            periodic_table csv file is located.
+        saving_directory (str): path to directory where the resulting formatted 
+            csv file will be saved.
+        fillna (bool): if True, missing values are filled. For the remaining NaN values not filled by the
+            used `mode`, a value of 0 will be inserted unless specified otherwise.
         mode (str): The supported modes are:
-            isotopic: missing values are filled using the isotopic average.
+            elemental: missing values are filled using linear interpolation element-wise.
+        fill_value (int, float): value to fill remaining missing values with after imputation is finished 
+            with selected `mode`. Defaults to 0.
     Returns:
         None.
     """
@@ -357,7 +368,7 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
                 result = impute_values(result)
   
             logging.info("FEAT ENG: Filling remaining NaN values with 0...")
-            result = result.fillna(0)
+            result = result.fillna(fill_value)
 
             logging.info("FEAT ENG: Returning features to original data types...")
             for x in result.columns:
@@ -375,19 +386,24 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
     return None
 
 
-def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, add_qvalues=True, mode="elemental"):
+def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, 
+    add_qvalues=True, mode="elemental", fill_value=0):
     """Creates 5 CSV files: Proccesed (1) mass16, (2) rct1, and (3) rct2 files. It then creates
     a (4) single CSV merging the first three CSV files. It then creates (5) a proccesed CSV file
     containing isotpic and natural element data with NaN values. If wanted a (6) copy of the fifth
     CSV file is saved with imputed NaN values.
 
     Args:
-        ame_dir (str): Path to the Atomic Mass Evaluation directory.
-            The length of all three files must be the same.
+        originals_directory (str): path to the Atomic Mass Evaluation directory where the 
+            periodic_table csv file is located.
+        saving_directory (str): path to directory where the resulting formatted 
+            csv file will be saved.
         fillna (bool): if True it fills the missing values. For NaN values not filled by the
             used "mode", then the filling method is just the mean of the entire dataset.
         mode (str): Currently the only supporte mode is Isotopic.
             Missing Values are filled using the isotopic average.
+        fill_value (int, float): value to fill remaining missing values with after imputation is finished 
+            with selected `mode`. Defaults to 0.
         add_qvalues (bool): If true it will add the following reaction Q-values:
             ["Q(g,p)"] = -1 * ["S(p)"]
             ["Q(g,n)"] = -1 * ["S(n)"]
@@ -423,10 +439,20 @@ def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_pat
     read_rct1(originals_directory=originals_directory, saving_directory=saving_directory)
     read_rct2(originals_directory=originals_directory, saving_directory=saving_directory)
     merge_mass_rct(directory=saving_directory, saving_directory=saving_directory, add_qvalues=add_qvalues)
-    create_natural_element_data(directory=saving_directory, saving_directory=saving_directory, fillna=fillna, mode=mode)
+    create_natural_element_data(directory=saving_directory, saving_directory=saving_directory, fillna=fillna, mode=mode, fill_value=fill_value)
     return None
 
 def impute_values(df):
+    """Imputes values column-wise element-wise using linear interpolation.
+
+    Args:
+        df (DataFrame): dataframe to impute values off. It must contain the following features:
+            'Z' (integer):Representing the proton number.
+            'A' (integer): Representing the mass number (not the precise atomic mass)
+
+    Returns:
+        [type]: [description]
+    """
     for i in range(0,119):
         df[df["Z"] == i] = df[df["Z"] == i].sort_values(by="A").interpolate()
 
@@ -456,7 +482,6 @@ def impute_values(df):
                 fit_df_original[col][x] = func(x, *col_params[col])
 
             df[df["Z"] == i] = fit_df_original.values
-    
     return df
 
 def check_if_files_exist(files_list):
@@ -490,137 +515,6 @@ mass16_dtypes = ['float64',
  'float64']
 
 if __name__ == "__main__":
-    get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, add_qvalues=True, mode="isotopic")
+    get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, add_qvalues=True, mode="elemental")
 
 
-
-# def read_mass16(directory_path=ame_dir_path):
-#     """Reads the mass16.txt file and creates a formatted CSV file. The Mass 16 file contains information 
-    
-#     It  is parse base on the Fortran formatting:
-#     a1,i3,i5,i5,i5,1x,a3,a4,1x,f13.5,f11.5,f11.3,f9.3,1x,a2,f11.3,f9.3,1x,i3,1x,f12.5,f11.5
-
-#     This is equivalent to spacing numbers: 
-#     1,4,9,14,19,20,23,27,28,41,52,63,72,73,75,86,95,96,99,100,112,123
-
-#     Args:
-#         directory_path (str): path to the Atomic Mass Evaluation directory where the mass16_toparse.txt file is located.
-
-#     Returns:
-#         None
-#     """
-#     formatting = ((0,1),(1,5),(5,9),(9,14),(14,19),(19,20),(20,23),(23,27),(27,28),
-#                (28,41),(41,52),(52,63),(63,72),(72,73),(73,75),(75,86),(86,95),(95,96),
-#                (96,112),(112,123))
-
-#     filename = os.path.join(directory_path, "For_Extraction/mass16_toparse.txt")
-#     if os.path.exists(filename):
-#         logging.info("Reading data from {}".format(filename))
-
-#     column_names = ["Page_Feed", "NZ", "N", "Z", "A", "Other", "EL", "O", "Other2", \
-#            "Mass_Excess", "dMass_Excess", "Binding_Energy", "dBinding_Energy", "Other3", \
-#            "Beta_Type", "B_Decay_Energy", "dB_Decay_Energy", "Other4",
-#            "Atomic_Mass_Micro", "dAtomic_Mass_Micro"]
-
-#     data = pd.read_fwf(filename, colspecs=formatting, header=None)
-#     print("MASS16: Formatting file...")
-#     data.columns = column_names
-#     print("MASS16: Replacing NaNs with np.nan...")
-#     data = data.replace(value=np.nan, to_replace="?")
-
-#     for col in ["Atomic_Mass_Micro"]:
-#         data[col] = data[col].astype(str)
-#         data[col] = data[col].str.strip("\"")
-#         data[col] = data[col].str.replace(" ", "")
-#         data[col] = data[col].str.strip()
-
-#     data["Atomic_Mass_Micro"] = data["Atomic_Mass_Micro"].astype(float)
-#     data["B_Decay_Energy"] = data["B_Decay_Energy"].astype(float)
-
-#     print("MASS16: Dropping unnecessary data...")
-#     data.drop(columns=["Page_Feed", "Other", "Other2", "Other3", "Beta_Type", "Other4", "NZ"], inplace=True)
-
-#     data["Element_w_A"] = data["A"].astype(str) + data["EL"]
-
-#     csv_name = os.path.join(path, "AME_mass16.csv")
-#     print("MASS16: Saving to {}...".format(csv_name))
-#     data.to_csv(csv_name, index=False)
-#     print("MASS16: Finished.")
-#     return None
-
-# def create_natural_element_data(directory=ame_dir_path, saving_directory=ame_dir_path, fillna=True, mode="isotopic"):
-#     """Creates natural element data by averaging isotopic data. Additionally it
-#     adds a flag to indicate rows which correspond to isotopic or natural data.
-
-#     Args:
-#         directory (str): path to the Atomic Mass Evaluation directory where the 
-#             AME_all_merged.csv file is located.
-#         fillna (bool): if True, missing values are filled. For NaN values not filled by the
-#             used "mode", then the filling method is just the mean of the entire dataset.
-#         mode (str): The supported modes are:
-#             isotopic: missing values are filled using the isotopic average.
-#     Returns:
-#         None.
-#     """
-#     filename = os.path.join(directory, "AME_all_merged.csv")
-
-#     if os.path.exists(filename):
-#         print("Reading {}...".format(filename))
-#         ame = pd.read_csv(filename)
-
-#         periodic = os.path.join(directory, "For_Extraction/periodic_table.csv")
-#         print("Reading {}...".format(periodic))
-#         masses_natural = pd.read_csv(periodic).rename(
-#             columns={'NumberofNeutrons':'Neutrons', 'NumberofProtons':'Protons', 'AtomicMass':'Atomic_Mass_Micro', 'Symbol':'EL'})
-
-#         print("Fromating dataframes...")
-#         masses_natural["Mass_Number"] = masses_natural["Neutrons"] + masses_natural["Protons"]
-
-#         masses_natural = masses_natural[["Neutrons", "Protons", "Mass_Number", "EL", "Atomic_Mass_Micro"]]
-
-#         masses_natural["N"] = masses_natural["Neutrons"] * 0
-#         masses_natural["A"] = masses_natural["Mass_Number"] * 0
-
-#         print("Saving natural element information...")
-#         masses_natural.to_csv(os.path.join(directory, "For_Extraction/natural_element_masses.csv"), index=False)
-#         natural = pd.read_csv(os.path.join(directory, "For_Extraction/natural_element_masses.csv"))
-
-#         natural.columns = ["N", "Z", "A", "EL", "Atomic_Mass_Micro", "Neutrons", "Mass_Number"]
-#         natural["Neutrons"] = natural["Mass_Number"] - natural["Z"]
-
-#         natural["Atomic_Mass_Micro"] = natural["Atomic_Mass_Micro"] * 1E6
-
-#         print("Flaggint natural and isotopic rows...")
-#         natural["Flag"] = "N"
-
-#         result = ame.append(natural, sort=False)
-
-#         # The NaN at the end are a result of the append. Those belong to the AME elements
-#         result.Neutrons.fillna(result.N, inplace=True)
-#         result.Mass_Number.fillna(result.A, inplace=True)
-#         result.Flag.fillna("I", inplace=True)
-
-#         result.Neutrons = result.Neutrons.astype(int)
-#         result.Mass_Number = result.Mass_Number.astype(int)
-#         result["O"].fillna(value="Other", inplace=True)
-#         result = result.drop(columns=["Element_w_A"])
-        
-#         csv_name = os.path.join(saving_directory, "AME_final_properties_w_NaN.csv")
-#         print("Saving final CSV file to {}...".format(csv_name))
-#         result.to_csv(csv_name, index=False)
-
-#         if fillna:
-#             print("Filling missing values using {} mode.".format(mode))
-#             if mode == "isotopic":
-#                 # we fill the nans by taking the average of all isotopes, same for all other parameters.
-#                 for i in range(0,119):
-#                     result[result["Z"] == i] = result[result["Z"] == i].fillna(result[result["Z"] == i].mean())
-#             result.fillna(result.mean(), inplace=True)
-
-#             csv_name = os.path.join(saving_directory, "AME_final_properties_no_NaN.csv")
-#             print("Saving imputed final CSV file to {}...".format(csv_name))
-#             result.to_csv(csv_name, index=False)
-#         print("Finished.")
-#         return None
-#     else:
-#         logging.error("Merged file does not exists. Check your path and files.")

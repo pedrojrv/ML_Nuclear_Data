@@ -1,9 +1,11 @@
-import natsort
-from natsort import natsorted
 import os
 import shutil
-import pandas as pd
+
+import natsort
 import numpy as np
+import pandas as pd
+from natsort import natsorted
+
 
 def get_c4_names(exfor_directory):
     """Searches directory for EXFORs C4 files and returns a list of relative paths for each one.
