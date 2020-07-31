@@ -22,6 +22,7 @@ import nucml.plot.plotting_utilities as plot_utils
 # This allows us to import the nucml utilities
 sys.path.append("..")
 
+ame_dir_path = os.path.abspath("../AME/")
 
 
 # If more columns are added we need to fix norm column indexing to not include one hot encoded features.
@@ -29,6 +30,39 @@ sys.path.append("..")
 
 empty_df = pd.DataFrame()
 
+def add_new_features(df, drop_q=True, ame_dir=ame_dir_path):
+    logging.info("EXFOR CSV: Adding Nuclear Radius and Neutron to Nucleus Radius Ratio data...")
+    df["Nuc_Radius_fm"] = 1.25 * np.power(df["Mass_Number"], 1/3)
+    df["Neut_Nuc_Rad_Ratio"] = 0.8 / df["Nuc_Radius_fm"]
+
+
+    if drop_q:
+        logging.info("EXFOR CSV: Dropping Q-Values...")
+        q_value = [col for col in df.columns if 'Q' in col]
+        df = df.drop(columns=q_value)
+
+    logging.info("EXFOR CSV: Adding information for Compound Nucleus...")
+    df["Compound_Neutrons"] = df.Target_Neutrons + 1
+    df["Compound_Mass_Number"] = df.Target_Mass_Number + 1
+    df["Compound_Protons"] = df.Target_Protons
+
+    masses = pd.read_csv(os.path.join(ame_dir, "AME_Natural_Properties_no_NaN.csv"))
+    masses = masses[masses.Flag == "I"]
+    masses = masses.drop(columns=["Neutrons", "Mass_Number", "Flag"])
+    masses = masses.rename(columns={'N': 'Neutrons', 'A': 'Mass_Number', "Z":"Protons", "O":"Origin"})
+
+    nuclear_data_compound = list(masses.columns)
+    nuclear_data_compound_cols = ["Compound_" + s for s in nuclear_data_compound]
+    masses.columns = nuclear_data_compound_cols
+
+    df = df.reset_index(drop=True)
+    masses = masses.reset_index(drop=True)
+
+    df = df.merge(masses, on=['Compound_Neutrons', 'Compound_Protons'], how='left')
+
+    df = df.drop(columns=["Compound_Mass_Number_y"])
+    df = df.rename(columns={'Compound_Mass_Number_x': 'Compound_Mass_Number'})
+    return df
 
 def load_exfor_samples(df, Z, A, MT, nat_iso="I", one_hot=True, scale=False, scaler=None, to_scale=[]):
     """

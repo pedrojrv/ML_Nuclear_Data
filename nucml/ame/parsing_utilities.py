@@ -1,9 +1,14 @@
 import logging
 import os
+import sys
+
+sys.path.append("..")
 
 import numpy as np
 import pandas as pd
 from scipy.optimize import curve_fit
+
+from nucml.general_utilities import func, check_if_files_exist     # pylint: disable=import-error
 
 ame_dir_path = os.path.abspath("../AME/")
 ame_originals_path = os.path.abspath("../AME/Originals/")
@@ -484,14 +489,6 @@ def impute_values(df):
             df[df["Z"] == i] = fit_df_original.values
     return df
 
-def check_if_files_exist(files_list):
-    if all([os.path.isfile(f) for f in files_list]):
-        return True
-    else:
-        return False
-
-def func(x, c, d):
-    return c * x + d
 
 mass16_dtypes = ['float64',
  'int64',
