@@ -1,0 +1,154 @@
+Directory: optical/om-get/
+File:      om-get.readme (August 13, 2013)
+*********************************************
+
+
+			   om-get-RIPL-3.zip
+
+ Code for retrieving optical model potentials from the RIPL-3 library
+	       (provided by R. Capote on August 13, 2013)
+ ********************************************************************
+                           
+
+Content
+-------
+The om-get.f code makes inputs from any potential in the OMP
+library. The user selects whether SCAT2000, OPTMAN or ECIS06 inputs are
+to be made, although some potentials are incompatible with one or the
+other of the codes.  The SCAT2000 code only deals with spherical potentials,
+whereas inputs for coupled-channels rotational, vibrational, and DWBA
+calculations can be made for ECI096. OPTMAN is the only code capable of
+dealing with the soft rotor model as defined in the RIPL-3 format.
+On the other hand, om-get.f will only make a SCAT2000 input when
+a Gaussian form factor is used for Wd. Note that the code puts vibrational
+or DWBA ECIS06 inputs out on separate files.
+
+The user must input reference numbers from the omp library and
+energies at which the inputs are made.  There is a default set of
+energies that can be used, but these are extensive (0-200 MeV) and are
+principally useful for making tables of potential values when the
+ECIS06 (non-DWBA) option is chosen.
+
+The code also contains a simple option for making inputs from every
+potential in the library, which is useful for testing.  Additionally,
+the user can direct the code to zero all negative values of the Wv and
+Wd potentials.
+
+
+Files
+-----
+om-get-RIPL-3.zip contains:
+
+  - om-get.f             : FORTRAN test driver code calling om-retrieve.f 
+  - om-retrieve.f        : FORTRAN module source 
+  - gs-mass-sp.dat       : ground-state masses, spins and parities
+  - om-deformations.dat  : dynamical deformations for DWBA calculations
+  - om-parameter-u.dat   : RIPL-3 optical model database
+
+Input/Output files
+------------------
+
+Input
+  om-parameter-u.dat : RIPL-3 Optical Model Potential (OMP) file
+  ominput.inp        : input file (see input description below)
+
+Output
+   sc2.inp         : input file for the SCAT2000 code (modtyp=1)
+   ecis.inp        : standard input file for the ECIS06 code (modtyp=2)
+   ecistc.inp      : alternate input file for the ECIS06 code.
+                     (modtyp=2).  Useful for generating transmission
+                     transmission coefficients.
+   optman.inp      : input file for the OPTMAN code (modtyp=4)
+   ecis06dw.inp    : input file for the ECIS06 code with DWBA
+                     model activated (modtyp=3).
+   massinfo.out    : descriptive remarks about the ground-state mass
+                     data used in the gs-mass-sp.dat file.
+   omp-table       : a table of numerical values of each potential made
+                     at each incident energy when modtyp=2 (ECIS input).
+
+Format
+------
+Zipped archive. 
+
+Input description (ominput.inp file)
+------------------------------------
+read(5,*) ne
+
+  ne = number of incident energies
+     = 0 to use a built-in array of incident energies
+
+if(ne.gt.0) read(5,*) (en(n),n=1,ne)
+
+  en(n) = incident energies in MeV in the laboratory system
+
+read(5,*,end=990) iztar, iatar, irefget, modtyp
+
+  abs(iztar) = Z of target nucleus (set iztar negative to provide 
+               integer projectile mass in input decks)
+  abs(iatar) = A of target nucleus (set iatar negative to provide 
+               integer target mass in input decks)
+  irefget    = reference number of optical model potential to be
+               retrieved from the RIPL-2 library. Set 
+  irefget    = negative izaproj (projectile) to retrieve all
+               spherical potentials in the RIPL-2 library for
+               this izaproj and the inputted izatar (target).
+
+  abs(modtyp)= 1 to generate SCAT2 input file (sc2.inp)
+               2 to generate ECIS06 input files (ecis.inp,
+                 ecistc.inp)
+               3 to generate ECIS06 DWBA input files
+                 (ecisdw.inp), using structure information from
+                 an external file (deform.dat), which may be the
+                 om-deformations.dat*file or a user-provided
+                 deform.dat file.
+               4 to generate OPTMAN input files (optman.inp).
+               5 to generate ECIS06 input files (ecis.inp,
+                 ecistc.inp) for dispersive potentials - method 1
+               6 to generate ECIS06 input files (ecis.inp,
+                 ecistc.inp) for dispersive potentials - method 2
+
+NOTE:
+modtyp 5 and 6 usually produce almost equal cross sections, even if the
+produced ECIS input files are very different. 
+
+modtyp=6 is more accurate for incident energies of the order of
+coupled levels.
+
+
+
+
+
+if(abs(modtyp).eq.3) read(5,*) kdef
+
+Set modtyp negative to force negative imaginary volume and surface
+potentials to equal zero.  If modtyp = -1, then all SCAT2000 inputs
+are single energy, i.e., the compact energy representation of SCAT2000
+is bypassed.
+
+    kdef = 1 use JENDL-3.2 betas from om-deformations.dat file
+         = 2 use ENSDF(Q)
+         = 3 use ENSDF(BE2) and ENSDF(BE3)
+         = 4 use Raman and Spear for BE2,BE3
+         = 5 use deform.dat file provided by user
+
+See om-deformations.readme file for more information on the kdef
+options and for the format of deform.dat for using kdef=5.  For
+kdef=1-4, the om-deformations.dat file must be copied to deform.dat.
+Note that where multiple entries occur for a single state in
+om-deformations.dat, the code makes an ECIS96 input for each entry.
+
+
+Platform
+--------
+SUN Microsystem: Sunblade 100 computer, Solaris 8 operating system.
+Linux and MS Windows.
+
+Testing
+-------
+Code has been extensively tested by P. Young, P. Talou and R. Capote.
+Developed module is incorporated into EMPIRE code to read the RIPL OMP
+database.
+
+Contact
+-------
+R. Capote (IAEA), r.capotenoy@iaea.org

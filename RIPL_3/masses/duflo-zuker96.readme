@@ -1,0 +1,40 @@
+Directory: MASSES
+File:      duflo-zuker96.readme (5 October, 2000)
+*************************************************
+
+                               DULFO-ZUKER96.F
+   Fortran program to estimate nuclear masses with the 10 parameter formula
+                       of J. Duflo and A.P. Zuker
+                 (provided by S. Goriely, 5 october 2000)
+  ***********************************************************************  
+                      
+                DUFLO & ZUKER PREDICTION OF NUCLEAR MASSES
+
+                               J. DUFLO         
+                        CSNSM, Orsay (France)
+                              A.P. Zuker                                
+             Universite Louis Pasteur, Strasbourg (France)
+ 
+
+Content
+--------
+
+The file contains the fortan program to estimate nuclear masses with the 10 parameter 
+formula of J. Duflo and A.P. Zuker [1]. In this approach, the nuclear hamiltonian 
+is separated into a monopole term responsible for the saturation properties, and a residual
+multipole term. The monopole term is responsible for saturation and single-particle
+properties, and fitted phenomenologically. The multipole part is derived from realistic 
+interactions. The latest version of the mass formula made of 10 free parameters reproduces 
+the 1950 experimental masses above He4 with an rms error of 574 keV.
+
+Format
+------
+Fortran program including the "mass10" subroutine for mass calculations.
+
+References
+----------
+[1] J. Duflo and A.P. Zuker (1995) Phys. Rev. C52, 23
+[2] J. Duflo and A.P. Zuker (1996) at http://csn-srv3.in2p3.fr/AMDC/theory/du_zu_10.feb96fort
+
+Dates: Original 5 October 2000 
+

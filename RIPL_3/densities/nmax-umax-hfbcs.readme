@@ -1,0 +1,69 @@
+Directory: densities/total/
+File:      nmax-umax-hfbcs.readme (January 15, 2002)
+*****************************************************
+
+
+			 nmax-umax-hfbcs.dat
+
+       Compilation of Nmax and Umax values based on microscopic
+		       nuclear level densities
+	     (provided by S. Goriely on January 15, 2002)
+       *********************************************************
+                      
+		  MICROSCOPIC DETERMINATION OF NMAX
+
+			      S. Goriely
+	       Universite Libre de Bruxelles (Belgium)
+
+			   January 15, 2002
+ 
+
+Content
+-------
+Number of levels (Nmax) up to which the experimental level scheme for
+a given nucleus is estimated to be complete. It also provides the
+energy Umax corresponding to Nmax. Nmax and Umax are estimated from
+the Nuclear Level Density (NLD) calculation within the statistical
+partition function approach. The NLD calculation [1] is based on the
+realistic microscopic single-particle level scheme determined within
+the HF-BCS mass model obtained with the MSk7 Skyrme force. The
+microscopic HFBCS-based NLDs have been renormalized on experimental
+data (278 neutron resonance spacings and 1210 low-lying levels) to
+account for the available experimental information. The NLDs can be
+found in the level-density-hfbcs/zXXX.dat files.
+
+The cumulative number of low-lying levels Nmax (and the corresponding
+energy Umax) up to which the experimental set of levels is complete
+can be found in the nmax-umax-hfbcs.dat file for some 1220 nuclei for
+which more than 20 excited levels are known experimentally. Also given
+are the Nmax and Umax values estimated with the Constant-T formula
+corresponding to a direct fit to the experimental level scheme (cf
+file levels/level-param.dat)
+
+
+Format
+------
+Each record of the file contains:
+
+   Z        : charge number
+   A        : mass number
+   El       : element symbol
+   Nmax(HF) : cumulative number of low-lying levels up to which
+              experimental set of levels is complete, calculated with
+              the microscopic HF-BCS NLDs
+   Umax     : excitation energy corresponding to Nmax(HF)
+   Nmax(CsT): cumulative number of low-lying levels up to which
+              experimental set of levels is complete, calculated with
+              the constant-T fit
+   Umax     : excitation energy corresponding to Nmax(CsT)
+
+The corresponding FORTRAN format is (2i4,1x,a2,2(i5,f10.5))
+
+
+References
+----------
+[1] P. Demetriou and S. Goriely (2001), Nucl. Phys. A695, 95.
+[2] S. Goriely, F. Tondeur, J. M. Pearson (2001), Atomic Data Nuclear
+    Data Tables 77, 311.
+
+

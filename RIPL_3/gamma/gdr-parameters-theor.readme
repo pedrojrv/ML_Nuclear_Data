@@ -1,0 +1,77 @@
+Directory: gamma/
+File:      gdr-parameters-theor.readme (March 5, 2001)
+******************************************************
+
+		       gdr-parameters-theor.dat
+
+      Compilations of Giant Dipole Resonance Energies and Widths
+	      (provided by S. Goriely on March 5, 2001)
+      ***********************************************************
+                      
+	     ETFSI PREDICTION OF GROUND-STATES PROPERTIES
+
+			      S. Goriely
+	       Universite Libre de Bruxelles (Belgium)
+			      M. Pearson
+	       Universite de Montreal, Quebec (Canada)
+			      F. Tondeur
+	 Institut Superieur Industriel de Bruxelles (Belgium)
+ 
+
+Content
+--------
+Predictions of the Giant Dipole Resonance (GDR) energies and widths
+for about 6000 nuclei with 14<=Z<=110 lying between the proton and the
+neutron driplines. The GDR is represented in the Goldhaber-Teller
+model [1] where the neutron and proton densities perform an
+out-of-phase vibration around their centre of mass. The dynamics of
+the oscillation is assumed to be dominated by the np-interaction
+[2]. The present table gives the GDR energies predicted by [2] with a
+renormalized np-interaction of strength derived from a least-square
+fit to the experimental GDR energies [3]. The nucleon density
+distribution and ground-state deformation are taken from the Extended
+Thomas-Fermi plus Strutinsky Integral (ETFSI) compilation [4,5].  The
+expression for the shell-dependent GDR width is taken from [6] using
+the newly-determined GDR energies and the ETFSI shell
+corrections. Such predictions include the shell-dependent GDR
+broadening due to the coupling between the dipole oscillations and the
+quadrupole surface vibrations.  Comparison between predicted and
+experimental GDR energies and widths can be found in [3]. In case of
+deformed nuclei, the GDR splits into two peaks for oscillations
+parallel to the axis of rotational symmetry and perpendicular to it.
+
+
+Format
+------
+Each record of the file contains:
+
+   Z  : charge number
+   A  : mass number
+   El : element symbol
+   Eta: deformation parameter (diameter along the nuclear symmetry axis /
+        diameter along an axis perpendicular to it) predicted by ETFSI-2
+   E1 : GDR energy for oscillation parallel to the axis of rotational
+        symmetry, in MeV
+   W1 : GDR width for oscillation parallel to the axis of rotational symmetry,
+        in MeV
+   E2 : GDR energy for oscillations perpendicular to the axis of rotational
+        symmetry, in MeV
+   W2 : GDR width for oscillations perpendicular to the axis of rotational
+        symmetry, in MeV
+
+The corresponding FORTRAN format is (2i4,1x,a2,f7.3,4f7.2)
+
+
+References
+----------
+[1] M. Goldhaber, E. Teller (1948), Phys. Rev. 74, 1046.
+[2] P. Van Isacker et al. (1992), Phys. Rev. C45, R13.
+[3] S. Goriely (1998), Phys. Lett. B436, 10.
+[4] S. Goriely (2000), in Proc. of the 10th International Symposium on Capture 
+    Gamma-Ray Spectroscopy and Related Topics, (AIP Conf. Proc. 529, Ed. S. 
+    Wender), p.28.7
+[5] Y. Aboussir, J. M. Pearson, A. K. Dutta and F.Tondeur (1995) At. Data and 
+    Nucl. Data Tables 61, 127.
+[6] F. K. Thielemann, M. Arnould (1983), in Proc. of the Conf. on Nuclear Data
+    for Science and Technolog, (eds. K. Bockhoff, Reidel, Dordrecht), p.762.
+

@@ -37,14 +37,14 @@ def initialize_directories(directory):
 
     """
     if os.path.isdir(directory):
-        logging.info("Directory already exists. Re-initializing...")
+        logging.info("GEN UTILS: Directory already exists. Re-initializing...")
         shutil.rmtree(directory)
         os.makedirs(directory)
-        logging.info("Directory restarted.")
+        logging.info("GEN UTILS: Directory restarted.")
     else:
-        logging.info("Directory does not exists. Creating...")
+        logging.info("GEN UTILS: Directory does not exists. Creating...")
         os.makedirs(directory)
-        logging.info("Directory created.")
+        logging.info("GEN UTILS: Directory created.")
 
 def check_if_files_exist(files_list):
     if all([os.path.isfile(f) for f in files_list]):

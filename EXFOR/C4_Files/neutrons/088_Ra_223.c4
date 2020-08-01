@@ -1,0 +1,91 @@
+#ENTRY      12249
+#AUTHOR1    S.Peterson+
+#YEAR       1947
+#INSTITUTE  (1USAANL)
+#TITLE      THERMAL NEUTRON FISSION PROPERTIES OF AC227, TH227,
+#+          RA223, AND RA228.
+#AUTHOR(S)  S.Peterson, A.Ghiorso
+#REF-CODE   (B,TRANSU.EL.,,(19.4),47)
+#REFERENCE  Book. Transuranium Elements
+#+          p.19.4, 1947
+#DATASETS   3
+#
+#DATASET    12249002
+#DATE       19840802
+#REACTION   88-RA-223(N,F),,SIG,,MXW
+#PROJ       1
+#TARG       88223
+#MF         3
+#MT         18
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [    1 88223   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 88223   3  18    0.025300          100.0000                                                S.PETERSON,ET.AL. (47)   12249  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V10025452
+#DATE       20120803
+#REACTION   88-RA-223(N,F),,SIG,,,RECOM
+#PROJ       1
+#TARG       88223
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 88223   3  18   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 88223   3  18    0.025300          0.700000 0.300000                                       S.F.Mughabghab (06)      V10025452
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V10025451
+#DATE       20120803
+#REACTION   88-RA-223(N,G)88-RA-224,,SIG,,,RECOM
+#PROJ       1
+#TARG       88223
+#MF         3
+#MT         102
+#PRODUCT    88-RA-224
+#DATA-HDR   DATA
+#C4BEGIN    [    1 88223   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 88223   3 102    0.025300          130.0000 20.00000                                       S.F.Mughabghab (06)      V10025451
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

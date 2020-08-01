@@ -1,0 +1,97 @@
+#ENTRY      E1411
+#AUTHOR1    T.Ohtsuki+
+#YEAR       1991
+#INSTITUTE  (2JPNTMU)
+#TITLE      Mass yield curves in low-energy proton-induced fission
+#+          of 233U, 235U, 236U, 237Np, 239Pu, 242Pu, 244Pu,
+#+          241Am, and 243Am
+#AUTHOR(S)  T.Ohtsuki, Y.Nagame, K.Tsukada,
+#+          N.Shinohara, S.Baba, K.Hashimoto,
+#+          I.Nishinaka, K.Sueki, Y.Hatsukawa,
+#+          K.Hata, T.Sekine, I.Kanno,
+#+          H.Ikezoe, H.Nakahara
+#REF-CODE   (J,PR/C,44,(4),1405,199110)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.44, Issue.4, p.1405, 1991
+#DATASETS   9
+#
+#DATASET    E1411007
+#DATE       20061102
+#REACTION   94-PU-244(P,F),,SIG
+#PROJ       1001
+#TARG       94244
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 94244   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 94244   3  18    1.0200+7          0.016300 3.3000-3                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+ 1001 94244   3  18    1.1700+7          0.056700 0.010500                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+ 1001 94244   3  18    1.2000+7          0.064500 0.010300                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+ 1001 94244   3  18    1.3100+7          0.092800 0.015800                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+ 1001 94244   3  18    1.4400+7          0.123300 0.020000                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+ 1001 94244   3  18    1.5600+7          0.152400 0.022800                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+ 1001 94244   3  18    1.8000+7          0.342500 0.044500                                       T.Ohtsuki,ET.AL. (91)    E1411  7
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E1305
+#AUTHOR1    T.Ohtsuki+
+#YEAR       1989
+#INSTITUTE  (2JPNTMU)
+#TITLE      Systematic analysis of mass yield curves in low-energy
+#+          fission of actinides
+#AUTHOR(S)  T.Ohtsuki, Y.Hamajima, K.Sueki,
+#+          H.Nakahara, Y.Nagame, N.Shinohara,
+#+          H.Ikezoe
+#REF-CODE   (J,PR/C,40,(5),2144,198911)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.40, Issue.5, p.2144, 1989
+#DATASETS   40
+#
+#DATASET    E1305008
+#DATE       20050204
+#REACTION   94-PU-244(P,F)MASS,CHN,FY
+#PROJ       1001
+#TARG       94244
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 94244 801  18   ]
+#DATA       25
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 94244 801  18    1.2000+7          4.4310-3 4.4310-4          84.53000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          8.2250-3 8.2250-4          88.97000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.013900 1.3900-3          92.15000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.013100 1.3100-3          93.13000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.026300 2.6300-3          98.18000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.040540 4.0540-3          99.72000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.048440 4.8440-3          102.8000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.060680 6.0680-3          104.5000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.037930 3.7930-3          111.2000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.022850 2.2850-3          112.6000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.015750 1.5750-3          113.7000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          9.9300-3 9.9300-4          115.1000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          6.6830-3 6.6830-4          117.0000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.013970 1.3970-3          126.4000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.017950 1.7950-3          128.7000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.041170 4.1170-3          131.0000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.059410 5.9410-3          132.3000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.059400 5.9400-3          135.3000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.049560 4.9560-3          138.7000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.041180 4.1180-3          139.5000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.035680 3.5680-3          140.4000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.027630 2.7630-3          142.2000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.013970 1.3970-3          147.5000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          0.014150 1.4150-3          150.7000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+ 1001 94244 801  18    1.2000+7          6.8070-3 6.8070-4          153.2000                     T.Ohtsuki,ET.AL. (89)    E1305  8
+#/DATA      25
+#/DATASET
+#/ENTRY
+#
+#

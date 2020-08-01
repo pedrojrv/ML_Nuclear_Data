@@ -113,43 +113,49 @@ def load_ame_rct2(directory=ame_dir_path):
         return None
 
 
-def load_endf(element, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=False):
-    """Reads Evaluated Nuclear Data File for a specific element and reaction channel.
+def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=False, drop_u=True):
+    """Reads Evaluated Nuclear Data File for a specific element and reaction channel. It is important
+    to inspect the returned data since it queries an external database which extracted data from ENDF 
+    using a particular script. It has been found that some particular reactions are not included.
 
     Args:
-        element (str): element to query. Must be in ELAAA format (i.e. U233, Cl35)
+        elementELAAA (str): element to query. Must be in ELAAA format (i.e. U233, Cl35). An error will be 
+            raised if the arguments are not formated correctly.
         MT (str): reaction channel to query. Must be in MT### format (i.e. MT018, MT101)
         mev_to_ev (bool): if True, it converts energy from meV to eV.
         mb_to_b (bool): if True, it converts the cross sections from mb to b.
 
     Returns:
         DataFrame: (Energy, Cross Section) Pandas DataFrame.
-        None: if file does not exist. This might also be raised if the arguments are not formated correctly.
+        None: if file does not exist. 
 
     """
-    path = os.path.abspath("../ML_Data/ENDF_" + mode + "/" + element + "/endfb8.0/tables/xs/n-" + element + "-" + MT + ".endfb8.0")
-    print(path)
+    path = os.path.abspath("../ML_Data/ENDF_" + mode + "/" + ELAAA + "/endfb8.0/tables/xs/n-" + ELAAA + "-" + MT + ".endfb8.0")
     file = Path(path)
     if file.is_file():
+        logging.info("ENDF: Extracting data from {}".format(path))
         # uranium is in MeV, we need eV
-        endf = pd.read_csv(path, skiprows=5, header=None, names=["Energy", "Data", "dData", "dData2"], delim_whitespace=True)
+        endf = pd.read_csv(path, skiprows=5, header=None, names=["Energy", "Data", "dDataLow", "dDataUpp"], delim_whitespace=True)
         if mev_to_ev:
-            print("Converting MeV to eV...")
+            logging.info("ENDF: Converting MeV to eV...")
             endf["Energy"] = endf["Energy"]*1E6
         if mb_to_b:
-            print("Convering mb to b...")
+            logging.info("ENDF: Converting mb to b...")
             endf["Data"] = endf["Data"]*0.001
-        if "dData" in list(endf.columns):
-            endf = endf.drop(columns=["dData"])
-        if "dData2" in list(endf.columns):
-            endf = endf.drop(columns=["dData2"])
         if log:
             endf["Energy"] = np.log10(endf["Energy"])
             endf["Data"] = np.log10(endf["Data"])
-        print("Finish reading ENDF data with shape: ", endf.shape)
+            endf["dDataLow"] = np.log10(endf["dDataLow"])
+            endf["dDataUpp"] = np.log10(endf["dDataUpp"])
+        if drop_u:
+            if "dData" in list(endf.columns):
+                endf = endf.drop(columns=["dDataLow"])
+            if "dData2" in list(endf.columns):
+                endf = endf.drop(columns=["dDataUpp"])
+        logging.info("ENDF: Finished. ENDF data contains {} datapoints.".format(endf.shape[0]))
         return endf
     else:
-        print("File does not exists.")
+        logging.info("ENDF: File does not exists. Check path.")
         return None
 
 supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions", "all"]

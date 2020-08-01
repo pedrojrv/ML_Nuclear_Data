@@ -1,0 +1,69 @@
+Directory: DENSITIES
+File:      level-densities-hfb.readme (28 November 2008)
+*******************************************************
+
+                         level-densities-hfb/zxxx.dat  
+HFB plus combinatorial nuclear level densities at ground state deformations
+             (Provided by S. Goriely, November 28, 2008)
+       *******************************************************
+
+Contents
+--------
+The files contains the HFB plus combinatorial nuclear level densities
+at ground state deformations [1]. The nuclear level density is coherently
+obtained on the basis of the single-particle level scheme and pairing energy
+derived at the ground state deformation based on the BSk14 Skyrme force [2].
+
+The nuclear level density obtained within the HFB plus combinatorial model [1]
+at the ground state deformation are given in table format (in a energy, spin 
+and parity grid). Each isotopic chain is included in a zxxx file (where xxx 
+corresponds to the atomic number Z) .
+
+The nuclear level densities are provided for about 9000 nuclei.
+
+Format
+------
+Each record of the file, per isotope, contains 2 sets of data including the
+positive-parity and negative-parity nuclear level density in a spin (50 first spins)
+and energy (60 rows for U=0.25 to 200MeV) grid. Also included are an estimate
+of the nuclear temperature, the cumulative number of levels, the total level
+density and the total state density
+- title line including the saddle/isomer properties
+     Z     : charge number
+     A     : mass number
+     B     : saddle or isomer energy above ground state (in MeV)
+     hw    : saddle or isomer estimated width assuming a parabolic shape (in MeV)
+     beta2 : quadrupole deformation parameter
+     beta3 : octupole deformation parameter
+     beta4 : hexadecapole deformation parameter
+
+The corresponding fortran format is (25x,i3,3x,i3,67x,f6.2,4x,f6.2,3(4x,f6.3))
+
+- 60 data lines including the energy-, spin-dependent level density for
+positive parities
+     U     : excitation energy in MeV
+     T     : nuclear temperature in MeV
+     Ncumul: cumulative number of positive-parity levels
+     Rhoobs: total level density in 1/MeV (positive parity)
+     Rhotot: total state density in 1/MeV (positive parity)
+     Rho   : spin-dependent level density (in 1/MeV) for the first 50 spins (positive parity)
+
+The corresponding fortran format is (f7.2,f7.3,1x,1p,53e9.2)
+
+- 60 data lines including the energy-, spin-dependent level density for
+negative parities
+     U     : excitation energy in MeV
+     T     : nuclear temperature in MeV
+     Ncumul: cumulative number of negative-parity levels
+     Rhoobs: total level density in 1/MeV (negative parity)
+     Rhotot: total state density in 1/MeV (negative parity)
+     Rho   : spin-dependent level density (in 1/MeV) for the first 50 spins (negative parity)
+
+The corresponding fortran format is (f7.2,f7.3,1x,1p,53e9.2)
+
+References
+----------
+[1] S. Goriely, S. Hilaire, A.J. Koning, Improved microscopic nuclear level densities within
+the Hartree-Fock-Bogoliubov plus combinatorial method, Phys. Rev. C78 (2008) 064307. 
+[2] S. Goriely, M. Samyn, J.M. Pearson, Phys. Rev. C75 (2007) 064312
+

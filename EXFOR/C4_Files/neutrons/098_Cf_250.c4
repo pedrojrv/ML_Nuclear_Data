@@ -1,0 +1,703 @@
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    41128011
+#DATE       20091102
+#REACTION   98-CF-250(N,TOT),,SIG
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         1
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3   1   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3   1    0.025300 1.2262-5 6200.000 2000.000                                       V.A.Anufriev,ET.AL. (93) 41128 11
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12562
+#AUTHOR1    D.Metta+
+#YEAR       1965
+#INSTITUTE  (1USAANL)
+#TITLE      Nuclear constants of nine transplutonium nuclides.
+#AUTHOR(S)  D.Metta, H.Diamond, R.F.Barnes,
+#+          J.Milsted, J.Gray Jr, D.J.Henderson,
+#+          C.M.Stevens
+#REF-CODE   (J,JIN,27,33,1965)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.27, p.33, 1965
+#DATASETS   3
+#
+#DATASET    12562003
+#DATE       19841004
+#REACTION   98-CF-250(N,F),,SIG,,MXW
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         18
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [    1 98250   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3  18    0.025300          350.0000                                                D.Metta,ET.AL. (64)      12562  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      13197
+#AUTHOR1    Y.Danon+
+#YEAR       1991
+#INSTITUTE  (1USARPI)
+#TITLE      FISSION CROSS SECTION MEASUREMENTS OF 247CM, 254ES AND
+#+          250CF FROM 0.1 EV TO 80 KEV.
+#AUTHOR(S)  Y.Danon, R.E.Slovacek, R.C.Block,
+#+          R.W.Lougheed, R.W.Hoff, M.S.Moore
+#REF-CODE   (J,NSE,109,341,9112)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.109, p.341, 1991
+#DATASETS   6
+#
+#DATASET    13197007
+#DATE       19901003
+#REACTION   98-CF-250(N,F),,SIG,,,DERIV
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3  18 D  0.025300          112.0000 99.00000                                       Y.DANON,ET.AL. (91)      13197  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      13197
+#AUTHOR1    Y.Danon+
+#YEAR       1991
+#INSTITUTE  (1USARPI)
+#TITLE      FISSION CROSS SECTION MEASUREMENTS OF 247CM, 254ES AND
+#+          250CF FROM 0.1 EV TO 80 KEV.
+#AUTHOR(S)  Y.Danon, R.E.Slovacek, R.C.Block,
+#+          R.W.Lougheed, R.W.Hoff, M.S.Moore
+#REF-CODE   (J,NSE,109,341,9112)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.109, p.341, 1991
+#DATASETS   6
+#
+#DATASET    13197003
+#DATE       19901003
+#REACTION   98-CF-250(N,F),,SIG
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       150
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3  18 A  0.116000         -60.00000 92.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.150000          7.000000 73.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.189000         -22.00000 61.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.233000         -5.000000 52.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.282000          77.00000 46.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.336000          76.00000 41.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.396000          111.0000 38.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.461000          169.0000 37.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.532000          184.0000 35.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.611000          162.0000 32.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.697000          110.0000 28.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.789000          99.00000 26.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.890000          43.00000 23.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  0.998000          18.00000 21.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1.120000          30.00000 20.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1.240000          44.00000 19.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1.380000          2.000000 18.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1.520000          13.00000 17.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1.680000          27.00000 16.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1.840000         -12.00000 15.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2.020000          10.00000 15.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2.210000          20.00000 14.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2.420000          6.000000 13.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2.650000          0.000000 13.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2.880000          28.00000 13.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  3.140000         -3.000000 11.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  3.420000          4.000000 11.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  3.720000          8.000000 10.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  4.040000          5.000000 10.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  4.380000         -12.00000 10.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  4.730000          10.00000 10.00000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  5.110000          8.000000 9.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  5.530000          2.000000 8.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  5.980000          9.000000 9.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  6.430000          7.000000 8.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  6.940000         -2.000000 8.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  7.460000          7.000000 8.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  7.990000          7.000000 7.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  8.580000          2.000000 7.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  9.230000          8.000000 7.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  9.970000          3.000000 6.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  10.70000          7.000000 7.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  11.40000         -2.000000 6.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  12.20000          3.000000 6.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  13.10000          10.00000 6.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  14.10000          7.000000 5.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  15.10000          10.00000 6.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  16.00000         -2.000000 6.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  16.90000          5.000000 5.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  18.00000          3.000000 5.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  19.20000          3.000000 5.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  20.50000          9.000000 5.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  22.00000          2.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  23.60000          4.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  25.40000          1.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  27.00000          3.000000 5.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  28.40000          5.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  30.00000          9.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  31.70000          6.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  33.50000          1.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  35.50000          3.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  37.70000          9.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  40.10000          4.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  42.70000          3.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  45.60000          2.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  48.80000          5.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  52.30000          4.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  56.20000          2.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  59.50000          5.000000 4.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  61.80000          2.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  64.30000          5.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  66.90000          4.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  69.60000          2.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  72.60000          6.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  75.70000          3.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  79.10000         -1.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  82.70000          1.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  86.50000          0.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  90.60000          1.000000 3.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  95.60000          2.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  102.0000          0.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  108.0000          0.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  115.0000          1.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  124.0000          2.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  132.0000         -2.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  142.0000          0.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  152.0000          1.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  162.0000          1.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  173.0000          1.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  184.0000          2.000000 2.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  197.0000          3.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  212.0000          2.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  228.0000          1.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  243.0000          0.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  258.0000          0.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  274.0000          2.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  291.0000          1.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  311.0000          2.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  332.0000          0.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  355.0000          0.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  381.0000          0.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  410.0000          2.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  443.0000         -0.400000 0.900000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  473.0000          1.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  499.0000          1.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  528.0000          0.000000 1.000000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  559.0000          0.000000 0.900000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  593.0000          0.500000 0.900000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  631.0000          1.100000 0.900000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  672.0000          1.400000 0.800000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  717.0000          0.400000 0.800000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  766.0000          0.800000 0.800000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  821.0000          0.300000 0.700000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  882.0000          0.100000 0.700000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  951.0000          0.700000 0.600000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1030.000          0.900000 0.600000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1110.000          0.600000 0.600000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1210.000          0.600000 0.500000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1290.000         -0.300000 0.700000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1370.000         -0.100000 0.500000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1490.000          0.000000                                                Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1620.000         -0.500000 0.500000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1770.000         -0.400000 0.400000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  1930.000         -0.400000 0.400000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2100.000          0.000000 0.400000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2290.000         -0.100000 0.400000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2510.000          0.000000 0.400000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  2760.000         -0.400000 0.300000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  3040.000         -0.200000 0.300000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  3380.000          0.400000 0.300000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  3740.000         -0.100000 0.300000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  4120.000         -0.200000 0.300000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  4550.000          0.000000 0.300000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  5070.000          0.100000 0.200000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  5670.000          0.100000 0.200000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  6390.000         -0.100000 0.200000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  7260.000         -0.100000 0.200000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  8310.000          0.100000 0.200000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  9610.000          0.000000 0.100000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  11200.00         -0.100000 0.100000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  13100.00          0.000000 0.100000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  15200.00          0.000000 0.100000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  17700.00          0.000000                                                Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  21000.00         -0.080000 0.090000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  25400.00         -0.040000 0.080000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  31200.00          0.080000 0.070000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  39300.00          0.050000 0.060000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  50900.00          1.0000-2 0.050000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  68700.00          0.000000 0.040000                                       Y.DANON,ET.AL. (91)      13197  3
+    1 98250   3  18 A  97600.00         -0.040000 0.030000                                       Y.DANON,ET.AL. (91)      13197  3
+#/DATA      150
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      13646
+#AUTHOR1    Y.Danon+
+#YEAR       1994
+#INSTITUTE  (1USALAS)
+#TITLE      Measurement and analysis of the neutron-induced
+#+          fission cross sections of 247Cm, 250Cf and 254Es
+#AUTHOR(S)  Y.Danon, M.S.Moore, P.E.Keohler,
+#+          R.W.Lougheed, R.W.Hoff, N.W.Hill
+#REF-CODE   (C,94GATLIN,1,245,199405)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
+#+          Vol.1, p.245, 1994
+#DATASETS   5
+#
+#DATASET    13646003
+#DATE       20020505
+#REACTION   98-CF-250(N,F),,SIG
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3  18   ]
+#DATA       44
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3  18    0.403000          64.00000 213.4000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.408000          86.40000 196.0000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.414000          2.100000 204.1000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.419000          14.10000 143.2000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.425000          81.30000 135.8000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.431000          94.20000 178.5000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.438000          99.20000 172.1000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.444000          82.60000 109.0000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.450000          119.1000 205.6000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.457000          61.10000 168.1000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.463000          125.3000 109.4000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.470000          100.5000 174.4000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.477000          89.30000 71.30000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.484000          129.9000 188.6000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.492000          175.4000 151.5000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.499000          171.3000 114.3000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.507000          296.2000 151.5000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.515000          294.7000 87.40000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.523000          442.5000 181.5000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.531000          534.6000 161.0000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.539000          764.6000 169.6000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.548000          744.0000 185.6000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.557000          639.9000 85.80000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.566000          516.3000 187.2000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.575000          328.4000 160.3000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.585000          266.3000 144.0000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.594000          185.2000 120.3000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.604000          171.0000 121.2000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.614000          237.6000 132.4000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.625000          196.3000 145.9000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.636000          137.3000 129.9000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.647000          211.8000 104.0000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.658000          251.8000 119.2000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.669000          171.0000 115.0000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.681000          202.3000 81.50000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.694000          299.2000 164.9000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.706000          218.0000 162.8000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.719000          265.2000 151.4000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.732000          179.7000 120.7000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.746000          132.8000 124.8000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.760000          175.2000 119.7000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.774000          120.0000 118.6000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.789000          51.90000 86.30000                                       Y.DANON,ET.AL. (94)      13646  3
+    1 98250   3  18    0.805000          118.9000 158.2000                                       Y.DANON,ET.AL. (94)      13646  3
+#/DATA      44
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12534
+#AUTHOR1    R.L.Folger+
+#YEAR       1968
+#INSTITUTE  (1USASRL)
+#TITLE      FOIL MEASUREMENTS OF INTEGRAL CROSS SECTIONS OF HIGHER
+#+          MASS ACTINIDES.
+#AUTHOR(S)  R.L.Folger, J.A.Smith, L.C.Brown,
+#+          R.F.Overman, H.P.Holcomb
+#REF-CODE   (C,68WASH,2,1279(H11),6803)
+#REFERENCE  Conf. Nuclear Cross-Sections Techn. Conf., Washington 1968
+#+          Vol.2, p.1279(H11), 1968
+#DATASETS   10
+#
+#DATASET    12534013
+#DATE       19860602
+#REACTION   98-CF-250(N,ABS),,SIG
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         101
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3 101   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3 101    0.025300          1500.000                                                R.L.FOLGER,ET.AL. (68)   12534 13
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10119
+#AUTHOR1    J.Halperin+
+#YEAR       1971
+#INSTITUTE  (1USAORL)
+#TITLE      The thermal cross sections and resonance integrals for
+#+          neutron capture of 249Cf, 250Cf, and 251Cf.
+#AUTHOR(S)  J.Halperin, C.E.Bemis Jr, R.E.Druschel,
+#+          R.E.Eby
+#REF-CODE   (P,ORNL-4706,47,1971)
+#REFERENCE  Prog. Oak Ridge National Lab. Reports
+#+          No.4706, p.47, 1971
+#DATASETS   6
+#
+#DATASET    10119004
+#DATE       20000203
+#REACTION   98-CF-250(N,G)98-CF-251,,SIG,,MXW
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         102
+#PRODUCT    98-CF-251
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3 102 P ]
+#X4STATUS   [PRELM] Preliminary data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3 102 P  0.025300          2034.000 200.0000                                       J.Halperin,ET.AL. (71)   10119  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40486
+#AUTHOR1    V.D.Gavrilov+
+#YEAR       1978
+#INSTITUTE  (4RUSNIR)
+#TITLE      Thermal cross-section and resonance integrals
+#+          for the radiative capture of neutrons by Cm-244-248
+#+          and Cf-250
+#AUTHOR(S)  V.D.Gavrilov, V.A.Goncharov
+#REF-CODE   (J,SJA,44,274,1978)
+#REFERENCE  Jour. Soviet Atomic Energy
+#+          Vol.44, p.274, 1978
+#DATASETS   12
+#
+#DATASET    40486014
+#DATE       20170301
+#REACTION   98-CF-250(N,G)98-CF-251,,SIG
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         102
+#PRODUCT    98-CF-251
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3 102    0.025300          1800.000                                                V.D.Gavrilov,ET.AL. (78) 40486 14
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    41128004
+#DATE       20091102
+#REACTION   98-CF-250(N,G)98-CF-251,,SIG,,,DERIV
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         102
+#PRODUCT    98-CF-251
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3 102 D  0.025300 1.2262-5 700.0000 100.0000                                       V.A.Anufriev,ET.AL. (93) 41128  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V1002694
+#DATE       20160406
+#REACTION   98-CF-250(N,G)98-CF-251,,SIG,,,RECOM
+#PROJ       1
+#TARG       98250
+#MF         3
+#MT         102
+#PRODUCT    98-CF-251
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250   3 102    0.025300          2034.000 200.0000                                       S.F.Mughabghab (06)      V1002694
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    41128005
+#DATE       20091102
+#REACTION   98-CF-250(N,G)98-CF-251,,RI,,,DERIV
+#PROJ       1
+#TARG       98250
+#MF         213
+#MT         102
+#PRODUCT    98-CF-251
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250 213 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250 213 102 D  0.300000 1.5000+7 16100.00 2000.000                                       V.A.Anufriev,ET.AL. (93) 41128  5
+    1 98250 213 102 D  0.500000 1.5000+7 13500.00 2000.000                                       V.A.Anufriev,ET.AL. (93) 41128  5
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10119
+#AUTHOR1    J.Halperin+
+#YEAR       1971
+#INSTITUTE  (1USAORL)
+#TITLE      The thermal cross sections and resonance integrals for
+#+          neutron capture of 249Cf, 250Cf, and 251Cf.
+#AUTHOR(S)  J.Halperin, C.E.Bemis Jr, R.E.Druschel,
+#+          R.E.Eby
+#REF-CODE   (P,ORNL-4706,47,1971)
+#REFERENCE  Prog. Oak Ridge National Lab. Reports
+#+          No.4706, p.47, 1971
+#DATASETS   6
+#
+#DATASET    10119005
+#DATE       20000203
+#REACTION   98-CF-250(N,G)98-CF-251,,RI
+#PROJ       1
+#TARG       98250
+#MF         213
+#MT         102
+#PRODUCT    98-CF-251
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250 213 102 P ]
+#X4STATUS   [PRELM] Preliminary data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250 213 102 P  0.500000 1.5000+7 11600.00 500.0000                                       J.Halperin,ET.AL. (71)   10119  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    411280022
+#DATE       20091102
+#REACTION   98-CF-250(N,TOT),,WID
+#PROJ       1
+#TARG       98250
+#MF         402
+#MT         6010
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250 4026010   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250 4026010   -0.080000          0.040000                                                V.A.Anufriev,ET.AL. (93) 41128  22
+    1 98250 4026010    0.553000 1.2530-3 0.038700 7.0000-4                                       V.A.Anufriev,ET.AL. (93) 41128  22
+    1 98250 4026010    6.847000 0.054591 0.046000 5.0000-3                                       V.A.Anufriev,ET.AL. (93) 41128  22
+    1 98250 4026010    8.225000 0.071875 0.057000 7.0000-3                                       V.A.Anufriev,ET.AL. (93) 41128  22
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    411280025
+#DATE       20091102
+#REACTION   98-CF-250(N,EL),,WID/RED,,G
+#PROJ       1
+#TARG       98250
+#MF         402
+#MT         6024
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250 4026024   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250 4026024   -0.080000          8.0000-5                                                V.A.Anufriev,ET.AL. (93) 41128  25
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    411280023
+#DATE       20091102
+#REACTION   98-CF-250(N,G),,WID
+#PROJ       1
+#TARG       98250
+#MF         402
+#MT         6031
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250 4026031   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250 4026031   -0.080000          0.040000                                                V.A.Anufriev,ET.AL. (93) 41128  23
+    1 98250 4026031    0.553000 1.2530-3 0.036000 1.0000-3                                       V.A.Anufriev,ET.AL. (93) 41128  23
+    1 98250 4026031    6.847000 0.054591 0.045000 5.0000-3                                       V.A.Anufriev,ET.AL. (93) 41128  23
+    1 98250 4026031    8.225000 0.071875 0.043000 7.0000-3                                       V.A.Anufriev,ET.AL. (93) 41128  23
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41128
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1993
+#INSTITUTE  (4RUSNIR)
+#TITLE      Total neutron cross-section measurement for Cf-250
+#+          and Cf-251.
+#AUTHOR(S)  V.A.Anufriev, V.I.Sivukha
+#REF-CODE   (J,AE,74,(1),72,199301)
+#REFERENCE  Jour. Atomnaya Energiya
+#+          Vol.74, Issue.1, p.72, 1993
+#DATASETS   14
+#
+#DATASET    41128010
+#DATE       20091102
+#REACTION   98-CF-250(N,G),,WID,,AV
+#PROJ       1
+#TARG       98250
+#MF         405
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98250 4056001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98250 4056001 D                    0.042000 5.0000-3                                       V.A.Anufriev,ET.AL. (93) 41128 10
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

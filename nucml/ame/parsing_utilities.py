@@ -1,13 +1,11 @@
 import logging
 import os
 import sys
-
-sys.path.append("..")
-
 import numpy as np
 import pandas as pd
 from scipy.optimize import curve_fit
 
+sys.path.append("..")
 from nucml.general_utilities import func, check_if_files_exist     # pylint: disable=import-error
 
 ame_dir_path = os.path.abspath("../AME/")
@@ -77,8 +75,8 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
         logging.info("MASS16: Succesfully formated mass16.txt file.")
     else:
         logging.error("MASS16: mass16.txt file does not exists. Check that it exists on the given directory path.")
+        sys.exit()
     return None
-
 
 def read_rct1(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
     """Reads the rct1-16.txt file and creates a formatted CSV file. The rct1-16 file contains a variety of 
@@ -134,6 +132,7 @@ def read_rct1(originals_directory=ame_originals_path, saving_directory=ame_dir_p
         logging.info("RCT1: Succesfully formated rct1-16.txt file.")
     else:
         logging.error("rct1-16.txt file does not exists. Check that it exists on the given directory path.")
+        sys.exit()
     return None
 
 def read_rct2(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
@@ -191,8 +190,8 @@ def read_rct2(originals_directory=ame_originals_path, saving_directory=ame_dir_p
         logging.info("RCT2: Succesfully formated rct2-16.txt file.")
     else:
         logging.error("RCT2: rct2-16.txt file does not exists. Check that it exists on the given directory path.")
+        sys.exit()
     return None
-
 
 def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qvalues=True):
     """Reads the proccessed mass16, rct1, and rct2 files and merges them while adding other reaction 
@@ -288,8 +287,10 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
             logging.info("MERGE: Succesfully merged files.")
         else:
             logging.error("MERGE: Shapes among the three files is not consistent.")
+            sys.exit()
     else:
         logging.error("MERGE: One of the three files does not exists in the given directory.")
+        sys.exit()
     return None
 
 def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_originals_path, 
@@ -316,7 +317,6 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
     logging.info("FEAT ENG: Initializing. Checking documents...")
     filename = os.path.join(directory, "AME_all_merged.csv")
     periodic_filename = os.path.join(originals_directory, "periodic_table.csv")
-    
     if check_if_files_exist([filename, periodic_filename]):
         logging.info("FEAT ENG: Reading data from {}".format(filename))
         ame = pd.read_csv(filename)
@@ -388,8 +388,8 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
             logging.info("FEAT ENG: Succesfully created natural data. NaN values were not imputed.")
     else:
         logging.error("FEAT ENG: Merged file does not exists. Check your path and files.")
+        sys.exit()
     return None
-
 
 def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, 
     add_qvalues=True, mode="elemental", fill_value=0):
@@ -444,7 +444,8 @@ def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_pat
     read_rct1(originals_directory=originals_directory, saving_directory=saving_directory)
     read_rct2(originals_directory=originals_directory, saving_directory=saving_directory)
     merge_mass_rct(directory=saving_directory, saving_directory=saving_directory, add_qvalues=add_qvalues)
-    create_natural_element_data(directory=saving_directory, saving_directory=saving_directory, fillna=fillna, mode=mode, fill_value=fill_value)
+    create_natural_element_data(directory=saving_directory, originals_directory=originals_directory, saving_directory=saving_directory, 
+        fillna=fillna, mode=mode, fill_value=fill_value)
     return None
 
 def impute_values(df):
@@ -488,7 +489,6 @@ def impute_values(df):
 
             df[df["Z"] == i] = fit_df_original.values
     return df
-
 
 mass16_dtypes = ['float64',
  'int64',

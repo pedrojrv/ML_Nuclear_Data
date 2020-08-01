@@ -1,0 +1,61 @@
+#ENTRY      12618
+#AUTHOR1    C.Hogg+
+#YEAR       1964
+#INSTITUTE  (1USAMTR)
+#TITLE      THE THERMAL-NEUTRON CAPTURE CROSS SECTION OF MN-54
+#AUTHOR(S)  C.Hogg, L.Weber
+#REF-CODE   (P,IDO-16977,41,6405)
+#REFERENCE  Prog. Philips Petroleum Co., Idaho Falls Reports
+#+          No.16977, p.41, 1964
+#DATASETS   1
+#
+#DATASET    12618002
+#DATE       19780502
+#REACTION   25-MN-54(N,G)25-MN-55,,SIG,,MXW
+#PROJ       1
+#TARG       25054
+#MF         3
+#MT         102
+#PRODUCT    25-MN-55
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [    1 25054   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 25054   3 102    0.025300          10.00000                                                C.HOGG,ET.AL. (64)       12618  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1001
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   634
+#
+#DATASET    V1001194
+#DATE       20120704
+#REACTION   25-MN-54(N,G)25-MN-55,,SIG,,,RECOM
+#PROJ       1
+#TARG       25054
+#MF         3
+#MT         102
+#PRODUCT    25-MN-55
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [    1 25054   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 25054   3 102    0.025300          38.00000                                                S.F.Mughabghab (06)      V1001194
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

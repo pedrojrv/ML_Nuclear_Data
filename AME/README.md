@@ -1,38 +1,37 @@
 # Atomic Mass Evaluation 2016 Files
 
-This directory contains files related to the Atomic Mass Evaluation. The following structure is assume by other scripts in `NucML`.
+This directory contains files related to the Atomic Mass Evaluation. For more information on the contents of the AME2016 look at the <a src="https://www-nds.iaea.org/amdc/">IAEA website</a>. The following structure is assume by other scripts in `NucML`.
 
 ```
 | ML_Nuclear_Data
     | AME
-	    - AME_atomic_masses_v1.csv          (CREATED)
-	    - AME_atomic_masses_v1_rct1.csv     (CREATED)
-	    - AME_atomic_masses_v1_rct2.csv     (CREATED)
-	    - AME_atomic_masses_v2.csv          (CREATED)
-	    - AME_final_properties_w_NaN.csv    (CREATED)
-	    - AME_final_properties_no_NaN.csv   (CREATED)
-        | For Extraction
-            - mass16_toparse.txt
-            - rct1_16_toparse.txt
-            - rct2_16_toparse.txt
-            - periodic_Table.csv
-            | Originals
-                - mass16.txt
-                - rct1_16.txt
-                - rct2_16.txt
+	    - AME_all_merged.csv                  (CREATED)
+	    - AME_mass16.csv                      (CREATED)
+	    - AME_Natural_Properties_no_NaN.csv   (CREATED)
+	    - AME_Natural_Properties_w_Nan.csv    (CREATED)
+	    - AME_rct1.csv                        (CREATED)
+	    - AME_rct2.csv                        (CREATED)
+        | Originals
+            - mass16.txt
+            - rct1_16.txt
+            - rct2_16.txt
+            - periodic_table.csv
 ```
 
-`AME_atomic_masses_v1.csv` contains the evaluations basic information including mass excess, binding energy, beta decay energy, and atomic masses.
+`AME_mass16.csv` contains the evaluations basic information including mass excess, binding energy, beta decay energy, and atomic masses.
 
-`AME_atomic_masses_v1_rct1.csv` contains the evaluations basic information included in the rct1.txt file.
+`AME_rct1.csv` contains the evaluations basic information included in the rct1.txt file.
 
-`AME_atomic_masses_v1_rct2.csv` contains the evaluations basic information included in the rct1.txt file.
+`AME_rct2.csv` contains the evaluations basic information included in the rct1.txt file.
 
-`AME_atomic_masses_v1.csv` merges the previous three files and calculates additional Q-values.
+`AME_all_merged.csv` merges the previous three files and calculates additional Q-values.
 
-`AME_final_properties_w_NaN.csv` and `AME_final_properties_no_NaN.csv` contains information not only for all isotopes but also for natural elements created by averaging isotopic information (natural abundance is not taken into account yet). It contains an additional feature that flaggas row by isotopic or natural. The latter file imputes NaN values using the mean value by element.  
+`AME_Natural_Properties_w_NaN.csv` contains not only the same information in `AME_all_merged.csv` but also an entry created for each natural element. Most of the features other than Atomic Masses are filled with NaNs since no data is avaliable for natural occuring elements. It contains an additional feature that flags rows as isotopic or natural. 
+
+`AME_Natural_Properties_no_NaN.csv` contains the same data as `AME_Natural_Properties_w_NaN.csv`. Missing values are filled using linear elemental interpolation.
 
 ## Re-creating CSV Files
-If for some reason the CREATED csv files are not avaliable, as long as the other text files are avaliable they can be recreated using the following command on the terminal (it assumes you are in the NucML directory):
 
-`python ./nucml/ame/parsing_utilities.py "./AME"`
+If for some reason the CREATED csv files are not avaliable, as long as the other text files are avaliable they can be recreated using the `generating_datasets.py` script located in the main NucML directory.
+
+`python generating_datasets.py"`

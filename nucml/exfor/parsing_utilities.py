@@ -172,11 +172,21 @@ def get_all(c4_list, heavy_path, tmp_path):
         logging.info("EXFOR: Finished.")
         return None
     else:
-        logging.error("EXFOR ALL:  No .c4 files found. Make sure you specified the path correctly.")
+        logging.error("EXFOR:  No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=True):
-    """Creates a CSV file containing all extracted features generated when using the get_all() function.
+    """Creates files containing all extracted features generated when using the get_all() function.
+    The following CSV files are created:
+
+    - EXFOR_mode_ORIGINAL.csv: Contains the EXFOR database in it's original state.
+    - EXFOR_mode_ORIGINAL_w_AME.csv: Contains the same features as in the original CSV
+        file plus AME data appended to each row. The appended AME is the original data therefore
+        not containing natural element data.
+    - EXFOR_mode_MF3_AME_no_RawNan: is a dataset created for personal use. It contains no
+        missing values in both the EXFOR and the AME data entries. Furthermore, it is limited to 
+        reaction data rows (MF=3). 
 
     Args:
         heavy_path (str): path to directory where heavy files are to be saved.
@@ -276,7 +286,7 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
     # We now convert the columns to numerical
     for col in cols:
         df[col] = df[col].astype(float)
-        logging.info("Finish converting {} to float.".format(col))
+        logging.info("EXFOR CSV: Finished converting {} to float.".format(col))
 
     cat_cols = ["Target_Meta_State", "MF", "MT", "I78", "Product_Meta_State", "Frame"]
 
@@ -291,7 +301,7 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
 
     df.drop(columns=["(YY)", 'Targ', "PXC"], inplace=True)
 
-    logging.info("Reading .txt files from {} into DataFrames...".format(tmp_path))
+    logging.info("EXFOR CSV: Reading .txt files from {} into DataFrames...".format(tmp_path))
     # Reading experiments reaction notation
     df1 = pd.read_csv(os.path.join(tmp_path, "reaction_notations.txt"), delim_whitespace=True, header=None)
     df1.columns = ["Reaction", "Type"]
@@ -325,13 +335,13 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
     df8.columns = ["Keyword", "Reference"]
 
     # Merging Datapoints, notation and titles and expanding based on datapoints
-    logging.info("Expanding information based on the number of datapoints per experimental campaign...")
+    logging.info("EXFOR CSV: Expanding information based on the number of datapoints per experimental campaign...")
     pre_final = pd.concat([df3, df1, df2, df4, df5, df6, df7, df8], axis=1)
     final = pre_final.reindex(pre_final.index.repeat(pre_final.Multiple))
     final['position'] = final.groupby(level=0).cumcount() + 1
 
     # Extracting projectile and outogoing particle
-    final["reaction_notation"] = final.Type.str.extract('.*\((.*)\).*') 
+    final["reaction_notation"] = final.Type.str.extract('.*\((.*)\).*')  # pylint: disable=anomalous-backslash-in-string
 
     final["reaction_notation2"] = final["reaction_notation"].apply(lambda x: x.split(')')[0])
     final = pd.concat([final, final["reaction_notation2"].str.split(',', expand=True)], axis=1)
@@ -502,6 +512,7 @@ def get_c4_names(originals_directory):
         return names
     else:
         logging.error("C4: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_raw_datapoints(c4_list, saving_directory):
@@ -552,6 +563,7 @@ def get_raw_datapoints(c4_list, saving_directory):
         return None
     else:
         logging.error("RAW DATAPOINTS: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_authors(c4_list, saving_directory):
@@ -576,6 +588,7 @@ def get_authors(c4_list, saving_directory):
         return None
     else:
         logging.error("AUTHORS: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_years(c4_list, saving_directory):
@@ -600,6 +613,7 @@ def get_years(c4_list, saving_directory):
         return None
     else:
         logging.error("YEARS: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_institutes(c4_list, saving_directory):
@@ -624,6 +638,7 @@ def get_institutes(c4_list, saving_directory):
         return None
     else:
         logging.error("INSTITUTES: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_dates(c4_list, saving_directory):
@@ -648,6 +663,7 @@ def get_dates(c4_list, saving_directory):
         return None
     else:
         logging.error("DATES: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_titles(c4_list, saving_directory):
@@ -685,6 +701,7 @@ def get_titles(c4_list, saving_directory):
         return None
     else:
         logging.error("TITLES: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_references(c4_list, saving_directory):
@@ -722,6 +739,7 @@ def get_references(c4_list, saving_directory):
         return None
     else:
         logging.error("REFERENCES: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_reaction_notations(c4_list, saving_directory):
@@ -759,6 +777,7 @@ def get_reaction_notations(c4_list, saving_directory):
         return None
     else:
         logging.error("REACTION NOTATION: No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 def get_datapoints_per_experiment(c4_list, saving_directory):
@@ -796,6 +815,7 @@ def get_datapoints_per_experiment(c4_list, saving_directory):
         return None
     else:
         logging.error("DATA POINTS:  No .c4 files found. Make sure you specified the path correctly.")
+        sys.exit()
         return None
 
 # if __name__ == "__main__":

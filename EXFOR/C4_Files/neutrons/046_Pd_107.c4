@@ -1,0 +1,679 @@
+#ENTRY      14133
+#AUTHOR1    S.Nakamura+
+#YEAR       2007
+#INSTITUTE  (2JPNJAE)
+#TITLE      Thermal Neutron Capture Cross Section of Palladium-107
+#AUTHOR(S)  S.Nakamura, H.Harada, S.Raman,
+#+          P.E.Koehler
+#REF-CODE   (J,NST,44,103,2007)
+#REFERENCE  Jour. Jour. of Nuclear Science and Technology
+#+          Vol.44, p.103, 2007
+#DATASETS   2
+#
+#DATASET    14133002
+#DATE       20070505
+#REACTION   46-PD-107(N,G)46-PD-108,,SIG
+#PROJ       1
+#TARG       46107
+#MF         3
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA-MIN
+#C4BEGIN    [    1 46107   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107   3 102    0.025000          9.160000 0.270000                                       S.Nakamura,ET.AL. (07)   14133  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23140
+#AUTHOR1    S.Nakamura+
+#YEAR       2011
+#INSTITUTE  (2JPNJAE)
+#TITLE      Measurements of neutron capture cross sections of
+#+          palladium isotopes at the J-PARC/MLF/ANNRI .
+#AUTHOR(S)  S.Nakamura, K.Furutaka, S.Goko,
+#+          H.Harada, J.Hori, M.Igashira,
+#+          T.Kamiyama, T.Katabuchi, A.Kimura,
+#+          T.Kin, K.Kino, F.Kitatani,
+#+          Y.Kiyanagi, M.Koizumi, M.Mizumoto,
+#+          M.Ohta, M.Oshima, Y.Toh,
+#+          T.Fujii, S.Fukutani, K.Takamiya,
+#+          K.Y.Hara, K.Hirose, F.Hiraga,
+#+          S.Fukutani
+#REF-CODE   (J,KPS,59,1773,2011)
+#REFERENCE  Jour. Journal of the Korean Physical Society
+#+          Vol.59, p.1773, 2011
+#DATASETS   2
+#
+#DATASET    23140006
+#DATE       20150702
+#REACTION   46-PD-107(N,G)46-PD-108,,SIG
+#PROJ       1
+#TARG       46107
+#MF         3
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [    1 46107   3 102 P ]
+#X4STATUS   [PRELM] Preliminary data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107   3 102 P  0.025300          10.00000                                                S.Nakamura,ET.AL. (11)   23140  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1001
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   634
+#
+#DATASET    V1001455
+#DATE       20120704
+#REACTION   46-PD-107(N,G)46-PD-108,,SIG,,,CALC
+#PROJ       1
+#TARG       46107
+#MF         3
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107   3 102   ]
+#X4DATATYPE [CALC]  Calculated data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107   3 102    0.025300          2.540000 0.200000                                       S.F.Mughabghab (06)      V1001455
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12874
+#AUTHOR1    R.L.Macklin
+#YEAR       1985
+#INSTITUTE  (1USAORL)
+#TITLE      NEUTRON CAPURE MEASUREMENTS ON FISSION-PRODUCT 107-PD.
+#AUTHOR(S)  R.L.Macklin
+#REF-CODE   (J,NSE,89,79,8501)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.89, p.79, 1985
+#DATASETS   5
+#
+#DATASET    12874003
+#DATE       19840501
+#REACTION   46-PD-107(N,G)46-PD-108,,SIG,,AV
+#PROJ       1
+#TARG       46107
+#MF         3
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107   3 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107   3 102 A  3500.000 500.0000 3.067000 0.040000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  5000.000 1000.000 2.740000 0.036000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  7000.000 1000.000 2.481000 0.034000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  9000.000 1000.000 2.317000 0.032000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  12500.00 2500.000 1.968000 0.028000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  17500.00 2500.000 1.826000 0.026000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  25000.00 5000.000 1.531000 0.022000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  35000.00 5000.000 1.273000 0.018000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  50000.00 10000.00 1.082000 0.016000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  70000.00 10000.00 0.918000 0.014000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  90000.00 10000.00 0.798000 0.012000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  125000.0 25000.00 0.639000 0.010000                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  175000.0 25000.00 0.532000 9.0000-3                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  250000.0 50000.00 0.460000 8.0000-3                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  350000.0 50000.00 0.298000 6.0000-3                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  450000.0 50000.00 0.155000 6.0000-3                                       R.L.MACKLIN (85)         12874  3
+    1 46107   3 102 A  550000.0 50000.00 0.114000 6.0000-3                                       R.L.MACKLIN (85)         12874  3
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V0102
+#AUTHOR1    Z.Y.Bao+
+#YEAR       2000
+#INSTITUTE  (2GERKFK)
+#TITLE      Neutron cross sections for nucleosynthesis studies
+#AUTHOR(S)  Z.Y.Bao, H.Beer, F.Kaeppeler,
+#+          F.Voss, K.Wisshak, T.Rauscher
+#REF-CODE   (J,AND,76,70,2000)
+#REFERENCE  Jour. Atomic Data and Nuclear Data Tables
+#+          Vol.76, p.70, 2000
+#DATASETS   394
+#
+#DATASET    V0102197
+#DATE       20120605
+#REACTION   46-PD-107(N,G)46-PD-108,,SIG,,MXW,RECOM
+#PROJ       1
+#TARG       46107
+#MF         3
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107   3 102    30000.00          1.340000 0.060000                                       Z.Y.Bao,ET.AL. (00)      V0102197
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1001
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   634
+#
+#DATASET    V1001457
+#DATE       20120704
+#REACTION   46-PD-107(N,G)46-PD-108,,SIG,,MXW,RECOM
+#PROJ       1
+#TARG       46107
+#MF         3
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107   3 102    30000.00          1.340000 0.060000                                       S.F.Mughabghab (06)      V1001457
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40600
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1980
+#INSTITUTE  (4CCPNIR)
+#TITLE      NEUTRON RESONANCES OF RU-103 (HALF-LIFE = 40 D)
+#+          AND PD-107 (HALF-LIFE = 6.5E+6 YR)
+#AUTHOR(S)  V.A.Anufriev, S.I.Babich, A.G.Kolesov,
+#+          V.S.Artamonov, R.N.Ivanov, S.M.Kalebin,
+#+          V.A.Poruchikov
+#REF-CODE   (C,80KIEV,2,156,8009)
+#REFERENCE  Conf. 5.All Union Conf.on Neutron Phys.,Kiev,15-19 Sep 1980
+#+          Vol.2, p.156, 1980
+#DATASETS   6
+#
+#DATASET    40600006
+#DATE       19851005
+#REACTION   46-PD-107(N,G)46-PD-108,,RI
+#PROJ       1
+#TARG       46107
+#MF         213
+#MT         102
+#PRODUCT    46-PD-108
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 213 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 213 102    0.000000 115.0000 78.00000 18.00000                                       V.A.ANUFRIEV,ET.AL. (80) 40600  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10666
+#AUTHOR1    U.N.Singh+
+#YEAR       1978
+#INSTITUTE  (1USARPI)
+#TITLE      Neutron Capture and Transmission Measurements on
+#+          Fission Product Palladium-107.
+#AUTHOR(S)  U.N.Singh, R.C.Block, Y.Nakagome
+#REF-CODE   (J,NSE,67,54,1978)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.67, p.54, 1978
+#DATASETS   4
+#
+#DATASET    106660021
+#DATE       20080801
+#REACTION   46-PD-107(N,0),,EN
+#PROJ       1
+#TARG       46107
+#MF         402
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4026001 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       34
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4026001 A                    3.920000 0.019600                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    5.200000 0.026000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    6.834000 0.034170                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    28.00000 0.140000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    41.33000 0.206650                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    44.46000 0.222300                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    58.94000 0.294700                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    73.43000 0.367150                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    84.20000 0.421000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    88.48000 0.442400                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    100.6000 0.503000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    114.9000 0.574500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    132.2000 0.661000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    140.5000 0.702500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    152.4000 0.762000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    172.7000 0.863500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    196.3000 0.981500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    211.5000 1.057500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    222.9000 1.114500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    232.6000 1.163000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    272.0000 1.360000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    292.0000 1.460000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    301.0000 1.505000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    325.5000 1.627500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    369.2000 1.846000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    376.3000 1.881500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    380.7000 1.903500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    472.3000 2.361500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    489.3000 2.446500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    538.7000 2.693500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    559.1000 2.795500                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    587.2000 2.936000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    628.0000 3.140000                                       U.N.Singh,ET.AL. (78)    10666  21
+    1 46107 4026001 A                    654.6000 3.273000                                       U.N.Singh,ET.AL. (78)    10666  21
+#/DATA      34
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10666
+#AUTHOR1    U.N.Singh+
+#YEAR       1978
+#INSTITUTE  (1USARPI)
+#TITLE      Neutron Capture and Transmission Measurements on
+#+          Fission Product Palladium-107.
+#AUTHOR(S)  U.N.Singh, R.C.Block, Y.Nakagome
+#REF-CODE   (J,NSE,67,54,1978)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.67, p.54, 1978
+#DATASETS   4
+#
+#DATASET    106660032
+#DATE       20080801
+#REACTION   46-PD-107(N,0),,D
+#PROJ       1
+#TARG       46107
+#MF         402
+#MT         6004
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4026004 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4026004 A                    10.70000 1.500000 0.000000                              U.N.Singh,ET.AL. (78)    10666  32
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12874
+#AUTHOR1    R.L.Macklin
+#YEAR       1985
+#INSTITUTE  (1USAORL)
+#TITLE      NEUTRON CAPURE MEASUREMENTS ON FISSION-PRODUCT 107-PD.
+#AUTHOR(S)  R.L.Macklin
+#REF-CODE   (J,NSE,89,79,8501)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.89, p.79, 1985
+#DATASETS   5
+#
+#DATASET    128740023
+#DATE       19841003
+#REACTION   46-PD-107(N,TOT),,WID
+#PROJ       1
+#TARG       46107
+#MF         402
+#MT         6010
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4026010 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4026010 A  2694.000          4.800000 0.300000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  2787.000          1.100000 0.200000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  2836.000          4.000000 0.600000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  2879.000          2.400000 0.300000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  2902.000          1.400000 0.200000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  2961.000          2.600000 0.200000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3141.000          5.100000 0.500000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3161.000          5.500000 1.000000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3322.000          5.500000 0.700000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3355.000          5.100000 0.400000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3443.000          3.100000 0.200000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3466.000          8.300000 1.400000                                       R.L.MACKLIN (85)         12874  23
+    1 46107 4026010 A  3510.000          3.300000 0.200000                                       R.L.MACKLIN (85)         12874  23
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23140
+#AUTHOR1    S.Nakamura+
+#YEAR       2011
+#INSTITUTE  (2JPNJAE)
+#TITLE      Measurements of neutron capture cross sections of
+#+          palladium isotopes at the J-PARC/MLF/ANNRI .
+#AUTHOR(S)  S.Nakamura, K.Furutaka, S.Goko,
+#+          H.Harada, J.Hori, M.Igashira,
+#+          T.Kamiyama, T.Katabuchi, A.Kimura,
+#+          T.Kin, K.Kino, F.Kitatani,
+#+          Y.Kiyanagi, M.Koizumi, M.Mizumoto,
+#+          M.Ohta, M.Oshima, Y.Toh,
+#+          T.Fujii, S.Fukutani, K.Takamiya,
+#+          K.Y.Hara, K.Hirose, F.Hiraga,
+#+          S.Fukutani
+#REF-CODE   (J,KPS,59,1773,2011)
+#REFERENCE  Jour. Journal of the Korean Physical Society
+#+          Vol.59, p.1773, 2011
+#DATASETS   2
+#
+#DATASET    23140005
+#DATE       20150702
+#REACTION   46-PD-107(N,EL),,WID
+#PROJ       1
+#TARG       46107
+#MF         402
+#MT         6021
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4026021 P ]
+#X4STATUS   [PRELM] Preliminary data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4026021 P  2.900000          1.8000-6 1.0000-7                                       S.Nakamura,ET.AL. (11)   23140  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40600
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1980
+#INSTITUTE  (4CCPNIR)
+#TITLE      NEUTRON RESONANCES OF RU-103 (HALF-LIFE = 40 D)
+#+          AND PD-107 (HALF-LIFE = 6.5E+6 YR)
+#AUTHOR(S)  V.A.Anufriev, S.I.Babich, A.G.Kolesov,
+#+          V.S.Artamonov, R.N.Ivanov, S.M.Kalebin,
+#+          V.A.Poruchikov
+#REF-CODE   (C,80KIEV,2,156,8009)
+#REFERENCE  Conf. 5.All Union Conf.on Neutron Phys.,Kiev,15-19 Sep 1980
+#+          Vol.2, p.156, 1980
+#DATASETS   6
+#
+#DATASET    406000052
+#DATE       19860404
+#REACTION   46-PD-107(N,EL),,WID/RED,,2G
+#PROJ       1
+#TARG       46107
+#MF         402
+#MT         6024
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4026024   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4026024    28.20000          4.0000-5 1.5000-5                                       V.A.ANUFRIEV,ET.AL. (80) 40600  52
+    1 46107 4026024    41.50000          1.2500-3 2.5000-4                                       V.A.ANUFRIEV,ET.AL. (80) 40600  52
+    1 46107 4026024    44.60000          3.1500-3 3.0000-4                                       V.A.ANUFRIEV,ET.AL. (80) 40600  52
+    1 46107 4026024    58.90000          6.5000-4 2.0000-4                                       V.A.ANUFRIEV,ET.AL. (80) 40600  52
+    1 46107 4026024    84.20000          6.5000-4 2.5000-4                                       V.A.ANUFRIEV,ET.AL. (80) 40600  52
+    1 46107 4026024    114.5000          7.0000-4 2.5000-4                                       V.A.ANUFRIEV,ET.AL. (80) 40600  52
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10666
+#AUTHOR1    U.N.Singh+
+#YEAR       1978
+#INSTITUTE  (1USARPI)
+#TITLE      Neutron Capture and Transmission Measurements on
+#+          Fission Product Palladium-107.
+#AUTHOR(S)  U.N.Singh, R.C.Block, Y.Nakagome
+#REF-CODE   (J,NSE,67,54,1978)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.67, p.54, 1978
+#DATASETS   4
+#
+#DATASET    10666004
+#DATE       20080801
+#REACTION   46-PD-107(N,G),,WID
+#PROJ       1
+#TARG       46107
+#MF         402
+#MT         6031
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4026031 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4026031 A  6.834000          0.125000 0.015000                                       U.N.Singh,ET.AL. (78)    10666  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10666
+#AUTHOR1    U.N.Singh+
+#YEAR       1978
+#INSTITUTE  (1USARPI)
+#TITLE      Neutron Capture and Transmission Measurements on
+#+          Fission Product Palladium-107.
+#AUTHOR(S)  U.N.Singh, R.C.Block, Y.Nakagome
+#REF-CODE   (J,NSE,67,54,1978)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.67, p.54, 1978
+#DATASETS   4
+#
+#DATASET    106660031
+#DATE       20080801
+#REACTION   46-PD-107(N,EL),,STF
+#PROJ       1
+#TARG       46107
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4036001 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4036001 A                    5.6000-5 1.6000-5 0.000000                              U.N.Singh,ET.AL. (78)    10666  31
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12874
+#AUTHOR1    R.L.Macklin
+#YEAR       1985
+#INSTITUTE  (1USAORL)
+#TITLE      NEUTRON CAPURE MEASUREMENTS ON FISSION-PRODUCT 107-PD.
+#AUTHOR(S)  R.L.Macklin
+#REF-CODE   (J,NSE,89,79,8501)
+#REFERENCE  Jour. Nuclear Science and Engineering
+#+          Vol.89, p.79, 1985
+#DATASETS   5
+#
+#DATASET    128740022
+#DATE       19841003
+#REACTION   46-PD-107(N,G),,ARE
+#PROJ       1
+#TARG       46107
+#MF         404
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46107 4046001 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       130
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46107 4046001 A  27.98000          3.2700-4 9.0000-6                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  41.31000          5.6000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  44.43000          0.015500 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  58.90000          4.2900-3 2.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  73.37000          5.4000-4 1.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  84.13000          6.5000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  88.43000          0.011000 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  100.4700          1.7300-3 2.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  114.7900          8.1100-3 5.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  132.0000          1.7900-3 2.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  140.3000          0.010700 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  152.2000          0.018900 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  172.5000          0.027300 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  173.9000          3.1600-3 4.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  181.5000          0.015700 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  196.1000          2.3700-3 3.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  211.2000          9.9000-4 2.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  223.0000          5.1900-3 5.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  226.5000          0.019900 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  232.3000          7.8000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  266.9000          3.6500-3 6.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  271.6000          3.4100-3 6.0000-5                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  291.7000          0.015800 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  294.7000          0.020000 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  300.7000          6.7000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  314.4000          8.6000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  325.1000          0.019700 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  344.0000          8.6000-3 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  356.7000          0.018300 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  368.7000          0.025800 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  375.7000          7.7000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  380.3000          8.4000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  434.7000          8.1000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  472.0000          0.021000 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  479.1000          2.8000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  488.6000          0.013000 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  507.1000          0.020500 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  518.4000          0.050600 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  520.6000          0.033000 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  538.0000          0.014600 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  558.4000          0.027700 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  569.2000          0.025100 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  586.5000          0.016000 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  627.2000          0.030200 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  633.3000          0.019700 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  653.7000          0.035100 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  665.0000          0.035600 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  679.3000          0.035100 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  701.7000          0.027600 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  719.7000          0.038500 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  802.4000          0.027400 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  813.0000          9.3000-3 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  851.1000          5.9000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  878.2000          0.053000 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  883.7000          2.8000-3 1.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  910.6000          0.017100 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  917.9000          9.4000-3 2.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1010.500          0.019600 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1021.100          0.038300 5.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1027.200          8.6000-3 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1079.300          8.5000-3 6.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1082.000          0.033700 8.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1117.500          0.014200 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1145.200          0.031300 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1206.500          0.026400 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1298.100          0.023400 7.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1322.500          0.011300 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1367.800          0.041200 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1407.300          0.020400 5.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1428.700          0.024300 3.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1464.200          0.010600 1.5000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1494.800          0.035400 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1502.000          0.031300 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1555.200          0.027500 5.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1596.000          0.042100 8.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1616.300          0.019000 1.5000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1701.000          0.026400 7.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1705.700          0.020700 1.5000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1718.000          0.012400 1.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1721.300          0.043200 7.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1742.200          0.010700 1.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1806.700          0.063300 9.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1809.400          0.032700 8.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1826.900          0.051800 4.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1853.300          0.039600 8.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1857.300          0.013100 1.8000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1863.100          0.012300 1.2000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1886.200          0.073500 1.3000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1896.800          0.063500 8.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1915.300          0.032200 6.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  1921.400          0.021800 1.4000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2103.000          0.021400 5.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2223.900          0.014100 6.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2266.500          0.038800 1.0000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2272.000          0.043700 6.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2343.600          0.084700 2.4000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2412.900          0.032500 3.9000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2565.900          0.048600 7.0000-4                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2694.000          0.126600 4.9000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2737.000          0.027200 4.3000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2743.000          0.039500 1.4000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2768.000          0.055800 5.3000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2787.000          0.041400 5.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2836.000          0.046500 3.9000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2879.000          0.044700 3.8000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2888.000          0.037300 2.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2902.000          0.030700 3.1000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2961.000          0.049500 1.7000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  2993.000          0.058100 2.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3040.000          0.087200 3.9000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3082.000          0.054100 2.2000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3117.000          0.038500 2.2000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3141.000          0.092800 4.4000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3161.000          0.046500 5.1000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3181.000          0.030100 3.4000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3268.000          0.014700 2.0000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3276.000          0.047500 2.2000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3293.000          0.034000 3.7000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3303.000          0.010000 3.8000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3322.000          0.133900 0.010800                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3330.000          0.027200 4.7000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3342.000          0.010600 1.8000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3355.000          0.117700 5.5000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3399.000          0.059700 3.9000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3430.000          0.048400 3.9000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3443.000          0.086900 4.0000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3454.000          0.028100 3.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3466.000          0.099600 0.013300                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3499.000          9.8000-3 2.6000-3                                       R.L.MACKLIN (85)         12874  22
+    1 46107 4046001 A  3510.000          0.121500 4.2000-3                                       R.L.MACKLIN (85)         12874  22
+#/DATA      130
+#/DATASET
+#/ENTRY
+#
+#

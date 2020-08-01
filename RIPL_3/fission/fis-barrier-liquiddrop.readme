@@ -1,0 +1,80 @@
+Directory: fission/
+File:      fis-barrier-liquiddrop.readme (April 30, 2002)
+*********************************************************
+
+
+                    fis-barrier-liquiddrop.for
+
+	  Subroutine BARFIT for fission barrier calculations
+	    (provided by A. V. Ignatyuk on April 30, 2002)
+          ***************************************************
+	
+		 MACROSCOPIC MODEL OF ROTATING NUCLEI
+
+			       A.Sierk
+		 Los Alamos National Laboratory (USA)
+
+
+Content
+-------
+Subroutine BARFIT was written by A. Sierk for calculation of fission
+barriers in the framework of the liquid drop model [1].  To obtain the
+barrier hight relative to the ground state the corresponding shell
+correction should be added to the calculated liquid-drop barrier.
+
+Reproduced below is the comment part of the barfit.f code:
+
+This subroutine returns the barrier height bfis, the ground-state
+energy segs, in MeV, and the angular momentum at which the fission
+barrier disappears, eLmax, in units of h-bar, when called with integer
+arguments iz, the atomic number, ia, the atomic mass number, and il,
+the angular momentum in units of h-bar, (Planck's constant divided by
+2*pi).
+
+The calculated barriers from which the fits were made were calculated
+in 1983-1985 by A. J. Sierk of Los Alamos National Laboratory Group
+T-9, using Yukawa-plus-exponential double folded nuclear energy, exact
+Coulomb diffuseness corrections, and diffuse-matter moments of
+inertia. The parameters of the model are those derived by Moller and
+Nix in 1979: r-0 = 1.16 fm, as = 21.13 MeV, kappa-s = 2.3 a = 0.68 fm.
+The diffuseness of the matter and charge distributions used
+corresponds to a surface diffuseness parameter (defined by Myers) of
+0.99 fm.  The calculated barriers for L = 0 are accurate to a little
+less than 0.1 MeV; the output from this subroutine is a little less
+accurate.  Worst errors may be as large as 0.5 MeV; characteristic
+uncertainty is in the range of 0.1-0.2 MeV.  The values of egs are
+generally approximated to within about 0.1-0.2 MeV; the largest
+deviation is about 0.5 MeV, near L-I for light nuclei.
+
+The fission barrier for il = 0 is calculated from a 7th order fit in
+two variables to 638 calculated fission barriers for z values from 20
+to 110.  These 638 barriers are fit with an rms deviation of 0.10 MeV
+by this 49-parameter function.  If barfit is called with (iz,ia)
+values outside the range of the fit the barrier height is set to 0.0,
+and a message is printed on the default output file.
+
+For il values not equal to zero, the values of L at which the barrier
+is 80% and 20% of the L=0 value are respectively fit to 20-parameter
+functions of Z and A, over a more restricted range of A values, than
+is the case for L = 0.  The value of L where the barrier disappears,
+Lmax, for 61 nuclei, is fit to a 35-parameter function of Z and A,
+with the same range of Z and A values as l-80 and l-20.
+
+Once again, if an (iz,ia) pair is outside of the range of validity of
+the fit, the barrier value is set to 0.0 and a message is printed.
+These three values (Bfis(L=0),L-80, and L-20) and the constraints of
+Bfis = 0 and d(Bfis)/dL = 0 at L = Lmax and L = 0 lead to a
+fifth-order fit to Bfis(L) for L> L-20.  The first three constraints
+lead to a third-order fit for the region L < L-20.
+
+
+Format
+------
+Plain ACSII file with the FORTRAN source.
+
+
+References
+----------
+[1] A. Sierk, Phys. Rev. C33 (1986) 2039.
+
+

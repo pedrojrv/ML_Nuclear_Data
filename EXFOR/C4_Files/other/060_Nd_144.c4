@@ -1,0 +1,318 @@
+#ENTRY      C0320
+#AUTHOR1    A.Gavron+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Fission cross sections up to 20 MeV/nucleon
+#AUTHOR(S)  A.Gavron, J.Boissevain, H.C.Britt,
+#+          K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, J.B.Wilhelmy, T.C.Awes,
+#+          R.L.Ferguson, F.E.Obenshain, F.Plasil,
+#+          G.R.Young, S.Wald
+#REF-CODE   (J,PR/C,30,1550,198411)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.30, p.1550, 1984
+#DATASETS   13
+#
+#DATASET    C0320010
+#DATE       20050103
+#REACTION   60-ND-144(16-S-32,F),,SIG
+#PROJ       16032
+#TARG       60144
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [16032 60144   3  18   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+16032 60144   3  18    3.5000+8          0.810000 10.00000                                       A.Gavron,ET.AL. (84)     C0320 10
+16032 60144   3  18    5.0000+8          0.680000 10.00000                                       A.Gavron,ET.AL. (84)     C0320 10
+16032 60144   3  18    7.0000+8          0.444000 0.088000                                       A.Gavron,ET.AL. (84)     C0320 10
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2292
+#AUTHOR1    A.M.Friedman+
+#YEAR       1972
+#INSTITUTE  (1USAANL)
+#TITLE      Measurements of nuclear radii by heavy-ion scattering.
+#AUTHOR(S)  A.M.Friedman, R.H.Siemssen, J.G.Cuninghame
+#REF-CODE   (J,PR/C,6,2219,1972)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.6, p.2219, 1972
+#DATASETS   13
+#
+#DATASET    O2292007
+#DATE       20160700
+#REACTION   60-ND-144(6-C-12,EL)60-ND-144,,DA,,RTH
+#PROJ       6012
+#TARG       60144
+#MF         4
+#MT         2
+#PRODUCT    60-ND-144
+#DATA-HDR   DATA
+#C4BEGIN    [ 6012 60144   4   2  C]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6012 60144   4   2  C 1.1800+8          51.80264          0.966689                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          31.79431          0.957168                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          25.82308          0.951809                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          17.92612          0.946480                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          14.31797          0.934763                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          8.491400          0.915171                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          4.323321          0.891955                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          1.708540          0.863747                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          0.660360          0.837241                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          0.364488          0.820750                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          0.044456          0.779119                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          0.051926          0.768618                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          0.011413          0.747102                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          1.6160-3          0.707106                              A.M.Friedman,ET.AL. (72) O2292  7
+ 6012 60144   4   2  C 1.1800+8          7.1830-4          0.671590                              A.M.Friedman,ET.AL. (72) O2292  7
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1581
+#AUTHOR1    S.Tobbeche+
+#YEAR       1986
+#INSTITUTE  (2FR SAC)
+#TITLE      Influence of the giant dipole resonance in the
+#+          statistical decay of the compound nucleus Er-160.
+#AUTHOR(S)  S.Tobbeche, J.Barrette, B.Haas,
+#+          C.Beck, T.Byrski, G.Duchene,
+#+          C.Gehringer, J.C.Merdinger, A.Nourreddine,
+#+          J.P.Viven
+#REF-CODE   (J,ZP/A,325,85,1986)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.325, p.85, 1986
+#DATASETS   5
+#
+#DATASET    O1581002
+#DATE       20071104
+#REACTION   60-ND-144(8-O-16,2N)68-ER-158,,SIG
+#PROJ       8016
+#TARG       60144
+#MF         3
+#MT         16
+#PRODUCT    68-ER-158
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 60144   3  16   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 60144   3  16    7.7080+7          5.9200-3                                                S.Tobbeche,ET.AL. (86)   O1581  2
+ 8016 60144   3  16    8.2400+7          4.4400-3                                                S.Tobbeche,ET.AL. (86)   O1581  2
+ 8016 60144   3  16    8.8330+7          2.2700-3                                                S.Tobbeche,ET.AL. (86)   O1581  2
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1581
+#AUTHOR1    S.Tobbeche+
+#YEAR       1986
+#INSTITUTE  (2FR SAC)
+#TITLE      Influence of the giant dipole resonance in the
+#+          statistical decay of the compound nucleus Er-160.
+#AUTHOR(S)  S.Tobbeche, J.Barrette, B.Haas,
+#+          C.Beck, T.Byrski, G.Duchene,
+#+          C.Gehringer, J.C.Merdinger, A.Nourreddine,
+#+          J.P.Viven
+#REF-CODE   (J,ZP/A,325,85,1986)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.325, p.85, 1986
+#DATASETS   5
+#
+#DATASET    O1581003
+#DATE       20071104
+#REACTION   60-ND-144(8-O-16,3N)68-ER-157,,SIG
+#PROJ       8016
+#TARG       60144
+#MF         3
+#MT         17
+#PRODUCT    68-ER-157
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 60144   3  17   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 60144   3  17    7.7080+7          0.201000                                                S.Tobbeche,ET.AL. (86)   O1581  3
+ 8016 60144   3  17    8.2400+7          0.171000                                                S.Tobbeche,ET.AL. (86)   O1581  3
+ 8016 60144   3  17    8.8440+7          0.076000                                                S.Tobbeche,ET.AL. (86)   O1581  3
+ 8016 60144   3  17    9.3850+7          0.046700                                                S.Tobbeche,ET.AL. (86)   O1581  3
+ 8016 60144   3  17    9.9580+7          0.017800                                                S.Tobbeche,ET.AL. (86)   O1581  3
+ 8016 60144   3  17    1.0470+8          0.015000 3.0000-3                                       S.Tobbeche,ET.AL. (86)   O1581  3
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1581
+#AUTHOR1    S.Tobbeche+
+#YEAR       1986
+#INSTITUTE  (2FR SAC)
+#TITLE      Influence of the giant dipole resonance in the
+#+          statistical decay of the compound nucleus Er-160.
+#AUTHOR(S)  S.Tobbeche, J.Barrette, B.Haas,
+#+          C.Beck, T.Byrski, G.Duchene,
+#+          C.Gehringer, J.C.Merdinger, A.Nourreddine,
+#+          J.P.Viven
+#REF-CODE   (J,ZP/A,325,85,1986)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.325, p.85, 1986
+#DATASETS   5
+#
+#DATASET    O1581004
+#DATE       20071104
+#REACTION   60-ND-144(8-O-16,4N)68-ER-156,,SIG
+#PROJ       8016
+#TARG       60144
+#MF         3
+#MT         37
+#PRODUCT    68-ER-156
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 60144   3  37   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 60144   3  37    7.7190+7          0.105000                                                S.Tobbeche,ET.AL. (86)   O1581  4
+ 8016 60144   3  37    8.2600+7          0.247000                                                S.Tobbeche,ET.AL. (86)   O1581  4
+ 8016 60144   3  37    8.8540+7          0.373000                                                S.Tobbeche,ET.AL. (86)   O1581  4
+ 8016 60144   3  37    9.4060+7          0.392000                                                S.Tobbeche,ET.AL. (86)   O1581  4
+ 8016 60144   3  37    9.9580+7          0.223000                                                S.Tobbeche,ET.AL. (86)   O1581  4
+ 8016 60144   3  37    1.0490+8          0.115000                                                S.Tobbeche,ET.AL. (86)   O1581  4
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1581
+#AUTHOR1    S.Tobbeche+
+#YEAR       1986
+#INSTITUTE  (2FR SAC)
+#TITLE      Influence of the giant dipole resonance in the
+#+          statistical decay of the compound nucleus Er-160.
+#AUTHOR(S)  S.Tobbeche, J.Barrette, B.Haas,
+#+          C.Beck, T.Byrski, G.Duchene,
+#+          C.Gehringer, J.C.Merdinger, A.Nourreddine,
+#+          J.P.Viven
+#REF-CODE   (J,ZP/A,325,85,1986)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.325, p.85, 1986
+#DATASETS   5
+#
+#DATASET    O1581005
+#DATE       20071104
+#REACTION   60-ND-144(8-O-16,5N)68-ER-155,,SIG
+#PROJ       8016
+#TARG       60144
+#MF         3
+#MT         152
+#PRODUCT    68-ER-155
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 60144   3 152   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 60144   3 152    7.6880+7          2.5000-3 7.0000-4                                       S.Tobbeche,ET.AL. (86)   O1581  5
+ 8016 60144   3 152    8.2400+7          0.012000 3.6000-3                                       S.Tobbeche,ET.AL. (86)   O1581  5
+ 8016 60144   3 152    8.8330+7          0.043000 3.8700-3                                       S.Tobbeche,ET.AL. (86)   O1581  5
+ 8016 60144   3 152    9.3960+7          0.145000                                                S.Tobbeche,ET.AL. (86)   O1581  5
+ 8016 60144   3 152    9.9580+7          0.291000                                                S.Tobbeche,ET.AL. (86)   O1581  5
+ 8016 60144   3 152    1.0500+8          0.385000                                                S.Tobbeche,ET.AL. (86)   O1581  5
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1581
+#AUTHOR1    S.Tobbeche+
+#YEAR       1986
+#INSTITUTE  (2FR SAC)
+#TITLE      Influence of the giant dipole resonance in the
+#+          statistical decay of the compound nucleus Er-160.
+#AUTHOR(S)  S.Tobbeche, J.Barrette, B.Haas,
+#+          C.Beck, T.Byrski, G.Duchene,
+#+          C.Gehringer, J.C.Merdinger, A.Nourreddine,
+#+          J.P.Viven
+#REF-CODE   (J,ZP/A,325,85,1986)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.325, p.85, 1986
+#DATASETS   5
+#
+#DATASET    O1581006
+#DATE       20071104
+#REACTION   60-ND-144(8-O-16,6N)68-ER-154,,SIG
+#PROJ       8016
+#TARG       60144
+#MF         3
+#MT         153
+#PRODUCT    68-ER-154
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 60144   3 153   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 60144   3 153    9.9480+7          0.032000 4.1600-3                                       S.Tobbeche,ET.AL. (86)   O1581  6
+ 8016 60144   3 153    1.0500+8          0.088000 5.2800-3                                       S.Tobbeche,ET.AL. (86)   O1581  6
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2292
+#AUTHOR1    A.M.Friedman+
+#YEAR       1972
+#INSTITUTE  (1USAANL)
+#TITLE      Measurements of nuclear radii by heavy-ion scattering.
+#AUTHOR(S)  A.M.Friedman, R.H.Siemssen, J.G.Cuninghame
+#REF-CODE   (J,PR/C,6,2219,1972)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.6, p.2219, 1972
+#DATASETS   13
+#
+#DATASET    O2292014
+#DATE       20160700
+#REACTION   60-ND-144(8-O-16,EL)60-ND-144,,DA,,RTH
+#PROJ       8016
+#TARG       60144
+#MF         4
+#MT         2
+#PRODUCT    60-ND-144
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 60144   4   2  C]
+#DATA       22
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 60144   4   2  C 1.3000+8          16.78255          0.926397                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          9.151608          0.901530                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          5.961010          0.875380                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          4.117747          0.852913                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          2.404685          0.816036                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          1.955340          0.801253                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          1.519108          0.794520                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          1.307072          0.784235                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          1.169883          0.776376                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.962553          0.769287                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.793361          0.755739                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.514535          0.736096                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.428758          0.729446                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.323183          0.717883                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.234379          0.702028                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.175139          0.689998                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.134624          0.677774                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.097136          0.661049                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.073165          0.644123                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.032218          0.635269                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.022466          0.620052                              A.M.Friedman,ET.AL. (72) O2292 14
+ 8016 60144   4   2  C 1.3000+8          0.014264          0.606681                              A.M.Friedman,ET.AL. (72) O2292 14
+#/DATA      22
+#/DATASET
+#/ENTRY
+#
+#

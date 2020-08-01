@@ -1,0 +1,70 @@
+Directory: optical/om-microscopic/
+File:      mom.readme (January 4, 2002)
+***************************************
+
+                                   mom.tgz
+
+                    Code for semi-microscopic calculation
+                        of optical model potential
+                  (provided by O. Bersillon on January 4, 2002)
+                  *********************************************
+
+                                  E. Bauge
+                         Commissariat a l'Energie Atomique,
+                             Bruyeres-le-Chatel, France
+
+
+Content
+-------
+MOM is a computer code,  which calculates the semi-microscopic
+nucleon-nucleus  spherical optical model potential by folding the
+target radial matter density with an OMP in nuclear matter based on
+the Brueckner-Hartree-Fock work of Jeukenne, Lejeune and Mahaux. This
+method  has  been adjusted phenomenologically in order to improve
+agreement with a large set of experimental data. The results have
+been widely tested and the method extended to deformed and unstable
+nuclei.  The optical model potentials can be produced  in the mass range
+from A=30 up to A=240 and for energies ranging from 10 keV up to 200 MeV.
+
+
+Files
+-----
+mom.tgz       : 'tarred' and 'gzipped' file containing the MOM package
+                 (sources, scripts and test cases (altogether 58 files)).
+
+mom-manual.ps : a PostScript file describing the code and underlying physics,
+                installation, and execution of calculations.
+
+Format
+------
+Tarred and gzipped archive. On UNIX/Linux systems use
+
+tar xvzf mom.tgz
+or
+gunzip mom.tgz
+tar xvf mom.tar
+
+to explode the archive. On MS Windows WinZip should be used instead.
+
+
+Platform
+--------
+UNIX/Linux systems.
+
+
+Testing
+-------
+The MOM code has been compiled and tested on the following systems:
+    Sun Sparc Ultra5 with Solaris 7
+    SGI MIPS         with IRIX6
+    Compaq Alpha     with TruUnix
+    Pentium          with Linux    (g77)
+    PPC              with MacOS 10 (g77)
+
+
+Contact
+-------
+E. Bauge, CEA Centre DIF, Service de Physique Nucléaire,
+B.P. 12, F-91680 Bruyères-le-Châtel, France
+e-mail: mom.code@cea.fr
+

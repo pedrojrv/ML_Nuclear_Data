@@ -1,0 +1,191 @@
+#ENTRY      40549
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1979
+#INSTITUTE  (4RUSNIR)
+#TITLE      Parameters of 60Co neutron levels
+#AUTHOR(S)  V.A.Anufriev, S.I.Babich, A.G.Kolesov,
+#+          V.N.Nefedov, V.V.Tikhomirov, V.S.Artamonov,
+#+          R.N.Ivanov, S.M.Kalebin
+#REF-CODE   (J,SJA,46,57,1979)
+#REFERENCE  Jour. Soviet Atomic Energy
+#+          Vol.46, p.57, 1979
+#DATASETS   3
+#
+#DATASET    40549003
+#DATE       20180103
+#REACTION   27-CO-60(N,TOT),,SIG
+#PROJ       1
+#TARG       27060
+#MF         3
+#MT         1
+#DATA-HDR   DATA
+#C4BEGIN    [    1 27060   3   1 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 27060   3   1 D  0.025300          6.000000                                                V.A.Anufriev,ET.AL. (79) 40549  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12596
+#AUTHOR1    C.H.Hogg+
+#YEAR       1966
+#INSTITUTE  (1USAMTR)
+#TITLE      NEUTRON ACTIVATION CROSS SECTIONS FOR THE CO-60 ISOMERS
+#AUTHOR(S)  C.H.Hogg, L.D.Weber
+#REF-CODE   (R,IN-1024,6608)
+#REFERENCE  Rept. Idaho Nuclear Corp. Reports
+#+          No.1024, 1966
+#DATASETS   4
+#
+#DATASET    12596002
+#DATE       19830801
+#REACTION   27-CO-60(N,G)27-CO-61,,SIG
+#PROJ       1
+#TARG       27060
+#MF         3
+#MT         102
+#PRODUCT    27-CO-61
+#DATA-HDR   DATA
+#C4BEGIN    [    1 27060   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 27060   3 102    0.025300          2.000000 0.200000                                       C.H.HOGG,ET.AL. (66)     12596  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1001
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   634
+#
+#DATASET    V1001218
+#DATE       20120704
+#REACTION   27-CO-60(N,G)27-CO-61,,SIG,,,RECOM
+#PROJ       1
+#TARG       27060
+#MF         3
+#MT         102
+#PRODUCT    27-CO-61
+#DATA-HDR   DATA
+#C4BEGIN    [    1 27060   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 27060   3 102    0.025300          2.000000 0.200000                                       S.F.Mughabghab (06)      V1001218
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12596
+#AUTHOR1    C.H.Hogg+
+#YEAR       1966
+#INSTITUTE  (1USAMTR)
+#TITLE      NEUTRON ACTIVATION CROSS SECTIONS FOR THE CO-60 ISOMERS
+#AUTHOR(S)  C.H.Hogg, L.D.Weber
+#REF-CODE   (R,IN-1024,6608)
+#REFERENCE  Rept. Idaho Nuclear Corp. Reports
+#+          No.1024, 1966
+#DATASETS   4
+#
+#DATASET    12596003
+#DATE       19830801
+#REACTION   27-CO-60(N,G)27-CO-61,,RI
+#PROJ       1
+#TARG       27060
+#MF         213
+#MT         102
+#PRODUCT    27-CO-61
+#DATA-HDR   DATA
+#C4BEGIN    [    1 27060 213 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 27060 213 102    0.500000 1.5000+7 4.300000                                                C.H.HOGG,ET.AL. (66)     12596  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40549
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1979
+#INSTITUTE  (4RUSNIR)
+#TITLE      Parameters of 60Co neutron levels
+#AUTHOR(S)  V.A.Anufriev, S.I.Babich, A.G.Kolesov,
+#+          V.N.Nefedov, V.V.Tikhomirov, V.S.Artamonov,
+#+          R.N.Ivanov, S.M.Kalebin
+#REF-CODE   (J,SJA,46,57,1979)
+#REFERENCE  Jour. Soviet Atomic Energy
+#+          Vol.46, p.57, 1979
+#DATASETS   3
+#
+#DATASET    40549004
+#DATE       20180103
+#REACTION   27-CO-60(N,G)27-CO-61,,RI
+#PROJ       1
+#TARG       27060
+#MF         213
+#MT         102
+#PRODUCT    27-CO-61
+#DATA-HDR   DATA
+#C4BEGIN    [    1 27060 213 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 27060 213 102 D  0.500000 1.5000+7 4.000000 0.700000                                       V.A.Anufriev,ET.AL. (79) 40549  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40549
+#AUTHOR1    V.A.Anufriev+
+#YEAR       1979
+#INSTITUTE  (4RUSNIR)
+#TITLE      Parameters of 60Co neutron levels
+#AUTHOR(S)  V.A.Anufriev, S.I.Babich, A.G.Kolesov,
+#+          V.N.Nefedov, V.V.Tikhomirov, V.S.Artamonov,
+#+          R.N.Ivanov, S.M.Kalebin
+#REF-CODE   (J,SJA,46,57,1979)
+#REFERENCE  Jour. Soviet Atomic Energy
+#+          Vol.46, p.57, 1979
+#DATASETS   3
+#
+#DATASET    405490022
+#DATE       20180103
+#REACTION   27-CO-60(N,EL),,WID/RED,,G
+#PROJ       1
+#TARG       27060
+#MF         402
+#MT         6024
+#DATA-HDR   DATA
+#C4BEGIN    [    1 27060 4026024 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 27060 4026024 D  820.0000          0.055000 8.0000-3                                       V.A.Anufriev,ET.AL. (79) 40549  22
+    1 27060 4026024 D  1740.000          0.080000 0.015000                                       V.A.Anufriev,ET.AL. (79) 40549  22
+    1 27060 4026024 D  2020.000          0.490000 0.070000                                       V.A.Anufriev,ET.AL. (79) 40549  22
+    1 27060 4026024 D  2505.000          0.097000 0.015000                                       V.A.Anufriev,ET.AL. (79) 40549  22
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#

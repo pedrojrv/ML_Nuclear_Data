@@ -1,0 +1,638 @@
+#ENTRY      T0144
+#AUTHOR1    M.C.Lagunas-Solar+
+#YEAR       1993
+#INSTITUTE  (1USADAV)
+#TITLE      Theoretical and Experimental Excitation Functions for
+#+          Proton Induced Nuclear Reactions on Z=10 to Z=82
+#+          Target Nuclides.
+#AUTHOR(S)  M.C.Lagunas-Solar, R.P.Haff
+#REF-CODE   (J,RCA,60,57,1993)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.60, p.57, 1993
+#DATASETS   4
+#
+#DATASET    T0144002
+#DATE       20010205
+#REACTION   17-CL-0(P,X)17-CL-34-M,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    17-CL-34-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000M  ]
+#DATA       23
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000M   2.1900+7 300000.0 3.4200-3 4.7880-4           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   2.3500+7 300000.0 0.010900 1.5260-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   2.5300+7 300000.0 0.067000 9.3800-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   2.7700+7 300000.0 0.096000 0.013440           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   2.9800+7 300000.0 0.114000 0.015960           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   3.1900+7 300000.0 0.107000 0.014980           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   3.3600+7 300000.0 0.094000 0.013160           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   3.5500+7 300000.0 0.082000 0.011480           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   3.7400+7 300000.0 0.070000 9.8000-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   3.9500+7 300000.0 0.063600 8.9040-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   4.1600+7 300000.0 0.059600 8.3440-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   4.3300+7 300000.0 0.055900 7.8260-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   4.5900+7 300000.0 0.054300 7.6020-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   4.7800+7 300000.0 0.054400 7.6160-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   4.9700+7 300000.0 0.054500 7.6300-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   5.1800+7 300000.0 0.052900 7.4060-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   5.4100+7 300000.0 0.053000 7.4200-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   5.6000+7 300000.0 0.053100 7.4340-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   5.8100+7 300000.0 0.051500 7.2100-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   6.0000+7 300000.0 0.051600 7.2240-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   6.2400+7 300000.0 0.050100 7.0140-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   6.4300+7 300000.0 0.050200 7.0280-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+ 1001 17000   39000M   6.6200+7 300000.0 0.050300 7.0420-3           17034.7                     M.C.LAGUNAS-SOLAR, (93)  T0144  2
+#/DATA      23
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0451
+#AUTHOR1    G.F.Steyn+
+#YEAR       2007
+#INSTITUTE  (3SAFITH)
+#TITLE      Production of carrier-free 28Mg by 50 - 200 MeV
+#+          protons on natCl: Excitation function and target
+#+          optimization
+#AUTHOR(S)  G.F.Steyn, N.P.Van Der Meulen, T.N.Van Der Walt,
+#+          C.Vermeulen
+#REF-CODE   (C,2007NICE,2,1391,2007)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci. and Technology, Nice 2007
+#+          Vol.2, p.1391, 2007
+#DATASETS   1
+#
+#DATASET    D0451002
+#DATE       20070804
+#REACTION   17-CL-0(P,X)12-MG-28,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    12-MG-28
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       30
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    5.0000+7          4.1000-7 7.0000-8           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    5.5000+7          5.9000-6 5.0000-7           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    6.0000+7          1.3200-5 9.0000-7           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    6.5000+7          2.1100-5 1.5000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    7.0000+7          2.8400-5 2.0000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    7.5000+7          3.4600-5 2.4000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    8.0000+7          3.9600-5 2.8000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    8.5000+7          4.3800-5 3.1000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    9.0000+7          4.7400-5 3.3000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.0000+8          5.5300-5 3.9000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.0500+8          6.0000-5 4.2000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.1000+8          6.5400-5 4.6000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.1500+8          7.1300-5 5.0000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.2000+8          7.7500-5 5.4000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.2500+8          8.3700-5 5.9000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.3000+8          8.9700-5 6.3000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.3500+8          9.5300-5 6.7000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.4000+8          1.0040-4 7.0000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.4500+8          1.0520-4 7.4000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.5000+8          1.0990-4 7.7000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.5500+8          1.1450-4 8.0000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.6000+8          1.1940-4 8.4000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.6500+8          1.2440-4 8.7000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.7000+8          1.2970-4 9.1000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.7500+8          1.3470-4 9.4000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.8000+8          1.3920-4 9.7000-6           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.8500+8          1.4280-4 1.0000-5           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.9000+8          1.4530-4 1.0200-5           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    1.9500+8          1.4760-4 1.0300-5           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+ 1001 17000   39000    2.0000+8          1.5230-4 1.0700-5           12028.9                     G.F.Steyn,ET.AL. (07)    D0451  2
+#/DATA      30
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2134
+#AUTHOR1    R.Bimbot+
+#YEAR       1971
+#INSTITUTE  (2FR PAR)
+#TITLE      Spallation reactions of light nuclei induced by protons
+#+          from 50, 100 to 153 MeV.
+#AUTHOR(S)  R.Bimbot, H.Gauvin
+#REF-CODE   (J,CR/B,273,1054,1971)
+#REFERENCE  Jour. Comptes Rendus, Serie B, Physique
+#+          Vol.273, p.1054, 1971
+#DATASETS   31
+#
+#DATASET    O2134031
+#DATE       20130606
+#REACTION   17-CL-0(P,X)17-CL-34-M,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    17-CL-34-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000M  ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000M   5.0000+7 5000000. 0.036000 7.0000-3           17034.7                     R.Bimbot,ET.AL. (71)     O2134 31
+ 1001 17000   39000M   1.0000+8 5000000. 0.012400 2.4000-3           17034.7                     R.Bimbot,ET.AL. (71)     O2134 31
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4133
+#AUTHOR1    M.Fassbender+
+#YEAR       1997
+#INSTITUTE  (2GERJUL)
+#TITLE      Activation cross section data for (p,x) processes of
+#+          therapeutic relevance
+#AUTHOR(S)  M.Fassbender, B.Scholten, Yu.N.Shubin,
+#+          S.M.Qaim
+#REF-CODE   (C,97TRIEST,,1647,1997)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
+#+          p.1647, 1997
+#DATASETS   2
+#
+#DATASET    D4133002
+#DATE       20031003
+#REACTION   17-CL-0(P,X)11-NA-22,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    11-NA-22
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    6.4300+7          2.5000-4 3.0000-5           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    8.2200+7          6.1000-4 6.0000-5           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    9.3800+7          1.3500-3 1.5000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.0090+8          1.3300-3 2.2000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.1110+8          1.6400-3 2.5000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.1550+8          1.7700-3 3.0000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.4250+8          2.2700-3 3.8000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.5430+8          2.1600-3 4.0000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.6170+8          2.1900-3 3.8000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.6940+8          2.1600-3 3.8000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    1.7630+8          2.3500-3 4.4000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+ 1001 17000   39000    2.4680+8          4.4500-3 8.5000-4           11022.9                     M.Fassbender,ET.AL. (97) D4133  2
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0299
+#AUTHOR1    H.Lundqvist+
+#YEAR       1979
+#INSTITUTE  (2SWDUPP)
+#TITLE      Production of carrier-free Mg-28 and Na-24 by
+#+          50-180 MeV proton on Si,P,Cl,S,Ar and K: Excitation
+#+          functions and chemical separation.
+#AUTHOR(S)  H.Lundqvist, P.Malmborg
+#REF-CODE   (J,ARI,30,33,1979)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.30, p.33, 1979
+#DATASETS   9
+#
+#DATASET    A0299011
+#DATE       20180601
+#REACTION   17-CL-0(P,X)11-NA-24,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    11-NA-24
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    7.4820+7          2.2400-4                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    8.7880+7          5.2360-4                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    1.0000+8          8.3000-4 1.0000-4           11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    1.0066+8          1.0539-3                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    1.1319+8          9.4240-4                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    1.2571+8          1.6741-3                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    1.4096+8          1.7609-3                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+ 1001 17000   39000    1.5567+8          1.4612-3                    11024.9                     H.Lundqvist,ET.AL. (79)  A0299 11
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0253
+#AUTHOR1    R.G.Korteling+
+#YEAR       1970
+#INSTITUTE  (1USACAR)
+#TITLE      Energy dependence of Na22 and Na24 production cross
+#+          sections with 100- to 400-MeV protons
+#AUTHOR(S)  R.G.Korteling, A.A.Caretto Jr
+#REF-CODE   (J,PR/C,1,1960,70)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.1960, 1970
+#DATASETS   42
+#
+#DATASET    C0253012
+#DATE       19960704
+#REACTION   17-CL-0(P,X)11-NA-22,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    11-NA-22
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    1.0000+8 1.0000+7 6.4900-4 8.4000-5           11022.9                     R.G.KORTELING,ET.AL. (70)C0253 12
+ 1001 17000   39000    2.0000+8 1.0000+7 2.6000-3 5.0000-5           11022.9                     R.G.KORTELING,ET.AL. (70)C0253 12
+ 1001 17000   39000    3.0000+8 1.0000+7 3.8400-3 3.0000-5           11022.9                     R.G.KORTELING,ET.AL. (70)C0253 12
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0253
+#AUTHOR1    R.G.Korteling+
+#YEAR       1970
+#INSTITUTE  (1USACAR)
+#TITLE      Energy dependence of Na22 and Na24 production cross
+#+          sections with 100- to 400-MeV protons
+#AUTHOR(S)  R.G.Korteling, A.A.Caretto Jr
+#REF-CODE   (J,PR/C,1,1960,70)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.1960, 1970
+#DATASETS   42
+#
+#DATASET    C0253013
+#DATE       19960704
+#REACTION   17-CL-0(P,X)11-NA-24,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    11-NA-24
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    1.0000+8 1.0000+7 6.6900-4 5.3000-5           11024.9                     R.G.KORTELING,ET.AL. (70)C0253 13
+ 1001 17000   39000    2.0000+8 1.0000+7 2.1400-3 5.0000-5           11024.9                     R.G.KORTELING,ET.AL. (70)C0253 13
+ 1001 17000   39000    3.0000+8 1.0000+7 3.0300-3 8.0000-5           11024.9                     R.G.KORTELING,ET.AL. (70)C0253 13
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2134
+#AUTHOR1    R.Bimbot+
+#YEAR       1971
+#INSTITUTE  (2FR PAR)
+#TITLE      Spallation reactions of light nuclei induced by protons
+#+          from 50, 100 to 153 MeV.
+#AUTHOR(S)  R.Bimbot, H.Gauvin
+#REF-CODE   (J,CR/B,273,1054,1971)
+#REFERENCE  Jour. Comptes Rendus, Serie B, Physique
+#+          Vol.273, p.1054, 1971
+#DATASETS   31
+#
+#DATASET    O2134032
+#DATE       20130606
+#REACTION   17-CL-0(P,X)11-NA-22,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    11-NA-22
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    1.0000+8 5000000. 6.0000-4 1.2000-4           11022.9                     R.Bimbot,ET.AL. (71)     O2134 32
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0729
+#AUTHOR1    M.Fassbender+
+#YEAR       1998
+#INSTITUTE  (2GERJUL)
+#TITLE      Radiochemical Studies of (P,BE-7) Reactions on
+#+          Biologically Relevant Elements in the Proton Energy
+#+          Range of 50 to 350 MeV.
+#AUTHOR(S)  M.Fassbender, B.Scholten, S.M.Qaim
+#REF-CODE   (J,RCA,81,1,1998)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.81, p.1, 1998
+#DATASETS   12
+#
+#DATASET    O0729011
+#DATE       20000404
+#REACTION   17-CL-0(P,X)4-BE-7,IND,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    4-BE-7
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    1.7380+8 200000.0 1.5000-3 6.0000-4            4007.9                     M.FASSBENDER,ET.AL. (98) O0729 11
+ 1001 17000   39000    1.6700+8 200000.0 1.4000-3 6.0000-4            4007.9                     M.FASSBENDER,ET.AL. (98) O0729 11
+ 1001 17000   39000    1.5910+8 200000.0 1.1000-3 5.0000-4            4007.9                     M.FASSBENDER,ET.AL. (98) O0729 11
+ 1001 17000   39000    1.5200+8 200000.0 1.2000-3 6.0000-4            4007.9                     M.FASSBENDER,ET.AL. (98) O0729 11
+ 1001 17000   39000    1.4530+8 200000.0 1.0000-3 5.0000-4            4007.9                     M.FASSBENDER,ET.AL. (98) O0729 11
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0250
+#AUTHOR1    L.Marquez
+#YEAR       1952
+#INSTITUTE  (1USACHI)
+#TITLE      THE YIELD OF F-18 FROM MEDIUM AND HEAVY ELEMENTS
+#+          WITH 420-MEV PROTONS
+#AUTHOR(S)  L.Marquez
+#REF-CODE   (J,PR,86,405,52)
+#REFERENCE  Jour. Physical Review
+#+          Vol.86, p.405, 1952
+#DATASETS   15
+#
+#DATASET    C0250006
+#DATE       19881003
+#REACTION   17-CL-0(P,X)9-F-18,,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9000
+#PRODUCT    9-F-18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39000    4.2000+8          2.2000-3 5.5000-4            9018.9                     L.MARQUEZ (52)           C0250  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0299
+#AUTHOR1    H.Lundqvist+
+#YEAR       1979
+#INSTITUTE  (2SWDUPP)
+#TITLE      Production of carrier-free Mg-28 and Na-24 by
+#+          50-180 MeV proton on Si,P,Cl,S,Ar and K: Excitation
+#+          functions and chemical separation.
+#AUTHOR(S)  H.Lundqvist, P.Malmborg
+#REF-CODE   (J,ARI,30,33,1979)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.30, p.33, 1979
+#DATASETS   9
+#
+#DATASET    A0299003
+#DATE       20180601
+#REACTION   17-CL-0(P,X)12-MG-28,CUM,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9001
+#PRODUCT    12-MG-28
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39001   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39001    5.0160+7          4.0000-7                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    7.5360+7          4.2000-5                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    7.5370+7          3.4300-5                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    8.7650+7          5.2900-5                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    1.0046+8          8.7600-5                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    1.0046+8          8.0500-5                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    1.1329+8          7.9600-5                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    1.2532+8          1.2720-4                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    1.4024+8          1.3210-4                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+ 1001 17000   39001    1.5490+8          1.3070-4                    12028.9                     H.Lundqvist,ET.AL. (79)  A0299  3
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0728
+#AUTHOR1    M.Fassbender+
+#YEAR       1999
+#INSTITUTE  (2GERJUL)
+#TITLE      Formation of Activation Products in Interactions of
+#+          Medium Energy Protons with Na, Si, P, Cl, Ca and Fe.
+#AUTHOR(S)  M.Fassbender, Yu.N.Shubin, S.M.Qaim
+#REF-CODE   (J,RCA,84,59,1999)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.84, p.59, 1999
+#DATASETS   25
+#
+#DATASET    O07280064
+#DATE       20000404
+#REACTION   17-CL-0(P,X)11-NA-24,CUM,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9001
+#PRODUCT    11-NA-24
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39001   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39001    2.0370+8 400000.0 2.2000-3 4.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.7600+8 400000.0 2.0000-3 3.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.6920+8 400000.0 1.7000-3 3.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.6130+8 400000.0 1.8000-3 3.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.5440+8 400000.0 1.5000-3 3.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.4800+8 500000.0 1.5000-3 3.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.4250+8 500000.0 1.3000-3 2.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.2240+8 500000.0 1.4000-3 2.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.1560+8 600000.0 1.3000-3 2.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.1220+8 600000.0 1.4000-3 2.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    1.0070+8 600000.0 1.1000-3 2.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    9.3600+7 600000.0 1.3000-3 3.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    8.8900+7 600000.0 5.0000-4 1.0000-4           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    8.1700+7 600000.0 3.0000-4 4.0000-5           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+ 1001 17000   39001    6.4000+7 800000.0 2.0000-6 5.0000-7           11024.9                     M.FASSBENDER,ET.AL. (99) O0728  64
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0728
+#AUTHOR1    M.Fassbender+
+#YEAR       1999
+#INSTITUTE  (2GERJUL)
+#TITLE      Formation of Activation Products in Interactions of
+#+          Medium Energy Protons with Na, Si, P, Cl, Ca and Fe.
+#AUTHOR(S)  M.Fassbender, Yu.N.Shubin, S.M.Qaim
+#REF-CODE   (J,RCA,84,59,1999)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.84, p.59, 1999
+#DATASETS   25
+#
+#DATASET    O07280062
+#DATE       20000404
+#REACTION   17-CL-0(P,X)11-NA-22,CUM,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9001
+#PRODUCT    11-NA-22
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39001   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39001    2.4660+8 300000.0 4.4000-3 8.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.7600+8 400000.0 2.3000-3 4.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.6920+8 400000.0 2.2000-3 4.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.6130+8 400000.0 2.2000-3 4.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.5440+8 400000.0 2.1000-3 4.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.4250+8 500000.0 2.2000-3 4.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.1560+8 600000.0 1.7000-3 3.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.1100+8 600000.0 1.6000-3 3.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    1.0070+8 600000.0 1.3000-3 3.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    9.3600+7 600000.0 1.3000-3 3.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    8.1700+7 600000.0 6.0000-4 1.0000-4           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+ 1001 17000   39001    6.4000+7 800000.0 2.4000-4 3.0000-5           11022.9                     M.FASSBENDER,ET.AL. (99) O0728  62
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0412
+#AUTHOR1    R.G.Korteling+
+#YEAR       1967
+#INSTITUTE  (1USACAR)
+#TITLE      Systematics of Na-24 and Na-22 Production with 400 MeV
+#+          Protons.
+#AUTHOR(S)  R.G.Korteling, A.A.Caretto
+#REF-CODE   (J,JIN,29,2863,1967)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.29, p.2863, 1967
+#DATASETS   70
+#
+#DATASET    O0412007
+#DATE       20020902
+#REACTION   17-CL-0(P,X)11-NA-24-G,CUM,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9001
+#PRODUCT    11-NA-24-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39001G  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39001G   4.0000+8 500000.0 4.1400-3 1.2000-4           11024.0                     R.G.KORTELING,ET.AL. (67)O0412  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0412
+#AUTHOR1    R.G.Korteling+
+#YEAR       1967
+#INSTITUTE  (1USACAR)
+#TITLE      Systematics of Na-24 and Na-22 Production with 400 MeV
+#+          Protons.
+#AUTHOR(S)  R.G.Korteling, A.A.Caretto
+#REF-CODE   (J,JIN,29,2863,1967)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.29, p.2863, 1967
+#DATASETS   70
+#
+#DATASET    O0412043
+#DATE       20020902
+#REACTION   17-CL-0(P,X)11-NA-22,CUM,SIG
+#PROJ       1001
+#TARG       17000
+#MF         3
+#MT         9001
+#PRODUCT    11-NA-22
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   39001   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   39001    4.0000+8 500000.0 4.8800-3 1.9000-4           11022.9                     R.G.KORTELING,ET.AL. (67)O0412 43
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0102
+#AUTHOR1    I.Bogdanovic+
+#YEAR       1993
+#INSTITUTE  (3CRORBZ)
+#TITLE      Proton elastic scattering from fluorine, chlorine,
+#+          zinc, selenium and bromine in the energy region
+#+          from 2.5 to 4.8 MeV
+#AUTHOR(S)  I.Bogdanovic, S.Fazinic, M.Jaksic,
+#+          T.Tadic, O.Valkovic, V.Valkovic
+#REF-CODE   (J,NIM/B,79,524,1993)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.79, p.524, 1993
+#DATASETS   5
+#
+#DATASET    D0102003
+#DATE       20040205
+#REACTION   17-CL-0(P,EL)17-CL-0,,DA,,RTH
+#PROJ       1001
+#TARG       17000
+#MF         4
+#MT         2
+#PRODUCT    17-CL-0
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 17000   4   2   ]
+#DATA       22
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 17000   4   2    2499400.          0.065827         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    2601000.          0.066674         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    2900000.          0.052377         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    2998800.          0.086032         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3098400.          0.054202         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3194700.          0.049584         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3293300.          0.074378         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3392900.          0.049012         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3496100.          0.068078         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3596900.          0.059003         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3698400.          0.057930         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3800000.          0.056879         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    3902500.          0.065817 5.0019-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4002000.          0.046090         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4106000.          0.066757 5.1523-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4207500.          0.065214 5.5201-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4306000.          0.040403         -0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4402200.          0.072106 5.6028-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4506300.          0.054727 4.8207-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4601300.          0.074903 6.1541-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4703200.          0.075948 6.3889-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+ 1001 17000   4   2    4796500.          0.053052 4.2477-3-0.866027                              I.Bogdanovic,ET.AL. (93) D0102  3
+#/DATA      22
+#/DATASET
+#/ENTRY
+#
+#

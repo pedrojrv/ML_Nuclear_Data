@@ -1,0 +1,2213 @@
+#ENTRY      C2303
+#AUTHOR1    T.T.Sugihara+
+#YEAR       1957
+#INSTITUTE  (1USACLK)
+#TITLE      Fission Yields of Natural Uranium with Deuterons of 5,
+#+          10, and 13.6 MeV: Deuteron Capture and Competition
+#+          with Stripping
+#AUTHOR(S)  T.T.Sugihara, P.J.Drevinsky, E.J.Troianello,
+#+          J.M.Alexander
+#REF-CODE   (J,PR,108,1264,1957)
+#REFERENCE  Jour. Physical Review
+#+          Vol.108, p.1264, 1957
+#DATASETS   2
+#
+#DATASET    C2303004
+#DATE       20180605
+#REACTION   92-U-238(D,F),PR,NU,,,DERIV
+#PROJ       1002
+#TARG       92238
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   1 456 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   1 456 D  5000000.          3.500000                                                T.T.Sugihara,ET.AL. (57) C2303  4
+ 1002 92238   1 456 D  1.0000+7          5.000000                                                T.T.Sugihara,ET.AL. (57) C2303  4
+ 1002 92238   1 456 D  1.3600+7          5.000000                                                T.T.Sugihara,ET.AL. (57) C2303  4
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0570
+#AUTHOR1    G.R.Choppin+
+#YEAR       1971
+#INSTITUTE  (1USAFSU)
+#TITLE      Charged particle fission of U-238.
+#AUTHOR(S)  G.R.Choppin, Abdel-Halim T.Kandil
+#REF-CODE   (J,JIN,33,897,1971)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.33, p.897, 1971
+#DATASETS   9
+#
+#DATASET    O0570031
+#DATE       20190304
+#REACTION   92-U-238(D,N)93-NP-239,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         4
+#PRODUCT    93-NP-239
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3   4   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3   4    1.0600+7          0.124000 7.6000-3                                       G.R.Choppin,ET.AL. (71)  O0570 31
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0719
+#AUTHOR1    R.M.Lessler+
+#YEAR       1966
+#INSTITUTE  (1USABRK)
+#TITLE      Radiative capture, particle emission and fission in
+#+          heavy nuclei
+#AUTHOR(S)  R.M.Lessler, W.M.Gibson, R.A.Glass
+#REF-CODE   (J,NP,81,401,1966)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.81, p.401, 1966
+#DATASETS   19
+#
+#DATASET    C0719013
+#DATE       20000803
+#REACTION   92-U-238(D,2N)93-NP-238,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         16
+#PRODUCT    93-NP-238
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  16   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  16    8130000.          2.7000-3                                                R.M.LESSLER,ET.AL. (66)  C0719 13
+ 1002 92238   3  16    1.1800+7          0.048100                                                R.M.LESSLER,ET.AL. (66)  C0719 13
+ 1002 92238   3  16    1.5800+7          0.040300                                                R.M.LESSLER,ET.AL. (66)  C0719 13
+ 1002 92238   3  16    2.2400+7          0.033200                                                R.M.LESSLER,ET.AL. (66)  C0719 13
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0177
+#AUTHOR1    B.Ya.Guzhovskii+
+#YEAR       1994
+#INSTITUTE  (4RUSEPA)
+#TITLE      Cross-Section Activation Measurement For U-238
+#+          Through Protons and Deuterons in Energy Interval
+#+          10-14 MeV.
+#AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
+#+          V.S.Rudnev, S.V.Trusillo
+#REF-CODE   (C,94GATLIN,,390,1994)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
+#+          p.390, 1994
+#DATASETS   4
+#
+#DATASET    O0177004
+#DATE       20001104
+#REACTION   92-U-238(D,2N)93-NP-238,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         16
+#PRODUCT    93-NP-238
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  16   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  16    1.0000+7          0.025800 2.5800-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
+ 1002 92238   3  16    1.0980+7          0.047000 4.7000-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
+ 1002 92238   3  16    1.1970+7          0.057500 5.7500-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
+ 1002 92238   3  16    1.3000+7          0.051000 5.1000-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0570
+#AUTHOR1    G.R.Choppin+
+#YEAR       1971
+#INSTITUTE  (1USAFSU)
+#TITLE      Charged particle fission of U-238.
+#AUTHOR(S)  G.R.Choppin, Abdel-Halim T.Kandil
+#REF-CODE   (J,JIN,33,897,1971)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.33, p.897, 1971
+#DATASETS   9
+#
+#DATASET    O0570032
+#DATE       20190304
+#REACTION   92-U-238(D,2N)93-NP-238,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         16
+#PRODUCT    93-NP-238
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  16    1.0600+7          0.042100 2.5260-3                                       G.R.Choppin,ET.AL. (71)  O0570 32
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0709
+#AUTHOR1    J.Wing+
+#YEAR       1959
+#INSTITUTE  (1USAANL)
+#TITLE      Excitation Functions of U235 and U238 Bombarded with
+#+          Helium and Deuterium Ions
+#AUTHOR(S)  J.Wing, W.J.Ramler, A.L.Harkness,
+#+          J.R.Huizenga
+#REF-CODE   (J,PR,114,163,195904)
+#REFERENCE  Jour. Physical Review
+#+          Vol.114, p.163, 1959
+#DATASETS   14
+#
+#DATASET    C0709007
+#DATE       20000801
+#REACTION   92-U-238(D,2N)93-NP-238,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         16
+#PRODUCT    93-NP-238
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  16   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  16    1.9200+7          0.067500                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.8400+7          0.050900                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.7600+7          0.050800                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.6700+7          0.045300                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.5700+7          0.056000                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.4900+7          0.063200                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.2800+7          0.069200                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    1.0500+7          0.040600                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    7500000.          9.3000-4                                                J.WING,ET.AL. (59)       C0709  7
+ 1002 92238   3  16    5800000.          2.6000-4                                                J.WING,ET.AL. (59)       C0709  7
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2303
+#AUTHOR1    T.T.Sugihara+
+#YEAR       1957
+#INSTITUTE  (1USACLK)
+#TITLE      Fission Yields of Natural Uranium with Deuterons of 5,
+#+          10, and 13.6 MeV: Deuteron Capture and Competition
+#+          with Stripping
+#AUTHOR(S)  T.T.Sugihara, P.J.Drevinsky, E.J.Troianello,
+#+          J.M.Alexander
+#REF-CODE   (J,PR,108,1264,1957)
+#REFERENCE  Jour. Physical Review
+#+          Vol.108, p.1264, 1957
+#DATASETS   2
+#
+#DATASET    C2303005
+#DATE       20180605
+#REACTION   92-U-238(D,F),,SIG,,,DERIV
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18 D  5000000.          3.5000-3                                                T.T.Sugihara,ET.AL. (57) C2303  5
+ 1002 92238   3  18 D  1.0000+7          0.086000                                                T.T.Sugihara,ET.AL. (57) C2303  5
+ 1002 92238   3  18 D  1.3600+7          0.430000 0.150000                                       T.T.Sugihara,ET.AL. (57) C2303  5
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0028
+#AUTHOR1    G.R.Choppin+
+#YEAR       1963
+#INSTITUTE  (1USAFSU)
+#TITLE      Low-Energy Charged-Particle-Induced Fission
+#AUTHOR(S)  G.R.Choppin, J.R.Meriwether, J.D.Fox
+#REF-CODE   (J,PR,131,2149,1963)
+#REFERENCE  Jour. Physical Review
+#+          Vol.131, p.2149, 1963
+#DATASETS   6
+#
+#DATASET    P0028005
+#DATE       20140205
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    5999000. 3000.000 2.6050-5                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    6417000. 3000.000 9.9790-5                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    6945000. 3000.000 3.1910-4                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    7418000. 3000.000 1.1260-3                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    8026000. 3000.000 3.2620-3                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    8524000. 3000.000 7.8940-3                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    8994000. 3000.000 0.017040                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    9545000. 3000.000 0.032770                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    1.0068+7 3000.000 0.054400                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    1.0591+7 3000.000 0.090300                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    1.1004+7 3000.000 0.142800                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    1.1581+7 3000.000 0.207800                                                G.R.Choppin,ET.AL. (63)  P0028  5
+ 1002 92238   3  18    1.2102+7 3000.000 0.283400                                                G.R.Choppin,ET.AL. (63)  P0028  5
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0570
+#AUTHOR1    G.R.Choppin+
+#YEAR       1971
+#INSTITUTE  (1USAFSU)
+#TITLE      Charged particle fission of U-238.
+#AUTHOR(S)  G.R.Choppin, Abdel-Halim T.Kandil
+#REF-CODE   (J,JIN,33,897,1971)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.33, p.897, 1971
+#DATASETS   9
+#
+#DATASET    O0570022
+#DATE       20190304
+#REACTION   92-U-238(D,F)53-I-132,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    53-I-132
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    1.0600+7          8.1800-4 1.2000-5           53132.9                     G.R.Choppin,ET.AL. (71)  O0570 22
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0570
+#AUTHOR1    G.R.Choppin+
+#YEAR       1971
+#INSTITUTE  (1USAFSU)
+#TITLE      Charged particle fission of U-238.
+#AUTHOR(S)  G.R.Choppin, Abdel-Halim T.Kandil
+#REF-CODE   (J,JIN,33,897,1971)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.33, p.897, 1971
+#DATASETS   9
+#
+#DATASET    O0570026
+#DATE       20190304
+#REACTION   92-U-238(D,F)57-LA-140,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    57-LA-140
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    1.0600+7          9.7600-4 1.3000-4           57140.9                     G.R.Choppin,ET.AL. (71)  O0570 26
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0570
+#AUTHOR1    G.R.Choppin+
+#YEAR       1971
+#INSTITUTE  (1USAFSU)
+#TITLE      Charged particle fission of U-238.
+#AUTHOR(S)  G.R.Choppin, Abdel-Halim T.Kandil
+#REF-CODE   (J,JIN,33,897,1971)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.33, p.897, 1971
+#DATASETS   9
+#
+#DATASET    O0570029
+#DATE       20190304
+#REACTION   92-U-238(D,F)58-CE-144,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    58-CE-144
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    1.0600+7          2.4700-3 4.0000-5           58144.9                     G.R.Choppin,ET.AL. (71)  O0570 29
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0569
+#AUTHOR1    J.L.Anderson+
+#YEAR       1968
+#INSTITUTE  (1USAFSU)
+#TITLE      Charge Distribution in the Fission of U-238.
+#AUTHOR(S)  J.L.Anderson, S.H.Freid, G.R.Choppin
+#REF-CODE   (J,JIN,30,3167,1968)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.30, p.3167, 1968
+#DATASETS   5
+#
+#DATASET    O0569021
+#DATE       19991103
+#REACTION   92-U-238(D,F)41-NB-96,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    41-NB-96
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    1.1500+7          5.7400-5 3.5000-6           41096.9                     J.L.ANDERSON,ET.AL. (68) O0569 21
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0569
+#AUTHOR1    J.L.Anderson+
+#YEAR       1968
+#INSTITUTE  (1USAFSU)
+#TITLE      Charge Distribution in the Fission of U-238.
+#AUTHOR(S)  J.L.Anderson, S.H.Freid, G.R.Choppin
+#REF-CODE   (J,JIN,30,3167,1968)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.30, p.3167, 1968
+#DATASETS   5
+#
+#DATASET    O0569041
+#DATE       19991103
+#REACTION   92-U-238(D,F)55-CS-134-M,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    55-CS-134-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18M   1.1500+7          1.0200-5                    55134.7                     J.L.ANDERSON,ET.AL. (68) O0569 41
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0370
+#AUTHOR1    P.C.Stevenson+
+#YEAR       1958
+#INSTITUTE  (1USALRL)
+#TITLE      FURTHER RADIOCHEMICAL STUDIES OF THE HIGH-ENERGY
+#+          FISSION PRODUCTS
+#AUTHOR(S)  P.C.Stevenson, H.G.Hicks, W.E.Nervik,
+#+          D.R.Nethaway
+#REF-CODE   (J,PR,111,886,58)
+#REFERENCE  Jour. Physical Review
+#+          Vol.111, p.886, 1958
+#DATASETS   2
+#
+#DATASET    C0370009
+#DATE       19871201
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    2.0000+7          1.030000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    5.0000+7          1.610000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    7.5000+7          1.130000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    1.0000+8          2.420000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    1.2500+8          2.450000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    1.5000+8          2.390000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    1.7000+8          2.480000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+ 1002 92238   3  18    1.9000+8          2.490000                                                P.C.STEVENSON,ET.AL. (58)C0370  9
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0046
+#AUTHOR1    M.Linder+
+#YEAR       1954
+#INSTITUTE  (1USALRL)
+#TITLE      Some Studies of the Products of the High-Energy
+#+          Fission Process
+#AUTHOR(S)  M.Linder, R.N.Osborne
+#REF-CODE   (J,PR,94,1323,195406)
+#REFERENCE  Jour. Physical Review
+#+          Vol.94, p.1323, 1954
+#DATASETS   30
+#
+#DATASET    P0046007
+#DATE       19830904
+#REACTION   92-U-238(D,F)40-ZR-97,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    40-ZR-97
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    2.9800+7          0.035100                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    5.0200+7          0.051000                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    8.1400+7          0.057500                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    1.0200+8          0.064700                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    1.0200+8          0.077700                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    1.4100+8          0.061100                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    1.4100+8          0.071900                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+ 1002 92238   3  18    1.9000+8          0.068600                    40097.9                     M.LINDER,ET.AL. (54)     P0046  7
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0046
+#AUTHOR1    M.Linder+
+#YEAR       1954
+#INSTITUTE  (1USALRL)
+#TITLE      Some Studies of the Products of the High-Energy
+#+          Fission Process
+#AUTHOR(S)  M.Linder, R.N.Osborne
+#REF-CODE   (J,PR,94,1323,195406)
+#REFERENCE  Jour. Physical Review
+#+          Vol.94, p.1323, 1954
+#DATASETS   30
+#
+#DATASET    P0046004
+#DATE       19830904
+#REACTION   92-U-238(D,F)56-BA-139,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    56-BA-139
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    3.0400+7          0.029100                    56139.9                     M.LINDER,ET.AL. (54)     P0046  4
+ 1002 92238   3  18    5.1000+7          0.039300                    56139.9                     M.LINDER,ET.AL. (54)     P0046  4
+ 1002 92238   3  18    8.1000+7          0.038600                    56139.9                     M.LINDER,ET.AL. (54)     P0046  4
+ 1002 92238   3  18    1.0200+8          0.050400                    56139.9                     M.LINDER,ET.AL. (54)     P0046  4
+ 1002 92238   3  18    1.4100+8          0.039900                    56139.9                     M.LINDER,ET.AL. (54)     P0046  4
+ 1002 92238   3  18    1.9200+8          0.038100                    56139.9                     M.LINDER,ET.AL. (54)     P0046  4
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0046
+#AUTHOR1    M.Linder+
+#YEAR       1954
+#INSTITUTE  (1USALRL)
+#TITLE      Some Studies of the Products of the High-Energy
+#+          Fission Process
+#AUTHOR(S)  M.Linder, R.N.Osborne
+#REF-CODE   (J,PR,94,1323,195406)
+#REFERENCE  Jour. Physical Review
+#+          Vol.94, p.1323, 1954
+#DATASETS   30
+#
+#DATASET    P0046010
+#DATE       19830904
+#REACTION   92-U-238(D,F)47-AG-111,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    47-AG-111
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    3.0400+7          0.015300                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+ 1002 92238   3  18    5.1200+7          0.031200                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+ 1002 92238   3  18    8.0000+7          0.060600                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+ 1002 92238   3  18    1.0000+8          0.058400                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+ 1002 92238   3  18    1.4100+8          0.075200                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+ 1002 92238   3  18    1.9000+8          0.078500                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+ 1002 92238   3  18    1.9000+8          0.076500                    47111.9                     M.LINDER,ET.AL. (54)     P0046 10
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0046
+#AUTHOR1    M.Linder+
+#YEAR       1954
+#INSTITUTE  (1USALRL)
+#TITLE      Some Studies of the Products of the High-Energy
+#+          Fission Process
+#AUTHOR(S)  M.Linder, R.N.Osborne
+#REF-CODE   (J,PR,94,1323,195406)
+#REFERENCE  Jour. Physical Review
+#+          Vol.94, p.1323, 1954
+#DATASETS   30
+#
+#DATASET    P0046022
+#DATE       19830904
+#REACTION   92-U-238(D,F)56-BA-131-G,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    56-BA-131-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18G  ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18G   4.9600+7          1.2000-5                    56131.0                     M.LINDER,ET.AL. (54)     P0046 22
+ 1002 92238   3  18G   1.0100+8          4.2000-5                    56131.0                     M.LINDER,ET.AL. (54)     P0046 22
+ 1002 92238   3  18G   1.5000+8          3.0600-4                    56131.0                     M.LINDER,ET.AL. (54)     P0046 22
+ 1002 92238   3  18G   1.8900+8          9.1200-4                    56131.0                     M.LINDER,ET.AL. (54)     P0046 22
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      P0046
+#AUTHOR1    M.Linder+
+#YEAR       1954
+#INSTITUTE  (1USALRL)
+#TITLE      Some Studies of the Products of the High-Energy
+#+          Fission Process
+#AUTHOR(S)  M.Linder, R.N.Osborne
+#REF-CODE   (J,PR,94,1323,195406)
+#REFERENCE  Jour. Physical Review
+#+          Vol.94, p.1323, 1954
+#DATASETS   30
+#
+#DATASET    P0046025
+#DATE       19830904
+#REACTION   92-U-238(D,F)28-NI-66,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    28-NI-66
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    5.0400+7          6.6000-5                    28066.9                     M.LINDER,ET.AL. (54)     P0046 25
+ 1002 92238   3  18    1.0000+8          4.8000-4                    28066.9                     M.LINDER,ET.AL. (54)     P0046 25
+ 1002 92238   3  18    1.5000+8          9.3000-4                    28066.9                     M.LINDER,ET.AL. (54)     P0046 25
+ 1002 92238   3  18    1.9100+8          1.3300-3                    28066.9                     M.LINDER,ET.AL. (54)     P0046 25
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      B0030
+#AUTHOR1    J.Gindler+
+#YEAR       1970
+#INSTITUTE  (2GERKFK)
+#TITLE      Fragment Angular Distributions in the Fission of Heavy
+#+          Nuclei by 103 MeV Helium Ions and 51.5 MeV Deuterons
+#AUTHOR(S)  J.Gindler, H.Muenzel, J.Buschmann,
+#+          G.Christaller, F.Michel, G.Rohde
+#REF-CODE   (J,NP/A,145,337,1970)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.145, p.337, 1970
+#DATASETS   11
+#
+#DATASET    B0030011
+#DATE       20011204
+#REACTION   92-U-238(D,F),,SIG,,,EXP
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    5.1500+7          2.600000                                                J.GINDLER,ET.AL. (70)    B0030 11
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0934
+#AUTHOR1    S.Stoulos+
+#YEAR       2012
+#INSTITUTE  (2GRCARU)
+#TITLE      Nuclear fission cross sections induced by deuterons of
+#+          4 GeV.
+#AUTHOR(S)  S.Stoulos, W.Westmeier, R.Hashemi-Nezhad,
+#+          M.Fragopoulou, A.Lagoyannis, M.Zamani
+#REF-CODE   (J,PR/C,85,024612,2012)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.85, p.024612, 2012
+#DATASETS   9
+#
+#DATASET    A09340031
+#DATE       20130102
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    4.0000+9          1.453000 0.350000                                       S.Stoulos,ET.AL. (12)    A0934  31
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0719
+#AUTHOR1    R.M.Lessler+
+#YEAR       1966
+#INSTITUTE  (1USABRK)
+#TITLE      Radiative capture, particle emission and fission in
+#+          heavy nuclei
+#AUTHOR(S)  R.M.Lessler, W.M.Gibson, R.A.Glass
+#REF-CODE   (J,NP,81,401,1966)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.81, p.401, 1966
+#DATASETS   19
+#
+#DATASET    C0719014
+#DATE       20000803
+#REACTION   92-U-238(D,4N)93-NP-236,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         37
+#PRODUCT    93-NP-236
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  37   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  37    1.6100+7          1.3800-3                                                R.M.LESSLER,ET.AL. (66)  C0719 14
+ 1002 92238   3  37    1.8300+7          3.1800-3                                                R.M.LESSLER,ET.AL. (66)  C0719 14
+ 1002 92238   3  37    1.9900+7          6.3000-3                                                R.M.LESSLER,ET.AL. (66)  C0719 14
+ 1002 92238   3  37    2.2400+7          0.027800                                                R.M.LESSLER,ET.AL. (66)  C0719 14
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0709
+#AUTHOR1    J.Wing+
+#YEAR       1959
+#INSTITUTE  (1USAANL)
+#TITLE      Excitation Functions of U235 and U238 Bombarded with
+#+          Helium and Deuterium Ions
+#AUTHOR(S)  J.Wing, W.J.Ramler, A.L.Harkness,
+#+          J.R.Huizenga
+#REF-CODE   (J,PR,114,163,195904)
+#REFERENCE  Jour. Physical Review
+#+          Vol.114, p.163, 1959
+#DATASETS   14
+#
+#DATASET    C0709008
+#DATE       20000801
+#REACTION   92-U-238(D,4N)93-NP-236-M,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         37
+#PRODUCT    93-NP-236-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  37M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  37M   2.1500+7          0.031500                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   2.0700+7          0.026200                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   2.0000+7          0.016200                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   1.9200+7          0.010300                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   1.8400+7          4.1000-3                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   1.7600+7          9.4000-4                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   1.6700+7          2.0000-4                                                J.WING,ET.AL. (59)       C0709  8
+ 1002 92238   3  37M   1.5700+7          1.4000-5                                                J.WING,ET.AL. (59)       C0709  8
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1064
+#AUTHOR1    L.F.Bellido+
+#YEAR       1993
+#INSTITUTE  (2UK MAN)
+#TITLE      Excitation functions for the U-235,238(d,xn)Np-237,240
+#+          reactions.
+#AUTHOR(S)  L.F.Bellido, V.J.Robinson, H.E.Sims
+#REF-CODE   (J,RCA,62,123,1993)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.62, p.123, 1993
+#DATASETS   4
+#
+#DATASET    O1064005
+#DATE       20040504
+#REACTION   92-U-238(D,4N)93-NP-236-M,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         37
+#PRODUCT    93-NP-236-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  37M  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  37M   2.1700+7 500000.0 0.036000 2.0000-3                                       L.F.Bellido,ET.AL. (93)  O1064  5
+ 1002 92238   3  37M   2.4800+7 500000.0 0.053000 3.0000-3                                       L.F.Bellido,ET.AL. (93)  O1064  5
+ 1002 92238   3  37M   2.7700+7 400000.0 0.056000 3.0000-3                                       L.F.Bellido,ET.AL. (93)  O1064  5
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1113
+#AUTHOR1    K.L.Gippert+
+#YEAR       1982
+#INSTITUTE  (2GERGOE)
+#TITLE      Radiative capture of deuterons in Sm-154 and U-238.
+#AUTHOR(S)  K.L.Gippert, W.D.Schmidt-Ott
+#REF-CODE   (J,ZP/A,306,367,1982)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.306, p.367, 1982
+#DATASETS   2
+#
+#DATASET    O1113003
+#DATE       20040306
+#REACTION   92-U-238(D,G)93-NP-240,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         102
+#PRODUCT    93-NP-240
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1002 92238   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 102    1.9700+7          9.4000-6                                                K.L.Gippert,ET.AL. (82)  O1113  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0709
+#AUTHOR1    J.Wing+
+#YEAR       1959
+#INSTITUTE  (1USAANL)
+#TITLE      Excitation Functions of U235 and U238 Bombarded with
+#+          Helium and Deuterium Ions
+#AUTHOR(S)  J.Wing, W.J.Ramler, A.L.Harkness,
+#+          J.R.Huizenga
+#REF-CODE   (J,PR,114,163,195904)
+#REFERENCE  Jour. Physical Review
+#+          Vol.114, p.163, 1959
+#DATASETS   14
+#
+#DATASET    C0709005
+#DATE       20000801
+#REACTION   92-U-238(D,P)92-U-239,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         103
+#PRODUCT    92-U-239
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3 103   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 103    2.1500+7          0.132000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.9200+7          0.160000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.8900+7          0.165000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.7200+7          0.239000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.6900+7          0.217000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.5000+7          0.178000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.3100+7          0.184000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.2600+7          0.192000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.1600+7          0.085000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    1.0900+7          0.050000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    9900000.          0.022000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    9600000.          0.021000                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    8900000.          3.8000-3                                                J.WING,ET.AL. (59)       C0709  5
+ 1002 92238   3 103    8100000.          7.8000-4                                                J.WING,ET.AL. (59)       C0709  5
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0177
+#AUTHOR1    B.Ya.Guzhovskii+
+#YEAR       1994
+#INSTITUTE  (4RUSEPA)
+#TITLE      Cross-Section Activation Measurement For U-238
+#+          Through Protons and Deuterons in Energy Interval
+#+          10-14 MeV.
+#AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
+#+          V.S.Rudnev, S.V.Trusillo
+#REF-CODE   (C,94GATLIN,,390,1994)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
+#+          p.390, 1994
+#DATASETS   4
+#
+#DATASET    O0177005
+#DATE       20001104
+#REACTION   92-U-238(D,T)92-U-237,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         105
+#PRODUCT    92-U-237
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3 105   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 105    1.0000+7          6.6000-3 6.6000-4                                       B.YA.GUZHOVSKII, (94)    O0177  5
+ 1002 92238   3 105    1.0980+7          0.016400 1.6400-3                                       B.YA.GUZHOVSKII, (94)    O0177  5
+ 1002 92238   3 105    1.1970+7          0.027300 2.7300-3                                       B.YA.GUZHOVSKII, (94)    O0177  5
+ 1002 92238   3 105    1.3000+7          0.033500 3.3500-3                                       B.YA.GUZHOVSKII, (94)    O0177  5
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1064
+#AUTHOR1    L.F.Bellido+
+#YEAR       1993
+#INSTITUTE  (2UK MAN)
+#TITLE      Excitation functions for the U-235,238(d,xn)Np-237,240
+#+          reactions.
+#AUTHOR(S)  L.F.Bellido, V.J.Robinson, H.E.Sims
+#REF-CODE   (J,RCA,62,123,1993)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.62, p.123, 1993
+#DATASETS   4
+#
+#DATASET    O1064004
+#DATE       20040504
+#REACTION   92-U-238(D,5N)93-NP-235,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         152
+#PRODUCT    93-NP-235
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3 152   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 152    2.1700+7 500000.0 3.5000-5 2.0000-6                                       L.F.Bellido,ET.AL. (93)  O1064  4
+ 1002 92238   3 152    2.4800+7 500000.0 3.7000-4 2.0000-5                                       L.F.Bellido,ET.AL. (93)  O1064  4
+ 1002 92238   3 152    2.7700+7 400000.0 5.3000-3 3.0000-4                                       L.F.Bellido,ET.AL. (93)  O1064  4
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2034
+#AUTHOR1    R.Repnow+
+#YEAR       1970
+#INSTITUTE  (2GERMPH)
+#TITLE      Evidence for a direct reaction mechanism in the
+#+          production of fission isomers.
+#AUTHOR(S)  R.Repnow, V.Metag, J.D.Fox,
+#+          P.Von Brentano
+#REF-CODE   (J,NP/A,147,183,1970)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.147, p.183, 1970
+#DATASETS   3
+#
+#DATASET    O2034004
+#DATE       20170806
+#REACTION   92-U-238(D,X)92-U-238-L,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    92-U-238-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39000L  ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39000L   1.1000+7          7.9030-8 2.1980-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+ 1002 92238   39000L   1.2010+7          5.9550-8 1.6420-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+ 1002 92238   39000L   1.2950+7          2.3010-7 4.7080-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+ 1002 92238   39000L   1.3990+7          3.4060-7 4.8890-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+ 1002 92238   39000L   1.5880+7          4.9130-7 6.1700-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+ 1002 92238   39000L   1.7920+7          6.5860-7 8.3940-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+ 1002 92238   39000L   1.9960+7          8.0020-7 7.9300-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C0709
+#AUTHOR1    J.Wing+
+#YEAR       1959
+#INSTITUTE  (1USAANL)
+#TITLE      Excitation Functions of U235 and U238 Bombarded with
+#+          Helium and Deuterium Ions
+#AUTHOR(S)  J.Wing, W.J.Ramler, A.L.Harkness,
+#+          J.R.Huizenga
+#REF-CODE   (J,PR,114,163,195904)
+#REFERENCE  Jour. Physical Review
+#+          Vol.114, p.163, 1959
+#DATASETS   14
+#
+#DATASET    C0709006
+#DATE       20000801
+#REACTION   92-U-238(D,X)92-U-237,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    92-U-237
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39000   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39000    2.1500+7          0.097000                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    2.0700+7          0.100000                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    2.0000+7          0.092000                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.9200+7          0.072000                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.8400+7          0.066600                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.7600+7          0.067800                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.6700+7          0.066700                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.5700+7          0.064000                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.4900+7          0.065000                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.3900+7          0.049700                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.2800+7          0.042700                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.1600+7          0.028100                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    1.0500+7          0.010900                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+ 1002 92238   39000    9100000.          4.5000-3                    92237.9                     J.WING,ET.AL. (59)       C0709  6
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0489
+#AUTHOR1    D.Ridikas+
+#YEAR       2000
+#INSTITUTE  (2FR GAN)
+#TITLE      Inclusive proton production cross sections in (d,xp)
+#+          reactions induced by 100 MeV deuterons
+#AUTHOR(S)  D.Ridikas, W.Mittig, H.Savajols,
+#+          P.Roussel-Chomaz, S.V.Foertsch, J.J.Lawrie,
+#+          G.F.Steyn
+#REF-CODE   (J,PR/C,63,014610,2000)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.63, p.014610, 2000
+#DATASETS   16
+#
+#DATASET    D0489009
+#DATE       20131003
+#REACTION   92-U-238(D,X)1-H-1,PAR,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    1-H-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39000    9.9600+7 1000000. 1.641000 0.820500            1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0177
+#AUTHOR1    B.Ya.Guzhovskii+
+#YEAR       1994
+#INSTITUTE  (4RUSEPA)
+#TITLE      Cross-Section Activation Measurement For U-238
+#+          Through Protons and Deuterons in Energy Interval
+#+          10-14 MeV.
+#AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
+#+          V.S.Rudnev, S.V.Trusillo
+#REF-CODE   (C,94GATLIN,,390,1994)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
+#+          p.390, 1994
+#DATASETS   4
+#
+#DATASET    O0177003
+#DATE       20001104
+#REACTION   (92-U-238(D,X)93-NP-239,CUM,SIG)=((92-U-238(D,N)93-NP-239,,SIG)+(92-U-238(D,P)92-U-239,,SIG))
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9001
+#PRODUCT    92-U-239;93-NP-239
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39001   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39001    1.0000+7          0.085600 8.5600-3           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
+ 1002 92238   39001    1.0980+7          0.137500 0.013750           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
+ 1002 92238   39001    1.1970+7          0.190000 0.019000           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
+ 1002 92238   39001    1.3000+7          0.182000 0.018200           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0570
+#AUTHOR1    G.R.Choppin+
+#YEAR       1971
+#INSTITUTE  (1USAFSU)
+#TITLE      Charged particle fission of U-238.
+#AUTHOR(S)  G.R.Choppin, Abdel-Halim T.Kandil
+#REF-CODE   (J,JIN,33,897,1971)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.33, p.897, 1971
+#DATASETS   9
+#
+#DATASET    O0570033
+#DATE       20190304
+#REACTION   92-U-238(D,X)92-U-237,CUM,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9001
+#PRODUCT    92-U-237
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39001   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39001    1.0600+7          9.5200-3 1.6000-3           92237.9                     G.R.Choppin,ET.AL. (71)  O0570 33
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0225
+#AUTHOR1    F.Hinterberger+
+#YEAR       1968
+#INSTITUTE  (2GERBON)
+#TITLE      Elastic scattering of 52 MeV deuterons
+#AUTHOR(S)  F.Hinterberger, G.Mairle, U.Schmidt-Rohr,
+#+          G.J.Wagner, P.Turek
+#REF-CODE   (J,NP/A,111,265,1968)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.111, p.265, 1968
+#DATASETS   54
+#
+#DATASET    D02250281
+#DATE       20151004
+#REACTION   92-U-238(D,EL)92-U-238,,DA
+#PROJ       1002
+#TARG       92238
+#MF         4
+#MT         2
+#PRODUCT    92-U-238
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 92238   4   2  C]
+#DATA       59
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   4   2  C 5.2000+7          15.60000          0.973976                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          10.70000          0.969872                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          8.120000          0.965473                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          6.000000          0.960779                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          4.320000          0.955793                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          2.860000          0.950516                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.900000          0.944376                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.240000          0.938493                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.915000          0.932324                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.711000          0.925870                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.612000          0.919135                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.507000          0.912120                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.402000          0.904827                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.314000          0.897258                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.250000          0.889416                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.185000          0.881303                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.134000          0.872922                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.121000          0.864274                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.106000          0.855364                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.086900          0.845261                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.071200          0.835807                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.055000          0.826098                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.043500          0.816137                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.032500          0.805928                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.026400          0.795473                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.022000          0.784776                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.020700          0.773840                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.019500          0.762668                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.018800          0.751263                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.017600          0.739630                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.016100          0.727772                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          0.012300          0.715692                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          9.5400-3          0.703394                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          8.0200-3          0.690882                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          5.9300-3          0.676875                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          4.7100-3          0.663925                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          4.2700-3          0.650773                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          3.6600-3          0.637423                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          3.7900-3          0.623879                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          4.0800-3          0.610144                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          3.4500-3          0.582122                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          2.5300-3          0.553390                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.6800-3          0.523985                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.1600-3          0.493941                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          9.5400-4          0.463295                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          9.6600-4          0.432084                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          7.8100-4          0.400348                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          5.5000-4          0.368123                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          4.3200-4          0.333805                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          3.5500-4          0.300704                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          3.2100-4          0.267237                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          2.6400-4          0.233444                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          2.2300-4          0.199366                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.7200-4          0.165046                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.6700-4          0.130524                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.4600-4          0.095844                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          1.1300-4          0.061046                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          9.9300-5          0.026175                              F.Hinterberger, (68)     D0225 281
+ 1002 92238   4   2  C 5.2000+7          7.5900-5         -8.7288-3                              F.Hinterberger, (68)     D0225 281
+#/DATA      59
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0225
+#AUTHOR1    F.Hinterberger+
+#YEAR       1968
+#INSTITUTE  (2GERBON)
+#TITLE      Elastic scattering of 52 MeV deuterons
+#AUTHOR(S)  F.Hinterberger, G.Mairle, U.Schmidt-Rohr,
+#+          G.J.Wagner, P.Turek
+#REF-CODE   (J,NP/A,111,265,1968)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.111, p.265, 1968
+#DATASETS   54
+#
+#DATASET    D02250282
+#DATE       20151004
+#REACTION   92-U-238(D,EL)92-U-238,,DA,,RTH
+#PROJ       1002
+#TARG       92238
+#MF         4
+#MT         2
+#PRODUCT    92-U-238
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   4   2  C]
+#DATA       59
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   4   2  C 5.2000+7          15.61842          0.973976                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          10.74424          0.969872                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          8.125290          0.965473                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          5.996621          0.960779                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          4.323312          0.955793                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          2.864061          0.950516                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.898715          0.944376                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.238789          0.938493                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.915146          0.932324                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.711697          0.925870                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.613220          0.919135                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.506404          0.912120                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.402618          0.904827                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.314218          0.897258                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.249642          0.889416                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.185059          0.881303                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.133863          0.872922                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.120932          0.864274                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.105702          0.855364                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.086837          0.845261                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.071003          0.835807                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.055111          0.826098                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.043493          0.816137                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.032465          0.805928                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.026430          0.795473                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.021945          0.784776                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.020712          0.773840                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.019512          0.762668                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.018777          0.751263                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.017599          0.739630                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.016077          0.727772                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          0.012310          0.715692                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          9.5475-3          0.703394                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          8.0131-3          0.690882                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          5.9268-3          0.676875                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          4.7045-3          0.663925                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          4.2757-3          0.650773                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          3.6528-3          0.637423                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          3.7910-3          0.623879                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          4.0824-3          0.610144                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          3.4492-3          0.582122                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          2.5316-3          0.553390                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.6823-3          0.523985                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.1598-3          0.493941                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          9.5670-4          0.463295                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          9.6700-4          0.432084                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          7.8015-4          0.400348                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          5.4969-4          0.368123                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          4.3131-4          0.333805                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          3.5432-4          0.300704                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          3.2270-4          0.267237                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          2.6426-4          0.233444                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          2.2268-4          0.199366                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.7161-4          0.165046                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.6677-4          0.130524                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.4594-4          0.095844                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          1.1305-4          0.061046                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          9.9358-5          0.026175                              F.Hinterberger, (68)     D0225 282
+ 1002 92238   4   2  C 5.2000+7          7.5898-5         -8.7288-3                              F.Hinterberger, (68)     D0225 282
+#/DATA      59
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0489
+#AUTHOR1    D.Ridikas+
+#YEAR       2000
+#INSTITUTE  (2FR GAN)
+#TITLE      Inclusive proton production cross sections in (d,xp)
+#+          reactions induced by 100 MeV deuterons
+#AUTHOR(S)  D.Ridikas, W.Mittig, H.Savajols,
+#+          P.Roussel-Chomaz, S.V.Foertsch, J.J.Lawrie,
+#+          G.F.Steyn
+#REF-CODE   (J,PR/C,63,014610,2000)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.63, p.014610, 2000
+#DATASETS   16
+#
+#DATASET    D0489017
+#DATE       20131003
+#REACTION   92-U-238(D,X)1-H-1,,DA/DE
+#PROJ       1002
+#TARG       92238
+#MF         6
+#MT         9000
+#PRODUCT    1-H-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   69000   ]
+#DATA       682
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   69000    9.9600+7 1000000. 2.5497-9 2.629-10 0.990268   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.8791-9 2.429-10 0.990268   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1713-9 2.549-10 0.990268   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.3238-9 2.976-10 0.990268   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.9974-9 2.862-10 0.990268   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.8065-9 2.905-10 0.990268   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.2620-9 3.283-10 0.990268   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.9499-9 3.491-10 0.990268   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.9292-9 3.768-10 0.990268   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.7294-9 3.446-10 0.990268   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2483-8 5.540-10 0.990268   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4594-8 5.468-10 0.990268   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4378-8 6.543-10 0.990268   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.4439-8 8.400-10 0.990268   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.0369-8 1.0160-9 0.990268   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.2059-8 1.1277-9 0.990268   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.5156-8 1.2410-9 0.990268   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.6319-8 1.3007-9 0.990268   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1679-7 1.5470-9 0.990268   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2987-7 1.6314-9 0.990268   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4389-7 1.5898-9 0.990268   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5598-7 1.7879-9 0.990268   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5447-7 1.6472-9 0.990268   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4665-7 1.8990-9 0.990268   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3412-7 1.6578-9 0.990268   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1789-7 1.5543-9 0.990268   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.3713-8 1.2830-9 0.990268   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.3715-8 1.2291-9 0.990268   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.5434-8 1.0658-9 0.990268   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.3429-8 8.734-10 0.990268   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.0509-8 7.907-10 0.990268   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.6659-8 7.391-10 0.990268   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9407-8 6.306-10 0.990268   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5220-8 5.584-10 0.990268   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.1833-9 4.016-10 0.990268   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4812-8 5.100-10 0.990268   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5718-8 5.675-10 0.990268   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.3978-9 3.893-10 0.990268   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.3732-9 3.613-10 0.990268   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.7626-9 3.446-10 0.990268   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.0495-9 3.800-10 0.990268   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.9470-9 3.773-10 0.990268   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0024-9 1.875-10 0.990268   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6804-9 1.855-10 0.990268   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.631-10 1.404-10 0.990268   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.229-10 8.694-11 0.990268   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2131-9 1.456-10 0.984808   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3748-9 1.484-10 0.984808   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.8973-9 1.898-10 0.984808   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.0411-9 1.566-10 0.984808   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2186-9 1.611-10 0.984808   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.0011-9 1.796-10 0.984808   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6533-9 1.793-10 0.984808   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.0417-9 2.016-10 0.984808   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.3805-9 2.083-10 0.984808   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.9774-9 2.195-10 0.984808   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.1995-9 2.087-10 0.984808   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.5743-9 3.044-10 0.984808   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0910-8 2.966-10 0.984808   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4872-8 3.206-10 0.984808   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.1350-8 4.150-10 0.984808   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.8641-8 4.806-10 0.984808   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.6603-8 5.433-10 0.984808   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.7134-8 6.166-10 0.984808   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.1072-8 6.498-10 0.984808   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.6549-8 7.858-10 0.984808   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.9335-8 8.489-10 0.984808   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.9989-8 8.314-10 0.984808   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0316-7 9.122-10 0.984808   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0406-7 8.482-10 0.984808   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.8066-8 9.743-10 0.984808   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.6163-8 8.337-10 0.984808   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.5366-8 7.797-10 0.984808   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.1137-8 6.501-10 0.984808   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6747-8 6.140-10 0.984808   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.5455-8 5.347-10 0.984808   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.7485-8 4.359-10 0.984808   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0097-8 4.026-10 0.984808   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4878-8 3.464-10 0.984808   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2647-8 3.194-10 0.984808   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0144-8 2.860-10 0.984808   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.0806-9 2.363-10 0.984808   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.7501-9 2.459-10 0.984808   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.3006-9 2.587-10 0.984808   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.1788-9 2.043-10 0.984808   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.0979-9 1.818-10 0.984808   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.7960-9 1.620-10 0.984808   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.3721-9 1.878-10 0.984808   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1944-9 1.605-10 0.984808   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3690-9 9.729-11 0.984808   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4439-9 1.079-10 0.984808   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.646-10 6.749-11 0.984808   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.066-11 3.607-11 0.984808   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.840-11 4.840-11 0.984808   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2131-9 1.456-10 0.965926   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3748-9 1.484-10 0.965926   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.0043-9 1.145-10 0.965926   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2993-9 1.199-10 0.965926   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.5202-9 1.239-10 0.965926   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.8292-9 1.196-10 0.965926   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.2505-9 1.361-10 0.965926   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.0001-9 1.477-10 0.965926   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.1084-9 1.493-10 0.965926   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.7541-9 1.372-10 0.965926   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.1749-9 1.798-10 0.965926   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.0246-9 1.750-10 0.965926   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.6178-9 3.000-10 0.965926   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0371-8 3.555-10 0.965926   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3966-8 4.125-10 0.965926   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7756-8 4.651-10 0.965926   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2485-8 5.234-10 0.965926   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.9311-8 5.533-10 0.965926   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.7060-8 6.720-10 0.965926   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.2922-8 7.232-10 0.965926   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.8197-8 7.095-10 0.965926   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.0600-8 7.852-10 0.965926   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.8176-8 7.093-10 0.965926   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6607-8 8.255-10 0.965926   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.0619-8 7.035-10 0.965926   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.6183-8 6.640-10 0.965926   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.9948-8 5.593-10 0.965926   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5324-8 5.555-10 0.965926   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.1205-8 5.083-10 0.965926   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6619-8 4.166-10 0.965926   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4173-8 4.156-10 0.965926   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1358-8 3.720-10 0.965926   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.5186-9 3.222-10 0.965926   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.0196-9 2.924-10 0.965926   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.7243-9 2.445-10 0.965926   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.7737-9 2.233-10 0.965926   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.2044-9 2.263-10 0.965926   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2782-9 1.998-10 0.965926   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3642-9 1.697-10 0.965926   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.1101-9 1.484-10 0.965926   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9011-9 1.522-10 0.965926   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6087-9 1.400-10 0.965926   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7340-9 1.345-10 0.965926   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.896-10 1.041-10 0.965926   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2552-9 1.236-10 0.965926   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4746-9 1.340-10 0.965926   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.559-10 9.673-11 0.965926   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8569-9 1.354-10 0.939692   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2248-9 1.470-10 0.939692   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.7639-9 1.739-10 0.939692   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.9690-9 1.780-10 0.939692   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.5885-9 1.957-10 0.939692   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.4420-9 1.775-10 0.939692   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.7935-9 2.204-10 0.939692   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.3666-9 1.999-10 0.939692   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.3254-9 2.149-10 0.939692   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.5497-9 2.204-10 0.939692   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.4041-9 2.402-10 0.939692   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.3613-9 2.392-10 0.939692   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.8419-9 2.497-10 0.939692   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.0060-9 2.735-10 0.939692   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.9031-9 2.905-10 0.939692   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.6760-9 3.214-10 0.939692   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2047-8 3.586-10 0.939692   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3127-8 3.466-10 0.939692   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7237-8 4.290-10 0.939692   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0130-8 4.292-10 0.939692   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0746-8 5.765-10 0.939692   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2364-8 4.524-10 0.939692   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.1998-8 4.487-10 0.939692   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0666-8 4.698-10 0.939692   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8818-8 4.483-10 0.939692   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6800-8 4.235-10 0.939692   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4841-8 4.361-10 0.939692   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1873-8 3.296-10 0.939692   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0573-8 3.360-10 0.939692   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.5684-9 2.800-10 0.939692   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.3307-9 3.065-10 0.939692   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.0796-9 2.206-10 0.939692   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.4642-9 2.183-10 0.939692   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.7679-9 2.197-10 0.939692   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1033-9 1.685-10 0.939692   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5418-9 1.647-10 0.939692   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8797-9 1.416-10 0.939692   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9117-9 1.428-10 0.939692   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5654-9 1.197-10 0.939692   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3670-9 1.208-10 0.939692   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.612-10 1.013-10 0.939692   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0146-9 1.041-10 0.939692   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.718-10 1.018-10 0.939692   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.126-10 8.105-11 0.939692   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.034-10 6.789-11 0.939692   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.520-10 9.335-11 0.939692   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.998-10 8.003-11 0.939692   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.408-11 6.408-11 0.939692   1001.9 1.0200+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7071-9 1.412-10 0.906308   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9500-9 1.551-10 0.906308   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4930-9 1.754-10 0.906308   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5917-9 1.788-10 0.906308   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1224-9 1.963-10 0.906308   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.3111-9 1.871-10 0.906308   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.5728-9 2.282-10 0.906308   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.1145-9 2.070-10 0.906308   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.0468-9 2.217-10 0.906308   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.7395-9 2.399-10 0.906308   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6787-9 2.384-10 0.906308   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6666-9 2.381-10 0.906308   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.2013-9 2.514-10 0.906308   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.9061-9 2.679-10 0.906308   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.8297-9 2.880-10 0.906308   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.7168-9 3.062-10 0.906308   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.6162-9 3.235-10 0.906308   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.3331-9 3.118-10 0.906308   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1144-8 3.680-10 0.906308   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2114-8 3.552-10 0.906308   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2232-8 4.721-10 0.906308   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3093-8 3.693-10 0.906308   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2229-8 3.569-10 0.906308   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2153-8 3.843-10 0.906308   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0731-8 3.611-10 0.906308   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.2116-9 3.345-10 0.906308   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.4873-9 3.518-10 0.906308   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.1665-9 2.732-10 0.906308   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.1856-9 2.741-10 0.906308   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.8957-9 2.258-10 0.906308   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.6749-9 2.315-10 0.906308   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.5364-9 1.795-10 0.906308   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.7586-9 1.831-10 0.906308   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2166-9 1.797-10 0.906308   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8333-9 1.381-10 0.906308   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4705-9 1.336-10 0.906308   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3003-9 1.257-10 0.906308   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0937-9 1.152-10 0.906308   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.708-10 8.960-11 0.906308   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.777-10 9.722-11 0.906308   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.562-10 8.930-11 0.906308   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.739-10 7.589-11 0.906308   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.982-10 7.781-11 0.906308   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.499-10 7.144-11 0.906308   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.291-10 4.885-11 0.906308   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.562-10 8.267-11 0.906308   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.187-10 6.314-11 0.906308   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5141-9 9.032-11 0.866025   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9039-9 1.127-10 0.866025   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4303-9 1.274-10 0.866025   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.6366-9 1.327-10 0.866025   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2241-9 1.467-10 0.866025   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.3125-9 1.377-10 0.866025   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.5240-9 1.534-10 0.866025   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.4905-9 1.527-10 0.866025   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.9164-9 1.607-10 0.866025   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.0006-9 1.407-10 0.866025   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.0511-9 1.791-10 0.866025   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.5765-9 1.737-10 0.866025   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6746-9 1.626-10 0.866025   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.9198-9 1.801-10 0.866025   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.3753-9 1.883-10 0.866025   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.9429-9 1.980-10 0.866025   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.4116-9 2.056-10 0.866025   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.6494-9 1.939-10 0.866025   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.9071-9 2.134-10 0.866025   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.3165-9 2.197-10 0.866025   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.5383-9 2.064-10 0.866025   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.9607-9 2.143-10 0.866025   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.4132-9 1.904-10 0.866025   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.3127-9 2.051-10 0.866025   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.4501-9 1.896-10 0.866025   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.6848-9 1.758-10 0.866025   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.7384-9 1.454-10 0.866025   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.3454-9 1.485-10 0.866025   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4810-9 1.279-10 0.866025   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3527-9 1.153-10 0.866025   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8541-9 1.106-10 0.866025   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5835-9 1.022-10 0.866025   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3262-9 9.354-11 0.866025   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1612-9 8.753-11 0.866025   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0180-9 7.588-11 0.866025   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.370-10 6.880-11 0.866025   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.279-10 5.902-11 0.866025   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.279-10 5.902-11 0.866025   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.213-10 5.865-11 0.866025   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.015-10 4.766-11 0.866025   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.233-10 4.619-11 0.866025   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.837-10 4.327-11 0.866025   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.149-10 3.486-11 0.866025   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.517-10 3.164-11 0.866025   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.761-10 4.982-11 0.866025   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.187-10 2.799-11 0.866025   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4417-9 9.063-11 0.766044   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6346-9 1.044-10 0.766044   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0667-9 1.174-10 0.766044   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3336-9 1.247-10 0.766044   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5871-9 1.313-10 0.766044   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.7091-9 1.244-10 0.766044   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.0409-9 1.424-10 0.766044   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.8141-9 1.370-10 0.766044   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1879-9 1.458-10 0.766044   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2164-9 1.268-10 0.766044   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.0494-9 1.562-10 0.766044   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1950-9 1.460-10 0.766044   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2247-9 1.358-10 0.766044   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2487-9 1.472-10 0.766044   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1954-9 1.460-10 0.766044   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2289-9 1.467-10 0.766044   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1689-9 1.454-10 0.766044   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1338-9 1.338-10 0.766044   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.2359-9 1.469-10 0.766044   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.3028-9 1.484-10 0.766044   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.9397-9 1.296-10 0.766044   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.1562-9 1.451-10 0.766044   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.8942-9 1.286-10 0.766044   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3863-9 1.382-10 0.766044   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0619-9 1.173-10 0.766044   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8284-9 1.104-10 0.766044   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5100-9 9.293-11 0.766044   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2612-9 9.173-11 0.766044   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0743-9 8.466-11 0.766044   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.094-10 7.212-11 0.766044   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.074-10 7.340-11 0.766044   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.806-10 6.739-11 0.766044   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.737-10 5.622-11 0.766044   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.604-10 5.542-11 0.766044   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.060-10 4.819-11 0.766044   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.203-10 4.280-11 0.766044   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.469-10 4.059-11 0.766044   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.335-10 3.947-11 0.766044   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.202-10 3.833-11 0.766044   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.429-10 2.859-11 0.766044   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.801-10 3.467-11 0.766044   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.006-11 2.648-11 0.766044   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.121-10 2.996-11 0.766044   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.008-11 3.002-11 0.766044   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.004-11 2.238-11 0.766044   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.003-11 2.831-11 0.766044   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3715-9 2.977-11 0.642787   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6188-9 3.208-11 0.642787   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9474-9 3.547-11 0.642787   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4221-9 4.088-11 0.642787   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5738-9 4.214-11 0.642787   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.6963-9 3.993-11 0.642787   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.7165-9 4.329-11 0.642787   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.7207-9 4.333-11 0.642787   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.6787-9 4.299-11 0.642787   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.6596-9 3.710-11 0.642787   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5414-9 4.587-11 0.642787   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.5940-9 4.231-11 0.642787   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4624-9 3.816-11 0.642787   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.4533-9 4.114-11 0.642787   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.3760-9 4.049-11 0.642787   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.2366-9 3.928-11 0.642787   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0944-9 3.801-11 0.642787   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0241-9 3.460-11 0.642787   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8501-9 3.573-11 0.642787   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8025-9 3.526-11 0.642787   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6296-9 3.104-11 0.642787   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4429-9 3.155-11 0.642787   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3048-9 2.778-11 0.642787   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1121-9 3.034-11 0.642787   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.302-10 2.533-11 0.642787   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.936-10 2.340-11 0.642787   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.778-10 2.002-11 0.642787   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.596-10 1.965-11 0.642787   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.823-10 1.824-11 0.642787   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.738-10 1.487-11 0.642787   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.015-10 1.442-11 0.642787   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.608-10 1.341-11 0.642787   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.236-10 1.242-11 0.642787   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.022-10 1.181-11 0.642787   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.467-10 9.315-12 0.642787   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.313-10 8.813-12 0.642787   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.035-10 8.452-12 0.642787   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.867-11 7.368-12 0.642787   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.453-11 7.171-12 0.642787   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.625-11 6.260-12 0.642787   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.761-11 5.732-12 0.642787   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.726-11 5.071-12 0.642787   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.957-11 4.182-12 0.642787   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.932-11 3.651-12 0.642787   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.587-11 3.309-12 0.642787   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.281-12 2.618-12 0.642787   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.211-12 3.586-12 0.642787   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1090-9 2.661-11 0.499999   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4389-9 3.006-11 0.499999   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6888-9 3.436-11 0.499999   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9728-9 3.714-11 0.499999   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0610-9 3.796-11 0.499999   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0815-9 3.490-11 0.499999   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.1988-9 4.245-11 0.499999   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.1906-9 3.581-11 0.499999   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.0598-9 3.750-11 0.499999   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.9915-9 3.688-11 0.499999   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8645-9 3.568-11 0.499999   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8358-9 3.541-11 0.499999   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7573-9 3.464-11 0.499999   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6296-9 3.336-11 0.499999   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5490-9 3.252-11 0.499999   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4185-9 3.112-11 0.499999   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3079-9 2.988-11 0.499999   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2376-9 2.691-11 0.499999   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1699-9 2.826-11 0.499999   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1269-9 2.568-11 0.499999   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.435-10 3.109-11 0.499999   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.197-10 2.320-11 0.499999   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.517-10 2.097-11 0.499999   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.058-10 2.034-11 0.499999   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.088-10 1.864-11 0.499999   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.460-10 1.745-11 0.499999   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.704-10 1.742-11 0.499999   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.114-10 1.350-11 0.499999   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.404-10 1.281-11 0.499999   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.996-10 1.081-11 0.499999   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.836-10 1.226-11 0.499999   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.280-10 8.099-12 0.499999   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.133-10 8.800-12 0.499999   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.196-11 8.196-12 0.499999   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.552-11 6.649-12 0.499999   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.874-11 6.334-12 0.499999   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.395-11 6.070-12 0.499999   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.166-11 5.334-12 0.499999   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.864-11 4.756-12 0.499999   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.390-11 4.040-12 0.499999   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.639-11 3.346-12 0.499999   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.707-11 3.415-12 0.499999   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.092-11 2.732-12 0.499999   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.229-11 3.174-12 0.499999   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.196-12 2.591-12 0.499999   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.171-12 2.710-12 0.499999   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.122-12 2.290-12 0.499999   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2353-9 2.203-11 0.342019   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3629-9 2.244-11 0.342019   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.5648-9 2.405-11 0.342019   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6776-9 2.490-11 0.342019   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8122-9 2.588-11 0.342019   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.8867-9 2.445-11 0.342019   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7931-9 2.559-11 0.342019   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.7444-9 2.524-11 0.342019   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6510-9 2.455-11 0.342019   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.6064-9 2.097-11 0.342019   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4798-9 2.546-11 0.342019   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4078-9 2.267-11 0.342019   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3137-9 2.028-11 0.342019   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1860-9 2.081-11 0.342019   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0819-9 1.988-11 0.342019   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0129-9 1.923-11 0.342019   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.161-10 1.829-11 0.342019   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.899-10 1.572-11 0.342019   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.283-10 1.631-11 0.342019   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.512-10 1.542-11 0.342019   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.645-10 1.329-11 0.342019   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.872-10 1.334-11 0.342019   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.314-10 1.162-11 0.342019   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.458-10 1.231-11 0.342019   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.174-10 1.076-11 0.342019   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.432-10 9.426-12 0.342019   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.981-10 7.877-12 0.342019   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.651-10 7.765-12 0.342019   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.315-10 6.930-12 0.342019   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.117-10 5.915-12 0.342019   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.985-11 5.729-12 0.342019   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.903-11 5.021-12 0.342019   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.259-11 4.383-12 0.342019   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.479-11 4.473-12 0.342019   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.819-11 3.458-12 0.342019   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.723-11 2.920-12 0.342019   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.776-11 3.184-12 0.342019   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.789-11 2.556-12 0.342019   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.680-11 2.477-12 0.342019   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.140-12 1.596-12 0.342019   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.766-12 1.789-12 0.342019   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.095-11 2.000-12 0.342019   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.635-12 1.328-12 0.342019   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.287-12 1.095-12 0.342019   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.506-12 1.239-12 0.342019   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.383-12 1.265-12 0.342019   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.652-12 1.633-12 0.342019   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.191-12 2.191-12 0.342019   1001.9 1.0200+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.498-10 1.786-11 0.173646   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1352-9 1.937-11 0.173646   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3072-9 2.200-11 0.173646   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4272-9 2.299-11 0.173646   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4283-9 2.300-11 0.173646   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4559-9 2.150-11 0.173646   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.4319-9 2.303-11 0.173646   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.3919-9 2.271-11 0.173646   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2900-9 2.186-11 0.173646   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1876-9 1.816-11 0.173646   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0477-9 2.158-11 0.173646   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0094-9 1.934-11 0.173646   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.109-10 1.701-11 0.173646   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.063-10 1.728-11 0.173646   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.000-10 1.610-11 0.173646   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.599-10 1.563-11 0.173646   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.877-10 1.475-11 0.173646   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.885-10 1.245-11 0.173646   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.339-10 1.268-11 0.173646   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.516-10 1.141-11 0.173646   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.176-10 1.004-11 0.173646   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.579-10 9.776-12 0.173646   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.023-10 8.016-12 0.173646   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.916-10 9.231-12 0.173646   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.545-10 7.567-12 0.173646   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.163-10 6.566-12 0.173646   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.322-11 5.141-12 0.173646   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.929-11 5.067-12 0.173646   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.558-11 4.538-12 0.173646   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.970-11 3.551-12 0.173646   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.631-11 3.668-12 0.173646   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.742-11 3.187-12 0.173646   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.112-11 2.797-12 0.173646   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.556-11 2.401-12 0.173646   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.397-11 2.106-12 0.173646   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.893-12 1.680-12 0.173646   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.670-12 1.572-12 0.173646   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.670-12 1.572-12 0.173646   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.558-12 1.435-12 0.173646   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.705-12 1.171-12 0.173646   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.188-12 1.960-12 0.173646   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.446-12 2.223-12 0.173646   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.223-12 2.223-12 0.173646   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.969-10 1.344-11 0.000000   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.965-10 1.405-11 0.000000   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1385-9 1.577-11 0.000000   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2439-9 1.649-11 0.000000   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2703-9 1.666-11 0.000000   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.2193-9 1.511-11 0.000000   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.1444-9 1.582-11 0.000000   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0323-9 1.496-11 0.000000   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.724-10 1.452-11 0.000000   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.571-10 1.181-11 0.000000   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.554-10 1.402-11 0.000000   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.944-10 1.227-11 0.000000   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.138-10 1.068-11 0.000000   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.338-10 1.076-11 0.000000   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.622-10 1.001-11 0.000000   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.131-10 9.469-12 0.000000   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.480-10 8.691-12 0.000000   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.087-10 7.578-12 0.000000   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.513-10 7.384-12 0.000000   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.178-10 6.876-12 0.000000   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.744-10 5.696-12 0.000000   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.471-10 5.650-12 0.000000   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.168-10 4.661-12 0.000000   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.531-11 4.982-12 0.000000   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.246-11 4.230-12 0.000000   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.184-11 3.663-12 0.000000   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.892-11 3.016-12 0.000000   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.841-11 2.887-12 0.000000   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.756-11 2.445-12 0.000000   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.194-11 2.020-12 0.000000   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.866-11 2.012-12 0.000000   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.302-11 1.681-12 0.000000   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.171-11 1.594-12 0.000000   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.331-12 1.423-12 0.000000   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.595-12 1.283-12 0.000000   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.394-12 1.001-12 0.000000   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.208-12 1.164-12 0.000000   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.604-12 7.517-13 0.000000   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.929-12 9.765-13 0.000000   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.046-12 6.169-13 0.000000   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.736-12 8.680-13 0.000000   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.302-12 5.823-13 0.000000   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.278-12 8.612-13 0.000000   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.302-12 7.517-13 0.000000   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.302-12 1.302-12 0.000000   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.604-12 1.302-12 0.000000   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.302-12 1.302-12 0.000000   1001.9 1.0200+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.680-10 1.246-11-0.173651   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.844-10 1.326-11-0.173651   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.597-10 1.453-11-0.173651   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0806-9 1.542-11-0.173651   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0342-9 1.508-11-0.173651   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.0066-9 1.378-11-0.173651   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.262-10 1.427-11-0.173651   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.364-10 1.239-11-0.173651   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.539-10 1.270-11-0.173651   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.674-10 1.195-11-0.173651   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.991-10 1.132-11-0.173651   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.233-10 1.058-11-0.173651   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.479-10 9.795-12-0.173651   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.795-10 9.017-12-0.173651   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.249-10 8.343-12-0.173651   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.782-10 7.720-12-0.173651   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.386-10 7.149-12-0.173651   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.880-10 5.875-12-0.173651   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.610-10 5.874-12-0.173651   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.360-10 4.998-12-0.173651   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.140-10 6.054-12-0.173651   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.602-11 4.199-12-0.173651   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.270-11 3.653-12-0.173651   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.141-11 3.318-12-0.173651   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.091-11 2.960-12-0.173651   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.191-11 2.614-12-0.173651   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.647-11 2.608-12-0.173651   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.111-11 1.969-12-0.173651   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.499-11 1.792-12-0.173651   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.138-11 1.445-12-0.173651   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.105-11 1.685-12-0.173651   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.872-12 1.124-12-0.173651   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.141-12 1.049-12-0.173651   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.398-12 1.178-12-0.173651   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.855-12 9.088-13-0.173651   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.313-12 7.711-13-0.173651   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.056-12 7.270-13-0.173651   1001.9 8.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.142-12 9.579-13-0.173651   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.713-12 8.568-13-0.173651   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.606-12 7.184-13-0.173651   1001.9 8.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.713-12 8.568-13-0.173651   1001.9 8.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.285-12 1.285-12-0.173651   1001.9 9.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.285-12 1.285-12-0.173651   1001.9 9.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.285-12 9.088-13-0.173651   1001.9 9.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.285-12 1.285-12-0.173651   1001.9 9.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.285-12 1.285-12-0.173651   1001.9 9.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.285-12 1.285-12-0.173651   1001.9 1.0000+8          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.137-10 1.151-11-0.342023   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.943-10 1.204-11-0.342023   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.394-10 1.385-11-0.342023   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.923-10 1.423-11-0.342023   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.215-10 1.372-11-0.342023   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.325-10 1.207-11-0.342023   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.427-10 1.231-11-0.342023   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.737-10 1.173-11-0.342023   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.834-10 1.091-11-0.342023   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.885-10 8.652-12-0.342023   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.368-10 1.034-11-0.342023   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.664-10 8.652-12-0.342023   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.148-10 7.425-12-0.342023   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.483-10 7.123-12-0.342023   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.161-10 6.644-12-0.342023   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.730-10 5.945-12-0.342023   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.399-10 5.346-12-0.342023   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.122-10 4.433-12-0.342023   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.252-11 4.347-12-0.342023   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.393-11 3.886-12-0.342023   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.689-11 3.156-12-0.342023   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.350-11 2.981-12-0.342023   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.798-11 2.579-12-0.342023   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.475-11 2.463-12-0.342023   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.858-11 1.948-12-0.342023   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.429-11 1.709-12-0.342023   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.138-11 1.411-12-0.342023   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.945-12 1.191-12-0.342023   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.721-12 1.081-12-0.342023   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.679-12 8.027-13-0.342023   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.636-12 5.783-13-0.342023   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.250-12 6.780-13-0.342023   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.228-12 5.010-13-0.342023   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.067-13 2.055-13-0.342023   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.754-15 1.702-15-0.342023   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 9.198-13 5.309-13-0.342023   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.225-12 8.668-13-0.342023   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.349-10 1.100-11-0.500003   1001.9 8000000.          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.683-10 1.201-11-0.500003   1001.9 1.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.793-10 1.340-11-0.500003   1001.9 1.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.617-10 1.326-11-0.500003   1001.9 1.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.921-10 1.272-11-0.500003   1001.9 1.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 7.213-10 1.123-11-0.500003   1001.9 1.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.422-10 1.145-11-0.500003   1001.9 2.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.601-10 1.069-11-0.500003   1001.9 2.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.911-10 1.001-11-0.500003   1001.9 2.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.962-10 7.791-12-0.500003   1001.9 2.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.456-10 9.205-12-0.500003   1001.9 2.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.798-10 7.561-12-0.500003   1001.9 3.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.302-10 6.349-12-0.500003   1001.9 3.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.850-10 6.149-12-0.500003   1001.9 3.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.487-10 5.512-12-0.500003   1001.9 3.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.258-10 5.070-12-0.500003   1001.9 3.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.033-10 4.595-12-0.500003   1001.9 4.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.247-11 3.800-12-0.500003   1001.9 4.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.864-11 3.744-12-0.500003   1001.9 4.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.964-11 3.184-12-0.500003   1001.9 4.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 4.272-11 2.735-12-0.500003   1001.9 4.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 3.003-11 2.476-12-0.500003   1001.9 5.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.311-11 2.011-12-0.500003   1001.9 5.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.667-11 2.021-12-0.500003   1001.9 5.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.511-11 1.757-12-0.500003   1001.9 5.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 8.988-12 1.355-12-0.500003   1001.9 5.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.303-12 1.050-12-0.500003   1001.9 6.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 6.945-12 1.191-12-0.500003   1001.9 6.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 5.515-12 1.061-12-0.500003   1001.9 6.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.451-12 7.752-13-0.500003   1001.9 6.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.042-12 6.460-13-0.500003   1001.9 6.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 2.451-12 1.225-12-0.500003   1001.9 7.0000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.838-12 7.506-13-0.500003   1001.9 7.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.225-12 7.076-13-0.500003   1001.9 7.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.225-12 1.225-12-0.500003   1001.9 7.6000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.225-12 8.667-13-0.500003   1001.9 7.8000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.225-12 1.225-12-0.500003   1001.9 8.2000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+ 1002 92238   69000    9.9600+7 1000000. 1.225-12 1.225-12-0.500003   1001.9 8.4000+7          E2D.Ridikas,ET.AL. (00)    D0489 17
+#/DATA      682
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0934
+#AUTHOR1    S.Stoulos+
+#YEAR       2012
+#INSTITUTE  (2GRCARU)
+#TITLE      Nuclear fission cross sections induced by deuterons of
+#+          4 GeV.
+#AUTHOR(S)  S.Stoulos, W.Westmeier, R.Hashemi-Nezhad,
+#+          M.Fragopoulou, A.Lagoyannis, M.Zamani
+#REF-CODE   (J,PR/C,85,024612,2012)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.85, p.024612, 2012
+#DATASETS   9
+#
+#DATASET    A09340032
+#DATE       20130102
+#REACTION   (92-U-238(D,F),,SIG)/(90-TH-232(D,F),,SIG)
+#PROJ       1002
+#TARG       92238
+#MF         203
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238 203  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238 203  18    4.0000+9          1.260000 0.220000     18.9  90232.9                     S.Stoulos,ET.AL. (12)    A0934  32
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D5136
+#AUTHOR1    Yu.V.Kibkalo+
+#YEAR       2006
+#INSTITUTE  (4UKRIJD)
+#TITLE      Fission fragments mass distributions in 238U+p
+#+          interaction at energies up to 70 MeV
+#AUTHOR(S)  Yu.V.Kibkalo, K.K.Kisurin, V.S.Semenov,
+#+          V.P.Tokarev, V.A.Shituk
+#REF-CODE   (J,YFE,7,(1/17),30,2006)
+#REFERENCE  Jour. Yaderna Fizika ta Energetika
+#+          Vol.7, Issue.1/17, p.30, 2006
+#DATASETS   1
+#
+#DATASET    D5136002
+#DATE       20171103
+#REACTION   92-U-238(D,F)MASS,CHN,FY
+#PROJ       1002
+#TARG       92238
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238 801  18   ]
+#DATA       65
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238 801  18    3.5000+7          0.027207                   92.59720                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.030390                   93.64800                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.037458                   98.89190                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.040756                   101.0946                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.043113                   102.0398                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.047709                   104.0347                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.046882                   105.1855                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.034381                   106.2181                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.028365                   107.2583                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.021987                   113.9524                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.030709                   116.8945                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.030584                   121.8158                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.021972                   124.6330                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.028330                   131.2373                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.034342                   132.2914                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.046958                   133.4579                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.047547                   134.4010                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.043181                   136.3854                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.040703                   137.4297                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.037398                   139.5201                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.030315                   144.7474                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    3.5000+7          0.027011                   145.8954                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.016182                   87.85510                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.027628                   92.67120                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.035416                   96.02160                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.037070                   98.11940                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.041552                   98.84910                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.041318                   100.2142                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.042970                   101.0522                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.031069                   107.3653                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.026835                   114.8243                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.035328                   116.7041                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.035330                   117.9640                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.026842                   119.8637                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.031099                   127.3128                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.043018                   133.7030                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.041369                   134.5449                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.041606                   135.8044                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.037244                   136.6494                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.035478                   138.6462                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.027700                   142.0149                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    5.0000+7          0.016387                   146.8575                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          3.1640-3                   74.76470                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          6.8010-3                   78.75660                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.015485                   86.84820                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.023469                   92.94620                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.040630                   98.74900                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.043100                   99.27840                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.033451                   99.78240                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.035329                   101.3591                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.032842                   107.6448                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.027882                   114.9739                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.027287                   117.2793                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.027286                   117.5939                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.027285                   118.1181                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.027867                   120.6357                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.032788                   128.0904                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.035242                   134.2816                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.033356                   135.9553                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.043002                   136.3949                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.040529                   137.0188                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.023338                   142.6446                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          0.015326                   147.1364                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          6.5950-3                   156.7642                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+ 1002 92238 801  18    7.0000+7          2.9370-3                   160.7408                     Yu.V.Kibkalo,ET.AL. (06) D5136  2
+#/DATA      65
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D5081
+#AUTHOR1    Yu.V.Kibkalo+
+#YEAR       2010
+#INSTITUTE  (4UKRIJD)
+#TITLE      Fragment mass distribution of 238-U fission by
+#+          deuterons with energy of 37 MeV
+#AUTHOR(S)  Yu.V.Kibkalo, K.K.Kisurin, L.V.Mikhailov,
+#+          G.P.Palkin, V.S.Semenov, V.P.Tokarev,
+#+          V.A.Shityuk
+#REF-CODE   (C,2010KYIV,,239,2010)
+#REFERENCE  Conf. 3 Int.Conf.Cur.Prob.in Nucl.Phys.Atom.Ene.,Kyiv,2010
+#+          p.239, 2010
+#DATASETS   1
+#
+#DATASET    D5081002
+#DATE       20110702
+#REACTION   92-U-238(D,F)MASS,CHN,FY
+#PROJ       1002
+#TARG       92238
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238 801  18   ]
+#DATA       19
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238 801  18    3.7000+7          0.020040                   90.80000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.024100                   91.90000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.033800                   93.00000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.043230                   94.90000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.053840                   96.80000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.050310                   98.90000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.053320                   103.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.030130                   105.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.045200                   111.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.029870                   112.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.025680                   115.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.030000                   125.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.030260                   127.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.010090                   128.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.041400                   131.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.035630                   133.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.017820                   135.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.047290                   140.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+ 1002 92238 801  18    3.7000+7          0.029080                   143.0000                     Yu.V.Kibkalo,ET.AL. (10) D5081  2
+#/DATA      19
+#/DATASET
+#/ENTRY
+#
+#

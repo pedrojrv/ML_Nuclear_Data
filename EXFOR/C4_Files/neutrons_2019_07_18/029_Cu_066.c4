@@ -1,0 +1,62 @@
+#ENTRY      12601
+#AUTHOR1    V.Serment+
+#YEAR       1970
+#INSTITUTE  (1USAMIS)
+#TITLE      Average thermal neutron capture cross sections of
+#+          198-Au,65-Ni,and 66-Cu
+#AUTHOR(S)  V.Serment, A.Abu-Samra, A.H.Emmons
+#REF-CODE   (J,NAP,9,662,197011)
+#REFERENCE  Jour. Nuclear Applications
+#+          Vol.9, p.662, 1970
+#DATASETS   3
+#
+#DATASET    12601004
+#DATE       20140901
+#REACTION   29-CU-66(N,G)29-CU-67,,SIG,,MXW
+#PROJ       1
+#TARG       29066
+#MF         3
+#MT         102
+#PRODUCT    29-CU-67
+#DATA-HDR   DATA
+#C4BEGIN    [    1 29066   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 29066   3 102    0.025300          145.0000                                                V.Serment,ET.AL. (70)    12601  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      V1001
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   634
+#
+#DATASET    V1001245
+#DATE       20120704
+#REACTION   29-CU-66(N,G)29-CU-67,,SIG,,,RECOM
+#PROJ       1
+#TARG       29066
+#MF         3
+#MT         102
+#PRODUCT    29-CU-67
+#DATA-HDR   DATA
+#C4BEGIN    [    1 29066   3 102   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 29066   3 102    0.025300          135.0000 10.00000                                       S.F.Mughabghab (06)      V1001245
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#

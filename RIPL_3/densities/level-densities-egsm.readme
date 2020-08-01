@@ -1,0 +1,55 @@
+Directory: densities/total/
+File:      level-densities-egsm.readme (Dec 31, 2008)
+*****************************************************
+         	 
+
+                      level-densities-egsm.dat
+
+Total level density parameters for Enhanced Generalized Superfluid Model
+	          (provided by M. Herman on Dec 31, 2008 )
+************************************************************************
+
+
+Content
+-------
+Level density parameters for the Enhanced Generalized Superfluid Model, 
+which combines the superfluid model below BCS critical energy and  the
+Fermi gas model above. The spin distribution in the Fermi gas part is
+calculated by reducing excitation energy by subtracting rotational energy.
+Nuclear deformation is used to determine the latter. EGSM
+takes into account collective enhancement of nuclear level densities
+in addition to shell and superfluid effects. The parameters were
+obtained by fitting the corresponding model formulas to the RIPL-3
+recommended spacings of s-wave neutron resonances.  Matching of the
+level densities to the low-lying levels must be performed by the user. 
+To this end, a dedicated option is provided in the EGSM code.
+
+Quantities Sym, Io, Bn, Do, dDo, Esh, +da, and -da are only provided 
+for convenience and are not used in the calculations. The EGSM code
+reads shell corrections, nuclear deformations, and neutron bindings
+directly from the respective RIPL-3  files.
+
+Format
+------
+Each record of the file contains:
+
+   Z    :  atomic number of the compound nucleus
+   A    :  mass number of the compound nucleus
+   Sym  :  element symbol of the compound nucleus
+   Io   :  spin of the ground state for the target nucleus
+   Bn   :  neutron binding energy of the compound nucleus
+   Do   :  experimental S-wave resonance spacing
+   dDo  :  uncertainty of the S-wave resonance spacing
+   Esh  :  shell correction used for estimation of the level 
+           density parameter
+   +da  :  upper uncertainty of the level density parameter 'a' 
+           at neutron binding energy Bn, corresponding to the 
+           Do-dDo spacing of S-wave resonances
+     a  :  level density parameter 'a' at the neutron binding 
+           energy Bn
+   -da  :  lower uncertainty of the level density parameter 'a' 
+           at neutron binding energy Bn, corresponding to the 
+           Do+dDo spacing of S-wave resonances
+
+The corresponding FORTRAN format is
+(2(i3,1x),a2,2x,f3.1,1x,f6.3,3(1x,e13.5),3(f8.4)).
