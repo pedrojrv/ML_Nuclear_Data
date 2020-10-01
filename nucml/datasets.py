@@ -116,7 +116,7 @@ def load_ame_rct2(directory=ame_dir_path):
             If it does not exists then it probably hasn't been generated.")
         return None
 
-def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=False, mb_to_b=False, log=False, drop_u=False):
+def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=False, drop_u=True):
     """Reads Evaluated Nuclear Data File for a specific element and reaction channel. It is important
     to inspect the returned data since it queries an external database which extracted data from ENDF 
     using a particular script. It has been found that some particular reactions are not included.
