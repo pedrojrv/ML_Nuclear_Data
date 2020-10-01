@@ -1,6 +1,7 @@
 import os
 import shutil
 import logging
+import numbers
 
 import numpy as np
 import pandas as pd
@@ -10,10 +11,11 @@ import sys
 sys.path.append("..")
 
 from nucml import general_utilities # pylint: disable=import-error
+import nucml.objects.objects as objects # pylint: disable=import-error
 
 ame_dir_path = os.path.abspath("../AME/")
 
-def get_all(c4_list, heavy_path, tmp_path):
+def get_all(c4_list, heavy_path, tmp_path, mode="neutrons"):
     """Retrieves all avaliable information from all .c4 files. This function combines the
     proccesses defined on:
 
@@ -39,13 +41,18 @@ def get_all(c4_list, heavy_path, tmp_path):
         None
 
     """
+
     if len(c4_list) != 0:
+        # This will be appended to the previous directories
+        tmp_path = os.path.join(tmp_path, "Extracted_Text_" + mode + "/")
+        heavy_path = os.path.join(heavy_path, "EXFOR_" + mode + "/")
+        general_utilities.initialize_directories_v2(tmp_path, reset=True)
+        general_utilities.initialize_directories_v2(heavy_path, reset=True)
+
+
         cross_section_file = os.path.join(heavy_path, "all_cross_sections.txt")
         if os.path.exists(cross_section_file):
             os.remove(cross_section_file)
-
-        general_utilities.initialize_directories(tmp_path)
-        general_utilities.initialize_directories(heavy_path)
 
         logging.info("EXFOR: Extracting experimental data, authors, years, institutes, and dates...")
         for i in c4_list:
@@ -54,6 +61,9 @@ def get_all(c4_list, heavy_path, tmp_path):
                 open(os.path.join(tmp_path, 'authors.txt'), 'a') as authors, \
                 open(os.path.join(tmp_path, 'years.txt'), 'a') as years, \
                 open(os.path.join(tmp_path, 'institutes.txt'), 'a') as institute, \
+                open(os.path.join(tmp_path, 'entry.txt'), 'a') as entry, \
+                open(os.path.join(tmp_path, 'refcode.txt'), 'a') as refcode, \
+                open(os.path.join(tmp_path, 'dataset_num.txt'), 'a') as dataset_num, \
                 open(os.path.join(tmp_path, 'dates.txt'), 'a') as date:
                 copy = False
                 for line in infile:
@@ -63,6 +73,16 @@ def get_all(c4_list, heavy_path, tmp_path):
                     elif line.startswith(r"#YEAR"):
                         copy=False
                         years.write(line)
+                    elif line.startswith(r'#ENTRY'):
+                        copy=False
+                        entry.write(line)
+                    elif line.startswith(r'#REF-CODE'):
+                        copy=False
+                        refcode.write(line)
+                    elif line.startswith(r'#DATASET'):
+                        if len(line) > 16:
+                            copy=False
+                            dataset_num.write(line)                    
                     elif line.startswith(r"#INSTITUTE"):
                         copy=False
                         institute.write(line)
@@ -164,7 +184,8 @@ def get_all(c4_list, heavy_path, tmp_path):
             for line in infile:
                 if line.strip():
                     string = list(line)
-                    for i, j in enumerate([5, 11, 12, 15, 19, 22, 31, 40, 49, 58, 67, 76, 85, 94, 95, 122, 127]):
+                    # for i, j in enumerate([5, 11, 12, 15, 19, 22, 31, 40, 49, 58, 67, 76, 85, 94, 95, 122, 127]):
+                    for i, j in enumerate([5, 11, 12, 15, 19, 20, 21, 22, 31, 40, 49, 58, 67, 76, 85, 94, 97, 122, 127, 130]):
                         string.insert(i + j, ';')
                     outfile.write("".join(string))
         logging.info("EXFOR: Finished formating experimental data.")
@@ -200,41 +221,45 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
 
     """
     logging.info("EXFOR CSV: Reading data points from {}/all_cross_sections_v1.txt file into a DataFrame...".format(heavy_path))
+    colnames = ["Projectile", "Target_ZA", "Target_Metastable_State", "MF", "MT", "Product_Metastable_State", \
+                "EXFOR_Status", "Center_of_Mass_Flag", "Energy",  "dEnergy",  "Data", "dData",   "Cos/LO",   "dCos/LO", \
+                "ELV/HL",  "dELV/HL", "I78", "Short_Reference", "EXFOR_Accession_Number", "EXFOR_SubAccession_Number", \
+                "EXFOR_Pointer"]
+    df = pd.read_csv(os.path.join(heavy_path, "all_cross_sections_v1.txt"), names=colnames, header=None, index_col=False, sep=";")
 
-    colnames = ["Prj", "Targ", "Target_Meta_State", "MF", "MT", "PXC",  "Energy",  "dEnergy",  "Data", \
-            "dData",   "Cos/LO",   "dCos/LO",   "ELV/HL",  "dELV/HL", "I78", "Refer", "(YY)", "EntrySubP"]
-    df = pd.read_csv(os.path.join(heavy_path + "all_cross_sections_v1.txt"), names=colnames, header=None, index_col=False, sep=";")
-
-    ########################################################################################
-    ########################################################################################
-    ########################################################################################
+    ########################################################################################################
+    ########################### FORMATTING CATEGORICAL AND STRING DATA #####################################
+    ########################################################################################################
 
     logging.info("EXFOR CSV: Formatting data (this may take a couple minutes)...")
     # make string version of original column
-    df['Targ'] = df['Targ'].astype(str)
+    df['Target_ZA'] = df['Target_ZA'].astype(str)
 
     # Making Sure all rows have the same number of values
     max_length = 5
-    df.Targ = df.Targ.apply(lambda x: '0'*(max_length - len(x)) + x)
+    df.Target_ZA = df.Target_ZA.apply(lambda x: '0'*(max_length - len(x)) + x)
 
     # Target feature is formated as ZZAAA
-    df['Z'] = df['Targ'].str[0:2].astype(int).fillna(0)
-    df['M'] = df['Targ'].str[2:5].astype(int).fillna(0)
+    df['Z'] = df['Target_ZA'].str[0:2].astype(int).fillna(0)
+    df['A'] = df['Target_ZA'].str[2:5].astype(int).fillna(0)
 
     # Calculating number of neutrons = mass number - protons
-    df['N'] = df['M'] - df["Z"]
+    df['N'] = df['A'] - df["Z"]
 
-    # unmarked rows are assumed to be at  ground state so we assign G value
-    df["Target_Meta_State"] = df["Target_Meta_State"].replace(to_replace=" ", value="All")
+    metastate_dict = {" ": "All_or_Total", "G": "Ground", "1": "M1", "2": "M2", "3": "M3", "4": "M4", 
+                    "5": "M5", "?": "Unknown", "+": "More_than_1", "T": "All_or_Total"}
+    df = df.replace({"Target_Metastable_State": metastate_dict, "Product_Metastable_State": metastate_dict})
 
-    # PXC describes three different variables
-    # We extract the data to independent features
-    df['Product_Meta_State'] = df['PXC'].astype(str).str[0:1].replace(to_replace=" ", value="All")
-    df['EXFOR_Status'] = df['PXC'].astype(str).str[1:2].replace(to_replace=" ", value="Other")
-    df['Frame'] = df['PXC'].astype(str).str[2:3].replace(to_replace=" ", value="L")
-    df["(YY)"] = df["(YY)"].astype(str)
-    df["EntrySubP"] = df["(YY)"]
+    exfor_status_dict = {"U":"Un_normalized", "A":"Approved_by_Author", "C":"Correlated", "D":"Dependent", 
+                     "O":"Outdated", "P":"Preliminary", "R":"Re_normalized", "S":"Superseded", " ":"Other"}
+    df = df.replace({"EXFOR_Status": exfor_status_dict})
 
+    df = df.replace({"Center_of_Mass_Flag": {"C":"Center_of_Mass", " ":"Lab"}})
+
+
+    ########################################################################################################
+    ################################### FORMATTING NUMERICAL DATA ##########################################
+    ########################################################################################################
     # Defining Numerical Columns to Fix and casting them as strings
     cols = ["Energy", "dEnergy", "Data", "dData", "Cos/LO", "dCos/LO", "ELV/HL", "dELV/HL"]
     df[cols] = df[cols].astype(str)
@@ -288,7 +313,7 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
         df[col] = df[col].astype(float)
         logging.info("EXFOR CSV: Finished converting {} to float.".format(col))
 
-    cat_cols = ["Target_Meta_State", "MF", "MT", "I78", "Product_Meta_State", "Frame"]
+    cat_cols = ["Target_Metastable_State", "MF", "MT", "I78", "Product_Metastable_State", "Center_of_Mass_Flag"]
 
     # Convering all columns to strings and stripping whitespace
     for col in cat_cols:
@@ -297,14 +322,20 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
         df[col] = df[col].str.strip()
 
     # Replace empty values in I78 for L representing Low
-    df["I78"] = df["I78"].replace(to_replace="", value="Other")
+    df = df.replace({"I78": {"E2":"Secondary_Energy", "LVL":"Level", "HL":"Half_Life", "DLV":"Level_Range", 
+                         "EXC":"Excitation", "DE2":"Secondary_Energy_Range", "MIN":"Minimum_Energy", 
+                         "MAX":"Maximum_Energy", "":"Other"}})
 
-    df.drop(columns=["(YY)", 'Targ', "PXC"], inplace=True)
+    df.drop(columns=['Target_ZA'], inplace=True)
+
+    ########################################################################################################
+    ################################# APPENDING OTHER INFORMATION ##########################################
+    ########################################################################################################
 
     logging.info("EXFOR CSV: Reading .txt files from {} into DataFrames...".format(tmp_path))
     # Reading experiments reaction notation
     df1 = pd.read_csv(os.path.join(tmp_path, "reaction_notations.txt"), delim_whitespace=True, header=None)
-    df1.columns = ["Reaction", "Type"]
+    df1.columns = ["Reaction", "Reaction_Notation"]
 
     # Reading Experiment Titles
     df2 = pd.read_csv(os.path.join(tmp_path, "titles.txt"), sep="#TITLE      ", header=None, engine="python")
@@ -334,25 +365,28 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
     df8 = pd.read_csv(os.path.join(tmp_path, "references.txt"), sep="#REFERENCE  ", header=None, engine="python")
     df8.columns = ["Keyword", "Reference"]
 
+    # Reading Dataset Number
+    df9 = pd.read_csv(os.path.join(tmp_path, "dataset_num.txt"), sep="#DATASET    ", header=None, engine="python")
+    df9.columns = ["Keyword", "Dataset_Number"]
+
+    # Reading EXFOR entry number
+    df10 = pd.read_csv(os.path.join(tmp_path, "entry.txt"), sep="#ENTRY      ", header=None, engine="python")
+    df10.columns = ["Keyword", "EXFOR_Entry"]
+
+    # Reading reference code
+    df11 = pd.read_csv(os.path.join(tmp_path, "refcode.txt"), sep="#REF-CODE   ", header=None, engine="python")
+    df11.columns = ["Keyword", "Reference_Code"]
+
+
     # Merging Datapoints, notation and titles and expanding based on datapoints
     logging.info("EXFOR CSV: Expanding information based on the number of datapoints per experimental campaign...")
-    pre_final = pd.concat([df3, df1, df2, df4, df5, df6, df7, df8], axis=1)
+    pre_final = pd.concat([df3, df1, df2, df4, df5, df6, df7, df8, df9, df10, df11], axis=1)
     final = pre_final.reindex(pre_final.index.repeat(pre_final.Multiple))
     final['position'] = final.groupby(level=0).cumcount() + 1
-
-    # Extracting projectile and outogoing particle
-    final["reaction_notation"] = final.Type.str.extract('.*\((.*)\).*')  # pylint: disable=anomalous-backslash-in-string
-
-    final["reaction_notation2"] = final["reaction_notation"].apply(lambda x: x.split(')')[0])
-    final = pd.concat([final, final["reaction_notation2"].str.split(',', expand=True)], axis=1)
-
-    # Formatting Columns
-    new_columns = list(final.columns)[:19]
-    new_columns.extend(["Projectile", "Out"])
-    final.columns = new_columns
-
+    
     # Indexing only required information and saving file
-    final = final[["Type", "Title", "Year", "Institute", "Author", "Date", "Reference", "Out"]]
+    final = final[["Reaction_Notation", "Title", "Year", "Author", "Institute", "Date", "Reference", 
+                "Dataset_Number", "EXFOR_Entry", "Reference_Code"]]
 
     # Reset Indexes to make copying faster
     df = df.reset_index(drop=True)
@@ -360,72 +394,106 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
 
     logging.info("EXFOR CSV: Appending information to main DataFrame...")
     # Assign newly extracted data to main dataframe
-    df["Type"] = final["Type"]
+    df["Reaction_Notation"] = final["Reaction_Notation"]
     df["Title"] = final["Title"]
     df["Year"] = final["Year"]
     df["Author"] = final["Author"]
     df["Institute"] = final["Institute"]
     df["Date"] = final["Date"]
     df["Reference"] = final["Reference"]
-    df["Out"] = final["Out"]
+    df["Dataset_Number"] = final["Dataset_Number"]
+    df["EXFOR_Entry"] = final["EXFOR_Entry"]
+    df["Reference_Code"] = final["Reference_Code"]
 
-    df.Title = df.Title.fillna("No Title")
-    # df = df[df.N != -1]
-    df["Reference"] = df["Author"] + " " + df["Reference"]
-    df = df.drop(columns=["Refer", "Author"])
-    df.Reference = df.Reference.fillna(df["Title"])
+    df.Title = df.Title.fillna("No Title Found. Check EXFOR.")
+    df.Reference = df.Reference.fillna("No Reference Found. Check EXFOR.")
+    df.Short_Reference = df.Short_Reference.fillna("No Reference Found. Check EXFOR.")
+    df.Reference_Code = df.Reference_Code.fillna("No Reference Code Found. Check EXFOR.")
+    df.Author = df.Author.fillna("No Author Found. Check EXFOR.")
+    df.EXFOR_Pointer = df.EXFOR_Pointer.fillna("No Pointer")
 
+    df.EXFOR_Pointer = df.EXFOR_Pointer.apply(lambda x: str(int(x)) if isinstance(x, numbers.Number) else x)
+    df.Date = df.Date.apply(lambda x: str(x)[:4] + "/" + str(x)[4:6] + "/" + str(x)[6:])
+    df.EXFOR_SubAccession_Number = df.EXFOR_SubAccession_Number.astype(int)
+    df.Institute = df.Institute.apply(lambda x: x.replace("(", "").replace(")", ""))
+
+    df = df.replace({'Projectile': {1: "neutron", 1001: "proton", 2003:"helion", 0:"gamma", 1002:"deuteron", 2004:"alpha"}})
+
+    if df.Projectile.unique()[0] == "neutron":
+        Projectile_Z, Projectile_A, Projectile_N = 0, 1, 1
+    elif df.Projectile.unique()[0] == "proton":
+        Projectile_Z, Projectile_A, Projectile_N = 1, 1, 0
+    elif df.Projectile.unique()[0] == "helion":
+        Projectile_Z, Projectile_A, Projectile_N = 2, 3, 1
+    elif df.Projectile.unique()[0] == "gamma":
+        Projectile_Z, Projectile_A, Projectile_N = 0, 0, 0
+    elif df.Projectile.unique()[0] == "deuteron":
+        Projectile_Z, Projectile_A, Projectile_N = 1, 2, 1
+    elif df.Projectile.unique()[0] == "alpha":
+        Projectile_Z, Projectile_A, Projectile_N = 2, 4, 2
+    df["Projectile_Z"] = Projectile_Z
+    df["Projectile_A"] = Projectile_A
+    df["Projectile_N"] = Projectile_N
+
+    element_w_a = objects.load_zan()
+    element_w_a = pd.DataFrame.from_dict(element_w_a, orient='index')
+    # There are no molecular
+    element_w_a.loc['12019'] = ['Heavy Water', 19, 1, 20, "Heavy Water"]
+
+    df = df.merge(element_w_a, on=['N', 'Z', 'A'], how='left')
+
+    df[["EXFOR_Accession_Number", "Dataset_Number", "EXFOR_Entry"]]  = df[["EXFOR_Accession_Number", "Dataset_Number", "EXFOR_Entry"]].astype(str)
     csv_name = os.path.join(heavy_path, "EXFOR_" + mode + "_ORIGINAL.csv")
     logging.info("EXFOR CSV: Saving EXFOR CSV file to {}...".format(csv_name))
     df.to_csv(csv_name, index=False)
 
-    df_personal = df.copy()
-
     if append_ame:
         logging.info("EXFOR CSV: Reading AME file...")
         df_workxs = df.copy()
-        masses = pd.read_csv(os.path.join(ame_dir, "AME_Natural_Properties_w_NaN.csv")).rename(
-            columns={'N': 'Neutrons', 'A': 'Mass_Number', 'Neutrons':'N', 'Mass_Number':'M'})
-
+        masses = pd.read_csv(ame_dir + "AME_Natural_Properties_w_NaN.csv").rename(
+            columns={'N': 'Neutrons', 'A': 'Mass_Number', 'Neutrons':'N', 'Mass_Number':'A', 'Flag':'Element_Flag'})
         df_workxs = df_workxs.reset_index(drop=True)
         masses = masses.reset_index(drop=True)
         logging.info("EXFOR CSV: Appending AME data to EXFOR File...")
         df = df_workxs.merge(masses, on=['N', 'Z'], how='left')
-
-        # df["O"].fillna(value="Other", inplace=True)
-
+        df = df.drop(columns=["A_x", "A_y", "N", "EL"]).rename(columns={'Neutrons': 'N', 'Mass_Number':'A'})
+        df = df[~df['N'].isnull()]
+        df[["N", "A"]] = df[["N", "A"]].astype(int)
         csv_name = os.path.join(heavy_path, "EXFOR_" + mode + "_ORIGINAL_w_AME.csv")
         logging.info("EXFOR CSV: Saving EXFOR CSV file to {}...".format(csv_name))
         df.to_csv(csv_name, index=False)
+    return None
 
-    df = df_personal.copy()
+def impute_original_exfor(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=True, MF_number="3"):
+    csv_name = os.path.join(heavy_path, "EXFOR_" + mode + "_ORIGINAL.csv")
+    df = pd.read_csv(csv_name)
 
     if append_ame:
         logging.info("EXFOR CSV: Reading AME file...")
         df_workxs = df.copy()
-        masses = pd.read_csv(os.path.join(ame_dir, "AME_Natural_Properties_no_NaN.csv")).rename(
-            columns={'N': 'Neutrons', 'A': 'Mass_Number', 'Neutrons':'N', 'Mass_Number':'M'})
+        masses = pd.read_csv(ame_dir + "AME_Natural_Properties_no_NaN.csv").rename(
+            columns={'N': 'Neutrons', 'A': 'Mass_Number', 'Neutrons':'N', 'Mass_Number':'A', 'Flag':'Element_Flag'})
 
         df_workxs = df_workxs.reset_index(drop=True)
         masses = masses.reset_index(drop=True)
         logging.info("EXFOR CSV: Appending AME data to EXFOR File...")
         df = df_workxs.merge(masses, on=['N', 'Z'], how='left')
-
+        df = df.drop(columns=["A_x", "A_y", "N", "EL"]).rename(columns={'Neutrons': 'N', 'Mass_Number':'A'})
+        df = df[~df['N'].isnull()]
+        df[["N", "A"]] = df[["N", "A"]].astype(int)
         df["O"].fillna(value="Other", inplace=True)
 
     logging.info("EXFOR CSV: Creating new CSV file with only MF=3 data...")
     df.MF = df.MF.astype(str)
     df.MT = df.MT.astype(str)
-    df = df[df["MF"] == "3"]
-    columns_drop = ["MF", "Cos/LO", "dCos/LO", "Prj", "M_x", "M_y", "N"]
-    df = df.drop(columns=columns_drop)
+    df = df[df["MF"] == MF_number]
 
     # We get rid of heavy water measurments
-    df = df[~df.EL.isna()]
-    df["Neutrons"] = df["Neutrons"].astype(int)
-    df["Mass_Number"] = df["Mass_Number"].astype(int)
-    df = df.rename(columns={"Z":"Protons", "EL":"Element", "O":"Origin", "Type":"Reaction_Notation"})
-    df["Element_w_A"] = df["Mass_Number"].astype(str) + df.Element
+    if MF_number == "3":
+        logging.info("...")
+
+    columns_drop = ["MF", "Cos/LO", "dCos/LO"]
+    df = df.drop(columns=columns_drop)
 
     logging.info("EXFOR CSV: Filling dEnergy, dData, and dELV by reaction channel...")
     df["Uncertainty_E"] = df["dEnergy"]/df["Energy"]
@@ -442,9 +510,9 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
     df["Uncertainty_ELV"] = df[["Institute", "Uncertainty_ELV"]].groupby("Institute").transform(lambda x: x.fillna(x.mean()))
 
     logging.info("EXFOR CSV: Filling dEnergy, dData, and dELV by Isotope...")
-    df["Uncertainty_E"] = df[["Element_w_A", "Uncertainty_E"]].groupby("Element_w_A").transform(lambda x: x.fillna(x.mean()))
-    df["Uncertainty_D"] = df[["Element_w_A", "Uncertainty_D"]].groupby("Element_w_A").transform(lambda x: x.fillna(x.mean()))
-    df["Uncertainty_ELV"] = df[["Element_w_A", "Uncertainty_ELV"]].groupby("Element_w_A").transform(lambda x: x.fillna(x.mean()))
+    df["Uncertainty_E"] = df[["Isotope", "Uncertainty_E"]].groupby("Isotope").transform(lambda x: x.fillna(x.mean()))
+    df["Uncertainty_D"] = df[["Isotope", "Uncertainty_D"]].groupby("Isotope").transform(lambda x: x.fillna(x.mean()))
+    df["Uncertainty_ELV"] = df[["Isotope", "Uncertainty_ELV"]].groupby("Isotope").transform(lambda x: x.fillna(x.mean()))
 
     df["Uncertainty_ELV"] = df[["I78", "Uncertainty_ELV"]].groupby("I78").transform(lambda x: x.fillna(x.mean()))
 
@@ -459,61 +527,49 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
 
     df.fillna(value=0, inplace=True)
 
+    df["Nucleus_Radius"] = 1.25 * np.power(df["A"], 1/3)
+    df["Neutron_Nucleus_Radius_Ratio"] = 0.8 / df["Nucleus_Radius"]
+    
     # Use this for ordering
-    new_order = list(df.columns)[:24]
-    new_order_2 = list(df.columns)[-7:]
+    new_order = list(df.columns)[:35]
+    new_order_2 = list(df.columns)[-6:]
     new_order.extend(new_order_2)
-    nuclear_data_target = list(df.columns)[24:-7]
+    nuclear_data_target = list(df.columns)[35:-6]
     new_order.extend(nuclear_data_target)
-
-    # use these for renaming
-    nuclear_data_target_cols = ["Target_" + s for s in nuclear_data_target]
 
     df = df[new_order]
 
-    df = df.rename(columns={"Protons":"Target_Protons", "Neutrons":"Target_Neutrons",
-                            "Mass_Number":"Target_Mass_Number", "Element":"Target_Element",
-                            "Flag": "Target_Flag", "Nuc_Radius_fm":"Target_Radius",
-                            "Neut_Nuc_Rad_Ratio":"Target_Neut_Rad_Ratio", "Element_w_A":"Target_Element_w_A"})
     df = df.drop(columns=["Uncertainty_D", "Uncertainty_E", "Uncertainty_ELV"])
-
-    new_order = list(df.columns)[:28]
-    nuclear_data_target = list(df.columns)[28:]
-    nuclear_data_target_cols = ["Target_" + s for s in nuclear_data_target]
-    new_order.extend(nuclear_data_target_cols)
-
-    df.columns = new_order
 
     logging.info("EXFOR CSV: Dropping RAW experimental datapoints...")
     df = df[~df.Reaction_Notation.str.contains("RAW")]
+
     df = df[~(df.Data < 0)]
 
     logging.info("EXFOR CSV: Saving MF3 NaN Imputed RAW Free EXFOR CSV...")
-    df.to_csv(os.path.join(heavy_path, "EXFOR_" + mode + "_MF3_AME_no_RawNan.csv"), index=False)
+    df.to_csv(os.path.join(heavy_path, "EXFOR_" + mode + "_MF3_AME_no_RawNaN.csv"), index=False)
     logging.info("Finished")
     return None
     
 def get_c4_names(originals_directory):
-    """Searches directory for EXFORs C4 files and returns a list of relative paths for each one.
+    """Searches given directory for EXFOR-generated C4 files.  It returns a list of relative paths for each encountered file.
 
     Args:
-        originals_directory (str): path to the EXFOR directory containing all c4 files.
+        originals_directory (str): path to the directory containing all .c4 files..
 
     Returns:
-        list: contains relative path to each c4 file. None if no files are found.
-
+        list: contains relative path to each encountered .c4 file. None if no files are found.
     """
     logging.info("C4: Searching {} directory for .c4 files...".format(originals_directory))
 
-    names = general_utilities.get_files_w_extension(originals_directory, "*.c4")
-    if len(names) != 0:
-        names = natsorted(names)
-        logging.info("C4: Finished. Found {} .c4 files.".format(len(names)))
-        return names
-    else:
-        logging.error("C4: No .c4 files found. Make sure you specified the path correctly.")
-        sys.exit()
-        return None
+    names = natsorted(general_utilities.get_files_w_extension(originals_directory, ".c4"))
+    logging.info("C4: Finished. Found {} .c4 files.".format(len(names)))
+    return names
+
+
+########################################################################################################
+################### DEPRECATED - ALL FUNCTIONS TAKE PLACE IN THE get_all() FUNCTION ####################
+########################################################################################################
 
 def get_raw_datapoints(c4_list, saving_directory):
     """Collects the data section of the c4 files into a single TXT file.
@@ -817,29 +873,3 @@ def get_datapoints_per_experiment(c4_list, saving_directory):
         logging.error("DATA POINTS:  No .c4 files found. Make sure you specified the path correctly.")
         sys.exit()
         return None
-
-# if __name__ == "__main__":
-#     import sys
-#     if sys.argv[1] == "-c":
-#         logging.info("Using custom directories.")
-#         get_all(exfor_parsing.get_c4_names(sys.argv[2]), sys.argv[3], sys.argv[4])
-#         csv_creator(sys.argv[3], sys.argv[4], sys.argv[5], append_ame=True, fillna=True)
-#     elif sys.argv[1] == "-d":
-#         logging.info("Using default directories.")
-#         exfor_directory =  "./EXFOR/neutrons_2019_07_18"
-#         ame_dir = "./AME"
-
-#         # I am going to define two different paths
-#         # (1) one to store temporary light files needed for later compilation
-#         # (2) one to store resulting files using data from the temporary directory (big files).
-#         # Notice that if size is not an issue you can define both directories as the same one.
-#         tmp_path =  "./EXFOR/tmp/Extracted_Text"
-#         heavy_dir = './ML_Data'
-
-#         # This will be appended to the previous directories
-#         mode = 'neutrons' # protons
-#         tmp_path = tmp_path + "_" + mode
-#         heavy_dir = heavy_dir + "/EXFOR_" + mode
-
-#         get_all(get_c4_names(exfor_directory), heavy_dir, tmp_path)
-#         csv_creator(heavy_dir, tmp_path, mode, ame_dir, append_ame=True, fillna=True)

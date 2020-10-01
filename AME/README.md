@@ -32,6 +32,6 @@ This directory contains files related to the Atomic Mass Evaluation. For more in
 
 ## Re-creating CSV Files
 
-If for some reason the CREATED csv files are not avaliable, as long as the other text files are avaliable they can be recreated using the `generating_datasets.py` script located in the main NucML directory.
+If for some reason the created csv files are not avaliable, as long as the other text files are avaliable they can be recreated using the `generating_datasets.py` script located in the main NucML directory.
 
-`python generating_datasets.py"`
+`python generating_datasets.py`

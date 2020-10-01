@@ -3,10 +3,11 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-from scipy.optimize import curve_fit
 
 sys.path.append("..")
-from nucml.general_utilities import func, check_if_files_exist     # pylint: disable=import-error
+
+from nucml.general_utilities import check_if_files_exist     # pylint: disable=import-error
+from nucml.processing import impute_values                   # pylint: disable=import-error
 
 ame_dir_path = os.path.abspath("../AME/")
 ame_originals_path = os.path.abspath("../AME/Originals/")
@@ -34,7 +35,7 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
                (28,41),(41,52),(52,63),(63,72),(72,73),(73,75),(75,86),(86,95),(95,96),
                (96,112),(112,123))
 
-    # Column names as given by AME
+    # Column names as given by the AME documentation
     column_names = ["Page_Feed", "NZ", "N", "Z", "A", "Other", "EL", "O", "Other2", \
            "Mass_Excess", "dMass_Excess", "Binding_Energy", "dBinding_Energy", "Other3", \
            "Beta_Type", "B_Decay_Energy", "dB_Decay_Energy", "Other4",
@@ -196,8 +197,9 @@ def read_rct2(originals_directory=ame_originals_path, saving_directory=ame_dir_p
 def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qvalues=True):
     """Reads the proccessed mass16, rct1, and rct2 files and merges them while adding other reaction 
     Q-values if needed. It creates one main CSV file when finished. This assumes the three files 
-    were created using the read_mass(), read_rct1(), and read_rct2() functions.
-    For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
+    were created using the read_mass(), read_rct1(), and read_rct2() functions. For more information 
+    visit the IAEA webiste: https://www-nds.iaea.org/amdc/. It also creates a new CSV file where 
+    missing values are filled via linear imputation paramenter- and element-wise.
 
     Args:
         directory (str): Path to the Atomic Mass Evaluation directory where 
@@ -284,7 +286,13 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
             csv_name = os.path.join(saving_directory, "AME_all_merged.csv")
             logging.info("MERGE: Formatting done. Saving file to {}".format(csv_name))
             df_final.to_csv(csv_name, index=False)
-            logging.info("MERGE: Succesfully merged files.")
+            logging.info("MERGE: Succesfully merged files. Imputing missing values...")
+            csv_name = os.path.join(saving_directory, "AME_all_merged_no_NaN.csv")
+            df_final = impute_values(df_final)
+            df_final = df_final.interpolate(method='spline', order=1, limit=10, limit_direction='both')
+            df_final = df_final.interpolate()
+            df_final.to_csv(csv_name, index=False)
+            logging.info("MERGE: Succesfully merged files. Imputing missing values...")
         else:
             logging.error("MERGE: Shapes among the three files is not consistent.")
             sys.exit()
@@ -448,70 +456,8 @@ def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_pat
         fillna=fillna, mode=mode, fill_value=fill_value)
     return None
 
-def impute_values(df):
-    """Imputes values column-wise element-wise using linear interpolation.
 
-    Args:
-        df (DataFrame): dataframe to impute values off. It must contain the following features:
-            'Z' (integer):Representing the proton number.
-            'A' (integer): Representing the mass number (not the precise atomic mass)
-
-    Returns:
-        [type]: [description]
-    """
-    for i in range(0,119):
-        df[df["Z"] == i] = df[df["Z"] == i].sort_values(by="A").interpolate()
-
-        if len(df[df["Z"] == i]) > 1:
-            fit_df_original = df[df["Z"] == i].sort_values(by="A").reset_index(drop=True).copy()
-            fit_df = fit_df_original.copy()
-
-            col_params = {}
-            guess = (0.5, 0.5)
-
-            # Curve fit each column
-            for col in fit_df.select_dtypes(np.number).columns:
-                if len(fit_df[col].dropna()) > 1: # SHOULD IT BE 0?
-                    # Get x & y
-                    x = fit_df[col].dropna().index.astype(float).values
-                    y = fit_df[col].dropna().values
-                    # Curve fit column and get curve parameters
-                    params = curve_fit(func, x, y, guess)
-                    # Store optimized parameters
-                    col_params[col] = params[0]
-
-            # Extrapolate each column
-            for col in col_params.keys():
-                # Get the index values for NaNs in the column
-                x = fit_df_original[pd.isnull(fit_df_original[col])].index.astype(float).values
-                # Extrapolate those points with the fitted function
-                fit_df_original[col][x] = func(x, *col_params[col])
-
-            df[df["Z"] == i] = fit_df_original.values
-    return df
-
-mass16_dtypes = ['float64',
- 'int64',
- 'int64',
- 'int64',
- 'int64',
- 'float64',
- 'object',
- 'object',
- 'float64',
- 'float64',
- 'float64',
- 'float64',
- 'float64',
- 'float64',
- 'object',
- 'object',
- 'float64',
- 'float64',
- 'object',
- 'float64']
-
-if __name__ == "__main__":
-    get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, add_qvalues=True, mode="elemental")
+mass16_dtypes = ['float64', 'int64', 'int64', 'int64', 'int64', 'float64', 'object', 'object', 'float64', 'float64',
+    'float64', 'float64', 'float64', 'float64', 'object', 'object', 'float64', 'float64', 'object', 'float64']
 
 

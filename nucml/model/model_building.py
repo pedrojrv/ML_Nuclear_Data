@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-import nucml.model.model_utilities as model_utils
+import nucml.model.model_utilities as model_utils  # pylint: disable=import-error
 
 from sklearn import tree
 from sklearn.neighbors import KNeighborsRegressor
@@ -11,7 +11,7 @@ from joblib import dump, load
 import os
 import time
 import itertools
-
+import matplotlib.pyplot as plt
 
 
 def train_knn(x_train, y_train, x_test, y_test, k_list, save_models=False, save_dir="./"):
@@ -120,10 +120,9 @@ def train_dt(x_train, y_train, x_test, y_test, parameters_dict, save_models=Fals
                     loop_number = loop_number + 1
 
                     del dt_model
-
     print("Done")
     csv_path = os.path.join(save_dir, "dt_results.csv")
-    if os.path.exist(csv_path):
+    if os.path.exists(csv_path):
         previous = pd.read_csv(csv_path)
         new = previous.append(model_error_metrics)
         new.to_csv(csv_path, index=False)
@@ -198,7 +197,7 @@ def train_xgb(x_train, y_train, x_test, y_test, parameters_dict, save_models=Fal
 
     print("Done")
     csv_path = os.path.join(save_dir, "xgb_results.csv")
-    if os.path.exist(csv_path):
+    if os.path.exists(csv_path):
         previous = pd.read_csv(csv_path)
         new = previous.append(model_error_metrics)
         new.to_csv(csv_path, index=False)
@@ -208,6 +207,18 @@ def train_xgb(x_train, y_train, x_test, y_test, parameters_dict, save_models=Fal
     return model_error_metrics, all_dict
 
 
+def plot_xgb_training(dictionary, save=False, show=True):
+    plt.figure(figsize=(10,8))
+    plt.plot(dictionary["eval"]["rmse"], label="Evaluation")
+    plt.plot(dictionary["train"]["rmse"], label="Training")
+    plt.legend()
+    plt.xlabel("Number of Estimators")
+    plt.ylabel("RMSE")
+    if save == True:
+        plt.title("XGBoost Training RMSE")
+        plt.savefig("./Figures/ENSDF/ENSDF_XGBoost_RMSE.png", bbox_inches="tight")
+    if show == False:
+        plt.close()    
 
     # else:
     #     loop_number = loop_number + 1
