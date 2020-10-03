@@ -158,6 +158,10 @@ def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=Fals
                 endf = endf.drop(columns=["dDataLow"])
             if "dData2" in list(endf.columns):
                 endf = endf.drop(columns=["dDataUpp"])
+            if "dDataLow" in list(endf.columns):
+                endf = endf.drop(columns=["dDataLow"])
+            if "dDataUpp" in list(endf.columns):
+                endf = endf.drop(columns=["dDataUpp"])
         logging.info("ENDF: Finished. ENDF data contains {} datapoints.".format(endf.shape[0]))
         return endf
     else:
@@ -482,15 +486,16 @@ def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=Fal
     else:
         return logging.error("CSV file does not exists. Check path.")
 
-# ADD CAPABILITY TO ADD ENSDF AND AME SEPARATEDLEY
-# ELIMINATE THESE MT CODES WITH FILTER 203 1003 1108 2103
 
 supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions", "all"]
-def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="pt", 
-    scaler_dir=None, filters=False, max_en=2.0E7):
+supported_mt_coding = ["one_hot", "particle_coded"]
+def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="std", 
+    scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot"):
 
     if mode not in supported_modes:
         return logging.error("Specified MODE not supported. Supporte modes include: {}".format(' '.join([str(v) for v in supported_modes])))
+    if mt_coding not in supported_mt_coding:
+        return logging.error("Specified mt_coding not supported. Supported codings include: {}".format(' '.join([str(v) for v in supported_mt_coding])))
 
     logging.info(" MODE: {}".format(mode))
     logging.info(" LOW ENERGY: {}".format(low_en))
@@ -526,6 +531,7 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         
     if filters:
         df = df[~((df.Reaction_Notation.str.contains("WTR")) | (df.Title.str.contains("DERIV")) | (df.Energy == 0) | (df.Data == 0))]
+        df = df[(df.MT != "203") & (df.MT != "1003") & (df.MT != "1108") & (df.MT != "2103")]
     if low_en:
         df = df[df.Energy < max_en]
     if log:
@@ -538,11 +544,11 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag", "N", "A", "Element_Flag"]
         df = df[basic_cols]
     elif basic == 1:
-        # 'S(2p)' THIS IS AN ISSUE WITH YEO TRANSFORMER FOR SOME REASON
+        # 'S(2p)' THIS IS AN ISSUE WITH YEO TRANSFORMER FOR SOME REASON SO WATCH OUT!
         basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag",
                     "N", "A", "Element_Flag", 'Nucleus_Radius', 'Neutron_Nucleus_Radius_Ratio', 
                     'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 'Atomic_Mass_Micro', 'S(2n)', 
-                    'S(n)', 'S(p)']
+                    'S(n)', 'S(p)', 'S(2p)']
         df = df[basic_cols]  
 
     logging.info("Data read into dataframe with shape: {}".format(df.shape))
@@ -557,10 +563,23 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
                             'Dataset_Number', 'EXFOR_Entry', 'Reference_Code', 'Isotope', 'Element', "dData", "dEnergy",
                             'Projectile_Z', 'Projectile_A', 'Projectile_N']
             cat_cols = ["Target_Metastable_State", "MT", "Product_Metastable_State", "Center_of_Mass_Flag", "I78", "Element_Flag", "O"]
+        
+            
         df.drop(columns=columns_drop, inplace=True)
-        # We need to keep track of columns to normalize excluding categorical data.
-        norm_columns = len(df.columns) - len(cat_cols) - 1
-        df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
+        
+        if mt_coding == "particle_coded":
+            cat_cols.remove("MT")
+            mt_codes_df = pd.read_csv('C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\mt_codes.csv').drop(columns=["MT_Tag", "MT_Reaction_Notation"])
+            mt_codes_df["MT"] = mt_codes_df["MT"].astype(str)
+            # We need to keep track of columns to normalize excluding categorical data.
+            norm_columns = len(df.columns) - len(cat_cols) - 2
+            df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
+            df = pd.merge(df, mt_codes_df, on='MT').drop(columns=["MT"])
+        elif mt_coding == "one_hot":
+            # We need to keep track of columns to normalize excluding categorical data.
+            norm_columns = len(df.columns) - len(cat_cols) - 1
+            df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
+
 
         logging.info("Splitting dataset into training and testing...")
         x_train, x_test, y_train, y_test = train_test_split(df.drop(["Data"], axis=1), df["Data"], test_size=frac)

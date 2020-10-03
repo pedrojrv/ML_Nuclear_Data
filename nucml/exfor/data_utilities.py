@@ -161,7 +161,7 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, clf, to_scale, scaler, e_array="ace",
 
     '''
     if get_endf:
-        endf = get_endf_for_pred_xs(Z, A, MT)
+        endf = get_endf_for_exfor(Z, A, MT)
     if e_array == "ace":
         e_array = ace_utils.get_energies('{:<02d}'.format(Z) + str(A).zfill(3), ev=True, log=log)
 
@@ -222,12 +222,16 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, clf, to_scale, scaler, e_array="ace",
         plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, html=html, show=show)
     return all_dict
 
-def get_endf_for_pred_xs(Z, A, MT):
+def get_endf_for_exfor(Z, A, MT, one_hot=True, log=True):
     element_for_endf = list(elements_dict.keys())[list(elements_dict.values()).index(Z)] + str(A).zfill(3)
-    mt_endf, mt_num_endf = MT.split("_")
+    if one_hot:
+        mt_endf, mt_num_endf = MT.split("_")
+    else:
+        mt_endf = "MT"
+        mt_num_endf = MT
     mt_num_endf = mt_num_endf.zfill(3)
     mt_endf = mt_endf + mt_num_endf
-    endf = nuc_data.load_endf(element_for_endf, mt_endf, log=True, mev_to_ev=True, mb_to_b=True, drop_u=True)
+    endf = nuc_data.load_endf(element_for_endf, mt_endf, log=log, mev_to_ev=True, mb_to_b=True, drop_u=True)
     if endf is not None:
         return endf
     else:
@@ -285,6 +289,15 @@ def plot_limits(to_plot, endf, new_data, y_hat, y_hat2, y_hat3):
         plt.ylim(minimum_y, maximum_y)
 
 def get_error_endf_exfor(endf, exfor_sample):
+    """Allows the user to get the 
+
+    Args:
+        endf (DataFrame): raw ENDF dataframe
+        exfor_sample (DataFrame): exfor sample at which energies the ENDF will be extrapolated to get errors
+
+    Returns:
+        DataFrame: Contains
+    """    
     endf_copy = endf.copy()
     exfor_copy = exfor_sample.copy()
     exfor_copy = exfor_copy[exfor_copy.Energy > endf_copy.Energy.min()]
@@ -324,13 +337,15 @@ def get_error_endf_new(endf, new_data):
     # ORIGINAL return exfor_endf_new_data
     return exfor_endf_new_data, error_endf_exfor_new_df
 
-def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=empty_df, error=False,
+def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=empty_df, error=False, get_endf=True,
     save=False, interpolate=False, legend=False, alpha=0.7, one_hot=False, log_plot=False, path='', ref=False):
     """
     Plots Cross Section for a particular Isotope with or without references. 
     If Ref is true then EXFOR will be ploted per experimental campaign (one color for each)
     Legend will show up the
     """
+    if get_endf:
+        endf = get_endf_for_exfor(Z, A, MT, one_hot=one_hot, log=False)
     # Extracting dataframe to make predictions and creating copy for evaluation
     exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
     # Initializing Figure and Plotting
@@ -373,24 +388,22 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
     plt.ylabel('Cross Section (b)', fontsize=18)
     plt.yscale('log')
 
+    all_dict = {"exfor":exfor_sample}
+
     if ref:
         if log_plot:
             plt.xscale('log')
     if save:
-        plt.savefig(path + "EXFOR_{}_XS.png".format(exfor_sample.Isotope.values[0]), bbox_inches='tight', dpi=600)
+        plt.savefig(path + "EXFOR_{}_{}_XS.png".format(exfor_sample.Isotope.values[0], MT), bbox_inches='tight', dpi=600)
     if error:
         if endf.shape[0] != 0:
             exfor_endf, error_endf = get_error_endf_exfor(endf=endf, exfor_sample=exfor_sample)
-            all_dict = {"exfor_endf_original":exfor_endf, "error_metrics":error_endf, "endf":endf}
+            all_dict.update({"endf":endf, "exfor_endf":exfor_endf, "error_metrics":error_endf})
             if new_data.shape[0] != 0:
-                exfor_endf_new_data = get_error_endf_new(endf=endf, new_data=new_data)
-
                 exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
                 error_df = error_endf.append(error_endf_new)
                 all_dict.update({"exfor_endf_new":exfor_endf_new_data, "error_metrics":error_df})
-            return all_dict
-    else:
-        return None
+    return all_dict
 
 def plot_limits_ref(exfor_sample, endf, new_data):
     # Setting Figure Limits
@@ -442,7 +455,7 @@ def get_mt_error_exfor_endf(df, Z, A, scaler, to_scale):
                 continue
             else:
                 exfor_sample = load_samples(df, Z, A, col, **kwargs)
-                endf_data = get_endf_for_pred_xs(Z, A, col)
+                endf_data = get_endf_for_exfor(Z, A, col)
                 _, error_exfor_endf = get_error_endf_exfor(endf_data, exfor_sample)
                 error_exfor_endf["MT"] = col
                 error_results = error_results.append(error_exfor_endf)
@@ -465,7 +478,6 @@ def get_csv_for_ace(df, Z, A, scaler, to_scale, model):
                                               None, scaler, to_scale, log=False, show=False)
                 data_ace[col] = predictions
     return data_ace
-
 
 def add_new_features(df, drop_q=False, ame_dir=ame_dir_path):
     logging.info("EXFOR CSV: Adding Nuclear Radius and Neutron to Nucleus Radius Ratio data...")

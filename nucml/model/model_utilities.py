@@ -9,7 +9,8 @@ from sklearn.metrics import median_absolute_error, r2_score
 
 def regression_error_metrics(v1, v2):
     """
-    Calculates the MSE and MAE from two vectors
+    Calculates the MSE and MAE from two vectors.
+    Both vectors have to be the same length and is usually use for exfor and predictions. 
     """
     error_metrics = {}
     error_metrics["mae"] = mean_absolute_error(v1, v2)
