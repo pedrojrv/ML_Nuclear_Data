@@ -52,20 +52,20 @@ def impute_values(df):
 def normalize_features(df, to_scale, scaling_type, scaler_dir):
     if scaler_dir is not None:
         logging.info("Using previously saved scaler.")
-        scaler = load(open(scaler_dir, 'rb'))
+        scaler_object = load(open(scaler_dir, 'rb'))
     else:
         logging.info("Fitting new scaler.")
         if scaling_type == "power_yeo":
-            scaler = preprocessing.PowerTransformer().fit(df[to_scale])
+            scaler_object = preprocessing.PowerTransformer().fit(df[to_scale])
         elif scaling_type == "standard":
-            scaler = preprocessing.StandardScaler().fit(df[to_scale])
+            scaler_object = preprocessing.StandardScaler().fit(df[to_scale])
         elif scaling_type == "minmax":
-            scaler = preprocessing.MinMaxScaler().fit(df[to_scale])
+            scaler_object = preprocessing.MinMaxScaler().fit(df[to_scale])
         elif scaling_type == "maxabs":
-            scaler = preprocessing.MaxAbsScaler().fit(df[to_scale])
+            scaler_object = preprocessing.MaxAbsScaler().fit(df[to_scale])
         elif scaling_type == 'robust':
-            scaler = preprocessing.RobustScaler().fit(df[to_scale])
+            scaler_object = preprocessing.RobustScaler().fit(df[to_scale])
         elif scaling_type == 'quantile_normal':
-            scaler = preprocessing.QuantileTransformer(output_distribution='normal').fit(df[to_scale])
-    return scaler
+            scaler_object = preprocessing.QuantileTransformer(output_distribution='normal').fit(df[to_scale])
+    return scaler_object
 

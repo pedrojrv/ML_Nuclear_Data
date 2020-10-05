@@ -489,7 +489,7 @@ def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=Fal
 
 supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions", "all"]
 supported_mt_coding = ["one_hot", "particle_coded"]
-def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="std", 
+def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="standard", 
     scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot"):
 
     if mode not in supported_modes:
