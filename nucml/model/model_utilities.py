@@ -61,3 +61,4 @@ def create_error_df(identifier, error_metrics_v1):
                               "mae_m":[error_metrics_v1["mae_m"]], 
                               "r2":[error_metrics_v1["r2"]]})
     return error_metrics_df
+

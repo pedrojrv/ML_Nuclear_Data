@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 empty_df = pd.DataFrame()
-ace_dir = os.path.abspath("../../../Documents/Serpent/xsdata/endfb7/acedata")
+ace_dir = os.path.abspath("../../../../Documents/Serpent/xsdata/endfb7/acedata")
 
 
 # def get_to_skip_lines(element, temp="03c", ace_dir=ace_dir):
@@ -144,7 +144,7 @@ def get_merged_df(ml_df, lsig, xs_table_pointer, jxs, xss, mt_data, mt_array):
             ml_df = fill_ml_xs(i, ml_df, mt_data["mt3"])
         else:
             MT = re.sub("[^0-9]", "", i)
-            sig, en, _, _ = get_sig_mt(int(MT), mt_array, lsig, xs_table_pointer, jxs, xss)
+            sig, _, _, _ = get_sig_mt(int(MT), mt_array, lsig, xs_table_pointer, jxs, xss)
             ml_df = fill_ml_xs(i, ml_df, sig)
     return ml_df
 
