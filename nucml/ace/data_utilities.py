@@ -193,7 +193,7 @@ def adjust_mt1_mt2(Energy_Grid):
     adjusting_mt1 = pd.DataFrame({"Data_1":Energy_Grid.Data_1.values, "Data_3":Energy_Grid.Data_3.values})
     adjusting_mt1["Data_2"] = adjusting_mt1.Data_1.values - adjusting_mt1.Data_3.values
     
-    neg_ix = adjusting_mt1[adjusting_mt1.Data_2 < 0].index.tolist()
+    # neg_ix = adjusting_mt1[adjusting_mt1.Data_2 < 0].index.tolist()
     adjusting_mt1["Data_2"] = adjusting_mt1["Data_2"].apply(lambda x: x if x > 0 else -1)
     adjusting_mt1 = adjusting_mt1.replace(to_replace=-1, value=np.nan)
     adjusting_mt1 = adjusting_mt1.interpolate()

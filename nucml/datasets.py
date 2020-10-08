@@ -116,7 +116,8 @@ def load_ame_rct2(directory=ame_dir_path):
             If it does not exists then it probably hasn't been generated.")
         return None
 
-def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=False, drop_u=True):
+endf_path = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\Evaluated_Data\\'
+def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=False, drop_u=True, endf_dir=endf_path):
     """Reads Evaluated Nuclear Data File for a specific element and reaction channel. It is important
     to inspect the returned data since it queries an external database which extracted data from ENDF 
     using a particular script. It has been found that some particular reactions are not included.
@@ -135,7 +136,6 @@ def load_endf(ELAAA, MT, mode="neutrons", mev_to_ev=True, mb_to_b=True, log=Fals
         endf (DataFrame): pandas DataFrame containing the ENDF datapoints.
         None: if file does not exist. 
     """
-    endf_path = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\Evaluated_Data\\'
     path = os.path.join(endf_path, mode + "/" + ELAAA + "/endfb8.0/tables/xs/n-" + ELAAA + "-" + MT + ".endfb8.0")
     file = Path(path)
     if file.is_file():

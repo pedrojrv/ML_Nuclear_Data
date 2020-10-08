@@ -220,32 +220,3 @@ def plot_xgb_training(dictionary, save=False, show=True):
     if show == False:
         plt.close()    
 
-    # else:
-    #     loop_number = loop_number + 1
-    #     for i in parameters_dict["max_depth_list"]:
-    #         print("Training Decision Tree Regressor with Max Depth = {}".format(i))
-    #         dt_model = tree.DecisionTreeRegressor(max_depth=i, min_samples_split=2, min_samples_leaf=1)
-    #         dt_model.fit(x_train, y_train)
-
-    #         print("    Calculating error metrics...")
-    #         y_hat_train = dt_model.predict(x_train)
-    #         train_error_metrics = model_utils.regression_error_metrics(y_hat_train, y_train)
-            
-    #         y_hat_test = dt_model.predict(x_test)
-    #         train_error_metrics = model_utils.regression_error_metrics(y_hat_test, y_test)
-            
-    #         to_append = model_utils.create_train_test_error_df(loop_number, train_error_metrics, test_error_metrics)
-    #         to_append["max_depth"] = dt_model.get_depth()
-    #         to_append["mss"] = 2
-    #         to_append["msl"] = 1
-    #         to_append["training_time"] = stop_training_time - start_training_time
-
-    #         if save_models:
-    #             print("    Saving Model...")
-    #             saving_dir = os.path.join(save_dir, "dt_model_md{}.joblib".format((i)))
-    #             dump(dt_model, saving_dir) 
-    #             to_append["model_path"] = saving_dir
-
-    #         model_error_metrics = model_error_metrics.append(to_append)
-    #         loop_number = loop_number + 1
-    #         del dt_model
