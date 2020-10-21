@@ -8,6 +8,7 @@ from joblib import dump
 import time
 from sklearn.neighbors import KNeighborsRegressor
 import sys
+import itertools
 
 # This allows us to import the nucml utilities
 sys.path.append("../../..")
@@ -70,9 +71,23 @@ for mt_strategy in ["one_hot"]:
         new_cl_data = exfor_utils.load_newdata("../../../EXFOR/New_Data/Chlorine_Data/new_cl_np.csv", df, **new_cl_data_kwargs)
         new_cl_data.head()
         
-        for k_number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]:   
-            for distance_type in ["uniform", "distance"]:
-                for distance_metric in ["euclidean", "manhattan"]:        
+        parameters_dict = {
+            # "k_number": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "k_number": [16, 17, 18, 19, 20],
+            "distance_type": ["distance"],
+            "distance_metric": ["euclidean", "manhattan"]
+        }
+
+        a = [list(parameters_dict["k_number"]), list(parameters_dict["distance_type"]), list(parameters_dict["distance_metric"])]
+        total_num_iterations = len(list(itertools.product(*a)))
+
+        loop_number = 0 # ORIGINAL INDENT
+        # for k_number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]:   
+        for k_number in parameters_dict["k_number"]:   
+            for distance_type in parameters_dict["distance_type"]:
+                for distance_metric in parameters_dict["distance_metric"]:    
+                    print("Iteration {}/{}".format(loop_number, total_num_iterations))   
+
 
                     # ------------------------------------------ TRAINING -------------------------------------------
                     # BUILDING MODEL AND LOGGING NUMBER OF LAYERS AND UNITS
@@ -114,17 +129,18 @@ for mt_strategy in ["one_hot"]:
                     }
 
                     GROUP_NAME = "KNN_B0" # CHANGED
-                    RUN_NAME = 'k{}_{}_{}_{}_{}'.format(
+                    RUN_NAME = 'k{}_{}_{}_{}_{}_B0_v2'.format(
                         k_number, distance_type, distance_metric, normalizer_type, mt_strategy) 
 
-                    # LOGGING CHLORINE PLOTLY PLOT
-                    fig_to_log_cl = run_chlorine(df, neigh_model)
-                    fig_to_log_u = run_uranium(df, neigh_model)
-                    # LOGGING FIGURES TO COMET (DOES NOT ACCEPT PLOTLY)
-                    pil_fig_cl = plot_utils.plotly_fig2pil(fig_to_log_cl)
-                    pil_fig_u = plot_utils.plotly_fig2pil(fig_to_log_u)
+                    # # LOGGING CHLORINE PLOTLY PLOT
+                    # fig_to_log_cl = run_chlorine(df, neigh_model)
+                    # fig_to_log_u = run_uranium(df, neigh_model)
+                    # # LOGGING FIGURES TO COMET (DOES NOT ACCEPT PLOTLY)
+                    # pil_fig_cl = plot_utils.plotly_fig2pil(fig_to_log_cl)
+                    # pil_fig_u = plot_utils.plotly_fig2pil(fig_to_log_u)
 
-                    model_saving_directory = os.path.join("ML_Models/", RUN_NAME + "/")
+
+                    model_saving_directory = os.path.join("E:/ML_Models_EXFOR/KNN_B0/", RUN_NAME + "/")
                     os.makedirs(model_saving_directory)
                     model_saving_path = os.path.join(model_saving_directory, RUN_NAME + ".joblib")
                     scaler_saving_path = os.path.join(model_saving_directory, 'scaler.pkl')
@@ -161,8 +177,8 @@ for mt_strategy in ["one_hot"]:
                     wandb.log({'Train MAE': train_error_metrics['mae']})
                     wandb.log({'Val MSE': test_error_metrics['mse']})
                     wandb.log({'Val MAE': test_error_metrics['mae']})
-                    wandb.log({'Chlorine_35_NP': fig_to_log_cl})
-                    wandb.log({'Uranium_233_NF': fig_to_log_u})
+                    # wandb.log({'Chlorine_35_NP': fig_to_log_cl})
+                    # wandb.log({'Uranium_233_NF': fig_to_log_u})
 
                     to_append.to_csv(os.path.join(LOGGING_DIR_NAME, "model_metrics_info.csv"), index=False)
 
@@ -176,8 +192,8 @@ for mt_strategy in ["one_hot"]:
                     comet_experiment.log_dataset_info(
                         name='B0_{}_MT{}'.format(normalizer_type, mt_strategy), version="1")
 
-                    comet_experiment.log_image(pil_fig_cl, name="Chlorine_35_NP") # MAPTLOTLIB PYPLOT USING LOG_FIGURE
-                    comet_experiment.log_image(pil_fig_u, name="Uranium_233_NF")
+                    # comet_experiment.log_image(pil_fig_cl, name="Chlorine_35_NP") # MAPTLOTLIB PYPLOT USING LOG_FIGURE
+                    # comet_experiment.log_image(pil_fig_u, name="Uranium_233_NF")
                          
                     metrics = {
                         'Train MSE': train_error_metrics['mse'],
@@ -196,3 +212,6 @@ for mt_strategy in ["one_hot"]:
                         new.to_csv(csv_path, index=False)
                     else:
                         model_error_metrics.to_csv(csv_path, index=False)
+                    
+                    
+                    loop_number = loop_number + 1

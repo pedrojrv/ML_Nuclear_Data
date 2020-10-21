@@ -490,7 +490,7 @@ def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=Fal
 supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions", "all"]
 supported_mt_coding = ["one_hot", "particle_coded"]
 def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="standard", 
-    scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot"):
+    scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot", scale_energy=False):
 
     if mode not in supported_modes:
         return logging.error("Specified MODE not supported. Supporte modes include: {}".format(' '.join([str(v) for v in supported_modes])))
@@ -540,29 +540,43 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         else:
             df["Energy"] = np.log10(df["Energy"])
             df["Data"] = np.log10(df["Data"])
+
+    magic_numbers = [2, 8, 20, 28, 40, 50, 82, 126, 184]
+    df["N_valence"] = df.N.apply(lambda neutrons: abs(neutrons - min(magic_numbers, key=lambda x:abs(x-neutrons))))
+    df["Z_valence"] = df.Z.apply(lambda protons: abs(protons - min(magic_numbers, key=lambda x:abs(x-protons))))
+    df["P_factor"] = (df["N_valence"] * df["Z_valence"]) / (df["N_valence"] + df["Z_valence"])
+    df["N_tag"] = df.N.apply(lambda neutrons: "even" if neutrons % 2 == 0 else "even")
+    df["Z_tag"] = df.Z.apply(lambda neutrons: "odd" if neutrons % 2 == 0 else "odd")
+    df["NZ_tag"] = df["N_tag"] + "_" + df["Z_tag"]
+
     if basic == 0:
         basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag", "N", "A", "Element_Flag"]
         df = df[basic_cols]
     elif basic == 1:
+
         # 'S(2p)' THIS IS AN ISSUE WITH YEO TRANSFORMER FOR SOME REASON SO WATCH OUT!
         basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag",
                     "N", "A", "Element_Flag", 'Nucleus_Radius', 'Neutron_Nucleus_Radius_Ratio', 
                     'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 'Atomic_Mass_Micro', 'S(2n)', 
-                    'S(n)', 'S(p)', 'S(2p)']
+                    'S(n)', 'S(p)', 'S(2p)', "N_valence", "Z_valence", "P_factor", "N_tag", "Z_tag", 
+                    "NZ_tag"]
         df = df[basic_cols]  
 
     logging.info("Data read into dataframe with shape: {}".format(df.shape))
     if num:
         logging.info("Dropping unnecessary features and one-hot encoding categorical columns...")
-        if basic == 0 or basic == 1:
+        if basic == 0:
             columns_drop = ["dData", "dEnergy"]
             cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag"]
+        elif basic == 1:
+            columns_drop = ["dData", "dEnergy"]
+            cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag", "N_tag", "Z_tag", "NZ_tag"]
         else:
             columns_drop = ["Projectile", "EXFOR_Status", "Short_Reference", 'EXFOR_Accession_Number', 'EXFOR_SubAccession_Number', 
                             'EXFOR_Pointer', "Reaction_Notation", "Title", "Year", "Author", "Institute", "Date", "Reference",
                             'Dataset_Number', 'EXFOR_Entry', 'Reference_Code', 'Isotope', 'Element', "dData", "dEnergy",
                             'Projectile_Z', 'Projectile_A', 'Projectile_N']
-            cat_cols = ["Target_Metastable_State", "MT", "Product_Metastable_State", "Center_of_Mass_Flag", "I78", "Element_Flag", "O"]
+            cat_cols = ["Target_Metastable_State", "MT", "Product_Metastable_State", "Center_of_Mass_Flag", "I78", "Element_Flag", "O", "N_tag", "Z_tag", "NZ_tag"]
         
             
         df.drop(columns=columns_drop, inplace=True)
@@ -586,7 +600,8 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         
         logging.info("Normalizing dataset...")
         to_scale = list(x_train.columns)[:norm_columns]
-        to_scale.remove("Energy")
+        if not scale_energy:
+            to_scale.remove("Energy")
         scaler = nuc_proc.normalize_features(x_train, to_scale, scaling_type, scaler_dir)
         x_train[to_scale] = scaler.transform(x_train[to_scale])
         x_test[to_scale] = scaler.transform(x_test[to_scale])

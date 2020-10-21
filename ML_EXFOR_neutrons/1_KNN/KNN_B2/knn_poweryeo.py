@@ -8,6 +8,7 @@ from joblib import dump
 import time
 from sklearn.neighbors import KNeighborsRegressor
 import sys
+import itertools
 
 # This allows us to import the nucml utilities
 sys.path.append("../../..")
@@ -31,6 +32,9 @@ ace_cl = ace_utils.get_energies("17035", ev=True, log=True)
 
 COMMET_PROJECT_NAME = "ml-scikit-exfor"
 WANDB_PROJECT_NAME = COMMET_PROJECT_NAME
+
+DATASET = 'B2'
+VERSION = ''
 
 
 order = {
@@ -63,16 +67,29 @@ for mt_strategy in ["one_hot"]:
     for normalizer_type in ["power_yeo"]:
         
         df, x_train, x_test, y_train, y_test, to_scale, scaler = nuc_data.load_exfor(
-            log=True, low_en=True, num=True, filters=True, basic=2, 
+            log=True, low_en=True, num=True, filters=True, basic=1, 
             scaling_type=normalizer_type, mt_coding=mt_strategy)
         
         new_cl_data_kwargs = {"Z":17, "A":35, "MT":"MT_103", "log":True, "scale":True, "scaler":scaler, "to_scale":to_scale, "one_hot":True}
         new_cl_data = exfor_utils.load_newdata("../../../EXFOR/New_Data/Chlorine_Data/new_cl_np.csv", df, **new_cl_data_kwargs)
         new_cl_data.head()
         
-        for k_number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]:   
-            for distance_type in ["uniform", "distance"]:
-                for distance_metric in ["euclidean", "manhattan"]:        
+        parameters_dict = {
+            "k_number": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+            "distance_type": ["distance"],
+            "distance_metric": ["euclidean", "manhattan"]
+        }
+
+        a = [list(parameters_dict["k_number"]), list(parameters_dict["distance_type"]), list(parameters_dict["distance_metric"])]
+        total_num_iterations = len(list(itertools.product(*a)))
+
+        loop_number = 0 # ORIGINAL INDENT
+        # for k_number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]:   
+        for k_number in parameters_dict["k_number"]:   
+            for distance_type in parameters_dict["distance_type"]:
+                for distance_metric in parameters_dict["distance_metric"]:    
+                    print("Iteration {}/{}".format(loop_number, total_num_iterations))   
+
 
                     # ------------------------------------------ TRAINING -------------------------------------------
                     # BUILDING MODEL AND LOGGING NUMBER OF LAYERS AND UNITS
@@ -106,16 +123,16 @@ for mt_strategy in ["one_hot"]:
                     # DEFINING NAME OF RUN/EXPERIMENT AND PARAMETERS
                     params = {
                         'Model Type': "KNN",
-                        'Dataset': 'B0_{}_MT{}'.format(normalizer_type, mt_strategy),
+                        'Dataset': '{}_{}_MT{}'.format(DATASET, normalizer_type, mt_strategy),
                         'K':k_number,
                         'Scaler':normalizer_type,
                         'Distance Function': distance_type,
                         'Distance': distance_metric
                     }
 
-                    GROUP_NAME = "KNN_B0" # CHANGED
-                    RUN_NAME = 'k{}_{}_{}_{}_{}'.format(
-                        k_number, distance_type, distance_metric, normalizer_type, mt_strategy) 
+                    GROUP_NAME = "KNN_{}".format(DATASET) # CHANGED
+                    RUN_NAME = 'k{}_{}_{}_{}_{}_{}'.format(
+                        k_number, distance_type, distance_metric, normalizer_type, mt_strategy, DATASET) 
 
                     # LOGGING CHLORINE PLOTLY PLOT
                     fig_to_log_cl = run_chlorine(df, neigh_model)
@@ -124,7 +141,8 @@ for mt_strategy in ["one_hot"]:
                     pil_fig_cl = plot_utils.plotly_fig2pil(fig_to_log_cl)
                     pil_fig_u = plot_utils.plotly_fig2pil(fig_to_log_u)
 
-                    model_saving_directory = os.path.join("ML_Models/", RUN_NAME + "/")
+
+                    model_saving_directory = os.path.join("E:/ML_Models_EXFOR/KNN_{}/".format(DATASET), RUN_NAME + "/")
                     os.makedirs(model_saving_directory)
                     model_saving_path = os.path.join(model_saving_directory, RUN_NAME + ".joblib")
                     scaler_saving_path = os.path.join(model_saving_directory, 'scaler.pkl')
@@ -141,7 +159,7 @@ for mt_strategy in ["one_hot"]:
                     # INITIATING WANDB RUN AND UPDATING CONFIG WITH HYPERPARAMETER VALUES
                     run = wandb.init(project=WANDB_PROJECT_NAME, name=RUN_NAME, reinit=True, 
                                group=GROUP_NAME, id=RUN_NAME)
-                    os.environ['WANDB_NOTEBOOK_NAME'] = '3_KNN_B0'
+
                     wandb.config.update(params)
                     
                     # --------------------------------------- COMET -------------------------------------------------
@@ -174,7 +192,7 @@ for mt_strategy in ["one_hot"]:
                     # comet_experiment.log_model(RUN_NAME, model_saving_dir) 
                     comet_experiment.log_asset_folder(LOGGING_DIR_NAME) 
                     comet_experiment.log_dataset_info(
-                        name='B0_{}_MT{}'.format(normalizer_type, mt_strategy), version="1")
+                        name='{}_{}_MT{}'.format(DATASET, normalizer_type, mt_strategy), version="1")
 
                     comet_experiment.log_image(pil_fig_cl, name="Chlorine_35_NP") # MAPTLOTLIB PYPLOT USING LOG_FIGURE
                     comet_experiment.log_image(pil_fig_u, name="Uranium_233_NF")
@@ -196,3 +214,6 @@ for mt_strategy in ["one_hot"]:
                         new.to_csv(csv_path, index=False)
                     else:
                         model_error_metrics.to_csv(csv_path, index=False)
+                    
+                    
+                    loop_number = loop_number + 1

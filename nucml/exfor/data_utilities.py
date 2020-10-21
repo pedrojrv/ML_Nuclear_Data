@@ -23,9 +23,10 @@ import nucml.datasets as nuc_data                   # pylint: disable=import-err
 import nucml.model.model_utilities as model_utils   # pylint: disable=import-error
 import nucml.plot.plotting_utilities as plot_utils  # pylint: disable=import-error
 import nucml.general_utilities as gen_utils         # pylint: disable=import-error
+import nucml.exfor.plotting_utilities as exfor_plot_utils  # pylint: disable=import-error
+
 
 ame_dir_path = os.path.abspath("../AME/")
-
 
 # If more columns are added we need to fix norm column indexing to not include one hot encoded features.
 # If we want dEnergy back we need to change load_newdata from [2:] to [3:] and do not drop it in load_Exfor
@@ -219,7 +220,7 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, clf, to_scale, scaler, e_array="ace",
             error_df = error_df.append(error_endf_new)
             all_dict.update({"exfor_endf_new":exfor_endf_new_data, "error_metrics":error_df})
     if show:
-        plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, html=html, show=show)
+        exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, html=html, show=show)
     return all_dict
 
 def get_endf_for_exfor(Z, A, MT, one_hot=True, log=True):
@@ -350,42 +351,44 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
     exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
     # Initializing Figure and Plotting
     if ref:
-        fg = sns.FacetGrid(data=exfor_sample[["Energy", "Data", "Reference"]], hue='Reference',
-                           hue_order=exfor_sample["Reference"].unique(), aspect=1.5, legend_out=False, height=10)
+        fg = sns.FacetGrid(data=exfor_sample[["Energy", "Data", "Short_Reference"]], hue='Short_Reference',
+                           hue_order=exfor_sample["Short_Reference"].unique(), aspect=1.5, legend_out=False, height=10)
         fg.map(plt.scatter, "Energy", "Data", alpha=alpha)
         if legend:
             fg.add_legend()
             if interpolate == True:
-                sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, label="Interpolation", ci=None)
+                sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, label="Interpolation", ci=None) # pylint: disable=too-many-function-args
             if endf.shape[0] != 0:
-                sns.lineplot(endf["Energy"], endf["Data"], color="tab:orange", label="ENDF", alpha=alpha*0.5, ci=None)
+                sns.lineplot(endf["Energy"], endf["Data"], color="tab:orange", label="ENDF", alpha=alpha*0.5, ci=None) # pylint: disable=too-many-function-args
             if new_data.shape[0] != 0:
                 sns.scatterplot(new_data["Energy"], new_data["Data"], color="r",
-                                alpha=0.5, label="New Data", ci=None)
+                                alpha=0.5, label="New Data", ci=None) # pylint: disable=too-many-function-args
         else:
             if interpolate == True:
-                sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated")
+                sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated") # pylint: disable=too-many-function-args
             if endf.shape[0] != 0:
-                sns.lineplot(endf["Energy"], endf["Data"], color="orange", alpha=1.0, legend=False, ci=None, label="ENDF")
+                sns.lineplot(endf["Energy"], endf["Data"], color="orange", alpha=1.0, legend=False, ci=None, label="ENDF") # pylint: disable=too-many-function-args
             if new_data.shape[0] != 0:
-                sns.scatterplot(new_data["Energy"], new_data["Data"], legend=False, ci=None, label="Additional Data")
+                sns.scatterplot(new_data["Energy"], new_data["Data"], legend=False, ci=None, label="Additional Data") # pylint: disable=too-many-function-args
     else:
         plt.figure(figsize=(14,10))
         if log_plot:
             plt.xscale('log')
-        sns.scatterplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha, legend=False, label="EXFOR", ci=None, marker="o")
+        sns.scatterplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha, legend=False, label="EXFOR", ci=None, marker="o") # pylint: disable=too-many-function-args
         if interpolate == True:
-            sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated")
+            sns.lineplot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, legend=False, ci=None, label="EXFOR Interpolated") # pylint: disable=too-many-function-args
         if endf.shape[0] != 0:
-            sns.lineplot(endf["Energy"], endf["Data"], color="tab:orange", alpha=alpha*0.7, legend=False, ci=None, label="ENDF")
+            sns.lineplot(endf["Energy"], endf["Data"], color="tab:orange", alpha=alpha*0.7, legend=False, ci=None, label="ENDF") # pylint: disable=too-many-function-args
         if new_data.shape[0] != 0:
-            sns.scatterplot(new_data["Energy"], new_data["Data"], alpha=1.0, legend=False, ci=None, label="Additional Data")
+            sns.scatterplot(new_data["Energy"], new_data["Data"], alpha=1.0, legend=False, ci=None, label="Additional Data") # pylint: disable=too-many-function-args
         if legend:
             plt.legend()
     # Setting Figure Limits
     plot_limits_ref(exfor_sample, endf, new_data)
-    plt.xlabel('Energy(eV)', fontsize=18)
-    plt.ylabel('Cross Section (b)', fontsize=18)
+    # plt.xlabel('Energy (eV)', fontsize=18)
+    # plt.ylabel('Cross Section (b)', fontsize=18)
+    plt.xlabel('Energy (eV)')
+    plt.ylabel('Cross Section (b)')
     plt.yscale('log')
 
     all_dict = {"exfor":exfor_sample}
@@ -393,6 +396,60 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
     if ref:
         if log_plot:
             plt.xscale('log')
+    if save:
+        plt.savefig(path + "EXFOR_{}_{}_XS.png".format(exfor_sample.Isotope.values[0], MT), bbox_inches='tight', dpi=600)
+    if error:
+        if endf.shape[0] != 0:
+            exfor_endf, error_endf = get_error_endf_exfor(endf=endf, exfor_sample=exfor_sample)
+            all_dict.update({"endf":endf, "exfor_endf":exfor_endf, "error_metrics":error_endf})
+            if new_data.shape[0] != 0:
+                exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
+                error_df = error_endf.append(error_endf_new)
+                all_dict.update({"exfor_endf_new":exfor_endf_new_data, "error_metrics":error_df})
+    return all_dict
+
+def plot_exfor_w_references_v2(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=empty_df, error=False, get_endf=True, reverse_log=False, legend_size=21,
+    save=False, interpolate=False, legend=False, alpha=0.7, one_hot=False, log_plot=False, path='', ref=False, new_data_label="Additional Data"):
+    """
+    Plots Cross Section for a particular Isotope with or without references. 
+    If Ref is true then EXFOR will be ploted per experimental campaign (one color for each)
+    Legend will show up the
+    """
+    if reverse_log:
+        df["Energy"] = 10**df["Energy"].values
+        df["Data"] = 10**df["Data"].values
+    if get_endf:
+        endf = get_endf_for_exfor(Z, A, MT, one_hot=one_hot, log=False)
+    # Extracting dataframe to make predictions and creating copy for evaluation
+    exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    # Initializing Figure and Plotting
+    plt.figure(figsize=(14,10))
+    ax = plt.subplot(111)
+    if ref:
+        groups = exfor_sample[["Energy", "Data", "Short_Reference"]].groupby("Short_Reference")
+        for name, group in groups:
+            ax.plot(group["Energy"], group["Data"], marker="o", linestyle="", label=name, alpha=0.9)
+    else:
+        ax.scatter(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha, label="EXFOR", ci=None, marker="o") # pylint: disable=too-many-function-args  
+    if new_data.shape[0] != 0:
+        ax.plot(new_data.Energy, new_data.Data, marker="o", linestyle="", label=new_data_label, alpha=0.9)
+    if endf.shape[0] != 0:
+        ax.plot(endf.Energy, endf.Data, label="ENDF/B-VIII.0", alpha=0.5)
+    if interpolate == True:
+        ax.plot(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha*0.5, label="Interpolation", ci=None) # pylint: disable=too-many-function-args
+    if log_plot:
+        plt.xscale('log')
+        plt.yscale('log')
+    if legend:
+        ax.legend(fontsize=legend_size)
+
+    # Setting Figure Limits
+    plot_limits_ref(exfor_sample, endf, new_data)
+    plt.xlabel('Energy (eV)')
+    plt.ylabel('Cross Section (b)')
+
+    all_dict = {"exfor":exfor_sample}
+
     if save:
         plt.savefig(path + "EXFOR_{}_{}_XS.png".format(exfor_sample.Isotope.values[0], MT), bbox_inches='tight', dpi=600)
     if error:

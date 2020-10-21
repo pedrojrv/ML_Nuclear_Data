@@ -11,7 +11,7 @@ sns.set(font_scale=2)
 sns.set_style('white')
 
 z_order_dict = {"endf":1, "new_data":2, "exfor":3, "tendl":4, "jendl":5, "jeff":6}
-def plot_evaluations(ELAAA, MT, exfor=None, exclude=[], new_data=None, new_data_label="", save=False, save_dir="", z_order_dict=z_order_dict):
+def plot(ELAAA, MT, exfor=None, exclude=[], new_data=None, new_data_label="", save=False, save_dir="", z_order_dict=z_order_dict):
     endf = nuc_data.load_endf(ELAAA, MT, mev_to_ev=True, mb_to_b=True, drop_u=True)
     tendl = nuc_data.load_tendl(ELAAA, MT, mev_to_ev=True, mb_to_b=True, drop_u=True)
     jendl = nuc_data.load_jendl(ELAAA, MT, mev_to_ev=True, mb_to_b=True, drop_u=True)
