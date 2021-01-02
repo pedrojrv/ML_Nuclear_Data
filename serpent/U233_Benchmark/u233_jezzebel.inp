@@ -1,0 +1,48 @@
+% --- Simple U233 Jezebel Benchmark
+
+/************************
+ * Material definitions *
+ ************************/
+
+% --- Fuel material jEZEBEL, density 18.424 g/cm3
+
+mat fuel     -18.424
+    92233.03c    4.6712E-02
+    92234.03c    5.9026E-04
+    92235.03c    1.4281E-05
+    92238.03c    2.8561E-04
+
+
+
+/************************
+ * Geometry definitions *
+ ************************/
+
+% --- Bare Sphere
+surf s1 sph 0.0 0.0 0.0 5.9838
+
+% --- Cell c1 belongs to the base universe 0, is filled with the uranium fuel
+%     and covers everything inside surface s1
+% --- Cell c2 belongs to the base universe 0, is defined as an "outside" cell
+%     and covers everything outside surface s1
+
+cell c1 0 fuel     -s1     % filling in sphere with fuel
+cell c2 0 outside   s1     % outside sphere
+
+
+/******************
+ * Run parameters *
+ ******************/
+
+% --- Neutron population: 5000 neutrons per cycle, 100 active / 20 inactive cycles
+
+set pop 5000 100 20
+
+% --- Boundary condition (1 = black, 2 = reflective, 3 = periodic)
+
+set bc 1
+
+% --- Geometry plots
+% --- 200 by 200 pixel meshplot that covers the whole geometry: -0.75 < (x,y) < 0.75
+
+mesh 3  200  200

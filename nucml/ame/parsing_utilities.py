@@ -3,16 +3,45 @@ import os
 import sys
 import numpy as np
 import pandas as pd
+import requests
+import warnings
 
 sys.path.append("..")
+pd.options.mode.chained_assignment = None  # default='warn'
 
 from nucml.general_utilities import check_if_files_exist     # pylint: disable=import-error
 from nucml.processing import impute_values                   # pylint: disable=import-error
 
-ame_dir_path = os.path.abspath("../AME/")
-ame_originals_path = os.path.abspath("../AME/Originals/")
 
-def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
+
+def get_ame_originals(originals_directory):
+    """Requests and stores the three AME original files for further processing from the IAEA website.
+
+    Args:
+        originals_directory (str): path-like string where the text files will be stored.
+
+    Returns:
+        None
+    """    
+    logging.info("AME: Requesting data text files.")
+    # periodic_table = requests.get('https://raw.githubusercontent.com/pedrojrv/ML_Nuclear_Data/master/AME/Originals/periodic_table.csv').content
+    mass16_txt = requests.get('https://www-nds.iaea.org/amdc/ame2016/mass16.txt').content
+    rct1_txt = requests.get('https://www-nds.iaea.org/amdc/ame2016/rct1-16.txt').content
+    rct2_txt = requests.get('https://www-nds.iaea.org/amdc/ame2016/rct2-16.txt').content
+
+    logging.info('AME: Saving text files in provided directory.')
+    # with open(os.path.join(originals_directory, 'periodic_table.csv'), 'wb') as f:
+    #     f.write(periodic_table)    
+    with open(os.path.join(originals_directory, 'mass16.txt'), 'wb') as f:
+        f.write(mass16_txt)
+    with open(os.path.join(originals_directory, 'rct1-16.txt'), 'wb') as f:
+        f.write(rct1_txt)
+    with open(os.path.join(originals_directory, 'rct2-16.txt'), 'wb') as f:
+        f.write(rct2_txt)
+    return None
+
+
+def read_mass16(originals_directory, saving_directory):
     """Reads the mass16.txt file and creates a formatted CSV file. The Mass 16 file contains a variety of 
     features including atomic mass, mass excess, binding energy, beta decay energy, and more.
     For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
@@ -20,8 +49,6 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
     It  is parse base on the Fortran formatting:
     a1,i3,i5,i5,i5,1x,a3,a4,1x,f13.5,f11.5,f11.3,f9.3,1x,a2,f11.3,f9.3,1x,i3,1x,f12.5,f11.5
 
-    This is equivalent to spacing numbers: 
-    1,4,9,14,19,20,23,27,28,41,52,63,72,73,75,86,95,96,99,100,112,123
 
     Args:
         originals_directory (str): path to the Atomic Mass Evaluation directory where the mass16_toparse.txt file is located.
@@ -54,6 +81,9 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
         for col in data.select_dtypes(include=['object']):
             data[col] = data[col].apply(lambda x: str(x).replace("#", ""))
 
+        mass16_dtypes = ['float64', 'int64', 'int64', 'int64', 'int64', 'float64', 'object', 'object', 'float64', 'float64',
+            'float64', 'float64', 'float64', 'float64', 'object', 'object', 'float64', 'float64', 'object', 'float64']
+
         for col, types in zip(data.columns, mass16_dtypes):
             data[col] = data[col].astype(types)
             
@@ -79,7 +109,7 @@ def read_mass16(originals_directory=ame_originals_path, saving_directory=ame_dir
         sys.exit()
     return None
 
-def read_rct1(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
+def read_rct1(originals_directory, saving_directory):
     """Reads the rct1-16.txt file and creates a formatted CSV file. The rct1-16 file contains a variety of 
     features including neutron and proton separation energies and q-values for a variety of reactions.
     For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
@@ -136,7 +166,7 @@ def read_rct1(originals_directory=ame_originals_path, saving_directory=ame_dir_p
         sys.exit()
     return None
 
-def read_rct2(originals_directory=ame_originals_path, saving_directory=ame_dir_path):
+def read_rct2(originals_directory, saving_directory):
     """Reads the rct2-16.txt file and creates a formatted CSV file. The rct2-16 file contains a variety of 
     features including neutron and proton separation energies and q-values for a variety of reactions.
     For more information visit the IAEA webiste: https://www-nds.iaea.org/amdc/
@@ -194,7 +224,7 @@ def read_rct2(originals_directory=ame_originals_path, saving_directory=ame_dir_p
         sys.exit()
     return None
 
-def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qvalues=True):
+def merge_mass_rct(directory, create_imputed=True, add_qvalues=True):
     """Reads the proccessed mass16, rct1, and rct2 files and merges them while adding other reaction 
     Q-values if needed. It creates one main CSV file when finished. This assumes the three files 
     were created using the read_mass(), read_rct1(), and read_rct2() functions. For more information 
@@ -204,9 +234,8 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
     Args:
         directory (str): Path to the Atomic Mass Evaluation directory where 
             the processed mass16, rct2, and rct2 files are saved. The length of all three 
-            files must be the same.
-        saving_directory (str): path to directory where the resulting formatted 
-            csv file will be saved.
+            files must be the same. The resulting file will be stored in the same directory.
+        create_imputed (bool): If True, missing values will be imputed.
         add_qvalues (bool): If true it will add the following reaction Q-values:
             ["Q(g,p)"] = -1 * ["S(p)"]
             ["Q(g,n)"] = -1 * ["S(n)"]
@@ -238,6 +267,7 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
     Returns:
         None
     """
+    saving_directory = directory
     logging.info("MERGE: Initializing. Checking documents...")
     mass16_path = os.path.join(directory, "AME_mass16.csv")
     rct1_path = os.path.join(directory, "AME_rct1.csv")
@@ -253,8 +283,9 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
         if len(rct1.Element_w_A.unique()) == len(rct2.Element_w_A.unique()) == len(data.Element_w_A.unique()):
             df_final = pd.merge(data, rct1, on='Element_w_A')
             df_final = pd.merge(df_final, rct2, on='Element_w_A')
+
             if add_qvalues:
-                logging.info("MERGE: Q-VALUE CALCULATION: ENABLED \n Calculating additional reaction energies...")
+                logging.info("MERGE: Q-value Calculation: enabled. Calculating additional reaction energies...")
                 df_final["Q(g,p)"] = -1 * df_final["S(p)"]
                 df_final["Q(g,n)"] = -1 * df_final["S(n)"]
                 df_final["Q(g,pn)"] = df_final["Q(d,a)"] - 26071.0939
@@ -286,13 +317,20 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
             csv_name = os.path.join(saving_directory, "AME_all_merged.csv")
             logging.info("MERGE: Formatting done. Saving file to {}".format(csv_name))
             df_final.to_csv(csv_name, index=False)
-            logging.info("MERGE: Succesfully merged files. Imputing missing values...")
-            csv_name = os.path.join(saving_directory, "AME_all_merged_no_NaN.csv")
-            df_final = impute_values(df_final)
-            df_final = df_final.interpolate(method='spline', order=1, limit=10, limit_direction='both')
-            df_final = df_final.interpolate()
-            df_final.to_csv(csv_name, index=False)
-            logging.info("MERGE: Succesfully merged files. Imputing missing values...")
+            logging.info("MERGE: Succesfully merged files.")
+
+            if impute_values:
+                logging.info("MERGE: Imputing enabled. Interpolating...")
+                csv_name = os.path.join(saving_directory, "AME_all_merged_no_NaN.csv")
+                
+                warnings.filterwarnings('ignore')
+                df_final = impute_values(df_final)
+                df_final = df_final.interpolate(method='spline', order=1, limit=10, limit_direction='both')
+                df_final = df_final.interpolate()
+                warnings.filterwarnings('default')
+                df_final.to_csv(csv_name, index=False)
+                logging.info("MERGE: Succesfully merged files. Imputing missing values...")
+ 
         else:
             logging.error("MERGE: Shapes among the three files is not consistent.")
             sys.exit()
@@ -301,18 +339,15 @@ def merge_mass_rct(directory=ame_dir_path, saving_directory=ame_dir_path, add_qv
         sys.exit()
     return None
 
-def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_originals_path, 
-    saving_directory=ame_dir_path, fillna=True, mode="elemental", fill_value=0):
+def create_natural_element_data(originals_directory, saving_directory, fillna=True, mode="elemental", fill_value=0):
     """Creates natural element data by averaging isotopic data. Additionally it
     adds a flag to indicate rows which correspond to isotopic or natural data.
 
     Args:
-        directory (str): path to the Atomic Mass Evaluation directory where 
-            the AME_all_merged.csv file is located.
         originals_directory (str): path to the Atomic Mass Evaluation directory where the 
             periodic_table csv file is located.
         saving_directory (str): path to directory where the resulting formatted 
-            csv file will be saved.
+            csv file will be saved including the AME_all_merged.csv file.
         fillna (bool): if True, missing values are filled. For the remaining NaN values not filled by the
             used `mode`, a value of 0 will be inserted unless specified otherwise.
         mode (str): The supported modes are:
@@ -322,6 +357,7 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
     Returns:
         None.
     """
+    directory = saving_directory
     logging.info("FEAT ENG: Initializing. Checking documents...")
     filename = os.path.join(directory, "AME_all_merged.csv")
     periodic_filename = os.path.join(originals_directory, "periodic_table.csv")
@@ -371,6 +407,7 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
         result.to_csv(csv_name, index=False)
 
         if fillna:
+            warnings.filterwarnings('ignore')
             logging.info("FEAT ENG: Filling missing values using {} mode".format(mode.upper()))
 
             # The imputation methods change the column data data types, we save them
@@ -386,6 +423,8 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
             logging.info("FEAT ENG: Returning features to original data types...")
             for x in result.columns:
                 result[x] = result[x].astype(types[x].dtypes.name)
+            warnings.filterwarnings('default')
+
 
             csv_name = os.path.join(saving_directory, "AME_Natural_Properties_no_NaN.csv")
             logging.info("FEAT ENG: Saving imputed file to {}".format(csv_name))
@@ -399,8 +438,7 @@ def create_natural_element_data(directory=ame_dir_path, originals_directory=ame_
         sys.exit()
     return None
 
-def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_path, fillna=True, 
-    add_qvalues=True, mode="elemental", fill_value=0):
+def get_all(originals_directory, saving_directory, fillna=True, fill_value=0, create_imputed=True, add_qvalues=True):
     """Creates 5 CSV files: Proccesed (1) mass16, (2) rct1, and (3) rct2 files. It then creates
     a (4) single CSV merging the first three CSV files. It then creates (5) a proccesed CSV file
     containing isotpic and natural element data with NaN values. If wanted a (6) copy of the fifth
@@ -413,10 +451,9 @@ def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_pat
             csv file will be saved.
         fillna (bool): if True it fills the missing values. For NaN values not filled by the
             used "mode", then the filling method is just the mean of the entire dataset.
-        mode (str): Currently the only supporte mode is Isotopic.
-            Missing Values are filled using the isotopic average.
         fill_value (int, float): value to fill remaining missing values with after imputation is finished 
             with selected `mode`. Defaults to 0.
+        create_imputed (bool): If True, missing values will be imputed.
         add_qvalues (bool): If true it will add the following reaction Q-values:
             ["Q(g,p)"] = -1 * ["S(p)"]
             ["Q(g,n)"] = -1 * ["S(n)"]
@@ -448,16 +485,11 @@ def get_all(originals_directory=ame_originals_path, saving_directory=ame_dir_pat
     Returns:
         None
     """
-    read_mass16(originals_directory=originals_directory, saving_directory=saving_directory)
-    read_rct1(originals_directory=originals_directory, saving_directory=saving_directory)
-    read_rct2(originals_directory=originals_directory, saving_directory=saving_directory)
-    merge_mass_rct(directory=saving_directory, saving_directory=saving_directory, add_qvalues=add_qvalues)
-    create_natural_element_data(directory=saving_directory, originals_directory=originals_directory, saving_directory=saving_directory, 
-        fillna=fillna, mode=mode, fill_value=fill_value)
+    get_ame_originals(originals_directory)
+    read_mass16(originals_directory, saving_directory)
+    read_rct1(originals_directory, saving_directory)
+    read_rct2(originals_directory, saving_directory)
+    merge_mass_rct(saving_directory, add_qvalues=add_qvalues, create_imputed=create_imputed)
+    create_natural_element_data(originals_directory, saving_directory, fillna=fillna, fill_value=fill_value)
     return None
-
-
-mass16_dtypes = ['float64', 'int64', 'int64', 'int64', 'int64', 'float64', 'object', 'object', 'float64', 'float64',
-    'float64', 'float64', 'float64', 'float64', 'object', 'object', 'float64', 'float64', 'object', 'float64']
-
 

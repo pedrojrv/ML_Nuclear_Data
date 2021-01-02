@@ -1,15 +1,26 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
 import os
 import re
 import math
 from pathlib import Path
-
+import logging
+import shutil
+import scipy.io
 
 empty_df = pd.DataFrame()
-ace_dir = os.path.abspath("../../../../Documents/Serpent/xsdata/endfb7/acedata")
 
+import sys
+sys.path.append("..")
+
+import nucml.general_utilities as gen_utils 
+import nucml.model.model_utilities as model_utils
+import nucml.exfor.data_utilities as exfor_utils
+
+from scipy.signal import find_peaks
+
+
+ace_dir = "C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata"
 
 
 def get_to_skip_lines(element, temp="03c", ace_dir=ace_dir):
@@ -67,8 +78,6 @@ def get_nxs_jxs_xss(element, temp="03c", ace_dir=ace_dir):
         xss = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+12, nrows=lines, header=None).values.flatten()
         # xss = xss[~np.isnan(xss)] # ALL CROSS SECTIONS, FIRST VALUES BELONG TO MT1, 2, 101
         return nxs, jxs, xss
-    else:
-        return None, None, None
 
 def get_nxs_dictionary(nxs_df):
     """Given the extracted NSX DataFrame, this function will return a key:value dictionary
@@ -153,22 +162,20 @@ def get_pointers(nxs, jxs):
         :rtype: (int, int, int, int, int, int, int)
     """    
     nxs_dict = get_nxs_dictionary(nxs)
-    jxs_dict = get_jxs_dictionary(jxs)
+    jxs_dict = get_jxs_dictionary(jxs)    
 
-    # NSX: basic information 
-    nes = nxs_dict["Num_Energies"] # NES: Number of Energy points (3)
-    ntr = nxs_dict["NTR"]          # NTR: Number of reaction types excluding elastic scattering MT2 (4)
+    final_dict = {
+        "nes":nxs_dict["Num_Energies"], # NES: Number of Energy points (3),
+        "ntr":nxs_dict["NTR"],          # NTR: Number of reaction types excluding elastic scattering MT2 (4)
+        "energy_pointer":jxs_dict["E_Table"] - 1,              # ESZ (1) ENERGY TABLE POINTER
+        "mt_pointer":jxs_dict["MT_Array"] - 1,                  # MTR (3) MT ARRAY POINTER
+        "xs_pointers":jxs_dict["XS_Loc_Table"] - 1,            # LSIG (6) TABLE OF XS LOCATORS/POINTERS
+        "xs_table_pointer":jxs_dict["XS"] - 1,                 # SIG (7) CROSS SECTION ARRAY POINTER
+        "mt_18_pointer":(jxs_dict["Tot_Fis_XS"] - 1).clip(0)  # FIS (21) FISSION POINTER
+    }
+    return final_dict
 
-    # JSX These are the indexes in the continuous array where stuff starts
-    energy_pointer = jxs_dict["E_Table"] - 1              # ESZ (1) ENERGY TABLE POINTER
-    mt_pointer =jxs_dict["MT_Array"] - 1                  # MTR (3) MT ARRAY POINTER
-    xs_pointers = jxs_dict["XS_Loc_Table"] - 1            # LSIG (6) TABLE OF XS LOCATORS/POINTERS
-    xs_table_pointer = jxs_dict["XS"] - 1                 # SIG (7) CROSS SECTION ARRAY POINTER
-    mt_18_pointer = (jxs_dict["Tot_Fis_XS"] - 1).clip(0)  # FIS (21) FISSION POINTER
-    
-    return nes, ntr, energy_pointer, mt_pointer, xs_pointers, xs_table_pointer, mt_18_pointer
-
-def get_energy_array(xss, energy_pointer, nes):
+def get_energy_array(xss, pointers_dict):
     """Returns the energy grid given the XSS and needed pointers.
 
     Args:
@@ -179,10 +186,10 @@ def get_energy_array(xss, energy_pointer, nes):
     Returns:
         np.array: numpy array containing the energy grid values.
     """    
-    energies = xss[energy_pointer : energy_pointer + nes]   # ENERGY TABLE ARRAY
+    energies = xss[pointers_dict["energy_pointer"] : pointers_dict["energy_pointer"] + pointers_dict["nes"]]   # ENERGY TABLE ARRAY
     return energies
 
-def get_mt_array(xss, mt_pointer, ntr):
+def get_mt_array(xss, pointer_dict):
     """Returns the avaliable MT reactions given the XSS and needed pointers.
 
     Args:
@@ -193,10 +200,10 @@ def get_mt_array(xss, mt_pointer, ntr):
     Returns:
         np.array: numpy array containing the MT values values.
     """    
-    mt_array = xss[mt_pointer : mt_pointer + ntr]           # MT TABLE ARRAY
+    mt_array = xss[pointer_dict["mt_pointer"] : pointer_dict["mt_pointer"] + pointer_dict["ntr"]]           # MT TABLE ARRAY
     return mt_array
 
-def get_mt_xs_pointers_array(xss, xs_pointers, ntr):
+def get_mt_xs_pointers_array(xss, pointer_dict):
     """Returns the XS pointers for each MT reaction in the MT array.
 
     Args:
@@ -208,7 +215,7 @@ def get_mt_xs_pointers_array(xss, xs_pointers, ntr):
     Returns:
         np.array: numpy array containing the XS pointers grid values.
     """    
-    mt_xs_pointers_array = xss[xs_pointers : xs_pointers + ntr].astype(int) # CROSS SECTION TABLE ARRAY
+    mt_xs_pointers_array = xss[pointer_dict["xs_pointers"] : pointer_dict["xs_pointers"] + pointer_dict["ntr"]].astype(int) # CROSS SECTION TABLE ARRAY
     return mt_xs_pointers_array
 
 def get_mt_array_w_pointers(mt_array, mt_xs_pointers_array):
@@ -227,7 +234,7 @@ def get_mt_array_w_pointers(mt_array, mt_xs_pointers_array):
         mt_pointer_dict[A] = B
     return mt_pointer_dict
     
-def get_basic_mts(xss, nes):
+def get_basic_mts(xss, pointer_dict):
     """The MT1, MT101, MT2, and MT3 are not part of the MT array. The XS values
     start inmediatly after the energy points. Since these reactions energy grid 
     are the entire "Energy Grid" then there as as many XS values as there are 
@@ -240,14 +247,17 @@ def get_basic_mts(xss, nes):
     Returns:
         :rtype: (np.array, np.array, np.array, np.array)
     """    
+    nes = pointer_dict["nes"]
     mt1 = xss[nes:nes*2]
     mt101 = xss[nes*2:nes*3]
     mt2 = xss[nes*3:nes*4]
     mt3 = mt1 - mt2
-    return mt1, mt2, mt3, mt101
+
+    mt_data = {"MT_1":mt1, "MT_2":mt2, "MT_3":mt3, "MT_101":mt101}
+    return mt_data
 
 
-def get_xs_for_mt(MT, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, xss, verbose=True):
+def get_xs_for_mt(MT, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=True):
     """Returns cross section values, the corresponding energy points, and the indexes corresponding
     the starting and end point in the xss array.
 
@@ -267,12 +277,12 @@ def get_xs_for_mt(MT, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, 
     """
     mt_index = np.where(mt_array==MT)[0][0]                                 # GET INDEX FOR REACTION TYPE MT
     if MT == mt_array[-1]:                                                  # IF REQUESTED MT IS THE LAST ONE ON TABLE 
-        start_index = xs_table_pointer + mt_xs_pointers_array[mt_index] - 1 # TABLE BEGINS + NUMBER OF ITEMS ACCORDING TO LSIG 
+        start_index = pointers["xs_table_pointer"] + mt_xs_pointers_array[mt_index] - 1 # TABLE BEGINS + NUMBER OF ITEMS ACCORDING TO LSIG 
         end_index = jxs_df.iloc[0,7] - 1                                    # ENDING INDEX
         mt_data = xss[start_index: end_index]               
     else:
-        start_index = xs_table_pointer + mt_xs_pointers_array[mt_index] - 1 
-        end_index = xs_table_pointer + mt_xs_pointers_array[mt_index + 1] - 1
+        start_index = pointers["xs_table_pointer"] + mt_xs_pointers_array[mt_index] - 1 
+        end_index = pointers["xs_table_pointer"] + mt_xs_pointers_array[mt_index + 1] - 1
         mt_data = xss[start_index: end_index]
     
     # THE FIRST AND SECOND VALUE CORRESPOND TO ENERGY INDEX AND POINTS
@@ -281,11 +291,20 @@ def get_xs_for_mt(MT, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, 
     energy_array = xss[energy_index - 1 : energy_index + energy_points - 1] 
     xs_data = mt_data[2:]            # ACTUAL ARRAY BELONGING TO MT REACTION CHANNEL 
     if verbose:
-        print("{} Energy and {} Cross Section Points Avaliable for MT{}.".format(len(energy_points), len(xs_data), str(int(MT))))
-    return xs_data, energy_array, start_index, end_index
+        logging.info("{} Energy and {} Cross Section Points Avaliable for MT{}.".format(energy_points, len(xs_data), str(int(MT))))
+
+    xs_info_dict = {
+        "xs":xs_data,
+        "energy":energy_array, 
+        "xss_start":start_index,
+        "xss_end":end_index,
+        "energy_start":energy_index - 1,
+        "energy_end":energy_index + energy_points - 1
+    }
+    return xs_info_dict
 
 
-def fill_ml_xs(MT, ml_xs, ace_xs):
+def fill_ml_xs(MT, ml_xs, ace_xs, use_peaks=True):
     """Utility function used by the get_merged() function to fill in the head and tail
     of a set of cross section values. 
 
@@ -297,15 +316,28 @@ def fill_ml_xs(MT, ml_xs, ace_xs):
     Returns:
         DataFrame: adjusted ML cross sections dataframe.
     """
-    # FILLS VALUES IN ML DERIVED XS WHERE ALGORITHM IS UNABLE TO PERFORM (1/V AND TAIL)
-    # FOR ALL VALUES THE SAME AS THE FIRST AND LAST ONE SUBSTITUTE FOR EQUIVALENT VALUE IN ENERGY IN ACE XS
-    ml_xs.loc[0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0], MT] = ace_xs[
-        0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0]+1]
-    ml_xs.iloc[-ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0]:, ml_xs.columns.get_loc(MT)] = ace_xs[
-        -ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0] - 1:-1]
+    if use_peaks:
+        fallback = False
+    if use_peaks:
+        peaks, properties = find_peaks(ace_xs, prominence=1, width=5)
+        if len(peaks) == 0:
+            fallback = True
+            pass
+        else:
+            properties["prominences"], properties["widths"]
+            to_append = ace_xs[:peaks[0]]
+            new_xs = np.concatenate((to_append, ml_xs[MT][peaks[0]:].values), axis=0)
+            ml_xs[MT] = new_xs
+    if fallback or not use_peaks:
+        # FILLS VALUES IN ML DERIVED XS WHERE ALGORITHM IS UNABLE TO PERFORM (1/V AND TAIL)
+        # FOR ALL VALUES THE SAME AS THE FIRST AND LAST ONE SUBSTITUTE FOR EQUIVALENT VALUE IN ENERGY IN ACE XS
+        ml_xs.loc[0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0], MT] = ace_xs[
+            0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0]+1]
+        ml_xs.iloc[-ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0]:, ml_xs.columns.get_loc(MT)] = ace_xs[
+            -ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0] - 1:-1]
     return ml_xs
 
-def get_corrected_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, xss):
+def get_hybrid_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, use_peaks=True):
     """Substitutes the ACE MT values in a machine learning generate dataframe containing a set of
     reaction channels. For MT1, MT2, and MT3 we fix the 1/v and tail region of each cross section.
     ML models like KNN and DT are coarse and sometimes unable to accuratly keep predicting a given 
@@ -314,7 +346,7 @@ def get_corrected_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, xs
     Previously get_merged_df()
 
     Args:
-        ml_df (DataFrame): contains the ML generated predictions under each columned named "Data_MT".
+        ml_df (DataFrame): contains the ML generated predictions under each columned named "MT_MT".
         basic_mt_dict (DICT): a dicitonary containing MT1, MT2, MT3, and MT101 ({"mt1":values, "mt2":...})
         mt_array (np.array): contains the mt reactions avaliable in the .ace file.
         mt_xs_pointers_array (np.array): contains the mt XS pointers in the xss array.
@@ -325,22 +357,33 @@ def get_corrected_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, xs
     Returns:
         DataFrame: merged dataframe containing all ML and ACE reaction values
     """    
-    for i in list(ml_df.columns)[1:]:
-        if i == "Data_1":
-            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["mt1"])
-        elif i == "Data_2":
-            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["mt2"])
-        elif i == "Data_3":
-            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["mt3"])
+    for i in list(ml_df.columns):
+        if i == "Energy":
+            continue
+        elif i == "MT_1":
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["MT_1"], use_peaks=use_peaks)
+        elif i == "MT_2":
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["MT_2"], use_peaks=use_peaks)
+        elif i == "MT_3":
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["MT_3"], use_peaks=use_peaks)
+        elif i == "MT_101":
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict["MT_101"], use_peaks=use_peaks)
         else:
-            MT = re.sub("[^0-9]", "", i)
-            sig, _, _, _ = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, xss)
-            ml_df = fill_ml_xs(i, ml_df, sig)
+            if (i in ["MT_18", "MT_102"]):
+                MT = i.split("_")[1]
+                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                ml_df = fill_ml_xs(i, ml_df, mt_info["xs"], use_peaks=use_peaks)
+            else:
+                MT = i.split("_")[1]
+                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                new_xs = np.concatenate((np.zeros(mt_info["energy_start"]), mt_info["xs"]), axis=0)
+                ml_df[i] = new_xs
     return ml_df
 
-def create_mt(rx_grid, MT, mt_array):
+def create_mt2_mt3_mt101(rx_grid, mt_array):
     """Helps with the creation of MT3 and MT101 which requires them to be the summation of other MT reactions.
 
+    TODO: CHOOSE WHICH ONE TO ADJUST BASED ON EXPERIMENTAL DATAPOINTS (MT3 OR MT102)
     Args:
         rx_grid (DataFrame): dataframe containing the grid by which to adjust the mt. This is usually the energy grid.
         MT (int): mt reaction for which to create the adjusted MT values
@@ -350,21 +393,76 @@ def create_mt(rx_grid, MT, mt_array):
         DataFrame: resulting dataframe containing the adjusted MT values.
     """
     df = pd.DataFrame(index=rx_grid.index)
-    df[MT] = 0
-    if MT == "Data_3":
-        for i in [4, 5, 11, 16, 17, 18, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 
-                  41, 42, 44, 45, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]:
-            if i in mt_array:
-                df[MT] = df[MT].values + rx_grid["Data_" + str(i)].values
-        return df
-    elif MT == "Data_101":
-        for i in np.linspace(102, 117, 117-102 + 1).astype(int):
-            if i in mt_array:
-                df[MT] = df[MT].values + rx_grid["Data_" + str(i)].values
-        return df 
+    # to_add = pd.DataFrame(index=rx_grid.index)
+
+    df["MT_3"] = 0
+    df["MT_101"] = 0
+
+    # CREATE MT3 FROM ML VALUES MT 102, MT 18
+    for i in [4, 5, 11, 16, 17, 18, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 44, 45, 
+                # BELONGS TO MT 101
+                102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]:
+        # CREATE MT 3 FROM ALL OTHER MTS
+        if i in mt_array:
+            df["MT_3"] = df["MT_3"].values + rx_grid["MT_" + str(i)].values
+
+    # WE ADJUST MT 102 FOR EXCESS RELATIVE TO MT 3 ML
+    # to_add["to_add"] = 0
+    # to_add["to_add"] = rx_grid.MT_3 - df["MT_3"]
+    # rx_grid["MT_102"] = rx_grid["MT_102"] + to_add["to_add"]
+    rx_grid["MT_3"] = df["MT_3"]
 
 
-def get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, xss, ml_df, ml_list):
+    # ADJUSTING MT_102 means readjusting MT_101
+    for i in np.linspace(102, 117, 117-102+1).astype(int):
+        if i in mt_array:
+            df["MT_101"] = df["MT_101"].values + rx_grid["MT_" + str(i)].values
+
+    # ADJUSTING MT_101 means adjusting MT_1
+    # to_add["to_add"] = 0
+    # to_add["to_add"] = rx_grid.MT_101 - df["MT_101"]
+    # rx_grid["MT_1"] = rx_grid["MT_1"] + to_add["to_add"]
+
+    rx_grid["MT_101"] = df["MT_101"]
+
+    # MT2 almost always has no experimental datapoints, so we adjust MT2
+    rx_grid["MT_2"] = rx_grid["MT_1"] - rx_grid["MT_3"]
+
+    return rx_grid
+
+def enforce_unitarity(ml_ace_df):
+    """Creates MT2 XS and adjusts MT1 accordingly.
+
+    Calculates MT2 by substracting MT3 from MT1. If MT2 is negative:
+    - Replace negatives with NaN
+    - Interpolates from closests values
+    - Adds back amount to MT1 to conserve XS.
+
+    TODO: INTRODUCE THIS FUNCTION TO THE get_final_ml_ace_df()
+
+    Args:
+        ml_ace_df (DataFram): DataFrame containing the original MT1, MT2, and MT3.
+
+    Returns:
+        DataFrame: returns an adjusted dataframe.
+    """    
+    adjusting_mt1 = pd.DataFrame({"MT_1":ml_ace_df.MT_1.values, "MT_3":ml_ace_df.MT_3.values})
+    adjusting_mt1["MT_2"] = adjusting_mt1.MT_1.values - adjusting_mt1.MT_3.values
+    
+    # neg_ix = adjusting_mt1[adjusting_mt1.MT_2 < 0].index.tolist()
+    adjusting_mt1["MT_2"] = adjusting_mt1["MT_2"].apply(lambda x: x if x > 0 else -1)
+    adjusting_mt1 = adjusting_mt1.replace(to_replace=-1, value=np.nan)
+    adjusting_mt1 = adjusting_mt1.interpolate()
+    adjusting_mt1["MT_1_int"] = adjusting_mt1["MT_2"] + adjusting_mt1["MT_3"]
+    adjusting_mt1["MT_1_to_add"] = adjusting_mt1["MT_1_int"] - adjusting_mt1["MT_1"]
+    adjusting_mt1["MT_1_Final"] = adjusting_mt1["MT_1"] + adjusting_mt1["MT_1_to_add"]
+    
+    ml_ace_df["MT_1"] = adjusting_mt1["MT_1_Final"].values
+    ml_ace_df["MT_2"] = adjusting_mt1["MT_2"].values
+
+    return ml_ace_df
+    
+def get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, ml_df, ml_list=["MT_1", "MT_2", "MT_3", "MT_18", "MT_101", "MT_102"]):
     """Given a set of ML generated XS (adjusted), this function allows to fill in other reaction channels not included
     by ML. This is useful since for some calculations some MT reactions are not required but are still present
     in the ace files. This allows to preserve the ACE file values. 
@@ -395,8 +493,8 @@ def get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, xs_table_point
     for i in mt_array:
         # we get the ace cross sections and add them to our main dataframe some are not going to have the 
         # same energy grid as mt1 so we fill missing values with 0
-        xs, en, _, _ = get_xs_for_mt(i, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, xss, verbose=False)
-        to_add = pd.DataFrame({"Energy": en, "Data_" + str(int(i)): xs})
+        mt_info = get_xs_for_mt(i, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=False)
+        to_add = pd.DataFrame({"Energy": mt_info["energy"], "MT_" + str(int(i)): mt_info["xs"]})
         to_add = to_add.set_index("Energy")
         Energy_Grid = pd.merge(Energy_Grid, to_add, left_index=True, right_index=True, how="outer") 
     Energy_Grid = Energy_Grid.fillna(value=0)
@@ -407,45 +505,15 @@ def get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, xs_table_point
     
     # MT3 and MT101 are dependant on a bunch of other MTs, we need to adjust them in order for 
     # the conservation rules to be mantained.
-    Energy_Grid["Data_3"] = create_mt(Energy_Grid, "Data_3", mt_array)
-    Energy_Grid["Data_101"] = create_mt(Energy_Grid, "Data_101", mt_array)
+    # Energy_Grid["MT_3"] = create_mt(Energy_Grid, "MT_3", mt_array)
+    # Energy_Grid["MT_101"] = create_mt(Energy_Grid, "MT_101", mt_array)
+    Energy_Grid = create_mt2_mt3_mt101(Energy_Grid, mt_array)
+    Energy_Grid = enforce_unitarity(Energy_Grid)
     return Energy_Grid
 
 
-def adjust_mt1_mt2(ml_ace_df):
-    """Creates MT2 XS and adjusts MT1 accordingly.
 
-    Calculates MT2 by substracting MT3 from MT1. If MT2 is negative:
-    - Replace negatives with NaN
-    - Interpolates from closests values
-    - Adds back amount to MT1 to conserve XS.
-
-    TODO: INTRODUCE THIS FUNCTION TO THE get_final_ml_ace_df()
-
-    Args:
-        ml_ace_df (DataFram): DataFrame containing the original MT1, MT2, and MT3.
-
-    Returns:
-        DataFrame: returns an adjusted dataframe.
-    """    
-    adjusting_mt1 = pd.DataFrame({"Data_1":ml_ace_df.Data_1.values, "Data_3":ml_ace_df.Data_3.values})
-    adjusting_mt1["Data_2"] = adjusting_mt1.Data_1.values - adjusting_mt1.Data_3.values
-    
-    # neg_ix = adjusting_mt1[adjusting_mt1.Data_2 < 0].index.tolist()
-    adjusting_mt1["Data_2"] = adjusting_mt1["Data_2"].apply(lambda x: x if x > 0 else -1)
-    adjusting_mt1 = adjusting_mt1.replace(to_replace=-1, value=np.nan)
-    adjusting_mt1 = adjusting_mt1.interpolate()
-    adjusting_mt1["Data_1_int"] = adjusting_mt1["Data_2"] + adjusting_mt1["Data_3"]
-    adjusting_mt1["Data_1_to_add"] = adjusting_mt1["Data_1_int"] - adjusting_mt1["Data_1"]
-    adjusting_mt1["Data_1_Final"] = adjusting_mt1["Data_1"] + adjusting_mt1["Data_1_to_add"]
-    
-    ml_ace_df["Data_1"] = adjusting_mt1["Data_1_Final"].values
-    ml_ace_df["Data_2"] = adjusting_mt1["Data_2"].values
-
-    return ml_ace_df
-
-
-def modify_mt_ace(ml_list, xss, ml_ace_df, nes, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df):
+def modify_xss_w_df(xss, ml_ace_df, mt_array, mt_xs_pointers_array, jxs_df, pointers):
     """Returns a modified XSS array. It substitutes the MT reactions in ml_list in the original ACE xss array.
     The resulting xss can then be used to create a new .ace file for use in monte carlo or deterministic codes.
 
@@ -462,20 +530,26 @@ def modify_mt_ace(ml_list, xss, ml_ace_df, nes, mt_array, mt_xs_pointers_array, 
     Returns:
         np.array: modified xss array.
     """    
-    for i in ml_list:
-        if i == 1:
-            xss[nes:nes*2] = ml_ace_df["Data_" + str(i)].values
-        elif i == 2:
-            xss[nes*3:nes*4] = ml_ace_df["Data_" + str(i)].values
-        elif i == 101:
-            xss[nes*2:nes*3] = ml_ace_df["Data_" + str(i)].values
+    nes = pointers["nes"]
+
+    # for i in ml_list:
+    for i in ml_ace_df.columns:
+        mt_value = int(i.split("_")[1])
+        if mt_value == 1:
+            xss[nes:nes*2] = ml_ace_df[i].values
+        elif mt_value == 2:
+            xss[nes*3:nes*4] = ml_ace_df[i].values
+        elif mt_value == 101:
+            xss[nes*2:nes*3] = ml_ace_df[i].values
         else:
-            _, _, start, end = get_xs_for_mt(i, mt_array, mt_xs_pointers_array, xs_table_pointer, jxs_df, xss)
-            # We sum up 2 since the first are just energy pointers
-            xss[start + 2 : end] = ml_ace_df["Data_" + str(i)].values
+            if mt_value in mt_array:
+                xs_info_dict = get_xs_for_mt(mt_value, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                start = xs_info_dict["xss_start"]
+                end = xs_info_dict["xss_end"]
+                xss[start + 2 : end] = ml_ace_df.reset_index(drop=True)[i].iloc[xs_info_dict["energy_start"]:xs_info_dict["energy_end"]].values
             
     if (len(xss)/4 - len(xss)//4)/0.25 == 0:
-        print("It is wokring")
+        logging.info("It is wokring")
     elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 3:
         xss = np.append(xss, (np.nan, np.nan, np.nan))
     elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 2:
@@ -501,7 +575,7 @@ def parsing_datatypes(x):
     else:
         return "{:20.11E}".format(x)
 
-def creating_new_ace(xss, ZZAAA, saving_dir=""):
+def create_new_ace(xss, ZZAAA, saving_dir=""):
     """Generates a new .ACE file ready to be used in transport codes. Everything is
     encoded in the XSS array. The header is to be kept the same since different energy 
     arrays are not supported. 
@@ -523,7 +597,7 @@ def creating_new_ace(xss, ZZAAA, saving_dir=""):
     ace_name = ZZAAA + "ENDF7"
     tmp_file = os.path.join(saving_dir, ace_name + "_TMP.txt")
     tmp_file_2 = os.path.join(saving_dir, ace_name + "_TMP2.txt")
-    ml_ace_filename = os.path.join(saving_dir, ace_name + "_ML.ace")
+    ml_ace_filename = os.path.join(saving_dir, ace_name + ".ace")
 
     to_write.to_csv(tmp_file, float_format="%.11E", sep="\t", index=False, header=False)
     with open(tmp_file) as fin, open(tmp_file_2, 'w') as fout:
@@ -544,9 +618,79 @@ def creating_new_ace(xss, ZZAAA, saving_dir=""):
             if (i > to_skip + line_count + 12 - 1):
                 new_ace.write(line)
     
+    convert_dos_to_unix(ml_ace_filename)
+
     os.remove(tmp_file)
     os.remove(tmp_file_2)
     
+    return None
+
+def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, copy_element_ace=False, ignore_basename=False):
+    nsx, jxs, xss = get_nxs_jxs_xss(ZZAAA, temp="03c")
+    pointers_info = get_pointers(nsx, jxs)
+    # nes, ntr, energy_pointer, mt_pointer, xs_pointers, xs_table_pointer, _ = get_pointers(nsx, jxs)
+    energies = get_energy_array(xss, pointers_info)
+    mt_array = get_mt_array(xss, pointers_info)
+    mt_xs_pointers_array = get_mt_xs_pointers_array(xss, pointers_info) # lsig
+    mt_data = get_basic_mts(xss, pointers_info)
+
+    if type(path_to_ml_csv) is not list:
+        path_to_ml_csv = [path_to_ml_csv]
+    for i in list(path_to_ml_csv):
+        if ignore_basename:
+            saving_dir_2 = saving_dir
+        else:
+            saving_dir_2 = os.path.basename(i).split(".")[0]
+            saving_dir_2 = os.path.join(saving_dir, saving_dir_2)
+            gen_utils.initialize_directories_v2(saving_dir_2, reset=False)
+
+        ml_df = pd.read_csv(i)
+        ml_df["Energy"] = ml_df["Energy"] / 1E6
+        
+        ml_df_mod = get_hybrid_ml_xs(ml_df, mt_data, mt_array, mt_xs_pointers_array, pointers_info, jxs, xss)
+        
+        Energy_Grid = get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, pointers_info, jxs, xss, ml_df_mod)   
+        
+        xss = modify_xss_w_df(xss, Energy_Grid, mt_array, mt_xs_pointers_array, jxs, pointers_info)
+
+        create_new_ace(xss, ZZAAA, saving_dir=saving_dir_2)
+
+        if copy_element_ace:
+            copy_ace_files(ZZAAA[:2], saving_dir_2, ignore=ZZAAA)
+
+    return None
+
+def copy_ace_files(ZZ, saving_dir, ace_dir=ace_dir, ignore=None):
+    files = os.listdir(ace_dir)
+    for i in files:
+        if i.startswith(ZZ):
+            if ignore is not None:
+                if i.startswith(ignore):
+                    continue
+                else:
+                    shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                    convert_dos_to_unix(os.path.join(saving_dir, i))
+            else:
+                shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                convert_dos_to_unix(os.path.join(saving_dir, i))
+    return None
+
+
+def convert_dos_to_unix(file_path):
+    # replacement strings
+    WINDOWS_LINE_ENDING = b'\r\n'
+    UNIX_LINE_ENDING = b'\n'
+
+    # relative or absolute file path, e.g.:
+
+    with open(file_path, 'rb') as open_file:
+        content = open_file.read()
+
+    content = content.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)
+
+    with open(file_path, 'wb') as open_file:
+        open_file.write(content)
+
     return None
 
 ################################################################################################
@@ -554,12 +698,190 @@ def creating_new_ace(xss, ZZAAA, saving_dir=""):
 
 ################################################################################################
 ################################################################################################
+# template_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\sss_endfb7u.xsdata"
+template_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\"
+
+
+def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
+    inventory_path = os.path.join(raw_saving_dir, "model_ace_inventory.csv")
+    if os.path.exists(inventory_path):
+        inventory = pd.read_csv(inventory_path)
+    else:
+        inventory = pd.DataFrame(columns=["model", "directory", "acelib_generated", "benchmarks"])
+
+    if type(results) == str:
+        results_df = pd.read_csv(results)
+    else:
+        results_df = results.copy()
+    results_df["run_name"] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    
+    for _, row in results_df.iterrows():
+        run_name = row.run_name
+        filename = "ml_xs.csv"
+        
+        model_ace_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + "/"))
+
+        if (model_ace_saving_dir in inventory.directory.to_list()) and not reset:
+            continue
+        else:
+            gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
+            model, scaler = model_utils.load_model_and_scaler_w_path(row.model_path, row.scaler_path)
+            _ = exfor_utils.get_csv_for_ace(
+                df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
+            
+            inventory = inventory.append(pd.DataFrame({"model":[run_name], "directory":[model_ace_saving_dir], "acelib_generated":["no"], "benchmarks":["none"]}))
+    
+    inventory = inventory.drop_duplicates()
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+def generate_acelib(inventory_path, ZZAAA, generate_xsdata=True, reset=False):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+        acelib_status = row.acelib_generated
+
+        if acelib_status == "yes" and not reset:
+            continue
+        else:
+            path_to_ml_csv = os.path.join(run_dir, "ml_xs.csv")
+            path_to_acelib = os.path.join(run_dir, "acelib/")
+            gen_utils.initialize_directories_v2(path_to_acelib, reset=False)
+            create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=path_to_acelib, copy_element_ace=True, ignore_basename=True)
+            inventory.loc[index, 'acelib_generated'] = "yes"
+
+            if generate_xsdata:
+                generate_sss_xsdata(run_dir)
+    
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+
+def generate_sss_xsdata(saving_dir, template_path=template_path):
+    xsdata_filepath = os.path.join(template_path, "sss_endfb7u.xsdata")
+    new_file_path = os.path.join(saving_dir, "sss_endfb7u.xsdata")
+
+    file = open(xsdata_filepath, "rt")
+    new_file = open(new_file_path, "wt")
+
+    to_replace = "/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/"
+    to_insert = os.path.abspath(os.path.join(saving_dir, "acelib/")).replace("C:\\", "/mnt/c/").replace("\\", "/") + "/"
+
+    for line in file:
+        new_file.write(line.replace(to_replace, to_insert))
+    
+    file.close()
+    new_file.close()
+
+    convert_dos_to_unix(new_file_path)
+
+def copy_benchmark_files(benchmark_name, saving_dir, sss_xsdata_path, template_path=template_path):
+    to_replace = "/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/"
+    new_file_path = os.path.join(sss_xsdata_path, "sss_endfb7u.xsdata")
+    to_insert = os.path.abspath(new_file_path).replace("C:\\", "/mnt/c/").replace("\\", "/")
+
+    benchmark_path = os.path.join(template_path, benchmark_name)
+    new_benchmark_path = os.path.join(saving_dir, benchmark_name)
+
+    benchmark_file = open(benchmark_path, "rt")
+    new_benchmark_file = open(new_benchmark_path, "wt")
+
+    for line in benchmark_file:
+        new_benchmark_file.write(line.replace(to_replace, to_insert))
+
+    benchmark_file.close()
+    new_benchmark_file.close()
+
+    convert_dos_to_unix(new_benchmark_path)
+
+    shutil.copyfile(os.path.join(template_path, "converter.m"), os.path.join(saving_dir, "converter.m"))
+
+    return None
+
+def generate_benchmark_files(inventory_path, benchmark_name):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+
+
+        path_to_benchmark = os.path.join(run_dir, benchmark_name + "/")
+        gen_utils.initialize_directories_v2(path_to_benchmark, reset=False)
+
+        copy_benchmark_files(benchmark_name, path_to_benchmark, run_dir)
+
+        inventory.loc[index, 'benchmarks'] = inventory.loc[index, 'benchmarks'] + " " + benchmark_name
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+
+
+def generate_serpent_bash(inventory_path, benchmark_name):
+    all_serpent_files = []
+    all_serpent_files_linux = []
+
+    for root, _, files in os.walk(inventory_path):
+        for file in files:
+            if file.endswith(benchmark_name):
+                all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
+                    
+    for i in all_serpent_files:
+        new = i.replace("C:\\", "/mnt/c/").replace("\\", "/")
+        if "template" in new:
+            continue
+        else:
+            all_serpent_files_linux.append("cd {}".format(os.path.dirname(new)) + "/")
+            all_serpent_files_linux.append("sss2 -omp 10 " + os.path.basename(new))
+            all_serpent_files_linux.append("/mnt/c/Program\ Files/MATLAB/R2019a/bin/matlab.exe -nodisplay -nosplash -nodesktop -r \"run('converter.m');exit;\" ")  # pylint: disable=anomalous-backslash-in-string  
+        
+    script_path = os.path.join(inventory_path, 'serpent_script.sh')
+
+    with open(script_path, 'w') as f:
+        for item in all_serpent_files_linux:
+            f.write("%s\n" % item)
+
+    convert_dos_to_unix(script_path)
+
+    return None
+
+
+def gather_benchmark_results(inventory_path):
+    all_results = []
+    names = []
+
+    for root, _, files in os.walk(inventory_path):
+        for file in files:
+            if file.endswith(".mat"):
+                name_to_append = os.path.basename(Path(root).parents[0])
+                names.append(name_to_append)
+                all_results.append(os.path.abspath(os.path.join(root, file)))
+
+    k_results_ana = []
+    k_unc_ana = []
+
+    k_results_imp = []
+    k_unc_imp = []
+
+    for i in all_results:
+        mat = scipy.io.loadmat(i)
+        k_results_ana.append(mat["ANA_KEFF"][0][0])
+        k_unc_ana.append(mat["ANA_KEFF"][0][1])
+        k_results_imp.append(mat["IMP_KEFF"][0][0])
+        k_unc_imp.append(mat["IMP_KEFF"][0][1])
+
+    results_df = pd.DataFrame({"Model":names, "K_eff_ana":k_results_ana, "Unc_ana":k_unc_ana, "K_eff_imp":k_results_imp, "Unc_imp":k_unc_imp})
+    results_df["Deviation_Ana"] = results_df.K_eff_ana.apply(lambda k: abs((k-1)/1))
+    results_df["Deviation_Imp"] = results_df.K_eff_imp.apply(lambda k: abs((k-1)/1))
+
+    return results_df
+
 
 def get_energies(element, temp="03c", ace_dir=ace_dir, ev=False, log=False):
     nxs, jxs, xss = get_nxs_jxs_xss(element, temp="03c", ace_dir=ace_dir)
     if nxs is not None:
-        nes, _, energy_pointer, _, _, _, _ = get_pointers(nxs, jxs)
-        energies = xss[energy_pointer : energy_pointer + nes]   # ENERGY TABLE ARRAY
+        pointers = get_pointers(nxs, jxs)
+        energies = xss[pointers["energy_pointer"] : pointers["energy_pointer"] + pointers["nes"]]   # ENERGY TABLE ARRAY
         if ev:
             energies = energies * 1E6
         if log:
@@ -568,47 +890,25 @@ def get_energies(element, temp="03c", ace_dir=ace_dir, ev=False, log=False):
     else:
         return empty_df
 
-# def get_energies_mt_lsig(xss, energy_pointer, nes, mt_pointer, ntr, xs_pointers):
-#     # XSS is the array contining ALL information
-#     energies = xss[energy_pointer : energy_pointer + nes]   # ENERGY TABLE ARRAY
-#     mt_array = xss[mt_pointer : mt_pointer + ntr]           # MT TABLE ARRAY
-#     lsig = xss[xs_pointers : xs_pointers + ntr].astype(int) # CROSS SECTION TABLE ARRAY
-#     return energies, mt_array, lsig
-
-# def get_mt1_mt2_mt3_mt101(xss, nes):
-#     mt1 = xss[nes:nes*2]
-#     mt101 = xss[nes*2:nes*3]
-#     mt2 = xss[nes*3:nes*4]
-#     mt3 = mt1 - mt2
-#     return mt1, mt2, mt3, mt101
-
-# def parsing_datatypes_2(x):
-#     x[0] = parsing_datatypes(x[0])
-#     x[1] = parsing_datatypes(x[1])
-#     x[2] = parsing_datatypes(x[2])
-#     x[3] = parsing_datatypes(x[3])
-#     return x[0], x[1], x[2], x[3]
-
-# def formating_new_xss(xss):
-#     to_write = pd.DataFrame(xss.reshape((-1,4)))
-#     column_names_4 = ["column_1", "column_2", "column_3", "column_4"]
-#     to_write.columns = column_names_4
-#     to_write = to_write.astype("object")
+# testing = remove_unused_models("../ML_EXFOR_neutrons/2_DT/DT_B1/dt_results.csv", "acedata_ml/U233/DT_B1/")
+def remove_unused_models(model_results_path, acedate_directory):
+    model_results_df = pd.read_csv(model_results_path)
+    model_results_df["Model"] = model_results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    model_results_df["main_directory"] = model_results_df.model_path.apply(lambda x: os.path.dirname(x) + "\\")
+    model_results_df = model_results_df[["Model", "train_mae", "val_mae", "test_mae", "main_directory"]]
     
-#     # to_write[column_names_4] = to_write[column_names_4].apply(parsing_datatypes_2, axis=1, result_type="expand")
-#     to_write = to_write.applymap(parsing_datatypes)
-
-# def get_to_skip_lines(element, temp="03c", ace_dir=ace_dir):
-#     path = os.path.join(ace_dir, element + "ENDF7.ace")
-#     with open(path, "r") as ace_file:
-#         points = []
-#         indexes = []
-#         for index, line in enumerate(ace_file):
-#             if line.startswith(" " + element + "."): 
-#                 points.append(line[1:10])
-#                 indexes.append(index)
-                
-#     to_skip = indexes[points.index(element + "." + temp)]
-#     lines = indexes[points.index(element + "." + temp) + 1] - to_skip - 12
-
-#     return path, to_skip, lines
+    benchmark_results = gather_benchmark_results(acedate_directory)
+    model_results_df = model_results_df.merge(benchmark_results, on="Model")
+    
+    # KEEP BEST TRAIN VAL TEST
+    # KEEP TOP 3 SORTED DEVIATION ANA
+    to_keep = []
+    to_keep.extend(list(model_results_df.iloc[model_results_df.sort_values(by="Deviation_Ana").head().index].Model.values))
+    to_keep.extend(list(model_results_df.iloc[model_utils.get_best_models_df(model_results_df).index].Model.values))
+    model_results_df["filtering"] = model_results_df.Model.apply(lambda name: True if name not in to_keep else False)
+    to_remove = model_results_df[model_results_df.filtering == True]
+    
+#     for i in to_remove.main_directory.values:
+#         shutil.rmtree(i)
+    
+    return None

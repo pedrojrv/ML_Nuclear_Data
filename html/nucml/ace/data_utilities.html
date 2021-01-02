@@ -1,0 +1,2494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>nucml.ace.data_utilities API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>nucml.ace.data_utilities</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import pandas as pd
+import numpy as np
+import os
+import re
+import math
+from pathlib import Path
+import logging
+import shutil
+import scipy.io
+
+empty_df = pd.DataFrame()
+
+import sys
+sys.path.append(&#34;..&#34;)
+
+import nucml.general_utilities as gen_utils 
+import nucml.model.model_utilities as model_utils
+import nucml.exfor.data_utilities as exfor_utils
+
+from scipy.signal import find_peaks
+
+
+ace_dir = &#34;C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata&#34;
+
+
+def get_to_skip_lines(element, temp=&#34;03c&#34;, ace_dir=ace_dir):
+    &#34;&#34;&#34;This utility returns the path to the corresponding ace file for a given element.
+    It also returns the number of lines to skip to get to the data block belonging to 
+    the given energy and the number of lines corresponding to that block.
+
+    Beware, the temperature needs to match one in the ACE files.
+
+    Args:
+        element (str): element in ZZAAA format.
+        temp (str, optional): temperature in ace format (i.e. 03c means 300C). Defaults to &#34;03c&#34;.
+        ace_dir (str, optional): path-like string indicating directory where ace files are stored. Defaults to ace_dir.
+
+    Returns:
+        :rtype: (str, int, int)
+    &#34;&#34;&#34;
+    path = Path(os.path.join(ace_dir, element + &#34;ENDF7.ace&#34;))
+    if path.is_file():
+        with open(path, &#34;r&#34;) as ace_file:
+            points = []
+            indexes = []
+            for index, line in enumerate(ace_file):
+                if line.startswith(&#34; &#34; + element + &#34;.&#34;): 
+                    points.append(line[1:10])
+                    indexes.append(index)
+                    
+        to_skip = indexes[points.index(element + &#34;.&#34; + temp)]
+        lines = indexes[points.index(element + &#34;.&#34; + temp) + 1] - to_skip - 12
+
+        return path, to_skip, lines
+    else:
+        return None, None, None
+
+
+def get_nxs_jxs_xss(element, temp=&#34;03c&#34;, ace_dir=ace_dir):
+    &#34;&#34;&#34;Retrieves the NSX, JXS, and XSS tables for a given element at a given temperature
+    The NSX has 16 integers:
+        First: the number of elements in the XSS array.
+    The JSX DataFrame indicates the indices to the XSS where different pieces of data begin.
+    The XSS table contains the actual data.
+
+    Args:
+        element (str): element in ZZAAA format.
+        temp (str, optional): temperature in ace format (i.e. 03c means 300C). Defaults to &#34;03c&#34;.
+        ace_dir (str, optional): path-like string indicating directory where .ace files are stored. Defaults to ace_dir.
+
+    Returns:
+        :rtype: (DataFrame, DataFrame, array)
+    &#34;&#34;&#34;    
+    path, to_skip, lines = get_to_skip_lines(element, temp=temp, ace_dir=ace_dir)
+    if path != None:
+        nxs = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+6, nrows=2, header=None) # .values.flatten()
+        jxs = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+8, nrows=4, header=None)
+        xss = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+12, nrows=lines, header=None).values.flatten()
+        # xss = xss[~np.isnan(xss)] # ALL CROSS SECTIONS, FIRST VALUES BELONG TO MT1, 2, 101
+        return nxs, jxs, xss
+
+def get_nxs_dictionary(nxs_df):
+    &#34;&#34;&#34;Given the extracted NSX DataFrame, this function will return a key:value dictionary
+    of the values in the NSX in accordance to the documentation of ACE formatting. 
+
+    Args:
+        nxs_df (DataFrame): The NSX DataFrame extracted using the get_nxs_jxs_xss() function.
+
+    Returns:
+        dict: dictionary containing the NSX results.
+    &#34;&#34;&#34;    
+    nxs_dict = {
+        &#34;XSS_Length&#34;: nxs_df.iloc[0,0],
+        &#34;ZZAAA&#34;: nxs_df.iloc[0,1],
+        &#34;Num_Energies&#34;: nxs_df.iloc[0,2],
+        &#34;NTR&#34;: nxs_df.iloc[0,3],
+        &#34;NR&#34;: nxs_df.iloc[0,4],
+        &#34;NTRP&#34;: nxs_df.iloc[0,5],
+        &#34;NPCR&#34;: nxs_df.iloc[0,7],
+        &#34;S&#34;: nxs_df.iloc[1,0],
+        &#34;Z&#34;: nxs_df.iloc[1,1],
+        &#34;A&#34;: nxs_df.iloc[1,2],
+    }
+    return nxs_dict
+
+def get_jxs_dictionary(jxs_df):
+    &#34;&#34;&#34;Given the extracted JXS DataFrame, this function will return a key:value dictionary
+    of the values in the JXS in accordance to the documentation of ACE formatting.
+
+    JXS are mostly indexes in the XSS array to indicate the beggining of a data type. 
+
+    Args:
+        jxs_df (DataFrame): The JXS DataFrame extracted using the get_nxs_jxs_xss() function.
+
+    Returns:
+        dict: dictionary containing the JXS results.
+    &#34;&#34;&#34;    
+    jxs_dict = {
+        &#34;E_Table&#34;: jxs_df.iloc[0,0],
+        &#34;Fis_v_Data&#34;: jxs_df.iloc[0,1],
+        &#34;MT_Array&#34;: jxs_df.iloc[0,2],
+        &#34;Q_value_Array&#34;: jxs_df.iloc[0,3],
+        &#34;Rx_Type_Array&#34;: jxs_df.iloc[0,4],
+        &#34;XS_Loc_Table&#34;: jxs_df.iloc[0,5],
+        &#34;XS&#34;: jxs_df.iloc[0,6],
+        &#34;Ang_Dist_Loc&#34;: jxs_df.iloc[0,7],
+        &#34;Ang_Dist&#34;: jxs_df.iloc[1,0],
+        &#34;E_Dist_Loc&#34;: jxs_df.iloc[1,1],
+        &#34;E_Dist&#34;: jxs_df.iloc[1,2],
+        &#34;Photon_Prod_Data&#34;: jxs_df.iloc[1,3],
+        &#34;Photon_Prod_MT_Array&#34;: jxs_df.iloc[1,4],
+        &#34;Photon_Prod_XS_Loc&#34;: jxs_df.iloc[1,5],
+        &#34;Photon_Prod_XS&#34;: jxs_df.iloc[1,6],
+        &#34;Photon_Prod_Ang_Dist_Loc&#34;: jxs_df.iloc[1,7],
+        &#34;Photon_Prod_Ang_Dist&#34;: jxs_df.iloc[2,0],
+        &#34;Photon_Prod_E_Dist_Loc&#34;: jxs_df.iloc[2,1],
+        &#34;Photon_Prod_E_Dist&#34;: jxs_df.iloc[2,2],
+        &#34;Yield_Mult_Table&#34;: jxs_df.iloc[2,3],
+        &#34;Tot_Fis_XS&#34;: jxs_df.iloc[2,4],
+        &#34;Last_Word&#34;: jxs_df.iloc[2,5],
+        &#34;Probability_Tab&#34;: jxs_df.iloc[2,6],
+        &#34;Delayed_v_Data&#34;: jxs_df.iloc[2,7],
+        &#34;Basic_Delayed_Neut_Precursor_Data&#34;: jxs_df.iloc[3,0],
+        &#34;Delayed_Neut_E_Dist_Loc&#34;: jxs_df.iloc[3,1],
+    }
+    return jxs_dict
+
+def get_pointers(nxs, jxs):
+    &#34;&#34;&#34;Gets generall information from NXS and JXS needed to start manipulating 
+    cross sections. This includes several pointers for Energy, MT Array, LSIG, 
+    SIG, and Fission. 
+
+    The MT Array is an array containing all reactions avaliable in the XSS Array.
+    The LSIG contains the same number of items as the MT Array. The LSIG points
+    correspond to the index on the XSS array belonging to the corresponding MT Array.
+
+    Args:
+        nxs (dict): dictionary obtained using the get_nxs_dictionary()
+        jxs (dict): dictionary obtained using the get_jxs_dictionary()
+
+    Returns:
+        :rtype: (int, int, int, int, int, int, int)
+    &#34;&#34;&#34;    
+    nxs_dict = get_nxs_dictionary(nxs)
+    jxs_dict = get_jxs_dictionary(jxs)    
+
+    final_dict = {
+        &#34;nes&#34;:nxs_dict[&#34;Num_Energies&#34;], # NES: Number of Energy points (3),
+        &#34;ntr&#34;:nxs_dict[&#34;NTR&#34;],          # NTR: Number of reaction types excluding elastic scattering MT2 (4)
+        &#34;energy_pointer&#34;:jxs_dict[&#34;E_Table&#34;] - 1,              # ESZ (1) ENERGY TABLE POINTER
+        &#34;mt_pointer&#34;:jxs_dict[&#34;MT_Array&#34;] - 1,                  # MTR (3) MT ARRAY POINTER
+        &#34;xs_pointers&#34;:jxs_dict[&#34;XS_Loc_Table&#34;] - 1,            # LSIG (6) TABLE OF XS LOCATORS/POINTERS
+        &#34;xs_table_pointer&#34;:jxs_dict[&#34;XS&#34;] - 1,                 # SIG (7) CROSS SECTION ARRAY POINTER
+        &#34;mt_18_pointer&#34;:(jxs_dict[&#34;Tot_Fis_XS&#34;] - 1).clip(0)  # FIS (21) FISSION POINTER
+    }
+    return final_dict
+
+def get_energy_array(xss, pointers_dict):
+    &#34;&#34;&#34;Returns the energy grid given the XSS and needed pointers.
+
+    Args:
+        xss (np.array): an array containing all information including energy points.
+        energy_pointer (int): integer indicating the index at which the energy grid begins.
+        nes (int): the number of energy points expected.
+
+    Returns:
+        np.array: numpy array containing the energy grid values.
+    &#34;&#34;&#34;    
+    energies = xss[pointers_dict[&#34;energy_pointer&#34;] : pointers_dict[&#34;energy_pointer&#34;] + pointers_dict[&#34;nes&#34;]]   # ENERGY TABLE ARRAY
+    return energies
+
+def get_mt_array(xss, pointer_dict):
+    &#34;&#34;&#34;Returns the avaliable MT reactions given the XSS and needed pointers.
+
+    Args:
+        xss (np.array): an array containing all information including the mt array.
+        mt_pointer (int): integer indicating the index at which the mt array begins.
+        ntr (int): the number of mt reactions excluding MT2.
+
+    Returns:
+        np.array: numpy array containing the MT values values.
+    &#34;&#34;&#34;    
+    mt_array = xss[pointer_dict[&#34;mt_pointer&#34;] : pointer_dict[&#34;mt_pointer&#34;] + pointer_dict[&#34;ntr&#34;]]           # MT TABLE ARRAY
+    return mt_array
+
+def get_mt_xs_pointers_array(xss, pointer_dict):
+    &#34;&#34;&#34;Returns the XS pointers for each MT reaction in the MT array.
+
+    Args:
+        xss (np.array): an array containing all information including the XS pointers.
+        xs_pointers (int): integer indicating the index at which the XS pointer begins.
+        ntr (int): the number of mt reactions excluding MT2 wich corresponds directly
+            to the number of XS pointers avaliable.
+
+    Returns:
+        np.array: numpy array containing the XS pointers grid values.
+    &#34;&#34;&#34;    
+    mt_xs_pointers_array = xss[pointer_dict[&#34;xs_pointers&#34;] : pointer_dict[&#34;xs_pointers&#34;] + pointer_dict[&#34;ntr&#34;]].astype(int) # CROSS SECTION TABLE ARRAY
+    return mt_xs_pointers_array
+
+def get_mt_array_w_pointers(mt_array, mt_xs_pointers_array):
+    &#34;&#34;&#34;Returns a dictionary with the avaliable MT reactions as keys and the 
+    cross section pointers as values. 
+
+    Args:
+        mt_array (np.array): array containing the MT reactions.
+        mt_xs_pointers_array (np.array): array containing the XS pointers.
+
+    Returns:
+        dict: dictionary containing the mt_array:xs_pointer key:value pairs. 
+    &#34;&#34;&#34;    
+    mt_pointer_dict = {}
+    for A, B in zip(mt_array, mt_xs_pointers_array):
+        mt_pointer_dict[A] = B
+    return mt_pointer_dict
+    
+def get_basic_mts(xss, pointer_dict):
+    &#34;&#34;&#34;The MT1, MT101, MT2, and MT3 are not part of the MT array. The XS values
+    start inmediatly after the energy points. Since these reactions energy grid 
+    are the entire &#34;Energy Grid&#34; then there as as many XS values as there are 
+    Energy values which is given by the NES (number of energy points).
+
+    Args:
+        xss (np.array): array containing all the information including the energy grid.
+        nes (int): the number of energy points avaliable in the XSS array.
+
+    Returns:
+        :rtype: (np.array, np.array, np.array, np.array)
+    &#34;&#34;&#34;    
+    nes = pointer_dict[&#34;nes&#34;]
+    mt1 = xss[nes:nes*2]
+    mt101 = xss[nes*2:nes*3]
+    mt2 = xss[nes*3:nes*4]
+    mt3 = mt1 - mt2
+
+    mt_data = {&#34;MT_1&#34;:mt1, &#34;MT_2&#34;:mt2, &#34;MT_3&#34;:mt3, &#34;MT_101&#34;:mt101}
+    return mt_data
+
+
+def get_xs_for_mt(MT, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=True):
+    &#34;&#34;&#34;Returns cross section values, the corresponding energy points, and the indexes corresponding
+    the starting and end point in the xss array.
+
+    When extracting the array belonging to an MT reaction the first and second value
+
+    Args:
+        MT (int): MT number for which to query the cross section values.
+        mt_array (np.array): the np.array of the mt reactions avaliable in the ace file.
+        mt_xs_pointers_array (np.array): array indicating the indexes where the MT reactions begin in the xss array.
+        xs_table_pointer (int): index at which the XS values start in the xss array.
+        jxs (DataFrame): dataframe containing the JXS values
+        xss (np.array): array containing all information directly from the .ace file
+        verbose (bool, optional): to or not to print statements througout the process. Defaults to True.
+
+    Returns:
+        :rtype: (np.array, np.array, int, int)
+    &#34;&#34;&#34;
+    mt_index = np.where(mt_array==MT)[0][0]                                 # GET INDEX FOR REACTION TYPE MT
+    if MT == mt_array[-1]:                                                  # IF REQUESTED MT IS THE LAST ONE ON TABLE 
+        start_index = pointers[&#34;xs_table_pointer&#34;] + mt_xs_pointers_array[mt_index] - 1 # TABLE BEGINS + NUMBER OF ITEMS ACCORDING TO LSIG 
+        end_index = jxs_df.iloc[0,7] - 1                                    # ENDING INDEX
+        mt_data = xss[start_index: end_index]               
+    else:
+        start_index = pointers[&#34;xs_table_pointer&#34;] + mt_xs_pointers_array[mt_index] - 1 
+        end_index = pointers[&#34;xs_table_pointer&#34;] + mt_xs_pointers_array[mt_index + 1] - 1
+        mt_data = xss[start_index: end_index]
+    
+    # THE FIRST AND SECOND VALUE CORRESPOND TO ENERGY INDEX AND POINTS
+    energy_index = int(mt_data[0])   # START INDEX IN ENERGY ARRAY FOR MT REACTION
+    energy_points = int(mt_data[1])  # NUMBER OF ENERGY POINTS FROM START INDEX 
+    energy_array = xss[energy_index - 1 : energy_index + energy_points - 1] 
+    xs_data = mt_data[2:]            # ACTUAL ARRAY BELONGING TO MT REACTION CHANNEL 
+    if verbose:
+        logging.info(&#34;{} Energy and {} Cross Section Points Avaliable for MT{}.&#34;.format(energy_points, len(xs_data), str(int(MT))))
+
+    xs_info_dict = {
+        &#34;xs&#34;:xs_data,
+        &#34;energy&#34;:energy_array, 
+        &#34;xss_start&#34;:start_index,
+        &#34;xss_end&#34;:end_index,
+        &#34;energy_start&#34;:energy_index - 1,
+        &#34;energy_end&#34;:energy_index + energy_points - 1
+    }
+    return xs_info_dict
+
+
+def fill_ml_xs(MT, ml_xs, ace_xs, use_peaks=True):
+    &#34;&#34;&#34;Utility function used by the get_merged() function to fill in the head and tail
+    of a set of cross section values. 
+
+    Args:
+        MT (int): endf mt reaction value for which to adjust the xs. 
+        ml_xs (DataFrame): the dataframe containing the MT reaction to adjust.
+        ace_xs (np.array): array containing the ace cross sections to fill in the ml_xs dataframe.
+
+    Returns:
+        DataFrame: adjusted ML cross sections dataframe.
+    &#34;&#34;&#34;
+    if use_peaks:
+        fallback = False
+    if use_peaks:
+        peaks, properties = find_peaks(ace_xs, prominence=1, width=5)
+        if len(peaks) == 0:
+            fallback = True
+            pass
+        else:
+            properties[&#34;prominences&#34;], properties[&#34;widths&#34;]
+            to_append = ace_xs[:peaks[0]]
+            new_xs = np.concatenate((to_append, ml_xs[MT][peaks[0]:].values), axis=0)
+            ml_xs[MT] = new_xs
+    if fallback or not use_peaks:
+        # FILLS VALUES IN ML DERIVED XS WHERE ALGORITHM IS UNABLE TO PERFORM (1/V AND TAIL)
+        # FOR ALL VALUES THE SAME AS THE FIRST AND LAST ONE SUBSTITUTE FOR EQUIVALENT VALUE IN ENERGY IN ACE XS
+        ml_xs.loc[0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0], MT] = ace_xs[
+            0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0]+1]
+        ml_xs.iloc[-ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0]:, ml_xs.columns.get_loc(MT)] = ace_xs[
+            -ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0] - 1:-1]
+    return ml_xs
+
+def get_hybrid_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, use_peaks=True):
+    &#34;&#34;&#34;Substitutes the ACE MT values in a machine learning generate dataframe containing a set of
+    reaction channels. For MT1, MT2, and MT3 we fix the 1/v and tail region of each cross section.
+    ML models like KNN and DT are coarse and sometimes unable to accuratly keep predicting a given 
+    trend. For this we:
+
+    Previously get_merged_df()
+
+    Args:
+        ml_df (DataFrame): contains the ML generated predictions under each columned named &#34;MT_MT&#34;.
+        basic_mt_dict (DICT): a dicitonary containing MT1, MT2, MT3, and MT101 ({&#34;mt1&#34;:values, &#34;mt2&#34;:...})
+        mt_array (np.array): contains the mt reactions avaliable in the .ace file.
+        mt_xs_pointers_array (np.array): contains the mt XS pointers in the xss array.
+        xs_table_pointer (int): index at which XS&#39;s start in the xss array.
+        jxs_df (DataFrame): the dataframe obtained using the get_nxs_jxs_xss() function.
+        xss (np.array): array containing all information in the .ace file.
+
+    Returns:
+        DataFrame: merged dataframe containing all ML and ACE reaction values
+    &#34;&#34;&#34;    
+    for i in list(ml_df.columns):
+        if i == &#34;Energy&#34;:
+            continue
+        elif i == &#34;MT_1&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_1&#34;], use_peaks=use_peaks)
+        elif i == &#34;MT_2&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_2&#34;], use_peaks=use_peaks)
+        elif i == &#34;MT_3&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_3&#34;], use_peaks=use_peaks)
+        elif i == &#34;MT_101&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_101&#34;], use_peaks=use_peaks)
+        else:
+            if (i in [&#34;MT_18&#34;, &#34;MT_102&#34;]):
+                MT = i.split(&#34;_&#34;)[1]
+                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                ml_df = fill_ml_xs(i, ml_df, mt_info[&#34;xs&#34;], use_peaks=use_peaks)
+            else:
+                MT = i.split(&#34;_&#34;)[1]
+                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                new_xs = np.concatenate((np.zeros(mt_info[&#34;energy_start&#34;]), mt_info[&#34;xs&#34;]), axis=0)
+                ml_df[i] = new_xs
+    return ml_df
+
+def create_mt2_mt3_mt101(rx_grid, mt_array):
+    &#34;&#34;&#34;Helps with the creation of MT3 and MT101 which requires them to be the summation of other MT reactions.
+
+    TODO: CHOOSE WHICH ONE TO ADJUST BASED ON EXPERIMENTAL DATAPOINTS (MT3 OR MT102)
+    Args:
+        rx_grid (DataFrame): dataframe containing the grid by which to adjust the mt. This is usually the energy grid.
+        MT (int): mt reaction for which to create the adjusted MT values
+        mt_array (np.array): array containing the MT values avaliable. Not all MT values will be avaliable.
+
+    Returns:
+        DataFrame: resulting dataframe containing the adjusted MT values.
+    &#34;&#34;&#34;
+    df = pd.DataFrame(index=rx_grid.index)
+    # to_add = pd.DataFrame(index=rx_grid.index)
+
+    df[&#34;MT_3&#34;] = 0
+    df[&#34;MT_101&#34;] = 0
+
+    # CREATE MT3 FROM ML VALUES MT 102, MT 18
+    for i in [4, 5, 11, 16, 17, 18, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 44, 45, 
+                # BELONGS TO MT 101
+                102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]:
+        # CREATE MT 3 FROM ALL OTHER MTS
+        if i in mt_array:
+            df[&#34;MT_3&#34;] = df[&#34;MT_3&#34;].values + rx_grid[&#34;MT_&#34; + str(i)].values
+
+    # WE ADJUST MT 102 FOR EXCESS RELATIVE TO MT 3 ML
+    # to_add[&#34;to_add&#34;] = 0
+    # to_add[&#34;to_add&#34;] = rx_grid.MT_3 - df[&#34;MT_3&#34;]
+    # rx_grid[&#34;MT_102&#34;] = rx_grid[&#34;MT_102&#34;] + to_add[&#34;to_add&#34;]
+    rx_grid[&#34;MT_3&#34;] = df[&#34;MT_3&#34;]
+
+
+    # ADJUSTING MT_102 means readjusting MT_101
+    for i in np.linspace(102, 117, 117-102+1).astype(int):
+        if i in mt_array:
+            df[&#34;MT_101&#34;] = df[&#34;MT_101&#34;].values + rx_grid[&#34;MT_&#34; + str(i)].values
+
+    # ADJUSTING MT_101 means adjusting MT_1
+    # to_add[&#34;to_add&#34;] = 0
+    # to_add[&#34;to_add&#34;] = rx_grid.MT_101 - df[&#34;MT_101&#34;]
+    # rx_grid[&#34;MT_1&#34;] = rx_grid[&#34;MT_1&#34;] + to_add[&#34;to_add&#34;]
+
+    rx_grid[&#34;MT_101&#34;] = df[&#34;MT_101&#34;]
+
+    # MT2 almost always has no experimental datapoints, so we adjust MT2
+    rx_grid[&#34;MT_2&#34;] = rx_grid[&#34;MT_1&#34;] - rx_grid[&#34;MT_3&#34;]
+
+    return rx_grid
+
+def enforce_unitarity(ml_ace_df):
+    &#34;&#34;&#34;Creates MT2 XS and adjusts MT1 accordingly.
+
+    Calculates MT2 by substracting MT3 from MT1. If MT2 is negative:
+    - Replace negatives with NaN
+    - Interpolates from closests values
+    - Adds back amount to MT1 to conserve XS.
+
+    TODO: INTRODUCE THIS FUNCTION TO THE get_final_ml_ace_df()
+
+    Args:
+        ml_ace_df (DataFram): DataFrame containing the original MT1, MT2, and MT3.
+
+    Returns:
+        DataFrame: returns an adjusted dataframe.
+    &#34;&#34;&#34;    
+    adjusting_mt1 = pd.DataFrame({&#34;MT_1&#34;:ml_ace_df.MT_1.values, &#34;MT_3&#34;:ml_ace_df.MT_3.values})
+    adjusting_mt1[&#34;MT_2&#34;] = adjusting_mt1.MT_1.values - adjusting_mt1.MT_3.values
+    
+    # neg_ix = adjusting_mt1[adjusting_mt1.MT_2 &lt; 0].index.tolist()
+    adjusting_mt1[&#34;MT_2&#34;] = adjusting_mt1[&#34;MT_2&#34;].apply(lambda x: x if x &gt; 0 else -1)
+    adjusting_mt1 = adjusting_mt1.replace(to_replace=-1, value=np.nan)
+    adjusting_mt1 = adjusting_mt1.interpolate()
+    adjusting_mt1[&#34;MT_1_int&#34;] = adjusting_mt1[&#34;MT_2&#34;] + adjusting_mt1[&#34;MT_3&#34;]
+    adjusting_mt1[&#34;MT_1_to_add&#34;] = adjusting_mt1[&#34;MT_1_int&#34;] - adjusting_mt1[&#34;MT_1&#34;]
+    adjusting_mt1[&#34;MT_1_Final&#34;] = adjusting_mt1[&#34;MT_1&#34;] + adjusting_mt1[&#34;MT_1_to_add&#34;]
+    
+    ml_ace_df[&#34;MT_1&#34;] = adjusting_mt1[&#34;MT_1_Final&#34;].values
+    ml_ace_df[&#34;MT_2&#34;] = adjusting_mt1[&#34;MT_2&#34;].values
+
+    return ml_ace_df
+    
+def get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, ml_df, ml_list=[&#34;MT_1&#34;, &#34;MT_2&#34;, &#34;MT_3&#34;, &#34;MT_18&#34;, &#34;MT_101&#34;, &#34;MT_102&#34;]):
+    &#34;&#34;&#34;Given a set of ML generated XS (adjusted), this function allows to fill in other reaction channels not included
+    by ML. This is useful since for some calculations some MT reactions are not required but are still present
+    in the ace files. This allows to preserve the ACE file values. 
+
+    For MT3 the ML generated cross sections are adjusted so that conservation rules are not broken. Same for MT101. 
+    All values will be at the energy grid specified by the energies array.  
+
+    Notice that MT2 is not calculated here. You need to use the adjust_mt1_mt2() function.
+
+    TODO: DEAL WITH MT3 BETTER IN CASE IT IS GENERATED BY ML, WHAT ELSE TO ADJUST
+
+    Args:
+        energies (np.array): array containing the energy values at which the ML generated values are created.
+        mt_array (np.array): array containing all mt reactions avaliable in ACE.
+        mt_xs_pointers_array (np.array): pointers for every reaction in the MT array in the XSS array.
+        xs_table_pointer (int): index of xxs at which the XS values start.
+        jxs_df (DataFrame): the dataframe containing the JXS table. 
+        xss (np.array): array containing all info for a specific ace file. 
+        ml_df (DataFrame): dataframe containing the ML generated cross sections. 
+        ml_list (list): list containing the ML generated column names that should not be modified at any point.
+
+    Returns:
+        DataFrame: the dataframe containing the resulting cross sections from both ML and ACE.
+    &#34;&#34;&#34;
+    Energy_Grid = pd.DataFrame({&#34;Energy&#34;: energies})
+    Energy_Grid = Energy_Grid.set_index(&#34;Energy&#34;)
+
+    for i in mt_array:
+        # we get the ace cross sections and add them to our main dataframe some are not going to have the 
+        # same energy grid as mt1 so we fill missing values with 0
+        mt_info = get_xs_for_mt(i, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=False)
+        to_add = pd.DataFrame({&#34;Energy&#34;: mt_info[&#34;energy&#34;], &#34;MT_&#34; + str(int(i)): mt_info[&#34;xs&#34;]})
+        to_add = to_add.set_index(&#34;Energy&#34;)
+        Energy_Grid = pd.merge(Energy_Grid, to_add, left_index=True, right_index=True, how=&#34;outer&#34;) 
+    Energy_Grid = Energy_Grid.fillna(value=0)
+    
+    for i in ml_list:
+        # Once the ace XS are in a dataframe we can substitute the ace xs by those of ml 
+        Energy_Grid[i] = ml_df[i].values
+    
+    # MT3 and MT101 are dependant on a bunch of other MTs, we need to adjust them in order for 
+    # the conservation rules to be mantained.
+    # Energy_Grid[&#34;MT_3&#34;] = create_mt(Energy_Grid, &#34;MT_3&#34;, mt_array)
+    # Energy_Grid[&#34;MT_101&#34;] = create_mt(Energy_Grid, &#34;MT_101&#34;, mt_array)
+    Energy_Grid = create_mt2_mt3_mt101(Energy_Grid, mt_array)
+    Energy_Grid = enforce_unitarity(Energy_Grid)
+    return Energy_Grid
+
+
+
+def modify_xss_w_df(xss, ml_ace_df, mt_array, mt_xs_pointers_array, jxs_df, pointers):
+    &#34;&#34;&#34;Returns a modified XSS array. It substitutes the MT reactions in ml_list in the original ACE xss array.
+    The resulting xss can then be used to create a new .ace file for use in monte carlo or deterministic codes.
+
+    Args:
+        ml_list (list): list of mt reactions to substitute in the original ACE xss.
+        xss (np.array): original xss .ace array.
+        ml_ace_df (DataFrame): the dataframe containing all modified and unmodified MT values.
+        nes (int): number of energy points in the original .ace file.
+        mt_array (np.array): array containing the avaliable mt values in the .ace file.
+        mt_xs_pointers_array (np.array): indexes where the XS starts in the xss array for each MT value.
+        xs_table_pointer (int): index at which the XS values begin.
+        jxs_df (DataFrame): the JXS dataframe from the .ACE file.
+
+    Returns:
+        np.array: modified xss array.
+    &#34;&#34;&#34;    
+    nes = pointers[&#34;nes&#34;]
+
+    # for i in ml_list:
+    for i in ml_ace_df.columns:
+        mt_value = int(i.split(&#34;_&#34;)[1])
+        if mt_value == 1:
+            xss[nes:nes*2] = ml_ace_df[i].values
+        elif mt_value == 2:
+            xss[nes*3:nes*4] = ml_ace_df[i].values
+        elif mt_value == 101:
+            xss[nes*2:nes*3] = ml_ace_df[i].values
+        else:
+            if mt_value in mt_array:
+                xs_info_dict = get_xs_for_mt(mt_value, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                start = xs_info_dict[&#34;xss_start&#34;]
+                end = xs_info_dict[&#34;xss_end&#34;]
+                xss[start + 2 : end] = ml_ace_df.reset_index(drop=True)[i].iloc[xs_info_dict[&#34;energy_start&#34;]:xs_info_dict[&#34;energy_end&#34;]].values
+            
+    if (len(xss)/4 - len(xss)//4)/0.25 == 0:
+        logging.info(&#34;It is wokring&#34;)
+    elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 3:
+        xss = np.append(xss, (np.nan, np.nan, np.nan))
+    elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 2:
+        xss = np.append(xss, (np.nan, np.nan))
+    elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 1:
+        xss = np.append(xss, (np.nan))
+        
+    return xss
+
+def parsing_datatypes(x):
+    &#34;&#34;&#34;Utility function to correctly format numbers before writing them to new .ACE file.
+
+    Args:
+        x (float): number to format.
+
+    Returns:
+        float: formatted value.
+    &#34;&#34;&#34;    
+    if math.isnan(x):
+        return &#34;&#34;
+    elif x - int(x) == 0:
+        return &#34;{:20}&#34;.format(int(x))
+    else:
+        return &#34;{:20.11E}&#34;.format(x)
+
+def create_new_ace(xss, ZZAAA, saving_dir=&#34;&#34;):
+    &#34;&#34;&#34;Generates a new .ACE file ready to be used in transport codes. Everything is
+    encoded in the XSS array. The header is to be kept the same since different energy 
+    arrays are not supported. 
+
+    Args:
+        xss (np.array): modified xss array.
+        ZZAAA (int): ZZAAA formatted element for which to create modified .ACE file.
+        saving_dir (str): path-like string on where to save the created .ACE file.
+
+    Returns:
+        None
+    &#34;&#34;&#34;    
+    # ACE FILES ARE IN FOUR COLUMNS SO WE RESHAPE OUR XSS ARRAY
+    to_write = pd.DataFrame(xss.reshape((-1,4)))
+    to_write.columns = [&#34;column_1&#34;, &#34;column_2&#34;, &#34;column_3&#34;, &#34;column_4&#34;]
+    to_write = to_write.astype(&#34;object&#34;)
+    to_write = to_write.applymap(parsing_datatypes)
+    
+    ace_name = ZZAAA + &#34;ENDF7&#34;
+    tmp_file = os.path.join(saving_dir, ace_name + &#34;_TMP.txt&#34;)
+    tmp_file_2 = os.path.join(saving_dir, ace_name + &#34;_TMP2.txt&#34;)
+    ml_ace_filename = os.path.join(saving_dir, ace_name + &#34;.ace&#34;)
+
+    to_write.to_csv(tmp_file, float_format=&#34;%.11E&#34;, sep=&#34;\t&#34;, index=False, header=False)
+    with open(tmp_file) as fin, open(tmp_file_2, &#39;w&#39;) as fout:
+        for line in fin:
+            fout.write(line.replace(&#39;\t&#39;, &#39;&#39;))
+            
+    path, to_skip, line_count = get_to_skip_lines(ZZAAA)
+    
+    with open(path, &#39;r&#39;) as ace, open(ml_ace_filename, &#39;w&#39;) as new_ace, open(tmp_file_2, &#39;r&#39;) as new_data:
+        ace_lines = ace.readlines()
+        new_lines = new_data.readlines()
+        for i, line in enumerate(ace_lines):
+            if (i &lt; to_skip + 12):
+                new_ace.write(line)
+        for i, line in enumerate(new_lines):
+            new_ace.write(line)
+        for i, line in enumerate(ace_lines):
+            if (i &gt; to_skip + line_count + 12 - 1):
+                new_ace.write(line)
+    
+    convert_dos_to_unix(ml_ace_filename)
+
+    os.remove(tmp_file)
+    os.remove(tmp_file_2)
+    
+    return None
+
+def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, copy_element_ace=False, ignore_basename=False):
+    nsx, jxs, xss = get_nxs_jxs_xss(ZZAAA, temp=&#34;03c&#34;)
+    pointers_info = get_pointers(nsx, jxs)
+    # nes, ntr, energy_pointer, mt_pointer, xs_pointers, xs_table_pointer, _ = get_pointers(nsx, jxs)
+    energies = get_energy_array(xss, pointers_info)
+    mt_array = get_mt_array(xss, pointers_info)
+    mt_xs_pointers_array = get_mt_xs_pointers_array(xss, pointers_info) # lsig
+    mt_data = get_basic_mts(xss, pointers_info)
+
+    if type(path_to_ml_csv) is not list:
+        path_to_ml_csv = [path_to_ml_csv]
+    for i in list(path_to_ml_csv):
+        if ignore_basename:
+            saving_dir_2 = saving_dir
+        else:
+            saving_dir_2 = os.path.basename(i).split(&#34;.&#34;)[0]
+            saving_dir_2 = os.path.join(saving_dir, saving_dir_2)
+            gen_utils.initialize_directories_v2(saving_dir_2, reset=False)
+
+        ml_df = pd.read_csv(i)
+        ml_df[&#34;Energy&#34;] = ml_df[&#34;Energy&#34;] / 1E6
+        
+        ml_df_mod = get_hybrid_ml_xs(ml_df, mt_data, mt_array, mt_xs_pointers_array, pointers_info, jxs, xss)
+        
+        Energy_Grid = get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, pointers_info, jxs, xss, ml_df_mod)   
+        
+        xss = modify_xss_w_df(xss, Energy_Grid, mt_array, mt_xs_pointers_array, jxs, pointers_info)
+
+        create_new_ace(xss, ZZAAA, saving_dir=saving_dir_2)
+
+        if copy_element_ace:
+            copy_ace_files(ZZAAA[:2], saving_dir_2, ignore=ZZAAA)
+
+    return None
+
+def copy_ace_files(ZZ, saving_dir, ace_dir=ace_dir, ignore=None):
+    files = os.listdir(ace_dir)
+    for i in files:
+        if i.startswith(ZZ):
+            if ignore is not None:
+                if i.startswith(ignore):
+                    continue
+                else:
+                    shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                    convert_dos_to_unix(os.path.join(saving_dir, i))
+            else:
+                shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                convert_dos_to_unix(os.path.join(saving_dir, i))
+    return None
+
+
+def convert_dos_to_unix(file_path):
+    # replacement strings
+    WINDOWS_LINE_ENDING = b&#39;\r\n&#39;
+    UNIX_LINE_ENDING = b&#39;\n&#39;
+
+    # relative or absolute file path, e.g.:
+
+    with open(file_path, &#39;rb&#39;) as open_file:
+        content = open_file.read()
+
+    content = content.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)
+
+    with open(file_path, &#39;wb&#39;) as open_file:
+        open_file.write(content)
+
+    return None
+
+################################################################################################
+################################################################################################
+
+################################################################################################
+################################################################################################
+# template_path = &#34;C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\sss_endfb7u.xsdata&#34;
+template_path = &#34;C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\&#34;
+
+
+def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
+    inventory_path = os.path.join(raw_saving_dir, &#34;model_ace_inventory.csv&#34;)
+    if os.path.exists(inventory_path):
+        inventory = pd.read_csv(inventory_path)
+    else:
+        inventory = pd.DataFrame(columns=[&#34;model&#34;, &#34;directory&#34;, &#34;acelib_generated&#34;, &#34;benchmarks&#34;])
+
+    if type(results) == str:
+        results_df = pd.read_csv(results)
+    else:
+        results_df = results.copy()
+    results_df[&#34;run_name&#34;] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    
+    for _, row in results_df.iterrows():
+        run_name = row.run_name
+        filename = &#34;ml_xs.csv&#34;
+        
+        model_ace_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + &#34;/&#34;))
+
+        if (model_ace_saving_dir in inventory.directory.to_list()) and not reset:
+            continue
+        else:
+            gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
+            model, scaler = model_utils.load_model_and_scaler_w_path(row.model_path, row.scaler_path)
+            _ = exfor_utils.get_csv_for_ace(
+                df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
+            
+            inventory = inventory.append(pd.DataFrame({&#34;model&#34;:[run_name], &#34;directory&#34;:[model_ace_saving_dir], &#34;acelib_generated&#34;:[&#34;no&#34;], &#34;benchmarks&#34;:[&#34;none&#34;]}))
+    
+    inventory = inventory.drop_duplicates()
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+def generate_acelib(inventory_path, ZZAAA, generate_xsdata=True, reset=False):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+        acelib_status = row.acelib_generated
+
+        if acelib_status == &#34;yes&#34; and not reset:
+            continue
+        else:
+            path_to_ml_csv = os.path.join(run_dir, &#34;ml_xs.csv&#34;)
+            path_to_acelib = os.path.join(run_dir, &#34;acelib/&#34;)
+            gen_utils.initialize_directories_v2(path_to_acelib, reset=False)
+            create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=path_to_acelib, copy_element_ace=True, ignore_basename=True)
+            inventory.loc[index, &#39;acelib_generated&#39;] = &#34;yes&#34;
+
+            if generate_xsdata:
+                generate_sss_xsdata(run_dir)
+    
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+
+def generate_sss_xsdata(saving_dir, template_path=template_path):
+    xsdata_filepath = os.path.join(template_path, &#34;sss_endfb7u.xsdata&#34;)
+    new_file_path = os.path.join(saving_dir, &#34;sss_endfb7u.xsdata&#34;)
+
+    file = open(xsdata_filepath, &#34;rt&#34;)
+    new_file = open(new_file_path, &#34;wt&#34;)
+
+    to_replace = &#34;/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/&#34;
+    to_insert = os.path.abspath(os.path.join(saving_dir, &#34;acelib/&#34;)).replace(&#34;C:\\&#34;, &#34;/mnt/c/&#34;).replace(&#34;\\&#34;, &#34;/&#34;) + &#34;/&#34;
+
+    for line in file:
+        new_file.write(line.replace(to_replace, to_insert))
+    
+    file.close()
+    new_file.close()
+
+    convert_dos_to_unix(new_file_path)
+
+def copy_benchmark_files(benchmark_name, saving_dir, sss_xsdata_path, template_path=template_path):
+    to_replace = &#34;/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/&#34;
+    new_file_path = os.path.join(sss_xsdata_path, &#34;sss_endfb7u.xsdata&#34;)
+    to_insert = os.path.abspath(new_file_path).replace(&#34;C:\\&#34;, &#34;/mnt/c/&#34;).replace(&#34;\\&#34;, &#34;/&#34;)
+
+    benchmark_path = os.path.join(template_path, benchmark_name)
+    new_benchmark_path = os.path.join(saving_dir, benchmark_name)
+
+    benchmark_file = open(benchmark_path, &#34;rt&#34;)
+    new_benchmark_file = open(new_benchmark_path, &#34;wt&#34;)
+
+    for line in benchmark_file:
+        new_benchmark_file.write(line.replace(to_replace, to_insert))
+
+    benchmark_file.close()
+    new_benchmark_file.close()
+
+    convert_dos_to_unix(new_benchmark_path)
+
+    shutil.copyfile(os.path.join(template_path, &#34;converter.m&#34;), os.path.join(saving_dir, &#34;converter.m&#34;))
+
+    return None
+
+def generate_benchmark_files(inventory_path, benchmark_name):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+
+
+        path_to_benchmark = os.path.join(run_dir, benchmark_name + &#34;/&#34;)
+        gen_utils.initialize_directories_v2(path_to_benchmark, reset=False)
+
+        copy_benchmark_files(benchmark_name, path_to_benchmark, run_dir)
+
+        inventory.loc[index, &#39;benchmarks&#39;] = inventory.loc[index, &#39;benchmarks&#39;] + &#34; &#34; + benchmark_name
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+
+
+def generate_serpent_bash(inventory_path, benchmark_name):
+    all_serpent_files = []
+    all_serpent_files_linux = []
+
+    for root, _, files in os.walk(inventory_path):
+        for file in files:
+            if file.endswith(benchmark_name):
+                all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
+                    
+    for i in all_serpent_files:
+        new = i.replace(&#34;C:\\&#34;, &#34;/mnt/c/&#34;).replace(&#34;\\&#34;, &#34;/&#34;)
+        if &#34;template&#34; in new:
+            continue
+        else:
+            all_serpent_files_linux.append(&#34;cd {}&#34;.format(os.path.dirname(new)) + &#34;/&#34;)
+            all_serpent_files_linux.append(&#34;sss2 -omp 10 &#34; + os.path.basename(new))
+            all_serpent_files_linux.append(&#34;/mnt/c/Program\ Files/MATLAB/R2019a/bin/matlab.exe -nodisplay -nosplash -nodesktop -r \&#34;run(&#39;converter.m&#39;);exit;\&#34; &#34;)  # pylint: disable=anomalous-backslash-in-string  
+        
+    script_path = os.path.join(inventory_path, &#39;serpent_script.sh&#39;)
+
+    with open(script_path, &#39;w&#39;) as f:
+        for item in all_serpent_files_linux:
+            f.write(&#34;%s\n&#34; % item)
+
+    convert_dos_to_unix(script_path)
+
+    return None
+
+
+def gather_benchmark_results(inventory_path):
+    all_results = []
+    names = []
+
+    for root, _, files in os.walk(inventory_path):
+        for file in files:
+            if file.endswith(&#34;.mat&#34;):
+                name_to_append = os.path.basename(Path(root).parents[0])
+                names.append(name_to_append)
+                all_results.append(os.path.abspath(os.path.join(root, file)))
+
+    k_results_ana = []
+    k_unc_ana = []
+
+    k_results_imp = []
+    k_unc_imp = []
+
+    for i in all_results:
+        mat = scipy.io.loadmat(i)
+        k_results_ana.append(mat[&#34;ANA_KEFF&#34;][0][0])
+        k_unc_ana.append(mat[&#34;ANA_KEFF&#34;][0][1])
+        k_results_imp.append(mat[&#34;IMP_KEFF&#34;][0][0])
+        k_unc_imp.append(mat[&#34;IMP_KEFF&#34;][0][1])
+
+    results_df = pd.DataFrame({&#34;Model&#34;:names, &#34;K_eff_ana&#34;:k_results_ana, &#34;Unc_ana&#34;:k_unc_ana, &#34;K_eff_imp&#34;:k_results_imp, &#34;Unc_imp&#34;:k_unc_imp})
+    results_df[&#34;Deviation_Ana&#34;] = results_df.K_eff_ana.apply(lambda k: abs((k-1)/1))
+    results_df[&#34;Deviation_Imp&#34;] = results_df.K_eff_imp.apply(lambda k: abs((k-1)/1))
+
+    return results_df
+
+
+def get_energies(element, temp=&#34;03c&#34;, ace_dir=ace_dir, ev=False, log=False):
+    nxs, jxs, xss = get_nxs_jxs_xss(element, temp=&#34;03c&#34;, ace_dir=ace_dir)
+    if nxs is not None:
+        pointers = get_pointers(nxs, jxs)
+        energies = xss[pointers[&#34;energy_pointer&#34;] : pointers[&#34;energy_pointer&#34;] + pointers[&#34;nes&#34;]]   # ENERGY TABLE ARRAY
+        if ev:
+            energies = energies * 1E6
+        if log:
+            energies = np.log10(energies)
+        return energies
+    else:
+        return empty_df
+
+# testing = remove_unused_models(&#34;../ML_EXFOR_neutrons/2_DT/DT_B1/dt_results.csv&#34;, &#34;acedata_ml/U233/DT_B1/&#34;)
+def remove_unused_models(model_results_path, acedate_directory):
+    model_results_df = pd.read_csv(model_results_path)
+    model_results_df[&#34;Model&#34;] = model_results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    model_results_df[&#34;main_directory&#34;] = model_results_df.model_path.apply(lambda x: os.path.dirname(x) + &#34;\\&#34;)
+    model_results_df = model_results_df[[&#34;Model&#34;, &#34;train_mae&#34;, &#34;val_mae&#34;, &#34;test_mae&#34;, &#34;main_directory&#34;]]
+    
+    benchmark_results = gather_benchmark_results(acedate_directory)
+    model_results_df = model_results_df.merge(benchmark_results, on=&#34;Model&#34;)
+    
+    # KEEP BEST TRAIN VAL TEST
+    # KEEP TOP 3 SORTED DEVIATION ANA
+    to_keep = []
+    to_keep.extend(list(model_results_df.iloc[model_results_df.sort_values(by=&#34;Deviation_Ana&#34;).head().index].Model.values))
+    to_keep.extend(list(model_results_df.iloc[model_utils.get_best_models_df(model_results_df).index].Model.values))
+    model_results_df[&#34;filtering&#34;] = model_results_df.Model.apply(lambda name: True if name not in to_keep else False)
+    to_remove = model_results_df[model_results_df.filtering == True]
+    
+#     for i in to_remove.main_directory.values:
+#         shutil.rmtree(i)
+    
+    return None</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="nucml.ace.data_utilities.convert_dos_to_unix"><code class="name flex">
+<span>def <span class="ident">convert_dos_to_unix</span></span>(<span>file_path)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def convert_dos_to_unix(file_path):
+    # replacement strings
+    WINDOWS_LINE_ENDING = b&#39;\r\n&#39;
+    UNIX_LINE_ENDING = b&#39;\n&#39;
+
+    # relative or absolute file path, e.g.:
+
+    with open(file_path, &#39;rb&#39;) as open_file:
+        content = open_file.read()
+
+    content = content.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)
+
+    with open(file_path, &#39;wb&#39;) as open_file:
+        open_file.write(content)
+
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.copy_ace_files"><code class="name flex">
+<span>def <span class="ident">copy_ace_files</span></span>(<span>ZZ, saving_dir, ace_dir='C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata', ignore=None)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_ace_files(ZZ, saving_dir, ace_dir=ace_dir, ignore=None):
+    files = os.listdir(ace_dir)
+    for i in files:
+        if i.startswith(ZZ):
+            if ignore is not None:
+                if i.startswith(ignore):
+                    continue
+                else:
+                    shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                    convert_dos_to_unix(os.path.join(saving_dir, i))
+            else:
+                shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                convert_dos_to_unix(os.path.join(saving_dir, i))
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.copy_benchmark_files"><code class="name flex">
+<span>def <span class="ident">copy_benchmark_files</span></span>(<span>benchmark_name, saving_dir, sss_xsdata_path, template_path='C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy_benchmark_files(benchmark_name, saving_dir, sss_xsdata_path, template_path=template_path):
+    to_replace = &#34;/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/&#34;
+    new_file_path = os.path.join(sss_xsdata_path, &#34;sss_endfb7u.xsdata&#34;)
+    to_insert = os.path.abspath(new_file_path).replace(&#34;C:\\&#34;, &#34;/mnt/c/&#34;).replace(&#34;\\&#34;, &#34;/&#34;)
+
+    benchmark_path = os.path.join(template_path, benchmark_name)
+    new_benchmark_path = os.path.join(saving_dir, benchmark_name)
+
+    benchmark_file = open(benchmark_path, &#34;rt&#34;)
+    new_benchmark_file = open(new_benchmark_path, &#34;wt&#34;)
+
+    for line in benchmark_file:
+        new_benchmark_file.write(line.replace(to_replace, to_insert))
+
+    benchmark_file.close()
+    new_benchmark_file.close()
+
+    convert_dos_to_unix(new_benchmark_path)
+
+    shutil.copyfile(os.path.join(template_path, &#34;converter.m&#34;), os.path.join(saving_dir, &#34;converter.m&#34;))
+
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.create_mt2_mt3_mt101"><code class="name flex">
+<span>def <span class="ident">create_mt2_mt3_mt101</span></span>(<span>rx_grid, mt_array)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Helps with the creation of MT3 and MT101 which requires them to be the summation of other MT reactions.</p>
+<p>TODO: CHOOSE WHICH ONE TO ADJUST BASED ON EXPERIMENTAL DATAPOINTS (MT3 OR MT102)</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>rx_grid</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>dataframe containing the grid by which to adjust the mt. This is usually the energy grid.</dd>
+<dt><strong><code>MT</code></strong> :&ensp;<code>int</code></dt>
+<dd>mt reaction for which to create the adjusted MT values</dd>
+<dt><strong><code>mt_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing the MT values avaliable. Not all MT values will be avaliable.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>DataFrame</code></dt>
+<dd>resulting dataframe containing the adjusted MT values.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_mt2_mt3_mt101(rx_grid, mt_array):
+    &#34;&#34;&#34;Helps with the creation of MT3 and MT101 which requires them to be the summation of other MT reactions.
+
+    TODO: CHOOSE WHICH ONE TO ADJUST BASED ON EXPERIMENTAL DATAPOINTS (MT3 OR MT102)
+    Args:
+        rx_grid (DataFrame): dataframe containing the grid by which to adjust the mt. This is usually the energy grid.
+        MT (int): mt reaction for which to create the adjusted MT values
+        mt_array (np.array): array containing the MT values avaliable. Not all MT values will be avaliable.
+
+    Returns:
+        DataFrame: resulting dataframe containing the adjusted MT values.
+    &#34;&#34;&#34;
+    df = pd.DataFrame(index=rx_grid.index)
+    # to_add = pd.DataFrame(index=rx_grid.index)
+
+    df[&#34;MT_3&#34;] = 0
+    df[&#34;MT_101&#34;] = 0
+
+    # CREATE MT3 FROM ML VALUES MT 102, MT 18
+    for i in [4, 5, 11, 16, 17, 18, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 44, 45, 
+                # BELONGS TO MT 101
+                102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]:
+        # CREATE MT 3 FROM ALL OTHER MTS
+        if i in mt_array:
+            df[&#34;MT_3&#34;] = df[&#34;MT_3&#34;].values + rx_grid[&#34;MT_&#34; + str(i)].values
+
+    # WE ADJUST MT 102 FOR EXCESS RELATIVE TO MT 3 ML
+    # to_add[&#34;to_add&#34;] = 0
+    # to_add[&#34;to_add&#34;] = rx_grid.MT_3 - df[&#34;MT_3&#34;]
+    # rx_grid[&#34;MT_102&#34;] = rx_grid[&#34;MT_102&#34;] + to_add[&#34;to_add&#34;]
+    rx_grid[&#34;MT_3&#34;] = df[&#34;MT_3&#34;]
+
+
+    # ADJUSTING MT_102 means readjusting MT_101
+    for i in np.linspace(102, 117, 117-102+1).astype(int):
+        if i in mt_array:
+            df[&#34;MT_101&#34;] = df[&#34;MT_101&#34;].values + rx_grid[&#34;MT_&#34; + str(i)].values
+
+    # ADJUSTING MT_101 means adjusting MT_1
+    # to_add[&#34;to_add&#34;] = 0
+    # to_add[&#34;to_add&#34;] = rx_grid.MT_101 - df[&#34;MT_101&#34;]
+    # rx_grid[&#34;MT_1&#34;] = rx_grid[&#34;MT_1&#34;] + to_add[&#34;to_add&#34;]
+
+    rx_grid[&#34;MT_101&#34;] = df[&#34;MT_101&#34;]
+
+    # MT2 almost always has no experimental datapoints, so we adjust MT2
+    rx_grid[&#34;MT_2&#34;] = rx_grid[&#34;MT_1&#34;] - rx_grid[&#34;MT_3&#34;]
+
+    return rx_grid</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.create_new_ace"><code class="name flex">
+<span>def <span class="ident">create_new_ace</span></span>(<span>xss, ZZAAA, saving_dir='')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generates a new .ACE file ready to be used in transport codes. Everything is
+encoded in the XSS array. The header is to be kept the same since different energy
+arrays are not supported. </p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>modified xss array.</dd>
+<dt><strong><code>ZZAAA</code></strong> :&ensp;<code>int</code></dt>
+<dd>ZZAAA formatted element for which to create modified .ACE file.</dd>
+<dt><strong><code>saving_dir</code></strong> :&ensp;<code>str</code></dt>
+<dd>path-like string on where to save the created .ACE file.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>None</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_new_ace(xss, ZZAAA, saving_dir=&#34;&#34;):
+    &#34;&#34;&#34;Generates a new .ACE file ready to be used in transport codes. Everything is
+    encoded in the XSS array. The header is to be kept the same since different energy 
+    arrays are not supported. 
+
+    Args:
+        xss (np.array): modified xss array.
+        ZZAAA (int): ZZAAA formatted element for which to create modified .ACE file.
+        saving_dir (str): path-like string on where to save the created .ACE file.
+
+    Returns:
+        None
+    &#34;&#34;&#34;    
+    # ACE FILES ARE IN FOUR COLUMNS SO WE RESHAPE OUR XSS ARRAY
+    to_write = pd.DataFrame(xss.reshape((-1,4)))
+    to_write.columns = [&#34;column_1&#34;, &#34;column_2&#34;, &#34;column_3&#34;, &#34;column_4&#34;]
+    to_write = to_write.astype(&#34;object&#34;)
+    to_write = to_write.applymap(parsing_datatypes)
+    
+    ace_name = ZZAAA + &#34;ENDF7&#34;
+    tmp_file = os.path.join(saving_dir, ace_name + &#34;_TMP.txt&#34;)
+    tmp_file_2 = os.path.join(saving_dir, ace_name + &#34;_TMP2.txt&#34;)
+    ml_ace_filename = os.path.join(saving_dir, ace_name + &#34;.ace&#34;)
+
+    to_write.to_csv(tmp_file, float_format=&#34;%.11E&#34;, sep=&#34;\t&#34;, index=False, header=False)
+    with open(tmp_file) as fin, open(tmp_file_2, &#39;w&#39;) as fout:
+        for line in fin:
+            fout.write(line.replace(&#39;\t&#39;, &#39;&#39;))
+            
+    path, to_skip, line_count = get_to_skip_lines(ZZAAA)
+    
+    with open(path, &#39;r&#39;) as ace, open(ml_ace_filename, &#39;w&#39;) as new_ace, open(tmp_file_2, &#39;r&#39;) as new_data:
+        ace_lines = ace.readlines()
+        new_lines = new_data.readlines()
+        for i, line in enumerate(ace_lines):
+            if (i &lt; to_skip + 12):
+                new_ace.write(line)
+        for i, line in enumerate(new_lines):
+            new_ace.write(line)
+        for i, line in enumerate(ace_lines):
+            if (i &gt; to_skip + line_count + 12 - 1):
+                new_ace.write(line)
+    
+    convert_dos_to_unix(ml_ace_filename)
+
+    os.remove(tmp_file)
+    os.remove(tmp_file_2)
+    
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.create_new_ace_w_df"><code class="name flex">
+<span>def <span class="ident">create_new_ace_w_df</span></span>(<span>ZZAAA, path_to_ml_csv, saving_dir=None, copy_element_ace=False, ignore_basename=False)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, copy_element_ace=False, ignore_basename=False):
+    nsx, jxs, xss = get_nxs_jxs_xss(ZZAAA, temp=&#34;03c&#34;)
+    pointers_info = get_pointers(nsx, jxs)
+    # nes, ntr, energy_pointer, mt_pointer, xs_pointers, xs_table_pointer, _ = get_pointers(nsx, jxs)
+    energies = get_energy_array(xss, pointers_info)
+    mt_array = get_mt_array(xss, pointers_info)
+    mt_xs_pointers_array = get_mt_xs_pointers_array(xss, pointers_info) # lsig
+    mt_data = get_basic_mts(xss, pointers_info)
+
+    if type(path_to_ml_csv) is not list:
+        path_to_ml_csv = [path_to_ml_csv]
+    for i in list(path_to_ml_csv):
+        if ignore_basename:
+            saving_dir_2 = saving_dir
+        else:
+            saving_dir_2 = os.path.basename(i).split(&#34;.&#34;)[0]
+            saving_dir_2 = os.path.join(saving_dir, saving_dir_2)
+            gen_utils.initialize_directories_v2(saving_dir_2, reset=False)
+
+        ml_df = pd.read_csv(i)
+        ml_df[&#34;Energy&#34;] = ml_df[&#34;Energy&#34;] / 1E6
+        
+        ml_df_mod = get_hybrid_ml_xs(ml_df, mt_data, mt_array, mt_xs_pointers_array, pointers_info, jxs, xss)
+        
+        Energy_Grid = get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, pointers_info, jxs, xss, ml_df_mod)   
+        
+        xss = modify_xss_w_df(xss, Energy_Grid, mt_array, mt_xs_pointers_array, jxs, pointers_info)
+
+        create_new_ace(xss, ZZAAA, saving_dir=saving_dir_2)
+
+        if copy_element_ace:
+            copy_ace_files(ZZAAA[:2], saving_dir_2, ignore=ZZAAA)
+
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.enforce_unitarity"><code class="name flex">
+<span>def <span class="ident">enforce_unitarity</span></span>(<span>ml_ace_df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates MT2 XS and adjusts MT1 accordingly.</p>
+<p>Calculates MT2 by substracting MT3 from MT1. If MT2 is negative:
+- Replace negatives with NaN
+- Interpolates from closests values
+- Adds back amount to MT1 to conserve XS.</p>
+<p>TODO: INTRODUCE THIS FUNCTION TO THE get_final_ml_ace_df()</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>ml_ace_df</code></strong> :&ensp;<code>DataFram</code></dt>
+<dd>DataFrame containing the original MT1, MT2, and MT3.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>DataFrame</code></dt>
+<dd>returns an adjusted dataframe.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def enforce_unitarity(ml_ace_df):
+    &#34;&#34;&#34;Creates MT2 XS and adjusts MT1 accordingly.
+
+    Calculates MT2 by substracting MT3 from MT1. If MT2 is negative:
+    - Replace negatives with NaN
+    - Interpolates from closests values
+    - Adds back amount to MT1 to conserve XS.
+
+    TODO: INTRODUCE THIS FUNCTION TO THE get_final_ml_ace_df()
+
+    Args:
+        ml_ace_df (DataFram): DataFrame containing the original MT1, MT2, and MT3.
+
+    Returns:
+        DataFrame: returns an adjusted dataframe.
+    &#34;&#34;&#34;    
+    adjusting_mt1 = pd.DataFrame({&#34;MT_1&#34;:ml_ace_df.MT_1.values, &#34;MT_3&#34;:ml_ace_df.MT_3.values})
+    adjusting_mt1[&#34;MT_2&#34;] = adjusting_mt1.MT_1.values - adjusting_mt1.MT_3.values
+    
+    # neg_ix = adjusting_mt1[adjusting_mt1.MT_2 &lt; 0].index.tolist()
+    adjusting_mt1[&#34;MT_2&#34;] = adjusting_mt1[&#34;MT_2&#34;].apply(lambda x: x if x &gt; 0 else -1)
+    adjusting_mt1 = adjusting_mt1.replace(to_replace=-1, value=np.nan)
+    adjusting_mt1 = adjusting_mt1.interpolate()
+    adjusting_mt1[&#34;MT_1_int&#34;] = adjusting_mt1[&#34;MT_2&#34;] + adjusting_mt1[&#34;MT_3&#34;]
+    adjusting_mt1[&#34;MT_1_to_add&#34;] = adjusting_mt1[&#34;MT_1_int&#34;] - adjusting_mt1[&#34;MT_1&#34;]
+    adjusting_mt1[&#34;MT_1_Final&#34;] = adjusting_mt1[&#34;MT_1&#34;] + adjusting_mt1[&#34;MT_1_to_add&#34;]
+    
+    ml_ace_df[&#34;MT_1&#34;] = adjusting_mt1[&#34;MT_1_Final&#34;].values
+    ml_ace_df[&#34;MT_2&#34;] = adjusting_mt1[&#34;MT_2&#34;].values
+
+    return ml_ace_df</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.fill_ml_xs"><code class="name flex">
+<span>def <span class="ident">fill_ml_xs</span></span>(<span>MT, ml_xs, ace_xs, use_peaks=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Utility function used by the get_merged() function to fill in the head and tail
+of a set of cross section values. </p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>MT</code></strong> :&ensp;<code>int</code></dt>
+<dd>endf mt reaction value for which to adjust the xs. </dd>
+<dt><strong><code>ml_xs</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>the dataframe containing the MT reaction to adjust.</dd>
+<dt><strong><code>ace_xs</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing the ace cross sections to fill in the ml_xs dataframe.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>DataFrame</code></dt>
+<dd>adjusted ML cross sections dataframe.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fill_ml_xs(MT, ml_xs, ace_xs, use_peaks=True):
+    &#34;&#34;&#34;Utility function used by the get_merged() function to fill in the head and tail
+    of a set of cross section values. 
+
+    Args:
+        MT (int): endf mt reaction value for which to adjust the xs. 
+        ml_xs (DataFrame): the dataframe containing the MT reaction to adjust.
+        ace_xs (np.array): array containing the ace cross sections to fill in the ml_xs dataframe.
+
+    Returns:
+        DataFrame: adjusted ML cross sections dataframe.
+    &#34;&#34;&#34;
+    if use_peaks:
+        fallback = False
+    if use_peaks:
+        peaks, properties = find_peaks(ace_xs, prominence=1, width=5)
+        if len(peaks) == 0:
+            fallback = True
+            pass
+        else:
+            properties[&#34;prominences&#34;], properties[&#34;widths&#34;]
+            to_append = ace_xs[:peaks[0]]
+            new_xs = np.concatenate((to_append, ml_xs[MT][peaks[0]:].values), axis=0)
+            ml_xs[MT] = new_xs
+    if fallback or not use_peaks:
+        # FILLS VALUES IN ML DERIVED XS WHERE ALGORITHM IS UNABLE TO PERFORM (1/V AND TAIL)
+        # FOR ALL VALUES THE SAME AS THE FIRST AND LAST ONE SUBSTITUTE FOR EQUIVALENT VALUE IN ENERGY IN ACE XS
+        ml_xs.loc[0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0], MT] = ace_xs[
+            0:ml_xs[ml_xs[MT] == ml_xs[MT].values[0]].shape[0]+1]
+        ml_xs.iloc[-ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0]:, ml_xs.columns.get_loc(MT)] = ace_xs[
+            -ml_xs[ml_xs[MT] == ml_xs[MT].values[-1]].shape[0] - 1:-1]
+    return ml_xs</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.gather_benchmark_results"><code class="name flex">
+<span>def <span class="ident">gather_benchmark_results</span></span>(<span>inventory_path)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def gather_benchmark_results(inventory_path):
+    all_results = []
+    names = []
+
+    for root, _, files in os.walk(inventory_path):
+        for file in files:
+            if file.endswith(&#34;.mat&#34;):
+                name_to_append = os.path.basename(Path(root).parents[0])
+                names.append(name_to_append)
+                all_results.append(os.path.abspath(os.path.join(root, file)))
+
+    k_results_ana = []
+    k_unc_ana = []
+
+    k_results_imp = []
+    k_unc_imp = []
+
+    for i in all_results:
+        mat = scipy.io.loadmat(i)
+        k_results_ana.append(mat[&#34;ANA_KEFF&#34;][0][0])
+        k_unc_ana.append(mat[&#34;ANA_KEFF&#34;][0][1])
+        k_results_imp.append(mat[&#34;IMP_KEFF&#34;][0][0])
+        k_unc_imp.append(mat[&#34;IMP_KEFF&#34;][0][1])
+
+    results_df = pd.DataFrame({&#34;Model&#34;:names, &#34;K_eff_ana&#34;:k_results_ana, &#34;Unc_ana&#34;:k_unc_ana, &#34;K_eff_imp&#34;:k_results_imp, &#34;Unc_imp&#34;:k_unc_imp})
+    results_df[&#34;Deviation_Ana&#34;] = results_df.K_eff_ana.apply(lambda k: abs((k-1)/1))
+    results_df[&#34;Deviation_Imp&#34;] = results_df.K_eff_imp.apply(lambda k: abs((k-1)/1))
+
+    return results_df</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.generate_acelib"><code class="name flex">
+<span>def <span class="ident">generate_acelib</span></span>(<span>inventory_path, ZZAAA, generate_xsdata=True, reset=False)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_acelib(inventory_path, ZZAAA, generate_xsdata=True, reset=False):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+        acelib_status = row.acelib_generated
+
+        if acelib_status == &#34;yes&#34; and not reset:
+            continue
+        else:
+            path_to_ml_csv = os.path.join(run_dir, &#34;ml_xs.csv&#34;)
+            path_to_acelib = os.path.join(run_dir, &#34;acelib/&#34;)
+            gen_utils.initialize_directories_v2(path_to_acelib, reset=False)
+            create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=path_to_acelib, copy_element_ace=True, ignore_basename=True)
+            inventory.loc[index, &#39;acelib_generated&#39;] = &#34;yes&#34;
+
+            if generate_xsdata:
+                generate_sss_xsdata(run_dir)
+    
+    inventory.to_csv(inventory_path, index=False)
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.generate_benchmark_files"><code class="name flex">
+<span>def <span class="ident">generate_benchmark_files</span></span>(<span>inventory_path, benchmark_name)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_benchmark_files(inventory_path, benchmark_name):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+
+
+        path_to_benchmark = os.path.join(run_dir, benchmark_name + &#34;/&#34;)
+        gen_utils.initialize_directories_v2(path_to_benchmark, reset=False)
+
+        copy_benchmark_files(benchmark_name, path_to_benchmark, run_dir)
+
+        inventory.loc[index, &#39;benchmarks&#39;] = inventory.loc[index, &#39;benchmarks&#39;] + &#34; &#34; + benchmark_name
+    inventory.to_csv(inventory_path, index=False)
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.generate_ml_xs"><code class="name flex">
+<span>def <span class="ident">generate_ml_xs</span></span>(<span>df, Z, A, results, to_scale, raw_saving_dir, reset=False)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
+    inventory_path = os.path.join(raw_saving_dir, &#34;model_ace_inventory.csv&#34;)
+    if os.path.exists(inventory_path):
+        inventory = pd.read_csv(inventory_path)
+    else:
+        inventory = pd.DataFrame(columns=[&#34;model&#34;, &#34;directory&#34;, &#34;acelib_generated&#34;, &#34;benchmarks&#34;])
+
+    if type(results) == str:
+        results_df = pd.read_csv(results)
+    else:
+        results_df = results.copy()
+    results_df[&#34;run_name&#34;] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    
+    for _, row in results_df.iterrows():
+        run_name = row.run_name
+        filename = &#34;ml_xs.csv&#34;
+        
+        model_ace_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + &#34;/&#34;))
+
+        if (model_ace_saving_dir in inventory.directory.to_list()) and not reset:
+            continue
+        else:
+            gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
+            model, scaler = model_utils.load_model_and_scaler_w_path(row.model_path, row.scaler_path)
+            _ = exfor_utils.get_csv_for_ace(
+                df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
+            
+            inventory = inventory.append(pd.DataFrame({&#34;model&#34;:[run_name], &#34;directory&#34;:[model_ace_saving_dir], &#34;acelib_generated&#34;:[&#34;no&#34;], &#34;benchmarks&#34;:[&#34;none&#34;]}))
+    
+    inventory = inventory.drop_duplicates()
+    inventory.to_csv(inventory_path, index=False)
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.generate_serpent_bash"><code class="name flex">
+<span>def <span class="ident">generate_serpent_bash</span></span>(<span>inventory_path, benchmark_name)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_serpent_bash(inventory_path, benchmark_name):
+    all_serpent_files = []
+    all_serpent_files_linux = []
+
+    for root, _, files in os.walk(inventory_path):
+        for file in files:
+            if file.endswith(benchmark_name):
+                all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
+                    
+    for i in all_serpent_files:
+        new = i.replace(&#34;C:\\&#34;, &#34;/mnt/c/&#34;).replace(&#34;\\&#34;, &#34;/&#34;)
+        if &#34;template&#34; in new:
+            continue
+        else:
+            all_serpent_files_linux.append(&#34;cd {}&#34;.format(os.path.dirname(new)) + &#34;/&#34;)
+            all_serpent_files_linux.append(&#34;sss2 -omp 10 &#34; + os.path.basename(new))
+            all_serpent_files_linux.append(&#34;/mnt/c/Program\ Files/MATLAB/R2019a/bin/matlab.exe -nodisplay -nosplash -nodesktop -r \&#34;run(&#39;converter.m&#39;);exit;\&#34; &#34;)  # pylint: disable=anomalous-backslash-in-string  
+        
+    script_path = os.path.join(inventory_path, &#39;serpent_script.sh&#39;)
+
+    with open(script_path, &#39;w&#39;) as f:
+        for item in all_serpent_files_linux:
+            f.write(&#34;%s\n&#34; % item)
+
+    convert_dos_to_unix(script_path)
+
+    return None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.generate_sss_xsdata"><code class="name flex">
+<span>def <span class="ident">generate_sss_xsdata</span></span>(<span>saving_dir, template_path='C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_sss_xsdata(saving_dir, template_path=template_path):
+    xsdata_filepath = os.path.join(template_path, &#34;sss_endfb7u.xsdata&#34;)
+    new_file_path = os.path.join(saving_dir, &#34;sss_endfb7u.xsdata&#34;)
+
+    file = open(xsdata_filepath, &#34;rt&#34;)
+    new_file = open(new_file_path, &#34;wt&#34;)
+
+    to_replace = &#34;/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/&#34;
+    to_insert = os.path.abspath(os.path.join(saving_dir, &#34;acelib/&#34;)).replace(&#34;C:\\&#34;, &#34;/mnt/c/&#34;).replace(&#34;\\&#34;, &#34;/&#34;) + &#34;/&#34;
+
+    for line in file:
+        new_file.write(line.replace(to_replace, to_insert))
+    
+    file.close()
+    new_file.close()
+
+    convert_dos_to_unix(new_file_path)</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_basic_mts"><code class="name flex">
+<span>def <span class="ident">get_basic_mts</span></span>(<span>xss, pointer_dict)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The MT1, MT101, MT2, and MT3 are not part of the MT array. The XS values
+start inmediatly after the energy points. Since these reactions energy grid
+are the entire "Energy Grid" then there as as many XS values as there are
+Energy values which is given by the NES (number of energy points).</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing all the information including the energy grid.</dd>
+<dt><strong><code>nes</code></strong> :&ensp;<code>int</code></dt>
+<dd>the number of energy points avaliable in the XSS array.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>:rtype: (np.array, np.array, np.array, np.array)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_basic_mts(xss, pointer_dict):
+    &#34;&#34;&#34;The MT1, MT101, MT2, and MT3 are not part of the MT array. The XS values
+    start inmediatly after the energy points. Since these reactions energy grid 
+    are the entire &#34;Energy Grid&#34; then there as as many XS values as there are 
+    Energy values which is given by the NES (number of energy points).
+
+    Args:
+        xss (np.array): array containing all the information including the energy grid.
+        nes (int): the number of energy points avaliable in the XSS array.
+
+    Returns:
+        :rtype: (np.array, np.array, np.array, np.array)
+    &#34;&#34;&#34;    
+    nes = pointer_dict[&#34;nes&#34;]
+    mt1 = xss[nes:nes*2]
+    mt101 = xss[nes*2:nes*3]
+    mt2 = xss[nes*3:nes*4]
+    mt3 = mt1 - mt2
+
+    mt_data = {&#34;MT_1&#34;:mt1, &#34;MT_2&#34;:mt2, &#34;MT_3&#34;:mt3, &#34;MT_101&#34;:mt101}
+    return mt_data</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_energies"><code class="name flex">
+<span>def <span class="ident">get_energies</span></span>(<span>element, temp='03c', ace_dir='C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata', ev=False, log=False)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_energies(element, temp=&#34;03c&#34;, ace_dir=ace_dir, ev=False, log=False):
+    nxs, jxs, xss = get_nxs_jxs_xss(element, temp=&#34;03c&#34;, ace_dir=ace_dir)
+    if nxs is not None:
+        pointers = get_pointers(nxs, jxs)
+        energies = xss[pointers[&#34;energy_pointer&#34;] : pointers[&#34;energy_pointer&#34;] + pointers[&#34;nes&#34;]]   # ENERGY TABLE ARRAY
+        if ev:
+            energies = energies * 1E6
+        if log:
+            energies = np.log10(energies)
+        return energies
+    else:
+        return empty_df</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_energy_array"><code class="name flex">
+<span>def <span class="ident">get_energy_array</span></span>(<span>xss, pointers_dict)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the energy grid given the XSS and needed pointers.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>an array containing all information including energy points.</dd>
+<dt><strong><code>energy_pointer</code></strong> :&ensp;<code>int</code></dt>
+<dd>integer indicating the index at which the energy grid begins.</dd>
+<dt><strong><code>nes</code></strong> :&ensp;<code>int</code></dt>
+<dd>the number of energy points expected.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>np.array</code></dt>
+<dd>numpy array containing the energy grid values.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_energy_array(xss, pointers_dict):
+    &#34;&#34;&#34;Returns the energy grid given the XSS and needed pointers.
+
+    Args:
+        xss (np.array): an array containing all information including energy points.
+        energy_pointer (int): integer indicating the index at which the energy grid begins.
+        nes (int): the number of energy points expected.
+
+    Returns:
+        np.array: numpy array containing the energy grid values.
+    &#34;&#34;&#34;    
+    energies = xss[pointers_dict[&#34;energy_pointer&#34;] : pointers_dict[&#34;energy_pointer&#34;] + pointers_dict[&#34;nes&#34;]]   # ENERGY TABLE ARRAY
+    return energies</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_final_ml_ace_df"><code class="name flex">
+<span>def <span class="ident">get_final_ml_ace_df</span></span>(<span>energies, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, ml_df, ml_list=['MT_1', 'MT_2', 'MT_3', 'MT_18', 'MT_101', 'MT_102'])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Given a set of ML generated XS (adjusted), this function allows to fill in other reaction channels not included
+by ML. This is useful since for some calculations some MT reactions are not required but are still present
+in the ace files. This allows to preserve the ACE file values. </p>
+<p>For MT3 the ML generated cross sections are adjusted so that conservation rules are not broken. Same for MT101.
+All values will be at the energy grid specified by the energies array.
+</p>
+<p>Notice that MT2 is not calculated here. You need to use the adjust_mt1_mt2() function.</p>
+<p>TODO: DEAL WITH MT3 BETTER IN CASE IT IS GENERATED BY ML, WHAT ELSE TO ADJUST</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>energies</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing the energy values at which the ML generated values are created.</dd>
+<dt><strong><code>mt_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing all mt reactions avaliable in ACE.</dd>
+<dt><strong><code>mt_xs_pointers_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>pointers for every reaction in the MT array in the XSS array.</dd>
+<dt><strong><code>xs_table_pointer</code></strong> :&ensp;<code>int</code></dt>
+<dd>index of xxs at which the XS values start.</dd>
+<dt><strong><code>jxs_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>the dataframe containing the JXS table. </dd>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing all info for a specific ace file. </dd>
+<dt><strong><code>ml_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>dataframe containing the ML generated cross sections. </dd>
+<dt><strong><code>ml_list</code></strong> :&ensp;<code>list</code></dt>
+<dd>list containing the ML generated column names that should not be modified at any point.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>DataFrame</code></dt>
+<dd>the dataframe containing the resulting cross sections from both ML and ACE.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_final_ml_ace_df(energies, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, ml_df, ml_list=[&#34;MT_1&#34;, &#34;MT_2&#34;, &#34;MT_3&#34;, &#34;MT_18&#34;, &#34;MT_101&#34;, &#34;MT_102&#34;]):
+    &#34;&#34;&#34;Given a set of ML generated XS (adjusted), this function allows to fill in other reaction channels not included
+    by ML. This is useful since for some calculations some MT reactions are not required but are still present
+    in the ace files. This allows to preserve the ACE file values. 
+
+    For MT3 the ML generated cross sections are adjusted so that conservation rules are not broken. Same for MT101. 
+    All values will be at the energy grid specified by the energies array.  
+
+    Notice that MT2 is not calculated here. You need to use the adjust_mt1_mt2() function.
+
+    TODO: DEAL WITH MT3 BETTER IN CASE IT IS GENERATED BY ML, WHAT ELSE TO ADJUST
+
+    Args:
+        energies (np.array): array containing the energy values at which the ML generated values are created.
+        mt_array (np.array): array containing all mt reactions avaliable in ACE.
+        mt_xs_pointers_array (np.array): pointers for every reaction in the MT array in the XSS array.
+        xs_table_pointer (int): index of xxs at which the XS values start.
+        jxs_df (DataFrame): the dataframe containing the JXS table. 
+        xss (np.array): array containing all info for a specific ace file. 
+        ml_df (DataFrame): dataframe containing the ML generated cross sections. 
+        ml_list (list): list containing the ML generated column names that should not be modified at any point.
+
+    Returns:
+        DataFrame: the dataframe containing the resulting cross sections from both ML and ACE.
+    &#34;&#34;&#34;
+    Energy_Grid = pd.DataFrame({&#34;Energy&#34;: energies})
+    Energy_Grid = Energy_Grid.set_index(&#34;Energy&#34;)
+
+    for i in mt_array:
+        # we get the ace cross sections and add them to our main dataframe some are not going to have the 
+        # same energy grid as mt1 so we fill missing values with 0
+        mt_info = get_xs_for_mt(i, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=False)
+        to_add = pd.DataFrame({&#34;Energy&#34;: mt_info[&#34;energy&#34;], &#34;MT_&#34; + str(int(i)): mt_info[&#34;xs&#34;]})
+        to_add = to_add.set_index(&#34;Energy&#34;)
+        Energy_Grid = pd.merge(Energy_Grid, to_add, left_index=True, right_index=True, how=&#34;outer&#34;) 
+    Energy_Grid = Energy_Grid.fillna(value=0)
+    
+    for i in ml_list:
+        # Once the ace XS are in a dataframe we can substitute the ace xs by those of ml 
+        Energy_Grid[i] = ml_df[i].values
+    
+    # MT3 and MT101 are dependant on a bunch of other MTs, we need to adjust them in order for 
+    # the conservation rules to be mantained.
+    # Energy_Grid[&#34;MT_3&#34;] = create_mt(Energy_Grid, &#34;MT_3&#34;, mt_array)
+    # Energy_Grid[&#34;MT_101&#34;] = create_mt(Energy_Grid, &#34;MT_101&#34;, mt_array)
+    Energy_Grid = create_mt2_mt3_mt101(Energy_Grid, mt_array)
+    Energy_Grid = enforce_unitarity(Energy_Grid)
+    return Energy_Grid</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_hybrid_ml_xs"><code class="name flex">
+<span>def <span class="ident">get_hybrid_ml_xs</span></span>(<span>ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, use_peaks=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Substitutes the ACE MT values in a machine learning generate dataframe containing a set of
+reaction channels. For MT1, MT2, and MT3 we fix the 1/v and tail region of each cross section.
+ML models like KNN and DT are coarse and sometimes unable to accuratly keep predicting a given
+trend. For this we:</p>
+<p>Previously get_merged_df()</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>ml_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>contains the ML generated predictions under each columned named "MT_MT".</dd>
+<dt><strong><code>basic_mt_dict</code></strong> :&ensp;<code>DICT</code></dt>
+<dd>a dicitonary containing MT1, MT2, MT3, and MT101 ({"mt1":values, "mt2":&hellip;})</dd>
+<dt><strong><code>mt_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>contains the mt reactions avaliable in the .ace file.</dd>
+<dt><strong><code>mt_xs_pointers_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>contains the mt XS pointers in the xss array.</dd>
+<dt><strong><code>xs_table_pointer</code></strong> :&ensp;<code>int</code></dt>
+<dd>index at which XS's start in the xss array.</dd>
+<dt><strong><code>jxs_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>the dataframe obtained using the get_nxs_jxs_xss() function.</dd>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing all information in the .ace file.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>DataFrame</code></dt>
+<dd>merged dataframe containing all ML and ACE reaction values</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_hybrid_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, pointers, jxs_df, xss, use_peaks=True):
+    &#34;&#34;&#34;Substitutes the ACE MT values in a machine learning generate dataframe containing a set of
+    reaction channels. For MT1, MT2, and MT3 we fix the 1/v and tail region of each cross section.
+    ML models like KNN and DT are coarse and sometimes unable to accuratly keep predicting a given 
+    trend. For this we:
+
+    Previously get_merged_df()
+
+    Args:
+        ml_df (DataFrame): contains the ML generated predictions under each columned named &#34;MT_MT&#34;.
+        basic_mt_dict (DICT): a dicitonary containing MT1, MT2, MT3, and MT101 ({&#34;mt1&#34;:values, &#34;mt2&#34;:...})
+        mt_array (np.array): contains the mt reactions avaliable in the .ace file.
+        mt_xs_pointers_array (np.array): contains the mt XS pointers in the xss array.
+        xs_table_pointer (int): index at which XS&#39;s start in the xss array.
+        jxs_df (DataFrame): the dataframe obtained using the get_nxs_jxs_xss() function.
+        xss (np.array): array containing all information in the .ace file.
+
+    Returns:
+        DataFrame: merged dataframe containing all ML and ACE reaction values
+    &#34;&#34;&#34;    
+    for i in list(ml_df.columns):
+        if i == &#34;Energy&#34;:
+            continue
+        elif i == &#34;MT_1&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_1&#34;], use_peaks=use_peaks)
+        elif i == &#34;MT_2&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_2&#34;], use_peaks=use_peaks)
+        elif i == &#34;MT_3&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_3&#34;], use_peaks=use_peaks)
+        elif i == &#34;MT_101&#34;:
+            ml_df = fill_ml_xs(i, ml_df, basic_mt_dict[&#34;MT_101&#34;], use_peaks=use_peaks)
+        else:
+            if (i in [&#34;MT_18&#34;, &#34;MT_102&#34;]):
+                MT = i.split(&#34;_&#34;)[1]
+                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                ml_df = fill_ml_xs(i, ml_df, mt_info[&#34;xs&#34;], use_peaks=use_peaks)
+            else:
+                MT = i.split(&#34;_&#34;)[1]
+                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                new_xs = np.concatenate((np.zeros(mt_info[&#34;energy_start&#34;]), mt_info[&#34;xs&#34;]), axis=0)
+                ml_df[i] = new_xs
+    return ml_df</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_jxs_dictionary"><code class="name flex">
+<span>def <span class="ident">get_jxs_dictionary</span></span>(<span>jxs_df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Given the extracted JXS DataFrame, this function will return a key:value dictionary
+of the values in the JXS in accordance to the documentation of ACE formatting.</p>
+<p>JXS are mostly indexes in the XSS array to indicate the beggining of a data type. </p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>jxs_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>The JXS DataFrame extracted using the get_nxs_jxs_xss() function.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict</code></dt>
+<dd>dictionary containing the JXS results.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_jxs_dictionary(jxs_df):
+    &#34;&#34;&#34;Given the extracted JXS DataFrame, this function will return a key:value dictionary
+    of the values in the JXS in accordance to the documentation of ACE formatting.
+
+    JXS are mostly indexes in the XSS array to indicate the beggining of a data type. 
+
+    Args:
+        jxs_df (DataFrame): The JXS DataFrame extracted using the get_nxs_jxs_xss() function.
+
+    Returns:
+        dict: dictionary containing the JXS results.
+    &#34;&#34;&#34;    
+    jxs_dict = {
+        &#34;E_Table&#34;: jxs_df.iloc[0,0],
+        &#34;Fis_v_Data&#34;: jxs_df.iloc[0,1],
+        &#34;MT_Array&#34;: jxs_df.iloc[0,2],
+        &#34;Q_value_Array&#34;: jxs_df.iloc[0,3],
+        &#34;Rx_Type_Array&#34;: jxs_df.iloc[0,4],
+        &#34;XS_Loc_Table&#34;: jxs_df.iloc[0,5],
+        &#34;XS&#34;: jxs_df.iloc[0,6],
+        &#34;Ang_Dist_Loc&#34;: jxs_df.iloc[0,7],
+        &#34;Ang_Dist&#34;: jxs_df.iloc[1,0],
+        &#34;E_Dist_Loc&#34;: jxs_df.iloc[1,1],
+        &#34;E_Dist&#34;: jxs_df.iloc[1,2],
+        &#34;Photon_Prod_Data&#34;: jxs_df.iloc[1,3],
+        &#34;Photon_Prod_MT_Array&#34;: jxs_df.iloc[1,4],
+        &#34;Photon_Prod_XS_Loc&#34;: jxs_df.iloc[1,5],
+        &#34;Photon_Prod_XS&#34;: jxs_df.iloc[1,6],
+        &#34;Photon_Prod_Ang_Dist_Loc&#34;: jxs_df.iloc[1,7],
+        &#34;Photon_Prod_Ang_Dist&#34;: jxs_df.iloc[2,0],
+        &#34;Photon_Prod_E_Dist_Loc&#34;: jxs_df.iloc[2,1],
+        &#34;Photon_Prod_E_Dist&#34;: jxs_df.iloc[2,2],
+        &#34;Yield_Mult_Table&#34;: jxs_df.iloc[2,3],
+        &#34;Tot_Fis_XS&#34;: jxs_df.iloc[2,4],
+        &#34;Last_Word&#34;: jxs_df.iloc[2,5],
+        &#34;Probability_Tab&#34;: jxs_df.iloc[2,6],
+        &#34;Delayed_v_Data&#34;: jxs_df.iloc[2,7],
+        &#34;Basic_Delayed_Neut_Precursor_Data&#34;: jxs_df.iloc[3,0],
+        &#34;Delayed_Neut_E_Dist_Loc&#34;: jxs_df.iloc[3,1],
+    }
+    return jxs_dict</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_mt_array"><code class="name flex">
+<span>def <span class="ident">get_mt_array</span></span>(<span>xss, pointer_dict)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the avaliable MT reactions given the XSS and needed pointers.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>an array containing all information including the mt array.</dd>
+<dt><strong><code>mt_pointer</code></strong> :&ensp;<code>int</code></dt>
+<dd>integer indicating the index at which the mt array begins.</dd>
+<dt><strong><code>ntr</code></strong> :&ensp;<code>int</code></dt>
+<dd>the number of mt reactions excluding MT2.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>np.array</code></dt>
+<dd>numpy array containing the MT values values.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_mt_array(xss, pointer_dict):
+    &#34;&#34;&#34;Returns the avaliable MT reactions given the XSS and needed pointers.
+
+    Args:
+        xss (np.array): an array containing all information including the mt array.
+        mt_pointer (int): integer indicating the index at which the mt array begins.
+        ntr (int): the number of mt reactions excluding MT2.
+
+    Returns:
+        np.array: numpy array containing the MT values values.
+    &#34;&#34;&#34;    
+    mt_array = xss[pointer_dict[&#34;mt_pointer&#34;] : pointer_dict[&#34;mt_pointer&#34;] + pointer_dict[&#34;ntr&#34;]]           # MT TABLE ARRAY
+    return mt_array</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_mt_array_w_pointers"><code class="name flex">
+<span>def <span class="ident">get_mt_array_w_pointers</span></span>(<span>mt_array, mt_xs_pointers_array)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a dictionary with the avaliable MT reactions as keys and the
+cross section pointers as values. </p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>mt_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing the MT reactions.</dd>
+<dt><strong><code>mt_xs_pointers_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing the XS pointers.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict</code></dt>
+<dd>dictionary containing the mt_array:xs_pointer key:value pairs.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_mt_array_w_pointers(mt_array, mt_xs_pointers_array):
+    &#34;&#34;&#34;Returns a dictionary with the avaliable MT reactions as keys and the 
+    cross section pointers as values. 
+
+    Args:
+        mt_array (np.array): array containing the MT reactions.
+        mt_xs_pointers_array (np.array): array containing the XS pointers.
+
+    Returns:
+        dict: dictionary containing the mt_array:xs_pointer key:value pairs. 
+    &#34;&#34;&#34;    
+    mt_pointer_dict = {}
+    for A, B in zip(mt_array, mt_xs_pointers_array):
+        mt_pointer_dict[A] = B
+    return mt_pointer_dict</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_mt_xs_pointers_array"><code class="name flex">
+<span>def <span class="ident">get_mt_xs_pointers_array</span></span>(<span>xss, pointer_dict)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the XS pointers for each MT reaction in the MT array.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>an array containing all information including the XS pointers.</dd>
+<dt><strong><code>xs_pointers</code></strong> :&ensp;<code>int</code></dt>
+<dd>integer indicating the index at which the XS pointer begins.</dd>
+<dt><strong><code>ntr</code></strong> :&ensp;<code>int</code></dt>
+<dd>the number of mt reactions excluding MT2 wich corresponds directly
+to the number of XS pointers avaliable.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>np.array</code></dt>
+<dd>numpy array containing the XS pointers grid values.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_mt_xs_pointers_array(xss, pointer_dict):
+    &#34;&#34;&#34;Returns the XS pointers for each MT reaction in the MT array.
+
+    Args:
+        xss (np.array): an array containing all information including the XS pointers.
+        xs_pointers (int): integer indicating the index at which the XS pointer begins.
+        ntr (int): the number of mt reactions excluding MT2 wich corresponds directly
+            to the number of XS pointers avaliable.
+
+    Returns:
+        np.array: numpy array containing the XS pointers grid values.
+    &#34;&#34;&#34;    
+    mt_xs_pointers_array = xss[pointer_dict[&#34;xs_pointers&#34;] : pointer_dict[&#34;xs_pointers&#34;] + pointer_dict[&#34;ntr&#34;]].astype(int) # CROSS SECTION TABLE ARRAY
+    return mt_xs_pointers_array</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_nxs_dictionary"><code class="name flex">
+<span>def <span class="ident">get_nxs_dictionary</span></span>(<span>nxs_df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Given the extracted NSX DataFrame, this function will return a key:value dictionary
+of the values in the NSX in accordance to the documentation of ACE formatting. </p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>nxs_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>The NSX DataFrame extracted using the get_nxs_jxs_xss() function.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict</code></dt>
+<dd>dictionary containing the NSX results.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_nxs_dictionary(nxs_df):
+    &#34;&#34;&#34;Given the extracted NSX DataFrame, this function will return a key:value dictionary
+    of the values in the NSX in accordance to the documentation of ACE formatting. 
+
+    Args:
+        nxs_df (DataFrame): The NSX DataFrame extracted using the get_nxs_jxs_xss() function.
+
+    Returns:
+        dict: dictionary containing the NSX results.
+    &#34;&#34;&#34;    
+    nxs_dict = {
+        &#34;XSS_Length&#34;: nxs_df.iloc[0,0],
+        &#34;ZZAAA&#34;: nxs_df.iloc[0,1],
+        &#34;Num_Energies&#34;: nxs_df.iloc[0,2],
+        &#34;NTR&#34;: nxs_df.iloc[0,3],
+        &#34;NR&#34;: nxs_df.iloc[0,4],
+        &#34;NTRP&#34;: nxs_df.iloc[0,5],
+        &#34;NPCR&#34;: nxs_df.iloc[0,7],
+        &#34;S&#34;: nxs_df.iloc[1,0],
+        &#34;Z&#34;: nxs_df.iloc[1,1],
+        &#34;A&#34;: nxs_df.iloc[1,2],
+    }
+    return nxs_dict</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_nxs_jxs_xss"><code class="name flex">
+<span>def <span class="ident">get_nxs_jxs_xss</span></span>(<span>element, temp='03c', ace_dir='C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves the NSX, JXS, and XSS tables for a given element at a given temperature
+The NSX has 16 integers:
+First: the number of elements in the XSS array.
+The JSX DataFrame indicates the indices to the XSS where different pieces of data begin.
+The XSS table contains the actual data.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>element</code></strong> :&ensp;<code>str</code></dt>
+<dd>element in ZZAAA format.</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>temperature in ace format (i.e. 03c means 300C). Defaults to "03c".</dd>
+<dt><strong><code>ace_dir</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>path-like string indicating directory where .ace files are stored. Defaults to ace_dir.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>:rtype: (DataFrame, DataFrame, array)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_nxs_jxs_xss(element, temp=&#34;03c&#34;, ace_dir=ace_dir):
+    &#34;&#34;&#34;Retrieves the NSX, JXS, and XSS tables for a given element at a given temperature
+    The NSX has 16 integers:
+        First: the number of elements in the XSS array.
+    The JSX DataFrame indicates the indices to the XSS where different pieces of data begin.
+    The XSS table contains the actual data.
+
+    Args:
+        element (str): element in ZZAAA format.
+        temp (str, optional): temperature in ace format (i.e. 03c means 300C). Defaults to &#34;03c&#34;.
+        ace_dir (str, optional): path-like string indicating directory where .ace files are stored. Defaults to ace_dir.
+
+    Returns:
+        :rtype: (DataFrame, DataFrame, array)
+    &#34;&#34;&#34;    
+    path, to_skip, lines = get_to_skip_lines(element, temp=temp, ace_dir=ace_dir)
+    if path != None:
+        nxs = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+6, nrows=2, header=None) # .values.flatten()
+        jxs = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+8, nrows=4, header=None)
+        xss = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+12, nrows=lines, header=None).values.flatten()
+        # xss = xss[~np.isnan(xss)] # ALL CROSS SECTIONS, FIRST VALUES BELONG TO MT1, 2, 101
+        return nxs, jxs, xss</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_pointers"><code class="name flex">
+<span>def <span class="ident">get_pointers</span></span>(<span>nxs, jxs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Gets generall information from NXS and JXS needed to start manipulating
+cross sections. This includes several pointers for Energy, MT Array, LSIG,
+SIG, and Fission. </p>
+<p>The MT Array is an array containing all reactions avaliable in the XSS Array.
+The LSIG contains the same number of items as the MT Array. The LSIG points
+correspond to the index on the XSS array belonging to the corresponding MT Array.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>nxs</code></strong> :&ensp;<code>dict</code></dt>
+<dd>dictionary obtained using the get_nxs_dictionary()</dd>
+<dt><strong><code>jxs</code></strong> :&ensp;<code>dict</code></dt>
+<dd>dictionary obtained using the get_jxs_dictionary()</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>:rtype: (int, int, int, int, int, int, int)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_pointers(nxs, jxs):
+    &#34;&#34;&#34;Gets generall information from NXS and JXS needed to start manipulating 
+    cross sections. This includes several pointers for Energy, MT Array, LSIG, 
+    SIG, and Fission. 
+
+    The MT Array is an array containing all reactions avaliable in the XSS Array.
+    The LSIG contains the same number of items as the MT Array. The LSIG points
+    correspond to the index on the XSS array belonging to the corresponding MT Array.
+
+    Args:
+        nxs (dict): dictionary obtained using the get_nxs_dictionary()
+        jxs (dict): dictionary obtained using the get_jxs_dictionary()
+
+    Returns:
+        :rtype: (int, int, int, int, int, int, int)
+    &#34;&#34;&#34;    
+    nxs_dict = get_nxs_dictionary(nxs)
+    jxs_dict = get_jxs_dictionary(jxs)    
+
+    final_dict = {
+        &#34;nes&#34;:nxs_dict[&#34;Num_Energies&#34;], # NES: Number of Energy points (3),
+        &#34;ntr&#34;:nxs_dict[&#34;NTR&#34;],          # NTR: Number of reaction types excluding elastic scattering MT2 (4)
+        &#34;energy_pointer&#34;:jxs_dict[&#34;E_Table&#34;] - 1,              # ESZ (1) ENERGY TABLE POINTER
+        &#34;mt_pointer&#34;:jxs_dict[&#34;MT_Array&#34;] - 1,                  # MTR (3) MT ARRAY POINTER
+        &#34;xs_pointers&#34;:jxs_dict[&#34;XS_Loc_Table&#34;] - 1,            # LSIG (6) TABLE OF XS LOCATORS/POINTERS
+        &#34;xs_table_pointer&#34;:jxs_dict[&#34;XS&#34;] - 1,                 # SIG (7) CROSS SECTION ARRAY POINTER
+        &#34;mt_18_pointer&#34;:(jxs_dict[&#34;Tot_Fis_XS&#34;] - 1).clip(0)  # FIS (21) FISSION POINTER
+    }
+    return final_dict</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_to_skip_lines"><code class="name flex">
+<span>def <span class="ident">get_to_skip_lines</span></span>(<span>element, temp='03c', ace_dir='C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This utility returns the path to the corresponding ace file for a given element.
+It also returns the number of lines to skip to get to the data block belonging to
+the given energy and the number of lines corresponding to that block.</p>
+<p>Beware, the temperature needs to match one in the ACE files.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>element</code></strong> :&ensp;<code>str</code></dt>
+<dd>element in ZZAAA format.</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>temperature in ace format (i.e. 03c means 300C). Defaults to "03c".</dd>
+<dt><strong><code>ace_dir</code></strong> :&ensp;<code>str</code>, optional</dt>
+<dd>path-like string indicating directory where ace files are stored. Defaults to ace_dir.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>:rtype: (str, int, int)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_to_skip_lines(element, temp=&#34;03c&#34;, ace_dir=ace_dir):
+    &#34;&#34;&#34;This utility returns the path to the corresponding ace file for a given element.
+    It also returns the number of lines to skip to get to the data block belonging to 
+    the given energy and the number of lines corresponding to that block.
+
+    Beware, the temperature needs to match one in the ACE files.
+
+    Args:
+        element (str): element in ZZAAA format.
+        temp (str, optional): temperature in ace format (i.e. 03c means 300C). Defaults to &#34;03c&#34;.
+        ace_dir (str, optional): path-like string indicating directory where ace files are stored. Defaults to ace_dir.
+
+    Returns:
+        :rtype: (str, int, int)
+    &#34;&#34;&#34;
+    path = Path(os.path.join(ace_dir, element + &#34;ENDF7.ace&#34;))
+    if path.is_file():
+        with open(path, &#34;r&#34;) as ace_file:
+            points = []
+            indexes = []
+            for index, line in enumerate(ace_file):
+                if line.startswith(&#34; &#34; + element + &#34;.&#34;): 
+                    points.append(line[1:10])
+                    indexes.append(index)
+                    
+        to_skip = indexes[points.index(element + &#34;.&#34; + temp)]
+        lines = indexes[points.index(element + &#34;.&#34; + temp) + 1] - to_skip - 12
+
+        return path, to_skip, lines
+    else:
+        return None, None, None</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.get_xs_for_mt"><code class="name flex">
+<span>def <span class="ident">get_xs_for_mt</span></span>(<span>MT, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns cross section values, the corresponding energy points, and the indexes corresponding
+the starting and end point in the xss array.</p>
+<p>When extracting the array belonging to an MT reaction the first and second value</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>MT</code></strong> :&ensp;<code>int</code></dt>
+<dd>MT number for which to query the cross section values.</dd>
+<dt><strong><code>mt_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>the np.array of the mt reactions avaliable in the ace file.</dd>
+<dt><strong><code>mt_xs_pointers_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array indicating the indexes where the MT reactions begin in the xss array.</dd>
+<dt><strong><code>xs_table_pointer</code></strong> :&ensp;<code>int</code></dt>
+<dd>index at which the XS values start in the xss array.</dd>
+<dt><strong><code>jxs</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>dataframe containing the JXS values</dd>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing all information directly from the .ace file</dd>
+<dt><strong><code>verbose</code></strong> :&ensp;<code>bool</code>, optional</dt>
+<dd>to or not to print statements througout the process. Defaults to True.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>:rtype: (np.array, np.array, int, int)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_xs_for_mt(MT, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers, verbose=True):
+    &#34;&#34;&#34;Returns cross section values, the corresponding energy points, and the indexes corresponding
+    the starting and end point in the xss array.
+
+    When extracting the array belonging to an MT reaction the first and second value
+
+    Args:
+        MT (int): MT number for which to query the cross section values.
+        mt_array (np.array): the np.array of the mt reactions avaliable in the ace file.
+        mt_xs_pointers_array (np.array): array indicating the indexes where the MT reactions begin in the xss array.
+        xs_table_pointer (int): index at which the XS values start in the xss array.
+        jxs (DataFrame): dataframe containing the JXS values
+        xss (np.array): array containing all information directly from the .ace file
+        verbose (bool, optional): to or not to print statements througout the process. Defaults to True.
+
+    Returns:
+        :rtype: (np.array, np.array, int, int)
+    &#34;&#34;&#34;
+    mt_index = np.where(mt_array==MT)[0][0]                                 # GET INDEX FOR REACTION TYPE MT
+    if MT == mt_array[-1]:                                                  # IF REQUESTED MT IS THE LAST ONE ON TABLE 
+        start_index = pointers[&#34;xs_table_pointer&#34;] + mt_xs_pointers_array[mt_index] - 1 # TABLE BEGINS + NUMBER OF ITEMS ACCORDING TO LSIG 
+        end_index = jxs_df.iloc[0,7] - 1                                    # ENDING INDEX
+        mt_data = xss[start_index: end_index]               
+    else:
+        start_index = pointers[&#34;xs_table_pointer&#34;] + mt_xs_pointers_array[mt_index] - 1 
+        end_index = pointers[&#34;xs_table_pointer&#34;] + mt_xs_pointers_array[mt_index + 1] - 1
+        mt_data = xss[start_index: end_index]
+    
+    # THE FIRST AND SECOND VALUE CORRESPOND TO ENERGY INDEX AND POINTS
+    energy_index = int(mt_data[0])   # START INDEX IN ENERGY ARRAY FOR MT REACTION
+    energy_points = int(mt_data[1])  # NUMBER OF ENERGY POINTS FROM START INDEX 
+    energy_array = xss[energy_index - 1 : energy_index + energy_points - 1] 
+    xs_data = mt_data[2:]            # ACTUAL ARRAY BELONGING TO MT REACTION CHANNEL 
+    if verbose:
+        logging.info(&#34;{} Energy and {} Cross Section Points Avaliable for MT{}.&#34;.format(energy_points, len(xs_data), str(int(MT))))
+
+    xs_info_dict = {
+        &#34;xs&#34;:xs_data,
+        &#34;energy&#34;:energy_array, 
+        &#34;xss_start&#34;:start_index,
+        &#34;xss_end&#34;:end_index,
+        &#34;energy_start&#34;:energy_index - 1,
+        &#34;energy_end&#34;:energy_index + energy_points - 1
+    }
+    return xs_info_dict</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.modify_xss_w_df"><code class="name flex">
+<span>def <span class="ident">modify_xss_w_df</span></span>(<span>xss, ml_ace_df, mt_array, mt_xs_pointers_array, jxs_df, pointers)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a modified XSS array. It substitutes the MT reactions in ml_list in the original ACE xss array.
+The resulting xss can then be used to create a new .ace file for use in monte carlo or deterministic codes.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>ml_list</code></strong> :&ensp;<code>list</code></dt>
+<dd>list of mt reactions to substitute in the original ACE xss.</dd>
+<dt><strong><code>xss</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>original xss .ace array.</dd>
+<dt><strong><code>ml_ace_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>the dataframe containing all modified and unmodified MT values.</dd>
+<dt><strong><code>nes</code></strong> :&ensp;<code>int</code></dt>
+<dd>number of energy points in the original .ace file.</dd>
+<dt><strong><code>mt_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>array containing the avaliable mt values in the .ace file.</dd>
+<dt><strong><code>mt_xs_pointers_array</code></strong> :&ensp;<code>np.array</code></dt>
+<dd>indexes where the XS starts in the xss array for each MT value.</dd>
+<dt><strong><code>xs_table_pointer</code></strong> :&ensp;<code>int</code></dt>
+<dd>index at which the XS values begin.</dd>
+<dt><strong><code>jxs_df</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>the JXS dataframe from the .ACE file.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>np.array</code></dt>
+<dd>modified xss array.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def modify_xss_w_df(xss, ml_ace_df, mt_array, mt_xs_pointers_array, jxs_df, pointers):
+    &#34;&#34;&#34;Returns a modified XSS array. It substitutes the MT reactions in ml_list in the original ACE xss array.
+    The resulting xss can then be used to create a new .ace file for use in monte carlo or deterministic codes.
+
+    Args:
+        ml_list (list): list of mt reactions to substitute in the original ACE xss.
+        xss (np.array): original xss .ace array.
+        ml_ace_df (DataFrame): the dataframe containing all modified and unmodified MT values.
+        nes (int): number of energy points in the original .ace file.
+        mt_array (np.array): array containing the avaliable mt values in the .ace file.
+        mt_xs_pointers_array (np.array): indexes where the XS starts in the xss array for each MT value.
+        xs_table_pointer (int): index at which the XS values begin.
+        jxs_df (DataFrame): the JXS dataframe from the .ACE file.
+
+    Returns:
+        np.array: modified xss array.
+    &#34;&#34;&#34;    
+    nes = pointers[&#34;nes&#34;]
+
+    # for i in ml_list:
+    for i in ml_ace_df.columns:
+        mt_value = int(i.split(&#34;_&#34;)[1])
+        if mt_value == 1:
+            xss[nes:nes*2] = ml_ace_df[i].values
+        elif mt_value == 2:
+            xss[nes*3:nes*4] = ml_ace_df[i].values
+        elif mt_value == 101:
+            xss[nes*2:nes*3] = ml_ace_df[i].values
+        else:
+            if mt_value in mt_array:
+                xs_info_dict = get_xs_for_mt(mt_value, mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                start = xs_info_dict[&#34;xss_start&#34;]
+                end = xs_info_dict[&#34;xss_end&#34;]
+                xss[start + 2 : end] = ml_ace_df.reset_index(drop=True)[i].iloc[xs_info_dict[&#34;energy_start&#34;]:xs_info_dict[&#34;energy_end&#34;]].values
+            
+    if (len(xss)/4 - len(xss)//4)/0.25 == 0:
+        logging.info(&#34;It is wokring&#34;)
+    elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 3:
+        xss = np.append(xss, (np.nan, np.nan, np.nan))
+    elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 2:
+        xss = np.append(xss, (np.nan, np.nan))
+    elif 4 - (len(xss)/4 - len(xss)//4)/0.25 == 1:
+        xss = np.append(xss, (np.nan))
+        
+    return xss</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.parsing_datatypes"><code class="name flex">
+<span>def <span class="ident">parsing_datatypes</span></span>(<span>x)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Utility function to correctly format numbers before writing them to new .ACE file.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>x</code></strong> :&ensp;<code>float</code></dt>
+<dd>number to format.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code></dt>
+<dd>formatted value.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parsing_datatypes(x):
+    &#34;&#34;&#34;Utility function to correctly format numbers before writing them to new .ACE file.
+
+    Args:
+        x (float): number to format.
+
+    Returns:
+        float: formatted value.
+    &#34;&#34;&#34;    
+    if math.isnan(x):
+        return &#34;&#34;
+    elif x - int(x) == 0:
+        return &#34;{:20}&#34;.format(int(x))
+    else:
+        return &#34;{:20.11E}&#34;.format(x)</code></pre>
+</details>
+</dd>
+<dt id="nucml.ace.data_utilities.remove_unused_models"><code class="name flex">
+<span>def <span class="ident">remove_unused_models</span></span>(<span>model_results_path, acedate_directory)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def remove_unused_models(model_results_path, acedate_directory):
+    model_results_df = pd.read_csv(model_results_path)
+    model_results_df[&#34;Model&#34;] = model_results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    model_results_df[&#34;main_directory&#34;] = model_results_df.model_path.apply(lambda x: os.path.dirname(x) + &#34;\\&#34;)
+    model_results_df = model_results_df[[&#34;Model&#34;, &#34;train_mae&#34;, &#34;val_mae&#34;, &#34;test_mae&#34;, &#34;main_directory&#34;]]
+    
+    benchmark_results = gather_benchmark_results(acedate_directory)
+    model_results_df = model_results_df.merge(benchmark_results, on=&#34;Model&#34;)
+    
+    # KEEP BEST TRAIN VAL TEST
+    # KEEP TOP 3 SORTED DEVIATION ANA
+    to_keep = []
+    to_keep.extend(list(model_results_df.iloc[model_results_df.sort_values(by=&#34;Deviation_Ana&#34;).head().index].Model.values))
+    to_keep.extend(list(model_results_df.iloc[model_utils.get_best_models_df(model_results_df).index].Model.values))
+    model_results_df[&#34;filtering&#34;] = model_results_df.Model.apply(lambda name: True if name not in to_keep else False)
+    to_remove = model_results_df[model_results_df.filtering == True]
+    
+#     for i in to_remove.main_directory.values:
+#         shutil.rmtree(i)
+    
+    return None</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="nucml.ace" href="index.html">nucml.ace</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="nucml.ace.data_utilities.convert_dos_to_unix" href="#nucml.ace.data_utilities.convert_dos_to_unix">convert_dos_to_unix</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.copy_ace_files" href="#nucml.ace.data_utilities.copy_ace_files">copy_ace_files</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.copy_benchmark_files" href="#nucml.ace.data_utilities.copy_benchmark_files">copy_benchmark_files</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.create_mt2_mt3_mt101" href="#nucml.ace.data_utilities.create_mt2_mt3_mt101">create_mt2_mt3_mt101</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.create_new_ace" href="#nucml.ace.data_utilities.create_new_ace">create_new_ace</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.create_new_ace_w_df" href="#nucml.ace.data_utilities.create_new_ace_w_df">create_new_ace_w_df</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.enforce_unitarity" href="#nucml.ace.data_utilities.enforce_unitarity">enforce_unitarity</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.fill_ml_xs" href="#nucml.ace.data_utilities.fill_ml_xs">fill_ml_xs</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.gather_benchmark_results" href="#nucml.ace.data_utilities.gather_benchmark_results">gather_benchmark_results</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.generate_acelib" href="#nucml.ace.data_utilities.generate_acelib">generate_acelib</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.generate_benchmark_files" href="#nucml.ace.data_utilities.generate_benchmark_files">generate_benchmark_files</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.generate_ml_xs" href="#nucml.ace.data_utilities.generate_ml_xs">generate_ml_xs</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.generate_serpent_bash" href="#nucml.ace.data_utilities.generate_serpent_bash">generate_serpent_bash</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.generate_sss_xsdata" href="#nucml.ace.data_utilities.generate_sss_xsdata">generate_sss_xsdata</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_basic_mts" href="#nucml.ace.data_utilities.get_basic_mts">get_basic_mts</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_energies" href="#nucml.ace.data_utilities.get_energies">get_energies</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_energy_array" href="#nucml.ace.data_utilities.get_energy_array">get_energy_array</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_final_ml_ace_df" href="#nucml.ace.data_utilities.get_final_ml_ace_df">get_final_ml_ace_df</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_hybrid_ml_xs" href="#nucml.ace.data_utilities.get_hybrid_ml_xs">get_hybrid_ml_xs</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_jxs_dictionary" href="#nucml.ace.data_utilities.get_jxs_dictionary">get_jxs_dictionary</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_mt_array" href="#nucml.ace.data_utilities.get_mt_array">get_mt_array</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_mt_array_w_pointers" href="#nucml.ace.data_utilities.get_mt_array_w_pointers">get_mt_array_w_pointers</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_mt_xs_pointers_array" href="#nucml.ace.data_utilities.get_mt_xs_pointers_array">get_mt_xs_pointers_array</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_nxs_dictionary" href="#nucml.ace.data_utilities.get_nxs_dictionary">get_nxs_dictionary</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_nxs_jxs_xss" href="#nucml.ace.data_utilities.get_nxs_jxs_xss">get_nxs_jxs_xss</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_pointers" href="#nucml.ace.data_utilities.get_pointers">get_pointers</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_to_skip_lines" href="#nucml.ace.data_utilities.get_to_skip_lines">get_to_skip_lines</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.get_xs_for_mt" href="#nucml.ace.data_utilities.get_xs_for_mt">get_xs_for_mt</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.modify_xss_w_df" href="#nucml.ace.data_utilities.modify_xss_w_df">modify_xss_w_df</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.parsing_datatypes" href="#nucml.ace.data_utilities.parsing_datatypes">parsing_datatypes</a></code></li>
+<li><code><a title="nucml.ace.data_utilities.remove_unused_models" href="#nucml.ace.data_utilities.remove_unused_models">remove_unused_models</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>

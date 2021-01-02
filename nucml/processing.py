@@ -7,6 +7,8 @@ from joblib import dump, load
 
 from nucml.general_utilities import func     # pylint: disable=import-error
 
+pd.options.mode.chained_assignment = None  # default='warn'
+
 def impute_values(df):
     """Imputes values column-wise element-wise using linear interpolation.
 

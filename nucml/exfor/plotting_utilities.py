@@ -1,6 +1,14 @@
 import numpy as np
 import os
 import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+import sys
+# This allows us to import the nucml utilities
+sys.path.append("..")
+
+import nucml.exfor.data_utilities as exfor_utils  # pylint: disable=import-error
+import nucml.datasets as nuc_data  # pylint: disable=import-error
+import nucml.ace.data_utilities as ace_utils  # pylint: disable=import-error
 
 def plotly_ml_results(results_dict, order_dict={}, save_dir='', save=False, render_browser=False, show=False, paper=False, html=False):
     fig = go.Figure()
@@ -67,3 +75,111 @@ def plotly_ml_results(results_dict, order_dict={}, save_dir='', save=False, rend
             fig.write_html(os.path.splitext(save_dir)[0] + '.html')
 
     return fig
+
+def plot_limits(to_plot, endf, new_data, y_hat, y_hat2, y_hat3):
+    endf_avaliable = True if endf.shape[0] != 0 else False
+    new_data_avaliable = True if new_data.shape[0] != 0 else False
+    if (new_data_avaliable and endf_avaliable): #if both
+        plt.legend()
+        all_y = np.concatenate((to_plot["Data"].values, y_hat.flatten(),
+            endf["Data"].values, new_data["Data"].values))
+        minimum_y = all_y.min() - all_y.min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+    elif not new_data_avaliable and endf_avaliable: # if ENDF only
+        # plt.legend((endf_eval, true, pred), ('ENDF', 'EXFOR', "EXFOR Pred"), loc='upper left')
+        plt.legend()
+        all_y = np.concatenate((to_plot["Data"].values, y_hat[0].flatten(), y_hat2[0].flatten(), endf["Data"].values))
+        minimum_y = all_y.min() - all_y.min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+    elif new_data_avaliable and not endf_avaliable: # if ADDITIONAL only
+        # plt.legend((true, unseen, pred, pred_unseen),
+        #            ('EXFOR', "New Measurments", "EXFOR Pred", "New Pred"), loc='upper left')
+        plt.legend()
+        all_y = np.concatenate((to_plot["Data"].values, y_hat, y_hat2, new_data["Data"].values))
+        minimum_y = all_y.min() - all_y.min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+    else: # if no ENDF and Additional
+        # plt.legend((true, pred), ('EXFOR', "EXFOR Pred"), loc='upper left')
+        plt.legend()
+        all_y = np.concatenate((to_plot["Data"].values.flatten(), y_hat, y_hat2))
+        minimum_y = all_y.min() - all_y.min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+
+
+def plot_limits_ref(exfor_sample, endf, new_data):
+    # Setting Figure Limits
+    if (new_data.shape[0] != 0 and endf.shape[0] != 0): #if both
+        all_y = np.concatenate((exfor_sample["Data"], endf["Data"], new_data["Data"]))
+        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+    elif new_data.shape[0] == 0 and endf.shape[0] !=0: # if ENDF only
+        all_y = np.concatenate((exfor_sample["Data"], endf["Data"]))
+        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+    elif new_data.shape[0] != 0 and endf.shape[0] == 0: # if ADDITIONAL only
+        all_y = np.concatenate((exfor_sample["Data"].values, new_data["Data"].values))
+        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+    else: # if no ENDF and Additional
+        all_y = exfor_sample["Data"].values
+        minimum_y = all_y[all_y > 0].min() - all_y[all_y > 0].min() * 0.05
+        maximum_y = all_y.max() + all_y.max() * 0.05
+        plt.ylim(minimum_y, maximum_y)
+
+
+def make_chlorine_paper_figure(df, dt_model, dt_scaler, knn_model, knn_scaler, to_scale):
+    
+    kwargs = {"nat_iso": "I", "one_hot": True, "scale": True, "to_scale": to_scale}
+    chlorine_35_np_knn = exfor_utils.load_samples(df, 17, 35, "MT_103", scaler=knn_scaler, **kwargs)
+    chlorine_35_np_dt = exfor_utils.load_samples(df, 17, 35, "MT_103", scaler=dt_scaler, **kwargs)
+
+    new_cl_data_kwargs = {"Z":17, "A":35, "MT":"MT_103", "log":True, "scale":True, "to_scale":to_scale, "one_hot":True}
+    new_cl_data_knn = exfor_utils.load_newdata("../EXFOR/New_Data/Chlorine_Data/new_cl_np.csv", df, scaler=knn_scaler, **new_cl_data_kwargs)
+    new_cl_data_dt = exfor_utils.load_newdata("../EXFOR/New_Data/Chlorine_Data/new_cl_np.csv", df, scaler=dt_scaler, **new_cl_data_kwargs)
+
+    endf_cl = nuc_data.load_endf("Cl035", "MT103", log=True)
+    ace_cl = ace_utils.get_energies("17035", ev=True, log=True)
+
+
+    _, (ax1, ax2) = plt.subplots(2, figsize=(30,20))
+
+    chlorine_data_ext = exfor_utils.expanding_dataset_energy(chlorine_35_np_dt, 0, 0, False, 0, e_array=ace_cl)
+    chlorine_data_ext = chlorine_data_ext[chlorine_data_ext.Energy > chlorine_35_np_dt.Energy.min()]
+    
+    ax1.plot(10**(chlorine_data_ext.Energy), 10**(dt_model.predict(chlorine_data_ext.drop(columns=["Data"]))), label="DT", linestyle="dashed", c="firebrick", linewidth=3)
+    ax1.scatter(10**(chlorine_35_np_dt.Energy), 10**(chlorine_35_np_dt.Data), alpha=0.5, c='#1f77b4', label="EXFOR")
+    ax1.scatter(10**(new_cl_data_dt.Energy), 10**(new_cl_data_dt.Data), alpha=1, c='#ff7f0e', s=250, marker="x", label="J.C.Batchelder (2019)")
+    ax1.plot(10**(endf_cl.Energy), 10**(endf_cl.Data), alpha=0.5, c="orange", label="ENDF")
+    ax1.legend(loc=3)
+
+    chlorine_data_ext = exfor_utils.expanding_dataset_energy(chlorine_35_np_knn, 0, 0, False, 0, e_array=ace_cl)
+    chlorine_data_ext = chlorine_data_ext[chlorine_data_ext.Energy > chlorine_35_np_knn.Energy.min()]
+    
+    ax2.plot(10**(chlorine_data_ext.Energy), 10**(knn_model.predict(chlorine_data_ext.drop(columns=["Data"]))), label="KNN", linestyle="dashed", c="firebrick", linewidth=3)
+    ax2.scatter(10**(chlorine_35_np_knn.Energy), 10**(chlorine_35_np_knn.Data), alpha=0.5, c='#1f77b4', label="EXFOR")
+    ax2.scatter(10**(new_cl_data_knn.Energy), 10**(new_cl_data_knn.Data), alpha=1, s=250, c='#ff7f0e', marker="x", label="J.C.Batchelder (2019)")
+    ax2.plot(10**(endf_cl.Energy), 10**(endf_cl.Data), alpha=0.5, c="orange", label="ENDF")
+    ax2.legend(loc=3)
+
+    ax1.set(ylabel='Cross Section (b)')
+    ax2.set(ylabel='Cross Section (b)')
+    
+    ax1.set(xlabel='Energy (eV)') 
+    ax2.set(xlabel='Energy (eV)') 
+    
+    ax1.set_xscale('log')
+    ax2.set_xscale('log')
+    ax2.set_yscale('log')
+    ax1.set_yscale('log')
+    ax1.set_xlim(10**-2, 10**7.5)
+    ax2.set_xlim(10**-2, 10**7.5)
+
+    
+    plt.savefig("ML_Cl.png", dpi=600, bbox_inches="tight")

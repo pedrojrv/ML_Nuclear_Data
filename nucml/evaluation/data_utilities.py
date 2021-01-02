@@ -1,0 +1,64 @@
+import os
+import pandas as pd
+import numpy as np
+import sys
+import logging
+
+# This allows us to import the nucml utilities
+sys.path.append("..")
+
+import nucml.datasets as nuc_data                   
+import nucml.general_utilities as gen_utils        
+
+elements_dict = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/Element_AAA.pkl'))
+
+
+def load_new(datapath, mev_to_ev=False):
+    """Loads new ENDF data from a given datapath.
+
+    It assumes the file is readable with pd.read_csv() and that the 
+    new ENDF file contains a column named "Energy".
+
+    Args:
+        datapath (str): path-like string to new ENDF data-file.
+        mev_to_ev (bool, optional): Converts the energy column to eV. Defaults to False.
+
+    Returns:
+        DataFrame: contains the new ENDF data in dataframe form.
+    """    
+    endf = pd.read_csv(datapath)
+    if mev_to_ev:
+        endf["Energy"] = endf["Energy"]*1E6
+    logging.info("Finish reading ENDF data with shape: {}".format(endf.shape))
+    return endf
+
+
+def get_for_exfor(Z, A, MT, one_hot=True, mode="neutrons", library="endfb8.0", mev_to_ev=True, mb_to_b=True, log=True, drop_u=True):
+    """Gets the ENDF data appropiate for EXFOR functions including plots.
+    
+    Args:
+        Z (int): number of protons
+        A (int): mass number
+        MT (str): reaction type.
+        one_hot (bool, optional): specifies if MT value should be parsed as a one-hot encoded feature. Defaults to True.
+        mode (str): projectile of the reaction of interest. Only "neutrons" and "protons" is allowed for now.
+        library (str): evaluation library to query. Allowed options include endfb8.0, jendl4.0, jeff3.3, and tendl.2019.
+        mev_to_ev (bool): if True, it converts the energy from MeV to eV.
+        mb_to_b (bool): if True, it converts the cross sections from millibarns to barns.
+        log (bool, optional): apply log transformation to the Energy and Data features. Defaults to True.
+
+    Returns:
+        DataFrame: contains the evaluation dataframe.
+    """    
+    element_for_endf = list(elements_dict.keys())[list(elements_dict.values()).index(Z)] + str(A).zfill(3)
+    # MT = gen_utils.parse_mt(MT, mt_for="endf", one_hot=one_hot)
+
+    # if one_hot:
+    #     mt_endf, mt_num_endf = MT.split("_")
+    # else:
+    #     mt_endf, mt_num_endf = "MT", MT
+
+    # mt_num_endf = mt_num_endf.zfill(3)
+    # mt_endf = mt_endf + mt_num_endf
+    endf = nuc_data.load_evaluation(element_for_endf, MT, mode=mode, library=library, mev_to_ev=mev_to_ev, mb_to_b=mb_to_b, log=log, drop_u=drop_u)
+    return endf

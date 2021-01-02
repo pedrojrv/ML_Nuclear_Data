@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>nucml.exfor.data_utilities API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>nucml.exfor.data_utilities</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import os
+import sys
+import warnings
+import logging
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import tensorflow as tf
+import xgboost as xgb
+from sklearn import preprocessing
+from sklearn.metrics import (explained_variance_score, mean_absolute_error,
+                             mean_squared_error, median_absolute_error,
+                             r2_score)
+from sklearn.model_selection import train_test_split
+
+# This allows us to import the nucml utilities
+sys.path.append(&#34;..&#34;)
+
+import nucml.ace.data_utilities as ace_utils        # pylint: disable=import-error
+import nucml.endf.data_utilities as endf_utils      # pylint: disable=import-error
+import nucml.datasets as nuc_data                   # pylint: disable=import-error
+import nucml.model.model_utilities as model_utils   # pylint: disable=import-error
+import nucml.plot.plotting_utilities as plot_utils  # pylint: disable=import-error
+import nucml.general_utilities as gen_utils         # pylint: disable=import-error
+import nucml.exfor.plotting_utilities as exfor_plot_utils  # pylint: disable=import-error
+
+
+ame_dir_path = os.path.abspath(&#34;../AME/&#34;)
+
+empty_df = pd.DataFrame()
+
+
+def load_samples(df, Z, A, MT, nat_iso=&#34;I&#34;, one_hot=False, scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads EXFOR data for a particular Isotope, Reaction Channel
+    &#34;&#34;&#34;
+    logging.info(&#34;Extracting samples from dataframe.&#34;)
+    if one_hot:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[MT] == 1) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag_&#34; + nat_iso] == 1)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    else:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;MT&#34;] == MT) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag&#34;] == nat_iso)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(sample.shape))
+    return sample
+
+def load_isotope(df, Z, A, nat_iso=&#34;I&#34;, one_hot=False, scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads EXFOR data for a particular Isotope, Reaction Channel
+    &#34;&#34;&#34;
+    logging.info(&#34;Extracting samples from dataframe.&#34;)
+    if one_hot:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag_&#34; + nat_iso] == 1)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    else:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag&#34;] == nat_iso)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(sample.shape))
+    return sample
+
+def load_element(df, Z, nat_iso=&#34;I&#34;, one_hot=False, scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads EXFOR data for a particular element (includes all isotopes)
+    &#34;&#34;&#34;
+    logging.info(&#34;Extracting samples from dataframe.&#34;)
+    if one_hot:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;Element_Flag_&#34; + nat_iso] == 1)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    else:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;Element_Flag&#34;] == nat_iso)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(sample.shape))
+    return sample
+
+def load_newdata(datapath, df, Z, A, MT, one_hot=False, log=False, nat_iso=&#34;I&#34;,  scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads New Measurments and appends EXFOR isotopic data to it. 
+    Assumes new data only has an Energy and Data column
+    &#34;&#34;&#34;
+    new_data = pd.read_csv(datapath)
+    if log:
+        new_data[&#34;Energy&#34;] = np.log10(new_data[&#34;Energy&#34;])
+        new_data[&#34;Data&#34;] = np.log10(new_data[&#34;Data&#34;])
+    # Getting data from df. 
+    isotope_exfor = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    for i in list(isotope_exfor.columns):
+        if i not in [&#34;Energy&#34;, &#34;Data&#34;]:
+            new_data[i] = isotope_exfor[i].values[1]
+    if &#34;dData&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dData&#34;, inplace=True)
+    if &#34;dEnergy&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dEnergy&#34;, inplace=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        new_data[to_scale] = scaler.transform(new_data[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(new_data.shape))
+    return new_data
+
+def append_energy(e_array, df, Z, A, MT, nat_iso=&#34;I&#34;, one_hot=False, log=False, scale=False, scaler=None, to_scale=[], ignore_MT=False):
+    &#34;&#34;&#34;
+    Loads New Measurments and appends EXFOR isotopic data to it. 
+    Assumes new data only has an Energy and Data column
+    &#34;&#34;&#34;
+    new_data = pd.DataFrame({&#34;Energy&#34;:e_array})
+    if log:
+        new_data[&#34;Energy&#34;] = np.log10(new_data[&#34;Energy&#34;])
+    if ignore_MT:
+        isotope_exfor = load_samples(df, Z, A, &#34;MT_1&#34;, nat_iso=nat_iso, one_hot=one_hot)
+        isotope_exfor.MT_1 = 0
+        isotope_exfor[MT] = 1
+    else:
+        isotope_exfor = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    for i in list(isotope_exfor.columns):
+        if i not in [&#34;Energy&#34;, &#34;Data&#34;]:
+            new_data[i] = isotope_exfor[i].values[1]
+    if &#34;dData&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dData&#34;, inplace=True)
+    if &#34;dEnergy&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dEnergy&#34;, inplace=True)
+    logging.info(&#34;Expanded Dataset has shape: {}&#34;.format(new_data.shape))
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        new_data[to_scale] = scaler.transform(new_data[to_scale])
+
+    return new_data
+
+def make_predictions_w_energy(e_array, df, Z, A, MT, clf, clf_type, scaler, to_scale, log=False, show=False, one_hot=True):
+    data_kwargs = {&#34;Z&#34;:Z, &#34;A&#34;:A, &#34;MT&#34;:MT, &#34;log&#34;:log, &#34;scale&#34;:True, &#34;scaler&#34;:scaler, &#34;to_scale&#34;:to_scale, &#34;one_hot&#34;:True, &#34;ignore_MT&#34;:True}
+    to_infer = append_energy(e_array, df, **data_kwargs)
+    exfor = load_samples(df, Z, A, MT, one_hot=one_hot)
+    # Make Predictions
+    y_hat = model_utils.make_predictions(to_infer.values, clf, clf_type)
+    if show:
+        plt.plot(exfor.Energy, exfor.Data, alpha=0.5, c=&#34;g&#34;)
+        plt.plot(to_infer.Energy, y_hat)
+    return y_hat
+
+def make_predictions_from_df(df, Z, A, MT, clf, clf_type, scaler, to_scale, log=False, show=False):
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    exfor = load_samples(df, Z, A, MT, **kwargs)
+    # Make Predictions
+    y_hat = model_utils.make_predictions(exfor.drop(columns=[&#34;Data&#34;]).values, clf, clf_type)
+    if show:
+        plt.plot(exfor.Energy, exfor.Data, alpha=0.5, c=&#34;g&#34;)
+        plt.plot(exfor.Energy, y_hat)
+    return y_hat
+
+def predicting_nuclear_xs_v2(df, Z, A, MT, clf, to_scale, scaler, e_array=&#34;ace&#34;, log=False, clf_type=None, html=False,
+    new_data=empty_df, save=False, show=False, path=&#34;&#34;, nat_iso=&#34;I&#34;, render=False, order_dict={}, get_endf=False, inv_trans=False):
+    &#39;&#39;&#39;
+    endf=empty_df, 
+    Used to plot predictions of the clf model for specific isotope (Z, A) and runs.
+    MT is the reaction type (e.g 1 is total cross section)
+    E_min and E_max are the energy region in which to make additional inferences.
+
+    pred_exfor_expanded: expanded or non expanded to infer data
+    pred_exfor_original: original exfor data points.
+    pred_exfor_new: new data predictions (if avaliable)
+
+    &#39;&#39;&#39;
+    if get_endf:
+        endf = endf_utils.get_for_exfor(Z, A, MT)
+    if e_array == &#34;ace&#34;:
+        e_array = ace_utils.get_energies(&#39;{:&lt;02d}&#39;.format(Z) + str(A).zfill(3), ev=True, log=log)
+
+    new_data_avaliable = True if new_data.shape[0] != 0 else False
+    endf_avaliable = True if endf.shape[0] != 0 else False
+    e_array_avaliable = True if e_array.shape[0] != 0 else False
+
+    kwargs = {&#34;nat_iso&#34;:nat_iso, &#34;one_hot&#34;:True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    to_infer = to_plot = load_samples(df, Z, A, MT, **kwargs)
+    to_infer = to_infer.drop(columns=[&#34;Data&#34;])
+
+    kwargs = {&#34;nat_iso&#34;:nat_iso, &#34;one_hot&#34;:True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    to_infer = load_samples(df, Z, A, MT, scale=False, **kwargs)
+    to_plot = load_samples(df, Z, A, MT, scale=True, **kwargs)
+    to_infer = to_infer.drop(columns=[&#34;Data&#34;])    
+
+    if e_array_avaliable: 
+        to_infer = expanding_dataset_energy(to_infer, 0, 0, log, 0, e_array=e_array)
+    else:
+        to_infer = expanding_dataset_energy(to_infer, -5.00, 7.30, log, 500)
+
+    to_infer[to_scale] = scaler.transform(to_infer[to_scale])
+    
+    # Making Predictions
+    pred_exfor_expanded = model_utils.make_predictions(to_infer.values, clf, clf_type)
+    pred_exfor_original = model_utils.make_predictions(to_plot.drop(columns=[&#34;Data&#34;]).values, clf, clf_type)
+
+    if inv_trans:
+        # De-Transforming Scaled Data
+        to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
+        to_plot[to_scale] = scaler.inverse_transform(to_plot[to_scale])
+
+    all_dict = {&#34;exfor_ml_expanded&#34;:{&#34;df&#34;:to_infer, &#34;predictions&#34;:pred_exfor_expanded}, 
+                &#34;exfor_ml_original&#34;:{&#34;df&#34;:to_plot, &#34;predictions&#34;:pred_exfor_original}}
+
+    exfor_ml_error = model_utils.regression_error_metrics(to_plot[&#34;Data&#34;], pred_exfor_original)
+    error_df = model_utils.create_error_df(&#34;EXFOR VS ML&#34;, exfor_ml_error)
+    all_dict.update({&#34;error_metrics&#34;:error_df})
+    if new_data_avaliable:
+        pred_exfor_new = model_utils.make_predictions(new_data.drop(columns=[&#34;Data&#34;]).values, clf, clf_type)
+        all_dict.update({&#34;exfor_ml_new&#34;:{&#34;df&#34;:new_data, &#34;predictions&#34;:pred_exfor_new}})
+
+        exfor_ml_new_error = model_utils.regression_error_metrics(new_data[&#34;Data&#34;], pred_exfor_new)
+        error_new_df = model_utils.create_error_df(&#34;EXFOR VS ML (NEW DATA)&#34;, exfor_ml_new_error)
+        error_df = error_df.append(error_new_df)
+        all_dict.update({&#34;error_metrics&#34;:error_df})
+    if endf_avaliable:
+        # Gets interpolated endf data with anchor exfor
+        exfor_endf, error_endf = get_error_endf_exfor(endf, to_plot)
+        error_df = error_df.append(error_endf)
+        all_dict.update({&#34;exfor_endf_original&#34;:exfor_endf, &#34;error_metrics&#34;:error_df, &#34;endf&#34;:endf})
+        if new_data_avaliable:
+            # Gets interpolated endf data with anchor new exfor
+            exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
+            error_df = error_df.append(error_endf_new)
+            all_dict.update({&#34;exfor_endf_new&#34;:exfor_endf_new_data, &#34;error_metrics&#34;:error_df})
+    if show:
+        exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, html=html, show=show)
+    return all_dict
+
+
+def expanding_dataset_energy(data, E_min, E_max, log, N, e_array=empty_df):
+    &#34;&#34;&#34;
+    previously expanding_inference_dataset
+    Creates new data points for prediction (expands energy)
+    &#34;&#34;&#34;
+    e_array_avaliable = True if e_array.shape[0] != 0 else False
+    if e_array_avaliable:
+        energy_to_add = pd.DataFrame({&#34;Energy&#34;: e_array})
+    else:
+        if log:
+            energy_range = np.linspace(E_min, E_max, N)
+        else:
+            energy_range = np.power(10, np.linspace(np.log10(E_min), np.log10(E_max), N))
+        energy_to_add = pd.DataFrame({&#34;Energy&#34;: energy_range})
+    for i in list(data.columns)[1:]:
+        energy_to_add[i] = data[i].values[1]
+    data = data.append(energy_to_add, ignore_index=True).sort_values(by=&#39;Energy&#39;, ascending=True)
+    return data
+
+def plot_exfor_w_references(df, Z, A, MT, nat_iso=&#34;I&#34;, new_data=empty_df, endf=empty_df, error=False, get_endf=True, reverse_log=False, legend_size=21,
+    save=False, interpolate=False, legend=False, alpha=0.7, one_hot=False, log_plot=False, path=&#39;&#39;, ref=False, new_data_label=&#34;Additional Data&#34;):
+    &#34;&#34;&#34;
+    Plots Cross Section for a particular Isotope with or without references. 
+    If Ref is true then EXFOR will be ploted per experimental campaign (one color for each)
+    Legend will show up the
+    &#34;&#34;&#34;
+    if reverse_log:
+        df[&#34;Energy&#34;] = 10**df[&#34;Energy&#34;].values
+        df[&#34;Data&#34;] = 10**df[&#34;Data&#34;].values
+    if get_endf:
+        endf = endf_utils.get_for_exfor(Z, A, MT, one_hot=one_hot, log=False)
+    # Extracting dataframe to make predictions and creating copy for evaluation
+    exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    # Initializing Figure and Plotting
+    plt.figure(figsize=(14,10))
+    ax = plt.subplot(111)
+    if ref:
+        groups = exfor_sample[[&#34;Energy&#34;, &#34;Data&#34;, &#34;Short_Reference&#34;]].groupby(&#34;Short_Reference&#34;)
+        for name, group in groups:
+            ax.plot(group[&#34;Energy&#34;], group[&#34;Data&#34;], marker=&#34;o&#34;, linestyle=&#34;&#34;, label=name, alpha=0.9)
+    else:
+        ax.scatter(exfor_sample[&#34;Energy&#34;], exfor_sample[&#34;Data&#34;], alpha=alpha, label=&#34;EXFOR&#34;, ci=None, marker=&#34;o&#34;) # pylint: disable=too-many-function-args  
+    if new_data.shape[0] != 0:
+        ax.plot(new_data.Energy, new_data.Data, marker=&#34;o&#34;, linestyle=&#34;&#34;, label=new_data_label, alpha=0.9)
+    if endf.shape[0] != 0:
+        ax.plot(endf.Energy, endf.Data, label=&#34;ENDF/B-VIII.0&#34;, alpha=alpha) # alpha previously 0.8
+    if interpolate == True:
+        ax.plot(exfor_sample[&#34;Energy&#34;], exfor_sample[&#34;Data&#34;], alpha=alpha*0.5, label=&#34;Interpolation&#34;, ci=None) # pylint: disable=too-many-function-args
+    if log_plot:
+        plt.xscale(&#39;log&#39;)
+        plt.yscale(&#39;log&#39;)
+    if legend:
+        ax.legend(fontsize=legend_size)
+
+    # Setting Figure Limits
+    exfor_plot_utils.plot_limits_ref(exfor_sample, endf, new_data)
+    plt.xlabel(&#39;Energy (eV)&#39;)
+    plt.ylabel(&#39;Cross Section (b)&#39;)
+
+    all_dict = {&#34;exfor&#34;:exfor_sample}
+
+    if save:
+        plt.savefig(path + &#34;EXFOR_{}_{}_XS.png&#34;.format(exfor_sample.Isotope.values[0], MT), bbox_inches=&#39;tight&#39;, dpi=600)
+    if error:
+        if endf.shape[0] != 0:
+            exfor_endf, error_endf = get_error_endf_exfor(endf=endf, exfor_sample=exfor_sample)
+            all_dict.update({&#34;endf&#34;:endf, &#34;exfor_endf&#34;:exfor_endf, &#34;error_metrics&#34;:error_endf})
+            if new_data.shape[0] != 0:
+                exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
+                error_df = error_endf.append(error_endf_new)
+                all_dict.update({&#34;exfor_endf_new&#34;:exfor_endf_new_data, &#34;error_metrics&#34;:error_df})
+    return all_dict
+
+def get_error_endf_exfor(endf, exfor_sample):
+    &#34;&#34;&#34;Allows the user to get the 
+
+    Args:
+        endf (DataFrame): raw ENDF dataframe
+        exfor_sample (DataFrame): exfor sample at which energies the ENDF will be extrapolated to get errors
+
+    Returns:
+        DataFrame: Contains
+    &#34;&#34;&#34;    
+    endf_copy = endf.copy()
+    exfor_copy = exfor_sample.copy()
+    exfor_copy = exfor_copy[exfor_copy.Energy &gt; endf_copy.Energy.min()]
+    indexes = np.arange(len(endf), len(endf) + len(exfor_copy)) # start our index numbering after len(endf) (does not collide)
+    exfor_copy.index = indexes # This will return a dataframe with non zero index
+    energy_interest = exfor_copy[[&#34;Energy&#34;]] # energy_interest will carry previous indexes
+    energy_interest[&#34;Data&#34;] = np.nan
+    endf_copy = endf_copy.append(energy_interest, ignore_index=False).sort_values(by=[&#39;Energy&#39;])
+    endf_copy[&#34;Data&#34;] = endf_copy[&#34;Data&#34;].interpolate(limit_direction=&#34;forward&#34;)
+    # Measuring metrics on predictions.
+    error_endf_exfor = model_utils.regression_error_metrics(exfor_copy[&#34;Data&#34;], endf_copy[[&#34;Data&#34;]].loc[indexes])
+    error_endf_exfor_df = model_utils.create_error_df(&#34;EXFOR VS ENDF&#34;, error_endf_exfor)
+
+    exfor_endf = pd.DataFrame({&#34;Energy&#34;:exfor_copy.Energy.values, 
+        &#34;EXFOR&#34;:exfor_copy[&#34;Data&#34;].values, &#34;ENDF&#34;:endf_copy[&#34;Data&#34;].loc[indexes].values})
+    # ORIGINAL return exfor_endf
+    return exfor_endf, error_endf_exfor_df
+
+def get_error_endf_new(endf, new_data):
+    endf_copy = endf.copy()
+    indexes = np.arange(len(endf), len(endf) + len(new_data))
+    new_data.index = indexes
+    energy_interest = new_data[[&#34;Energy&#34;]]
+    energy_interest[&#34;Data&#34;] = np.nan
+    endf_copy = endf_copy.append(energy_interest, ignore_index=False)
+    endf_copy = endf_copy.sort_values(by=[&#39;Energy&#39;])
+    endf_copy[&#34;Data&#34;] = endf_copy[&#34;Data&#34;].interpolate()
+
+    # Measuring metrics on predictions.
+    error_endf_exfor_new = model_utils.regression_error_metrics(new_data[&#34;Data&#34;], endf_copy[[&#34;Data&#34;]].loc[indexes])
+    error_endf_exfor_new_df = model_utils.create_error_df(&#34;EXFOR VS ENDF (NEW DATA)&#34;, error_endf_exfor_new)
+
+
+    exfor_endf_new_data = pd.DataFrame({&#34;Energy&#34;:new_data.Energy.values, 
+        &#34;EXFOR&#34;:new_data[&#34;Data&#34;].values, &#34;ENDF&#34;:endf_copy[&#34;Data&#34;].loc[indexes].values})
+
+    # ORIGINAL return exfor_endf_new_data
+    return exfor_endf_new_data, error_endf_exfor_new_df
+
+def get_mt_errors_exfor_ml(df, Z, A, scaler, to_scale, model):
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    error_results = pd.DataFrame(columns=[&#39;MT&#39;, &#39;MAE&#39;, &#39;MSE&#39;, &#39;EVS&#39;, &#39;MAE_M&#39;, &#39;R2&#39;])
+    exfor_isotope = load_isotope(df, Z, A, **kwargs)
+    # NEXT WE REMOVE ANY MT COLUMNS THAT ARE FILLED WITH ZEROS
+    exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
+    for col in exfor_isotope_cols.columns:
+        if &#34;MT&#34; in col:
+            exfor_sample = load_samples(df, Z, A, col, **kwargs)
+            error_dict = model_utils.regression_error_metrics(model.predict(exfor_sample.drop(columns=[&#34;Data&#34;])), 
+                                                              exfor_sample.Data)
+            error_results = error_results.append(pd.DataFrame({&#34;MT&#34;:[col], &#34;MAE&#34;:[error_dict[&#34;mae&#34;]], 
+                                                               &#34;MSE&#34;:[error_dict[&#34;mse&#34;]], &#34;EVS&#34;:[error_dict[&#34;evs&#34;]], 
+                                                               &#34;MAE_M&#34;:[error_dict[&#34;mae_m&#34;]], &#34;R2&#34;:[error_dict[&#34;r2&#34;]]}))
+    return error_results
+
+def get_mt_error_exfor_endf(df, Z, A, scaler, to_scale):
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    error_results = pd.DataFrame(columns=[&#39;id&#39;, &#39;mae&#39;, &#39;mse&#39;, &#39;evs&#39;, &#39;mae_m&#39;, &#39;r2&#39;, &#39;MT&#39;])
+    exfor_isotope = load_isotope(df, Z, A, **kwargs)
+    exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
+    for col in exfor_isotope_cols.columns:
+        if &#34;MT&#34; in col:
+            if col in [&#34;MT_101&#34;, &#34;MT_9000&#34;]:
+                continue
+            else:
+                exfor_sample = load_samples(df, Z, A, col, **kwargs)
+                endf_data = endf_utils.get_for_exfor(Z, A, col)
+                _, error_exfor_endf = get_error_endf_exfor(endf_data, exfor_sample)
+                error_exfor_endf[&#34;MT&#34;] = col
+                error_results = error_results.append(error_exfor_endf)
+    return error_results
+
+
+def get_csv_for_ace(df, Z, A, model, scaler, to_scale, saving_dir=None, saving_filename=None):
+    ace_array = ace_utils.get_energies(&#39;{:&lt;02d}&#39;.format(Z) + str(A).zfill(3), ev=True, log=True)
+    data_ace = pd.DataFrame({&#34;Energy&#34;:ace_array})
+    
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    exfor_isotope = load_isotope(df, Z, A, **kwargs)
+    exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
+    for col in exfor_isotope_cols.columns:
+        if &#34;MT&#34; in col:
+            if col in [&#34;MT_9000&#34;]:
+                continue
+            else:
+                logging.info(col)
+                predictions = make_predictions_w_energy(ace_array, df, Z, A, col, model, 
+                                              None, scaler, to_scale, log=False, show=False)
+                data_ace[col] = predictions
+
+    data_ace = 10**data_ace
+    if saving_dir is not None:
+        data_ace.to_csv(os.path.join(saving_dir, saving_filename), index=False)
+    return data_ace
+
+def add_new_features(df, drop_q=False, ame_dir=ame_dir_path):
+    logging.info(&#34;EXFOR CSV: Adding Nuclear Radius and Neutron to Nucleus Radius Ratio data...&#34;)
+    # df[&#34;Nuc_Radius_fm&#34;] = 1.25 * np.power(df[&#34;Mass_Number&#34;], 1/3)
+    # df[&#34;Neut_Nuc_Rad_Ratio&#34;] = 0.8 / df[&#34;Nuc_Radius_fm&#34;]
+
+
+    if drop_q:
+        logging.info(&#34;EXFOR CSV: Dropping Q-Values...&#34;)
+        q_value = [col for col in df.columns if &#39;Q&#39; in col]
+        df = df.drop(columns=q_value)
+
+    logging.info(&#34;EXFOR CSV: Adding information for Compound Nucleus...&#34;)
+    df[&#34;Compound_Neutrons&#34;] = df.N + 1
+    df[&#34;Compound_Mass_Number&#34;] = df.A + 1
+    df[&#34;Compound_Protons&#34;] = df.Z
+
+    masses = pd.read_csv(os.path.join(ame_dir, &#34;AME_Natural_Properties_no_NaN.csv&#34;))
+    masses = masses[masses.Flag == &#34;I&#34;]
+    masses = masses.drop(columns=[&#34;Neutrons&#34;, &#34;Mass_Number&#34;, &#34;Flag&#34;])
+    masses = masses.rename(columns={&#39;N&#39;: &#39;Neutrons&#39;, &#39;A&#39;: &#39;Mass_Number&#39;, &#34;Z&#34;:&#34;Protons&#34;, &#34;O&#34;:&#34;Origin&#34;})
+
+    nuclear_data_compound = list(masses.columns)
+    nuclear_data_compound_cols = [&#34;Compound_&#34; + s for s in nuclear_data_compound]
+    masses.columns = nuclear_data_compound_cols
+
+    df = df.reset_index(drop=True)
+    masses = masses.reset_index(drop=True)
+
+    df = df.merge(masses, on=[&#39;Compound_Neutrons&#39;, &#39;Compound_Protons&#39;], how=&#39;left&#39;)
+
+    df = df.drop(columns=[&#34;Compound_Mass_Number_y&#34;])
+    df = df.rename(columns={&#39;Compound_Mass_Number_x&#39;: &#39;Compound_Mass_Number&#39;})
+    return df
+
+
+elements_dict = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), &#39;objects/Element_AAA.pkl&#39;))</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="nucml.exfor.data_utilities.add_new_features"><code class="name flex">
+<span>def <span class="ident">add_new_features</span></span>(<span>df, drop_q=False, ame_dir='C:\\Users\\Pedro\\Desktop\\AME')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_new_features(df, drop_q=False, ame_dir=ame_dir_path):
+    logging.info(&#34;EXFOR CSV: Adding Nuclear Radius and Neutron to Nucleus Radius Ratio data...&#34;)
+    # df[&#34;Nuc_Radius_fm&#34;] = 1.25 * np.power(df[&#34;Mass_Number&#34;], 1/3)
+    # df[&#34;Neut_Nuc_Rad_Ratio&#34;] = 0.8 / df[&#34;Nuc_Radius_fm&#34;]
+
+
+    if drop_q:
+        logging.info(&#34;EXFOR CSV: Dropping Q-Values...&#34;)
+        q_value = [col for col in df.columns if &#39;Q&#39; in col]
+        df = df.drop(columns=q_value)
+
+    logging.info(&#34;EXFOR CSV: Adding information for Compound Nucleus...&#34;)
+    df[&#34;Compound_Neutrons&#34;] = df.N + 1
+    df[&#34;Compound_Mass_Number&#34;] = df.A + 1
+    df[&#34;Compound_Protons&#34;] = df.Z
+
+    masses = pd.read_csv(os.path.join(ame_dir, &#34;AME_Natural_Properties_no_NaN.csv&#34;))
+    masses = masses[masses.Flag == &#34;I&#34;]
+    masses = masses.drop(columns=[&#34;Neutrons&#34;, &#34;Mass_Number&#34;, &#34;Flag&#34;])
+    masses = masses.rename(columns={&#39;N&#39;: &#39;Neutrons&#39;, &#39;A&#39;: &#39;Mass_Number&#39;, &#34;Z&#34;:&#34;Protons&#34;, &#34;O&#34;:&#34;Origin&#34;})
+
+    nuclear_data_compound = list(masses.columns)
+    nuclear_data_compound_cols = [&#34;Compound_&#34; + s for s in nuclear_data_compound]
+    masses.columns = nuclear_data_compound_cols
+
+    df = df.reset_index(drop=True)
+    masses = masses.reset_index(drop=True)
+
+    df = df.merge(masses, on=[&#39;Compound_Neutrons&#39;, &#39;Compound_Protons&#39;], how=&#39;left&#39;)
+
+    df = df.drop(columns=[&#34;Compound_Mass_Number_y&#34;])
+    df = df.rename(columns={&#39;Compound_Mass_Number_x&#39;: &#39;Compound_Mass_Number&#39;})
+    return df</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.append_energy"><code class="name flex">
+<span>def <span class="ident">append_energy</span></span>(<span>e_array, df, Z, A, MT, nat_iso='I', one_hot=False, log=False, scale=False, scaler=None, to_scale=[], ignore_MT=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads New Measurments and appends EXFOR isotopic data to it.
+Assumes new data only has an Energy and Data column</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def append_energy(e_array, df, Z, A, MT, nat_iso=&#34;I&#34;, one_hot=False, log=False, scale=False, scaler=None, to_scale=[], ignore_MT=False):
+    &#34;&#34;&#34;
+    Loads New Measurments and appends EXFOR isotopic data to it. 
+    Assumes new data only has an Energy and Data column
+    &#34;&#34;&#34;
+    new_data = pd.DataFrame({&#34;Energy&#34;:e_array})
+    if log:
+        new_data[&#34;Energy&#34;] = np.log10(new_data[&#34;Energy&#34;])
+    if ignore_MT:
+        isotope_exfor = load_samples(df, Z, A, &#34;MT_1&#34;, nat_iso=nat_iso, one_hot=one_hot)
+        isotope_exfor.MT_1 = 0
+        isotope_exfor[MT] = 1
+    else:
+        isotope_exfor = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    for i in list(isotope_exfor.columns):
+        if i not in [&#34;Energy&#34;, &#34;Data&#34;]:
+            new_data[i] = isotope_exfor[i].values[1]
+    if &#34;dData&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dData&#34;, inplace=True)
+    if &#34;dEnergy&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dEnergy&#34;, inplace=True)
+    logging.info(&#34;Expanded Dataset has shape: {}&#34;.format(new_data.shape))
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        new_data[to_scale] = scaler.transform(new_data[to_scale])
+
+    return new_data</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.expanding_dataset_energy"><code class="name flex">
+<span>def <span class="ident">expanding_dataset_energy</span></span>(<span>data, E_min, E_max, log, N, e_array=Empty DataFrame
+Columns: []
+Index: [])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>previously expanding_inference_dataset
+Creates new data points for prediction (expands energy)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def expanding_dataset_energy(data, E_min, E_max, log, N, e_array=empty_df):
+    &#34;&#34;&#34;
+    previously expanding_inference_dataset
+    Creates new data points for prediction (expands energy)
+    &#34;&#34;&#34;
+    e_array_avaliable = True if e_array.shape[0] != 0 else False
+    if e_array_avaliable:
+        energy_to_add = pd.DataFrame({&#34;Energy&#34;: e_array})
+    else:
+        if log:
+            energy_range = np.linspace(E_min, E_max, N)
+        else:
+            energy_range = np.power(10, np.linspace(np.log10(E_min), np.log10(E_max), N))
+        energy_to_add = pd.DataFrame({&#34;Energy&#34;: energy_range})
+    for i in list(data.columns)[1:]:
+        energy_to_add[i] = data[i].values[1]
+    data = data.append(energy_to_add, ignore_index=True).sort_values(by=&#39;Energy&#39;, ascending=True)
+    return data</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.get_csv_for_ace"><code class="name flex">
+<span>def <span class="ident">get_csv_for_ace</span></span>(<span>df, Z, A, model, scaler, to_scale, saving_dir=None, saving_filename=None)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_csv_for_ace(df, Z, A, model, scaler, to_scale, saving_dir=None, saving_filename=None):
+    ace_array = ace_utils.get_energies(&#39;{:&lt;02d}&#39;.format(Z) + str(A).zfill(3), ev=True, log=True)
+    data_ace = pd.DataFrame({&#34;Energy&#34;:ace_array})
+    
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    exfor_isotope = load_isotope(df, Z, A, **kwargs)
+    exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
+    for col in exfor_isotope_cols.columns:
+        if &#34;MT&#34; in col:
+            if col in [&#34;MT_9000&#34;]:
+                continue
+            else:
+                logging.info(col)
+                predictions = make_predictions_w_energy(ace_array, df, Z, A, col, model, 
+                                              None, scaler, to_scale, log=False, show=False)
+                data_ace[col] = predictions
+
+    data_ace = 10**data_ace
+    if saving_dir is not None:
+        data_ace.to_csv(os.path.join(saving_dir, saving_filename), index=False)
+    return data_ace</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.get_error_endf_exfor"><code class="name flex">
+<span>def <span class="ident">get_error_endf_exfor</span></span>(<span>endf, exfor_sample)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Allows the user to get the </p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>endf</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>raw ENDF dataframe</dd>
+<dt><strong><code>exfor_sample</code></strong> :&ensp;<code>DataFrame</code></dt>
+<dd>exfor sample at which energies the ENDF will be extrapolated to get errors</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>DataFrame</code></dt>
+<dd>Contains</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_error_endf_exfor(endf, exfor_sample):
+    &#34;&#34;&#34;Allows the user to get the 
+
+    Args:
+        endf (DataFrame): raw ENDF dataframe
+        exfor_sample (DataFrame): exfor sample at which energies the ENDF will be extrapolated to get errors
+
+    Returns:
+        DataFrame: Contains
+    &#34;&#34;&#34;    
+    endf_copy = endf.copy()
+    exfor_copy = exfor_sample.copy()
+    exfor_copy = exfor_copy[exfor_copy.Energy &gt; endf_copy.Energy.min()]
+    indexes = np.arange(len(endf), len(endf) + len(exfor_copy)) # start our index numbering after len(endf) (does not collide)
+    exfor_copy.index = indexes # This will return a dataframe with non zero index
+    energy_interest = exfor_copy[[&#34;Energy&#34;]] # energy_interest will carry previous indexes
+    energy_interest[&#34;Data&#34;] = np.nan
+    endf_copy = endf_copy.append(energy_interest, ignore_index=False).sort_values(by=[&#39;Energy&#39;])
+    endf_copy[&#34;Data&#34;] = endf_copy[&#34;Data&#34;].interpolate(limit_direction=&#34;forward&#34;)
+    # Measuring metrics on predictions.
+    error_endf_exfor = model_utils.regression_error_metrics(exfor_copy[&#34;Data&#34;], endf_copy[[&#34;Data&#34;]].loc[indexes])
+    error_endf_exfor_df = model_utils.create_error_df(&#34;EXFOR VS ENDF&#34;, error_endf_exfor)
+
+    exfor_endf = pd.DataFrame({&#34;Energy&#34;:exfor_copy.Energy.values, 
+        &#34;EXFOR&#34;:exfor_copy[&#34;Data&#34;].values, &#34;ENDF&#34;:endf_copy[&#34;Data&#34;].loc[indexes].values})
+    # ORIGINAL return exfor_endf
+    return exfor_endf, error_endf_exfor_df</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.get_error_endf_new"><code class="name flex">
+<span>def <span class="ident">get_error_endf_new</span></span>(<span>endf, new_data)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_error_endf_new(endf, new_data):
+    endf_copy = endf.copy()
+    indexes = np.arange(len(endf), len(endf) + len(new_data))
+    new_data.index = indexes
+    energy_interest = new_data[[&#34;Energy&#34;]]
+    energy_interest[&#34;Data&#34;] = np.nan
+    endf_copy = endf_copy.append(energy_interest, ignore_index=False)
+    endf_copy = endf_copy.sort_values(by=[&#39;Energy&#39;])
+    endf_copy[&#34;Data&#34;] = endf_copy[&#34;Data&#34;].interpolate()
+
+    # Measuring metrics on predictions.
+    error_endf_exfor_new = model_utils.regression_error_metrics(new_data[&#34;Data&#34;], endf_copy[[&#34;Data&#34;]].loc[indexes])
+    error_endf_exfor_new_df = model_utils.create_error_df(&#34;EXFOR VS ENDF (NEW DATA)&#34;, error_endf_exfor_new)
+
+
+    exfor_endf_new_data = pd.DataFrame({&#34;Energy&#34;:new_data.Energy.values, 
+        &#34;EXFOR&#34;:new_data[&#34;Data&#34;].values, &#34;ENDF&#34;:endf_copy[&#34;Data&#34;].loc[indexes].values})
+
+    # ORIGINAL return exfor_endf_new_data
+    return exfor_endf_new_data, error_endf_exfor_new_df</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.get_mt_error_exfor_endf"><code class="name flex">
+<span>def <span class="ident">get_mt_error_exfor_endf</span></span>(<span>df, Z, A, scaler, to_scale)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_mt_error_exfor_endf(df, Z, A, scaler, to_scale):
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    error_results = pd.DataFrame(columns=[&#39;id&#39;, &#39;mae&#39;, &#39;mse&#39;, &#39;evs&#39;, &#39;mae_m&#39;, &#39;r2&#39;, &#39;MT&#39;])
+    exfor_isotope = load_isotope(df, Z, A, **kwargs)
+    exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
+    for col in exfor_isotope_cols.columns:
+        if &#34;MT&#34; in col:
+            if col in [&#34;MT_101&#34;, &#34;MT_9000&#34;]:
+                continue
+            else:
+                exfor_sample = load_samples(df, Z, A, col, **kwargs)
+                endf_data = endf_utils.get_for_exfor(Z, A, col)
+                _, error_exfor_endf = get_error_endf_exfor(endf_data, exfor_sample)
+                error_exfor_endf[&#34;MT&#34;] = col
+                error_results = error_results.append(error_exfor_endf)
+    return error_results</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.get_mt_errors_exfor_ml"><code class="name flex">
+<span>def <span class="ident">get_mt_errors_exfor_ml</span></span>(<span>df, Z, A, scaler, to_scale, model)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_mt_errors_exfor_ml(df, Z, A, scaler, to_scale, model):
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    error_results = pd.DataFrame(columns=[&#39;MT&#39;, &#39;MAE&#39;, &#39;MSE&#39;, &#39;EVS&#39;, &#39;MAE_M&#39;, &#39;R2&#39;])
+    exfor_isotope = load_isotope(df, Z, A, **kwargs)
+    # NEXT WE REMOVE ANY MT COLUMNS THAT ARE FILLED WITH ZEROS
+    exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
+    for col in exfor_isotope_cols.columns:
+        if &#34;MT&#34; in col:
+            exfor_sample = load_samples(df, Z, A, col, **kwargs)
+            error_dict = model_utils.regression_error_metrics(model.predict(exfor_sample.drop(columns=[&#34;Data&#34;])), 
+                                                              exfor_sample.Data)
+            error_results = error_results.append(pd.DataFrame({&#34;MT&#34;:[col], &#34;MAE&#34;:[error_dict[&#34;mae&#34;]], 
+                                                               &#34;MSE&#34;:[error_dict[&#34;mse&#34;]], &#34;EVS&#34;:[error_dict[&#34;evs&#34;]], 
+                                                               &#34;MAE_M&#34;:[error_dict[&#34;mae_m&#34;]], &#34;R2&#34;:[error_dict[&#34;r2&#34;]]}))
+    return error_results</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.load_element"><code class="name flex">
+<span>def <span class="ident">load_element</span></span>(<span>df, Z, nat_iso='I', one_hot=False, scale=False, scaler=None, to_scale=[])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads EXFOR data for a particular element (includes all isotopes)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_element(df, Z, nat_iso=&#34;I&#34;, one_hot=False, scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads EXFOR data for a particular element (includes all isotopes)
+    &#34;&#34;&#34;
+    logging.info(&#34;Extracting samples from dataframe.&#34;)
+    if one_hot:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;Element_Flag_&#34; + nat_iso] == 1)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    else:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;Element_Flag&#34;] == nat_iso)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(sample.shape))
+    return sample</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.load_isotope"><code class="name flex">
+<span>def <span class="ident">load_isotope</span></span>(<span>df, Z, A, nat_iso='I', one_hot=False, scale=False, scaler=None, to_scale=[])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads EXFOR data for a particular Isotope, Reaction Channel</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_isotope(df, Z, A, nat_iso=&#34;I&#34;, one_hot=False, scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads EXFOR data for a particular Isotope, Reaction Channel
+    &#34;&#34;&#34;
+    logging.info(&#34;Extracting samples from dataframe.&#34;)
+    if one_hot:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag_&#34; + nat_iso] == 1)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    else:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag&#34;] == nat_iso)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(sample.shape))
+    return sample</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.load_newdata"><code class="name flex">
+<span>def <span class="ident">load_newdata</span></span>(<span>datapath, df, Z, A, MT, one_hot=False, log=False, nat_iso='I', scale=False, scaler=None, to_scale=[])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads New Measurments and appends EXFOR isotopic data to it.
+Assumes new data only has an Energy and Data column</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_newdata(datapath, df, Z, A, MT, one_hot=False, log=False, nat_iso=&#34;I&#34;,  scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads New Measurments and appends EXFOR isotopic data to it. 
+    Assumes new data only has an Energy and Data column
+    &#34;&#34;&#34;
+    new_data = pd.read_csv(datapath)
+    if log:
+        new_data[&#34;Energy&#34;] = np.log10(new_data[&#34;Energy&#34;])
+        new_data[&#34;Data&#34;] = np.log10(new_data[&#34;Data&#34;])
+    # Getting data from df. 
+    isotope_exfor = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    for i in list(isotope_exfor.columns):
+        if i not in [&#34;Energy&#34;, &#34;Data&#34;]:
+            new_data[i] = isotope_exfor[i].values[1]
+    if &#34;dData&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dData&#34;, inplace=True)
+    if &#34;dEnergy&#34; in list(new_data.columns):
+        new_data.drop(columns=&#34;dEnergy&#34;, inplace=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        new_data[to_scale] = scaler.transform(new_data[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(new_data.shape))
+    return new_data</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.load_samples"><code class="name flex">
+<span>def <span class="ident">load_samples</span></span>(<span>df, Z, A, MT, nat_iso='I', one_hot=False, scale=False, scaler=None, to_scale=[])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads EXFOR data for a particular Isotope, Reaction Channel</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_samples(df, Z, A, MT, nat_iso=&#34;I&#34;, one_hot=False, scale=False, scaler=None, to_scale=[]):
+    &#34;&#34;&#34;
+    Loads EXFOR data for a particular Isotope, Reaction Channel
+    &#34;&#34;&#34;
+    logging.info(&#34;Extracting samples from dataframe.&#34;)
+    if one_hot:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[MT] == 1) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag_&#34; + nat_iso] == 1)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    else:
+        sample = df[(df[&#34;Z&#34;] == Z) &amp; (df[&#34;MT&#34;] == MT) &amp; (df[&#34;A&#34;] == A) &amp;
+                    (df[&#34;Element_Flag&#34;] == nat_iso)].sort_values(by=&#39;Energy&#39;, ascending=True)
+    if scale:
+        logging.info(&#34;Scaling dataset...&#34;)
+        sample[to_scale] = scaler.transform(sample[to_scale])
+    logging.info(&#34;EXFOR extracted DataFrame has shape: {}&#34;.format(sample.shape))
+    return sample</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.make_predictions_from_df"><code class="name flex">
+<span>def <span class="ident">make_predictions_from_df</span></span>(<span>df, Z, A, MT, clf, clf_type, scaler, to_scale, log=False, show=False)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def make_predictions_from_df(df, Z, A, MT, clf, clf_type, scaler, to_scale, log=False, show=False):
+    kwargs = {&#34;nat_iso&#34;: &#34;I&#34;, &#34;one_hot&#34;: True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    exfor = load_samples(df, Z, A, MT, **kwargs)
+    # Make Predictions
+    y_hat = model_utils.make_predictions(exfor.drop(columns=[&#34;Data&#34;]).values, clf, clf_type)
+    if show:
+        plt.plot(exfor.Energy, exfor.Data, alpha=0.5, c=&#34;g&#34;)
+        plt.plot(exfor.Energy, y_hat)
+    return y_hat</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.make_predictions_w_energy"><code class="name flex">
+<span>def <span class="ident">make_predictions_w_energy</span></span>(<span>e_array, df, Z, A, MT, clf, clf_type, scaler, to_scale, log=False, show=False, one_hot=True)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def make_predictions_w_energy(e_array, df, Z, A, MT, clf, clf_type, scaler, to_scale, log=False, show=False, one_hot=True):
+    data_kwargs = {&#34;Z&#34;:Z, &#34;A&#34;:A, &#34;MT&#34;:MT, &#34;log&#34;:log, &#34;scale&#34;:True, &#34;scaler&#34;:scaler, &#34;to_scale&#34;:to_scale, &#34;one_hot&#34;:True, &#34;ignore_MT&#34;:True}
+    to_infer = append_energy(e_array, df, **data_kwargs)
+    exfor = load_samples(df, Z, A, MT, one_hot=one_hot)
+    # Make Predictions
+    y_hat = model_utils.make_predictions(to_infer.values, clf, clf_type)
+    if show:
+        plt.plot(exfor.Energy, exfor.Data, alpha=0.5, c=&#34;g&#34;)
+        plt.plot(to_infer.Energy, y_hat)
+    return y_hat</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.plot_exfor_w_references"><code class="name flex">
+<span>def <span class="ident">plot_exfor_w_references</span></span>(<span>df, Z, A, MT, nat_iso='I', new_data=Empty DataFrame
+Columns: []
+Index: [], endf=Empty DataFrame
+Columns: []
+Index: [], error=False, get_endf=True, reverse_log=False, legend_size=21, save=False, interpolate=False, legend=False, alpha=0.7, one_hot=False, log_plot=False, path='', ref=False, new_data_label='Additional Data')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Plots Cross Section for a particular Isotope with or without references.
+If Ref is true then EXFOR will be ploted per experimental campaign (one color for each)
+Legend will show up the</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def plot_exfor_w_references(df, Z, A, MT, nat_iso=&#34;I&#34;, new_data=empty_df, endf=empty_df, error=False, get_endf=True, reverse_log=False, legend_size=21,
+    save=False, interpolate=False, legend=False, alpha=0.7, one_hot=False, log_plot=False, path=&#39;&#39;, ref=False, new_data_label=&#34;Additional Data&#34;):
+    &#34;&#34;&#34;
+    Plots Cross Section for a particular Isotope with or without references. 
+    If Ref is true then EXFOR will be ploted per experimental campaign (one color for each)
+    Legend will show up the
+    &#34;&#34;&#34;
+    if reverse_log:
+        df[&#34;Energy&#34;] = 10**df[&#34;Energy&#34;].values
+        df[&#34;Data&#34;] = 10**df[&#34;Data&#34;].values
+    if get_endf:
+        endf = endf_utils.get_for_exfor(Z, A, MT, one_hot=one_hot, log=False)
+    # Extracting dataframe to make predictions and creating copy for evaluation
+    exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+    # Initializing Figure and Plotting
+    plt.figure(figsize=(14,10))
+    ax = plt.subplot(111)
+    if ref:
+        groups = exfor_sample[[&#34;Energy&#34;, &#34;Data&#34;, &#34;Short_Reference&#34;]].groupby(&#34;Short_Reference&#34;)
+        for name, group in groups:
+            ax.plot(group[&#34;Energy&#34;], group[&#34;Data&#34;], marker=&#34;o&#34;, linestyle=&#34;&#34;, label=name, alpha=0.9)
+    else:
+        ax.scatter(exfor_sample[&#34;Energy&#34;], exfor_sample[&#34;Data&#34;], alpha=alpha, label=&#34;EXFOR&#34;, ci=None, marker=&#34;o&#34;) # pylint: disable=too-many-function-args  
+    if new_data.shape[0] != 0:
+        ax.plot(new_data.Energy, new_data.Data, marker=&#34;o&#34;, linestyle=&#34;&#34;, label=new_data_label, alpha=0.9)
+    if endf.shape[0] != 0:
+        ax.plot(endf.Energy, endf.Data, label=&#34;ENDF/B-VIII.0&#34;, alpha=alpha) # alpha previously 0.8
+    if interpolate == True:
+        ax.plot(exfor_sample[&#34;Energy&#34;], exfor_sample[&#34;Data&#34;], alpha=alpha*0.5, label=&#34;Interpolation&#34;, ci=None) # pylint: disable=too-many-function-args
+    if log_plot:
+        plt.xscale(&#39;log&#39;)
+        plt.yscale(&#39;log&#39;)
+    if legend:
+        ax.legend(fontsize=legend_size)
+
+    # Setting Figure Limits
+    exfor_plot_utils.plot_limits_ref(exfor_sample, endf, new_data)
+    plt.xlabel(&#39;Energy (eV)&#39;)
+    plt.ylabel(&#39;Cross Section (b)&#39;)
+
+    all_dict = {&#34;exfor&#34;:exfor_sample}
+
+    if save:
+        plt.savefig(path + &#34;EXFOR_{}_{}_XS.png&#34;.format(exfor_sample.Isotope.values[0], MT), bbox_inches=&#39;tight&#39;, dpi=600)
+    if error:
+        if endf.shape[0] != 0:
+            exfor_endf, error_endf = get_error_endf_exfor(endf=endf, exfor_sample=exfor_sample)
+            all_dict.update({&#34;endf&#34;:endf, &#34;exfor_endf&#34;:exfor_endf, &#34;error_metrics&#34;:error_endf})
+            if new_data.shape[0] != 0:
+                exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
+                error_df = error_endf.append(error_endf_new)
+                all_dict.update({&#34;exfor_endf_new&#34;:exfor_endf_new_data, &#34;error_metrics&#34;:error_df})
+    return all_dict</code></pre>
+</details>
+</dd>
+<dt id="nucml.exfor.data_utilities.predicting_nuclear_xs_v2"><code class="name flex">
+<span>def <span class="ident">predicting_nuclear_xs_v2</span></span>(<span>df, Z, A, MT, clf, to_scale, scaler, e_array='ace', log=False, clf_type=None, html=False, new_data=Empty DataFrame
+Columns: []
+Index: [], save=False, show=False, path='', nat_iso='I', render=False, order_dict={}, get_endf=False, inv_trans=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>endf=empty_df,
+Used to plot predictions of the clf model for specific isotope (Z, A) and runs.
+MT is the reaction type (e.g 1 is total cross section)
+E_min and E_max are the energy region in which to make additional inferences.</p>
+<p>pred_exfor_expanded: expanded or non expanded to infer data
+pred_exfor_original: original exfor data points.
+pred_exfor_new: new data predictions (if avaliable)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predicting_nuclear_xs_v2(df, Z, A, MT, clf, to_scale, scaler, e_array=&#34;ace&#34;, log=False, clf_type=None, html=False,
+    new_data=empty_df, save=False, show=False, path=&#34;&#34;, nat_iso=&#34;I&#34;, render=False, order_dict={}, get_endf=False, inv_trans=False):
+    &#39;&#39;&#39;
+    endf=empty_df, 
+    Used to plot predictions of the clf model for specific isotope (Z, A) and runs.
+    MT is the reaction type (e.g 1 is total cross section)
+    E_min and E_max are the energy region in which to make additional inferences.
+
+    pred_exfor_expanded: expanded or non expanded to infer data
+    pred_exfor_original: original exfor data points.
+    pred_exfor_new: new data predictions (if avaliable)
+
+    &#39;&#39;&#39;
+    if get_endf:
+        endf = endf_utils.get_for_exfor(Z, A, MT)
+    if e_array == &#34;ace&#34;:
+        e_array = ace_utils.get_energies(&#39;{:&lt;02d}&#39;.format(Z) + str(A).zfill(3), ev=True, log=log)
+
+    new_data_avaliable = True if new_data.shape[0] != 0 else False
+    endf_avaliable = True if endf.shape[0] != 0 else False
+    e_array_avaliable = True if e_array.shape[0] != 0 else False
+
+    kwargs = {&#34;nat_iso&#34;:nat_iso, &#34;one_hot&#34;:True, &#34;scale&#34;: True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    to_infer = to_plot = load_samples(df, Z, A, MT, **kwargs)
+    to_infer = to_infer.drop(columns=[&#34;Data&#34;])
+
+    kwargs = {&#34;nat_iso&#34;:nat_iso, &#34;one_hot&#34;:True, &#34;scaler&#34;: scaler, &#34;to_scale&#34;: to_scale}
+    to_infer = load_samples(df, Z, A, MT, scale=False, **kwargs)
+    to_plot = load_samples(df, Z, A, MT, scale=True, **kwargs)
+    to_infer = to_infer.drop(columns=[&#34;Data&#34;])    
+
+    if e_array_avaliable: 
+        to_infer = expanding_dataset_energy(to_infer, 0, 0, log, 0, e_array=e_array)
+    else:
+        to_infer = expanding_dataset_energy(to_infer, -5.00, 7.30, log, 500)
+
+    to_infer[to_scale] = scaler.transform(to_infer[to_scale])
+    
+    # Making Predictions
+    pred_exfor_expanded = model_utils.make_predictions(to_infer.values, clf, clf_type)
+    pred_exfor_original = model_utils.make_predictions(to_plot.drop(columns=[&#34;Data&#34;]).values, clf, clf_type)
+
+    if inv_trans:
+        # De-Transforming Scaled Data
+        to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
+        to_plot[to_scale] = scaler.inverse_transform(to_plot[to_scale])
+
+    all_dict = {&#34;exfor_ml_expanded&#34;:{&#34;df&#34;:to_infer, &#34;predictions&#34;:pred_exfor_expanded}, 
+                &#34;exfor_ml_original&#34;:{&#34;df&#34;:to_plot, &#34;predictions&#34;:pred_exfor_original}}
+
+    exfor_ml_error = model_utils.regression_error_metrics(to_plot[&#34;Data&#34;], pred_exfor_original)
+    error_df = model_utils.create_error_df(&#34;EXFOR VS ML&#34;, exfor_ml_error)
+    all_dict.update({&#34;error_metrics&#34;:error_df})
+    if new_data_avaliable:
+        pred_exfor_new = model_utils.make_predictions(new_data.drop(columns=[&#34;Data&#34;]).values, clf, clf_type)
+        all_dict.update({&#34;exfor_ml_new&#34;:{&#34;df&#34;:new_data, &#34;predictions&#34;:pred_exfor_new}})
+
+        exfor_ml_new_error = model_utils.regression_error_metrics(new_data[&#34;Data&#34;], pred_exfor_new)
+        error_new_df = model_utils.create_error_df(&#34;EXFOR VS ML (NEW DATA)&#34;, exfor_ml_new_error)
+        error_df = error_df.append(error_new_df)
+        all_dict.update({&#34;error_metrics&#34;:error_df})
+    if endf_avaliable:
+        # Gets interpolated endf data with anchor exfor
+        exfor_endf, error_endf = get_error_endf_exfor(endf, to_plot)
+        error_df = error_df.append(error_endf)
+        all_dict.update({&#34;exfor_endf_original&#34;:exfor_endf, &#34;error_metrics&#34;:error_df, &#34;endf&#34;:endf})
+        if new_data_avaliable:
+            # Gets interpolated endf data with anchor new exfor
+            exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
+            error_df = error_df.append(error_endf_new)
+            all_dict.update({&#34;exfor_endf_new&#34;:exfor_endf_new_data, &#34;error_metrics&#34;:error_df})
+    if show:
+        exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, html=html, show=show)
+    return all_dict</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="nucml.exfor" href="index.html">nucml.exfor</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="nucml.exfor.data_utilities.add_new_features" href="#nucml.exfor.data_utilities.add_new_features">add_new_features</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.append_energy" href="#nucml.exfor.data_utilities.append_energy">append_energy</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.expanding_dataset_energy" href="#nucml.exfor.data_utilities.expanding_dataset_energy">expanding_dataset_energy</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.get_csv_for_ace" href="#nucml.exfor.data_utilities.get_csv_for_ace">get_csv_for_ace</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.get_error_endf_exfor" href="#nucml.exfor.data_utilities.get_error_endf_exfor">get_error_endf_exfor</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.get_error_endf_new" href="#nucml.exfor.data_utilities.get_error_endf_new">get_error_endf_new</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.get_mt_error_exfor_endf" href="#nucml.exfor.data_utilities.get_mt_error_exfor_endf">get_mt_error_exfor_endf</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.get_mt_errors_exfor_ml" href="#nucml.exfor.data_utilities.get_mt_errors_exfor_ml">get_mt_errors_exfor_ml</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.load_element" href="#nucml.exfor.data_utilities.load_element">load_element</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.load_isotope" href="#nucml.exfor.data_utilities.load_isotope">load_isotope</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.load_newdata" href="#nucml.exfor.data_utilities.load_newdata">load_newdata</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.load_samples" href="#nucml.exfor.data_utilities.load_samples">load_samples</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.make_predictions_from_df" href="#nucml.exfor.data_utilities.make_predictions_from_df">make_predictions_from_df</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.make_predictions_w_energy" href="#nucml.exfor.data_utilities.make_predictions_w_energy">make_predictions_w_energy</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.plot_exfor_w_references" href="#nucml.exfor.data_utilities.plot_exfor_w_references">plot_exfor_w_references</a></code></li>
+<li><code><a title="nucml.exfor.data_utilities.predicting_nuclear_xs_v2" href="#nucml.exfor.data_utilities.predicting_nuclear_xs_v2">predicting_nuclear_xs_v2</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>

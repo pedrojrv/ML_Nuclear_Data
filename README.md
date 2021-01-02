@@ -1,5 +1,12 @@
 # NucML
 
+
+# TODO: UNCOMMENT PERIODIC TABLE ONCE GITHUB PUBLIC in AME PARSING UTILITIES
+# TODO: ADD LINK TO DOWNLOAD EVALUATED DATA
+# TODO: FIX GET FOR EXFOR ENDF DATA UTILITIES IF NEEDED
+
+
+
 Python tools to process nuclear data and test ML models in benchmark calculations.
 
 - EXFOR_Parsing_Utilities.py: provides tools to process EXFOR C4 files into a format useful for futher data processing and ML applications.
@@ -126,3 +133,15 @@ We will build several ML models to set a baseline accuracy.
 We collect masses from the Atomic Masses Evaluations. We add them to our original dataset and see improvment in accuracy. 
 
 # EVALUATION
+
+
+# Modify
+
+Ace full path 
+
+```python
+ace_dir = "C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata"
+
+ame_dir_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\AME\\"
+ame_originals_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\AME\\Originals\\"
+```
