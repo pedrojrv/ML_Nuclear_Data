@@ -1,25 +1,22 @@
-import pandas as pd
-import numpy as np
+import logging
+import math
 import os
 import re
-import math
-from pathlib import Path
-import logging
 import shutil
+from pathlib import Path
+import numpy as np
+import pandas as pd
 import scipy.io
-
-empty_df = pd.DataFrame()
-
+from scipy.signal import find_peaks
 import sys
+
 sys.path.append("..")
 
 import nucml.general_utilities as gen_utils 
 import nucml.model.model_utilities as model_utils
 import nucml.exfor.data_utilities as exfor_utils
 
-from scipy.signal import find_peaks
-
-
+empty_df = pd.DataFrame()
 ace_dir = "C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata"
 
 

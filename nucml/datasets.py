@@ -16,6 +16,7 @@ import nucml.processing as nuc_proc
 
 ame_dir_path = config.ame_dir_path
 evaluations_path = config.evaluations_path
+ensdf_path = config.ensdf_path
 
 
 exfor_elements = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/exfor_elements_list.pkl'))
@@ -127,100 +128,76 @@ def load_evaluation(ELAAA, MT, mode="neutrons", library="endfb8.0", mev_to_ev=Tr
 ###############################################################################
 ####################### ENSDF LIBRARIES #######################################
 ###############################################################################
-def load_ensdf(cutoff=False, log_sqrt=False, log=False, append_ame=False, basic=-1, num=False, frac=0.3, scaling_type="pt", scaler_dir=None):
-    """Loads the Evalauted Nuclear Structure Data File generated using NucML. This allows the user to load
-    the raw file or preprocessed the dataset for ML applications. See options below.
 
-    The basic feature allows you to load only some basic features if needed. The AME dataset contains
-    many features including q-reactions and separation energies. Some of these may not be needed. The
-    basic argument allows to quickly remove extra features. 
-        basic = 0: "Level_Number", "Level_Energy", "Protons", "Neutrons", "Mass_Number", "Spin", "Parity", "Atomic_Mass_Micro"
-        basic = 1: "Level_Number", "Level_Energy", "Protons", "Neutrons", "Mass_Number", "Spin", "Parity", 
-            "Atomic_Mass_Micro", 'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 'S(2n)', 'S(n)', 'S(p)'
-        Any other number will default to loading the entire set of features.
-
-    Args:
-        cutoff (bool, optional): If True, the RIPL cutoff ENSDF file is loaded. Defaults to False.
-        log (bool, optional): If True, the log10 is applied to the Level Number feature. It also applies 
-            the square root to the Level Energy feature. Defaults to False.
-        append_ame (bool, optional): if True, it appends the AME database. Defaults to False.
-        basic (int, optional): This allows to retrieve only basic features. 
-            Only meaningful when append_ame is True. Defaults to -1.
-        num (bool, optional): [description]. Defaults to False.
-        frac (float, optional): [description]. Defaults to 0.3.
-        scaling_type (str, optional): [description]. Defaults to "pt".
-        scaler_dir ([type], optional): [description]. Defaults to None.
+def load_ensdf_headers():
+    """Loads ENSDF headers from RIPL .dat files
 
     Returns:
-        DataFrame: if num=True, the function returns 6 variables. 
+        DataFrame
     """    
-    if cutoff:
-        datapath = "../../ENSDF/CSV_Files/ensdf_cutoff.csv"
-    else:
-        datapath = "../../ENSDF/CSV_Files/ensdf.csv"
-    if os.path.exists(datapath):
-        logging.info("Reading data from {}".format(datapath))
-        df = pd.read_csv(datapath)
-        df = df[~(df["Parity"] == 1620)] # THIS ELIMINATES A STRANGE DATAPOINT
-        df["Level_Number"] = df["Level_Number"].astype(int)
-        df[["Spin", "Parity", "Target_Element_w_A"]] = df[["Spin", "Parity", "Target_Element_w_A"]].astype('category')
-        if log_sqrt:
-            df["Level_Energy"] = np.sqrt(df["Level_Energy"])
-            df["Level_Number"] = np.log10(df["Level_Number"])
-        if log:
-            logging.info("Dropping Ground State...")
-            df = df[(df["Level_Energy"] != 0)]
-            df["Level_Energy"] = np.log10(df["Level_Energy"])
-            df["Level_Number"] = np.log10(df["Level_Number"])
-        if append_ame:
-            ame = load_ame(natural=False, nan=False)
-            ame = ame.rename(columns={"Element_w_A": "Target_Element_w_A", "Z": "Protons", "N": "Neutrons", "A": "Mass_Number"})
-            df = pd.merge(df, ame, on='Target_Element_w_A')
-        if basic == 0:
-            basic_cols = ["Level_Number", "Level_Energy", "Protons", "Neutrons", "Mass_Number", "Spin", "Parity", "Atomic_Mass_Micro"]
-            df = df[basic_cols]
-        elif basic == 1:
-            basic_cols = ["Level_Number", "Level_Energy", "Protons", "Neutrons", "Mass_Number", "Spin", "Parity", "Atomic_Mass_Micro",
-                        'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 'S(2n)', 'S(n)', 'S(p)']
-            df = df[basic_cols] 
-        if num:
-            logging.info("Dropping unnecessary features and one-hot encoding categorical columns...")
-            if basic == 0 or basic == 1:
-                cat_cols = ["Parity"]
-            else:
-                columns_drop = ["Target_Element_w_A", "EL", "O"]
-                cat_cols = ["Parity"]
-                df = df.drop(columns=columns_drop)
-            # We need to keep track of columns to normalize excluding categorical data.
-            norm_columns = len(df.columns) - len(cat_cols) - 1
-            df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
-            df = df.fillna(value=0)
-            logging.info("Splitting dataset into training and testing...")
-            x_train, x_test, y_train, y_test = train_test_split(df.drop(["Level_Energy"], axis=1), df["Level_Energy"], test_size=frac)
-            logging.info("Normalizing dataset...")
-            to_scale = list(x_train.columns)[:norm_columns]
-            if log_sqrt or log:
-                to_scale.remove("Level_Number")
-            if scaler_dir is not None:
-                logging.info("Using previously saved scaler.")
-                scaler = load(open(scaler_dir, 'rb'))
-            else:
-                logging.info("Fitting new scaler.")
-                if scaling_type == "pt":
-                    scaler = preprocessing.PowerTransformer().fit(x_train[to_scale])
-                elif scaling_type == "std":
-                    scaler = preprocessing.StandardScaler().fit(x_train[to_scale])
-                elif scaling_type == "minmax":
-                    scaler = preprocessing.MinMaxScaler().fit(x_train[to_scale])
-            x_train[to_scale] = scaler.transform(x_train[to_scale])
-            x_test[to_scale] = scaler.transform(x_test[to_scale])
-            logging.info("Finished. Resulting dataset has shape {}, Training and Testing dataset shapes are {} and {} respesctively.".format(df.shape, x_train.shape, x_test.shape))
-            return df, x_train, x_test, y_train, y_test, to_scale, scaler
-        else:
-            logging.info("Finished. Resulting dataset has shape {}".format(df.shape))
-            return df
-    else:
-        return logging.error("CSV file does not exists. Check path.")
+    csv_file = os.path.join(ensdf_path, "CSV_Files/all_ensdf_headers_formatted.csv")
+    ensdf_index_col = ["Element_w_A", "A", "Z", "Number_of_Levels", "Number_of_Gammas", "N_max", "N_c", "Sn", "Sp"]
+    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep="|")
+    return ensdf_index
+
+def load_ensdf_isotopic(ELAAA, filetype="levels"):
+    """Loads level or gamma records for a given isotope.
+
+    Args:
+        ELAAA (str): isotope to query (i.e. u235, cl35, 239Pu)
+        filetype (str, optional): specifies if level or gamma records are to be extracted. Options 
+            include "levels" and "gammas". Defaults to "levels".
+
+    Returns:
+        DataFrame
+    """    
+    ELAAA = gen_utils.parse_elaaa(ELAAA, parse_for="ENSDF")
+    file = os.path.join(ensdf_path, "Elemental_ENSDF/Elemental_ENSDF_no_Header_F/{}.txt".format(ELAAA))
+    elemental = pd.read_csv(file, header=None, sep="|")
+    elemental[0] = pd.to_numeric(elemental[0].astype(str).str.strip())
+
+    if filetype.lower() == "levels":
+        elemental_level_records = elemental[elemental[0].notna()]
+        elemental_level_records = elemental_level_records.reset_index(drop=True).drop(columns=[7,8])
+        elemental_level_records.columns = ["Level_Number", "Energy", "Spin", "Parity", "Half_Life", "Gammas", "Flag", "ENSDF_Spin", "Num_Decay_Modes", "Decay_Info"]
+        elemental_level_records.Num_Decay_Modes = elemental_level_records.Num_Decay_Modes.replace("0+#", -1)
+
+        for col in elemental_level_records.columns:
+            elemental_level_records[col] = elemental_level_records[col].astype(str).str.strip()
+
+        for col in elemental_level_records.columns:
+            if col not in ["Flag", "ENSDF_Spin", "Decay_Info"]:
+                elemental_level_records[col] = pd.to_numeric(elemental_level_records[col])
+
+        return elemental_level_records
+    elif filetype.lower() == "gammas":
+        elemental[0] = elemental[0].fillna(method='ffill')
+        elemental[1] = pd.to_numeric(elemental[1].str.strip())
+        elemental_gamma_records = elemental[~elemental[1].notna()]
+        new_columns = elemental_gamma_records[11].str.split(expand=True)
+        elemental_gamma_records = elemental_gamma_records.drop(columns=[1, 2, 3, 4, 5, 6, 10, 11])
+        elemental_gamma_records = pd.concat([elemental_gamma_records, new_columns], axis=1)
+        elemental_gamma_records.columns = ["Level_Record", "Final_State", "Energy", "Gamma_Decay_Prob", "Electromag_Decay_Prob", "ICC"]
+        for col in elemental_gamma_records.columns:
+            elemental_gamma_records[col] = pd.to_numeric(elemental_gamma_records[col])
+        return elemental_gamma_records
+
+def load_ensdf_ground_states():
+    """Loads the ENSDF file. Only ground state information.
+
+    Returns:
+        DataFrame
+    """    
+    df = pd.read_csv(os.path.join(ensdf_path, "CSV_Files/ensdf_stable_state_formatted.csv"), header=None, sep='|')
+    df = df.drop(columns=[1, 2, 6])
+    df.columns = ["Element_w_A", "Spin", "Parity", "Half_Life", "Flag", "ENSDF_Spin", "Num_Decay_Modes", "Modifier", "Decay_Info"]
+    for col in df.columns:
+        df[col] = df[col].astype(str).str.strip()
+    df.Num_Decay_Modes = df.Num_Decay_Modes.replace("0+#", -1)
+    for col in df.columns:
+        if col not in ["Element_w_A", "Flag", "ENSDF_Spin", "Modifier", "Decay_Info"]:
+            df[col] = pd.to_numeric(df[col])
+    return df
 
 def load_ripl_parameters():
     """Loads the RIPL level cut-off parameters file.
@@ -228,8 +205,31 @@ def load_ripl_parameters():
     Returns:
         DataFrame: pandas DataFrame 
     """    
-    ripl_params = pd.read_csv("../ENSDF/CSV_Files/ripl_cut_off_energies.csv")
+    ripl_params = pd.read_csv(os.path.join(ensdf_path, "CSV_Files/ripl_cut_off_energies.csv"))
     return ripl_params
+
+def load_ensdf(cutoff=False, append_ame=False):
+    """Loads the Evalauted Nuclear Structure Data File generated using NucML.
+
+    Args:
+        cutoff (bool, optional): If True, the RIPL cutoff ENSDF file is loaded. Defaults to False.
+
+    Returns:
+        DataFrame: if num=True, the function returns 6 variables. 
+    """    
+    if cutoff:
+        datapath = os.path.join(ensdf_path, "CSV_Files/ensdf_cutoff.csv")
+    else:
+        datapath = os.path.join(ensdf_path, "CSV_Files/ensdf.csv")
+
+    logging.info("Reading data from {}".format(datapath))
+    df = pd.read_csv(datapath)
+    df["Level_Number"] = df["Level_Number"].astype(int)
+    if append_ame:
+        ame = load_ame(imputed_nan=True)
+        df = pd.merge(df, ame, on='Element_w_A')
+    return df
+
 
 def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=False, frac=0.3, scaling_type="std", scaler_dir=None):
     path = '../../ENSDF/CSV_Files/Level_Density' # use your path
@@ -256,8 +256,7 @@ def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=Fal
             df["Level_Energy"] = np.log10(df["Level_Energy"])
             df["Level_Number"] = np.log10(df["Level_Number"])
         if append_ame:
-            ame = load_ame(natural=False, nan=False)
-            ame = ame.rename(columns={"Element_w_A": "Target_Element_w_A", "Z": "Protons", "N": "Neutrons", "A": "Mass_Number"})
+            ame = load_ame(imputed_nan=True)
             df = pd.merge(df, ame, on='Target_Element_w_A')
         if basic == 0:
             basic_cols = ["Level_Number", "Level_Energy", "Protons", "Neutrons", "Mass_Number", "Atomic_Mass_Micro"]

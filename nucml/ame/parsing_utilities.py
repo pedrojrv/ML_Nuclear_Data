@@ -1,3 +1,5 @@
+# FINISHED 01/03/2020
+
 import logging
 import os
 import sys
@@ -9,8 +11,8 @@ import warnings
 sys.path.append("..")
 pd.options.mode.chained_assignment = None  # default='warn'
 
-from nucml.general_utilities import check_if_files_exist     # pylint: disable=import-error
-from nucml.processing import impute_values                   # pylint: disable=import-error
+from nucml.general_utilities import check_if_files_exist 
+from nucml.processing import impute_values                   
 
 
 
@@ -70,43 +72,39 @@ def read_mass16(originals_directory, saving_directory):
 
 
     filename = os.path.join(originals_directory, "mass16.txt")
-    if os.path.exists(filename):
-        logging.info("MASS16: Reading data from {}".format(filename))
-        data = pd.read_fwf(filename, colspecs=formatting, header=None, skiprows=39, names=column_names)
+    logging.info("MASS16: Reading data from {}".format(filename))
+    data = pd.read_fwf(filename, colspecs=formatting, header=None, skiprows=39, names=column_names)
 
-        logging.info("MASS16: Beginning formatting sequences...")
-        data["O"].fillna(value="Other", inplace=True)
-        data = data.replace(value=np.nan, to_replace="*")
+    logging.info("MASS16: Beginning formatting sequences...")
+    data["O"].fillna(value="Other", inplace=True)
+    data = data.replace(value=np.nan, to_replace="*")
 
-        for col in data.select_dtypes(include=['object']):
-            data[col] = data[col].apply(lambda x: str(x).replace("#", ""))
+    for col in data.select_dtypes(include=['object']):
+        data[col] = data[col].apply(lambda x: str(x).replace("#", ""))
 
-        mass16_dtypes = ['float64', 'int64', 'int64', 'int64', 'int64', 'float64', 'object', 'object', 'float64', 'float64',
-            'float64', 'float64', 'float64', 'float64', 'object', 'object', 'float64', 'float64', 'object', 'float64']
+    mass16_dtypes = ['float64', 'int64', 'int64', 'int64', 'int64', 'float64', 'object', 'object', 'float64', 'float64',
+        'float64', 'float64', 'float64', 'float64', 'object', 'object', 'float64', 'float64', 'object', 'float64']
 
-        for col, types in zip(data.columns, mass16_dtypes):
-            data[col] = data[col].astype(types)
-            
-        for col in ["Atomic_Mass_Micro"]:
-            data[col] = data[col].astype(str)
-            data[col] = data[col].str.strip("\"")
-            data[col] = data[col].str.replace(" ", "")
-            data[col] = data[col].str.strip()
+    for col, types in zip(data.columns, mass16_dtypes):
+        data[col] = data[col].astype(types)
+        
+    for col in ["Atomic_Mass_Micro"]:
+        data[col] = data[col].astype(str)
+        data[col] = data[col].str.strip("\"")
+        data[col] = data[col].str.replace(" ", "")
+        data[col] = data[col].str.strip()
 
-        data["Atomic_Mass_Micro"] = data["Atomic_Mass_Micro"].astype(float)
-        data["B_Decay_Energy"] = data["B_Decay_Energy"].astype(float)
+    data["Atomic_Mass_Micro"] = data["Atomic_Mass_Micro"].astype(float)
+    data["B_Decay_Energy"] = data["B_Decay_Energy"].astype(float)
 
-        data.drop(columns=["Page_Feed", "Other", "Other2", "Other3", "Beta_Type", "Other4", "NZ"], inplace=True)
+    data.drop(columns=["Page_Feed", "Other", "Other2", "Other3", "Beta_Type", "Other4", "NZ"], inplace=True)
 
-        data["Element_w_A"] = data["A"].astype(str) + data["EL"]
+    data["Element_w_A"] = data["A"].astype(str) + data["EL"]
 
-        csv_name = os.path.join(saving_directory, "AME_mass16.csv")
-        logging.info("MASS16: Formatting done. Saving file to {}".format(csv_name))
-        data.to_csv(csv_name, index=False)
-        logging.info("MASS16: Succesfully formated mass16.txt file.")
-    else:
-        logging.error("MASS16: mass16.txt file does not exists. Check that it exists on the given directory path.")
-        sys.exit()
+    csv_name = os.path.join(saving_directory, "AME_mass16.csv")
+    logging.info("MASS16: Formatting done. Saving file to {}".format(csv_name))
+    data.to_csv(csv_name, index=False)
+    logging.info("MASS16: Succesfully formated mass16.txt file.")
     return None
 
 def read_rct1(originals_directory, saving_directory):
@@ -132,38 +130,34 @@ def read_rct1(originals_directory, saving_directory):
 
     filename = os.path.join(originals_directory, "rct1-16.txt")
 
-    if os.path.exists(filename):
-        logging.info("RCT1: Reading data from {}".format(filename))
-        data = pd.read_fwf(filename, colspecs=formatting, header=None, skiprows=39, names=column_names)
-                        
-        logging.info("RCT1: Beginning formatting sequences...")
-        data = data.replace(to_replace="*", value=np.nan)
-        data.drop(columns=["Other", "Other2"], inplace=True)
+    logging.info("RCT1: Reading data from {}".format(filename))
+    data = pd.read_fwf(filename, colspecs=formatting, header=None, skiprows=39, names=column_names)
+                    
+    logging.info("RCT1: Beginning formatting sequences...")
+    data = data.replace(to_replace="*", value=np.nan)
+    data.drop(columns=["Other", "Other2"], inplace=True)
 
-        for col in list(data.columns):
-            data[col] = data[col].astype(str)
-            data[col] = data[col].str.strip("\"")
-            data[col] = data[col].str.strip()
-            data[col] = data[col].str.replace("#", ".")
+    for col in list(data.columns):
+        data[col] = data[col].astype(str)
+        data[col] = data[col].str.strip("\"")
+        data[col] = data[col].str.strip()
+        data[col] = data[col].str.replace("#", ".")
 
-        for col in list(data.columns):
-            if col == "EL":
-                pass
-            else:
-                data[col] = data[col].astype(float)
+    for col in list(data.columns):
+        if col == "EL":
+            pass
+        else:
+            data[col] = data[col].astype(float)
 
-        data[["A", "Z"]] = data[["A", "Z"]].astype(int)
-        data["N"] = data["A"] - data["Z"]
-        data["Element_w_A"] = data["A"].astype(str) + data["EL"]
-        data.drop(columns=["Page_Feed", "A", "EL", "Z", "N"], inplace=True)
+    data[["A", "Z"]] = data[["A", "Z"]].astype(int)
+    data["N"] = data["A"] - data["Z"]
+    data["Element_w_A"] = data["A"].astype(str) + data["EL"]
+    data.drop(columns=["Page_Feed", "A", "EL", "Z", "N"], inplace=True)
 
-        csv_name = os.path.join(saving_directory, "AME_rct1.csv")
-        logging.info("RCT1: Formatting done. Saving file to {}".format(csv_name))
-        data.to_csv(csv_name, index=False)
-        logging.info("RCT1: Succesfully formated rct1-16.txt file.")
-    else:
-        logging.error("rct1-16.txt file does not exists. Check that it exists on the given directory path.")
-        sys.exit()
+    csv_name = os.path.join(saving_directory, "AME_rct1.csv")
+    logging.info("RCT1: Formatting done. Saving file to {}".format(csv_name))
+    data.to_csv(csv_name, index=False)
+    logging.info("RCT1: Succesfully formated rct1-16.txt file.")
     return None
 
 def read_rct2(originals_directory, saving_directory):
@@ -189,39 +183,36 @@ def read_rct2(originals_directory, saving_directory):
 
     filename = os.path.join(originals_directory, "rct2-16.txt")
 
-    if os.path.exists(filename):
-        logging.info("RCT2: Reading data from {}".format(filename))
-        data = pd.read_fwf(filename, colspecs=formatting, header=None, skiprows=39, names=column_names)
 
-        logging.info("RCT2: Beginning formatting sequences...")
-        data = data.replace(to_replace="*", value=np.nan)
-        data.drop(columns=["Other", "Other2"], inplace=True)
+    logging.info("RCT2: Reading data from {}".format(filename))
+    data = pd.read_fwf(filename, colspecs=formatting, header=None, skiprows=39, names=column_names)
 
-        for col in list(data.columns):
-            data[col] = data[col].astype(str)
-            data[col] = data[col].str.strip("\"")
-            data[col] = data[col].str.strip()
-            data[col] = data[col].str.replace("#", ".")
+    logging.info("RCT2: Beginning formatting sequences...")
+    data = data.replace(to_replace="*", value=np.nan)
+    data.drop(columns=["Other", "Other2"], inplace=True)
 
-        for col in list(data.columns):
-            if col == "EL":
-                pass
-            else:
-                data[col] = data[col].astype(float)
+    for col in list(data.columns):
+        data[col] = data[col].astype(str)
+        data[col] = data[col].str.strip("\"")
+        data[col] = data[col].str.strip()
+        data[col] = data[col].str.replace("#", ".")
+
+    for col in list(data.columns):
+        if col == "EL":
+            pass
+        else:
+            data[col] = data[col].astype(float)
 
 
-        data[["A", "Z"]] = data[["A", "Z"]].astype(int)
-        data["N"] = data["A"] - data["Z"]
-        data["Element_w_A"] = data["A"].astype(str) + data["EL"]
-        data.drop(columns=["Page_Feed", "A", "EL", "Z", "N"], inplace=True)
+    data[["A", "Z"]] = data[["A", "Z"]].astype(int)
+    data["N"] = data["A"] - data["Z"]
+    data["Element_w_A"] = data["A"].astype(str) + data["EL"]
+    data.drop(columns=["Page_Feed", "A", "EL", "Z", "N"], inplace=True)
 
-        csv_name = os.path.join(saving_directory, "AME_rct2.csv")
-        logging.info("RCT2: Formatting done. Saving file to {}".format(csv_name))
-        data.to_csv(csv_name, index=False)
-        logging.info("RCT2: Succesfully formated rct2-16.txt file.")
-    else:
-        logging.error("RCT2: rct2-16.txt file does not exists. Check that it exists on the given directory path.")
-        sys.exit()
+    csv_name = os.path.join(saving_directory, "AME_rct2.csv")
+    logging.info("RCT2: Formatting done. Saving file to {}".format(csv_name))
+    data.to_csv(csv_name, index=False)
+    logging.info("RCT2: Succesfully formated rct2-16.txt file.")
     return None
 
 def merge_mass_rct(directory, create_imputed=True, add_qvalues=True):
@@ -279,64 +270,56 @@ def merge_mass_rct(directory, create_imputed=True, add_qvalues=True):
         rct1 = pd.read_csv(rct1_path)
         rct2 = pd.read_csv(rct2_path)
         
-        logging.info("MERGE: Checking for consistency among files...")
-        if len(rct1.Element_w_A.unique()) == len(rct2.Element_w_A.unique()) == len(data.Element_w_A.unique()):
-            df_final = pd.merge(data, rct1, on='Element_w_A')
-            df_final = pd.merge(df_final, rct2, on='Element_w_A')
+        df_final = pd.merge(data, rct1, on='Element_w_A')
+        df_final = pd.merge(df_final, rct2, on='Element_w_A')
 
-            if add_qvalues:
-                logging.info("MERGE: Q-value Calculation: enabled. Calculating additional reaction energies...")
-                df_final["Q(g,p)"] = -1 * df_final["S(p)"]
-                df_final["Q(g,n)"] = -1 * df_final["S(n)"]
-                df_final["Q(g,pn)"] = df_final["Q(d,a)"] - 26071.0939
-                df_final["Q(g,d)"] = df_final["Q(d,a)"] - 23846.5279
-                df_final["Q(g,t)"] = df_final["Q(p,a)"] - 19813.8649
-                df_final["Q(g,He3)"] = df_final["Q(n,a)"] - 20577.6194
-                df_final["Q(g,2p)"] = -1 * df_final["S(2p)"]
-                df_final["Q(g,2n)"] = -1 * df_final["S(2n)"]
-                df_final["Q(g,a)"] = df_final["Q(a)"]
-                df_final["Q(p,n)"] = df_final["B_Decay_Energy"] - 782.3465
-                df_final["Q(p,2p)"] = -1 * df_final["S(p)"]
-                df_final["Q(p,pn)"] = -1 * df_final["S(n)"]
-                df_final["Q(p,d)"] = -1 * df_final["S(n)"] + 2224.5660
-                df_final["Q(p,2n)"] = df_final["Q(B-n)"] - 782.3465
-                df_final["Q(p,t)"] = -1 * df_final["S(2n)"] + 8481.7949
-                df_final["Q(p,3He)"] = df_final["Q(d,a)"] - 18353.0535
-                df_final["Q(n,2p)"] = df_final["Q(ep)"] + 782.3465
-                df_final["Q(n,np)"] = -1 * df_final["S(p)"]
-                df_final["Q(n,d)"] = -1 * df_final["S(p)"] + 2224.5660
-                df_final["Q(n,2n)"] = -1 * df_final["S(n)"]
-                df_final["Q(n,t)"] = df_final["Q(d,a)"] - 17589.2989
-                df_final["Q(n,3He)"] = -1 * df_final["S(2p)"] + 7718.0404
-                df_final["Q(d,t)"] = -1 * df_final["S(n)"] + 6257.2290
-                df_final["Q(d,3He)"] = -1 * df_final["S(p)"] + 5493.4744
-                df_final["Q(3He,t)"] = df_final["B_Decay_Energy"] - 18.5920
-                df_final["Q(3He,a)"] = -1 * df_final["S(n)"] + 20577.6194
-                df_final["Q(t,a)"] = -1 * df_final["S(p)"] + 19813.8649
+        if add_qvalues:
+            logging.info("MERGE: Q-value Calculation: enabled. Calculating additional reaction energies...")
+            df_final["Q(g,p)"] = -1 * df_final["S(p)"]
+            df_final["Q(g,n)"] = -1 * df_final["S(n)"]
+            df_final["Q(g,pn)"] = df_final["Q(d,a)"] - 26071.0939
+            df_final["Q(g,d)"] = df_final["Q(d,a)"] - 23846.5279
+            df_final["Q(g,t)"] = df_final["Q(p,a)"] - 19813.8649
+            df_final["Q(g,He3)"] = df_final["Q(n,a)"] - 20577.6194
+            df_final["Q(g,2p)"] = -1 * df_final["S(2p)"]
+            df_final["Q(g,2n)"] = -1 * df_final["S(2n)"]
+            df_final["Q(g,a)"] = df_final["Q(a)"]
+            df_final["Q(p,n)"] = df_final["B_Decay_Energy"] - 782.3465
+            df_final["Q(p,2p)"] = -1 * df_final["S(p)"]
+            df_final["Q(p,pn)"] = -1 * df_final["S(n)"]
+            df_final["Q(p,d)"] = -1 * df_final["S(n)"] + 2224.5660
+            df_final["Q(p,2n)"] = df_final["Q(B-n)"] - 782.3465
+            df_final["Q(p,t)"] = -1 * df_final["S(2n)"] + 8481.7949
+            df_final["Q(p,3He)"] = df_final["Q(d,a)"] - 18353.0535
+            df_final["Q(n,2p)"] = df_final["Q(ep)"] + 782.3465
+            df_final["Q(n,np)"] = -1 * df_final["S(p)"]
+            df_final["Q(n,d)"] = -1 * df_final["S(p)"] + 2224.5660
+            df_final["Q(n,2n)"] = -1 * df_final["S(n)"]
+            df_final["Q(n,t)"] = df_final["Q(d,a)"] - 17589.2989
+            df_final["Q(n,3He)"] = -1 * df_final["S(2p)"] + 7718.0404
+            df_final["Q(d,t)"] = -1 * df_final["S(n)"] + 6257.2290
+            df_final["Q(d,3He)"] = -1 * df_final["S(p)"] + 5493.4744
+            df_final["Q(3He,t)"] = df_final["B_Decay_Energy"] - 18.5920
+            df_final["Q(3He,a)"] = -1 * df_final["S(n)"] + 20577.6194
+            df_final["Q(t,a)"] = -1 * df_final["S(p)"] + 19813.8649
 
-            csv_name = os.path.join(saving_directory, "AME_all_merged.csv")
-            logging.info("MERGE: Formatting done. Saving file to {}".format(csv_name))
+        csv_name = os.path.join(saving_directory, "AME_all_merged.csv")
+        logging.info("MERGE: Formatting done. Saving file to {}".format(csv_name))
+        df_final.to_csv(csv_name, index=False)
+        logging.info("MERGE: Succesfully merged files.")
+
+        if impute_values:
+            logging.info("MERGE: Imputing enabled. Interpolating...")
+            csv_name = os.path.join(saving_directory, "AME_all_merged_no_NaN.csv")
+            
+            warnings.filterwarnings('ignore')
+            df_final = impute_values(df_final)
+            df_final = df_final.interpolate(method='spline', order=1, limit=10, limit_direction='both')
+            df_final = df_final.interpolate()
+            warnings.filterwarnings('default')
             df_final.to_csv(csv_name, index=False)
-            logging.info("MERGE: Succesfully merged files.")
-
-            if impute_values:
-                logging.info("MERGE: Imputing enabled. Interpolating...")
-                csv_name = os.path.join(saving_directory, "AME_all_merged_no_NaN.csv")
-                
-                warnings.filterwarnings('ignore')
-                df_final = impute_values(df_final)
-                df_final = df_final.interpolate(method='spline', order=1, limit=10, limit_direction='both')
-                df_final = df_final.interpolate()
-                warnings.filterwarnings('default')
-                df_final.to_csv(csv_name, index=False)
-                logging.info("MERGE: Succesfully merged files. Imputing missing values...")
+            logging.info("MERGE: Succesfully merged files. Imputing missing values...")
  
-        else:
-            logging.error("MERGE: Shapes among the three files is not consistent.")
-            sys.exit()
-    else:
-        logging.error("MERGE: One of the three files does not exists in the given directory.")
-        sys.exit()
     return None
 
 def create_natural_element_data(originals_directory, saving_directory, fillna=True, mode="elemental", fill_value=0):

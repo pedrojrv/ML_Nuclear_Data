@@ -55,7 +55,102 @@ def get_isotope(zan_dict, Z, A, N):
     if ZAN == &#34;12019&#34;:
         return &#34;Water&#34;
     else:
-        return zan_dict[ZAN][&#34;Isotope&#34;]</code></pre>
+        return zan_dict[ZAN][&#34;Isotope&#34;]
+
+
+
+# def load_ensdf_ml(log=True, log_sqrt=False, cutoff=False, append_ame=False, basic=-1, num=False, frac=0.3, scaling_type=&#34;pt&#34;, scaler_dir=None):
+#     &#34;&#34;&#34;Loads the Evalauted Nuclear Structure Data File generated using NucML. This allows the user to load
+#     the raw file or preprocessed the dataset for ML applications. See options below.
+
+#     The basic feature allows you to load only some basic features if needed. The AME dataset contains
+#     many features including q-reactions and separation energies. Some of these may not be needed. The
+#     basic argument allows to quickly remove extra features. 
+#         basic = 0: &#34;Level_Number&#34;, &#34;Level_Energy&#34;, &#34;Protons&#34;, &#34;Neutrons&#34;, &#34;Mass_Number&#34;, &#34;Spin&#34;, &#34;Parity&#34;, &#34;Atomic_Mass_Micro&#34;
+#         basic = 1: &#34;Level_Number&#34;, &#34;Level_Energy&#34;, &#34;Protons&#34;, &#34;Neutrons&#34;, &#34;Mass_Number&#34;, &#34;Spin&#34;, &#34;Parity&#34;, 
+#             &#34;Atomic_Mass_Micro&#34;, &#39;Mass_Excess&#39;, &#39;Binding_Energy&#39;, &#39;B_Decay_Energy&#39;, &#39;S(2n)&#39;, &#39;S(n)&#39;, &#39;S(p)&#39;
+#         Any other number will default to loading the entire set of features.
+
+#     Args:
+#         cutoff (bool, optional): If True, the RIPL cutoff ENSDF file is loaded. Defaults to False.
+#         log (bool, optional): If True, the log10 is applied to the Level Number feature. It also applies 
+#             the square root to the Level Energy feature. Defaults to False.
+#         append_ame (bool, optional): if True, it appends the AME database. Defaults to False.
+#         basic (int, optional): This allows to retrieve only basic features. 
+#             Only meaningful when append_ame is True. Defaults to -1.
+#         num (bool, optional): [description]. Defaults to False.
+#         frac (float, optional): [description]. Defaults to 0.3.
+#         scaling_type (str, optional): [description]. Defaults to &#34;pt&#34;.
+#         scaler_dir ([type], optional): [description]. Defaults to None.
+
+#     Returns:
+#         DataFrame: if num=True, the function returns 6 variables. 
+#     &#34;&#34;&#34;    
+#     if cutoff:
+#         datapath = &#34;../../ENSDF/CSV_Files/ensdf_cutoff.csv&#34;
+#     else:
+#         datapath = &#34;../../ENSDF/CSV_Files/ensdf.csv&#34;
+
+#     logging.info(&#34;Reading data from {}&#34;.format(datapath))
+#     df = pd.read_csv(datapath)
+#     df[&#34;Level_Number&#34;] = df[&#34;Level_Number&#34;].astype(int)
+
+
+#     if log_sqrt and not log:
+#         df[&#34;Level_Energy&#34;] = np.sqrt(df[&#34;Level_Energy&#34;])
+#         df[&#34;Level_Number&#34;] = np.log10(df[&#34;Level_Number&#34;])
+#     if log and not log_sqrt:
+#         df = df[(df[&#34;Level_Energy&#34;] != 0)]
+#         df[&#34;Level_Energy&#34;] = np.log10(df[&#34;Level_Energy&#34;])
+#         df[&#34;Level_Number&#34;] = np.log10(df[&#34;Level_Number&#34;])
+#     if append_ame:
+#         ame = load_ame(imputed_nan=True)
+#         df = pd.merge(df, ame, on=&#39;Element_w_A&#39;)
+
+#     if basic == 0:
+#         basic_cols = [&#34;Level_Number&#34;, &#34;Energy&#34;, &#34;Z&#34;, &#34;N&#34;, &#34;A&#34;, &#34;Spin&#34;, &#34;Parity&#34;, &#34;Atomic_Mass_Micro&#34;]
+#         df = df[basic_cols]
+#     elif basic == 1:
+#         basic_cols = [&#34;Level_Number&#34;, &#34;Energy&#34;, &#34;Z&#34;, &#34;N&#34;, &#34;A&#34;, &#34;Spin&#34;, &#34;Parity&#34;, &#34;Atomic_Mass_Micro&#34;,
+#                     &#39;Mass_Excess&#39;, &#39;Binding_Energy&#39;, &#39;B_Decay_Energy&#39;, &#39;S(n)&#39;, &#39;S(p)&#39;]
+#         df = df[basic_cols] 
+
+#     if num:
+#         logging.info(&#34;Dropping unnecessary features and one-hot encoding categorical columns...&#34;)
+#         if basic == 0 or basic == 1:
+#             cat_cols = [&#34;Parity&#34;]
+#         else:
+#             columns_drop = [&#34;Target_Element_w_A&#34;, &#34;EL&#34;, &#34;O&#34;, &#34;Decay_Info&#34;, &#34;ENSDF_Spin&#34;]
+#             cat_cols = [&#34;Parity&#34;, &#34;Flag&#34;]
+#             df = df.drop(columns=columns_drop)
+#         # We need to keep track of columns to normalize excluding categorical data.
+#         norm_columns = len(df.columns) - len(cat_cols) - 1
+#         df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
+#         df = df.fillna(value=0)
+#         logging.info(&#34;Splitting dataset into training and testing...&#34;)
+#         x_train, x_test, y_train, y_test = train_test_split(df.drop([&#34;Level_Energy&#34;], axis=1), df[&#34;Level_Energy&#34;], test_size=frac)
+#         logging.info(&#34;Normalizing dataset...&#34;)
+#         to_scale = list(x_train.columns)[:norm_columns]
+#         if log_sqrt or log:
+#             to_scale.remove(&#34;Level_Number&#34;)
+#         if scaler_dir is not None:
+#             logging.info(&#34;Using previously saved scaler.&#34;)
+#             scaler = load(open(scaler_dir, &#39;rb&#39;))
+#         else:
+#             logging.info(&#34;Fitting new scaler.&#34;)
+#             if scaling_type == &#34;pt&#34;:
+#                 scaler = preprocessing.PowerTransformer().fit(x_train[to_scale])
+#             elif scaling_type == &#34;std&#34;:
+#                 scaler = preprocessing.StandardScaler().fit(x_train[to_scale])
+#             elif scaling_type == &#34;minmax&#34;:
+#                 scaler = preprocessing.MinMaxScaler().fit(x_train[to_scale])
+#         x_train[to_scale] = scaler.transform(x_train[to_scale])
+#         x_test[to_scale] = scaler.transform(x_test[to_scale])
+#         logging.info(&#34;Finished. Resulting dataset has shape {}, Training and Testing dataset shapes are {} and {} respesctively.&#34;.format(df.shape, x_train.shape, x_test.shape))
+#         return df, x_train, x_test, y_train, y_test, to_scale, scaler
+#     else:
+#         logging.info(&#34;Finished. Resulting dataset has shape {}&#34;.format(df.shape))
+#         return df</code></pre>
 </details>
 </section>
 <section>

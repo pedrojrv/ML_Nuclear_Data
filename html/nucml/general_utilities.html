@@ -35,13 +35,10 @@ import glob
 import shutil
 import pickle
 import sys
+import re
+from natsort import natsorted
 
-        
-# def check_if_exist(files_list):
-#     if all([os.path.isfile(f) for f in files_list]):
-#         return True
-#     else:
-#         return False
+
 
 def get_files_w_extension(directory, extension):
     &#34;&#34;&#34;Gets a list of relative paths to files that match the given extension in the given directory
@@ -55,47 +52,8 @@ def get_files_w_extension(directory, extension):
     &#34;&#34;&#34;    
     extension = &#34;*&#34; + extension
     files = glob.glob(os.path.join(directory, extension))
-    if len(files) != 0:
-        return files
-    else:
-        return sys.exit(&#34;GENERAL UTILITIES: No {} files found. Make sure you specified the path correctly.&#34;.format(extension))
-
-def initialize_directories(directory):
-    &#34;&#34;&#34;Creates or resets the given directories.
-
-    Args:
-        directory (str): path to directory to reset or create.
-
-    Returns:
-        None
-
-    &#34;&#34;&#34;
-    if os.path.isdir(directory):
-        logging.info(&#34;GEN UTILS: Directory already exists. Re-initializing...&#34;)
-        shutil.rmtree(directory)
-        os.makedirs(directory)
-        logging.info(&#34;GEN UTILS: Directory restarted.&#34;)
-    else:
-        logging.info(&#34;GEN UTILS: Directory does not exists. Creating...&#34;)
-        os.makedirs(directory)
-        logging.info(&#34;GEN UTILS: Directory created.&#34;)
-
-def create_directories(directory):
-    &#34;&#34;&#34;Creates or resets the given directories.
-
-    Args:
-        directory (str): path to directory to reset or create.
-
-    Returns:
-        None
-
-    &#34;&#34;&#34;
-    if os.path.isdir(directory):
-        logging.info(&#34;GEN UTILS: Directory already exists.&#34;)
-    else:
-        logging.info(&#34;GEN UTILS: Directory does not exists. Creating...&#34;)
-        os.makedirs(directory)
-        logging.info(&#34;GEN UTILS: Directory created.&#34;)
+    files = natsorted(files)
+    return files
 
 def initialize_directories_v2(directory, reset=False):
     &#34;&#34;&#34;Creates or resets the given directories.
@@ -135,7 +93,44 @@ def save_obj(obj, saving_dir, name):
 
 def load_obj(file_path):
     with open(file_path, &#39;rb&#39;) as f:
-        return pickle.load(f)</code></pre>
+        return pickle.load(f)
+
+
+def parse_mt(mt_number, mt_for=&#34;endf&#34;, one_hot=False):
+    if mt_for.upper() == &#34;ENDF&#34;:
+        mt_number = str(int(mt_number))
+        if mt_number.isdigit():
+            if len(mt_number) != 3:
+                mt_number = mt_number.zfill(3)
+            return &#34;MT&#34; + mt_number
+    # elif mt_for.upper() == &#34;EXFOR&#34;:
+    #     if one_hot:
+    #         _, mt_number = re.findall(r&#39;[A-Za-z]+|\d+&#39;, mt_number)
+
+    #     if one_hot:
+    #         mt_endf, mt_num_endf = mt_number.split(&#34;_&#34;)
+    #     else:
+    #         mt_endf, mt_num_endf = &#34;MT&#34;, mt_number
+
+    #     mt_num_endf = mt_num_endf.zfill(3)
+    #     mt_endf = mt_endf + mt_num_endf
+    else:
+        raise SyntaxError(&#39;MT value provided is not numeric.&#39;)
+    
+def parse_elaaa(ELAAA, parse_for=&#34;endf&#34;):
+    element, mass = re.findall(r&#39;[A-Za-z]+|\d+&#39;, ELAAA)
+    if element.isdigit():
+        mass, element = re.findall(r&#39;[A-Za-z]+|\d+&#39;, ELAAA)
+    element = element.capitalize()
+
+    if parse_for.upper() == &#34;ENDF&#34;:
+        if len(mass) != 3:
+            mass = mass.zfill(3)
+        return element + mass
+    elif parse_for.upper() == &#34;ENSDF&#34;:
+        return mass + element
+    else:
+        raise SyntaxError(&#39;MT value provided is not numeric.&#39;)</code></pre>
 </details>
 </section>
 <section>
@@ -159,40 +154,6 @@ def load_obj(file_path):
         return True
     else:
         return False</code></pre>
-</details>
-</dd>
-<dt id="nucml.general_utilities.create_directories"><code class="name flex">
-<span>def <span class="ident">create_directories</span></span>(<span>directory)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Creates or resets the given directories.</p>
-<h2 id="args">Args</h2>
-<dl>
-<dt><strong><code>directory</code></strong> :&ensp;<code>str</code></dt>
-<dd>path to directory to reset or create.</dd>
-</dl>
-<h2 id="returns">Returns</h2>
-<p>None</p></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">def create_directories(directory):
-    &#34;&#34;&#34;Creates or resets the given directories.
-
-    Args:
-        directory (str): path to directory to reset or create.
-
-    Returns:
-        None
-
-    &#34;&#34;&#34;
-    if os.path.isdir(directory):
-        logging.info(&#34;GEN UTILS: Directory already exists.&#34;)
-    else:
-        logging.info(&#34;GEN UTILS: Directory does not exists. Creating...&#34;)
-        os.makedirs(directory)
-        logging.info(&#34;GEN UTILS: Directory created.&#34;)</code></pre>
 </details>
 </dd>
 <dt id="nucml.general_utilities.func"><code class="name flex">
@@ -241,47 +202,8 @@ def load_obj(file_path):
     &#34;&#34;&#34;    
     extension = &#34;*&#34; + extension
     files = glob.glob(os.path.join(directory, extension))
-    if len(files) != 0:
-        return files
-    else:
-        return sys.exit(&#34;GENERAL UTILITIES: No {} files found. Make sure you specified the path correctly.&#34;.format(extension))</code></pre>
-</details>
-</dd>
-<dt id="nucml.general_utilities.initialize_directories"><code class="name flex">
-<span>def <span class="ident">initialize_directories</span></span>(<span>directory)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Creates or resets the given directories.</p>
-<h2 id="args">Args</h2>
-<dl>
-<dt><strong><code>directory</code></strong> :&ensp;<code>str</code></dt>
-<dd>path to directory to reset or create.</dd>
-</dl>
-<h2 id="returns">Returns</h2>
-<p>None</p></div>
-<details class="source">
-<summary>
-<span>Expand source code</span>
-</summary>
-<pre><code class="python">def initialize_directories(directory):
-    &#34;&#34;&#34;Creates or resets the given directories.
-
-    Args:
-        directory (str): path to directory to reset or create.
-
-    Returns:
-        None
-
-    &#34;&#34;&#34;
-    if os.path.isdir(directory):
-        logging.info(&#34;GEN UTILS: Directory already exists. Re-initializing...&#34;)
-        shutil.rmtree(directory)
-        os.makedirs(directory)
-        logging.info(&#34;GEN UTILS: Directory restarted.&#34;)
-    else:
-        logging.info(&#34;GEN UTILS: Directory does not exists. Creating...&#34;)
-        os.makedirs(directory)
-        logging.info(&#34;GEN UTILS: Directory created.&#34;)</code></pre>
+    files = natsorted(files)
+    return files</code></pre>
 </details>
 </dd>
 <dt id="nucml.general_utilities.initialize_directories_v2"><code class="name flex">
@@ -337,6 +259,62 @@ def load_obj(file_path):
         return pickle.load(f)</code></pre>
 </details>
 </dd>
+<dt id="nucml.general_utilities.parse_elaaa"><code class="name flex">
+<span>def <span class="ident">parse_elaaa</span></span>(<span>ELAAA, parse_for='endf')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parse_elaaa(ELAAA, parse_for=&#34;endf&#34;):
+    element, mass = re.findall(r&#39;[A-Za-z]+|\d+&#39;, ELAAA)
+    if element.isdigit():
+        mass, element = re.findall(r&#39;[A-Za-z]+|\d+&#39;, ELAAA)
+    element = element.capitalize()
+
+    if parse_for.upper() == &#34;ENDF&#34;:
+        if len(mass) != 3:
+            mass = mass.zfill(3)
+        return element + mass
+    elif parse_for.upper() == &#34;ENSDF&#34;:
+        return mass + element
+    else:
+        raise SyntaxError(&#39;MT value provided is not numeric.&#39;)</code></pre>
+</details>
+</dd>
+<dt id="nucml.general_utilities.parse_mt"><code class="name flex">
+<span>def <span class="ident">parse_mt</span></span>(<span>mt_number, mt_for='endf', one_hot=False)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parse_mt(mt_number, mt_for=&#34;endf&#34;, one_hot=False):
+    if mt_for.upper() == &#34;ENDF&#34;:
+        mt_number = str(int(mt_number))
+        if mt_number.isdigit():
+            if len(mt_number) != 3:
+                mt_number = mt_number.zfill(3)
+            return &#34;MT&#34; + mt_number
+    # elif mt_for.upper() == &#34;EXFOR&#34;:
+    #     if one_hot:
+    #         _, mt_number = re.findall(r&#39;[A-Za-z]+|\d+&#39;, mt_number)
+
+    #     if one_hot:
+    #         mt_endf, mt_num_endf = mt_number.split(&#34;_&#34;)
+    #     else:
+    #         mt_endf, mt_num_endf = &#34;MT&#34;, mt_number
+
+    #     mt_num_endf = mt_num_endf.zfill(3)
+    #     mt_endf = mt_endf + mt_num_endf
+    else:
+        raise SyntaxError(&#39;MT value provided is not numeric.&#39;)</code></pre>
+</details>
+</dd>
 <dt id="nucml.general_utilities.save_obj"><code class="name flex">
 <span>def <span class="ident">save_obj</span></span>(<span>obj, saving_dir, name)</span>
 </code></dt>
@@ -370,12 +348,12 @@ def load_obj(file_path):
 <li><h3><a href="#header-functions">Functions</a></h3>
 <ul class="">
 <li><code><a title="nucml.general_utilities.check_if_files_exist" href="#nucml.general_utilities.check_if_files_exist">check_if_files_exist</a></code></li>
-<li><code><a title="nucml.general_utilities.create_directories" href="#nucml.general_utilities.create_directories">create_directories</a></code></li>
 <li><code><a title="nucml.general_utilities.func" href="#nucml.general_utilities.func">func</a></code></li>
 <li><code><a title="nucml.general_utilities.get_files_w_extension" href="#nucml.general_utilities.get_files_w_extension">get_files_w_extension</a></code></li>
-<li><code><a title="nucml.general_utilities.initialize_directories" href="#nucml.general_utilities.initialize_directories">initialize_directories</a></code></li>
 <li><code><a title="nucml.general_utilities.initialize_directories_v2" href="#nucml.general_utilities.initialize_directories_v2">initialize_directories_v2</a></code></li>
 <li><code><a title="nucml.general_utilities.load_obj" href="#nucml.general_utilities.load_obj">load_obj</a></code></li>
+<li><code><a title="nucml.general_utilities.parse_elaaa" href="#nucml.general_utilities.parse_elaaa">parse_elaaa</a></code></li>
+<li><code><a title="nucml.general_utilities.parse_mt" href="#nucml.general_utilities.parse_mt">parse_mt</a></code></li>
 <li><code><a title="nucml.general_utilities.save_obj" href="#nucml.general_utilities.save_obj">save_obj</a></code></li>
 </ul>
 </li>

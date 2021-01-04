@@ -91,14 +91,15 @@ def parse_mt(mt_number, mt_for="endf", one_hot=False):
     
 def parse_elaaa(ELAAA, parse_for="endf"):
     element, mass = re.findall(r'[A-Za-z]+|\d+', ELAAA)
+    if element.isdigit():
+        mass, element = re.findall(r'[A-Za-z]+|\d+', ELAAA)
     element = element.capitalize()
 
     if parse_for.upper() == "ENDF":
         if len(mass) != 3:
             mass = mass.zfill(3)
         return element + mass
-    #         elif mt_for.upper() == "EXFOR":
-    #             if one_hot:
-    #                 mt_num_endf = 
+    elif parse_for.upper() == "ENSDF":
+        return mass + element
     else:
         raise SyntaxError('MT value provided is not numeric.')

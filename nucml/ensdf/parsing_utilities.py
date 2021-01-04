@@ -26,7 +26,6 @@ def get_ripl_dat_paths(dat_directory):
     logging.info("RIPL: Finished. Found {} .dat files.".format(len(names)))
     return names
 
-
 def get_headers(dat_list, saving_directory):
     """Retrieves the avaliable raw header for all .dat files.
 
@@ -52,7 +51,7 @@ def get_headers(dat_list, saving_directory):
             if line.strip():
                 string = list(line)
                 for i, j in enumerate([5, 10, 15, 20, 25, 30, 35, 47]):
-                    string.insert(i + j, ';')
+                    string.insert(i + j, '|')
                 outfile.write("".join(string))
     os.remove(raw_header_file)
     logging.info("ENSDF: Finished. Saved to {}".format(header_file))
@@ -77,7 +76,7 @@ def generate_elemental_ensdf(dat_list, header_directory, saving_directory):
     """
     csv_file = os.path.join(header_directory, "all_ensdf_headers_formatted.csv")
     ensdf_index_col = ["SYMB", "A", "Z", "Nol", "Nog", "Nmax", "Nc", "Sn", "Sp"]
-    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep=";")
+    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep="|")
     ensdf_index["Text_Filenames"] = ensdf_index["SYMB"].apply(lambda x: x.strip())
     element_list_endf = ensdf_index.SYMB.tolist() # string that files start with
     element_list_names = ensdf_index.Text_Filenames.tolist() # same strings but stripped
@@ -115,7 +114,7 @@ def generate_elemental_ensdf(dat_list, header_directory, saving_directory):
                 if line.strip():
                     string = list(line)
                     for i, j in enumerate([4, 15, 20, 23, 34, 37, 39, 43, 54, 65, 66]):
-                        string.insert(i + j, ';')
+                        string.insert(i + j, '|')
                     outfile.write("".join(string))
     logging.info("ENSDF Elemental: Finished formating data.")
     return None
@@ -137,7 +136,7 @@ def get_stable_states(dat_list, header_directory, saving_directory=None):
         saving_directory = header_directory
     csv_file = os.path.join(header_directory, "all_ensdf_headers_formatted.csv")
     ensdf_index_col = ["SYMB", "A", "Z", "Nol", "Nog", "Nmax", "Nc", "Sn", "Sp"]
-    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep=";")
+    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep="|")
     element_list_endf = ensdf_index.SYMB.tolist() # string that files start with
 
     logging.info("STABLE STATES: Extracting stable states from .dat files...")
@@ -155,8 +154,8 @@ def get_stable_states(dat_list, header_directory, saving_directory=None):
         for line in infile:
             if line.strip():
                 string = list(line)
-                for i, j in enumerate([5, 10, 19, 25, 28, 39, 42, 44, 46, 59, 68, 71, 74, 85, 93, 96, 107, 115]):
-                    string.insert(i + j, ';')
+                for i, j in enumerate([5, 10, 19, 25, 28, 39, 42, 44, 68, 71, 74]):
+                    string.insert(i + j, '|')
                 outfile.write("".join(string))
     logging.info("STABLE STATES: Finished.")
     os.remove(os.path.join(header_directory, "ensdf_stable_state.txt"))
@@ -179,29 +178,19 @@ def generate_ensdf_csv(header_directory, elemental_directory, saving_directory=N
         saving_directory = header_directory
     csv_file = os.path.join(header_directory, "all_ensdf_headers_formatted.csv")
     ensdf_index_col = ["SYMB", "A", "Z", "Nol", "Nog", "Nmax", "Nc", "Sn", "Sp"]
-    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep=";")
+    ensdf_index = pd.read_csv(csv_file, names=ensdf_index_col, sep="|")
     ensdf_index["Text_Filenames"] = ensdf_index["SYMB"].apply(lambda x: x.strip())
     element_list_names = ensdf_index.Text_Filenames.tolist() # same strings but stripped
 
     logging.info("ENSDF CSV: Creatign DataFrame with Basic ENSDF data ...")
     appended_data = []
-    ensdf_cols = ["Level_Number", "Level_Energy", "Spin", "Parity", "Half_Life", 
-                "Number_Gammas", "Flag_Spin", "Flag_Energy", "Other", "Other2", "Other3", "Other4"]
-
     for e in element_list_names:
-        with open(os.path.join(elemental_directory, "Elemental_ENSDF_no_Header_F/" + e + ".txt"), "r") as infile:
-            element_ensdf = pd.read_csv(infile, sep=";", names=ensdf_cols)
-            element_ensdf["Level_Number"] = element_ensdf["Level_Number"].astype(str)
-            element_ensdf["Level_Number"] = element_ensdf["Level_Number"].apply(lambda x: x.strip())
-            element_ensdf["Level_Number"] = element_ensdf["Level_Number"].replace(to_replace="", value=np.nan)
-            element_ensdf = element_ensdf.dropna().reset_index(drop=True)
-            element_ensdf["Element_w_A"] = e
-            appended_data.append(element_ensdf)
+        element_ensdf = nuc_data.load_ensdf_isotopic(e)
+        element_ensdf["Element_w_A"] = e
+        appended_data.append(element_ensdf)
     logging.info("ENSDF CSV: Finished creating list of dataframes.")
 
     appended_data = pd.concat(appended_data)
-    appended_data = appended_data[["Level_Number", "Level_Energy", "Spin", "Parity", "Element_w_A"]]
-    appended_data.columns = ["Level_Number", "Level_Energy", "Spin", "Parity", "Target_Element_w_A"]
     appended_data.to_csv(os.path.join(saving_directory, "ensdf.csv"), index=False)
     return None
 
@@ -233,11 +222,11 @@ def get_level_parameters(level_params_directory, saving_directory=None):
 
     cut_off_cols = ["Z", "A", "Element", "Temperature_MeV", "Temperature_U", "Black_Shift", 
             "Black_Shift_U", "N_Lev_ENSDF", "N_Max_Lev_Complete", "Min_Lev_Complete", 
-            "Num_Lev_Unique_Spin", "E_Max_N_Max", "E_Num_Lev_U_Spin", "Other", "Other2", 
-            "Flag", "Nox", "Other3", "Other4", "Spin_Cutoff"]
+            "Num_Lev_Unique_Spin", "E_Max_N_Max", "E_Num_Lev_U_Spin", "Chi", "Fit", 
+            "Flag", "Nox", "Xm_Ex", "Sigma"]
     cut_off = pd.read_csv(save_file, names=cut_off_cols, skiprows=4, sep=";")
     cut_off["Element"] = cut_off["Element"].apply(lambda x: x.strip())
-    cut_off["Target_Element_w_A"] = cut_off["A"].astype(str) + cut_off["Element"]
+    cut_off["Element_w_A"] = cut_off["A"].astype(str) + cut_off["Element"]
     cut_off = cut_off[~cut_off.Element.str.contains(r'\d')]
     cut_off.to_csv(save_file, index=False)
     logging.info("ENSDF RIPL: Finished.")
@@ -268,37 +257,27 @@ def generate_cutoff_ensdf(ensdf_directory, elemental_directory, ripl_directory=N
     ensdf_path = os.path.join(ensdf_directory, "ensdf.csv")
     cut_off_path = os.path.join(ripl_directory, "ripl_cut_off_energies.csv")
 
-    files = [ensdf_path, cut_off_path]
-
     logging.info("ENSDF CutOff: Loading ENSDF and RIPL parameters...")
     ensdf = pd.read_csv(ensdf_path)
     cut_off = pd.read_csv(cut_off_path)
 
-    str_cols = ["Spin", "Parity", "Target_Element_w_A"]
+    str_cols = ["Spin", "Parity", "Element_w_A"]
     ensdf[str_cols] = ensdf[str_cols].astype('category')
-    ensdf["Level_Energy"] = ensdf["Level_Energy"].astype('float')
     ensdf["Level_Number"] = ensdf["Level_Number"].astype(int)
 
-    element_list_names = ensdf.Target_Element_w_A.unique()
+    element_list_names = ensdf.Element_w_A.unique()
 
     appended_data = []
     logging.info("ENSDF CutOff: Cutting off ENSDF...")
-    ensdf_cols = ["Level_Number", "Level_Energy", "Spin", "Parity", "Half_Life", 
-                "Number_Gammas", "Flag_Spin", "Flag_Energy", "Other", "Other2", "Other3", "Other4"]
     for e in element_list_names:
-        with open(os.path.join(elemental_directory,  e + ".txt"), "r") as infile:
-            element_ensdf = pd.read_csv(infile, sep=";", names=ensdf_cols)
-            element_ensdf["Level_Number"] = element_ensdf.Level_Number.astype(str).apply(
-                lambda x: x.strip()).replace(to_replace="", value=np.nan)
-            element_ensdf = element_ensdf.dropna().reset_index(drop=True)
-            element_ensdf["Target_Element_w_A"] = e
-
-            x = cut_off[cut_off.Target_Element_w_A == e].N_Max_Lev_Complete.values[0]
-            if x == 0:
-                element_ensdf = element_ensdf.iloc[0:1]
-            else:
-                element_ensdf = element_ensdf.iloc[0:x]
-            appended_data.append(element_ensdf)
+        element_ensdf = nuc_data.load_ensdf_isotopic(e)
+        element_ensdf["Element_w_A"] = e
+        x = cut_off[cut_off.Element_w_A == e].N_Max_Lev_Complete.values[0]
+        if x == 0:
+            element_ensdf = element_ensdf.iloc[0:1]
+        else:
+            element_ensdf = element_ensdf.iloc[0:x]    
+        appended_data.append(element_ensdf)
 
     appended_data = pd.concat(appended_data)
     appended_data = appended_data.to_csv(os.path.join(saving_directory, "ensdf_cutoff.csv"), index=False)

@@ -2,7 +2,6 @@ import os
 import shutil
 import logging
 import numbers
-
 import numpy as np
 import pandas as pd
 from natsort import natsorted
@@ -10,10 +9,12 @@ import sys
 
 sys.path.append("..")
 
-from nucml import general_utilities # pylint: disable=import-error
-import nucml.objects.objects as objects # pylint: disable=import-error
+from nucml import general_utilities 
+import nucml.objects.objects as objects 
+import nucml.config as config
 
-ame_dir_path = os.path.abspath("../AME/")
+
+ame_dir_path = config.ame_dir_path
 
 def get_all(c4_list, heavy_path, tmp_path, mode="neutrons"):
     """Retrieves all avaliable information from all .c4 files. This function combines the
@@ -197,7 +198,7 @@ def get_all(c4_list, heavy_path, tmp_path, mode="neutrons"):
         sys.exit()
         return None
 
-def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=True):
+def csv_creator(heavy_path, tmp_path, mode, append_ame=True):
     """Creates files containing all extracted features generated when using the get_all() function.
     The following CSV files are created:
 
@@ -212,7 +213,6 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
     Args:
         heavy_path (str): path to directory where heavy files are to be saved.
         tmp_path (str): path to directory where temporary files are to be saved.
-        ame_dir (str): path to directory where proccessed AME files are saved.
         append_ame (bool): if True, the AME data will be appended to the final EXFOR CSV.
         fillna (bool): if True, an additional CSV file .
 
@@ -450,7 +450,7 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
     if append_ame:
         logging.info("EXFOR CSV: Reading AME file...")
         df_workxs = df.copy()
-        masses = pd.read_csv(ame_dir + "AME_Natural_Properties_w_NaN.csv").rename(
+        masses = pd.read_csv(os.path.join(ame_dir_path, "AME_Natural_Properties_w_NaN.csv")).rename(
             columns={'N': 'Neutrons', 'A': 'Mass_Number', 'Neutrons':'N', 'Mass_Number':'A', 'Flag':'Element_Flag'})
         df_workxs = df_workxs.reset_index(drop=True)
         masses = masses.reset_index(drop=True)
@@ -464,14 +464,14 @@ def csv_creator(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=Tru
         df.to_csv(csv_name, index=False)
     return None
 
-def impute_original_exfor(heavy_path, tmp_path, mode, ame_dir=ame_dir_path, append_ame=True, MF_number="3"):
+def impute_original_exfor(heavy_path, tmp_path, mode, append_ame=True, MF_number="3"):
     csv_name = os.path.join(heavy_path, "EXFOR_" + mode + "_ORIGINAL.csv")
     df = pd.read_csv(csv_name)
 
     if append_ame:
         logging.info("EXFOR CSV: Reading AME file...")
         df_workxs = df.copy()
-        masses = pd.read_csv(ame_dir + "AME_Natural_Properties_no_NaN.csv").rename(
+        masses = pd.read_csv(os.path.join(ame_dir_path, "AME_Natural_Properties_no_NaN.csv")).rename(
             columns={'N': 'Neutrons', 'A': 'Mass_Number', 'Neutrons':'N', 'Mass_Number':'A', 'Flag':'Element_Flag'})
 
         df_workxs = df_workxs.reset_index(drop=True)

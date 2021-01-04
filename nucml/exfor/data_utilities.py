@@ -19,7 +19,7 @@ from sklearn.model_selection import train_test_split
 sys.path.append("..")
 
 import nucml.ace.data_utilities as ace_utils        # pylint: disable=import-error
-import nucml.endf.data_utilities as endf_utils      # pylint: disable=import-error
+import nucml.evaluation.data_utilities as endf_utils      # pylint: disable=import-error
 import nucml.datasets as nuc_data                   # pylint: disable=import-error
 import nucml.model.model_utilities as model_utils   # pylint: disable=import-error
 import nucml.plot.plotting_utilities as plot_utils  # pylint: disable=import-error
