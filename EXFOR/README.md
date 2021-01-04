@@ -33,14 +33,6 @@ This directory contains files related to the Experimental Nuclear Reaction Datab
             - 0_Extracting_EXFOR_data_TEMPLATE.ipynb
             - 1_Extracting_EXFOR_data_ALL.ipynb
         | tmp
-            | Extracted_Text_alphas
-                - authors.txt
-                - data_points_per_experiment_refined.txt
-                ...
-                - years.txt
-            | Extracted_Text_deuterons
-            | ...
-            | Extracted_Text_protons
 ```
 
 # C4 Files
@@ -82,3 +74,6 @@ In addition to the projectile subdirectories, two more CSV files are provided.
 - `institute_codes.csv` contains the experimental facilities codes used in EXFOR.
 - `mt_codes.csv` contains an alternative representation for the reaction channel. This is my experimental representation and its accuracy is in no way guaranteed. 
 
+# Notebooks
+
+This directory contains two notebooks. The first one has the source code in jupyter notebook form for the EXFOR extraction utilities. This is my experimental playground. The second notebook goes through a tutorial on how all CSV files where created using NucML parsing utilities for each projectile. It is a great place to look for in case a new EXFOR dataset needs to be processed from new C4 files. 

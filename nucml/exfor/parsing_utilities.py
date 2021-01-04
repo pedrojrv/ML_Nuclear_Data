@@ -31,7 +31,7 @@ def get_all(c4_list, heavy_path, tmp_path, mode="neutrons"):
     - get_reaction_notation()
     - get_datapoints_per_experiment()
 
-    It is optimized to run faster than running the individual functions.
+    It is optimized to run faster than running the individual functions. Once finished
 
     Args:
         c4_list (list): iterable containing the paths to c4 files.
@@ -194,9 +194,7 @@ def get_all(c4_list, heavy_path, tmp_path, mode="neutrons"):
         logging.info("EXFOR: Finished.")
         return None
     else:
-        logging.error("EXFOR:  No .c4 files found. Make sure you specified the path correctly.")
-        sys.exit()
-        return None
+        raise FileNotFoundError("No .C4 files passed. Check your list.")
 
 def csv_creator(heavy_path, tmp_path, mode, append_ame=True):
     """Creates files containing all extracted features generated when using the get_all() function.
@@ -220,6 +218,9 @@ def csv_creator(heavy_path, tmp_path, mode, append_ame=True):
         None
 
     """
+    heavy_path = os.path.join(heavy_path, "EXFOR_{}".format(mode))
+    tmp_path = os.path.join(tmp_path, "Extracted_Text_{}".format(mode))
+
     logging.info("EXFOR CSV: Reading data points from {}/all_cross_sections_v1.txt file into a DataFrame...".format(heavy_path))
     colnames = ["Projectile", "Target_ZA", "Target_Metastable_State", "MF", "MT", "Product_Metastable_State", \
                 "EXFOR_Status", "Center_of_Mass_Flag", "Energy",  "dEnergy",  "Data", "dData",   "Cos/LO",   "dCos/LO", \
@@ -465,7 +466,10 @@ def csv_creator(heavy_path, tmp_path, mode, append_ame=True):
     return None
 
 def impute_original_exfor(heavy_path, tmp_path, mode, append_ame=True, MF_number="3"):
-    csv_name = os.path.join(heavy_path, "EXFOR_" + mode + "_ORIGINAL.csv")
+    heavy_path = os.path.join(heavy_path, "EXFOR_{}".format(mode))
+    tmp_path = os.path.join(tmp_path, "Extracted_Text_{}".format(mode))
+
+    csv_name = os.path.join(heavy_path, "EXFOR_{}_ORIGINAL.csv".format(mode))
     df = pd.read_csv(csv_name)
 
     if append_ame:
