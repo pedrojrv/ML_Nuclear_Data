@@ -80,3 +80,4 @@ This directory contains various notebooks:
 - `1_Extracting_EXFOR_data_ALL.ipynb`: contains a tutorial on how all EXFOR CSV files are created using NucML parsing utilities for each projectile. It is a great place to look for in case a new EXFOR dataset needs to be processed from new C4 files manually. 
 - `2_EDA_Feature_Visualization.ipynb`: explores the EXFOR neutron-induce reactions dataset.
 - `3_EDA_Cross_Sections.ipynb`: contains tutorial code on how to use NucML utilities to plot and visualize cross sections.
+- `4_EDA_Feature_Engineering.ipynb`: explores statistically the EXFOR features.
