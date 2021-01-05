@@ -1,0 +1,57 @@
+/************************
+ * Material definitions *
+ ************************/
+% ------------------------------------------------------------------------
+% --- Fuel material (15.0 wt-% enriched uranium), density 10.1 g/cm3
+% negative means density and mass fraction after nuclide name
+% ------------------------------------------------------------------------
+
+mat fuelsalt     -4.264
+    92235.03c    -0.746444432
+    92238.03c    -1.403950805
+    17035.03c    -6.44897E-05
+    17037.03c    -0.681680282
+    11023.03c    -1.430859992
+
+/************************
+ * Geometry definitions *
+ ************************/
+
+% --- "Surface" at infinity
+
+% surf s1 cuboid -50 50 -50 50 -50 50
+surf s1 cuboid -100 100 -100 100 -100 100
+
+% --- Cell c1 belongs to the base universe 0, contains the material fuel
+%     and covers everything inside surface s1
+
+cell c1 0 fuelsalt      -s1
+
+% --- Cell c2 belongs to the base universe 0, is defined as an "outside" cell
+%     and covers everything outside surface s1
+
+cell c2 0 outside    s1
+
+/******************
+ * Run parameters *
+ ******************/
+
+% --- Neutron population: 5000 neutrons per cycle, 100 active / 20 inactive cycles
+
+set pop 5000 100 20
+set bc 2
+set his 1
+
+/******************
+ * Setting Detector *
+ ******************/
+% 1 - Detector for tallying the flux energy spectrum
+% 2 - Energy Grid definition: grid type 3 (uniform lethargy width) 500 bins
+
+det EnergyDetector de MyEnergyGrid
+ene MyEnergyGrid 3 500 1e-11 2e1
+
+
+% --- Cross section library file path
+% set ures 1
+set acelib "/mnt/c/Users/vicen/Documents/Serpent/xsdata/endfb7/sss_endfb7u.xsdata"

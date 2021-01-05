@@ -5,7 +5,13 @@
 # TODO: ADD LINK TO DOWNLOAD EVALUATED DATA
 # TODO: FIX GET FOR EXFOR ENDF DATA UTILITIES IF NEEDED
 
+ `generating_dataset.py` script as follow:
 
+```python
+python generating_dataset.py --dataset exfor 
+```
+
+This will take a couple of minutes. Running this script will create the CSV_Files directory and all the content including all CSV files. Additionally, a `tmp` directory will be created containing files to create the CSV files. Feel free to delete it after the process has finish. 
 
 Python tools to process nuclear data and test ML models in benchmark calculations.
 

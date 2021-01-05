@@ -13,15 +13,35 @@ logging.basicConfig(level=logging.INFO)
 
 import nucml.general_utilities as gen_utils 
 import nucml.processing as nuc_proc 
+import nucml.exfor.parsing_utilities as exfor_parsing
 
 ame_dir_path = config.ame_dir_path
 evaluations_path = config.evaluations_path
 ensdf_path = config.ensdf_path
+exfor_path = config.exfor_path
 
 
 exfor_elements = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/exfor_elements_list.pkl'))
 # element_info = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/element_basic_dict.pkl'))
 dtype_exfor = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/EXFOR_AME_dtypes.pkl'))
+
+
+def generate_exfor_dataset(user_path, modes=["neutrons", "protons", "alphas", "deuterons", "gammas", "helions"]):
+    user_abs_path = os.path.abspath(user_path)
+    tmp_dir = os.path.join(user_abs_path, "EXFOR/tmp/")
+    heavy_dir = os.path.join(user_abs_path, "EXFOR/CSV_Files/")
+
+    for mode in modes:
+
+        tmp_dir = os.path.join(user_abs_path, "EXFOR/tmp/")
+        heavy_dir = os.path.join(user_abs_path, "EXFOR/CSV_Files/")
+
+        exfor_directory =  os.path.join(user_abs_path, "EXFOR/C4_Files/{}".format(mode))
+
+        exfor_parsing.get_all(exfor_parsing.get_c4_names(exfor_directory), heavy_dir, tmp_dir, mode=mode)
+        exfor_parsing.csv_creator(heavy_dir, tmp_dir, mode, append_ame=True)
+        exfor_parsing.impute_original_exfor(heavy_dir, tmp_dir, mode)
+
 
 
 ###############################################################################
@@ -318,12 +338,13 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
     logging.info(" SCALER: {}".format(scaling_type.upper()))
 
     if mode == "all":
-        neutrons_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "neutrons" + '\\EXFOR_' + "neutrons" + '_MF3_AME_no_RawNaN.csv'
-        protons_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "protons" + '\\EXFOR_' + "protons" + '_MF3_AME_no_RawNaN.csv'
-        alphas_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "alphas" + '\\EXFOR_' + "alphas" + '_MF3_AME_no_RawNaN.csv'
-        deuterons_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "deuterons" + '\\EXFOR_' + "deuterons" + '_MF3_AME_no_RawNaN.csv'
-        gammas_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "gammas" + '\\EXFOR_' + "gammas" + '_MF3_AME_no_RawNaN.csv'
-        helions_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "helions" + '\\EXFOR_' + "helions" + '_MF3_AME_no_RawNaN.csv'
+        neutrons_datapath = os.path.join(exfor_path, 'EXFOR_' + "neutrons" + '\\EXFOR_' + "neutrons" + '_MF3_AME_no_RawNaN.csv')
+        # neutrons_datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + "neutrons" + '\\EXFOR_' + "neutrons" + '_MF3_AME_no_RawNaN.csv'
+        protons_datapath = os.path.join(exfor_path, 'EXFOR_' + "protons" + '\\EXFOR_' + "protons" + '_MF3_AME_no_RawNaN.csv')
+        alphas_datapath = os.path.join(exfor_path, 'EXFOR_' + "alphas" + '\\EXFOR_' + "alphas" + '_MF3_AME_no_RawNaN.csv')
+        deuterons_datapath = os.path.join(exfor_path, 'EXFOR_' + "deuterons" + '\\EXFOR_' + "deuterons" + '_MF3_AME_no_RawNaN.csv')
+        gammas_datapath = os.path.join(exfor_path, 'EXFOR_' + "gammas" + '\\EXFOR_' + "gammas" + '_MF3_AME_no_RawNaN.csv')
+        helions_datapath = os.path.join(exfor_path, 'EXFOR_' + "helions" + '\\EXFOR_' + "helions" + '_MF3_AME_no_RawNaN.csv')
         all_datapaths = [neutrons_datapath, protons_datapath, alphas_datapath, deuterons_datapath, gammas_datapath, helions_datapath]
         if gen_utils.check_if_files_exist(all_datapaths):
             df = pd.read_csv(neutrons_datapath, dtype=dtype_exfor).dropna()
@@ -334,14 +355,14 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
             helions = pd.read_csv(helions_datapath, dtype=dtype_exfor).dropna()
             df = df.append([protons, alphas, deuterons, gammas, helions])
         else:
-            return logging.error("One ore more files are missing. Check directories.")
+            raise FileNotFoundError("One ore more files are missing. Check directories.")
     else:
-        datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + mode + '\\EXFOR_' + mode + '_MF3_AME_no_RawNaN.csv'
+        datapath = os.path.join(exfor_path, 'EXFOR_' + mode + '\\EXFOR_' + mode + '_MF3_AME_no_RawNaN.csv')
         if os.path.exists(datapath):
             logging.info("Reading data from {}".format(datapath))
             df = pd.read_csv(datapath, dtype=dtype_exfor).dropna()
         else:
-            return logging.error("CSV file does not exists. Check given path: {}".format(datapath))
+            raise FileNotFoundError("CSV file does not exists. Check given path: {}".format(datapath))
         
     if filters:
         df = df[~((df.Reaction_Notation.str.contains("WTR")) | (df.Title.str.contains("DERIV")) | (df.Energy == 0) | (df.Data == 0))]

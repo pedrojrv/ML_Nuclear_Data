@@ -32,12 +32,15 @@ This directory contains files related to the Experimental Nuclear Reaction Datab
         | Notebooks
             - 0_Extracting_EXFOR_data_TEMPLATE.ipynb
             - 1_Extracting_EXFOR_data_ALL.ipynb
+            - 2_EDA_Feature_Visualization.ipynb
+            - 3_EDA_Cross_Sections.ipynb
         | tmp
 ```
 
 # C4 Files
 
 The C4 files are the main EXFOR fiels containing all the experimental campaigns by isotope. Within this directory seven subdirectories exists, one for each projectile. NucML does not assume any kind of structure within the C4_Files as the subdirectory needs to be specified on the scripts. 
+
 
 
 
@@ -51,16 +54,11 @@ First, unzip the downloaded file. The process will result in four main files: `C
 python parseC4.py C4-YYYY-MM-DD.xc4
 ```
 
-<!-- You can then grab the create directories and accomodate them following the given directory structure. Once you have all files in the correct place you can run the `generating_dataset.py` script as follow:
-
-```python
-python generating_dataset.py --dataset exfor 
-```
-
-This will take a couple of minutes. Running this script will create the CSV_Files directory and all the content including all CSV files. Additionally, a `tmp` directory will be created containing files to create the CSV files. Feel free to delete it after the process has finish.  -->
+Once all files are in organized into the structure given above, follow the instructions in the main README file. 
 
 # CSV Files
 
+**NOTICE: THIS DIRECTORY WILL BE EMPTY UNTIL THE EXFOR DATASET C4 FILES HAVE BEEN PROCESSED.**
 
 The `CSV_Files` this directory contains the resulting files from the processed EXFOR files for each projectile. The within each subdirectory include:
 - `all_cross_sections_v1.txt` contains all the EXFOR cross section datapoints in plain `.txt` format. 
@@ -76,4 +74,9 @@ In addition to the projectile subdirectories, two more CSV files are provided.
 
 # Notebooks
 
-This directory contains two notebooks. The first one has the source code in jupyter notebook form for the EXFOR extraction utilities. This is my experimental playground. The second notebook goes through a tutorial on how all CSV files where created using NucML parsing utilities for each projectile. It is a great place to look for in case a new EXFOR dataset needs to be processed from new C4 files. 
+This directory contains various notebooks: 
+
+- `0_Extracting_EXFOR_data_TEMPLATE.ipynb`: contains the source code of one of the main NucML parsing utilities in jupyter notebook form. This is my experimental playground. 
+- `1_Extracting_EXFOR_data_ALL.ipynb`: contains a tutorial on how all EXFOR CSV files are created using NucML parsing utilities for each projectile. It is a great place to look for in case a new EXFOR dataset needs to be processed from new C4 files manually. 
+- `2_EDA_Feature_Visualization.ipynb`: explores the EXFOR neutron-induce reactions dataset.
+- `3_EDA_Cross_Sections.ipynb`: contains tutorial code on how to use NucML utilities to plot and visualize cross sections.
