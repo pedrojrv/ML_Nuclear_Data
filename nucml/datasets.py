@@ -324,8 +324,11 @@ def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=Fal
 supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions", "all"]
 supported_mt_coding = ["one_hot", "particle_coded"]
 def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="standard", 
-    scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot", scale_energy=False):
+    scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot", scale_energy=False, projectile_coding="one_hot"
+    , pedro=False):
 
+    if pedro:
+        log = low_en = num = filters = True
     if mode not in supported_modes:
         return logging.error("Specified MODE not supported. Supporte modes include: {}".format(' '.join([str(v) for v in supported_modes])))
     if mt_coding not in supported_mt_coding:
@@ -385,58 +388,46 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
     df["Z_tag"] = df.Z_valence.apply(lambda protons: "even" if protons % 2 == 0 else "odd")
     df["NZ_tag"] = df["N_tag"] + "_" + df["Z_tag"]
 
-    if basic == 0:
-        basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag", "N", "A", "Element_Flag"]
-        df = df[basic_cols]
-    elif basic == 1:
-        basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag",
-                    "N", "A", "Element_Flag", 'Nucleus_Radius', 'Neutron_Nucleus_Radius_Ratio', 
-                    'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 'Atomic_Mass_Micro', 'S(2n)', 
-                    'S(n)', 'S(p)', 'S(2p)', "N_valence", "Z_valence", "P_factor", "N_tag", "Z_tag", 
-                    "NZ_tag"]
-        df = df[basic_cols]  
-    elif basic == 2:
-        basic_cols = df.columns
-        basic_cols = [x for x in basic_cols if not x.startswith("d")]
-        df = df[basic_cols]  
-    elif basic == 3:
-        basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag", "N", "A", "Element_Flag", 
-                    'Nucleus_Radius', 'Neutron_Nucleus_Radius_Ratio', 'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 
-                    'Atomic_Mass_Micro', 'S(n)', 'S(p)']
-        df = df[basic_cols]
-
-    logging.info("Data read into dataframe with shape: {}".format(df.shape))
-    if num:
-        logging.info("Dropping unnecessary features and one-hot encoding categorical columns...")
+    if basic != -1:
         if basic == 0:
-            columns_drop = ["dData", "dEnergy"]
+            basic_cols = ["Energy", "Data", "Z", "N", "A", "MT", "Center_of_Mass_Flag", "Element_Flag"]
             cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag"]
         elif basic == 1:
-            columns_drop = ["dData", "dEnergy"]
-            cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag", "N_tag", "Z_tag", "NZ_tag"]
-        elif basic == 2:
-            columns_drop = ["Projectile", "EXFOR_Status", "Short_Reference", 'EXFOR_Accession_Number', 'EXFOR_SubAccession_Number', 
-                            'EXFOR_Pointer', "Reaction_Notation", "Title", "Year", "Author", "Institute", "Date", "Reference",
-                            'Dataset_Number', 'EXFOR_Entry', 'Reference_Code', 'Isotope', 'Element',
-                            'Projectile_Z', 'Projectile_A', 'Projectile_N', "ELV/HL", "Target_Metastable_State", 
-                            "Product_Metastable_State", "I78", "O"]
-            cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag", "N_tag", "Z_tag", "NZ_tag"]
-        elif basic == 3:
-            columns_drop = ["dData", "dEnergy"]
+            basic_cols = ["Energy", "Data", "Z", "N", "A", "MT", "Center_of_Mass_Flag", "Element_Flag", 
+                "Atomic_Mass_Micro", "Nucleus_Radius", "Neutron_Nucleus_Radius_Ratio"]
             cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag"]
-        else:
-            columns_drop = ["Projectile", "EXFOR_Status", "Short_Reference", 'EXFOR_Accession_Number', 'EXFOR_SubAccession_Number', 
-                            'EXFOR_Pointer', "Reaction_Notation", "Title", "Year", "Author", "Institute", "Date", "Reference",
-                            'Dataset_Number', 'EXFOR_Entry', 'Reference_Code', 'Isotope', 'Element', "dData", "dEnergy",
-                            'Projectile_Z', 'Projectile_A', 'Projectile_N']
-            cat_cols = ["Target_Metastable_State", "MT", "Product_Metastable_State", "Center_of_Mass_Flag", "I78", "Element_Flag", "O", "N_tag", "Z_tag", "NZ_tag"]
-        
-            
-        df.drop(columns=columns_drop, inplace=True)
-        
+        elif basic == 2:
+            basic_cols = ["Energy", "Data", "Z", "N", "A", "MT", "Center_of_Mass_Flag", "Element_Flag", 
+                "Atomic_Mass_Micro", "Nucleus_Radius", "Neutron_Nucleus_Radius_Ratio", "Mass_Excess",
+                "Binding_Energy", "B_Decay_Energy", "S(n)", "S(p)", "S(2n)", "S(2p)"]
+            cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag"]
+        elif basic == 3:
+            basic_cols = ["Energy", "Data", "Z", "N", "A", "MT", "Center_of_Mass_Flag", "Element_Flag", 
+                "Atomic_Mass_Micro", "Nucleus_Radius", "Neutron_Nucleus_Radius_Ratio", "Mass_Excess",
+                "Binding_Energy", "B_Decay_Energy", "S(n)", "S(p)", "S(2n)", "S(2p)", "N_valence", "Z_valence", "P_factor",
+                "N_tag", "Z_tag", "NZ_tag"]
+            cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag", "N_tag", "Z_tag", "NZ_tag"]
+        elif basic == 4:
+            basic_cols = ["Energy", "Data", "Z", "N", "A", "MT", "Center_of_Mass_Flag", "Element_Flag", 
+                "Atomic_Mass_Micro", "Nucleus_Radius", "Neutron_Nucleus_Radius_Ratio", "Mass_Excess",
+                "Binding_Energy", "B_Decay_Energy", "S(n)", "S(p)", "S(2n)", "S(2p)", "N_valence", "Z_valence", "P_factor",
+                "N_tag", "Z_tag", "NZ_tag"]
+            to_append = [x for x in df.columns if x.startswith("Q") or x.startswith("dQ") or x.startswith("dS")]
+            basic_cols.extend(to_append)
+            cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag", "N_tag", "Z_tag", "NZ_tag"]
+        if mode == "all":
+            if projectile_coding == "particle_coded":
+                basic_cols.extend(["Projectile_Z", "Projectile_A", "Projectile_N", "Target_Metastable_State", "Product_Metastable_State"])
+            elif projectile_coding == "one_hot":
+                basic_cols.extend(["Projectile", "Target_Metastable_State", "Product_Metastable_State"])
+                cat_cols.extend(["Projectile"])
+        df = df[basic_cols]   
+
+    logging.info("Data read into dataframe with shape: {}".format(df.shape))
+    if num:        
         if mt_coding == "particle_coded":
             cat_cols.remove("MT")
-            mt_codes_df = pd.read_csv('C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\mt_codes.csv').drop(columns=["MT_Tag", "MT_Reaction_Notation"])
+            mt_codes_df = pd.read_csv(os.path.join(exfor_path, 'CSV_Files/mt_codes.csv')).drop(columns=["MT_Tag", "MT_Reaction_Notation"])
             mt_codes_df["MT"] = mt_codes_df["MT"].astype(str)
             # We need to keep track of columns to normalize excluding categorical data.
             norm_columns = len(df.columns) - len(cat_cols) - 2
@@ -446,7 +437,6 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
             # We need to keep track of columns to normalize excluding categorical data.
             norm_columns = len(df.columns) - len(cat_cols) - 1
             df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
-
 
         logging.info("Splitting dataset into training and testing...")
         x_train, x_test, y_train, y_test = train_test_split(df.drop(["Data"], axis=1), df["Data"], test_size=frac)
@@ -462,132 +452,3 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
     else:
         logging.info("Finished. Resulting dataset has shape {}".format(df.shape))
         return df
-
-
-
-
-# IMPLEMENT ADDITION OF STABLE STATES
-# columns_ensdf = ["Element_w_A", "N1", "Elv[MeV]", "spin", "parity", "state_half_life", "Ng", "J", "unc", "spins", "nd", 
-#                  "m", "percent", "mode", "other", "other1", "other2", "other3", "other4"]
-# ensdf_final = pd.read_csv(resulting_files_dir + "ensdf_stable_state_formatted.csv", names=columns_ensdf, sep=";")
-# ensdf_final["spin"] = ensdf_final["spin"].replace(to_replace=-1.0, value=3.5) 
-# ensdf_final["parity"] = ensdf_final["parity"].replace(to_replace=0, value=1.0)
-# ensdf_final["Element_w_A"] = ensdf_final["Element_w_A"].apply(lambda x: x.strip())
-# ensdf_final = ensdf_final[["Element_w_A", "spin", "parity"]]
-# df2 = pd.merge(df, ensdf_final, on='Element_w_A')
-
-# ADD RIPLE LEVEL PARAMETERES LOADING
-# cut_off_cols = ["Z", "A", "Element", "Temperature_MeV", "Temperature_U", "Black_Shift", 
-#                 "Black_Shift_U", "N_Lev_ENSDF", "N_Max_Lev_Complete", "Min_Lev_Complete", 
-#                 "Num_Lev_Unique_Spin", "E_Max_N_Max", "E_Num_Lev_U_Spin", "Other", "Other2", 
-#                 "Flag", "Nox", "Other3", "Other4", "Spin_Cutoff"]
-# cut_off = pd.read_csv("./ENSDF/Resulting_Files/cut_off_ensdf_energies.csv", names=cut_off_cols, sep=";")
-
-# cut_off.tail()
-
-# df.dtypes.apply(lambda x: x.name).to_dict()
-
-
-# # ADD CAPABILITY TO ADD ENSDF AND AME SEPARATEDLEY
-# supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions", "all"]
-# def load_exfor(log=False, low_en=True, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="pt", scaler_dir=None, filters=True):
-#     """[summary]
-
-#     Args:
-#         log (bool, optional): [description]. Defaults to False.
-#         low_en (bool, optional): [description]. Defaults to True.
-#         basic (int, optional): [description]. Defaults to -1.
-#         num (bool, optional): [description]. Defaults to False.
-#         frac (float, optional): [description]. Defaults to 0.1.
-#         mode (str, optional): [description]. Defaults to "neutrons".
-#         scaling_type (str, optional): [description]. Defaults to "pt".
-#         scaler_dir ([type], optional): [description]. Defaults to None.
-
-#     Returns:
-#         [type]: [description]
-#     """
-    
-#     ######## SETTING UP VARIABLES FOR DATA EXTRACTION ##########
-#     if mode not in supported_modes:
-#         return logging.error("Specified MODE not supported. Supporte modes include: {}".format(' '.join([str(v) for v in supported_modes])))
-
-#     logging.info(" MODE: {}".format(mode))
-#     logging.info(" LOW ENERGY: {}".format(low_en))
-#     logging.info(" LOG: {}".format(log))
-#     logging.info(" BASIC: {}".format(basic))
-#     logging.info(" SCALER: {}".format(scaling_type.upper()))
-
-#     datapath = 'C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\EXFOR\\CSV_Files\\EXFOR_' + mode + '\\EXFOR_' + mode + '_MF3_AME_no_RawNaN.csv'
-#     if os.path.exists(datapath):
-#         logging.info("Reading data from {}".format(datapath))
-#         df = pd.read_csv(datapath, dtype=dtype_exfor).dropna()
-
-#         if filters:
-#             df = df[~((df.Reaction_Notation.str.contains("WTR")) | (df.Title.str.contains("DERIV")) | (df.Energy == 0) | (df.Data == 0))]
-
-#         if low_en:
-#             df = df[df.Energy < 2.0E7]
-
-#         if log:
-#             if (df[df.Energy == 0].shape[0] != 0) or (df[df.Data == 0].shape[0] != 0):
-#                 logging.error("Cannot take log. Either Energy or Data contain zeros. Ignoring log.")
-#             else:
-#                 df["Energy"] = np.log10(df["Energy"])
-#                 df["Data"] = np.log10(df["Data"])
-
-#         if basic == 0:
-#             basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag", "N", "A", "Element_Flag"]
-#             df = df[basic_cols]
-#         elif basic == 1:
-#             # 'S(2p)' THIS IS AN ISSUE WITH YEO TRANSFORMER FOR SOME REASON
-#             basic_cols = ["Energy", "dEnergy", "Data", "dData", "MT", "Z", "Center_of_Mass_Flag",
-#                         "N", "A", "Element_Flag", 'Nucleus_Radius', 'Neutron_Nucleus_Radius_Ratio', 
-#                         'Mass_Excess', 'Binding_Energy', 'B_Decay_Energy', 'Atomic_Mass_Micro', 'S(2n)', 
-#                         'S(n)', 'S(p)']
-#             df = df[basic_cols]  
-
-#         logging.info("Data read into dataframe with shape: {}".format(df.shape))
-#         if num:
-#             logging.info("Dropping unnecessary features and one-hot encoding categorical columns...")
-#             if basic == 0 or basic == 1:
-#                 columns_drop = ["dData", "dEnergy"]
-#                 cat_cols = ["MT", "Center_of_Mass_Flag", "Element_Flag"]
-#             else:
-#                 columns_drop = ["Projectile", "EXFOR_Status", "Short_Reference", 'EXFOR_Accession_Number', 'EXFOR_SubAccession_Number', 
-#                                 'EXFOR_Pointer', "Reaction_Notation", "Title", "Year", "Author", "Institute", "Date", "Reference",
-#                                 'Dataset_Number', 'EXFOR_Entry', 'Reference_Code', 'Isotope', 'Element', "dData", "dEnergy",
-#                                 'Projectile_Z', 'Projectile_A', 'Projectile_N']
-#                 cat_cols = ["Target_Metastable_State", "MT", "Product_Metastable_State", "Center_of_Mass_Flag", "I78", "Element_Flag", "O"]
-
-#             df.drop(columns=columns_drop, inplace=True)
-#             # We need to keep track of columns to normalize excluding categorical data.
-#             norm_columns = len(df.columns) - len(cat_cols) - 1
-#             df = pd.concat([df, pd.get_dummies(df[cat_cols])], axis=1).drop(columns=cat_cols)
-#             logging.info("Splitting dataset into training and testing...")
-#             x_train, x_test, y_train, y_test = train_test_split(df.drop(["Data"], axis=1), df["Data"], test_size=frac)
-#             logging.info("Normalizing dataset...")
-#             to_scale = list(x_train.columns)[:norm_columns]
-#             to_scale.remove("Energy")
-
-#             scaler = nuc_proc.normalize_features(x_train, to_scale, scaling_type, scaler_dir)
-
-#             if scaler_dir is not None:
-#                 logging.info("Using previously saved scaler.")
-#                 scaler = load(open(scaler_dir, 'rb'))
-#             else:
-#                 logging.info("Fitting new scaler.")
-#                 if scaling_type == "pt":
-#                     scaler = preprocessing.PowerTransformer().fit(x_train[to_scale])
-#                 elif scaling_type == "std":
-#                     scaler = preprocessing.StandardScaler().fit(x_train[to_scale])
-#                 elif scaling_type == "minmax":
-#                     scaler = preprocessing.MinMaxScaler().fit(x_train[to_scale])
-
-#             x_train[to_scale] = scaler.transform(x_train[to_scale])
-#             x_test[to_scale] = scaler.transform(x_test[to_scale])
-#             return df, x_train, x_test, y_train, y_test, to_scale, scaler
-#         else:
-#             logging.info("Finished. Resulting dataset has shape {}".format(df.shape))
-#             return df
-#     else:
-#         return logging.error("CSV file does not exists. Check given path: {}".format(datapath))
