@@ -1,4 +1,6 @@
 import pandas as pd
+import os 
+import shutil
 from joblib import dump, load
 import tensorflow as tf
 import xgboost as xgb
@@ -8,10 +10,15 @@ from sklearn.metrics import median_absolute_error, r2_score
 
 
 def regression_error_metrics(v1, v2):
-    """
-    Calculates the MSE and MAE from two vectors.
-    Both vectors have to be the same length and is usually use for exfor and predictions. 
-    """
+    """Calculates the MAE, MSE, EVS, MAEM, and R2 between two vectors. 
+
+    Args:
+        v1 (np.array): first array.
+        v2 (np.array): second array.
+
+    Returns:
+        Dict: dictionary containing all 5 error metrics in key:value pairs.
+    """    
     error_metrics = {}
     error_metrics["mae"] = mean_absolute_error(v1, v2)
     error_metrics["mse"] = mean_squared_error(v1, v2)
@@ -22,6 +29,18 @@ def regression_error_metrics(v1, v2):
     return error_metrics
 
 def create_train_test_error_df(identifier, train_error_metrics, test_error_metrics, val_error_metrics=None):
+    """Creates a pandas DataFrame of the error metrics provided by the dictionary from the
+    regression_error_metrics() function.
+
+    Args:
+        identifier (str, int): label use for identification of the row.
+        train_error_metrics (dict): dictionary containing the error metrics for the train set.
+        test_error_metrics (dict): dictionary containing the error metrics for the test set.
+        val_error_metrics (dict, optional): dictionary containing the error metrics for the val set. Defaults to None.
+
+    Returns:
+        DataFrame
+    """    
     if val_error_metrics is not None:
         error_metrics_df = pd.DataFrame({"id":[identifier], 
                                 "train_mae":[train_error_metrics["mae"]], 
@@ -71,7 +90,6 @@ def make_predictions(data, clf, clf_type):
     return pred_vector
 
 
-
 def create_error_df(identifier, error_metrics_v1):
     error_metrics_df = pd.DataFrame({"id":[identifier], 
                               "mae":[error_metrics_v1["mae"]], 
@@ -111,3 +129,14 @@ def load_model_and_scaler_w_path(model_path, scaler_path):
     model = load(model_path) 
     scaler = load(scaler_path)
     return model, scaler
+
+def keep_best_delete_rest(results_df, model_dir, keep_first=False):
+    best_models = get_best_models_df(results_df)
+    not_to_delete = []
+    for i in best_models.model_path.values:
+        not_to_delete.extend([os.path.basename(os.path.dirname(i))])
+
+    for i in os.listdir(model_dir):
+        if i not in not_to_delete:
+            if os.path.exists(os.path.join(model_dir,i)):
+                shutil.rmtree(os.path.join(model_dir,i))

@@ -1,0 +1,98 @@
+=t-newt parm=(addnux=4)
+MSRE Quarter Pin
+v7-252
+
+read comp
+' LEU 35% U-235
+'cl-35  1 6.44897E-05 922.0389 end
+'cl-37  1 0.681680282 922.0389 end
+'na-23  1 1.430859992 922.0389 end
+'u-238  1 1.403950805 922.0389 end
+'u-235  1 0.746444432 922.0389 end
+
+' LEU 11.20% U-235
+cl-35	1	4.69296E-05	922.0389 end
+cl-37	1	0.496062934	922.0389 end
+na-23	1	1.041245618	922.0389 end
+u-238	1	1.395749707	922.0389 end
+u-235	1	0.173821506	922.0389 end
+
+' Reflectors
+lead  2 den=11.344000 1.0 922.0389 end
+' ss316 2 den=8.030000  1.0 922.0389 end
+end comp
+
+
+read celldata
+    multiregion cylindrical right_bdy=vacuum left_bdy=reflected  end
+    1  230.0
+    2  330.0 end zone  
+end celldata
+
+
+'read depletion
+'    1 decayonly 7 8 
+'end depletion
+
+' Burnup specifications
+' 7.5 MWt for 0.055970182 MT HM for HEU: 133.9999227 MW/MTU
+' 7.5 MWt for 0.24340166 MT HM for LEU: 30.81326566 MW/MTU
+'read burndata
+'    power=30.81326566 burn=300  nlib=1 down=0 end
+'    power=30.81326566 burn=3300 nlib=1 end
+'end burndata
+
+
+'READ opus
+'matl=1 end
+'title = 'Masses in fuel salt'
+'units=gram 
+'nrank=2000 
+'libtyp=all
+'time=days 
+'typarms=nucl 
+'sort=no
+'END opus
+
+
+read model
+252 group solution
+read parm
+ drawit=yes
+ echo=yes
+' cmfd=yes
+ timed=yes
+' nazim=3
+' npolar=3
+ prtflux=yes
+ prtmxtab=yes
+ prtbalnc=yes
+end parm
+
+read materials
+  mix=1  pn=1 com="Fuel Salt" end
+  mix=2  pn=1 com="Reflector"  end
+end materials
+
+read geom
+' Quarter Cell
+global unit 1
+cylinder 10 230
+cylinder 11 330
+cuboid   12 4p340
+media 1 1 10
+media 2 1 11 -10
+media 0 1 12 -11
+boundary 12 30 30
+end geom
+
+read bounds
+ all=vac
+end bounds
+
+end model
+end
+
+'=shell
+'  cp ${TMPDIR}/StdCmpMix00001 ${OUTDIR}/${BASENAME}.stdcmp_m1
+'end

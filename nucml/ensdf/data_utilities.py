@@ -209,26 +209,6 @@ def make_predictions_from_df(df, Z, A, clf, clf_type, scaler, to_scale, log_sqrt
     return ensdf, to_infer
 
 
-# def make_predictions_w_levels(df, Z, A, num_levels, clf, clf_type, scaler, to_scale, log_sqrt=False, plot=False, save=False, save_dir=""):
-#     ensdf = load_ensdf_samples(df, Z, A)
-#     data_kwargs = {"Z":Z, "A":A, "log":log_sqrt, "scale":True, "scaler":scaler, "to_scale":to_scale}
-#     to_infer = append_ensdf_levels(num_levels, df, **data_kwargs)
-#     to_infer["Level_Energy"] = model_utils.make_predictions(to_infer.values, clf, clf_type)
-#     if plot:
-#         ensdf_plot.plot_level_density_ml(ensdf, to_infer, log_sqrt=log_sqrt, save=save, save_dir=save_dir)
-#     return to_infer
-
-# def make_predictions_from_df(df, Z, A, clf, clf_type, scaler, to_scale, log_sqrt=False, log=False, plot=False, save=False, save_dir=""):
-#     kwargs = {"scale": True, "scaler": scaler, "to_scale": to_scale}
-#     ensdf = load_ensdf_samples(df, Z, A)
-#     to_infer = load_ensdf_samples(df, Z, A, **kwargs)
-#     to_infer["Level_Energy"] = model_utils.make_predictions(
-#         to_infer.drop(columns=["Level_Energy"]).values, clf, clf_type)
-#     if plot:
-#         ensdf_plot.plot_level_density_ml(ensdf, to_infer, log_sqrt=log_sqrt, log=log, save=save, save_dir=save_dir)
-#     return ensdf, to_infer
-
-
 def predicting_nuclear_xs_v2(df, Z, A, clf, scaler, to_scale, num_levels=100, log_sqrt=False, clf_type=None,
     save=False, plot=False, save_dir="", inv_trans=False):
     '''

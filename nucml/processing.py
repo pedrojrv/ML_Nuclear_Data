@@ -57,7 +57,7 @@ def normalize_features(df, to_scale, scaling_type, scaler_dir):
         scaler_object = load(open(scaler_dir, 'rb'))
     else:
         logging.info("Fitting new scaler.")
-        if scaling_type == "power_yeo":
+        if scaling_type == "poweryeo":
             scaler_object = preprocessing.PowerTransformer().fit(df[to_scale])
         elif scaling_type == "standard":
             scaler_object = preprocessing.StandardScaler().fit(df[to_scale])
@@ -67,7 +67,7 @@ def normalize_features(df, to_scale, scaling_type, scaler_dir):
             scaler_object = preprocessing.MaxAbsScaler().fit(df[to_scale])
         elif scaling_type == 'robust':
             scaler_object = preprocessing.RobustScaler().fit(df[to_scale])
-        elif scaling_type == 'quantile_normal':
+        elif scaling_type == 'quantilenormal':
             scaler_object = preprocessing.QuantileTransformer(output_distribution='normal').fit(df[to_scale])
     return scaler_object
 

@@ -1,3 +1,6 @@
+# FINISHED 01/03/2020
+
+
 import os
 import shutil
 import logging

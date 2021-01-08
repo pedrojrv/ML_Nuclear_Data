@@ -700,34 +700,32 @@ template_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\"
 
 
 def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
+    # 1. We initialize the inventory if it does not exists, else we read it
     inventory_path = os.path.join(raw_saving_dir, "model_ace_inventory.csv")
     if os.path.exists(inventory_path):
         inventory = pd.read_csv(inventory_path)
     else:
-        inventory = pd.DataFrame(columns=["model", "directory", "acelib_generated", "benchmarks"])
-
-    if type(results) == str:
-        results_df = pd.read_csv(results)
-    else:
-        results_df = results.copy()
+        inventory = pd.DataFrame(columns=["model", "directory", "acelib_generated"])
+    # 2. We extract the run name from the model path
+    results_df = results.copy()
     results_df["run_name"] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
-    
+    # 3. We iterate over the rows to create data for each run
     for _, row in results_df.iterrows():
         run_name = row.run_name
         filename = "ml_xs.csv"
         
+        # 3a. We create a directory for each model but before we check if it has already been created in the inventory
         model_ace_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + "/"))
-
         if (model_ace_saving_dir in inventory.directory.to_list()) and not reset:
             continue
+        # 3b. If it has not been created, the model and scaler is loaded and a csv is created needed to generate acelib.
         else:
             gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
             model, scaler = model_utils.load_model_and_scaler_w_path(row.model_path, row.scaler_path)
             _ = exfor_utils.get_csv_for_ace(
                 df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
-            
-            inventory = inventory.append(pd.DataFrame({"model":[run_name], "directory":[model_ace_saving_dir], "acelib_generated":["no"], "benchmarks":["none"]}))
-    
+            inventory = inventory.append(pd.DataFrame({"model":[run_name], "directory":[model_ace_saving_dir], "acelib_generated":["no"]}))
+    # 4. The inventory is saved so that these are not processed again in future calls
     inventory = inventory.drop_duplicates()
     inventory.to_csv(inventory_path, index=False)
     return None
@@ -813,7 +811,6 @@ def generate_benchmark_files(inventory_path, benchmark_name):
     return None
 
 
-
 def generate_serpent_bash(inventory_path, benchmark_name):
     all_serpent_files = []
     all_serpent_files_linux = []
@@ -887,25 +884,25 @@ def get_energies(element, temp="03c", ace_dir=ace_dir, ev=False, log=False):
     else:
         return empty_df
 
-# testing = remove_unused_models("../ML_EXFOR_neutrons/2_DT/DT_B1/dt_results.csv", "acedata_ml/U233/DT_B1/")
-def remove_unused_models(model_results_path, acedate_directory):
-    model_results_df = pd.read_csv(model_results_path)
-    model_results_df["Model"] = model_results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
-    model_results_df["main_directory"] = model_results_df.model_path.apply(lambda x: os.path.dirname(x) + "\\")
-    model_results_df = model_results_df[["Model", "train_mae", "val_mae", "test_mae", "main_directory"]]
+# # testing = remove_unused_models("../ML_EXFOR_neutrons/2_DT/DT_B1/dt_results.csv", "acedata_ml/U233/DT_B1/")
+# def remove_unused_models(model_results_path, acedate_directory):
+#     model_results_df = pd.read_csv(model_results_path)
+#     model_results_df["Model"] = model_results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+#     model_results_df["main_directory"] = model_results_df.model_path.apply(lambda x: os.path.dirname(x) + "\\")
+#     model_results_df = model_results_df[["Model", "train_mae", "val_mae", "test_mae", "main_directory"]]
     
-    benchmark_results = gather_benchmark_results(acedate_directory)
-    model_results_df = model_results_df.merge(benchmark_results, on="Model")
+#     benchmark_results = gather_benchmark_results(acedate_directory)
+#     model_results_df = model_results_df.merge(benchmark_results, on="Model")
     
-    # KEEP BEST TRAIN VAL TEST
-    # KEEP TOP 3 SORTED DEVIATION ANA
-    to_keep = []
-    to_keep.extend(list(model_results_df.iloc[model_results_df.sort_values(by="Deviation_Ana").head().index].Model.values))
-    to_keep.extend(list(model_results_df.iloc[model_utils.get_best_models_df(model_results_df).index].Model.values))
-    model_results_df["filtering"] = model_results_df.Model.apply(lambda name: True if name not in to_keep else False)
-    to_remove = model_results_df[model_results_df.filtering == True]
+#     # KEEP BEST TRAIN VAL TEST
+#     # KEEP TOP 3 SORTED DEVIATION ANA
+#     to_keep = []
+#     to_keep.extend(list(model_results_df.iloc[model_results_df.sort_values(by="Deviation_Ana").head().index].Model.values))
+#     to_keep.extend(list(model_results_df.iloc[model_utils.get_best_models_df(model_results_df).index].Model.values))
+#     model_results_df["filtering"] = model_results_df.Model.apply(lambda name: True if name not in to_keep else False)
+#     to_remove = model_results_df[model_results_df.filtering == True]
     
-#     for i in to_remove.main_directory.values:
-#         shutil.rmtree(i)
+# #     for i in to_remove.main_directory.values:
+# #         shutil.rmtree(i)
     
-    return None
+#     return None

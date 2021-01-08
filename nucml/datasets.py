@@ -326,7 +326,33 @@ supported_mt_coding = ["one_hot", "particle_coded"]
 def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="standard", 
     scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot", scale_energy=False, projectile_coding="one_hot"
     , pedro=False):
+    """Loads the EXFOR dataset in its varius forms. This function helps load ML-ready EXFOR datasets
+    for different particle induce reactions or all of them.
 
+    Args:
+        log (bool, optional): If True, the log of the Energy and Cross Section is taken. Defaults to False.
+        low_en (bool, optional): If True, an upper limit in energy is applied given by the max_en argument. Defaults to False.
+        basic (int, optional): Indicates how many features to load. -1 means all avaliable features. Defaults to -1.
+        num (bool, optional): If True, only numerical and relevant categorical features are loaded. Defaults to False.
+        frac (float, optional): Fraction of the dataset for test set. Defaults to 0.1.
+        mode (str, optional): Dataset to load. Options include neutrons, gammas, and protons. Defaults to "neutrons".
+        scaling_type (str, optional): Type of scaler to use for normalizing the dataset. Defaults to "standard".
+        scaler_dir (str, optional): Directory in which to store the trained scaler. Defaults to None.
+        filters (bool, optional): If True, a variety of filters are applied that help discard irregular data. Defaults to False.
+        max_en (float, optional): Maximum energy threshold by which the dataset is filtered. Defaults to 2.0E7.
+        mt_coding (str, optional): Method used to process the MT reaction channel codes. Defaults to "one_hot".
+        scale_energy (bool, optional): If True, the energy will be normalized along with all other features. Defaults to False.
+        projectile_coding (str, optional): Method used to process the type of projectile. Defaults to "one_hot".
+        pedro (bool, optional): Personal settings. Defaults to False.
+
+    Raises:
+        FileNotFoundError: If mode is all and one of the files is missing.
+        FileNotFoundError: If the selected mode file does not exist.
+
+    Returns:
+        DataFrame: Only returns one dataset if num=False.
+        DataFrames: Multiple dataframes and objects if num=True.
+    """
     if pedro:
         log = low_en = num = filters = True
     if mode not in supported_modes:

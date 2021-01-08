@@ -75,19 +75,15 @@ def parse_mt(mt_number, mt_for="endf", one_hot=False):
             if len(mt_number) != 3:
                 mt_number = mt_number.zfill(3)
             return "MT" + mt_number
-    # elif mt_for.upper() == "EXFOR":
-    #     if one_hot:
-    #         _, mt_number = re.findall(r'[A-Za-z]+|\d+', mt_number)
-
-    #     if one_hot:
-    #         mt_endf, mt_num_endf = mt_number.split("_")
-    #     else:
-    #         mt_endf, mt_num_endf = "MT", mt_number
-
-    #     mt_num_endf = mt_num_endf.zfill(3)
-    #     mt_endf = mt_endf + mt_num_endf
-    else:
-        raise SyntaxError('MT value provided is not numeric.')
+    elif mt_for.upper() == "EXFOR":
+        mt_number = str(int(mt_number))
+        if mt_number.isdigit():
+            if len(mt_number) != 3:
+                mt_number = mt_number.zfill(3)
+        if one_hot:
+            return "MT_" + mt_number
+        else:
+            return int(mt_number)
     
 def parse_elaaa(ELAAA, parse_for="endf"):
     element, mass = re.findall(r'[A-Za-z]+|\d+', ELAAA)
@@ -102,4 +98,4 @@ def parse_elaaa(ELAAA, parse_for="endf"):
     elif parse_for.upper() == "ENSDF":
         return mass + element
     else:
-        raise SyntaxError('MT value provided is not numeric.')
+        raise SyntaxError('ELAAA value provided is not numeric.')
