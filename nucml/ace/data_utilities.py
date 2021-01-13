@@ -15,9 +15,10 @@ sys.path.append("..")
 import nucml.general_utilities as gen_utils 
 import nucml.model.model_utilities as model_utils
 import nucml.exfor.data_utilities as exfor_utils
+import nucml.config as config
 
 empty_df = pd.DataFrame()
-ace_dir = "C:\\Users\\Pedro\\Documents\\Serpent\\xsdata\\endfb7\\acedata"
+ace_dir = config.ace_path
 
 
 def get_to_skip_lines(element, temp="03c", ace_dir=ace_dir):
@@ -721,7 +722,7 @@ def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
         # 3b. If it has not been created, the model and scaler is loaded and a csv is created needed to generate acelib.
         else:
             gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
-            model, scaler = model_utils.load_model_and_scaler_w_path(row.model_path, row.scaler_path)
+            model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
             _ = exfor_utils.get_csv_for_ace(
                 df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
             inventory = inventory.append(pd.DataFrame({"model":[run_name], "directory":[model_ace_saving_dir], "acelib_generated":["no"]}))
@@ -871,7 +872,18 @@ def gather_benchmark_results(inventory_path):
     return results_df
 
 
-def get_energies(element, temp="03c", ace_dir=ace_dir, ev=False, log=False):
+def get_energies(element, temp="03c", ev=False, log=False):
+    """Retrieves the energy array from the ENDF .ACE files.
+
+    Args:
+        element (str): ZZAAA formatted element.
+        temp (str, optional): extension of ACE file to retrieve energies from. Defaults to "03c".
+        ev (bool, optional): if True, energies are converted to eV from MeV. Defaults to False.
+        log (bool, optional): if True, the log is taken before returning the array. Defaults to False.
+
+    Returns:
+        [type]: [description]
+    """    
     nxs, jxs, xss = get_nxs_jxs_xss(element, temp="03c", ace_dir=ace_dir)
     if nxs is not None:
         pointers = get_pointers(nxs, jxs)

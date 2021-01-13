@@ -285,8 +285,9 @@ def make_predictions_from_df(df, Z, A, MT, model, model_type, scaler, to_scale, 
         plt.plot(exfor.Energy, y_hat)
     return y_hat
 
-def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace", log=False, model_type=None, html=False,
-    new_data=empty_df, save=False, show=False, path="", nat_iso="I", order_dict={}, get_endf=False, inv_trans=False):
+def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace", log=False, 
+    model_type=None, new_data=empty_df, nat_iso="I", get_endf=False, inv_trans=False, 
+    show=False, plotter="plotly", save=False,  path="", save_both=True, order_dict={}):
     """Predicts values for a given isotope-reaction channel pair. This all-in-one function allows to not only get predictions
     but also calculate the errors relative to the EXFOR and ENDF datapoints (if avaliable). In addition, the plotting 
     capabilities allow the user to inspect the predictions in a typical cross section plot. In addition to predicting 
@@ -317,18 +318,15 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
     Returns:
         dict: contains a variety of information including predictions, errors, and more.
     """
+    endf = empty_df
     if get_endf:
-        endf = endf_utils.get_for_exfor(Z, A, MT)
+        endf = endf_utils.get_for_exfor(Z, A, MT, log=log)
     if e_array == "ace":
         e_array = ace_utils.get_energies('{:<02d}'.format(Z) + str(A).zfill(3), ev=True, log=log)
 
     new_data_avaliable = True if new_data.shape[0] != 0 else False
     endf_avaliable = True if endf.shape[0] != 0 else False
     e_array_avaliable = True if e_array.shape[0] != 0 else False
-
-    kwargs = {"nat_iso":nat_iso, "one_hot":True, "scale": True, "scaler": scaler, "to_scale": to_scale}
-    to_infer = to_plot = load_samples(df, Z, A, MT, **kwargs)
-    to_infer = to_infer.drop(columns=["Data"])
 
     kwargs = {"nat_iso":nat_iso, "one_hot":True, "scaler": scaler, "to_scale": to_scale}
     to_infer = load_samples(df, Z, A, MT, scale=False, **kwargs)
@@ -342,12 +340,10 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
 
     to_infer[to_scale] = scaler.transform(to_infer[to_scale])
     
-    # Making Predictions
     pred_exfor_expanded = model_utils.make_predictions(to_infer.values, model, model_type)
     pred_exfor_original = model_utils.make_predictions(to_plot.drop(columns=["Data"]).values, model, model_type)
 
     if inv_trans:
-        # De-Transforming Scaled Data
         to_infer[to_scale] = scaler.inverse_transform(to_infer[to_scale])
         to_plot[to_scale] = scaler.inverse_transform(to_plot[to_scale])
 
@@ -357,6 +353,7 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
     exfor_ml_error = model_utils.regression_error_metrics(to_plot["Data"], pred_exfor_original)
     error_df = model_utils.create_error_df("EXFOR VS ML", exfor_ml_error)
     all_dict.update({"error_metrics":error_df})
+
     if new_data_avaliable:
         pred_exfor_new = model_utils.make_predictions(new_data.drop(columns=["Data"]).values, model, model_type)
         all_dict.update({"exfor_ml_new":{"df":new_data, "predictions":pred_exfor_new}})
@@ -365,6 +362,7 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
         error_new_df = model_utils.create_error_df("EXFOR VS ML (NEW DATA)", exfor_ml_new_error)
         error_df = error_df.append(error_new_df)
         all_dict.update({"error_metrics":error_df})
+
     if endf_avaliable:
         # Gets interpolated endf data with anchor exfor
         exfor_endf, error_endf = get_error_endf_exfor(endf, to_plot)
@@ -375,8 +373,21 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
             exfor_endf_new_data, error_endf_new = get_error_endf_new(endf, new_data)
             error_df = error_df.append(error_endf_new)
             all_dict.update({"exfor_endf_new":exfor_endf_new_data, "error_metrics":error_df})
+
     if show:
-        exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, html=html, show=show)
+        if plotter == "plotly":
+            exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show)
+        elif plotter == "plt":
+            exfor_plot_utils.sns_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show, log=log)
+        if save_both:
+            if plotter == "plotly":
+                if len(order_dict) != 0:
+                    order_dict = {k: int(v) for k, v in order_dict.items()}
+                exfor_plot_utils.sns_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False, log=log)
+            elif plotter == "plt":
+                if len(order_dict) != 0:
+                    order_dict = {str(v): k for k, v in order_dict.items()}
+                exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False)
     return all_dict
 
 
@@ -414,7 +425,7 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
         df["Energy"] = 10**df["Energy"].values
         df["Data"] = 10**df["Data"].values
     if get_endf:
-        endf = endf_utils.get_for_exfor(Z, A, MT, one_hot=one_hot, log=False)
+        endf = endf_utils.get_for_exfor(Z, A, MT, log=False)
     # Extracting dataframe to make predictions and creating copy for evaluation
     exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
     # Initializing Figure and Plotting

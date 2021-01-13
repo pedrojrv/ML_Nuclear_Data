@@ -77,9 +77,9 @@ def parse_mt(mt_number, mt_for="endf", one_hot=False):
             return "MT" + mt_number
     elif mt_for.upper() == "EXFOR":
         mt_number = str(int(mt_number))
-        if mt_number.isdigit():
-            if len(mt_number) != 3:
-                mt_number = mt_number.zfill(3)
+        # if mt_number.isdigit():
+        #     if len(mt_number) != 3:
+        #         mt_number = mt_number.zfill(3)
         if one_hot:
             return "MT_" + mt_number
         else:

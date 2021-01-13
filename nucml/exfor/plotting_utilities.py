@@ -2,13 +2,17 @@ import numpy as np
 import os
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+import seaborn as sns
 import sys
 # This allows us to import the nucml utilities
 sys.path.append("..")
 
+
 import nucml.exfor.data_utilities as exfor_utils  # pylint: disable=import-error
 import nucml.datasets as nuc_data  # pylint: disable=import-error
 import nucml.ace.data_utilities as ace_utils  # pylint: disable=import-error
+
+sns.set(style="white", font_scale=2.5)
 
 def plotly_ml_results(results_dict, order_dict={}, save_dir='', save=False, render_browser=False, show=False, paper=False, html=False):
     fig = go.Figure()
@@ -43,7 +47,10 @@ def plotly_ml_results(results_dict, order_dict={}, save_dir='', save=False, rend
                                           y=results_dict["exfor_ml_new"]["df"].Data,
                             mode='markers', name='ML New')
 
-        
+    fig.update_layout(
+        xaxis_title="Energy (eV)",
+        yaxis_title="Cross Section (b)",
+    )
     for i in np.arange(1, len(order_dict) + 1):
         for plot_order, name in order_dict.items():
             if plot_order == str(i):
@@ -61,20 +68,60 @@ def plotly_ml_results(results_dict, order_dict={}, save_dir='', save=False, rend
         
     fig.update_layout(template="simple_white")
 
-    if show:
-        if paper:
-            fig.update_layout(height=600, width=700)
-            fig.update_layout(legend=dict(x=0.8, y=1))
-        if render_browser:
-            fig.show(renderer="browser")
-        else:
-            fig.show()
-        if save:
-            fig.write_image(save_dir)
-        if html:
-            fig.write_html(os.path.splitext(save_dir)[0] + '.html')
+
+    if paper:
+        fig.update_layout(height=600, width=700)
+        fig.update_layout(legend=dict(x=0.8, y=1))
+    if render_browser:
+        fig.show(renderer="browser")
+    elif show:
+        fig.show()
+    if save:
+        fig.write_html(os.path.splitext(save_dir)[0] + '.html')
 
     return fig
+
+def sns_ml_results(results_dict, order_dict={}, save_dir='', save=False, render_browser=False, show=False, paper=False, html=False, log=True):    
+    plt.figure(figsize=(14,10))
+    
+    if len(order_dict) == 0:
+        order_dict=  {"endf":1, "exfor_ml_original":4, "exfor_ml":3, "exfor_new":2}
+    
+    plt.scatter(10**results_dict["exfor_ml_original"]['df']["Energy"], 
+                10**results_dict["exfor_ml_original"]['df']["Data"], 
+                label='EXFOR', zorder=order_dict["exfor_ml_original"], 
+                s=15, c="tab:green")
+    
+    if "exfor_ml_expanded" in results_dict.keys():
+        plt.plot(10**results_dict["exfor_ml_expanded"]['df']["Energy"], 
+                 10**results_dict["exfor_ml_expanded"]['predictions'].flatten(), 
+                 label='ML', zorder=order_dict["exfor_ml"], c="tab:orange")
+    else:
+        plt.plot(10**results_dict["exfor_ml_original"]['df']["Energy"], 
+                 10**results_dict["exfor_ml_original"]['predictions'].flatten(), 
+                 label='ML', zorder=order_dict["exfor_ml"])      
+    if "endf" in results_dict.keys():
+        plt.plot(10**results_dict["endf"].Energy, 10**results_dict["endf"].Data, 
+                 label='ENDF', zorder=order_dict["endf"])
+    if "exfor_ml_new" in results_dict.keys():    
+        plt.scatter(10**results_dict["exfor_ml_new"]['df'].Energy, 
+                    10**results_dict["exfor_ml_new"]['df'].Data, 
+                    label='EXFOR New', zorder=order_dict["exfor_new"], 
+                    s=15, c="tab:red")
+    
+    plt.xlabel('Energy (eV)')
+    plt.ylabel('Cross Section (b)')
+    plt.xscale('log')
+    plt.yscale('log')
+    plt.legend()
+
+    if save:
+        plt.savefig(save_dir, bbox_inches='tight', dpi=600)
+    if not show:
+        plt.close()
+
+    return None
+
 
 def plot_limits(to_plot, endf, new_data, y_hat, y_hat2, y_hat3):
     endf_avaliable = True if endf.shape[0] != 0 else False
@@ -144,7 +191,7 @@ def make_chlorine_paper_figure(df, dt_model, dt_scaler, knn_model, knn_scaler, t
     new_cl_data_knn = exfor_utils.load_newdata("../EXFOR/New_Data/Chlorine_Data/new_cl_np.csv", df, scaler=knn_scaler, **new_cl_data_kwargs)
     new_cl_data_dt = exfor_utils.load_newdata("../EXFOR/New_Data/Chlorine_Data/new_cl_np.csv", df, scaler=dt_scaler, **new_cl_data_kwargs)
 
-    endf_cl = nuc_data.load_endf("Cl035", "MT103", log=True)
+    endf_cl = nuc_data.load_evaluation("Cl035", 103, log=True)
     ace_cl = ace_utils.get_energies("17035", ev=True, log=True)
 
 
