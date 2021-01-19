@@ -5,34 +5,37 @@ import logging
 import glob
 import numpy as np
 import pandas as pd
-from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 import nucml.config as config
-
-logging.basicConfig(level=logging.INFO)
-
 import nucml.general_utilities as gen_utils 
 import nucml.processing as nuc_proc 
 import nucml.exfor.parsing_utilities as exfor_parsing
+
+logging.basicConfig(level=logging.INFO)
 
 ame_dir_path = config.ame_dir_path
 evaluations_path = config.evaluations_path
 ensdf_path = config.ensdf_path
 exfor_path = config.exfor_path
-
-
-exfor_elements = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/exfor_elements_list.pkl'))
-# element_info = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/element_basic_dict.pkl'))
 dtype_exfor = gen_utils.load_obj(os.path.join(os.path.dirname(__file__), 'objects/EXFOR_AME_dtypes.pkl'))
 
 
 def generate_exfor_dataset(user_path, modes=["neutrons", "protons", "alphas", "deuterons", "gammas", "helions"]):
+    """This is the main function to generate all needed EXFOR datasets for neutron-, proton-, alpha-, deuterons-, 
+    gammas-, and helion-induce reactions. Beware, NucML configuration needs to be performed first.
+
+    Args:
+        user_path (str): path-like string where all information including the datasets will be stored. 
+        modes (list, optional): Type of projectile for which to generate the datasets. 
+            Defaults to ["neutrons", "protons", "alphas", "deuterons", "gammas", "helions"].
+
+    Returns:
+        None
+    """    
     user_abs_path = os.path.abspath(user_path)
     tmp_dir = os.path.join(user_abs_path, "EXFOR/tmp/")
     heavy_dir = os.path.join(user_abs_path, "EXFOR/CSV_Files/")
-
     for mode in modes:
-
         tmp_dir = os.path.join(user_abs_path, "EXFOR/tmp/")
         heavy_dir = os.path.join(user_abs_path, "EXFOR/CSV_Files/")
 
@@ -41,7 +44,7 @@ def generate_exfor_dataset(user_path, modes=["neutrons", "protons", "alphas", "d
         exfor_parsing.get_all(exfor_parsing.get_c4_names(exfor_directory), heavy_dir, tmp_dir, mode=mode)
         exfor_parsing.csv_creator(heavy_dir, tmp_dir, mode, append_ame=True)
         exfor_parsing.impute_original_exfor(heavy_dir, tmp_dir, mode)
-
+    return None
 
 
 ###############################################################################
@@ -57,7 +60,7 @@ def load_ame(natural=False, imputed_nan=False, file="merged"):
             is loaded. Only applicable when file='merged'
         file (str): Dataset to extract. Options include 'merged', 'mass16', 'rct1', and 'rct2'.
     Returns:
-        ame (DataFrame): a pandas dataframe cantaining the queried AME data.
+        DataFrame: a pandas dataframe cantaining the queried AME data.
 
     """
     directory = ame_dir_path
@@ -94,7 +97,7 @@ def load_evaluation(ELAAA, MT, mode="neutrons", library="endfb8.0", mev_to_ev=Tr
     Args:
         ELAAA (str): element to query. The string must start with the element followed by the mass number (i.e. U233, Cl35) 
         MT (int): reaction channel to query. Must be an integer (i.e. 1, 2, 3)
-        mode (str): projectile of the reaction of interest. Only "neutrons" and "protons" is allowed for now.
+        mode (str): projectile of the reaction of interest. Only "neutrons" and "protons" are supported for now.
         library (str): evaluation library to query. Allowed options include endfb8.0, jendl4.0, jeff3.3, and tendl.2019.
         mev_to_ev (bool): if True, it converts the energy from MeV to eV.
         mb_to_b (bool): if True, it converts the cross sections from millibarns to barns.
@@ -148,7 +151,6 @@ def load_evaluation(ELAAA, MT, mode="neutrons", library="endfb8.0", mev_to_ev=Tr
 ###############################################################################
 ####################### ENSDF LIBRARIES #######################################
 ###############################################################################
-
 def load_ensdf_headers():
     """Loads ENSDF headers from RIPL .dat files
 
@@ -223,7 +225,7 @@ def load_ripl_parameters():
     """Loads the RIPL level cut-off parameters file.
 
     Returns:
-        DataFrame: pandas DataFrame 
+        DataFrame
     """    
     ripl_params = pd.read_csv(os.path.join(ensdf_path, "CSV_Files/ripl_cut_off_energies.csv"))
     return ripl_params
@@ -296,17 +298,7 @@ def load_ensdf_ml(log_sqrt=False, log=False, append_ame=False, basic=-1, num=Fal
             to_scale = list(x_train.columns)
             if log_sqrt or log:
                 to_scale.remove("Level_Number")
-            if scaler_dir is not None:
-                logging.info("Using previously saved scaler.")
-                scaler = load(open(scaler_dir, 'rb'))
-            else:
-                logging.info("Fitting new scaler.")
-                if scaling_type == "pt":
-                    scaler = preprocessing.PowerTransformer().fit(x_train[to_scale])
-                elif scaling_type == "std":
-                    scaler = preprocessing.StandardScaler().fit(x_train[to_scale])
-                elif scaling_type == "minmax":
-                    scaler = preprocessing.MinMaxScaler().fit(x_train[to_scale])
+            scaler = nuc_proc.normalize_features(x_train, to_scale, scaling_type=scaling_type, scaler_dir=scaler_dir)
             x_train[to_scale] = scaler.transform(x_train[to_scale])
             x_test[to_scale] = scaler.transform(x_test[to_scale])
             logging.info("Finished. Resulting dataset has shape {}, Training and Testing dataset shapes are {} and {} respesctively.".format(df.shape, x_train.shape, x_test.shape))
@@ -325,7 +317,7 @@ supported_modes = ["neutrons", "protons", "alphas", "deuterons", "gammas", "heli
 supported_mt_coding = ["one_hot", "particle_coded"]
 def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neutrons", scaling_type="standard", 
     scaler_dir=None, filters=False, max_en=2.0E7, mt_coding="one_hot", scale_energy=False, projectile_coding="one_hot"
-    , pedro=False):
+    , normalize=True, pedro=False):
     """Loads the EXFOR dataset in its varius forms. This function helps load ML-ready EXFOR datasets
     for different particle induce reactions or all of them.
 
@@ -354,7 +346,7 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         DataFrames: Multiple dataframes and objects if num=True.
     """
     if pedro:
-        log = low_en = num = filters = True
+        log = low_en = num = filters = normalize = True
     if mode not in supported_modes:
         return logging.error("Specified MODE not supported. Supporte modes include: {}".format(' '.join([str(v) for v in supported_modes])))
     if mt_coding not in supported_mt_coding:
@@ -467,14 +459,17 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         logging.info("Splitting dataset into training and testing...")
         x_train, x_test, y_train, y_test = train_test_split(df.drop(["Data"], axis=1), df["Data"], test_size=frac)
         
-        logging.info("Normalizing dataset...")
-        to_scale = list(x_train.columns)[:norm_columns]
-        if not scale_energy:
-            to_scale.remove("Energy")
-        scaler = nuc_proc.normalize_features(x_train, to_scale, scaling_type, scaler_dir)
-        x_train[to_scale] = scaler.transform(x_train[to_scale])
-        x_test[to_scale] = scaler.transform(x_test[to_scale])
-        return df, x_train, x_test, y_train, y_test, to_scale, scaler
+        if normalize:
+            logging.info("Normalizing dataset...")
+            to_scale = list(x_train.columns)[:norm_columns]
+            if not scale_energy:
+                to_scale.remove("Energy")
+            scaler = nuc_proc.normalize_features(x_train, to_scale, scaling_type=scaling_type, scaler_dir=scaler_dir)
+            x_train[to_scale] = scaler.transform(x_train[to_scale])
+            x_test[to_scale] = scaler.transform(x_test[to_scale])
+            return df, x_train, x_test, y_train, y_test, to_scale, scaler
+        else:
+            return df, x_train, x_test, y_train, y_test
     else:
         logging.info("Finished. Resulting dataset has shape {}".format(df.shape))
         return df

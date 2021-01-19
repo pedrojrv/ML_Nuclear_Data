@@ -32,7 +32,7 @@ ame_dir_path = os.path.abspath("../AME/")
 empty_df = pd.DataFrame()
 
 
-def load_samples(df, Z, A, MT, nat_iso="I", one_hot=False, scale=False, scaler=None, to_scale=[]):
+def load_samples(df, Z, A, MT, nat_iso="I", one_hot=False, scale=False, scaler=None, to_scale=[], mt_for="EXFOR"):
     """Extracts datapoints belonging to a particular isotope-reaction channel pair.
 
     Args:
@@ -50,7 +50,7 @@ def load_samples(df, Z, A, MT, nat_iso="I", one_hot=False, scale=False, scaler=N
         DataFrame
     """
     logging.info("Extracting samples from dataframe.")
-    MT = gen_utils.parse_mt(MT, mt_for="EXFOR", one_hot=one_hot)
+    MT = gen_utils.parse_mt(MT, mt_for=mt_for, one_hot=one_hot)
     if one_hot:
         sample = df[(df["Z"] == Z) & (df[MT] == 1) & (df["A"] == A) &
                     (df["Element_Flag_" + nat_iso] == 1)].sort_values(by='Energy', ascending=True)
@@ -180,7 +180,7 @@ def append_energy(e_array, df, Z, A, MT, nat_iso="I", one_hot=False, log=False, 
     if log:
         new_data["Energy"] = np.log10(new_data["Energy"])
     if ignore_MT:
-        isotope_exfor = load_samples(df, Z, A, "MT_1", nat_iso=nat_iso, one_hot=one_hot)
+        isotope_exfor = load_samples(df, Z, A, "MT_1", nat_iso=nat_iso, one_hot=one_hot, mt_for="ACE")
         isotope_exfor.MT_1 = 0
         isotope_exfor[MT] = 1
     else:
@@ -250,7 +250,7 @@ def make_predictions_w_energy(e_array, df, Z, A, MT, model, model_type, scaler, 
     """
     data_kwargs = {"Z":Z, "A":A, "MT":MT, "log":log, "scale":True, "scaler":scaler, "to_scale":to_scale, "one_hot":True, "ignore_MT":True}
     to_infer = append_energy(e_array, df, **data_kwargs)
-    exfor = load_samples(df, Z, A, MT, one_hot=one_hot)
+    exfor = load_samples(df, Z, A, MT, one_hot=one_hot, mt_for="ACE")
     # Make Predictions
     y_hat = model_utils.make_predictions(to_infer.values, model, model_type)
     if show:
@@ -322,7 +322,8 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
     if get_endf:
         endf = endf_utils.get_for_exfor(Z, A, MT, log=log)
     if e_array == "ace":
-        e_array = ace_utils.get_energies('{:<02d}'.format(Z) + str(A).zfill(3), ev=True, log=log)
+        # e_array = ace_utils.get_energies('{:<02d}'.format(Z) + str(A).zfill(3), ev=True, log=log)
+        e_array = ace_utils.get_energies(str(Z) + str(A).zfill(3), ev=True, log=log)
 
     new_data_avaliable = True if new_data.shape[0] != 0 else False
     endf_avaliable = True if endf.shape[0] != 0 else False
@@ -436,7 +437,7 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
         for name, group in groups:
             ax.plot(group["Energy"], group["Data"], marker="o", linestyle="", label=name, alpha=0.9)
     else:
-        ax.scatter(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha, label="EXFOR", ci=None, marker="o") # pylint: disable=too-many-function-args  
+        ax.scatter(exfor_sample["Energy"], exfor_sample["Data"], alpha=alpha, label="EXFOR", marker="o") # pylint: disable=too-many-function-args  
     if new_data.shape[0] != 0:
         ax.plot(new_data.Energy, new_data.Data, marker="o", linestyle="", label=new_data_label, alpha=0.9)
     if endf.shape[0] != 0:

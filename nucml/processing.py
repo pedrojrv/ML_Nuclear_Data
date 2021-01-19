@@ -3,8 +3,7 @@ import pandas as pd
 import numpy as np
 import logging
 from sklearn import preprocessing
-from joblib import dump, load
-
+from joblib import load
 from nucml.general_utilities import func     # pylint: disable=import-error
 
 pd.options.mode.chained_assignment = None  # default='warn'
@@ -51,7 +50,20 @@ def impute_values(df):
             df[df["Z"] == i] = fit_df_original.values
     return df
 
-def normalize_features(df, to_scale, scaling_type, scaler_dir):
+def normalize_features(df, to_scale, scaling_type="standard", scaler_dir=None):
+    """This function applies a normalization to the provided dataframe and the specified columns.
+
+    Args:
+        df (pd.DataFrame): dataframe to normalize/transform.
+        to_scale (list): list of columns to apply the normalization to.
+        scaling_type (str): scaling or transformer to use. Options include "poweryeo", "standard", 
+            "minmax", "maxabs", "robust", and "quantilenormal".
+        scaler_dir (str): path-like string to a previously saved scaler. If provided, this overides
+            any other parameter. Defaults to None.
+
+    Returns:
+        object: scikit-learn scaler object.
+    """    
     if scaler_dir is not None:
         logging.info("Using previously saved scaler.")
         scaler_object = load(open(scaler_dir, 'rb'))

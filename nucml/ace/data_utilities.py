@@ -19,6 +19,7 @@ import nucml.config as config
 
 empty_df = pd.DataFrame()
 ace_dir = config.ace_path
+template_path = config.bench_template_path
 
 
 def get_to_skip_lines(element, temp="03c", ace_dir=ace_dir):
@@ -36,25 +37,32 @@ def get_to_skip_lines(element, temp="03c", ace_dir=ace_dir):
     Returns:
         :rtype: (str, int, int)
     """
+    if element == "6012":
+        element = "6000"
+    if len(element) == 4:
+        line_spaces = 2
+    else:
+        line_spaces = 1
     path = Path(os.path.join(ace_dir, element + "ENDF7.ace"))
     if path.is_file():
         with open(path, "r") as ace_file:
             points = []
             indexes = []
             for index, line in enumerate(ace_file):
-                if line.startswith(" " + element + "."): 
-                    points.append(line[1:10])
+                if line.startswith(" "*line_spaces + element + "."): 
+                    points.append(line[:10])
                     indexes.append(index)
                     
-        to_skip = indexes[points.index(element + "." + temp)]
-        lines = indexes[points.index(element + "." + temp) + 1] - to_skip - 12
+        to_search = " "*line_spaces + element + "." + temp
+        to_skip = indexes[points.index(to_search)]
+        lines = indexes[points.index(to_search) + 1] - to_skip - 12
 
         return path, to_skip, lines
     else:
-        return None, None, None
+        raise FileNotFoundError("{} does not exists.".format(path))
 
 
-def get_nxs_jxs_xss(element, temp="03c", ace_dir=ace_dir):
+def get_nxs_jxs_xss(element, temp="03c", ace_dir=ace_dir, custom_path=None):
     """Retrieves the NSX, JXS, and XSS tables for a given element at a given temperature
     The NSX has 16 integers:
         First: the number of elements in the XSS array.
@@ -70,12 +78,19 @@ def get_nxs_jxs_xss(element, temp="03c", ace_dir=ace_dir):
         :rtype: (DataFrame, DataFrame, array)
     """    
     path, to_skip, lines = get_to_skip_lines(element, temp=temp, ace_dir=ace_dir)
-    if path != None:
+    if (path != None) and (custom_path != None):
+        nxs = pd.read_csv(custom_path, delim_whitespace=True, skiprows=to_skip+6, nrows=2, header=None) # .values.flatten()
+        jxs = pd.read_csv(custom_path, delim_whitespace=True, skiprows=to_skip+8, nrows=4, header=None)
+        xss = pd.read_csv(custom_path, delim_whitespace=True, skiprows=to_skip+12, nrows=lines, header=None).values.flatten()
+        # xss = xss[~np.isnan(xss)] # ALL CROSS SECTIONS, FIRST VALUES BELONG TO MT1, 2, 101
+        return nxs, jxs, xss
+    elif path != None:
         nxs = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+6, nrows=2, header=None) # .values.flatten()
         jxs = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+8, nrows=4, header=None)
         xss = pd.read_csv(path, delim_whitespace=True, skiprows=to_skip+12, nrows=lines, header=None).values.flatten()
         # xss = xss[~np.isnan(xss)] # ALL CROSS SECTIONS, FIRST VALUES BELONG TO MT1, 2, 101
         return nxs, jxs, xss
+    
 
 def get_nxs_dictionary(nxs_df):
     """Given the extracted NSX DataFrame, this function will return a key:value dictionary
@@ -623,7 +638,7 @@ def create_new_ace(xss, ZZAAA, saving_dir=""):
     
     return None
 
-def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, copy_element_ace=False, ignore_basename=False):
+def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, ignore_basename=False):
     nsx, jxs, xss = get_nxs_jxs_xss(ZZAAA, temp="03c")
     pointers_info = get_pointers(nsx, jxs)
     # nes, ntr, energy_pointer, mt_pointer, xs_pointers, xs_table_pointer, _ = get_pointers(nsx, jxs)
@@ -653,24 +668,6 @@ def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, copy_element_ace
 
         create_new_ace(xss, ZZAAA, saving_dir=saving_dir_2)
 
-        if copy_element_ace:
-            copy_ace_files(ZZAAA[:2], saving_dir_2, ignore=ZZAAA)
-
-    return None
-
-def copy_ace_files(ZZ, saving_dir, ace_dir=ace_dir, ignore=None):
-    files = os.listdir(ace_dir)
-    for i in files:
-        if i.startswith(ZZ):
-            if ignore is not None:
-                if i.startswith(ignore):
-                    continue
-                else:
-                    shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
-                    convert_dos_to_unix(os.path.join(saving_dir, i))
-            else:
-                shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
-                convert_dos_to_unix(os.path.join(saving_dir, i))
     return None
 
 
@@ -696,61 +693,109 @@ def convert_dos_to_unix(file_path):
 
 ################################################################################################
 ################################################################################################
-# template_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\sss_endfb7u.xsdata"
-template_path = "C:\\Users\\Pedro\\Desktop\\ML_Nuclear_Data\\ACE\\templates\\"
 
+def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, reset=False, template_dir=template_path, comp_threshold=0.10, reduce_ace_size=True):
+    results_df = models_df.copy()
+    bench_composition = pd.read_csv(os.path.join(template_dir, os.path.join(bench_name, "composition.csv")))
+    bench_composition_nonml = bench_composition[bench_composition.Fraction < comp_threshold]
+    bench_composition_ml = bench_composition[bench_composition.Fraction > comp_threshold]
 
-def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
-    # 1. We initialize the inventory if it does not exists, else we read it
-    inventory_path = os.path.join(raw_saving_dir, "model_ace_inventory.csv")
-    if os.path.exists(inventory_path):
-        inventory = pd.read_csv(inventory_path)
-    else:
-        inventory = pd.DataFrame(columns=["model", "directory", "acelib_generated"])
-    # 2. We extract the run name from the model path
-    results_df = results.copy()
     results_df["run_name"] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
     # 3. We iterate over the rows to create data for each run
     for _, row in results_df.iterrows():
         run_name = row.run_name
-        filename = "ml_xs.csv"
         
         # 3a. We create a directory for each model but before we check if it has already been created in the inventory
-        model_ace_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + "/"))
-        if (model_ace_saving_dir in inventory.directory.to_list()) and not reset:
+        bench_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + "/" + bench_name + "/"))
+        ml_xs_saving_dir = os.path.join(bench_saving_dir, "ml_xs_csv")
+        acelib_saving_dir = os.path.join(bench_saving_dir, "acelib")
+        if (os.path.isdir(bench_saving_dir)) and not reset:
             continue
-        # 3b. If it has not been created, the model and scaler is loaded and a csv is created needed to generate acelib.
+        if (os.path.isdir(bench_saving_dir)) and reset:
+            gen_utils.initialize_directories_v2(bench_saving_dir, reset=True)
+            gen_utils.initialize_directories_v2(ml_xs_saving_dir, reset=True)
+            gen_utils.initialize_directories_v2(acelib_saving_dir, reset=True)
         else:
-            gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
-            model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
-            _ = exfor_utils.get_csv_for_ace(
-                df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
-            inventory = inventory.append(pd.DataFrame({"model":[run_name], "directory":[model_ace_saving_dir], "acelib_generated":["no"]}))
-    # 4. The inventory is saved so that these are not processed again in future calls
-    inventory = inventory.drop_duplicates()
-    inventory.to_csv(inventory_path, index=False)
+            gen_utils.initialize_directories_v2(ml_xs_saving_dir, reset=False)
+            gen_utils.initialize_directories_v2(acelib_saving_dir, reset=False)
+
+        model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
+
+        for _, comp_row in bench_composition_ml.iterrows():
+            Z = int(comp_row.Z)
+            A = int(comp_row.A)
+            filename = "{}{}_ml.csv".format(Z, A)
+            path_to_ml_csv = os.path.join(ml_xs_saving_dir, filename)
+            if not os.path.isfile(path_to_ml_csv):
+                _ = exfor_utils.get_csv_for_ace(
+                    df, Z, A, model, scaler, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename)
+
+            create_new_ace_w_df(str(Z) + str(A).zfill(3), path_to_ml_csv, saving_dir=acelib_saving_dir, ignore_basename=True)
+
+        bench_composition_nonml["ZA"] = bench_composition_nonml.Z.astype(str) + bench_composition_nonml.A.astype(str)
+        for _, comp_row in bench_composition_nonml.iterrows():
+
+            copy_ace_w_name(comp_row.ZA, acelib_saving_dir)
+
+        generate_sss_xsdata(bench_saving_dir)
+        copy_benchmark_files(bench_name, bench_saving_dir)
+
+        if reduce_ace_size:
+            reduce_ace_filesize(bench_saving_dir)
+
+            
     return None
 
-def generate_acelib(inventory_path, ZZAAA, generate_xsdata=True, reset=False):
-    inventory = pd.read_csv(inventory_path)
 
-    for index, row in inventory.iterrows():
-        run_dir = row.directory
-        acelib_status = row.acelib_generated
-
-        if acelib_status == "yes" and not reset:
-            continue
+def copy_ace_w_name(ZAAA, saving_dir, ace_dir=ace_dir, ignore=None):
+    files = os.listdir(ace_dir) 
+    for i in files:
+        if i.startswith(ZAAA):
+            shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+            convert_dos_to_unix(os.path.join(saving_dir, i))
         else:
-            path_to_ml_csv = os.path.join(run_dir, "ml_xs.csv")
-            path_to_acelib = os.path.join(run_dir, "acelib/")
-            gen_utils.initialize_directories_v2(path_to_acelib, reset=False)
-            create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=path_to_acelib, copy_element_ace=True, ignore_basename=True)
-            inventory.loc[index, 'acelib_generated'] = "yes"
+            continue
+    return None
 
-            if generate_xsdata:
-                generate_sss_xsdata(run_dir)
-    
-    inventory.to_csv(inventory_path, index=False)
+
+def reduce_ace_filesize(directory, keep=".03c"):
+    all_ace_files = []
+
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith(".ace"):
+                all_ace_files.append(os.path.abspath(os.path.join(root, file)))
+
+    for i in all_ace_files:
+        tags = []
+        final_tags = []
+        new_file_lines = []
+
+        with open(i) as infile:
+            for line in infile:
+                if line[9] == "c":
+                    tags.append(line[:10])
+
+        for t in tags:
+            if t.endswith("03c"):
+                continue
+            else:
+                final_tags.append(t)
+
+        with open(i, 'r') as infile:
+            flag = False
+            for line in infile:
+                if line[7:10] == "03c":
+                    flag = True
+                if flag:
+                    new_file_lines.append(line)
+                if line in final_tags:
+                    flag = False
+        
+        with open(i, "w") as outfile:
+            outfile.writelines(new_file_lines) 
+
+        convert_dos_to_unix(i)
     return None
 
 
@@ -761,7 +806,7 @@ def generate_sss_xsdata(saving_dir, template_path=template_path):
     file = open(xsdata_filepath, "rt")
     new_file = open(new_file_path, "wt")
 
-    to_replace = "/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/"
+    to_replace = "to_replace/"
     to_insert = os.path.abspath(os.path.join(saving_dir, "acelib/")).replace("C:\\", "/mnt/c/").replace("\\", "/") + "/"
 
     for line in file:
@@ -772,13 +817,13 @@ def generate_sss_xsdata(saving_dir, template_path=template_path):
 
     convert_dos_to_unix(new_file_path)
 
-def copy_benchmark_files(benchmark_name, saving_dir, sss_xsdata_path, template_path=template_path):
-    to_replace = "/mnt/c/Users/Pedro/Desktop/ML_Nuclear_Data/ACE/"
-    new_file_path = os.path.join(sss_xsdata_path, "sss_endfb7u.xsdata")
+def copy_benchmark_files(benchmark_name, saving_dir, template_path=template_path):
+    to_replace = "to_replace"
+    new_file_path = os.path.join(saving_dir, "sss_endfb7u.xsdata")
     to_insert = os.path.abspath(new_file_path).replace("C:\\", "/mnt/c/").replace("\\", "/")
 
-    benchmark_path = os.path.join(template_path, benchmark_name)
-    new_benchmark_path = os.path.join(saving_dir, benchmark_name)
+    benchmark_path = os.path.join(template_path, benchmark_name + "/input")
+    new_benchmark_path = os.path.join(saving_dir, "input")
 
     benchmark_file = open(benchmark_path, "rt")
     new_benchmark_file = open(new_benchmark_path, "wt")
@@ -795,30 +840,14 @@ def copy_benchmark_files(benchmark_name, saving_dir, sss_xsdata_path, template_p
 
     return None
 
-def generate_benchmark_files(inventory_path, benchmark_name):
-    inventory = pd.read_csv(inventory_path)
 
-    for index, row in inventory.iterrows():
-        run_dir = row.directory
-
-
-        path_to_benchmark = os.path.join(run_dir, benchmark_name + "/")
-        gen_utils.initialize_directories_v2(path_to_benchmark, reset=False)
-
-        copy_benchmark_files(benchmark_name, path_to_benchmark, run_dir)
-
-        inventory.loc[index, 'benchmarks'] = inventory.loc[index, 'benchmarks'] + " " + benchmark_name
-    inventory.to_csv(inventory_path, index=False)
-    return None
-
-
-def generate_serpent_bash(inventory_path, benchmark_name):
+def generate_serpent_bash(searching_directory):
     all_serpent_files = []
     all_serpent_files_linux = []
 
-    for root, _, files in os.walk(inventory_path):
+    for root, _, files in os.walk(searching_directory):
         for file in files:
-            if file.endswith(benchmark_name):
+            if file.endswith("input"):
                 all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
                     
     for i in all_serpent_files:
@@ -830,7 +859,7 @@ def generate_serpent_bash(inventory_path, benchmark_name):
             all_serpent_files_linux.append("sss2 -omp 10 " + os.path.basename(new))
             all_serpent_files_linux.append("/mnt/c/Program\ Files/MATLAB/R2019a/bin/matlab.exe -nodisplay -nosplash -nodesktop -r \"run('converter.m');exit;\" ")  # pylint: disable=anomalous-backslash-in-string  
         
-    script_path = os.path.join(inventory_path, 'serpent_script.sh')
+    script_path = os.path.join(searching_directory, 'serpent_script.sh')
 
     with open(script_path, 'w') as f:
         for item in all_serpent_files_linux:
@@ -841,16 +870,18 @@ def generate_serpent_bash(inventory_path, benchmark_name):
     return None
 
 
-def gather_benchmark_results(inventory_path):
+def gather_benchmark_results(searching_directory):
     all_results = []
     names = []
+    benchmark_names = []
 
-    for root, _, files in os.walk(inventory_path):
+    for root, _, files in os.walk(searching_directory):
         for file in files:
             if file.endswith(".mat"):
                 name_to_append = os.path.basename(Path(root).parents[0])
                 names.append(name_to_append)
                 all_results.append(os.path.abspath(os.path.join(root, file)))
+                benchmark_names.append(os.path.basename(os.path.dirname(os.path.abspath(os.path.join(root, file)))))
 
     k_results_ana = []
     k_unc_ana = []
@@ -865,7 +896,7 @@ def gather_benchmark_results(inventory_path):
         k_results_imp.append(mat["IMP_KEFF"][0][0])
         k_unc_imp.append(mat["IMP_KEFF"][0][1])
 
-    results_df = pd.DataFrame({"Model":names, "K_eff_ana":k_results_ana, "Unc_ana":k_unc_ana, "K_eff_imp":k_results_imp, "Unc_imp":k_unc_imp})
+    results_df = pd.DataFrame({"Model":names, "Benchmark":benchmark_names,"K_eff_ana":k_results_ana, "Unc_ana":k_unc_ana, "K_eff_imp":k_results_imp, "Unc_imp":k_unc_imp})
     results_df["Deviation_Ana"] = results_df.K_eff_ana.apply(lambda k: abs((k-1)/1))
     results_df["Deviation_Imp"] = results_df.K_eff_imp.apply(lambda k: abs((k-1)/1))
 
@@ -918,3 +949,71 @@ def get_energies(element, temp="03c", ev=False, log=False):
 # #         shutil.rmtree(i)
     
 #     return None
+
+def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
+    # 2. We extract the run name from the model path
+    results_df = results.copy()
+    results_df["run_name"] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+    # 3. We iterate over the rows to create data for each run
+    for _, row in results_df.iterrows():
+        run_name = row.run_name
+        filename = "ml_xs.csv"
+        
+        # 3a. We create a directory for each model but before we check if it has already been created in the inventory
+        model_ace_saving_dir = os.path.abspath(os.path.join(raw_saving_dir, run_name + "/"))
+        if os.path.isdir(model_ace_saving_dir) and not reset:
+            continue
+        # 3b. If it has not been created, the model and scaler is loaded and a csv is created needed to generate acelib.
+        else:
+            gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
+            model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
+            _ = exfor_utils.get_csv_for_ace(
+                df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
+    return None
+
+def generate_acelib(inventory_path, ZZAAA, generate_xsdata=True, reset=False):
+    inventory = pd.read_csv(inventory_path)
+
+    for index, row in inventory.iterrows():
+        run_dir = row.directory
+        acelib_status = row.acelib_generated
+
+        if acelib_status == "yes" and not reset:
+            continue
+        else:
+            path_to_ml_csv = os.path.join(run_dir, "ml_xs.csv")
+            path_to_acelib = os.path.join(run_dir, "acelib/")
+            gen_utils.initialize_directories_v2(path_to_acelib, reset=False)
+            create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=path_to_acelib, ignore_basename=True)
+            inventory.loc[index, 'acelib_generated'] = "yes"
+
+            if generate_xsdata:
+                generate_sss_xsdata(run_dir)
+    
+    inventory.to_csv(inventory_path, index=False)
+    return None
+
+def copy_ace_files(ZZ, saving_dir, ace_dir=ace_dir, ignore=None):
+    files = os.listdir(ace_dir) 
+    for i in files:
+
+        acelib_filename = i.split("ENDF")[0]
+        if len(acelib_filename) == 4:
+            to_compare = acelib_filename[0]
+        else:
+            to_compare = acelib_filename[0:2]
+
+        if len(to_compare) == len(ZZ):
+            if to_compare.startswith(ZZ):
+                if ignore is not None:
+                    if acelib_filename in ignore:
+                        continue
+                    else:
+                        shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                        convert_dos_to_unix(os.path.join(saving_dir, i))
+                else:
+                    shutil.copyfile(os.path.join(ace_dir, i), os.path.join(saving_dir, i))
+                    convert_dos_to_unix(os.path.join(saving_dir, i))
+        else:
+            continue
+    return None
