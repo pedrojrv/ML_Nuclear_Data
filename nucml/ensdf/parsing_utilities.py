@@ -85,7 +85,7 @@ def generate_elemental_ensdf(dat_list, header_directory, saving_directory):
     element_list_names = ensdf_index.Text_Filenames.tolist() # same strings but stripped
 
     ensdf_v1_path = os.path.join(saving_directory, "Elemental_ENSDF_v1/")
-    general_utilities.initialize_directories_v2(ensdf_v1_path, reset=True)
+    general_utilities.initialize_directories(ensdf_v1_path, reset=True)
     logging.info("ENSDF Elemental: Extracting ENSDF data per element with header...")
     for e in element_list_endf:
         for i in dat_list:
@@ -97,7 +97,7 @@ def generate_elemental_ensdf(dat_list, header_directory, saving_directory):
                             outfile.write(lines[z + y])
 
     ensdf_v2_path = os.path.join(saving_directory, "Elemental_ENSDF_no_Header/")
-    general_utilities.initialize_directories_v2(ensdf_v2_path, reset=True)
+    general_utilities.initialize_directories(ensdf_v2_path, reset=True)
     logging.info("ENSDF Elemental: Removing header from ENSDF elemental files...")
     for e in element_list_endf:
         for i in dat_list:
@@ -109,7 +109,7 @@ def generate_elemental_ensdf(dat_list, header_directory, saving_directory):
                             outfile.write(lines[z + y])
 
     ensdf_v3_path = os.path.join(saving_directory, "Elemental_ENSDF_no_Header_F/")
-    general_utilities.initialize_directories_v2(ensdf_v3_path, reset=True)
+    general_utilities.initialize_directories(ensdf_v3_path, reset=True)
     logging.info("ENSDF Elemental: Formatting files...")
     for i in element_list_names:
         with open(os.path.join(ensdf_v2_path, i + ".txt")) as infile, open(os.path.join(ensdf_v3_path, i + ".txt"), 'w') as outfile:

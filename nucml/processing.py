@@ -1,23 +1,23 @@
-from scipy.optimize import curve_fit
-import pandas as pd
-import numpy as np
 import logging
-from sklearn import preprocessing
+import numpy as np
+import pandas as pd
 from joblib import load
-from nucml.general_utilities import func     # pylint: disable=import-error
+from scipy.optimize import curve_fit
+from sklearn import preprocessing
+
+from nucml.general_utilities import func  # pylint: disable=import-error
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
 def impute_values(df):
-    """Imputes values column-wise element-wise using linear interpolation.
+    """Imputes feature values using linear interpolation element-wise. The passed dataframe 
+    must contain both the number of protons and mass number as "Z" and "A" respetively. 
 
     Args:
-        df (DataFrame): dataframe to impute values off. It must contain the following features:
-            'Z' (integer): Representing the proton number.
-            'A' (integer): Representing the mass number (not the precise atomic mass).
+        df (pd.DataFrame): DataFrame to impute values off. All missing values will be filled. 
 
     Returns:
-        df: new imputed DataFrame.
+        pd.DataFrame: new imputed DataFrame.
     """
     for i in range(0,119):
         df[df["Z"] == i] = df[df["Z"] == i].sort_values(by="A").interpolate()
@@ -51,15 +51,17 @@ def impute_values(df):
     return df
 
 def normalize_features(df, to_scale, scaling_type="standard", scaler_dir=None):
-    """This function applies a normalization to the provided dataframe and the specified columns.
+    """Applies a transformer or normalizer to a set of specific features in the provided dataframe.
 
     Args:
-        df (pd.DataFrame): dataframe to normalize/transform.
+        df (pd.DataFrame): DataFrame to normalize/transform.
         to_scale (list): list of columns to apply the normalization to.
         scaling_type (str): scaling or transformer to use. Options include "poweryeo", "standard", 
-            "minmax", "maxabs", "robust", and "quantilenormal".
+            "minmax", "maxabs", "robust", and "quantilenormal". See the scikit-learn documentation 
+            for more information on each of these.
         scaler_dir (str): path-like string to a previously saved scaler. If provided, this overides
-            any other parameter. Defaults to None.
+            any other parameter by loading the scaler from the provided path and using it to 
+            transform the provided dataframe. Defaults to None.
 
     Returns:
         object: scikit-learn scaler object.

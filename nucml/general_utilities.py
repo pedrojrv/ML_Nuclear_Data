@@ -12,22 +12,23 @@ def get_files_w_extension(directory, extension):
     """Gets a list of relative paths to files that match the given extension in the given directory.
 
     Args:
-        directory (str): Path to the directory where the search will be conducted.
-        extension (str): The extension that will be use to match files (i.e. ".csv").
+        directory (str): Path-like string to the directory where the search will be conducted.
+        extension (str): The extension for which to search files in the directory and all subdirectories (i.e. ".csv").
 
     Returns:
         list: contains relative path to each encountered file containing the given extension.
     """    
     extension = "*" + extension
+    logging.info("GEN_UTILS: Searching for {} files...".format(extension))
     files = glob.glob(os.path.join(directory, extension))
     files = natsorted(files)
     return files
 
-def initialize_directories_v2(directory, reset=False):
-    """Creates or resets the given directories.
+def initialize_directories(directory, reset=False):
+    """Creates and/or resets the given directory path.
 
     Args:
-        directory (str): path-like string to directory to reset or create.
+        directory (str): path-like string to directory to create and/or reset.
         reset (bool, optional): if True, the directory will be deleted and created again.
 
     Returns:
@@ -44,6 +45,7 @@ def initialize_directories_v2(directory, reset=False):
         logging.info("GEN UTILS: Directory does not exists. Creating...")
         os.makedirs(directory)
         logging.info("GEN UTILS: Directory created.")
+    return None
 
 
 def check_if_files_exist(files_list):

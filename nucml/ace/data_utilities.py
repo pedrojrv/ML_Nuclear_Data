@@ -655,7 +655,7 @@ def create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=None, ignore_basename=
         else:
             saving_dir_2 = os.path.basename(i).split(".")[0]
             saving_dir_2 = os.path.join(saving_dir, saving_dir_2)
-            gen_utils.initialize_directories_v2(saving_dir_2, reset=False)
+            gen_utils.initialize_directories(saving_dir_2, reset=False)
 
         ml_df = pd.read_csv(i)
         ml_df["Energy"] = ml_df["Energy"] / 1E6
@@ -712,12 +712,12 @@ def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, re
         if (os.path.isdir(bench_saving_dir)) and not reset:
             continue
         if (os.path.isdir(bench_saving_dir)) and reset:
-            gen_utils.initialize_directories_v2(bench_saving_dir, reset=True)
-            gen_utils.initialize_directories_v2(ml_xs_saving_dir, reset=True)
-            gen_utils.initialize_directories_v2(acelib_saving_dir, reset=True)
+            gen_utils.initialize_directories(bench_saving_dir, reset=True)
+            gen_utils.initialize_directories(ml_xs_saving_dir, reset=True)
+            gen_utils.initialize_directories(acelib_saving_dir, reset=True)
         else:
-            gen_utils.initialize_directories_v2(ml_xs_saving_dir, reset=False)
-            gen_utils.initialize_directories_v2(acelib_saving_dir, reset=False)
+            gen_utils.initialize_directories(ml_xs_saving_dir, reset=False)
+            gen_utils.initialize_directories(acelib_saving_dir, reset=False)
 
         model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
 
@@ -965,7 +965,7 @@ def generate_ml_xs(df, Z, A, results, to_scale, raw_saving_dir, reset=False):
             continue
         # 3b. If it has not been created, the model and scaler is loaded and a csv is created needed to generate acelib.
         else:
-            gen_utils.initialize_directories_v2(model_ace_saving_dir, reset=False)
+            gen_utils.initialize_directories(model_ace_saving_dir, reset=False)
             model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
             _ = exfor_utils.get_csv_for_ace(
                 df, Z, A, model, scaler, to_scale, saving_dir=model_ace_saving_dir, saving_filename=filename)
@@ -983,7 +983,7 @@ def generate_acelib(inventory_path, ZZAAA, generate_xsdata=True, reset=False):
         else:
             path_to_ml_csv = os.path.join(run_dir, "ml_xs.csv")
             path_to_acelib = os.path.join(run_dir, "acelib/")
-            gen_utils.initialize_directories_v2(path_to_acelib, reset=False)
+            gen_utils.initialize_directories(path_to_acelib, reset=False)
             create_new_ace_w_df(ZZAAA, path_to_ml_csv, saving_dir=path_to_acelib, ignore_basename=True)
             inventory.loc[index, 'acelib_generated'] = "yes"
 

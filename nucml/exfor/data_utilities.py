@@ -429,6 +429,7 @@ def plot_exfor_w_references(df, Z, A, MT, nat_iso="I", new_data=empty_df, endf=e
         endf = endf_utils.get_for_exfor(Z, A, MT, log=False)
     # Extracting dataframe to make predictions and creating copy for evaluation
     exfor_sample = load_samples(df, Z, A, MT, nat_iso=nat_iso, one_hot=one_hot)
+
     # Initializing Figure and Plotting
     plt.figure(figsize=(14,10))
     ax = plt.subplot(111)

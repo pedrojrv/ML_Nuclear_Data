@@ -47,8 +47,8 @@ def get_all(c4_list, heavy_path, tmp_path, mode="neutrons"):
         # This will be appended to the previous directories
         tmp_path = os.path.join(tmp_path, "Extracted_Text_" + mode + "/")
         heavy_path = os.path.join(heavy_path, "EXFOR_" + mode + "/")
-        general_utilities.initialize_directories_v2(tmp_path, reset=True)
-        general_utilities.initialize_directories_v2(heavy_path, reset=True)
+        general_utilities.initialize_directories(tmp_path, reset=True)
+        general_utilities.initialize_directories(heavy_path, reset=True)
 
 
         cross_section_file = os.path.join(heavy_path, "all_cross_sections.txt")
