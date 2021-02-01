@@ -1,25 +1,32 @@
 import pandas as pd 
 import numpy as np 
-import tensorflow as tf 
-import xgboost as xgb 
-import matplotlib.pyplot as plt 
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, median_absolute_error
+import logging
+from sklearn import linear_model
+import os
+from joblib import dump
+import sys
+
+sys.path.append("..")
+sys.path.append("../..")
 
 import nucml.model.model_utilities as model_utils   # pylint: disable=import-error
-import nucml.ensdf.plotting_utilities as ensdf_plot    # pylint: disable=import-error
+import nucml.ensdf.plot as ensdf_plot    # pylint: disable=import-error
 import nucml.general_utilities as gen_utils # pylint: disable=import-error
 
-import logging
-
-from sklearn import linear_model
-
-import os
-
-from joblib import dump, load
 
 def load_ensdf_samples(df, Z, A, scale=False, scaler=None, to_scale=[]):
-    """
-    Loads ENSDF data for a particular Isotope
+    """Loads ENSDF data for a particular isotope (Z, A).
+
+    Args:
+        df (DataFrame): DataFrame containing all necessary information for Z, A. 
+        Z (int): Number of protons.
+        A (int): Mass Number.
+        scale (bool, optional): If True, the data will be tranform using the provided scaler. Defaults to False.
+        scaler (object, optional): Scikit-Learn trained transformer. Defaults to None.
+        to_scale (list, optional): List of features to be scaled. Defaults to [].
+
+    Returns:
+        DataFrame: Extracted isotope sample.
     """
     logging.info("Extracting samples from dataframe.")
     sample = df[(df["Protons"] == Z) & (df["Mass_Number"] == A)].sort_values(by='Level_Number', ascending=True)
@@ -31,8 +38,17 @@ def load_ensdf_samples(df, Z, A, scale=False, scaler=None, to_scale=[]):
 
 
 def load_ensdf_element(df, Z, scale=False, scaler=None, to_scale=[]):
-    """
-    Loads ENSDF data for a particular element (includes all isotopes)
+    """Loads ENSDF data for a given element (Z).
+
+    Args:
+        df (DataFrame): DataFrame containing all necessary information for Z, A. 
+        Z (int): Number of protons.
+        scale (bool, optional): If True, the data will be tranform using the provided scaler. Defaults to False.
+        scaler (object, optional): Scikit-Learn trained transformer. Defaults to None.
+        to_scale (list, optional): List of features to be scaled. Defaults to [].
+
+    Returns:
+        DataFrame: Extracted element sample.
     """
     logging.info("Extracting samples from dataframe.")
     sample = df[(df["Protons"] == Z)]
@@ -44,10 +60,20 @@ def load_ensdf_element(df, Z, scale=False, scaler=None, to_scale=[]):
 
 
 def append_ensdf_levels(tot_num_levels, df, Z, A, log=False, scale=False, scaler=None, to_scale=[]):
-    """
-    Loads New Measurments and appends ENSDF isotopic data to it. 
-    Assumes new data only has an Energy and Data column
-    It does not depend on df/
+    """Expands the energy levels up to "tot_num_levels" for the given ENSDF isotopic sample.
+
+    Args:
+        tot_num_levels (int): Total number of levels to include (i.e 50 will include levels 1-50).
+        df (DataFrame): DataFrame containing an already extracted isotopic sample. 
+        Z (int): Number of protons.
+        A (int): Mass Number.
+        log (bool, optional): If True, the logarithm will be applied to the Level Number.
+        scale (bool, optional): If True, the data will be tranform using the provided scaler. Defaults to False.
+        scaler (object, optional): Scikit-Learn trained transformer. Defaults to None.
+        to_scale (list, optional): List of features to be scaled. Defaults to [].
+
+    Returns:
+        DataFrame: Extracted element sample.
     """
     new_data = pd.DataFrame({"Level_Number":np.arange(1,tot_num_levels + 1)})
     isotope_exfor = load_ensdf_samples(df, Z, A)
@@ -62,10 +88,19 @@ def append_ensdf_levels(tot_num_levels, df, Z, A, log=False, scale=False, scaler
     return new_data
 
 def append_ensdf_levels_nodata(tot_num_levels, df, log=False, scale=False, scaler=None, to_scale=[]):
-    """
-    Loads New Measurments and appends ENSDF isotopic data to it. 
-    Assumes new data only has an Energy and Data column
-    It does not depend on df/
+    """Expands the energy levels up to "tot_num_levels" for the given ENSDF isotopic sample if no 
+    Level Energy data is avaliable.
+
+    Args:
+        tot_num_levels (int): Total number of levels to include (i.e 50 will include levels 1-50).
+        df (DataFrame): DataFrame containing an already extracted isotopic sample. 
+        log (bool, optional): If True, the logarithm will be applied to the Level Number.
+        scale (bool, optional): If True, the data will be tranform using the provided scaler. Defaults to False.
+        scaler (object, optional): Scikit-Learn trained transformer. Defaults to None.
+        to_scale (list, optional): List of features to be scaled. Defaults to [].
+
+    Returns:
+        DataFrame: Extracted element sample.
     """
     new_data = pd.DataFrame({"Level_Number":np.arange(1,tot_num_levels + 1)})
     isotope_exfor = df.copy()
@@ -82,10 +117,22 @@ def append_ensdf_levels_nodata(tot_num_levels, df, log=False, scale=False, scale
     return new_data
 
 def append_ensdf_levels_range(tot_num_levels, df, Z, A, steps=1, log=False, scale=False, scaler=None, to_scale=[]):
-    """
-    Loads New Measurments and appends ENSDF isotopic data to it. 
-    Assumes new data only has an Energy and Data column
-    It does not depend on df/
+    """Expands the energy levels up to "tot_num_levels" for the given ENSDF isotopic sample using
+    a range with n steps rather than linear. 
+
+    Args:
+        tot_num_levels (int): Total number of levels to include (i.e 50 will include levels 1-50).
+        df (DataFrame): DataFrame containing an already extracted isotopic sample. 
+        Z (int): Number of protons.
+        A (int): Mass Number.
+        steps (int): Number of intermediate steps between 1 and tot_num_levels to create. 
+        log (bool, optional): If True, the logarithm will be applied to the Level Number.
+        scale (bool, optional): If True, the data will be tranform using the provided scaler. Defaults to False.
+        scaler (object, optional): Scikit-Learn trained transformer. Defaults to None.
+        to_scale (list, optional): List of features to be scaled. Defaults to [].
+
+    Returns:
+        DataFrame: Extracted element sample.
     """
     new_data = pd.DataFrame({"Level_Number":np.arange(1,tot_num_levels + 1, steps)})
     isotope_exfor = load_ensdf_samples(df, Z, A)
@@ -100,6 +147,24 @@ def append_ensdf_levels_range(tot_num_levels, df, Z, A, steps=1, log=False, scal
     return new_data
 
 def generate_level_density_csv(df, Z, A, nodata=False, upper_energy_mev=20, get_upper=False, tot_num_levels=0, it_limit=500, plot=False, save=False, saving_dir=""):
+    """Fits a linear model to the isotopic sample provided and then interpolates 
+
+    Args:
+        df ([type]): [description]
+        Z ([type]): [description]
+        A ([type]): [description]
+        nodata (bool, optional): [description]. Defaults to False.
+        upper_energy_mev (int, optional): [description]. Defaults to 20.
+        get_upper (bool, optional): [description]. Defaults to False.
+        tot_num_levels (int, optional): [description]. Defaults to 0.
+        it_limit (int, optional): [description]. Defaults to 500.
+        plot (bool, optional): [description]. Defaults to False.
+        save (bool, optional): [description]. Defaults to False.
+        saving_dir (str, optional): [description]. Defaults to "".
+
+    Returns:
+        [type]: [description]
+    """    
     if nodata:
         original = df.copy()
     else:

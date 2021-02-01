@@ -1,14 +1,17 @@
 import os
 
 def configure(user_path, ace_path):
-    """Configures an internal file necessary to activate all NucML functionalities. 
+    """Configures an internal file necessary to enable all NucML functionalities that 
+    deal with loading data files from EXFOR, AME, ACE, ENSDF, and RIPL. 
+
+    The ace_path can be an already existing directory from a serpent distribution. The
+    ML_Nuclear_Data repository contaings a version of ACE files which were used to develop
+    and test all functionalities. If the .ace files have different structure, 
+    the ace utilities may not work. 
 
     Args:
-        user_path (str): path-like string pointing to the project directory.
-        ace_path (str): path-like string pointint to the .ace files. This can be an already
-            existing directory from a serpent distribution. Note: MCNP has not been tested. 
-            If the .ace files have different structure, the ace utilities may not work. 
-
+        user_path (str): Path-like string pointing to the project directory.
+        ace_path (str): Path-like string pointing to the .ace files. 
     Returns:
         None
     """    

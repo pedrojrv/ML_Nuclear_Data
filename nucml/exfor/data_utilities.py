@@ -17,14 +17,16 @@ from sklearn.model_selection import train_test_split
 
 # This allows us to import the nucml utilities
 sys.path.append("..")
+sys.path.append("../..")
+
 
 import nucml.ace.data_utilities as ace_utils        # pylint: disable=import-error
 import nucml.evaluation.data_utilities as endf_utils      # pylint: disable=import-error
 import nucml.datasets as nuc_data                   # pylint: disable=import-error
 import nucml.model.model_utilities as model_utils   # pylint: disable=import-error
-import nucml.plot.plotting_utilities as plot_utils  # pylint: disable=import-error
+import nucml.plot.utilities as plot_utils  # pylint: disable=import-error
 import nucml.general_utilities as gen_utils         # pylint: disable=import-error
-import nucml.exfor.plotting_utilities as exfor_plot_utils  # pylint: disable=import-error
+import nucml.exfor.plot as exfor_plot_utils  # pylint: disable=import-error
 
 
 ame_dir_path = os.path.abspath("../AME/")
@@ -377,18 +379,18 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
 
     if show:
         if plotter == "plotly":
-            exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show)
+            exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show)
         elif plotter == "plt":
-            exfor_plot_utils.sns_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show, log=log)
+            exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show, log=log, plot_type="sns")
         if save_both:
             if plotter == "plotly":
                 if len(order_dict) != 0:
                     order_dict = {k: int(v) for k, v in order_dict.items()}
-                exfor_plot_utils.sns_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False, log=log)
+                exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False, log=log, plot_type="sns")
             elif plotter == "plt":
                 if len(order_dict) != 0:
                     order_dict = {str(v): k for k, v in order_dict.items()}
-                exfor_plot_utils.plotly_ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False)
+                exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False)
     return all_dict
 
 

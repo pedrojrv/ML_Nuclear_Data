@@ -3,22 +3,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
-import plotly.graph_objects as go
 
 sns.set(font_scale = 2)
 sns.set_style("white")
 
 empty_df = pd.DataFrame()
 
-def plot_level_density(df, Z, A, df2=empty_df, save=False, save_dir=None, label1="Adopted", label2="Cut-Off"):
+def level_density(df, Z, A, df2=empty_df, save=False, save_dir=None, label1="Adopted", label2="Cut-Off"):
     """Plots level density for a given isotope.
 
     Args:
-        df (DataFrame): dataframe containing the discrete levels for a given isotope
-        Z (int): number of protons.
-        A (int): mass number.
-        df2 (DataFrame, optional): If passed, this will be plot alongside the main dataframe. Useful for plotting 
-            all known levels along the RIPL-cutoff dataframe. Defaults to empty_df.
+        df (DataFrame): DataFrame containing the discrete levels for a given isotope.
+        Z (int): Number of protons.
+        A (int): Mass number.
+        df2 (DataFrame, optional): If passed, this will be plotted alongside the main dataframe. Useful for plotting 
+            all known levels along the RIPL-cutoff DataFrame. Defaults to an empty DataFrame.
         save (bool, optional): If True, the image will be saved. Defaults to False.
         save_dir (str, optional): Path-like string where the figure will be stored. Defaults to None.
         label1 (str, optional): Label for the first dataframe line in the plot legend. Defaults to "Adopted".
@@ -49,7 +48,20 @@ def plot_level_density(df, Z, A, df2=empty_df, save=False, save_dir=None, label1
     return None
 
 
-def plot_level_density_ml(ensdf_df, predictions_df, log_sqrt=False, log=False, save=False, save_dir=None):
+def level_density_ml(ensdf_df, predictions_df, log_sqrt=False, log=False, save=False, save_dir=None):
+    """Plots the level density based on all known levels and the predicted LD based on model predictions.
+
+    Args:
+        ensdf_df (DataFrame): The original DataFrame containing all known levels. It can also be the ENSDF data filtered using the RIPLE cut-off parameters.
+        predictions_df (DataFrame): A DataFrame containing the predictions by any ML model. It must contain both a "Level_Number", and "Energy" feature.
+        log_sqrt (bool, optional): If True, it assumes both DataFrames "Energy" feature are in sqrt(Energy). Defaults to False.
+        log (bool, optional): If True, it assumes that both DataFrame's "Energy" and "Data" features are already in log form. Defaults to False.
+        save (bool, optional): If True, the resulting plot will be saved. Defaults to False.
+        save_dir (str, optional): Path-like string pointing towards a directory where the image will be saved. Defaults to None.
+
+    Returns:
+        None
+    """
     if log_sqrt:
         ensdf_df["Energy"] = np.power(ensdf_df["Energy"], 2)
         predictions_df["Energy"] = np.power(predictions_df["Energy"], 2)
@@ -76,7 +88,19 @@ def plot_level_density_ml(ensdf_df, predictions_df, log_sqrt=False, log=False, s
     return None
 
 
-def plot_levels_axh(protons, mass_number, ensdf_df, save=False, save_dir=None):
+def levels_axh(protons, mass_number, ensdf_df, save=False, save_dir=None):
+    """Experimental. Plots all levels as horizontal lines in a vertical plot.
+
+    Args:
+        protons (int): Number of Protons.
+        mass_number (int): Mass Number.
+        ensdf_df (DataFrame): DataFrame containing the original levles for all isotopes.
+        save (bool, optional): If True, the image will be saved. Defaults to False.
+        save_dir (str, optional): Path-like string where the generated image will be saved. Defaults to None.
+
+    Returns:
+        None
+    """    
     to_plot = ensdf_df[(ensdf_df["Z"] == protons) & (ensdf_df["A"] == mass_number)].sort_values(
         by='Level_Number', ascending=True)
     plt.figure(figsize=(10,15))

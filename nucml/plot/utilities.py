@@ -8,13 +8,13 @@ from PIL import Image
 
 
 def create_gif(directory, extension, name, duration=2):
-    """Gathers all images in a directory and creates a gif file.
+    """Gathers all images in a directory and creates a GIF file.
 
     Args:
-        directory (str): path-like string where all images are saved.
-        extension (str): extension of images to be gathered (i.e. jpg).
-        name (str): name by which the gif will be saved.
-        duration (int, optional): wanted duration of the created gif. Defaults to 2.
+        directory (str): Path-like string where all images are saved.
+        extension (str): Extension of images to be gathered (i.e. jpg).
+        name (str): Name to save the GIF file as.
+        duration (int, optional): Duration of the GIF file. Defaults to 2.
     
     Returns:
         None
@@ -33,14 +33,14 @@ def kdeplot(x, labels=[''], xlabel='', ylabel='', title='', figsize=(15,10), sav
     """Creates a KDE plot for a given array.
 
     Args:
-        x (np.array or list): numpy array or list of numpy arrays. If a list is given, all provided arrays will be ploted in the same figure.
+        x (np.array or list): Numpy array or list of numpy arrays. If a list is given, all provided arrays will be ploted in the same figure.
         labels (list, optional): If x is a list, this argument represents the labels that will be plotted. Defaults to [''].
         xlabel (str, optional): Label for the X-axis. Defaults to ''.
         ylabel (str, optional): Label for the Y-axis. Defaults to ''.
         title (str, optional): Title of the plotted figure. Defaults to ''.
         figsize (tuple, optional): Figure size. Defaults to (15,10).
         save (bool, optional): If True, the figure will be saved. Defaults to False.
-        path (str, optional): path-like string where the figure will be saved in case save=True. Defaults to ''.
+        path (str, optional): Path-like string where the figure will be saved in case save=True. Defaults to ''.
 
     Returns:
         None
@@ -68,13 +68,14 @@ def cat_plot(features, df, groupby, top=10, reverse=False, save=False, path=''):
     """Plots a categorical bar plot.
 
     Args:
-        features (list): list of column names for which a separate bar plot will be created.
-        df (pd.DataFrame): pandas dataframe containing data to be ploted. Must have the columns in the features argument.
-        groupby (str): column by which the dataframe will be grouped for each bar plot.
-        top (int, optional): In cases where there are a lot of categories, it is a good idea to limit the number of bars in the plot. This argument specifies the maximum number of bars per plot. Defaults to 10.
+        features (list): List of feature names to plot. Every single feature will be plotted individually.
+        df (pd.DataFrame): Dataframe containing the features and data to be plotted.
+        groupby (str): Feature by which the dataframe will be grouped for each bar plot.
+        top (int, optional): In cases where there are a lot of categories, it is a good idea to limit the number of bars in the plot. 
+            This argument specifies the maximum number of categories to render. Defaults to 10.
         reverse (bool, optional): If True, the lowest frequent items are plotted rather than the most popular. Defaults to False.
         save (bool, optional): If True, the figure will be saved. Defaults to False.
-        path (str, optional): path-like string where the figure will be saved in case save=True. Defaults to ''.
+        path (str, optional): Path-like string where the figure will be saved in case save=True. Defaults to ''.
 
     Returns:
         None
@@ -99,31 +100,21 @@ def cat_plot(features, df, groupby, top=10, reverse=False, save=False, path=''):
     return None
 
 
-def plotly_fig2pil(fig):
-    """Converts a plotly figure object to a PIL image.
+def plotly_converter(plotly_object, convert_to="pil"):
+    """Converts a Plotly figure into a PIL image object or a numpy array. 
 
     Args:
-        fig (object): plotly object to convert to array.
+        plotly_object (object): Plotly object to convert.
+        convert_to (str, optional): Type of file to return. Type can be "pil" or "array". Defaults to "pil".
 
     Returns:
-        object: PIL Image object.
-    """ 
-    fig_bytes = fig.to_image(format="png")
-    buf = io.BytesIO(fig_bytes)
-    img = Image.open(buf)
-    return img
-
-def plotly_fig2array(fig):
-    """Converts a plotly figure object into a numpy array.
-
-    Args:
-        fig (object): plotly object.
-
-    Returns:
-        np.array: numpy array representation of the plotly figure.
+        object: Pil image or numpy array
     """
-    fig_bytes = fig.to_image(format="png")
+    fig_bytes = plotly_object.to_image(format="png")
     buf = io.BytesIO(fig_bytes)
     img = Image.open(buf)
-    return np.asarray(img)
-    
+    if convert_to == "pil":
+        return img
+    elif convert_to == "array":
+        return np.asarray(img)
+

@@ -17,7 +17,7 @@ def impute_values(df):
         df (pd.DataFrame): DataFrame to impute values off. All missing values will be filled. 
 
     Returns:
-        pd.DataFrame: new imputed DataFrame.
+        pd.DataFrame: New imputed DataFrame.
     """
     for i in range(0,119):
         df[df["Z"] == i] = df[df["Z"] == i].sort_values(by="A").interpolate()
@@ -55,16 +55,16 @@ def normalize_features(df, to_scale, scaling_type="standard", scaler_dir=None):
 
     Args:
         df (pd.DataFrame): DataFrame to normalize/transform.
-        to_scale (list): list of columns to apply the normalization to.
-        scaling_type (str): scaling or transformer to use. Options include "poweryeo", "standard", 
+        to_scale (list): List of columns to apply the normalization to.
+        scaling_type (str): Scaling or transformer to use. Options include "poweryeo", "standard", 
             "minmax", "maxabs", "robust", and "quantilenormal". See the scikit-learn documentation 
             for more information on each of these.
-        scaler_dir (str): path-like string to a previously saved scaler. If provided, this overides
+        scaler_dir (str): Path-like string to a previously saved scaler. If provided, this overides
             any other parameter by loading the scaler from the provided path and using it to 
             transform the provided dataframe. Defaults to None.
 
     Returns:
-        object: scikit-learn scaler object.
+        object: Scikit-learn scaler object.
     """    
     if scaler_dir is not None:
         logging.info("Using previously saved scaler.")
