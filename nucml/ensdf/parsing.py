@@ -7,7 +7,7 @@ sys.path.append("..")
 sys.path.append("../..")
 
 from nucml import general_utilities # pylint: disable=import-error
-import nucml.datasets as nuc_data # pylint: disable=import-error
+import nucml.datasets as nuc_data   # pylint: disable=import-error
 
 def get_ripl_dat_paths(dat_directory):
     """Searches directory for RIPL .dat files and returns a list of relative paths for each one.
