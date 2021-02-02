@@ -1,0 +1,131 @@
+% --- PU-MET-FAST-019 ---
+
+set title "PU-MET-FAST-019"
+
+%===============================================================================
+% GEOMETRY
+%===============================================================================
+
+% SURFACES ---------------------------------------------------------------------
+% --- Spheres ---
+surf	1	sph		0.0		0.0		0.0		 1.40	% Radius =  1.40 cm
+surf	2	sph		0.0		0.0		0.0		 5.35	% Radius =  5.35 cm
+surf	3   sph		0.0		0.0		0.0		11.00	% Radius = 11.00 cm
+surf	4   sph		0.0		0.0		0.0		11.15	% Radius = 11.15 cm
+surf	5   sph		1.20	0.0		0.0		 5.20	% Radius =  5.20 cm
+surf	6	sph		1.20	0.0		0.0		10.85	% Radius = 10.85 cm
+surf	7	sph		0.0		0.0		0.0		15.00	% Radius = 15.00 cm
+
+% --- Planes ---
+surf	8	px	   -0.15	% Perpendicular to x-axis @ x =  -0.15 cm
+surf	9	px		1.20	% Perpendicular to x-axis @ x =   1.20 cm
+surf   10	px		1.00	% Perpendicular to x-axis @ x =   1.00 cm
+surf   11   px	  -14.15	% Perpendicular to x-axis @ x = -14.15 cm
+
+% --- Cylinders ---
+surf   12	cylx	0.0		0.0		1.10	% Radius =  1.10 cm, y = 0, z = 0
+surf   13	cylx	0.0		0.0		2.50	% Radius =  2.50 cm, y = 0, z = 0
+surf   14	cylx	0.0		0.0		5.50	% Radius =  5.50 cm, y = 0, z = 0
+surf   15	cylx	0.0		0.0	   14.00	% Radius = 14.00 cm, y = 0, z = 0
+surf   16	cylx	0.0		0.0		9.70	% Radius = 9.70  cm, y = 0, z = 0
+
+% CELLS ------------------------------------------------------------------------
+% --- Filled ---
+cell	1	0	plutonium	 1	-2				% Plutonium pit
+cell	2	0	reflector	 2	-3	-8			% Reflector piece 1
+cell	3	0	reflector	 5	-6	 9	 12		% Reflector piece 2
+cell	4	0	copper		 3  -4	-16	 -8		% Copper cup
+cell	5	0	steel		 4	11	-13	 -8 	% Steel shaft
+cell	6	0	steel		 10 -9	-15	 14		% Steel diaphragm
+
+% --- Voids / Outside ---
+cell	7	0	void		-1					% Central void
+cell	8	0	void		 9	 2	 -5			% Between pit and refl. piece 2
+cell	9	0	void		-12  5	 -6	  8		% Hole in reflector piece 2
+cell   10	0	void		 8	-10   2  -3	    % Reflector piece 1 to diaphragm
+cell   11	0	void		-14  10	 -9	  2		% Between diaphragm and pit
+cell   12	0	void		 3	-4	  16 -10	% Continuation of copper cup
+cell   13	0	void		-7  -13	 -11 -8		% Shaft to system boundary
+cell   14	0   void		-7	 13   4  -10	% Refl. piece 1 to sys. boundary
+cell   15	0	void		-7	 10  -9   15	% Diaphragm to system boundary
+cell   16	0	void		-7	 9	  6			% Refl. piece 2 to sys. boundary
+cell   17   0   outside      7					% Outside
+
+% BOUNDARY CONDITIONS ----------------------------------------------------------
+% --- Black boundary condition ---
+set bc 1  % Black boundary
+
+%===============================================================================
+% MATERIALS
+%===============================================================================
+
+% SIMPLE MATERIALS -------------------------------------------------------------
+% --- Various isotopes of plutonium with traces of Ga, C, Fe, W, Ni ---
+	% Overall mass density 15.4757 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat	plutonium -15.4757
+94239.03c	3.3930E-2	% Pu-239
+94240.03c   3.5043E-3	% Pu-240
+94241.03c   3.9189E-4	% Pu-241
+31000.03c	2.2105E-3	% Ga (natural)
+ 6000.03c	3.0246E-4	% C  (natural)
+26000.03c	3.2525E-4	% Fe (natural)
+74000.03c	7.4100E-5	% W  (natural)
+28000.03c	1.4187E-3	% Ni (natural)
+
+% --- Beryllium reflector with traces of O, C, Fe ---
+	% Overall mass density 1.8169 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat reflector -1.8169
+ 4009.03c	1.2081E-1	% Be-9
+	/* NOTE: The Beryllium should've been natural (4000.03c), but the ENDFB7
+			 cross-section data does not include it! Instead, 4009 was used
+			 because Be-9 makes up nearly 100% of natural Beryllium. */
+ 8016.03c	8.2064E-5	% O-16  (natural)
+	/* NOTE: The Oxygen should've been natural (8000.03c), but the ENDFB7
+			cross-section data does not include it! Instead, 8016 was used
+			because O-16 makes up ~99.76% of natural Beryllium. */
+ 6000.03c	1.0020E-4	% C  (natural)
+26000.03c	5.0939E-5	% Fe (natural)
+
+% --- Steel diaphragm/shaft ---
+	% Overall mass density 7.5278 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat steel -7.5278
+26000.03c	8.1174E-2	% Fe (natural, with 99.05% density)
+
+% --- Copper cup ---
+	% Overall mass density 8.6913 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat copper -8.6913
+29000.03c	8.2365E-2	% Cu (natural, with 99.9% density)
+
+% CROSS-SECTION LIBRARY --------------------------------------------------------
+set acelib "/global/home/groups/co_nuclear/serpent/xsdata_2/endfb7/sss_endfb7u.xsdata"
+
+%===============================================================================
+% OPTIONS
+%===============================================================================
+
+% NEUTRON CYCLES ---------------------------------------------------------------
+% --- 5000 neutrons per cycle, 100 cycles, 20 inactive ---
+set pop 5000 100 20
+
+%===============================================================================
+% PLOTS
+%===============================================================================
+% GEOMETRY PLOTS ---------------------------------------------------------------
+% --- xy-plane, 500px x 500px ---
+plot  3 500 500
+
+% MESH PLOTS -------------------------------------------------------------------
+% --- xy-plane, 500px x 500px ---
+mesh  3 500 500
+
+%===============================================================================
+% DETECTORS + ENERGY GRIDS
+%===============================================================================
+% FLUX-ENERGY SPECTRUM ---------------------------------------------------------
+% --- 500 energy bins, uniform lethargy width, between 1E-11 MeV and 2E1 MeV ---
+det EnergyDetector de MyEnergyGrid
+ene MyEnergyGrid 3 500 1E-11 2E1
