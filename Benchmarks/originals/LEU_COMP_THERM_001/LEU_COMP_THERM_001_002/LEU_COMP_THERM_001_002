@@ -7,7 +7,7 @@ set title "LEU-COMP-THERM-001-002"
 %===============================================================================
 % LATTICES ---------------------------------------------------------------------
 % --- Square-pitched lattices ---
-lat	10	1	-71.864   -16.256   20	17	2.032	% First cluster
+lat	10	1	-52.560   0.000   20	17	2.032	% First cluster
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
@@ -25,7 +25,7 @@ lat	10	1	-71.864   -16.256   20	17	2.032	% First cluster
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-lat 20	1   -19.304   -16.256   20	17	2.032	% Second cluster
+lat 20	1    0.000    0.000   20	17	2.032	% Second cluster
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
@@ -43,7 +43,7 @@ lat 20	1   -19.304   -16.256   20	17	2.032	% Second cluster
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-lat 30	1	 33.356   -16.256   20	17	2.032	% Third cluster
+lat 30	1	 52.560   0.000   20	17	2.032	% Third cluster
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
@@ -111,14 +111,14 @@ cell   12	1	5052_Al   15 -16 -21  				% Lower end plug
 cell   13	1	1100_Al	  17 -18 -21  			    % Upper end plug (lower part)
 cell   14   1   1100_Al   18 -19 -22				% Upper end plug (upper part)
 cell   15   1   water     15 -19 22					% Surrounding water
-cell   16   1   outside  -15						% Bottom boundary
-cell   17   1   outside   19						% Top boundary
+cell   16   1   water    -15						% Bottom boundary
+cell   17   1   water     19						% Top boundary
 % surrounding water
 cell   18   0   water	   1 -2   9 -12   13 -20	% Side layer
 cell   19   0   water	   7 -8   9 -12   13 -20	% Side layer
 cell   20   0   water	   2 -7   9 -10   13 -20	% Side layer	  
 cell   21   0   water	   2 -7  11 -12   13 -20	% Side layer
-cell   22   0   water	   2 -7  11 -12   13 -14	% Bottom layer
+cell   22   0   water	   2 -7  10 -11   13 -14	% Bottom layer
 cell   23   0   water	   2 -7  10 -11   19 -20	% Top layer
 cell   24   0   water	   3 -4  10 -11   15 -19	% Between first & second clusters
 cell   25   0   water	   5 -6  10 -11   15 -19	% Between second & third clusters
@@ -135,23 +135,20 @@ set	bc	1  % Vacuum boundary
 % SIMPLE MATERIALS -------------------------------------------------------------
 % --- LEU oxide (UO2) fuel with traces of U-234, U-236 ---
 	% Evaluated @ 300K (approx. room temperature)
-mat UO2 sum
+mat UO2 sum rgb 0 0 0
 92234.03c	2.8563E-6	% U-234
 92235.03c	4.8785E-4	% U-235
 92236.03c	3.5348E-6	% U-236
 92238.03c	2.0009E-2	% U-238
-8016.03c	4.1202E-2	% O-16  (natural)
-	/* NOTE: The Oxygen should've been natural (8000.03c), but the ENDFB7
-			cross-section data does not include it! Instead, 8016 was used
-			because O-16 makes up ~99.76% of natural Oxygen. */
+8016.03c	4.1202E-2	% O-16  (natural not available in ENDF/B-VII)
 			
 % --- 1100 Al alloy: Al with Cu, Mn, Zn, Si, Fe ---
 	% Overall mass density 2.70 g/cm3
 	% Evaluated @ 300K (approx. room temperature)
-mat 1100_Al -2.70
-13000.03c	5.9660E-2	% Al (natural)
+mat 1100_Al -2.70 rgb 192 192 192
+13027.03c	5.9660E-2	% Al-27 (natural not available in ENDF/B-VII)
 29000.03c	3.0705E-5	% Cu (natural)
-25000.03c	7.3991E-6	% Mn (natural)
+25055.03c	7.3991E-6	% Mn-55 (natural not available in ENDF/B-VII)
 30000.03c	1.2433E-5	% Zn (natural)
 14000.03c	2.3302E-4	% Si (natural)
 26000.03c	1.1719E-4	% Fe (natural)
@@ -159,12 +156,12 @@ mat 1100_Al -2.70
 % --- 5052 Al alloy: Al with Cr, Cu, Mg, Mn, Zn, Si, Fe ---
 	% Overall mass density 2.69 g/cm3
 	% Evaluated @ 300K (approx. room temperature)
-mat 5052_Al -2.69
-13000.03c	5.8028E-2	% Al (natural)
+mat 5052_Al -2.69 rgb 192 192 192
+13027.03c	5.8028E-2	% Al-27 (natural not available in ENDF/B-VII)
 24000.03c	7.7888E-5	% Cr (natural)
 29000.03c	1.2746E-5	% Cu (natural)
 12000.03c	1.6663E-3	% Mg (natural)
-25000.03c	1.4743E-5	% Mn (natural)
+25055.03c	1.4743E-5	% Mn-55 (natural not available in ENDF/B-VII)
 30000.03c	1.2387E-5	% Zn (natural)
 14000.03c	1.2978E-4	% Si (natural)
 26000.03c	6.5265E-5	% Fe (natural)
@@ -172,37 +169,30 @@ mat 5052_Al -2.69
 % --- 6061 Al alloy: Al with Cr, Cu, Mg, Mn, Ti, Zn, Si, Fe ---
 	% Overall mass density 2.69 g/cm3
 	% Evaluated @ 300K (approx. room temperature)
-mat 6061_Al -2.69
-13000.03c	5.8433E-2	% Al (natural)
+mat 6061_Al -2.69 rgb 192 192 192
+13027.03c	5.8433E-2	% Al-27 (natural not available in ENDF/B-VII)
 24000.03c	6.2310E-5	% Cr (natural)
 29000.03c	6.3731E-5	% Cu (natural)
 12000.03c	6.6651E-4	% Mg (natural)
-25000.03c	2.2115E-5	% Mn (natural)
+25055.03c	2.2115E-5	% Mn-55 (natural not available in ENDF/B-VII)
 22000.03c	2.5375E-5	% Ti (natural)
 30000.03c	3.0967E-5	% Zn (natural)
 14000.03c	3.4607E-4	% Si (natural)
 26000.03c	1.0152E-4	% Fe (natural)
 
-% MODERATOR MATERIALS ----------------------------------------------------------
-% --- Light water with thermal scattering data ---
+% --- Light water ---
 	% Overall mass density 0.997766 g/cm3 (interpolated; see benchmark PDF)
 	% Evaluated @ 300K (approx. room temperature)
-mat water -0.997766 moder <thname> 1000?
-1000?.03c	6.6706E-2	% H 	(natural)
-8016.03c	3.3353E-2	% O-16  (natural)
-	/* NOTE: The Oxygen should've been natural (8000.03c), but the ENDFB7
-			cross-section data does not include it! Instead, 8016 was used
-			because O-16 makes up ~99.76% of natural Oxygen. */
+mat water -0.997766 rgb 0 0 255
+1001.03c	6.6706E-2	% H-1 	(natural not available in ENDF/B-VII)
+8016.03c	3.3353E-2	% O-16  (natural not available in ENDF/B-VII)
 			
-% --- Acrylic with thermal scattering data ---
+% --- Acrylic ---
 	% Evaluated @ 300K (approx. room temperature)
-mat acrylic sum moder <thname> 1000? moder <thname> 12000?
-1000?.03c	5.6642E-2	% H		(natural)
-12000?.03c	3.5648E-2	% C		(natural)
-8016.03c	1.4273E-2	% O-16	(natural)
-
-% CROSS-SECTION LIBRARY --------------------------------------------------------
-set acelib "/global/home/groups/co_nuclear/serpent/xsdata_2/endfb7/sss_endfb7u.xsdata"
+mat acrylic sum rgb 255 255 255
+1001.03c	5.6642E-2	% H		(natural not available in ENDF/B-VII)
+6000.03c	3.5648E-2	% C		(natural)
+8016.03c	1.4273E-2	% O-16	(natural not available in ENDF/B-VII)
 
 %===============================================================================
 % OPTIONS
@@ -216,23 +206,23 @@ set	pop	10000 100 50
 %===============================================================================
 % GEOMETRY PLOTS ---------------------------------------------------------------
 % --- yz-plane, 500px x 500px ---
-plot  1 500 500
+plot  1 500 743
 
 % --- xz-plane, 500px x 500px ---
-plot  2 500 500
+plot  2 1217 743
 
 % --- xy-plane, 500px x 500px ---
-plot  3 500 500
+plot  3 1217 500
 
 % MESH PLOTS -------------------------------------------------------------------
 % --- yz-plane, 500px x 500px ---
-mesh  1 500 500
+mesh  1 500 743
 
 % --- xz-plane, 500px x 500px ---
-mesh  2 500 500
+mesh  2 1217 743
 
 % --- xy-plane, 500px x 500px ---
-mesh  3 500 500
+mesh  3 1217 500
 
 %===============================================================================
 % DETECTORS + ENERGY GRIDS
