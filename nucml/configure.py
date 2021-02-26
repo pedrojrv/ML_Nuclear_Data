@@ -1,6 +1,6 @@
 import os
 
-def configure(user_path, ace_path):
+def configure(user_path, ace_path, matlab_exe_path=""):
     """Configures an internal file necessary to enable all NucML functionalities that 
     deal with loading data files from EXFOR, AME, ACE, ENSDF, and RIPL. 
 
@@ -11,7 +11,9 @@ def configure(user_path, ace_path):
 
     Args:
         user_path (str): Path-like string pointing to the project directory.
-        ace_path (str): Path-like string pointing to the .ace files. 
+        ace_path (str): Path-like string pointing to the .ace files.
+        matplab_exe_path (str, optional): Path-like string pointing towards the MATLAB executable. 
+            The default is None 
 
     Returns:
         None
@@ -30,5 +32,6 @@ def configure(user_path, ace_path):
         f.write("exfor_path = r'{}' \n".format(exfor_csv_path))
         f.write("bench_template_path = r'{}' \n".format(bench_templ_path))
         f.write("ace_path = r'{}' \n".format(os.path.abspath(ace_path)))
+        f.write("matlab_path = r'{}' \n".format(os.path.abspath(matlab_exe_path)))
 
     return None

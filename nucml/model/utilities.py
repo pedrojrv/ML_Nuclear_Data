@@ -153,7 +153,7 @@ def get_best_models_df(results_df, keep_first=False):
     best_models = best_train.append(best_test)
     return best_models
 
-def load_model_and_scaler(model_scaler_info, df=True):
+def load_model_and_scaler(model_scaler_info, df=True, model_only=False):
     """Loads both the model and scaler given a dataframe with path's specified.
 
     Args:
@@ -161,6 +161,7 @@ def load_model_and_scaler(model_scaler_info, df=True):
             is passed. Else, it must contain the "model_path" and "scaler_path" as keys in a dictionary.
         df (bool, optional): If True, the model_scaler_info variable must be a DataFrame. If False, it must be
             a python dictionary.
+        model_only (bool, optional): If True, the scaler will not be loaded. Only the model will be loaded.
 
     Returns:
         object, object: returns the loaded model and scaler.
@@ -172,9 +173,11 @@ def load_model_and_scaler(model_scaler_info, df=True):
         path_to_model = model_scaler_info["model_path"]
         path_to_scaler = model_scaler_info["scaler_path"]
     model = load(path_to_model) 
-    scaler = load(path_to_scaler)
-    return model, scaler
-
+    if not model_only:
+        scaler = load(path_to_scaler)
+        return model, scaler
+    else:
+        return model 
 
 
 def cleanup_model_dir(results_df, model_dir, keep_best=True, keep_first=False):

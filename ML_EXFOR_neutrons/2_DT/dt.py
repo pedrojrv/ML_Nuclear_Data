@@ -62,7 +62,7 @@ from sklearn.model_selection import train_test_split
 sys.path.append("../..")
 
 import nucml.datasets as nuc_data # pylint: disable=import-error
-import nucml.model.model_utilities as model_utils # pylint: disable=import-error
+import nucml.model.utilities as model_utils # pylint: disable=import-error
 
 
 

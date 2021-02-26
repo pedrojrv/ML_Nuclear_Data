@@ -37,6 +37,14 @@ CLI.add_argument(
   default=-2  # default if nothing is provided
 )
 
+CLI.add_argument(
+  "--scale_e",  # name on the CLI - drop the `--` for positional/required parameters
+  nargs="?",  # 0 or more values expected => creates a list
+  type=str,
+  default="n"  # default if nothing is provided
+)
+
+
 args = CLI.parse_args()
 
 DATASET = args.dataset
@@ -48,6 +56,8 @@ TRAIN_FRACTION = 0.9
 K_LIST = args.k_list
 DISTANCE_METRIC = ["euclidean", "manhattan"]
 NJOBS = args.n_jobs
+SCALE_ENERGY_DICT = {"y":True, "n":False}
+SCALE_ENERGY = SCALE_ENERGY_DICT[args.scale_e]
 
 ##############################################################################################
 ################################### IMPORTING MODULES ########################################
@@ -67,12 +77,12 @@ from sklearn.model_selection import train_test_split
 sys.path.append("../..")
 
 import nucml.datasets as nuc_data                 # pylint: disable=import-error
-import nucml.model.model_utilities as model_utils # pylint: disable=import-error
+import nucml.model.utilities as model_utils # pylint: disable=import-error
 
 
 
 df, x_train, x_test, y_train, y_test, to_scale, scaler = nuc_data.load_exfor(
-    pedro=True, basic=DATASET_DICT[DATASET], frac=1-TRAIN_FRACTION, scaling_type=NORMALIZER_TYPE, mt_coding=MT_STRATEGY)
+    pedro=True, basic=DATASET_DICT[DATASET], frac=1-TRAIN_FRACTION, scaling_type=NORMALIZER_TYPE, mt_coding=MT_STRATEGY, scale_energy=SCALE_ENERGY)
 
 x_val, x_test, y_val, y_test = train_test_split(x_test, y_test, test_size=0.5)
 

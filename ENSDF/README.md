@@ -45,7 +45,7 @@ The `CSV_Files` this directory contains the resulting files from the processed R
 - `all_ensdf_headers_formatted.csv` contains the headers of all RIPL .dat files. Features include:
 
 ```
-SYMB   : mass number with symbol of the element
+SYMB   : mass number with the symbol of the element
 A      : mass number
 Z      : atomic number
 Nol    : number of levels in the decay scheme
@@ -59,16 +59,16 @@ Sp     : proton separation energy in MeV
 - `ensdf.csv` and `ensdf_cutoff.csv` both contain the ENSDF levels. The `ensdf_cutoff.csv` is limited according to the RIPL cut-off parameters. Features include:
 
 ```
-Level_Number	
-Energy	
-Spin	
-Parity	
-Half_Life	
-Gammas	
-Flag	
-ENSDF_Spin	
-Num_Decay_Modes	
-Decay_Info	
+Level_Number  
+Energy  
+Spin  
+Parity  
+Half_Life 
+Gammas  
+Flag  
+ENSDF_Spin  
+Num_Decay_Modes 
+Decay_Info  
 Element_w_A
 ```
 
@@ -78,25 +78,25 @@ Element_w_A
 - `ripl_cut_off_energies.csv` contains all information contained in the `level-param.data` file. The features include:
 
 ```
-Z	
-A	
-Element	
-Temperature_MeV	
-Temperature_U	
-Black_Shift	
-Black_Shift_U	
-N_Lev_ENSDF	
-N_Max_Lev_Complete	
-Min_Lev_Complete	
-Num_Lev_Unique_Spin	
-E_Max_N_Max	
-E_Num_Lev_U_Spin	
-Chi	
-Fit	
-Flag	
-Nox	
-Xm_Ex	
-Sigma	
+Z 
+A 
+Element 
+Temperature_MeV 
+Temperature_U 
+Black_Shift 
+Black_Shift_U 
+N_Lev_ENSDF 
+N_Max_Lev_Complete  
+Min_Lev_Complete  
+Num_Lev_Unique_Spin 
+E_Max_N_Max 
+E_Num_Lev_U_Spin  
+Chi 
+Fit 
+Flag  
+Nox 
+Xm_Ex 
+Sigma 
 Element_w_A
 ```
 
@@ -119,9 +119,6 @@ This directory contains three notebooks. The first one show how the ENSDF/RIPL .
 # RIPL
 
 This directory is just a copy of the original RIPL files. The files here are used by NucML to extract level and gamma information. These files will not be described here. Please refer to the <a src="https://www-nds.iaea.org/RIPL-3/">RIPL website</a> for more information.
-
-
-
 
 
 

@@ -20,6 +20,7 @@ import nucml.config as config
 empty_df = pd.DataFrame()
 ace_dir = config.ace_path
 template_path = config.bench_template_path
+matlab_path = config.matlab_path
 
 
 def get_to_skip_lines(isotope, temp="03c"):
@@ -878,7 +879,7 @@ def copy_benchmark_files(benchmark_name, saving_dir):
     return None
 
 
-def generate_serpent_bash(searching_directory):
+def generate_serpent_bash(searching_directory, omp=10):
     """Gathers the path to all "input" benchmark files and returns a single bash script to run all 
     Serpent simulations and convert the resulting matlab file into .mat files for later reading.
 
@@ -902,8 +903,9 @@ def generate_serpent_bash(searching_directory):
             continue
         else:
             all_serpent_files_linux.append("cd {}".format(os.path.dirname(new)) + "/")
-            all_serpent_files_linux.append("sss2 -omp 10 " + os.path.basename(new))
-            all_serpent_files_linux.append("/mnt/c/Program\ Files/MATLAB/R2019a/bin/matlab.exe -nodisplay -nosplash -nodesktop -r \"run('converter.m');exit;\" ")  # pylint: disable=anomalous-backslash-in-string  
+            all_serpent_files_linux.append("sss2 -omp {} ".format(omp) + os.path.basename(new))
+            all_serpent_files_linux.append(matlab_path + " -nodisplay -nosplash -nodesktop -r \"run('converter.m');exit;\" ".replace("\\", ""))  # pylint: disable=anomalous-backslash-in-string 
+             
         
     script_path = os.path.join(searching_directory, 'serpent_script.sh')
 
