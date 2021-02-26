@@ -23,7 +23,7 @@ def configure(user_path, ace_path, matlab_exe_path=""):
     evaluations_path = os.path.join(abs_user_path, "Evaluated_Data").replace("\\","/")
     ensdf_path = os.path.join(abs_user_path, "ENSDF").replace("\\","/")
     exfor_csv_path = os.path.join(abs_user_path, "EXFOR/CSV_Files").replace("\\","/")
-    bench_templ_path = os.path.join(abs_user_path, "Benchmarks/templates").replace("\\","/")
+    bench_templ_path = os.path.join(abs_user_path, "Benchmarks/inputs/templates").replace("\\","/")
 
     with open(os.path.join(os.path.dirname(__file__), 'config.py'), 'w') as f:
         f.write("ame_dir_path = r'{}' \n".format(ame_csv_path))
