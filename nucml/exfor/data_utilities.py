@@ -226,7 +226,7 @@ def expanding_dataset_energy(data, E_min, E_max, log, N, e_array=None):
     data = data.append(energy_to_add, ignore_index=True).sort_values(by='Energy', ascending=True)
     return data
 
-def make_predictions_w_energy(e_array, df, Z, A, MT, model, model_type, scaler, to_scale, one_hot=True, log=False, show=False):
+def make_predictions_w_energy(e_array, df, Z, A, MT, model, model_type, scaler, to_scale, one_hot=True, log=False, show=False, scale=True):
     """Given an energy array and isotopic information, Predictions using a model are performed at the given energy points in the e_array for a given isotope. 
 
     Args:
@@ -246,7 +246,7 @@ def make_predictions_w_energy(e_array, df, Z, A, MT, model, model_type, scaler, 
     Returns:
         np.array
     """
-    data_kwargs = {"Z":Z, "A":A, "MT":MT, "log":log, "scale":True, "scaler":scaler, "to_scale":to_scale, "one_hot":True, "ignore_MT":True}
+    data_kwargs = {"Z":Z, "A":A, "MT":MT, "log":log, "scale":scale, "scaler":scaler, "to_scale":to_scale, "one_hot":True, "ignore_MT":True}
     to_infer = append_energy(e_array, df, **data_kwargs)
     exfor = load_samples(df, Z, A, MT, one_hot=one_hot, mt_for="ACE")
     # Make Predictions
@@ -693,7 +693,7 @@ def get_mt_error_exfor_endf(df, Z, A, scaler, to_scale):
     return error_results
 
 
-def get_csv_for_ace(df, Z, A, model, scaler, to_scale, model_type=None, saving_dir=None, saving_filename=None):
+def get_csv_for_ace(df, Z, A, model, scaler, to_scale, model_type=None, saving_dir=None, saving_filename=None, scale=True):
     """Creates a CSV with the model predictions for a particular isotope in the appropiate format for the ACE utilities.
     The function returns a DataFrame which can then be saved as a CSV. The saving_dir argument provides a direct method 
     by which to save the CSV file in the process. 
@@ -712,10 +712,11 @@ def get_csv_for_ace(df, Z, A, model, scaler, to_scale, model_type=None, saving_d
     Returns:
         DataFrame
     """    
+
     ace_array = ace_utils.get_energies('{:<02d}'.format(Z) + str(A).zfill(3), ev=True, log=True)
     data_ace = pd.DataFrame({"Energy":ace_array})
     
-    kwargs = {"nat_iso": "I", "one_hot": True, "scale": True, "scaler": scaler, "to_scale": to_scale}
+    kwargs = {"nat_iso": "I", "one_hot": True, "scale":scale, "scaler": scaler, "to_scale": to_scale}
     exfor_isotope = load_isotope(df, Z, A, **kwargs)
     exfor_isotope_cols = exfor_isotope.loc[:, (exfor_isotope != 0).any(axis=0)][:1]
     for col in exfor_isotope_cols.columns:
@@ -726,7 +727,7 @@ def get_csv_for_ace(df, Z, A, model, scaler, to_scale, model_type=None, saving_d
                 mt_num = col.split("_")[1]
                 logging.info(col)
                 predictions = make_predictions_w_energy(ace_array, df, Z, A, mt_num, model, 
-                                              model_type, scaler, to_scale, log=False, show=False)
+                                              model_type, scaler, to_scale, log=False, show=False, scale=scale)
                 data_ace[col] = predictions
 
     data_ace = 10**data_ace

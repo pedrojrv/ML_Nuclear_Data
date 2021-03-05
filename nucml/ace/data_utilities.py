@@ -722,7 +722,10 @@ def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, re
             gen_utils.initialize_directories(ml_xs_saving_dir, reset=False)
             gen_utils.initialize_directories(acelib_saving_dir, reset=False)
 
-        model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
+        if row.normalizer == "none":
+            model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False, model_only=True)
+        else:
+            model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
 
         for _, comp_row in bench_composition_ml.iterrows():
             Z = int(comp_row.Z)
@@ -730,8 +733,12 @@ def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, re
             filename = "{}{}_ml.csv".format(Z, A)
             path_to_ml_csv = os.path.join(ml_xs_saving_dir, filename)
             if not os.path.isfile(path_to_ml_csv):
-                _ = exfor_utils.get_csv_for_ace(
-                    df, Z, A, model, scaler, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename)
+                if row.normalizer == "none":
+                    _ = exfor_utils.get_csv_for_ace(
+                        df, Z, A, model, scaler, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename, scale=False)  
+                else:
+                    _ = exfor_utils.get_csv_for_ace(
+                        df, Z, A, model, scaler, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename)
 
             create_new_ace_w_df(str(Z) + str(A).zfill(3), path_to_ml_csv, saving_dir=acelib_saving_dir, ignore_basename=True)
 
@@ -879,7 +886,7 @@ def copy_benchmark_files(benchmark_name, saving_dir):
     return None
 
 
-def generate_serpent_bash(searching_directory, omp=10):
+def generate_serpent_bash(searching_directory, script_name, benchmark="all", omp=10):
     """Gathers the path to all "input" benchmark files and returns a single bash script to run all 
     Serpent simulations and convert the resulting matlab file into .mat files for later reading.
 
@@ -895,8 +902,12 @@ def generate_serpent_bash(searching_directory, omp=10):
     for root, _, files in os.walk(searching_directory):
         for file in files:
             if file.endswith("input"):
-                all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
-                    
+                if benchmark == "all":
+                    all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
+                else:
+                    if benchmark in root:
+                        all_serpent_files.append(os.path.abspath(os.path.join(root, file)))
+
     for i in all_serpent_files:
         new = i.replace("C:\\", "/mnt/c/").replace("\\", "/")
         if "template" in new:
@@ -907,7 +918,7 @@ def generate_serpent_bash(searching_directory, omp=10):
             all_serpent_files_linux.append(matlab_path + " -nodisplay -nosplash -nodesktop -r \"run('converter.m');exit;\" ".replace("\\", ""))  # pylint: disable=anomalous-backslash-in-string 
              
         
-    script_path = os.path.join(searching_directory, 'serpent_script.sh')
+    script_path = os.path.join(searching_directory, '{}.sh'.format(script_name))
 
     with open(script_path, 'w') as f:
         for item in all_serpent_files_linux:

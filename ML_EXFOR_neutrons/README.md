@@ -2,6 +2,10 @@
 
 This directory contains jupyter notebooks and python scripts used to generate or analyze results for my PhD thesis. Feel free to browse them. They contain a lot of useful information on how to use `NucML` to perform nuclear data evaluations. The directories are organized as follows:
 
+<!-- C:/Users/Pedro/Anaconda3/Scripts/activate
+conda activate tf_nightly
+cd Desktop/ML_Nuclear_Data/ML_EXFOR_neutrons/1_KNN/
+python knn.py --scale_e y --version v2 --normalizer minmax --k_list  -->
 
 ```
 | ML_Nuclear_Data
