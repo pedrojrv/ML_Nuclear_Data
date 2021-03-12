@@ -697,15 +697,18 @@ def convert_dos_to_unix(file_path):
 ################################################################################################
 
 def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, reset=False, template_dir=template_path, comp_threshold=0.10, reduce_ace_size=True):
-
+    to_scale_copy = to_scale.copy()
     results_df = models_df.copy()
     bench_composition = pd.read_csv(os.path.join(template_dir, os.path.join(bench_name, "composition.csv")))
     bench_composition_nonml = bench_composition[bench_composition.Fraction < comp_threshold]
     bench_composition_ml = bench_composition[bench_composition.Fraction > comp_threshold]
 
     results_df["run_name"] = results_df.model_path.apply(lambda x: os.path.basename(os.path.dirname(x)))
+
+    scale_energy_col = True if "scale_energy" in results_df.columns else False
     # 3. We iterate over the rows to create data for each run
     for _, row in results_df.iterrows():
+        to_scale = to_scale_copy.copy()
         run_name = row.run_name
         
         # 3a. We create a directory for each model but before we check if it has already been created in the inventory
@@ -723,9 +726,13 @@ def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, re
             gen_utils.initialize_directories(acelib_saving_dir, reset=False)
 
         if row.normalizer == "none":
-            model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False, model_only=True)
+            model = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False, model_only=True)
         else:
             model, scaler = model_utils.load_model_and_scaler({"model_path":row.model_path, "scaler_path":row.scaler_path}, df=False)
+
+        if scale_energy_col:
+            if row.scale_energy == True:
+                to_scale = ["Energy"] + to_scale
 
         for _, comp_row in bench_composition_ml.iterrows():
             Z = int(comp_row.Z)
@@ -735,7 +742,7 @@ def generate_bench_ml_xs(df, models_df, bench_name, to_scale, raw_saving_dir, re
             if not os.path.isfile(path_to_ml_csv):
                 if row.normalizer == "none":
                     _ = exfor_utils.get_csv_for_ace(
-                        df, Z, A, model, scaler, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename, scale=False)  
+                        df, Z, A, model, None, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename, scale=False)  
                 else:
                     _ = exfor_utils.get_csv_for_ace(
                         df, Z, A, model, scaler, to_scale, saving_dir=ml_xs_saving_dir, saving_filename=filename)
