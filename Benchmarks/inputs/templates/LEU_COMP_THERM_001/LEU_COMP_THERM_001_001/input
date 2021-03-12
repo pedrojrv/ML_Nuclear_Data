@@ -1,0 +1,180 @@
+% --- LEU-COMP-THERM-001-001 ---
+
+set title "LEU-COMP-THERM-001-001"
+
+%===============================================================================
+% GEOMETRY
+%===============================================================================
+% LATTICES ---------------------------------------------------------------------
+% --- Square-pitched lattices ---
+lat	10	1	 0.000   0.000   20	18	2.032	% First cluster
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+% SURFACES ---------------------------------------------------------------------
+% --- Planes ---
+% x planes
+surf	1	px	    -50.32		% Beginning of water tank
+surf	2	px	    -20.32		% Beginning of cluster & acrylic plate & extra rod
+surf    3	px		-18.288  	% End of extra rod
+surf    4   px	     20.32		% End of cluster & acrylic plate
+surf	5	px	     50.32		% End of water tank
+% y planes
+surf	7	py	    -50.32 		% Beginning of water tank
+surf    8	py	    -20.32		% Beginning of extra rod & acrylic plate
+surf    9	py		-18.288		% End of extra rod / beginning of cluster
+surf   10   py	     18.288		% End of cluster & acrylic plate
+surf   11   py       48.288     % End of water tank
+% z planes
+surf   12	pz	    -62.775		% Beginning of water tank
+surf   13	pz	    -47.475		% Beginning of acrylic plate
+surf   14	pz		-44.935		% End of acrylic plate / beginning of lower end plug & cladding
+surf   15   pz	    -44.665		% End of lower end plug / beginning of fuel
+surf   16	pz	     47.775		% End of fuel / beginning of upper end plug
+surf   17	pz		 48.255		% End of cladding
+surf   18	pz		 52.855		% End of upper end plug
+surf   19   pz	     62.775		% End of water tank
+
+% --- Cylinders ---
+surf   20   cyl		 0.0	0.0		0.5588	% Fuel radius / cladding inner radius (unit cells)
+surf   21	cyl		 0.0	0.0		0.635	% Cladding outer radius (unit cells)
+surf   22   cyl	  -19.304 -19.304	0.5588	% Fuel radius / cladding inner radius (extra fuel rod)
+surf   23	cyl	  -19.304 -19.304	0.635	% Cladding outer radius (extra fuel rod)
+
+% CELLS ------------------------------------------------------------------------
+% system boundaries
+cell	1   0	outside   -1						% Side boundary
+cell	2	0	outside	   5						% Side boundary
+cell	3   0   outside   -7						% Side boundary
+cell    4   0   outside   11						% Side boundary
+cell    5   0   outside  -12						% Bottom boundary
+cell    6   0   outside   19						% Top boundary
+% cluster & extra fuel rod
+cell	7	0	fill 10	   2 -4   9 -10   14 -18	% Cluster
+cell    8   0   fill 2     2 -3   8 -9    14 -18    % Extra fuel rod
+% cluster unit cells (fuel rods)
+cell    9	1	UO2   	  15 -16 -20 				% Fuel
+cell   10   1   6061_Al   14 -17  20 -21 			% Cladding
+cell   11	1	5052_Al   14 -15 -20  				% Lower end plug
+cell   12	1	1100_Al	  16 -17 -20  			    % Upper end plug (lower part)
+cell   13   1   1100_Al   17 -18 -21				% Upper end plug (upper part)
+cell   14   1   water     14 -18 21					% Surrounding water
+cell   15   1   water    -14						% Bottom boundary
+cell   16   1   water     18						% Top boundary
+% extra fuel rod
+cell   17	2	UO2   	  15 -16 -22 				% Fuel
+cell   18   2   6061_Al   14 -17  22 -23 			% Cladding
+cell   19	2	5052_Al   14 -15 -22  				% Lower end plug
+cell   20	2	1100_Al	  16 -17 -22  			    % Upper end plug (lower part)
+cell   21   2   1100_Al   17 -18 -23				% Upper end plug (upper part)
+cell   22   2   water     14 -18 23					% Surrounding water
+cell   23   2   water    -14						% Bottom boundary
+cell   24   2   water     18						% Top boundary
+% surrounding water
+cell   25   0   water	   1 -2   7 -11   12 -19	% Side layer
+cell   26   0   water	   4 -5   7 -11   12 -19	% Side layer
+cell   27   0   water	   2 -4   7 -8    12 -19	% Side layer	  
+cell   28   0   water	   2 -4  10 -11   12 -19	% Side layer
+cell   29   0   water	   2 -4   8 -10   12 -13	% Bottom layer
+cell   30   0   water	   2 -4   8 -10   18 -19	% Top layer
+cell   31   0   water	   3 -4   8 -9    14 -18	% Next to extra fuel rod
+% acrylic plate
+cell   32	0	acrylic	   2 -4   8	-10   13 -14	% Acrylic plate
+
+% BOUNDARY CONDITIONS ----------------------------------------------------------
+% --- Vacuum boundary condition ---
+set	bc	1  % Vacuum boundary
+
+%===============================================================================
+% MATERIALS
+%===============================================================================
+% SIMPLE MATERIALS -------------------------------------------------------------
+% --- LEU oxide (UO2) fuel with traces of U-234, U-236 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat UO2 sum rgb 0 0 0
+92234.03c	2.8563E-6	% U-234
+92235.03c	4.8785E-4	% U-235
+92236.03c	3.5348E-6	% U-236
+92238.03c	2.0009E-2	% U-238
+8016.03c	4.1202E-2	% O-16  (natural not available in ENDF/B-VII)
+			
+% --- 1100 Al alloy: Al with Cu, Mn, Zn, Si, Fe ---
+	% Overall mass density 2.70 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat 1100_Al -2.70 rgb 192 192 192
+13027.03c	5.9660E-2	% Al-27 (natural not available in ENDF/B-VII)
+29000.03c	3.0705E-5	% Cu (natural)
+25055.03c	7.3991E-6	% Mn-55 (natural not available in ENDF/B-VII)
+30000.03c	1.2433E-5	% Zn (natural)
+14000.03c	2.3302E-4	% Si (natural)
+26000.03c	1.1719E-4	% Fe (natural)
+
+% --- 5052 Al alloy: Al with Cr, Cu, Mg, Mn, Zn, Si, Fe ---
+	% Overall mass density 2.69 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat 5052_Al -2.69 rgb 192 192 192
+13027.03c	5.8028E-2	% Al-27 (natural not available in ENDF/B-VII)
+24000.03c	7.7888E-5	% Cr (natural)
+29000.03c	1.2746E-5	% Cu (natural)
+12000.03c	1.6663E-3	% Mg (natural)
+25055.03c	1.4743E-5	% Mn-55 (natural not available in ENDF/B-VII)
+30000.03c	1.2387E-5	% Zn (natural)
+14000.03c	1.2978E-4	% Si (natural)
+26000.03c	6.5265E-5	% Fe (natural)
+
+% --- 6061 Al alloy: Al with Cr, Cu, Mg, Mn, Ti, Zn, Si, Fe ---
+	% Overall mass density 2.69 g/cm3
+	% Evaluated @ 300K (approx. room temperature)
+mat 6061_Al -2.69 rgb 192 192 192
+13027.03c	5.8433E-2	% Al-27 (natural not available in ENDF/B-VII)
+24000.03c	6.2310E-5	% Cr (natural)
+29000.03c	6.3731E-5	% Cu (natural)
+12000.03c	6.6651E-4	% Mg (natural)
+25055.03c	2.2115E-5	% Mn-55 (natural not available in ENDF/B-VII)
+22000.03c	2.5375E-5	% Ti (natural)
+30000.03c	3.0967E-5	% Zn (natural)
+14000.03c	3.4607E-4	% Si (natural)
+26000.03c	1.0152E-4	% Fe (natural)
+
+% --- Acrylic ---
+	% Evaluated @ 300K (approx. room temperature)
+mat acrylic sum rgb 255 255 255
+1001.03c	5.6642E-2	% H		(natural not available in ENDF/B-VII)
+6000.03c	3.5648E-2	% C		(natural)
+8016.03c	1.4273E-2	% O-16	(natural not available in ENDF/B-VII)
+
+% MODERATORS -------------------------------------------------------------------
+
+% --- Light water ---
+	% Overall mass density 0.997766 g/cm3 (interpolated; see benchmark PDF)
+	% Evaluated @ 300K (approx. room temperature)
+mat water -0.997766 moder sssth1 1001 rgb 0 0 255
+1001.03c	6.6706E-2	% H-1 	(natural not available in ENDF/B-VII)
+8016.03c	3.3353E-2	% O-16  (natural not available in ENDF/B-VII)
+therm sssth1 lwe7.00t
+
+% CROSS-SECTION LIBRARY --------------------------------------------------------
+set acelib "to_replace"
+
+%===============================================================================
+% OPTIONS
+%===============================================================================
+% NEUTRON CYCLES ---------------------------------------------------------------
+% --- 10000 neutrons per cycle, 100 cycles, 50 inactive ---
+set	pop	10000 100 50
