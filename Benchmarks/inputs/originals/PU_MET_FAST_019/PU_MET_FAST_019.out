@@ -1,0 +1,1162 @@
+
+ --- Table  1: Summary of nuclide data: 
+
+ Data for 11 nuclides included in calculation:
+
+ - 11 Transport nuclides
+ - No dosimetry nuclides
+ - No decay nuclides
+ - 395 reaction channels
+ - 83 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - All reaction linked to target
+
+ Columns:
+
+  1. Index
+  2. Level (first occurence in transmutation paths)
+  3. Name (nuclide identifier data)
+  4. Library ID
+  5. Primary data type: TRA = transport
+                        DOS = dosimetry
+                        SAB = thermal scattering
+                        DEC = only decay data
+                        STR = only structural data (mass)
+                        PHO = photon interaction data
+  6. Z (atomic number)
+  7. A (isotope number)
+  8. I (isomeric state)
+  9. Atomic weight
+ 10. Temperature (in Kelvin)
+ 11. Decay constant (1/s)
+ 12. Flags: I - nuclide is present in initial composition
+            B - nuclide is involved in burnup calculation
+            A - nuclide is produced as activation product
+            D - nuclide is produced as decay product
+            F - nuclide is produced as fission product
+            B - nuclide is produced in decay or transmutation branching
+            T - nuclide has neutron transport cross section data
+            S - nuclide has S(a,b) data
+            I - nuclide has isomeric branching reactions
+            F - nuclide is fissile
+            P - nuclide is a delayed neutron precursor
+            D - nuclide has delayed neutron data
+            U - nuclide has uses ures ptable data
+            T - nuclide cross sections are adjusted by TMS
+            D - nuclide has dosimetry cross section data
+            R - nuclide has radioactive decay data
+            N - nuclide has neutron-induced fission yield data
+            S - nuclide has spontaneous fission yield data
+            P - nuclide has photon transport cross section data
+            T - nuclide has supplementary transmutation cross section data
+
+    1   0  4009.03c      03c  TRA    4   9 0    9.01220   300.0          N/A  I-----T-------------  beryllium 9 (Be-9)
+    2   0  6000.03c      03c  TRA    6   0 0   12.00110   300.0          N/A  I-----T-------------  natural carbon (C-nat)
+    3   0  8016.03c      03c  TRA    8  16 0   15.99492   300.0          N/A  I-----T-------------  oxygen 16 (O-16)
+    4   0  26000.03c     03c  TRA   26   0 0   55.84675   300.0          N/A  I-----T-------------  natural iron (Fe-nat)
+    5   0  28000.03c     03c  TRA   28   0 0   58.68796   300.0          N/A  I-----T-------------  natural nickel (Ni-nat)
+    6   0  29000.03c     03c  TRA   29   0 0   63.54559   300.0          N/A  I-----T-------------  natural copper (Cu-nat)
+    7   0  31000.03c     03c  TRA   31   0 0   69.72003   300.0          N/A  I-----T-------------  natural gallium (Ga-nat)
+    8   0  74000.03c     03c  TRA   74   0 0  183.85642   300.0          N/A  I-----T-------------  natural tungsten (W-nat)
+    9   0  94239.03c     03c  TRA   94 239 0  239.05218   300.0          N/A  I-----T--F-D--------  plutonium 239 (Pu-239)
+   10   0  94240.03c     03c  TRA   94 240 0  240.05420   300.0          N/A  I-----T--F-D--------  plutonium 240 (Pu-240)
+   11   0  94241.03c     03c  TRA   94 241 0  241.04873   300.0          N/A  I-----T--F-D--------  plutonium 241 (Pu-241)
+
+ --- Table  2: Reaction and decay data: 
+
+ Nuclide    1 / 11 : 4009.03c -- beryllium 9 (Be-9)
+
+ Pointers                     : 37829 3411
+ Primary type                 : Transport
+ Nuclide ZAI                  : 40090
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/4009ENDF7.ace
+ Atomic weight (AW)           : 9.01220
+ Atomic weight ratio (AWR)    : 8.93478
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 7 reaction channels
+ - 9 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 7 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -1.57280E+00 MeV  Emin = 1.74883E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =    102  Q =  6.81238E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+   4    MT =    103  Q = -1.28300E+01 MeV  Emin = 1.42660E+01 MeV  frac = 1.00000E+00  : (n,p)
+   5    MT =    104  Q = -1.46600E+01 MeV  Emin = 1.63008E+01 MeV  frac = 1.00000E+00  : (n,d)
+   6    MT =    105  Q = -1.04400E+01 MeV  Emin = 1.16085E+01 MeV  frac = 1.00000E+00  : (n,t)
+   7    MT =    107  Q = -6.00000E-01 MeV  Emin = 6.67153E-01 MeV  frac = 1.00000E+00  : (n,alpha)
+
+ 9 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 1.42660E+01 MeV  : total proton production
+   2    MT =    204  Q =  0.00000E+00 MeV  Emin = 1.63008E+01 MeV  : total deuteron production
+   3    MT =    205  Q =  0.00000E+00 MeV  Emin = 1.16085E+01 MeV  : total triton production
+   4    MT =    207  Q =  0.00000E+00 MeV  Emin = 6.67153E-01 MeV  : total alpha production
+   5    MT =    600  Q = -1.28300E+01 MeV  Emin = 1.42660E+01 MeV  : (n,p) to ground state
+   6    MT =    650  Q = -1.46600E+01 MeV  Emin = 1.63008E+01 MeV  : (n,d) to ground state
+   7    MT =    700  Q = -1.04400E+01 MeV  Emin = 1.16085E+01 MeV  : (n,t) to ground state
+   8    MT =    701  Q = -1.09180E+01 MeV  Emin = 1.21400E+01 MeV  : (n,t1)
+   9    MT =    800  Q = -6.00000E-01 MeV  Emin = 6.67153E-01 MeV  : (n,alpha) to ground state
+
+ Nuclide    2 / 11 : 6000.03c -- natural carbon (C-nat)
+
+ Pointers                     : 23807 4239
+ Primary type                 : Transport
+ Nuclide ZAI                  : 60000
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/6000ENDF7.ace
+ Atomic weight (AW)           : 12.00110
+ Atomic weight ratio (AWR)    : 11.89800
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 1.50000E+02
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 20 reaction channels
+ - 4 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 20 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =      5  Q =  0.00000E+00 MeV  Emin = 2.00000E+01 MeV  frac = 1.00000E+00  : anything
+   3    MT =     28  Q = -1.59570E+01 MeV  Emin = 1.72982E+01 MeV  frac = 1.00000E+00  : (n,np)
+   4    MT =     51  Q = -4.43900E+00 MeV  Emin = 4.81209E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   5    MT =     52  Q = -7.65300E+00 MeV  Emin = 8.29622E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   6    MT =     53  Q = -9.63800E+00 MeV  Emin = 1.04481E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   7    MT =     54  Q = -1.08000E+01 MeV  Emin = 1.17080E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+   8    MT =     55  Q = -1.18000E+01 MeV  Emin = 1.27920E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+   9    MT =     56  Q = -1.27000E+01 MeV  Emin = 1.37674E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  10    MT =     57  Q = -1.33500E+01 MeV  Emin = 1.45000E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  11    MT =     58  Q = -1.40800E+01 MeV  Emin = 1.52634E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  12    MT =     59  Q = -1.50800E+01 MeV  Emin = 1.63474E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  13    MT =     60  Q = -1.60800E+01 MeV  Emin = 1.74315E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  14    MT =     61  Q = -1.70800E+01 MeV  Emin = 1.85160E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  15    MT =     62  Q = -1.80800E+01 MeV  Emin = 1.96000E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  16    MT =     91  Q = -7.27500E+00 MeV  Emin = 7.88645E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  17    MT =    102  Q =  4.94700E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  18    MT =    103  Q = -1.25880E+01 MeV  Emin = 1.44720E+01 MeV  frac = 1.00000E+00  : (n,p)
+  19    MT =    104  Q = -1.37330E+01 MeV  Emin = 1.52630E+01 MeV  frac = 1.00000E+00  : (n,d)
+  20    MT =    107  Q = -5.70200E+00 MeV  Emin = 6.18124E+00 MeV  frac = 1.00000E+00  : (n,alpha)
+
+ 4 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 1.44720E+01 MeV  : total proton production
+   2    MT =    204  Q =  0.00000E+00 MeV  Emin = 1.52630E+01 MeV  : total deuteron production
+   3    MT =    207  Q =  0.00000E+00 MeV  Emin = 6.18124E+00 MeV  : total alpha production
+   4    MT =      4  Q =  0.00000E+00 MeV  Emin = 4.81209E+00 MeV  : total inelastic scattering
+
+ Nuclide    3 / 11 : 8016.03c -- oxygen 16 (O-16)
+
+ Pointers                     : 39108 5343
+ Primary type                 : Transport
+ Nuclide ZAI                  : 80160
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/8016ENDF7.ace
+ Atomic weight (AW)           : 15.99492
+ Atomic weight ratio (AWR)    : 15.85751
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 1.50000E+02
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 25 reaction channels
+ - 44 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 25 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =      5  Q =  0.00000E+00 MeV  Emin = 3.00000E+01 MeV  frac = 1.00000E+00  : anything
+   3    MT =     16  Q = -1.56638E+01 MeV  Emin = 1.66516E+01 MeV  frac = 1.00000E+00  : (n,2n)
+   4    MT =     22  Q = -7.16195E+00 MeV  Emin = 7.61360E+00 MeV  frac = 1.00000E+00  : (n,nalpha)
+   5    MT =     23  Q = -1.44368E+01 MeV  Emin = 1.64100E+01 MeV  frac = 1.00000E+00  : (n,n3alpha)
+   6    MT =     28  Q = -1.21276E+01 MeV  Emin = 1.28924E+01 MeV  frac = 1.00000E+00  : (n,np)
+   7    MT =     32  Q = -2.07363E+01 MeV  Emin = 2.20440E+01 MeV  frac = 1.00000E+00  : (n,nd)
+   8    MT =     41  Q = -2.29609E+01 MeV  Emin = 2.44089E+01 MeV  frac = 1.00000E+00  : (n,2np)
+   9    MT =     44  Q = -2.23350E+01 MeV  Emin = 2.37435E+01 MeV  frac = 1.00000E+00  : (n,n2p)
+  10    MT =     45  Q = -2.31192E+01 MeV  Emin = 2.45771E+01 MeV  frac = 1.00000E+00  : (n,npalpha)
+  11    MT =     51  Q = -6.04940E+00 MeV  Emin = 6.43089E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+  12    MT =     52  Q = -6.12989E+00 MeV  Emin = 6.51646E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+  13    MT =     53  Q = -6.91710E+00 MeV  Emin = 7.35330E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+  14    MT =     54  Q = -7.11685E+00 MeV  Emin = 7.56565E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+  15    MT =     55  Q = -8.87190E+00 MeV  Emin = 9.43138E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  16    MT =     56  Q = -1.09570E+01 MeV  Emin = 1.16480E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  17    MT =     57  Q = -1.10800E+01 MeV  Emin = 1.17787E+01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  18    MT =     91  Q = -9.58500E+00 MeV  Emin = 1.01895E+01 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  19    MT =    102  Q =  4.14342E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  20    MT =    103  Q = -9.63680E+00 MeV  Emin = 1.02445E+01 MeV  frac = 1.00000E+00  : (n,p)
+  21    MT =    104  Q = -9.90300E+00 MeV  Emin = 1.05275E+01 MeV  frac = 1.00000E+00  : (n,d)
+  22    MT =    105  Q = -1.44790E+01 MeV  Emin = 1.53921E+01 MeV  frac = 1.00000E+00  : (n,t)
+  23    MT =    107  Q = -2.21430E+00 MeV  Emin = 2.35532E+00 MeV  frac = 1.00000E+00  : (n,alpha)
+  24    MT =    108  Q = -1.28632E+01 MeV  Emin = 1.36744E+01 MeV  frac = 1.00000E+00  : (n,2alpha)
+  25    MT =    112  Q = -1.97491E+01 MeV  Emin = 2.09945E+01 MeV  frac = 1.00000E+00  : (n,palpha)
+
+ 44 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 1.02445E+01 MeV  : total proton production
+   2    MT =    204  Q =  0.00000E+00 MeV  Emin = 1.05275E+01 MeV  : total deuteron production
+   3    MT =    205  Q =  0.00000E+00 MeV  Emin = 1.53921E+01 MeV  : total triton production
+   4    MT =    207  Q =  0.00000E+00 MeV  Emin = 2.35532E+00 MeV  : total alpha production
+   5    MT =    600  Q = -9.63680E+00 MeV  Emin = 1.02445E+01 MeV  : (n,p) to ground state
+   6    MT =    601  Q = -9.75690E+00 MeV  Emin = 1.03722E+01 MeV  : (n,p1)
+   7    MT =    602  Q = -9.93380E+00 MeV  Emin = 1.05602E+01 MeV  : (n,p2)
+   8    MT =    603  Q = -1.00343E+01 MeV  Emin = 1.06671E+01 MeV  : (n,p3)
+   9    MT =    650  Q = -9.90300E+00 MeV  Emin = 1.05275E+01 MeV  : (n,d) to ground state
+  10    MT =    651  Q = -1.51731E+01 MeV  Emin = 1.61300E+01 MeV  : (n,d1)
+  11    MT =    652  Q = -1.52018E+01 MeV  Emin = 1.61610E+01 MeV  : (n,d2)
+  12    MT =    653  Q = -1.62269E+01 MeV  Emin = 1.72502E+01 MeV  : (n,d3)
+  13    MT =    654  Q = -1.70581E+01 MeV  Emin = 1.81338E+01 MeV  : (n,d4)
+  14    MT =    655  Q = -1.72041E+01 MeV  Emin = 1.82890E+01 MeV  : (n,d5)
+  15    MT =    656  Q = -1.74701E+01 MeV  Emin = 1.85718E+01 MeV  : (n,d6)
+  16    MT =    657  Q = -1.82158E+01 MeV  Emin = 1.93645E+01 MeV  : (n,d7)
+  17    MT =    658  Q = -1.84744E+01 MeV  Emin = 1.96394E+01 MeV  : (n,d8)
+  18    MT =    659  Q = -1.89530E+01 MeV  Emin = 2.01482E+01 MeV  : (n,d9)
+  19    MT =    660  Q = -1.90546E+01 MeV  Emin = 2.02562E+01 MeV  : (n,d10)
+  20    MT =    661  Q = -1.90579E+01 MeV  Emin = 2.02597E+01 MeV  : (n,d11)
+  21    MT =    662  Q = -1.91280E+01 MeV  Emin = 2.03343E+01 MeV  : (n,d12)
+  22    MT =    663  Q = -1.96630E+01 MeV  Emin = 2.09030E+01 MeV  : (n,d13)
+  23    MT =    664  Q = -1.97320E+01 MeV  Emin = 2.09763E+01 MeV  : (n,d14)
+  24    MT =    665  Q = -1.98310E+01 MeV  Emin = 2.10816E+01 MeV  : (n,d15)
+  25    MT =    666  Q = -1.99730E+01 MeV  Emin = 2.12325E+01 MeV  : (n,d16)
+  26    MT =    667  Q = -2.03527E+01 MeV  Emin = 2.16362E+01 MeV  : (n,d17)
+  27    MT =    668  Q = -2.04363E+01 MeV  Emin = 2.17251E+01 MeV  : (n,d18)
+  28    MT =    669  Q = -2.05962E+01 MeV  Emin = 2.18950E+01 MeV  : (n,d19)
+  29    MT =    700  Q = -1.44790E+01 MeV  Emin = 1.53921E+01 MeV  : (n,t) to ground state
+  30    MT =    701  Q = -1.67918E+01 MeV  Emin = 1.78507E+01 MeV  : (n,t1)
+  31    MT =    702  Q = -1.84271E+01 MeV  Emin = 1.95892E+01 MeV  : (n,t2)
+  32    MT =    703  Q = -1.93941E+01 MeV  Emin = 2.06171E+01 MeV  : (n,t3)
+  33    MT =    704  Q = -1.95849E+01 MeV  Emin = 2.08200E+01 MeV  : (n,t4)
+  34    MT =    705  Q = -2.01704E+01 MeV  Emin = 2.14424E+01 MeV  : (n,t5)
+  35    MT =    706  Q = -2.03132E+01 MeV  Emin = 2.15942E+01 MeV  : (n,t6)
+  36    MT =    707  Q = -2.06825E+01 MeV  Emin = 2.19868E+01 MeV  : (n,t7)
+  37    MT =    708  Q = -2.09252E+01 MeV  Emin = 2.22448E+01 MeV  : (n,t8)
+  38    MT =    709  Q = -2.15081E+01 MeV  Emin = 2.28645E+01 MeV  : (n,t9)
+  39    MT =    749  Q = -2.15081E+01 MeV  Emin = 2.28645E+01 MeV  : (n,t) to continuum
+  40    MT =    800  Q = -2.21430E+00 MeV  Emin = 2.35532E+00 MeV  : (n,alpha) to ground state
+  41    MT =    801  Q = -5.30500E+00 MeV  Emin = 5.63954E+00 MeV  : (n,a1)
+  42    MT =    802  Q = -5.90010E+00 MeV  Emin = 6.27217E+00 MeV  : (n,a2)
+  43    MT =    803  Q = -6.06940E+00 MeV  Emin = 6.45215E+00 MeV  : (n,a3)
+  44    MT =      4  Q =  0.00000E+00 MeV  Emin = 6.43089E+00 MeV  : total inelastic scattering
+
+ Nuclide    4 / 11 : 26000.03c -- natural iron (Fe-nat)
+
+ Pointers                     : 25670 19695
+ Primary type                 : Transport
+ Nuclide ZAI                  : 260000
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/26000JNDL32.ace
+ Atomic weight (AW)           : 55.84675
+ Atomic weight ratio (AWR)    : 55.36700
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 48 reaction channels
+ - 4 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 48 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -7.64349E+00 MeV  Emin = 7.78155E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     22  Q = -7.32245E+00 MeV  Emin = 7.45471E+00 MeV  frac = 1.00000E+00  : (n,nalpha)
+   4    MT =     28  Q = -8.85997E+00 MeV  Emin = 9.02000E+00 MeV  frac = 1.00000E+00  : (n,np)
+   5    MT =     51  Q = -1.43951E-02 MeV  Emin = 1.46551E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   6    MT =     52  Q = -1.36453E-01 MeV  Emin = 1.38918E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   7    MT =     53  Q = -3.66674E-01 MeV  Emin = 3.73298E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   8    MT =     54  Q = -7.06160E-01 MeV  Emin = 7.18915E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+   9    MT =     55  Q = -8.46775E-01 MeV  Emin = 8.62070E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  10    MT =     56  Q = -1.00685E+00 MeV  Emin = 1.02504E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  11    MT =     57  Q = -1.26497E+00 MeV  Emin = 1.28782E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  12    MT =     58  Q = -1.40908E+00 MeV  Emin = 1.43453E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  13    MT =     59  Q = -1.62675E+00 MeV  Emin = 1.65613E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  14    MT =     60  Q = -1.98862E+00 MeV  Emin = 2.02454E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  15    MT =     61  Q = -2.08504E+00 MeV  Emin = 2.12270E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  16    MT =     62  Q = -2.11728E+00 MeV  Emin = 2.15552E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  17    MT =     63  Q = -2.21815E+00 MeV  Emin = 2.25821E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  18    MT =     64  Q = -2.45517E+00 MeV  Emin = 2.49952E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  19    MT =     65  Q = -2.59874E+00 MeV  Emin = 2.64568E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  20    MT =     66  Q = -2.65752E+00 MeV  Emin = 2.70552E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  21    MT =     67  Q = -2.69649E+00 MeV  Emin = 2.83034E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  22    MT =     68  Q = -2.94162E+00 MeV  Emin = 2.99475E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  23    MT =     69  Q = -2.95175E+00 MeV  Emin = 3.00506E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  24    MT =     70  Q = -2.95992E+00 MeV  Emin = 3.01338E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 20. excited state
+  25    MT =     71  Q = -3.11991E+00 MeV  Emin = 3.17626E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 21. excited state
+  26    MT =     72  Q = -3.13100E+00 MeV  Emin = 3.18755E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 22. excited state
+  27    MT =     73  Q = -3.23093E+00 MeV  Emin = 3.35682E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 23. excited state
+  28    MT =     74  Q = -3.37010E+00 MeV  Emin = 3.43097E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 24. excited state
+  29    MT =     75  Q = -3.44529E+00 MeV  Emin = 3.50753E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 25. excited state
+  30    MT =     76  Q = -3.60078E+00 MeV  Emin = 3.66583E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 26. excited state
+  31    MT =     77  Q = -3.74789E+00 MeV  Emin = 3.81559E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 27. excited state
+  32    MT =     78  Q = -3.83188E+00 MeV  Emin = 3.90110E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 28. excited state
+  33    MT =     79  Q = -3.85638E+00 MeV  Emin = 3.92604E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 29. excited state
+  34    MT =     80  Q = -4.03552E+00 MeV  Emin = 4.10842E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 30. excited state
+  35    MT =     81  Q = -4.09388E+00 MeV  Emin = 4.16783E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 31. excited state
+  36    MT =     82  Q = -4.10017E+00 MeV  Emin = 4.17424E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 32. excited state
+  37    MT =     83  Q = -4.11988E+00 MeV  Emin = 4.19430E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 33. excited state
+  38    MT =     84  Q = -4.29807E+00 MeV  Emin = 4.37571E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 34. excited state
+  39    MT =     85  Q = -4.39486E+00 MeV  Emin = 4.47425E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 35. excited state
+  40    MT =     86  Q = -4.40086E+00 MeV  Emin = 4.48036E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 36. excited state
+  41    MT =     87  Q = -4.45827E+00 MeV  Emin = 4.53880E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 37. excited state
+  42    MT =     88  Q = -4.50986E+00 MeV  Emin = 4.59133E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 38. excited state
+  43    MT =     89  Q = -4.60087E+00 MeV  Emin = 4.68398E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 39. excited state
+  44    MT =     90  Q = -4.78299E+00 MeV  Emin = 4.86939E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 40. excited state
+  45    MT =     91  Q = -2.76000E+00 MeV  Emin = 2.80985E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  46    MT =    102  Q =  7.79395E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  47    MT =    103  Q =  8.77699E-02 MeV  Emin = 1.00000E+00 MeV  frac = 1.00000E+00  : (n,p)
+  48    MT =    107  Q =  2.39525E+00 MeV  Emin = 5.00000E-01 MeV  frac = 1.00000E+00  : (n,alpha)
+
+ 4 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 1.00000E+00 MeV  : total proton production
+   2    MT =    207  Q =  0.00000E+00 MeV  Emin = 5.00000E-01 MeV  : total alpha production
+   3    MT =      3  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  : nonelastic
+   4    MT =      4  Q =  0.00000E+00 MeV  Emin = 1.46551E-02 MeV  : total inelastic scattering
+
+ Nuclide    5 / 11 : 28000.03c -- natural nickel (Ni-nat)
+
+ Pointers                     : 33411 21903
+ Primary type                 : Transport
+ Nuclide ZAI                  : 280000
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/28000JNDL32.ace
+ Atomic weight (AW)           : 58.68796
+ Atomic weight ratio (AWR)    : 58.18380
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 53 reaction channels
+ - 6 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 53 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -7.82014E+00 MeV  Emin = 8.00000E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     17  Q = -1.64818E+01 MeV  Emin = 1.67651E+01 MeV  frac = 1.00000E+00  : (n,3n)
+   4    MT =     22  Q = -6.29252E+00 MeV  Emin = 6.56896E+00 MeV  frac = 1.00000E+00  : (n,nalpha)
+   5    MT =     28  Q = -8.17901E+00 MeV  Emin = 9.00000E+00 MeV  frac = 1.00000E+00  : (n,np)
+   6    MT =     51  Q = -6.73580E-02 MeV  Emin = 6.85158E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   7    MT =     52  Q = -2.82824E-01 MeV  Emin = 2.87685E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   8    MT =     53  Q = -6.55591E-01 MeV  Emin = 6.66860E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   9    MT =     54  Q = -9.08233E-01 MeV  Emin = 9.23844E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+  10    MT =     55  Q = -1.01437E+00 MeV  Emin = 1.03181E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  11    MT =     56  Q = -1.33204E+00 MeV  Emin = 1.35494E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  12    MT =     57  Q = -1.34404E+00 MeV  Emin = 1.36714E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  13    MT =     58  Q = -1.45482E+00 MeV  Emin = 1.47982E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  14    MT =     59  Q = -1.45710E+00 MeV  Emin = 1.48214E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  15    MT =     60  Q = -1.72873E+00 MeV  Emin = 1.75844E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  16    MT =     61  Q = -1.97676E+00 MeV  Emin = 2.01074E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  17    MT =     62  Q = -2.00175E+00 MeV  Emin = 2.03616E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  18    MT =     63  Q = -2.15804E+00 MeV  Emin = 2.19513E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  19    MT =     64  Q = -2.27185E+00 MeV  Emin = 2.31090E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  20    MT =     65  Q = -2.28410E+00 MeV  Emin = 2.32336E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  21    MT =     66  Q = -2.29976E+00 MeV  Emin = 2.33929E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  22    MT =     67  Q = -2.45964E+00 MeV  Emin = 2.50191E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  23    MT =     68  Q = -2.50492E+00 MeV  Emin = 2.54797E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  24    MT =     69  Q = -2.62508E+00 MeV  Emin = 2.67020E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  25    MT =     70  Q = -2.77611E+00 MeV  Emin = 2.82382E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 20. excited state
+  26    MT =     71  Q = -2.86103E+00 MeV  Emin = 2.91020E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 21. excited state
+  27    MT =     72  Q = -2.90243E+00 MeV  Emin = 2.95232E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 22. excited state
+  28    MT =     73  Q = -2.96689E+00 MeV  Emin = 3.01788E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 23. excited state
+  29    MT =     74  Q = -3.03827E+00 MeV  Emin = 3.09049E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 24. excited state
+  30    MT =     75  Q = -3.11871E+00 MeV  Emin = 3.17231E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 25. excited state
+  31    MT =     76  Q = -3.15521E+00 MeV  Emin = 3.20944E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 26. excited state
+  32    MT =     77  Q = -3.18498E+00 MeV  Emin = 3.23972E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 27. excited state
+  33    MT =     78  Q = -3.25482E+00 MeV  Emin = 3.31076E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 28. excited state
+  34    MT =     79  Q = -3.26412E+00 MeV  Emin = 3.32022E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 29. excited state
+  35    MT =     80  Q = -3.26701E+00 MeV  Emin = 3.32316E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 30. excited state
+  36    MT =     81  Q = -3.42104E+00 MeV  Emin = 3.47985E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 31. excited state
+  37    MT =     82  Q = -3.45420E+00 MeV  Emin = 3.51358E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 32. excited state
+  38    MT =     83  Q = -3.52476E+00 MeV  Emin = 3.58535E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 33. excited state
+  39    MT =     84  Q = -3.59418E+00 MeV  Emin = 3.65596E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 34. excited state
+  40    MT =     85  Q = -3.64194E+00 MeV  Emin = 3.70454E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 35. excited state
+  41    MT =     86  Q = -3.77521E+00 MeV  Emin = 3.84011E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 36. excited state
+  42    MT =     87  Q = -3.80271E+00 MeV  Emin = 3.86808E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 37. excited state
+  43    MT =     88  Q = -3.89914E+00 MeV  Emin = 3.96617E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 38. excited state
+  44    MT =     89  Q = -4.03827E+00 MeV  Emin = 4.10769E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 39. excited state
+  45    MT =     90  Q = -4.47628E+00 MeV  Emin = 4.55322E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 40. excited state
+  46    MT =     91  Q = -2.52800E+00 MeV  Emin = 2.57145E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  47    MT =    102  Q =  1.05980E+01 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  48    MT =    103  Q =  4.02199E-01 MeV  Emin = 1.00000E-01 MeV  frac = 1.00000E+00  : (n,p)
+  49    MT =    104  Q = -5.86376E+00 MeV  Emin = 7.34895E+00 MeV  frac = 1.00000E+00  : (n,d)
+  50    MT =    105  Q = -8.86164E+00 MeV  Emin = 9.01395E+00 MeV  frac = 1.00000E+00  : (n,t)
+  51    MT =    106  Q = -6.47745E+00 MeV  Emin = 1.10000E+01 MeV  frac = 1.00000E+00  : (n,He-3)
+  52    MT =    107  Q =  3.58690E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,alpha)
+  53    MT =    111  Q = -6.55791E+00 MeV  Emin = 1.05000E+01 MeV  frac = 1.00000E+00  : (n,2p)
+
+ 6 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 1.00000E-01 MeV  : total proton production
+   2    MT =    204  Q =  0.00000E+00 MeV  Emin = 7.34055E+00 MeV  : total deuteron production
+   3    MT =    205  Q =  0.00000E+00 MeV  Emin = 9.00000E+00 MeV  : total triton production
+   4    MT =    206  Q =  0.00000E+00 MeV  Emin = 1.10000E+01 MeV  : total He-3 production
+   5    MT =    207  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  : total alpha production
+   6    MT =      4  Q =  0.00000E+00 MeV  Emin = 6.85158E-02 MeV  : total inelastic scattering
+
+ Nuclide    6 / 11 : 29000.03c -- natural copper (Cu-nat)
+
+ Pointers                     : 44256 23835
+ Primary type                 : Transport
+ Nuclide ZAI                  : 290000
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/29000JNDL32.ace
+ Atomic weight (AW)           : 63.54559
+ Atomic weight ratio (AWR)    : 62.99970
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 47 reaction channels
+ - 4 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 47 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -9.90142E+00 MeV  Emin = 1.00586E+01 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     22  Q = -5.77751E+00 MeV  Emin = 5.86923E+00 MeV  frac = 1.00000E+00  : (n,nalpha)
+   4    MT =     28  Q = -6.12565E+00 MeV  Emin = 6.22289E+00 MeV  frac = 1.00000E+00  : (n,np)
+   5    MT =     32  Q = -1.44990E+01 MeV  Emin = 1.47292E+01 MeV  frac = 1.00000E+00  : (n,nd)
+   6    MT =     51  Q = -6.69619E-01 MeV  Emin = 6.80249E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   7    MT =     52  Q = -7.70599E-01 MeV  Emin = 7.82832E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   8    MT =     53  Q = -9.62099E-01 MeV  Emin = 9.77372E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   9    MT =     54  Q = -1.11600E+00 MeV  Emin = 1.13400E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+  10    MT =     55  Q = -1.32700E+00 MeV  Emin = 1.34807E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  11    MT =     56  Q = -1.41200E+00 MeV  Emin = 1.43441E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  12    MT =     57  Q = -1.48200E+00 MeV  Emin = 1.50553E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  13    MT =     58  Q = -1.54700E+00 MeV  Emin = 1.57156E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  14    MT =     59  Q = -1.62300E+00 MeV  Emin = 1.64876E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  15    MT =     60  Q = -1.72500E+00 MeV  Emin = 1.75238E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  16    MT =     61  Q = -1.86100E+00 MeV  Emin = 1.89054E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  17    MT =     62  Q = -2.01100E+00 MeV  Emin = 2.04292E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  18    MT =     63  Q = -2.06200E+00 MeV  Emin = 2.09473E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  19    MT =     64  Q = -2.08150E+00 MeV  Emin = 2.11454E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  20    MT =     65  Q = -2.09300E+00 MeV  Emin = 2.12622E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  21    MT =     66  Q = -2.09400E+00 MeV  Emin = 2.12724E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  22    MT =     67  Q = -2.10700E+00 MeV  Emin = 2.14045E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  23    MT =     68  Q = -2.20800E+00 MeV  Emin = 2.24305E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  24    MT =     69  Q = -2.21300E+00 MeV  Emin = 2.24813E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  25    MT =     70  Q = -2.27800E+00 MeV  Emin = 2.31416E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 20. excited state
+  26    MT =     71  Q = -2.32900E+00 MeV  Emin = 2.36597E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 21. excited state
+  27    MT =     72  Q = -2.33700E+00 MeV  Emin = 2.37410E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 22. excited state
+  28    MT =     73  Q = -2.40500E+00 MeV  Emin = 2.44318E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 23. excited state
+  29    MT =     74  Q = -2.40700E+00 MeV  Emin = 2.44521E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 24. excited state
+  30    MT =     75  Q = -2.49700E+00 MeV  Emin = 2.53664E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 25. excited state
+  31    MT =     76  Q = -2.50500E+00 MeV  Emin = 2.54476E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 26. excited state
+  32    MT =     77  Q = -2.51200E+00 MeV  Emin = 2.55187E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 27. excited state
+  33    MT =     78  Q = -2.52600E+00 MeV  Emin = 2.56610E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 28. excited state
+  34    MT =     79  Q = -2.53300E+00 MeV  Emin = 2.57321E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 29. excited state
+  35    MT =     80  Q = -2.53400E+00 MeV  Emin = 2.57422E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 30. excited state
+  36    MT =     81  Q = -2.53600E+00 MeV  Emin = 2.57626E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 31. excited state
+  37    MT =     82  Q = -2.59300E+00 MeV  Emin = 2.63416E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 32. excited state
+  38    MT =     83  Q = -2.64400E+00 MeV  Emin = 2.68597E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 33. excited state
+  39    MT =     84  Q = -2.65000E+00 MeV  Emin = 2.69206E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 34. excited state
+  40    MT =     85  Q = -2.65500E+00 MeV  Emin = 2.69714E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 35. excited state
+  41    MT =     86  Q = -2.66900E+00 MeV  Emin = 2.71137E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 36. excited state
+  42    MT =     87  Q = -2.75300E+00 MeV  Emin = 2.79670E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 37. excited state
+  43    MT =     91  Q = -2.54000E+00 MeV  Emin = 2.58032E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  44    MT =    102  Q =  7.76609E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  45    MT =    103  Q =  7.16569E-01 MeV  Emin = 1.00000E-02 MeV  frac = 1.00000E+00  : (n,p)
+  46    MT =    104  Q = -3.90069E+00 MeV  Emin = 3.96262E+00 MeV  frac = 1.00000E+00  : (n,d)
+  47    MT =    107  Q =  1.71495E+00 MeV  Emin = 8.94179E-02 MeV  frac = 1.00000E+00  : (n,alpha)
+
+ 4 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 1.00000E-02 MeV  : total proton production
+   2    MT =    204  Q =  0.00000E+00 MeV  Emin = 3.75000E+00 MeV  : total deuteron production
+   3    MT =    207  Q =  0.00000E+00 MeV  Emin = 8.94179E-02 MeV  : total alpha production
+   4    MT =      4  Q =  0.00000E+00 MeV  Emin = 6.80249E-01 MeV  : total inelastic scattering
+
+ Nuclide    7 / 11 : 31000.03c -- natural gallium (Ga-nat)
+
+ Pointers                     : 19462 25215
+ Primary type                 : Transport
+ Nuclide ZAI                  : 310000
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/31000JEF311.ace
+ Atomic weight (AW)           : 69.72003
+ Atomic weight ratio (AWR)    : 69.12110
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has no ures ptable data
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 52 reaction channels
+ - 6 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 52 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -9.30027E+00 MeV  Emin = 9.43483E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     17  Q = -1.69521E+01 MeV  Emin = 1.71974E+01 MeV  frac = 1.00000E+00  : (n,3n)
+   4    MT =     22  Q = -4.48324E+00 MeV  Emin = 6.00000E+00 MeV  frac = 1.00000E+00  : (n,nalpha)
+   5    MT =     28  Q = -6.60808E+00 MeV  Emin = 7.00000E+00 MeV  frac = 1.00000E+00  : (n,np)
+   6    MT =     32  Q = -1.45829E+01 MeV  Emin = 1.50000E+01 MeV  frac = 1.00000E+00  : (n,nd)
+   7    MT =     51  Q = -3.18747E-01 MeV  Emin = 3.23359E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   8    MT =     52  Q = -3.89899E-01 MeV  Emin = 3.95541E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   9    MT =     53  Q = -4.87073E-01 MeV  Emin = 4.94121E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+  10    MT =     54  Q = -5.11467E-01 MeV  Emin = 5.18868E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+  11    MT =     55  Q = -5.74184E-01 MeV  Emin = 5.82492E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  12    MT =     56  Q = -7.13815E-01 MeV  Emin = 7.24143E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  13    MT =     57  Q = -8.72129E-01 MeV  Emin = 8.84747E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  14    MT =     58  Q = -9.10065E-01 MeV  Emin = 9.23232E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  15    MT =     59  Q = -9.64550E-01 MeV  Emin = 9.78506E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  16    MT =     60  Q = -1.02865E+00 MeV  Emin = 1.04353E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  17    MT =     61  Q = -1.10689E+00 MeV  Emin = 1.12291E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  18    MT =     62  Q = -1.13417E+00 MeV  Emin = 1.15058E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  19    MT =     63  Q = -1.33680E+00 MeV  Emin = 1.35614E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  20    MT =     64  Q = -1.39482E+00 MeV  Emin = 1.41500E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  21    MT =     65  Q = -1.47552E+00 MeV  Emin = 1.49687E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  22    MT =     66  Q = -1.48777E+00 MeV  Emin = 1.50930E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  23    MT =     67  Q = -1.52612E+00 MeV  Emin = 1.54820E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  24    MT =     68  Q = -1.63118E+00 MeV  Emin = 1.65478E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  25    MT =     69  Q = -1.70176E+00 MeV  Emin = 1.72638E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  26    MT =     70  Q = -1.71935E+00 MeV  Emin = 1.74423E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 20. excited state
+  27    MT =     71  Q = -1.72396E+00 MeV  Emin = 1.74890E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 21. excited state
+  28    MT =     72  Q = -1.75195E+00 MeV  Emin = 1.77730E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 22. excited state
+  29    MT =     73  Q = -1.89188E+00 MeV  Emin = 1.91925E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 23. excited state
+  30    MT =     74  Q = -1.92449E+00 MeV  Emin = 1.95233E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 24. excited state
+  31    MT =     75  Q = -1.94050E+00 MeV  Emin = 1.96857E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 25. excited state
+  32    MT =     76  Q = -1.97269E+00 MeV  Emin = 2.00123E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 26. excited state
+  33    MT =     77  Q = -1.99448E+00 MeV  Emin = 2.02334E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 27. excited state
+  34    MT =     78  Q = -2.02410E+00 MeV  Emin = 2.05338E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 28. excited state
+  35    MT =     79  Q = -2.04551E+00 MeV  Emin = 2.07510E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 29. excited state
+  36    MT =     80  Q = -2.06347E+00 MeV  Emin = 2.09332E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 30. excited state
+  37    MT =     81  Q = -2.13185E+00 MeV  Emin = 2.16269E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 31. excited state
+  38    MT =     82  Q = -2.19073E+00 MeV  Emin = 2.22243E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 32. excited state
+  39    MT =     83  Q = -2.21963E+00 MeV  Emin = 2.25174E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 33. excited state
+  40    MT =     84  Q = -2.24662E+00 MeV  Emin = 2.27912E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 34. excited state
+  41    MT =     85  Q = -2.29381E+00 MeV  Emin = 2.32700E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 35. excited state
+  42    MT =     86  Q = -2.31985E+00 MeV  Emin = 2.35341E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 36. excited state
+  43    MT =     87  Q = -2.35365E+00 MeV  Emin = 2.38770E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 37. excited state
+  44    MT =     88  Q = -2.42366E+00 MeV  Emin = 2.45872E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 38. excited state
+  45    MT =     91  Q = -2.32940E+00 MeV  Emin = 2.36310E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  46    MT =    102  Q =  7.65439E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  47    MT =    103  Q = -1.24333E-01 MeV  Emin = 5.00000E-01 MeV  frac = 1.00000E+00  : (n,p)
+  48    MT =    104  Q = -4.38341E+00 MeV  Emin = 4.44684E+00 MeV  frac = 1.00000E+00  : (n,d)
+  49    MT =    105  Q = -8.32520E+00 MeV  Emin = 9.00000E+00 MeV  frac = 1.00000E+00  : (n,t)
+  50    MT =    106  Q = -8.88122E+00 MeV  Emin = 1.00000E+01 MeV  frac = 1.00000E+00  : (n,He-3)
+  51    MT =    107  Q =  2.58355E+00 MeV  Emin = 1.00000E-01 MeV  frac = 1.00000E+00  : (n,alpha)
+  52    MT =    111  Q = -1.04101E+01 MeV  Emin = 1.10000E+01 MeV  frac = 1.00000E+00  : (n,2p)
+
+ 6 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 5.00000E-01 MeV  : total proton production
+   2    MT =    204  Q =  0.00000E+00 MeV  Emin = 4.44684E+00 MeV  : total deuteron production
+   3    MT =    205  Q =  0.00000E+00 MeV  Emin = 9.00000E+00 MeV  : total triton production
+   4    MT =    206  Q =  0.00000E+00 MeV  Emin = 9.74004E+00 MeV  : total He-3 production
+   5    MT =    207  Q =  0.00000E+00 MeV  Emin = 1.00000E-01 MeV  : total alpha production
+   6    MT =      4  Q =  0.00000E+00 MeV  Emin = 3.23359E-01 MeV  : total inelastic scattering
+
+ Nuclide    8 / 11 : 74000.03c -- natural tungsten (W-nat)
+
+ Pointers                     : 29577 92283
+ Primary type                 : Transport
+ Nuclide ZAI                  : 740000
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/74000ENDF68.ace
+ Atomic weight (AW)           : 183.85642
+ Atomic weight ratio (AWR)    : 182.27700
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is not fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has no delayed neutron data
+ - Nuclide has ures ptable data but it is not used
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 48 reaction channels
+ - 3 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 48 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -6.19040E+00 MeV  Emin = 6.22460E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     17  Q = -1.29540E+01 MeV  Emin = 1.30251E+01 MeV  frac = 1.00000E+00  : (n,3n)
+   4    MT =     28  Q = -7.09200E+00 MeV  Emin = 7.13130E+00 MeV  frac = 1.00000E+00  : (n,np)
+   5    MT =     51  Q = -4.70010E-02 MeV  Emin = 4.72600E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   6    MT =     52  Q = -9.90040E-02 MeV  Emin = 9.95500E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   7    MT =     53  Q = -1.00050E-01 MeV  Emin = 1.00600E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   8    MT =     54  Q = -1.11190E-01 MeV  Emin = 1.11800E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+   9    MT =     55  Q = -1.22340E-01 MeV  Emin = 1.23011E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  10    MT =     56  Q = -2.06960E-01 MeV  Emin = 2.08100E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  11    MT =     57  Q = -2.09050E-01 MeV  Emin = 2.10200E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  12    MT =     58  Q = -2.91990E-01 MeV  Emin = 2.93600E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  13    MT =     59  Q = -3.09000E-01 MeV  Emin = 3.10700E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  14    MT =     60  Q = -3.09490E-01 MeV  Emin = 3.11200E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  15    MT =     61  Q = -3.28980E-01 MeV  Emin = 3.30800E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  16    MT =     62  Q = -3.64050E-01 MeV  Emin = 3.66050E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  17    MT =     63  Q = -3.96550E-01 MeV  Emin = 3.98726E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  18    MT =     64  Q = -4.12030E-01 MeV  Emin = 4.14300E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  19    MT =     65  Q = -4.53000E-01 MeV  Emin = 4.55500E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  20    MT =     66  Q = -4.87010E-01 MeV  Emin = 4.89700E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  21    MT =     67  Q = -5.54050E-01 MeV  Emin = 5.57100E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  22    MT =     68  Q = -5.99990E-01 MeV  Emin = 6.03300E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  23    MT =     69  Q = -6.19980E-01 MeV  Emin = 6.23400E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  24    MT =     70  Q = -6.80030E-01 MeV  Emin = 6.83800E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 20. excited state
+  25    MT =     71  Q = -7.37530E-01 MeV  Emin = 7.41576E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 21. excited state
+  26    MT =     72  Q = -7.40020E-01 MeV  Emin = 7.44100E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 22. excited state
+  27    MT =     73  Q = -7.48330E-01 MeV  Emin = 7.52436E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 23. excited state
+  28    MT =     74  Q = -8.08550E-01 MeV  Emin = 8.12986E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 24. excited state
+  29    MT =     75  Q = -8.61870E-01 MeV  Emin = 8.66599E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 25. excited state
+  30    MT =     76  Q = -8.82060E-01 MeV  Emin = 8.86899E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 26. excited state
+  31    MT =     77  Q = -9.03290E-01 MeV  Emin = 9.08246E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 27. excited state
+  32    MT =     78  Q = -9.52480E-01 MeV  Emin = 9.57706E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 28. excited state
+  33    MT =     79  Q = -1.00250E+00 MeV  Emin = 1.00800E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 29. excited state
+  34    MT =     80  Q = -1.00560E+00 MeV  Emin = 1.01112E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 30. excited state
+  35    MT =     81  Q = -1.00650E+00 MeV  Emin = 1.01202E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 31. excited state
+  36    MT =     82  Q = -1.01550E+00 MeV  Emin = 1.02107E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 32. excited state
+  37    MT =     83  Q = -1.03150E+00 MeV  Emin = 1.03716E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 33. excited state
+  38    MT =     84  Q = -1.04540E+00 MeV  Emin = 1.05114E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 34. excited state
+  39    MT =     85  Q = -1.12190E+00 MeV  Emin = 1.12806E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 35. excited state
+  40    MT =     86  Q = -1.12990E+00 MeV  Emin = 1.13610E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 36. excited state
+  41    MT =     87  Q = -1.13380E+00 MeV  Emin = 1.14002E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 37. excited state
+  42    MT =     88  Q = -1.13570E+00 MeV  Emin = 1.14200E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 38. excited state
+  43    MT =     89  Q = -1.14450E+00 MeV  Emin = 1.15080E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 39. excited state
+  44    MT =     90  Q = -1.14980E+00 MeV  Emin = 1.15611E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 40. excited state
+  45    MT =     91  Q = -2.98380E-01 MeV  Emin = 3.00017E-01 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  46    MT =    102  Q =  7.41140E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+  47    MT =    103  Q = -2.86000E-01 MeV  Emin = 2.87600E-01 MeV  frac = 1.00000E+00  : (n,p)
+  48    MT =    107  Q =  9.07850E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,alpha)
+
+ 3 special reactions:
+
+   1    MT =    203  Q =  0.00000E+00 MeV  Emin = 2.87600E-01 MeV  : total proton production
+   2    MT =    207  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  : total alpha production
+   3    MT =      4  Q =  0.00000E+00 MeV  Emin = 4.72600E-02 MeV  : total inelastic scattering
+
+ Nuclide    9 / 11 : 94239.03c -- plutonium 239 (Pu-239)
+
+ Pointers                     : 11970 109993
+ Primary type                 : Transport
+ Nuclide ZAI                  : 942390
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/94239ENDF7.ace
+ Atomic weight (AW)           : 239.05218
+ Atomic weight ratio (AWR)    : 236.99860
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+ Energy deposited per fission : 207.62 MeV
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has delayed neutron data in 6 precursor groups
+ - Nuclide has ures ptable data but it is not used
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 47 reaction channels
+ - 1 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 47 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -5.64670E+00 MeV  Emin = 5.67053E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     17  Q = -1.26480E+01 MeV  Emin = 1.27014E+01 MeV  frac = 1.00000E+00  : (n,3n)
+   4    MT =     18  Q =  1.98844E+02 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : total fission
+   5    MT =     37  Q = -1.85083E+01 MeV  Emin = 1.85864E+01 MeV  frac = 1.00000E+00  : (n,4n)
+   6    MT =     51  Q = -7.86100E-03 MeV  Emin = 7.89417E-03 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   7    MT =     52  Q = -5.72760E-02 MeV  Emin = 5.75177E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   8    MT =     53  Q = -7.57060E-02 MeV  Emin = 7.60254E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   9    MT =     54  Q = -1.63760E-01 MeV  Emin = 1.64451E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+  10    MT =     55  Q = -1.92810E-01 MeV  Emin = 1.93624E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  11    MT =     56  Q = -2.85460E-01 MeV  Emin = 2.86665E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  12    MT =     57  Q = -3.18100E-01 MeV  Emin = 3.19442E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  13    MT =     58  Q = -3.45000E-01 MeV  Emin = 3.46456E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  14    MT =     59  Q = -3.89500E-01 MeV  Emin = 3.91144E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  15    MT =     60  Q = -4.31500E-01 MeV  Emin = 4.33321E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  16    MT =     61  Q = -4.57000E-01 MeV  Emin = 4.58928E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  17    MT =     62  Q = -4.76000E-01 MeV  Emin = 4.78009E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  18    MT =     63  Q = -4.90000E-01 MeV  Emin = 4.92068E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  19    MT =     64  Q = -5.05500E-01 MeV  Emin = 5.07633E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  20    MT =     65  Q = -5.25000E-01 MeV  Emin = 5.27215E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  21    MT =     66  Q = -5.56100E-01 MeV  Emin = 5.58450E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  22    MT =     67  Q = -5.74000E-01 MeV  Emin = 5.76422E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  23    MT =     68  Q = -6.27000E-01 MeV  Emin = 6.29646E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  24    MT =     69  Q = -9.39000E-01 MeV  Emin = 9.42962E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  25    MT =     70  Q = -1.00100E+00 MeV  Emin = 1.00523E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 20. excited state
+  26    MT =     71  Q = -1.13500E+00 MeV  Emin = 1.13979E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 21. excited state
+  27    MT =     72  Q = -1.17000E+00 MeV  Emin = 1.17494E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 22. excited state
+  28    MT =     73  Q = -1.25000E+00 MeV  Emin = 1.25527E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 23. excited state
+  29    MT =     74  Q = -1.44000E+00 MeV  Emin = 1.44608E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 24. excited state
+  30    MT =     75  Q = -1.59000E+00 MeV  Emin = 1.59671E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 25. excited state
+  31    MT =     76  Q = -1.75000E+00 MeV  Emin = 1.75738E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 26. excited state
+  32    MT =     77  Q = -1.85000E+00 MeV  Emin = 1.85781E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 27. excited state
+  33    MT =     78  Q = -1.95000E+00 MeV  Emin = 1.95823E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 28. excited state
+  34    MT =     79  Q = -2.15000E+00 MeV  Emin = 2.15907E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 29. excited state
+  35    MT =     80  Q = -2.30000E+00 MeV  Emin = 2.30971E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 30. excited state
+  36    MT =     81  Q = -2.39000E+00 MeV  Emin = 2.40008E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 31. excited state
+  37    MT =     82  Q = -2.49280E+00 MeV  Emin = 2.50332E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 32. excited state
+  38    MT =     83  Q = -2.94000E+00 MeV  Emin = 2.95241E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 33. excited state
+  39    MT =     84  Q = -3.18900E+00 MeV  Emin = 3.20246E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 34. excited state
+  40    MT =     85  Q = -3.38800E+00 MeV  Emin = 3.40230E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 35. excited state
+  41    MT =     86  Q = -3.53800E+00 MeV  Emin = 3.55293E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 36. excited state
+  42    MT =     87  Q = -3.63700E+00 MeV  Emin = 3.65235E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 37. excited state
+  43    MT =     88  Q = -3.73700E+00 MeV  Emin = 3.75277E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 38. excited state
+  44    MT =     89  Q = -3.83700E+00 MeV  Emin = 3.85319E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 39. excited state
+  45    MT =     90  Q = -3.90900E+00 MeV  Emin = 3.92550E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 40. excited state
+  46    MT =     91  Q = -6.34000E-01 MeV  Emin = 6.36680E-01 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  47    MT =    102  Q =  6.53370E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+
+ 1 special reaction:
+
+   1    MT =      4  Q =  0.00000E+00 MeV  Emin = 7.89417E-03 MeV  : total inelastic scattering
+
+ Nuclide   10 / 11 : 94240.03c -- plutonium 240 (Pu-240)
+
+ Pointers                     : 15590 110269
+ Primary type                 : Transport
+ Nuclide ZAI                  : 942400
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/94240ENDF7.ace
+ Atomic weight (AW)           : 240.05420
+ Atomic weight ratio (AWR)    : 237.99200
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+ Energy deposited per fission : 208.27 MeV
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has delayed neutron data in 6 precursor groups
+ - Nuclide has ures ptable data but it is not used
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 27 reaction channels
+ - 1 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 27 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -6.53350E+00 MeV  Emin = 6.56095E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     17  Q = -1.21890E+01 MeV  Emin = 1.22402E+01 MeV  frac = 1.00000E+00  : (n,3n)
+   4    MT =     19  Q =  1.99470E+02 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,f)
+   5    MT =     20  Q =  1.99470E+02 MeV  Emin = 5.02080E+00 MeV  frac = 1.00000E+00  : (n,nf)
+   6    MT =     21  Q =  1.99470E+02 MeV  Emin = 1.30000E+01 MeV  frac = 1.00000E+00  : (n,2nf)
+   7    MT =     51  Q = -4.28000E-02 MeV  Emin = 4.29800E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   8    MT =     52  Q = -1.41700E-01 MeV  Emin = 1.50000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   9    MT =     53  Q = -2.94000E-01 MeV  Emin = 3.00000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+  10    MT =     54  Q = -4.98000E-01 MeV  Emin = 5.00093E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+  11    MT =     55  Q = -5.97000E-01 MeV  Emin = 5.99510E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  12    MT =     56  Q = -6.49000E-01 MeV  Emin = 6.51730E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  13    MT =     57  Q = -7.42000E-01 MeV  Emin = 7.45120E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  14    MT =     58  Q = -8.60700E-01 MeV  Emin = 8.64320E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  15    MT =     59  Q = -9.00000E-01 MeV  Emin = 9.03782E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  16    MT =     60  Q = -9.38000E-01 MeV  Emin = 9.41941E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  17    MT =     61  Q = -9.59000E-01 MeV  Emin = 9.63030E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  18    MT =     62  Q = -9.93000E-01 MeV  Emin = 9.97173E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  19    MT =     63  Q = -1.00200E+00 MeV  Emin = 1.00621E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  20    MT =     64  Q = -1.03100E+00 MeV  Emin = 1.03533E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  21    MT =     65  Q = -1.03800E+00 MeV  Emin = 1.09430E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  22    MT =     66  Q = -1.07600E+00 MeV  Emin = 1.08052E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 16. excited state
+  23    MT =     67  Q = -1.08970E+00 MeV  Emin = 1.09430E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 17. excited state
+  24    MT =     68  Q = -1.11600E+00 MeV  Emin = 1.12070E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 18. excited state
+  25    MT =     69  Q = -1.13750E+00 MeV  Emin = 1.14230E+00 MeV  frac = 1.00000E+00  : inelastic scatt. to 19. excited state
+  26    MT =     91  Q = -1.14000E+00 MeV  Emin = 1.14480E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  27    MT =    102  Q =  5.24100E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+
+ 1 special reaction:
+
+   1    MT =      4  Q =  0.00000E+00 MeV  Emin = 4.29800E-02 MeV  : total inelastic scattering
+
+ Nuclide   11 / 11 : 94241.03c -- plutonium 241 (Pu-241)
+
+ Pointers                     : 17745 110545
+ Primary type                 : Transport
+ Nuclide ZAI                  : 942410
+ Library ID                   : 03c
+ Cross section data file      : /global/home/groups/co_nuclear/serpent/xsdata/endfb7/acedata/94241ENDF7.ace
+ Atomic weight (AW)           : 241.04873
+ Atomic weight ratio (AWR)    : 238.97800
+ Temperature                  : 300.0 Kelvin
+ XS temperature               : 300.0 Kelvin
+ Minimum and maximum energy   : 1.00000E-11 2.00000E+01
+ Half-life                    : N/A
+ Specific ingestion toxicity  : N/A
+ Specific inhalation toxicity : N/A
+ Energy deposited per fission : 210.89 MeV
+
+ - Nuclide is not involved in burnup calculation
+ - Nuclide has neutron transport data
+ - Nuclide has no photon transport data
+ - Nuclide has no S(a,b) data
+ - Nuclide has no isomeric branching data
+ - Nuclide is fissile
+ - Nuclide is not a delayed neutron precursor
+ - Nuclide has delayed neutron data in 6 precursor groups
+ - Nuclide has ures ptable data but it is not used
+ - Nuclide temperature is not adjusted with TMS
+ - Nuclide has no dosimetry data
+ - Nuclide has no decay data
+ - Nuclide has no supplementary transmutation cross section data
+ - Nuclide has no NFY data
+ - Nuclide has no SFY data
+
+ - 21 reaction channels
+ - 1 special reactions
+ - No transmutation reactions
+ - No transmutation branch reactions
+ - No decay reactions
+ - No decay branch reactions
+ - No transmutation paths
+
+ 21 reactions channel:
+
+   1    MT =      2  Q =  0.00000E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : elastic scattering
+   2    MT =     16  Q = -5.24804E+00 MeV  Emin = 5.27000E+00 MeV  frac = 1.00000E+00  : (n,2n)
+   3    MT =     17  Q = -1.17010E+01 MeV  Emin = 1.17500E+01 MeV  frac = 1.00000E+00  : (n,3n)
+   4    MT =     18  Q =  2.01980E+02 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : total fission
+   5    MT =     51  Q = -4.00000E-02 MeV  Emin = 4.02000E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 1. excited state
+   6    MT =     52  Q = -9.50000E-02 MeV  Emin = 9.54000E-02 MeV  frac = 1.00000E+00  : inelastic scatt. to 2. excited state
+   7    MT =     53  Q = -1.63000E-01 MeV  Emin = 1.63700E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 3. excited state
+   8    MT =     54  Q = -1.69000E-01 MeV  Emin = 1.74700E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 4. excited state
+   9    MT =     55  Q = -1.74000E-01 MeV  Emin = 1.80000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 5. excited state
+  10    MT =     56  Q = -2.31000E-01 MeV  Emin = 2.32000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 6. excited state
+  11    MT =     57  Q = -2.45000E-01 MeV  Emin = 2.46025E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 7. excited state
+  12    MT =     58  Q = -3.00000E-01 MeV  Emin = 3.01300E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 8. excited state
+  13    MT =     59  Q = -3.35000E-01 MeV  Emin = 3.36402E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 9. excited state
+  14    MT =     60  Q = -4.48000E-01 MeV  Emin = 4.50000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 10. excited state
+  15    MT =     61  Q = -7.53000E-01 MeV  Emin = 7.56200E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 11. excited state
+  16    MT =     62  Q = -8.28000E-01 MeV  Emin = 8.31500E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 12. excited state
+  17    MT =     63  Q = -8.94000E-01 MeV  Emin = 8.98000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 13. excited state
+  18    MT =     64  Q = -9.18000E-01 MeV  Emin = 9.21900E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 14. excited state
+  19    MT =     65  Q = -9.41000E-01 MeV  Emin = 9.45000E-01 MeV  frac = 1.00000E+00  : inelastic scatt. to 15. excited state
+  20    MT =     91  Q = -1.19500E+00 MeV  Emin = 1.20000E+00 MeV  frac = 1.00000E+00  : inelastic scattering to continuum
+  21    MT =    102  Q =  6.30080E+00 MeV  Emin = 1.00000E-11 MeV  frac = 1.00000E+00  : (n,gamma)
+
+ 1 special reaction:
+
+   1    MT =      4  Q =  0.00000E+00 MeV  Emin = 4.02000E-02 MeV  : total inelastic scattering
+
+ --- Table  1: Summary of material compositions: 
+
+ 4 materials included in calculation
+
+
+Material "plutonium":
+
+ - Material is included in majorant
+ - Material is included in geometry
+ - Atom density 4.21573E-02 1/barn*cm
+ - Mass density 1.54757E+01 g/cm3
+ - Volume 6.29937E+02 cm3
+ - Mass 9.74872E+03 g
+ - Photon emission rate 0.00000E+00 1/s
+ - Neutron emission rate 0.00000E+00 1/s
+ - 8 nuclides in composition
+ - No nuclides associated with S(a,b) data
+ - 5.97 Mb of memory allocated for data
+
+Isotopic composition (non-zero densities):
+
+-------------------------------------------------------------------
+ Nuclide    a. weight   temp      a. dens      a. frac      m. frac
+-------------------------------------------------------------------
+ 94239.03c  239.05218  300.0  3.39300E-02  8.04845E-01  8.70328E-01    
+ 94240.03c  240.05420  300.0  3.50430E-03  8.31246E-02  9.02645E-02    
+ 94241.03c  241.04873  300.0  3.91891E-04  9.29592E-03  1.01362E-02    
+ 31000.03c   69.72003  300.0  2.21050E-03  5.24347E-02  1.65369E-02    
+  6000.03c   12.00110  300.0  3.02460E-04  7.17458E-03  3.89489E-04    
+ 26000.03c   55.84675  300.0  3.25250E-04  7.71517E-03  1.94904E-03    
+ 74000.03c  183.85642  300.0  7.41001E-05  1.75771E-03  1.46185E-03    
+ 28000.03c   58.68796  300.0  1.41870E-03  3.36526E-02  8.93400E-03    
+       sum                    4.21573E-02  1.00000E+00  1.00000E+00
+-------------------------------------------------------------------
+
+Material "reflector":
+
+ - Material is included in majorant
+ - Material is included in geometry
+ - Atom density 1.21046E-01 1/barn*cm
+ - Mass density 1.81690E+00 g/cm3
+ - Volume 9.69517E+03 cm3
+ - Mass 1.76151E+04 g
+ - Photon emission rate 0.00000E+00 1/s
+ - Neutron emission rate 0.00000E+00 1/s
+ - 4 nuclides in composition
+ - No nuclides associated with S(a,b) data
+ - 3.41 Mb of memory allocated for data
+
+Isotopic composition (non-zero densities):
+
+-------------------------------------------------------------------
+ Nuclide    a. weight   temp      a. dens      a. frac      m. frac
+-------------------------------------------------------------------
+  4009.03c    9.01220  300.0  1.20812E-01  9.98073E-01  9.95101E-01    
+  8016.03c   15.99492  300.0  8.20656E-05  6.77973E-04  1.19969E-03    
+  6000.03c   12.00110  300.0  1.00202E-04  8.27804E-04  1.09906E-03    
+ 26000.03c   55.84675  300.0  5.09400E-05  4.20833E-04  2.60005E-03    
+       sum                    1.21046E-01  1.00000E+00  1.00000E+00
+-------------------------------------------------------------------
+
+Material "steel":
+
+ - Material is included in majorant
+ - Material is included in geometry
+ - Atom density 8.11735E-02 1/barn*cm
+ - Mass density 7.52780E+00 g/cm3
+ - Volume 0.00000E+00 cm3
+ - Mass 0.00000E+00 g
+ - Photon emission rate 0.00000E+00 1/s
+ - Neutron emission rate 0.00000E+00 1/s
+ - 1 nuclides in composition
+ - No nuclides associated with S(a,b) data
+ - 3.41 Mb of memory allocated for data
+
+Isotopic composition (non-zero densities):
+
+-------------------------------------------------------------------
+ Nuclide    a. weight   temp      a. dens      a. frac      m. frac
+-------------------------------------------------------------------
+ 26000.03c   55.84675  300.0  8.11735E-02  1.00000E+00  1.00000E+00    
+       sum                    8.11735E-02  1.00000E+00  1.00000E+00
+-------------------------------------------------------------------
+
+Material "copper":
+
+ - Material is included in majorant
+ - Material is included in geometry
+ - Atom density 8.23651E-02 1/barn*cm
+ - Mass density 8.69130E+00 g/cm3
+ - Volume 2.31204E+02 cm3
+ - Mass 2.00946E+03 g
+ - Photon emission rate 0.00000E+00 1/s
+ - Neutron emission rate 0.00000E+00 1/s
+ - 1 nuclides in composition
+ - No nuclides associated with S(a,b) data
+ - 3.41 Mb of memory allocated for data
+
+Isotopic composition (non-zero densities):
+
+-------------------------------------------------------------------
+ Nuclide    a. weight   temp      a. dens      a. frac      m. frac
+-------------------------------------------------------------------
+ 29000.03c   63.54559  300.0  8.23651E-02  1.00000E+00  1.00000E+00    
+       sum                    8.23651E-02  1.00000E+00  1.00000E+00
+-------------------------------------------------------------------
