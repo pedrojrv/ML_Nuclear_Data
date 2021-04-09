@@ -51,7 +51,7 @@ GPU_ID = args.gpu_num
 
 ETA = 0.8
 NUM_ROUND = 10
-MAX_BIN_LIST = [300, 10000, 20000, 30000] # 1000 5000 20000
+MAX_BIN_LIST = [40000, 50000] # [300, 10000, 20000, 30000] 
 MAX_DEPTH_LIST = np.arange(args.max_depth[0], args.max_depth[1], args.max_depth[2])
 LAMBDA_LIST = [0, 1] # 5
 OBJECTIVE_LIST = ['rmse'] # huber
@@ -108,7 +108,7 @@ for objective in OBJECTIVE_LIST:
 
 
                 # ############################# TRAINING ##############################
-                params = build_utils.get_xgboost_params(max_bin=max_bin, max_depth=max_depth, l2=l2, objective=objective, gpu_id=GPU_ID)
+                params = build_utils.get_xgboost_params(eta=ETA, max_bin=max_bin, max_depth=max_depth, l2=l2, objective=objective, gpu_id=GPU_ID)
                 progress = {}
 
                 start_training_time = time.time()

@@ -49,12 +49,13 @@ args = CLI.parse_args()
 
 DATASET = args.dataset
 VERSION = '_' + args.version
-DATASET_DICT = {"B0":0, "B1":1, "B2":2, "B3":3}
+DATASET_DICT = {"B0":0, "B1":1, "B2":2, "B3":3, 'B4':4}
 NORMALIZER_TYPE = args.normalizer
 MT_STRATEGY = "one_hot"
 TRAIN_FRACTION = 0.9
 K_LIST = args.k_list
-DISTANCE_METRIC = ["euclidean", "manhattan"]
+# DISTANCE_METRIC = ["euclidean", "manhattan"]
+DISTANCE_METRIC = ["manhattan"]
 NJOBS = args.n_jobs
 SCALE_ENERGY_DICT = {"y":True, "n":False}
 SCALE_ENERGY = SCALE_ENERGY_DICT[args.scale_e]

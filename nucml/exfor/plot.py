@@ -91,7 +91,7 @@ def ml_results(results_dict, order_dict={}, save_dir='', save=False, render_brow
             fig.write_html(os.path.splitext(save_dir)[0] + '.html')
         return fig
     elif plot_type == "sns":  
-        plt.figure(figsize=(14,10))
+        plt.figure(figsize=(18,8))
         if len(order_dict) == 0:
             order_dict=  {"endf":1, "exfor_ml_original":4, "exfor_ml":3, "exfor_new":2}
         

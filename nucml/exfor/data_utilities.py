@@ -373,20 +373,20 @@ def predicting_nuclear_xs_v2(df, Z, A, MT, model, to_scale, scaler, e_array="ace
             error_df = error_df.append(error_endf_new)
             all_dict.update({"exfor_endf_new":exfor_endf_new_data, "error_metrics":error_df})
 
-    if show:
+    # if show:
+    if plotter == "plotly":
+        exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show)
+    elif plotter == "plt":
+        exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show, log=log, plot_type="sns")
+    if save_both:
         if plotter == "plotly":
-            exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show)
+            if len(order_dict) != 0:
+                order_dict = {k: int(v) for k, v in order_dict.items()}
+            exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False, log=log, plot_type="sns")
         elif plotter == "plt":
-            exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show, log=log, plot_type="sns")
-        if save_both:
-            if plotter == "plotly":
-                if len(order_dict) != 0:
-                    order_dict = {k: int(v) for k, v in order_dict.items()}
-                exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False, log=log, plot_type="sns")
-            elif plotter == "plt":
-                if len(order_dict) != 0:
-                    order_dict = {str(v): k for k, v in order_dict.items()}
-                exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False)
+            if len(order_dict) != 0:
+                order_dict = {str(v): k for k, v in order_dict.items()}
+            exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=False)
     return all_dict
 
 
@@ -475,7 +475,8 @@ def predicting_nuclear_xs_v2_no_norm(df, Z, A, MT, model, e_array="ace", log=Fal
             error_df = error_df.append(error_endf_new)
             all_dict.update({"exfor_endf_new":exfor_endf_new_data, "error_metrics":error_df})
 
-    if show:
+    if show or save:
+
         if plotter == "plotly":
             exfor_plot_utils.ml_results(all_dict, save=save, save_dir=path, order_dict=order_dict, show=show)
         elif plotter == "plt":

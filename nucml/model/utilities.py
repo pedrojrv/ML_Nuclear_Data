@@ -239,3 +239,17 @@ def remove_unused_models(model_results_path, acedate_directory):
         shutil.rmtree(i)
     
     return None
+
+
+def filter_by_parameters(results_df, param_dict):
+    for i in param_dict:
+        results_df = results_df[results_df[i] == param_dict[i]]
+    return results_df
+
+def get_parameters_from_line(results_df, model="knn"):
+    if model.lower() == "knn":
+        distance_metric = results_df.distance_metric.values[0]
+        mt_strategy = results_df.mt_strategy.values[0]
+        normalizer = results_df.normalizer.values[0]
+        param_dict = {"distance_metric":distance_metric, "mt_strategy":mt_strategy, "normalizer":normalizer}
+    return param_dict
