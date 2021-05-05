@@ -5,7 +5,9 @@ This directory contains jupyter notebooks and python scripts used to generate or
 <!-- C:/Users/Pedro/Anaconda3/Scripts/activate
 conda activate tf_nightly
 cd Desktop/ML_Nuclear_Data/ML_EXFOR_neutrons/1_KNN/
-python knn.py --scale_e y --version v2 --normalizer minmax --k_list  -->
+python knn.py --scale_e y --version v2 --normalizer minmax --dataset B1 --k_list
+python knn.py --normalizer minmax --dataset B4 --k_list
+  -->
 
 ```
 | ML_Nuclear_Data

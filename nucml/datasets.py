@@ -382,7 +382,8 @@ def load_exfor(log=False, low_en=False, basic=-1, num=False, frac=0.1, mode="neu
         else:
             raise FileNotFoundError("One ore more files are missing. Check directories.")
     else:
-        datapath = os.path.join(exfor_path, 'EXFOR_' + mode + '\\EXFOR_' + mode + '_MF3_AME_no_RawNaN.csv')
+        # datapath = os.path.join(exfor_path, 'EXFOR_' + mode + '\\EXFOR_' + mode + '_MF3_AME_no_RawNaN.csv')
+        datapath = os.path.join(exfor_path, 'EXFOR_' + mode + '/EXFOR_' + mode + '_MF3_AME_no_RawNaN.csv')
         if os.path.exists(datapath):
             logging.info("Reading data from {}".format(datapath))
             df = pd.read_csv(datapath, dtype=dtype_exfor).dropna()

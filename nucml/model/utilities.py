@@ -109,7 +109,10 @@ def make_predictions(data, model, model_type):
     Returns:
         object: object containing the model predictions. Type will be dependent on model type.
     """
-    if model_type == "tf":
+    if str(type(model)) == "<class 'xgboost.core.Booster'>":
+        xg_dataset = xgb.DMatrix(data)
+        pred_vector = model.predict(xg_dataset)
+    elif model_type == "tf":
         tf_dataset = tf.data.Dataset.from_tensor_slices((data)).batch(len(data))
         pred_vector = model.predict(tf_dataset)
     elif model_type == "xgb":

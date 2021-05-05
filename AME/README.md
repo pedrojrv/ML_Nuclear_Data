@@ -6,7 +6,7 @@ This directory contains files related to the Atomic Mass Evaluation 2016. For mo
 | ML_Nuclear_Data
     | AME
         | CSV_Files
-            - AME_all_merged_no_NaN.csv       (CREATED)
+            - AME_all_merged_no_NaN.csv           (CREATED)
             - AME_all_merged.csv                  (CREATED)
             - AME_mass16.csv                      (CREATED)
             - AME_Natural_Properties_no_NaN.csv   (CREATED)
@@ -20,7 +20,8 @@ This directory contains files related to the Atomic Mass Evaluation 2016. For mo
             - periodic_table.csv
         | Notebooks
             - 0_Extracting_AME_data.ipynb
-            - 1_EDA_AME.ipynb
+            - 1_Loading_AME_Datasets.ipynb
+            - 2_EDA_AME.ipynb
 ```
 
 # CSV Files
@@ -40,4 +41,4 @@ This directory contains the original text files from the atomic mass evaluation 
 
 # Notebooks
 
-This directory contains two notebooks. The first one shows how the AME text files are parsed and extracted in case this needs to be done again (doubtful). The second one goes through a simple example of how to load and explore the AME processed files. 
+This directory contains three notebooks. The first one shows how the AME text files are parsed and extracted in case this needs to be done again (doubtful). The second one goes through a simple example of how to load the different AME datasets available. The third notebook shows a basic exploration of some AME datasets.  

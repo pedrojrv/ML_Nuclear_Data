@@ -65,7 +65,7 @@ def get_to_skip_lines(isotope, temp="03c"):
         raise FileNotFoundError("{} does not exists.".format(path))
 
 
-def get_nxs_jxs_xss(isotope, temp="03c", custom_path=None):
+def get_nxs_jxs_xss(isotope, temp="03c", custom_path=None, reduced=False):
     """Retrieves the NSX, JXS, and XSS tables for a given isotope at a given temperature
     The JSX DataFrame indicates the indices to the XSS where different pieces of data begin.
     The XSS table contains the actual data needed by many functions of the ACE utilities.
@@ -83,6 +83,13 @@ def get_nxs_jxs_xss(isotope, temp="03c", custom_path=None):
     """    
     path, to_skip, lines = get_to_skip_lines(isotope, temp=temp)
     if (path != None) and (custom_path != None):
+        if reduced:
+            print(to_skip)
+            print(lines)
+            lines = to_skip - lines
+            to_skip = 0
+            print(lines)
+            
         nxs = pd.read_csv(custom_path, delim_whitespace=True, skiprows=to_skip+6, nrows=2, header=None)
         jxs = pd.read_csv(custom_path, delim_whitespace=True, skiprows=to_skip+8, nrows=4, header=None)
         xss = pd.read_csv(custom_path, delim_whitespace=True, skiprows=to_skip+12, nrows=lines, header=None).values.flatten()
@@ -372,9 +379,10 @@ def get_hybrid_ml_xs(ml_df, basic_mt_dict, mt_array, mt_xs_pointers_array, point
                 ml_df = fill_ml_xs(i, ml_df, mt_info["xs"], use_peaks=use_peaks)
             else:
                 MT = i.split("_")[1]
-                mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
-                new_xs = np.concatenate((np.zeros(mt_info["energy_start"]), mt_info["xs"]), axis=0)
-                ml_df[i] = new_xs
+                if int(MT) in mt_array:
+                    mt_info = get_xs_for_mt(int(MT), mt_array, mt_xs_pointers_array, jxs_df, xss, pointers)
+                    new_xs = np.concatenate((np.zeros(mt_info["energy_start"]), mt_info["xs"]), axis=0)
+                    ml_df[i] = new_xs
     return ml_df
 
 def create_mt2_mt3_mt101(rx_grid, mt_array):
