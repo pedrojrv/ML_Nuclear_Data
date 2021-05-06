@@ -1240,10 +1240,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276111
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)27-CO-57,,SIG
 #PROJ       1001
 #TARG       28000
@@ -2440,6 +2440,43 @@
 #/ENTRY
 #
 #
+#ENTRY      D6334
+#AUTHOR1    S.Badwar+
+#YEAR       2018
+#INSTITUTE  (3INDNEH)
+#TITLE      Measurements and uncertainty propagation for the
+#+          natNi(p,x)61Cu reaction cross section up to the proton
+#+          energies of 20 MeV
+#AUTHOR(S)  S.Badwar, R.Ghosh, S.S.Yerraguntla,
+#+          B.M.Jyrwa, B.M.Lawriniang, H.Naik,
+#+          Y.Naik, S.V.Suryanarayana, S.Ganesan
+#REF-CODE   (J,NP/A,977,112,2018)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.977, p.112, 2018
+#DATASETS   1
+#
+#DATASET    D6334002
+#DATE       20191104
+#REACTION   28-NI-0(P,X)29-CU-61,,SIG
+#PROJ       1001
+#TARG       28000
+#MF         3
+#MT         9000
+#PRODUCT    29-CU-61
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 28000   39000   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 28000   39000    1.9020+7 760000.0 0.010820 2.3400-3           29061.9                     S.Badwar,ET.AL. (18)     D6334  2
+ 1001 28000   39000    1.5820+7 860000.0 6.0400-3 1.3100-3           29061.9                     S.Badwar,ET.AL. (18)     D6334  2
+ 1001 28000   39000    1.2120+7 1030000. 1.8200-3 4.0000-4           29061.9                     S.Badwar,ET.AL. (18)     D6334  2
+ 1001 28000   39000    7450000. 1390000. 4.1100-3 8.9000-4           29061.9                     S.Badwar,ET.AL. (18)     D6334  2
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O0276
 #AUTHOR1    R.Michel+
 #YEAR       1997
@@ -2459,10 +2496,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276107
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)25-MN-54,,SIG
 #PROJ       1001
 #TARG       28000
@@ -2917,6 +2954,51 @@
  1001 28000   39000    1.4700+7 800000.0 9.0000-3 1.0000-3           28057.9                     A.A.Alharbi,ET.AL. (11)  D0673  3
  1001 28000   39000    1.3300+7 800000.0 3.5000-3 4.0000-4           28057.9                     A.A.Alharbi,ET.AL. (11)  D0673  3
 #/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1503
+#AUTHOR1    F.S.Al-Saleh+
+#YEAR       2007
+#INSTITUTE  (3SARKFR)
+#TITLE      Excitation functions of (p,x) reactions on natural
+#+          nickel between proton energies of 2.7 and 27.5-MeV.
+#AUTHOR(S)  F.S.Al-Saleh, K.S.Al Mugren, A.Azzam
+#REF-CODE   (J,ARI,65,104,2007)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.65, p.104, 2007
+#DATASETS   8
+#
+#DATASET    O1503004
+#DATE       20200102
+#REACTION   28-NI-0(P,X)27-CO-58,,SIG
+#PROJ       1001
+#TARG       28000
+#MF         3
+#MT         9000
+#PRODUCT    27-CO-58
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 28000   39000   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 28000   39000    2.7400+7 500000.0 0.014500 2.6000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.7200+7 500000.0 0.013100 2.6000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.7000+7 500000.0 0.011400 1.6000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.6000+7 500000.0 8.3000-3 1.9000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.5400+7 500000.0 7.0000-3 2.0000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.4790+7 450000.0 5.8000-3 2.3000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.4100+7 450000.0 6.0000-3 2.0000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.3840+7 450000.0 4.6000-3 1.9000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.3100+7 450000.0 4.0000-3 2.0000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.3000+7 450000.0 3.5000-3 1.4000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.2300+7 450000.0 2.8000-3 4.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    2.1400+7 450000.0 2.4000-3 3.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    1.9700+7 400000.0 2.2000-3 2.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    1.8800+7 400000.0 1.9000-3 2.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+ 1001 28000   39000    1.8600+7 400000.0 1.2000-3 2.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
+#/DATA      15
 #/DATASET
 #/ENTRY
 #
@@ -4722,10 +4804,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276097
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)4-BE-10,,SIG
 #PROJ       1001
 #TARG       28000
@@ -4835,10 +4917,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276099
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)17-CL-36,,SIG
 #PROJ       1001
 #TARG       28000
@@ -4916,18 +4998,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073009
-#DATE       19941204
-#REACTION   28-NI-0(P,X)27-CO-56,IND,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)27-CO-56,,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -4938,10 +5020,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    1.3000+8 1.3000+7 0.090000                    27056.9                     G.V.S.RAYUDU (64)        O0073  9
- 1001 28000   39000    2.0800+8 2.0800+7 0.059000                    27056.9                     G.V.S.RAYUDU (64)        O0073  9
- 1001 28000   39000    2.9700+8 1.4850+7 0.062000                    27056.9                     G.V.S.RAYUDU (64)        O0073  9
- 1001 28000   39000    3.9600+8 1.9800+7 0.045000                    27056.9                     G.V.S.RAYUDU (64)        O0073  9
+ 1001 28000   39000    1.3000+8 1.3000+7 0.090000                    27056.9                     G.V.S.Rayudu (64)        O0073  9
+ 1001 28000   39000    2.0800+8 2.0800+7 0.059000                    27056.9                     G.V.S.Rayudu (64)        O0073  9
+ 1001 28000   39000    2.9700+8 1.4850+7 0.062000                    27056.9                     G.V.S.Rayudu (64)        O0073  9
+ 1001 28000   39000    3.9600+8 1.9800+7 0.045000                    27056.9                     G.V.S.Rayudu (64)        O0073  9
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -4951,18 +5033,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073010
-#DATE       19941204
-#REACTION   28-NI-0(P,X)25-MN-54,IND,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)25-MN-54,,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -4973,10 +5055,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    1.3000+8 1.3000+7 0.010500 2.0000-3           25054.9                     G.V.S.RAYUDU (64)        O0073 10
- 1001 28000   39000    2.0800+8 2.0800+7 8.5000-3 1.3000-3           25054.9                     G.V.S.RAYUDU (64)        O0073 10
- 1001 28000   39000    2.9700+8 1.4850+7 9.8000-3 1.4000-3           25054.9                     G.V.S.RAYUDU (64)        O0073 10
- 1001 28000   39000    3.9600+8 1.9800+7 6.9500-3 1.0000-3           25054.9                     G.V.S.RAYUDU (64)        O0073 10
+ 1001 28000   39000    1.3000+8 1.3000+7 0.010500 2.0000-3           25054.9                     G.V.S.Rayudu (64)        O0073 10
+ 1001 28000   39000    2.0800+8 2.0800+7 8.5000-3 1.3000-3           25054.9                     G.V.S.Rayudu (64)        O0073 10
+ 1001 28000   39000    2.9700+8 1.4850+7 9.8000-3 1.4000-3           25054.9                     G.V.S.Rayudu (64)        O0073 10
+ 1001 28000   39000    3.9600+8 1.9800+7 6.9500-3 1.0000-3           25054.9                     G.V.S.Rayudu (64)        O0073 10
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -4986,18 +5068,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073014
-#DATE       19941204
-#REACTION   28-NI-0(P,X)15-P-32,IND,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)15-P-32,,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -5008,10 +5090,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    1.3000+8 1.3000+7 7.0000-6 1.4000-6           15032.9                     G.V.S.RAYUDU (64)        O0073 14
- 1001 28000   39000    2.0800+8 2.0800+7 2.5000-5 4.0000-6           15032.9                     G.V.S.RAYUDU (64)        O0073 14
- 1001 28000   39000    2.9700+8 1.4850+7 1.3300-4 2.0000-5           15032.9                     G.V.S.RAYUDU (64)        O0073 14
- 1001 28000   39000    3.9600+8 1.9800+7 2.7200-4 4.1000-5           15032.9                     G.V.S.RAYUDU (64)        O0073 14
+ 1001 28000   39000    1.3000+8 1.3000+7 7.0000-6 1.4000-6           15032.9                     G.V.S.Rayudu (64)        O0073 14
+ 1001 28000   39000    2.0800+8 2.0800+7 2.5000-5 4.0000-6           15032.9                     G.V.S.Rayudu (64)        O0073 14
+ 1001 28000   39000    2.9700+8 1.4850+7 1.3300-4 2.0000-5           15032.9                     G.V.S.Rayudu (64)        O0073 14
+ 1001 28000   39000    3.9600+8 1.9800+7 2.7200-4 4.1000-5           15032.9                     G.V.S.Rayudu (64)        O0073 14
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -5342,10 +5424,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276100
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)21-SC-44-M,,SIG
 #PROJ       1001
 #TARG       28000
@@ -5378,9 +5460,9 @@
 #+          A.Tarabischi, T.Bastian, F.Sudbrock,
 #+          U.Herpers, I.Leya, M.Gloris,
 #+          R.Michel
-#REF-CODE   (J,NIM/B,223/224,812,2004)
+#REF-CODE   (J,NIM/B,223-224,812,2004)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
-#+          Vol.223/224, p.812, 2004
+#+          Vol.223-224, p.812, 2004
 #DATASETS   1
 #
 #DATASET    O1741002
@@ -6021,10 +6103,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284091
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)21-SC-44-M,,SIG
 #PROJ       1001
 #TARG       28000
@@ -6068,10 +6150,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284092
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)23-V-48,,SIG
 #PROJ       1001
 #TARG       28000
@@ -6101,9 +6183,9 @@
  1001 28000   39000 C  3.4100+8 1590000. 0.018200 1.8100-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
  1001 28000   39000 C  3.6300+8 1330000. 0.020000 1.5100-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
  1001 28000   39000 C  3.7800+8 1090000. 0.022000 1.6700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
- 1001 28000   39000 C  3.7801+8 1090000. 0.022000 1.6700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
- 1001 28000   39000 C  3.7802+8 1090000. 0.020200 1.8700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
- 1001 28000   39000 C  3.7803+8 1090000. 0.020200 1.8700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
+ 1001 28000   39000 C  3.7800+8 1090000. 0.022000 1.6700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
+ 1001 28000   39000 C  3.7800+8 1090000. 0.020200 1.8700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
+ 1001 28000   39000 C  3.7800+8 1090000. 0.020200 1.8700-3           23048.9                     Th.Schiekel,ET.AL. (96)  O0284 92
 #/DATA      20
 #/DATASET
 #/ENTRY
@@ -6124,10 +6206,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284097
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)25-MN-54,,SIG
 #PROJ       1001
 #TARG       28000
@@ -6172,10 +6254,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284099
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)27-CO-56,,SIG
 #PROJ       1001
 #TARG       28000
@@ -6228,10 +6310,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284101
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)27-CO-57,,SIG
 #PROJ       1001
 #TARG       28000
@@ -6265,86 +6347,6 @@
  1001 28000   39000 C  3.8400+8 1040000. 0.048500 8.3700-3           27057.9                     Th.Schiekel,ET.AL. (96)  O0284101
  1001 28000   39000 C  3.8500+8 1040000. 0.037900 7.6400-3           27057.9                     Th.Schiekel,ET.AL. (96)  O0284101
 #/DATA      20
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0284
-#AUTHOR1    Th.Schiekel+
-#YEAR       1996
-#INSTITUTE  (2GERKLN)
-#TITLE      Nuclide production by proton-induced reactions on
-#+          elements (6<=Z<=296) in the energy range from 200 MeV
-#+          to 400 MeV.
-#AUTHOR(S)  Th.Schiekel, F.Sudbrock, U.Herpers,
-#+          M.Gloris, H.-J.Lange, I.Leya,
-#+          R.Michel, B.Dittrich-Hannen, H.-A.Synal,
-#+          M.Suter, P.W.Kubik, M.Blann,
-#+          D.Filges
-#REF-CODE   (J,NIM/B,114,91,1996)
-#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
-#+          Vol.114, p.91, 1996
-#DATASETS   106
-#
-#DATASET    O0284088
-#DATE       19970105
-#REACTION   28-NI-0(P,X)4-BE-10,,SIG
-#PROJ       1001
-#TARG       28000
-#MF         3
-#MT         9000
-#PRODUCT    4-BE-10
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 28000   39000 C ]
-#X4STATUS   [COREL] Data correlated with another data set
-#DATA       4
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000 C  2.3000+8          3.5000-5 9.0000-6            4010.9                     Th.Schiekel,ET.AL. (96)  O0284 88
- 1001 28000   39000 C  2.7500+8          6.9000-5 7.0000-6            4010.9                     Th.Schiekel,ET.AL. (96)  O0284 88
- 1001 28000   39000 C  3.4100+8          1.1100-4 1.1000-5            4010.9                     Th.Schiekel,ET.AL. (96)  O0284 88
- 1001 28000   39000 C  3.7800+8          1.4200-4 1.4000-5            4010.9                     Th.Schiekel,ET.AL. (96)  O0284 88
-#/DATA      4
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0284
-#AUTHOR1    Th.Schiekel+
-#YEAR       1996
-#INSTITUTE  (2GERKLN)
-#TITLE      Nuclide production by proton-induced reactions on
-#+          elements (6<=Z<=296) in the energy range from 200 MeV
-#+          to 400 MeV.
-#AUTHOR(S)  Th.Schiekel, F.Sudbrock, U.Herpers,
-#+          M.Gloris, H.-J.Lange, I.Leya,
-#+          R.Michel, B.Dittrich-Hannen, H.-A.Synal,
-#+          M.Suter, P.W.Kubik, M.Blann,
-#+          D.Filges
-#REF-CODE   (J,NIM/B,114,91,1996)
-#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
-#+          Vol.114, p.91, 1996
-#DATASETS   106
-#
-#DATASET    O0284090
-#DATE       19970105
-#REACTION   28-NI-0(P,X)17-CL-36,,SIG
-#PROJ       1001
-#TARG       28000
-#MF         3
-#MT         9000
-#PRODUCT    17-CL-36
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 28000   39000 C ]
-#X4STATUS   [COREL] Data correlated with another data set
-#DATA       4
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000 C  2.3000+8          5.2000-4 4.0000-5           17036.9                     Th.Schiekel,ET.AL. (96)  O0284 90
- 1001 28000   39000 C  2.7500+8          6.5000-4 5.0000-5           17036.9                     Th.Schiekel,ET.AL. (96)  O0284 90
- 1001 28000   39000 C  3.4100+8          1.1800-3 8.0000-5           17036.9                     Th.Schiekel,ET.AL. (96)  O0284 90
- 1001 28000   39000 C  3.7800+8          1.8500-3 1.5000-4           17036.9                     Th.Schiekel,ET.AL. (96)  O0284 90
-#/DATA      4
 #/DATASET
 #/ENTRY
 #
@@ -6628,10 +6630,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284087
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)4-BE-7,,SIG
 #PROJ       1001
 #TARG       28000
@@ -8186,7 +8188,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277145
 #DATE       20151101
@@ -8228,7 +8230,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277146
 #DATE       20151101
@@ -8503,18 +8505,18 @@
 #AUTHOR1    S.L.Green+
 #YEAR       1988
 #INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
+#TITLE      Production of helium by medium energy (600 and
+#+          800 MeV) protons.
 #AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
 #+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
+#REF-CODE   (J,JNM,155-157,1350,1988)
 #REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
+#+          Vol.155-157, p.1350, 1988
+#DATASETS   14
 #
-#DATASET    O01030061
-#DATE       19950402
-#REACTION   28-NI-0(P,X)2-HE-4,IND,SIG,,,EXP
+#DATASET    O0103006
+#DATE       20200806
+#REACTION   28-NI-0(P,X)2-HE-4,,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -8525,7 +8527,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    7.5000+8          0.476000                     2004.9                     S.L.GREEN,ET.AL. (88)    O0103  61
+ 1001 28000   39000    7.5000+8          0.476000                     2004.9                     S.L.Green,ET.AL. (88)    O0103  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8535,51 +8537,18 @@
 #AUTHOR1    S.L.Green+
 #YEAR       1988
 #INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
+#TITLE      Production of helium by medium energy (600 and
+#+          800 MeV) protons.
 #AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
 #+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
+#REF-CODE   (J,JNM,155-157,1350,1988)
 #REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
+#+          Vol.155-157, p.1350, 1988
+#DATASETS   14
 #
-#DATASET    O01030062
-#DATE       19950402
-#REACTION   28-NI-0(P,X)2-HE-4,IND,SIG,,,CALC
-#PROJ       1001
-#TARG       28000
-#MF         3
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 28000   39000   ]
-#X4DATATYPE [CALC]  Calculated data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    7.5000+8          0.522000                     2004.9                     S.L.GREEN,ET.AL. (88)    O0103  62
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0103
-#AUTHOR1    S.L.Green+
-#YEAR       1988
-#INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
-#AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
-#+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
-#REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
-#
-#DATASET    O01030071
-#DATE       19950402
-#REACTION   28-NI-0(P,X)2-HE-3,,SIG,,,EXP
+#DATASET    O0103007
+#DATE       20200806
+#REACTION   28-NI-0(P,X)2-HE-3,,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -8590,40 +8559,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    7.5000+8          0.058000                     2003.9                     S.L.GREEN,ET.AL. (88)    O0103  71
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0103
-#AUTHOR1    S.L.Green+
-#YEAR       1988
-#INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
-#AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
-#+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
-#REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
-#
-#DATASET    O01030072
-#DATE       19950402
-#REACTION   28-NI-0(P,X)2-HE-3,,SIG,,,CALC
-#PROJ       1001
-#TARG       28000
-#MF         3
-#MT         9000
-#PRODUCT    2-HE-3
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 28000   39000   ]
-#X4DATATYPE [CALC]  Calculated data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39000    7.5000+8          0.088000                     2003.9                     S.L.GREEN,ET.AL. (88)    O0103  72
+ 1001 28000   39000    7.5000+8          0.058000                     2003.9                     S.L.Green,ET.AL. (88)    O0103  7
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8750,7 +8686,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277147
 #DATE       20131001
@@ -8791,7 +8727,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277148
 #DATE       20131001
@@ -8831,7 +8767,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277152
 #DATE       20110300
@@ -8870,7 +8806,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277155
 #DATE       19970106
@@ -8909,7 +8845,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277156
 #DATE       19970106
@@ -8947,7 +8883,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277161
 #DATE       20131001
@@ -8988,7 +8924,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277168
 #DATE       20131001
@@ -9029,10 +8965,10 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277172
-#DATE       19970106
+#DATE       20190805
 #REACTION   28-NI-0(P,X)27-CO-57,,SIG
 #PROJ       1001
 #TARG       28000
@@ -9916,10 +9852,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276096
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)4-BE-7,,SIG
 #PROJ       1001
 #TARG       28000
@@ -9954,10 +9890,10 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277159
-#DATE       19970106
+#DATE       20190805
 #REACTION   28-NI-0(P,X)19-K-42,,SIG
 #PROJ       1001
 #TARG       28000
@@ -11875,10 +11811,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276115
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)28-NI-57,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12019,10 +11955,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276108
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)27-CO-55,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12073,10 +12009,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276110
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)27-CO-57,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12137,19 +12073,19 @@
 #
 #ENTRY      O1313
 #AUTHOR1    F.Bringas+
-#YEAR       2005
+#YEAR       2004
 #INSTITUTE  (3BZLUSP)
 #TITLE      Measurement of proton-induced reaction cross sections
 #+          in Ti, Ni and Zr near the threshold
 #AUTHOR(S)  F.Bringas, M.T.Yamashita, I.D.Goldman,
 #+          P.R.Pascholati, V.Sciani
-#REF-CODE   (C,2004SANTA,2,1374,2005)
+#REF-CODE   (C,2004SANTA,2,1374,2004)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Santa Fe 2004
-#+          Vol.2, p.1374, 2005
+#+          Vol.2, p.1374, 2004
 #DATASETS   3
 #
 #DATASET    O1313003
-#DATE       20060101
+#DATE       20200803
 #REACTION   28-NI-0(P,X)28-NI-56,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12161,9 +12097,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001    1.8400+7 900000.0 6.5000-4 8.0000-5           28056.9                     F.Bringas,ET.AL. (05)    O1313  3
- 1001 28000   39001    1.9200+7 800000.0 5.6000-4 7.0000-5           28056.9                     F.Bringas,ET.AL. (05)    O1313  3
- 1001 28000   39001    2.7300+7 600000.0 1.7000-3 3.0000-4           28056.9                     F.Bringas,ET.AL. (05)    O1313  3
+ 1001 28000   39001    1.8400+7 900000.0 6.5000-4 8.0000-5           28056.9                     F.Bringas,ET.AL. (04)    O1313  3
+ 1001 28000   39001    1.9200+7 800000.0 5.6000-4 7.0000-5           28056.9                     F.Bringas,ET.AL. (04)    O1313  3
+ 1001 28000   39001    2.7300+7 600000.0 1.7000-3 3.0000-4           28056.9                     F.Bringas,ET.AL. (04)    O1313  3
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -12188,10 +12124,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276109
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)27-CO-56,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12273,10 +12209,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276114
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)28-NI-56,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12462,51 +12398,6 @@
  1001 28000   39001    2.2300+7 450000.0 1.4000-4 8.0000-5           27056.9                     F.S.Al-Saleh,ET.AL. (07) O1503  3
  1001 28000   39001    2.1400+7 450000.0 5.0000-5 1.0000-5           27056.9                     F.S.Al-Saleh,ET.AL. (07) O1503  3
 #/DATA      12
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O1503
-#AUTHOR1    F.S.Al-Saleh+
-#YEAR       2007
-#INSTITUTE  (3SARKFR)
-#TITLE      Excitation functions of (p,x) reactions on natural
-#+          nickel between proton energies of 2.7 and 27.5-MeV.
-#AUTHOR(S)  F.S.Al-Saleh, K.S.Al Mugren, A.Azzam
-#REF-CODE   (J,ARI,65,104,2007)
-#REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.65, p.104, 2007
-#DATASETS   8
-#
-#DATASET    O1503004
-#DATE       20080603
-#REACTION   28-NI-0(P,X)27-CO-58,CUM,SIG
-#PROJ       1001
-#TARG       28000
-#MF         3
-#MT         9001
-#PRODUCT    27-CO-58
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 28000   39001   ]
-#DATA       15
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001    2.7400+7 500000.0 0.014500 2.6000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.7200+7 500000.0 0.013100 2.6000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.7000+7 500000.0 0.011400 1.6000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.6000+7 500000.0 8.3000-3 1.9000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.5400+7 500000.0 7.0000-3 2.0000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.4790+7 450000.0 5.8000-3 2.3000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.4100+7 450000.0 6.0000-3 2.0000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.3840+7 450000.0 4.6000-3 1.9000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.3100+7 450000.0 4.0000-3 2.0000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.3000+7 450000.0 3.5000-3 1.4000-3           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.2300+7 450000.0 2.8000-3 4.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    2.1400+7 450000.0 2.4000-3 3.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    1.9700+7 400000.0 2.2000-3 2.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    1.8800+7 400000.0 1.9000-3 2.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
- 1001 28000   39001    1.8600+7 400000.0 1.2000-3 2.0000-4           27058.9                     F.S.Al-Saleh,ET.AL. (07) O1503  4
-#/DATA      15
 #/DATASET
 #/ENTRY
 #
@@ -12737,10 +12628,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276105
-#DATE       20100405
+#DATE       20190802
 #REACTION   28-NI-0(P,X)24-CR-51,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -12944,52 +12835,52 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276106
-#DATE       20100405
-#REACTION   28-NI-0(P,X)25-MN-52-G,CUM,SIG
+#DATE       20190802
+#REACTION   28-NI-0(P,X)25-MN-52,CUM,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
 #MT         9001
-#PRODUCT    25-MN-52-G
+#PRODUCT    25-MN-52
 #DATA-HDR   DATA
-#C4BEGIN    [ 1001 28000   39001G  ]
+#C4BEGIN    [ 1001 28000   39001   ]
 #DATA       31
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001G   3.6600+7 520000.0 3.0200-5 1.3900-5           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   3.8400+7 1180000. 2.1800-4 2.4500-5           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   4.0100+7 433000.0 3.0500-4 2.2000-5           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   4.0400+7 1890000. 4.6600-4 5.2300-5           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   4.0500+7 442000.0 3.6000-4 2.6300-5           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   4.3300+7 371000.0 1.1600-3 6.3400-5           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   4.5600+7 1050000. 4.0100-3 2.0500-4           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   4.7900+7 830000.0 8.2200-3 7.4000-4           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   5.2000+7 946000.0 0.016900 8.6400-4           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   5.2100+7 790000.0 0.016300 1.3000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   5.6800+7 740000.0 0.021400 1.7000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   5.7600+7 844000.0 0.025300 1.2900-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   6.0200+7 1270000. 0.023400 2.3700-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   6.2100+7 680000.0 0.019900 1.6000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   6.3000+7 739000.0 0.025100 1.3000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   6.7300+7 610000.0 0.017700 1.4000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   6.8100+7 615000.0 0.022400 1.1600-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   7.2100+7 540000.0 0.015300 1.2000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   7.6200+7 976000.0 0.015800 1.6100-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   7.6800+7 450000.0 0.013300 1.1000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   9.0100+7 710000.0 0.016900 1.7100-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.0600+8 1600000. 0.019800 1.4000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.0600+8 1620000. 0.018000 3.9100-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.2600+8 1500000. 0.020400 1.5000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.2600+8 1470000. 0.024000 4.2800-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.4700+8 1400000. 0.020000 1.5000-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.4800+8 1400000. 0.020900 1.4700-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.2000+9 1040000. 0.014400 1.0400-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.2000+9 1020000. 0.014800 1.0700-3           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.6000+9 1040000. 0.012600 8.8100-4           25052.0                     R.Michel,ET.AL. (97)     O0276106
- 1001 28000   39001G   1.6000+9 1030000. 0.012900 9.1200-4           25052.0                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    3.6600+7 520000.0 3.0200-5 1.3900-5           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    3.8400+7 1180000. 2.1800-4 2.4500-5           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    4.0100+7 433000.0 3.0500-4 2.2000-5           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    4.0400+7 1890000. 4.6600-4 5.2300-5           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    4.0500+7 442000.0 3.6000-4 2.6300-5           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    4.3300+7 371000.0 1.1600-3 6.3400-5           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    4.5600+7 1050000. 4.0100-3 2.0500-4           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    4.7900+7 830000.0 8.2200-3 7.4000-4           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    5.2000+7 946000.0 0.016900 8.6400-4           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    5.2100+7 790000.0 0.016300 1.3000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    5.6800+7 740000.0 0.021400 1.7000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    5.7600+7 844000.0 0.025300 1.2900-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    6.0200+7 1270000. 0.023400 2.3700-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    6.2100+7 680000.0 0.019900 1.6000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    6.3000+7 739000.0 0.025100 1.3000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    6.7300+7 610000.0 0.017700 1.4000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    6.8100+7 615000.0 0.022400 1.1600-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    7.2100+7 540000.0 0.015300 1.2000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    7.6200+7 976000.0 0.015800 1.6100-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    7.6800+7 450000.0 0.013300 1.1000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    9.0100+7 710000.0 0.016900 1.7100-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.0600+8 1600000. 0.019800 1.4000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.0600+8 1620000. 0.018000 3.9100-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.2600+8 1500000. 0.020400 1.5000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.2600+8 1470000. 0.024000 4.2800-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.4700+8 1400000. 0.020000 1.5000-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.4800+8 1400000. 0.020900 1.4700-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.2000+9 1040000. 0.014400 1.0400-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.2000+9 1020000. 0.014800 1.0700-3           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.6000+9 1040000. 0.012600 8.8100-4           25052.9                     R.Michel,ET.AL. (97)     O0276106
+ 1001 28000   39001    1.6000+9 1030000. 0.012900 9.1200-4           25052.9                     R.Michel,ET.AL. (97)     O0276106
 #/DATA      31
 #/DATASET
 #/ENTRY
@@ -13623,10 +13514,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276103
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)23-V-48,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -13730,10 +13621,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276116
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)26-FE-59,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -14869,18 +14760,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073011
-#DATE       19941204
-#REACTION   28-NI-0(P,X)25-MN-52-G,CUM,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)25-MN-52-G,CUM,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -14891,10 +14782,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001G   1.3000+8 1.3000+7 0.039500 6.0000-3           25052.0                     G.V.S.RAYUDU (64)        O0073 11
- 1001 28000   39001G   2.0800+8 2.0800+7 0.033500 5.6000-3           25052.0                     G.V.S.RAYUDU (64)        O0073 11
- 1001 28000   39001G   2.9700+8 1.4850+7 0.038500 5.9000-3           25052.0                     G.V.S.RAYUDU (64)        O0073 11
- 1001 28000   39001G   3.9600+8 1.9800+7 0.028000 4.3000-3           25052.0                     G.V.S.RAYUDU (64)        O0073 11
+ 1001 28000   39001G   1.3000+8 1.3000+7 0.039500 6.0000-3           25052.0                     G.V.S.Rayudu (64)        O0073 11
+ 1001 28000   39001G   2.0800+8 2.0800+7 0.033500 5.6000-3           25052.0                     G.V.S.Rayudu (64)        O0073 11
+ 1001 28000   39001G   2.9700+8 1.4850+7 0.038500 5.9000-3           25052.0                     G.V.S.Rayudu (64)        O0073 11
+ 1001 28000   39001G   3.9600+8 1.9800+7 0.028000 4.3000-3           25052.0                     G.V.S.Rayudu (64)        O0073 11
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -14904,18 +14795,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073012
-#DATE       19941204
-#REACTION   28-NI-0(P,X)24-CR-51,CUM,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)24-CR-51,CUM,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -14926,10 +14817,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001    1.3000+8 1.3000+7 0.020000 4.0000-3           24051.9                     G.V.S.RAYUDU (64)        O0073 12
- 1001 28000   39001    2.0800+8 2.0800+7 0.019000 2.8000-3           24051.9                     G.V.S.RAYUDU (64)        O0073 12
- 1001 28000   39001    2.9700+8 1.4850+7 0.019200 2.8500-3           24051.9                     G.V.S.RAYUDU (64)        O0073 12
- 1001 28000   39001    3.9600+8 1.9800+7 0.018000 2.7000-3           24051.9                     G.V.S.RAYUDU (64)        O0073 12
+ 1001 28000   39001    1.3000+8 1.3000+7 0.020000 4.0000-3           24051.9                     G.V.S.Rayudu (64)        O0073 12
+ 1001 28000   39001    2.0800+8 2.0800+7 0.019000 2.8000-3           24051.9                     G.V.S.Rayudu (64)        O0073 12
+ 1001 28000   39001    2.9700+8 1.4850+7 0.019200 2.8000-3           24051.9                     G.V.S.Rayudu (64)        O0073 12
+ 1001 28000   39001    3.9600+8 1.9800+7 0.018000 2.7000-3           24051.9                     G.V.S.Rayudu (64)        O0073 12
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -14939,18 +14830,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073013
-#DATE       19941204
-#REACTION   28-NI-0(P,X)23-V-48,CUM,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)23-V-48,CUM,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -14961,10 +14852,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001    1.3000+8 1.3000+7 3.5000-3                    23048.9                     G.V.S.RAYUDU (64)        O0073 13
- 1001 28000   39001    2.0800+8 2.0800+7 4.6200-3                    23048.9                     G.V.S.RAYUDU (64)        O0073 13
- 1001 28000   39001    2.9700+8 1.4850+7 6.5000-3                    23048.9                     G.V.S.RAYUDU (64)        O0073 13
- 1001 28000   39001    3.9600+8 1.9800+7 7.5000-3                    23048.9                     G.V.S.RAYUDU (64)        O0073 13
+ 1001 28000   39001    1.3000+8 1.3000+7 3.5000-3                    23048.9                     G.V.S.Rayudu (64)        O0073 13
+ 1001 28000   39001    2.0800+8 2.0800+7 4.6200-3                    23048.9                     G.V.S.Rayudu (64)        O0073 13
+ 1001 28000   39001    2.9700+8 1.4850+7 6.5000-3                    23048.9                     G.V.S.Rayudu (64)        O0073 13
+ 1001 28000   39001    3.9600+8 1.9800+7 7.5000-3                    23048.9                     G.V.S.Rayudu (64)        O0073 13
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -14974,18 +14865,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073015
-#DATE       19941204
-#REACTION   28-NI-0(P,X)4-BE-7,CUM,SIG,,,EXP
+#DATE       20201203
+#REACTION   28-NI-0(P,X)4-BE-7,CUM,SIG
 #PROJ       1001
 #TARG       28000
 #MF         3
@@ -14996,10 +14887,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 28000   39001    1.3000+8 1.3000+7 2.0600-4 4.1000-5            4007.9                     G.V.S.RAYUDU (64)        O0073 15
- 1001 28000   39001    2.0800+8 2.0800+7 3.8000-4 7.0000-5            4007.9                     G.V.S.RAYUDU (64)        O0073 15
- 1001 28000   39001    2.9700+8 1.4850+7 5.9400-4 9.0000-5            4007.9                     G.V.S.RAYUDU (64)        O0073 15
- 1001 28000   39001    3.9600+8 1.9800+7 8.1000-4 1.2200-4            4007.9                     G.V.S.RAYUDU (64)        O0073 15
+ 1001 28000   39001    1.3000+8 1.3000+7 2.0600-4 4.1000-5            4007.9                     G.V.S.Rayudu (64)        O0073 15
+ 1001 28000   39001    2.0800+8 2.0800+7 3.8000-4 7.0000-5            4007.9                     G.V.S.Rayudu (64)        O0073 15
+ 1001 28000   39001    2.9700+8 1.4850+7 5.9400-4 9.0000-5            4007.9                     G.V.S.Rayudu (64)        O0073 15
+ 1001 28000   39001    3.9600+8 1.9800+7 8.1000-4 1.2200-4            4007.9                     G.V.S.Rayudu (64)        O0073 15
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -15759,10 +15650,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284095
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)24-CR-51,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -15807,10 +15698,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284096
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)25-MN-52,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -15855,10 +15746,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284098
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)26-FE-59,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -15903,10 +15794,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284100
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)27-CO-57,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -15959,10 +15850,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284104
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)28-NI-56,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -16015,10 +15906,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284105
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)28-NI-57,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -16069,10 +15960,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284094
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)24-CR-48,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -16113,10 +16004,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276102
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)22-TI-44,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -16371,10 +16262,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284089
-#DATE       19970105
+#DATE       20191006
 #REACTION   28-NI-0(P,X)11-NA-22,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -17826,10 +17717,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276098
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)11-NA-22,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -17865,7 +17756,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277150
 #DATE       20151101
@@ -17907,7 +17798,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277158
 #DATE       20151101
@@ -17949,7 +17840,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277207
 #DATE       20131001
@@ -18458,7 +18349,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277149
 #DATE       20110300
@@ -18497,7 +18388,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277151
 #DATE       20110300
@@ -18536,7 +18427,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277153
 #DATE       20131001
@@ -18577,7 +18468,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277157
 #DATE       20110300
@@ -18616,10 +18507,10 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277163
-#DATE       19970106
+#DATE       20190805
 #REACTION   28-NI-0(P,X)21-SC-47,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -18656,7 +18547,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277164
 #DATE       20131001
@@ -18697,7 +18588,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277166
 #DATE       20131001
@@ -18738,7 +18629,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277167
 #DATE       20131001
@@ -18779,7 +18670,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277169
 #DATE       20131001
@@ -18820,7 +18711,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277171
 #DATE       20131001
@@ -18861,10 +18752,10 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277173
-#DATE       19970106
+#DATE       20190805
 #REACTION   28-NI-0(P,X)27-CO-57,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -18901,7 +18792,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277176
 #DATE       20131001
@@ -18942,7 +18833,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277177
 #DATE       20131001
@@ -19545,10 +19436,10 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276104
-#DATE       19970106
+#DATE       20190802
 #REACTION   28-NI-0(P,X)24-CR-48,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -19585,10 +19476,10 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277154
-#DATE       19970106
+#DATE       20190805
 #REACTION   28-NI-0(P,X)11-NA-24,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -19624,10 +19515,10 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277160
-#DATE       19970106
+#DATE       20190805
 #REACTION   28-NI-0(P,X)19-K-43,CUM,SIG
 #PROJ       1001
 #TARG       28000
@@ -19663,7 +19554,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277165
 #DATE       20131001
@@ -19703,7 +19594,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277170
 #DATE       20131001

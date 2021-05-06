@@ -132,7 +132,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -531,7 +531,7 @@
 #REF-CODE   (J,APP/B,1,415,1970)
 #REFERENCE  Jour. Acta Physica Polonica, Part B
 #+          Vol.1, p.415, 1970
-#DATASETS   7
+#DATASETS   15
 #
 #DATASET    30154005
 #DATE       20080205
@@ -735,45 +735,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22089
-#AUTHOR1    Y.Ikeda+
-#YEAR       1988
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation cross section measurements for fusion
-#+          reactor structural materials at neutron energy from
-#+          13.3 to 15.0 MeV using FNS facility
-#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
-#+          T.Nakamura, H.Miyade, K.Kawade,
-#+          H.Yamamoto, T.Katoh
-#REF-CODE   (R,JAERI-1312,1988)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1312, 1988
-#DATASETS   110
-#
-#DATASET    22089102
-#DATE       20081001
-#REACTION   56-BA-137(N,N+P)55-CS-136,,SIG
-#PROJ       1
-#TARG       56137
-#MF         3
-#MT         28
-#PRODUCT    55-CS-136
-#DATA-HDR   DATA
-#C4BEGIN    [    1 56137   3  28   ]
-#DATA       6
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56137   3  28    1.5000+7          1.6300-3 2.5000-4                                       Y.Ikeda,ET.AL. (88)      22089102
-    1 56137   3  28    1.4720+7          8.8000-4 2.3000-4                                       Y.Ikeda,ET.AL. (88)      22089102
-    1 56137   3  28    1.4480+7          8.6000-4 2.6000-4                                       Y.Ikeda,ET.AL. (88)      22089102
-    1 56137   3  28    1.4020+7          4.2000-4 2.6000-4                                       Y.Ikeda,ET.AL. (88)      22089102
-    1 56137   3  28    1.3600+7          4.7700-4 8.7000-5                                       Y.Ikeda,ET.AL. (88)      22089102
-    1 56137   3  28    1.3420+7          3.3700-4 8.6000-5                                       Y.Ikeda,ET.AL. (88)      22089102
-#/DATA      6
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      V0012
 #AUTHOR1    B.Strohmaier+
 #YEAR       1978
@@ -918,15 +879,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507071
-#DATE       19860702
+#DATE       20190805
 #REACTION   56-BA-137(N,G)56-BA-138,,SIG,,MXW
 #PROJ       1
 #TARG       56137
@@ -938,7 +899,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56137   3 102    0.025300          4.900000 0.392000                                       H.POMERANCE (52)         11507 71
+    1 56137   3 102    0.025300          4.900000 0.392000                                       H.Pomerance (52)         11507 71
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -951,7 +912,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1888,7 +1849,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -2057,6 +2018,45 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 56137   3 103    1.4800+7 400000.0 8.8000-3 1.2000-3                                       Lu Hanlin,ET.AL. (94)    31451  2
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22089
+#AUTHOR1    Y.Ikeda+
+#YEAR       1988
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation cross section measurements for fusion
+#+          reactor structural materials at neutron energy from
+#+          13.3 to 15.0 MeV using FNS facility
+#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
+#+          T.Nakamura, H.Miyade, K.Kawade,
+#+          H.Yamamoto, T.Katoh
+#REF-CODE   (R,JAERI-1312,1988)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1312, 1988
+#DATASETS   108
+#
+#DATASET    22089102
+#DATE       20201001
+#REACTION   56-BA-137(N,X)55-CS-136,,SIG
+#PROJ       1
+#TARG       56137
+#MF         3
+#MT         9000
+#PRODUCT    55-CS-136
+#DATA-HDR   DATA
+#C4BEGIN    [    1 56137   39000   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 56137   39000    1.5000+7          1.6300-3 2.5000-4           55136.9                     Y.Ikeda,ET.AL. (88)      22089102
+    1 56137   39000    1.4720+7          8.8000-4 2.3000-4           55136.9                     Y.Ikeda,ET.AL. (88)      22089102
+    1 56137   39000    1.4480+7          8.6000-4 2.6000-4           55136.9                     Y.Ikeda,ET.AL. (88)      22089102
+    1 56137   39000    1.4020+7          4.2000-4 2.6000-4           55136.9                     Y.Ikeda,ET.AL. (88)      22089102
+    1 56137   39000    1.3600+7          4.7700-4 8.7000-5           55136.9                     Y.Ikeda,ET.AL. (88)      22089102
+    1 56137   39000    1.3420+7          3.3700-4 8.6000-5           55136.9                     Y.Ikeda,ET.AL. (88)      22089102
+#/DATA      6
 #/DATASET
 #/ENTRY
 #

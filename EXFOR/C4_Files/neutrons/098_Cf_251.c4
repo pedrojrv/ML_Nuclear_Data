@@ -129,7 +129,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -190,7 +190,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -286,7 +286,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -317,7 +317,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -513,7 +513,7 @@
 #REF-CODE   (J,PR/C,11,1676,1975)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.11, p.1676, 1975
-#DATASETS   2
+#DATASETS   4
 #
 #DATASET    10516002
 #DATE       20170803
@@ -555,6 +555,41 @@
     1 98251 801  18 A  0.025300          0.012400 1.8000-3 61.00000 151.0000                     K.F.Flynn,ET.AL. (75)    10516  2
     1 98251 801  18 A  0.025300          5.6000-3 6.0000-4 62.00000 156.0000                     K.F.Flynn,ET.AL. (75)    10516  2
 #/DATA      26
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10516
+#AUTHOR1    K.F.Flynn+
+#YEAR       1975
+#INSTITUTE  (1USAANL)
+#TITLE      Mass distributions for thermal-neutron-induced fission
+#+          of 255Fm and 251Cf
+#AUTHOR(S)  K.F.Flynn, J.E.Gindler, R.K.Sjoblom,
+#+          L.E.Glendenin
+#REF-CODE   (J,PR/C,11,1676,1975)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.11, p.1676, 1975
+#DATASETS   4
+#
+#DATASET    10516004
+#DATE       20170803
+#REACTION   98-CF-251(N,F)MASS,CHN,FY,,SPA
+#PROJ       1
+#TARG       98251
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98251 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98251 801  18 D  0.025300          0.049300 4.9000-3          113.0000                     K.F.Flynn,ET.AL. (75)    10516  4
+    1 98251 801  18 D  0.025300          0.045600 2.3000-3          115.0000                     K.F.Flynn,ET.AL. (75)    10516  4
+    1 98251 801  18 D  0.025300          5.3000-3 5.0000-4          121.0000                     K.F.Flynn,ET.AL. (75)    10516  4
+    1 98251 801  18 D  0.025300          4.0000-3 4.0000-4          125.0000                     K.F.Flynn,ET.AL. (75)    10516  4
+#/DATA      4
 #/DATASET
 #/ENTRY
 #

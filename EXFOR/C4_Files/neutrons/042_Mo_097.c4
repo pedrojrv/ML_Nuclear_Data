@@ -29,55 +29,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22089
-#AUTHOR1    Y.Ikeda+
-#YEAR       1988
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation cross section measurements for fusion
-#+          reactor structural materials at neutron energy from
-#+          13.3 to 15.0 MeV using FNS facility
-#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
-#+          T.Nakamura, H.Miyade, K.Kawade,
-#+          H.Yamamoto, T.Katoh
-#REF-CODE   (R,JAERI-1312,1988)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1312, 1988
-#DATASETS   110
-#
-#DATASET    22089080
-#DATE       20081001
-#REACTION   42-MO-97(N,N+P)41-NB-96,,SIG
-#PROJ       1
-#TARG       42097
-#MF         3
-#MT         28
-#PRODUCT    41-NB-96
-#DATA-HDR   DATA
-#C4BEGIN    [    1 42097   3  28   ]
-#DATA       16
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42097   3  28    1.4970+7          5.3600-3 3.2000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4970+7          5.6100-3 3.3000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4700+7          4.4900-3 2.7000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4700+7          4.3800-3 2.7000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4460+7          3.7200-3 2.3000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4450+7          3.5600-3 2.4000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4240+7          2.9900-3 2.1000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.4240+7          2.9200-3 2.1000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3990+7          2.2800-3 1.6000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3990+7          2.3300-3 1.6000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3770+7          1.8400-3 1.7000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3770+7          1.8000-3 1.4000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3610+7          1.5800-3 1.3000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3600+7          1.6300-3 1.0000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3450+7          1.3070-3 8.6000-4                                       Y.Ikeda,ET.AL. (88)      22089 80
-    1 42097   3  28    1.3430+7          1.1930-3 7.3000-5                                       Y.Ikeda,ET.AL. (88)      22089 80
-#/DATA      16
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      22034
 #AUTHOR1    L.Koester+
 #YEAR       1987
@@ -112,15 +63,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507053
-#DATE       19860702
+#DATE       20190805
 #REACTION   42-MO-97(N,G)42-MO-98,,SIG,,MXW
 #PROJ       1
 #TARG       42097
@@ -132,7 +83,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42097   3 102    0.025300          2.100000 0.630000                                       H.POMERANCE (52)         11507 53
+    1 42097   3 102    0.025300          2.100000 0.630000                                       H.Pomerance (52)         11507 53
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -756,6 +707,40 @@
 #/ENTRY
 #
 #
+#ENTRY      33141
+#AUTHOR1    A.M.Sunitha+
+#YEAR       2020
+#INSTITUTE  (3INDBGL)
+#TITLE      Measurement of 92Mo(n,a)89Zr and 97Mo(n,p)97Nb
+#+          reactions at the neutron energy 13.52 MeV with
+#+          covariance analysis
+#AUTHOR(S)  A.M.Sunitha, B.Rudraswamy, S.V.Suryanarayana,
+#+          K.Nagaraja, M.Karkera, I.Pasha,
+#+          H.B.Sachhidananda, Y.S.Sheela, M.Prasad
+#REF-CODE   (J,IPA,58,218,2020)
+#REFERENCE  Jour. Indian Journal of Pure and Applied Physics
+#+          Vol.58, p.218, 2020
+#DATASETS   2
+#
+#DATASET    33141003
+#DATE       20200702
+#REACTION   42-MO-97(N,P)41-NB-97,,SIG
+#PROJ       1
+#TARG       42097
+#MF         3
+#MT         103
+#PRODUCT    41-NB-97
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42097   3 103   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42097   3 103    1.3520+7 75000.00 0.017900 2.0000-3                                       A.M.Sunitha,ET.AL. (20)  33141  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      31491
 #AUTHOR1    N.I.Molla+
 #YEAR       1997
@@ -1156,18 +1141,18 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1974
 #INSTITUTE  (2GERJUL)
-#TITLE      -MEASUREMENT AND SYSTEMATICS OF CROSS SECTIONS FOR
-#+          COMMON AND LOW YIELD 14 MEV NEUTRON INDUCED NUCLEAR
-#+          REACTIONS ON STRUCTURAL FR-MATERIAL AND TRANSMUTED
-#+          SPECIES.-
+#TITLE      Measurement and systematics of cross sections for
+#+          common and low yield 14 MeV neutron induced nuclear
+#+          reactions on structural FR-material and transmuted
+#+          species
 #AUTHOR(S)  S.M.Qaim, G.Stoecklin
-#REF-CODE   (R,EUR-5182E,939,7409)
+#REF-CODE   (R,EUR-5182,939,1974)
 #REFERENCE  Rept. Euratom Reports
-#+          No.5182E, p.939, 1974
-#DATASETS   24
+#+          No.5182, p.939, 1974
+#DATASETS   31
 #
 #DATASET    20513026
-#DATE       19861003
+#DATE       20200901
 #REACTION   42-MO-97(N,P)41-NB-97,,SIG
 #PROJ       1
 #TARG       42097
@@ -1179,7 +1164,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42097   3 103    1.4700+7 300000.0 0.014600 1.2000-3                                       S.M.QAIM,ET.AL. (74)     20513 26
+    1 42097   3 103    1.4700+7          0.014600 1.2000-3                                       S.M.Qaim,ET.AL. (74)     20513 26
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1492,10 +1477,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089078
-#DATE       20081001
+#DATE       20201001
 #REACTION   42-MO-97(N,P)41-NB-97-M,,SIG
 #PROJ       1
 #TARG       42097
@@ -1531,10 +1516,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089079
-#DATE       20081001
+#DATE       20201001
 #REACTION   42-MO-97(N,P)41-NB-97,,SIG
 #PROJ       1
 #TARG       42097
@@ -1639,16 +1624,16 @@
 #AUTHOR1    A.I.Lashuk+
 #YEAR       1996
 #INSTITUTE  (4RUSFEI)
-#TITLE      GAMMA-QUANTA PRODUCTION CROSS SECTIONS AT NEUTRON
-#+          INELASTIC SCATTERING AT THE ENERGY 3 MEV
+#TITLE      Gamma-quanta production cross sections at neutron
+#+          inelastic scattering at the energy 3 MeV
 #AUTHOR(S)  A.I.Lashuk, I.P.Sadokhin
-#REF-CODE   (J,YK,1996,(2),59,9612)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1996, Issue.2, p.59, 1996
+#REF-CODE   (J,YK,,(2),59,1996)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.2, p.59, 1996
 #DATASETS   28
 #
 #DATASET    41245015
-#DATE       19970506
+#DATE       20191106
 #REACTION   42-MO-97(N,INL)42-MO-97,PAR,SIG,G
 #PROJ       1
 #TARG       42097
@@ -1660,7 +1645,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42097   39000    3000000.          0.068000 8.0000-3               0.9 1200000.          E2A.I.LASHUK,ET.AL. (96)   41245 15
+    1 42097   39000    3000000.          0.068000 8.0000-3               0.9 1200000.          E2A.I.Lashuk,ET.AL. (96)   41245 15
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1759,6 +1744,55 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 42097   39000 A  1.4800+7 100000.0 0.010000 1.0000-3            2004.9                     D.W.KNEFF,ET.AL. (86)    10933 39
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22089
+#AUTHOR1    Y.Ikeda+
+#YEAR       1988
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation cross section measurements for fusion
+#+          reactor structural materials at neutron energy from
+#+          13.3 to 15.0 MeV using FNS facility
+#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
+#+          T.Nakamura, H.Miyade, K.Kawade,
+#+          H.Yamamoto, T.Katoh
+#REF-CODE   (R,JAERI-1312,1988)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1312, 1988
+#DATASETS   108
+#
+#DATASET    22089080
+#DATE       20201001
+#REACTION   42-MO-97(N,X)41-NB-96,,SIG
+#PROJ       1
+#TARG       42097
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-96
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42097   39000   ]
+#DATA       16
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42097   39000    1.4970+7          5.3600-3 3.2000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4970+7          5.6100-3 3.3000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4700+7          4.4900-3 2.7000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4700+7          4.3800-3 2.7000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4460+7          3.7200-3 2.3000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4450+7          3.5600-3 2.4000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4240+7          2.9900-3 2.1000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.4240+7          2.9200-3 2.1000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3990+7          2.2800-3 1.6000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3990+7          2.3300-3 1.6000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3770+7          1.8400-3 1.7000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3770+7          1.8000-3 1.4000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3610+7          1.5800-3 1.3000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3600+7          1.6300-3 1.0000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3450+7          1.3070-3 8.6000-4           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+    1 42097   39000    1.3430+7          1.1930-3 7.3000-5           41096.9                     Y.Ikeda,ET.AL. (88)      22089 80
+#/DATA      16
 #/DATASET
 #/ENTRY
 #
@@ -2042,7 +2076,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2114,7 +2148,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2445,7 +2479,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2510,7 +2544,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2809,7 +2843,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -3195,7 +3229,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)

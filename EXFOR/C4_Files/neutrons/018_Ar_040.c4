@@ -12341,6 +12341,66 @@
 #/ENTRY
 #
 #
+#ENTRY      14573
+#AUTHOR1    B.Bhandari+
+#YEAR       2019
+#INSTITUTE  (1USAHOU)
+#TITLE      First Measurement of the Total Neutron Cross Section
+#+          on Argon between 100 and 800 MeV
+#AUTHOR(S)  B.Bhandari, J.Bian, K.Bilton,
+#+          C.Callahan, J.Chaves, H.Chen,
+#+          D.Cline, R.L.Cooper, D.Danielson,
+#+          J.Danielson, N.Dokania, S.Elliott,
+#+          S.Fernandes, S.Gardiner, G.Garvey,
+#+          V.Gehman, F.Giuliani, S.Glavin,
+#+          M.Gold, C.Grant, E.Guardincerri,
+#+          T.Haines, A.Higuera, J.Y.Ji,
+#+          R.Kadel, N.Kamp, A.Karlin,
+#+          W.Ketchum, L.W.Koerner, D.Lee,
+#+          K.Lee, Q.Liu, S.Locke,
+#+          W.C.Louis, A.Manalaysay, J.Maricic,
+#+          E.Martin, M.J.Martinez, S.Martynenko,
+#+          C.Mauger, C.Mcgrew, J.Medina,
+#+          P.J.Medina, A.Mills, G.Mills,
+#+          J.Mirabal-Martinez, A.Olivier, E.Pantic,
+#+          B.Philipbar, C.Pitcher, V.Radeka,
+#+          J.Ramsey, K.Rielage, M.Rosen,
+#+          A.R.Sanchez, J.Shin, G.Sinnis,
+#+          M.Smy, W.Sondheim, I.Stancu,
+#+          C.Sterbenz, Y.Sun, R.Svoboda,
+#+          C.Taylor, A.Teymourian, C.Thorn,
+#+          C.E.Tull, M.Tzanov, R.G.Van De Water,
+#+          D.Walker, N.Walsh, H.Wang,
+#+          Y.Wang, C.Yanagisawa, A.Yarritu,
+#+          J.Yoo
+#REF-CODE   (J,PRL,123,042502,2019)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.123, p.042502, 2019
+#DATASETS   1
+#
+#DATASET    14573002
+#DATE       20191006
+#REACTION   18-AR-40(N,TOT),,SIG,,AV
+#PROJ       1
+#TARG       18040
+#MF         3
+#MT         1
+#DATA-HDR   DATA
+#C4BEGIN    [    1 18040   3   1   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 18040   3   1    1.4950+8 4.9500+7 0.490000 0.340000                                       B.Bhandari,ET.AL. (19)   14573  2
+    1 18040   3   1    2.4750+8 4.8500+7 0.880000 0.160000                                       B.Bhandari,ET.AL. (19)   14573  2
+    1 18040   3   1    3.3250+8 3.6500+7 0.890000 0.260000                                       B.Bhandari,ET.AL. (19)   14573  2
+    1 18040   3   1    4.2500+8 5.6000+7 0.940000 0.200000                                       B.Bhandari,ET.AL. (19)   14573  2
+    1 18040   3   1    5.7750+8 9.6500+7 1.200000 0.180000                                       B.Bhandari,ET.AL. (19)   14573  2
+    1 18040   3   1    7.8700+8 1.1300+8 0.830000 0.320000                                       B.Bhandari,ET.AL. (19)   14573  2
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      V1001
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -13474,15 +13534,15 @@
 #AUTHOR1    S.C.Mathur+
 #YEAR       1966
 #INSTITUTE  (1USATNC)
-#TITLE      THE DISINTEGRATION OF AR BY 13.0-20.2MEV NEUTRONS.
+#TITLE      The disintegration of Ar by 13.0-20.2 MeV neutrons.
 #AUTHOR(S)  S.C.Mathur, I.L.Morgan
-#REF-CODE   (J,NP,75,561,6601)
+#REF-CODE   (J,NP,75,561,1966)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.75, p.561, 1966
 #DATASETS   3
 #
 #DATASET    11556004
-#DATE       19830402
+#DATE       20200400
 #REACTION   18-AR-40(N,A)16-S-37,,SIG
 #PROJ       1
 #TARG       18040
@@ -13494,19 +13554,19 @@
 #DATA       13
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 18040   3 107    1.4000+7          0.013250 1.0500-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.5400+7          0.011550 1.0500-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.5700+7          0.010800 1.1000-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.6100+7          9.8000-3 1.6000-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.6700+7          0.010100 1.2000-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.6950+7          0.013200 1.7000-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.7200+7          0.010000 1.5000-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.7450+7          8.4500-3 1.4500-3                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.8000+7          0.010300 9.0000-4                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.9050+7          6.8000-3 9.0000-4                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    1.9900+7          7.6000-3 8.0000-4                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    2.0050+7          7.2500-3 9.5000-4                                       S.C.MATHUR,ET.AL. (66)   11556  4
-    1 18040   3 107    2.0300+7          7.4000-3 9.0000-4                                       S.C.MATHUR,ET.AL. (66)   11556  4
+    1 18040   3 107    1.4000+7          0.013250 1.0500-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.5400+7          0.011550 1.0500-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.5700+7          0.010800 1.1000-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.6100+7          9.8000-3 1.6000-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.6700+7          0.010100 1.2000-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.6950+7          0.013200 1.7000-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.7200+7          0.010000 1.5000-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.7450+7          8.4500-3 1.4500-3                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.8000+7          0.010300 9.0000-4                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.9050+7          6.8000-3 9.0000-4                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    1.9900+7          7.6000-3 8.0000-4                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    2.0050+7          7.2500-3 9.5000-4                                       S.C.Mathur,ET.AL. (66)   11556  4
+    1 18040   3 107    2.0300+7          7.4000-3 9.0000-4                                       S.C.Mathur,ET.AL. (66)   11556  4
 #/DATA      13
 #/DATASET
 #/ENTRY

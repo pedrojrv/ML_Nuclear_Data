@@ -9520,38 +9520,65 @@
 #AUTHOR1    C.Djalali+
 #YEAR       1987
 #INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
+#TITLE      Spin-flip transitions in O-16 and O-18 excited by
+#+          inelastic proton scattering.
 #AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
 #+          V.Rotberg, G.Caskey, A.Galonsky,
 #+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
+#REF-CODE   (J,PR/C,35,1201,1987)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.35, p.1201, 1987
-#DATASETS   18
+#DATASETS   5
 #
 #DATASET    O0042013
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
+#DATE       20200806
+#REACTION   8-O-18(P,INL)8-O-18,PAR,DA
 #PROJ       1001
 #TARG       8018
 #MF         4
 #MT         601
 #PRODUCT    8-O-18
-#DATA-HDR   DATA
+#DATA-HDR   DATA-CM
 #C4BEGIN    [ 1001  8018   4 601  C]
-#DATA       8
+#DATA       35
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          3.0000-4 6.9000-5 0.999263          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          2.6000-4 3.1200-5 0.998135          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          2.1700-4 4.3400-5 0.997441          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          1.8400-4 2.2080-5 0.995725          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          1.5600-4 1.8720-5 0.993572          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          1.3200-4 2.6400-5 0.990748          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          1.1200-4 2.5760-5 0.989272          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
- 1001  8018   4 601  C 2.0100+8          9.5000-5 2.8500-5 0.985996          8820000.         LVLC.DJALALI,ET.AL. (87)    O0042 13
-#/DATA      8
+ 1001  8018   4 601  C 2.0100+8          1.8100-5 2.3100-6 0.998441          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          2.5900-5          0.997185          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          5.0900-5 2.6400-6 0.995562          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          7.0600-5          0.993768          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.2100-4          0.991445          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.7000-4          0.989016          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          2.4600-4          0.985996          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.1100-4          0.982613          8210000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.2200-4 2.0400-5 0.999328          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          2.5800-4 1.0800-5 0.998441          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          2.1600-4 1.8500-5 0.997185          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.8000-4 1.1400-5 0.995562          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.4100-4 1.0500-5 0.993768          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.1700-4 1.0300-5 0.991445          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          9.4800-5 1.0200-5 0.988756          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          8.1200-5 2.0000-5 0.985996          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.4100-3 7.9300-5 0.999328          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.1200-3 5.7200-5 0.998441          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          9.2500-4 5.1900-5 0.997185          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          7.7300-4 5.5700-5 0.995562          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          6.4600-4 6.0400-5 0.993768          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          5.1400-4 6.2200-5 0.991445          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          4.4300-4 7.1100-5 0.989016          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.5600-4 5.9200-5 0.985996          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.1100-4 1.0200-4 0.982613          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.3000-4 1.3600-5 0.999328          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          1.9000-4 4.9500-6 0.998441          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          2.4000-4 7.1700-6 0.997185          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.0000-4 8.9700-6 0.995725          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.4800-4          0.993768          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.8300-4          0.991445          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          4.0300-4          0.988756          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.8400-4          0.985996          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.9200-4 1.3200-5 0.982613          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+ 1001  8018   4 601  C 2.0100+8          3.1000-4          0.974761          1.6400+7         LVLC.Djalali,ET.AL. (87)    O0042 13
+#/DATA      35
 #/DATASET
 #/ENTRY
 #
@@ -9560,160 +9587,51 @@
 #AUTHOR1    C.Djalali+
 #YEAR       1987
 #INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
+#TITLE      Spin-flip transitions in O-16 and O-18 excited by
+#+          inelastic proton scattering.
 #AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
 #+          V.Rotberg, G.Caskey, A.Galonsky,
 #+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
+#REF-CODE   (J,PR/C,35,1201,1987)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.35, p.1201, 1987
-#DATASETS   18
-#
-#DATASET    O0042014
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
-#PROJ       1001
-#TARG       8018
-#MF         4
-#MT         601
-#PRODUCT    8-O-18
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001  8018   4 601  C]
-#DATA       10
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          1.2400-4 1.9840-5 0.999391          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          1.7600-4 1.7600-5 0.998342          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          2.2300-4 2.2300-5 0.997564          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          2.7900-4 2.7900-5 0.995725          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          3.1000-4 3.1000-5 0.993961          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          3.5000-4 3.1500-5 0.991894          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          3.8000-4 4.1800-5 0.988494          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          3.3000-4 3.3000-5 0.986856          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          3.7000-4 5.1800-5 0.982613          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
- 1001  8018   4 601  C 2.0100+8          2.7700-4 2.7700-5 0.973976          1.6400+7         LVLC.DJALALI,ET.AL. (87)    O0042 14
-#/DATA      10
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0042
-#AUTHOR1    C.Djalali+
-#YEAR       1987
-#INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
-#AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
-#+          V.Rotberg, G.Caskey, A.Galonsky,
-#+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.35, p.1201, 1987
-#DATASETS   18
-#
-#DATASET    O0042015
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
-#PROJ       1001
-#TARG       8018
-#MF         4
-#MT         601
-#PRODUCT    8-O-18
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001  8018   4 601  C]
-#DATA       9
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          1.3700-3 1.6440-4 0.999450          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          1.1500-3 1.3800-4 0.997684          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          9.7000-4 1.1640-4 0.996345          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          8.1000-4 9.7200-5 0.995396          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          6.8000-4 8.8400-5 0.993768          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          5.7000-4 7.4100-5 0.990983          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          4.8000-4 1.1040-4 0.987688          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          3.8000-4 1.1020-4 0.983885          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
- 1001  8018   4 601  C 2.0100+8          2.3000-4 6.9000-5 0.982287          1.0100+7         LVLC.DJALALI,ET.AL. (87)    O0042 15
-#/DATA      9
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0042
-#AUTHOR1    C.Djalali+
-#YEAR       1987
-#INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
-#AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
-#+          V.Rotberg, G.Caskey, A.Galonsky,
-#+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.35, p.1201, 1987
-#DATASETS   18
-#
-#DATASET    O0042016
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
-#PROJ       1001
-#TARG       8018
-#MF         4
-#MT         601
-#PRODUCT    8-O-18
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001  8018   4 601  C]
-#DATA       8
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          2.0000-5 4.0000-6 0.998441          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          2.9000-5 4.0600-6 0.997053          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          5.4000-5 8.1000-6 0.996195          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          8.1000-5 1.2150-5 0.993961          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          1.2200-4 1.8300-5 0.992757          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          1.8300-4 5.4900-5 0.990024          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          2.7000-4 4.0500-5 0.986856          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
- 1001  8018   4 601  C 2.0100+8          3.4000-4 5.1000-5 0.985109          8210000.         LVLC.DJALALI,ET.AL. (87)    O0042 16
-#/DATA      8
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0042
-#AUTHOR1    C.Djalali+
-#YEAR       1987
-#INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
-#AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
-#+          V.Rotberg, G.Caskey, A.Galonsky,
-#+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.35, p.1201, 1987
-#DATASETS   18
+#DATASETS   5
 #
 #DATASET    O0042017
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
+#DATE       20200806
+#REACTION   8-O-18(P,INL)8-O-18,PAR,DA
 #PROJ       1001
 #TARG       8018
 #MF         4
 #MT         601
 #PRODUCT    8-O-18
-#DATA-HDR   DATA
+#DATA-HDR   DATA-CM
 #C4BEGIN    [ 1001  8018   4 601  C]
-#DATA       7
+#DATA       21
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          7.9000-4 1.0270-4 0.998209                              C.DJALALI,ET.AL. (87)    O0042 17
- 1001  8018   4 601  C 2.0100+8          6.7000-4 8.0400-5 0.997198                              C.DJALALI,ET.AL. (87)    O0042 17
- 1001  8018   4 601  C 2.0100+8          5.3000-4 6.8900-5 0.995278                              C.DJALALI,ET.AL. (87)    O0042 17
- 1001  8018   4 601  C 2.0100+8          4.5000-4 7.2000-5 0.993729                              C.DJALALI,ET.AL. (87)    O0042 17
- 1001  8018   4 601  C 2.0100+8          3.4000-4 8.1600-5 0.990983                              C.DJALALI,ET.AL. (87)    O0042 17
- 1001  8018   4 601  C 2.0100+8          2.4000-4 7.2000-5 0.988938                              C.DJALALI,ET.AL. (87)    O0042 17
- 1001  8018   4 601  C 2.0100+8          2.0000-4 6.0000-5 0.985348                              C.DJALALI,ET.AL. (87)    O0042 17
-#/DATA      7
+ 1001  8018   4 601  C 2.0100+8          3.5400-4 1.8000-5 0.998441                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.4000-4 1.4000-5 0.997185                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.0500-4 1.3000-5 0.995725                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          1.6500-4 1.2000-5 0.993768                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          1.8500-4 1.1000-5 0.991445                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          1.7600-4 2.1000-5 0.989016                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          1.4000-4 3.1000-5 0.985996                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          3.6200-4 3.2000-5 0.998441                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          3.3900-4 2.2000-5 0.997185                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.9000-4 2.3000-5 0.995725                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.5300-4 2.3000-5 0.993768                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.3000-4 2.5000-5 0.991445                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          1.9000-4 2.4000-5 0.989016                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          1.4300-4 3.0000-5 0.985996                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          7.7100-4 6.0000-5 0.998441                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          6.5200-4 4.7000-5 0.997185                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          5.1200-4 4.0000-5 0.995725                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          3.9000-4 4.1000-5 0.993768                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          3.2600-4 4.0000-5 0.991445                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.2600-4 4.3000-5 0.989016                              C.Djalali,ET.AL. (87)    O0042 17
+ 1001  8018   4 601  C 2.0100+8          2.0000-4 5.0000-5 0.985996                              C.Djalali,ET.AL. (87)    O0042 17
+#/DATA      21
 #/DATASET
 #/ENTRY
 #
@@ -9722,75 +9640,36 @@
 #AUTHOR1    C.Djalali+
 #YEAR       1987
 #INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
+#TITLE      Spin-flip transitions in O-16 and O-18 excited by
+#+          inelastic proton scattering.
 #AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
 #+          V.Rotberg, G.Caskey, A.Galonsky,
 #+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
+#REF-CODE   (J,PR/C,35,1201,1987)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.35, p.1201, 1987
-#DATASETS   18
+#DATASETS   5
 #
-#DATASET    O0042018
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
+#DATASET    O0042021
+#DATE       20200806
+#REACTION   8-O-18(P,INL)8-O-18,PAR,DA
 #PROJ       1001
 #TARG       8018
 #MF         4
 #MT         601
 #PRODUCT    8-O-18
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001  8018   4 601  C]
+#DATA-HDR   DATA DATA-MAX
+#C4BEGIN    [ 1001  8018   4 601   ]
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          3.4000-4 4.0800-5 0.998728                              C.DJALALI,ET.AL. (87)    O0042 18
- 1001  8018   4 601  C 2.0100+8          3.4000-4 4.0800-5 0.997289                              C.DJALALI,ET.AL. (87)    O0042 18
- 1001  8018   4 601  C 2.0100+8          2.8000-4 3.0800-5 0.996026                              C.DJALALI,ET.AL. (87)    O0042 18
- 1001  8018   4 601  C 2.0100+8          2.3800-4 2.8560-5 0.993690                              C.DJALALI,ET.AL. (87)    O0042 18
- 1001  8018   4 601  C 2.0100+8          2.3800-4 4.7600-5 0.991828                              C.DJALALI,ET.AL. (87)    O0042 18
- 1001  8018   4 601  C 2.0100+8          2.0000-4 4.0000-5 0.988573                              C.DJALALI,ET.AL. (87)    O0042 18
- 1001  8018   4 601  C 2.0100+8          1.4000-4 2.9400-5 0.986112                              C.DJALALI,ET.AL. (87)    O0042 18
-#/DATA      7
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0042
-#AUTHOR1    C.Djalali+
-#YEAR       1987
-#INSTITUTE  (1USAMSU)
-#TITLE      SPIN-FLIP TRANSITIONS IN O-16 AND O-18 EXCITED BY
-#+          INELASTIC PROTON SCATTERING.
-#AUTHOR(S)  C.Djalali, G.M.Crawley, B.A.Brown,
-#+          V.Rotberg, G.Caskey, A.Galonsky,
-#+          N.Marty, M.Morlet, A.Willis
-#REF-CODE   (J,PR/C,35,1201,87)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.35, p.1201, 1987
-#DATASETS   18
-#
-#DATASET    O0042019
-#DATE       19941005
-#REACTION   8-O-18(P,INL)8-O-18,PAR,DA,,,EXP
-#PROJ       1001
-#TARG       8018
-#MF         4
-#MT         601
-#PRODUCT    8-O-18
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001  8018   4 601  C]
-#DATA       7
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  8018   4 601  C 2.0100+8          3.0000-4 3.9000-5 0.998392                              C.DJALALI,ET.AL. (87)    O0042 19
- 1001  8018   4 601  C 2.0100+8          2.0900-4 2.5080-5 0.997026                              C.DJALALI,ET.AL. (87)    O0042 19
- 1001  8018   4 601  C 2.0100+8          1.9900-4 2.7860-5 0.995529                              C.DJALALI,ET.AL. (87)    O0042 19
- 1001  8018   4 601  C 2.0100+8          1.4800-4 1.7760-5 0.993473                              C.DJALALI,ET.AL. (87)    O0042 19
- 1001  8018   4 601  C 2.0100+8          1.7800-4 2.1360-5 0.991239                              C.DJALALI,ET.AL. (87)    O0042 19
- 1001  8018   4 601  C 2.0100+8          1.7800-4 3.9160-5 0.989144                              C.DJALALI,ET.AL. (87)    O0042 19
- 1001  8018   4 601  C 2.0100+8          1.2500-4 2.8750-5 0.985526                              C.DJALALI,ET.AL. (87)    O0042 19
+ 1001  8018   4 601    2.0100+8          3.2000-4 5.0000-5 0.999657          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 21
+ 1001  8018   4 601    2.0100+8          3.5000-4 2.0000-5 0.997564          8820000.         LVLC.Djalali,ET.AL. (87)    O0042 21
+ 1001  8018   4 601    2.0100+8          1.5000-4 3.0000-5 0.999657          9760000.         LVLC.Djalali,ET.AL. (87)    O0042 21
+ 1001  8018   4 601    2.0100+8          1.6000-4 3.0000-5 0.999657          9890000.         LVLC.Djalali,ET.AL. (87)    O0042 21
+ 1001  8018   4 601    2.0100+8          1.6200-3 5.0000-5 0.997564          1.0100+7         LVLC.Djalali,ET.AL. (87)    O0042 21
+ 1001  8018   4 601    2.0100+8          6.0000-5 2.0000-5 0.999657          1.0800+7         LVLC.Djalali,ET.AL. (87)    O0042 21
+ 1001  8018   4 601    2.0100+8          3.4500-4 6.0000-6 0.994522          1.6390+7         LVLC.Djalali,ET.AL. (87)    O0042 21
 #/DATA      7
 #/DATASET
 #/ENTRY

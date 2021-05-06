@@ -3038,7 +3038,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -3076,18 +3076,19 @@
 #DATASETS   4
 #
 #DATASET    40363003
-#DATE       20170101
-#REACTION   61-PM-147(N,ABS),,SIG
+#DATE       20200902
+#REACTION   61-PM-147(N,G)61-PM-148,,SIG
 #PROJ       1
 #TARG       61147
 #MF         3
-#MT         101
+#MT         102
+#PRODUCT    61-PM-148
 #DATA-HDR   DATA
-#C4BEGIN    [    1 61147   3 101   ]
+#C4BEGIN    [    1 61147   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 61147   3 101    0.025000          90.00000 20.00000                                       V.K.Gorshkov,ET.AL. (57) 40363  3
+    1 61147   3 102    0.025000          90.00000 20.00000                                       V.K.Gorshkov,ET.AL. (57) 40363  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -3351,7 +3352,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -3382,7 +3383,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -3413,7 +3414,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -3453,7 +3454,7 @@
 #DATASETS   7
 #
 #DATASET    22829008
-#DATE       20130104
+#DATE       20200803
 #REACTION   61-PM-147(N,G)61-PM-148,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       61147
@@ -3464,7 +3465,7 @@
 #C4BEGIN    [    1 61147   3 102 D ]
 #X4STATUS   [DEP  ] Dependent data
 #X4DATATYPE [DERIV] Derived data
-#DATA       12
+#DATA       11
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 61147   3 102 D  5000.000          2.257000                                                R.Reifarth,ET.AL. (03)   22829  8
@@ -3473,13 +3474,12 @@
     1 61147   3 102 D  15000.00          1.055000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  20000.00          0.887000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  25000.00          0.782000                                                R.Reifarth,ET.AL. (03)   22829  8
-    1 61147   3 102 D  30000.00          0.709000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  40000.00          0.613000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  50000.00          0.553000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  60000.00          0.503000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  80000.00          0.455000                                                R.Reifarth,ET.AL. (03)   22829  8
     1 61147   3 102 D  100000.0          0.418000                                                R.Reifarth,ET.AL. (03)   22829  8
-#/DATA      12
+#/DATA      11
 #/DATASET
 #/ENTRY
 #
@@ -3885,6 +3885,114 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 61147   3 102M   37500.00          0.202000 0.032000                                       TH.W.GERSTENHOEFER (93)  22376  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31815
+#AUTHOR1    C.Guerrero+
+#YEAR       2019
+#INSTITUTE  (2SPNSEU)
+#TITLE      The s-process in the Nd-Pm-Sm region: Neutron
+#+          activation of 147Pm
+#AUTHOR(S)  C.Guerrero, M.Tessler, M.Paul,
+#+          J.Lerendegui-Marco, S.Heinitz, E.A.Maugeri,
+#+          C.Domingo-Pardo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, T.Palchan-Hazan,
+#+          J.M.Quesada, D.Schumann, L.Weissman
+#REF-CODE   (J,PL/B,797,134809,2019)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.797, p.134809, 2019
+#DATASETS   3
+#
+#DATASET    318150041
+#DATE       20200105
+#REACTION   61-PM-147(N,G)61-PM-148-G,,SIG,,MXW
+#PROJ       1
+#TARG       61147
+#MF         3
+#MT         102
+#PRODUCT    61-PM-148-G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 61147   3 102GA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 61147   3 102GA  3.0000+7          0.469000 0.050000                                       C.Guerrero,ET.AL. (19)   31815  41
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31815
+#AUTHOR1    C.Guerrero+
+#YEAR       2019
+#INSTITUTE  (2SPNSEU)
+#TITLE      The s-process in the Nd-Pm-Sm region: Neutron
+#+          activation of 147Pm
+#AUTHOR(S)  C.Guerrero, M.Tessler, M.Paul,
+#+          J.Lerendegui-Marco, S.Heinitz, E.A.Maugeri,
+#+          C.Domingo-Pardo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, T.Palchan-Hazan,
+#+          J.M.Quesada, D.Schumann, L.Weissman
+#REF-CODE   (J,PL/B,797,134809,2019)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.797, p.134809, 2019
+#DATASETS   3
+#
+#DATASET    318150042
+#DATE       20200105
+#REACTION   61-PM-147(N,G)61-PM-148-M,,SIG,,MXW
+#PROJ       1
+#TARG       61147
+#MF         3
+#MT         102
+#PRODUCT    61-PM-148-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 61147   3 102MA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 61147   3 102MA  3.0000+7          0.357000 0.027000                                       C.Guerrero,ET.AL. (19)   31815  42
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31815
+#AUTHOR1    C.Guerrero+
+#YEAR       2019
+#INSTITUTE  (2SPNSEU)
+#TITLE      The s-process in the Nd-Pm-Sm region: Neutron
+#+          activation of 147Pm
+#AUTHOR(S)  C.Guerrero, M.Tessler, M.Paul,
+#+          J.Lerendegui-Marco, S.Heinitz, E.A.Maugeri,
+#+          C.Domingo-Pardo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, T.Palchan-Hazan,
+#+          J.M.Quesada, D.Schumann, L.Weissman
+#REF-CODE   (J,PL/B,797,134809,2019)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.797, p.134809, 2019
+#DATASETS   3
+#
+#DATASET    31815005
+#DATE       20200105
+#REACTION   61-PM-147(N,G)61-PM-148,,SIG,,MXW
+#PROJ       1
+#TARG       61147
+#MF         3
+#MT         102
+#PRODUCT    61-PM-148
+#DATA-HDR   DATA
+#C4BEGIN    [    1 61147   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 61147   3 102 D  3.0000+7          0.826000 0.057000                                       C.Guerrero,ET.AL. (19)   31815  5
 #/DATA      1
 #/DATASET
 #/ENTRY

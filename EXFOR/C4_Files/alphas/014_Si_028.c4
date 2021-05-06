@@ -36,64 +36,6 @@
 #/ENTRY
 #
 #
-#ENTRY      F1309
-#AUTHOR1    Yu.G.Sobolev+
-#YEAR       2005
-#INSTITUTE  (4ZZZDUB)
-#TITLE      Energy dependence of total reaction cross section for
-#+          4,6He, 7Li+28Si interaction at E=5-50 MeV/nucleon.
-#AUTHOR(S)  Yu.G.Sobolev, A.Budzanowski, E.Bialkowski,
-#+          T.K.Zholdybaev, E.V.Zemlyanaya, R.Kalpakchieva,
-#+          A.Kugler, I.V.Kuznetsov, A.A.Kulko,
-#+          K.A.Kurtebekov, I.N.Kukhtina, V.F.Kushniruk,
-#+          S.P.Lobastov, V.K.Luk'yanov, S.M.Luk'yanov,
-#+          V.A.Maslov, L.Mikhailov, Yu.E.Penionzhkevich,
-#+          I.Skwirczynska, N.K.Skobelev, W.H.Trzaska,
-#+          V.Yu.Ugryumov
-#REF-CODE   (J,IZV,69,(11),1603,2005)
-#REFERENCE  Jour. Izv. Rossiiskoi Akademii Nauk, Ser.Fiz.
-#+          Vol.69, Issue.11, p.1603, 2005
-#DATASETS   3
-#
-#DATASET    F1309002
-#DATE       20170103
-#REACTION   14-SI-28(A,NON),,SIG
-#PROJ       2004
-#TARG       14028
-#MF         3
-#MT         3
-#DATA-HDR   DATA
-#C4BEGIN    [ 2004 14028   3   3   ]
-#DATA       22
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 14028   3   3    1.3488+7          0.601800 0.097100                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.4072+7 5776000. 0.801200 0.084300                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.7796+7          0.982900 0.097100                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.9388+7 4448000. 0.811700 0.063900                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    2.0512+7 4444000. 0.949800 0.051100                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    2.3564+7 4000000. 0.988300 0.051100                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    2.6560+7          1.062500 0.074100                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    3.0172+7          1.026900 0.099700                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    3.6700+7          1.116700 0.038300                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    3.8812+7          1.188400 0.056200                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    4.4580+7 5776000. 1.193800 0.061300                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    5.4664+7 4440000. 1.286300 0.063900                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    6.4756+7          1.368600 0.102200                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    6.5380+7 4892000. 1.251100 0.063900                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    7.3264+7          1.328100 0.063900                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    9.3232+7          1.347000 0.043500                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.0579+8          1.273600 0.053700                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.2455+8          1.210600 0.181400                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.4400+8          1.278000 0.056200                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.4985+8          1.229800 0.069000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    1.9631+8          1.073700 0.143100                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
- 2004 14028   3   3    2.2742+8          1.070100 0.153400                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
-#/DATA      22
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      F0773
 #AUTHOR1    V.Yu.Ugryumov+
 #YEAR       2005
@@ -140,14 +82,14 @@
 #AUTHOR1    V.Yu.Ugryumov+
 #YEAR       2004
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Total reaction cross section for He-4 collisions with
-#+          silicon in the energy range 3-10 MeV/nuclon.
+#TITLE      Total reaction cross section for 4He collisions with
+#+          silicon in the energy range 3-10 MeV/u
 #AUTHOR(S)  V.Yu.Ugryumov, I.V.Kuznetsov, K.B.Basybekov,
 #+          E.Bialkowski, A.Budzanowski, A.Duysebaev,
 #+          B.A.Duysebaev, T.K.Zholdybaev, K.M.Ismailov,
 #+          K.K.Kadyrzhanov, R.Kalpakchieva, A.Kugler,
 #+          I.N.Kukhtina, V.F.Kushniruk, K.A.Kuterbekov,
-#+          A.Mukhamedzhan, Yu.E.Penionzhkevich, B.M.Sadykov,
+#+          A.Mukhambetzhan, Yu.E.Penionzhkevich, B.M.Sadykov,
 #+          I.Skwirczynska, Yu.G.Sobolev
 #REF-CODE   (J,NP/A,734,E53,2004)
 #REFERENCE  Jour. Nuclear Physics, Section A
@@ -155,7 +97,7 @@
 #DATASETS   1
 #
 #DATASET    A0851002
-#DATE       20100401
+#DATE       20190401
 #REACTION   14-SI-28(A,NON),,SIG
 #PROJ       2004
 #TARG       14028
@@ -166,15 +108,57 @@
 #DATA       8
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 14028   3   3    1.4000+7 5000000. 0.830000 0.080000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    1.9000+7 4000000. 0.840000 0.060000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    2.1000+7 4000000. 0.980000 0.040000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    2.4000+7 3000000. 1.010000 0.060000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    2.7000+7 4000000. 1.070000 0.070000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    2.7000+7 3000000. 1.090000 0.070000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    3.7000+7 2900000. 1.140000 0.040000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
- 2004 14028   3   3    3.9000+7 2600000. 1.210000 0.050000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    1.4520+7 1430000. 0.800000 0.083000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    1.9560+7 1140000. 0.810000 0.061000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    2.1240+7 1060000. 0.949000 0.048000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    2.4320+7 950000.0 0.986000 0.057000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    2.6920+7 880000.0 1.041000 0.072000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    2.7160+7 860000.0 1.061000 0.076000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    3.7320+7 700000.0 1.115000 0.038000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
+ 2004 14028   3   3    3.9400+7 680000.0 1.185000 0.056000                                       V.Yu.Ugryumov,ET.AL. (04)A0851  2
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F1309
+#AUTHOR1    Yu.G.Sobolev+
+#YEAR       2005
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Energy dependence of total reaction cross section for
+#+          4,6He, 7Li+28Si interaction at E=5-50 MeV/nucleon
+#AUTHOR(S)  Yu.G.Sobolev, A.Budzanowski, E.Bialkowski,
+#+          T.K.Zholdybaev, E.V.Zemlyanaya, R.Kalpakchieva,
+#+          A.Kugler, I.V.Kuznetsov, A.A.Kulko,
+#+          K.A.Kuterbekov, I.N.Kukhtina, V.F.Kushniruk,
+#+          S.P.Lobastov, V.K.Luk'yanov, S.M.Luk'yanov,
+#+          V.A.Maslov, L.Mikhailov, Yu.E.Penionzhkevich,
+#+          I.Skwirczynska, N.K.Skobelev, W.H.Trzaska,
+#+          V.Yu.Ugryumov
+#REF-CODE   (J,IZV,69,1603,2005)
+#REFERENCE  Jour. Izv. Rossiiskoi Akademii Nauk, Ser.Fiz.
+#+          Vol.69, p.1603, 2005
+#DATASETS   3
+#
+#DATASET    F1309002
+#DATE       20200302
+#REACTION   14-SI-28(A,NON),,SIG
+#PROJ       2004
+#TARG       14028
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 14028   3   3   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   3   3    6.5200+7 2000000. 1.363000 0.100000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
+ 2004 14028   3   3    1.2520+8 3000000. 1.206000 0.180000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
+ 2004 14028   3   3    1.4400+8 2400000. 1.270000 0.053000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
+ 2004 14028   3   3    1.5000+8 3000000. 1.222000 0.060000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
+ 2004 14028   3   3    1.9520+8 2000000. 1.072000 0.141000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
+ 2004 14028   3   3    2.2720+8 2000000. 1.068000 0.150000                                       Yu.G.Sobolev,ET.AL. (05) F1309  2
+#/DATA      6
 #/DATASET
 #/ENTRY
 #
@@ -284,6 +268,43 @@
  2004 14028   3   3    1.4840+8 2.9600+7 1.080000                                                R.E.Warner,ET.AL. (96)   C0919  2
  2004 14028   3   3    2.0120+8 2.3200+7 0.990000                                                R.E.Warner,ET.AL. (96)   C0919  2
 #/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2441
+#AUTHOR1    F.Horst+
+#YEAR       2019
+#INSTITUTE  (2GERGSI)
+#TITLE      Measurement of 4He charge- and mass-changing cross
+#+          sections on H, C, O, and Si targets in the energy
+#+          range 70-220 MeV/u for radiation transport
+#+          calculations in ion-beam therapy
+#AUTHOR(S)  F.Horst, G.Arico, K.-T.Brinkmann,
+#+          S.Brons, A.Ferrari, T.Haberer,
+#+          A.Mairani, K.Parodi, C.-A.Reidel,
+#+          U.Weber, K.Zink, C.Schuy
+#REF-CODE   (J,PR/C,99,014603,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.014603, 2019
+#DATASETS   6
+#
+#DATASET    O2441007
+#DATE       20200100
+#REACTION   14-SI-28(A,NON),,SIG
+#PROJ       2004
+#TARG       14028
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 14028   3   3   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   3   3    2.8400+8 3.2000+7 0.961000 0.110000                                       F.Horst,ET.AL. (19)      O2441  7
+ 2004 14028   3   3    4.7600+8 4.0000+7 0.816000 0.059000                                       F.Horst,ET.AL. (19)      O2441  7
+ 2004 14028   3   3    8.5200+8 2.8000+7 0.792000 0.043000                                       F.Horst,ET.AL. (19)      O2441  7
+#/DATA      3
 #/DATASET
 #/ENTRY
 #
@@ -11305,7 +11326,7 @@
 #REF-CODE   (J,ZP,269,365,1974)
 #REFERENCE  Jour. Zeitschrift fuer Physik
 #+          Vol.269, p.365, 1974
-#DATASETS   3
+#DATASETS   6
 #
 #DATASET    F0617003
 #DATE       20031001
@@ -11365,6 +11386,68 @@
  2004 14028   4   2    1.6290+7 150000.0 0.014703 7.3513-4-0.988757                              W.WUHR,ET.AL. (74)       F0617  3
  2004 14028   4   2    1.6400+7 150000.0 0.014291 7.1457-4-0.988757                              W.WUHR,ET.AL. (74)       F0617  3
 #/DATA      44
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F0617
+#AUTHOR1    W.Wuhr+
+#YEAR       1974
+#INSTITUTE  (2GERUEN)
+#TITLE      Optical model and DWBA analysis of the alpha-particle
+#+          scattering for the nuclei 26Mg and 28,30Si including
+#+          Hauser-Feshbach contributions
+#AUTHOR(S)  W.Wuhr, A.Hofmann, G.Philipp
+#REF-CODE   (J,ZP,269,365,1974)
+#REFERENCE  Jour. Zeitschrift fuer Physik
+#+          Vol.269, p.365, 1974
+#DATASETS   6
+#
+#DATASET    F0617006
+#DATE       20031001
+#REACTION   14-SI-28(A,EL)14-SI-28,,DA,,AV
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         2
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4   2  C]
+#DATA       31
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4   2  C 1.5700+7 700000.0 1.726000 0.086300 0.928356                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.504400 0.025220 0.883029                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.333800 0.016690 0.828647                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.149200 7.4600-3 0.772511                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.043620 2.1810-3 0.707600                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.031860 1.5930-3 0.640377                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.032790 1.6395-3 0.558178                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.022800 1.1400-3 0.480375                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.011620 5.8100-4 0.395865                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 8.0800-3 4.0400-4 0.307189                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 6.5100-3 3.2550-4 0.219163                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 4.3100-3 2.1550-4 0.129659                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 3.4170-3 1.7085-4 0.038734                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 5.2090-3 2.6045-4-0.050072                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 7.3200-3 3.6600-4-0.134680                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 7.0610-3 3.5305-4-0.221551                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 5.0740-3 2.5370-4-0.305698                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 2.8530-3 1.4265-4-0.387518                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 2.5790-3 1.2895-4-0.460202                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 3.6830-3 1.8415-4-0.534355                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 5.9980-3 2.9990-4-0.597628                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 5.9790-3 2.9895-4-0.663929                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 4.8200-3 2.4100-4-0.719342                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 3.3530-3 1.6765-4-0.771627                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 5.0320-3 2.5160-4-0.819154                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 9.0380-3 4.5190-4-0.861631                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.010100 5.0500-4-0.898029                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 6.0700-3 3.0350-4-0.927838                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 3.8290-3 1.9145-4-0.953192                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.015840 7.9200-4-0.972777                              W.WUHR,ET.AL. (74)       F0617  6
+ 2004 14028   4   2  C 1.5700+7 700000.0 0.042130 2.1065-3-0.987414                              W.WUHR,ET.AL. (74)       F0617  6
+#/DATA      31
 #/DATASET
 #/ENTRY
 #
@@ -14007,21 +14090,118 @@
 #/ENTRY
 #
 #
-#ENTRY      F0497
-#AUTHOR1    S.Ya.Aisina+
-#YEAR       1989
+#ENTRY      F0668
+#AUTHOR1    V.Yu.Gonchar+
+#YEAR       1969
 #INSTITUTE  (4KASKAZ)
-#TITLE      Experimental support for the existence of
-#+          alpha-particle nuclear matter.
-#AUTHOR(S)  S.Ya.Aisina, K.A.Kuterbekov, N.N.Pavlova,
-#+          A.V.Yushkov
-#REF-CODE   (J,IZV,53,(1),37,1989)
-#REFERENCE  Jour. Izv. Rossiiskoi Akademii Nauk, Ser.Fiz.
-#+          Vol.53, Issue.1, p.37, 1989
-#DATASETS   13
+#TITLE      Features of the diffraction scattering of alpha
+#+          particles on 24Mg and 28Si
+#AUTHOR(S)  V.Yu.Gonchar, K.S.Zheltonog, G.N.Ivanov,
+#+          V.I.Kanashevich, S.V.Laptev, A.V.Yushkov
+#REF-CODE   (J,BAS,32,554,1969)
+#REFERENCE  Jour. Bull.Russian Academy of Sciences - Physics
+#+          Vol.32, p.554, 1969
+#DATASETS   6
 #
-#DATASET    F0497013
-#DATE       20150906
+#DATASET    F06680031
+#DATE       20200301
+#REACTION   14-SI-28(A,EL)14-SI-28,,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         2
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4   2  C]
+#DATA       66
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.010600          0.869495                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.049700          0.859852                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.054100          0.848971                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.057800          0.838670                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.044500          0.827080                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.030000          0.816137                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.023400          0.804893                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.013400          0.793353                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 6.9800-3          0.781520                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.8200-3          0.769399                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 5.6000-4          0.756994                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3100-3          0.744311                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.0200-3          0.731353                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 5.9300-3          0.718126                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.9200-3          0.704633                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.010720          0.690882                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.011620          0.676875                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.4200-3          0.662619                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.8300-3          0.648119                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.6400-3          0.633380                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.9100-3          0.618407                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9100-3          0.603207                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.1700-3          0.587784                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3800-3          0.572145                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9100-3          0.556294                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.6100-3 1.1484-4 0.539211                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.4700-3 1.8669-4 0.523093                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.0800-3 2.0400-4 0.506785                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.3200-3 1.0890-4 0.490446                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.0600-3 1.2180-4 0.473779                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.9300-3 1.1947-4 0.457097                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.4100-3 9.4798-5 0.440251                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.3700-3 1.0570-4 0.423249                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.3500-3 9.5880-5 0.406257                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3600-3 7.0992-5 0.389122                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3800-3 7.1898-5 0.371690                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.0900-3 6.2893-5 0.354453                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.0000-3 6.1000-5 0.337094                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.6000-4 5.7620-5 0.318958                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.0000-4 5.9400-5 0.300704                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.4000-4 6.0630-5 0.284014                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.3000-4 6.1845-5 0.265554                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.1000-4 5.3690-5 0.248519                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.9000-4 5.3400-5 0.230727                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.3000-4 5.1875-5 0.212858                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.1000-4 4.7925-5 0.194232                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.5000-4 4.9500-5 0.177083                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 6.9000-4 4.8300-5 0.158156                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.4000-4 3.5002-5 0.140899                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 6.1000-4 3.2330-5 0.121867                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.2000-4 2.6586-5 0.104526                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.3000-4 2.3595-5 0.087154                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.2000-4 1.9580-5 0.069232                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9000-4 1.8050-5 0.050591                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.3000-4 2.1850-5 0.033153                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.0000-4 2.0000-5 0.015531                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.7000-4 1.7510-5-2.2711-3                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.4000-4 1.5540-5-0.020072                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9000-4 2.1128-5-0.037692                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9300-4         -0.055824                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.0800-4         -0.073240                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.7100-4         -0.092373                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.0500-4         -0.109737                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.8700-4         -0.127067                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3100-4         -0.144359                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.4000-4         -0.161606                              V.Yu.Gonchar,ET.AL. (69) F0668  31
+#/DATA      66
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F0668
+#AUTHOR1    V.Yu.Gonchar+
+#YEAR       1969
+#INSTITUTE  (4KASKAZ)
+#TITLE      Features of the diffraction scattering of alpha
+#+          particles on 24Mg and 28Si
+#AUTHOR(S)  V.Yu.Gonchar, K.S.Zheltonog, G.N.Ivanov,
+#+          V.I.Kanashevich, S.V.Laptev, A.V.Yushkov
+#REF-CODE   (J,BAS,32,554,1969)
+#REFERENCE  Jour. Bull.Russian Academy of Sciences - Physics
+#+          Vol.32, p.554, 1969
+#DATASETS   6
+#
+#DATASET    F06680032
+#DATE       20200301
 #REACTION   14-SI-28(A,EL)14-SI-28,,DA,,RTH
 #PROJ       2004
 #TARG       14028
@@ -14030,16 +14210,69 @@
 #PRODUCT    14-SI-28
 #DATA-HDR   DATA
 #C4BEGIN    [ 2004 14028   4   2  C]
-#DATA       6
+#DATA       59
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 14028   4   2  C 3.9000+7 195000.0 0.487454          0.926528                              S.Ya.Aisina,ET.AL. (89)  F0497 13
- 2004 14028   4   2  C 3.9000+7 195000.0 0.057896          0.820151                              S.Ya.Aisina,ET.AL. (89)  F0497 13
- 2004 14028   4   2  C 3.9000+7 195000.0 9.8938-3          0.660001                              S.Ya.Aisina,ET.AL. (89)  F0497 13
- 2004 14028   4   2  C 3.9000+7 195000.0 4.9831-3          0.447758                              S.Ya.Aisina,ET.AL. (89)  F0497 13
- 2004 14028   4   2  C 3.9000+7 195000.0 9.1488-4          0.161602                              S.Ya.Aisina,ET.AL. (89)  F0497 13
- 2004 14028   4   2  C 3.9000+7 195000.0 1.5958-4         -0.071500                              S.Ya.Aisina,ET.AL. (89)  F0497 13
-#/DATA      6
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.010598          0.869495                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.049591          0.859852                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.054029          0.848971                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.057813          0.838670                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.044485          0.827080                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.029949          0.816137                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.023387          0.804893                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.013408          0.793353                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 6.9848-3          0.781520                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.8186-3          0.769399                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 5.5988-4          0.756994                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3083-3          0.744311                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.0185-3          0.731353                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 5.8880-3          0.718126                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.8839-3          0.704633                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.010705          0.690882                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 0.011603          0.676875                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.4161-3          0.662619                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.8102-3          0.648119                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.6234-3          0.633380                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.9011-3          0.618407                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9092-3          0.603207                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.1691-3          0.587784                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3789-3          0.572145                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.8974-3          0.556294                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.5979-3 1.1431-4 0.539211                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.4537-3 1.8581-4 0.523093                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.1046-3 2.0523-4 0.506785                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.3212-3 1.0893-4 0.490446                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.0597-3 1.2179-4 0.473779                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.9325-3 1.1955-4 0.457097                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.4096-3 9.4788-5 0.440251                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.3615-3 1.0532-4 0.423249                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.3570-3 9.6164-5 0.406257                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3565-3 7.0812-5 0.389122                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.3796-3 7.1877-5 0.371690                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.0891-3 6.2840-5 0.354453                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.0010-3 6.1062-5 0.337094                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.6561-4 5.7996-5 0.318958                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.2096-4 6.0784-5 0.300704                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.3982-4 6.0618-5 0.284014                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.3200-4 6.1978-5 0.265554                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 9.0877-4 5.3618-5 0.248519                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.9082-4 5.3449-5 0.230727                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 8.3393-4 5.2121-5 0.212858                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.0979-4 4.7911-5 0.194232                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.5269-4 4.9677-5 0.177083                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 6.8967-4 4.8277-5 0.158156                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 7.4265-4 3.5127-5 0.140899                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 6.1121-4 3.2394-5 0.121867                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 4.2014-4 2.6595-5 0.104526                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 3.3098-4 2.3665-5 0.087154                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.2164-4 1.9726-5 0.069232                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.8824-4 1.7882-5 0.050591                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 2.3230-4 2.2069-5 0.033153                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9992-4 1.9992-5 0.015531                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.7029-4 1.7540-5-2.2711-3                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.4226-4 1.5791-5-0.020072                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+ 2004 14028   4   2  C 3.9000+7 500000.0 1.9064-4 2.1199-5-0.037692                              V.Yu.Gonchar,ET.AL. (69) F0668  32
+#/DATA      59
 #/DATASET
 #/ENTRY
 #
@@ -14266,114 +14499,6 @@
 #/ENTRY
 #
 #
-#ENTRY      F0668
-#AUTHOR1    V.Yu.Gonchar+
-#YEAR       1968
-#INSTITUTE  (4KASKAZ)
-#TITLE      Features of diffraction scattering of alpha-particles
-#+          on the Mg-24 and Si-28 nuclei.
-#AUTHOR(S)  V.Yu.Gonchar, K.S.Zheltonog, G.N.Ivanov,
-#+          V.I.Kanashevich, S.V.Laptev, A.V.Yushkov
-#REF-CODE   (J,IZV,32,(4),604,1968)
-#REFERENCE  Jour. Izv. Rossiiskoi Akademii Nauk, Ser.Fiz.
-#+          Vol.32, Issue.4, p.604, 1968
-#DATASETS   2
-#
-#DATASET    F0668003
-#DATE       20160201
-#REACTION   14-SI-28(A,EL)14-SI-28,,DA
-#PROJ       2004
-#TARG       14028
-#MF         4
-#MT         2
-#PRODUCT    14-SI-28
-#DATA-HDR   DATA-CM
-#C4BEGIN    [ 2004 14028   4   2  C]
-#DATA       77
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 14028   4   2  C 4.0000+7          0.232800 0.023980 0.952683                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.303800 0.037800 0.945621                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.311400 0.035420 0.938022                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.416400 0.047360 0.931399                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.387600 0.039930 0.922901                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.214600 0.024420 0.917553                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.149500 0.015390 0.907404                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.121800 0.012540 0.898419                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.069110 8.5960-3 0.888913                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.017250 1.7760-3 0.878700                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.010780 1.2270-3 0.868424                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.016260 2.0230-3 0.858109                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.017710 2.0140-3 0.849303                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.018820 1.9370-3 0.838185                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          0.014790 1.5230-3 0.826589                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.8040-3 8.0360-4 0.817707                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.4420-3 6.8520-4 0.804448                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.3770-3 5.9060-4 0.793990                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.2270-3 2.2940-4 0.782064                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.7010-4 7.9300-5 0.770846                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.8990-4 2.1600-5 0.757974                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.3710-4 4.5010-5 0.748469                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.0190-3 1.2660-4 0.732435                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.9560-3 2.0150-4 0.717177                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.9510-3 3.6720-4 0.704126                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.5820-3 3.6860-4 0.694796                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.8070-3 3.9200-4 0.678377                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.1400-3 2.8900-4 0.662868                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.6540-3 2.7330-4 0.648518                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.5240-3 1.7330-4 0.635174                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          9.8710-4 1.1230-4 0.620216                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          6.3960-4 7.2740-5 0.602037                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.9480-4 3.6370-5 0.588095                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.6780-4 5.3200-5 0.574376                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          6.4060-4 6.5960-5 0.560595                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          8.6710-4 7.9830-5 0.538725                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.1590-3 1.1940-4 0.526139                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.3900-3 1.7290-4 0.513360                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.0930-3 1.2430-4 0.491997                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.3590-3 1.5450-4 0.477295                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.3110-3 1.4920-4 0.453896                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.1350-3 1.1690-4 0.441990                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.9040-4 8.1390-5 0.428145                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.9080-4 1.0670-4 0.411020                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.6520-4 4.7900-5 0.393363                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.6550-4 4.7930-5 0.374200                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.7480-4 3.4490-5 0.354714                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.4050-4 3.1350-5 0.338720                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.9470-4 3.0330-5 0.326161                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.1330-4 3.2260-5 0.301120                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.3290-4          0.286740                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.9870-4          0.286657                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          3.1360-4 2.5420-5 0.268565                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.9900-4 2.7550-5 0.252135                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.9560-4 3.6770-5 0.228315                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.7180-4 3.0930-5 0.213540                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.4400-4 2.5120-5 0.196834                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.5620-4 2.9150-5 0.178337                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.3840-4 2.9650-5 0.161550                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          2.4440-4 2.2500-5 0.142921                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.9910-4 2.2650-5 0.124067                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.4210-4 1.4620-5 0.110686                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          1.0770-4 1.1080-5 0.087936                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.6850-5 8.7410-6 0.068866                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          6.5730-5 7.4750-6 0.051794                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.6020-5 6.1570-6 0.033066                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          6.0470-5 6.8780-6 0.012145                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          5.5600-5 6.3240-6-3.0215-3                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.9300-5 4.5390-6-0.020090                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.7580-5 4.9020-6-0.042750                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          6.1350-5 6.3210-6-0.061399                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.0100-5 6.4540-6-0.076356                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          5.9220-5 7.3650-6-0.087767                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          7.0170-5 8.7240-6-0.110170                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          6.6100-5 9.6060-6-0.128954                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.5490-5 5.1740-6-0.146051                              V.Yu.Gonchar,ET.AL. (68) F0668  3
- 2004 14028   4   2  C 4.0000+7          4.7200-5 4.3460-6-0.168389                              V.Yu.Gonchar,ET.AL. (68) F0668  3
-#/DATA      77
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      O1575
 #AUTHOR1    C.B.Fulmer+
 #YEAR       1978
@@ -14558,6 +14683,251 @@
 #/ENTRY
 #
 #
+#ENTRY      D0925
+#AUTHOR1    N.T.Burtebaev+
+#YEAR       1988
+#INSTITUTE  (4KASKAZ)
+#TITLE      Scattering cross-sections of He-3 and alpha-particles
+#+          at 12-20 MeV/nucleon energy by light nuclei
+#AUTHOR(S)  N.T.Burtebaev, A.D.Duisebaev, G.N.Ivanov,
+#+          V.I.Kanashevich
+#REF-CODE   (R,IYFK-P-88-01,1988)
+#REFERENCE  Rept. Inst. Nucl.Phys., Alma-Ata, preprints
+#+          No.88, p.01, 1988
+#DATASETS   37
+#
+#DATASET    D09250201
+#DATE       20190101
+#REACTION   14-SI-28(A,EL)14-SI-28,,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         2
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4   2  C]
+#DATA       65
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.477000 0.015000 0.980271                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.301600 4.1000-3 0.971549                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.250500 3.1000-3 0.961262                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.223000 2.8000-3 0.949425                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.209000 2.2000-3 0.936672                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.5100-3 3.2000-4 0.921863                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.031900 9.5000-4 0.888617                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.028300 9.6000-4 0.849892                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.1600-3 3.0000-4 0.828060                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.5600-3 2.2000-4 0.805928                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.012700 2.1000-5 0.781520                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.017100 2.4000-5 0.756994                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.011200 1.5000-5 0.731353                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.2800-3 1.0000-5 0.703394                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.5400-3 8.8000-5 0.675589                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.9900-3 9.5000-5 0.646789                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.0800-3 1.2000-4 0.617035                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.5300-3 1.3000-4 0.586371                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.0800-3 1.0000-4 0.554843                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.1000-3 4.4000-5 0.522497                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.7000-4 3.6000-5 0.490903                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.3000-4 3.6000-5 0.457097                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.9000-4 3.2000-5 0.422617                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.3000-4 2.7000-5 0.389122                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.2000-4 2.7000-5 0.355105                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.8000-4 2.1000-5 0.318958                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.6000-4 1.5000-5 0.284014                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.5000-4 1.2000-5 0.248688                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.8000-4 1.1000-5 0.213029                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.9000-4 1.1000-5 0.177083                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.7000-4 2.5000-5 0.140899                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.6000-4 2.4000-5 0.104526                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.1000-4 2.1000-5 0.069754                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.1000-4 1.6000-5 0.033153                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.8000-4 1.7000-5-1.7475-3                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.6000-4 1.4000-5-0.038390                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.5000-4 1.6000-5-0.073240                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.5000-4 1.3000-5-0.108002                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.6000-4 1.5000-5-0.142631                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.6000-4 1.7000-5-0.194237                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.3000-4 1.2000-5-0.245310                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.0000-4 1.2000-5-0.294043                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.5000-5 1.1000-5-0.342023                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.5000-5 1.1000-5-0.390734                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.0000-5 1.0000-5-0.435234                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.2000-5 1.0000-5-0.480226                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.1000-5 1.0000-5-0.522501                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.4000-5 1.1000-5-0.563529                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.3000-5 1.3000-5-0.603210                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.5000-5 1.2000-5-0.642790                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.5000-5 1.3000-5-0.676878                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.5000-5 1.4000-5-0.712028                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.0000-5 1.5000-5-0.744314                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.8000-5 1.0000-5-0.774947                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.4000-5 8.0000-6-0.803859                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.0000-5 6.0000-6-0.830986                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.8000-5 6.0000-6-0.855366                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.5000-5 4.0000-6-0.878819                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.0000-5 8.0000-6-0.899559                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.4000-5 6.0000-6-0.918448                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.6000-5 4.0000-6-0.935445                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.3000-5 1.0000-5-0.950517                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.4000-5 2.0000-5-0.963632                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.0000-4 1.0000-5-0.978148                              N.T.Burtebaev,ET.AL. (88)D0925 201
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.1000-5 4.0000-6-0.988757                              N.T.Burtebaev,ET.AL. (88)D0925 201
+#/DATA      65
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0925
+#AUTHOR1    N.T.Burtebaev+
+#YEAR       1988
+#INSTITUTE  (4KASKAZ)
+#TITLE      Scattering cross-sections of He-3 and alpha-particles
+#+          at 12-20 MeV/nucleon energy by light nuclei
+#AUTHOR(S)  N.T.Burtebaev, A.D.Duisebaev, G.N.Ivanov,
+#+          V.I.Kanashevich
+#REF-CODE   (R,IYFK-P-88-01,1988)
+#REFERENCE  Rept. Inst. Nucl.Phys., Alma-Ata, preprints
+#+          No.88, p.01, 1988
+#DATASETS   37
+#
+#DATASET    D09250202
+#DATE       20190101
+#REACTION   14-SI-28(A,EL)14-SI-28,,DA,,RTH
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         2
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 14028   4   2  C]
+#DATA       65
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.455071          0.980271                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.295818          0.971549                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.244202          0.961262                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.183977          0.949425                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.206120          0.936672                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.3555-3          0.921863                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.031385          0.888617                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.022178          0.849892                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.021270          0.828060                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.3023-3          0.805928                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.9259-4          0.781520                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.010049          0.756994                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 0.013733          0.731353                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.0412-3          0.703394                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.1243-3          0.675589                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.1029-3          0.646789                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.4987-3          0.617035                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.4320-3          0.586371                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.8352-3          0.554843                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.6209-3          0.522497                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.4798-4          0.490903                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.6405-4          0.457097                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.2459-4          0.422617                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.7558-4          0.389122                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.8591-4          0.355105                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.1255-4          0.318958                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.0114-4          0.284014                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.0945-4          0.248688                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.1301-4          0.213029                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.4130-4          0.177083                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.4983-4          0.140899                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.3497-4          0.104526                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.2724-4          0.069754                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.8288-4          0.033153                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.9172-4         -1.7475-3                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.6453-4         -0.038390                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.4679-4         -0.073240                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.3806-4         -0.108002                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.3827-4         -0.142631                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.4366-4         -0.194237                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.4366-4         -0.245310                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.1788-4         -0.294043                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.1218-5         -0.342023                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.6770-5         -0.390734                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 8.7335-5         -0.435234                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.3744-5         -0.480226                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.6651-5         -0.522501                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.6726-5         -0.563529                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.9021-5         -0.603210                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.8868-5         -0.642790                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.1316-5         -0.676878                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.2339-5         -0.712028                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.2498-5         -0.744314                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.7322-5         -0.774947                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 6.4630-5         -0.803859                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 4.1861-5         -0.830986                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.8610-5         -0.855366                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 2.6780-5         -0.878819                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 5.2743-5         -0.899559                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 7.6941-5         -0.918448                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.2740-5         -0.935445                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 1.5434-5         -0.950517                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 3.1915-5         -0.963632                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.0991-5         -0.978148                              N.T.Burtebaev,ET.AL. (88)D0925 202
+ 2004 14028   4   2  C 5.0500+7 505000.0 9.6867-5         -0.988757                              N.T.Burtebaev,ET.AL. (88)D0925 202
+#/DATA      65
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D8017
+#AUTHOR1    N.N.Pavlova+
+#YEAR       1990
+#INSTITUTE  (4KASKAZ)
+#TITLE      Tables of differential elastic and inelastic
+#+          scattering of alpha-particles from 30 to 50 MeV with
+#+          Z=6 to 30 nuclides
+#AUTHOR(S)  N.N.Pavlova, S.Ya.Aisina, K.A.Kuterbekov,
+#+          I.N.Kukhtina, A.V.Yushkov
+#REF-CODE   (W,PAVLOVA,1990)
+#REFERENCE  Priv. Private communication
+#+          Name.Pavlova, 1990
+#DATASETS   17
+#
+#DATASET    D8017006
+#DATE       20200405
+#REACTION   14-SI-28(A,EL)14-SI-28,,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         2
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4   2  C]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.690300 0.039500 0.956254                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.536040 0.012000 0.950244                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.216920 7.0000-3 0.937160                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.115170 2.8500-3 0.930033                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.026525 5.5000-4 0.922605                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.023628 4.0000-4 0.914748                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.013151 2.2000-4 0.906602                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.028483 6.0000-4 0.898104                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.045615 8.5000-4 0.889256                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.058092 1.3000-3 0.880063                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.058190 9.4000-4 0.870527                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.045589 7.0000-4 0.860653                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.031070 4.9000-4 0.850444                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 0.017620 2.7000-4 0.839998                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 8.5285-3 1.6000-4 0.829135                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 3.6913-3 9.0000-5 0.818049                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 4.3646-3 9.0000-5 0.806547                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 7.9466-3 1.3000-4 0.795473                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 1.2066-3 2.3000-4 0.782825                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 1.4295-3 2.3000-4 0.770513                              N.N.Pavlova,ET.AL. (90)  D8017  6
+ 2004 14028   4   2  C 5.0500+7 500000.0 1.5324-3 2.7000-4 0.758020                              N.N.Pavlova,ET.AL. (90)  D8017  6
+#/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0215
 #AUTHOR1    H.Rebel+
 #YEAR       1972
@@ -14692,6 +15062,89 @@
  2004 14028   4   2  C 1.2000+8          9.7411-4 2.6850-5 0.614697                              Y.K.Kwon,ET.AL. (07)     E2094  2
  2004 14028   4   2  C 1.2000+8          6.2580-4 2.1870-5 0.583965                              Y.K.Kwon,ET.AL. (07)     E2094  2
 #/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635007
+#DATE       20201003
+#REACTION   14-SI-28(A,EL)14-SI-28,,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         2
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4   2  C]
+#DATA       41
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4   2  C 1.3000+8          0.296000 0.017000 0.990268                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.207000 0.012000 0.987688                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.699000 0.038000 0.985109                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.978000 0.055000 0.982287                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.955000 0.054000 0.979223                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.604000 0.032000 0.975917                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.319000 0.017000 0.972370                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.109000 6.0000-3 0.968583                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.040600 2.4000-3 0.964095                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.058200 3.4000-3 0.959805                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.107000 6.0000-3 0.955278                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.123000 6.9000-3 0.950516                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.121000 6.8000-3 0.945518                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.089400 5.1000-3 0.940288                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.058500 3.4000-3 0.934825                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.033200 2.0000-3 0.928486                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.024300 1.5000-3 0.922538                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.026300 1.6000-3 0.916363                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.033100 1.9000-3 0.909961                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.036000 2.1000-3 0.903335                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.036600 2.2000-3 0.896486                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.031300 1.8000-3 0.889416                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.026000 1.5000-3 0.882127                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.019700 1.2000-3 0.874619                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.016900 1.0000-3 0.866896                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.014800 9.0000-4 0.858960                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.014900 9.0000-4 0.850811                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.014100 8.4000-4 0.842452                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.013800 8.3000-4 0.832921                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.013000 8.0000-4 0.824126                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.013000 7.9000-4 0.824126                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.011700 7.3000-4 0.815127                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          0.010600 6.7000-4 0.807989                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          8.8400-3 5.6000-4 0.791223                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          7.6600-3 4.9000-4 0.773840                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          5.6500-3 3.5000-4 0.755853                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          3.3700-3 2.4000-4 0.737277                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          2.7700-3 2.1000-4 0.718126                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          2.1000-3 1.7000-4 0.699663                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          1.4400-3 1.3000-4 0.679440                              S.Adachi,ET.AL. (18)     E2635  7
+ 2004 14028   4   2  C 1.3000+8          9.2900-4 9.2000-5 0.658689                              S.Adachi,ET.AL. (18)     E2635  7
+#/DATA      41
 #/DATASET
 #/ENTRY
 #
@@ -17102,7 +17555,7 @@
 #ENTRY      F0655
 #AUTHOR1    K.Jankowski+
 #YEAR       1984
-#INSTITUTE  (3POLPOL)
+#INSTITUTE  (3POLSLS)
 #TITLE      Investigation of the 28Si(a,p)31P and 28Si(a,d)30P
 #+          reactions at Ea=26 MeV.
 #AUTHOR(S)  K.Jankowski, A.Grzeszczuk, M.Siemaszko,
@@ -17111,7 +17564,7 @@
 #REF-CODE   (J,NP/A,426,1,1984)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.426, p.1, 1984
-#DATASETS   4
+#DATASETS   5
 #
 #DATASET    F0655002
 #DATE       20050604
@@ -17219,7 +17672,7 @@
 #ENTRY      F0655
 #AUTHOR1    K.Jankowski+
 #YEAR       1984
-#INSTITUTE  (3POLPOL)
+#INSTITUTE  (3POLSLS)
 #TITLE      Investigation of the 28Si(a,p)31P and 28Si(a,d)30P
 #+          reactions at Ea=26 MeV.
 #AUTHOR(S)  K.Jankowski, A.Grzeszczuk, M.Siemaszko,
@@ -17228,7 +17681,7 @@
 #REF-CODE   (J,NP/A,426,1,1984)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.426, p.1, 1984
-#DATASETS   4
+#DATASETS   5
 #
 #DATASET    F0655006
 #DATE       20050604
@@ -17640,7 +18093,7 @@
 #ENTRY      F0655
 #AUTHOR1    K.Jankowski+
 #YEAR       1984
-#INSTITUTE  (3POLPOL)
+#INSTITUTE  (3POLSLS)
 #TITLE      Investigation of the 28Si(a,p)31P and 28Si(a,d)30P
 #+          reactions at Ea=26 MeV.
 #AUTHOR(S)  K.Jankowski, A.Grzeszczuk, M.Siemaszko,
@@ -17649,10 +18102,10 @@
 #REF-CODE   (J,NP/A,426,1,1984)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.426, p.1, 1984
-#DATASETS   4
+#DATASETS   5
 #
 #DATASET    F0655003
-#DATE       20050604
+#DATE       20200303
 #REACTION   14-SI-28(A,D)15-P-30,PAR,DA
 #PROJ       2004
 #TARG       14028
@@ -17664,87 +18117,87 @@
 #DATA       81
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 14028   4 651  C 2.6000+7 150000.0 6.1378-4 9.6203-5 0.727437          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.7358-4 8.2561-5 0.658189          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.7260-4 8.2476-5 0.581852          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.2899-4 5.1565-5 0.501494          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8869-4 5.5646-5 0.415549          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.8604-4 3.2432-5 0.327101          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.2622-4 1.7653-5 0.235446          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.3961-4 2.4364-5 0.139344          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.6681-4 2.3330-5 0.041525          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.4217-4 5.9776-5-0.047109          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 5.2862-4 6.5771-5-0.158109          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.5231-4 5.6341-5-0.229033          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.9700-4 5.5525-5-0.310513          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.7651-4 5.2659-5-0.378813          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.4782-4 4.3326-5-0.466698          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.4226-4 3.0176-5-0.528589          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.0481-4 4.2631-5-0.599725          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.0434-4 4.7648-5-0.656588          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8122-4 3.9332-5-0.718128          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.2276-4 2.4920-5-0.766271          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.0284-4 4.2356-5-0.811984          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.3514-4 4.1746-5-0.852642          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.5229-4 4.9271-5-0.888619          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.1044-4 5.1008-5-0.920028          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.7927-4 4.7243-5-0.949919          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.9002-4 6.1038-5-0.964328          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 5.1549-4 7.2096-5-0.973420          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 5.1482-4 6.4127-5-0.985557          5000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.8096-4 5.8706-5 0.730317          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.9816-4 5.5099-5 0.651144          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.7665-4 3.9180-5 0.584688          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.6221-4 3.2966-5 0.513585          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.2955-4 3.2526-5 0.427940          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.5488-4 3.6097-5 0.326342          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.4239-4 2.0155-5 0.222125          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.3857-4 2.2056-5 0.138359          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.0581-4 2.5875-5 0.064931          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8233-4 3.5513-5-0.033053          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8214-4 3.9937-5-0.105919          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.0528-4 2.9087-5-0.213374          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.0509-4 2.3066-5-0.307359          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.1042-4 2.9800-5-0.387357          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.5976-4 3.2658-5-0.453993          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.9412-4 2.7492-5-0.517283          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.9588-4 4.1903-5-0.627558          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8049-4 3.9704-5-0.673789          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8030-4 3.9697-5-0.725857          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.1643-4 5.9005-5-0.759046          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.3867-4 6.9792-5-0.811780          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.1581-4 5.8889-5-0.852186          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.8658-4 6.8946-5-0.919412          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 5.1263-4 7.2563-5-0.945690          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.6102-4 5.1872-5-0.960343          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.7304-4 5.9472-5-0.978112          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 4.4849-4 5.6385-5-0.987081          6000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 6.9498-4 1.1032-4 0.742139          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 6.6852-4 1.1713-4 0.664486          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 3.0681-4 5.4336-5 0.619271          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.0110-4 2.8426-5 0.520219          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.3898-4 1.9633-5 0.435513          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.1250-4 1.7869-5 0.369129          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 7.1847-5 1.1412-5 0.278051          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 8.6268-5 1.3694-5 0.170895          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 8.8481-5 1.2515-5 0.086336          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.1498-4 1.2921-5-0.011608          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.1486-4 1.4420-5-0.108800          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 9.5440-5 1.1989-5-0.192524          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.0316-4 1.2951-5-0.287363          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.0581-4 1.3275-5-0.367803          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.2378-4 1.5540-5-0.446044          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.0560-4 1.3258-5-0.520267          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.3373-4 1.6789-5-0.571719          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.4844-4 1.8636-5-0.630272          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.5629-4 2.2091-5-0.702901          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.6898-4 2.3871-5-0.753106          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.9772-4 2.7948-5-0.799267          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 1.9242-4 2.7199-5-0.841041          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.0787-4 2.9365-5-0.910901          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.3684-4 3.3456-5-0.946819          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.3052-4 3.2605-5-0.964604          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
- 2004 14028   4 651  C 2.6000+7 150000.0 2.8426-4 4.0180-5-0.983667          7000000.          E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 6.1380-4 9.6220-5 0.727413          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.7360-4 8.2539-5 0.658163          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.7260-4 8.2482-5 0.581838          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.2900-4 5.1561-5 0.501509          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8870-4 5.5671-5 0.415486          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.8600-4 3.2458-5 0.327051          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.2620-4 1.7623-5 0.235480          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.3960-4 2.4390-5 0.139344          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.6680-4 2.3322-5 0.041525          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.4220-4 5.9766-5-0.047109          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 5.2860-4 6.5749-5-0.158160          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.5230-4 5.6345-5-0.229033          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.9700-4 5.5512-5-0.310513          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.7650-4 5.2648-5-0.378813          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.4780-4 4.3305-5-0.466698          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.4230-4 3.0184-5-0.528589          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.0480-4 4.2627-5-0.599725          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.0430-4 4.7675-5-0.656588          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8120-4 3.9332-5-0.718128          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.2280-4 2.4937-5-0.766271          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.0280-4 4.2344-5-0.811984          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.3510-4 4.1748-5-0.852642          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.5230-4 4.9239-5-0.888619          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.1040-4 5.1013-5-0.920028          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.7930-4 4.7264-5-0.949919          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.9000-4 6.1041-5-0.964328          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 5.1550-4 7.2094-5-0.973420          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 5.1480-4 6.4105-5-0.985557          5000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.8100-4 5.8734-5 0.730281          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.9820-4 5.5111-5 0.651171          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.7670-4 3.9153-5 0.584673          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.6220-4 3.2977-5 0.513540          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.2960-4 3.2499-5 0.427987          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.5490-4 3.6126-5 0.326392          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.4240-4 2.0181-5 0.222057          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.3860-4 2.2089-5 0.138307          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.0580-4 2.5885-5 0.064879          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8230-4 3.5485-5-0.032983          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8210-4 3.9959-5-0.105919          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.0530-4 2.9083-5-0.213374          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.0510-4 2.3087-5-0.307359          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.1040-4 2.9798-5-0.387357          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.5980-4 3.2665-5-0.453993          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.9410-4 2.7514-5-0.517283          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.9590-4 4.1924-5-0.627558          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8050-4 3.9704-5-0.673789          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8030-4 3.9690-5-0.725857          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.1640-4 5.9001-5-0.759046          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.3870-4 6.9807-5-0.811780          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.1580-4 5.8888-5-0.852186          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.8660-4 6.8915-5-0.919412          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 5.1260-4 7.2592-5-0.945690          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.6100-4 5.1881-5-0.960343          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.7300-4 5.9441-5-0.978112          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 4.4850-4 5.6402-5-0.987081          6000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 6.9500-4 1.1034-4 0.742092          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 6.6850-4 1.1715-4 0.664447          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 3.0680-4 5.4298-5 0.619230          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.0110-4 2.8433-5 0.520263          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.3900-4 1.9658-5 0.435544          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.1250-4 1.7882-5 0.369096          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 7.1800-5 1.1435-5 0.277984          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 8.6300-5 1.3669-5 0.170895          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 8.8500-5 1.2551-5 0.086284          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.1500-4 1.2925-5-0.011696          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.1490-4 1.4412-5-0.108869          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 9.5400-5 1.2013-5-0.192524          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.0320-4 1.2936-5-0.287363          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.0580-4 1.3264-5-0.367803          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.2380-4 1.5544-5-0.446044          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.0560-4 1.3248-5-0.520267          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.3370-4 1.6756-5-0.571719          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.4840-4 1.8653-5-0.630272          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.5630-4 2.2083-5-0.702901          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.6900-4 2.3900-5-0.753106          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.9770-4 2.7980-5-0.799267          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 1.9240-4 2.7181-5-0.841041          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.0790-4 2.9338-5-0.910901          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.3680-4 3.3432-5-0.946819          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.3050-4 3.2633-5-0.964604          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
+ 2004 14028   4 651  C 2.6000+7 150000.0 2.8430-4 4.0185-5-0.983667          7000000. 1000000. E2K.Jankowski,ET.AL. (84)  F0655  3
 #/DATA      81
 #/DATASET
 #/ENTRY
@@ -17753,7 +18206,7 @@
 #ENTRY      F0655
 #AUTHOR1    K.Jankowski+
 #YEAR       1984
-#INSTITUTE  (3POLPOL)
+#INSTITUTE  (3POLSLS)
 #TITLE      Investigation of the 28Si(a,p)31P and 28Si(a,d)30P
 #+          reactions at Ea=26 MeV.
 #AUTHOR(S)  K.Jankowski, A.Grzeszczuk, M.Siemaszko,
@@ -17762,7 +18215,7 @@
 #REF-CODE   (J,NP/A,426,1,1984)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.426, p.1, 1984
-#DATASETS   4
+#DATASETS   5
 #
 #DATASET    F0655005
 #DATE       20050604
@@ -18063,7 +18516,7 @@
 #REF-CODE   (J,NP/A,265,220,1976)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.265, p.220, 1976
-#DATASETS   8
+#DATASETS   10
 #
 #DATASET    T0266004
 #DATE       20040604
@@ -26689,6 +27142,124 @@
 #/ENTRY
 #
 #
+#ENTRY      F0655
+#AUTHOR1    K.Jankowski+
+#YEAR       1984
+#INSTITUTE  (3POLSLS)
+#TITLE      Investigation of the 28Si(a,p)31P and 28Si(a,d)30P
+#+          reactions at Ea=26 MeV.
+#AUTHOR(S)  K.Jankowski, A.Grzeszczuk, M.Siemaszko,
+#+          A.Surowiec, W.Zipper, A.Budzanowski,
+#+          E.Kozik
+#REF-CODE   (J,NP/A,426,1,1984)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.426, p.1, 1984
+#DATASETS   5
+#
+#DATASET    F0655004
+#DATE       20200303
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       86
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.5760-4 1.0569-4 0.911331          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 0.016761 2.9155-3 0.900394          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.2637-3 2.1985-4 0.873262          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 0.010846 1.5131-3 0.854549          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.5153-3 4.9045-4 0.714960          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.8641-3 3.5616-4 0.671720          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 6.8357-3 1.0684-3 0.587361          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 0.011401 1.4175-3 0.475162          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.4222-3 6.9126-4 0.421826          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.9580-4 1.1101-4 0.322099          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 8.3740-4 1.3089-4 0.217801          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.1810-4 8.9310-5 0.146944          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.1800-4 8.9243-5 0.063137          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 8.3690-4 1.1675-4-0.033157          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.0009-3 1.5642-4-0.117193          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.3320-3 4.6497-4-0.224613          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.6458-3 3.2903-4-0.328539          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.5480-4 1.0528-4-0.406261          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.0526-3 1.4685-4-0.471168          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.7410-4 8.6500-5-0.543616          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.3592-3 2.1246-4-0.583685          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.1656-3 1.6269-4-0.621971          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.2909-3 1.8011-4-0.694410          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.4669-3 1.8240-4-0.736454          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.4665-3 1.8236-4-0.812391          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.2901-3 1.6039-4-0.858514          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.5830-3 2.2085-4-0.887897          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.3837-3 2.6638-4-0.918862          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.4991-3 3.9105-4-0.928163          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.4099-3 4.7578-4-0.959610          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.5885-3 5.0071-4-0.974801          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.7779-3 3.4542-4-0.984381          1.5000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.0691-3 1.7010-4 0.741624          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 5.5310-4 9.8083-5 0.689366          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.8280-4 5.4221-5 0.605987          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.0430-4 7.9369-5 0.526806          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.6540-4 3.7576-5 0.441191          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.5550-4 6.3156-5 0.353963          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.0660-4 6.4679-5 0.251223          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.7410-3 2.7673-4 0.174334          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.4940-4 2.6511-5 0.117535          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.7670-4 5.9999-5 0.085067          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.2220-4 4.5623-5-0.023736          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.7031-3 2.4120-4-0.065580          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 8.8180-4 9.9181-5-0.187384          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.0120-4 3.2013-5-0.274801          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.6050-4 4.5281-5-0.375095          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.7152-3 2.1564-4-0.435548          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.8971-3 5.5134-4-0.517432          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.6049-3 5.1052-4-0.578003          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.3579-3 1.5273-4-0.629051          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.9780-4 2.4885-5-0.705998          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.5800-4 2.9026-5-0.762445          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.2800-4 3.3909-5-0.840758          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.6490-4 4.1048-5-0.871558          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.5180-4 5.6725-5-0.923814          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.4070-4 5.5418-5-0.952769          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.6510-4 5.2291-5-0.969275          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 5.0420-4 5.6683-5-0.984443          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 4.4240-4 4.9770-5-0.994613          1.7000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.8865-3 2.9654-4 0.880311          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.1553-3 1.4414-4 0.772844          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.0710-4 9.9147-5 0.707723          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.0705-3 1.6833-4 0.627690          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.5388-3 2.1594-4 0.550334          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.7930-3 3.9168-4 0.425304          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 3.3480-4 4.6940-5 0.367149          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.0462-3 1.3056-4 0.242767          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 6.4010-4 8.9742-5 0.195088          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.1040-4 1.7362-5-0.046934          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 9.7000-5 1.3577-5-0.131048          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.2260-4 1.7226-5-0.271947          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.3100-5 1.1517-5-0.330023          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.3260-4 1.8570-5-0.429411          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 7.5100-5 9.3680-6-0.473015          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.2280-4 1.9308-5-0.554992          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 9.9900-5 1.3994-5-0.623200          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 9.4900-5 9.7888-6-0.678162          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.1990-4 1.4992-5-0.737397          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.2310-4 1.3783-5-0.784129          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.7240-4 2.4142-5-0.846381          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.8170-4 2.0366-5-0.876812          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 1.9640-4 2.1994-5-0.914114          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.5460-4 3.1768-5-0.940882          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.7520-4 3.8623-5-0.962834          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+ 2004 14028   4 801  C 2.6000+7 150000.0 2.9000-4 4.0660-5-0.982124          1.9000+7 1000000. E2K.Jankowski,ET.AL. (84)  F0655  4
+#/DATA      86
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      F0596
 #AUTHOR1    A.Grzeszczuk+
 #YEAR       1994
@@ -27509,6 +28080,77 @@
 #/ENTRY
 #
 #
+#ENTRY      F0668
+#AUTHOR1    V.Yu.Gonchar+
+#YEAR       1969
+#INSTITUTE  (4KASKAZ)
+#TITLE      Features of the diffraction scattering of alpha
+#+          particles on 24Mg and 28Si
+#AUTHOR(S)  V.Yu.Gonchar, K.S.Zheltonog, G.N.Ivanov,
+#+          V.I.Kanashevich, S.V.Laptev, A.V.Yushkov
+#REF-CODE   (J,BAS,32,554,1969)
+#REFERENCE  Jour. Bull.Russian Academy of Sciences - Physics
+#+          Vol.32, p.554, 1969
+#DATASETS   6
+#
+#DATASET    F0668005
+#DATE       20200301
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       40
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.6900-3 1.3653-4 0.536562          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 2.6800-3 1.7018-4 0.520412          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.2890-3 1.0467-4 0.504074          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 8.8600-4 6.1134-5 0.487554          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 9.5900-4 5.2266-5 0.471011          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 8.1200-4 4.9694-5 0.454145          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.2950-3 6.9930-5 0.437428          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.4690-3 8.5202-5 0.420243          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.5200-3 7.6000-5 0.403224          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 2.2500-3 9.8550-5 0.385905          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 2.2300-3 9.8566-5 0.368610          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.9050-3 9.5250-5 0.351186          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.8750-3 9.2438-5 0.315979          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.7910-3 9.1699-5 0.298373          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.2250-3 6.7988-5 0.280665          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.1390-3 6.6062-5 0.262356          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.0500-3 5.6700-5 0.244967          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 1.0110-3 5.9447-5 0.227159          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 8.2600-4 5.2038-5 0.209275          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 5.5900-4 4.1366-5 0.191321          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.0500-4 4.4468-5 0.173303          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.5600-4 4.6445-5 0.155398          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 7.6500-4 3.8939-5 0.137270          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 7.9500-4 3.9114-5 0.119268          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.7500-4 1.9313-5 0.101402          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.0900-4 1.6223-5 0.083328          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.5000-4 3.6725-5 0.065401          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.5800-4 3.6848-5 0.047453          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.7500-4 3.4560-5 0.029490          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.5200-4 3.7164-5 0.011691          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 6.8200-4 3.8874-5-6.1108-3          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 5.7100-4 3.4831-5-0.023911          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 5.5000-4 3.5200-5-0.041704          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 4.5700-4 3.0985-5-0.059309          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 4.1000-4 2.8905-5-0.077069          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.3700-4 2.6488-5-0.094458          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.0100-4 2.4441-5-0.111992          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.0500-4 2.4766-5-0.129317          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 3.9800-4 2.8855-5-0.146776          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+ 2004 14028   4 801  C 3.9000+7 500000.0 4.0200-4 3.1758-5-0.164017          1760000.         LVLV.Yu.Gonchar,ET.AL. (69) F0668  5
+#/DATA      40
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0220
 #AUTHOR1    S.Roy+
 #YEAR       1992
@@ -27794,6 +28436,190 @@
 #/ENTRY
 #
 #
+#ENTRY      D0925
+#AUTHOR1    N.T.Burtebaev+
+#YEAR       1988
+#INSTITUTE  (4KASKAZ)
+#TITLE      Scattering cross-sections of He-3 and alpha-particles
+#+          at 12-20 MeV/nucleon energy by light nuclei
+#AUTHOR(S)  N.T.Burtebaev, A.D.Duisebaev, G.N.Ivanov,
+#+          V.I.Kanashevich
+#REF-CODE   (R,IYFK-P-88-01,1988)
+#REFERENCE  Rept. Inst. Nucl.Phys., Alma-Ata, preprints
+#+          No.88, p.01, 1988
+#DATASETS   37
+#
+#DATASET    D0925021
+#DATE       20190101
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       100
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.0500-3 1.2000-4 0.645457          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.2200-3 9.8000-5 0.615660          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.1300-3 6.1000-5 0.584957          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.6700-3 6.4000-5 0.553390          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.7400-3 6.0000-5 0.521008          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3200-3 4.5000-5 0.487858          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3400-3 4.1000-5 0.455544          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.2300-3 3.8000-5 0.421034          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.7000-4 2.2000-5 0.385905          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 8.8000-4 2.6000-5 0.351840          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.7000-4 2.5000-5 0.317303          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.0000-4 2.0000-5 0.280665          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 8.7000-4 1.9000-5 0.245306          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 8.1000-4 1.9000-5 0.209617          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.4000-4 2.4000-5 0.173646          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 5.9000-4 4.0000-5 0.137443          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 6.2000-4 3.8000-5 0.102791          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 5.6000-4 3.0000-5 0.066272          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 5.4000-4 2.8000-5 0.029664          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.9000-4 3.0000-5-5.2382-3          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.0000-4 2.2000-5-0.040134          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.1000-4 2.8000-5-0.076721          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.5000-4 1.8000-5-0.111471          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.4000-4 2.2000-5-0.146085          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.9000-4 2.4000-5-0.195949          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.4000-4 1.6000-5-0.247002          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.1000-4 1.8000-5-0.297377          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.0000-4 1.5000-5-0.345301          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.7000-4 1.5000-5-0.392340          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.6000-4 1.5000-5-0.436804          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4000-4 1.4000-5-0.481756          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4000-4 1.3000-5-0.523988          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.6000-4 1.7000-5-0.566409          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.2000-4 2.2000-5-0.605991          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.7000-5 2.0000-5-0.642790          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.0000-5 1.6000-5-0.679444          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3000-4 1.7000-5-0.713253          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3000-4 1.7000-5-0.745478          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.2000-4 1.2000-5-0.776048          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.0000-5 1.1000-5-0.804896          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.8000-5 9.0000-6-0.831956          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 8.3000-5 1.0000-5-0.856269          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.9000-5 1.0000-5-0.879650          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 6.2000-5 7.0000-6-0.900320          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.3000-5 6.0000-6-0.919137          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 6.1000-5 9.0000-6-0.936061          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.2000-5 9.0000-6-0.951058          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 9.1000-5 9.0000-6-0.964096          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.0500-4 1.1000-5-0.978148          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4600-4 1.5000-5-0.989016          1780000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4000-3 8.1000-5 0.826098          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.7000-3 9.0000-5 0.802817          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.1600-3 5.5000-5 0.778243          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.1500-3 6.7000-5 0.753563          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.7000-4 4.0000-5 0.726574          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.4000-4 4.5000-5 0.699663          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 6.1200-4 4.2000-5 0.671720          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.0100-3 6.1000-5 0.642787          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.7000-3 8.5000-5 0.611526          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 7.3000-4 4.9000-5 0.580702          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 8.3000-4 4.1000-5 0.549022          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.1100-3 4.0000-5 0.516532          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.4000-4 1.3000-5 0.240226          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.3000-4 1.3000-5 0.204494          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.2000-4 1.2000-5 0.168487          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.7000-4 2.6000-5 0.132254          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.8000-4 2.8000-5 0.095844          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.0000-4 2.1000-5 0.061046          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.1000-4 2.1000-5 0.024430          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.0000-4 2.1000-5-0.010474          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.0000-4 1.6000-5-0.047109          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.4000-4 2.0000-5-0.081941          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.1000-4 1.4000-5-0.116673          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.9000-4 1.8000-5-0.151263          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.1000-4 1.9000-5-0.202790          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.5000-4 1.2000-5-0.252072          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.7000-4 1.6000-5-0.302372          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4000-4 1.3000-5-0.350210          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.2000-4 1.1000-5-0.397150          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3000-4 1.3000-5-0.441508          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4000-4 1.4000-5-0.486338          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.2000-4 1.2000-5-0.528441          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.1000-4 1.3000-5-0.569282          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3000-4 2.6000-5-0.608764          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.4000-4 1.9000-5-0.646792          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.6000-4 1.7000-5-0.682001          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.1000-4 1.7000-5-0.715695          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.6000-4 2.0000-5-0.747800          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3000-4 1.2000-5-0.778245          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.6000-4 1.4000-5-0.806962          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.3000-4 1.1000-5-0.833888          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.1000-4 1.2000-5-0.858067          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.5000-4 1.3000-5-0.880479          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 2.1000-4 1.8000-5-0.901079          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.9000-4 1.6000-5-0.919823          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.7000-4 1.2000-5-0.936674          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 1.5000-4 1.1000-5-0.951596          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.0000-4 2.0000-5-0.964558          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 3.8000-4 2.4000-5-0.978510          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+ 2004 14028   4 801  C 5.0500+7 505000.0 4.2000-4 2.5000-5-0.989016          4610000.         LVLN.T.Burtebaev,ET.AL. (88)D0925 21
+#/DATA      100
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D8017
+#AUTHOR1    N.N.Pavlova+
+#YEAR       1990
+#INSTITUTE  (4KASKAZ)
+#TITLE      Tables of differential elastic and inelastic
+#+          scattering of alpha-particles from 30 to 50 MeV with
+#+          Z=6 to 30 nuclides
+#AUTHOR(S)  N.N.Pavlova, S.Ya.Aisina, K.A.Kuterbekov,
+#+          I.N.Kukhtina, A.V.Yushkov
+#REF-CODE   (W,PAVLOVA,1990)
+#REFERENCE  Priv. Private communication
+#+          Name.Pavlova, 1990
+#DATASETS   17
+#
+#DATASET    D8017007
+#DATE       20200405
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.028657 2.0700-3 0.956049          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.018509 5.7000-4 0.950026          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.017353 7.8000-4 0.936855          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.022828 7.0000-4 0.929712          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.024119 5.0000-4 0.922201          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.024918 9.8000-5 0.914324          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.011839 2.0000-4 0.905864          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 0.014032 3.5000-4 0.897566          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 9.9271-3 3.0000-4 0.888697          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 6.2764-3 2.4000-4 0.879399          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 4.0794-3 1.3000-4 0.869839          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 5.1322-3 1.4000-4 0.859941          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 5.0350-3 1.3000-4 0.849708          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 6.9075-3 1.4000-4 0.839145          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 7.7148-3 1.5000-4 0.828353          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 6.8888-3 1.3000-4 0.817144          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 8.1212-3 1.4000-4 0.805618          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 7.0357-3 1.2000-4 0.793884          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 5.2596-3 1.4000-4 0.781846          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 3.8856-3 9.0000-4 0.769510          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+ 2004 14028   4 801  C 5.0500+7 500000.0 2.9418-3 9.0000-4 0.756880          1780000.         LVLN.N.Pavlova,ET.AL. (90)  D8017  7
+#/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0215
 #AUTHOR1    H.Rebel+
 #YEAR       1972
@@ -28021,6 +28847,475 @@
  2004 14028   4 801  C 1.0400+8 400000.0 6.2310-6 7.8240-6 0.653420          6270000.         LVLH.Rebel,ET.AL. (72)      D0215 11
  2004 14028   4 801  C 1.0400+8 400000.0 1.5660-4 1.0090-4 0.623606          6270000.         LVLH.Rebel,ET.AL. (72)      D0215 11
 #/DATA      199
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635018
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          0.031800 5.6000-3 0.999962          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          0.025500 1.7000-3 0.999123          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          0.011700 8.7000-4 0.998342          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          2.6800-3 2.2000-4 0.997185          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          9.8800-4 9.9000-5 0.995884          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          1.2100-3 9.6000-5 0.995725          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          4.0400-3 3.4000-4 0.994151          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          5.9700-3 3.6000-4 0.992332          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          6.2300-3 3.7000-4 0.990024          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          4.0200-3 2.5000-4 0.987688          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          2.2100-3 1.5000-4 0.985109          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          1.2800-3 9.2000-5 0.982287          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          2.2800-3 1.5000-4 0.979223          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          3.7600-3 2.4000-4 0.975534          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          5.4200-3 3.3000-4 0.971961          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          5.3300-3 3.2000-4 0.968148          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+ 2004 14028   4 801  C 1.3000+8          4.8100-3 2.9000-4 0.964095          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 18
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635038
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          0.128000 6.7000-3 0.999962          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.130000 7.4000-3 0.999123          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.090800 5.3000-3 0.998342          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.090100 5.0000-3 0.997185          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.132000 7.2000-3 0.995884          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.138000 7.3000-3 0.995725          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.182000 9.5000-3 0.994151          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.182000 9.4000-3 0.992332          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.161000 8.4000-3 0.990268          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.101000 5.3000-3 0.987688          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.052000 2.8000-3 0.985109          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.015800 8.9000-4 0.982287          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.010900 6.3000-4 0.979223          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.024600 1.4000-3 0.975917          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.044700 2.4000-3 0.972370          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.054500 2.9000-3 0.968148          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+ 2004 14028   4 801  C 1.3000+8          0.056200 3.0000-3 0.964095          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 38
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635039
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          3.4000-3 1.4000-3 0.999962          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          3.3000-3 5.4000-4 0.999123          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          2.6000-3 2.6000-4 0.998342          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          2.8900-3 2.3000-4 0.997185          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          3.8100-3 2.9000-4 0.995884          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          3.8300-3 2.6000-4 0.995725          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          4.3800-3 2.9000-4 0.994151          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          3.8200-3 2.4000-4 0.992332          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          3.3700-3 2.2000-4 0.990024          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          1.6800-3 1.2000-4 0.987688          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          8.4400-4 6.6000-5 0.985109          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          3.8100-4 3.4000-5 0.982287          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          5.5000-4 4.6000-5 0.978867          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          8.5600-4 6.6000-5 0.975534          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          1.2500-3 9.1000-5 0.971961          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          1.1000-3 7.3000-5 0.968148          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+ 2004 14028   4 801  C 1.3000+8          9.6900-4 7.1000-5 0.964095          7930000.         LVLS.Adachi,ET.AL. (18)     E2635 39
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635040
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          4.1000-4 1.6000-4 0.999123          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          3.0500-4 4.3000-5 0.997185          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          2.8300-4 4.1000-5 0.995884          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          2.7700-4 3.1000-5 0.995725          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          2.6900-4 3.0000-5 0.994151          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          4.1300-4 3.7000-5 0.992115          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          4.9900-4 6.5000-5 0.990024          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          5.4900-4 4.7000-5 0.987688          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          5.7700-4 4.9000-5 0.985109          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          5.0700-4 4.3000-5 0.982287          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          3.7400-4 3.4000-5 0.978867          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          2.3500-4 2.4000-5 0.975534          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          1.8600-4 2.0000-5 0.971961          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          1.9900-4 2.0000-5 0.968148          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+ 2004 14028   4 801  C 1.3000+8          3.4700-4 3.1000-5 0.964095          8260000.         LVLS.Adachi,ET.AL. (18)     E2635 40
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635041
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          9.0800-4 7.1000-5 0.999962          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.0400-3 1.4000-4 0.999123          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.1500-3 1.5000-4 0.998240          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.3200-3 1.2000-4 0.997185          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.7300-3 1.5000-4 0.995884          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.7000-3 1.3000-4 0.995725          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.9700-3 1.4000-4 0.994151          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.7400-3 1.2000-4 0.992115          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.5100-3 1.1000-4 0.990024          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          1.1600-3 8.6000-5 0.987688          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          6.2900-4 5.2000-5 0.985109          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          4.5600-4 4.0000-5 0.982287          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          4.3900-4 3.8000-5 0.978867          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          6.6400-4 5.4000-5 0.975534          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          7.8000-4 6.1000-5 0.971961          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          6.5700-4 5.1000-5 0.968148          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+ 2004 14028   4 801  C 1.3000+8          5.4200-4 4.4000-5 0.964095          9480000.         LVLS.Adachi,ET.AL. (18)     E2635 41
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635055
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          4.8200-3 1.5000-3 0.999962          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.011700 8.7000-4 0.999123          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.015600 1.1000-3 0.998342          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.019400 1.2000-3 0.997185          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.024100 1.5000-3 0.995884          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.024800 1.4000-3 0.995725          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.032500 1.8000-3 0.994151          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.040800 2.2000-3 0.992332          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.049700 2.7000-3 0.990024          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.049400 2.7000-3 0.987688          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.046300 2.5000-3 0.985109          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.032900 1.8000-3 0.982287          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.022900 1.3000-3 0.979223          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.012300 7.0000-4 0.975534          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          8.8400-3 5.2000-4 0.971961          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          8.6900-3 5.0000-4 0.968148          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+ 2004 14028   4 801  C 1.3000+8          0.011900 6.7000-4 0.964095          6880000.         LVLS.Adachi,ET.AL. (18)     E2635 55
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635061
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       16
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          5.9400-4 9.3000-5 0.999123          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          7.3600-4 1.1000-4 0.998342          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          7.8000-4 8.4000-5 0.997185          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          1.0700-3 1.1000-4 0.995884          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          1.0100-3 8.3000-5 0.995725          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          1.5500-3 1.7000-4 0.994151          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          2.0600-3 1.4000-4 0.992332          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          3.1900-3 2.0000-4 0.990024          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          3.9600-3 2.5000-4 0.987688          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          5.0900-3 3.1000-4 0.985109          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          4.9800-3 3.0000-4 0.982287          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          4.7900-3 2.9000-4 0.979223          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          3.3700-3 2.2000-4 0.975917          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          2.4400-3 1.6000-4 0.971961          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          1.4700-3 1.0000-4 0.968148          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+ 2004 14028   4 801  C 1.3000+8          1.2400-3 8.7000-5 0.964095          4620000.         LVLS.Adachi,ET.AL. (18)     E2635 61
+#/DATA      16
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635064
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 1.3000+8          1.6100-3 2.2000-4 0.999962          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          3.2700-3 2.6000-4 0.999123          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          3.3100-3 2.6000-4 0.998342          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          2.2100-3 1.6000-4 0.997185          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          1.0500-3 8.4000-5 0.995884          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          9.0800-4 7.4000-5 0.995725          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          2.9100-4 3.1000-5 0.994151          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          5.0700-4 4.2000-5 0.992115          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          1.4000-3 9.8000-5 0.990024          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          2.0400-3 1.5000-4 0.987688          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          2.1400-3 1.5000-4 0.985109          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          1.6800-3 1.2000-4 0.982287          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          1.2400-3 9.0000-5 0.978867          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          8.1200-4 5.9000-5 0.975534          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          9.6900-4 6.8000-5 0.971961          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          1.2700-3 8.9000-5 0.968148          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+ 2004 14028   4 801  C 1.3000+8          1.5700-3 1.1000-4 0.964095          8900000.         LVLS.Adachi,ET.AL. (18)     E2635 64
+#/DATA      17
 #/DATASET
 #/ENTRY
 #
@@ -28514,6 +29809,114 @@
  2004 14028   4 801  C 2.4000+8          1.2300-4 9.2950-5 0.991628          3.2800+7         EXCD.H.Youngblood, (02)     C1110  3
  2004 14028   4 801  C 2.4000+8          1.0970-4 9.3080-5 0.990553          3.2800+7         EXCD.H.Youngblood, (02)     C1110  3
 #/DATA      134
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635013
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 3.8600+8          0.017700 1.0000-3 0.999263          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          6.6000-3 4.2000-4 0.998890          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          1.8000-3 1.4000-4 0.998537          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          2.4000-3 1.9000-4 0.998135          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          2.7000-3 2.1000-4 0.998027          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          5.9000-3 3.9000-4 0.997564          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          9.4000-3 5.7000-4 0.996917          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          0.010300 6.2000-4 0.996345          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          0.010200 6.2000-4 0.996041          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          9.2000-3 5.6000-4 0.995227          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          5.9000-3 3.8000-4 0.994522          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+ 2004 14028   4 801  C 3.8600+8          2.6000-3 1.8000-4 0.993572          4980000.         LVLS.Adachi,ET.AL. (18)     E2635 13
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2635
+#AUTHOR1    S.Adachi+
+#YEAR       2018
+#INSTITUTE  (2JPNKTO)
+#TITLE      Systematic analysis of inelastic alpha scattering off
+#+          self-conjugate A=4n nuclei
+#AUTHOR(S)  S.Adachi, T.Kawabata, K.Minomo,
+#+          T.Kadoya, N.Yokota, H.Akimune,
+#+          T.Baba, H.Fujimura, M.Fujiwara,
+#+          Y.Funaki, T.Furuno, T.Hashimoto,
+#+          K.Hatanaka, K.Inaba, Y.Ishii,
+#+          M.Itoh, C.Iwamoto, K.Kawase,
+#+          Y.Maeda, H.Matsubara, Y.Matsuda,
+#+          H.Matsuno, T.Morimoto, H.Morita,
+#+          M.Murata, T.Nanamura, I.Ou,
+#+          S.Sakaguchi, Y.Sasamoto, R.Sawada,
+#+          Y.Shimizu, K.Suda, A.Tamii,
+#+          Y.Tameshige, M.Tsumura, M.Uchida,
+#+          T.Uesaka, H.P.Yoshida, S.Yoshida
+#REF-CODE   (J,PR/C,97,014601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.97, p.014601, 2018
+#DATASETS   64
+#
+#DATASET    E2635027
+#DATE       20201003
+#REACTION   14-SI-28(A,INL)14-SI-28,PAR,DA
+#PROJ       2004
+#TARG       14028
+#MF         4
+#MT         801
+#PRODUCT    14-SI-28
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004 14028   4 801  C]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 14028   4 801  C 3.8600+8          0.178000 9.7000-3 0.999263          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.182000 9.9000-3 0.998890          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.224000 0.012000 0.998537          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.264000 0.014000 0.998027          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.285000 0.015000 0.998027          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.327000 0.017000 0.997564          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.324000 0.017000 0.996917          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.293000 0.016000 0.996345          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.288000 0.015000 0.996041          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.219000 0.012000 0.995227          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.141000 7.8000-3 0.994522          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+ 2004 14028   4 801  C 3.8600+8          0.083000 4.8000-3 0.993572          1780000.         LVLS.Adachi,ET.AL. (18)     E2635 27
+#/DATA      12
 #/DATASET
 #/ENTRY
 #

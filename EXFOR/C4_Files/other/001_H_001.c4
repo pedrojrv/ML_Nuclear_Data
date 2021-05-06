@@ -995,8 +995,9 @@
 #AUTHOR1    C.Michotte+
 #YEAR       1996
 #INSTITUTE  (2BLGLVN)
-#TITLE      New limits for the Ne-19(P,G) astrophysical reaction
-#+          rate from direct measurements using radioactive beams.
+#TITLE      New limits for the Ne-19(p,gamma)Na-20 astrophysical
+#+          reaction rate from direct measurements using
+#+          radioactive beams
 #AUTHOR(S)  C.Michotte, C.R.Bain, F.Binon,
 #+          R.Coszach, T.Davinson, P.Decrock,
 #+          Th.Delbar, P.Duhamel, M.Gaelens,
@@ -1011,8 +1012,8 @@
 #DATASETS   2
 #
 #DATASET    O0905002
-#DATE       20030405
-#REACTION   1-H-1(10-NE-19,G)11-NA-20,,SIG,,AV
+#DATE       20200903
+#REACTION   (1-H-1(10-NE-19,G)11-NA-20,,SIG,,AV)=(10-NE-19(P,G)11-NA-20,,SIG,,AV)
 #PROJ       10019
 #TARG       1001
 #MF         3
@@ -5464,6 +5465,124 @@
 #/ENTRY
 #
 #
+#ENTRY      E2644
+#AUTHOR1    S.Chen+
+#YEAR       2019
+#INSTITUTE  (3HKGUHK)
+#TITLE      Quasifree Neutron Knockout from 54Ca Corroborates
+#+          Arising N=34 Neutron Magic Number
+#AUTHOR(S)  S.Chen, J.Lee, P.Doornenbal,
+#+          A.Obertelli, C.Barbieri, Y.Chazono,
+#+          P.Navratil, K.Ogata, T.Otsuka,
+#+          F.Raimondi, V.Soma, Y.Utsuno,
+#+          K.Yoshida, H.Baba, F.Browne,
+#+          D.Calvet, F.Chateau, N.Chiga,
+#+          A.Corsi, M.L.Cortes, A.Delbart,
+#+          J.M.Gheller, A.Giganon, A.Gillibert,
+#+          C.Hilaire, T.Isobe, J.Kahlbow,
+#+          T.Kobayashi, Y.Kubota, V.Lapoux,
+#+          H.N.Liu, T.Motobayashi, I.Murray,
+#+          H.Otsu, V.Panin, N.Paul,
+#+          W.Rodriguez, H.Sakurai, M.Sasano,
+#+          D.Steppenbeck, L.Stuhl, Y.L.Sun,
+#+          Y.Togano, T.Uesaka, K.Wimmer,
+#+          K.Yoneda, N.Achouri, O.Aktas,
+#+          T.Aumann, L.X.Chung, F.Flavigny,
+#+          S.Franchoo, I.Gasparic, R.B.Gerst,
+#+          J.Gibelin, K.I.Hahn, D.Kim,
+#+          T.Koiwai, Y.Kondo, P.Koseoglou,
+#+          C.Lehr, B.D.Linh, T.Lokotko,
+#+          M.Maccormick, K.Moschner, T.Nakamura,
+#+          S.Y.Park, D.Rossi, E.Sahin,
+#+          D.Sohler, P.A.Soederstroem, S.Takeuchi,
+#+          H.Toernqvist, V.Vaquero, V.Wagner,
+#+          S.Wang, V.Werner, X.Xu,
+#+          H.Yamada, D.Yan, Z.Yang,
+#+          M.Yasuda, L.Zanetti
+#REF-CODE   (J,PRL,123,142501,2019)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.123, p.142501, 2019
+#DATASETS   2
+#
+#DATASET    E2644002
+#DATE       20201002
+#REACTION   (1-H-1(20-CA-54,X)20-CA-53,PAR,SIG)=(20-CA-54(P,X)20-CA-53,PAR,SIG)
+#PROJ       20054
+#TARG       1001
+#MF         3
+#MT         9000
+#PRODUCT    20-CA-53
+#DATA-HDR   DATA
+#C4BEGIN    [20054  1001   39000   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+20054  1001   39000    1.166+10          0.015900 1.7000-3           20053.9 0.000000         EXCS.Chen,ET.AL. (19)       E2644  2
+20054  1001   39000    1.166+10          1.0000-3 3.0000-4           20053.9 1738000.         EXCS.Chen,ET.AL. (19)       E2644  2
+20054  1001   39000    1.166+10          0.019100 1.2000-3           20053.9 2220000.         EXCS.Chen,ET.AL. (19)       E2644  2
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2644
+#AUTHOR1    S.Chen+
+#YEAR       2019
+#INSTITUTE  (3HKGUHK)
+#TITLE      Quasifree Neutron Knockout from 54Ca Corroborates
+#+          Arising N=34 Neutron Magic Number
+#AUTHOR(S)  S.Chen, J.Lee, P.Doornenbal,
+#+          A.Obertelli, C.Barbieri, Y.Chazono,
+#+          P.Navratil, K.Ogata, T.Otsuka,
+#+          F.Raimondi, V.Soma, Y.Utsuno,
+#+          K.Yoshida, H.Baba, F.Browne,
+#+          D.Calvet, F.Chateau, N.Chiga,
+#+          A.Corsi, M.L.Cortes, A.Delbart,
+#+          J.M.Gheller, A.Giganon, A.Gillibert,
+#+          C.Hilaire, T.Isobe, J.Kahlbow,
+#+          T.Kobayashi, Y.Kubota, V.Lapoux,
+#+          H.N.Liu, T.Motobayashi, I.Murray,
+#+          H.Otsu, V.Panin, N.Paul,
+#+          W.Rodriguez, H.Sakurai, M.Sasano,
+#+          D.Steppenbeck, L.Stuhl, Y.L.Sun,
+#+          Y.Togano, T.Uesaka, K.Wimmer,
+#+          K.Yoneda, N.Achouri, O.Aktas,
+#+          T.Aumann, L.X.Chung, F.Flavigny,
+#+          S.Franchoo, I.Gasparic, R.B.Gerst,
+#+          J.Gibelin, K.I.Hahn, D.Kim,
+#+          T.Koiwai, Y.Kondo, P.Koseoglou,
+#+          C.Lehr, B.D.Linh, T.Lokotko,
+#+          M.Maccormick, K.Moschner, T.Nakamura,
+#+          S.Y.Park, D.Rossi, E.Sahin,
+#+          D.Sohler, P.A.Soederstroem, S.Takeuchi,
+#+          H.Toernqvist, V.Vaquero, V.Wagner,
+#+          S.Wang, V.Werner, X.Xu,
+#+          H.Yamada, D.Yan, Z.Yang,
+#+          M.Yasuda, L.Zanetti
+#REF-CODE   (J,PRL,123,142501,2019)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.123, p.142501, 2019
+#DATASETS   2
+#
+#DATASET    E2644003
+#DATE       20201002
+#REACTION   (1-H-1(20-CA-54,X)20-CA-53,,SIG)=(20-CA-54(P,X)20-CA-53,,SIG)
+#PROJ       20054
+#TARG       1001
+#MF         3
+#MT         9000
+#PRODUCT    20-CA-53
+#DATA-HDR   DATA
+#C4BEGIN    [20054  1001   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+20054  1001   39000    1.166+10          0.036000 1.2000-3           20053.9                     S.Chen,ET.AL. (19)       E2644  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0201
 #AUTHOR1    A.De Vismes+
 #YEAR       2001
@@ -6535,49 +6654,6 @@
 #/ENTRY
 #
 #
-#ENTRY      D0612
-#AUTHOR1    Yu.Aksyutina+
-#YEAR       2009
-#INSTITUTE  (2GERGSI)
-#TITLE      Properties of the 7He ground state from 8He neutron
-#+          knockout
-#AUTHOR(S)  Yu.Aksyutina, H.T.Johansson, T.Aumann,
-#+          K.Boretzky, M.J.G.Borge, A.Chatillon,
-#+          L.V.Chulkov, D.Cortina-Gil, U.Datta Pramanik,
-#+          H.Emling, C.Forssen, H.O.U.Fynbo,
-#+          H.Geissel, G.Ickert, B.Jonson,
-#+          R.Kulessa, C.Langer, M.Lantz,
-#+          T.Lessleis, A.O.Lindahl, K.Mahata,
-#+          M.Meister, G.Muenzenberg, T.Nilsson,
-#+          G.Nyman, R.Palit, S.Paschalis,
-#+          W.Prokopowicz, R.Reifarth, A.Richter,
-#+          K.Riisager, G.Schrieder, H.Simon,
-#+          K.Suemmerer, O.Tengblad, H.Weick,
-#+          M.V.Zhukov
-#REF-CODE   (J,PL/B,679,191,2009)
-#REFERENCE  Jour. Physics Letters,Section B
-#+          Vol.679, p.191, 2009
-#DATASETS   1
-#
-#DATASET    D0612002
-#DATE       20181101
-#REACTION   (1-H-1(2-HE-8,X)2-HE-7,PAR,SIG)=(2-HE-8(P,X)2-HE-7,PAR,SIG)
-#PROJ       2008
-#TARG       1001
-#MF         3
-#MT         9000
-#PRODUCT    2-HE-7
-#DATA-HDR   DATA
-#C4BEGIN    [ 2008  1001   39000   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2008  1001   39000    1.9200+9          0.052000 7.0000-3            2007.9 0.000000         LVLYu.Aksyutina,ET.AL. (09) D0612  2
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      A0733
 #AUTHOR1    G.V.Rogachev+
 #YEAR       2003
@@ -7266,6 +7342,110 @@
 #/ENTRY
 #
 #
+#ENTRY      S0223
+#AUTHOR1    K.Yue+
+#YEAR       2019
+#INSTITUTE  (3CPRIMP)
+#TITLE      Measurement of 58Ni(p,p) 58Ni elastic scattering at
+#+          low momentum transfer by using the HIRFL-CSR
+#+          heavy-ion storage ring
+#AUTHOR(S)  K.Yue, J.T.Zhang, X.L.Tu,
+#+          C.J.Shao, H.X.Li, P.Ma,
+#+          B.Mei, X.C.Chen, Y.Y.Yang,
+#+          X.Q.Liu, Y.M.Xing, K.H.Fang,
+#+          X.H.Li, Z.Y.Sun, M.Wang,
+#+          P.Egelhof, Yu.A.Litvinov, K.Blaum,
+#+          Y.H.Zhang, X.H.Zhou
+#REF-CODE   (J,PR/C,100,054609,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.054609, 2019
+#DATASETS   1
+#
+#DATASET    S0223002
+#DATE       20201003
+#REACTION   (1-H-1(28-NI-58,EL)1-H-1,,DA)=(28-NI-58(P,EL)28-NI-58,,DA)
+#PROJ       28058
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1;28-NI-58
+#DATA-HDR   DATA-CM
+#C4BEGIN    [28058  1001   4   2  C]
+#DATA       27
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+28058  1001   4   2  C 5.5100+9          49.97457 1.967750 0.997870                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          32.30914 1.582190 0.997453                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          24.71610 1.383840 0.997039                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          17.51047 1.164780 0.996637                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          13.71395 1.030800 0.996225                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          9.220111 0.845210 0.995805                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          9.297590 0.848750 0.995396                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          8.135390 0.793930 0.994986                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          6.818241 0.726830 0.994576                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          7.128160 0.743160 0.994151                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          6.043440 0.684280 0.993748                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          4.416360 0.584960 0.993333                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          5.733521 0.666510 0.992924                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          5.811000 0.671000 0.992504                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          4.028960 0.558720 0.992093                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.951480 0.553320 0.991694                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.564080 0.525490 0.991262                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          4.106440 0.564060 0.990866                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.176680 0.496110 0.990437                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          4.416360 0.584960 0.990024                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.796520 0.542360 0.989626                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.874000 0.547870 0.989196                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          4.028960 0.558720 0.988782                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.641560 0.531180 0.988388                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.254160 0.502130 0.987960                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          3.874000 0.547870 0.987551                              K.Yue,ET.AL. (19)        S0223  2
+28058  1001   4   2  C 5.5100+9          4.106440 0.564060 0.987136                              K.Yue,ET.AL. (19)        S0223  2
+#/DATA      27
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2411
+#AUTHOR1    V.Soukeras+
+#YEAR       2017
+#INSTITUTE  (2GRCIOA)
+#TITLE      Breakup of 6Li + p at near-barrier energies and the
+#+          effect on elastic scattering
+#AUTHOR(S)  V.Soukeras, A.Pakou, F.Cappuzzello,
+#+          L.Acosta, C.Agodi, N.Alamanos,
+#+          S.Calabrese, D.Carbone, M.Cavallaro,
+#+          A.Cunsolo, A.Di Pietro, J.P.Fernandez-Garcia,
+#+          P.Figuera, M.Fisichella, A.Foti,
+#+          N.Keeley, G.Marquinez-Duran, I.Martel,
+#+          M.Mazzocco, D.Pierroutsakou, K.Rusek,
+#+          G.Santagati, O.Sgouros, E.Stiliaris,
+#+          E.Strano, D.Torresi, K.Zerva
+#REF-CODE   (J,PR/C,95,054614,2017)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.95, p.054614, 2017
+#DATASETS   1
+#
+#DATASET    O2411003
+#DATE       20190100
+#REACTION   1-H-1(3-LI-6,P+D)2-HE-4,,SIG
+#PROJ       3006
+#TARG       1001
+#MF         3
+#MT         115
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006  1001   3 115   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006  1001   3 115    2.5000+7          0.235000 0.046000                                       V.Soukeras,ET.AL. (17)   O2411  3
+ 3006  1001   3 115    2.9000+7          0.370000 0.064000                                       V.Soukeras,ET.AL. (17)   O2411  3
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C2037
 #AUTHOR1    F.E.Portillo+
 #YEAR       2013
@@ -7802,6 +7982,43 @@
  3007  1001   3 107  C 272220.0 9653.200 1.5242-3 4.4862-4                                       C.Spitaleri,ET.AL. (99)  F0756  2
  3007  1001   3 107  C 292080.0 8825.801 1.6438-3 4.8381-4                                       C.Spitaleri,ET.AL. (99)  F0756  2
 #/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2410
+#AUTHOR1    A.Pakou+
+#YEAR       2017
+#INSTITUTE  (2GRCIOA)
+#TITLE      Exclusive breakup of 7Li incident on a proton target
+#+          at 5.44A MeV
+#AUTHOR(S)  A.Pakou, O.Sgouros, V.Soukeras,
+#+          F.Cappuzzello, N.Keeley, L.Acosta,
+#+          C.Agodi, X.Aslanoglou, S.Calabrese,
+#+          D.Carbone, M.Cavallaro, A.Foti,
+#+          G.Marquinez-Duran, I.Martel, M.Mazzocco,
+#+          C.Parascandolo, D.Pierroutsakou, K.Rusek,
+#+          E.Strano, V.A.B.Zagatto, K.Zerva
+#REF-CODE   (J,PR/C,95,044615,2017)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.95, p.044615, 2017
+#DATASETS   1
+#
+#DATASET    O2410003
+#DATE       20190102
+#REACTION   1-H-1(3-LI-7,P+T)2-HE-4,,SIG
+#PROJ       3007
+#TARG       1001
+#MF         3
+#MT         116
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007  1001   3 116   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007  1001   3 116    3.8080+7          0.072000 0.015000                                       A.Pakou,ET.AL. (17)      O2410  3
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -8416,6 +8633,205 @@
 #/ENTRY
 #
 #
+#ENTRY      D0708
+#AUTHOR1    D.R.Mendes Jr+
+#YEAR       2012
+#INSTITUTE  (3BZLUSP)
+#TITLE      The 8Li(p,a)5He reaction at low energies, and 9Be
+#+          spectroscopy around the proton threshold
+#AUTHOR(S)  D.R.Mendes Jr, A.Lepine-Szily, P.Descouvemont,
+#+          R.Lichtenthaler, V.Guimaraes, P.N.De Faria,
+#+          A.Barioni, K.C.C.Pires, V.Morcelle,
+#+          R.Pampa Condori, M.C.Morais, E.Leistenschneider,
+#+          C.E.F.Lima, J.C.Zamora, J.A.Alcantara,
+#+          V.Zagatto, M.Assuncao, J.M.B.Shorto
+#REF-CODE   (J,PR/C,86,064321,2012)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.86, p.064321, 2012
+#DATASETS   1
+#
+#DATASET    D0708006
+#DATE       20200702
+#REACTION   1-H-1(3-LI-8,A)2-HE-5,,DA
+#PROJ       3008
+#TARG       1001
+#MF         4
+#MT         107
+#PRODUCT    2-HE-5
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 3008  1001   4 107 AC]
+#X4STATUS   [APRVD] Approved by author
+#DATA       91
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3008  1001   4 107 AC 201000.0          3.8000-4 2.2100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 226000.0          6.8000-4 2.4200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 244000.0          1.5900-3 2.4000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 267000.0          1.5100-3 2.4800-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 296000.0          2.8900-3 2.6700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 326000.0          4.2700-3 2.7400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 356000.0          4.9200-3 2.5800-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 395000.0          4.6400-3 2.3000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 422000.0          4.7100-3 2.2700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 548000.0          1.7000-4 1.0700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 563000.0          2.2000-3 1.0700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 578000.0          3.2500-3 1.2700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 597000.0          3.7500-3 1.0500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 615000.0          3.5400-3 1.4600-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 634000.0          3.0100-3 1.0400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 654000.0          2.3800-3 1.0300-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 669000.0          2.0100-3 1.0200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 685000.0          1.5200-3 9.1000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 701000.0          2.0300-3 9.1000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 713000.0          6.1000-4 1.0100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 733000.0          7.2000-4 1.0000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 747000.0          1.5000-3 1.4900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 753000.0          2.5000-3 1.4900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 774000.0          2.2800-3 1.4800-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 794000.0          7.1000-4 1.4700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 813000.0          6.1000-4 1.4600-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 830000.0          2.7400-3 1.4500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 847000.0          3.5900-3 1.4400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 863000.0          3.2800-3 1.4300-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 880000.0          2.5100-3 9.5000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 898000.0          2.3100-3 9.4000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 915000.0          3.5200-3 9.4000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 923000.0          3.3700-3 9.4000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 941000.0          3.0700-3 9.3000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 959000.0          3.3300-3 9.2000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 977000.0          1.9300-3 9.2000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 992000.0          1.7400-3 9.2000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1015000.          2.7300-3 9.1000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1022000.          2.9900-3 9.1000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1038000.          2.8900-3 9.0000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1053000.          2.2500-3 9.0000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1072000.          1.8800-3 8.9000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1091000.          2.0400-3 8.9000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1109000.          1.9400-3 8.8000-4 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1125000.          0.011470 3.8400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1145000.          5.3100-3 3.8100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1164000.          4.9900-3 3.7700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1184000.          8.7300-3 3.6100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1204000.          8.1000-4 3.5500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1224000.          2.6100-3 3.4800-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1244000.          8.1800-3 3.5700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1264000.          0.015200 3.5500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1284000.          5.2800-3 3.5000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1304000.          6.3600-3 3.4200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1325000.          0.011280 3.4600-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1345000.          0.011790 3.4300-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1366000.          0.013890 3.4400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1387000.          0.014900 3.3200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1408000.          0.013350 3.2900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1428000.          0.019650 3.2400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1449000.          0.021510 3.3500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1471000.          0.024430 3.3500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1492000.          0.025010 3.3000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1513000.          0.023700 3.1900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1535000.          0.021260 3.0900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1556000.          0.023780 3.0700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1578000.          0.023830 3.0000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1600000.          0.025180 2.9900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1621000.          0.035080 2.9000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1644000.          0.025450 2.8900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1666000.          0.029400 2.7700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1688000.          0.028810 2.7200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1710000.          0.027480 2.6700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1732000.          0.030710 2.6300-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1755000.          0.028920 2.5400-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1777000.          0.025370 2.4200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1800000.          0.026020 2.2800-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1823000.          0.020300 2.2200-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1846000.          0.025670 2.1500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1869000.          0.031030 2.1100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1892000.          0.023740 2.1100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1915000.          0.022120 1.9800-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1938000.          0.020980 1.9000-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1962000.          0.018700 1.7500-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 1985000.          0.019100 1.6700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 2009000.          0.017320 1.5700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 2033000.          0.014170 1.4900-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 2056000.          0.015960 1.4100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 2080000.          0.010770 1.3100-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 2104000.          0.010860 1.1700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+ 3008  1001   4 107 AC 2128000.          6.2900-3 1.0700-3 0.972370                              D.R.Mendes Jr,ET.AL. (12)D0708  6
+#/DATA      91
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0933
+#AUTHOR1    E.Leistenschneider+
+#YEAR       2018
+#INSTITUTE  (3BZLUSP)
+#TITLE      Spectroscopy of high-lying resonances in 9Be by the
+#+          measurement of (p,p), (p,d), and (p,a) reactions with
+#+          a radioactive 8Li beam
+#AUTHOR(S)  E.Leistenschneider, A.Lepine-Szily, M.A.G.Alvarez,
+#+          D.R.Mendes Jr, R.Lichtenthaeler, V.A.P.Aguiar,
+#+          M.Assuncao, R.Pampa Condori, U.U.Da Silva,
+#+          P.N.De Faria, N.Deshmukh, J.G.Duarte,
+#+          L.R.Gasques, V.Guimaraes,  E.L.A.Macchione,
+#+          M.C.Morais, V.Morcelle, K.C.C.Pires,
+#+          V.B.Scarduelli, G.Scotton, J.M.B.Shorto,
+#+          V.A.B.Zagatto
+#REF-CODE   (J,PR/C,98,064601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.064601, 2018
+#DATASETS   1
+#
+#DATASET    D0933003
+#DATE       20200803
+#REACTION   1-H-1(3-LI-8,A)2-HE-5,,DA
+#PROJ       3008
+#TARG       1001
+#MF         4
+#MT         107
+#PRODUCT    2-HE-5
+#DATA-HDR   DATA
+#C4BEGIN    [ 3008  1001   4 107 AC]
+#X4STATUS   [APRVD] Approved by author
+#DATA       33
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3008  1001   4 107 AC 746000.0          5.8000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 774000.0          5.0000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 802000.0          1.2000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 831000.0         -1.0000-5 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 861000.0         -5.0000-4 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 890000.0         -2.6000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 920000.0          3.2000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 951000.0          2.5000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 982000.0          6.2000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1014000.         -2.5000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1046000.         -6.0000-4 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1079000.          1.0000-4 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1112000.         -2.0000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1145000.          1.1000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1179000.          7.0000-4 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1214000.          1.7000-3 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1248000.          1.0000-3 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1283000.          1.8000-3 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1318000.          5.8000-3 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1354000.          7.3000-3 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1390000.          8.1000-3 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1425000.          0.012800 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1461000.          0.011700 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1496000.          0.016000 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1532000.          0.016900 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1566000.          0.020200 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1600000.          0.021900 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1633000.          0.019200 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1665000.          0.018000 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1696000.          0.017600 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1725000.          0.018600 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1753000.          0.013200 3.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+ 3008  1001   4 107 AC 1778000.          0.013700 4.0000-3 0.951056                              E.Leistenschneider, (18) D0933  3
+#/DATA      33
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0461
 #AUTHOR1    Li Yun-Ju+
 #YEAR       2008
@@ -8453,126 +8869,6 @@
  3008  1001   4 651 AC 4000000. 270000.0 0.018500 1.2000-3-0.529922                              Li Yun-Ju,ET.AL. (08)    D0461  2
  3008  1001   4 651 AC 4000000. 270000.0 0.017300 9.0000-4-0.356741                              Li Yun-Ju,ET.AL. (08)    D0461  2
 #/DATA      6
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0708
-#AUTHOR1    D.R.Mendes Jr+
-#YEAR       2012
-#INSTITUTE  (3BZLUSP)
-#TITLE      The 8Li(p,alpha)5He reaction at low energies, and 9Be
-#+          spectroscopy around the proton threshold
-#AUTHOR(S)  D.R.Mendes Jr, A.Lepine-Szily, P.Descouvemont,
-#+          R.Lichtenthaler, V.Guimaraes, P.N.De Faria,
-#+          A.Barioni, K.C.C.Pires, V.Morcelle,
-#+          R.Pampa Condori, M.C.Morais, E.Leistenschneider,
-#+          C.E.F.Lima, J.C.Zamora, J.A.Alcantara,
-#+          V.Zagatto, M.Assuncao, J.M.B.Shorto
-#REF-CODE   (J,PR/C,86,064321,2012)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.86, p.064321, 2012
-#DATASETS   3
-#
-#DATASET    D07080031
-#DATE       20130502
-#REACTION   1-H-1(3-LI-8,0),,EN
-#PROJ       3008
-#TARG       1001
-#MF         402
-#MT         6001
-#DATA-HDR   DATA-CM
-#C4BEGIN    [ 3008  1001 4026001 AC]
-#X4STATUS   [APRVD] Approved by author
-#DATA       5
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 3008  1001 4026001 AC                  -220000.0                                                D.R.Mendes Jr,ET.AL. (12)D0708  31
- 3008  1001 4026001 AC          80000.00 380000.0                                                D.R.Mendes Jr,ET.AL. (12)D0708  31
- 3008  1001 4026001 AC          30000.00 610000.0                                                D.R.Mendes Jr,ET.AL. (12)D0708  31
- 3008  1001 4026001 AC          30000.00 1690000.                                                D.R.Mendes Jr,ET.AL. (12)D0708  31
- 3008  1001 4026001 AC          40000.00 1760000.                                                D.R.Mendes Jr,ET.AL. (12)D0708  31
-#/DATA      5
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0708
-#AUTHOR1    D.R.Mendes Jr+
-#YEAR       2012
-#INSTITUTE  (3BZLUSP)
-#TITLE      The 8Li(p,alpha)5He reaction at low energies, and 9Be
-#+          spectroscopy around the proton threshold
-#AUTHOR(S)  D.R.Mendes Jr, A.Lepine-Szily, P.Descouvemont,
-#+          R.Lichtenthaler, V.Guimaraes, P.N.De Faria,
-#+          A.Barioni, K.C.C.Pires, V.Morcelle,
-#+          R.Pampa Condori, M.C.Morais, E.Leistenschneider,
-#+          C.E.F.Lima, J.C.Zamora, J.A.Alcantara,
-#+          V.Zagatto, M.Assuncao, J.M.B.Shorto
-#REF-CODE   (J,PR/C,86,064321,2012)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.86, p.064321, 2012
-#DATASETS   3
-#
-#DATASET    D07080032
-#DATE       20130502
-#REACTION   1-H-1(3-LI-8,0),,J
-#PROJ       3008
-#TARG       1001
-#MF         402
-#MT         6003
-#DATA-HDR   DATA
-#C4BEGIN    [ 3008  1001 4026003 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       5
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 3008  1001 4026003 A                    2.500000                                                D.R.Mendes Jr,ET.AL. (12)D0708  32
- 3008  1001 4026003 A           80000.00 2.500000                                                D.R.Mendes Jr,ET.AL. (12)D0708  32
- 3008  1001 4026003 A           30000.00 3.500000                                                D.R.Mendes Jr,ET.AL. (12)D0708  32
- 3008  1001 4026003 A           30000.00 2.500000                                                D.R.Mendes Jr,ET.AL. (12)D0708  32
- 3008  1001 4026003 A           40000.00 3.500000                                                D.R.Mendes Jr,ET.AL. (12)D0708  32
-#/DATA      5
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0708
-#AUTHOR1    D.R.Mendes Jr+
-#YEAR       2012
-#INSTITUTE  (3BZLUSP)
-#TITLE      The 8Li(p,alpha)5He reaction at low energies, and 9Be
-#+          spectroscopy around the proton threshold
-#AUTHOR(S)  D.R.Mendes Jr, A.Lepine-Szily, P.Descouvemont,
-#+          R.Lichtenthaler, V.Guimaraes, P.N.De Faria,
-#+          A.Barioni, K.C.C.Pires, V.Morcelle,
-#+          R.Pampa Condori, M.C.Morais, E.Leistenschneider,
-#+          C.E.F.Lima, J.C.Zamora, J.A.Alcantara,
-#+          V.Zagatto, M.Assuncao, J.M.B.Shorto
-#REF-CODE   (J,PR/C,86,064321,2012)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.86, p.064321, 2012
-#DATASETS   3
-#
-#DATASET    D07080034
-#DATE       20130502
-#REACTION   1-H-1(3-LI-8,EL),,WID
-#PROJ       3008
-#TARG       1001
-#MF         402
-#MT         6021
-#DATA-HDR   DATA
-#C4BEGIN    [ 3008  1001 4026021 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       5
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 3008  1001 4026021 A                    550000.0 100000.0                                       D.R.Mendes Jr,ET.AL. (12)D0708  34
- 3008  1001 4026021 A           80000.00 5000.000 1000.000                                       D.R.Mendes Jr,ET.AL. (12)D0708  34
- 3008  1001 4026021 A           30000.00 1400.000 400.0000                                       D.R.Mendes Jr,ET.AL. (12)D0708  34
- 3008  1001 4026021 A           30000.00 250000.0 50000.00                                       D.R.Mendes Jr,ET.AL. (12)D0708  34
- 3008  1001 4026021 A           40000.00 70000.00 13000.00                                       D.R.Mendes Jr,ET.AL. (12)D0708  34
-#/DATA      5
 #/DATASET
 #/ENTRY
 #
@@ -10079,148 +10375,63 @@
 #DATASETS   1
 #
 #DATASET    O2428002
-#DATE       20190504
+#DATE       20201102
 #REACTION   (1-H-1(4-BE-9,EL)1-H-1,,DA)=(4-BE-9(P,EL)4-BE-9,,DA)
 #PROJ       4009
 #TARG       1001
 #MF         4
 #MT         2
-#PRODUCT    1-H-1;4-BE-9
+#PRODUCT    4-BE-9;1-H-1
 #DATA-HDR   DATA-CM
 #C4BEGIN    [ 4009  1001   4   2  C]
 #DATA       45
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 4009  1001   4   2  C 1.5120+7          1.645800 0.121400 0.771180                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.392600 0.029300 0.697665                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.166400 0.012600 0.608483                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.096200 7.4000-3 0.497578                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.062400 4.9000-3 0.352330                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.031200 2.5000-3 0.121348                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.021400 1.8000-3-0.057566                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.013500 1.0000-3-0.317307                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 1.5120+7          0.012000 1.0000-3-0.507541                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.342000 0.026700 0.771180                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.252000 0.018700 0.697665                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.180000 0.013800 0.608483                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.122000 9.3000-3 0.497578                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.076000 6.0000-3 0.352330                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.046000 4.2000-3 0.239379                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.033300 1.9000-3 0.121867                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.021300 1.5000-3-0.087158                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.022000 1.5000-3-0.302372                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.025000 1.5000-3-0.406739                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.028000 1.6000-3-0.529922                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.037000 2.0000-3-0.652101                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.038000 3.2000-3-0.731356                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 2.2140+7          0.049000 4.2000-3-0.795475                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.246000 0.018200 0.829037                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.175500 0.013100 0.766044                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.114000 8.5000-3 0.694658                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.076500 5.8000-3 0.601814                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.043500 3.3000-3 0.499999                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.027500 2.5000-3 0.422617                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.019400 1.8000-3 0.312333                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.014900 1.3000-3 0.257131                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          8.5000-3 7.0000-4 0.202785                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          7.0000-3 8.0000-4 0.121867                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          7.3000-3 1.4000-3-0.017455                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          8.9000-3 1.8000-3-0.127067                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.011700 5.0000-4-0.182238                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.012800 7.0000-4-0.236841                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.013200 9.0000-4-0.292374                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.015100 1.1000-3-0.346938                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.015800 1.2000-3-0.401950                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.015100 1.0000-3-0.457100                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.016300 1.1000-3-0.512045                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.017300 1.0000-3-0.567846                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.016500 1.0000-3-0.622517                              N.Keeley,ET.AL. (19)     O2428  2
- 4009  1001   4   2  C 5.1300+7          0.018500 1.7000-3-0.676878                              N.Keeley,ET.AL. (19)     O2428  2
-#/DATA      45
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O2402
-#AUTHOR1    N.Keeley+
-#YEAR       2019
-#INSTITUTE  (3POLIPJ)
-#TITLE      Coherent coupled-reaction-channels analysis of
-#+          existing and new p + 9Be data between 1.7 and 15
-#+          MeV/nucleon
-#AUTHOR(S)  N.Keeley, A.Pakou, V.Soukeras,
-#+          F.Cappuzzello, L.Acosta, C.Agodi,
-#+          A.Boiano, S.Calabrese, D.Carbone,
-#+          M.Cavallaro, N.Deshmukh, A.Foti,
-#+          A.Hacisalihoglu, M.La Commara, I.Martel,
-#+          M.Mazzocco, A.Muoio, C.Parascandolo,
-#+          D.Pierroutsakou, K.Rusek, A.M.Sanchez-Benitez,
-#+          G.Santagati, O.Sgouros, G.Souliotis,
-#+          A.Spatafora, E.Strano, D.Torresi,
-#+          A.Trzcinska
-#REF-CODE   (J,PR/C,99,014615,2019)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.99, p.014615, 2019
-#DATASETS   1
-#
-#DATASET    O2402002
-#DATE       20190206
-#REACTION   (1-H-1(4-BE-9,EL)1-H-1,,DA)=(4-BE-9(P,EL)4-BE-9,,DA)
-#PROJ       4009
-#TARG       1001
-#MF         4
-#MT         2
-#PRODUCT    1-H-1;4-BE-9
-#DATA-HDR   DATA-CM
-#C4BEGIN    [ 4009  1001   4   2  C]
-#DATA       45
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 4009  1001   4   2  C 5.1030+7          0.246000 0.018200 0.829037                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.175500 0.013100 0.766044                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.114000 8.5000-3 0.694658                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.076500 5.8000-3 0.601814                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.043500 3.3000-3 0.499999                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.027500 2.5000-3 0.422617                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.019400 1.8000-3 0.312333                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.014900 1.3000-3 0.257131                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          8.5000-3 7.0000-4 0.202785                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          7.0000-3 8.0000-4 0.121867                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          7.3000-3 1.4000-3-0.017455                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          8.9000-3 1.8000-3-0.127067                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.011700 5.0000-4-0.182238                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.012800 7.0000-4-0.236841                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.013200 9.0000-4-0.292374                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.015100 1.1000-3-0.346938                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.015800 1.2000-3-0.401950                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.015100 1.0000-3-0.457100                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.016300 1.1000-3-0.512045                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.017300 1.0000-3-0.567846                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.016500 1.0000-3-0.622517                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 5.1030+7          0.018500 1.7000-3-0.676878                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.342000 0.026700 0.771180                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.252000 0.018700 0.697665                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.180000 0.013800 0.608483                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.122000 9.3000-3 0.497578                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.076000 6.0000-3 0.352330                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.046000 4.2000-3 0.239379                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.033300 1.9000-3 0.121867                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.021300 1.5000-3-0.087158                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.022000 1.5000-3-0.302372                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.025000 1.5000-3-0.406739                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.028000 1.6000-3-0.529922                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.037000 2.0000-3-0.652101                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.038000 3.2000-3-0.731356                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 2.1960+7          0.049000 4.2000-3-0.795475                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          1.645800 0.121400 0.771180                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.392600 0.029300 0.697665                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.166400 0.012600 0.608483                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.096200 7.4000-3 0.497578                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.062400 4.9000-3 0.352330                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.031200 2.5000-3 0.121348                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.021400 1.8000-3-0.057566                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.013500 1.0000-3-0.317307                              N.Keeley,ET.AL. (19)     O2402  2
- 4009  1001   4   2  C 1.5030+7          0.012000 1.0000-3-0.507541                              N.Keeley,ET.AL. (19)     O2402  2
+ 4009  1001   4   2  C 1.5030+7          1.645800 0.121400 0.771180                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.392600 0.029300 0.697665                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.166400 0.012600 0.608483                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.096200 7.4000-3 0.497578                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.062400 4.9000-3 0.352330                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.031200 2.5000-3 0.121348                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.021400 1.8000-3-0.057566                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.013500 1.0000-3-0.317307                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 1.5030+7          0.012000 1.0000-3-0.507541                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.342000 0.026700 0.771180                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.252000 0.018700 0.697665                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.180000 0.013800 0.608483                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.122000 9.3000-3 0.497578                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.076000 6.0000-3 0.352330                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.046000 4.2000-3 0.239379                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.033300 1.9000-3 0.121867                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.021300 1.5000-3-0.087158                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.022000 1.5000-3-0.302372                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.025000 1.5000-3-0.406739                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.028000 1.6000-3-0.529922                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.037000 2.0000-3-0.652101                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.038000 3.2000-3-0.731356                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 2.1960+7          0.049000 4.2000-3-0.795475                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.246000 0.018200 0.829037                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.175500 0.013100 0.766044                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.114000 8.5000-3 0.694658                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.076500 5.8000-3 0.601814                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.043500 3.3000-3 0.499999                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.027500 2.5000-3 0.422617                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.019400 1.8000-3 0.312333                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.014900 1.3000-3 0.257131                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          8.5000-3 7.0000-4 0.202785                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          7.0000-3 8.0000-4 0.121867                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          7.3000-3 1.4000-3-0.017455                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          8.9000-3 1.8000-3-0.127067                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.011700 5.0000-4-0.182238                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.012800 7.0000-4-0.236841                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.013200 9.0000-4-0.292374                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.015100 1.1000-3-0.346938                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.015800 1.2000-3-0.401950                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.015100 1.0000-3-0.457100                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.016300 1.1000-3-0.512045                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.017300 1.0000-3-0.567846                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.016500 1.0000-3-0.622517                              N.Keeley,ET.AL. (19)     O2428  2
+ 4009  1001   4   2  C 5.1030+7          0.018500 1.7000-3-0.676878                              N.Keeley,ET.AL. (19)     O2428  2
 #/DATA      45
 #/DATASET
 #/ENTRY
@@ -10912,6 +11123,55 @@
  4011  1001   4   2  C 2.9590+8          0.070924 8.9778-3 0.770624                              J.Chen,ET.AL. (16)       E2502  2
  4011  1001   4   2  C 2.9590+8          0.046828 6.8433-3 0.737277                              J.Chen,ET.AL. (16)       E2502  2
  4011  1001   4   2  C 2.9590+8          0.028282 5.2935-3 0.701282                              J.Chen,ET.AL. (16)       E2502  2
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2604
+#AUTHOR1    J.Chen+
+#YEAR       2018
+#INSTITUTE  (3CPRBJG)
+#TITLE      Low-lying states in 12Be using one-neutron transfer
+#+          reaction
+#AUTHOR(S)  J.Chen, J.L.Lou, Y.L.Ye,
+#+          Z.H.Li, D.Y.Pang, C.X.Yuan,
+#+          Y.C.Ge, Q.T.Li, H.Hua,
+#+          D.X.Jiang, X.F.Yang, F.R.Xu,
+#+          J.C.Pei, J.Li, W.Jiang,
+#+          Y.L.Sun, H.L.Zang, Y.Zhang,
+#+          G.Li, N.Aoi, E.Ideguchi,
+#+          H.J.Ong, J.Lee, J.Wu,
+#+          H.N.Liu, C.Wen, Y.Ayyad,
+#+          K.Hatanaka, D.T.Tran, T.Yamamoto,
+#+          M.Tanaka, T.Suzuki
+#REF-CODE   (J,PR/C,98,014616,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.014616, 2018
+#DATASETS   2
+#
+#DATASET    E2604002
+#DATE       20191201
+#REACTION   (1-H-1(4-BE-11,EL)1-H-1,,DA,,RTH)=(4-BE-11(P,EL)4-BE-11,,DA,,RTH)
+#PROJ       4011
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1;4-BE-11
+#DATA-HDR   DATA
+#C4BEGIN    [ 4011  1001   4   2  C]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 4011  1001   4   2  C 2.9590+8          0.376843 0.035800 0.927292                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.356558 0.030301 0.906860                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.292015 0.023550 0.884037                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.233071 0.019707 0.858885                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.164833 0.015685 0.831469                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.103079 0.011750 0.801862                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.070340 9.2498-3 0.770142                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.046220 7.1728-3 0.736392                              J.Chen,ET.AL. (18)       E2604  2
+ 4011  1001   4   2  C 2.9590+8          0.027934 5.4308-3 0.700702                              J.Chen,ET.AL. (18)       E2604  2
 #/DATA      9
 #/DATASET
 #/ENTRY
@@ -21463,6 +21723,104 @@
 #/ENTRY
 #
 #
+#ENTRY      S0228
+#AUTHOR1    Y.Jiang+
+#YEAR       2020
+#INSTITUTE  (3CPRBJG)
+#TITLE      Quadrupole deformation of 16C studied by proton and
+#+          deuteron inelastic scattering
+#AUTHOR(S)  Y.Jiang, J.L.Lou, Y.L.Ye,
+#+          Y.Liu, Z.W.Tan, W.Liu,
+#+          B.Yang, L.C.Tao, K.Ma,
+#+          Z.H.Li, Q.T.Li, X.F.Yang,
+#+          J.Y.Xu, H.Z.Yu, J.X.Han,
+#+          S.W.Bai, S.W.Huang, G.Li,
+#+          H.Y.Wu, H.L.Zang, J.Feng,
+#+          Z.Q.Chen, Y.D.Chen, Q.Yuan,
+#+          J.G.Li, B.S.Hu, F.R.Xu,
+#+          J.S.Wang, Y.Y.Yang, P.Ma,
+#+          Q.Hu, Z.Bai, Z.H.Gao,
+#+          F.F.Duan, L.Y.Hu, J.H.Tan,
+#+          S.Q.Sun, Y.S.Song, H.J.Ong,
+#+          D.T.Tran, D.Y.Pang, C.X.Yuan
+#REF-CODE   (J,PR/C,101,024601,2020)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.101, p.024601, 2020
+#DATASETS   4
+#
+#DATASET    S0228002
+#DATE       20201205
+#REACTION   (1-H-1(6-C-16,EL)1-H-1,,DA,,RTH)=(6-C-16(P,EL)6-C-16,,DA,,RTH)
+#PROJ       6016
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1;6-C-16
+#DATA-HDR   DATA
+#C4BEGIN    [ 6016  1001   4   2  C]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6016  1001   4   2  C 3.8400+8          0.016671 2.8662-3 0.629455                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.017325 2.8402-3 0.681104                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.021900 3.3540-3 0.729446                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.052963 6.7718-3 0.774944                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.110194 0.010106 0.816742                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.208107 0.015642 0.854277                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.329721 0.022917 0.887735                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.509362 0.033288 0.917338                              Y.Jiang,ET.AL. (20)      S0228  2
+ 6016  1001   4   2  C 3.8400+8          0.653583 0.042625 0.942525                              Y.Jiang,ET.AL. (20)      S0228  2
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      S0228
+#AUTHOR1    Y.Jiang+
+#YEAR       2020
+#INSTITUTE  (3CPRBJG)
+#TITLE      Quadrupole deformation of 16C studied by proton and
+#+          deuteron inelastic scattering
+#AUTHOR(S)  Y.Jiang, J.L.Lou, Y.L.Ye,
+#+          Y.Liu, Z.W.Tan, W.Liu,
+#+          B.Yang, L.C.Tao, K.Ma,
+#+          Z.H.Li, Q.T.Li, X.F.Yang,
+#+          J.Y.Xu, H.Z.Yu, J.X.Han,
+#+          S.W.Bai, S.W.Huang, G.Li,
+#+          H.Y.Wu, H.L.Zang, J.Feng,
+#+          Z.Q.Chen, Y.D.Chen, Q.Yuan,
+#+          J.G.Li, B.S.Hu, F.R.Xu,
+#+          J.S.Wang, Y.Y.Yang, P.Ma,
+#+          Q.Hu, Z.Bai, Z.H.Gao,
+#+          F.F.Duan, L.Y.Hu, J.H.Tan,
+#+          S.Q.Sun, Y.S.Song, H.J.Ong,
+#+          D.T.Tran, D.Y.Pang, C.X.Yuan
+#REF-CODE   (J,PR/C,101,024601,2020)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.101, p.024601, 2020
+#DATASETS   4
+#
+#DATASET    S0228004
+#DATE       20201205
+#REACTION   (1-H-1(6-C-16,INL)1-H-1,PAR,DA)=(6-C-16(P,INL)6-C-16,PAR,DA)
+#PROJ       6016
+#TARG       1001
+#MF         4
+#MT         51
+#PRODUCT    1-H-1;6-C-16
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 6016  1001   4  51  C]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6016  1001   4  51  C 3.8400+8          3.5900-3 1.0700-3 0.725854          1766000.         LVLY.Jiang,ET.AL. (20)      S0228  4
+ 6016  1001   4  51  C 3.8400+8          8.1400-3 1.8000-3 0.816540          1766000.         LVLY.Jiang,ET.AL. (20)      S0228  4
+ 6016  1001   4  51  C 3.8400+8          9.2500-3 1.9400-3 0.889894          1766000.         LVLY.Jiang,ET.AL. (20)      S0228  4
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E1960
 #AUTHOR1    H.J.Ong+
 #YEAR       2006
@@ -23309,6 +23667,113 @@
 #/ENTRY
 #
 #
+#ENTRY      O2232
+#AUTHOR1    I.Stefan+
+#YEAR       2014
+#INSTITUTE  (2FR GAN)
+#TITLE      Probing nuclear forces beyond the drip-line using the
+#+          mirror nuclei N-16 and F-16
+#AUTHOR(S)  I.Stefan, F.De Oliveira Santos, O.Sorlin,
+#+          T.Davinson, M.Lewitowicz, G.Dumitru,
+#+          J.C.Angelique, M.Angelique, E.Berthoumieux,
+#+          C.Borcea, R.Borcea, A.Buta,
+#+          J.M.Daugas, F.De Grancey, M.Fadil,
+#+          S.Grevy, J.Kiener, A.Lefebvre-Schuhl,
+#+          M.Lenhardt, J.Mrazek, F.Negoita,
+#+          D.Pantelica, M.G.Pellegriti, L.Perrot,
+#+          M.Ploszajczak, O.Roig, M.G.Saint Laurent,
+#+          I.Ray, M.Stanoiu, C.Stodel,
+#+          V.Tatischeff, J.C.Thomas
+#REF-CODE   (J,PR/C,90,014307,2014)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.90, p.014307, 2014
+#DATASETS   5
+#
+#DATASET    O2232002
+#DATE       20200302
+#REACTION   1-H-1(8-O-15,EL),,WID
+#PROJ       8015
+#TARG       1001
+#MF         402
+#MT         6021
+#DATA-HDR   DATA
+#C4BEGIN    [ 8015  1001 4026021   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8015  1001 4026021                      25000.00 5000.000                                       I.Stefan,ET.AL. (14)     O2232  2
+ 8015  1001 4026021                      70000.00 5000.000                                       I.Stefan,ET.AL. (14)     O2232  2
+ 8015  1001 4026021                      6000.000 3000.000                                       I.Stefan,ET.AL. (14)     O2232  2
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2442
+#AUTHOR1    L.Atar+
+#YEAR       2018
+#INSTITUTE  (2GERTHD)
+#TITLE      Quasifree (p,2p) reactions on oxygen isotopes:
+#+          observation of isospin independence of the reduced
+#+          single-particle strength
+#AUTHOR(S)  L.Atar, S.Paschalis, C.Barbieri,
+#+          C.A.Bertulani, P.Diaz Fernandez, M.Holl,
+#+          M.A.Najafi, V.Panin, H.Alvarez-Pol,
+#+          T.Aumann, V.Avdeichikov, S.Beceiro-Novo,
+#+          D.Bemmerer, J.Benlliure, J.M.Boillos,
+#+          K.Boretzky, M.J.G.Borge, M.Caamano,
+#+          C.Caesar, E.Casarejos, W.Catford,
+#+          J.Cederkall, M.Chartier, L.Chulkov,
+#+          D.Cortina-Gil, E.Cravo, R.Crespo,
+#+          I.Dillmann, Z.Elekes, J.Enders,
+#+          O.Ershova, A.Estrade, F.Farinon,
+#+          L.M.Fraile, M.Freer, D.Galaviz Redondo,
+#+          H.Geissel, R.Gernhaeuser, P.Golubev,
+#+          K.Goebel, J.Hagdahl, T.Heftrich,
+#+          M.Heil, M.Heine, A.Heinz,
+#+          A.Henriques, A.Hufnagel, A.Ignatov,
+#+          H.T.Johansson, B.Jonson, J.Kahlbow,
+#+          N.Kalantar-Nayestanaki, R.Kanungo, A.Kelic-Heil,
+#+          A.Knyazev, T.Kroell, N.Kurz,
+#+          M.Labiche, C.Langer, T.Le Bleis,
+#+          R.Lemmon, S.Lindberg, J.Machado,
+#+          J.Marganiec-Galazka, A.Movsesyan, E.Nacher,
+#+          E.Y.Nikolskii, T.Nilsson, C.Nociforo,
+#+          A.Perea, M.Petri, S.Pietri,
+#+          R.Plag, R.Reifarth, G.Ribeiro,
+#+          C.Rigollet, D.M.Rossi, M.Roeder,
+#+          D.Savran, H.Scheit, H.Simon,
+#+          O.Sorlin, I.Syndikus, J.T.Taylor,
+#+          O.Tengblad, R.Thies, Y.Togano,
+#+          M.Vandebrouck, P.Velho, V.Volkov,
+#+          A.Wagner, F.Wamers, H.Weick,
+#+          C.Wheldon, G.L.Wilson, J.S.Winfield,
+#+          P.Woods, D.Yakorev, M.Zhukov,
+#+          A.Zilges, K.Zuber
+#REF-CODE   (J,PRL,120,052501,2018)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.120, p.052501, 2018
+#DATASETS   1
+#
+#DATASET    O2442005
+#DATE       20200101
+#REACTION   (1-H-1(8-O-16,2P)7-N-15,,SIG)=(8-O-16(P,2P)7-N-15,,SIG)
+#PROJ       8016
+#TARG       1001
+#MF         3
+#MT         111
+#PRODUCT    7-N-15
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016  1001   3 111   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016  1001   3 111    7.2160+9          0.026840 9.0000-4                                       L.Atar,ET.AL. (18)       O2442  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E2156
 #AUTHOR1    J.Zenihiro+
 #YEAR       2007
@@ -23913,41 +24378,6 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
 82208  1001   3  18    1.040+11          0.146000 7.0000-3                                       K.-H.Schmidt,ET.AL. (13) O2141  2
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0833
-#AUTHOR1    T.Enqvist+
-#YEAR       2001
-#INSTITUTE  (2GERGSI)
-#TITLE      Isotopic yields and kinetic energies of primary
-#+          residues in 1*A GeV Pb-208 +p reactions.
-#AUTHOR(S)  T.Enqvist, W.Wlazlo, P.Armbruster,
-#+          J.Benlliure, M.Bernas, A.Boudard,
-#+          S.Czajkowski, R.Legrain, S.Leray,
-#+          B.Mustapha, M.Pravikoff, F.Rejmund,
-#+          K.H.Schmidt, C.Stephan, J.Taieb,
-#+          L.Tassan-Got, C.Volant
-#REF-CODE   (J,NP/A,686,481,2001)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.686, p.481, 2001
-#DATASETS   1
-#
-#DATASET    O0833002
-#DATE       20010305
-#REACTION   1-H-1(82-PB-208,F),,SIG
-#PROJ       82208
-#TARG       1001
-#MF         3
-#MT         18
-#DATA-HDR   DATA
-#C4BEGIN    [82208  1001   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-82208  1001   3  18    2.080+11          0.157000 0.026000                                       T.Enqvist,ET.AL. (01)    O0833  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -25366,78 +25796,6 @@
  9018  1001 4026021             5000.000 42000.00 10000.00                                       A.St.J.Murphy,ET.AL. (09)C1708  44
  9018  1001 4026021             8000.000 8000.000 8000.000                                       A.St.J.Murphy,ET.AL. (09)C1708  44
 #/DATA      6
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0252
-#AUTHOR1    J.S.Graulich+
-#YEAR       1997
-#INSTITUTE  (2BLGLVN)
-#TITLE      The 18-F(P,ALPHA) Reaction and Its Astrophysical
-#+          Implications
-#AUTHOR(S)  J.S.Graulich, F.Binon, W.Bradfield-Smith,
-#+          M.Cogneau, R.Coszach, T.Davinson,
-#+          Th.Delbar, M.Gaelens, W.Galster,
-#+          J.Goerres, D.Labar, P.Leleux,
-#+          M.Loiselet, J.Mckenzie, R.Neal,
-#+          G.Ryckewaert, A.C.Shotter, J.Vanhorenbeeck,
-#+          J.Vervier, M.Wiescher, Ph.Woods
-#REF-CODE   (J,NP/A,626,751,1997)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.626, p.751, 1997
-#DATASETS   1
-#
-#DATASET    A0252002
-#DATE       20020305
-#REACTION   1-H-1(9-F-18,G),,WID
-#PROJ       9018
-#TARG       1001
-#MF         402
-#MT         6031
-#DATA-HDR   DATA
-#C4BEGIN    [ 9018  1001 4026031   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 9018  1001 4026031             7000.000 3.500000 1.600000                                       J.S.GRAULICH,ET.AL. (97) A0252  2
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0258
-#AUTHOR1    R.Coszach+
-#YEAR       1995
-#INSTITUTE  (2BLGLVN)
-#TITLE      A  Direct Measurement of the 18-F(P,ALPHA)15-O Reaction
-#AUTHOR(S)  R.Coszach, M.Cogneau, C.R.Bain,
-#+          F.Binon, T.Davinson, P.Decrock,
-#+          Th.Delbar, M.Gaelens, W.Galster,
-#+          J.Goerres, J.S.Graulich, R.Irvine,
-#+          D.Labar, P.Leleux, M.Loiselet,
-#+          C.Michotte, R.Neal, G.Ryckewaert,
-#+          A.S.Shotter, J.Vanhorenbeeck, J.Vervier,
-#+          M.Wiescher, Ph.Woods
-#REF-CODE   (J,PL/B,353,184,1995)
-#REFERENCE  Jour. Physics Letters,Section B
-#+          Vol.353, p.184, 1995
-#DATASETS   1
-#
-#DATASET    A0258004
-#DATE       20020404
-#REACTION   1-H-1(9-F-18,G),,WID
-#PROJ       9018
-#TARG       1001
-#MF         402
-#MT         6031
-#DATA-HDR   DATA
-#C4BEGIN    [ 9018  1001 4026031   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 9018  1001 4026031             15000.00 5600.000 600.0000                                       R.COSZACH,ET.AL. (95)    A0258  4
-#/DATA      1
 #/DATASET
 #/ENTRY
 #

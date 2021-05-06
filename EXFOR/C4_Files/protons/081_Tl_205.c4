@@ -1,3 +1,33 @@
+#ENTRY      F1402
+#AUTHOR1    V.L.Glagolev+
+#YEAR       1960
+#INSTITUTE  (4RUSICP)
+#TITLE      On reactions involving the formation of Pb-205m isomer.
+#AUTHOR(S)  V.L.Glagolev, A.M.Morozov, P.A.Yampolsky
+#REF-CODE   (J,ZET,39,1620,1960)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.39, p.1620, 1960
+#DATASETS   1
+#
+#DATASET    F1402002
+#DATE       20191104
+#REACTION   81-TL-205(P,N)82-PB-205-L,,SIG
+#PROJ       1001
+#TARG       81205
+#MF         3
+#MT         4
+#PRODUCT    82-PB-205-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 81205   3   4L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 81205   3   4L   1.9200+7          0.020000 4.0000-3                                       V.L.Glagolev,ET.AL. (60) F1402  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0494
 #AUTHOR1    A.Hermanne+
 #YEAR       1991
@@ -114,6 +144,47 @@
 #/ENTRY
 #
 #
+#ENTRY      A0180
+#AUTHOR1    M.C.Lagunas-Solar+
+#YEAR       1980
+#INSTITUTE  (1USADAV)
+#TITLE      Thallium-201 yields and excitation functions for the
+#+          lead radioactivities produced by irradiation of
+#+          thallium-205 with 34-60 MeV protons.
+#AUTHOR(S)  M.C.Lagunas-Solar, J.A.Jungerman, D.Paulson
+#REF-CODE   (J,ARI,31,117,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.117, 1980
+#DATASETS   5
+#
+#DATASET    A0180005
+#DATE       20200602
+#REACTION   81-TL-205(P,2N)82-PB-204-M,,SIG
+#PROJ       1001
+#TARG       81205
+#MF         3
+#MT         16
+#PRODUCT    82-PB-204-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 81205   3  16M  ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 81205   3  16M   3.5860+7 1793000. 0.020840 2.5008-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   3.7910+7 1895500. 0.019190 2.3028-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   4.0000+7 2000000. 0.017090 2.0508-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   4.1590+7 2079500. 0.015440 1.8528-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   4.2980+7 2149000. 0.016230 1.9476-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   4.4980+7 2249000. 0.014490 1.7388-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   4.8240+7 2412000. 0.013120 1.5744-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   5.2750+7 2637500. 0.012750 1.5300-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   5.5400+7 2770000. 0.013180 1.5816-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+ 1001 81205   3  16M   5.8480+7 2924000. 0.010590 1.2708-3                                       M.C.Lagunas-Solar, (80)  A0180  5
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0494
 #AUTHOR1    A.Hermanne+
 #YEAR       1991
@@ -163,6 +234,49 @@
  1001 81205   3  17    3.8000+7          0.203000 0.017255                                       A.Hermanne,ET.AL. (91)   A0494  32
  1001 81205   3  17    4.0000+7          0.166000 0.014110                                       A.Hermanne,ET.AL. (91)   A0494  32
 #/DATA      23
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0180
+#AUTHOR1    M.C.Lagunas-Solar+
+#YEAR       1980
+#INSTITUTE  (1USADAV)
+#TITLE      Thallium-201 yields and excitation functions for the
+#+          lead radioactivities produced by irradiation of
+#+          thallium-205 with 34-60 MeV protons.
+#AUTHOR(S)  M.C.Lagunas-Solar, J.A.Jungerman, D.Paulson
+#REF-CODE   (J,ARI,31,117,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.117, 1980
+#DATASETS   5
+#
+#DATASET    A0180006
+#DATE       20200602
+#REACTION   81-TL-205(P,3N)82-PB-203,,SIG
+#PROJ       1001
+#TARG       81205
+#MF         3
+#MT         17
+#PRODUCT    82-PB-203
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 81205   3  17   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 81205   3  17    3.6070+7 1803500. 0.274100 0.032892                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    3.8100+7 1905000. 0.250500 0.030060                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    4.0070+7 2003500. 0.201300 0.024156                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    4.1580+7 2079000. 0.198300 0.023796                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    4.3280+7 2164000. 0.176600 0.021192                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    4.4930+7 2246500. 0.153400 0.018408                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    4.6580+7 2329000. 0.156300 0.018756                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    4.8280+7 2414000. 0.133100 0.015972                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    5.0310+7 2515500. 0.108100 0.012972                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    5.2630+7 2631500. 0.110700 0.013284                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    5.5410+7 2770500. 0.105100 0.012612                                       M.C.Lagunas-Solar, (80)  A0180  6
+ 1001 81205   3  17    5.8540+7 2927000. 0.108700 0.013044                                       M.C.Lagunas-Solar, (80)  A0180  6
+#/DATA      12
 #/DATASET
 #/ENTRY
 #
@@ -436,6 +550,59 @@
 #/ENTRY
 #
 #
+#ENTRY      A0180
+#AUTHOR1    M.C.Lagunas-Solar+
+#YEAR       1980
+#INSTITUTE  (1USADAV)
+#TITLE      Thallium-201 yields and excitation functions for the
+#+          lead radioactivities produced by irradiation of
+#+          thallium-205 with 34-60 MeV protons.
+#AUTHOR(S)  M.C.Lagunas-Solar, J.A.Jungerman, D.Paulson
+#REF-CODE   (J,ARI,31,117,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.117, 1980
+#DATASETS   5
+#
+#DATASET    A0180004
+#DATE       20200602
+#REACTION   81-TL-205(P,4N)82-PB-202-M,,SIG
+#PROJ       1001
+#TARG       81205
+#MF         3
+#MT         37
+#PRODUCT    82-PB-202-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 81205   3  37M  ]
+#DATA       22
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 81205   3  37M   3.3870+7 1693500. 0.209700 0.025164                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   3.6060+7 1803000. 0.284000 0.034080                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   3.6370+7 1818500. 0.258400 0.031008                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   3.7980+7 1899000. 0.247700 0.029724                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   3.8350+7 1917500. 0.235200 0.028224                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.0040+7 2002000. 0.197400 0.023688                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.0540+7 2027000. 0.183300 0.021996                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.1870+7 2093500. 0.157600 0.018912                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.2310+7 2115500. 0.119800 0.014376                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.3190+7 2159500. 0.117800 0.014136                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.4190+7 2209500. 0.095600 0.011472                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.5210+7 2260500. 0.101600 0.012192                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.5610+7 2280500. 0.076400 9.1680-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.6590+7 2329500. 0.097000 0.011640                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.7590+7 2379500. 0.075300 9.0360-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.8100+7 2405000. 0.068800 8.2560-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   4.9750+7 2487500. 0.050600 6.0720-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   5.0210+7 2510500. 0.054100 6.4920-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   5.2280+7 2614000. 0.042400 5.0880-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   5.2840+7 2642000. 0.048900 5.8680-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   5.5550+7 2777500. 0.034700 4.1640-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+ 1001 81205   3  37M   5.8360+7 2918000. 0.027100 3.2520-3                                       M.C.Lagunas-Solar, (80)  A0180  4
+#/DATA      22
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0452
 #AUTHOR1    L.Milazzo-Colli+
 #YEAR       1975
@@ -464,6 +631,61 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 81205   3 107    2.0000+7 150000.0 2.7000-3 5.4000-4                                       L.Milazzo-Colli, (75)    D0452 27
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0180
+#AUTHOR1    M.C.Lagunas-Solar+
+#YEAR       1980
+#INSTITUTE  (1USADAV)
+#TITLE      Thallium-201 yields and excitation functions for the
+#+          lead radioactivities produced by irradiation of
+#+          thallium-205 with 34-60 MeV protons.
+#AUTHOR(S)  M.C.Lagunas-Solar, J.A.Jungerman, D.Paulson
+#REF-CODE   (J,ARI,31,117,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.117, 1980
+#DATASETS   5
+#
+#DATASET    A0180002
+#DATE       20200602
+#REACTION   81-TL-205(P,5N)82-PB-201,,SIG
+#PROJ       1001
+#TARG       81205
+#MF         3
+#MT         152
+#PRODUCT    82-PB-201
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 81205   3 152   ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 81205   3 152    3.4020+7 3402000. 0.012800 1.9200-3                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    3.6080+7 3608000. 0.133200 0.019980                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    3.6660+7 3666000. 0.103300 0.015495                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    3.8150+7 3815000. 0.314500 0.047175                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    3.8730+7 3873000. 0.306600 0.045990                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.0080+7 4008000. 0.507500 0.076125                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.0630+7 4063000. 0.554100 0.083115                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.1550+7 4155000. 0.675900 0.101385                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.2380+7 4238000. 0.736700 0.110505                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.2480+7 4248000. 0.822300 0.123345                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.4060+7 4406000. 0.811800 0.121770                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.4150+7 4415000. 0.788400 0.118260                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.5750+7 4575000. 0.872500 0.130875                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.6560+7 4656000. 0.808900 0.121335                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.7590+7 4759000. 0.712800 0.106920                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.7650+7 4765000. 0.810100 0.121515                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    4.9660+7 4966000. 0.623100 0.093465                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.0520+7 5052000. 0.567300 0.085095                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.2290+7 5229000. 0.539900 0.080985                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.2640+7 5264000. 0.478900 0.071835                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.5310+7 5531000. 0.407300 0.061095                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.5490+7 5549000. 0.389100 0.058365                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.8560+7 5856000. 0.311000 0.046650                                       M.C.Lagunas-Solar, (80)  A0180  2
+ 1001 81205   3 152    5.8560+7 5856000. 0.296700 0.044505                                       M.C.Lagunas-Solar, (80)  A0180  2
+#/DATA      24
 #/DATASET
 #/ENTRY
 #
@@ -551,6 +773,60 @@
  1001 81205   3 152    5.7300+7 500000.0 0.420000 0.037800                                       M.C.Lagunas-Solar, (78)  T0148 12
  1001 81205   3 152    5.8200+7 500000.0 0.397000 0.035730                                       M.C.Lagunas-Solar, (78)  T0148 12
  1001 81205   3 152    5.9000+7 500000.0 0.355000 0.031950                                       M.C.Lagunas-Solar, (78)  T0148 12
+#/DATA      23
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0180
+#AUTHOR1    M.C.Lagunas-Solar+
+#YEAR       1980
+#INSTITUTE  (1USADAV)
+#TITLE      Thallium-201 yields and excitation functions for the
+#+          lead radioactivities produced by irradiation of
+#+          thallium-205 with 34-60 MeV protons.
+#AUTHOR(S)  M.C.Lagunas-Solar, J.A.Jungerman, D.Paulson
+#REF-CODE   (J,ARI,31,117,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.117, 1980
+#DATASETS   5
+#
+#DATASET    A0180003
+#DATE       20200602
+#REACTION   81-TL-205(P,6N)82-PB-200,,SIG
+#PROJ       1001
+#TARG       81205
+#MF         3
+#MT         153
+#PRODUCT    82-PB-200
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 81205   3 153   ]
+#DATA       23
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 81205   3 153    3.5370+7 2829600. 4.3500-3 6.0900-4                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    3.5510+7 2840800. 3.9800-3 5.5720-4                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    3.8080+7 3046400. 4.7600-3 6.6640-4                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.0030+7 3202400. 5.7900-3 8.1060-4                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.0090+7 3207200. 4.3300-3 6.0620-4                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.1540+7 3323200. 4.5000-3 6.3000-4                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.1620+7 3329600. 7.2200-3 1.0108-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.3200+7 3456000. 8.2600-3 1.1564-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.3250+7 3460000. 7.5700-3 1.0598-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.4890+7 3591200. 0.026360 3.6904-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.4900+7 3592000. 0.022310 3.1234-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.6400+7 3712000. 0.065230 9.1322-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.6590+7 3727200. 0.068170 9.5438-3                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.8290+7 3863200. 0.158660 0.022212                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    4.8340+7 3867200. 0.142810 0.019993                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.0290+7 4023200. 0.236110 0.033055                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.0340+7 4027200. 0.173680 0.024315                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.2660+7 4212800. 0.394030 0.055164                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.2840+7 4227200. 0.373910 0.052347                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.5640+7 4451200. 0.557000 0.077980                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.5640+7 4451200. 0.510200 0.071428                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.8680+7 4694400. 0.549460 0.076924                                       M.C.Lagunas-Solar, (80)  A0180  3
+ 1001 81205   3 153    5.8770+7 4701600. 0.574180 0.080385                                       M.C.Lagunas-Solar, (80)  A0180  3
 #/DATA      23
 #/DATASET
 #/ENTRY

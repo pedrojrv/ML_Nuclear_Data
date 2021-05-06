@@ -163,20 +163,19 @@
 #
 #
 #ENTRY      22445
-#AUTHOR1    P.V.Sedyshev+
+#AUTHOR1    H.Beer+
 #YEAR       1995
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Measurement of the 36S(N,gamma) cross section
-#AUTHOR(S)  P.V.Sedyshev, H.Beer, Yu.P.Popov,
-#+          F.Kaeppeler, W.Balogh, H.Herndl,
-#+          H.Oberhummer
-#REF-CODE   (J,PR/C,52,(6),3442,199512)
+#TITLE      Cross section of 36S(n,gamma)37S
+#AUTHOR(S)  H.Beer, P.V.Sedyshev,  Yu.P.Popov,
+#+          W.Balogh, H.Herndl, H.Oberhummer
+#REF-CODE   (J,PR/C,52,3442,1995)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.52, Issue.6, p.3442, 1995
-#DATASETS   2
+#+          Vol.52, p.3442, 1995
+#DATASETS   1
 #
-#DATASET    224450021
-#DATE       20100702
+#DATASET    22445002
+#DATE       20201206
 #REACTION   16-S-36(N,G)16-S-37,,SIG,,MXW
 #PROJ       1
 #TARG       16036
@@ -184,45 +183,11 @@
 #MT         102
 #PRODUCT    16-S-37
 #DATA-HDR   DATA
-#C4BEGIN    [    1 16036   3 102 P ]
-#X4STATUS   [PRELM] Preliminary data
+#C4BEGIN    [    1 16036   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 16036   3 102 P  25000.00          1.7800-4                                                P.V.Sedyshev,ET.AL. (95) 22445  21
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22445
-#AUTHOR1    P.V.Sedyshev+
-#YEAR       1995
-#INSTITUTE  (4ZZZDUB)
-#TITLE      Measurement of the 36S(N,gamma) cross section
-#AUTHOR(S)  P.V.Sedyshev, H.Beer, Yu.P.Popov,
-#+          F.Kaeppeler, W.Balogh, H.Herndl,
-#+          H.Oberhummer
-#REF-CODE   (J,PR/C,52,(6),3442,199512)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.52, Issue.6, p.3442, 1995
-#DATASETS   2
-#
-#DATASET    224450022
-#DATE       20100702
-#REACTION   16-S-36(N,G)16-S-37,,SIG,,MXW
-#PROJ       1
-#TARG       16036
-#MF         3
-#MT         102
-#PRODUCT    16-S-37
-#DATA-HDR   DATA
-#C4BEGIN    [    1 16036   3 102 P ]
-#X4STATUS   [PRELM] Preliminary data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 16036   3 102 P  25000.00          1.8700-4 1.4000-5                                       P.V.Sedyshev,ET.AL. (95) 22445  22
+    1 16036   3 102    25000.00          1.8700-4 1.4000-5                                       H.Beer,ET.AL. (95)       22445  2
 #/DATA      1
 #/DATASET
 #/ENTRY

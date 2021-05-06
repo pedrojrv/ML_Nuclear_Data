@@ -113,40 +113,42 @@
 #/ENTRY
 #
 #
-#ENTRY      D0644
-#AUTHOR1    P.N.De Faria+
-#YEAR       2010
+#ENTRY      D0945
+#AUTHOR1    S.Appannababu+
+#YEAR       2019
 #INSTITUTE  (3BZLUSP)
-#TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
-#+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
-#+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
-#REF-CODE   (J,PR/C,82,034602,2010)
+#TITLE      Two-neutron transfer in the 6He+120Sn reaction
+#AUTHOR(S)  S.Appannababu, R.Lichtenthaeler, M.A.G.Alvarez,
+#+          M.Rodriguez-Gallardo, A.Lepine-Szily, K.C.C.Pires,
+#+          O.C.B.Santos, U.U.Silva, P.N.De Faria,
+#+          V.Guimaraes, E.O.N.Zevallos, V.Scarduelli,
+#+          M.Assuncao, J.M.B.Shorto, A.Barioni,
+#+          J.Alcantara-Nunez, V.Morcelle
+#REF-CODE   (J,PR/C,99,014601,2019)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.82, p.034602, 2010
-#DATASETS   8
+#+          Vol.99, p.014601, 2019
+#DATASETS   3
 #
-#DATASET    D0644009
-#DATE       20110705
-#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA
+#DATASET    D0945004
+#DATE       20201003
+#REACTION   50-SN-120(2-HE-6,EL)50-SN-120,,DA,,RTH
 #PROJ       2006
 #TARG       50120
 #MF         4
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA-CM
-#C4BEGIN    [ 2006 50120   49000 AC]
+#MT         2
+#PRODUCT    50-SN-120
+#DATA-HDR   DATA
+#C4BEGIN    [ 2006 50120   4   2 AC]
 #X4STATUS   [APRVD] Approved by author
 #DATA       6
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   49000 AC 1.7400+7          0.168300 0.069790 0.646842   2004.9                     P.N.de Faria,ET.AL. (10) D0644  9
- 2006 50120   49000 AC 1.7400+7          0.113160 0.046876 0.573818   2004.9                     P.N.de Faria,ET.AL. (10) D0644  9
- 2006 50120   49000 AC 1.7400+7          0.236140 0.044792 0.490887   2004.9                     P.N.de Faria,ET.AL. (10) D0644  9
- 2006 50120   49000 AC 1.7400+7          0.219540 0.063542 0.404805   2004.9                     P.N.de Faria,ET.AL. (10) D0644  9
- 2006 50120   49000 AC 1.7400+7          0.144600 0.045833 0.320777   2004.9                     P.N.de Faria,ET.AL. (10) D0644  9
- 2006 50120   49000 AC 1.7400+7          0.070723 0.033335 0.209634   2004.9                     P.N.de Faria,ET.AL. (10) D0644  9
+ 2006 50120   4   2 AC 2.2200+7          40.02914 0.223431 0.946167                              S.Appannababu,ET.AL. (19)D0945  4
+ 2006 50120   4   2 AC 2.2200+7          18.24248 0.941326 0.920002                              S.Appannababu,ET.AL. (19)D0945  4
+ 2006 50120   4   2 AC 2.2200+7          1.896216 0.271158 0.791387                              S.Appannababu,ET.AL. (19)D0945  4
+ 2006 50120   4   2 AC 2.2200+7          1.070323 0.208712 0.744984                              S.Appannababu,ET.AL. (19)D0945  4
+ 2006 50120   4   2 AC 2.2200+7          0.059853 0.029926 0.493479                              S.Appannababu,ET.AL. (19)D0945  4
+ 2006 50120   4   2 AC 2.2200+7          0.032459 0.013208 0.397534                              S.Appannababu,ET.AL. (19)D0945  4
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -157,101 +159,17 @@
 #YEAR       2010
 #INSTITUTE  (3BZLUSP)
 #TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
+#AUTHOR(S)  P.N.De Faria, R.Lichtenthaeler, K.C.C.Pires,
 #+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
 #+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
+#+          V.Morcelle, M.C.Morais
 #REF-CODE   (J,PR/C,82,034602,2010)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.82, p.034602, 2010
-#DATASETS   8
-#
-#DATASET    D0644008
-#DATE       20110705
-#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA
-#PROJ       2006
-#TARG       50120
-#MF         4
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA-CM
-#C4BEGIN    [ 2006 50120   49000 AC]
-#X4STATUS   [APRVD] Approved by author
-#DATA       12
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   49000 AC 1.8050+7          0.379550 0.041739 0.906433   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.195290 0.020870 0.863606   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.245810 0.026089 0.812399   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.310250 0.034783 0.756743   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.188600 0.020870 0.693288   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.253030 0.039998 0.625759   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.187030 0.033043 0.553027   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.201030 0.027826 0.475899   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.108940 0.013913 0.398636   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.150760 0.020870 0.312648   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.131720 0.019130 0.225952   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
- 2006 50120   49000 AC 1.8050+7          0.086587 0.020870 0.139482   2004.9                     P.N.de Faria,ET.AL. (10) D0644  8
-#/DATA      12
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0644
-#AUTHOR1    P.N.De Faria+
-#YEAR       2010
-#INSTITUTE  (3BZLUSP)
-#TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
-#+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
-#+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
-#REF-CODE   (J,PR/C,82,034602,2010)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.82, p.034602, 2010
-#DATASETS   8
-#
-#DATASET    D0644007
-#DATE       20110705
-#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA
-#PROJ       2006
-#TARG       50120
-#MF         4
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA-CM
-#C4BEGIN    [ 2006 50120   49000 AC]
-#X4STATUS   [APRVD] Approved by author
-#DATA       6
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   49000 AC 1.9800+7          0.406530 0.059794 0.915002   2004.9                     P.N.de Faria,ET.AL. (10) D0644  7
- 2006 50120   49000 AC 1.9800+7          0.214860 0.059794 0.870862   2004.9                     P.N.de Faria,ET.AL. (10) D0644  7
- 2006 50120   49000 AC 1.9800+7          0.219220 0.074227 0.700734   2004.9                     P.N.de Faria,ET.AL. (10) D0644  7
- 2006 50120   49000 AC 1.9800+7          0.186310 0.047421 0.632123   2004.9                     P.N.de Faria,ET.AL. (10) D0644  7
- 2006 50120   49000 AC 1.9800+7          0.250300 0.045361 0.556469   2004.9                     P.N.de Faria,ET.AL. (10) D0644  7
- 2006 50120   49000 AC 1.9800+7          0.035830 0.021240 0.227159   2004.9                     P.N.de Faria,ET.AL. (10) D0644  7
-#/DATA      6
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0644
-#AUTHOR1    P.N.De Faria+
-#YEAR       2010
-#INSTITUTE  (3BZLUSP)
-#TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
-#+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
-#+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
-#REF-CODE   (J,PR/C,82,034602,2010)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.82, p.034602, 2010
-#DATASETS   8
+#DATASETS   2
 #
 #DATASET    D0644006
-#DATE       20110705
+#DATE       20201003
 #REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA
 #PROJ       2006
 #TARG       50120
@@ -261,14 +179,78 @@
 #DATA-HDR   DATA-CM
 #C4BEGIN    [ 2006 50120   49000 AC]
 #X4STATUS   [APRVD] Approved by author
-#DATA       5
+#DATA       29
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2006 50120   49000 AC 1.7400+7          0.168300 0.069790 0.646842   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.7400+7          0.113160 0.046876 0.573818   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.7400+7          0.236140 0.044792 0.490887   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.7400+7          0.219540 0.063542 0.404805   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.7400+7          0.144600 0.045833 0.320777   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.7400+7          0.070723 0.033335 0.209634   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.379550 0.041739 0.906433   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.195290 0.020870 0.863606   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.245810 0.026089 0.812399   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.310250 0.034783 0.756743   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.188600 0.020870 0.693288   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.253030 0.039998 0.625759   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.187030 0.033043 0.553027   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.201030 0.027826 0.475899   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.108940 0.013913 0.398636   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.150760 0.020870 0.312648   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.131720 0.019130 0.225952   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.8050+7          0.086587 0.020870 0.139482   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.9800+7          0.406530 0.059794 0.915002   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.9800+7          0.214860 0.059794 0.870862   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.9800+7          0.219220 0.074227 0.700734   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.9800+7          0.186310 0.047421 0.632123   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.9800+7          0.250300 0.045361 0.556469   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+ 2006 50120   49000 AC 1.9800+7          0.035830 0.021240 0.227159   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
  2006 50120   49000 AC 2.0500+7          0.159060 0.030927 0.563395   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
  2006 50120   49000 AC 2.0500+7          0.146720 0.026803 0.477664   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
  2006 50120   49000 AC 2.0500+7          0.137460 0.032990 0.394806   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
  2006 50120   49000 AC 2.0500+7          0.132340 0.028866 0.310608   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
  2006 50120   49000 AC 2.0500+7          0.131330 0.029897 0.227975   2004.9                     P.N.de Faria,ET.AL. (10) D0644  6
+#/DATA      29
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0945
+#AUTHOR1    S.Appannababu+
+#YEAR       2019
+#INSTITUTE  (3BZLUSP)
+#TITLE      Two-neutron transfer in the 6He+120Sn reaction
+#AUTHOR(S)  S.Appannababu, R.Lichtenthaeler, M.A.G.Alvarez,
+#+          M.Rodriguez-Gallardo, A.Lepine-Szily, K.C.C.Pires,
+#+          O.C.B.Santos, U.U.Silva, P.N.De Faria,
+#+          V.Guimaraes, E.O.N.Zevallos, V.Scarduelli,
+#+          M.Assuncao, J.M.B.Shorto, A.Barioni,
+#+          J.Alcantara-Nunez, V.Morcelle
+#REF-CODE   (J,PR/C,99,014601,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.014601, 2019
+#DATASETS   3
+#
+#DATASET    D0945003
+#DATE       20200905
+#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA
+#PROJ       2006
+#TARG       50120
+#MF         4
+#MT         9000
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 2006 50120   49000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2006 50120   49000 D  2.0300+7          0.167000 0.019000 0.499999   2004.9                     S.Appannababu,ET.AL. (19)D0945  3
+ 2006 50120   49000 D  2.2200+7          0.500000 0.020000 0.809016   2004.9                     S.Appannababu,ET.AL. (19)D0945  3
+ 2006 50120   49000 D  2.2200+7          0.380000 0.020000 0.766044   2004.9                     S.Appannababu,ET.AL. (19)D0945  3
+ 2006 50120   49000 D  2.2400+7          0.208000 0.015000 0.499999   2004.9                     S.Appannababu,ET.AL. (19)D0945  3
+ 2006 50120   49000 D  2.4500+7          0.158000 0.018000 0.499999   2004.9                     S.Appannababu,ET.AL. (19)D0945  3
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -279,177 +261,17 @@
 #YEAR       2010
 #INSTITUTE  (3BZLUSP)
 #TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
+#AUTHOR(S)  P.N.De Faria, R.Lichtenthaeler, K.C.C.Pires,
 #+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
 #+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
+#+          V.Morcelle, M.C.Morais
 #REF-CODE   (J,PR/C,82,034602,2010)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.82, p.034602, 2010
-#DATASETS   8
-#
-#DATASET    D0644005
-#DATE       20110604
-#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA/DE
-#PROJ       2006
-#TARG       50120
-#MF         6
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA
-#C4BEGIN    [ 2006 50120   69000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       23
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   69000 A  1.7400+7          3.3400-9                     2004.9 1.2375+7 235000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          6.9400-9                     2004.9 1.2860+7 250000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          2.1810-8                     2004.9 1.3505+7 395000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.7750-8                     2004.9 1.4130+7 230000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.7210-8                     2004.9 1.4460+7 100000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.8480-8                     2004.9 1.4950+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.7830-8                     2004.9 1.5440+7 100000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          2.8250-8                     2004.9 1.5935+7 395000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          2.5070-8                     2004.9 1.6425+7 95000.00 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.7490-8                     2004.9 1.6915+7 395000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.1130-8                     2004.9 1.7405+7 95000.00 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.2170-8                     2004.9 1.7735+7 235000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.8800-8                     2004.9 1.8385+7 415000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.7980-8                     2004.9 1.9040+7 240000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.4680-8                     2004.9 1.9370+7 90000.00 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.7980-8                     2004.9 1.9850+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          1.1120-8                     2004.9 2.0495+7 255000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          7.4800-9                     2004.9 2.1240+7 490000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.3000-9                     2004.9 2.1965+7 235000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          0.000000                     2004.9 2.2795+7 595000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.3000-9                     2004.9 2.3780+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          0.000000                     2004.9 2.4270+7 100000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
- 2006 50120   69000 A  1.7400+7          3.6000-9                     2004.9 2.4675+7 305000.0 E2P.N.de Faria,ET.AL. (10) D0644  5
-#/DATA      23
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0644
-#AUTHOR1    P.N.De Faria+
-#YEAR       2010
-#INSTITUTE  (3BZLUSP)
-#TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
-#+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
-#+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
-#REF-CODE   (J,PR/C,82,034602,2010)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.82, p.034602, 2010
-#DATASETS   8
-#
-#DATASET    D0644004
-#DATE       20110604
-#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA/DE
-#PROJ       2006
-#TARG       50120
-#MF         6
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA
-#C4BEGIN    [ 2006 50120   69000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       18
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   69000 A  1.8500+7          9.0400-9                     2004.9 1.0115+7 385000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.3500-8                     2004.9 1.0875+7 375000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.4450-8                     2004.9 1.1650+7 400000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          7.3300-9                     2004.9 1.2430+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.5680-8                     2004.9 1.3175+7 365000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.5200-8                     2004.9 1.3930+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          2.7070-8                     2004.9 1.4700+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          2.0260-8                     2004.9 1.5460+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          3.5560-8                     2004.9 1.6240+7 400000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          2.4670-8                     2004.9 1.7010+7 370000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.7030-8                     2004.9 1.7760+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          2.5820-8                     2004.9 1.8535+7 395000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.0330-8                     2004.9 1.9310+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.8610-8                     2004.9 2.0070+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          7.6800-9                     2004.9 2.0835+7 385000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          2.8000-9                     2004.9 2.1610+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          3.4100-9                     2004.9 2.2365+7 365000.0 E2P.N.de Faria,ET.AL. (10) D0644  4
- 2006 50120   69000 A  1.8500+7          1.6600-9                     2004.9 2.3855+7 1125000. E2P.N.de Faria,ET.AL. (10) D0644  4
-#/DATA      18
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0644
-#AUTHOR1    P.N.De Faria+
-#YEAR       2010
-#INSTITUTE  (3BZLUSP)
-#TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
-#+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
-#+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
-#REF-CODE   (J,PR/C,82,034602,2010)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.82, p.034602, 2010
-#DATASETS   8
-#
-#DATASET    D0644003
-#DATE       20110604
-#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA/DE
-#PROJ       2006
-#TARG       50120
-#MF         6
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA
-#C4BEGIN    [ 2006 50120   69000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       20
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   69000 A  1.9800+7          9.8800-9                     2004.9 1.1010+7 670000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          2.1400-9                     2004.9 1.1820+7 140000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          7.9000-9                     2004.9 1.2230+7 270000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.1770-8                     2004.9 1.2875+7 375000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          4.1300-9                     2004.9 1.3415+7 165000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.3770-8                     2004.9 1.3955+7 375000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          9.9400-9                     2004.9 1.4495+7 165000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          2.1590-8                     2004.9 1.4935+7 275000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          2.3550-8                     2004.9 1.5585+7 375000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.9680-8                     2004.9 1.6105+7 145000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          3.3340-8                     2004.9 1.6525+7 275000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          3.9030-8                     2004.9 1.7195+7 395000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.5510-8                     2004.9 1.7855+7 265000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          9.9000-9                     2004.9 1.8540+7 420000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.7480-8                     2004.9 1.9600+7 640000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.3760-8                     2004.9 2.0790+7 550000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          5.6600-9                     2004.9 2.2140+7 800000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          1.9000-9                     2004.9 2.3210+7 270000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          0.000000                     2004.9 2.3630+7 150000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
- 2006 50120   69000 A  1.9800+7          3.8600-9                     2004.9 2.3680+7 100000.0 E2P.N.de Faria,ET.AL. (10) D0644  3
-#/DATA      20
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0644
-#AUTHOR1    P.N.De Faria+
-#YEAR       2010
-#INSTITUTE  (3BZLUSP)
-#TITLE      Alpha-particle production in 6He + 120Sn collisions
-#AUTHOR(S)  P.N.De Faria, R.Lichtenthaler, K.C.C.Pires,
-#+          A.M.Moro, A.Lepine-Szily, V.Guimaraes,
-#+          D.R.Mendes Jr, A.Arazi, A.Barioni,
-#+          V.Morcelle, M.C.Morals
-#REF-CODE   (J,PR/C,82,034602,2010)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.82, p.034602, 2010
-#DATASETS   8
+#DATASETS   2
 #
 #DATASET    D0644002
-#DATE       20110502
+#DATE       20201003
 #REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA/DE
 #PROJ       2006
 #TARG       50120
@@ -459,34 +281,223 @@
 #DATA-HDR   DATA
 #C4BEGIN    [ 2006 50120   69000 A ]
 #X4STATUS   [APRVD] Approved by author
-#DATA       24
+#DATA       105
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2006 50120   69000 A  2.0500+7          5.3900-9                     2004.9 1.2035+7 395000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          3.2200-9                     2004.9 1.2520+7 90000.00 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          5.9100-9                     2004.9 1.2855+7 245000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          9.9900-9                     2004.9 1.3340+7 240000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.2170-8                     2004.9 1.3970+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          8.4300-9                     2004.9 1.4465+7 105000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.0900-8                     2004.9 1.4815+7 245000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.1970-8                     2004.9 1.5685+7 625000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.1660-8                     2004.9 1.6410+7 100000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.9460-8                     2004.9 1.6900+7 390000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.5430-8                     2004.9 1.7540+7 250000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.4460-8                     2004.9 1.7875+7 85000.00 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          2.0610-8                     2004.9 1.8370+7 410000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.1900-8                     2004.9 1.9020+7 240000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          9.5300-9                     2004.9 1.9365+7 105000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.1300-8                     2004.9 1.9850+7 380000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          5.3100-9                     2004.9 2.0335+7 105000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          6.9000-9                     2004.9 2.0825+7 385000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          3.5800-9                     2004.9 2.1455+7 245000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          3.7100-9                     2004.9 2.1920+7 220000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.3000-9                     2004.9 2.2385+7 245000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          8.300-10                     2004.9 2.2895+7 265000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          2.900-10                     2004.9 2.3250+7 90000.00 E2P.N.de Faria,ET.AL. (10) D0644  2
- 2006 50120   69000 A  2.0500+7          1.4400-9                     2004.9 2.3585+7 245000.0 E2P.N.de Faria,ET.AL. (10) D0644  2
-#/DATA      24
+ 2006 50120   69000 A  1.7400+7          3.4219-9                     2004.9 1.2524+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          7.1940-9                     2004.9 1.3012+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          2.1932-8                     2004.9 1.3501+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.7734-8                     2004.9 1.3990+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.7384-8                     2004.9 1.4479+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.8510-8                     2004.9 1.4968+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.7810-8                     2004.9 1.5456+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          2.8275-8                     2004.9 1.5945+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          2.5004-8                     2004.9 1.6434+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.7614-8                     2004.9 1.6923+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.1196-8                     2004.9 1.7412+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.2122-8                     2004.9 1.7900+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.8891-8                     2004.9 1.8389+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.8085-8                     2004.9 1.8878+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.4738-8                     2004.9 1.9367+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.8160-8                     2004.9 1.9856+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          1.1316-8                     2004.9 2.0344+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          7.5441-9                     2004.9 2.0833+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          7.5441-9                     2004.9 2.1322+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.4219-9                     2004.9 2.1811+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          0.000000                     2004.9 2.2300+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          0.000000                     2004.9 2.2788+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          0.000000                     2004.9 2.3277+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.4219-9                     2004.9 2.3766+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          0.000000                     2004.9 2.4255+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.7400+7          3.7720-9                     2004.9 2.4744+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          8.7015-9                     2004.9 1.0126+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.3269-8                     2004.9 1.0891+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.4136-8                     2004.9 1.1655+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          6.8021-9                     2004.9 1.2419+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.5470-8                     2004.9 1.3183+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.4971-8                     2004.9 1.3947+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          2.6970-8                     2004.9 1.4711+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.9938-8                     2004.9 1.5476+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          3.5572-8                     2004.9 1.6240+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          2.4538-8                     2004.9 1.7004+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.6738-8                     2004.9 1.7768+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          2.5839-8                     2004.9 1.8532+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          9.9690-9                     2004.9 1.9297+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.8368-8                     2004.9 2.0061+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          7.3344-9                     2004.9 2.0825+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          2.6677-9                     2004.9 2.1589+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          3.2333-9                     2004.9 2.2353+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.3670-9                     2004.9 2.3117+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.3670-9                     2004.9 2.3882+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.8050+7          1.3670-9                     2004.9 2.4646+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          9.7758-9                     2004.9 1.0742+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          9.7765-9                     2004.9 1.1279+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.9553-9                     2004.9 1.1816+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          7.8205-9                     2004.9 1.2353+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.1731-8                     2004.9 1.2890+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          3.9106-9                     2004.9 1.3427+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.3686-8                     2004.9 1.3964+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          9.7758-9                     2004.9 1.4501+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          2.1506-8                     2004.9 1.5038+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          2.3461-8                     2004.9 1.5575+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.9552-8                     2004.9 1.6112+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          3.3238-8                     2004.9 1.6649+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          3.9102-8                     2004.9 1.7186+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.5641-8                     2004.9 1.7723+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          9.7758-9                     2004.9 1.8260+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          9.7758-9                     2004.9 1.8797+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.7596-8                     2004.9 1.9334+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.7596-8                     2004.9 1.9871+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.3686-8                     2004.9 2.0408+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.3686-8                     2004.9 2.0945+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          5.8659-9                     2004.9 2.1482+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          5.8659-9                     2004.9 2.2019+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          5.8659-9                     2004.9 2.2556+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          1.9553-9                     2004.9 2.3093+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          0.000000                     2004.9 2.3630+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          3.9106-9                     2004.9 2.4167+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          3.9106-9                     2004.9 2.4704+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  1.9800+7          3.9106-9                     2004.9 2.5241+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          5.1334-9                     2004.9 1.2035+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          3.5175-9                     2004.9 1.2524+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          5.7137-9                     2004.9 1.3012+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          9.6002-9                     2004.9 1.3501+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.2033-8                     2004.9 1.3990+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          8.2434-9                     2004.9 1.4479+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.0745-8                     2004.9 1.4968+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.1725-8                     2004.9 1.5456+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.1799-8                     2004.9 1.5945+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.1554-8                     2004.9 1.6434+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.9145-8                     2004.9 1.6923+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.5143-8                     2004.9 1.7412+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.4241-8                     2004.9 1.7900+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          2.0476-8                     2004.9 1.8389+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.1820-8                     2004.9 1.8878+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          9.2176-9                     2004.9 1.9367+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.0958-8                     2004.9 1.9856+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          5.0314-9                     2004.9 2.0344+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          6.7236-9                     2004.9 2.0833+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          3.5039-9                     2004.9 2.1322+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          2.9634-9                     2004.9 2.1811+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          8.885-10                     2004.9 2.2300+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          5.541-10                     2004.9 2.2788+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          0.000000                     2004.9 2.3277+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.1863-9                     2004.9 2.3766+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.4427-9                     2004.9 2.4255+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          1.3077-9                     2004.9 2.4744+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          0.000000                     2004.9 2.5232+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          3.2197-9                     2004.9 2.5721+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          3.7738-9                     2004.9 2.6210+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+ 2006 50120   69000 A  2.0500+7          2.6655-9                     2004.9 2.6699+7          E2P.N.de Faria,ET.AL. (10) D0644  2
+#/DATA      105
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0945
+#AUTHOR1    S.Appannababu+
+#YEAR       2019
+#INSTITUTE  (3BZLUSP)
+#TITLE      Two-neutron transfer in the 6He+120Sn reaction
+#AUTHOR(S)  S.Appannababu, R.Lichtenthaeler, M.A.G.Alvarez,
+#+          M.Rodriguez-Gallardo, A.Lepine-Szily, K.C.C.Pires,
+#+          O.C.B.Santos, U.U.Silva, P.N.De Faria,
+#+          V.Guimaraes, E.O.N.Zevallos, V.Scarduelli,
+#+          M.Assuncao, J.M.B.Shorto, A.Barioni,
+#+          J.Alcantara-Nunez, V.Morcelle
+#REF-CODE   (J,PR/C,99,014601,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.014601, 2019
+#DATASETS   3
+#
+#DATASET    D0945002
+#DATE       20201003
+#REACTION   50-SN-120(2-HE-6,X)2-HE-4,,DA/DE
+#PROJ       2006
+#TARG       50120
+#MF         6
+#MT         9000
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 2006 50120   69000 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       73
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2006 50120   69000 A  2.0300+7          3.6846-9          0.499999   2004.9 1.0203+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.4564-9          0.499999   2004.9 1.1072+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          4.9129-9          0.499999   2004.9 1.1947+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          8.5975-9          0.499999   2004.9 1.2830+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          1.3510-8          0.499999   2004.9 1.3718+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.0880-8          0.499999   2004.9 1.4610+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.3336-8          0.499999   2004.9 1.5508+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.8249-8          0.499999   2004.9 1.6409+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.2108-8          0.499999   2004.9 1.7314+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          1.4739-8          0.499999   2004.9 1.8221+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          1.4739-8          0.499999   2004.9 1.9131+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          6.1411-9          0.499999   2004.9 2.0042+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.4564-9          0.499999   2004.9 2.0954+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.4564-9          0.499999   2004.9 2.1869+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.0300+7          2.4564-9          0.499999   2004.9 2.2784+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          9.4797-9 3.0789-9 0.809016   2004.9 1.1602+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.8959-8 4.3542-9 0.809016   2004.9 1.2305+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.8959-8 4.3542-9 0.809016   2004.9 1.3008+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.8959-8 4.3542-9 0.809016   2004.9 1.3711+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.8959-8 4.3542-9 0.809016   2004.9 1.4414+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          6.6358-8 8.1461-9 0.809016   2004.9 1.5117+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          3.7919-8 6.1578-9 0.809016   2004.9 1.5820+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          5.6878-8 7.5418-9 0.809016   2004.9 1.6523+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.2324-7 1.1101-8 0.809016   2004.9 1.7227+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.5168-7 1.2316-8 0.809016   2004.9 1.7930+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          1.2324-7 1.1101-8 0.809016   2004.9 1.8633+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          9.4797-8 9.7364-9 0.809016   2004.9 1.9336+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          8.5318-8 9.2368-9 0.809016   2004.9 2.0039+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          3.7919-8 6.1578-9 0.809016   2004.9 2.0742+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          6.6358-8 8.1461-9 0.809016   2004.9 2.1445+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          6.6358-8 8.1461-9 0.809016   2004.9 2.2148+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          3.7919-8 6.1578-9 0.809016   2004.9 2.2852+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          9.4797-9 3.0789-9 0.809016   2004.9 2.3555+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          9.4797-9 3.0789-9 0.809016   2004.9 2.4258+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2200+7          9.4797-9 3.0789-9 0.809016   2004.9 2.4961+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          1.7324-9          0.499999   2004.9 1.0203+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          8.661-10          0.499999   2004.9 1.1072+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          4.3309-9          0.499999   2004.9 1.1947+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          3.4647-9          0.499999   2004.9 1.2830+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          9.5280-9          0.499999   2004.9 1.3718+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          1.5591-8          0.499999   2004.9 1.4610+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          1.9056-8          0.499999   2004.9 1.5508+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          2.9450-8          0.499999   2004.9 1.6409+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          2.7718-8          0.499999   2004.9 1.7314+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          2.8584-8          0.499999   2004.9 1.8221+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          2.2521-8          0.499999   2004.9 1.9131+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          1.3859-8          0.499999   2004.9 2.0042+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          1.2127-8          0.499999   2004.9 2.0954+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          7.7956-9          0.499999   2004.9 2.1869+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          5.1971-9          0.499999   2004.9 2.2784+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          4.3309-9          0.499999   2004.9 2.3702+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          8.661-10          0.499999   2004.9 2.4620+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          0.000000          0.499999   2004.9 2.5541+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          8.661-10          0.499999   2004.9 2.6461+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.2400+7          2.5985-9          0.499999   2004.9 2.7383+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          3.5704-9          0.499999   2004.9 1.1947+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          3.5704-9          0.499999   2004.9 1.2830+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          4.4630-9          0.499999   2004.9 1.3718+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.3389-8          0.499999   2004.9 1.4610+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          8.9261-9          0.499999   2004.9 1.5508+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.3389-8          0.499999   2004.9 1.6409+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.5174-8          0.499999   2004.9 1.7314+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          2.2315-8          0.499999   2004.9 1.8221+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          2.3208-8          0.499999   2004.9 1.9131+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.1604-8          0.499999   2004.9 2.0042+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          8.0334-9          0.499999   2004.9 2.0954+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.1604-8          0.499999   2004.9 2.1869+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          9.8187-9          0.499999   2004.9 2.2784+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          5.3556-9          0.499999   2004.9 2.3702+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          5.3556-9          0.499999   2004.9 2.4620+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.7852-9          0.499999   2004.9 2.5541+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          0.000000          0.499999   2004.9 2.6461+7          E2S.Appannababu,ET.AL. (19)D0945  2
+ 2006 50120   69000 A  2.4500+7          1.7852-9          0.499999   2004.9 2.7383+7          E2S.Appannababu,ET.AL. (19)D0945  2
+#/DATA      73
 #/DATASET
 #/ENTRY
 #
@@ -1037,6 +1048,60 @@
 #/ENTRY
 #
 #
+#ENTRY      D6356
+#AUTHOR1    A.Kundu+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Low-lying quadrupole and octupole collective
+#+          excitations in the 112,116,118,120,122,124Sn isotopes
+#AUTHOR(S)  A.Kundu, S.Santra, A.Pal,
+#+          D.Chattopadhyay, R.Tripathi, B.J.Roy,
+#+          T.N.Nag, B.K.Nayak, A.Saxena,
+#+          S.Kailas
+#REF-CODE   (J,PR/C,99,034609,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.034609, 2019
+#DATASETS   12
+#
+#DATASET    D6356005
+#DATE       20200401
+#REACTION   50-SN-120(3-LI-7,EL)50-SN-120,,DA,,RTH
+#PROJ       3007
+#TARG       50120
+#MF         4
+#MT         2
+#PRODUCT    50-SN-120
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007 50120   4   2  C]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 50120   4   2  C 2.8000+7          7.516762 0.082684 0.851086                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          4.241554 0.036065 0.799475                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          2.763289 7.9756-3 0.741390                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          1.761242 4.8047-3 0.677389                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          1.134786 3.4700-3 0.607929                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.617663 1.9170-3 0.533761                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.359129 1.3503-3 0.455699                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.187953 7.6594-4 0.374120                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.123117 6.6139-4 0.290032                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.064976 3.9459-4 0.203982                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.037207 3.2057-4 0.116842                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.021133 2.1221-4 0.029141                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          0.011044 7.4419-5-0.058263                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          6.9435-3 1.2717-4-0.144877                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          4.5512-3 5.5099-5-0.229882                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          3.3654-3 1.7027-4-0.290037                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          1.8555-3 3.4362-5-0.392982                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          8.8211-4 2.1003-5-0.543030                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          6.3052-4 3.2169-5-0.609594                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          4.6859-4 1.7795-5-0.676364                              A.Kundu,ET.AL. (19)      D6356  5
+ 3007 50120   4   2  C 2.8000+7          2.2900-4 1.0409-5-0.789622                              A.Kundu,ET.AL. (19)      D6356  5
+#/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0847
 #AUTHOR1    V.A.B.Zagatto+
 #YEAR       2017
@@ -1498,6 +1563,96 @@
  3007 50120   4   4  C 3.0000+7          1.5810-4 1.7300-5-0.229882                              A.Kundu,ET.AL. (17)      D6306  3
  3007 50120   4   4  C 3.0000+7          1.0760-4 1.4500-5-0.392982                              A.Kundu,ET.AL. (17)      D6306  3
 #/DATA      157
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6356
+#AUTHOR1    A.Kundu+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Low-lying quadrupole and octupole collective
+#+          excitations in the 112,116,118,120,122,124Sn isotopes
+#AUTHOR(S)  A.Kundu, S.Santra, A.Pal,
+#+          D.Chattopadhyay, R.Tripathi, B.J.Roy,
+#+          T.N.Nag, B.K.Nayak, A.Saxena,
+#+          S.Kailas
+#REF-CODE   (J,PR/C,99,034609,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.034609, 2019
+#DATASETS   12
+#
+#DATASET    D6356011
+#DATE       20200401
+#REACTION   50-SN-120(3-LI-7,INL)50-SN-120,PAR,DA
+#PROJ       3007
+#TARG       50120
+#MF         4
+#MT         4
+#PRODUCT    50-SN-120
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 3007 50120   4   4  C]
+#DATA       57
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 50120   4   4  C 2.8000+7          0.011361 6.2800-4 0.851086                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          0.012987 5.4100-4 0.799516                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          8.6490-3 1.3700-4 0.741413                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.0270-3 7.3000-5 0.677350                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.6040-3 1.0000-4 0.607929                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.1480-3 8.6000-5 0.533805                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.4170-3 9.7000-5 0.455637                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.1610-3 8.6000-5 0.374136                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.7030-3 8.9000-5 0.290032                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          2.6870-3 6.9000-5 0.204016                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.9270-3 6.4000-5 0.116825                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.1470-3 4.5000-5 0.029141                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.0580-3 2.3000-5-0.058298                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          6.8900-4 3.5000-5-0.144877                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.5900-4 1.5000-5-0.229899                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.0900-4 1.3000-5-0.392982                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.8700-4 1.5000-5-0.543089                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          9.9000-5 7.0000-6-0.676364                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          6.3000-5 6.0000-6-0.789600                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          5.6730-3 3.9600-4 0.851086                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          8.1890-3 3.0700-4 0.799516                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          5.0640-3 2.1000-5 0.741413                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.1800-3 1.6000-5 0.677350                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.3870-3 1.6000-5 0.607929                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.1100-3 1.9000-5 0.533805                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.0050-3 1.5000-5 0.455637                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          2.6600-3 1.3000-5 0.374136                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          2.4000-3 1.5000-5 0.290032                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.6730-3 1.4000-5 0.204016                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.4580-3 1.4000-5 0.116825                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          9.7600-4 1.3000-5 0.029141                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          6.6500-4 5.0000-6-0.058298                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          5.1500-4 1.2000-5-0.144877                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.9700-4 5.0000-6-0.229899                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          2.1400-4 4.0000-6-0.392982                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.4600-4 4.0000-6-0.543089                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          9.1000-5 3.0000-6-0.676364                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          5.0000-5 3.0000-6-0.789600                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.0800-3 2.9400-4 0.851086                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.3920-3 1.9700-4 0.799516                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          6.8300-4 7.1000-5 0.741413                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.1800-4 2.0000-5 0.677350                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          2.2500-4 2.8000-5 0.607929                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.9900-4 2.6000-5 0.533805                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          6.8800-4 3.8000-5 0.455637                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          7.8100-4 3.7000-5 0.374136                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          9.2900-4 4.4000-5 0.290032                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          7.9600-4 3.7000-5 0.204016                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          7.5900-4 4.0000-5 0.116825                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          5.6900-4 3.1000-5 0.029141                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          5.0300-4 1.5000-5-0.058298                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.2200-4 2.3000-5-0.144877                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          3.0600-4 1.2000-5-0.229899                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.7900-4 9.0000-6-0.392982                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          1.2200-4 8.0000-6-0.543089                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          7.7000-5 6.0000-6-0.676364                              A.Kundu,ET.AL. (19)      D6356 11
+ 3007 50120   4   4  C 2.8000+7          4.8000-5 5.0000-6-0.789600                              A.Kundu,ET.AL. (19)      D6356 11
+#/DATA      57
 #/DATASET
 #/ENTRY
 #
@@ -2310,7 +2465,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2320,8 +2475,8 @@
 #DATASETS   445
 #
 #DATASET    A0931204
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)4-BE-7,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)4-BE-7,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2343,7 +2498,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2353,8 +2508,8 @@
 #DATASETS   445
 #
 #DATASET    A0931208
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)17-CL-38,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)17-CL-38,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2376,7 +2531,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2386,8 +2541,8 @@
 #DATASETS   445
 #
 #DATASET    A0931211
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)21-SC-44-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)21-SC-44-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2409,7 +2564,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2419,8 +2574,8 @@
 #DATASETS   445
 #
 #DATASET    A0931212
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)21-SC-44-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)21-SC-44-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2442,7 +2597,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2452,8 +2607,8 @@
 #DATASETS   445
 #
 #DATASET    A0931214
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)21-SC-48,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)21-SC-48,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2475,7 +2630,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2485,8 +2640,8 @@
 #DATASETS   445
 #
 #DATASET    A0931216
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)19-K-42,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)19-K-42,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2508,7 +2663,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2518,8 +2673,8 @@
 #DATASETS   445
 #
 #DATASET    A0931218
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)25-MN-54,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)25-MN-54,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2541,7 +2696,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2551,8 +2706,8 @@
 #DATASETS   445
 #
 #DATASET    A0931224
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)31-GA-67,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)31-GA-67,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2574,7 +2729,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2584,8 +2739,8 @@
 #DATASETS   445
 #
 #DATASET    A0931229
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)33-AS-72,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)33-AS-72,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2607,7 +2762,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2617,8 +2772,8 @@
 #DATASETS   445
 #
 #DATASET    A0931230
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)33-AS-74,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)33-AS-74,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2640,7 +2795,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2650,8 +2805,8 @@
 #DATASETS   445
 #
 #DATASET    A0931231
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)33-AS-76,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)33-AS-76,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2673,7 +2828,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2683,8 +2838,8 @@
 #DATASETS   445
 #
 #DATASET    A0931233
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)34-SE-75,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)34-SE-75,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2706,7 +2861,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2716,8 +2871,8 @@
 #DATASETS   445
 #
 #DATASET    A0931234
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)35-BR-74-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)35-BR-74-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2739,7 +2894,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2749,8 +2904,8 @@
 #DATASETS   445
 #
 #DATASET    A0931236
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)35-BR-76,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)35-BR-76,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2772,7 +2927,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2782,8 +2937,8 @@
 #DATASETS   445
 #
 #DATASET    A0931238
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)35-BR-82,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)35-BR-82,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2805,7 +2960,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2815,8 +2970,8 @@
 #DATASETS   445
 #
 #DATASET    A0931244
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)37-RB-82-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)37-RB-82-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2838,7 +2993,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2848,8 +3003,8 @@
 #DATASETS   445
 #
 #DATASET    A0931246
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)37-RB-84-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)37-RB-84-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2871,7 +3026,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2881,8 +3036,8 @@
 #DATASETS   445
 #
 #DATASET    A0931247
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)37-RB-84-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)37-RB-84-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2904,7 +3059,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2914,8 +3069,8 @@
 #DATASETS   445
 #
 #DATASET    A0931248
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)37-RB-86,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)37-RB-86,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2937,7 +3092,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2947,8 +3102,8 @@
 #DATASETS   445
 #
 #DATASET    A0931252
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)38-SR-85,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)38-SR-85,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -2970,7 +3125,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -2980,8 +3135,8 @@
 #DATASETS   445
 #
 #DATASET    A0931256
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)39-Y-86-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)39-Y-86-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3003,7 +3158,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3013,8 +3168,8 @@
 #DATASETS   445
 #
 #DATASET    A0931258
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)39-Y-87-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)39-Y-87-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3036,7 +3191,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3046,8 +3201,8 @@
 #DATASETS   445
 #
 #DATASET    A0931259
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)39-Y-88,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)39-Y-88,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3069,7 +3224,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3079,8 +3234,8 @@
 #DATASETS   445
 #
 #DATASET    A0931263
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)41-NB-89-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)41-NB-89-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3102,7 +3257,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3112,8 +3267,8 @@
 #DATASETS   445
 #
 #DATASET    A0931264
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)41-NB-90,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)41-NB-90,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3135,7 +3290,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3145,8 +3300,8 @@
 #DATASETS   445
 #
 #DATASET    A0931265
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)41-NB-96,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)41-NB-96,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3168,7 +3323,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3178,8 +3333,8 @@
 #DATASETS   445
 #
 #DATASET    A0931267
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)42-MO-93-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)42-MO-93-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3201,7 +3356,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3211,8 +3366,8 @@
 #DATASETS   445
 #
 #DATASET    A0931269
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)43-TC-93-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)43-TC-93-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3234,7 +3389,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3244,8 +3399,8 @@
 #DATASETS   445
 #
 #DATASET    A0931272
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)43-TC-94-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)43-TC-94-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3267,7 +3422,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3277,8 +3432,8 @@
 #DATASETS   445
 #
 #DATASET    A0931273
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)43-TC-95-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)43-TC-95-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3300,7 +3455,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3310,8 +3465,8 @@
 #DATASETS   445
 #
 #DATASET    A0931274
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)43-TC-95-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)43-TC-95-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3333,7 +3488,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3343,8 +3498,8 @@
 #DATASETS   445
 #
 #DATASET    A0931280
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)45-RH-97-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)45-RH-97-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3366,7 +3521,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3376,8 +3531,8 @@
 #DATASETS   445
 #
 #DATASET    A0931282
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)45-RH-100,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)45-RH-100,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3399,7 +3554,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3409,8 +3564,8 @@
 #DATASETS   445
 #
 #DATASET    A0931283
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)45-RH-101-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)45-RH-101-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3432,7 +3587,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3442,8 +3597,8 @@
 #DATASETS   445
 #
 #DATASET    A0931285
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)45-RH-106-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)45-RH-106-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3465,7 +3620,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3475,8 +3630,8 @@
 #DATASETS   445
 #
 #DATASET    A0931289
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)46-PD-111,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)46-PD-111,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3498,7 +3653,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3508,8 +3663,8 @@
 #DATASETS   445
 #
 #DATASET    A0931291
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)47-AG-104-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)47-AG-104-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3531,7 +3686,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3541,8 +3696,8 @@
 #DATASETS   445
 #
 #DATASET    A0931293
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)47-AG-106-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)47-AG-106-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3564,7 +3719,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3574,8 +3729,8 @@
 #DATASETS   445
 #
 #DATASET    A0931294
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)47-AG-110-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)47-AG-110-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3597,7 +3752,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3607,8 +3762,8 @@
 #DATASETS   445
 #
 #DATASET    A0931295
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)47-AG-111,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)47-AG-111,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3630,7 +3785,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3640,8 +3795,8 @@
 #DATASETS   445
 #
 #DATASET    A0931303
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-108-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-108-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3663,7 +3818,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3673,8 +3828,8 @@
 #DATASETS   445
 #
 #DATASET    A0931305
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-109-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-109-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3696,7 +3851,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3706,8 +3861,8 @@
 #DATASETS   445
 #
 #DATASET    A0931306
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-110-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-110-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3729,7 +3884,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3739,8 +3894,8 @@
 #DATASETS   445
 #
 #DATASET    A0931307
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-110-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-110-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3762,7 +3917,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3772,8 +3927,8 @@
 #DATASETS   445
 #
 #DATASET    A0931308
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-111-G,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-111-G,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3795,7 +3950,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3805,8 +3960,8 @@
 #DATASETS   445
 #
 #DATASET    A0931310
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-112-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-112-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3828,7 +3983,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3838,8 +3993,8 @@
 #DATASETS   445
 #
 #DATASET    A0931312
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-114-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-114-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3861,7 +4016,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3871,8 +4026,8 @@
 #DATASETS   445
 #
 #DATASET    A0931313
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-115-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-115-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3894,7 +4049,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3904,8 +4059,8 @@
 #DATASETS   445
 #
 #DATASET    A0931314
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-116-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-116-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3927,7 +4082,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3937,8 +4092,8 @@
 #DATASETS   445
 #
 #DATASET    A0931315
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)49-IN-117-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)49-IN-117-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -3960,7 +4115,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -3970,8 +4125,8 @@
 #DATASETS   445
 #
 #DATASET    A0931320
-#DATE       20120302
-#REACTION   50-SN-120(6-C-12,X)50-SN-117-M,IND,SIG
+#DATE       20200202
+#REACTION   50-SN-120(6-C-12,X)50-SN-117-M,,SIG
 #PROJ       6012
 #TARG       50120
 #MF         3
@@ -4197,7 +4352,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4230,7 +4385,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4263,7 +4418,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4296,7 +4451,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4329,7 +4484,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4362,7 +4517,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4395,7 +4550,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4428,7 +4583,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4461,7 +4616,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4494,7 +4649,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4527,7 +4682,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4560,7 +4715,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4593,7 +4748,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4626,7 +4781,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4659,7 +4814,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4692,7 +4847,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4725,7 +4880,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4758,7 +4913,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4791,7 +4946,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4824,7 +4979,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4857,7 +5012,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4890,7 +5045,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4923,7 +5078,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4956,7 +5111,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -4989,7 +5144,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5022,7 +5177,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5055,7 +5210,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5088,7 +5243,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5121,7 +5276,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5154,7 +5309,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5187,7 +5342,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5220,7 +5375,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5253,7 +5408,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5286,7 +5441,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5319,7 +5474,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5352,7 +5507,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5385,7 +5540,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5418,7 +5573,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5451,7 +5606,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5484,7 +5639,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5517,7 +5672,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5550,7 +5705,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5583,7 +5738,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5616,7 +5771,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5649,7 +5804,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5682,7 +5837,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5715,7 +5870,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5748,7 +5903,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5781,7 +5936,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5814,7 +5969,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5847,7 +6002,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5880,7 +6035,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5913,7 +6068,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5946,7 +6101,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -5979,7 +6134,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6012,7 +6167,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6045,7 +6200,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6078,7 +6233,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6111,7 +6266,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6144,7 +6299,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6177,7 +6332,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6210,7 +6365,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6243,7 +6398,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6276,7 +6431,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6309,7 +6464,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6342,7 +6497,7 @@
 #YEAR       2012
 #INSTITUTE  (4ARMJSU)
 #TITLE      Interaction of 12C ions with nuclei of enriched tin
-#+          isotopes at an Energy of 2.2 GeV per nucleon.
+#+          isotopes at an energy of 2.2 GeV per nucleon
 #AUTHOR(S)  G.H.Hovhannisyan, A.S.Danagulyan, A.R.Balabekyan,
 #+          J.Adam, V.G.Kalinnikov, V.S.Pronskikh,
 #+          A.A.Solnyshkin, V.M.Tsoupko-Sitnikov, N.M.Vladimirova
@@ -6434,6 +6589,150 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  6012 50120   39001G   2.640+10          5.0000-3 4.0000-4           51116.0                     G.H.Hovhannisyan, (12)   A0932 12
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6358
+#AUTHOR1    A.Kundu+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Reaffirmation of probe dependence of the mass
+#+          deformation length for low-lying excitations in 112,
+#+          116,118,120,122,124Sn isotopes
+#AUTHOR(S)  A.Kundu, S.Santra, A.Pal,
+#+          D.Chattopadhyay, T.N.Nag, R.Gandhi,
+#+          P.C.Rout, B.J.Roy, B.K.Nayak,
+#+          S.Kailas
+#REF-CODE   (J,PR/C,100,024614,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.024614, 2019
+#DATASETS   12
+#
+#DATASET    D6358005
+#DATE       20200400
+#REACTION   50-SN-120(6-C-12,EL)50-SN-120,,DA,,RTH
+#PROJ       6012
+#TARG       50120
+#MF         4
+#MT         2
+#PRODUCT    50-SN-120
+#DATA-HDR   DATA
+#C4BEGIN    [ 6012 50120   4   2  C]
+#DATA       27
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6012 50120   4   2  C 6.0000+7          29.79188 0.357503 0.927445                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          19.67554 0.356373 0.908559                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          12.63332 0.198754 0.887638                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          8.855045 0.180015 0.864739                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          6.666600 0.128557 0.839942                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          3.932529 0.184478 0.813303                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          3.016929 0.044068 0.784906                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          2.522910 0.065225 0.754823                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          2.291678 0.022508 0.723147                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          2.019681 0.035891 0.689947                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          1.633069 0.013202 0.655333                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          1.114034 0.016240 0.619394                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.943474 3.5942-3 0.582221                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.628768 3.7696-3 0.543906                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.504714 1.2778-3 0.504541                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.280306 1.6392-3 0.464253                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.196047 9.4253-4 0.423123                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.138047 4.0964-4 0.381246                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.091817 3.5866-4 0.338736                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.032533          0.252203                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          0.011902          0.164305                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          3.8560-3          0.075812                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          2.1417-3 3.0596-4-0.012516                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          9.0729-4 2.5923-4-0.100000                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          2.2301-4         -0.185961                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          9.7267-5         -0.269796                              A.Kundu,ET.AL. (19)      D6358  5
+ 6012 50120   4   2  C 6.0000+7          8.5937-5         -0.350913                              A.Kundu,ET.AL. (19)      D6358  5
+#/DATA      27
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6358
+#AUTHOR1    A.Kundu+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Reaffirmation of probe dependence of the mass
+#+          deformation length for low-lying excitations in 112,
+#+          116,118,120,122,124Sn isotopes
+#AUTHOR(S)  A.Kundu, S.Santra, A.Pal,
+#+          D.Chattopadhyay, T.N.Nag, R.Gandhi,
+#+          P.C.Rout, B.J.Roy, B.K.Nayak,
+#+          S.Kailas
+#REF-CODE   (J,PR/C,100,024614,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.024614, 2019
+#DATASETS   12
+#
+#DATASET    D6358011
+#DATE       20200402
+#REACTION   50-SN-120(6-C-12,INL)50-SN-120,PAR,DA
+#PROJ       6012
+#TARG       50120
+#MF         4
+#MT         4
+#PRODUCT    50-SN-120
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 6012 50120   4   4  C]
+#DATA       49
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6012 50120   4   4  C 6.0000+7          5.0640-3 5.6700-4 0.887421                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          4.1800-3 5.3000-4 0.864485                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.011100 5.2900-4 0.839648                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.022828 1.5000-3 0.812958                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          9.8000-3 3.1900-4 0.784516                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.027700 1.5000-3 0.754388                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.021323 1.1200-3 0.722653                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.016428 4.1100-4 0.689416                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          6.7500-3 3.1500-4 0.654753                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.011462 3.0600-4 0.618764                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          7.0600-3 2.4200-4 0.581540                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          8.0800-3 2.9500-4 0.543173                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          8.8700-3 4.0400-4 0.503773                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          7.7450-3 3.3000-5 0.463434                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          9.3500-3 3.2000-5 0.422253                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          7.7500-3 4.0000-5 0.380343                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          5.4350-3 2.7000-5 0.337800                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          2.8790-3 1.5600-3 0.251206                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          1.2040-3 1.5300-3 0.163255                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          5.9100-4 1.6700-4 0.074733                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          4.8500-4 1.3000-4-0.013615                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          2.5900-4 1.2900-4-0.101093                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          9.2000-5 1.5400-4-0.187041                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          8.9000-5 1.1900-4-0.270838                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          7.5000-5 1.0300-4-0.351909                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          6.8300-4 5.6900-4 0.887196                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.1800-4 1.5800-4 0.864213                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.020955 2.2300-4 0.839325                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.034134 2.1200-4 0.812592                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.2380-3 3.0500-4 0.784094                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          0.025828 2.9400-4 0.753907                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          4.5700-3 3.5300-4 0.722134                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.5880-3 3.1700-4 0.688835                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          1.6800-3 2.4900-4 0.654120                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          1.1100-3 1.2400-4 0.618064                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          1.8500-3 1.8700-4 0.580787                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.6500-3 9.7000-5 0.542382                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.0000-3 1.4100-4 0.502928                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          4.6200-3 2.1000-4 0.462552                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          4.5000-3 1.9000-4 0.421319                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.5200-3 1.3900-4 0.379374                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          3.4200-3 2.5400-4 0.336781                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          2.4000-3 1.7200-4 0.250125                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          1.5400-3 1.6900-4 0.162119                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          7.6000-4 1.5800-4 0.073567                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          4.2000-4 1.2300-4-0.014802                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          8.1000-5 1.1200-4-0.102274                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          7.5000-5 3.1000-5-0.188207                              A.Kundu,ET.AL. (19)      D6358 11
+ 6012 50120   4   4  C 6.0000+7          6.2000-5 2.9000-5-0.271964                              A.Kundu,ET.AL. (19)      D6358 11
+#/DATA      49
 #/DATASET
 #/ENTRY
 #

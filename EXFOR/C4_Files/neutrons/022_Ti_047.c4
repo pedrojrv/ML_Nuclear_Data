@@ -7961,45 +7961,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22089
-#AUTHOR1    Y.Ikeda+
-#YEAR       1988
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation cross section measurements for fusion
-#+          reactor structural materials at neutron energy from
-#+          13.3 to 15.0 MeV using FNS facility
-#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
-#+          T.Nakamura, H.Miyade, K.Kawade,
-#+          H.Yamamoto, T.Katoh
-#REF-CODE   (R,JAERI-1312,1988)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1312, 1988
-#DATASETS   110
-#
-#DATASET    22089028
-#DATE       20081001
-#REACTION   22-TI-47(N,N+P)21-SC-46,,SIG
-#PROJ       1
-#TARG       22047
-#MF         3
-#MT         28
-#PRODUCT    21-SC-46
-#DATA-HDR   DATA
-#C4BEGIN    [    1 22047   3  28   ]
-#DATA       6
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3  28    1.4980+7          0.080000 5.9000-3                                       Y.Ikeda,ET.AL. (88)      22089 28
-    1 22047   3  28    1.4700+7          0.067800 6.2000-3                                       Y.Ikeda,ET.AL. (88)      22089 28
-    1 22047   3  28    1.4460+7          0.052600 3.7000-3                                       Y.Ikeda,ET.AL. (88)      22089 28
-    1 22047   3  28    1.3990+7          0.034000 3.3000-3                                       Y.Ikeda,ET.AL. (88)      22089 28
-    1 22047   3  28    1.3610+7          0.024800 2.7000-3                                       Y.Ikeda,ET.AL. (88)      22089 28
-    1 22047   3  28    1.3470+7          0.016600 3.4000-3                                       Y.Ikeda,ET.AL. (88)      22089 28
-#/DATA      6
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      41186
 #AUTHOR1    A.I.Lashuk+
 #YEAR       1994
@@ -8007,14 +7968,14 @@
 #TITLE      Gamma-quanta production cross-sections at inelastic
 #+          scattering of the neutrons on the nuclei of reactor
 #+          construction materials.
-#AUTHOR(S)  A.I.Lashuk, A.I.Gonchar, I.P.Sadokhin
-#REF-CODE   (J,YK,1994,(1),26,1994)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1994, Issue.1, p.26, 1994
+#AUTHOR(S)  A.I.Lashuk, I.P.Sadokhin
+#REF-CODE   (J,YK,,(1),26,1994)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.1, p.26, 1994
 #DATASETS   43
 #
 #DATASET    41186037
-#DATE       20090401
+#DATE       20191104
 #REACTION   22-TI-47(N,INL)22-TI-47,PAR,SIG
 #PROJ       1
 #TARG       22047
@@ -8022,18 +7983,17 @@
 #MT         51
 #PRODUCT    22-TI-47
 #DATA-HDR   DATA
-#C4BEGIN    [    1 22047   3  51 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 22047   3  51   ]
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3  51 C  930000.0          0.855000 0.078000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
-    1 22047   3  51 C  1000000.          0.763000 0.078000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
-    1 22047   3  51 C  1080000.          0.982000 0.091000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
-    1 22047   3  51 C  1120000.          0.898000 0.078000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
-    1 22047   3  51 C  1190000.          1.025000 0.091000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
-    1 22047   3  51 C  1310000.          1.020000 0.091000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
-    1 22047   3  51 C  1400000.          0.982000 0.101000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    930000.0          0.855000 0.078000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    1000000.          0.763000 0.078000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    1080000.          0.982000 0.091000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    1120000.          0.898000 0.078000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    1190000.          1.025000 0.091000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    1310000.          1.020000 0.091000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
+    1 22047   3  51    1400000.          0.982000 0.101000                   160000.0         LVLA.I.Lashuk,ET.AL. (94)   41186 37
 #/DATA      7
 #/DATASET
 #/ENTRY
@@ -8074,15 +8034,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507014
-#DATE       19860702
+#DATE       20190805
 #REACTION   22-TI-47(N,G)22-TI-48,,SIG,,MXW
 #PROJ       1
 #TARG       22047
@@ -8094,7 +8054,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3 102    0.025300          1.620000 0.324000                                       H.POMERANCE (52)         11507 14
+    1 22047   3 102    0.025300          1.620000 0.324000                                       H.Pomerance (52)         11507 14
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -9187,18 +9147,18 @@
 #AUTHOR1    Y.Ikeda+
 #YEAR       1990
 #INSTITUTE  (2JPNJAE)
-#TITLE      -ACTIVATION CROSS SECTION MEASUREMENT AT A NEUTRON
-#+          ENERGY RANGE FROM 2.1 TO 3.0 MEV BY D-D NEUTRON
-#+          SOURCE AT FNS.
+#TITLE      Activation cross section measurement at a neutron
+#+          energy range from 2.1 to 3.0 MeV by d-d neutron
+#+          source at FNS.
 #AUTHOR(S)  Y.Ikeda, C.Konno, K.Kosako,
 #+          K.Oishi
-#REF-CODE   (P,NEANDC(J)-155,11,9008)
+#REF-CODE   (P,NEANDC(J)-155,11,1990)
 #REFERENCE  Prog. Japanese report to NEANDC
 #+          No.155, p.11, 1990
 #DATASETS   8
 #
 #DATASET    22191002
-#DATE       19910701
+#DATE       20201206
 #REACTION   22-TI-47(N,P)21-SC-47,,SIG
 #PROJ       1
 #TARG       22047
@@ -9210,14 +9170,14 @@
 #DATA       8
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3 103    3010000.          0.034800 2.2000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2920000.          0.037100 3.3000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2810000.          0.029800 2.0000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2670000.          0.025800 3.5000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2500000.          0.025400 1.8000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2300000.          0.022500 1.7000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2200000.          0.017800 1.6000-3                                       Y.IKEDA,ET.AL.           22191  2
-    1 22047   3 103    2080000.          0.015650 9.7000-4                                       Y.IKEDA,ET.AL.           22191  2
+    1 22047   3 103    3010000.          0.034800 2.2000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2920000.          0.037100 3.3000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2810000.          0.029800 2.0000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2670000.          0.025800 3.5000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2500000.          0.025400 1.8000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2300000.          0.022500 1.7000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2200000.          0.017800 1.6000-3                                       Y.Ikeda,ET.AL.           22191  2
+    1 22047   3 103    2080000.          0.015650 9.7000-4                                       Y.Ikeda,ET.AL.           22191  2
 #/DATA      8
 #/DATASET
 #/ENTRY
@@ -9467,8 +9427,8 @@
 #AUTHOR1    S.Firkin
 #YEAR       1983
 #INSTITUTE  (2UK HAR)
-#TITLE      -Differential neutron cross section of
-#+          Ti-47,48(n,p)Sc-47,48 and Al-27(n,a)Na-24
+#TITLE      Differential neutron cross section of
+#+          Ti-47,48(n,p)Sc-47,48 and Al-27(n,alpha)Na-24
 #AUTHOR(S)  S.Firkin
 #REF-CODE   (R,AERE-M-3350,198309)
 #REFERENCE  Rept. A.E.R.E. Harwell Reports
@@ -9678,10 +9638,10 @@
 #AUTHOR1    H.L.Pai
 #YEAR       1966
 #INSTITUTE  (1CANTOR)
-#TITLE      THE (N,P) CROSS SECTION OF TITANIUM ISOTOPES FOR
-#+          NEUTRON ENERGIES BETWEEN 13.6 MEV AND 19.5 MEV.
+#TITLE      The (n,p) cross section of titanium isotopes for
+#+          neutron energies between 13.6 MeV and 19.5 MeV.
 #AUTHOR(S)  H.L.Pai
-#REF-CODE   (J,CJP,44,2337,66)
+#REF-CODE   (J,CJP,44,2337,1966)
 #REFERENCE  Jour. Canadian Journal of Physics
 #+          Vol.44, p.2337, 1966
 #DATASETS   9
@@ -9699,11 +9659,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3 103    1.3600+7 200000.0 0.121000 7.0000-3                                       H.L.PAI (66)             11630  4
-    1 22047   3 103    1.4800+7 100000.0 0.114000 7.0000-3                                       H.L.PAI (66)             11630  4
-    1 22047   3 103    1.6000+7 500000.0 0.097000 8.0000-3                                       H.L.PAI (66)             11630  4
-    1 22047   3 103    1.7300+7 700000.0 0.076000 7.0000-3                                       H.L.PAI (66)             11630  4
-    1 22047   3 103    1.9500+7 200000.0 0.077000 7.0000-3                                       H.L.PAI (66)             11630  4
+    1 22047   3 103    1.3600+7 200000.0 0.121000 7.0000-3                                       H.L.Pai (66)             11630  4
+    1 22047   3 103    1.4800+7 100000.0 0.114000 7.0000-3                                       H.L.Pai (66)             11630  4
+    1 22047   3 103    1.6000+7 500000.0 0.097000 8.0000-3                                       H.L.Pai (66)             11630  4
+    1 22047   3 103    1.7300+7 700000.0 0.076000 7.0000-3                                       H.L.Pai (66)             11630  4
+    1 22047   3 103    1.9500+7 200000.0 0.077000 7.0000-3                                       H.L.Pai (66)             11630  4
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -9846,16 +9806,16 @@
 #AUTHOR1    M.Hillman
 #YEAR       1962
 #INSTITUTE  (1USABNL)
-#TITLE      FORMATION CROSS SECTIONS FOR CA47 USING 14.5MEV
-#+          NEUTRONS.
+#TITLE      Formation cross sections for CA47 using 14.5MEV
+#+          neutrons.
 #AUTHOR(S)  M.Hillman
-#REF-CODE   (J,NP,37,78,62)
+#REF-CODE   (J,NP,37,78,1962)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.37, p.78, 1962
 #DATASETS   5
 #
 #DATASET    11610003
-#DATE       19830801
+#DATE       20200500
 #REACTION   22-TI-47(N,P)21-SC-47,,SIG
 #PROJ       1
 #TARG       22047
@@ -9867,7 +9827,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3 103    1.4500+7 500000.0 0.099000 0.019800                                       M.HILLMAN (62)           11610  3
+    1 22047   3 103    1.4500+7 500000.0 0.099000 0.019800                                       M.Hillman (62)           11610  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -10034,17 +9994,17 @@
 #INSTITUTE  (2FR FR)
 #TITLE      Cross section measurements of (n,p) and (n,np+pn+d)
 #+          reactions for some titanium, chromium, iron, cobalt,
-#+          nickel and zinc isotopes around 14 MeV
+#+          nickel, and zinc isotopes around 14 MeV
 #AUTHOR(S)  M.Viennot, M.Berrada, G.Paic,
 #+          S.Joly
-#REF-CODE   (J,NSE,108,289,199107)
+#REF-CODE   (J,NSE,108,289,1991)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.108, p.289, 1991
-#DATASETS   29
+#DATASETS   30
 #
 #DATASET    30978018
-#DATE       20090904
-#REACTION   22-TI-47(N,P)21-SC-47,,SIG
+#DATE       20201104
+#REACTION   22-TI-47(N,P)21-SC-47,,SIG,,,DERIV
 #PROJ       1
 #TARG       22047
 #MF         3
@@ -10052,11 +10012,12 @@
 #PRODUCT    21-SC-47
 #DATA-HDR   DATA
 #C4BEGIN    [    1 22047   3 103   ]
+#X4DATATYPE [DERIV] Derived data
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   3 103    1.4730+7 230000.0 0.142000 0.021000                                       M.Viennot,ET.AL. (91)    30978 18
-    1 22047   3 103    1.4830+7 250000.0 0.131000 0.015000                                       M.Viennot,ET.AL. (91)    30978 18
+    1 22047   3 103    1.4730+7          0.142000 0.021000                                       M.Viennot,ET.AL. (91)    30978 18
+    1 22047   3 103    1.4830+7          0.131000 0.015000                                       M.Viennot,ET.AL. (91)    30978 18
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -10204,10 +10165,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089027
-#DATE       20081001
+#DATE       20201001
 #REACTION   22-TI-47(N,P)21-SC-47,,SIG
 #PROJ       1
 #TARG       22047
@@ -10268,10 +10229,10 @@
 #AUTHOR1    H.L.Pai
 #YEAR       1966
 #INSTITUTE  (1CANTOR)
-#TITLE      THE (N,P) CROSS SECTION OF TITANIUM ISOTOPES FOR
-#+          NEUTRON ENERGIES BETWEEN 13.6 MEV AND 19.5 MEV.
+#TITLE      The (n,p) cross section of titanium isotopes for
+#+          neutron energies between 13.6 MeV and 19.5 MeV.
 #AUTHOR(S)  H.L.Pai
-#REF-CODE   (J,CJP,44,2337,66)
+#REF-CODE   (J,CJP,44,2337,1966)
 #REFERENCE  Jour. Canadian Journal of Physics
 #+          Vol.44, p.2337, 1966
 #DATASETS   9
@@ -10289,11 +10250,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   31003    1.3600+7 200000.0 0.040000 7.0000-3                                       H.L.PAI (66)             11630  5
-    1 22047   31003    1.4800+7 100000.0 0.043000 5.0000-3                                       H.L.PAI (66)             11630  5
-    1 22047   31003    1.6000+7 500000.0 0.113000 0.011000                                       H.L.PAI (66)             11630  5
-    1 22047   31003    1.7300+7 700000.0 0.143000 0.014000                                       H.L.PAI (66)             11630  5
-    1 22047   31003    1.9500+7 200000.0 0.193000 0.028000                                       H.L.PAI (66)             11630  5
+    1 22047   31003    1.3600+7 200000.0 0.040000 7.0000-3                                       H.L.Pai (66)             11630  5
+    1 22047   31003    1.4800+7 100000.0 0.043000 5.0000-3                                       H.L.Pai (66)             11630  5
+    1 22047   31003    1.6000+7 500000.0 0.113000 0.011000                                       H.L.Pai (66)             11630  5
+    1 22047   31003    1.7300+7 700000.0 0.143000 0.014000                                       H.L.Pai (66)             11630  5
+    1 22047   31003    1.9500+7 200000.0 0.193000 0.028000                                       H.L.Pai (66)             11630  5
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -10327,374 +10288,6 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 22047   31003    1.4600+7 300000.0 0.049700 8.4000-3                                       N.I.Molla,ET.AL. (86)    30825  5
 #/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      23346
-#AUTHOR1    A.Olacel+
-#YEAR       2017
-#INSTITUTE  (2ZZZGEL)
-#TITLE      Neutron inelastic scattering measurements on the stable
-#+          isotopes of titanium.
-#AUTHOR(S)  A.Olacel, F.Belloni, C.Borcea,
-#+          M.Boromiza, P.Dessagne, G.Henning,
-#+          M.Kerveno, A.Negret, M.Nyman,
-#+          E.Pirovano, A.J.M.Plompen
-#REF-CODE   (J,PR/C,96,014621,2017)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.96, p.014621, 2017
-#DATASETS   26
-#
-#DATASET    23346003
-#DATE       20170802
-#REACTION   22-TI-47(N,X)0-G-0,PAR,SIG
-#PROJ       1
-#TARG       22047
-#MF         3
-#MT         9000
-#PRODUCT    0-G-0
-#DATA-HDR   DATA
-#C4BEGIN    [    1 22047   39000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       76
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   39000 A  1222340. 8970.000 5.2376-3 3.9618-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1240480. 9170.000 9.2065-3 4.4007-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1259025. 9375.000 5.2147-3 4.6296-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1277985. 9585.000 0.025163 4.5633-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1297380. 9810.000 0.047436 5.7673-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1317220. 10030.00 0.045250 5.4377-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1337520. 10270.00 0.061548 6.1327-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1358295. 10505.00 0.084654 6.9563-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1379555. 10755.00 0.076725 6.4572-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1401320. 11010.00 0.102996 7.3315-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1423605. 11275.00 0.090647 6.7704-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1446425. 11545.00 0.103626 7.3422-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1469795. 11825.00 0.107054 7.5281-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1493740. 12120.00 0.087971 6.9776-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1518280. 12420.00 0.070482 6.1671-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1543425. 12725.00 0.125135 8.5902-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1569200. 13050.00 0.115521 8.1729-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1595630. 13380.00 0.106362 7.8826-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1622730. 13720.00 0.133431 9.1014-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1650530. 14080.00 0.089668 7.3901-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1679050. 14440.00 0.107007 8.2207-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1708315. 14825.00 0.072189 7.2597-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1738355. 15215.00 0.148213 9.7531-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1769195. 15625.00 0.138417 9.6102-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1800865. 16045.00 0.129744 9.6836-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1833390. 16480.00 0.110785 9.0794-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1866805. 16935.00 0.127414 9.8041-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1901145. 17405.00 0.142840 0.010441               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1936445. 17895.00 0.129737 9.8926-3               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  1972740. 18400.00 0.150847 0.010776               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2010060. 18920.00 0.155296 0.011073               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2048450. 19469.94 0.140906 0.011025               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2087955. 20035.06 0.151822 0.011169               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2128615. 20625.00 0.167953 0.011909               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2170475. 21235.00 0.126509 0.010633               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2213585. 21875.00 0.163694 0.011413               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2258000. 22535.00 0.132266 0.010610               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2303755. 23225.00 0.149475 0.011364               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2350920. 23940.00 0.161365 0.011840               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2399550. 24690.00 0.142360 0.012047               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2449710. 25470.00 0.175572 0.013025               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2501460. 26280.00 0.146980 0.013021               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2554870. 27130.00 0.165889 0.013741               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2610010. 28010.00 0.161498 0.014497               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2666955. 28935.00 0.169618 0.014611               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2725790. 29900.00 0.168913 0.014966               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2786600. 30910.00 0.150043 0.015001               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2849470. 31960.00 0.185975 0.016152               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2914490. 33060.00 0.184728 0.016561               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2981765. 34215.00 0.185197 0.016953               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3051405. 35425.00 0.201919 0.016758               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3123520. 36690.00 0.193672 0.017249               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3198220. 38010.00 0.175655 0.017254               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3275635. 39405.00 0.172238 0.017426               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3355910. 40870.00 0.164317 0.018195               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3439175. 42395.00 0.189437 0.018404               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3525580. 44010.00 0.183822 0.019256               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3615290. 45700.00 0.184421 0.019252               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3708475. 47485.00 0.165214 0.018946               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3805320. 49360.00 0.159610 0.018703               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  3906020. 51340.00 0.153283 0.019400               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4010775. 53415.00 0.167676 0.019808               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4119810. 55620.13 0.186534 0.019139               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4233365. 57934.88 0.149114 0.019003               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4351690. 60390.00 0.147757 0.018655               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4475065. 62985.00 0.184485 0.019700               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4603770. 65720.00 0.171536 0.018854               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4738120. 68630.00 0.177626 0.019148               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  4878460. 71710.00 0.156896 0.018585               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  5025145. 74975.00 0.152660 0.019310               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  5178565. 78445.00 0.173951 0.020136               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  5339140. 82130.00 0.172245 0.020061               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  5507325. 86055.00 0.185831 0.020713               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  5683610. 90230.00 0.158500 0.020158               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  5868520. 94680.00 0.122143 0.019617               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-    1 22047   39000 A  2981600. 2981600. 0.094225 0.020215               0.9 1092700.          E2A.Olacel,ET.AL. (17)     23346  3
-#/DATA      76
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      23346
-#AUTHOR1    A.Olacel+
-#YEAR       2017
-#INSTITUTE  (2ZZZGEL)
-#TITLE      Neutron inelastic scattering measurements on the stable
-#+          isotopes of titanium.
-#AUTHOR(S)  A.Olacel, F.Belloni, C.Borcea,
-#+          M.Boromiza, P.Dessagne, G.Henning,
-#+          M.Kerveno, A.Negret, M.Nyman,
-#+          E.Pirovano, A.J.M.Plompen
-#REF-CODE   (J,PR/C,96,014621,2017)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.96, p.014621, 2017
-#DATASETS   26
-#
-#DATASET    23346004
-#DATE       20170802
-#REACTION   22-TI-47(N,X)0-G-0,PAR,SIG
-#PROJ       1
-#TARG       22047
-#MF         3
-#MT         9000
-#PRODUCT    0-G-0
-#DATA-HDR   DATA
-#C4BEGIN    [    1 22047   39000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       64
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   39000 A  1469795. 11825.00 0.000000                        0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1493740. 12120.00 0.010420 4.6434-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1518280. 12420.00 0.020092 4.0235-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1543425. 12725.00 0.027387 4.6554-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1569200. 13050.00 0.015359 4.5046-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1595630. 13380.00 0.031253 5.0098-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1622730. 13720.00 0.033656 5.1578-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1650530. 14080.00 0.041322 5.4602-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1679050. 14440.00 0.021603 5.0640-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1708315. 14825.00 0.029599 6.7638-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1738355. 15215.00 0.043417 6.3160-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1769195. 15625.00 0.033787 5.6574-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1800865. 16045.00 0.032930 6.3794-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1833390. 16480.00 0.053232 6.7980-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1866805. 16935.00 0.037831 6.9059-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1901145. 17405.00 0.071154 7.2557-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1936445. 17895.00 0.060838 7.1221-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  1972740. 18400.00 0.079627 7.4681-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2010060. 18920.00 0.064672 7.7353-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2048450. 19469.94 0.040418 7.8413-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2087955. 20035.06 0.066220 8.0452-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2128615. 20625.00 0.066658 8.5857-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2170475. 21235.00 0.065194 8.5394-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2213585. 21875.00 0.073758 8.6277-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2258000. 22535.00 0.076816 8.7142-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2303755. 23225.00 0.069969 8.1935-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2350920. 23940.00 0.089981 9.2236-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2399550. 24690.00 0.092178 9.8708-3               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2449710. 25470.00 0.087217 0.010179               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2501460. 26280.00 0.082792 0.010505               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2554870. 27130.00 0.069344 0.011552               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2610010. 28010.00 0.068683 0.011155               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2666955. 28935.00 0.071373 0.011229               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2725790. 29900.00 0.093575 0.012298               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2786600. 30910.00 0.102518 0.012328               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2849470. 31960.00 0.096799 0.013009               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2914490. 33060.00 0.107915 0.013030               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2981765. 34215.00 0.110933 0.013393               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3051405. 35425.00 0.124491 0.013718               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3123520. 36690.00 0.128910 0.014044               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3198220. 38010.00 0.099376 0.014234               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3275635. 39405.00 0.120393 0.014290               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3355910. 40870.00 0.130361 0.014725               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3439175. 42395.00 0.121055 0.014811               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3525580. 44010.00 0.139597 0.016092               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3615290. 45700.00 0.127435 0.015747               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3708475. 47485.00 0.120419 0.015601               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3805320. 49360.00 0.131454 0.015431               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  3906020. 51340.00 0.109912 0.015689               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4010775. 53415.00 0.135094 0.016178               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4119810. 55620.13 0.136727 0.016758               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4233365. 57934.88 0.134720 0.017739               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4351690. 60390.00 0.146296 0.016617               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4475065. 62985.00 0.173490 0.018023               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4603770. 65720.00 0.180807 0.017411               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4738120. 68630.00 0.149505 0.016431               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  4878460. 71710.00 0.151227 0.016280               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  5025145. 74975.00 0.153830 0.017627               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  5178565. 78445.00 0.144410 0.017076               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  5339140. 82130.00 0.128279 0.017156               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  5507325. 86055.00 0.141160 0.017725               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  5683610. 90230.00 0.166956 0.017823               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  5868520. 94680.00 0.158649 0.017562               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-    1 22047   39000 A  2981600. 2981600. 0.161457 0.018873               0.9 1284900.          E2A.Olacel,ET.AL. (17)     23346  4
-#/DATA      64
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      23346
-#AUTHOR1    A.Olacel+
-#YEAR       2017
-#INSTITUTE  (2ZZZGEL)
-#TITLE      Neutron inelastic scattering measurements on the stable
-#+          isotopes of titanium.
-#AUTHOR(S)  A.Olacel, F.Belloni, C.Borcea,
-#+          M.Boromiza, P.Dessagne, G.Henning,
-#+          M.Kerveno, A.Negret, M.Nyman,
-#+          E.Pirovano, A.J.M.Plompen
-#REF-CODE   (J,PR/C,96,014621,2017)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.96, p.014621, 2017
-#DATASETS   26
-#
-#DATASET    23346005
-#DATE       20170802
-#REACTION   22-TI-47(N,X)0-G-0,PAR,SIG
-#PROJ       1
-#TARG       22047
-#MF         3
-#MT         9000
-#PRODUCT    0-G-0
-#DATA-HDR   DATA
-#C4BEGIN    [    1 22047   39000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       40
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   39000 A  1562800. 19450.00 1.0576-3 3.0544-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1602445. 20195.00 0.015578 2.8908-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1643625. 20985.00 0.022768 3.2949-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1686415. 21805.00 0.029719 3.7236-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1730895. 22675.00 0.045884 4.3901-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1777165. 23595.00 0.031162 4.0306-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1825315. 24555.00 0.039779 4.4389-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1875450. 25580.00 0.039336 4.5589-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1927685. 26655.00 0.041707 4.7775-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  1982135. 27795.00 0.047220 5.2274-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2038925. 28994.94 0.057635 5.5191-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2098195. 30275.06 0.043414 5.3348-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2160090. 31620.00 0.051080 5.7429-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2224765. 33055.00 0.054488 5.7282-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2292400. 34580.00 0.052337 5.7543-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2363170. 36190.00 0.048521 5.9164-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2437270. 37910.00 0.067342 6.9099-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2514915. 39735.00 0.047580 6.7785-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2596335. 41685.00 0.055564 7.0526-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2681780. 43760.00 0.056175 7.4138-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2771525. 45985.00 0.065471 7.7260-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2865860. 48350.00 0.059680 8.5110-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2965095. 50885.00 0.052023 8.0448-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3069585. 53605.00 0.056902 8.3138-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3179710. 56520.00 0.043857 8.2372-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3295885. 59655.00 0.032899 9.1800-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3418555. 63015.00 0.064125 9.5932-3               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3548215. 66645.00 0.057471 0.012473               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3685410. 70550.00 0.054765 0.010061               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3830735. 74775.00 0.050100 0.010718               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  3984850. 79340.00 0.032694 0.010177               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  4148480. 84290.00 0.060354 0.011973               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  4322425. 89655.00 0.043833 0.010654               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  4507570. 95490.00 0.056109 0.011850               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  4704905. 101845.0 0.036587 0.010989               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  4915525. 108775.0 0.051803 0.013563               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  5140655. 116355.0 0.063053 0.012329               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  5381660. 124650.0 0.040313 0.011859               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  5640075. 133765.0 0.030376 0.012749               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-    1 22047   39000 A  2886920. 2886920. 0.031040 0.011238               0.9 1390300.          E2A.Olacel,ET.AL. (17)     23346  5
-#/DATA      40
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      23346
-#AUTHOR1    A.Olacel+
-#YEAR       2017
-#INSTITUTE  (2ZZZGEL)
-#TITLE      Neutron inelastic scattering measurements on the stable
-#+          isotopes of titanium.
-#AUTHOR(S)  A.Olacel, F.Belloni, C.Borcea,
-#+          M.Boromiza, P.Dessagne, G.Henning,
-#+          M.Kerveno, A.Negret, M.Nyman,
-#+          E.Pirovano, A.J.M.Plompen
-#REF-CODE   (J,PR/C,96,014621,2017)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.96, p.014621, 2017
-#DATASETS   26
-#
-#DATASET    23346006
-#DATE       20170802
-#REACTION   22-TI-47(N,X)0-G-0,PAR,SIG
-#PROJ       1
-#TARG       22047
-#MF         3
-#MT         9000
-#PRODUCT    0-G-0
-#DATA-HDR   DATA
-#C4BEGIN    [    1 22047   39000 A ]
-#X4STATUS   [APRVD] Approved by author
-#DATA       52
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22047   39000 A  1800865. 16045.00 1.0440-3 3.5099-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  1833390. 16480.00 8.3322-3 3.2092-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  1866805. 16935.00 7.1677-3 3.0908-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  1901145. 17405.00 0.016765 3.0447-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  1936445. 17895.00 0.022582 3.4026-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  1972740. 18400.00 0.021616 3.1632-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2010060. 18920.00 0.027853 3.8038-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2048450. 19469.94 0.036202 4.4871-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2087955. 20035.06 0.034878 4.3925-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2128615. 20625.00 0.037427 4.8910-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2170475. 21235.00 0.043401 4.9296-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2213585. 21875.00 0.057515 5.7853-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2258000. 22535.00 0.051613 5.4537-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2303755. 23225.00 0.028110 4.5446-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2350920. 23940.00 0.050473 5.9026-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2399550. 24690.00 0.051547 6.1542-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2449710. 25470.00 0.055897 6.3744-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2501460. 26280.00 0.060903 6.9062-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2554870. 27130.00 0.058022 7.0853-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2610010. 28010.00 0.061478 7.0781-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2666955. 28935.00 0.079671 8.0992-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2725790. 29900.00 0.059307 7.7217-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2786600. 30910.00 0.074766 8.1736-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2849470. 31960.00 0.069194 9.0732-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2914490. 33060.00 0.074568 8.8479-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2981765. 34215.00 0.071095 8.9884-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3051405. 35425.00 0.065783 9.6611-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3123520. 36690.00 0.063505 0.010015               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3198220. 38010.00 0.064029 9.7731-3               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3275635. 39405.00 0.077471 0.011156               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3355910. 40870.00 0.081523 0.011542               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3439175. 42395.00 0.091591 0.012589               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3525580. 44010.00 0.062654 0.013123               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3615290. 45700.00 0.072587 0.013808               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3708475. 47485.00 0.093352 0.014702               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3805320. 49360.00 0.086329 0.014851               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  3906020. 51340.00 0.070149 0.014157               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4010775. 53415.00 0.063686 0.015233               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4119810. 55620.13 0.056699 0.014742               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4233365. 57934.88 0.082648 0.015069               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4351690. 60390.00 0.117044 0.017425               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4475065. 62985.00 0.061884 0.015794               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4603770. 65720.00 0.082241 0.015065               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4738120. 68630.00 0.103176 0.015532               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  4878460. 71710.00 0.077710 0.016310               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  5025145. 74975.00 0.108966 0.016877               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  5178565. 78445.00 0.073819 0.015773               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  5339140. 82130.00 0.076754 0.015765               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  5507325. 86055.00 0.104363 0.016189               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  5683610. 90230.00 0.082102 0.015437               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  5868520. 94680.00 0.074630 0.018197               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-    1 22047   39000 A  2981600. 2981600. 0.062105 0.017279               0.9 1825000.          E2A.Olacel,ET.AL. (17)     23346  6
-#/DATA      52
 #/DATASET
 #/ENTRY
 #
@@ -10762,6 +10355,45 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 22047   39000    1.4700+7 300000.0 0.036000 4.0000-3           21046.9                     N.I.Molla,ET.AL. (77)    20721  5
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22089
+#AUTHOR1    Y.Ikeda+
+#YEAR       1988
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation cross section measurements for fusion
+#+          reactor structural materials at neutron energy from
+#+          13.3 to 15.0 MeV using FNS facility
+#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
+#+          T.Nakamura, H.Miyade, K.Kawade,
+#+          H.Yamamoto, T.Katoh
+#REF-CODE   (R,JAERI-1312,1988)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1312, 1988
+#DATASETS   108
+#
+#DATASET    22089028
+#DATE       20201001
+#REACTION   22-TI-47(N,X)21-SC-46,,SIG
+#PROJ       1
+#TARG       22047
+#MF         3
+#MT         9000
+#PRODUCT    21-SC-46
+#DATA-HDR   DATA
+#C4BEGIN    [    1 22047   39000   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 22047   39000    1.4980+7          0.080000 5.9000-3           21046.9                     Y.Ikeda,ET.AL. (88)      22089 28
+    1 22047   39000    1.4700+7          0.067800 6.2000-3           21046.9                     Y.Ikeda,ET.AL. (88)      22089 28
+    1 22047   39000    1.4460+7          0.052600 3.7000-3           21046.9                     Y.Ikeda,ET.AL. (88)      22089 28
+    1 22047   39000    1.3990+7          0.034000 3.3000-3           21046.9                     Y.Ikeda,ET.AL. (88)      22089 28
+    1 22047   39000    1.3610+7          0.024800 2.7000-3           21046.9                     Y.Ikeda,ET.AL. (88)      22089 28
+    1 22047   39000    1.3470+7          0.016600 3.4000-3           21046.9                     Y.Ikeda,ET.AL. (88)      22089 28
+#/DATA      6
 #/DATASET
 #/ENTRY
 #

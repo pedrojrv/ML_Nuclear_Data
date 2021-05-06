@@ -165,7 +165,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -24131,16 +24131,16 @@
 #AUTHOR1    K.D.Zhuravlev+
 #YEAR       1975
 #INSTITUTE  (4RUSNIR)
-#TITLE      FISSION CROSS-SECTION AND RESONANCE INTEGRALS
-#+          FOR PU-238,AM,CM,CF-249 ISOTOPES
+#TITLE      Cross sections and resonance integrals for the fission
+#+          of 239Pu, Am, Cm, and 249Cf
 #AUTHOR(S)  K.D.Zhuravlev, N.I.Kroshkin, A.P.Chetverikov
-#REF-CODE   (J,AE,39,(4),285,197510)
+#REF-CODE   (J,AE,39,285,1975)
 #REFERENCE  Jour. Atomnaya Energiya
-#+          Vol.39, Issue.4, p.285, 1975
+#+          Vol.39, p.285, 1975
 #DATASETS   9
 #
 #DATASET    40436010
-#DATE       20030505
+#DATE       20200303
 #REACTION   98-CF-249(N,F),,SIG,,MXW
 #PROJ       1
 #TARG       98249
@@ -24151,7 +24151,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 98249   3  18    0.025300          1715.000 80.00000                                       K.D.ZHURAVLEV,ET.AL. (75)40436 10
+    1 98249   3  18    0.025300          1715.000 80.00000                                       K.D.Zhuravlev,ET.AL. (75)40436 10
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -24196,7 +24196,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -30039,7 +30039,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -30171,7 +30171,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -31078,7 +31078,7 @@
 #REF-CODE   (J,PR/C,24,192,8107)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.24, p.192, 1981
-#DATASETS   1
+#DATASETS   2
 #
 #DATASET    12705002
 #DATE       19840901
@@ -31197,6 +31197,82 @@
 #/ENTRY
 #
 #
+#ENTRY      12705
+#AUTHOR1    J.K.Dickens+
+#YEAR       1981
+#INSTITUTE  (1USAORL)
+#TITLE      YIELDS OF FISSION PRODUCTS PRODUCED BY THERMAL NEUTRON
+#+          FISSION OF CF-249
+#AUTHOR(S)  J.K.Dickens, J.W.Mc Connell
+#REF-CODE   (J,PR/C,24,192,8107)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.24, p.192, 1981
+#DATASETS   2
+#
+#DATASET    12705003
+#DATE       19811202
+#REACTION   98-CF-249(N,F)MASS,CHN,FY,,SPA
+#PROJ       1
+#TARG       98249
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98249 801  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       46
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98249 801  18 A  0.025300          5.0000-3 8.0000-4          89.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          8.2000-3 4.0000-4          91.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          8.9000-3 1.0000-3          92.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.010600 1.2000-3          93.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.015200 4.0000-4          95.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.021100 6.0000-4          97.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.027800 9.0000-4          99.00000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.035900 3.6000-3          101.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.044000 0.015000          102.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.048700 1.2000-3          103.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.050500 3.8000-3          104.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.053800 1.5000-3          105.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.056400 4.0000-3          106.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.056900 6.1000-3          107.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.048000 1.0000-2          108.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.060000 1.0000-2          109.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.061700 5.2000-3          111.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.055800 6.9000-3          112.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.059000 0.016000          113.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.030800 5.5000-3          115.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.012500 1.1000-3          116.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.011700 1.1000-3          117.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          1.4000-3 5.0000-4          125.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          6.0000-3 8.0000-4          127.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          7.8000-3 4.0000-4          128.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.014400 1.5000-3          129.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.019400 8.0000-4          130.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.032000 1.2000-3          131.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.042500 2.1000-3          132.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.053800 1.8000-3          133.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.053000 1.3000-3          134.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.054700 2.7000-3          135.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.050500 3.0000-3          138.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.062400 3.5000-3          139.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.053100 1.4000-3          140.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.054000 2.5000-3          141.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.043000 2.2000-3          142.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.046200 2.4000-3          143.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.042000 3.3000-3          144.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.037200 5.7000-3          145.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.034200 1.3000-3          146.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.026000 1.8000-3          147.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.020700 1.6000-3          149.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.014700 1.2000-3          151.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          0.012700 9.0000-4          153.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+    1 98249 801  18 A  0.025300          6.4000-3 6.0000-4          156.0000                     J.K.DICKENS,ET.AL. (81)  12705  3
+#/DATA      46
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      12710
 #AUTHOR1    J.E.Gindler+
 #YEAR       1981
@@ -31206,7 +31282,7 @@
 #REF-CODE   (J,JIN,43,1743,1981)
 #REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
 #+          Vol.43, p.1743, 1981
-#DATASETS   1
+#DATASETS   2
 #
 #DATASET    12710002
 #DATE       19820502
@@ -31264,6 +31340,38 @@
 #/ENTRY
 #
 #
+#ENTRY      12710
+#AUTHOR1    J.E.Gindler+
+#YEAR       1981
+#INSTITUTE  (1USAANL)
+#TITLE      Mass distributions for the fission of Cf-250
+#AUTHOR(S)  J.E.Gindler, L.E.Glendenin, D.J.Henderson
+#REF-CODE   (J,JIN,43,1743,1981)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.43, p.1743, 1981
+#DATASETS   2
+#
+#DATASET    12710003
+#DATE       19820205
+#REACTION   98-CF-249(N,F)MASS,CHN,FY,,SPA
+#PROJ       1
+#TARG       98249
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98249 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98249 801  18 D  0.025300          0.031400 1.5000-3          115.0000                     J.E.Gindler,ET.AL. (81)  12710  3
+    1 98249 801  18 D  0.025300          2.1000-3 4.0000-4          121.0000                     J.E.Gindler,ET.AL. (81)  12710  3
+    1 98249 801  18 D  0.025300          2.3000-3 4.0000-4          125.0000                     J.E.Gindler,ET.AL. (81)  12710  3
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      21604
 #AUTHOR1    H.Gaeggeler+
 #YEAR       1978
@@ -31296,19 +31404,84 @@
 #/ENTRY
 #
 #
+#ENTRY      22116
+#AUTHOR1    M.Djebara+
+#YEAR       1989
+#INSTITUTE  (2FR ILL)
+#TITLE      -MASS AND NUCLEAR-CHARGE YIELDS FOR 249-CF(N,F) AT
+#+          DIFFERENT FISSION-PRODUCT KINETIC ENERGIES.
+#AUTHOR(S)  M.Djebara, M.Asghar, J.P.Bocquet,
+#+          R.Brissot, J.Crancon, Ch.Ristori,
+#+          E.Aker, D.Engelhardt, J.Gindler,
+#+          B.D.Wilkins, U.Quade, K.Rudolph
+#REF-CODE   (J,NP/A,496,346,8905)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.496, p.346, 1989
+#DATASETS   1
+#
+#DATASET    22116003
+#DATE       19910601
+#REACTION   98-CF-249(N,F)MASS,CHN,FY,,REL
+#PROJ       1
+#TARG       98249
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98249 801  18 U ]
+#DATA       33
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98249 801  18 U  0.025300          0.520000 0.020000          88.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          0.610000 1.0000-2          89.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          0.780000 0.020000          90.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          0.960000 0.020000          91.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.140000 0.030000          92.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.360000 0.040000          93.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.620000 0.040000          94.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.720000 0.040000          95.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.930000 0.050000          96.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          2.260000 0.050000          97.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          2.650000 0.090000          98.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          3.100000 0.080000          99.00000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          3.340000 0.100000          100.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          3.790000 0.150000          101.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          4.420000 0.150000          102.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          4.910000 0.200000          103.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.240000 0.230000          104.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.370000 0.170000          105.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.580000 0.150000          106.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.580000 0.190000          107.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.740000 0.170000          108.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.610000 0.190000          109.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.180000 0.230000          110.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          5.050000 0.140000          111.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          4.680000 0.110000          112.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          4.150000 0.120000          113.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          3.540000 0.110000          114.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          2.920000 0.070000          115.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          2.270000 0.060000          116.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.670000 0.050000          117.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          1.140000 0.040000          118.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          0.740000 1.0000-2          119.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+    1 98249 801  18 U  0.025300          0.440000 0.020000          120.0000                     M.DJEBARA,ET.AL. (89)    22116  3
+#/DATA      33
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      22296
 #AUTHOR1    R.Hentzschel+
 #YEAR       1994
 #INSTITUTE  (2GERMNZ)
-#TITLE      -Mass, charge and energy distributions in the very
-#+          asymmetric fission of Cf-249 induced by thermal
-#+          neutrons.
+#TITLE      Mass, charge and energy distributions in the very
+#+          asymmetric fission of 249Cf induced by thermal
+#+          neutrons
 #AUTHOR(S)  R.Hentzschel, H.R.Faust, H.O.Denschlag,
 #+          B.D.Wilkins, J.Gindler
 #REF-CODE   (J,NP/A,571,427,1994)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.571, p.427, 1994
-#DATASETS   1
+#DATASETS   3
 #
 #DATASET    22296002
 #DATE       20090403
@@ -31381,6 +31554,107 @@
     1 98249 801  18    0.025300          5.5230-3 5.5700-4 88.00000 36.00000                     R.Hentzschel,ET.AL. (94) 22296  2
     1 98249 801  18    0.025300          9.3900-4 4.4900-4 88.00000 37.00000                     R.Hentzschel,ET.AL. (94) 22296  2
 #/DATA      58
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22296
+#AUTHOR1    R.Hentzschel+
+#YEAR       1994
+#INSTITUTE  (2GERMNZ)
+#TITLE      Mass, charge and energy distributions in the very
+#+          asymmetric fission of 249Cf induced by thermal
+#+          neutrons
+#AUTHOR(S)  R.Hentzschel, H.R.Faust, H.O.Denschlag,
+#+          B.D.Wilkins, J.Gindler
+#REF-CODE   (J,NP/A,571,427,1994)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.571, p.427, 1994
+#DATASETS   3
+#
+#DATASET    22296003
+#DATE       20090403
+#REACTION   98-CF-249(N,F)MASS,,ZP
+#PROJ       1
+#TARG       98249
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98249 801  18   ]
+#DATA       19
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98249 801  18    0.025300          28.34000 0.390000          70.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          28.88000 0.110000          71.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          29.18000 0.080000          72.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          29.40000 0.070000          73.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          29.90000 0.130000          74.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          30.26000 0.130000          75.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          30.39000 0.160000          76.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          31.11000 0.090000          77.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          31.49000 0.070000          78.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          31.91000 0.060000          79.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          32.15000 0.070000          80.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          32.60000 0.050000          81.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          33.06000 0.040000          82.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          33.45000 0.060000          83.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          33.98000 0.070000          84.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          34.37000 0.050000          85.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          34.61000 0.060000          86.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          35.08000 0.050000          87.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+    1 98249 801  18    0.025300          35.64000 0.070000          88.00000                     R.Hentzschel,ET.AL. (94) 22296  3
+#/DATA      19
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22296
+#AUTHOR1    R.Hentzschel+
+#YEAR       1994
+#INSTITUTE  (2GERMNZ)
+#TITLE      Mass, charge and energy distributions in the very
+#+          asymmetric fission of 249Cf induced by thermal
+#+          neutrons
+#AUTHOR(S)  R.Hentzschel, H.R.Faust, H.O.Denschlag,
+#+          B.D.Wilkins, J.Gindler
+#REF-CODE   (J,NP/A,571,427,1994)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.571, p.427, 1994
+#DATASETS   3
+#
+#DATASET    22296004
+#DATE       20090403
+#REACTION   98-CF-249(N,F)MASS,CHN,FY,,REL
+#PROJ       1
+#TARG       98249
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 98249 801  18 U ]
+#DATA       20
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 98249 801  18 U  0.025300          5.6000-8 2.2000-8          69.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          2.9600-7 7.4000-8          70.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          5.2400-7 1.3000-7          71.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          1.0700-6 2.3000-7          72.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          2.0800-6 5.6000-7          73.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          5.2100-6 8.7000-7          74.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          9.3400-6 1.7000-6          75.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          1.8200-5 1.5000-6          76.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          4.5100-5 5.5000-6          77.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          7.9800-5 2.3000-6          78.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          1.8000-4 1.4000-5          79.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          2.9500-4 1.5000-5          80.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          4.6900-4 1.3000-5          81.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          7.2100-4 1.6000-5          82.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          1.1900-3 2.9000-5          83.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          1.8500-3 3.9000-5          84.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          2.4200-3 5.9000-5          85.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          3.3600-3 1.9000-4          86.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          4.1200-3 7.8000-5          87.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+    1 98249 801  18 U  0.025300          5.0900-3 1.2000-4          88.00000                     R.Hentzschel,ET.AL. (94) 22296  4
+#/DATA      20
 #/DATASET
 #/ENTRY
 #

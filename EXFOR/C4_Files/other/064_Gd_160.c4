@@ -1,19 +1,19 @@
 #ENTRY      C0413
-#AUTHOR1    J.Van De Plicht+
+#AUTHOR1    J.Van Der Plicht+
 #YEAR       1983
 #INSTITUTE  (1USALAS)
 #TITLE      Fission of polonium, osmium, and erbium composite
 #+          systems
-#AUTHOR(S)  J.Van De Plicht, H.C.Britt, M.M.Fowler,
+#AUTHOR(S)  J.Van Der Plicht, H.C.Britt, M.M.Fowler,
 #+          Z.Fraenkel, A.Gavron, J.B.Wilhelmy,
 #+          F.Plasil, T.C.Awes, G.R.Young
-#REF-CODE   (J,PR/C,28,2022,8311)
+#REF-CODE   (J,PR/C,28,2022,1983)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.28, p.2022, 1983
 #DATASETS   14
 #
 #DATASET    C0413009
-#DATE       19970405
+#DATE       20191101
 #REACTION   64-GD-160(12-MG-26,F),,SIG
 #PROJ       12026
 #TARG       64160
@@ -24,12 +24,12 @@
 #DATA       6
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-12026 64160   3  18    1.2000+8          0.013600 1.5000-3                                       J.VAN DE PLICHT, (83)    C0413  9
-12026 64160   3  18    1.3000+8          0.084000                                                J.VAN DE PLICHT, (83)    C0413  9
-12026 64160   3  18    1.4000+8          0.208000                                                J.VAN DE PLICHT, (83)    C0413  9
-12026 64160   3  18    1.5000+8          0.363000                                                J.VAN DE PLICHT, (83)    C0413  9
-12026 64160   3  18    1.6000+8          0.515000                                                J.VAN DE PLICHT, (83)    C0413  9
-12026 64160   3  18    1.7000+8          0.651000                                                J.VAN DE PLICHT, (83)    C0413  9
+12026 64160   3  18    1.2000+8          0.013600 1.5000-3                                       J.Van Der Plicht, (83)   C0413  9
+12026 64160   3  18    1.3000+8          0.084000                                                J.Van Der Plicht, (83)   C0413  9
+12026 64160   3  18    1.4000+8          0.208000                                                J.Van Der Plicht, (83)   C0413  9
+12026 64160   3  18    1.5000+8          0.363000                                                J.Van Der Plicht, (83)   C0413  9
+12026 64160   3  18    1.6000+8          0.515000                                                J.Van Der Plicht, (83)   C0413  9
+12026 64160   3  18    1.7000+8          0.651000                                                J.Van Der Plicht, (83)   C0413  9
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -670,6 +670,39 @@
  3007 64160   39000    6.1150+7          8.2000-3 1.6400-3           64160.9                     A.Jungclaus,ET.AL. (02)  O1323 11
  3007 64160   39000    6.7220+7          0.010000 2.0000-3           64160.9                     A.Jungclaus,ET.AL. (02)  O1323 11
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2534
+#AUTHOR1    R.J.Otto+
+#YEAR       1977
+#INSTITUTE  (1USABRK)
+#TITLE      Search of Superheavy Elements Produced in the 136Xe +
+#+          238U Reaction and an Upper Limit Cross Section for
+#+          the natGd(136Xe,X)212Pb Reaction
+#AUTHOR(S)  R.J.Otto, A.Ghiorso, D.Lee,
+#+          R.E.Leber, S.Yashita, G.T.Seaborg
+#REF-CODE   (J,RCA,24,3,1977)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.24, p.3, 1977
+#DATASETS   4
+#
+#DATASET    C2534003
+#DATE       20200600
+#REACTION   64-GD-160(54-XE-136,X)82-PB-212,,SIG
+#PROJ       54136
+#TARG       64160
+#MF         3
+#MT         9000
+#PRODUCT    82-PB-212
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [54136 64160   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+54136 64160   39000    1.1500+9 5.0000+7 0.000000                    82212.9                     R.J.Otto,ET.AL. (77)     C2534  3
+#/DATA      1
 #/DATASET
 #/ENTRY
 #

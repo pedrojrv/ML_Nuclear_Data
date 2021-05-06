@@ -228,7 +228,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298047
 #DATE       20130501
@@ -262,7 +262,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497014
 #DATE       20040103
@@ -278,6 +278,40 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 46102   3  16    1.4400+7 300000.0 0.637000 0.045000                                       W.D.Lu,ET.AL. (70)       10497 14
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      33146
+#AUTHOR1    I.Pasha+
+#YEAR       2020
+#INSTITUTE  (3INDBGL)
+#TITLE      Measurement of neutron induced reaction cross
+#+          sections of palladium isotopes at the neutron energy
+#+          of 14.54 +/- 0.24 MeV with covariance analysis
+#AUTHOR(S)  I.Pasha, B.Rudraswamy, S.V.Suryanarayana,
+#+          H.Naik, S.P.Ram, L.S.Danu,
+#+          T.Patel, S.Bishnoi, M.P.Karantha
+#REF-CODE   (J,JRN,325,175,2020)
+#REFERENCE  Jour. Journal of Radioanalytical and Nuclear Chemistry
+#+          Vol.325, p.175, 2020
+#DATASETS   4
+#
+#DATASET    33146003
+#DATE       20201106
+#REACTION   46-PD-102(N,2N)46-PD-101,,SIG
+#PROJ       1
+#TARG       46102
+#MF         3
+#MT         16
+#PRODUCT    46-PD-101
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46102   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46102   3  16    1.4540+7          0.916300 0.106900                                       I.Pasha,ET.AL. (20)      33146  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -388,7 +422,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -427,7 +461,7 @@
 #+          range of 15.1 to 16.3 MeV.
 #AUTHOR(S)  R.L.White, T.J.Gray
 #REF-CODE   (J,BAP,17,687(FD10),197205)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.17, p.687(FD10), 1972
 #DATASETS   5
 #
@@ -812,46 +846,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22637
-#AUTHOR1    C.Konno+
-#YEAR       1993
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation Cross section measurements at neutron
-#+          energy from 13.3 to 14.9 MeV
-#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
-#+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1329, 1993
-#DATASETS   89
-#
-#DATASET    22637042
-#DATE       20080204
-#REACTION   (46-PD-102(N,N+P)45-RH-101-M,,SIG)+(46-PD-102(N,D)45-RH-101-M,,SIG)
-#PROJ       1
-#TARG       46102
-#MF         3
-#MT         1003
-#PRODUCT    45-RH-101-M
-#DATA-HDR   DATA
-#C4BEGIN    [    1 46102   31003MD ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       8
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 46102   31003MD  1.4950+7          0.270000 0.120000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.4680+7          0.280000 0.110000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.4440+7          0.240000 0.110000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.4230+7          0.190000 0.110000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.3990+7          0.220000 0.100000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.3760+7          0.196000 0.096000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.3570+7          0.190000 0.090000                                       C.Konno,ET.AL. (93)      22637 42
-    1 46102   31003MD  1.3340+7          0.174000 0.083000                                       C.Konno,ET.AL. (93)      22637 42
-#/DATA      8
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      41614
 #AUTHOR1    A.A.Filatenkov
 #YEAR       2016
@@ -1000,7 +994,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298046
 #DATE       20130501
@@ -1019,6 +1013,46 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 46102   39000MD  1.4100+7          0.264000 0.060000           45101.7                     A.A.Filatenkov, (99)     41298 46
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22637
+#AUTHOR1    C.Konno+
+#YEAR       1993
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation Cross section measurements at neutron
+#+          energy from 13.3 to 14.9 MeV
+#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
+#+          K.Kawade, H.Yamamoto, H.Maekawa
+#REF-CODE   (R,JAERI-1329,1993)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1329, 1993
+#DATASETS   89
+#
+#DATASET    22637042
+#DATE       20200900
+#REACTION   46-PD-102(N,X)45-RH-101-M,,SIG
+#PROJ       1
+#TARG       46102
+#MF         3
+#MT         9000
+#PRODUCT    45-RH-101-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46102   39000MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46102   39000MD  1.4950+7          0.270000 0.120000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.4680+7          0.280000 0.110000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.4440+7          0.240000 0.110000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.4230+7          0.190000 0.110000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.3990+7          0.220000 0.100000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.3760+7          0.196000 0.096000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.3570+7          0.190000 0.090000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+    1 46102   39000MD  1.3340+7          0.174000 0.083000           45101.7                     C.Konno,ET.AL. (93)      22637 42
+#/DATA      8
 #/DATASET
 #/ENTRY
 #

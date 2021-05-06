@@ -127,15 +127,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507004
-#DATE       19860702
+#DATE       20190805
 #REACTION   12-MG-26(N,G)12-MG-27,,SIG,,MXW
 #PROJ       1
 #TARG       12026
@@ -147,7 +147,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 12026   3 102    0.025300          0.060000 0.060000                                       H.POMERANCE (52)         11507  4
+    1 12026   3 102    0.025300          0.060000 0.060000                                       H.Pomerance (52)         11507  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -642,13 +642,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244066
-#DATE       20110104
+#DATE       20191103
 #REACTION   12-MG-26(N,G)12-MG-27,,SIG
 #PROJ       1
 #TARG       12026
@@ -656,12 +656,11 @@
 #MT         102
 #PRODUCT    12-MG-27
 #DATA-HDR   DATA
-#C4BEGIN    [    1 12026   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 12026   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 12026   3 102 C  200000.0 30000.00 8.2000-3 1.2000-3                                       A.I.Leipunskiy, (58)     40244 66
+    1 12026   3 102    200000.0 30000.00 8.2000-3 1.2000-3                                       A.I.Leipunskiy, (58)     40244 66
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -676,13 +675,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244086
-#DATE       20100301
+#DATE       20191103
 #REACTION   12-MG-26(N,G)12-MG-27,,SIG
 #PROJ       1
 #TARG       12026
@@ -690,13 +689,12 @@
 #MT         102
 #PRODUCT    12-MG-27
 #DATA-HDR   DATA
-#C4BEGIN    [    1 12026   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 12026   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 12026   3 102 C  2700000.          3.5000-4 9.0000-5                                       A.I.Leipunskiy, (58)     40244 86
-    1 12026   3 102 C  4000000.          2.5000-4 5.0000-5                                       A.I.Leipunskiy, (58)     40244 86
+    1 12026   3 102    2700000.          3.5000-4 9.0000-5                                       A.I.Leipunskiy, (58)     40244 86
+    1 12026   3 102    4000000.          2.5000-4 5.0000-5                                       A.I.Leipunskiy, (58)     40244 86
 #/DATA      2
 #/DATASET
 #/ENTRY

@@ -161,15 +161,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507036
-#DATE       19860702
+#DATE       20190805
 #REACTION   32-GE-73(N,G)32-GE-74,,SIG,,MXW
 #PROJ       1
 #TARG       32073
@@ -181,7 +181,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 32073   3 102    0.025300          13.70000 1.096000                                       H.POMERANCE (52)         11507 36
+    1 32073   3 102    0.025300          13.70000 1.096000                                       H.Pomerance (52)         11507 36
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -632,7 +632,7 @@
 #REF-CODE   (J,NSE,116,125,1994)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.116, p.125, 1994
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    22291012
 #DATE       20150803
@@ -1037,7 +1037,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1073,29 +1073,29 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
 #
 #DATASET    22637014
-#DATE       20080204
-#REACTION   (32-GE-73(N,N+P)31-GA-72,,SIG)+(32-GE-73(N,D)31-GA-72,,SIG)
+#DATE       20200900
+#REACTION   32-GE-73(N,X)31-GA-72,,SIG
 #PROJ       1
 #TARG       32073
 #MF         3
-#MT         1003
+#MT         9000
 #PRODUCT    31-GA-72
 #DATA-HDR   DATA
-#C4BEGIN    [    1 32073   31003 D ]
+#C4BEGIN    [    1 32073   39000 D ]
 #X4STATUS   [DEP  ] Dependent data
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 32073   31003 D  1.4980+7          6.9400-3 4.4000-4                                       C.Konno,ET.AL. (93)      22637 14
-    1 32073   31003 D  1.4460+7          4.5900-3 3.1000-4                                       C.Konno,ET.AL. (93)      22637 14
-    1 32073   31003 D  1.3990+7          2.9200-3 2.4000-4                                       C.Konno,ET.AL. (93)      22637 14
-    1 32073   31003 D  1.3500+7          1.2700-3 1.8000-4                                       C.Konno,ET.AL. (93)      22637 14
+    1 32073   39000 D  1.4980+7          6.9400-3 4.4000-4           31072.9                     C.Konno,ET.AL. (93)      22637 14
+    1 32073   39000 D  1.4460+7          4.5900-3 3.1000-4           31072.9                     C.Konno,ET.AL. (93)      22637 14
+    1 32073   39000 D  1.3990+7          2.9200-3 2.4000-4           31072.9                     C.Konno,ET.AL. (93)      22637 14
+    1 32073   39000 D  1.3500+7          1.2700-3 1.8000-4           31072.9                     C.Konno,ET.AL. (93)      22637 14
 #/DATA      4
 #/DATASET
 #/ENTRY

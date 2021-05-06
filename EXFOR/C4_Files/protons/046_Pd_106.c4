@@ -288,49 +288,6 @@
 #/ENTRY
 #
 #
-#ENTRY      D0504
-#AUTHOR1    A.Spyrou+
-#YEAR       2008
-#INSTITUTE  (2GRCATH)
-#TITLE      Cross section measurements of (p,alpha) reactions on
-#+          Pd isotopes relevant to the p process
-#AUTHOR(S)  A.Spyrou, A.Lagoyannis, P.Demetriou,
-#+          S.Harissopulos, H.-W.Becker
-#REF-CODE   (J,PR/C,77,065801,2008)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.77, p.065801, 2008
-#DATASETS   3
-#
-#DATASET    D0504004
-#DATE       20080803
-#REACTION   46-PD-106(P,G)47-AG-107,,SIG
-#PROJ       1001
-#TARG       46106
-#MF         3
-#MT         102
-#PRODUCT    47-AG-107
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 46106   3 102  C]
-#DATA       12
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 46106   3 102  C 2552000.          2.2000-5 5.0000-6                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 2751000.          6.2000-5 8.0000-6                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 2950000.          1.4000-4 2.0000-5                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 3150000.          3.0000-4 4.0000-5                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 3348000.          5.8000-4 8.0000-5                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 3547000.          9.6000-4 1.3000-4                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 3746000.          1.6000-3 2.1000-4                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 3944000.          1.2700-3 1.7000-4                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 4143000.          8.3000-4 1.1000-4                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 4342000.          6.5000-4 9.0000-5                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 4540000.          6.9000-4 1.0000-4                                       A.Spyrou,ET.AL. (08)     D0504  4
- 1001 46106   3 102  C 4739000.          8.0000-4 1.1000-4                                       A.Spyrou,ET.AL. (08)     D0504  4
-#/DATA      12
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      O1291
 #AUTHOR1    A.Spyrou+
 #YEAR       2008
@@ -631,6 +588,123 @@
  1001 46106   4   2  C 5.1930+7          1.1800-3 1.1800-4 0.040478                              M.Koike,ET.AL. (75)      E1399  2
  1001 46106   4   2  C 5.1930+7          9.4100-4 9.4100-5-2.7948-3                              M.Koike,ET.AL. (75)      E1399  2
 #/DATA      32
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2393
+#AUTHOR1    J.D.Anderson+
+#YEAR       1990
+#INSTITUTE  (1USALRL)
+#TITLE      Analog (p,n) cross sections of even-even palladium
+#+          isotopes at 26 MeV
+#AUTHOR(S)  J.D.Anderson, V.R.Brown, R.W.Bauer,
+#+          B.A.Pohl, C.H.Poppe, S.Stamer,
+#+          E.Mordhorst, W.Scobel, S.M.Grimes,
+#+          V.A.Madsen
+#REF-CODE   (J,PR/C,41,1993,1990)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.41, p.1993, 1990
+#DATASETS   8
+#
+#DATASET    O2393004
+#DATE       20191102
+#REACTION   46-PD-106(P,N)47-AG-106,PAR,DA
+#PROJ       1001
+#TARG       46106
+#MF         4
+#MT         4
+#PRODUCT    47-AG-106
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001 46106   4   4  C]
+#DATA       34
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.6320-3 9.5130-4 0.999450                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.9740-3 5.5190-4 0.990983                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.9480-3 2.9000-4 0.971134                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.0690-3 1.5910-4 0.937282                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 6.6200-4 9.2000-5 0.894934                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 7.5910-4 1.2050-4 0.836764                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 7.7780-4 1.1580-4 0.772733                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.3460-4 7.4320-5 0.692142                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.7600-4 4.3850-5 0.603207                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.7990-4 3.0400-5 0.444634                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.5810-4 4.6280-5 0.258817                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.0020-4 3.1810-5 0.092369                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.0140-4 2.2400-5-0.097585                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.2570-4 2.6420-5-0.277317                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 6.8850-5 1.2340-5-0.447762                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 7.5530-5 1.5090-5-0.601818                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.2360-4 1.7180-5-0.962693                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 4.9000-4 4.7850-5 0.998890                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 4.6030-4 5.6860-5 0.987414                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.5890-4 4.1210-5 0.966376                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.2680-4 3.7540-5 0.932953                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.5880-4 2.9720-5 0.887011                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.0650-4 2.1930-5 0.832921                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.7130-4 1.8200-5 0.759271                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.4890-4 1.4540-5 0.676875                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.1340-4 1.3030-5 0.587784                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 8.9070-5 1.3360-5 0.427356                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 7.1610-5 1.5340-5 0.246997                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 4.1230-5 8.0640-6 0.081936                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.2640-5 6.9940-6-0.113206                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 4.5900-5 9.4050-6-0.294043                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 4.2440-5 7.5180-6-0.461751                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.7410-5 1.3950-5-0.614288                              J.D.Anderson,ET.AL. (90) O2393  4
+ 1001 46106   4   4  C 2.6000+7 100000.0 7.1180-5 1.2610-5-0.968149                              J.D.Anderson,ET.AL. (90) O2393  4
+#/DATA      34
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2393
+#AUTHOR1    J.D.Anderson+
+#YEAR       1990
+#INSTITUTE  (1USALRL)
+#TITLE      Analog (p,n) cross sections of even-even palladium
+#+          isotopes at 26 MeV
+#AUTHOR(S)  J.D.Anderson, V.R.Brown, R.W.Bauer,
+#+          B.A.Pohl, C.H.Poppe, S.Stamer,
+#+          E.Mordhorst, W.Scobel, S.M.Grimes,
+#+          V.A.Madsen
+#REF-CODE   (J,PR/C,41,1993,1990)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.41, p.1993, 1990
+#DATASETS   8
+#
+#DATASET    O2393008
+#DATE       20191102
+#REACTION   46-PD-106(P,N)47-AG-106,PAR,DA
+#PROJ       1001
+#TARG       46106
+#MF         4
+#MT         4
+#PRODUCT    47-AG-106
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001 46106   4   4  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.0190-5 1.6810-5 0.998719                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.8190-5 1.3610-5 0.987414                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.9900-5 9.3260-6 0.964095                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 9.6530-6 5.0410-6 0.936059                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.0090-5 9.3800-6 0.889416                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.6130-5 7.2590-6 0.830012                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 3.2490-5 1.3630-5 0.762668                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.2080-5 8.1820-6 0.681998                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.7410-5 7.0880-6 0.584957                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.1620-5 5.9170-6 0.428934                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.8450-5 9.3940-6 0.246997                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 1.0610-5 3.5550-6 0.073236                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.3060-6 2.5620-6-0.109737                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 8.4250-6 4.1780-6-0.280669                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 5.1070-6 2.5330-6-0.452437                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 8.1090-6 4.0210-6-0.603210                              J.D.Anderson,ET.AL. (90) O2393  8
+ 1001 46106   4   4  C 2.6000+7 100000.0 2.5380-5 5.3900-6-0.965018                              J.D.Anderson,ET.AL. (90) O2393  8
+#/DATA      17
 #/DATASET
 #/ENTRY
 #

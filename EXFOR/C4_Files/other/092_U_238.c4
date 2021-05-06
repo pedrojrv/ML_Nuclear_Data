@@ -819,7 +819,7 @@
 #DATASETS   7
 #
 #DATASET    A08890021
-#DATE       20110804
+#DATE       20200205
 #REACTION   92-U-238(20-CA-48,3N)112-CN-283,,SIG
 #PROJ       20048
 #TARG       92238
@@ -968,7 +968,7 @@
 #DATASETS   7
 #
 #DATASET    A08890022
-#DATE       20110804
+#DATE       20200205
 #REACTION   92-U-238(20-CA-48,4N)112-CN-282,,SIG
 #PROJ       20048
 #TARG       92238
@@ -1066,6 +1066,50 @@
 #/ENTRY
 #
 #
+#ENTRY      C2486
+#AUTHOR1    H.Freiesleben+
+#YEAR       1974
+#INSTITUTE  (1USAROC)
+#TITLE      Total reaction cross sections of deformed nuclei: A
+#+          study of the 233,238U + alpha systems
+#AUTHOR(S)  H.Freiesleben, J.R.Huizenga
+#REF-CODE   (J,NP/A,224,503,1974)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.224, p.503, 1974
+#DATASETS   3
+#
+#DATASET    C2486006
+#DATE       20200205
+#REACTION   92-U-238(3-LI-6,F),,SIG
+#PROJ       3006
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006 92238   3  18   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006 92238   3  18    2.5000+7          1.3890-3 2.5510-4                                       H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    2.6000+7          2.6460-3 5.1460-4                                       H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    2.7000+7          5.9330-3 1.0890-3                                       H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    2.8000+7          0.011460 1.8500-3                                       H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    2.9000+7          0.028630                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.0000+7          0.048290                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.1000+7          0.083730                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.2000+7          0.130200                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.3000+7          0.208200                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.4000+7          0.268000                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.5000+7          0.335800                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.6000+7          0.404000                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.7000+7          0.479500                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.7153+7          0.453800                                                H.Freiesleben,ET.AL. (74)C2486  6
+ 3006 92238   3  18    3.8000+7          0.546500                                                H.Freiesleben,ET.AL. (74)C2486  6
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D6242
 #AUTHOR1    A.Parihari+
 #YEAR       2014
@@ -1102,6 +1146,149 @@
  3006 92238   3  18    4.0000+7          0.794000 0.040000                                       A.Parihari,ET.AL. (14)   D6242  7
  3006 92238   3  18    4.2000+7          0.979000 0.049000                                       A.Parihari,ET.AL. (14)   D6242  7
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354010
+#DATE       20201102
+#REACTION   92-U-238(3-LI-6,F)2-HE-4,,SIG
+#PROJ       3006
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006 92238   3  18 D  3.0000+7          0.030000 3.0000-3            2004.9                     A.Pal,ET.AL. (19)        D6354 10
+ 3006 92238   3  18 D  3.4000+7          0.071240 6.0000-3            2004.9                     A.Pal,ET.AL. (19)        D6354 10
+ 3006 92238   3  18 D  4.0000+7          0.130730 0.015000            2004.9                     A.Pal,ET.AL. (19)        D6354 10
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354011
+#DATE       20201102
+#REACTION   92-U-238(3-LI-6,F)1-H-3,,SIG
+#PROJ       3006
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    1-H-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006 92238   3  18 D  3.0000+7          2.0300-3 1.6000-3            1003.9                     A.Pal,ET.AL. (19)        D6354 11
+ 3006 92238   3  18 D  3.4000+7          0.010910 3.8000-3            1003.9                     A.Pal,ET.AL. (19)        D6354 11
+ 3006 92238   3  18 D  4.0000+7          0.055390 0.012000            1003.9                     A.Pal,ET.AL. (19)        D6354 11
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354013
+#DATE       20201102
+#REACTION   92-U-238(3-LI-6,F)1-H-1,,SIG
+#PROJ       3006
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    1-H-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006 92238   3  18 D  3.0000+7          6.4350-4 4.0000-4            1001.9                     A.Pal,ET.AL. (19)        D6354 13
+ 3006 92238   3  18 D  3.4000+7          3.3043-3 1.1000-3            1001.9                     A.Pal,ET.AL. (19)        D6354 13
+ 3006 92238   3  18 D  4.0000+7          0.031444 7.0000-3            1001.9                     A.Pal,ET.AL. (19)        D6354 13
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354012
+#DATE       20201102
+#REACTION   92-U-238(3-LI-6,F)1-H-2,,SIG
+#PROJ       3006
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    1-H-2
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006 92238   3  18 D  3.4000+7          1.7300-3 1.0000-3            1002.9                     A.Pal,ET.AL. (19)        D6354 12
+ 3006 92238   3  18 D  4.0000+7          0.014850 7.0000-3            1002.9                     A.Pal,ET.AL. (19)        D6354 12
+#/DATA      2
 #/DATASET
 #/ENTRY
 #
@@ -3639,6 +3826,156 @@
 #/ENTRY
 #
 #
+#ENTRY      D6345
+#AUTHOR1    A.Pal+
+#YEAR       2018
+#INSTITUTE  (3INDTRM)
+#TITLE      Mass distributions of fission fragments from nuclei
+#+          populated by multinucleon transfer or incomplete
+#+          fusion channels in 6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          N.Saneesh, M.Kumar, N.L.Singh,
+#+          A.Yadav, C.Yadav, R.Dubey,
+#+          K.Kapoor, K.Rani, H.Arora,
+#+          A.C.Visakh, D.Kaur, B.K.Nayak,
+#+          A.Saxena, S.Kailas, K.-H.Schmidt
+#REF-CODE   (J,PR/C,98,031601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.031601, 2018
+#DATASETS   2
+#
+#DATASET    D6345002
+#DATE       20190904
+#REACTION   92-U-238(3-LI-6,F)MASS,SEC,FY
+#PROJ       3006
+#TARG       92238
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 3006 92238 801  18   ]
+#DATA       114
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3006 92238 801  18    3.0000+7          1.2600-5 5.1300-6          75.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          6.2900-5 1.1500-5          78.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          3.9200-4 2.8700-5          81.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          1.4460-3 5.5000-5          84.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          4.2060-3 9.3900-5          87.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          9.7860-3 1.4300-4          90.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.019548 2.0200-4          93.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.031199 2.5600-4          96.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.040275 2.9100-4          99.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.045135 3.0800-4          102.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.042834 3.0000-4          105.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.038039 2.8200-4          108.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.031143 2.5500-4          111.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.024238 2.2500-4          114.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.019265 2.0100-4          117.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.016209 1.8400-4          120.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.015910 1.8300-4          123.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.018079 1.9500-4          126.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.022532 2.1700-4          129.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.027938 2.4200-4          132.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.034223 2.6800-4          135.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.039929 2.8900-4          138.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.042668 2.9900-4          141.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.041304 2.9400-4          144.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.035455 2.7300-4          147.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.026882 2.3700-4          150.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.018194 1.9500-4          153.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          0.010610 1.4900-4          156.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          5.4070-3 1.0600-4          159.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          2.4350-3 7.1400-5          162.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          9.4500-4 4.4500-5          165.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          2.9100-4 2.4700-5          168.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          5.6600-5 1.0900-5          171.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          1.0500-5 4.6900-6          174.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          2.1000-6 2.1000-6          177.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.0000+7          2.1000-6 2.1000-6          180.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          2.5300-5 4.2700-6          75.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          1.3200-4 9.7700-6          78.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          5.4100-4 1.9800-5          81.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          1.6970-3 3.5000-5          84.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          4.4940-3 5.7000-5          87.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          9.7950-3 8.4100-5          90.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.017746 1.1300-4          93.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.027135 1.4000-4          96.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.034586 1.5800-4          99.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.039216 1.6800-4          102.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.040261 1.7000-4          105.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.037478 1.6400-4          108.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.033125 1.5500-4          111.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.028262 1.4300-4          114.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.024050 1.3200-4          117.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.021248 1.2400-4          120.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.020390 1.2100-4          123.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.022793 1.2800-4          126.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.026070 1.3700-4          129.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.030015 1.4700-4          132.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.034340 1.5700-4          135.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.038444 1.6700-4          138.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.039606 1.6900-4          141.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.037856 1.6500-4          144.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.032493 1.5300-4          147.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.025237 1.3500-4          150.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.017509 1.1200-4          153.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          0.011028 8.9200-5          156.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          6.1390-3 6.6600-5          159.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          2.9620-3 4.6200-5          162.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          1.3370-3 3.1100-5          165.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          4.5500-4 1.8100-5          168.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          1.4400-4 1.0200-5          171.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          4.2600-5 5.5500-6          174.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          1.2300-5 2.9800-6          177.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    3.4000+7          2.8900-6 1.4400-6          180.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          4.2100-7 4.2100-7          66.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          2.1100-6 9.4200-7          69.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          9.2700-6 1.9800-6          72.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          4.7600-5 4.4800-6          75.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          2.2900-4 9.8300-6          78.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          8.2400-4 1.8600-5          81.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          2.2210-3 3.0600-5          84.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          5.3560-3 4.7500-5          87.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.010857 6.7600-5          90.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.018303 8.7800-5          93.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.026915 1.0700-4          96.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.034162 1.2000-4          99.00000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.038131 1.2700-4          102.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.038648 1.2800-4          105.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.036582 1.2400-4          108.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.032815 1.1800-4          111.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.029334 1.1100-4          114.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.027072 1.0700-4          117.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.025181 1.0300-4          120.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.024887 1.0200-4          123.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.026970 1.0700-4          126.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.030452 1.1300-4          129.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.033838 1.1900-4          132.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.036591 1.2400-4          135.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.037538 1.2600-4          138.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.036493 1.2400-4          141.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.032463 1.1700-4          144.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.027091 1.0700-4          147.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.020543 9.3000-5          150.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          0.014169 7.7300-5          153.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          8.9320-3 6.1400-5          156.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          5.2140-3 4.6900-5          159.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          2.7160-3 3.3800-5          162.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          1.2830-3 2.3300-5          165.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          5.3900-4 1.5100-5          168.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          1.7000-4 8.4600-6          171.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          5.8600-5 4.9700-6          174.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          1.9000-5 2.8300-6          177.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          7.1600-6 1.7400-6          180.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          1.6900-6 8.4300-7          183.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          1.2600-6 7.3000-7          186.0000                     A.Pal,ET.AL. (18)        D6345  2
+ 3006 92238 801  18    4.0000+7          4.2100-7 4.2100-7          189.0000                     A.Pal,ET.AL. (18)        D6345  2
+#/DATA      114
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D6242
 #AUTHOR1    A.Parihari+
 #YEAR       2014
@@ -3675,6 +4012,146 @@
  3007 92238   3  18    4.0000+7          0.783000 0.039000                                       A.Parihari,ET.AL. (14)   D6242  9
  3007 92238   3  18    4.2000+7          0.980000 0.045000                                       A.Parihari,ET.AL. (14)   D6242  9
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354014
+#DATE       20201102
+#REACTION   92-U-238(3-LI-7,F)2-HE-4,,SIG
+#PROJ       3007
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 92238   3  18 D  3.1400+7          0.028500 2.0000-3            2004.9                     A.Pal,ET.AL. (19)        D6354 14
+ 3007 92238   3  18 D  4.1400+7          0.134000 0.013000            2004.9                     A.Pal,ET.AL. (19)        D6354 14
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354015
+#DATE       20201102
+#REACTION   92-U-238(3-LI-7,F)1-H-3,,SIG
+#PROJ       3007
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    1-H-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 92238   3  18 D  3.1400+7          2.2000-4 2.2000-4            1003.9                     A.Pal,ET.AL. (19)        D6354 15
+ 3007 92238   3  18 D  4.1400+7          6.8100-3 3.5000-3            1003.9                     A.Pal,ET.AL. (19)        D6354 15
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354016
+#DATE       20201102
+#REACTION   92-U-238(3-LI-7,F)1-H-2,,SIG
+#PROJ       3007
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    1-H-2
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 92238   3  18 D  3.1400+7          1.0300-3 7.0000-4            1002.9                     A.Pal,ET.AL. (19)        D6354 16
+ 3007 92238   3  18 D  4.1400+7          0.032800 5.0000-3            1002.9                     A.Pal,ET.AL. (19)        D6354 16
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6354
+#AUTHOR1    A.Pal+
+#YEAR       2019
+#INSTITUTE  (3INDTRM)
+#TITLE      Measurement of incomplete fusion cross sections in
+#+          6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          B.K.Nayak, A.Saxena, S.Kailas
+#REF-CODE   (J,PR/C,99,024620,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.024620, 2019
+#DATASETS   8
+#
+#DATASET    D6354017
+#DATE       20201102
+#REACTION   92-U-238(3-LI-7,F)1-H-1,,SIG
+#PROJ       3007
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    1-H-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 92238   3  18 D  3.1400+7          2.2000-4 2.2000-4            1001.9                     A.Pal,ET.AL. (19)        D6354 17
+ 3007 92238   3  18 D  4.1400+7          9.6000-3 4.0000-3            1001.9                     A.Pal,ET.AL. (19)        D6354 17
+#/DATA      2
 #/DATASET
 #/ENTRY
 #
@@ -6747,6 +7224,121 @@
 #/ENTRY
 #
 #
+#ENTRY      D6345
+#AUTHOR1    A.Pal+
+#YEAR       2018
+#INSTITUTE  (3INDTRM)
+#TITLE      Mass distributions of fission fragments from nuclei
+#+          populated by multinucleon transfer or incomplete
+#+          fusion channels in 6,7Li + 238U reactions
+#AUTHOR(S)  A.Pal, S.Santra, D.Chattopadhyay,
+#+          A.Kundu, A.Jhingan, P.Sugathan,
+#+          N.Saneesh, M.Kumar, N.L.Singh,
+#+          A.Yadav, C.Yadav, R.Dubey,
+#+          K.Kapoor, K.Rani, H.Arora,
+#+          A.C.Visakh, D.Kaur, B.K.Nayak,
+#+          A.Saxena, S.Kailas, K.-H.Schmidt
+#REF-CODE   (J,PR/C,98,031601,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.031601, 2018
+#DATASETS   2
+#
+#DATASET    D6345006
+#DATE       20190904
+#REACTION   92-U-238(3-LI-7,F)MASS,SEC,FY
+#PROJ       3007
+#TARG       92238
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 3007 92238 801  18   ]
+#DATA       79
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 3007 92238 801  18    3.1400+7          3.0800-6 2.1800-6          70.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          5.8400-5 9.4800-6          73.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          2.0000-4 1.7500-5          76.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          6.6000-4 3.1900-5          79.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          1.9750-3 5.5100-5          82.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          4.6680-3 8.4700-5          85.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          9.6510-3 1.2200-4          88.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.016881 1.6100-4          91.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.025665 1.9900-4          94.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.033276 2.2600-4          97.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.038482 2.4300-4          100.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.039844 2.4800-4          103.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.037435 2.4000-4          106.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.032798 2.2500-4          109.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.027283 2.0500-4          112.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.022132 1.8400-4          115.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.019074 1.7100-4          118.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.016686 1.6000-4          121.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.017169 1.6200-4          124.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.019525 1.7300-4          127.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.023261 1.8900-4          130.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.028358 2.0900-4          133.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.033301 2.2600-4          136.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.037278 2.3900-4          139.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.039676 2.4700-4          142.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.038466 2.4300-4          145.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.033072 2.2600-4          148.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.025808 1.9900-4          151.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.018368 1.6800-4          154.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          0.011936 1.3500-4          157.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          6.8630-3 1.0300-4          160.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          3.6900-3 7.5300-5          163.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          1.8200-3 5.2900-5          166.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          8.1700-4 3.5400-5          169.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          3.4000-4 2.2900-5          172.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          1.0500-4 1.2700-5          175.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          4.0000-5 7.8400-6          178.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    3.1400+7          1.0800-5 4.0700-6          181.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          5.9100-7 4.1800-7          65.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          2.9600-6 9.3500-7          68.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          2.1300-5 2.5100-6          71.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          8.4200-5 4.9900-6          74.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          3.6000-4 1.0300-5          77.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          1.0360-3 1.7500-5          80.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          2.7750-3 2.8600-5          83.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          5.9630-3 4.2000-5          86.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.011534 5.8400-5          89.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.018814 7.4600-5          92.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.026424 8.8400-5          95.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.032986 9.8700-5          98.00000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.036905 1.0400-4          101.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.037849 1.0600-4          104.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.036094 1.0300-4          107.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.033071 9.8900-5          110.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.029868 9.4000-5          113.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.027630 9.0400-5          116.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.026086 8.7800-5          119.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.025890 8.7500-5          122.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.027278 8.9800-5          125.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.031056 9.5800-5          128.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.033840 1.0000-4          131.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.036112 1.0300-4          134.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.036661 1.0400-4          137.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.035211 1.0200-4          140.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.031564 9.6600-5          143.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.026298 8.8200-5          146.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.020019 7.6900-5          149.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          0.014228 6.4800-5          152.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          9.3840-3 5.2700-5          155.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          5.7300-3 4.1200-5          158.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          3.1500-3 3.0500-5          161.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          1.5900-3 2.1700-5          164.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          6.9600-4 1.4300-5          167.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          2.8700-4 9.2100-6          170.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          1.1100-4 5.7200-6          173.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          3.2200-5 3.0900-6          176.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          1.3900-5 2.0300-6          179.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          4.4300-6 1.1400-6          182.0000                     A.Pal,ET.AL. (18)        D6345  6
+ 3007 92238 801  18    4.1400+7          1.1800-6 5.9100-7          185.0000                     A.Pal,ET.AL. (18)        D6345  6
+#/DATA      79
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0425
 #AUTHOR1    R.Raabe+
 #YEAR       2006
@@ -6780,6 +7372,46 @@
  4007 92238   3  18 AC 4.2700+7          0.119600 4.1000-3                                       R.Raabe,ET.AL. (06)      D0425  5
  4007 92238   3  18 AC 3.8800+7          0.019900 8.0000-4                                       R.Raabe,ET.AL. (06)      D0425  5
 #/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0983
+#AUTHOR1    T.Banerjee+
+#YEAR       2020
+#INSTITUTE  (3AULCBR)
+#TITLE      Systematic evidence for quasifission in 9Be-, 12C-,
+#+          and 16O-induced reactions forming 258,260No
+#AUTHOR(S)  T.Banerjee, D.J.Hinde, D.Y.Jeung,
+#+          K.Banerjee, M.Dasgupta, A.C.Berriman,
+#+          L.T.Bezzina, H.M.Albers, Ch.E.Duellmann,
+#+          J.Khuyagbaatar, B.Kindler, B.Lommel,
+#+          E.C.Simpson, C.Sengupta, B.M.A.Swinton-Bland,
+#+          T.Tanaka, A.Yakushev, K.Eberhardt,
+#+          C.Mokry, J.Runke, P.Thoerle-Pospiech,
+#+          N.Trautmann
+#REF-CODE   (J,PR/C,102,024603,2020)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.102, p.024603, 2020
+#DATASETS   6
+#
+#DATASET    D0983007
+#DATE       20200505
+#REACTION   92-U-238(4-BE-9,F),,SIG
+#PROJ       4009
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 4009 92238   3  18 AC]
+#X4STATUS   [APRVD] Approved by author
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 4009 92238   3  18 AC 4.3330+7          0.216700 1.0000-3                                       T.Banerjee,ET.AL. (20)   D0983  7
+ 4009 92238   3  18 AC 4.8160+7          0.553000 3.0000-3                                       T.Banerjee,ET.AL. (20)   D0983  7
+ 4009 92238   3  18 AC 5.7790+7          1.230000 7.0000-3                                       T.Banerjee,ET.AL. (20)   D0983  7
+#/DATA      3
 #/DATASET
 #/ENTRY
 #
@@ -7189,6 +7821,73 @@
  5011 92238   39000    1.0700+8          4.0700-4 7.0000-5           94236.9                     A.FLEURY,ET.AL. (67)     P0147  7
  5011 92238   39000    1.1100+8          3.9100-4 9.0000-5           94236.9                     A.FLEURY,ET.AL. (67)     P0147  7
 #/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2534
+#AUTHOR1    R.J.Otto+
+#YEAR       1977
+#INSTITUTE  (1USABRK)
+#TITLE      Search of Superheavy Elements Produced in the 136Xe +
+#+          238U Reaction and an Upper Limit Cross Section for
+#+          the natGd(136Xe,X)212Pb Reaction
+#AUTHOR(S)  R.J.Otto, A.Ghiorso, D.Lee,
+#+          R.E.Leber, S.Yashita, G.T.Seaborg
+#REF-CODE   (J,RCA,24,3,1977)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.24, p.3, 1977
+#DATASETS   4
+#
+#DATASET    C2534002
+#DATE       20200600
+#REACTION   92-U-238(54-XE-136,X)86-RN-211,,SIG
+#PROJ       54136
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    86-RN-211
+#DATA-HDR   DATA
+#C4BEGIN    [54136 92238   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+54136 92238   39000    1.1500+9 5.0000+7 7.0000-4 2.0000-4           86211.9                     R.J.Otto,ET.AL. (77)     C2534  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2534
+#AUTHOR1    R.J.Otto+
+#YEAR       1977
+#INSTITUTE  (1USABRK)
+#TITLE      Search of Superheavy Elements Produced in the 136Xe +
+#+          238U Reaction and an Upper Limit Cross Section for
+#+          the natGd(136Xe,X)212Pb Reaction
+#AUTHOR(S)  R.J.Otto, A.Ghiorso, D.Lee,
+#+          R.E.Leber, S.Yashita, G.T.Seaborg
+#REF-CODE   (J,RCA,24,3,1977)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.24, p.3, 1977
+#DATASETS   4
+#
+#DATASET    C2534005
+#DATE       20200600
+#REACTION   92-U-238(54-XE-136,X)110-DS-290,,SIG
+#PROJ       54136
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    110-DS-290
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [54136 92238   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+54136 92238   39000 D  1.1500+9 5.0000+7 0.000000                   110290.9                     R.J.Otto,ET.AL. (77)     C2534  5
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -10084,7 +10783,7 @@
 #AUTHOR1    Ju.P.Gangrskii+
 #YEAR       1980
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Study of delayed fission of Bk, Es, Md isotopes.
+#TITLE      Study of delayed fission of Bk, Es, Md isotopes
 #AUTHOR(S)  Ju.P.Gangrskii, M.B.Miller, L.V.Mikhailov,
 #+          I.F.Kharisov
 #REF-CODE   (J,YF,31,(2),306,1980)
@@ -10093,7 +10792,7 @@
 #DATASETS   8
 #
 #DATASET    A0071007
-#DATE       20080603
+#DATE       20200200
 #REACTION   92-U-238(7-N-14,4N)99-ES-248,,SIG
 #PROJ       7014
 #TARG       92238
@@ -10115,7 +10814,7 @@
 #AUTHOR1    Ju.P.Gangrskii+
 #YEAR       1980
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Study of delayed fission of Bk, Es, Md isotopes.
+#TITLE      Study of delayed fission of Bk, Es, Md isotopes
 #AUTHOR(S)  Ju.P.Gangrskii, M.B.Miller, L.V.Mikhailov,
 #+          I.F.Kharisov
 #REF-CODE   (J,YF,31,(2),306,1980)
@@ -10124,7 +10823,7 @@
 #DATASETS   8
 #
 #DATASET    A0071004
-#DATE       20080603
+#DATE       20200200
 #REACTION   92-U-238(7-N-14,6N)99-ES-246,,SIG
 #PROJ       7014
 #TARG       92238
@@ -10482,6 +11181,43 @@
 #/ENTRY
 #
 #
+#ENTRY      F1389
+#AUTHOR1    V.V.Volkov+
+#YEAR       1959
+#INSTITUTE  (4RUSJIA)
+#TITLE      Cross section for the production of Fm-250 in the
+#+          reactions Pu-241(C13,4n)Fm-250 and U-238(O16,4n)
+#+          Fm-250.
+#AUTHOR(S)  V.V.Volkov, L.I.Guseva, B.F.Myasoedov,
+#+          N.I.Tarantin, K.V.Filippova
+#REF-CODE   (J,ZET,37,1207,1959)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.37, p.1207, 1959
+#DATASETS   2
+#
+#DATASET    F1389003
+#DATE       20190801
+#REACTION   92-U-238(8-O-16,X)100-FM-250,,SIG
+#PROJ       8016
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    100-FM-250
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 92238   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 92238   39000    7.7337+7          1.3344-7 8.2766-8          100250.9                     V.V.Volkov,ET.AL. (59)   F1389  3
+ 8016 92238   39000    8.2772+7          3.2148-7 1.3097-7          100250.9                     V.V.Volkov,ET.AL. (59)   F1389  3
+ 8016 92238   39000    8.6722+7          1.0089-6 2.5231-7          100250.9                     V.V.Volkov,ET.AL. (59)   F1389  3
+ 8016 92238   39000    8.8330+7          9.7990-7 2.6402-7          100250.9                     V.V.Volkov,ET.AL. (59)   F1389  3
+ 8016 92238   39000    9.4283+7          5.0374-7 1.9731-7          100250.9                     V.V.Volkov,ET.AL. (59)   F1389  3
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E1377
 #AUTHOR1    N.Shinohara+
 #YEAR       1986
@@ -10631,6 +11367,104 @@
  8016 92238   39000    1.0080+8          1.3210-7 5.2160-8           98244.9                     N.Shinohara,ET.AL. (86)  E1377  9
  8016 92238   39000    1.0480+8          1.1760-6 5.7440-7           98244.9                     N.Shinohara,ET.AL. (86)  E1377  9
 #/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6322
+#AUTHOR1    T.N.Nag+
+#YEAR       2017
+#INSTITUTE  (3INDTRM)
+#TITLE      Mass distribution and mass-resolved angular
+#+          distribution in the 16O + 238U reaction at sub-barrier
+#+          energy
+#AUTHOR(S)  T.N.Nag, R.Tripathi, S.Sodaye,
+#+          K.Sudarshan, K.Ramachandran, B.K.Nayak,
+#+          P.K.Pujari
+#REF-CODE   (J,PR/C,96,044608,2017)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.96, p.044608, 2017
+#DATASETS   2
+#
+#DATASET    D6322002
+#DATE       20190301
+#REACTION   92-U-238(8-O-16,F)ELEM/MASS,CUM,FY
+#PROJ       8016
+#TARG       92238
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 92238 801  18   ]
+#DATA       29
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 92238 801  18    8.5300+7          4.7000-3 3.1000-3 36.00000 85.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.012200 3.9000-3 36.00000 88.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.014500 8.9000-3 38.00000 91.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.012900 4.3000-3 38.00000 92.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.026000 0.015000 39.00000 92.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.019800 3.6000-3 40.00000 95.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.021400 3.7000-3 40.00000 97.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.029000 1.5000-3 42.00000 99.00000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.032100 1.9000-3 44.00000 103.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.031000 9.3000-3 44.00000 105.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.036000 7.0000-3 45.00000 105.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.040000 0.029000 45.00000 105.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          7.0000-3 4.0000-3 46.00000 111.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.024500 5.6000-3 46.00000 112.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.029000 0.014000 47.00000 113.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.023000 4.1000-3 48.00000 115.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.019200 3.8000-3 48.00000 117.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.014500 2.6000-3 48.00000 117.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.017000 6.1000-3 49.00000 115.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.012000 5.0000-3 51.00000 127.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          3.5000-3 3.0000-3 51.00000 128.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.027500 8.5000-3 53.00000 131.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.018500 7.8000-3 53.00000 133.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.017000 9.2000-3 53.00000 134.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.018000 4.0000-3 56.00000 140.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          7.5000-3 5.0000-3 57.00000 140.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.018000 6.5000-3 57.00000 140.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.011000 7.0000-3 57.00000 142.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+ 8016 92238 801  18    8.5300+7          0.020500 4.9000-3 58.00000 143.0000                     T.N.Nag,ET.AL. (17)      D6322  2
+#/DATA      29
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6322
+#AUTHOR1    T.N.Nag+
+#YEAR       2017
+#INSTITUTE  (3INDTRM)
+#TITLE      Mass distribution and mass-resolved angular
+#+          distribution in the 16O + 238U reaction at sub-barrier
+#+          energy
+#AUTHOR(S)  T.N.Nag, R.Tripathi, S.Sodaye,
+#+          K.Sudarshan, K.Ramachandran, B.K.Nayak,
+#+          P.K.Pujari
+#REF-CODE   (J,PR/C,96,044608,2017)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.96, p.044608, 2017
+#DATASETS   2
+#
+#DATASET    D6322003
+#DATE       20190403
+#REACTION   92-U-238(8-O-16,F)ELEM/MASS,IND,FY
+#PROJ       8016
+#TARG       92238
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 8016 92238 801  18   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8016 92238 801  18    8.5300+7          4.3000-3 2.2000-3 51.00000 122.0000                     T.N.Nag,ET.AL. (17)      D6322  3
+ 8016 92238 801  18    8.5300+7          0.011300 1.0000-3 51.00000 124.0000                     T.N.Nag,ET.AL. (17)      D6322  3
+ 8016 92238 801  18    8.5300+7          7.5000-3 9.0000-4 51.00000 126.0000                     T.N.Nag,ET.AL. (17)      D6322  3
+ 8016 92238 801  18    8.5300+7          0.010800 3.1000-3 53.00000 130.0000                     T.N.Nag,ET.AL. (17)      D6322  3
+ 8016 92238 801  18    8.5300+7          4.8000-4 6.0000-5 93.00000 238.0000                     T.N.Nag,ET.AL. (17)      D6322  3
+#/DATA      5
 #/DATASET
 #/ENTRY
 #

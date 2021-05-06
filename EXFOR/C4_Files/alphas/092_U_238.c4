@@ -1,3 +1,34 @@
+#ENTRY      C2491
+#AUTHOR1    Z.Fraenkel+
+#YEAR       1975
+#INSTITUTE  (1USAANL)
+#TITLE      Measurement of pre- and post-fission neutron emission
+#+          at moderate excitation energies
+#AUTHOR(S)  Z.Fraenkel, I.Mayk, J.P.Unik,
+#+          A.J.Gorski, W.D.Loveland
+#REF-CODE   (J,PR/C,12,1809,1975)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.12, p.1809, 1975
+#DATASETS   5
+#
+#DATASET    C2491017
+#DATE       20200302
+#REACTION   92-U-238(A,F),PR,NU
+#PROJ       2004
+#TARG       92238
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   1 456   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   1 456    4.5000+7          8.200000 1.100000                                       Z.Fraenkel,ET.AL. (75)   C2491 17
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0691
 #AUTHOR1    S.De Barros+
 #YEAR       1986
@@ -166,6 +197,238 @@
 #/ENTRY
 #
 #
+#ENTRY      C2484
+#AUTHOR1    K.L.Wolf+
+#YEAR       1972
+#INSTITUTE  (1USAANL)
+#TITLE      Fissioning isomers of americium, curium and berkelium
+#+          isotopes
+#AUTHOR(S)  K.L.Wolf, J.P.Unik
+#REF-CODE   (J,PL/B,38,405,1972)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.38, p.405, 1972
+#DATASETS   35
+#
+#DATASET    C24840091
+#DATE       20200205
+#REACTION   92-U-238(A,3N)94-PU-239,,SIG,,,DERIV
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         17
+#PRODUCT    94-PU-239
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  17   ]
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  17    3.1400+7          0.061600                                                K.L.Wolf,ET.AL. (72)     C2484  91
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2484
+#AUTHOR1    K.L.Wolf+
+#YEAR       1972
+#INSTITUTE  (1USAANL)
+#TITLE      Fissioning isomers of americium, curium and berkelium
+#+          isotopes
+#AUTHOR(S)  K.L.Wolf, J.P.Unik
+#REF-CODE   (J,PL/B,38,405,1972)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.38, p.405, 1972
+#DATASETS   35
+#
+#DATASET    C24840092
+#DATE       20200205
+#REACTION   92-U-238(A,3N)94-PU-239-L,,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         17
+#PRODUCT    94-PU-239-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  17L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  17L   3.1400+7          3.3400-5                                                K.L.Wolf,ET.AL. (72)     C2484  92
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2486
+#AUTHOR1    H.Freiesleben+
+#YEAR       1974
+#INSTITUTE  (1USAROC)
+#TITLE      Total reaction cross sections of deformed nuclei: A
+#+          study of the 233,238U + alpha systems
+#AUTHOR(S)  H.Freiesleben, J.R.Huizenga
+#REF-CODE   (J,NP/A,224,503,1974)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.224, p.503, 1974
+#DATASETS   3
+#
+#DATASET    C2486005
+#DATE       20200205
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18 D  1.5000+7          8.9500-7                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  1.6000+7          3.1560-6                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  1.7000+7          2.5460-5                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  1.8000+7          2.2200-4                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  1.9000+7          1.3830-3                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.0000+7          6.4830-3                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.1000+7          0.024690                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.2000+7          0.062210                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.3000+7          0.124100                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.4000+7          0.241400                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.5000+7          0.412600                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.6000+7          0.530200                                                H.Freiesleben,ET.AL. (74)C2486  5
+ 2004 92238   3  18 D  2.7000+7          0.736500                                                H.Freiesleben,ET.AL. (74)C2486  5
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444019
+#DATE       20200104
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18    1.8145+7          3.0000-3                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    1.8838+7          5.0000-3                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    1.9635+7          8.0000-3                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    2.0329+7          5.0000-3                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    2.0882+7          0.014000                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    2.1401+7          0.022000                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    2.2265+7          0.050000                                                J.Jungerman (50)         C2444 19
+ 2004 92238   3  18    2.3128+7          0.082000                                                J.Jungerman (50)         C2444 19
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444023
+#DATE       20200104
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18   ]
+#DATA       20
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18    1.8174+7          6.5130-4                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    1.8191+7          1.0390-3                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    1.8897+7          1.2110-3                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    1.9688+7          2.6800-3                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    1.9689+7          3.3080-3                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.0386+7          6.7430-3                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.0412+7          6.0960-3                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.0803+7          0.011560                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.0885+7          0.015210                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.1100+7          0.020940                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.1484+7          0.018060                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.1486+7          0.021300                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.1702+7          0.033650                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.2112+7          0.025760                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.2304+7          0.051650                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.2581+7          0.039560                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.2688+7          0.045370                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.3198+7          0.081390                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.3385+7          0.094170                                                J.Jungerman (50)         C2444 23
+ 2004 92238   3  18    2.3519+7          0.101300                                                J.Jungerman (50)         C2444 23
+#/DATA      20
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444027
+#DATE       20200104
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18    1.8313+7          5.0000-3                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    2.2108+7          0.027000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    2.4277+7          0.129000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    2.5904+7          0.323000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    2.8614+7          0.464000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    2.9699+7          0.588000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    3.1867+7          0.749000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    5.5181+7          0.846000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    9.6928+7          1.488000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    1.9235+8          1.558000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    2.5687+8          1.574000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    3.0458+8          1.601000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    3.4253+8          1.612000                                                J.Jungerman (50)         C2444 27
+ 2004 92238   3  18    3.8970+8          1.337000                                                J.Jungerman (50)         C2444 27
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C2314
 #AUTHOR1    L.J.Colby Jr+
 #YEAR       1961
@@ -199,6 +462,142 @@
  2004 92238   3  18 D  3.6800+7 500000.0 1.127000                                                L.J.Colby Jr,ET.AL. (61) C2314  7
  2004 92238   3  18 D  3.9900+7 500000.0 1.317000                                                L.J.Colby Jr,ET.AL. (61) C2314  7
 #/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444026
+#DATE       20200104
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18    2.0482+7          0.016000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    2.3193+7          0.059000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    2.4819+7          0.210000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    2.6446+7          0.383000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    2.8614+7          0.534000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    3.0783+7          0.668000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    3.1867+7          0.841000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    1.9127+8          1.730000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    3.0241+8          1.612000                                                J.Jungerman (50)         C2444 26
+ 2004 92238   3  18    3.8861+8          1.509000                                                J.Jungerman (50)         C2444 26
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444018
+#DATE       20200104
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18   ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18    2.1124+7          0.024000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.1643+7          0.034000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.2613+7          0.038000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.3334+7          0.099000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.4094+7          0.126000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.4641+7          0.198000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.5328+7          0.254000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.6045+7          0.359000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.6048+7          0.332000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.6664+7          0.402000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.6696+7          0.430000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.7390+7          0.422000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.8147+7          0.471000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.8733+7          0.504000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    2.9490+7          0.560000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.0041+7          0.589000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.0449+7          0.665000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.1209+7          0.687000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.1656+7          0.727000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.1661+7          0.679000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.1689+7          0.743000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.2311+7          0.757000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.2479+7          0.808000                                                J.Jungerman (50)         C2444 18
+ 2004 92238   3  18    3.2481+7          0.793000                                                J.Jungerman (50)         C2444 18
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444017
+#DATE       20200104
+#REACTION   92-U-238(A,F),,SIG
+#PROJ       2004
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   3  18   ]
+#DATA       18
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   3  18    2.2129+7          0.027000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.2785+7          0.046000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.3542+7          0.106000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.4335+7          0.140000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.6979+7          0.373000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.7390+7          0.419000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.8221+7          0.434000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.8975+7          0.516000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    2.9522+7          0.584000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.0214+7          0.594000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.0662+7          0.616000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.0664+7          0.597000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.1386+7          0.657000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.1970+7          0.701000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.2555+7          0.749000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.2969+7          0.768000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.3205+7          0.825000                                                J.Jungerman (50)         C2444 17
+ 2004 92238   3  18    3.3207+7          0.810000                                                J.Jungerman (50)         C2444 17
+#/DATA      18
 #/DATASET
 #/ENTRY
 #
@@ -801,10 +1200,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480018
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-238(A,X)93-NP-240-M,,SIG
 #PROJ       2004
 #TARG       92238
@@ -841,10 +1240,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480019
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-238(A,X)93-NP-239,,SIG
 #PROJ       2004
 #TARG       92238
@@ -881,10 +1280,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480021
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-238(A,X)92-U-237,,SIG
 #PROJ       2004
 #TARG       92238
@@ -896,14 +1295,14 @@
 #DATA       8
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 92238   39000    2.5200+7          6.0000-4 1.2000-4           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    2.7100+7          1.5000-3 3.0000-4           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    3.2500+7          8.2000-3 1.6400-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    3.3800+7          7.9000-3 1.5800-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    3.8600+7          0.049200 9.8400-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    3.8600+7          0.056200 0.011240           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    4.3900+7          0.056000 0.011200           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
- 2004 92238   39000    4.5400+7          0.074000 0.014800           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    2.5200+7          6.0000-4 6.0000-5           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    2.7100+7          1.5000-3 1.5000-4           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    3.2500+7          8.2000-3 8.2000-4           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    3.3800+7          7.9000-3 7.9000-4           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    3.8600+7          0.049200 4.9200-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    3.8600+7          0.056200 5.6200-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    4.3900+7          0.056000 5.6000-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
+ 2004 92238   39000    4.5400+7          0.074000 7.4000-3           92237.9                     R.Vandenbosch,ET.AL. (58)A0480 21
 #/DATA      8
 #/DATASET
 #/ENTRY
@@ -920,10 +1319,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480020
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-238(A,X)93-NP-238,,SIG
 #PROJ       2004
 #TARG       92238
@@ -1653,6 +2052,84 @@
 #/ENTRY
 #
 #
+#ENTRY      C2495
+#AUTHOR1    J.R.Wu+
+#YEAR       1981
+#INSTITUTE  (1USAOAU)
+#TITLE      Fission probability of 239U at high excitation
+#+          measured with the 238U(alpha,3HeF) reaction
+#AUTHOR(S)  J.R.Wu, J.R.Beene, C.E.Bemis Jr,
+#+          F.E.Bertrand, E.E.Gross, D.J.Horen,
+#+          W.P.Jones
+#REF-CODE   (J,PR/C,24,500,1981)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.24, p.500, 1981
+#DATASETS   1
+#
+#DATASET    C2495002
+#DATE       20200302
+#REACTION   92-U-238(A,X)2-HE-3,,DA/DE
+#PROJ       2004
+#TARG       92238
+#MF         6
+#MT         9000
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238   69000   ]
+#DATA       46
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238   69000    1.5200+8          1.3310-9          0.979925   2003.9 9.5180+7          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          2.5420-9          0.979925   2003.9 9.6064+7          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          3.7280-9          0.979925   2003.9 9.6947+7          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          3.1340-9          0.979925   2003.9 9.7916+7          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          2.6390-9          0.979925   2003.9 9.8888+7          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          3.2310-9          0.979925   2003.9 9.9882+7          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          3.9230-9          0.979925   2003.9 1.0063+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          4.9360-9          0.979925   2003.9 1.0176+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          5.1090-9          0.979925   2003.9 1.0250+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          5.6270-9          0.979925   2003.9 1.0349+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          6.8130-9          0.979925   2003.9 1.0462+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          7.5050-9          0.979925   2003.9 1.0524+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          7.7020-9          0.979925   2003.9 1.0623+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          8.7150-9          0.979925   2003.9 1.0723+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          9.5060-9          0.979925   2003.9 1.0823+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          9.7280-9          0.979925   2003.9 1.0909+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0197-8          0.979925   2003.9 1.0996+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0023-8          0.979925   2003.9 1.1106+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0517-8          0.979925   2003.9 1.1205+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0912-8          0.979925   2003.9 1.1280+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1232-8          0.979925   2003.9 1.1366+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1429-8          0.979925   2003.9 1.1465+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1651-8          0.979925   2003.9 1.1551+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1675-8          0.979925   2003.9 1.1662+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1749-8          0.979925   2003.9 1.1748+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1797-8          0.979925   2003.9 1.1871+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1401-8          0.979925   2003.9 1.1943+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1944-8          0.979925   2003.9 1.2030+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1721-8          0.979925   2003.9 1.2128+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1621-8          0.979925   2003.9 1.2226+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1521-8          0.979925   2003.9 1.2312+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1694-8          0.979925   2003.9 1.2398+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.2014-8          0.979925   2003.9 1.2485+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1395-8          0.979925   2003.9 1.2581+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0628-8          0.979925   2003.9 1.2666+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1542-8          0.979925   2003.9 1.2778+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.1987-8          0.979925   2003.9 1.2865+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.2233-8          0.979925   2003.9 1.2951+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0007-8          0.979925   2003.9 1.3045+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          9.4120-9          0.979925   2003.9 1.3142+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.0821-8          0.979925   2003.9 1.3231+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          1.5396-8          0.979925   2003.9 1.3314+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          9.6080-9          0.979925   2003.9 1.3412+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          7.5050-9          0.979925   2003.9 1.3494+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          5.1300-9          0.979925   2003.9 1.3612+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+ 2004 92238   69000    1.5200+8          3.2260-9          0.979925   2003.9 1.3694+8          E2J.R.Wu,ET.AL. (81)       C2495  2
+#/DATA      46
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0810
 #AUTHOR1    H.C.Britt+
 #YEAR       1971
@@ -1823,6 +2300,37 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  2004 92238 203  17L   2.4500+7 4500000. 1.5000-5              18.9  92238.9                     H.C.Britt,ET.AL. (71)    C0810 14
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2484
+#AUTHOR1    K.L.Wolf+
+#YEAR       1972
+#INSTITUTE  (1USAANL)
+#TITLE      Fissioning isomers of americium, curium and berkelium
+#+          isotopes
+#AUTHOR(S)  K.L.Wolf, J.P.Unik
+#REF-CODE   (J,PL/B,38,405,1972)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.38, p.405, 1972
+#DATASETS   35
+#
+#DATASET    C2484023
+#DATE       20200804
+#REACTION   (92-U-238(A,3N)94-PU-239-L,,SIG)/(92-U-238(A,F),,SIG)
+#PROJ       2004
+#TARG       92238
+#MF         203
+#MT         17
+#PRODUCT    94-PU-239-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92238 203  17L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92238 203  17L   3.1400+7          3.1800-5              18.9  92238.9                     K.L.Wolf,ET.AL. (72)     C2484 23
 #/DATA      1
 #/DATASET
 #/ENTRY

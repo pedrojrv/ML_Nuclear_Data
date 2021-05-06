@@ -1,6 +1,6 @@
 # Evaluated Nuclear Data File (ENDF)
 
-This directory contains files related to various evaluations including the Evaluated Nuclear Data File (ENDF). For more information on the contents of this directory, visit the <a src="https://www-nds.iaea.org/exfor/endf.htm">IAEA website</a>. The following structure is assume by other scripts in `NucML`.
+This directory contains files related to various evaluations including the Evaluated Nuclear Data File (ENDF). For more information on the contents of this directory, visit the <a src="https://www-nds.iaea.org/exfor/endf.htm">IAEA website</a>. 
 
 
 ## Setting up the Directory
@@ -41,12 +41,9 @@ The `NucML` utilities assumes the following structure.
 
 # neutrons and protons
 
-Both the `protons` and `neutrons` directory contain the evaluation files for all nuclides including the `endf`, `jendl4.0`, and `tendl.2019` evaluations. Not every nuclide has all three evaluation files. All energies are provided in `MeV`.
+Both the `protons` and `neutrons` directory contain the evaluation files for all nuclides including the `endf`, `jendl4.0`, and `tendl.2019` evaluations. Not every nuclide has all three evaluation files. All energies are provided in `MeV`. Once ENDF releases a more user-friendly format, this directory and `NucML` will be updated. In the meantime, the provided files are not meant to be complete. 
 
 # Notebook
 
 `Notbooks`: this directory contains one notebook. It goes through various examples on how to use the NucML plotting utilities on various evaluations. Within this directory, there is also the `eval_dir_cleanup.py` script which deletes all other non necessary files that come with the evaluations download.
 
-# Downloading the Evaluation Files
-
-The ENDF files are quite heavy and are not included in the repository. Please download them <a src="TODO">here</a>.

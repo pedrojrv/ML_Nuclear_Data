@@ -9,10 +9,10 @@
 #REF-CODE   (J,NIM/B,360,118,2015)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.360, p.118, 2015
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    D0777003
-#DATE       20150904
+#DATE       20201202
 #REACTION   39-Y-89(D,2N)40-ZR-89,,SIG
 #PROJ       1002
 #TARG       39089
@@ -40,6 +40,107 @@
  1002 39089   3  16 A  1.8320+7 230000.0 0.894000 0.094000                                       O.Lebeda,ET.AL. (15)     D0777  3
  1002 39089   3  16 A  1.9490+7 210000.0 0.834000 0.088000                                       O.Lebeda,ET.AL. (15)     D0777  3
 #/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0777
+#AUTHOR1    O.Lebeda+
+#YEAR       2015
+#INSTITUTE  (3CZRUJF)
+#TITLE      Experimental cross-sections of deuteron-induced
+#+          reaction on 89Y up to 20 MeV; comparison of
+#+          natTi(d,x)48V and 27Al(d,x)24Na monitor reactions
+#AUTHOR(S)  O.Lebeda, J.Stursa, J.Ralis
+#REF-CODE   (J,NIM/B,360,118,2015)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.360, p.118, 2015
+#DATASETS   14
+#
+#DATASET    D0777004
+#DATE       20201202
+#REACTION   39-Y-89(D,2N)40-ZR-89-G,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         16
+#PRODUCT    40-ZR-89-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   3  16GD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   3  16GD  5040000. 500000.0 9.0000-5 9.6000-6                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  6040000. 430000.0 1.3080-3 1.3900-4                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  7740000. 340000.0 0.096800 0.010300                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  8930000. 300000.0 0.205000 0.022000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.0030+7 260000.0 0.317000 0.034000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.1060+7 230000.0 0.417000 0.044000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.1740+7 430000.0 0.469000 0.050000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.3000+7 380000.0 0.561000 0.059000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.4180+7 340000.0 0.623000 0.066000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.5290+7 310000.0 0.670000 0.071000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.6360+7 280000.0 0.698000 0.074000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.7360+7 260000.0 0.732000 0.077000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.8320+7 230000.0 0.755000 0.080000                                       O.Lebeda,ET.AL. (15)     D0777  4
+ 1002 39089   3  16GD  1.9490+7 210000.0 0.713000 0.075000                                       O.Lebeda,ET.AL. (15)     D0777  4
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2453
+#AUTHOR1    S.Manenti+
+#YEAR       2019
+#INSTITUTE  (2ITYMIL)
+#TITLE      New excitation functions measurement of nuclear
+#+          reactions induced by deuteron beams on yttrium with
+#+          particular reference to the production of 89Zr
+#AUTHOR(S)  S.Manenti, F.Haddad, F.Groppi
+#REF-CODE   (J,NIM/B,458,57,2019)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.458, p.57, 2019
+#DATASETS   3
+#
+#DATASET    O2453002
+#DATE       20200303
+#REACTION   39-Y-89(D,2N)40-ZR-89,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         16
+#PRODUCT    40-ZR-89
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   3  16 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       23
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   3  16 A  6000000. 300000.0 8.6200-3 7.0000-4                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  9600000. 300000.0 0.446000 0.036000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.2300+7 300000.0 0.728000 0.059000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.4100+7 300000.0 0.857000 0.070000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.4700+7 300000.0 0.851000 0.069000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.5400+7 300000.0 0.897000 0.073000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.5600+7 300000.0 0.866000 0.070000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.7100+7 300000.0 0.895000 0.073000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.7600+7 300000.0 0.928000 0.075000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.7900+7 300000.0 0.901000 0.073000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.8200+7 300000.0 0.946000 0.077000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.9600+7 300000.0 0.907000 0.074000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  1.9600+7 300000.0 0.815000 0.066000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.1000+7 300000.0 0.730000 0.059000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.1500+7 300000.0 0.685000 0.056000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.3100+7 300000.0 0.597000 0.048000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.4800+7 300000.0 0.449000 0.036000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.6400+7 300000.0 0.370000 0.030000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.7900+7 300000.0 0.292000 0.024000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.8100+7 400000.0 0.312000 0.025000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  2.9600+7 400000.0 0.252000 0.020000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  3.1000+7 300000.0 0.220000 0.018000                                       S.Manenti,ET.AL. (19)    O2453  2
+ 1002 39089   3  16 A  3.2300+7 300000.0 0.197000 0.016000                                       S.Manenti,ET.AL. (19)    O2453  2
+#/DATA      23
 #/DATASET
 #/ENTRY
 #
@@ -97,10 +198,10 @@
 #REF-CODE   (J,NIM/B,360,118,2015)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.360, p.118, 2015
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    D0777002
-#DATE       20150904
+#DATE       20201202
 #REACTION   39-Y-89(D,2N)40-ZR-89-M,,SIG
 #PROJ       1002
 #TARG       39089
@@ -201,6 +302,62 @@
 #/ENTRY
 #
 #
+#ENTRY      E2653
+#AUTHOR1    M.Sakaguchi+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Activation cross section measurement of the
+#+          deuteron-induced reaction on yttrium-89 for
+#+          zirconium-89 production
+#AUTHOR(S)  M.Sakaguchi, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,NIM/B,472,59,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.472, p.59, 2020
+#DATASETS   5
+#
+#DATASET    E2653002
+#DATE       20200802
+#REACTION   39-Y-89(D,2N)40-ZR-89,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         16
+#PRODUCT    40-ZR-89
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   3  16   ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   3  16    2.3200+7 200000.0 0.595000 0.048000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    2.2900+7 200000.0 0.613000 0.049000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    2.2600+7 200000.0 0.615000 0.049000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    2.1500+7 200000.0 0.756000 0.060000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    2.1200+7 200000.0 0.780000 0.062000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    2.0900+7 200000.0 0.832000 0.067000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.9700+7 200000.0 0.915000 0.073000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.9400+7 200000.0 0.909000 0.073000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.9100+7 200000.0 0.923000 0.074000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.7800+7 200000.0 0.964000 0.077000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.7500+7 200000.0 0.961000 0.077000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.7100+7 300000.0 0.942000 0.075000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.5800+7 300000.0 0.894000 0.072000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.5400+7 300000.0 0.872000 0.070000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.5000+7 300000.0 0.910000 0.073000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.3500+7 300000.0 0.836000 0.067000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.3100+7 300000.0 0.771000 0.062000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.2600+7 300000.0 0.759000 0.061000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.0900+7 300000.0 0.564000 0.045000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    1.0400+7 400000.0 0.528000 0.042000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    9900000. 400000.0 0.469000 0.038000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    7800000. 400000.0 0.130000 0.010000                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    7200000. 500000.0 0.062900 5.0000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+ 1002 39089   3  16    6600000. 500000.0 0.015600 1.3000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  2
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E2051
 #AUTHOR1    M.S.Uddin+
 #YEAR       2007
@@ -252,10 +409,10 @@
 #REF-CODE   (J,NIM/B,360,118,2015)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.360, p.118, 2015
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    D0777005
-#DATE       20150904
+#DATE       20201202
 #REACTION   39-Y-89(D,3N)40-ZR-88,,SIG
 #PROJ       1002
 #TARG       39089
@@ -274,6 +431,56 @@
  1002 39089   3  17 A  1.8320+7 230000.0 0.022340 2.3600-3                                       O.Lebeda,ET.AL. (15)     D0777  5
  1002 39089   3  17 A  1.9490+7 210000.0 0.062320 6.5800-3                                       O.Lebeda,ET.AL. (15)     D0777  5
 #/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2453
+#AUTHOR1    S.Manenti+
+#YEAR       2019
+#INSTITUTE  (2ITYMIL)
+#TITLE      New excitation functions measurement of nuclear
+#+          reactions induced by deuteron beams on yttrium with
+#+          particular reference to the production of 89Zr
+#AUTHOR(S)  S.Manenti, F.Haddad, F.Groppi
+#REF-CODE   (J,NIM/B,458,57,2019)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.458, p.57, 2019
+#DATASETS   3
+#
+#DATASET    O2453003
+#DATE       20200303
+#REACTION   39-Y-89(D,3N)40-ZR-88,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         17
+#PRODUCT    40-ZR-88
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   3  17 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       18
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   3  17 A  1.5400+7 300000.0 1.6400-4 1.8000-5                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.5600+7 300000.0 1.0600-4 1.6000-5                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.7100+7 300000.0 6.5400-3 5.3000-4                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.7600+7 300000.0 9.7400-3 7.9000-4                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.7900+7 300000.0 0.020800 1.7000-3                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.8200+7 300000.0 0.025100 2.0000-3                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.9600+7 300000.0 0.094900 7.7000-3                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  1.9600+7 300000.0 0.068900 5.6000-3                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.1000+7 300000.0 0.192000 0.016000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.1500+7 300000.0 0.210000 0.017000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.3100+7 300000.0 0.392000 0.032000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.4800+7 300000.0 0.498000 0.040000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.6400+7 300000.0 0.601000 0.049000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.7900+7 300000.0 0.629000 0.051000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.8100+7 400000.0 0.653000 0.053000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  2.9600+7 400000.0 0.646000 0.052000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  3.1000+7 300000.0 0.651000 0.053000                                       S.Manenti,ET.AL. (19)    O2453  3
+ 1002 39089   3  17 A  3.2300+7 300000.0 0.634000 0.052000                                       S.Manenti,ET.AL. (19)    O2453  3
+#/DATA      18
 #/DATASET
 #/ENTRY
 #
@@ -446,6 +653,50 @@
  1002 39089   3  17    2.5400+7          0.456000 0.045600                                       H.H.Bissem,ET.AL. (80)   A0347  94
  1002 39089   3  17    2.5900+7          0.428000 0.042800                                       H.H.Bissem,ET.AL. (80)   A0347  94
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2653
+#AUTHOR1    M.Sakaguchi+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Activation cross section measurement of the
+#+          deuteron-induced reaction on yttrium-89 for
+#+          zirconium-89 production
+#AUTHOR(S)  M.Sakaguchi, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,NIM/B,472,59,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.472, p.59, 2020
+#DATASETS   5
+#
+#DATASET    E2653003
+#DATE       20200802
+#REACTION   39-Y-89(D,3N)40-ZR-88,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         17
+#PRODUCT    40-ZR-88
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   3  17   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   3  17    2.3200+7 200000.0 0.381000 0.031000                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    2.2900+7 200000.0 0.354000 0.028000                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    2.2600+7 200000.0 0.315000 0.025000                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    2.1500+7 200000.0 0.228000 0.018000                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    2.1200+7 200000.0 0.199000 0.016000                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    2.0900+7 200000.0 0.175000 0.014000                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    1.9700+7 200000.0 0.082000 6.6000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    1.9400+7 200000.0 0.062800 5.0000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    1.9100+7 200000.0 0.046200 3.7000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    1.7800+7 200000.0 0.013600 1.1000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    1.7500+7 200000.0 7.4300-3 6.5000-4                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+ 1002 39089   3  17    1.7100+7 300000.0 3.9900-3 4.5000-4                                       M.Sakaguchi,ET.AL. (20)  E2653  3
+#/DATA      12
 #/DATASET
 #/ENTRY
 #
@@ -647,10 +898,10 @@
 #REF-CODE   (J,NIM/B,360,118,2015)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.360, p.118, 2015
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    D0777006
-#DATE       20150904
+#DATE       20201202
 #REACTION   39-Y-89(D,P)39-Y-90-M,,SIG
 #PROJ       1002
 #TARG       39089
@@ -971,6 +1222,64 @@
 #/ENTRY
 #
 #
+#ENTRY      E2653
+#AUTHOR1    M.Sakaguchi+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Activation cross section measurement of the
+#+          deuteron-induced reaction on yttrium-89 for
+#+          zirconium-89 production
+#AUTHOR(S)  M.Sakaguchi, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,NIM/B,472,59,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.472, p.59, 2020
+#DATASETS   5
+#
+#DATASET    E2653004
+#DATE       20200802
+#REACTION   39-Y-89(D,P)39-Y-90-M,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         103
+#PRODUCT    39-Y-90-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   3 103M  ]
+#DATA       26
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   3 103M   2.3200+7 200000.0 0.013800 1.1000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   2.2900+7 200000.0 0.013800 1.1000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   2.2600+7 200000.0 0.013500 1.1000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   2.1500+7 200000.0 0.014800 1.2000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   2.1200+7 200000.0 0.014800 1.2000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   2.0900+7 200000.0 0.015700 1.3000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.9700+7 200000.0 0.015800 1.3000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.9400+7 200000.0 0.015700 1.3000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.9100+7 200000.0 0.015400 1.3000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.7800+7 200000.0 0.016700 1.4000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.7500+7 200000.0 0.017300 1.4000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.7100+7 300000.0 0.017000 1.4000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.5800+7 300000.0 0.017800 1.4000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.5400+7 300000.0 0.017600 1.4000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.5000+7 300000.0 0.019100 1.5000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.3500+7 300000.0 0.019900 1.6000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.3100+7 300000.0 0.019200 1.6000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.2600+7 300000.0 0.019900 1.6000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.0900+7 300000.0 0.018500 1.5000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   1.0400+7 400000.0 0.019200 1.5000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   9900000. 400000.0 0.018800 1.5000-3                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   7800000. 400000.0 0.011400 9.0000-4                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   7200000. 500000.0 9.0100-3 7.3000-4                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   6600000. 500000.0 5.8900-3 4.8000-4                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   3500000. 800000.0 8.7200-5 8.2000-6                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+ 1002 39089   3 103M   2500000. 1000000. 9.0900-6 1.9300-6                                       M.Sakaguchi,ET.AL. (20)  E2653  4
+#/DATA      26
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0347
 #AUTHOR1    H.H.Bissem+
 #YEAR       1980
@@ -1111,10 +1420,10 @@
 #REF-CODE   (J,NIM/B,360,118,2015)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.360, p.118, 2015
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    D0777008
-#DATE       20150904
+#DATE       20201202
 #REACTION   39-Y-89(D,X)38-SR-87-M,,SIG
 #PROJ       1002
 #TARG       39089
@@ -1191,6 +1500,60 @@
 #/ENTRY
 #
 #
+#ENTRY      O2453
+#AUTHOR1    S.Manenti+
+#YEAR       2019
+#INSTITUTE  (2ITYMIL)
+#TITLE      New excitation functions measurement of nuclear
+#+          reactions induced by deuteron beams on yttrium with
+#+          particular reference to the production of 89Zr
+#AUTHOR(S)  S.Manenti, F.Haddad, F.Groppi
+#REF-CODE   (J,NIM/B,458,57,2019)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.458, p.57, 2019
+#DATASETS   3
+#
+#DATASET    O2453004
+#DATE       20200303
+#REACTION   39-Y-89(D,X)39-Y-88,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         9000
+#PRODUCT    39-Y-88
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       22
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   39000 D  9600000. 300000.0 2.5500-4 2.3000-5           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.2300+7 300000.0 3.7700-3 2.2000-4           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.4100+7 300000.0 7.6300-3 4.4000-4           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.4700+7 300000.0 8.5600-3 5.0000-4           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.5400+7 300000.0 9.6600-3 7.9000-4           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.5600+7 300000.0 9.8900-3 5.7000-4           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.7100+7 300000.0 0.014840 8.5000-4           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.7600+7 300000.0 0.013200 1.6000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.7900+7 300000.0 0.018000 1.6000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.8200+7 300000.0 0.018000 1.5000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.9600+7 300000.0 0.041500 3.4000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  1.9600+7 300000.0 0.030300 2.9000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.1000+7 300000.0 0.065900 5.4000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.1500+7 300000.0 0.067800 5.9000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.3100+7 300000.0 0.109900 9.3000-3           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.4800+7 300000.0 0.144000 0.012000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.6400+7 300000.0 0.207000 0.017000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.7900+7 300000.0 0.240000 0.020000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.8100+7 400000.0 0.254000 0.021000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  2.9600+7 400000.0 0.292000 0.024000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  3.1000+7 300000.0 0.319000 0.027000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+ 1002 39089   39000 D  3.2300+7 300000.0 0.348000 0.028000           39088.9                     S.Manenti,ET.AL. (19)    O2453  4
+#/DATA      22
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0777
 #AUTHOR1    O.Lebeda+
 #YEAR       2015
@@ -1202,11 +1565,11 @@
 #REF-CODE   (J,NIM/B,360,118,2015)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.360, p.118, 2015
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    D0777017
-#DATE       20180101
-#REACTION   39-Y-89(D,X)39-Y-88,IND,SIG
+#DATE       20201202
+#REACTION   39-Y-89(D,X)39-Y-88,,SIG
 #PROJ       1002
 #TARG       39089
 #MF         3
@@ -1531,6 +1894,116 @@
  1002 39089   39000M   3.7730+7 280000.0 0.140600 5.3000-3           39087.7                     H.I.West,ET.AL. (93)     C1159  61
  1002 39089   39000M   3.9410+7 210000.0 0.178000 6.3000-3           39087.7                     H.I.West,ET.AL. (93)     C1159  61
 #/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2653
+#AUTHOR1    M.Sakaguchi+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Activation cross section measurement of the
+#+          deuteron-induced reaction on yttrium-89 for
+#+          zirconium-89 production
+#AUTHOR(S)  M.Sakaguchi, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,NIM/B,472,59,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.472, p.59, 2020
+#DATASETS   5
+#
+#DATASET    E2653005
+#DATE       20200802
+#REACTION   39-Y-89(D,X)39-Y-88,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         9000
+#PRODUCT    39-Y-88
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   39000 D  2.3200+7 200000.0 0.110000 9.0000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  2.2900+7 200000.0 0.102000 8.0000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  2.2600+7 200000.0 0.092700 7.5000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  2.1500+7 200000.0 0.070700 5.7000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  2.1200+7 200000.0 0.062900 5.1000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  2.0900+7 200000.0 0.057200 4.6000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.9700+7 200000.0 0.033800 2.8000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.9400+7 200000.0 0.027800 2.3000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.9100+7 200000.0 0.023400 1.9000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.7800+7 200000.0 0.013900 1.2000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.7500+7 200000.0 0.012000 1.1000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.7100+7 300000.0 0.011200 1.0000-3           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.5800+7 300000.0 8.9100-3 7.8000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.5400+7 300000.0 8.0900-3 7.1000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.5000+7 300000.0 8.4800-3 7.7000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.3500+7 300000.0 5.4500-3 5.2000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.3100+7 300000.0 4.6100-3 4.4000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.2600+7 300000.0 3.7700-3 4.0000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.0900+7 300000.0 1.4200-3 2.2000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  1.0400+7 400000.0 9.1300-4 2.3100-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+ 1002 39089   39000 D  9900000. 400000.0 6.6500-4 2.1000-4           39088.9                     M.Sakaguchi,ET.AL. (20)  E2653  5
+#/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2653
+#AUTHOR1    M.Sakaguchi+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Activation cross section measurement of the
+#+          deuteron-induced reaction on yttrium-89 for
+#+          zirconium-89 production
+#AUTHOR(S)  M.Sakaguchi, M.Aikawa, M.Saito,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,NIM/B,472,59,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.472, p.59, 2020
+#DATASETS   5
+#
+#DATASET    E2653006
+#DATE       20200802
+#REACTION   39-Y-89(D,X)38-SR-87-M,,SIG
+#PROJ       1002
+#TARG       39089
+#MF         3
+#MT         9000
+#PRODUCT    38-SR-87-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 39089   39000M  ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 39089   39000M   2.3200+7 200000.0 1.8400-3 1.7000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   2.2900+7 200000.0 1.8200-3 1.7000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   2.2600+7 200000.0 1.8400-3 1.7000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   2.1500+7 200000.0 2.1400-3 2.2000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   2.1200+7 200000.0 1.9700-3 2.2000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   2.0900+7 200000.0 2.2000-3 2.3000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.9700+7 200000.0 2.3900-3 2.3000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.9400+7 200000.0 2.2100-3 2.2000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.9100+7 200000.0 2.1500-3 2.8000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.7800+7 200000.0 2.4300-3 2.5000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.7500+7 200000.0 2.2300-3 2.2000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.7100+7 300000.0 2.5600-3 2.6000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.5800+7 300000.0 2.5100-3 2.4000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.5400+7 300000.0 2.6400-3 2.3000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.5000+7 300000.0 2.6100-3 2.5000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.3500+7 300000.0 3.0100-3 2.7000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.3100+7 300000.0 2.6600-3 2.5000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.2600+7 300000.0 2.8600-3 2.6000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.0900+7 300000.0 2.4300-3 2.1000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   1.0400+7 400000.0 2.3900-3 2.2000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   9900000. 400000.0 2.2100-3 2.0000-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   7800000. 400000.0 9.9900-4 1.0100-4           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   7200000. 500000.0 7.4000-4 8.6000-5           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+ 1002 39089   39000M   6600000. 500000.0 4.2400-4 5.1000-5           38087.7                     M.Sakaguchi,ET.AL. (20)  E2653  6
+#/DATA      24
 #/DATASET
 #/ENTRY
 #

@@ -1871,8 +1871,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -1907,8 +1907,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -1939,53 +1939,165 @@
 #/ENTRY
 #
 #
-#ENTRY      O1737
-#AUTHOR1    M.B.Challan+
-#YEAR       2007
+#ENTRY      D4407
+#AUTHOR1    A.Elbinawi+
+#YEAR       2020
 #INSTITUTE  (3EGYCAI)
-#TITLE      Thin target yields and EMPIRE-II predictions on the
-#+          accelerator production of technetium-99-m
-#AUTHOR(S)  M.B.Challan, M.N.H.Cosman, M.A.Abou-Zeid
-#REF-CODE   (J,NRP,2,1,2007)
-#REFERENCE  Jour. Journal of Nuclear and Radiation Physics
-#+          Vol.2, p.1, 2007
-#DATASETS   2
+#TITLE      Study of proton induced nuclear reactions on
+#+          molybdenum: cross section measurements and
+#+          theoretical calculations
+#AUTHOR(S)  A.Elbinawi, M.Al-Abyad, I.Bashter,
+#+          U.Seddik, F.Ditroi
+#REF-CODE   (J,RCA,108,1,2020)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.108, p.1, 2020
+#DATASETS   4
 #
-#DATASET    O17370021
-#DATE       20090404
-#REACTION   42-MO-0(P,X)43-TC-99-M,,SIG
+#DATASET    D4407004
+#DATE       20200205
+#REACTION   42-MO-0(P,X)43-TC-95-M,,SIG
 #PROJ       1001
 #TARG       42000
 #MF         3
 #MT         9000
-#PRODUCT    43-TC-99-M
+#PRODUCT    43-TC-95-M
 #DATA-HDR   DATA
 #C4BEGIN    [ 1001 42000   39000M  ]
-#DATA       21
+#DATA       10
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000M   1.7740+7 750000.0 0.037250 3.8200-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.7210+7 730000.0 0.035730 3.6600-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.6670+7 710000.0 0.035460 3.6400-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.6120+7 680000.0 0.035900 3.6800-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.5560+7 660000.0 0.034720 3.7500-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.4980+7 640000.0 0.034120 3.6900-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.3830+7 590000.0 0.037280 4.0300-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.3620+7 580000.0 0.034820 3.7600-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.3560+7 570000.0 0.033070 3.7200-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.2840+7 540000.0 0.033830 3.8100-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.2560+7 530000.0 0.026440 2.9800-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.2150+7 520000.0 0.025490 2.8700-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.1790+7 500000.0 0.024410 2.9600-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.1490+7 490000.0 0.021530 2.6100-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.0670+7 450000.0 0.015010 1.8200-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.0540+7 450000.0 0.011830 1.4400-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   1.0340+7 440000.0 0.010720 1.4300-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   9460000. 400000.0 8.2100-3 1.0900-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   9100000. 390000.0 4.8100-3 6.4000-4           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   8730000. 370000.0 3.5100-3 4.7000-4           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
- 1001 42000   39000M   8110000. 340000.0 1.4100-3 2.9000-4           43099.7                     M.B.Challan,ET.AL. (07)  O1737  21
-#/DATA      21
+ 1001 42000   39000M   1.7100+7 400000.0 0.059500 6.5000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   1.5600+7 400000.0 0.058000 6.6000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   1.4800+7 500000.0 0.057700 6.8000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   1.3400+7 500000.0 0.054100 6.6000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   1.2500+7 500000.0 0.051500 6.5000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   1.1000+7 600000.0 0.043000 5.6000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   1.0000+7 600000.0 0.032700 4.4000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   8000000. 600000.0 0.024400 3.4000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   6600000. 600000.0 9.5000-3 1.3000-3           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+ 1001 42000   39000M   4000000. 700000.0 1.1000-3 2.0000-4           43095.7                     A.Elbinawi,ET.AL. (20)   D4407  4
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4407
+#AUTHOR1    A.Elbinawi+
+#YEAR       2020
+#INSTITUTE  (3EGYCAI)
+#TITLE      Study of proton induced nuclear reactions on
+#+          molybdenum: cross section measurements and
+#+          theoretical calculations
+#AUTHOR(S)  A.Elbinawi, M.Al-Abyad, I.Bashter,
+#+          U.Seddik, F.Ditroi
+#REF-CODE   (J,RCA,108,1,2020)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.108, p.1, 2020
+#DATASETS   4
+#
+#DATASET    D4407006
+#DATE       20200205
+#REACTION   42-MO-0(P,X)43-TC-94-G,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-94-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000G  ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000G   1.7100+7 400000.0 0.066800 7.3000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   1.5600+7 400000.0 0.060000 6.8000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   1.4800+7 500000.0 0.054000 6.4000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   1.3400+7 500000.0 0.044700 5.5000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   1.2500+7 500000.0 0.019300 2.4000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   1.1000+7 600000.0 0.015000 1.9000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   1.0000+7 600000.0 7.4000-3 1.0000-3           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   8000000. 600000.0 2.6000-3 4.0000-4           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+ 1001 42000   39000G   6600000. 600000.0 2.0000-4 1.0000-4           43094.0                     A.Elbinawi,ET.AL. (20)   D4407  6
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4407
+#AUTHOR1    A.Elbinawi+
+#YEAR       2020
+#INSTITUTE  (3EGYCAI)
+#TITLE      Study of proton induced nuclear reactions on
+#+          molybdenum: cross section measurements and
+#+          theoretical calculations
+#AUTHOR(S)  A.Elbinawi, M.Al-Abyad, I.Bashter,
+#+          U.Seddik, F.Ditroi
+#REF-CODE   (J,RCA,108,1,2020)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.108, p.1, 2020
+#DATASETS   4
+#
+#DATASET    D4407007
+#DATE       20200205
+#REACTION   42-MO-0(P,X)43-TC-94-M,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-94-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000M   1.7100+7 400000.0 0.070000 7.7000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   1.5600+7 400000.0 0.071000 8.1000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   1.4800+7 500000.0 0.073300 8.6000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   1.3400+7 500000.0 0.070300 8.6000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   1.2500+7 500000.0 0.041100 5.2000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   1.1000+7 600000.0 0.040700 5.3000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   1.0000+7 600000.0 0.036200 4.9000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+ 1001 42000   39000M   8000000. 600000.0 0.032800 4.5000-3           43094.7                     A.Elbinawi,ET.AL. (20)   D4407  7
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D4407
+#AUTHOR1    A.Elbinawi+
+#YEAR       2020
+#INSTITUTE  (3EGYCAI)
+#TITLE      Study of proton induced nuclear reactions on
+#+          molybdenum: cross section measurements and
+#+          theoretical calculations
+#AUTHOR(S)  A.Elbinawi, M.Al-Abyad, I.Bashter,
+#+          U.Seddik, F.Ditroi
+#REF-CODE   (J,RCA,108,1,2020)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.108, p.1, 2020
+#DATASETS   4
+#
+#DATASET    D4407009
+#DATE       20200205
+#REACTION   42-MO-0(P,X)41-NB-92-M,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-92-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000M   1.7100+7 400000.0 1.2000-3 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   1.5600+7 400000.0 1.2000-3 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   1.4800+7 500000.0 1.1000-3 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   1.3400+7 500000.0 1.0000-3 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   1.2500+7 500000.0 9.0000-4 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   1.1000+7 600000.0 6.0000-4 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   1.0000+7 600000.0 4.0000-4 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+ 1001 42000   39000M   8000000. 600000.0 2.0000-4 1.0000-4           41092.7                     A.Elbinawi,ET.AL. (20)   D4407  9
+#/DATA      8
 #/DATASET
 #/ENTRY
 #
@@ -2002,41 +2114,41 @@
 #+          Vol.2, p.1, 2007
 #DATASETS   2
 #
-#DATASET    O17370031
-#DATE       20090404
-#REACTION   42-MO-0(P,X)43-TC-99,,SIG
+#DATASET    O1737003
+#DATE       20191000
+#REACTION   42-MO-0(P,X)43-TC-96,,SIG
 #PROJ       1001
 #TARG       42000
 #MF         3
 #MT         9000
-#PRODUCT    43-TC-99
+#PRODUCT    43-TC-96
 #DATA-HDR   DATA
 #C4BEGIN    [ 1001 42000   39000   ]
 #DATA       22
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000    1.7740+7 750000.0 0.117000 0.011700           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.7210+7 730000.0 0.115140 0.011510           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.6670+7 710000.0 0.120000 0.012000           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.6120+7 680000.0 0.111250 0.011130           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.5560+7 660000.0 0.121340 0.012130           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.4980+7 640000.0 0.125740 0.012570           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.3830+7 590000.0 0.154720 0.015470           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.3620+7 580000.0 0.148950 0.014900           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.3560+7 570000.0 0.134970 0.013500           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.2840+7 540000.0 0.151370 0.015140           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.2560+7 530000.0 0.154470 0.015450           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.2150+7 520000.0 0.144210 0.014420           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.1790+7 500000.0 0.134290 0.013430           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.1490+7 490000.0 0.128420 0.012840           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.0670+7 450000.0 0.111670 0.011170           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.0540+7 450000.0 0.109150 0.010920           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    1.0340+7 440000.0 0.117590 0.011760           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    9460000. 400000.0 0.108230 0.010820           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    9100000. 390000.0 0.092180 9.2200-3           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    8730000. 370000.0 0.078520 7.8500-3           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    8110000. 340000.0 0.067990 6.8000-3           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
- 1001 42000   39000    7710000. 330000.0 0.043800 4.3800-3           43099.9                     M.B.Challan,ET.AL. (07)  O1737  31
+ 1001 42000   39000    1.7740+7 750000.0 0.117000 0.011700           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.7210+7 730000.0 0.115140 0.011510           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.6670+7 710000.0 0.120000 0.012000           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.6120+7 680000.0 0.111250 0.011130           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.5560+7 660000.0 0.121340 0.012130           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.4980+7 640000.0 0.125740 0.012570           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.3830+7 590000.0 0.154720 0.015470           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.3620+7 580000.0 0.148950 0.014900           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.3560+7 570000.0 0.134970 0.013500           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.2840+7 540000.0 0.151370 0.015140           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.2560+7 530000.0 0.154470 0.015450           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.2150+7 520000.0 0.144210 0.014420           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.1790+7 500000.0 0.134290 0.013430           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.1490+7 490000.0 0.128420 0.012840           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.0670+7 450000.0 0.111670 0.011170           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.0540+7 450000.0 0.109150 0.010920           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    1.0340+7 440000.0 0.117590 0.011760           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    9460000. 400000.0 0.108230 0.010820           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    9100000. 390000.0 0.092180 9.2200-3           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    8730000. 370000.0 0.078520 7.8500-3           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    8110000. 340000.0 0.067990 6.8000-3           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
+ 1001 42000   39000    7710000. 330000.0 0.043800 4.3800-3           43096.9                     M.B.Challan,ET.AL. (07)  O1737  3
 #/DATA      22
 #/DATASET
 #/ENTRY
@@ -2298,8 +2410,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -2714,6 +2826,181 @@
 #/ENTRY
 #
 #
+#ENTRY      D0971
+#AUTHOR1    A.A.Ahmed+
+#YEAR       2019
+#INSTITUTE  (3POLUJK)
+#TITLE      Reexamination of proton-induced reactions on  natMo at
+#+          19-26 MeV and study of target yield of resultant
+#+          radionuclides
+#AUTHOR(S)  A.A.Ahmed, A.Wronska, A.Magiera,
+#+          M.Bartyzel, J.W.Mietelski, R.Misiak,
+#+          B.Was
+#REF-CODE   (J,APP/B,50,1583,2019)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.50, p.1583, 2019
+#DATASETS   5
+#
+#DATASET    D0971002
+#DATE       20200102
+#REACTION   42-MO-0(P,X)43-TC-94-G,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-94-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000GA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000GA  2.2500+7 3500000. 0.060000 7.0000-3           43094.0                     A.A.Ahmed,ET.AL. (19)    D0971  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0971
+#AUTHOR1    A.A.Ahmed+
+#YEAR       2019
+#INSTITUTE  (3POLUJK)
+#TITLE      Reexamination of proton-induced reactions on  natMo at
+#+          19-26 MeV and study of target yield of resultant
+#+          radionuclides
+#AUTHOR(S)  A.A.Ahmed, A.Wronska, A.Magiera,
+#+          M.Bartyzel, J.W.Mietelski, R.Misiak,
+#+          B.Was
+#REF-CODE   (J,APP/B,50,1583,2019)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.50, p.1583, 2019
+#DATASETS   5
+#
+#DATASET    D0971004
+#DATE       20200102
+#REACTION   42-MO-0(P,X)43-TC-95-M,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-95-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000MA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000MA  2.2500+7 3500000. 0.040000 5.0000-3           43095.7                     A.A.Ahmed,ET.AL. (19)    D0971  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0971
+#AUTHOR1    A.A.Ahmed+
+#YEAR       2019
+#INSTITUTE  (3POLUJK)
+#TITLE      Reexamination of proton-induced reactions on  natMo at
+#+          19-26 MeV and study of target yield of resultant
+#+          radionuclides
+#AUTHOR(S)  A.A.Ahmed, A.Wronska, A.Magiera,
+#+          M.Bartyzel, J.W.Mietelski, R.Misiak,
+#+          B.Was
+#REF-CODE   (J,APP/B,50,1583,2019)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.50, p.1583, 2019
+#DATASETS   5
+#
+#DATASET    D0971005
+#DATE       20200102
+#REACTION   42-MO-0(P,X)43-TC-96,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-96
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000 A  2.2500+7 3500000. 0.120000 0.010000           43096.9                     A.A.Ahmed,ET.AL. (19)    D0971  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0971
+#AUTHOR1    A.A.Ahmed+
+#YEAR       2019
+#INSTITUTE  (3POLUJK)
+#TITLE      Reexamination of proton-induced reactions on  natMo at
+#+          19-26 MeV and study of target yield of resultant
+#+          radionuclides
+#AUTHOR(S)  A.A.Ahmed, A.Wronska, A.Magiera,
+#+          M.Bartyzel, J.W.Mietelski, R.Misiak,
+#+          B.Was
+#REF-CODE   (J,APP/B,50,1583,2019)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.50, p.1583, 2019
+#DATASETS   5
+#
+#DATASET    D0971006
+#DATE       20200102
+#REACTION   42-MO-0(P,X)43-TC-99-M,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-99-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000MD  2.2500+7 3500000. 0.110000 0.010000           43099.7                     A.A.Ahmed,ET.AL. (19)    D0971  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0971
+#AUTHOR1    A.A.Ahmed+
+#YEAR       2019
+#INSTITUTE  (3POLUJK)
+#TITLE      Reexamination of proton-induced reactions on  natMo at
+#+          19-26 MeV and study of target yield of resultant
+#+          radionuclides
+#AUTHOR(S)  A.A.Ahmed, A.Wronska, A.Magiera,
+#+          M.Bartyzel, J.W.Mietelski, R.Misiak,
+#+          B.Was
+#REF-CODE   (J,APP/B,50,1583,2019)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.50, p.1583, 2019
+#DATASETS   5
+#
+#DATASET    D0971007
+#DATE       20200102
+#REACTION   42-MO-0(P,X)42-MO-99,,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9000
+#PRODUCT    42-MO-99
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39000 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39000 A  2.2500+7 3500000. 0.110000 0.010000           42099.9                     A.A.Ahmed,ET.AL. (19)    D0971  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0673
 #AUTHOR1    A.A.Alharbi+
 #YEAR       2011
@@ -2857,52 +3144,16 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2006
 #INSTITUTE  (3KORPUE)
-#TITLE      Measurements of the Proton-Induced Reaction Cross-
-#+          Sections of  natMo by Using the MC50 Cyclotron at the
-#+          Korea Institute of  Radiological and Medical Sciences
+#TITLE      Measurements of the proton-induced reaction
+#+          cross-sections of natMo by using the MC50 cyclotron
+#+          at the Korea Institute of Radiological and Medical
+#+          Sciences
 #AUTHOR(S)  M.U.Khandaker, A.K.M.M.H.Meaze, K.Kim,
 #+          D.Son, G.Kim, Y.S.Lee
 #REF-CODE   (J,KPS,48,821,2006)
 #REFERENCE  Jour. Journal of the Korean Physical Society
 #+          Vol.48, p.821, 2006
-#DATASETS   4
-#
-#DATASET    D0412002
-#DATE       20060604
-#REACTION   42-MO-0(P,X)43-TC-99-M,,SIG
-#PROJ       1001
-#TARG       42000
-#MF         3
-#MT         9000
-#PRODUCT    43-TC-99-M
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 42000   39000MC ]
-#X4STATUS   [COREL] Data correlated with another data set
-#DATA       4
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000MC  2.6235+7          0.076380 7.3000-3           43099.7                     M.U.Khandaker,ET.AL. (06)D0412  2
- 1001 42000   39000MC  2.3252+7          0.123000 0.010030           43099.7                     M.U.Khandaker,ET.AL. (06)D0412  2
- 1001 42000   39000MC  1.9931+7          0.146000 0.011960           43099.7                     M.U.Khandaker,ET.AL. (06)D0412  2
- 1001 42000   39000MC  1.6311+7          0.109000 9.0400-3           43099.7                     M.U.Khandaker,ET.AL. (06)D0412  2
-#/DATA      4
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D0412
-#AUTHOR1    M.U.Khandaker+
-#YEAR       2006
-#INSTITUTE  (3KORPUE)
-#TITLE      Measurements of the Proton-Induced Reaction Cross-
-#+          Sections of  natMo by Using the MC50 Cyclotron at the
-#+          Korea Institute of  Radiological and Medical Sciences
-#AUTHOR(S)  M.U.Khandaker, A.K.M.M.H.Meaze, K.Kim,
-#+          D.Son, G.Kim, Y.S.Lee
-#REF-CODE   (J,KPS,48,821,2006)
-#REFERENCE  Jour. Journal of the Korean Physical Society
-#+          Vol.48, p.821, 2006
-#DATASETS   4
+#DATASETS   3
 #
 #DATASET    D0412003
 #DATE       20060604
@@ -2932,15 +3183,16 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2006
 #INSTITUTE  (3KORPUE)
-#TITLE      Measurements of the Proton-Induced Reaction Cross-
-#+          Sections of  natMo by Using the MC50 Cyclotron at the
-#+          Korea Institute of  Radiological and Medical Sciences
+#TITLE      Measurements of the proton-induced reaction
+#+          cross-sections of natMo by using the MC50 cyclotron
+#+          at the Korea Institute of Radiological and Medical
+#+          Sciences
 #AUTHOR(S)  M.U.Khandaker, A.K.M.M.H.Meaze, K.Kim,
 #+          D.Son, G.Kim, Y.S.Lee
 #REF-CODE   (J,KPS,48,821,2006)
 #REFERENCE  Jour. Journal of the Korean Physical Society
 #+          Vol.48, p.821, 2006
-#DATASETS   4
+#DATASETS   3
 #
 #DATASET    D0412004
 #DATE       20060604
@@ -2970,15 +3222,16 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2006
 #INSTITUTE  (3KORPUE)
-#TITLE      Measurements of the Proton-Induced Reaction Cross-
-#+          Sections of  natMo by Using the MC50 Cyclotron at the
-#+          Korea Institute of  Radiological and Medical Sciences
+#TITLE      Measurements of the proton-induced reaction
+#+          cross-sections of natMo by using the MC50 cyclotron
+#+          at the Korea Institute of Radiological and Medical
+#+          Sciences
 #AUTHOR(S)  M.U.Khandaker, A.K.M.M.H.Meaze, K.Kim,
 #+          D.Son, G.Kim, Y.S.Lee
 #REF-CODE   (J,KPS,48,821,2006)
 #REFERENCE  Jour. Journal of the Korean Physical Society
 #+          Vol.48, p.821, 2006
-#DATASETS   4
+#DATASETS   3
 #
 #DATASET    D0412005
 #DATE       20100504
@@ -4083,8 +4336,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4129,8 +4382,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4178,8 +4431,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4223,8 +4476,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4272,8 +4525,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4318,8 +4571,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4328,7 +4581,7 @@
 #DATASETS   14
 #
 #DATASET    D0446010
-#DATE       20070804
+#DATE       20191105
 #REACTION   42-MO-0(P,X)43-TC-99-M,,SIG
 #PROJ       1001
 #TARG       42000
@@ -4365,8 +4618,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4412,8 +4665,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4457,8 +4710,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -4499,8 +4752,8 @@
 #AUTHOR1    M.U.Khandaker+
 #YEAR       2007
 #INSTITUTE  (3KORKNU)
-#TITLE      Measurement of cross-sections for the (p, xn)
-#+          reactions in natural molybdenum
+#TITLE      Measurement of cross-sections for the (p,xn) reactions
+#+          in natural molybdenum
 #AUTHOR(S)  M.U.Khandaker, M.S.Uddin, K.S.Kim,
 #+          Y.S.Lee, G.N.Kim
 #REF-CODE   (J,NIM/B,262,171,2007)
@@ -5466,18 +5719,18 @@
 #AUTHOR1    S.L.Green+
 #YEAR       1988
 #INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
+#TITLE      Production of helium by medium energy (600 and
+#+          800 MeV) protons.
 #AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
 #+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
+#REF-CODE   (J,JNM,155-157,1350,1988)
 #REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
+#+          Vol.155-157, p.1350, 1988
+#DATASETS   14
 #
-#DATASET    O01030101
-#DATE       19950402
-#REACTION   42-MO-0(P,X)2-HE-4,IND,SIG,,,EXP
+#DATASET    O0103010
+#DATE       20200806
+#REACTION   42-MO-0(P,X)2-HE-4,,SIG
 #PROJ       1001
 #TARG       42000
 #MF         3
@@ -5488,7 +5741,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000    7.5000+8          0.578000                     2004.9                     S.L.GREEN,ET.AL. (88)    O0103 101
+ 1001 42000   39000    7.5000+8          0.578000                     2004.9                     S.L.Green,ET.AL. (88)    O0103 10
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5498,51 +5751,18 @@
 #AUTHOR1    S.L.Green+
 #YEAR       1988
 #INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
+#TITLE      Production of helium by medium energy (600 and
+#+          800 MeV) protons.
 #AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
 #+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
+#REF-CODE   (J,JNM,155-157,1350,1988)
 #REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
+#+          Vol.155-157, p.1350, 1988
+#DATASETS   14
 #
-#DATASET    O01030102
-#DATE       19950402
-#REACTION   42-MO-0(P,X)2-HE-4,IND,SIG,,,CALC
-#PROJ       1001
-#TARG       42000
-#MF         3
-#MT         9000
-#PRODUCT    2-HE-4
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 42000   39000   ]
-#X4DATATYPE [CALC]  Calculated data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000    7.5000+8          0.985000                     2004.9                     S.L.GREEN,ET.AL. (88)    O0103 102
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0103
-#AUTHOR1    S.L.Green+
-#YEAR       1988
-#INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
-#AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
-#+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
-#REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
-#
-#DATASET    O01030111
-#DATE       19950402
-#REACTION   42-MO-0(P,X)2-HE-3,,SIG,,,EXP
+#DATASET    O0103011
+#DATE       20200806
+#REACTION   42-MO-0(P,X)2-HE-3,,SIG
 #PROJ       1001
 #TARG       42000
 #MF         3
@@ -5553,40 +5773,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000    7.5000+8          0.056000                     2003.9                     S.L.GREEN,ET.AL. (88)    O0103 111
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0103
-#AUTHOR1    S.L.Green+
-#YEAR       1988
-#INSTITUTE  (2SWTPSI)
-#TITLE      PRODUCTION OF HELIUM BY MEDIUM ENERGY (600 AND 800
-#+          MEV) PROTONS.
-#AUTHOR(S)  S.L.Green, W.V.Green, F.H.Hegedus,
-#+          M.Victoria, W.F.Sommer, B.M.Oliver
-#REF-CODE   (J,JNM,155/157,1350,88)
-#REFERENCE  Jour. Journal of Nuclear Materials
-#+          Vol.155/157, p.1350, 1988
-#DATASETS   28
-#
-#DATASET    O01030112
-#DATE       19950402
-#REACTION   42-MO-0(P,X)2-HE-3,,SIG,,,CALC
-#PROJ       1001
-#TARG       42000
-#MF         3
-#MT         9000
-#PRODUCT    2-HE-3
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 42000   39000   ]
-#X4DATATYPE [CALC]  Calculated data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 42000   39000    7.5000+8          0.119000                     2003.9                     S.L.GREEN,ET.AL. (88)    O0103 112
+ 1001 42000   39000    7.5000+8          0.056000                     2003.9                     S.L.Green,ET.AL. (88)    O0103 11
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -6268,6 +6455,57 @@
  1001 42000   39001    3.5770+7          4.1200-3 3.9000-4           40089.9                     O.Lebeda,ET.AL. (10)     D0615 17
  1001 42000   39001    3.7110+7          5.2800-3 4.9000-4           40089.9                     O.Lebeda,ET.AL. (10)     D0615 17
 #/DATA      16
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O1737
+#AUTHOR1    M.B.Challan+
+#YEAR       2007
+#INSTITUTE  (3EGYCAI)
+#TITLE      Thin target yields and EMPIRE-II predictions on the
+#+          accelerator production of technetium-99-m
+#AUTHOR(S)  M.B.Challan, M.N.H.Cosman, M.A.Abou-Zeid
+#REF-CODE   (J,NRP,2,1,2007)
+#REFERENCE  Jour. Journal of Nuclear and Radiation Physics
+#+          Vol.2, p.1, 2007
+#DATASETS   2
+#
+#DATASET    O1737002
+#DATE       20191000
+#REACTION   42-MO-0(P,X)43-TC-99-M,CUM,SIG
+#PROJ       1001
+#TARG       42000
+#MF         3
+#MT         9001
+#PRODUCT    43-TC-99-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 42000   39001M  ]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 42000   39001M   1.7740+7 750000.0 0.037250 3.8200-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.7210+7 730000.0 0.035730 3.6600-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.6670+7 710000.0 0.035460 3.6400-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.6120+7 680000.0 0.035900 3.6800-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.5560+7 660000.0 0.034720 3.7500-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.4980+7 640000.0 0.034120 3.6900-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.3830+7 590000.0 0.037280 4.0300-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.3620+7 580000.0 0.034820 3.7600-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.3560+7 570000.0 0.033070 3.7200-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.2840+7 540000.0 0.033830 3.8100-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.2560+7 530000.0 0.026440 2.9800-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.2150+7 520000.0 0.025490 2.8700-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.1790+7 500000.0 0.024410 2.9600-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.1490+7 490000.0 0.021530 2.6100-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.0670+7 450000.0 0.015010 1.8200-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.0540+7 450000.0 0.011830 1.4400-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   1.0340+7 440000.0 0.010720 1.4300-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   9460000. 400000.0 8.2100-3 1.0900-3           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   9100000. 390000.0 4.8100-3 6.4000-4           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   8730000. 370000.0 3.5100-3 4.7000-4           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+ 1001 42000   39001M   8110000. 340000.0 1.4100-3 2.9000-4           43099.7                     M.B.Challan,ET.AL. (07)  O1737  2
+#/DATA      21
 #/DATASET
 #/ENTRY
 #

@@ -1,3 +1,36 @@
+#ENTRY      C2431
+#AUTHOR1    E.F.Neuzil+
+#YEAR       1965
+#INSTITUTE  (1USAWWS)
+#TITLE      Helium ion-induced fission of 194Pt, 195Pt and 196Pt
+#+          at 41 and 34 MeV
+#AUTHOR(S)  E.F.Neuzil, M.E.Phelps, F.Ross
+#REF-CODE   (J,JIN,27,1463,1965)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.27, p.1463, 1965
+#DATASETS   3
+#
+#DATASET    C2431008
+#DATE       20191202
+#REACTION   78-PT-194(A,F),,SIG,,,DERIV
+#PROJ       2004
+#TARG       78194
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 78194   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 78194   3  18 D  3.4000+7          9.0900-6 1.8180-6                                       E.F.Neuzil,ET.AL. (65)   C2431  8
+ 2004 78194   3  18 D  4.1000+7          2.2130-5 4.4260-6                                       E.F.Neuzil,ET.AL. (65)   C2431  8
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0773
 #AUTHOR1    K.G.Kuvatov+
 #YEAR       1972
@@ -55,6 +88,39 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  2004 78194   3  18    3.8000+7          7.0000-5 1.0000-5                                       K.G.Kuvatov,ET.AL. (72)  D0773 282
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2477
+#AUTHOR1    E.F.Neuzil+
+#YEAR       1969
+#INSTITUTE  (1USAWWS)
+#TITLE      The 65 MeV helium ion-induced fission of 194Pt, 195Pt
+#+          and 196Pt
+#AUTHOR(S)  E.F.Neuzil, K.Apt, W.Hensley,
+#+          D.Assink
+#REF-CODE   (J,JIN,31,1575,1969)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.31, p.1575, 1969
+#DATASETS   3
+#
+#DATASET    C2477005
+#DATE       20200204
+#REACTION   78-PT-194(A,F),,SIG,,,DERIV
+#PROJ       2004
+#TARG       78194
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 78194   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 78194   3  18 D  6.5000+7          6.2000-3                                                E.F.Neuzil,ET.AL. (69)   C2477  5
 #/DATA      1
 #/DATASET
 #/ENTRY

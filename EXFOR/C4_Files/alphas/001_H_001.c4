@@ -1,3 +1,42 @@
+#ENTRY      O2441
+#AUTHOR1    F.Horst+
+#YEAR       2019
+#INSTITUTE  (2GERGSI)
+#TITLE      Measurement of 4He charge- and mass-changing cross
+#+          sections on H, C, O, and Si targets in the energy
+#+          range 70-220 MeV/u for radiation transport
+#+          calculations in ion-beam therapy
+#AUTHOR(S)  F.Horst, G.Arico, K.-T.Brinkmann,
+#+          S.Brons, A.Ferrari, T.Haberer,
+#+          A.Mairani, K.Parodi, C.-A.Reidel,
+#+          U.Weber, K.Zink, C.Schuy
+#REF-CODE   (J,PR/C,99,014603,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.014603, 2019
+#DATASETS   6
+#
+#DATASET    O2441013
+#DATE       20200100
+#REACTION   1-H-1(A,NON),,SIG,,,DERIV
+#PROJ       2004
+#TARG       1001
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004  1001   3   3 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004  1001   3   3 D  2.8400+8 3.2000+7 0.137000 0.069000                                       F.Horst,ET.AL. (19)      O2441 13
+ 2004  1001   3   3 D  4.7600+8 4.0000+7 0.117000 0.037000                                       F.Horst,ET.AL. (19)      O2441 13
+ 2004  1001   3   3 D  8.5200+8 2.8000+7 0.104000 0.035000                                       F.Horst,ET.AL. (19)      O2441 13
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O1011
 #AUTHOR1    A.De Vismes+
 #YEAR       2002
@@ -485,6 +524,58 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  2004  1001   4   2 D  5625000.          0.538000          0.866025                              C.J.Wetteland,ET.AL. (98)C2103  72
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D8016
+#AUTHOR1    V.Yu.Gonchar+
+#YEAR       1970
+#INSTITUTE  (4KASKAZ)
+#TITLE      Elastic and inelastic scattering of alpha-particles
+#+          and break-up reactions on light and medium nuclei
+#AUTHOR(S)  V.Yu.Gonchar, K.S.Zheltonog, G.N.Ivanov,
+#+          A.V.Yushkov
+#REF-CODE   (R,IYFK-P-104,1970)
+#REFERENCE  Rept. Inst. Nucl.Phys., Alma-Ata, preprints
+#+          No.104, 1970
+#DATASETS   1
+#
+#DATASET    D8016002
+#DATE       20200302
+#REACTION   1-H-1(A,EL)1-H-1,,DA
+#PROJ       2004
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 2004  1001   4   2  C]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004  1001   4   2  C 3.8000+7          0.031900          0.882947                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.035000          0.829037                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.033700          0.771624                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.032100          0.629319                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.042100          0.537298                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.031900          0.430510                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.024000          0.292370                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.020400          0.207910                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.016500          0.113201                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          0.013200          0.061046                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          8.9200-3         -0.052338                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          7.0000-3         -0.173651                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          4.0600-3         -0.342023                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          3.4300-3         -0.422621                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          3.8900-3         -0.522501                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          4.0500-3         -0.573579                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          3.0700-3         -0.636081                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          4.7300-3         -0.688357                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          6.7400-3         -0.754712                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          8.5700-3         -0.809019                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+ 2004  1001   4   2  C 3.8000+7          2.4000-3         -0.852642                              V.Yu.Gonchar,ET.AL. (70) D8016  2
+#/DATA      21
 #/DATASET
 #/ENTRY
 #

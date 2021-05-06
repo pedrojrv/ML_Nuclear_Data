@@ -1,3 +1,69 @@
+#ENTRY      D5186
+#AUTHOR1    K.S.Goncharov+
+#YEAR       1980
+#INSTITUTE  (4UKRKFT)
+#TITLE      Investigation of cross sections for the production of
+#+          isomers in reactions induced by alpha-particles
+#AUTHOR(S)  K.S.Goncharov, V.A.Kuzmenko, V.V.Remaev
+#REF-CODE   (J,YF,32,620,1980)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.32, p.620, 1980
+#DATASETS   23
+#
+#DATASET    D5186026
+#DATE       20200103
+#REACTION   82-PB-204(A,3N)84-PO-205-L2,,SIG
+#PROJ       2004
+#TARG       82204
+#MF         3
+#MT         17
+#PRODUCT    84-PO-205-L2
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 82204   3  17?  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 82204   3  17?   3.7800+7          0.309000                                                K.S.Goncharov,ET.AL. (80)D5186 26
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2502
+#AUTHOR1    W.K.Hensley+
+#YEAR       1970
+#INSTITUTE  (1USABRK)
+#TITLE      Helium ion-induced fission of 204Pb at 65, 41, 37 and
+#+          25 MeV
+#AUTHOR(S)  W.K.Hensley, E.F.Neuzil
+#REF-CODE   (J,JIN,32,1761,1970)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.32, p.1761, 1970
+#DATASETS   1
+#
+#DATASET    C2502003
+#DATE       20200400
+#REACTION   82-PB-204(A,F),,SIG,,,DERIV
+#PROJ       2004
+#TARG       82204
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 82204   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 82204   3  18 D  2.5300+7          1.8000-5                                                W.K.Hensley,ET.AL. (70)  C2502  3
+ 2004 82204   3  18 D  3.6700+7          3.2000-4                                                W.K.Hensley,ET.AL. (70)  C2502  3
+ 2004 82204   3  18 D  4.1100+7          1.8240-3                                                W.K.Hensley,ET.AL. (70)  C2502  3
+ 2004 82204   3  18 D  6.5000+7          0.047000                                                W.K.Hensley,ET.AL. (70)  C2502  3
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0773
 #AUTHOR1    K.G.Kuvatov+
 #YEAR       1972
@@ -56,6 +122,41 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  2004 82204   3  18    3.8000+7          3.6000-3 3.6000-4                                       K.G.Kuvatov,ET.AL. (72)  D0773 342
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2490
+#AUTHOR1    W.K.Hensley+
+#YEAR       1970
+#INSTITUTE  (1USAWWS)
+#TITLE      Helium Ion-Induced Fission of 204Pb at 65, 41, 37 and
+#+          25 MeV
+#AUTHOR(S)  W.K.Hensley, E.F.Neuzil
+#REF-CODE   (J,JIN,32,1761,1970)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.32, p.1761, 1970
+#DATASETS   1
+#
+#DATASET    C2490006
+#DATE       20200302
+#REACTION   82-PB-204(A,F),,SIG,,,DERIV
+#PROJ       2004
+#TARG       82204
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 82204   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 82204   3  18 D  6.5000+7          0.047000                                                W.K.Hensley,ET.AL. (70)  C2490  6
+ 2004 82204   3  18 D  4.1100+7          1.8240-3                                                W.K.Hensley,ET.AL. (70)  C2490  6
+ 2004 82204   3  18 D  3.6700+7          3.2000-4                                                W.K.Hensley,ET.AL. (70)  C2490  6
+ 2004 82204   3  18 D  2.5300+7          1.8000-5                                                W.K.Hensley,ET.AL. (70)  C2490  6
+#/DATA      4
 #/DATASET
 #/ENTRY
 #
@@ -250,6 +351,44 @@
  2004 82204 204   2    2.2102+7          0.094553               2.9  82204.9                     G.Goldring,ET.AL. (70)   D0864  4
  2004 82204 204   2    2.2614+7          0.069073               2.9  82204.9                     G.Goldring,ET.AL. (70)   D0864  4
 #/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2489
+#AUTHOR1    E.F.Neuzil+
+#YEAR       1963
+#INSTITUTE  (1USAWAU)
+#TITLE      Fission Product Yields in Helium Ion-Induced Fission
+#+          of Au197, Pb204, and Pb206 Targets
+#AUTHOR(S)  E.F.Neuzil, A.W.Fairhall
+#REF-CODE   (J,PR,129,2705,1963)
+#REFERENCE  Jour. Physical Review
+#+          Vol.129, p.2705, 1963
+#DATASETS   3
+#
+#DATASET    C2489004
+#DATE       20200302
+#REACTION   82-PB-204(A,F)MASS,CHN,FY
+#PROJ       2004
+#TARG       82204
+#MF         801
+#MT         18
+#DATA-HDR   DATA DATA-MIN
+#C4BEGIN    [ 2004 82204 801  18   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 82204 801  18    4.1900+7          0.011890 2.3190-3          76.95200                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.025160 3.7060-3          82.92500                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.032290                   90.96900                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.057810                   91.85500                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.042960 0.017120          93.00300                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.051070                   96.91300                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.058910 6.2760-3          99.05000                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.042570 0.017180          108.9220                     E.F.Neuzil,ET.AL. (63)   C2489  4
+ 2004 82204 801  18    4.1900+7          0.032970                   111.1370                     E.F.Neuzil,ET.AL. (63)   C2489  4
+#/DATA      9
 #/DATASET
 #/ENTRY
 #

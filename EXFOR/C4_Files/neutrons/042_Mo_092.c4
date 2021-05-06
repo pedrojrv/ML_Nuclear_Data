@@ -1262,7 +1262,7 @@
 #REF-CODE   (J,NP/A,180,587,1972)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.180, p.587, 1972
-#DATASETS   5
+#DATASETS   8
 #
 #DATASET    30237013
 #DATE       20081203
@@ -1287,8 +1287,8 @@
 #AUTHOR1    L.Hannappel+
 #YEAR       1979
 #INSTITUTE  (2GERJLU)
-#TITLE      -Investigation of neutron induced short living yrast
-#+          isomers -.
+#TITLE      Investigation of neutron induced short living yrast
+#+          isomers
 #AUTHOR(S)  L.Hannappel, H.Henschel, H.Schneider
 #REF-CODE   (J,NIM,167,289,1979)
 #REFERENCE  Jour. Nuclear Instrum.and Methods in Physics Res.
@@ -1308,7 +1308,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3   4L   1.4900+7 200000.0 0.068000 0.014000                                       L.Hannappel,ET.AL. (79)  21612 10
+    1 42092   3   4L   1.4900+7          0.068000 0.014000                                       L.Hannappel,ET.AL. (79)  21612 10
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1327,7 +1327,7 @@
 #REF-CODE   (J,NP/A,139,42,196912)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.139, p.42, 1969
-#DATASETS   3
+#DATASETS   6
 #
 #DATASET    30028006
 #DATE       20080205
@@ -1451,7 +1451,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338007
 #DATE       20080805
@@ -1502,7 +1502,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338008
 #DATE       20151201
@@ -1553,7 +1553,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338010
 #DATE       20080805
@@ -1747,7 +1747,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298106
 #DATE       20130501
@@ -1876,7 +1876,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497006
 #DATE       20040103
@@ -1908,7 +1908,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    104970072
 #DATE       20040103
@@ -2127,7 +2127,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536015
 #DATE       20101100
@@ -2159,7 +2159,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536016
 #DATE       20101100
@@ -2191,7 +2191,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536018
 #DATE       20101100
@@ -2723,7 +2723,7 @@
 #REF-CODE   (J,AHP,18,295,196505)
 #REFERENCE  Jour. Acta Physica Hungarica
 #+          Vol.18, p.295, 1965
-#DATASETS   2
+#DATASETS   3
 #
 #DATASET    30095002
 #DATE       20080205
@@ -2753,7 +2753,7 @@
 #REF-CODE   (J,AHP,18,295,196505)
 #REFERENCE  Jour. Acta Physica Hungarica
 #+          Vol.18, p.295, 1965
-#DATASETS   2
+#DATASETS   3
 #
 #DATASET    30095003
 #DATE       20080205
@@ -2821,7 +2821,7 @@
 #DATASETS   18
 #
 #DATASET    22662008
-#DATE       20051205
+#DATE       20201201
 #REACTION   42-MO-92(N,2N)42-MO-91-G,,SIG
 #PROJ       1
 #TARG       42092
@@ -2829,17 +2829,16 @@
 #MT         16
 #PRODUCT    42-MO-91-G
 #DATA-HDR   DATA
-#C4BEGIN    [    1 42092   3  16GC ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 42092   3  16G  ]
 #DATA       6
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3  16GC  1.4870+7 50000.00 0.221000 9.7240-3                                       H.Sakane,ET.AL. (01)     22662  8
-    1 42092   3  16GC  1.4640+7 50000.00 0.203000 8.7290-3                                       H.Sakane,ET.AL. (01)     22662  8
-    1 42092   3  16GC  1.4350+7 50000.00 0.176000 7.5680-3                                       H.Sakane,ET.AL. (01)     22662  8
-    1 42092   3  16GC  1.4010+7 50000.00 0.136000 5.7120-3                                       H.Sakane,ET.AL. (01)     22662  8
-    1 42092   3  16GC  1.3700+7 50000.00 0.089000 4.0050-3                                       H.Sakane,ET.AL. (01)     22662  8
-    1 42092   3  16GC  1.3400+7 50000.00 0.046000 2.0700-3                                       H.Sakane,ET.AL. (01)     22662  8
+    1 42092   3  16G   1.4870+7 50000.00 0.221000 9.7240-3                                       H.Sakane,ET.AL. (01)     22662  8
+    1 42092   3  16G   1.4640+7 50000.00 0.203000 8.7290-3                                       H.Sakane,ET.AL. (01)     22662  8
+    1 42092   3  16G   1.4350+7 50000.00 0.176000 7.5680-3                                       H.Sakane,ET.AL. (01)     22662  8
+    1 42092   3  16G   1.4010+7 50000.00 0.136000 5.7120-3                                       H.Sakane,ET.AL. (01)     22662  8
+    1 42092   3  16G   1.3700+7 50000.00 0.089000 4.0050-3                                       H.Sakane,ET.AL. (01)     22662  8
+    1 42092   3  16G   1.3400+7 50000.00 0.046000 2.0700-3                                       H.Sakane,ET.AL. (01)     22662  8
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -2858,10 +2857,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089067
-#DATE       20081001
+#DATE       20201001
 #REACTION   42-MO-92(N,2N)42-MO-91-M,,SIG
 #PROJ       1
 #TARG       42092
@@ -3079,52 +3078,6 @@
     1 42092   3  22 P  1.4380+7 50000.00 9.4000-5 1.5980-5                                       T.Katoh,ET.AL.           22156 18
     1 42092   3  22 P  1.4080+7 50000.00 5.6000-5 1.4000-5                                       T.Katoh,ET.AL.           22156 18
 #/DATA      4
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22125
-#AUTHOR1    H.Liskien+
-#YEAR       1990
-#INSTITUTE  (2ZZZGEL)
-#TITLE      -Excitation Functions of (N,P) And (N,A) Reactions on
-#+          Molybdenum Isotopes.
-#AUTHOR(S)  H.Liskien, R.Woelfle, R.Widera,
-#+          S.M.Qaim
-#REF-CODE   (J,ARI,41,(1),83,1990)
-#REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.41, Issue.1, p.83, 1990
-#DATASETS   8
-#
-#DATASET    22125004
-#DATE       20000100
-#REACTION   42-MO-92(N,N+P)41-NB-91-M,,SIG
-#PROJ       1
-#TARG       42092
-#MF         3
-#MT         28
-#PRODUCT    41-NB-91-M
-#DATA-HDR   DATA
-#C4BEGIN    [    1 42092   3  28M  ]
-#DATA       15
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3  28M   1.2590+7 20000.00 0.084000 0.014000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.2640+7 20000.00 0.088000 0.014000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.3390+7 20000.00 0.123000 0.020000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.3430+7 20000.00 0.121000 0.019000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.4360+7 20000.00 0.134000 0.022000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.4390+7 20000.00 0.147000 0.024000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.5820+7 20000.00 0.139000 0.023000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.5840+7 20000.00 0.141000 0.023000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.6900+7 20000.00 0.133000 0.030000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.6960+7 20000.00 0.131000 0.021000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.7920+7 20000.00 0.128000 0.021000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.7990+7 20000.00 0.127000 0.020000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.8810+7 20000.00 0.127000 0.020000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.8880+7 20000.00 0.127000 0.020000                                       H.LISKIEN,ET.AL. (90)    22125  4
-    1 42092   3  28M   1.9580+7 20000.00 0.125000 0.020000                                       H.LISKIEN,ET.AL. (90)    22125  4
-#/DATA      15
 #/DATASET
 #/ENTRY
 #
@@ -3581,15 +3534,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507050
-#DATE       19860702
+#DATE       20190805
 #REACTION   42-MO-92(N,G)42-MO-93,,SIG,,MXW
 #PROJ       1
 #TARG       42092
@@ -3601,7 +3554,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3 102    0.025300          0.000000 3.000000                                       H.POMERANCE (52)         11507 50
+    1 42092   3 102    0.025300          0.000000 0.300000                                       H.Pomerance (52)         11507 50
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -4343,14 +4296,14 @@
 #AUTHOR1    H.Liskien+
 #YEAR       1990
 #INSTITUTE  (2ZZZGEL)
-#TITLE      -Excitation Functions of (N,P) And (N,A) Reactions on
-#+          Molybdenum Isotopes.
+#TITLE      Excitation functions of (n,p) and (n,alpha) reactions
+#+          on molybdenum isotopes.
 #AUTHOR(S)  H.Liskien, R.Woelfle, R.Widera,
 #+          S.M.Qaim
-#REF-CODE   (J,ARI,41,(1),83,1990)
+#REF-CODE   (J,ARI,41,83,1990)
 #REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.41, Issue.1, p.83, 1990
-#DATASETS   8
+#+          Vol.41, p.83, 1990
+#DATASETS   7
 #
 #DATASET    22125003
 #DATE       20000100
@@ -4365,21 +4318,21 @@
 #DATA       15
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3 103M   1.2590+7 20000.00 0.109900 5.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.2640+7 20000.00 0.107500 5.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.3390+7 20000.00 0.098400 4.9000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.3430+7 20000.00 0.096600 4.8000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.4360+7 20000.00 0.081300 4.1000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.4390+7 20000.00 0.080600 4.1000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.5820+7 20000.00 0.058700 2.9000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.5840+7 20000.00 0.059600 3.2000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.6900+7 20000.00 0.051500 2.9000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.6960+7 20000.00 0.051400 2.7000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.7920+7 20000.00 0.047300 2.5000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.7990+7 20000.00 0.047000 2.4000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.8810+7 20000.00 0.046100 2.4000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.8880+7 20000.00 0.046500 2.4000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
-    1 42092   3 103M   1.9580+7 20000.00 0.051000 2.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.2590+7 20000.00 0.109900 5.6000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.2640+7 20000.00 0.107500 5.6000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.3390+7 20000.00 0.098400 4.9000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.3430+7 20000.00 0.096600 4.8000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.4360+7 20000.00 0.081300 4.1000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.4390+7 20000.00 0.080600 4.1000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.5820+7 20000.00 0.058700 2.9000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.5840+7 20000.00 0.059600 3.2000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.6900+7 20000.00 0.051500 2.9000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.6960+7 20000.00 0.051400 2.7000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.7920+7 20000.00 0.047300 2.5000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.7990+7 20000.00 0.047000 2.4000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.8810+7 20000.00 0.046100 2.4000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.8880+7 20000.00 0.046500 2.4000-3                                       H.Liskien,ET.AL. (90)    22125  3
+    1 42092   3 103M   1.9580+7 20000.00 0.051000 2.6000-3                                       H.Liskien,ET.AL. (90)    22125  3
 #/DATA      15
 #/DATASET
 #/ENTRY
@@ -4472,7 +4425,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338011
 #DATE       20080805
@@ -4620,7 +4573,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298043
 #DATE       20130501
@@ -4712,21 +4665,24 @@
 #/ENTRY
 #
 #
-#ENTRY      20841
-#AUTHOR1    K.Fukuda+
-#YEAR       1978
-#INSTITUTE  (2JAPKYU)
-#TITLE      -ACTIVATION CROSS SECTIONS ON FE,CO,NI,ZR AND MO
-#+          FOR 14.6 MEV NEUTRONS-.
-#AUTHOR(S)  K.Fukuda, K.Matsuo, S.Shirahama,
-#+          I.Kumabe
-#REF-CODE   (P,NEANDC(J)-56/U,44,7809)
-#REFERENCE  Prog. Japanese report to NEANDC
-#+          No.56/U, p.44, 1978
-#DATASETS   12
+#ENTRY      33148
+#AUTHOR1    I.Pasha+
+#YEAR       2020
+#INSTITUTE  (3INDBGL)
+#TITLE      Measurement of 14.54 +/- 0.24 MeV neutron activation
+#+          reaction cross sections of 93Nb, natMo with covariance
+#+          analysis
+#AUTHOR(S)  I.Pasha, B.Rudraswamy, S.Y.Santhi,
+#+          S.V.Suryanarayana, R.Pachuau, C.V.Midhun,
+#+          H.Naik, T.Patel, S.Bishnoi,
+#+          L.S.Danu
+#REF-CODE   (J,JRN,325,863,2020)
+#REFERENCE  Jour. Journal of Radioanalytical and Nuclear Chemistry
+#+          Vol.325, p.863, 2020
+#DATASETS   3
 #
-#DATASET    20841006
-#DATE       19840203
+#DATASET    33148004
+#DATE       20201103
 #REACTION   42-MO-92(N,P)41-NB-92-M,,SIG
 #PROJ       1
 #TARG       42092
@@ -4738,7 +4694,39 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3 103M   1.4600+7          0.071800 5.7000-3                                       K.FUKUDA,ET.AL. (78)     20841  6
+    1 42092   3 103M   1.4540+7          0.074820 9.9100-3                                       I.Pasha,ET.AL. (20)      33148  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20841
+#AUTHOR1    K.Fukuda+
+#YEAR       1978
+#INSTITUTE  (2JPNKYU)
+#TITLE      Activation cross sections on Fe,Co,Ni,Zr and Mo
+#+          for 14.6 MeV neutrons
+#AUTHOR(S)  K.Fukuda, K.Matsuo, S.Shirahama,
+#+          I.Kumabe
+#REF-CODE   (P,NEANDC(J)-56,44,1978)
+#REFERENCE  Prog. Japanese report to NEANDC
+#+          No.56, p.44, 1978
+#DATASETS   12
+#
+#DATASET    20841006
+#DATE       20200905
+#REACTION   42-MO-92(N,P)41-NB-92-M,,SIG
+#PROJ       1
+#TARG       42092
+#MF         3
+#MT         103
+#PRODUCT    41-NB-92-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092   3 103M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092   3 103M   1.4600+7          0.071800 5.7000-3                                       K.Fukuda,ET.AL. (78)     20841  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5028,6 +5016,40 @@
 #/ENTRY
 #
 #
+#ENTRY      33129
+#AUTHOR1    I.Pasha+
+#YEAR       2019
+#INSTITUTE  (3INDIND)
+#TITLE      93Nb(n,2n)92mNb, 93Nb(n,alpha)90mY and 92Mo(n,p)92mNb
+#+          reactions at 14.78 MeV and covariance analysis
+#AUTHOR(S)  I.Pasha, R.Basavanna, S.S.Yerranguntla,
+#+          S.V.Suryanarayana, M.Karkera, H.Naik,
+#+          M.P.Karantha, L.S.Danu, S.Bishnoi,
+#+          T.Patel, R.Kumar
+#REF-CODE   (J,JRN,320,561,2019)
+#REFERENCE  Jour. Journal of Radioanalytical and Nuclear Chemistry
+#+          Vol.320, p.561, 2019
+#DATASETS   3
+#
+#DATASET    33129004
+#DATE       20191103
+#REACTION   42-MO-92(N,P)41-NB-92-M,,SIG
+#PROJ       1
+#TARG       42092
+#MF         3
+#MT         103
+#PRODUCT    41-NB-92-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092   3 103M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092   3 103M   1.4780+7          0.062600 9.6800-3                                       I.Pasha,ET.AL. (19)      33129  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      10477
 #AUTHOR1    R.A.Sigg+
 #YEAR       1975
@@ -5168,10 +5190,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089068
-#DATE       20081001
+#DATE       20201001
 #REACTION   42-MO-92(N,P)41-NB-92-M,,SIG
 #PROJ       1
 #TARG       42092
@@ -5302,16 +5324,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1973
 #INSTITUTE  (2GERJUL)
-#TITLE      -A SYSTEMATIC INVESTIGATION OF (N,T) REACTIONS AT 14 TO
-#+          15 MEV ON MEDIUM AND HEAVY MASS NUCLEI.-
+#TITLE      A systematic investigation of (n,t) reactions at 14
+#+          to 15 MeV on medium and heavy mass nuclei
 #AUTHOR(S)  S.M.Qaim, G.L.Stoecklin
-#REF-CODE   (J,JIN,35,19,7301)
+#REF-CODE   (J,JIN,35,19,1973)
 #REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
 #+          Vol.35, p.19, 1973
-#DATASETS   11
+#DATASETS   12
 #
 #DATASET    20522011
-#DATE       19840104
+#DATE       20200901
 #REACTION   42-MO-92(N,T)41-NB-90,,SIG
 #PROJ       1
 #TARG       42092
@@ -5323,7 +5345,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3 105    1.4600+7 400000.0 5.0000-5 2.3000-5                                       S.M.QAIM,ET.AL. (73)     20522 11
+    1 42092   3 105    1.4600+7          5.0000-5 2.3000-5                                       S.M.Qaim,ET.AL. (73)     20522 11
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5431,52 +5453,6 @@
     1 42092   3 107    1.1340+7 290000.0 0.013800 1.1000-3                                       R.Doczi,ET.AL. (98)      31495  7
     1 42092   3 107    1.2530+7 300000.0 0.019700 1.5000-3                                       R.Doczi,ET.AL. (98)      31495  7
 #/DATA      5
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22125
-#AUTHOR1    H.Liskien+
-#YEAR       1990
-#INSTITUTE  (2ZZZGEL)
-#TITLE      -Excitation Functions of (N,P) And (N,A) Reactions on
-#+          Molybdenum Isotopes.
-#AUTHOR(S)  H.Liskien, R.Woelfle, R.Widera,
-#+          S.M.Qaim
-#REF-CODE   (J,ARI,41,(1),83,1990)
-#REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.41, Issue.1, p.83, 1990
-#DATASETS   8
-#
-#DATASET    22125002
-#DATE       20000100
-#REACTION   42-MO-92(N,A)40-ZR-89-G,,SIG
-#PROJ       1
-#TARG       42092
-#MF         3
-#MT         107
-#PRODUCT    40-ZR-89-G
-#DATA-HDR   DATA
-#C4BEGIN    [    1 42092   3 107G  ]
-#DATA       15
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3 107G   1.2590+7 20000.00 0.018900 1.1000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.2640+7 20000.00 0.019000 1.1000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.3390+7 20000.00 0.023100 1.2000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.3430+7 20000.00 0.023200 1.2000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.4360+7 20000.00 0.027000 1.4000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.4390+7 20000.00 0.026600 1.4000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.5820+7 20000.00 0.028200 1.4000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.5840+7 20000.00 0.030400 1.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.6900+7 20000.00 0.031300 1.7000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.6960+7 20000.00 0.031300 1.7000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.7920+7 20000.00 0.032700 1.7000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.7990+7 20000.00 0.033000 1.7000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.8810+7 20000.00 0.031600 1.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.8880+7 20000.00 0.031200 1.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-    1 42092   3 107G   1.9580+7 20000.00 0.029900 1.6000-3                                       H.LISKIEN,ET.AL. (90)    22125  2
-#/DATA      15
 #/DATASET
 #/ENTRY
 #
@@ -5607,7 +5583,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338012
 #DATE       20080805
@@ -5647,7 +5623,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338013
 #DATE       20080805
@@ -5698,7 +5674,7 @@
 #REF-CODE   (J,NP/A,185,177,197204)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.177, 1972
-#DATASETS   10
+#DATASETS   13
 #
 #DATASET    20338015
 #DATE       20080805
@@ -5805,6 +5781,40 @@
 #/ENTRY
 #
 #
+#ENTRY      33141
+#AUTHOR1    A.M.Sunitha+
+#YEAR       2020
+#INSTITUTE  (3INDBGL)
+#TITLE      Measurement of 92Mo(n,a)89Zr and 97Mo(n,p)97Nb
+#+          reactions at the neutron energy 13.52 MeV with
+#+          covariance analysis
+#AUTHOR(S)  A.M.Sunitha, B.Rudraswamy, S.V.Suryanarayana,
+#+          K.Nagaraja, M.Karkera, I.Pasha,
+#+          H.B.Sachhidananda, Y.S.Sheela, M.Prasad
+#REF-CODE   (J,IPA,58,218,2020)
+#REFERENCE  Jour. Indian Journal of Pure and Applied Physics
+#+          Vol.58, p.218, 2020
+#DATASETS   2
+#
+#DATASET    33141002
+#DATE       20200702
+#REACTION   42-MO-92(N,A)40-ZR-89,,SIG
+#PROJ       1
+#TARG       42092
+#MF         3
+#MT         107
+#PRODUCT    40-ZR-89
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092   3 107   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092   3 107    1.3520+7 75000.00 0.025700 1.0000-2                                       A.M.Sunitha,ET.AL. (20)  33141  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      31491
 #AUTHOR1    N.I.Molla+
 #YEAR       1997
@@ -5883,7 +5893,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298041
 #DATE       20130501
@@ -5917,7 +5927,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298042
 #DATE       20130501
@@ -6329,18 +6339,18 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1974
 #INSTITUTE  (2GERJUL)
-#TITLE      -MEASUREMENT AND SYSTEMATICS OF CROSS SECTIONS FOR
-#+          COMMON AND LOW YIELD 14 MEV NEUTRON INDUCED NUCLEAR
-#+          REACTIONS ON STRUCTURAL FR-MATERIAL AND TRANSMUTED
-#+          SPECIES.-
+#TITLE      Measurement and systematics of cross sections for
+#+          common and low yield 14 MeV neutron induced nuclear
+#+          reactions on structural FR-material and transmuted
+#+          species
 #AUTHOR(S)  S.M.Qaim, G.Stoecklin
-#REF-CODE   (R,EUR-5182E,939,7409)
+#REF-CODE   (R,EUR-5182,939,1974)
 #REFERENCE  Rept. Euratom Reports
-#+          No.5182E, p.939, 1974
-#DATASETS   24
+#+          No.5182, p.939, 1974
+#DATASETS   31
 #
 #DATASET    20513023
-#DATE       19861003
+#DATE       20200901
 #REACTION   42-MO-92(N,A)40-ZR-89,,SIG
 #PROJ       1
 #TARG       42092
@@ -6352,7 +6362,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   3 107    1.4700+7 300000.0 0.025000 3.0000-3                                       S.M.QAIM,ET.AL. (74)     20513 23
+    1 42092   3 107    1.4700+7          0.025000 3.0000-3                                       S.M.Qaim,ET.AL. (74)     20513 23
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -6686,10 +6696,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089069
-#DATE       20081001
+#DATE       20201001
 #REACTION   42-MO-92(N,A)40-ZR-89-M,,SIG
 #PROJ       1
 #TARG       42092
@@ -6725,10 +6735,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089070
-#DATE       20081001
+#DATE       20201001
 #REACTION   42-MO-92(N,A)40-ZR-89,,SIG
 #PROJ       1
 #TARG       42092
@@ -6821,37 +6831,48 @@
 #/ENTRY
 #
 #
-#ENTRY      22637
-#AUTHOR1    C.Konno+
-#YEAR       1993
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation Cross section measurements at neutron
-#+          energy from 13.3 to 14.9 MeV
-#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
-#+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1329, 1993
-#DATASETS   89
+#ENTRY      22125
+#AUTHOR1    H.Liskien+
+#YEAR       1990
+#INSTITUTE  (2ZZZGEL)
+#TITLE      Excitation functions of (n,p) and (n,alpha) reactions
+#+          on molybdenum isotopes.
+#AUTHOR(S)  H.Liskien, R.Woelfle, R.Widera,
+#+          S.M.Qaim
+#REF-CODE   (J,ARI,41,83,1990)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.41, p.83, 1990
+#DATASETS   7
 #
-#DATASET    22637035
-#DATE       20080204
-#REACTION   (42-MO-92(N,N+P)41-NB-91-M,,SIG)+(42-MO-92(N,D)41-NB-91-M,,SIG)
+#DATASET    22125004
+#DATE       20201002
+#REACTION   42-MO-92(N,X)41-NB-91-M,,SIG
 #PROJ       1
 #TARG       42092
 #MF         3
-#MT         1003
+#MT         9000
 #PRODUCT    41-NB-91-M
 #DATA-HDR   DATA
-#C4BEGIN    [    1 42092   31003M  ]
-#DATA       4
+#C4BEGIN    [    1 42092   39000M  ]
+#DATA       15
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   31003M   1.4940+7          0.178000 0.014000                                       C.Konno,ET.AL. (93)      22637 35
-    1 42092   31003M   1.4670+7          0.176000 0.013000                                       C.Konno,ET.AL. (93)      22637 35
-    1 42092   31003M   1.4430+7          0.166000 0.012000                                       C.Konno,ET.AL. (93)      22637 35
-    1 42092   31003M   1.4220+7          0.169000 0.013000                                       C.Konno,ET.AL. (93)      22637 35
-#/DATA      4
+    1 42092   39000M   1.2590+7 20000.00 0.084000 0.014000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.2640+7 20000.00 0.088000 0.014000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.3390+7 20000.00 0.123000 0.020000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.3430+7 20000.00 0.121000 0.019000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.4360+7 20000.00 0.134000 0.022000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.4390+7 20000.00 0.147000 0.024000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.5820+7 20000.00 0.139000 0.023000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.5840+7 20000.00 0.141000 0.023000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.6900+7 20000.00 0.133000 0.030000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.6960+7 20000.00 0.131000 0.021000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.7920+7 20000.00 0.128000 0.021000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.7990+7 20000.00 0.127000 0.020000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.8810+7 20000.00 0.127000 0.020000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.8880+7 20000.00 0.127000 0.020000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+    1 42092   39000M   1.9580+7 20000.00 0.125000 0.020000           41091.7                     H.Liskien,ET.AL. (90)    22125  4
+#/DATA      15
 #/DATASET
 #/ENTRY
 #
@@ -6860,18 +6881,18 @@
 #AUTHOR1    A.A.Filatenkov+
 #YEAR       1999
 #INSTITUTE  (4RUSRI)
-#TITLE      Systematic Measurement of Activation Cross Sections
-#+          At Neutron Energies from 13.4 to 14.9 MeV
+#TITLE      Systematic measurement of activation cross sections
+#+          at neutron energies from 13.4 to 14.9 MeV
 #AUTHOR(S)  A.A.Filatenkov, S.V.Chuvaev, V.N.Aksenov,
 #+          V.A.Yakovlev, A.V.Malyshenkov, S.K.Vasil'ev,
 #+          M.Avrigeanu, V.Avrigeanu, D.L.Smith,
 #+          Y.Ikeda, A.Wallner, W.Kutschera,
 #+          A.Priller, P.Steier, H.Vonach,
 #+          G.Mertens, W.Rochow
-#REF-CODE   (R,RI-252,199905)
+#REF-CODE   (R,RI-252,1999)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   4
+#DATASETS   13
 #
 #DATASET    41240080
 #DATE       20130303
@@ -6992,7 +7013,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298104
 #DATE       20130501
@@ -7026,7 +7047,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298105
 #DATE       20130501
@@ -7044,6 +7065,39 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 42092   39000 D  1.4100+7          1.070000 0.300000           41091.9                     A.A.Filatenkov, (99)     41298105
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20513
+#AUTHOR1    S.M.Qaim+
+#YEAR       1974
+#INSTITUTE  (2GERJUL)
+#TITLE      Measurement and systematics of cross sections for
+#+          common and low yield 14 MeV neutron induced nuclear
+#+          reactions on structural FR-material and transmuted
+#+          species
+#AUTHOR(S)  S.M.Qaim, G.Stoecklin
+#REF-CODE   (R,EUR-5182,939,1974)
+#REFERENCE  Rept. Euratom Reports
+#+          No.5182, p.939, 1974
+#DATASETS   31
+#
+#DATASET    20513022
+#DATE       20200901
+#REACTION   42-MO-92(N,X)41-NB-91-M,,SIG
+#PROJ       1
+#TARG       42092
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-91-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092   39000M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092   39000M   1.4700+7          0.024000 3.0000-3           41091.7                     S.M.Qaim,ET.AL. (74)     20513 22
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -7206,6 +7260,41 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 42092   39000 A  1.4800+7          0.603000 0.119000           41091.9                     L.R.Greenwood,ET.AL. (90)13166 13
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22637
+#AUTHOR1    C.Konno+
+#YEAR       1993
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation Cross section measurements at neutron
+#+          energy from 13.3 to 14.9 MeV
+#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
+#+          K.Kawade, H.Yamamoto, H.Maekawa
+#REF-CODE   (R,JAERI-1329,1993)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1329, 1993
+#DATASETS   89
+#
+#DATASET    22637035
+#DATE       20200900
+#REACTION   42-MO-92(N,X)41-NB-91-M,,SIG
+#PROJ       1
+#TARG       42092
+#MF         3
+#MT         9000
+#PRODUCT    41-NB-91-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092   39000M  ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092   39000M   1.4940+7          0.178000 0.014000           41091.7                     C.Konno,ET.AL. (93)      22637 35
+    1 42092   39000M   1.4670+7          0.176000 0.013000           41091.7                     C.Konno,ET.AL. (93)      22637 35
+    1 42092   39000M   1.4430+7          0.166000 0.012000           41091.7                     C.Konno,ET.AL. (93)      22637 35
+    1 42092   39000M   1.4220+7          0.169000 0.013000           41091.7                     C.Konno,ET.AL. (93)      22637 35
+#/DATA      4
 #/DATASET
 #/ENTRY
 #
@@ -8336,7 +8425,7 @@
 #AUTHOR(S)  I.A.Korzh, V.P.Lunev, V.A.Mishchenko,
 #+          Eh.N.Mozhzhukhin, N.M.Pravdivyj, E.Sh.Sukhovitskij
 #REF-CODE   (J,YK,,(1/50),40,1983)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1/50, p.40, 1983
 #DATASETS   4
 #
@@ -8860,17 +8949,17 @@
 #AUTHOR1    J.Rapaport+
 #YEAR       1979
 #INSTITUTE  (1USAOHO)
-#TITLE      NEUTRON ELASTIC SCATTERING FROM MO-92,96,98,100 BETWEEN
-#+          NEUTRON ENERGIES OF 7 TO 26-MEV
+#TITLE      Neutron elastic scattering from Mo-92,96,98,100 between
+#+          neutron energies of 7 to 26-MeV
 #AUTHOR(S)  J.Rapaport, T.S.Cheema, D.E.Bainum,
 #+          R.W.Finlay, J.D.Carlson
-#REF-CODE   (J,NP/A,313,1,7901)
+#REF-CODE   (J,NP/A,313,1,1979)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.313, p.1, 1979
 #DATASETS   4
 #
 #DATASET    10867002
-#DATE       19790301
+#DATE       20200206
 #REACTION   42-MO-92(N,EL)42-MO-92,,DA
 #PROJ       1
 #TARG       42092
@@ -8883,123 +8972,123 @@
 #DATA       117
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 42092   4   2 AC 7000000. 4000.000 2.246000 0.067400 0.938372                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 1.348000 0.040400 0.904306                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.718000 0.021500 0.863307                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.265000 7.9500-3 0.815531                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.056500 1.6900-3 0.761538                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 4.7000-3 1.8800-4 0.701655                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.014700 4.4100-4 0.636347                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.081400 2.4400-3 0.566117                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.134000 4.0200-3 0.491815                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.154000 4.6200-3 0.413580                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.147000 4.4100-3 0.332324                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.118000 4.7200-3 0.248519                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.050700 2.0300-3 0.076195                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.010900 4.3600-4-0.098106                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 1.7600-3 1.0600-4-0.269090                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.016300 6.5200-4-0.431616                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.034200 1.3700-3-0.580848                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.034300 1.3700-3-0.712518                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 7000000. 4000.000 0.020300 8.1200-4-0.822742                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 2.733000 0.082000 0.965199                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 1.893000 0.056800 0.938372                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 1.087000 0.032600 0.904306                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.534500 0.016000 0.863307                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.197500 5.9200-3 0.815531                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.044100 1.3200-3 0.761538                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.020500 8.2000-4 0.701655                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.050700 3.0400-3 0.636347                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.087900 2.6400-3 0.566117                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.104300 3.1300-3 0.491815                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.093200 2.8000-3 0.413580                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.074900 2.2500-3 0.332324                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.049000 1.4700-3 0.248519                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.028600 8.5800-4 0.162980                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.014700 5.1400-4 0.076195                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 8.1000-3 2.8300-4-0.010997                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 4.9000-3 1.9600-4-0.098106                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 7.4000-3 2.9600-4-0.269090                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.013400 4.6900-4-0.431616                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.017700 7.0800-4-0.580848                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 0.012800 5.1200-4-0.712518                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 8.4000-3 4.2000-4-0.770515                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 9000000. 110000.0 6.1000-3 3.0500-4-0.868720                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 3.748000 0.112000 0.965245                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 2.458000 0.074000 0.938493                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 1.093000 0.055000 0.904455                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.537000 0.032000 0.863395                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.167000 5.0000-3 0.816742                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.040000 1.2000-3 0.761764                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.028000 1.4000-3 0.701904                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.056000 1.7000-3 0.636616                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.083000 2.5000-3 0.566693                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.085000 2.6000-3 0.492118                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.070000 2.1000-3 0.414056                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.048000 1.5000-3 0.332818                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.029000 1.0000-3 0.249364                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.017000 6.0000-4 0.163668                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 9.6000-3 6.0000-4 0.077065                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 7.0000-3 5.0000-4-0.010125                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 6.5000-3 4.0000-4-0.097238                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 8.8000-3 5.0000-4-0.183611                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.010300 5.0000-4-0.268250                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.012500 7.0000-4-0.351027                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.012800 7.0000-4-0.430986                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.013000 7.0000-4-0.507691                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 0.011600 6.0000-4-0.580421                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 9.3000-3 5.0000-4-0.648787                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 4.7000-3 7.0000-4-0.712151                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 4.7000-3 1.0000-3-0.822543                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 1.1000+7 90000.00 6.2000-3 1.2000-3-0.908145                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 2.688000 0.080600 0.965199                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 1.035000 0.031000 0.938433                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.259400 9.0800-3 0.904380                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.029230 1.1700-3 0.863307                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.022730 1.3600-3 0.815531                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.026180 2.0900-3 0.761538                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.015630 2.3400-3 0.701655                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 8.5600-3 1.5400-3 0.636347                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.013790 1.7900-3 0.566261                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.031410 1.8800-3 0.413739                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.028200 1.6900-3 0.332324                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 0.016230 1.1400-3 0.248688                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 7.0900-3 7.8000-4 0.076369                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 7.5500-3 6.7900-4-0.010823                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 8.0500-3 7.2400-4-0.184125                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 5.0800-3 6.1000-4-0.351681                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 2.0600-3 3.5000-4-0.508142                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 3.4600-3 4.8400-4-0.712518                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.0000+7 110000.0 1.9900-3 4.9700-4-0.822742                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 1.524000 0.045700 0.965199                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.351000 0.013300 0.938433                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.036100 1.5500-3 0.904380                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.084500 4.2200-3 0.863307                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.119400 6.2100-3 0.815531                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.083000 3.4900-3 0.761538                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.031000 1.4600-3 0.701655                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.025500 1.2000-3 0.636347                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.040000 2.3200-3 0.566261                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.052800 2.0600-3 0.491815                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.041400 1.5700-3 0.413739                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.021100 1.5400-3 0.332324                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.011310 7.0100-4 0.248688                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.012360 8.5300-4 0.163152                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.014250 1.1800-3 0.076369                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.014760 8.7100-4-0.010823                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 0.010640 1.2800-3-0.097933                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 5.2900-3 6.3500-4-0.184125                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 4.7000-3 6.5800-4-0.268922                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 4.9200-3 5.9000-4-0.351681                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 4.7400-3 7.1100-4-0.431459                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 4.0300-3 4.0300-4-0.508142                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 4.2500-3 7.4800-4-0.580848                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 2.6300-3 6.3100-4-0.649185                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 2.0900-3 5.4300-4-0.712518                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 9.6000-4 4.8000-4-0.770515                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 3.7900-3 1.8900-3-0.822742                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 2.6800-3 1.0700-3-0.868720                              J.RAPAPORT,ET.AL. (79)   10867  2
-    1 42092   4   2 AC 2.6000+7 60000.00 3.1300-3 1.2500-3-0.908218                              J.RAPAPORT,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 2.246000 0.067400 0.938372                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 1.348000 0.040400 0.904306                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.718000 0.021500 0.863307                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.265000 7.9500-3 0.815531                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.056500 1.6900-3 0.761538                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 4.7000-3 1.8800-4 0.701655                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.014700 4.4100-4 0.636347                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.081400 2.4400-3 0.566117                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.134000 4.0200-3 0.491815                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.154000 4.6200-3 0.413580                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.147000 4.4100-3 0.332324                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.118000 4.7200-3 0.248519                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.050700 2.0300-3 0.076195                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.010900 4.3600-4-0.098106                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 1.7600-3 1.0600-4-0.269090                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.016300 6.5200-4-0.431616                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.034200 1.3700-3-0.580848                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.034300 1.3700-3-0.712518                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 7000000. 4000.000 0.020300 8.1200-4-0.822742                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 2.733000 0.082000 0.965199                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 1.893000 0.056800 0.938372                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 1.087000 0.032600 0.904306                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.534500 0.016000 0.863307                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.197500 5.9200-3 0.815531                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.044100 1.3200-3 0.761538                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.020500 8.2000-4 0.701655                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.050700 3.0400-3 0.636347                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.087900 2.6400-3 0.566117                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.104300 3.1300-3 0.491815                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.093200 2.8000-3 0.413580                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.074900 2.2500-3 0.332324                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.049000 1.4700-3 0.248519                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.028600 8.5800-4 0.162980                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.014700 5.1400-4 0.076195                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 8.1000-3 2.8300-4-0.010997                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 4.9000-3 1.9600-4-0.098106                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 7.4000-3 2.9600-4-0.269090                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.013400 4.6900-4-0.431616                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.017700 7.0800-4-0.580848                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 0.012800 5.1200-4-0.712518                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 8.4000-3 4.2000-4-0.770515                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 9000000. 110000.0 6.1000-3 3.0500-4-0.868720                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 3.748000 0.112000 0.965245                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 2.458000 0.074000 0.938493                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 1.093000 0.055000 0.904455                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.537000 0.032000 0.863395                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.167000 5.0000-3 0.816742                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.040000 1.2000-3 0.761764                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.028000 1.4000-3 0.701904                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.056000 1.7000-3 0.636616                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.083000 2.5000-3 0.566693                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.085000 2.6000-3 0.492118                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.070000 2.1000-3 0.414056                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.048000 1.5000-3 0.332818                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.029000 1.0000-3 0.249364                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.017000 6.0000-4 0.163668                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 9.6000-3 6.0000-4 0.077065                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 7.0000-3 5.0000-4-0.010125                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 6.5000-3 4.0000-4-0.097238                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 8.8000-3 5.0000-4-0.183611                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.010300 5.0000-4-0.268250                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.012500 7.0000-4-0.351027                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.012800 7.0000-4-0.430986                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.013000 7.0000-4-0.507691                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 0.011600 6.0000-4-0.580421                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 9.3000-3 5.0000-4-0.648787                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 4.7000-3 7.0000-4-0.712151                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 4.7000-3 1.0000-3-0.822543                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 1.1000+7 90000.00 6.2000-3 1.2000-3-0.908145                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 2.688000 0.080600 0.965199                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 1.035000 0.031000 0.938433                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.259400 9.0800-3 0.904380                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.029230 1.1700-3 0.863307                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.022730 1.3600-3 0.815531                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.026180 2.0900-3 0.761538                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.015630 2.3400-3 0.701655                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 8.5600-3 1.5400-3 0.636347                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.013790 1.7900-3 0.566261                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.031410 1.8800-3 0.413739                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.028200 1.6900-3 0.332324                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 0.016230 1.1400-3 0.248688                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 7.0900-3 7.8000-4 0.076369                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 7.5500-3 6.7900-4-0.010823                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 8.0500-3 7.2400-4-0.184125                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 5.0800-3 6.1000-4-0.351681                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 2.0600-3 3.5000-4-0.508142                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 3.4600-3 4.8400-4-0.712518                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.0000+7 110000.0 1.9900-3 4.9700-4-0.822742                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 1.524000 0.045700 0.965199                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.351000 0.013300 0.938433                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.036100 1.5500-3 0.904380                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.084500 4.2200-3 0.863307                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.119400 6.2100-3 0.815531                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.083000 3.4900-3 0.761538                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.031000 1.4600-3 0.701655                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.025500 1.2000-3 0.636347                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.040000 2.3200-3 0.566261                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.052800 2.0600-3 0.491815                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.041400 1.5700-3 0.413739                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.021100 1.5400-3 0.332324                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.011310 7.0100-4 0.248688                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.012360 8.5300-4 0.163152                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.014250 1.1800-3 0.076369                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.014760 8.7100-4-0.010823                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 0.010640 1.2800-3-0.097933                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 5.2900-3 6.3500-4-0.184125                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 4.7000-3 6.5800-4-0.268922                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 4.9200-3 5.9000-4-0.351681                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 4.7400-3 7.1100-4-0.431459                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 4.0300-3 4.0300-4-0.508142                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 4.2500-3 7.4800-4-0.580848                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 2.6300-3 6.3100-4-0.649185                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 2.0900-3 5.4300-4-0.712518                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 9.6000-4 4.8000-4-0.770515                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 3.7900-3 1.8900-3-0.822742                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 2.6800-3 1.0700-3-0.868720                              J.Rapaport,ET.AL. (79)   10867  2
+    1 42092   4   2 AC 2.6000+7 60000.00 3.1300-3 1.2500-3-0.908218                              J.Rapaport,ET.AL. (79)   10867  2
 #/DATA      117
 #/DATASET
 #/ENTRY
@@ -9203,7 +9292,7 @@
 #AUTHOR(S)  I.A.Korzh, V.P.Lunev, V.A.Mishchenko,
 #+          Eh.N.Mozhzhukhin, N.M.Pravdivyj, E.Sh.Sukhovitskij
 #REF-CODE   (J,YK,,(1/50),40,1983)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1/50, p.40, 1983
 #DATASETS   4
 #
@@ -12348,6 +12437,232 @@
 #/ENTRY
 #
 #
+#ENTRY      20338
+#AUTHOR1    Y.Kanda
+#YEAR       1972
+#INSTITUTE  (2JPNKYU)
+#TITLE      The excitation functions and isomeric ratios for
+#+          neutron induced reactions on Mo-92 and Zr-90
+#AUTHOR(S)  Y.Kanda
+#REF-CODE   (J,NP/A,185,177,197204)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.185, p.177, 1972
+#DATASETS   13
+#
+#DATASET    20338009
+#DATE       20080805
+#REACTION   42-MO-92(N,2N)42-MO-91-M/G,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16MD  1.3410+7          0.027000 0.017000     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3510+7         -0.026000 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3570+7          0.017000 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3670+7          1.0000-4 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3800+7          0.034000 0.020000     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3830+7          0.026000 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3880+7          0.033000 0.016000     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.3960+7          0.034000 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4010+7          0.046000 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4100+7          0.049000 8.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4170+7          0.050000 7.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4230+7          0.047000 6.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4310+7          0.046000 4.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4390+7          0.057000 5.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4440+7          0.065000 6.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4520+7          0.067000 7.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4600+7          0.057000 4.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4680+7          0.064000 4.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4740+7          0.071000 5.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4840+7          0.075000 9.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+    1 42092 203  16MD  1.4920+7          0.078000 6.0000-3     16.0  42092.9                     Y.Kanda (72)             20338  9
+#/DATA      21
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30028
+#AUTHOR1    A.Abboud+
+#YEAR       1969
+#INSTITUTE  (3POLWWA)
+#TITLE      Isomeric cross-section ratios and total cross-sections
+#+          for the Se-74(n,2n)Se-73-g,m,Zr-90(n,2n)Zr-89-g,m and
+#+          Mo-92(n,2n)Mo-91-g,m reactions
+#AUTHOR(S)  A.Abboud, P.Decowski, W.Grochulski,
+#+          A.Marcinkowski, J.Piotrowski, K.Siwek,
+#+          J.Wilhelmi
+#REF-CODE   (J,NP/A,139,42,196912)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.42, 1969
+#DATASETS   6
+#
+#DATASET    30028007
+#DATE       20080205
+#REACTION   42-MO-92(N,2N)42-MO-91-G/M,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-G/M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16GA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16GA  1.3720+7 100000.0 68.92000 7.060000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.4080+7 60000.00 17.90000 0.660000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.4530+7 110000.0 13.26000 0.830000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.4780+7 160000.0 9.730000 0.360000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.5050+7 200000.0 8.200000 0.380000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.5410+7 270000.0 7.270000 0.290000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.5920+7 190000.0 5.280000 0.170000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.6250+7 160000.0 5.210000 0.210000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.6560+7 130000.0 5.960000 0.210000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.7090+7 100000.0 5.540000 0.180000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.7540+7 110000.0 5.060000 0.170000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+    1 42092 203  16GA  1.8200+7 90000.00 5.660000 0.250000     16.7  42092.9                     A.Abboud,ET.AL. (69)     30028  7
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10497
+#AUTHOR1    W.D.Lu+
+#YEAR       1970
+#INSTITUTE  (1USAGIT)
+#TITLE      Activation Cross Sections for (n,2n) Reactions at 14.4
+#+          MeV in the Region Z=40-60. Precision Measurements and
+#+          Systematics.
+#AUTHOR(S)  W.D.Lu, N.Ranakumar, R.W.Fink
+#REF-CODE   (J,PR/C,1,350,197001)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.350, 1970
+#DATASETS   36
+#
+#DATASET    104970071
+#DATE       20040103
+#REACTION   42-MO-92(N,2N)42-MO-91-G/M,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-G/M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16GD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16GD  1.4400+7 300000.0 12.40000 0.600000     16.7  42092.9                     W.D.Lu,ET.AL. (70)       10497  71
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30601
+#AUTHOR1    Fam Zui Hien+
+#YEAR       1982
+#INSTITUTE  (3VN NNR)
+#TITLE      Isomer ratio in (n,2n) reaction and spin dependence
+#+          of level density of nuclei with n about 50
+#AUTHOR(S)  Fam Zui Hien, Ngo Kuang Zui, Nguen Tak An
+#REF-CODE   (J,YF,35,257,198202)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.35, p.257, 1982
+#DATASETS   4
+#
+#DATASET    30601002
+#DATE       19840903
+#REACTION   42-MO-92(N,2N)42-MO-91-M1/G,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-M1/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16?  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16?   1.4500+7 200000.0 0.063000 6.0000-3     16.0  42092.9                     Fam Zui Hien,ET.AL. (82) 30601  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31490
+#AUTHOR1    F.I.Habbani+
+#YEAR       1999
+#INSTITUTE  (3SUDKHA)
+#TITLE      Isomeric cross-section ratios for some nuclides using
+#+          14.5 MeV neutrons
+#AUTHOR(S)  F.I.Habbani, I.A.Ahmed
+#REF-CODE   (J,ARI,51,81,1999)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.51, p.81, 1999
+#DATASETS   12
+#
+#DATASET    31490007
+#DATE       20130200
+#REACTION   42-MO-92(N,2N)42-MO-91-M/G,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16M   1.4500+7 200000.0 0.054000 0.032000     16.0  42092.9                     F.I.Habbani,ET.AL. (99)  31490  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20536
+#AUTHOR1    S.M.Qaim
+#YEAR       1972
+#INSTITUTE  (2GERJUL)
+#TITLE      -Activation cross sections, isomeric cross-section
+#+          ratios and systematics of (n,2n) reactions at
+#+          14-15 MeV.-
+#AUTHOR(S)  S.M.Qaim
+#REF-CODE   (J,NP/A,185,614,197205)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.185, p.614, 1972
+#DATASETS   34
+#
+#DATASET    20536019
+#DATE       20101100
+#REACTION   42-MO-92(N,2N)42-MO-91-M/T,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-M/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16MD  1.4700+7 300000.0 0.077000 0.020000     16.9  42092.9                     S.M.Qaim (72)            20536 19
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      30014
 #AUTHOR1    R.Prasad+
 #YEAR       1967
@@ -12374,6 +12689,98 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 42092 203  16G   1.4800+7          0.800000 0.100000     16.9  42092.9                     R.Prasad,ET.AL. (67)     30014  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30095
+#AUTHOR1    J.Bacso+
+#YEAR       1965
+#INSTITUTE  (3HUNDEB)
+#TITLE      Investigation of Mo-92(n,2n)Mo-91,91m reaction
+#AUTHOR(S)  J.Bacso, J.Csikai, A.Pazsit
+#REF-CODE   (J,AHP,18,295,196505)
+#REFERENCE  Jour. Acta Physica Hungarica
+#+          Vol.18, p.295, 1965
+#DATASETS   3
+#
+#DATASET    30095004
+#DATE       20080205
+#REACTION   42-MO-92(N,2N)42-MO-91-G/M,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-G/M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16G  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16G   1.4800+7          10.60000 0.300000     16.7  42092.9                     J.Bacso,ET.AL. (65)      30095  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30101
+#AUTHOR1    J.Karolyi+
+#YEAR       1968
+#INSTITUTE  (3HUNDEB)
+#TITLE      Isomeric cross-section ratios for (n,2n) reactions
+#AUTHOR(S)  J.Karolyi, J.Csikai, G.Peto
+#REF-CODE   (J,NP/A,122,234,196812)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.122, p.234, 1968
+#DATASETS   13
+#
+#DATASET    30101011
+#DATE       20080205
+#REACTION   42-MO-92(N,2N)42-MO-91-M/G,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16MD  1.4800+7          0.094000 3.0000-3     16.0  42092.9                     J.Karolyi,ET.AL. (68)    30101 11
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21290
+#AUTHOR1    G.Curzio+
+#YEAR       1968
+#INSTITUTE  (2ITYFIR)
+#TITLE      -Isomeric (n,2n) Cross-Section Ratios and Spin Cut-off
+#+          Parameter Calculations.-
+#AUTHOR(S)  G.Curzio, P.Sona
+#REF-CODE   (J,NC/B,54,(2),319,196804)
+#REFERENCE  Jour. Nuovo Cimento B
+#+          Vol.54, Issue.2, p.319, 1968
+#DATASETS   4
+#
+#DATASET    21290005
+#DATE       20080702
+#REACTION   42-MO-92(N,2N)42-MO-91-G/T,,SIG/RAT
+#PROJ       1
+#TARG       42092
+#MF         203
+#MT         16
+#PRODUCT    42-MO-91-G/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 42092 203  16G  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 42092 203  16G   1.4900+7          0.820000 1.0000-2     16.9  42092.9                     G.Curzio,ET.AL. (68)     21290  5
 #/DATA      1
 #/DATASET
 #/ENTRY

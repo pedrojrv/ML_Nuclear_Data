@@ -488,10 +488,10 @@
 #AUTHOR1    C.Carles
 #YEAR       1963
 #INSTITUTE  (2FR BOR)
-#TITLE      -Measurement of (N,2N) reaction cross sections
-#+          produced by 14 MeV neutrons -.
+#TITLE      Measurement of (n,2n) reaction cross sections
+#+          produced by 14 MeV neutrons
 #AUTHOR(S)  C.Carles
-#REF-CODE   (J,CR,257,659,196307)
+#REF-CODE   (J,CR,257,659,1963)
 #REFERENCE  Jour. Comptes Rendus
 #+          Vol.257, p.659, 1963
 #DATASETS   4
@@ -809,7 +809,7 @@
 #+          neutron energy.
 #AUTHOR(S)  G.R.Pansare, V.N.Bhoraskar
 #REF-CODE   (J,IMP/E,2,(01),259,199303)
-#REFERENCE  Jour. Int. Journal of Modern Physics, Part E
+#REFERENCE  Jour. Int.Journal of Modern Physics, Part E
 #+          Vol.2, Issue.01, p.259, 1993
 #DATASETS   6
 #
@@ -914,7 +914,7 @@
 #DATASETS   18
 #
 #DATASET    22662006
-#DATE       20020306
+#DATE       20201201
 #REACTION   35-BR-79(N,2N)35-BR-78,,SIG
 #PROJ       1
 #TARG       35079
@@ -1224,7 +1224,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1234,31 +1234,31 @@
 #DATASETS   32
 #
 #DATASET    23035014
-#DATE       20081102
-#REACTION   35-BR-79(N,G)35-BR-80-G,,SIG,,MXW,EVAL
+#DATE       20200804
+#REACTION   35-BR-79(N,G)35-BR-80,,SIG,,MXW,RECOM
 #PROJ       1
 #TARG       35079
 #MF         3
 #MT         102
-#PRODUCT    35-BR-80-G
+#PRODUCT    35-BR-80
 #DATA-HDR   DATA
-#C4BEGIN    [    1 35079   3 102GD ]
+#C4BEGIN    [    1 35079   3 102 D ]
 #X4STATUS   [DEP  ] Dependent data
-#X4DATATYPE [EVAL]  Evaluated data
+#X4DATATYPE [RECOM] Recommended data
 #DATA       11
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 35079   3 102GD  5000.000          1.726000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  10000.00          1.152000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  15000.00          0.912000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  20000.00          0.774000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  25000.00          0.681000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  30000.00          0.613000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  40000.00          0.521000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  50000.00          0.458000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  60000.00          0.426000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  80000.00          0.362000                                                M.Heil,ET.AL. (08)       23035 14
-    1 35079   3 102GD  100000.0          0.298000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  5000.000          1.726000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  10000.00          1.152000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  15000.00          0.912000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  20000.00          0.774000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  25000.00          0.681000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  30000.00          0.613000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  40000.00          0.521000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  50000.00          0.458000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  60000.00          0.426000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  80000.00          0.362000                                                M.Heil,ET.AL. (08)       23035 14
+    1 35079   3 102 D  100000.0          0.298000                                                M.Heil,ET.AL. (08)       23035 14
 #/DATA      11
 #/DATASET
 #/ENTRY
@@ -1480,7 +1480,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1490,7 +1490,7 @@
 #DATASETS   32
 #
 #DATASET    230350021
-#DATE       20120105
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-G,,SIG,,MXW
 #PROJ       1
 #TARG       35079
@@ -1513,7 +1513,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1523,7 +1523,7 @@
 #DATASETS   32
 #
 #DATASET    230350022
-#DATE       20120105
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-G,,SIG,,MXW
 #PROJ       1
 #TARG       35079
@@ -1546,7 +1546,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1556,7 +1556,7 @@
 #DATASETS   32
 #
 #DATASET    230350023
-#DATE       20120105
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-G,,SIG,,MXW
 #PROJ       1
 #TARG       35079
@@ -1579,7 +1579,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1589,7 +1589,7 @@
 #DATASETS   32
 #
 #DATASET    230350031
-#DATE       20120105
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-M,,SIG,,MXW
 #PROJ       1
 #TARG       35079
@@ -1612,7 +1612,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1622,7 +1622,7 @@
 #DATASETS   32
 #
 #DATASET    230350032
-#DATE       20120105
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-M,,SIG,,MXW
 #PROJ       1
 #TARG       35079
@@ -1645,7 +1645,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1655,7 +1655,7 @@
 #DATASETS   32
 #
 #DATASET    230350033
-#DATE       20120105
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-M,,SIG,,MXW
 #PROJ       1
 #TARG       35079
@@ -1678,7 +1678,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1688,7 +1688,7 @@
 #DATASETS   32
 #
 #DATASET    23035009
-#DATE       20081102
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-G,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       35079
@@ -1712,7 +1712,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -1722,7 +1722,7 @@
 #DATASETS   32
 #
 #DATASET    23035010
-#DATE       20081102
+#DATE       20200804
 #REACTION   35-BR-79(N,G)35-BR-80-M,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       35079
@@ -2121,13 +2121,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244074
-#DATE       20110104
+#DATE       20191103
 #REACTION   35-BR-79(N,G)35-BR-80,,SIG
 #PROJ       1
 #TARG       35079
@@ -2135,12 +2135,11 @@
 #MT         102
 #PRODUCT    35-BR-80
 #DATA-HDR   DATA
-#C4BEGIN    [    1 35079   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 35079   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 35079   3 102 C  200000.0 30000.00 0.328000 8.0000-3                                       A.I.Leipunskiy, (58)     40244 74
+    1 35079   3 102    200000.0 30000.00 0.328000 8.0000-3                                       A.I.Leipunskiy, (58)     40244 74
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2155,13 +2154,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244095
-#DATE       20100301
+#DATE       20191103
 #REACTION   35-BR-79(N,G)35-BR-80,,SIG
 #PROJ       1
 #TARG       35079
@@ -2169,13 +2168,12 @@
 #MT         102
 #PRODUCT    35-BR-80
 #DATA-HDR   DATA
-#C4BEGIN    [    1 35079   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 35079   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 35079   3 102 C  2700000.          0.026400 5.0000-4                                       A.I.Leipunskiy, (58)     40244 95
-    1 35079   3 102 C  4000000.          0.011700 3.0000-4                                       A.I.Leipunskiy, (58)     40244 95
+    1 35079   3 102    2700000.          0.026400 5.0000-4                                       A.I.Leipunskiy, (58)     40244 95
+    1 35079   3 102    4000000.          0.011700 3.0000-4                                       A.I.Leipunskiy, (58)     40244 95
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -2360,9 +2358,9 @@
 #AUTHOR1    H.G.Blosser+
 #YEAR       1958
 #INSTITUTE  (1USAORL)
-#TITLE      MEASUREMENTS OF (N,ALPHA) CROSS SECTION AT 14 MEV.
+#TITLE      Measurements of (n,alpha) cross section at 14 MeV.
 #AUTHOR(S)  H.G.Blosser, C.D.Goodman, T.H.Handley
-#REF-CODE   (J,PR,110,531,58)
+#REF-CODE   (J,PR,110,531,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.110, p.531, 1958
 #DATASETS   5
@@ -2380,7 +2378,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 35079   3 107    1.4050+7 550000.0 1.0000-2 1.8000-3                                       H.G.BLOSSER,ET.AL. (58)  11747  3
+    1 35079   3 107    1.4050+7 550000.0 1.0000-2 1.8000-3                                       H.G.Blosser,ET.AL. (58)  11747  3
 #/DATA      1
 #/DATASET
 #/ENTRY

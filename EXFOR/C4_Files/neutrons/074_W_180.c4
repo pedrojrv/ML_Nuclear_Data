@@ -225,7 +225,7 @@
 #REF-CODE   (R,RI-259,2003)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.259, 2003
-#DATASETS   39
+#DATASETS   41
 #
 #DATASET    41428042
 #DATE       20141206
@@ -252,16 +252,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1975
 #INSTITUTE  (2GERJUL)
-#TITLE      -Neutron activation cross sections at 14.7 MeV for
-#+          isotopes of tungsten-
+#TITLE      Neutron activation cross sections at 14.7 MeV for
+#+          isotopes of tungsten
 #AUTHOR(S)  S.M.Qaim, C.Graca
 #REF-CODE   (J,NP/A,242,317,1975)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.242, p.317, 1975
-#DATASETS   15
+#DATASETS   18
 #
 #DATASET    20668002
-#DATE       20080503
+#DATE       20200905
 #REACTION   74-W-180(N,2N)74-W-179-M,,SIG
 #PROJ       1
 #TARG       74180
@@ -273,7 +273,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74180   3  16M   1.4700+7 300000.0 0.490000 0.045000                                       S.M.Qaim,ET.AL. (75)     20668  2
+    1 74180   3  16M   1.4700+7          0.490000 0.045000                                       S.M.Qaim,ET.AL. (75)     20668  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -283,16 +283,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1975
 #INSTITUTE  (2GERJUL)
-#TITLE      -Neutron activation cross sections at 14.7 MeV for
-#+          isotopes of tungsten-
+#TITLE      Neutron activation cross sections at 14.7 MeV for
+#+          isotopes of tungsten
 #AUTHOR(S)  S.M.Qaim, C.Graca
 #REF-CODE   (J,NP/A,242,317,1975)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.242, p.317, 1975
-#DATASETS   15
+#DATASETS   18
 #
 #DATASET    20668003
-#DATE       20080503
+#DATE       20200905
 #REACTION   74-W-180(N,2N)74-W-179,,SIG
 #PROJ       1
 #TARG       74180
@@ -304,7 +304,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74180   3  16    1.4700+7 300000.0 1.866000 0.176000                                       S.M.Qaim,ET.AL. (75)     20668  3
+    1 74180   3  16    1.4700+7          1.866000 0.176000                                       S.M.Qaim,ET.AL. (75)     20668  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -314,15 +314,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507090
-#DATE       19860702
+#DATE       20190805
 #REACTION   74-W-180(N,G)74-W-181,,SIG,,MXW
 #PROJ       1
 #TARG       74180
@@ -334,7 +334,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74180   3 102    0.025300          30.00000 120.0000                                       H.POMERANCE (52)         11507 90
+    1 74180   3 102    0.025300          30.00000 120.0000                                       H.Pomerance (52)         11507 90
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -487,7 +487,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -518,7 +518,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -598,7 +598,7 @@
 #AUTHOR(S)  M.V.Bokhovko, L.E.Kazakov, V.N.Kononov,
 #+          E.D.Poletaev, V.M.Timokhov, A.A.Voevodskiy
 #REF-CODE   (J,YK,,(1),39,1986)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1, p.39, 1986
 #DATASETS   6
 #
@@ -759,7 +759,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -787,16 +787,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1975
 #INSTITUTE  (2GERJUL)
-#TITLE      -Neutron activation cross sections at 14.7 MeV for
-#+          isotopes of tungsten-
+#TITLE      Neutron activation cross sections at 14.7 MeV for
+#+          isotopes of tungsten
 #AUTHOR(S)  S.M.Qaim, C.Graca
 #REF-CODE   (J,NP/A,242,317,1975)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.242, p.317, 1975
-#DATASETS   15
+#DATASETS   18
 #
 #DATASET    20668004
-#DATE       20080503
+#DATE       20200905
 #REACTION   74-W-180(N,P)73-TA-180-G,,SIG
 #PROJ       1
 #TARG       74180
@@ -808,7 +808,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74180   3 103G   1.4700+7 300000.0 9.6000-3 1.0000-3                                       S.M.Qaim,ET.AL. (75)     20668  4
+    1 74180   3 103G   1.4700+7          9.6000-3 1.0000-3                                       S.M.Qaim,ET.AL. (75)     20668  4
 #/DATA      1
 #/DATASET
 #/ENTRY

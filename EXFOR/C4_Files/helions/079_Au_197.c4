@@ -356,20 +356,57 @@
 #/ENTRY
 #
 #
+#ENTRY      C2442
+#AUTHOR1    F.D.Becchetti+
+#YEAR       1983
+#INSTITUTE  (1USAMHG)
+#TITLE      3He-induced fission of nuclei 159<A<232
+#AUTHOR(S)  F.D.Becchetti, K.H.Hicks, C.A.Fields,
+#+          R.J.Peterson, R.S.Raymond, R.A.Ristinen,
+#+          J.L.Ullmann, C.S.Zaidins
+#REF-CODE   (J,PR/C,28,1217,1983)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.28, p.1217, 1983
+#DATASETS   4
+#
+#DATASET    C2442008
+#DATE       20200104
+#REACTION   79-AU-197(HE3,F),,SIG
+#PROJ       2003
+#TARG       79197
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2003 79197   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2003 79197   3  18 D  1.9706+7          8.2540-9 9.5290-9                                       F.D.Becchetti,ET.AL. (83)C2442  8
+ 2003 79197   3  18 D  2.5000+7          6.1900-7 4.8170-7                                       F.D.Becchetti,ET.AL. (83)C2442  8
+ 2003 79197   3  18 D  2.9510+7          4.0190-6 2.4740-6                                       F.D.Becchetti,ET.AL. (83)C2442  8
+ 2003 79197   3  18 D  3.3824+7          1.3340-5 5.3210-6                                       F.D.Becchetti,ET.AL. (83)C2442  8
+ 2003 79197   3  18 D  3.7255+7          2.6100-5 1.0420-5                                       F.D.Becchetti,ET.AL. (83)C2442  8
+ 2003 79197   3  18 D  4.4314+7          6.1900-5 2.1700-5                                       F.D.Becchetti,ET.AL. (83)C2442  8
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0444
 #AUTHOR1    Th.Rubehn+
 #YEAR       1996
 #INSTITUTE  (1USABRK)
-#TITLE      Scaling laws in 3He induced fission
+#TITLE      Scaling laws in 3He induced nuclear fission
 #AUTHOR(S)  Th.Rubehn, K.X.Jing, L.G.Moretto,
 #+          L.Phair, K.Tso, G.J.Wozniak
-#REF-CODE   (J,PR/C,54,3062,9612)
+#REF-CODE   (J,PR/C,54,3062,1996)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.54, p.3062, 1996
 #DATASETS   3
 #
 #DATASET    C0444002
-#DATE       19970104
+#DATE       20200402
 #REACTION   79-AU-197(HE3,F),,SIG
 #PROJ       2003
 #TARG       79197
@@ -381,32 +418,32 @@
 #DATA       26
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2003 79197   3  18 A  2.1000+7          1.9000-6 4.0000-7                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  2.4000+7          1.8700-5 3.8000-6                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  2.7100+7          8.5900-5 1.7500-5                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  3.0800+7          2.9800-4 6.0000-5                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  3.5000+7          7.6500-4 1.5400-4                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  3.9700+7          1.9000-3 4.0000-4                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  4.4900+7          3.6000-3 7.0000-4                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  5.0600+7          6.2000-3 1.3000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  5.6800+7          0.010600 2.1000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  6.3400+7          0.015500 3.1000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  6.7100+7          0.018100 3.6000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  7.0600+7          0.023900 4.8000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  7.4400+7          0.030700 6.2000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  7.8300+7          0.034100 6.8000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  8.2300+7          0.033400 6.7000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  8.6500+7          0.042600 8.5000-3                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  9.2500+7          0.063000 0.012600                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  9.5200+7          0.056600 0.011300                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  9.9900+7          0.059400 0.013100                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.0440+8          0.067400 0.014900                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.0850+8          0.071200 0.014300                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.1410+8          0.078100 0.015600                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.1900+8          0.088000 0.017600                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.2430+8          0.094900 0.019000                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.3000+8          0.086700 0.017400                                       TH.RUBEHN,ET.AL. (96)    C0444  2
- 2003 79197   3  18 A  1.3500+8          0.100300 0.020100                                       TH.RUBEHN,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  2.1000+7          1.9000-6 4.0000-7                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  2.4000+7          1.8700-5 3.8000-6                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  2.7100+7          8.5900-5 1.7500-5                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  3.0800+7          2.9800-4 6.0000-5                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  3.5000+7          7.6500-4 1.5400-4                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  3.9700+7          1.9000-3 4.0000-4                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  4.4900+7          3.6000-3 7.0000-4                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  5.0600+7          6.2000-3 1.3000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  5.6800+7          0.010600 2.1000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  6.3400+7          0.015500 3.1000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  6.7100+7          0.018100 3.6000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  7.0600+7          0.023900 4.8000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  7.4400+7          0.030700 6.2000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  7.8300+7          0.034100 6.8000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  8.2300+7          0.033400 6.7000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  8.6500+7          0.042600 8.5000-3                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  9.2500+7          0.063000 0.012600                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  9.5200+7          0.056600 0.011300                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  9.9900+7          0.059400 0.013100                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.0440+8          0.067400 0.014900                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.0850+8          0.071200 0.014300                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.1410+8          0.078100 0.015600                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.1900+8          0.088000 0.017600                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.2430+8          0.094900 0.019000                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.3000+8          0.086700 0.017400                                       Th.Rubehn,ET.AL. (96)    C0444  2
+ 2003 79197   3  18 A  1.3500+8          0.100300 0.020100                                       Th.Rubehn,ET.AL. (96)    C0444  2
 #/DATA      26
 #/DATASET
 #/ENTRY

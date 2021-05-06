@@ -1,47 +1,3 @@
-#ENTRY      11198
-#AUTHOR1    F.T.Gould+
-#YEAR       1960
-#INSTITUTE  (1USACOL)
-#TITLE      LONG WAVELENGTH CRYSTAL SPECTROMETER AND THE NEUTRON
-#+          ABSORPTION CROSS SECTIONS OF GOLD AND BORON.
-#AUTHOR(S)  F.T.Gould, T.I.Taylor, W.W.Havens Jr,
-#+          B.M.Rustad, E.Melkonian
-#REF-CODE   (J,NSE,8,453,6009)
-#REFERENCE  Jour. Nuclear Science and Engineering
-#+          Vol.8, p.453, 1960
-#DATASETS   4
-#
-#DATASET    11198005
-#DATE       19800804
-#REACTION   5-B-0(N,TOT),,SIG
-#PROJ       1
-#TARG       5000
-#MF         3
-#MT         1
-#DATA-HDR   DATA
-#C4BEGIN    [    1  5000   3   1   ]
-#DATA       14
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1  5000   3   1    6.1853-4          4825.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    8.1474-4          4194.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    1.1269-3          3566.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    1.1322-3          3557.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    1.9361-3          2714.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    2.8156-3          2254.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    3.1449-3          2135.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    3.2720-3          2098.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    3.8658-3          1930.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    4.5287-3          1784.000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    0.100007          378.7000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    0.100007          378.0000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    0.280003          227.2000                                                F.T.GOULD,ET.AL. (60)    11198  5
-    1  5000   3   1    1.000049          120.8000                                                F.T.GOULD,ET.AL. (60)    11198  5
-#/DATA      14
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      11211
 #AUTHOR1    R.S.Carter+
 #YEAR       1953
@@ -1516,16 +1472,16 @@
 #AUTHOR1    Yu.G.Zubov+
 #YEAR       1961
 #INSTITUTE  (4RUSKUR)
-#TITLE      Inelastic Scattering Of Neutrons With Energies
-#+          From 3.2 To 4.5 MeV On Beryllium.
+#TITLE      Inelastic scattering of neutrons with energies
+#+          from 3.2 to 4.5 MeV on beryllium
 #AUTHOR(S)  Yu.G.Zubov, N.S.Lebedeva, V.M.Morozov
-#REF-CODE   (B,NEJTRONFIZ,,298,196104)
+#REF-CODE   (B,NEJTRONFIZ,,298,1961)
 #REFERENCE  Book. Neitronnaya Fizika, Moskva 1961
 #+          p.298, 1961
 #DATASETS   4
 #
 #DATASET    41227004
-#DATE       20070404
+#DATE       20191203
 #REACTION   5-B-0(N,TOT),,SIG
 #PROJ       1
 #TARG       5000
@@ -1536,10 +1492,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1  5000   3   1    3250000. 170000.0 2.020000 0.080000                                       YU.G.ZUBOV,ET.AL. (61)   41227  4
-    1  5000   3   1    3700000. 100000.0 2.010000 0.065000                                       YU.G.ZUBOV,ET.AL. (61)   41227  4
-    1  5000   3   1    4120000. 70000.00 1.710000 0.030000                                       YU.G.ZUBOV,ET.AL. (61)   41227  4
-    1  5000   3   1    4520000. 50000.00 1.760000 0.040000                                       YU.G.ZUBOV,ET.AL. (61)   41227  4
+    1  5000   3   1    3250000.          2.020000 0.080000                                       Yu.G.Zubov,ET.AL. (61)   41227  4
+    1  5000   3   1    3700000.          2.010000 0.650000                                       Yu.G.Zubov,ET.AL. (61)   41227  4
+    1  5000   3   1    4120000.          1.710000 0.030000                                       Yu.G.Zubov,ET.AL. (61)   41227  4
+    1  5000   3   1    4520000.          1.760000 0.040000                                       Yu.G.Zubov,ET.AL. (61)   41227  4
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -2748,28 +2704,29 @@
 #AUTHOR1    F.T.Gould+
 #YEAR       1960
 #INSTITUTE  (1USACOL)
-#TITLE      LONG WAVELENGTH CRYSTAL SPECTROMETER AND THE NEUTRON
-#+          ABSORPTION CROSS SECTIONS OF GOLD AND BORON.
+#TITLE      Long Wavelength Crystal Spectrometer and the Neutron
+#+          Absorption Cross Sections of Gold and Boron
 #AUTHOR(S)  F.T.Gould, T.I.Taylor, W.W.Havens Jr,
 #+          B.M.Rustad, E.Melkonian
-#REF-CODE   (J,NSE,8,453,6009)
+#REF-CODE   (J,NSE,8,453,1960)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.8, p.453, 1960
-#DATASETS   4
+#DATASETS   3
 #
 #DATASET    11198002
-#DATE       19800804
+#DATE       20190801
 #REACTION   5-B-0(N,ABS),,SIG
 #PROJ       1
 #TARG       5000
 #MF         3
 #MT         101
 #DATA-HDR   DATA
-#C4BEGIN    [    1  5000   3 101   ]
+#C4BEGIN    [    1  5000   3 101 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1  5000   3 101    0.025300          756.0000 8.000000                                       F.T.GOULD,ET.AL. (60)    11198  2
+    1  5000   3 101 D  0.025300          756.0000 8.000000                                       F.T.Gould,ET.AL. (60)    11198  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -3168,6 +3125,37 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1  5000   3 101    0.025300          767.0000 8.000000                                       S.F.Mughabghab (06)      V1001 202
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23725
+#AUTHOR1    W.Knoll+
+#YEAR       1985
+#INSTITUTE  (2GERMUN)
+#TITLE      Incoherent scattering corrections for forward
+#+          scattering of neutrons by aqueous buffers.
+#+          Temperature dependence and influence of absorbing salts
+#AUTHOR(S)  W.Knoll, G.Schmidt, K.Ibel
+#REF-CODE   (J,JAC,18,61,1985)
+#REFERENCE  Jour. J.of Applied Crystallography
+#+          Vol.18, p.61, 1985
+#DATASETS   1
+#
+#DATASET    23725004
+#DATE       20200803
+#REACTION   5-B-0(N,ABS),,SIG
+#PROJ       1
+#TARG       5000
+#MF         3
+#MT         101
+#DATA-HDR   DATA
+#C4BEGIN    [    1  5000   3 101   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1  5000   3 101    1.256+13          4420.000                                                W.Knoll,ET.AL. (85)      23725  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5205,7 +5193,7 @@
 #+          BATH.
 #AUTHOR(S)  A.De Volpi, K.G.Porges
 #REF-CODE   (J,BAP,13,1421(DB12),6811)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.13, p.1421(DB12), 1968
 #DATASETS   3
 #

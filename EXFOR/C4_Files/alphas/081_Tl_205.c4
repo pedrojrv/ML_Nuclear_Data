@@ -37,6 +37,71 @@
 #/ENTRY
 #
 #
+#ENTRY      D5186
+#AUTHOR1    K.S.Goncharov+
+#YEAR       1980
+#INSTITUTE  (4UKRKFT)
+#TITLE      Investigation of cross sections for the production of
+#+          isomers in reactions induced by alpha-particles
+#AUTHOR(S)  K.S.Goncharov, V.A.Kuzmenko, V.V.Remaev
+#REF-CODE   (J,YF,32,620,1980)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.32, p.620, 1980
+#DATASETS   23
+#
+#DATASET    D5186025
+#DATE       20200103
+#REACTION   81-TL-205(A,3N)83-BI-206-L,,SIG
+#PROJ       2004
+#TARG       81205
+#MF         3
+#MT         17
+#PRODUCT    83-BI-206-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 81205   3  17L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 81205   3  17L   3.7800+7          0.627000                                                K.S.Goncharov,ET.AL. (80)D5186 25
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2487
+#AUTHOR1    R.D.Kieburtz+
+#YEAR       1974
+#INSTITUTE  (1USAWWS)
+#TITLE      The helium ion-induced fission of 203Tl and 205Tl at
+#+          31,42 and 65 MeV
+#AUTHOR(S)  R.D.Kieburtz, E.F.Neuzil
+#REF-CODE   (J,JIN,36,3643,1974)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.36, p.3643, 1974
+#DATASETS   2
+#
+#DATASET    C2487009
+#DATE       20200205
+#REACTION   81-TL-205(A,F),,SIG,,,DERIV
+#PROJ       2004
+#TARG       81205
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 81205   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 81205   3  18 D  3.1000+7          6.5000-6                                                R.D.Kieburtz,ET.AL. (74) C2487  9
+ 2004 81205   3  18 D  4.2000+7          3.3400-4                                                R.D.Kieburtz,ET.AL. (74) C2487  9
+ 2004 81205   3  18 D  6.5000+7          4.5200-3                                                R.D.Kieburtz,ET.AL. (74) C2487  9
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0773
 #AUTHOR1    K.G.Kuvatov+
 #YEAR       1972

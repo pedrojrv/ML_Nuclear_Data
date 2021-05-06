@@ -578,6 +578,44 @@
 #/ENTRY
 #
 #
+#ENTRY      23540
+#AUTHOR1    T.Heftrich+
+#YEAR       2019
+#INSTITUTE  (2GERFRK)
+#TITLE      Thermal (n,gamma) cross section and resonance
+#+          integral of 171Tm
+#AUTHOR(S)  T.Heftrich, M.Weigand, Ch.E.Dullmann,
+#+          K.Eberhardt, S.Fiebiger, J.Glorius,
+#+          K.Gobel, C.Guerrero, R.Haas,
+#+          S.Heinitz, J.Lerendegui-Marco, F.Kappeler,
+#+          J.D.Kaiser, U.Koster, C.Langer,
+#+          S.Lohse, F.Ludwig, R.Reifarth,
+#+          D.Renisch, K.Scheutwinkel, D.Schumann,
+#+          N.Wiehl, C.Wolf
+#REF-CODE   (J,PR/C,99,065810,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.065810, 2019
+#DATASETS   2
+#
+#DATASET    23540002
+#DATE       20200203
+#REACTION   69-TM-171(N,G)69-TM-172,,SIG
+#PROJ       1
+#TARG       69171
+#MF         3
+#MT         102
+#PRODUCT    69-TM-172
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171   3 102    0.025300          9.900000 0.900000                                       T.Heftrich,ET.AL. (19)   23540  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      V1002
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -585,7 +623,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -623,7 +661,7 @@
 #DATASETS   1
 #
 #DATASET    22841002
-#DATE       20130100
+#DATE       20200801
 #REACTION   69-TM-171(N,G)69-TM-172,,SIG,,MXW
 #PROJ       1
 #TARG       69171
@@ -636,6 +674,170 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 69171   3 102    25000.00          0.350000 0.030000                                       R.Reifarth,ET.AL. (03)   22841  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23460
+#AUTHOR1    C.Guerrero+
+#YEAR       2020
+#INSTITUTE  (2SPNSEU)
+#TITLE      Neutron capture on the s-process branching point 171Tm
+#+          via time-of-flight and activation
+#AUTHOR(S)  C.Guerrero, J.Lerendegui-Marco, M.Paul,
+#+          M.Tessler, S.Heinitz, C.Domingo-Pardo,
+#+          S.Cristallo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, E.A.Maugeri,
+#+          T.Palchan-Hazan, J.M.Quesada, D.Rochman,
+#+          D.Schumann, L.Weissman, O.Aberle,
+#+          S.Amaducci, J.Andrzejewski, L.Audouin,
+#+          V.Becares, M.Bacak, J.Balibrea,
+#+          A.Barak, M.Barbagallo, S.Barros,
+#+          F.Becvar, C.Beinrucker, D.Berkovits,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, Y.Buzaglo, M.Caamano,
+#+          F.Calvino, M.Calviani, D.Cano-Ott,
+#+          R.Cardella, A.Casanovas, D.M.Castelluccio,
+#+          F.Cerutti, Y.H.Chen, E.Chiaveri,
+#+          N.Colonna, G.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, H.Dafna, L.A.Damone,
+#+          M.Diakaki, M.Dietz, E.Dupont,
+#+          I.Duran, Y.Eisen, B.Fernandez-Domingez,
+#+          A.Ferrari, P.Ferreira, P.Finocchiaro,
+#+          V.Furman, K.Goebel, A.R.Garcia,
+#+          A.Gawlik, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          F.Gunsing, H.Harada, T.Heftrich,
+#+          J.Heyse, T.Hirsh, D.G.Jenkins,
+#+          E.Jericha, F.Kaeppeler, Y.Kadi,
+#+          B.Kaizer, T.Katabuchi, P.Kavrigin,
+#+          V.Ketlerov, V.Khryachkov, D.Kijel,
+#+          A.Kimura, M.Kokkoris, A.Kriesel,
+#+          M.Krticka, E.Leal-Cidoncha, C.Lederer-Woods,
+#+          H.Leeb, S.Lo Meo, S.J.Lonsdale,
+#+          D.Macina, A.Manna, J.Marganiec,
+#+          T.Martinez, C.Massimi, P.Mastinu,
+#+          M.Mastromarco, F.Matteucci, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.A.Millan-Callado,
+#+          F.Mingrone, M.Mirea, S.Montesano,
+#+          A.Musumarra, R.Nolte, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          K.Rajeev, T.Rauscher, R.Reifarth,
+#+          T.Rodriguez-Gonzalez, P.C.Rout, C.Rubbia,
+#+          J.A.Ryan, M.Sabate-Gilarte, A.Saxena,
+#+          P.Schillebeeckx, S.Schmidt, A.Shor,
+#+          P.Sedyshev, A.G.Smith, A.Stamatopoulos,
+#+          G.Tagliente, J.L.Tain, A.E.Tarifeno-Saldivia,
+#+          L.Tassan-Got, A.Tsinganis, S.Valenta,
+#+          G.Vannini, V.Variale, P.Vaz,
+#+          A.Ventura, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, S.Warren, M.Weigand,
+#+          C.Weiss, C.Wolf, P.J.Woods,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PRL,125,142701,2020)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.125, p.142701, 2020
+#DATASETS   5
+#
+#DATASET    23460005
+#DATE       20200801
+#REACTION   69-TM-171(N,G)69-TM-172,,SIG,,MXW
+#PROJ       1
+#TARG       69171
+#MF         3
+#MT         102
+#PRODUCT    69-TM-172
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171   3 102 D  30000.00          0.570000 0.220000                                       C.Guerrero,ET.AL. (20)   23460  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31826
+#AUTHOR1    C.Guerrero+
+#YEAR       2020
+#INSTITUTE  (2SPNSEU)
+#TITLE      Neutron capture on the s-process branching point 171Tm
+#+          via time-of-flight and activation
+#AUTHOR(S)  C.Guerrero, J.Lerendegui-Marco, M.Paul,
+#+          M.Tessler, S.Heinitz, C.Domingo-Pardo,
+#+          S.Cristallo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, E.A.Maugeri,
+#+          T.Palchan-Hazan, J.M.Quesada, D.Rochman,
+#+          D.Schumann, L.Weissman, O.Aberle,
+#+          S.Amaducci, J.Andrzejewski, L.Audouin,
+#+          V.Becares, M.Bacak, J.Balibrea,
+#+          A.Barak, M.Barbagallo, S.Barros,
+#+          F.Becvar, C.Beinrucker, D.Berkovits,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, Y.Buzaglo, M.Caamano,
+#+          F.Calvino, M.Calviani, D.Cano-Ott,
+#+          R.Cardella, A.Casanovas, D.M.Castelluccio,
+#+          F.Cerutti, Y.H.Chen, E.Chiaveri,
+#+          N.Colonna, G.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, H.Dafna, L.A.Damone,
+#+          M.Diakaki, M.Dietz, E.Dupont,
+#+          I.Duran, Y.Eisen, B.Fernandez-Domingez,
+#+          A.Ferrari, P.Ferreira, P.Finocchiaro,
+#+          V.Furman, K.Goebel, A.R.Garcia,
+#+          A.Gawlik, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          F.Gunsing, H.Harada, T.Heftrich,
+#+          J.Heyse, T.Hirsh, D.G.Jenkins,
+#+          E.Jericha, F.Kaeppeler, Y.Kadi,
+#+          B.Kaizer, T.Katabuchi, P.Kavrigin,
+#+          V.Ketlerov, V.Khryachkov, D.Kijel,
+#+          A.Kimura, M.Kokkoris, A.Kriesel,
+#+          M.Krticka, E.Leal-Cidoncha, C.Lederer-Woods,
+#+          H.Leeb, S.Lo Meo, S.J.Lonsdale,
+#+          D.Macina, A.Manna, J.Marganiec,
+#+          T.Martinez, C.Massimi, P.Mastinu,
+#+          M.Mastromarco, F.Matteucci, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.A.Millan-Callado,
+#+          F.Mingrone, M.Mirea, S.Montesano,
+#+          A.Musumarra, R.Nolte, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          K.Rajeev, T.Rauscher, R.Reifarth,
+#+          T.Rodriguez-Gonzalez, P.C.Rout, C.Rubbia,
+#+          J.A.Ryan, M.Sabate-Gilarte, A.Saxena,
+#+          P.Schillebeeckx, S.Schmidt, A.Shor,
+#+          P.Sedyshev, A.G.Smith, A.Stamatopoulos,
+#+          G.Tagliente, J.L.Tain, A.E.Tarifeno-Saldivia,
+#+          L.Tassan-Got, A.Tsinganis, S.Valenta,
+#+          G.Vannini, V.Variale, P.Vaz,
+#+          A.Ventura, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, S.Warren, M.Weigand,
+#+          C.Weiss, C.Wolf, P.J.Woods,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PRL,125,142701,2020)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.125, p.142701, 2020
+#DATASETS   1
+#
+#DATASET    31826003
+#DATE       20200801
+#REACTION   69-TM-171(N,G)69-TM-172,,SIG,,MXW
+#PROJ       1
+#TARG       69171
+#MF         3
+#MT         102
+#PRODUCT    69-TM-172
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171   3 102 D  30000.00          0.384000 0.040000                                       C.Guerrero,ET.AL. (20)   31826  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -673,6 +875,44 @@
 #/ENTRY
 #
 #
+#ENTRY      23540
+#AUTHOR1    T.Heftrich+
+#YEAR       2019
+#INSTITUTE  (2GERFRK)
+#TITLE      Thermal (n,gamma) cross section and resonance
+#+          integral of 171Tm
+#AUTHOR(S)  T.Heftrich, M.Weigand, Ch.E.Dullmann,
+#+          K.Eberhardt, S.Fiebiger, J.Glorius,
+#+          K.Gobel, C.Guerrero, R.Haas,
+#+          S.Heinitz, J.Lerendegui-Marco, F.Kappeler,
+#+          J.D.Kaiser, U.Koster, C.Langer,
+#+          S.Lohse, F.Ludwig, R.Reifarth,
+#+          D.Renisch, K.Scheutwinkel, D.Schumann,
+#+          N.Wiehl, C.Wolf
+#REF-CODE   (J,PR/C,99,065810,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.065810, 2019
+#DATASETS   2
+#
+#DATASET    23540003
+#DATE       20200305
+#REACTION   69-TM-171(N,G)69-TM-172,,RI
+#PROJ       1
+#TARG       69171
+#MF         213
+#MT         102
+#PRODUCT    69-TM-172
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171 213 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171 213 102    0.000000 2000000. 193.0000 14.00000                                       T.Heftrich,ET.AL. (19)   23540  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      10259
 #AUTHOR1    J.H.Gillette
 #YEAR       1967
@@ -700,6 +940,195 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 69171 213 102 A  0.540000 1.5000+7 118.0000 6.000000                                       J.H.Gillette (67)        10259 10
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23460
+#AUTHOR1    C.Guerrero+
+#YEAR       2020
+#INSTITUTE  (2SPNSEU)
+#TITLE      Neutron capture on the s-process branching point 171Tm
+#+          via time-of-flight and activation
+#AUTHOR(S)  C.Guerrero, J.Lerendegui-Marco, M.Paul,
+#+          M.Tessler, S.Heinitz, C.Domingo-Pardo,
+#+          S.Cristallo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, E.A.Maugeri,
+#+          T.Palchan-Hazan, J.M.Quesada, D.Rochman,
+#+          D.Schumann, L.Weissman, O.Aberle,
+#+          S.Amaducci, J.Andrzejewski, L.Audouin,
+#+          V.Becares, M.Bacak, J.Balibrea,
+#+          A.Barak, M.Barbagallo, S.Barros,
+#+          F.Becvar, C.Beinrucker, D.Berkovits,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, Y.Buzaglo, M.Caamano,
+#+          F.Calvino, M.Calviani, D.Cano-Ott,
+#+          R.Cardella, A.Casanovas, D.M.Castelluccio,
+#+          F.Cerutti, Y.H.Chen, E.Chiaveri,
+#+          N.Colonna, G.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, H.Dafna, L.A.Damone,
+#+          M.Diakaki, M.Dietz, E.Dupont,
+#+          I.Duran, Y.Eisen, B.Fernandez-Domingez,
+#+          A.Ferrari, P.Ferreira, P.Finocchiaro,
+#+          V.Furman, K.Goebel, A.R.Garcia,
+#+          A.Gawlik, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          F.Gunsing, H.Harada, T.Heftrich,
+#+          J.Heyse, T.Hirsh, D.G.Jenkins,
+#+          E.Jericha, F.Kaeppeler, Y.Kadi,
+#+          B.Kaizer, T.Katabuchi, P.Kavrigin,
+#+          V.Ketlerov, V.Khryachkov, D.Kijel,
+#+          A.Kimura, M.Kokkoris, A.Kriesel,
+#+          M.Krticka, E.Leal-Cidoncha, C.Lederer-Woods,
+#+          H.Leeb, S.Lo Meo, S.J.Lonsdale,
+#+          D.Macina, A.Manna, J.Marganiec,
+#+          T.Martinez, C.Massimi, P.Mastinu,
+#+          M.Mastromarco, F.Matteucci, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.A.Millan-Callado,
+#+          F.Mingrone, M.Mirea, S.Montesano,
+#+          A.Musumarra, R.Nolte, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          K.Rajeev, T.Rauscher, R.Reifarth,
+#+          T.Rodriguez-Gonzalez, P.C.Rout, C.Rubbia,
+#+          J.A.Ryan, M.Sabate-Gilarte, A.Saxena,
+#+          P.Schillebeeckx, S.Schmidt, A.Shor,
+#+          P.Sedyshev, A.G.Smith, A.Stamatopoulos,
+#+          G.Tagliente, J.L.Tain, A.E.Tarifeno-Saldivia,
+#+          L.Tassan-Got, A.Tsinganis, S.Valenta,
+#+          G.Vannini, V.Variale, P.Vaz,
+#+          A.Ventura, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, S.Warren, M.Weigand,
+#+          C.Weiss, C.Wolf, P.J.Woods,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PRL,125,142701,2020)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.125, p.142701, 2020
+#DATASETS   5
+#
+#DATASET    234600032
+#DATE       20200801
+#REACTION   69-TM-171(N,0),,J
+#PROJ       1
+#TARG       69171
+#MF         402
+#MT         6003
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171 4026003 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       28
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171 4026003 D  4.952000 2.0000-3 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  24.53400 3.0000-3 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  62.78000 0.030000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  82.19800 0.013000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  97.21000 0.023000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  106.7230 8.0000-3 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  131.3400 0.030000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  151.9210 0.017000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  181.3900 0.050000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  218.5900 0.060000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  224.0740 0.024000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  244.2900 0.040000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  244.8400 0.090000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  249.1300 0.070000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  291.5800 0.110000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  361.5300 0.060000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  395.0000 0.090000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  401.3500 0.190000 0.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  455.7600 0.140000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  497.7200 0.100000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  547.9200 0.130000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  554.8200 0.130000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  597.8500 0.230000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  617.2000 0.300000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  636.2000 0.300000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  641.6000 0.180000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  684.1200 0.190000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+    1 69171 4026003 D  705.1900 0.190000 1.000000                                                C.Guerrero,ET.AL. (20)   23460  32
+#/DATA      28
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23460
+#AUTHOR1    C.Guerrero+
+#YEAR       2020
+#INSTITUTE  (2SPNSEU)
+#TITLE      Neutron capture on the s-process branching point 171Tm
+#+          via time-of-flight and activation
+#AUTHOR(S)  C.Guerrero, J.Lerendegui-Marco, M.Paul,
+#+          M.Tessler, S.Heinitz, C.Domingo-Pardo,
+#+          S.Cristallo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, E.A.Maugeri,
+#+          T.Palchan-Hazan, J.M.Quesada, D.Rochman,
+#+          D.Schumann, L.Weissman, O.Aberle,
+#+          S.Amaducci, J.Andrzejewski, L.Audouin,
+#+          V.Becares, M.Bacak, J.Balibrea,
+#+          A.Barak, M.Barbagallo, S.Barros,
+#+          F.Becvar, C.Beinrucker, D.Berkovits,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, Y.Buzaglo, M.Caamano,
+#+          F.Calvino, M.Calviani, D.Cano-Ott,
+#+          R.Cardella, A.Casanovas, D.M.Castelluccio,
+#+          F.Cerutti, Y.H.Chen, E.Chiaveri,
+#+          N.Colonna, G.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, H.Dafna, L.A.Damone,
+#+          M.Diakaki, M.Dietz, E.Dupont,
+#+          I.Duran, Y.Eisen, B.Fernandez-Domingez,
+#+          A.Ferrari, P.Ferreira, P.Finocchiaro,
+#+          V.Furman, K.Goebel, A.R.Garcia,
+#+          A.Gawlik, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          F.Gunsing, H.Harada, T.Heftrich,
+#+          J.Heyse, T.Hirsh, D.G.Jenkins,
+#+          E.Jericha, F.Kaeppeler, Y.Kadi,
+#+          B.Kaizer, T.Katabuchi, P.Kavrigin,
+#+          V.Ketlerov, V.Khryachkov, D.Kijel,
+#+          A.Kimura, M.Kokkoris, A.Kriesel,
+#+          M.Krticka, E.Leal-Cidoncha, C.Lederer-Woods,
+#+          H.Leeb, S.Lo Meo, S.J.Lonsdale,
+#+          D.Macina, A.Manna, J.Marganiec,
+#+          T.Martinez, C.Massimi, P.Mastinu,
+#+          M.Mastromarco, F.Matteucci, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.A.Millan-Callado,
+#+          F.Mingrone, M.Mirea, S.Montesano,
+#+          A.Musumarra, R.Nolte, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          K.Rajeev, T.Rauscher, R.Reifarth,
+#+          T.Rodriguez-Gonzalez, P.C.Rout, C.Rubbia,
+#+          J.A.Ryan, M.Sabate-Gilarte, A.Saxena,
+#+          P.Schillebeeckx, S.Schmidt, A.Shor,
+#+          P.Sedyshev, A.G.Smith, A.Stamatopoulos,
+#+          G.Tagliente, J.L.Tain, A.E.Tarifeno-Saldivia,
+#+          L.Tassan-Got, A.Tsinganis, S.Valenta,
+#+          G.Vannini, V.Variale, P.Vaz,
+#+          A.Ventura, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, S.Warren, M.Weigand,
+#+          C.Weiss, C.Wolf, P.J.Woods,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PRL,125,142701,2020)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.125, p.142701, 2020
+#DATASETS   5
+#
+#DATASET    234600041
+#DATE       20200801
+#REACTION   69-TM-171(N,0),,D
+#PROJ       1
+#TARG       69171
+#MF         402
+#MT         6004
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171 4026004 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171 4026004 D                    15.00000 4.000000 0.000000                              C.Guerrero,ET.AL. (20)   23460  41
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -765,6 +1194,168 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 69171 4026031 A  4.920000          0.250000 0.080000 0.000000                              G.E.Stokes,ET.AL. (74)   10405  63
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23460
+#AUTHOR1    C.Guerrero+
+#YEAR       2020
+#INSTITUTE  (2SPNSEU)
+#TITLE      Neutron capture on the s-process branching point 171Tm
+#+          via time-of-flight and activation
+#AUTHOR(S)  C.Guerrero, J.Lerendegui-Marco, M.Paul,
+#+          M.Tessler, S.Heinitz, C.Domingo-Pardo,
+#+          S.Cristallo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, E.A.Maugeri,
+#+          T.Palchan-Hazan, J.M.Quesada, D.Rochman,
+#+          D.Schumann, L.Weissman, O.Aberle,
+#+          S.Amaducci, J.Andrzejewski, L.Audouin,
+#+          V.Becares, M.Bacak, J.Balibrea,
+#+          A.Barak, M.Barbagallo, S.Barros,
+#+          F.Becvar, C.Beinrucker, D.Berkovits,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, Y.Buzaglo, M.Caamano,
+#+          F.Calvino, M.Calviani, D.Cano-Ott,
+#+          R.Cardella, A.Casanovas, D.M.Castelluccio,
+#+          F.Cerutti, Y.H.Chen, E.Chiaveri,
+#+          N.Colonna, G.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, H.Dafna, L.A.Damone,
+#+          M.Diakaki, M.Dietz, E.Dupont,
+#+          I.Duran, Y.Eisen, B.Fernandez-Domingez,
+#+          A.Ferrari, P.Ferreira, P.Finocchiaro,
+#+          V.Furman, K.Goebel, A.R.Garcia,
+#+          A.Gawlik, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          F.Gunsing, H.Harada, T.Heftrich,
+#+          J.Heyse, T.Hirsh, D.G.Jenkins,
+#+          E.Jericha, F.Kaeppeler, Y.Kadi,
+#+          B.Kaizer, T.Katabuchi, P.Kavrigin,
+#+          V.Ketlerov, V.Khryachkov, D.Kijel,
+#+          A.Kimura, M.Kokkoris, A.Kriesel,
+#+          M.Krticka, E.Leal-Cidoncha, C.Lederer-Woods,
+#+          H.Leeb, S.Lo Meo, S.J.Lonsdale,
+#+          D.Macina, A.Manna, J.Marganiec,
+#+          T.Martinez, C.Massimi, P.Mastinu,
+#+          M.Mastromarco, F.Matteucci, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.A.Millan-Callado,
+#+          F.Mingrone, M.Mirea, S.Montesano,
+#+          A.Musumarra, R.Nolte, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          K.Rajeev, T.Rauscher, R.Reifarth,
+#+          T.Rodriguez-Gonzalez, P.C.Rout, C.Rubbia,
+#+          J.A.Ryan, M.Sabate-Gilarte, A.Saxena,
+#+          P.Schillebeeckx, S.Schmidt, A.Shor,
+#+          P.Sedyshev, A.G.Smith, A.Stamatopoulos,
+#+          G.Tagliente, J.L.Tain, A.E.Tarifeno-Saldivia,
+#+          L.Tassan-Got, A.Tsinganis, S.Valenta,
+#+          G.Vannini, V.Variale, P.Vaz,
+#+          A.Ventura, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, S.Warren, M.Weigand,
+#+          C.Weiss, C.Wolf, P.J.Woods,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PRL,125,142701,2020)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.125, p.142701, 2020
+#DATASETS   5
+#
+#DATASET    234600042
+#DATE       20200801
+#REACTION   69-TM-171(N,EL),,STF
+#PROJ       1
+#TARG       69171
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171 4036001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171 4036001 D                    1.3000-4 4.0000-5 0.000000                              C.Guerrero,ET.AL. (20)   23460  42
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23460
+#AUTHOR1    C.Guerrero+
+#YEAR       2020
+#INSTITUTE  (2SPNSEU)
+#TITLE      Neutron capture on the s-process branching point 171Tm
+#+          via time-of-flight and activation
+#AUTHOR(S)  C.Guerrero, J.Lerendegui-Marco, M.Paul,
+#+          M.Tessler, S.Heinitz, C.Domingo-Pardo,
+#+          S.Cristallo, R.Dressler, S.Halfon,
+#+          N.Kivel, U.Koester, E.A.Maugeri,
+#+          T.Palchan-Hazan, J.M.Quesada, D.Rochman,
+#+          D.Schumann, L.Weissman, O.Aberle,
+#+          S.Amaducci, J.Andrzejewski, L.Audouin,
+#+          V.Becares, M.Bacak, J.Balibrea,
+#+          A.Barak, M.Barbagallo, S.Barros,
+#+          F.Becvar, C.Beinrucker, D.Berkovits,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, Y.Buzaglo, M.Caamano,
+#+          F.Calvino, M.Calviani, D.Cano-Ott,
+#+          R.Cardella, A.Casanovas, D.M.Castelluccio,
+#+          F.Cerutti, Y.H.Chen, E.Chiaveri,
+#+          N.Colonna, G.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, H.Dafna, L.A.Damone,
+#+          M.Diakaki, M.Dietz, E.Dupont,
+#+          I.Duran, Y.Eisen, B.Fernandez-Domingez,
+#+          A.Ferrari, P.Ferreira, P.Finocchiaro,
+#+          V.Furman, K.Goebel, A.R.Garcia,
+#+          A.Gawlik, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          F.Gunsing, H.Harada, T.Heftrich,
+#+          J.Heyse, T.Hirsh, D.G.Jenkins,
+#+          E.Jericha, F.Kaeppeler, Y.Kadi,
+#+          B.Kaizer, T.Katabuchi, P.Kavrigin,
+#+          V.Ketlerov, V.Khryachkov, D.Kijel,
+#+          A.Kimura, M.Kokkoris, A.Kriesel,
+#+          M.Krticka, E.Leal-Cidoncha, C.Lederer-Woods,
+#+          H.Leeb, S.Lo Meo, S.J.Lonsdale,
+#+          D.Macina, A.Manna, J.Marganiec,
+#+          T.Martinez, C.Massimi, P.Mastinu,
+#+          M.Mastromarco, F.Matteucci, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.A.Millan-Callado,
+#+          F.Mingrone, M.Mirea, S.Montesano,
+#+          A.Musumarra, R.Nolte, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          K.Rajeev, T.Rauscher, R.Reifarth,
+#+          T.Rodriguez-Gonzalez, P.C.Rout, C.Rubbia,
+#+          J.A.Ryan, M.Sabate-Gilarte, A.Saxena,
+#+          P.Schillebeeckx, S.Schmidt, A.Shor,
+#+          P.Sedyshev, A.G.Smith, A.Stamatopoulos,
+#+          G.Tagliente, J.L.Tain, A.E.Tarifeno-Saldivia,
+#+          L.Tassan-Got, A.Tsinganis, S.Valenta,
+#+          G.Vannini, V.Variale, P.Vaz,
+#+          A.Ventura, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, S.Warren, M.Weigand,
+#+          C.Weiss, C.Wolf, P.J.Woods,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PRL,125,142701,2020)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.125, p.142701, 2020
+#DATASETS   5
+#
+#DATASET    234600043
+#DATE       20200801
+#REACTION   69-TM-171(N,G),,WID,,AV
+#PROJ       1
+#TARG       69171
+#MF         405
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 69171 4056001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 69171 4056001 D                    0.080000 9.0000-3 0.000000                              C.Guerrero,ET.AL. (20)   23460  43
 #/DATA      1
 #/DATASET
 #/ENTRY

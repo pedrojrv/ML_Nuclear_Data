@@ -135,10 +135,10 @@
 #REF-CODE   (J,ARI,31,505,1980)
 #REFERENCE  Jour. Applied Radiation and Isotopes
 #+          Vol.31, p.505, 1980
-#DATASETS   13
+#DATASETS   7
 #
 #DATASET    D4222008
-#DATE       20090605
+#DATE       20190902
 #REACTION   68-ER-0(A,X)69-TM-168,,SIG
 #PROJ       2004
 #TARG       68000
@@ -217,49 +217,10 @@
 #REF-CODE   (J,ARI,31,505,1980)
 #REFERENCE  Jour. Applied Radiation and Isotopes
 #+          Vol.31, p.505, 1980
-#DATASETS   13
-#
-#DATASET    D4222006
-#DATE       20090605
-#REACTION   68-ER-0(A,X)69-TM-167,,SIG
-#PROJ       2004
-#TARG       68000
-#MF         3
-#MT         9000
-#PRODUCT    69-TM-167
-#DATA-HDR   DATA
-#C4BEGIN    [ 2004 68000   39000   ]
-#DATA       8
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 68000   39000    2.1700+7          2.3000-3                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    2.3500+7          3.6000-3                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    2.7000+7          3.3000-3                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    2.8700+7          7.3000-3                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    3.0600+7          0.063600                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    3.4100+7          0.291500                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    3.5900+7          0.346900                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
- 2004 68000   39000    3.7300+7          0.367600                    69167.9                     Y.Homma,ET.AL. (80)      D4222  6
-#/DATA      8
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      D4222
-#AUTHOR1    Y.Homma+
-#YEAR       1980
-#INSTITUTE  (2JPNKYO)
-#TITLE      Cyclotron production of 167Tm from natural erbium and
-#+          natural holmium
-#AUTHOR(S)  Y.Homma, Y.Sugitani, Y.Matsui,
-#+          K.Matsuura, K.Kurata
-#REF-CODE   (J,ARI,31,505,1980)
-#REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.31, p.505, 1980
-#DATASETS   13
+#DATASETS   7
 #
 #DATASET    D4222011
-#DATE       20090605
+#DATE       20190902
 #REACTION   68-ER-0(A,X)70-YB-169,,SIG
 #PROJ       2004
 #TARG       68000
@@ -323,73 +284,252 @@
 #/ENTRY
 #
 #
-#ENTRY      D4222
-#AUTHOR1    Y.Homma+
-#YEAR       1980
-#INSTITUTE  (2JPNKYO)
-#TITLE      Cyclotron production of 167Tm from natural erbium and
-#+          natural holmium
-#AUTHOR(S)  Y.Homma, Y.Sugitani, Y.Matsui,
-#+          K.Matsuura, K.Kurata
-#REF-CODE   (J,ARI,31,505,1980)
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
 #REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.31, p.505, 1980
-#DATASETS   13
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
 #
-#DATASET    D4222007
-#DATE       20090605
-#REACTION   68-ER-0(A,X)69-TM-163,,SIG
+#DATASET    E2618004
+#DATE       20191201
+#REACTION   68-ER-0(A,X)69-TM-173,,SIG
 #PROJ       2004
 #TARG       68000
 #MF         3
 #MT         9000
-#PRODUCT    69-TM-163
+#PRODUCT    69-TM-173
 #DATA-HDR   DATA
 #C4BEGIN    [ 2004 68000   39000   ]
-#DATA       5
+#DATA       9
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 68000   39000    2.9000+7          1.4000-3                    69163.9                     Y.Homma,ET.AL. (80)      D4222  7
- 2004 68000   39000    3.0500+7          0.019900                    69163.9                     Y.Homma,ET.AL. (80)      D4222  7
- 2004 68000   39000    3.4100+7          0.183200                    69163.9                     Y.Homma,ET.AL. (80)      D4222  7
- 2004 68000   39000    3.5900+7          0.208800                    69163.9                     Y.Homma,ET.AL. (80)      D4222  7
- 2004 68000   39000    3.7100+7          0.208800                    69163.9                     Y.Homma,ET.AL. (80)      D4222  7
-#/DATA      5
+ 2004 68000   39000    4.1200+7 900000.0 3.9000-4 4.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    3.9600+7 900000.0 4.2000-4 4.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    3.5800+7 1000000. 4.9000-4 4.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    3.4100+7 1000000. 5.3000-4 5.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    3.2300+7 1000000. 5.6000-4 5.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    2.7900+7 1100000. 5.5000-4 5.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    2.5800+7 1200000. 4.4000-4 4.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    2.2900+7 1300000. 1.5000-4 1.0000-5           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+ 2004 68000   39000    1.9700+7 1400000. 1.9000-5 3.0000-6           69173.9                     M.Saito,ET.AL. (19)      E2618  4
+#/DATA      9
 #/DATASET
 #/ENTRY
 #
 #
-#ENTRY      D4222
-#AUTHOR1    Y.Homma+
-#YEAR       1980
-#INSTITUTE  (2JPNKYO)
-#TITLE      Cyclotron production of 167Tm from natural erbium and
-#+          natural holmium
-#AUTHOR(S)  Y.Homma, Y.Sugitani, Y.Matsui,
-#+          K.Matsuura, K.Kurata
-#REF-CODE   (J,ARI,31,505,1980)
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
 #REFERENCE  Jour. Applied Radiation and Isotopes
-#+          Vol.31, p.505, 1980
-#DATASETS   13
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
 #
-#DATASET    D4222009
-#DATE       20090605
-#REACTION   68-ER-0(A,X)69-TM-165,,SIG
+#DATASET    E2618002
+#DATE       20191201
+#REACTION   68-ER-0(A,X)70-YB-169,,SIG
 #PROJ       2004
 #TARG       68000
 #MF         3
 #MT         9000
-#PRODUCT    69-TM-165
+#PRODUCT    70-YB-169
 #DATA-HDR   DATA
 #C4BEGIN    [ 2004 68000   39000   ]
-#DATA       4
+#DATA       14
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 2004 68000   39000    3.0400+7          3.0000-4                    69165.9                     Y.Homma,ET.AL. (80)      D4222  9
- 2004 68000   39000    3.4100+7          3.2000-3                    69165.9                     Y.Homma,ET.AL. (80)      D4222  9
- 2004 68000   39000    3.5600+7          4.9000-3                    69165.9                     Y.Homma,ET.AL. (80)      D4222  9
- 2004 68000   39000    3.7100+7          6.2000-3                    69165.9                     Y.Homma,ET.AL. (80)      D4222  9
-#/DATA      4
+ 2004 68000   39000    4.8900+7 800000.0 0.170000 0.015000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    4.7500+7 800000.0 0.156000 0.013000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    4.6100+7 800000.0 0.144000 0.012000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    4.2700+7 900000.0 0.186000 0.016000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    4.1200+7 900000.0 0.236000 0.020000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    3.9600+7 900000.0 0.303000 0.026000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    3.5800+7 1000000. 0.398000 0.034000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    3.4100+7 1000000. 0.394000 0.034000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    3.2300+7 1000000. 0.379000 0.032000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    2.7900+7 1100000. 0.263000 0.022000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    2.5800+7 1200000. 0.218000 0.019000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    2.2900+7 1300000. 0.172000 0.015000           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    1.9700+7 1400000. 0.092000 8.0000-3           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+ 2004 68000   39000    1.6100+7 1600000. 6.2000-3 5.0000-4           70169.9                     M.Saito,ET.AL. (19)      E2618  2
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
+#
+#DATASET    E2618003
+#DATE       20191201
+#REACTION   68-ER-0(A,X)70-YB-166,,SIG
+#PROJ       2004
+#TARG       68000
+#MF         3
+#MT         9000
+#PRODUCT    70-YB-166
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 68000   39000   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 68000   39000    4.8900+7 800000.0 0.414000 0.037000           70166.9                     M.Saito,ET.AL. (19)      E2618  3
+ 2004 68000   39000    4.7500+7 800000.0 0.372000 0.034000           70166.9                     M.Saito,ET.AL. (19)      E2618  3
+ 2004 68000   39000    4.6100+7 800000.0 0.317000 0.029000           70166.9                     M.Saito,ET.AL. (19)      E2618  3
+ 2004 68000   39000    4.2700+7 900000.0 0.153000 0.014000           70166.9                     M.Saito,ET.AL. (19)      E2618  3
+ 2004 68000   39000    4.1200+7 900000.0 0.086000 8.0000-3           70166.9                     M.Saito,ET.AL. (19)      E2618  3
+ 2004 68000   39000    3.9600+7 900000.0 0.038000 4.0000-3           70166.9                     M.Saito,ET.AL. (19)      E2618  3
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
+#
+#DATASET    E2618005
+#DATE       20191201
+#REACTION   68-ER-0(A,X)69-TM-170,,SIG
+#PROJ       2004
+#TARG       68000
+#MF         3
+#MT         9000
+#PRODUCT    69-TM-170
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 68000   39000   ]
+#DATA       11
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 68000   39000    4.8900+7 800000.0 0.014000 2.0000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    4.7500+7 800000.0 0.016000 3.0000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    4.6100+7 800000.0 0.016000 3.0000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    4.2700+7 900000.0 0.011000 2.0000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    4.1200+7 900000.0 0.011000 2.0000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    3.9600+7 900000.0 9.1000-3 1.7000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    3.5800+7 1000000. 7.4000-3 1.6000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    3.4100+7 1000000. 8.2000-3 1.7000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    3.2300+7 1000000. 6.8000-3 1.6000-3           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    2.7900+7 1100000. 2.8000-3 8.0000-4           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+ 2004 68000   39000    2.5800+7 1200000. 2.3000-3 6.0000-4           69170.9                     M.Saito,ET.AL. (19)      E2618  5
+#/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
+#
+#DATASET    E2618006
+#DATE       20191201
+#REACTION   68-ER-0(A,X)69-TM-168,,SIG
+#PROJ       2004
+#TARG       68000
+#MF         3
+#MT         9000
+#PRODUCT    69-TM-168
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 68000   39000   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 68000   39000    4.8900+7 800000.0 0.031000 3.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    4.7500+7 800000.0 0.028000 3.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    4.6100+7 800000.0 0.026000 2.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    4.2700+7 900000.0 0.022000 2.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    4.1200+7 900000.0 0.019000 2.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    3.9600+7 900000.0 0.018000 2.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    3.5800+7 1000000. 0.012000 1.0000-3           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    3.4100+7 1000000. 9.3000-3 9.0000-4           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    3.2300+7 1000000. 6.8000-3 7.0000-4           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    2.7900+7 1100000. 1.9000-3 2.0000-4           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    2.5800+7 1200000. 8.0000-4 1.0000-4           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+ 2004 68000   39000    2.2900+7 1300000. 1.1000-4 4.0000-5           69168.9                     M.Saito,ET.AL. (19)      E2618  6
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
+#
+#DATASET    E2618008
+#DATE       20191201
+#REACTION   68-ER-0(A,X)69-TM-166,,SIG
+#PROJ       2004
+#TARG       68000
+#MF         3
+#MT         9000
+#PRODUCT    69-TM-166
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 68000   39000   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 68000   39000    4.8900+7 800000.0 0.095000 0.014000           69166.9                     M.Saito,ET.AL. (19)      E2618  8
+ 2004 68000   39000    4.7500+7 800000.0 0.078000 0.010000           69166.9                     M.Saito,ET.AL. (19)      E2618  8
+ 2004 68000   39000    4.6100+7 800000.0 0.057000 8.0000-3           69166.9                     M.Saito,ET.AL. (19)      E2618  8
+ 2004 68000   39000    4.2700+7 900000.0 0.023000 4.0000-3           69166.9                     M.Saito,ET.AL. (19)      E2618  8
+ 2004 68000   39000    4.1200+7 900000.0 3.8000-3 6.0000-4           69166.9                     M.Saito,ET.AL. (19)      E2618  8
+ 2004 68000   39000    3.9600+7 900000.0 2.5000-3 3.0000-4           69166.9                     M.Saito,ET.AL. (19)      E2618  8
+#/DATA      6
 #/DATASET
 #/ENTRY
 #
@@ -479,6 +619,98 @@
  2004 68000   39001 A  3.5700+7 300000.0 0.531000 0.060000           69167.9                     B.Kiraly,ET.AL. (08)     D4199  5
  2004 68000   39001 A  3.6300+7 300000.0 0.592000 0.066000           69167.9                     B.Kiraly,ET.AL. (08)     D4199  5
 #/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
+#
+#DATASET    E2618007
+#DATE       20191201
+#REACTION   68-ER-0(A,X)69-TM-167,CUM,SIG
+#PROJ       2004
+#TARG       68000
+#MF         3
+#MT         9001
+#PRODUCT    69-TM-167
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 68000   39001   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 68000   39001    4.8900+7 800000.0 0.531000 0.111000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    4.7500+7 800000.0 0.534000 0.111000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    4.6100+7 800000.0 0.542000 0.113000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    4.2700+7 900000.0 0.572000 0.119000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    4.1200+7 900000.0 0.570000 0.119000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    3.9600+7 900000.0 0.559000 0.117000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    3.5800+7 1000000. 0.427000 0.089000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    3.4100+7 1000000. 0.349000 0.073000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    3.2300+7 1000000. 0.235000 0.049000           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    2.7900+7 1100000. 8.9000-3 1.9000-3           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    2.5800+7 1200000. 2.5000-3 5.0000-4           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    2.2900+7 1300000. 4.2000-3 9.0000-4           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    1.9700+7 1400000. 3.8000-3 8.0000-4           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+ 2004 68000   39001    1.6100+7 1600000. 3.1000-4 7.0000-5           69167.9                     M.Saito,ET.AL. (19)      E2618  7
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2618
+#AUTHOR1    M.Saito+
+#YEAR       2019
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of ytterbium and thulium
+#+          radioisotopes in alpha-induced nuclear reactions on
+#+          natural erbium
+#AUTHOR(S)  M.Saito, M.Aikawa, M.Sakaguchi,
+#+          N.Ukon, Y.Komori, H.Haba
+#REF-CODE   (J,ARI,154,108874,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.154, p.108874, 2019
+#DATASETS   8
+#
+#DATASET    E2618009
+#DATE       20191201
+#REACTION   68-ER-0(A,X)69-TM-165,CUM,SIG
+#PROJ       2004
+#TARG       68000
+#MF         3
+#MT         9001
+#PRODUCT    69-TM-165
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 68000   39001   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 68000   39001    4.8900+7 800000.0 0.023000 2.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    4.7500+7 800000.0 0.018000 2.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    4.6100+7 800000.0 0.019000 2.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    4.2700+7 900000.0 0.024000 2.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    4.1200+7 900000.0 0.022000 2.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    3.9600+7 900000.0 0.022000 2.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    3.5800+7 1000000. 0.015000 1.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    3.4100+7 1000000. 9.9000-3 1.0000-3           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    3.2300+7 1000000. 4.5000-3 4.0000-4           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    2.7900+7 1100000. 2.6000-4 4.0000-5           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    2.5800+7 1200000. 3.5000-4 4.0000-5           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    2.2900+7 1300000. 6.0000-4 6.0000-5           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    1.9700+7 1400000. 3.5000-4 4.0000-5           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+ 2004 68000   39001    1.6100+7 1600000. 3.1000-5 5.0000-6           69165.9                     M.Saito,ET.AL. (19)      E2618  9
+#/DATA      14
 #/DATASET
 #/ENTRY
 #

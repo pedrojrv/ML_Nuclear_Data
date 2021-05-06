@@ -12852,7 +12852,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298006
 #DATE       20130501
@@ -13301,27 +13301,27 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089013
-#DATE       20081001
-#REACTION   19-K-39(N,2N)19-K-38,,SIG
+#DATE       20201001
+#REACTION   19-K-39(N,2N)19-K-38-G,,SIG
 #PROJ       1
 #TARG       19039
 #MF         3
 #MT         16
-#PRODUCT    19-K-38
+#PRODUCT    19-K-38-G
 #DATA-HDR   DATA
-#C4BEGIN    [    1 19039   3  16   ]
+#C4BEGIN    [    1 19039   3  16G  ]
 #DATA       6
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 19039   3  16    1.5000+7          6.4700-3 3.9000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
-    1 19039   3  16    1.4710+7          5.0700-3 3.2000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
-    1 19039   3  16    1.4460+7          3.2100-3 3.3000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
-    1 19039   3  16    1.4080+7          1.6000-3 1.2000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
-    1 19039   3  16    1.3570+7          5.4000-4 1.0000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
-    1 19039   3  16    1.3410+7          4.1300-4 9.0000-5                                       Y.Ikeda,ET.AL. (88)      22089 13
+    1 19039   3  16G   1.5000+7          6.4700-3 3.9000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
+    1 19039   3  16G   1.4710+7          5.0700-3 3.2000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
+    1 19039   3  16G   1.4460+7          3.2100-3 3.3000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
+    1 19039   3  16G   1.4080+7          1.6000-3 1.2000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
+    1 19039   3  16G   1.3570+7          5.4000-4 1.0000-4                                       Y.Ikeda,ET.AL. (88)      22089 13
+    1 19039   3  16G   1.3410+7          4.1300-4 9.0000-5                                       Y.Ikeda,ET.AL. (88)      22089 13
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -13592,15 +13592,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507008
-#DATE       19860702
+#DATE       20190805
 #REACTION   19-K-39(N,G)19-K-40,,SIG,,MXW
 #PROJ       1
 #TARG       19039
@@ -13612,7 +13612,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 19039   3 102    0.025300          1.870000 0.149600                                       H.POMERANCE (52)         11507  8
+    1 19039   3 102    0.025300          1.870000 0.149600                                       H.Pomerance (52)         11507  8
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -13781,16 +13781,16 @@
 #AUTHOR1    W.R.Dixon+
 #YEAR       1961
 #INSTITUTE  (1CANOTC)
-#TITLE      ABSOLUTE CROSS SECTION OF THE K39(N,P)A39 REACTION FOR
-#+          2.5-MEV NEUTRONS.
+#TITLE      Absolute cross section of the K39(n,p)A39 reaction for
+#+          2.5-MeV neutrons.
 #AUTHOR(S)  W.R.Dixon, J.H.Aitken
-#REF-CODE   (J,NP,24,456,61)
+#REF-CODE   (J,NP,24,456,1961)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.24, p.456, 1961
 #DATASETS   2
 #
 #DATASET    11608003
-#DATE       19830801
+#DATE       20200500
 #REACTION   19-K-39(N,P)18-AR-39,,SIG
 #PROJ       1
 #TARG       19039
@@ -13802,7 +13802,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 19039   3 103    2460000. 100000.0 0.096000 6.0000-3                                       W.R.DIXON,ET.AL. (61)    11608  3
+    1 19039   3 103    2460000. 100000.0 0.096000 6.0000-3                                       W.R.Dixon,ET.AL. (61)    11608  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -14168,16 +14168,16 @@
 #AUTHOR1    W.R.Dixon+
 #YEAR       1961
 #INSTITUTE  (1CANOTC)
-#TITLE      ABSOLUTE CROSS SECTION OF THE K39(N,P)A39 REACTION FOR
-#+          2.5-MEV NEUTRONS.
+#TITLE      Absolute cross section of the K39(n,p)A39 reaction for
+#+          2.5-MeV neutrons.
 #AUTHOR(S)  W.R.Dixon, J.H.Aitken
-#REF-CODE   (J,NP,24,456,61)
+#REF-CODE   (J,NP,24,456,1961)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.24, p.456, 1961
 #DATASETS   2
 #
 #DATASET    11608002
-#DATE       19830801
+#DATE       20200500
 #REACTION   19-K-39(N,A)17-CL-36,,SIG
 #PROJ       1
 #TARG       19039
@@ -14189,7 +14189,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 19039   3 107    2460000. 100000.0 6.0000-3                                                W.R.DIXON,ET.AL. (61)    11608  2
+    1 19039   3 107    2460000. 100000.0 6.0000-3                                                W.R.Dixon,ET.AL. (61)    11608  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -14943,6 +14943,36 @@
 #/ENTRY
 #
 #
+#ENTRY      23339
+#AUTHOR1    A.J.Cox+
+#YEAR       1970
+#INSTITUTE  (2UK BIA)
+#TITLE      A method for the study of short-lived nuclear isomers
+#AUTHOR(S)  A.J.Cox, M.J.Kearin
+#REF-CODE   (J,JIN,32,3950,1970)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.32, p.3950, 1970
+#DATASETS   1
+#
+#DATASET    23339002
+#DATE       20170603
+#REACTION   19-K-39(N,2N)19-K-38-M/G,,SIG/RAT
+#PROJ       1
+#TARG       19039
+#MF         203
+#MT         16
+#PRODUCT    19-K-38-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 19039 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 19039 203  16M   1.4700+7          0.460000 0.030000     16.0  19039.9                     A.J.Cox,ET.AL. (70)      23339  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      20084
 #AUTHOR1    W.Schlaeffer+
 #YEAR       1968
@@ -14970,6 +15000,37 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 19039 203  16GA  1.4800+7 300000.0 7.920000 0.820000     16.7  19039.9                     W.SCHLAEFFER,ET.AL. (68) 20084  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30101
+#AUTHOR1    J.Karolyi+
+#YEAR       1968
+#INSTITUTE  (3HUNDEB)
+#TITLE      Isomeric cross-section ratios for (n,2n) reactions
+#AUTHOR(S)  J.Karolyi, J.Csikai, G.Peto
+#REF-CODE   (J,NP/A,122,234,196812)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.122, p.234, 1968
+#DATASETS   13
+#
+#DATASET    30101003
+#DATE       20080205
+#REACTION   19-K-39(N,2N)19-K-38-M/G,,SIG/RAT
+#PROJ       1
+#TARG       19039
+#MF         203
+#MT         16
+#PRODUCT    19-K-38-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 19039 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 19039 203  16MD  1.5000+7          0.160000 0.050000     16.0  19039.9                     J.Karolyi,ET.AL. (68)    30101  3
 #/DATA      1
 #/DATASET
 #/ENTRY

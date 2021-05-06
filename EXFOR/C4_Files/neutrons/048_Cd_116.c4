@@ -772,7 +772,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298056
 #DATE       20130501
@@ -839,7 +839,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497020
 #DATE       20040103
@@ -3522,6 +3522,73 @@
 #/ENTRY
 #
 #
+#ENTRY      41424
+#AUTHOR1    A.A.Filatenkov+
+#YEAR       2001
+#INSTITUTE  (4RUSRI)
+#TITLE      Measurement of a set of badly known neutron induced
+#+          cross sections.
+#AUTHOR(S)  A.A.Filatenkov, S.V.Chuvaev
+#REF-CODE   (R,RI-258,20010615)
+#REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
+#+          No.258, 2001
+#DATASETS   6
+#
+#DATASET    41424061
+#DATE       20030802
+#REACTION   48-CD-116(N,2N)48-CD-115-M/T,,SIG/RAT
+#PROJ       1
+#TARG       48116
+#MF         203
+#MT         16
+#PRODUCT    48-CD-115-M/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 48116 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 48116 203  16MD  1.3560+7          0.420000 0.100000     16.9  48116.9                     A.A.Filatenkov, (01)     41424 61
+    1 48116 203  16MD  1.3740+7          0.460000 0.100000     16.9  48116.9                     A.A.Filatenkov, (01)     41424 61
+    1 48116 203  16MD  1.3960+7          0.420000 0.110000     16.9  48116.9                     A.A.Filatenkov, (01)     41424 61
+    1 48116 203  16MD  1.4190+7          0.420000 0.110000     16.9  48116.9                     A.A.Filatenkov, (01)     41424 61
+    1 48116 203  16MD  1.4420+7          0.410000 0.120000     16.9  48116.9                     A.A.Filatenkov, (01)     41424 61
+    1 48116 203  16MD  1.4640+7          0.400000 0.120000     16.9  48116.9                     A.A.Filatenkov, (01)     41424 61
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      10357
+#AUTHOR1    S.A.Rao
+#YEAR       1972
+#INSTITUTE  (1USAARK)
+#TITLE      Isomer yield ratios of 115(m)Cd and 115(g)Cd
+#AUTHOR(S)  S.A.Rao
+#REF-CODE   (J,JIN,34,2405,197208)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.34, p.2405, 1972
+#DATASETS   1
+#
+#DATASET    10357002
+#DATE       20021103
+#REACTION   48-CD-116(N,2N)48-CD-115-M/G,,SIG/RAT
+#PROJ       1
+#TARG       48116
+#MF         203
+#MT         16
+#PRODUCT    48-CD-115-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 48116 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 48116 203  16M   1.4800+7          0.710000 0.060000     16.0  48116.9                     S.A.Rao (72)             10357  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      22813
 #AUTHOR1    K.Wisshak+
 #YEAR       2002
@@ -3973,18 +4040,18 @@
 #AUTHOR1    A.B.Popov+
 #YEAR       1985
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Extraction of Strength Functions and Radii of Nuclei
-#+          From the Average Differential Scattering
-#+          Cross-Sections
+#TITLE      Extraction of strength functions and radii of nuclei
+#+          from the average differential scattering
+#+          cross-sections
 #AUTHOR(S)  A.B.Popov, G.S.Samosvat, V.G.Nikolenko,
 #+          Zo-In-Ok
 #REF-CODE   (C,85SANTA,1,621,1985)
 #REFERENCE  Conf. Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
 #+          Vol.1, p.621, 1985
-#DATASETS   44
+#DATASETS   71
 #
 #DATASET    40934026
-#DATE       20010805
+#DATE       20200304
 #REACTION   48-CD-116(N,EL),,STF
 #PROJ       1
 #TARG       48116
@@ -3997,6 +4064,39 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 48116 4036001                      4.0000-4 5.0000-5 1.000000                              A.B.Popov,ET.AL. (85)    40934 26
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40934
+#AUTHOR1    A.B.Popov+
+#YEAR       1985
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Extraction of strength functions and radii of nuclei
+#+          from the average differential scattering
+#+          cross-sections
+#AUTHOR(S)  A.B.Popov, G.S.Samosvat, V.G.Nikolenko,
+#+          Zo-In-Ok
+#REF-CODE   (C,85SANTA,1,621,1985)
+#REFERENCE  Conf. Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
+#+          Vol.1, p.621, 1985
+#DATASETS   71
+#
+#DATASET    40934065
+#DATE       20200304
+#REACTION   48-CD-116(N,EL),,STF
+#PROJ       1
+#TARG       48116
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 48116 4036001   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 48116 4036001                      5.2000-4 1.4000-4 1.000000                              A.B.Popov,ET.AL. (85)    40934 65
+    1 48116 4036001                      3.3400-4 2.5000-5 1.000000                              A.B.Popov,ET.AL. (85)    40934 65
+#/DATA      2
 #/DATASET
 #/ENTRY
 #

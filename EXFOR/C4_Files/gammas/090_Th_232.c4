@@ -100,6 +100,41 @@
 #/ENTRY
 #
 #
+#ENTRY      L0239
+#AUTHOR1    J.A.Silano+
+#YEAR       2018
+#INSTITUTE  (1USALRL)
+#TITLE      Near-barrier photofission in 232Th and 238U
+#AUTHOR(S)  J.A.Silano, H.J.Karwowski
+#REF-CODE   (J,PR/C,98,054609,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.054609, 2018
+#DATASETS   4
+#
+#DATASET    L0239004
+#DATE       20181001
+#REACTION   90-TH-232(G,F),PR,NU
+#PROJ       0
+#TARG       90232
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [    0 90232   1 456   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    0 90232   1 456    5250000. 79000.00 1.690000                                                J.A.Silano,ET.AL. (18)   L0239  4
+    0 90232   1 456    5400000. 81000.00 1.950000                                                J.A.Silano,ET.AL. (18)   L0239  4
+    0 90232   1 456    5500000. 83000.00 2.140000                                                J.A.Silano,ET.AL. (18)   L0239  4
+    0 90232   1 456    5550000. 83000.00 2.340000                                                J.A.Silano,ET.AL. (18)   L0239  4
+    0 90232   1 456    5600000. 84000.00 2.450000                                                J.A.Silano,ET.AL. (18)   L0239  4
+    0 90232   1 456    5650000. 85000.00 2.160000                                                J.A.Silano,ET.AL. (18)   L0239  4
+    0 90232   1 456    5700000. 86000.00 2.360000                                                J.A.Silano,ET.AL. (18)   L0239  4
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      L0185
 #AUTHOR1    J.T.Caldwell+
 #YEAR       1980
@@ -847,6 +882,49 @@
     0 90232   3  16 D  1.7770+7          0.101000 0.012520                                       V.V.VARLAMOV,ET.AL. (07) M0722  5
     0 90232   3  16 D  1.8260+7          0.093610 0.010970                                       V.V.VARLAMOV,ET.AL. (07) M0722  5
 #/DATA      29
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      L0239
+#AUTHOR1    J.A.Silano+
+#YEAR       2018
+#INSTITUTE  (1USALRL)
+#TITLE      Near-barrier photofission in 232Th and 238U
+#AUTHOR(S)  J.A.Silano, H.J.Karwowski
+#REF-CODE   (J,PR/C,98,054609,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.054609, 2018
+#DATASETS   4
+#
+#DATASET    L0239002
+#DATE       20181001
+#REACTION   90-TH-232(G,F),,SIG
+#PROJ       0
+#TARG       90232
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    0 90232   3  18   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    0 90232   3  18    4700000. 71000.00-4.0000-4 2.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    4800000. 72000.00-4.0000-5 1.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    4900000. 74000.00-4.0000-4 1.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5000000. 75000.00 3.0000-4 7.0000-5                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5100000. 77000.00 2.7000-4 6.0000-5                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5200000. 78000.00 3.7300-3 9.0000-5                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5250000. 79000.00 7.4000-3 2.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5300000. 80000.00 0.022700 2.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5400000. 81000.00 0.092900 3.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5500000. 83000.00 0.203800 5.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5550000. 83000.00 0.227300 5.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5600000. 84000.00 0.248000 5.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5650000. 85000.00 0.235100 5.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5700000. 89000.00 0.277100 5.0000-4                                       J.A.Silano,ET.AL. (18)   L0239  2
+    0 90232   3  18    5800000. 87000.00 0.799000 3.0000-3                                       J.A.Silano,ET.AL. (18)   L0239  2
+#/DATA      15
 #/DATASET
 #/ENTRY
 #

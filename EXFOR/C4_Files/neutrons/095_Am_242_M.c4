@@ -70,7 +70,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -4664,16 +4664,16 @@
 #AUTHOR1    K.D.Zhuravlev+
 #YEAR       1975
 #INSTITUTE  (4RUSNIR)
-#TITLE      FISSION CROSS-SECTION AND RESONANCE INTEGRALS
-#+          FOR PU-238,AM,CM,CF-249 ISOTOPES
+#TITLE      Cross sections and resonance integrals for the fission
+#+          of 239Pu, Am, Cm, and 249Cf
 #AUTHOR(S)  K.D.Zhuravlev, N.I.Kroshkin, A.P.Chetverikov
-#REF-CODE   (J,AE,39,(4),285,197510)
+#REF-CODE   (J,AE,39,285,1975)
 #REFERENCE  Jour. Atomnaya Energiya
-#+          Vol.39, Issue.4, p.285, 1975
+#+          Vol.39, p.285, 1975
 #DATASETS   9
 #
 #DATASET    40436004
-#DATE       20030505
+#DATE       20200303
 #REACTION   95-AM-242-M(N,F),,SIG,,MXW
 #PROJ       1
 #TARG       95242 M
@@ -4684,7 +4684,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 95242M  3  18    0.025300          6080.000 500.0000                                       K.D.ZHURAVLEV,ET.AL. (75)40436  4
+    1 95242M  3  18    0.025300          6080.000 500.0000                                       K.D.Zhuravlev,ET.AL. (75)40436  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -4730,7 +4730,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8104,7 +8104,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -11955,7 +11955,69 @@
 #REF-CODE   (J,YF,57,(12),2137,199412)
 #REFERENCE  Jour. Yadernaya Fizika
 #+          Vol.57, Issue.12, p.2137, 1994
-#DATASETS   2
+#DATASETS   4
+#
+#DATASET    414960021
+#DATE       20131002
+#REACTION   95-AM-242-M(N,F),SEC,AP,LF
+#PROJ       1
+#TARG       95242 M
+#MF         801
+#MT         18
+#C4BEGIN    [    1 95242M801  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 95242M801  18    0.025300          101.7000                                                A.A.Aleksandrov, (94)    41496  21
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41496
+#AUTHOR1    A.A.Aleksandrov+
+#YEAR       1994
+#INSTITUTE  (4RUSMIF)
+#TITLE      Mass-energy spectrum of Am-242m(Nth,F) reaction
+#+          fission fragments.
+#AUTHOR(S)  A.A.Aleksandrov, I.A.Aleksandrova, S.L.Podshibyakin,
+#+          Yu.V.Pyatkov, A.I.Slyusarenko, A.N.Shemetov,
+#+          R.A.Shekhmamet'ev
+#REF-CODE   (J,YF,57,(12),2137,199412)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.57, Issue.12, p.2137, 1994
+#DATASETS   4
+#
+#DATASET    414960022
+#DATE       20131002
+#REACTION   95-AM-242-M(N,F),SEC,AP,HF
+#PROJ       1
+#TARG       95242 M
+#MF         801
+#MT         18
+#C4BEGIN    [    1 95242M801  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 95242M801  18    0.025300          138.9000                                                A.A.Aleksandrov, (94)    41496  22
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41496
+#AUTHOR1    A.A.Aleksandrov+
+#YEAR       1994
+#INSTITUTE  (4RUSMIF)
+#TITLE      Mass-energy spectrum of Am-242m(Nth,F) reaction
+#+          fission fragments.
+#AUTHOR(S)  A.A.Aleksandrov, I.A.Aleksandrova, S.L.Podshibyakin,
+#+          Yu.V.Pyatkov, A.I.Slyusarenko, A.N.Shemetov,
+#+          R.A.Shekhmamet'ev
+#REF-CODE   (J,YF,57,(12),2137,199412)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.57, Issue.12, p.2137, 1994
+#DATASETS   4
 #
 #DATASET    41496003
 #DATE       20131002

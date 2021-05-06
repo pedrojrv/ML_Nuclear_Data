@@ -42,6 +42,38 @@
 #/ENTRY
 #
 #
+#ENTRY      O0451
+#AUTHOR1    D.J.Cairns+
+#YEAR       1964
+#INSTITUTE  (2UK LON)
+#TITLE      Proton-He4 scattering at 53 MeV
+#AUTHOR(S)  D.J.Cairns, T.C.Griffith, G.J.Lush,
+#+          A.J.Metheringham, R.H.Thomas
+#REF-CODE   (J,NP,60,369,1964)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.60, p.369, 1964
+#DATASETS   3
+#
+#DATASET    O0451004
+#DATE       20201105
+#REACTION   2-HE-4(P,NON),,SIG,,,DERIV
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3   3 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3   3 D  5.3000+7 4000000. 0.107700 4.4000-3                                       D.J.Cairns,ET.AL. (64)   O0451  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0925
 #AUTHOR1    M.S.Kozodaev+
 #YEAR       1960
@@ -97,6 +129,103 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001  2004   3  28    2.7880+7 360000.0 4.8000-3 1.3000-3                                       A.F.Wickersham Jr (57)   C1998  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0531
+#AUTHOR1    J.E.Nicholls+
+#YEAR       1972
+#INSTITUTE  (2UK LON)
+#TITLE      Inelastic p-4He Scattering at 141 MeV
+#AUTHOR(S)  J.E.Nicholls, A.Craig, T.C.Griffith,
+#+          D.C.Imrie, C.J.Lush, A.J.Metheringham
+#REF-CODE   (J,NP/A,181,329,1972)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.181, p.329, 1972
+#DATASETS   3
+#
+#DATASET    O0531009
+#DATE       20201105
+#REACTION   2-HE-4(P,N+P)2-HE-3,,SIG,,,DERIV
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         28
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3  28 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3  28 D  1.4100+8 2000000. 0.036000 1.5000-3                                       J.E.Nicholls,ET.AL. (72) O0531  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2382
+#AUTHOR1    M.Jung+
+#YEAR       1973
+#INSTITUTE  (2FR STR)
+#TITLE      Proton-Alpha-Particle Inelastic Channels at Medium
+#+          Incident Energies
+#AUTHOR(S)  M.Jung, Y.Sakamoto, J.N.Suren,
+#+          C.Jacquot, L.Girardin, R.Schmitt
+#REF-CODE   (J,PR/C,7,2209,1973)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.7, p.2209, 1973
+#DATASETS   5
+#
+#DATASET    O2382004
+#DATE       20191200
+#REACTION   2-HE-4(P,N+P)2-HE-3,,SIG
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         28
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3  28   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3  28    1.4500+8 1.0000+7 0.015600 2.2000-3                                       M.Jung,ET.AL. (73)       O2382  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2382
+#AUTHOR1    M.Jung+
+#YEAR       1973
+#INSTITUTE  (2FR STR)
+#TITLE      Proton-Alpha-Particle Inelastic Channels at Medium
+#+          Incident Energies
+#AUTHOR(S)  M.Jung, Y.Sakamoto, J.N.Suren,
+#+          C.Jacquot, L.Girardin, R.Schmitt
+#REF-CODE   (J,PR/C,7,2209,1973)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.7, p.2209, 1973
+#DATASETS   5
+#
+#DATASET    O2382006
+#DATE       20191200
+#REACTION   2-HE-4(P,N+2P)1-H-2,,SIG
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         44
+#PRODUCT    1-H-2
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3  44   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3  44    1.4500+8 1.0000+7 6.0000-4 6.0000-4                                       M.Jung,ET.AL. (73)       O2382  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -167,6 +296,71 @@
 #/ENTRY
 #
 #
+#ENTRY      O0531
+#AUTHOR1    J.E.Nicholls+
+#YEAR       1972
+#INSTITUTE  (2UK LON)
+#TITLE      Inelastic p-4He Scattering at 141 MeV
+#AUTHOR(S)  J.E.Nicholls, A.Craig, T.C.Griffith,
+#+          D.C.Imrie, C.J.Lush, A.J.Metheringham
+#REF-CODE   (J,NP/A,181,329,1972)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.181, p.329, 1972
+#DATASETS   3
+#
+#DATASET    O0531008
+#DATE       20201105
+#REACTION   2-HE-4(P,D)2-HE-3,,SIG,,,DERIV
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         104
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3 104 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3 104 D  1.4100+8 2000000. 3.2000-3 8.0000-4                                       J.E.Nicholls,ET.AL. (72) O0531  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2382
+#AUTHOR1    M.Jung+
+#YEAR       1973
+#INSTITUTE  (2FR STR)
+#TITLE      Proton-Alpha-Particle Inelastic Channels at Medium
+#+          Incident Energies
+#AUTHOR(S)  M.Jung, Y.Sakamoto, J.N.Suren,
+#+          C.Jacquot, L.Girardin, R.Schmitt
+#REF-CODE   (J,PR/C,7,2209,1973)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.7, p.2209, 1973
+#DATASETS   5
+#
+#DATASET    O2382002
+#DATE       20191200
+#REACTION   2-HE-4(P,D)2-HE-3,,SIG
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         104
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3 104   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3 104    1.4500+8 1.0000+7 0.034900 3.8000-3                                       M.Jung,ET.AL. (73)       O2382  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C1998
 #AUTHOR1    A.F.Wickersham Jr
 #YEAR       1957
@@ -192,6 +386,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001  2004   3 111    2.7880+7 360000.0 8.9000-3 1.0000-3                                       A.F.Wickersham Jr (57)   C1998  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2382
+#AUTHOR1    M.Jung+
+#YEAR       1973
+#INSTITUTE  (2FR STR)
+#TITLE      Proton-Alpha-Particle Inelastic Channels at Medium
+#+          Incident Energies
+#AUTHOR(S)  M.Jung, Y.Sakamoto, J.N.Suren,
+#+          C.Jacquot, L.Girardin, R.Schmitt
+#REF-CODE   (J,PR/C,7,2209,1973)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.7, p.2209, 1973
+#DATASETS   5
+#
+#DATASET    O2382003
+#DATE       20191200
+#REACTION   2-HE-4(P,2P)1-H-3,,SIG
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         111
+#PRODUCT    1-H-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3 111   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3 111    1.4500+8 1.0000+7 3.7000-3 1.0000-3                                       M.Jung,ET.AL. (73)       O2382  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -223,6 +449,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001  2004   3 111    6.3000+8          0.029000 3.0000-3                                       M.S.Kozodaev,ET.AL. (60) A0925  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2382
+#AUTHOR1    M.Jung+
+#YEAR       1973
+#INSTITUTE  (2FR STR)
+#TITLE      Proton-Alpha-Particle Inelastic Channels at Medium
+#+          Incident Energies
+#AUTHOR(S)  M.Jung, Y.Sakamoto, J.N.Suren,
+#+          C.Jacquot, L.Girardin, R.Schmitt
+#REF-CODE   (J,PR/C,7,2209,1973)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.7, p.2209, 1973
+#DATASETS   5
+#
+#DATASET    O2382005
+#DATE       20191200
+#REACTION   2-HE-4(P,P+D)1-H-2,,SIG
+#PROJ       1001
+#TARG       2004
+#MF         3
+#MT         115
+#PRODUCT    1-H-2
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   3 115   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   3 115    1.4500+8 1.0000+7 1.7000-3 6.0000-4                                       M.Jung,ET.AL. (73)       O2382  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -3135,6 +3393,193 @@
 #/ENTRY
 #
 #
+#ENTRY      O2469
+#AUTHOR1    P.Darriulat+
+#YEAR       1968
+#INSTITUTE  (2FR SAC)
+#TITLE      Differential cross section and polarization in
+#+          p-alpha scattering from 22 to 25 MeV
+#AUTHOR(S)  P.Darriulat, D.Garreta, A.Tarrats,
+#+          J.Testoni
+#REF-CODE   (J,NP/A,108,316,1968)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.108, p.316, 1968
+#DATASETS   1
+#
+#DATASET    O2469002
+#DATE       20200501
+#REACTION   2-HE-4(P,EL)2-HE-4,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         2
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001  2004   4   2  C]
+#DATA       156
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.168800 5.5704-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.163800 5.4054-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.165300 5.9508-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.165800 5.4714-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.170800 5.6364-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.182200 6.0126-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.201600 6.4512-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.189800 5.8838-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.172000 5.5040-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.170400 5.2824-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.168400 6.0624-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.162400 5.3592-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.159300 5.4162-3 0.906308                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.132800 4.5152-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.133400 4.4022-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.133000 4.3890-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.133300 4.3989-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.135200 4.4616-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.138200 4.4224-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.144700 4.6304-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.140300 4.6299-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.132700 4.2464-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.130100 4.0331-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.126700 4.3078-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.125900 4.1547-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.121100 4.1174-3 0.772733                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.089900 2.9667-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.087800 2.8096-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.086600 2.8578-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.091000 3.0940-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.086600 2.6846-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.084100 2.7753-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.084300 2.6976-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.082100 2.6272-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.080200 2.5664-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.080900 2.5079-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.078100 2.4992-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.077200 2.6248-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.074200 2.5228-3 0.573575                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.066100 2.1152-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.063800 2.0416-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.064100 2.1153-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.061900 2.0427-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.061700 1.9744-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.059100 1.8912-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.061100 1.9552-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.056700 1.7577-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.055700 1.7267-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.056500 1.7515-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.056800 1.8744-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.055500 1.7760-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.053200 1.8088-3 0.438370                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.037100 1.2985-3 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.035700 1.2495-3 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.034200 1.4022-3 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.035800 1.2530-3 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.034000 1.1220-3 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.031000 1.0230-3 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.028100 9.2730-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.027500 8.8000-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.028300 9.0560-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.029300 9.0830-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.028200 9.8700-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.028500 9.6900-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.027500 9.0750-4 0.219844                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.018000 6.4800-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.017100 6.6690-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.017000 6.1200-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.016600 6.1420-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.016200 5.6700-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.014470 5.3539-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.013210 5.8124-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.012900 4.2570-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.013270 4.3791-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.013870 4.4384-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.013480 5.1224-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.013470 4.9839-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.013310 5.3240-4-5.2382-3                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 7.0500-3 2.6790-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 6.9900-3 2.5863-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 6.7400-3 3.0330-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 6.9500-3 2.7105-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 6.6500-3 2.4605-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 6.9300-3 2.5641-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 7.2900-3 2.5515-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 7.4400-3 2.5296-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 6.9700-3 2.3698-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 6.5500-3 2.1615-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 6.9000-3 2.8980-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 7.5900-3 2.7324-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 6.6200-3 2.4494-4-0.243617                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 5.1800-3 1.6058-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 4.4700-3 1.6986-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 4.4100-3 2.2932-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 4.7100-3 1.7898-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 4.7000-3 1.7390-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 5.9600-3 2.0860-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 7.6000-3 2.8120-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 8.4300-3 2.7819-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 7.6600-3 2.5278-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 7.2100-3 2.3793-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 6.5000-3 2.6000-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 6.5800-3 2.5662-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 6.3800-3 2.4244-4-0.452437                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 7.0900-3 2.8360-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 7.1200-3 2.8480-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 6.6100-3 4.8914-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 6.9100-3 2.9713-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 6.7100-3 2.6169-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 8.0500-3 3.1395-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 9.6000-3 3.4560-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.010610 3.5013-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 9.7000-3 3.2980-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 9.2500-3 2.9600-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 8.6500-3 4.5845-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 8.4700-3 3.4727-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 8.0400-3 3.2160-4-0.580705                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.016100 5.6350-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.015220 6.0880-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.014010 1.1348-3-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.014650 4.9810-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.014040 5.7564-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.013310 5.0578-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.013580 4.6172-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.014480 4.6336-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.014720 4.7104-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.014780 4.7296-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.013740 6.0456-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.013620 4.9032-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.013420 4.8312-4-0.777148                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.022400 9.1840-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.021300 8.3070-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.020300 1.3804-3-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.020000 7.8000-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.019000 7.2200-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.016300 5.8680-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.015800 8.3740-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.016000 6.8800-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.017500 6.1250-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.018200 6.0060-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.016700 1.3527-3-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.016800 1.0080-3-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.016000 7.8400-4-0.874622                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2150+7 50000.00 0.028600 1.1154-3-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2410+7 50000.00 0.027000 1.0530-3-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2740+7 50000.00 0.025300 1.3662-3-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.2930+7 50000.00 0.024700 9.8800-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3060+7 50000.00 0.023600 9.4400-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3150+7 50000.00 0.019100 8.2130-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3250+7 50000.00 0.018100 1.3032-3-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3380+7 50000.00 0.017200 6.0200-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3590+7 50000.00 0.020200 7.6760-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.3850+7 50000.00 0.021200 7.2080-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4040+7 50000.00 0.020200 8.0800-4-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4250+7 50000.00 0.019600 1.7836-3-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+ 1001  2004   4   2  C 2.4780+7 50000.00 0.020200 1.9594-3-0.946651                              P.Darriulat,ET.AL. (68)  O2469  2
+#/DATA      156
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C1998
 #AUTHOR1    A.F.Wickersham Jr
 #YEAR       1957
@@ -3429,6 +3874,55 @@
  1001  2004   4   2  C 6.4900+7 129800.0 1.5420-3 2.8000-5-0.947267                              K.Imai,ET.AL. (79)       E0077  3
  1001  2004   4   2  C 6.4900+7 129800.0 1.8070-3 3.1000-5-0.966377                              K.Imai,ET.AL. (79)       E0077  3
 #/DATA      141
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0451
+#AUTHOR1    D.J.Cairns+
+#YEAR       1964
+#INSTITUTE  (2UK LON)
+#TITLE      Proton-He4 scattering at 53 MeV
+#AUTHOR(S)  D.J.Cairns, T.C.Griffith, G.J.Lush,
+#+          A.J.Metheringham, R.H.Thomas
+#REF-CODE   (J,NP,60,369,1964)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.60, p.369, 1964
+#DATASETS   3
+#
+#DATASET    O0451005
+#DATE       20201105
+#REACTION   2-HE-4(P,EL)2-HE-4,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         2
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001  2004   4   2  C]
+#DATA       19
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.133000 0.014400 0.968148                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.113000 8.0700-3 0.914959                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.081000 5.0200-3 0.869495                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.058900 5.8400-3 0.822144                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.045800 3.6900-3 0.770513                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.029300 2.9000-3 0.689619                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.012900 1.6500-3 0.570712                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 3.8600-3 7.2500-4 0.397146                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 1.6200-3 3.8800-4 0.209617                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 1.3700-3 4.0400-4 0.031409                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 8.6800-4 3.4600-4-0.151263                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 6.4700-4 3.2200-4-0.325571                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 3.9900-4 3.0000-4-0.471014                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 4.7700-4 3.5700-4-0.615664                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 5.8100-4 4.1700-4-0.707109                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 4.7200-3 1.5500-3-0.893373                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 6.5300-3 2.1400-3-0.943802                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 6.9300-3 5.0900-3-0.978868                              D.J.Cairns,ET.AL. (64)   O0451  5
+ 1001  2004   4   2  C 5.3000+7 4000000. 0.013000 8.0200-3-0.995725                              D.J.Cairns,ET.AL. (64)   O0451  5
+#/DATA      19
 #/DATASET
 #/ENTRY
 #
@@ -3795,6 +4289,42 @@
  1001  2004   4   2    1.0000+8          1.3900-3 8.0000-6 0.499999                              J.S.Wesick (85)          C0832  8
  1001  2004   4   2    1.5000+8          0.028860 7.0000-5 0.953717                              J.S.Wesick (85)          C0832  8
  1001  2004   4   2    1.5000+8          6.3320-3 3.0000-5 0.866025                              J.S.Wesick (85)          C0832  8
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0531
+#AUTHOR1    J.E.Nicholls+
+#YEAR       1972
+#INSTITUTE  (2UK LON)
+#TITLE      Inelastic p-4He Scattering at 141 MeV
+#AUTHOR(S)  J.E.Nicholls, A.Craig, T.C.Griffith,
+#+          D.C.Imrie, C.J.Lush, A.J.Metheringham
+#REF-CODE   (J,NP/A,181,329,1972)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.181, p.329, 1972
+#DATASETS   3
+#
+#DATASET    O0531002
+#DATE       20201105
+#REACTION   2-HE-4(P,EL)2-HE-4,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         2
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   4   2   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4   2    1.4100+8 2000000. 0.059470 5.1850-3 0.968148                              J.E.Nicholls,ET.AL. (72) O0531  2
+ 1001  2004   4   2    1.4100+8 2000000. 0.019880 2.0550-3 0.913829                              J.E.Nicholls,ET.AL. (72) O0531  2
+ 1001  2004   4   2    1.4100+8 2000000. 6.0850-3 7.6230-4 0.832728                              J.E.Nicholls,ET.AL. (72) O0531  2
+ 1001  2004   4   2    1.4100+8 2000000. 2.2230-3 3.5340-4 0.709201                              J.E.Nicholls,ET.AL. (72) O0531  2
+ 1001  2004   4   2    1.4100+8 2000000. 6.1970-4 1.8450-4 0.580844                              J.E.Nicholls,ET.AL. (72) O0531  2
+ 1001  2004   4   2    1.4100+8 2000000. 2.5850-4 1.0440-4 0.458338                              J.E.Nicholls,ET.AL. (72) O0531  2
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -4552,6 +5082,112 @@
 #/ENTRY
 #
 #
+#ENTRY      O0528
+#AUTHOR1    S.A.Harbison+
+#YEAR       1970
+#INSTITUTE  (2UK KCL)
+#TITLE      An analysis of the angular distributions of the
+#+          reactions 4He(p,d)3He, 4He(p,t)2p, 4He(p,3He)pn
+#+          and 3He(p,d)2p
+#AUTHOR(S)  S.A.Harbison, R.J.Griffiths, N.M.Stewart,
+#+          A.R.Johnston, G.T.A.Squier
+#REF-CODE   (J,NP/A,152,503,1970)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.152, p.503, 1970
+#DATASETS   1
+#
+#DATASET    O0528002
+#DATE       20201104
+#REACTION   2-HE-4(P,D)2-HE-3,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         104
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001  2004   4 104  C]
+#DATA       31
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4 104  C 4.9500+7          0.014830 1.7600-3 0.981627                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          0.012250 1.3600-3 0.962692                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          7.9500-3 8.6000-4 0.937282                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          4.5500-3 2.6000-4 0.905569                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.4300-3 2.4000-4 0.854458                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.4900-3 2.5000-4 0.810041                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.4100-3 2.4000-4 0.777145                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          4.0700-3 4.1000-4 0.687087                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          4.4100-3 4.4000-4 0.648119                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          5.6500-3 1.6000-4 0.499999                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          4.7400-3 1.2000-4 0.408329                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          3.8200-3 1.0000-4 0.338736                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.6600-3 7.0000-5 0.243613                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.0000-3 5.0000-5 0.173646                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.2100-3 4.0000-5 0.078457                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          8.6000-4 9.0000-5 8.7244-3                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          6.7000-4 7.0000-5-0.081941                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.1700-3 1.2000-4-0.171932                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.5600-3 4.0000-5-0.260507                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.1500-3 5.0000-5-0.350210                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.5100-3 6.0000-5-0.406739                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.9900-3 3.0000-4-0.518029                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.9600-3 3.0000-4-0.572148                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.7000-3 2.7000-4-0.646792                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.8900-3 1.9000-4-0.693404                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.6100-3 1.6000-4-0.759273                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.1600-3 1.2000-4-0.799687                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.0000-3 6.0000-5-0.869497                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          1.1900-3 1.3000-4-0.899559                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.2000-3 2.4000-4-0.937890                              S.A.Harbison,ET.AL. (70) O0528  2
+ 1001  2004   4 104  C 4.9500+7          2.5500-3 3.0000-4-0.966824                              S.A.Harbison,ET.AL. (70) O0528  2
+#/DATA      31
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0451
+#AUTHOR1    D.J.Cairns+
+#YEAR       1964
+#INSTITUTE  (2UK LON)
+#TITLE      Proton-He4 scattering at 53 MeV
+#AUTHOR(S)  D.J.Cairns, T.C.Griffith, G.J.Lush,
+#+          A.J.Metheringham, R.H.Thomas
+#REF-CODE   (J,NP,60,369,1964)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.60, p.369, 1964
+#DATASETS   3
+#
+#DATASET    O0451006
+#DATE       20201105
+#REACTION   2-HE-4(P,D)2-HE-3,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         104
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001  2004   4 104  C]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4 104  C 5.3000+7 4000000. 2.0600-3 1.0200-3 0.918446                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 3.8800-3 1.0800-3 0.786934                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 5.5100-3 1.0100-3 0.603207                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 3.3800-3 5.6000-4 0.390730                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 2.0000-3 4.2000-4 0.154709                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 1.2600-3 3.6000-4-0.069759                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 9.5000-4 3.8000-4-0.263876                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 1.0000-3 4.0000-4-0.455547                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 2.3000-3 6.8000-4-0.601818                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 9.4000-4 5.2000-4-0.707109                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 5.3000-4 5.2000-4-0.802819                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 1.1200-3 6.8000-4-0.874622                              D.J.Cairns,ET.AL. (64)   O0451  6
+ 1001  2004   4 104  C 5.3000+7 4000000. 8.7000-4 7.1000-4-0.919823                              D.J.Cairns,ET.AL. (64)   O0451  6
+#/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E2243
 #AUTHOR1    S.Hayakawa+
 #YEAR       1964
@@ -4785,6 +5421,65 @@
 #/ENTRY
 #
 #
+#ENTRY      O0483
+#AUTHOR1    M.Bernas+
+#YEAR       1970
+#INSTITUTE  (2FR CSN)
+#TITLE      Two-nucleon final state interactions and the
+#+          4He(p,t)2p, 4He(p,3He)pn and 4He(p,d)3He reactions
+#+          at 156 MeV
+#AUTHOR(S)  M.Bernas, D.Bachelier, J.K.Lee,
+#+          P.Radvanyi, M.Roy-Stephan, I.Brissaud,
+#+          C.Detraz
+#REF-CODE   (J,NP/A,156,289,1970)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.156, p.289, 1970
+#DATASETS   1
+#
+#DATASET    O0483005
+#DATE       20201105
+#REACTION   2-HE-4(P,D)2-HE-3,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         104
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   4 104  C]
+#DATA       26
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4 104  C 1.5600+8          0.021300 2.1300-3 0.997916                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          0.016700 1.6700-3 0.991671                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          0.010900 1.0900-3 0.981627                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          6.4700-3 6.4700-4 0.967268                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.3700-3 2.3700-4 0.927184                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.7400-3 1.7400-4 0.872069                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.2800-3 1.2800-4 0.803856                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          6.2200-4 6.2200-5 0.724171                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.8800-4 2.8800-5 0.633380                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.2800-4 1.2800-5 0.535826                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          6.4400-5 6.4400-6 0.432084                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          3.8800-5 3.8800-6 0.323916                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          3.2900-5 3.2900-6 0.214733                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          3.0000-5 3.0000-6 0.106262                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.0800-5 2.0800-6-0.057566                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.9500-5 1.9500-6-0.221551                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.6300-5 2.6300-6-0.273962                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.0900-5 2.0900-6-0.401950                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.5600-5 1.5600-6-0.525474                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.6600-5 1.6600-6-0.640112                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.9100-5 2.9100-6-0.642790                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          4.4000-5 4.4000-6-0.831956                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          7.1000-5 7.1000-6-0.904084                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          1.4000-4 1.4000-5-0.956815                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.2900-4 2.2900-5-0.989016                              M.Bernas,ET.AL. (70)     O0483  5
+ 1001  2004   4 104  C 1.5600+8          2.9600-4 2.9600-5-0.998630                              M.Bernas,ET.AL. (70)     O0483  5
+#/DATA      26
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0560
 #AUTHOR1    P.W.F.Alons+
 #YEAR       1986
@@ -4892,6 +5587,88 @@
  1001  2004   4 104  C 4.5700+8          9.0300-6 7.0700-7 0.923879                              J.Kallne,ET.AL. (78)     C1419  2
  1001  2004   4 104  C 5.0600+8          5.0400-6 4.4900-7 0.923879                              J.Kallne,ET.AL. (78)     C1419  2
 #/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0537
+#AUTHOR1    T.Bauer+
+#YEAR       1977
+#INSTITUTE  (2FR SAT)
+#TITLE      The 4He(p,d)3He Reaction at 770 MeV
+#AUTHOR(S)  T.Bauer, A.Boudard, H.Catz,
+#+          A.Chaumeaux, P.Couvert, M.Garcon,
+#+          J.Guyot, D.Legrand, J.C.Lugol,
+#+          M.Matoba, B.Mayer, J.P.Tabet,
+#+          Y.Terrien
+#REF-CODE   (J,PL/B,67,265,1977)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.67, p.265, 1977
+#DATASETS   1
+#
+#DATASET    O0537002
+#DATE       20201104
+#REACTION   2-HE-4(P,D)2-HE-3,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         104
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  2004   4 104   ]
+#DATA       49
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   4 104    7.7000+8          3.3200-5          0.996848                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.2400-5          0.995107                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.3200-5          0.993748                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.2800-5          0.992202                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.1700-5          0.990795                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.3200-5          0.988652                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.4000-5          0.986257                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.2000-5          0.984010                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.0900-5          0.981627                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.0600-5          0.979081                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.9500-5          0.975419                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.7500-5          0.972451                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.5100-5          0.970422                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.4500-5          0.966645                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.2600-5          0.963256                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.8500-5          0.960924                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.6500-5          0.956610                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.5700-5          0.953401                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.3900-5          0.948766                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.1600-5          0.944548                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          9.7700-6          0.939513                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          8.2100-6          0.934267                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          6.6600-6          0.929519                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          5.5900-6          0.923879                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          4.3800-6          0.920573                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.5500-6          0.915452                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.7500-6          0.910178                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.2600-6          0.904752                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.6500-6          0.899176                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.3900-6          0.892507                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.2000-6          0.887574                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          1.0400-6          0.879482                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          9.0100-7          0.874281                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          8.1100-7          0.865763                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          7.2200-7          0.860297                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          6.3500-7 5.3900-8 0.854821                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          6.5000-7 5.5100-8 0.846843                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          5.5900-7 4.9600-8 0.838670                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          6.3500-7 6.1900-8 0.830304                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          4.3300-7 4.7700-8 0.827962                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          4.8000-7 7.1900-8 0.820650                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          4.6900-7 6.1100-8 0.810553                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          5.0300-7 6.8600-8 0.804168                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          5.0300-7 6.8600-8 0.793778                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          4.6400-7 6.3200-8 0.785856                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          4.5300-7 5.5800-8 0.779119                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.8500-7 4.2400-8 0.770957                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          3.1200-7 3.8500-8 0.752759                              T.Bauer,ET.AL. (77)      O0537  2
+ 1001  2004   4 104    7.7000+8          2.1300-7 2.6200-8 0.720671                              T.Bauer,ET.AL. (77)      O0537  2
+#/DATA      49
 #/DATASET
 #/ENTRY
 #
@@ -5128,6 +5905,51 @@
  1001  2004   4 601  C 8.0000+8          4.3600-5 5.7700-6 0.905569          2.0100+7         EXCS.M.Sterbenz,ET.AL. (92) C1276  6
  1001  2004   4 601  C 8.0000+8          1.3500-5 2.5800-6 0.883765          2.0100+7         EXCS.M.Sterbenz,ET.AL. (92) C1276  6
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0474
+#AUTHOR1    S.A.Harbison+
+#YEAR       1969
+#INSTITUTE  (2UK KCL)
+#TITLE      Nucleon-nucleon final-state interactions in the
+#+          reactions 3He(p,d)2p, 4He(p,t)2p and 4He(p,3He)pn
+#AUTHOR(S)  S.A.Harbison, R.J.Griffiths, F.G.Kingston,
+#+          A.R.Johnston, G.T.A.Squier
+#REF-CODE   (J,NP/A,130,513,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.130, p.513, 1969
+#DATASETS   1
+#
+#DATASET    O0474004
+#DATE       20201101
+#REACTION   2-HE-4(P,X)2-HE-3,,DA
+#PROJ       1001
+#TARG       2004
+#MF         4
+#MT         9000
+#PRODUCT    2-HE-3
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1001  2004   49000  C]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  2004   49000  C 4.9500+7          1.3500-3 1.4800-4 0.966555   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          1.1600-3 1.3500-4 0.938070   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          6.6100-4 7.4700-5 0.898717   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          5.4300-4 3.6100-5 0.868890   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          4.3200-4 2.7300-5 0.800522   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          4.8400-4 3.3700-5 0.758020   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          5.6400-4 3.8300-5 0.692394   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          8.2500-4 4.4000-5 0.647321   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          9.2400-4 4.4100-5 0.571715   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          9.0500-4 5.6300-5 0.518324   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          7.7700-4 3.6500-5 0.406416   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          6.5100-4 6.4700-5 0.349879   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          3.9200-4 3.7600-5 0.261177   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+ 1001  2004   49000  C 4.9500+7          2.8000-4 2.8800-5 0.170379   2003.9                     S.A.Harbison,ET.AL. (69) O0474  4
+#/DATA      14
 #/DATASET
 #/ENTRY
 #

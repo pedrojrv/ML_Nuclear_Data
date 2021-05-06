@@ -1,3 +1,34 @@
+#ENTRY      C2491
+#AUTHOR1    Z.Fraenkel+
+#YEAR       1975
+#INSTITUTE  (1USAANL)
+#TITLE      Measurement of pre- and post-fission neutron emission
+#+          at moderate excitation energies
+#AUTHOR(S)  Z.Fraenkel, I.Mayk, J.P.Unik,
+#+          A.J.Gorski, W.D.Loveland
+#REF-CODE   (J,PR/C,12,1809,1975)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.12, p.1809, 1975
+#DATASETS   5
+#
+#DATASET    C2491016
+#DATE       20200302
+#REACTION   92-U-233(A,F),PR,NU
+#PROJ       2004
+#TARG       92233
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92233   1 456   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92233   1 456    4.5000+7          7.500000 1.100000                                       Z.Fraenkel,ET.AL. (75)   C2491 16
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0480
 #AUTHOR1    R.Vandenbosch+
 #YEAR       1958
@@ -9,10 +40,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480002
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,N)94-PU-236,,SIG
 #PROJ       2004
 #TARG       92233
@@ -141,10 +172,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480003
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,2N)94-PU-235,,SIG
 #PROJ       2004
 #TARG       92233
@@ -180,10 +211,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480004
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,3N)94-PU-234,,SIG
 #PROJ       2004
 #TARG       92233
@@ -210,8 +241,8 @@
  2004 92233   3  17    4.4300+7          2.6000-4 2.6000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
  2004 92233   3  17    4.4400+7          5.1000-4 5.1000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
  2004 92233   3  17    4.6200+7          4.5000-4 4.5000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
- 2004 92233   3  17    4.6210+7          2.0000-4 2.0000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
- 2004 92233   3  17    4.6220+7          1.5000-4 1.5000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
+ 2004 92233   3  17    4.6200+7          2.0000-4 2.0000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
+ 2004 92233   3  17    4.6200+7          1.5000-4 1.5000-5                                       R.Vandenbosch,ET.AL. (58)A0480  4
 #/DATA      17
 #/DATASET
 #/ENTRY
@@ -265,6 +296,49 @@
  2004 92233   3  17    3.9500+7          6.7200-4 9.8000-5                                       H.DELAGRANGE,ET.AL. (78) B0139  4
  2004 92233   3  17    4.0400+7          6.6000-4 3.1000-5                                       H.DELAGRANGE,ET.AL. (78) B0139  4
 #/DATA      22
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2486
+#AUTHOR1    H.Freiesleben+
+#YEAR       1974
+#INSTITUTE  (1USAROC)
+#TITLE      Total reaction cross sections of deformed nuclei: A
+#+          study of the 233,238U + alpha systems
+#AUTHOR(S)  H.Freiesleben, J.R.Huizenga
+#REF-CODE   (J,NP/A,224,503,1974)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.224, p.503, 1974
+#DATASETS   3
+#
+#DATASET    C2486004
+#DATE       20200205
+#REACTION   92-U-233(A,F),,SIG
+#PROJ       2004
+#TARG       92233
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92233   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92233   3  18 D  1.5000+7          1.8950-6                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  1.6000+7          5.4330-6                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  1.7000+7          4.1640-5                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  1.8000+7          2.9520-4                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  1.9000+7          1.7920-3                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.0000+7          8.4000-3                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.1000+7          0.029610                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.2000+7          0.072660                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.3000+7          0.141300                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.4000+7          0.267700                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.5000+7          0.344100                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.6000+7          0.635600                                                H.Freiesleben,ET.AL. (74)C2486  4
+ 2004 92233   3  18 D  2.7000+7          0.647200                                                H.Freiesleben,ET.AL. (74)C2486  4
+#/DATA      13
 #/DATASET
 #/ENTRY
 #
@@ -335,6 +409,44 @@
 #/ENTRY
 #
 #
+#ENTRY      C2493
+#AUTHOR1    W.G.Meyer+
+#YEAR       1979
+#INSTITUTE  (1USAMRY)
+#TITLE      Reaction mechanism studies with 7-35 MeV/nucleon 4He
+#+          ions incident on heavy target nuclei
+#AUTHOR(S)  W.G.Meyer, V.E.Viola Jr, R.G.Clark,
+#+          S.M.Read, R.B.Theus
+#REF-CODE   (J,PR/C,20,1716,1979)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.20, p.1716, 1979
+#DATASETS   2
+#
+#DATASET    C2493008
+#DATE       20200302
+#REACTION   92-U-233(A,F),,SIG
+#PROJ       2004
+#TARG       92233
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92233   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92233   3  18    1.4000+8          2.490000 0.140000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    7.0500+7          2.280000 0.150000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    5.8900+7          2.210000 0.140000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    4.9900+7          2.090000 0.130000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    4.3800+7          1.700000 0.110000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    3.8500+7          1.380000 0.090000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    3.3500+7          1.110000 0.070000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+ 2004 92233   3  18    2.7500+7          0.628000 0.041000                                       W.G.Meyer,ET.AL. (79)    C2493  8
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0480
 #AUTHOR1    R.Vandenbosch+
 #YEAR       1958
@@ -346,10 +458,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480005
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,4N)94-PU-233,,SIG
 #PROJ       2004
 #TARG       92233
@@ -364,8 +476,8 @@
  2004 92233   3  37    4.2700+7          2.7000-4                                                R.Vandenbosch,ET.AL. (58)A0480  5
  2004 92233   3  37    4.4400+7          1.0300-3                                                R.Vandenbosch,ET.AL. (58)A0480  5
  2004 92233   3  37    4.6200+7          1.1300-3                                                R.Vandenbosch,ET.AL. (58)A0480  5
- 2004 92233   3  37    4.6210+7          3.3000-4                                                R.Vandenbosch,ET.AL. (58)A0480  5
- 2004 92233   3  37    4.6220+7          3.4000-4                                                R.Vandenbosch,ET.AL. (58)A0480  5
+ 2004 92233   3  37    4.6200+7          3.3000-4                                                R.Vandenbosch,ET.AL. (58)A0480  5
+ 2004 92233   3  37    4.6200+7          3.4000-4                                                R.Vandenbosch,ET.AL. (58)A0480  5
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -382,10 +494,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480007
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,P)93-NP-236-M,,SIG
 #PROJ       2004
 #TARG       92233
@@ -429,10 +541,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480006
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,5N)94-PU-232,,SIG
 #PROJ       2004
 #TARG       92233
@@ -461,10 +573,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480008
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,X)93-NP-235,,SIG
 #PROJ       2004
 #TARG       92233
@@ -506,10 +618,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480009
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,X)93-NP-234,,SIG
 #PROJ       2004
 #TARG       92233
@@ -553,10 +665,10 @@
 #REF-CODE   (J,PR,111,1358,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.111, p.1358, 1958
-#DATASETS   20
+#DATASETS   27
 #
 #DATASET    A0480010
-#DATE       20160304
+#DATE       20200303
 #REACTION   92-U-233(A,X)93-NP-233,,SIG
 #PROJ       2004
 #TARG       92233
@@ -648,6 +760,133 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  2004 92233 203  16LD  2.4500+7 4500000. 4.7000-6              18.9  92233.9                     H.C.Britt,ET.AL. (71)    C0810  7
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2483
+#AUTHOR1    F.Plasil+
+#YEAR       1972
+#INSTITUTE  (1USAORL)
+#TITLE      Mass and Energy Distributions from 77.3-MeV -
+#+          4He-Induced Fission of 181Ta, 209Bi, and 233U: A Test
+#+          of Liquid-Drop-Model Predictions
+#AUTHOR(S)  F.Plasil, H.W.Schmitt
+#REF-CODE   (J,PR/C,5,528,1972)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.5, p.528, 1972
+#DATASETS   3
+#
+#DATASET    C2483004
+#DATE       20200202
+#REACTION   92-U-233(A,F)MASS,SEC,FY
+#PROJ       2004
+#TARG       92233
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 92233 801  18   ]
+#DATA       97
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 92233 801  18    7.7300+7          1.5900-3                   70.22900                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.7200-3                   71.81100                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.3500-3                   72.71100                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.4800-3                   73.84300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.7100-3                   74.97200                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.7100-3                   76.10000                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.7000-3                   77.00300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          3.8400-3                   77.45700                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          4.7400-3                   78.36200                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          3.8300-3                   79.71500                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          4.7300-3                   80.62000                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          5.8700-3                   81.52500                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          6.7700-3                   82.65600                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          7.4500-3                   84.01200                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          8.8000-3                   84.91800                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.010160                   85.59800                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.011520                   86.95500                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.014240                   87.41300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.012420                   88.76300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.015370                   89.22100                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.015360                   90.35000                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.017170                   91.25700                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.018760                   92.38900                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.021250                   93.07200                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.021470                   94.65300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.023960                   95.56100                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.025090                   96.24100                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.026230                   97.37200                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.028490                   98.05500                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.029620                   98.96000                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.031210                   99.86600                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.031430                   101.4470                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.034370                   102.3570                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.033240                   103.0310                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.035730                   103.9400                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.036860                   105.2970                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.036180                   106.4240                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.038210                   107.5570                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.039800                   108.0120                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.037300                   109.3610                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.040020                   110.0440                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.042510                   111.6300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.040020                   112.0760                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.040920                   113.6580                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.039100                   114.1050                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.040010                   115.2360                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.041590                   116.1430                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.040460                   117.0430                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.042270                   118.1760                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.042040                   119.5300                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.039090                   121.1030                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.042260                   121.1100                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.039770                   122.4590                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.038180                   123.3580                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.041570                   124.2690                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.039990                   125.1680                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.039300                   126.2960                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.037940                   126.9700                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.036580                   128.3210                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.038160                   129.2280                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.037030                   130.3540                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.036120                   131.4800                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.033400                   132.3770                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.033620                   133.5060                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.031350                   134.1780                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.030440                   135.5310                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.029080                   136.2050                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.029990                   137.5610                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.027720                   138.4590                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.025450                   139.3570                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.024320                   140.0320                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.021140                   141.6050                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.022500                   142.7360                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.020230                   143.8600                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.017280                   144.3050                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.017500                   145.8850                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.014560                   146.5560                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.012970                   147.9070                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.011380                   148.1290                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.011600                   149.9350                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          0.010020                   150.3830                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          8.8800-3                   151.7350                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          7.5200-3                   152.6350                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          5.9300-3                   153.5340                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          6.1500-3                   154.8890                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          5.7000-3                   156.0170                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          4.3400-3                   156.4650                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          4.1100-3                   157.8190                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          3.2000-3                   158.9460                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.8400-3                   159.1680                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.5100-3                   160.7500                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          2.0600-3                   162.1030                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.6000-3                   163.6830                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.3700-3                   164.8110                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.3700-3                   165.9390                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.5900-3                   167.2940                     F.Plasil,ET.AL. (72)     C2483  4
+ 2004 92233 801  18    7.7300+7          1.3600-3                   168.8740                     F.Plasil,ET.AL. (72)     C2483  4
+#/DATA      97
 #/DATASET
 #/ENTRY
 #

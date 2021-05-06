@@ -4,7 +4,7 @@
 #INSTITUTE  (1USAMHG)
 #TITLE      Absolute (d,a)-reaction cross sections of zirconium,
 #+          molybdenum, titanium and sulfur
-#AUTHOR(S)  O.U.Anders, W.W.Meinke
+#AUTHOR(S)  O.U.Anders, W.Wayne Meinke
 #REF-CODE   (J,PR,120,2114,1960)
 #REFERENCE  Jour. Physical Review
 #+          Vol.120, p.2114, 1960
@@ -143,6 +143,95 @@
  1002 40092   4   2  C 3.4400+7 10000.00 5.3053-4 7.9580-5 0.257131                              E.Newman,ET.AL. (67)     C1067 16
  1002 40092   4   2  C 3.4400+7 10000.00 3.4875-4 5.2312-5 0.219844                              E.Newman,ET.AL. (67)     C1067 16
 #/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F1399
+#AUTHOR1    N.A.Vlasov+
+#YEAR       1960
+#INSTITUTE  (4RUSKUR)
+#TITLE      The (d,t) reaction on zirconium isotopes.
+#AUTHOR(S)  N.A.Vlasov, S.P.Kalinin, A.A.Ogloblin,
+#+          V.I.Chuyev
+#REF-CODE   (J,ZET,39,1615,1960)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.39, p.1615, 1960
+#DATASETS   6
+#
+#DATASET    F1399004
+#DATE       20191201
+#REACTION   40-ZR-92(D,T)40-ZR-91,PAR,DA
+#PROJ       1002
+#TARG       40092
+#MF         4
+#MT         701
+#PRODUCT    40-ZR-91
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 40092   4 701  C]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 40092   4 701  C 2.0000+7          5.1347-3 4.9840-4 0.993120          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          6.3399-3 5.7870-4 0.988633          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          6.8859-3 6.4310-4 0.982752          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          6.7245-3 6.4300-4 0.975684          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          6.3703-3 6.1090-4 0.967436          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          4.3441-3 4.0190-4 0.957606          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          3.9415-3 4.8230-4 0.944256          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          2.2209-3 2.7340-4 0.935838          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          1.8988-3 2.8940-4 0.922309          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          1.3677-3 1.9290-4 0.908960          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          1.3027-3 2.0900-4 0.891568          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          1.5435-3 2.0900-4 0.879158          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          1.0766-3 2.0900-4 0.860297          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+ 1002 40092   4 701  C 2.0000+7          1.1719-3 2.2510-4 0.822521          0.000000         LVLN.A.Vlasov,ET.AL. (60)   F1399  4
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F1399
+#AUTHOR1    N.A.Vlasov+
+#YEAR       1960
+#INSTITUTE  (4RUSKUR)
+#TITLE      The (d,t) reaction on zirconium isotopes.
+#AUTHOR(S)  N.A.Vlasov, S.P.Kalinin, A.A.Ogloblin,
+#+          V.I.Chuyev
+#REF-CODE   (J,ZET,39,1615,1960)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.39, p.1615, 1960
+#DATASETS   6
+#
+#DATASET    F1399005
+#DATE       20191201
+#REACTION   40-ZR-92(D,T)40-ZR-91,PAR,DA
+#PROJ       1002
+#TARG       40092
+#MF         4
+#MT         701
+#PRODUCT    40-ZR-91
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002 40092   4 701  C]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 40092   4 701  C 2.0000+7          0.010528 1.0183-3 0.993343                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          9.8118-3 7.8010-4 0.988263                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          8.7490-3 8.0170-4 0.983318                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          5.5841-3 5.6330-4 0.975111                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          4.1528-3 4.3330-4 0.966899                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          3.8481-3 4.7670-4 0.957471                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          2.6984-3 4.3330-4 0.945881                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          2.7621-3 3.6830-4 0.934615                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          3.4108-3 5.2010-4 0.922915                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          4.2544-3 3.9000-4 0.907513                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          3.7546-3 3.6830-4 0.890927                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          3.7533-3 3.4670-4 0.876205                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          2.1486-3 3.0330-4 0.858271                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          1.8440-3 4.1170-4 0.839951                              N.A.Vlasov,ET.AL. (60)   F1399  5
+ 1002 40092   4 701  C 2.0000+7          1.0194-3 3.4670-4 0.821637                              N.A.Vlasov,ET.AL. (60)   F1399  5
+#/DATA      15
 #/DATASET
 #/ENTRY
 #

@@ -46,9 +46,9 @@ The C4 files are the main EXFOR fiels containing all the experimental campaigns 
 
 ## Extracting new C4 Files
 
-A version of the EXFOR files are included in the repository. If you want to process a new EXFOR dataset you can download the latest .c4 files from the <a src="https://www-nds.iaea.org/x4toc4-master/?C=M;O=D">IAEA website</a>. 
+A version of the EXFOR files are included in the repository. If you want to process a new EXFOR dataset you can download the latest .c4 files from the <a src="https://www-nds.iaea.org/x4toc4-master/?C=M;O=D">IAEA website</a> but I will do my best to keep the repository updated.  
 
-First, unzip the downloaded file. The process will result in four main files: `C4-YYYY-MM-DD.xc4`, `C4-YYYY-MM-DD.xc4.readme`, `C4-YYYY-MM-DD.xc4.tbl` and `EXFOR14A.DAT`. The `.xc4` files need to be converted to `.c4` files. Fortunatly, `EMPIRE` contains a script to do just that. For convenience, the `parseC4.py` script is included in this repository. Run the script while in the same directory where the `C4-YYYY-MM-DD.xc4` file is stored.
+First, unzip the downloaded file. The process will result in four main files: `C4-YYYY-MM-DD.xc4`, `C4-YYYY-MM-DD.xc4.readme`, `C4-YYYY-MM-DD.xc4.tbl` and `EXFOR14A.DAT`. The `.xc4` files need to be converted to `.c4` files. Fortunatly, `EMPIRE` contains a script to do just that. For convenience, the `parseC4.py` script is included in this repository. Run the script while in the same directory where the `C4-YYYY-MM-DD.xc4` file is stored. NOTE: The script is written in Python 2. It won't work in environments with Python 3. 
 
 ```python
 python parseC4.py C4-YYYY-MM-DD.xc4
@@ -58,7 +58,7 @@ Once all files are in organized into the structure given above, follow the instr
 
 # CSV Files
 
-**NOTICE: THIS DIRECTORY WILL BE EMPTY UNTIL THE EXFOR DATASET C4 FILES HAVE BEEN PROCESSED.**
+**NOTICE: THIS DIRECTORY WILL BE EMPTY UNTIL THE EXFOR DATASET C4 FILES HAVE BEEN PROCESSED OR DOWNLOADED.**
 
 The `CSV_Files` this directory contains the resulting files from the processed EXFOR files for each projectile. The within each subdirectory include:
 - `all_cross_sections_v1.txt` contains all the EXFOR cross section datapoints in plain `.txt` format. 

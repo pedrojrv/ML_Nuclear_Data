@@ -64,6 +64,39 @@
 #/ENTRY
 #
 #
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328012
+#DATE       20191201
+#REACTION   92-U-238(D,N)93-NP-239,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         4
+#PRODUCT    93-NP-239
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3   4   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3   4    1.1000+7          4.0000-7 1.0000-7                                       N.L.Lark,ET.AL. (69)     O2328 12
+ 1002 92238   3   4    1.3000+7          8.7000-7 2.2000-7                                       N.L.Lark,ET.AL. (69)     O2328 12
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0719
 #AUTHOR1    R.M.Lessler+
 #YEAR       1966
@@ -102,14 +135,14 @@
 #AUTHOR1    B.Ya.Guzhovskii+
 #YEAR       1994
 #INSTITUTE  (4RUSEPA)
-#TITLE      Cross-Section Activation Measurement For U-238
-#+          Through Protons and Deuterons in Energy Interval
+#TITLE      Cross-section activation measurement for U-238
+#+          through protons and deuterons in energy interval
 #+          10-14 MeV.
 #AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
 #+          V.S.Rudnev, S.V.Trusillo
-#REF-CODE   (C,94GATLIN,,390,1994)
+#REF-CODE   (C,94GATLIN,1,390,1994)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
-#+          p.390, 1994
+#+          Vol.1, p.390, 1994
 #DATASETS   4
 #
 #DATASET    O0177004
@@ -125,10 +158,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1002 92238   3  16    1.0000+7          0.025800 2.5800-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
- 1002 92238   3  16    1.0980+7          0.047000 4.7000-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
- 1002 92238   3  16    1.1970+7          0.057500 5.7500-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
- 1002 92238   3  16    1.3000+7          0.051000 5.1000-3                                       B.YA.GUZHOVSKII, (94)    O0177  4
+ 1002 92238   3  16    1.0000+7          0.025800                                                B.Ya.Guzhovskii, (94)    O0177  4
+ 1002 92238   3  16    1.0980+7          0.047000                                                B.Ya.Guzhovskii, (94)    O0177  4
+ 1002 92238   3  16    1.1970+7          0.057500                                                B.Ya.Guzhovskii, (94)    O0177  4
+ 1002 92238   3  16    1.3000+7          0.051000                                                B.Ya.Guzhovskii, (94)    O0177  4
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -205,6 +238,36 @@
 #/ENTRY
 #
 #
+#ENTRY      C2528
+#AUTHOR1    L.B.Magnusson+
+#YEAR       1950
+#INSTITUTE  (1USABRK)
+#TITLE      New Isotopes of Neptunium
+#AUTHOR(S)  L.B.Magnusson, S.G.Thompson, G.T.Seaborg
+#REF-CODE   (J,PR,78,363,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.78, p.363, 1950
+#DATASETS   14
+#
+#DATASET    C2528011
+#DATE       20200406
+#REACTION   92-U-238(D,2N)93-NP-238,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         16
+#PRODUCT    93-NP-238
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [ 1002 92238   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  16    4.5000+7          6.0000-3                                                L.B.Magnusson,ET.AL. (50)C2528 11
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C2303
 #AUTHOR1    T.T.Sugihara+
 #YEAR       1957
@@ -237,6 +300,38 @@
  1002 92238   3  18 D  1.0000+7          0.086000                                                T.T.Sugihara,ET.AL. (57) C2303  5
  1002 92238   3  18 D  1.3600+7          0.430000 0.150000                                       T.T.Sugihara,ET.AL. (57) C2303  5
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F1423
+#AUTHOR1    G.I.Marov+
+#YEAR       1963
+#INSTITUTE  (4RUSRI)
+#TITLE      Uranium and thorium fission induced by sub-barrier
+#+          deuterons.
+#AUTHOR(S)  G.I.Marov, Yu.A.Nemilov, Yu.A.Selitskiy,
+#+          V.P.Eismont
+#REF-CODE   (J,ZET,44,1445,1963)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.44, p.1445, 1963
+#DATASETS   8
+#
+#DATASET    F1423004
+#DATE       20200601
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    5800000. 100000.0 3.0800-5 2.9400-6                                       G.I.Marov,ET.AL. (63)    F1423  4
+ 1002 92238   3  18    6200000. 100000.0 7.6760-5 3.9200-6                                       G.I.Marov,ET.AL. (63)    F1423  4
+#/DATA      2
 #/DATASET
 #/ENTRY
 #
@@ -278,6 +373,300 @@
  1002 92238   3  18    1.1581+7 3000.000 0.207800                                                G.R.Choppin,ET.AL. (63)  P0028  5
  1002 92238   3  18    1.2102+7 3000.000 0.283400                                                G.R.Choppin,ET.AL. (63)  P0028  5
 #/DATA      13
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F1423
+#AUTHOR1    G.I.Marov+
+#YEAR       1963
+#INSTITUTE  (4RUSRI)
+#TITLE      Uranium and thorium fission induced by sub-barrier
+#+          deuterons.
+#AUTHOR(S)  G.I.Marov, Yu.A.Nemilov, Yu.A.Selitskiy,
+#+          V.P.Eismont
+#REF-CODE   (J,ZET,44,1445,1963)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.44, p.1445, 1963
+#DATASETS   8
+#
+#DATASET    F1423005
+#DATE       20200601
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    6600000. 100000.0 1.6000-4 1.6000-5                                       G.I.Marov,ET.AL. (63)    F1423  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444037
+#DATE       20200104
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    6707000.          0.011000                                                J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    9916000.          0.040000                                                J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.1965+7          0.145000                                                J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.4020+7          0.343000                                                J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.6955+7          0.616000                                                J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    2.4857+7          1.028000 0.134000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    3.7995+7          1.278000 0.099000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    4.6447+7          1.237000 0.105000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    7.4726+7          1.225000 0.087000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    9.4556+7          1.300000 0.076000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.2459+8          1.293000 0.070000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.5199+8          1.257000 0.064000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.7181+8          1.193000 0.064000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.7851+8          1.152000 0.052000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.8377+8          1.262000 0.076000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.9193+8          1.308000 0.058000                                       J.Jungerman (50)         C2444 37
+ 1002 92238   3  18    1.9224+8          1.489000 0.087000                                       J.Jungerman (50)         C2444 37
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444016
+#DATE       20200104
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    7331000.          3.0000-3                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    7608000.          5.0000-3                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    7920000.          5.0000-3                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    8128000.          5.0000-3                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    8543000.          9.0000-3                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    8959000.          9.0000-3                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    9408000.          0.029000                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    9580000.          0.038000                                                J.Jungerman (50)         C2444 16
+ 1002 92238   3  18    9994000.          0.053000                                                J.Jungerman (50)         C2444 16
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444020
+#DATE       20200104
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    7391000.          3.8220-4                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    7691000.          5.6230-4                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    7698000.          1.2040-3                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    7898000.          9.9290-4                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    7898000.          1.8900-3                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    8220000.          3.0290-3                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    8535000.          6.5580-3                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    9003000.          0.010180                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    9003000.          9.3430-3                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    9348000.          0.025060                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    9662000.          0.025340                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    9685000.          0.036880                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    9777000.          0.024530                                                J.Jungerman (50)         C2444 20
+ 1002 92238   3  18    1.0038+7          0.055440                                                J.Jungerman (50)         C2444 20
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444036
+#DATE       20200104
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    9040000.          0.011000                                                J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.0796+7          0.104000                                                J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.2846+7          0.238000                                                J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.4611+7          0.447000                                                J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.7544+7          0.691000                                                J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.8121+7          0.604000                                                J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.0972+8          1.282000 0.058000                                       J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.3653+8          1.124000 0.064000                                       J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.6600+8          1.460000 0.058000                                       J.Jungerman (50)         C2444 36
+ 1002 92238   3  18    1.9253+8          1.459000 0.070000                                       J.Jungerman (50)         C2444 36
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444014
+#DATE       20200104
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    9063000.          7.0000-3                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    9754000.          0.029000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.0411+7          0.048000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.1064+7          0.098000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.1065+7          0.086000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.1512+7          0.125000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.1751+7          0.155000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.2164+7          0.184000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.2437+7          0.222000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.3266+7          0.256000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.3505+7          0.288000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.3849+7          0.312000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.4258+7          0.373000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.4604+7          0.380000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.5019+7          0.390000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.5156+7          0.405000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.5567+7          0.451000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.5841+7          0.487000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.6151+7          0.501000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.6527+7          0.551000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.6768+7          0.565000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.7042+7          0.594000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.7178+7          0.621000                                                J.Jungerman (50)         C2444 14
+ 1002 92238   3  18    1.7487+7          0.648000                                                J.Jungerman (50)         C2444 14
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444015
+#DATE       20200104
+#REACTION   92-U-238(D,F),,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   3  18   ]
+#DATA       21
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  18    9719000.          0.031000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.0272+7          0.052000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.1477+7          0.125000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.1855+7          0.154000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.2129+7          0.188000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.2850+7          0.251000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.3159+7          0.281000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.3502+7          0.313000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.3878+7          0.363000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.4153+7          0.388000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.4601+7          0.410000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.4944+7          0.444000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.5218+7          0.477000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.5563+7          0.494000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.5733+7          0.524000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.6145+7          0.556000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.6454+7          0.585000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.6762+7          0.623000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.7144+7          0.619000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.7453+7          0.645000                                                J.Jungerman (50)         C2444 15
+ 1002 92238   3  18    1.7793+7          0.703000                                                J.Jungerman (50)         C2444 15
+#/DATA      21
 #/DATASET
 #/ENTRY
 #
@@ -817,6 +1206,37 @@
 #/ENTRY
 #
 #
+#ENTRY      C2528
+#AUTHOR1    L.B.Magnusson+
+#YEAR       1950
+#INSTITUTE  (1USABRK)
+#TITLE      New Isotopes of Neptunium
+#AUTHOR(S)  L.B.Magnusson, S.G.Thompson, G.T.Seaborg
+#REF-CODE   (J,PR,78,363,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.78, p.363, 1950
+#DATASETS   14
+#
+#DATASET    C2528012
+#DATE       20200406
+#REACTION   92-U-238(D,4N)93-NP-236,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         37
+#PRODUCT    93-NP-236
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [ 1002 92238   3  37   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3  37    4.5000+7          3.0000-3                                                L.B.Magnusson,ET.AL. (50)C2528 12
+ 1002 92238   3  37    1.2000+8          6.0000-3                                                L.B.Magnusson,ET.AL. (50)C2528 12
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O1113
 #AUTHOR1    K.L.Gippert+
 #YEAR       1982
@@ -842,6 +1262,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1002 92238   3 102    1.9700+7          9.4000-6                                                K.L.Gippert,ET.AL. (82)  O1113  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328013
+#DATE       20191201
+#REACTION   92-U-238(D,P)92-U-239,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         103
+#PRODUCT    92-U-239
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1002 92238   3 103   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 103    1.3000+7          2.0000-8                                                N.L.Lark,ET.AL. (69)     O2328 13
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -896,14 +1348,14 @@
 #AUTHOR1    B.Ya.Guzhovskii+
 #YEAR       1994
 #INSTITUTE  (4RUSEPA)
-#TITLE      Cross-Section Activation Measurement For U-238
-#+          Through Protons and Deuterons in Energy Interval
+#TITLE      Cross-section activation measurement for U-238
+#+          through protons and deuterons in energy interval
 #+          10-14 MeV.
 #AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
 #+          V.S.Rudnev, S.V.Trusillo
-#REF-CODE   (C,94GATLIN,,390,1994)
+#REF-CODE   (C,94GATLIN,1,390,1994)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
-#+          p.390, 1994
+#+          Vol.1, p.390, 1994
 #DATASETS   4
 #
 #DATASET    O0177005
@@ -919,10 +1371,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1002 92238   3 105    1.0000+7          6.6000-3 6.6000-4                                       B.YA.GUZHOVSKII, (94)    O0177  5
- 1002 92238   3 105    1.0980+7          0.016400 1.6400-3                                       B.YA.GUZHOVSKII, (94)    O0177  5
- 1002 92238   3 105    1.1970+7          0.027300 2.7300-3                                       B.YA.GUZHOVSKII, (94)    O0177  5
- 1002 92238   3 105    1.3000+7          0.033500 3.3500-3                                       B.YA.GUZHOVSKII, (94)    O0177  5
+ 1002 92238   3 105    1.0000+7          6.6000-3                                                B.Ya.Guzhovskii, (94)    O0177  5
+ 1002 92238   3 105    1.0980+7          0.016400                                                B.Ya.Guzhovskii, (94)    O0177  5
+ 1002 92238   3 105    1.1970+7          0.027300                                                B.Ya.Guzhovskii, (94)    O0177  5
+ 1002 92238   3 105    1.3000+7          0.033500                                                B.Ya.Guzhovskii, (94)    O0177  5
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -961,6 +1413,97 @@
 #/ENTRY
 #
 #
+#ENTRY      C2528
+#AUTHOR1    L.B.Magnusson+
+#YEAR       1950
+#INSTITUTE  (1USABRK)
+#TITLE      New Isotopes of Neptunium
+#AUTHOR(S)  L.B.Magnusson, S.G.Thompson, G.T.Seaborg
+#REF-CODE   (J,PR,78,363,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.78, p.363, 1950
+#DATASETS   14
+#
+#DATASET    C2528013
+#DATE       20200406
+#REACTION   92-U-238(D,5N)93-NP-235,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         152
+#PRODUCT    93-NP-235
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [ 1002 92238   3 152   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 152    4.5000+7          8.0000-3                                                L.B.Magnusson,ET.AL. (50)C2528 13
+ 1002 92238   3 152    1.2000+8          2.0000-3                                                L.B.Magnusson,ET.AL. (50)C2528 13
+#/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2528
+#AUTHOR1    L.B.Magnusson+
+#YEAR       1950
+#INSTITUTE  (1USABRK)
+#TITLE      New Isotopes of Neptunium
+#AUTHOR(S)  L.B.Magnusson, S.G.Thompson, G.T.Seaborg
+#REF-CODE   (J,PR,78,363,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.78, p.363, 1950
+#DATASETS   14
+#
+#DATASET    C2528014
+#DATE       20200406
+#REACTION   92-U-238(D,6N)93-NP-234,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         153
+#PRODUCT    93-NP-234
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [ 1002 92238   3 153   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 153    4.5000+7          8.0000-3                                                L.B.Magnusson,ET.AL. (50)C2528 14
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2528
+#AUTHOR1    L.B.Magnusson+
+#YEAR       1950
+#INSTITUTE  (1USABRK)
+#TITLE      New Isotopes of Neptunium
+#AUTHOR(S)  L.B.Magnusson, S.G.Thompson, G.T.Seaborg
+#REF-CODE   (J,PR,78,363,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.78, p.363, 1950
+#DATASETS   14
+#
+#DATASET    C2528015
+#DATE       20200406
+#REACTION   92-U-238(D,7N)93-NP-233,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         160
+#PRODUCT    93-NP-233
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1002 92238   3 160   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   3 160    4.5000+7          4.0000-4                                                L.B.Magnusson,ET.AL. (50)C2528 15
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O2034
 #AUTHOR1    R.Repnow+
 #YEAR       1970
@@ -995,6 +1538,102 @@
  1002 92238   39000L   1.7920+7          6.5860-7 8.3940-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
  1002 92238   39000L   1.9960+7          8.0020-7 7.9300-8           92238.6                     R.Repnow,ET.AL. (70)     O2034  4
 #/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2563
+#AUTHOR1    K.L.Wolf+
+#YEAR       1970
+#INSTITUTE  (1USAWAU)
+#TITLE      Spontaneous Fission Isomerism in Uranium Isotopes
+#AUTHOR(S)  K.L.Wolf, R.Vandenbosch, P.A.Russo,
+#+          M.K.Mehta, C.R.Rudy
+#REF-CODE   (J,PR/C,1,2096,1970)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.2096, 1970
+#DATASETS   5
+#
+#DATASET    C2563002
+#DATE       20200803
+#REACTION   92-U-238(D,X)92-U-238-L,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    92-U-238-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39000L  ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39000L   1.2982+7          9.8200-7 4.7300-7           92238.6                     K.L.Wolf,ET.AL. (70)     C2563  2
+ 1002 92238   39000L   1.7018+7          1.7820-6 6.1800-7           92238.6                     K.L.Wolf,ET.AL. (70)     C2563  2
+ 1002 92238   39000L   1.9161+7          5.2360-6 1.4180-6           92238.6                     K.L.Wolf,ET.AL. (70)     C2563  2
+ 1002 92238   39000L   2.1018+7          7.4540-6 1.0180-6           92238.6                     K.L.Wolf,ET.AL. (70)     C2563  2
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2329
+#AUTHOR1    S.M.Polikanov+
+#YEAR       1970
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Pu, Am
+#+          and Cm isotopes
+#AUTHOR(S)  S.M.Polikanov, G.Sletten
+#REF-CODE   (J,NP/A,151,656,1970)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.151, p.656, 1970
+#DATASETS   11
+#
+#DATASET    O2329002
+#DATE       20191201
+#REACTION   92-U-238(D,X)92-U-238-L,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    92-U-238-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39000L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39000L   1.3000+7          4.0000-7 2.0000-7           92238.6                     S.M.Polikanov,ET.AL. (70)O2329  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2563
+#AUTHOR1    K.L.Wolf+
+#YEAR       1970
+#INSTITUTE  (1USAWAU)
+#TITLE      Spontaneous Fission Isomerism in Uranium Isotopes
+#AUTHOR(S)  K.L.Wolf, R.Vandenbosch, P.A.Russo,
+#+          M.K.Mehta, C.R.Rudy
+#REF-CODE   (J,PR/C,1,2096,1970)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.2096, 1970
+#DATASETS   5
+#
+#DATASET    C2563003
+#DATE       20200803
+#REACTION   92-U-238(D,X)92-U-238-L,,SIG
+#PROJ       1002
+#TARG       92238
+#MF         3
+#MT         9000
+#PRODUCT    92-U-238-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92238   39000L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92238   39000L   1.8011+7          5.5640-6 4.0000-7           92238.6                     K.L.Wolf,ET.AL. (70)     C2563  3
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -1081,33 +1720,33 @@
 #AUTHOR1    B.Ya.Guzhovskii+
 #YEAR       1994
 #INSTITUTE  (4RUSEPA)
-#TITLE      Cross-Section Activation Measurement For U-238
-#+          Through Protons and Deuterons in Energy Interval
+#TITLE      Cross-section activation measurement for U-238
+#+          through protons and deuterons in energy interval
 #+          10-14 MeV.
 #AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
 #+          V.S.Rudnev, S.V.Trusillo
-#REF-CODE   (C,94GATLIN,,390,1994)
+#REF-CODE   (C,94GATLIN,1,390,1994)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
-#+          p.390, 1994
+#+          Vol.1, p.390, 1994
 #DATASETS   4
 #
 #DATASET    O0177003
-#DATE       20001104
-#REACTION   (92-U-238(D,X)93-NP-239,CUM,SIG)=((92-U-238(D,N)93-NP-239,,SIG)+(92-U-238(D,P)92-U-239,,SIG))
+#DATE       20201000
+#REACTION   92-U-238(D,X)93-NP-239,CUM,SIG
 #PROJ       1002
 #TARG       92238
 #MF         3
 #MT         9001
-#PRODUCT    92-U-239;93-NP-239
+#PRODUCT    93-NP-239
 #DATA-HDR   DATA
 #C4BEGIN    [ 1002 92238   39001   ]
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1002 92238   39001    1.0000+7          0.085600 8.5600-3           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
- 1002 92238   39001    1.0980+7          0.137500 0.013750           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
- 1002 92238   39001    1.1970+7          0.190000 0.019000           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
- 1002 92238   39001    1.3000+7          0.182000 0.018200           93239.9                     B.YA.GUZHOVSKII, (94)    O0177  3
+ 1002 92238   39001    1.0000+7          0.085600                    93239.9                     B.Ya.Guzhovskii, (94)    O0177  3
+ 1002 92238   39001    1.0980+7          0.137500                    93239.9                     B.Ya.Guzhovskii, (94)    O0177  3
+ 1002 92238   39001    1.1970+7          0.190000                    93239.9                     B.Ya.Guzhovskii, (94)    O0177  3
+ 1002 92238   39001    1.3000+7          0.182000                    93239.9                     B.Ya.Guzhovskii, (94)    O0177  3
 #/DATA      4
 #/DATASET
 #/ENTRY

@@ -5,7 +5,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -3450,7 +3450,7 @@
 #AUTHOR(S)  R.F.Carlton, R.R.Winters, J.A.Harvey,
 #+          N.W.Hill, C.H.Johnson, J.Schiedmayer
 #REF-CODE   (J,BAP,36,1349(J10-10),199104)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.36, p.1349(J10-10), 1991
 #DATASETS   1
 #
@@ -20255,7 +20255,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -21017,13 +21017,13 @@
 #+          B.V.Devkin, M.G.Kobozev, A.A.Lychagin,
 #+          V.V.Sinitca, V.A.Talalaev, D.Yu.Chuvilin,
 #+          A.A.Borisov, V.A.Zagryadskiy
-#REF-CODE   (J,YK,1992,(3-4),93,199203)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1992, Issue.3-4, p.93, 1992
+#REF-CODE   (J,YK,,(3-4),93,1992)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.3-4, p.93, 1992
 #DATASETS   3
 #
 #DATASET    41156009
-#DATE       20100705
+#DATE       20191103
 #REACTION   82-PB-208(N,INL)82-PB-208,,SIG
 #PROJ       1
 #TARG       82208
@@ -21035,7 +21035,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3   4    1.4100+7          0.405000 0.030000                                       S.P.Simakov,ET.AL. (92)  41156  9
+    1 82208   3   4    1.4100+7          0.405000 0.030000                                       S.P.Simakov,ET.AL.       41156  9
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -21096,7 +21096,7 @@
 #+          Sections.
 #AUTHOR(S)  E.R.Shunk, R.T.Wagner, A.Hemmendinger
 #REF-CODE   (J,BAP,7,334(TA9),6204)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.7, p.334(TA9), 1962
 #DATASETS   2
 #
@@ -21133,14 +21133,14 @@
 #+          B.V.Devkin, M.G.Kobozev, A.A.Lychagin,
 #+          V.V.Sinitca, V.A.Talalaev, D.Yu.Chuvilin,
 #+          A.A.Borisov, V.A.Zagryadskiy
-#REF-CODE   (J,YK,1992,(3-4),93,199203)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1992, Issue.3-4, p.93, 1992
+#REF-CODE   (J,YK,,(3-4),93,1992)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.3-4, p.93, 1992
 #DATASETS   3
 #
 #DATASET    41156010
-#DATE       20100705
-#REACTION   82-PB-208(N,2N)82-PB-207,,SIG
+#DATE       20191103
+#REACTION   82-PB-208(N,2N)82-PB-207,,SIG,,,DERIV
 #PROJ       1
 #TARG       82208
 #MF         3
@@ -21149,10 +21149,11 @@
 #DATA-HDR   DATA
 #C4BEGIN    [    1 82208   3  16 D ]
 #X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3  16 D  1.4100+7          2.380000 0.140000                                       S.P.Simakov,ET.AL. (92)  41156 10
+    1 82208   3  16 D  1.4100+7          2.380000 0.140000                                       S.P.Simakov,ET.AL.       41156 10
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -22438,15 +22439,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507102
-#DATE       19860702
+#DATE       20190805
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG,,MXW
 #PROJ       1
 #TARG       82208
@@ -22458,7 +22459,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3 102    0.025300          0.000000 0.030000                                       H.POMERANCE (52)         11507102
+    1 82208   3 102    0.025300          0.000000 0.030000                                       H.Pomerance (52)         11507102
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -22534,7 +22535,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -22701,7 +22702,7 @@
 #DATASETS   2
 #
 #DATASET    22852003
-#DATE       20130106
+#DATE       20201003
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG,,MXW
 #PROJ       1
 #TARG       82208
@@ -22768,7 +22769,7 @@
 #DATASETS   2
 #
 #DATASET    22852002
-#DATE       20041203
+#DATE       20201003
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG
 #PROJ       1
 #TARG       82208
@@ -22865,7 +22866,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -23057,13 +23058,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244082
-#DATE       20110104
+#DATE       20191103
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG
 #PROJ       1
 #TARG       82208
@@ -23071,12 +23072,11 @@
 #MT         102
 #PRODUCT    82-PB-209
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 82208   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3 102 C  200000.0 30000.00 7.5000-3 3.8000-3                                       A.I.Leipunskiy, (58)     40244 82
+    1 82208   3 102    200000.0 30000.00 7.5000-3 3.8000-3                                       A.I.Leipunskiy, (58)     40244 82
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -23091,13 +23091,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244103
-#DATE       20100301
+#DATE       20191103
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG
 #PROJ       1
 #TARG       82208
@@ -23105,13 +23105,12 @@
 #MT         102
 #PRODUCT    82-PB-209
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 82208   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3 102 C  2700000.          1.1000-3 5.0000-4                                       A.I.Leipunskiy, (58)     40244103
-    1 82208   3 102 C  4000000.          5.0000-4 2.5000-4                                       A.I.Leipunskiy, (58)     40244103
+    1 82208   3 102    2700000.          1.1000-3 5.0000-4                                       A.I.Leipunskiy, (58)     40244103
+    1 82208   3 102    4000000.          5.0000-4 2.5000-4                                       A.I.Leipunskiy, (58)     40244103
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -23155,21 +23154,20 @@
 #/ENTRY
 #
 #
-#ENTRY      30074
+#ENTRY      30067
 #AUTHOR1    J.Csikai+
 #YEAR       1967
 #INSTITUTE  (3HUNDEB)
-#TITLE      Radiative capture cross-sections for 13.-15. MeV
-#+          neutrons
+#TITLE      Radiative capture cross sections for 14.7 MeV neutrons
 #AUTHOR(S)  J.Csikai, G.Peto, M.Buczko,
-#+          Z.Milligy, N.Eissa
-#REF-CODE   (J,NP/A,95,229,196703)
+#+          Z.Miligy, N.A.Eissa
+#REF-CODE   (J,NP/A,95,229,1967)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.95, p.229, 1967
-#DATASETS   6
+#DATASETS   22
 #
-#DATASET    30074007
-#DATE       20080205
+#DATASET    30067024
+#DATE       20191203
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG
 #PROJ       1
 #TARG       82208
@@ -23177,18 +23175,18 @@
 #MT         102
 #PRODUCT    82-PB-209
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208   3 102 A ]
-#X4STATUS   [APRVD] Approved by author
+#C4BEGIN    [    1 82208   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3 102 A  1.3400+7          1.3200-3 7.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
-    1 82208   3 102 A  1.3600+7          1.3100-3 7.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
-    1 82208   3 102 A  1.3900+7          1.3000-3 7.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
-    1 82208   3 102 A  1.4100+7          1.1900-3 6.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
-    1 82208   3 102 A  1.4300+7          1.1300-3 6.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
-    1 82208   3 102 A  1.4500+7          1.1100-3 5.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
-    1 82208   3 102 A  1.5000+7          1.0300-3 5.0000-5                                       J.Csikai,ET.AL. (67)     30074  7
+    1 82208   3 102 D  1.3400+7          1.3200-3 7.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
+    1 82208   3 102 D  1.3600+7          1.3100-3 7.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
+    1 82208   3 102 D  1.3900+7          1.3000-3 7.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
+    1 82208   3 102 D  1.4100+7          1.1900-3 6.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
+    1 82208   3 102 D  1.4300+7          1.1300-3 6.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
+    1 82208   3 102 D  1.4500+7          1.1100-3 5.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
+    1 82208   3 102 D  1.5000+7          1.0300-3 5.0000-5                                       J.Csikai,ET.AL. (67)     30067 24
 #/DATA      7
 #/DATASET
 #/ENTRY
@@ -23261,16 +23259,16 @@
 #AUTHOR1    J.Csikai+
 #YEAR       1967
 #INSTITUTE  (3HUNDEB)
-#TITLE      Radiative capture cross-sections for 14.7 MeV neutrons
+#TITLE      Radiative capture cross sections for 14.7 MeV neutrons
 #AUTHOR(S)  J.Csikai, G.Peto, M.Buczko,
-#+          Z.Milligy, N.Eissa
-#REF-CODE   (J,NP/A,95,229,196703)
+#+          Z.Miligy, N.A.Eissa
+#REF-CODE   (J,NP/A,95,229,1967)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.95, p.229, 1967
-#DATASETS   17
+#DATASETS   22
 #
 #DATASET    30067017
-#DATE       20080205
+#DATE       20191203
 #REACTION   82-PB-208(N,G)82-PB-209,,SIG
 #PROJ       1
 #TARG       82208
@@ -23283,7 +23281,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   3 102 A  1.4700+7          1.0000-3 2.0000-4                                       J.Csikai,ET.AL. (66)     30067 17
+    1 82208   3 102 A  1.4700+7          1.0000-3 2.0000-4                                       J.Csikai,ET.AL. (67)     30067 17
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -23815,7 +23813,7 @@
 #AUTHOR(S)  P.Welch, J.Johnson, G.Randers-Pehrson,
 #+          J.Rapaport
 #REF-CODE   (J,BAP,26,708(G3),198105)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.26, p.708(G3), 1981
 #DATASETS   6
 #
@@ -27122,16 +27120,16 @@
 #AUTHOR1    A.I.Lashuk+
 #YEAR       1996
 #INSTITUTE  (4RUSFEI)
-#TITLE      GAMMA-QUANTA PRODUCTION CROSS SECTIONS AT NEUTRON
-#+          INELASTIC SCATTERING AT THE ENERGY 3 MEV
+#TITLE      Gamma-quanta production cross sections at neutron
+#+          inelastic scattering at the energy 3 MeV
 #AUTHOR(S)  A.I.Lashuk, I.P.Sadokhin
-#REF-CODE   (J,YK,1996,(2),59,9612)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1996, Issue.2, p.59, 1996
+#REF-CODE   (J,YK,,(2),59,1996)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.2, p.59, 1996
 #DATASETS   28
 #
 #DATASET    41245028
-#DATE       19970506
+#DATE       20191106
 #REACTION   82-PB-208(N,INL)82-PB-208,PAR,SIG,G
 #PROJ       1
 #TARG       82208
@@ -27143,7 +27141,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   39000    3000000.          0.107000 0.023000               0.9 2640000.          E2A.I.LASHUK,ET.AL. (96)   41245 28
+    1 82208   39000    3000000.          0.107000 0.023000               0.9 2640000.          E2A.I.Lashuk,ET.AL. (96)   41245 28
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -27386,7 +27384,7 @@
 #AUTHOR(S)  P.Welch, J.Johnson, G.Randers-Pehrson,
 #+          J.Rapaport
 #REF-CODE   (J,BAP,26,708(G3),198105)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.26, p.708(G3), 1981
 #DATASETS   6
 #
@@ -28710,16 +28708,16 @@
 #AUTHOR1    J.Rapaport+
 #YEAR       1978
 #INSTITUTE  (1USAOHO)
-#TITLE      NEUTRON SCATTERING FROM PB-208
+#TITLE      Neutron scattering from Pb-208
 #AUTHOR(S)  J.Rapaport, T.S.Cheema, D.E.Bainum,
 #+          R.W.Finlay, J.D.Carlson
-#REF-CODE   (J,NP/A,296,95,78)
+#REF-CODE   (J,NP/A,296,95,1978)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.296, p.95, 1978
 #DATASETS   1
 #
 #DATASET    10871002
-#DATE       19840202
+#DATE       20200206
 #REACTION   82-PB-208(N,EL)82-PB-208,,DA
 #PROJ       1
 #TARG       82208
@@ -28732,122 +28730,122 @@
 #DATA       116
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208   4   2 AC 7000000. 40000.00 3.395000 0.084900 0.939094                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 1.857000 0.065000 0.905420                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.884000 0.026500 0.864801                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.413400 0.012400 0.817547                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.229500 6.8800-3 0.764021                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.135700 4.0700-3 0.704633                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.099500 2.9800-3 0.639975                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.042100 1.4700-3 0.570282                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.010700 3.7400-4 0.496367                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.017400 8.7000-4 0.418658                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.071200 2.1400-3 0.337751                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.136300 4.0900-3 0.254263                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.177500 5.3200-3 0.082284                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.076300 2.2900-3-0.092025                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 9.1000-3 4.5500-4-0.263370                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.027500 9.6200-4-0.426571                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.063000 2.2000-3-0.576863                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.073000 2.9200-3-0.709573                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 7000000. 40000.00 0.036500 1.4600-3-0.820753                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 2.969000 0.089100 0.965609                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 1.388000 0.041600 0.939094                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.483000 0.014500 0.905420                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.149800 5.9900-3 0.864801                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.175300 7.0100-3 0.817547                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.258400 7.7500-3 0.764021                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.267000 8.0100-3 0.704633                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.175300 5.2600-3 0.639975                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.076300 2.2900-3 0.570282                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.041100 1.2300-3 0.496367                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.063500 1.9000-3 0.418658                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.107800 3.2300-3 0.337751                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.134800 4.0400-3 0.254263                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.134700 4.0400-3 0.169004                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.105300 3.1600-3 0.082284                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.072100 2.1600-3-4.8890-3                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.033200 9.9600-4-0.092025                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.024000 7.2000-4-0.263370                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.054200 1.6300-3-0.426571                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.041800 1.2500-3-0.576863                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.014300 7.1500-4-0.709573                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.011900 5.9500-4-0.768062                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 9000000. 110000.0 0.013000 6.5000-4-0.867246                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 3.215000 0.096500 0.965609                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 1.089000 0.038100 0.939154                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.148500 4.4500-3 0.905420                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.085000 2.5500-3 0.864801                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.359400 0.012600 0.817547                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.473000 0.014200 0.764021                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.388300 0.011600 0.704757                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.212000 6.3600-3 0.639975                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.079700 3.1900-3 0.570282                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.058600 1.7600-3 0.496367                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.099500 2.9800-3 0.418658                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.135400 4.0600-3 0.337751                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.128300 3.8500-3 0.254263                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.089100 3.1200-3 0.169004                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.048100 2.1600-3 0.082458                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.026500 1.1900-3-4.8890-3                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.017800 1.6900-3-0.091851                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.022800 1.0300-3-0.178289                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.026400 9.2400-4-0.263370                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.032400 1.1300-3-0.346283                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.030200 1.0600-3-0.426571                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.025200 8.8200-4-0.503626                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.014400 5.0400-4-0.576863                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 9.9000-3 8.9100-4-0.709450                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 1.1000+7 90000.00 0.019400 7.7600-4-0.820753                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 5.089000 0.153000 0.965609                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 1.081000 0.032400 0.939154                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.105000 3.6700-3 0.905420                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.178000 5.3400-3 0.864801                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.262000 7.8600-3 0.817547                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.157000 5.4900-3 0.764021                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.050000 3.0000-3 0.704757                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.015900 1.5900-3 0.639975                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.010500 2.1000-3 0.570282                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.012660 1.5200-3 0.496367                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.018600 1.8600-3 0.418658                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.018000 1.8000-3 0.337751                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 0.012880 1.2900-3 0.254263                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 7.2600-3 1.1600-3 0.082458                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 7.9300-3 9.5200-4-4.8890-3                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 6.4700-3 6.4700-4-0.178289                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 1.9900-3 2.7900-4-0.346283                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 3.5800-3 4.6500-4-0.503626                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 3.6900-3 4.0600-4-0.709450                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.0000+7 110000.0 4.6900-3 5.1600-4-0.820753                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 3.496000 0.069900 0.965609                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.537400 0.011800 0.939154                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.032900 1.2500-3 0.905420                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.117000 5.0300-3 0.864801                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.084300 4.8100-3 0.817547                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.051700 1.0900-3 0.764021                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.053600 2.9500-3 0.704757                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.032800 8.5300-4 0.639975                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.020800 1.1000-3 0.570282                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.035500 1.1000-3 0.496367                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.048400 1.3100-3 0.418658                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.037800 1.2100-3 0.337751                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.021200 1.0600-3 0.254263                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.020500 8.2000-4 0.169004                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.022400 1.0800-3 0.082458                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.023900 7.6500-4-4.8890-3                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 0.015300 9.6400-4-0.091851                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 8.1000-3 8.1000-4-0.178289                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 6.1000-3 6.1600-4-0.263370                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 8.5000-3 6.8800-4-0.346283                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 6.5000-3 6.5600-4-0.426571                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 4.0000-3 7.2400-4-0.503626                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 4.2000-3 4.4900-4-0.576863                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 5.2000-3 5.3000-4-0.645594                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 4.6000-3 4.8800-4-0.709450                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 3.8000-3 3.8400-4-0.768062                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 5.4000-3 5.4000-4-0.820753                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 4.0000-3 6.9200-4-0.867246                              J.RAPAPORT,ET.AL. (78)   10871  2
-    1 82208   4   2 AC 2.6000+7 60000.00 5.4000-3 8.2100-4-0.907192                              J.RAPAPORT,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 3.395000 0.084900 0.939094                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 1.857000 0.065000 0.905420                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.884000 0.026500 0.864801                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.413400 0.012400 0.817547                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.229500 6.8800-3 0.764021                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.135700 4.0700-3 0.704633                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.099500 2.9800-3 0.639975                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.042100 1.4700-3 0.570282                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.010700 3.7400-4 0.496367                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.017400 8.7000-4 0.418658                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.071200 2.1400-3 0.337751                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.136300 4.0900-3 0.254263                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.177500 5.3200-3 0.082284                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.076300 2.2900-3-0.092025                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 9.1000-3 4.5500-4-0.263370                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.027500 9.6200-4-0.426571                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.063000 2.2000-3-0.576863                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.073000 2.9200-3-0.709573                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 7000000. 40000.00 0.036500 1.4600-3-0.820753                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 2.969000 0.089100 0.965609                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 1.388000 0.041600 0.939094                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.483000 0.014500 0.905420                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.149800 5.9900-3 0.864801                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.175300 7.0100-3 0.817547                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.258400 7.7500-3 0.764021                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.267000 8.0100-3 0.704633                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.175300 5.2600-3 0.639975                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.076300 2.2900-3 0.570282                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.041100 1.2300-3 0.496367                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.063500 1.9000-3 0.418658                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.107800 3.2300-3 0.337751                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.134800 4.0400-3 0.254263                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.134700 4.0400-3 0.169004                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.105300 3.1600-3 0.082284                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.072100 2.1600-3-4.8890-3                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.033200 9.9600-4-0.092025                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.024000 7.2000-4-0.263370                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.054200 1.6300-3-0.426571                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.041800 1.2500-3-0.576863                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.014300 7.1500-4-0.709573                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.011900 5.9500-4-0.768062                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 9000000. 110000.0 0.013000 6.5000-4-0.867246                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 3.215000 0.096500 0.965609                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 1.089000 0.038100 0.939154                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.148500 4.4500-3 0.905420                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.085000 2.5500-3 0.864801                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.359400 0.012600 0.817547                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.473000 0.014200 0.764021                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.388300 0.011600 0.704757                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.212000 6.3600-3 0.639975                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.079700 3.1900-3 0.570282                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.058600 1.7600-3 0.496367                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.099500 2.9800-3 0.418658                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.135400 4.0600-3 0.337751                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.128300 3.8500-3 0.254263                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.089100 3.1200-3 0.169004                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.048100 2.1600-3 0.082458                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.026500 1.1900-3-4.8890-3                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.017800 1.6900-3-0.091851                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.022800 1.0300-3-0.178289                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.026400 9.2400-4-0.263370                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.032400 1.1300-3-0.346283                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.030200 1.0600-3-0.426571                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.025200 8.8200-4-0.503626                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.014400 5.0400-4-0.576863                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 9.9000-3 8.9100-4-0.709450                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 1.1000+7 90000.00 0.019400 7.7600-4-0.820753                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 5.089000 0.153000 0.965609                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 1.081000 0.032400 0.939154                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.105000 3.6700-3 0.905420                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.178000 5.3400-3 0.864801                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.262000 7.8600-3 0.817547                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.157000 5.4900-3 0.764021                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.050000 3.0000-3 0.704757                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.015900 1.5900-3 0.639975                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.010500 2.1000-3 0.570282                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.012660 1.5200-3 0.496367                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.018600 1.8600-3 0.418658                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.018000 1.8000-3 0.337751                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 0.012880 1.2900-3 0.254263                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 7.2600-3 1.1600-3 0.082458                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 7.9300-3 9.5200-4-4.8890-3                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 6.4700-3 6.4700-4-0.178289                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 1.9900-3 2.7900-4-0.346283                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 3.5800-3 4.6500-4-0.503626                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 3.6900-3 4.0600-4-0.709450                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.0000+7 110000.0 4.6900-3 5.1600-4-0.820753                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 3.496000 0.069900 0.965609                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.537400 0.011800 0.939154                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.032900 1.2500-3 0.905420                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.117000 5.0300-3 0.864801                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.084300 4.8100-3 0.817547                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.051700 1.0900-3 0.764021                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.053600 2.9500-3 0.704757                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.032800 8.5300-4 0.639975                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.020800 1.1000-3 0.570282                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.035500 1.1000-3 0.496367                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.048400 1.3100-3 0.418658                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.037800 1.2100-3 0.337751                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.021200 1.0600-3 0.254263                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.020500 8.2000-4 0.169004                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.022400 1.0800-3 0.082458                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.023900 7.6500-4-4.8890-3                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 0.015300 9.6400-4-0.091851                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 8.1000-3 8.1000-4-0.178289                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 6.1000-3 6.1600-4-0.263370                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 8.5000-3 6.8800-4-0.346283                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 6.5000-3 6.5600-4-0.426571                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 4.0000-3 7.2400-4-0.503626                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 4.2000-3 4.4900-4-0.576863                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 5.2000-3 5.3000-4-0.645594                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 4.6000-3 4.8800-4-0.709450                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 3.8000-3 3.8400-4-0.768062                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 5.4000-3 5.4000-4-0.820753                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 4.0000-3 6.9200-4-0.867246                              J.Rapaport,ET.AL. (78)   10871  2
+    1 82208   4   2 AC 2.6000+7 60000.00 5.4000-3 8.2100-4-0.907192                              J.Rapaport,ET.AL. (78)   10871  2
 #/DATA      116
 #/DATASET
 #/ENTRY
@@ -34259,30 +34257,32 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990522
-#DATE       19830801
+#DATE       20190802
 #REACTION   82-PB-208(N,0),,L
 #PROJ       1
 #TARG       82208
 #MF         402
 #MT         6002
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208 4026002   ]
+#C4BEGIN    [    1 82208 4026002 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208 4026002    80000.00 500.0000 1.000000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 522
-    1 82208 4026002    91500.00 1000.000 1.000000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 522
-    1 82208 4026002    118000.0 1000.000 1.000000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 522
+    1 82208 4026002 D  80000.00 500.0000 1.000000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 522
+    1 82208 4026002 D  91500.00 1000.000 1.000000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 522
+    1 82208 4026002 D  118000.0 1000.000 1.000000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 522
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -34859,29 +34859,31 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990523
-#DATE       19830801
+#DATE       20190802
 #REACTION   82-PB-208(N,EL),,WID
 #PROJ       1
 #TARG       82208
 #MF         402
 #MT         6021
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208 4026021   ]
+#C4BEGIN    [    1 82208 4026021 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208 4026021    80000.00 500.0000 1000.000 100.0000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 523
-    1 82208 4026021    118000.0 1000.000 440.0000 90.00000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 523
+    1 82208 4026021 D  80000.00 500.0000 1000.000 100.0000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 523
+    1 82208 4026021 D  118000.0 1000.000 440.0000 90.00000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 523
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -34956,28 +34958,30 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990524
-#DATE       19830801
+#DATE       20190802
 #REACTION   82-PB-208(N,EL),,WID,,G
 #PROJ       1
 #TARG       82208
 #MF         402
 #MT         6022
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208 4026022   ]
+#C4BEGIN    [    1 82208 4026022 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208 4026022    91500.00 1000.000 210.0000 85.00000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 524
+    1 82208 4026022 D  91500.00 1000.000 210.0000 85.00000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 524
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -34987,29 +34991,31 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990525
-#DATE       19830801
+#DATE       20190802
 #REACTION   82-PB-208(N,EL),,WID/RED
 #PROJ       1
 #TARG       82208
 #MF         402
 #MT         6023
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208 4026023   ]
+#C4BEGIN    [    1 82208 4026023 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208 4026023    80000.00 500.0000 13.10000 1.310000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 525
-    1 82208 4026023    118000.0 1000.000 3.650000 0.750000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 525
+    1 82208 4026023 D  80000.00 500.0000 13.10000 1.310000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 525
+    1 82208 4026023 D  118000.0 1000.000 3.650000 0.750000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 525
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -35053,28 +35059,30 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990526
-#DATE       19830801
+#DATE       20190802
 #REACTION   82-PB-208(N,EL),,WID/RED,,G
 #PROJ       1
 #TARG       82208
 #MF         402
 #MT         6024
 #DATA-HDR   DATA
-#C4BEGIN    [    1 82208 4026024   ]
+#C4BEGIN    [    1 82208 4026024 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 82208 4026024    91500.00 1000.000 2.330000 0.940000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 526
+    1 82208 4026024 D  91500.00 1000.000 2.330000 0.940000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 526
 #/DATA      1
 #/DATASET
 #/ENTRY

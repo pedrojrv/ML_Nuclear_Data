@@ -3,7 +3,7 @@
 #YEAR       2006
 #INSTITUTE  (4ZZZDUB)
 #TITLE      Synthesis of the isotopes of elements 118 and 116 in
-#+          the Cf-249 and Cm-245 + Ca-48 fusion reactions.
+#+          the Cf-249 and Cm-245 + Ca-48 fusion reactions
 #AUTHOR(S)  Yu.Ts.Oganessian, V.K.Utyonkov, Yu.V.Lobanov,
 #+          F.Sh.Abdullin, A.N.Polyakov, R.N.Sagaidak,
 #+          I.V.Shirokovsky, Yu.S.Tsyganov, A.A.Voinov,
@@ -20,7 +20,7 @@
 #DATASETS   4
 #
 #DATASET    A0856002
-#DATE       20170206
+#DATE       20200205
 #REACTION   98-CF-249(20-CA-48,3N)118-OG-294,,SIG
 #PROJ       20048
 #TARG       98249
@@ -36,6 +36,46 @@
 20048 98249   3  17 A  2.5100+8          0.000000                                                Yu.Ts.Oganessian, (06)   A0856  2
 20048 98249   3  17 A  2.4500+8          0.000000                                                Yu.Ts.Oganessian, (06)   A0856  2
 #/DATA      2
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0983
+#AUTHOR1    T.Banerjee+
+#YEAR       2020
+#INSTITUTE  (3AULCBR)
+#TITLE      Systematic evidence for quasifission in 9Be-, 12C-,
+#+          and 16O-induced reactions forming 258,260No
+#AUTHOR(S)  T.Banerjee, D.J.Hinde, D.Y.Jeung,
+#+          K.Banerjee, M.Dasgupta, A.C.Berriman,
+#+          L.T.Bezzina, H.M.Albers, Ch.E.Duellmann,
+#+          J.Khuyagbaatar, B.Kindler, B.Lommel,
+#+          E.C.Simpson, C.Sengupta, B.M.A.Swinton-Bland,
+#+          T.Tanaka, A.Yakushev, K.Eberhardt,
+#+          C.Mokry, J.Runke, P.Thoerle-Pospiech,
+#+          N.Trautmann
+#REF-CODE   (J,PR/C,102,024603,2020)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.102, p.024603, 2020
+#DATASETS   6
+#
+#DATASET    D0983004
+#DATE       20200505
+#REACTION   98-CF-249(4-BE-9,F),,SIG
+#PROJ       4009
+#TARG       98249
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 4009 98249   3  18 AC]
+#X4STATUS   [APRVD] Approved by author
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 4009 98249   3  18 AC 4.3320+7          0.111100 6.0000-4                                       T.Banerjee,ET.AL. (20)   D0983  4
+ 4009 98249   3  18 AC 4.8160+7          0.418000 3.0000-3                                       T.Banerjee,ET.AL. (20)   D0983  4
+ 4009 98249   3  18 AC 5.7820+7          1.096000 7.0000-3                                       T.Banerjee,ET.AL. (20)   D0983  4
+#/DATA      3
 #/DATASET
 #/ENTRY
 #
@@ -808,6 +848,38 @@
  8018 98249   3  37 A  9.5000+7 1500000. 0.000000                                                V.A.Druin,ET.AL. (79)    A0051  3
  8018 98249   3  37 A  1.0200+8 1500000. 0.000000                                                V.A.Druin,ET.AL. (79)    A0051  3
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2532
+#AUTHOR1    A.Ghiorso+
+#YEAR       1974
+#INSTITUTE  (1USABRK)
+#TITLE      Element 106
+#AUTHOR(S)  A.Ghiorso, J.M.Nitschke, J.R.Alonso,
+#+          C.T.Alonso, M.Nurmia, G.T.Seaborg,
+#+          E.K.Hulet, R.W.Lougheed
+#REF-CODE   (J,PRL,33,1490,1974)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.33, p.1490, 1974
+#DATASETS   1
+#
+#DATASET    C2532002
+#DATE       20200505
+#REACTION   98-CF-249(8-O-18,4N)106-SG-263,,SIG
+#PROJ       8018
+#TARG       98249
+#MF         3
+#MT         37
+#PRODUCT    106-SG-263
+#DATA-HDR   DATA-APRX
+#C4BEGIN    [ 8018 98249   3  37   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 98249   3  37    9.5000+7          0.000000                                                A.Ghiorso,ET.AL. (74)    C2532  2
+#/DATA      1
 #/DATASET
 #/ENTRY
 #

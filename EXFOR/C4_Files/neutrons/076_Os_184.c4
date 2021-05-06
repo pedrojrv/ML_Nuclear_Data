@@ -81,7 +81,7 @@
 #REF-CODE   (J,JRN,279,443,2009)
 #REFERENCE  Jour. Journal of Radioanalytical and Nuclear Chemistry
 #+          Vol.279, p.443, 2009
-#DATASETS   7
+#DATASETS   9
 #
 #DATASET    31664002
 #DATE       20090204
@@ -115,7 +115,7 @@
 #REF-CODE   (J,JRN,279,443,2009)
 #REFERENCE  Jour. Journal of Radioanalytical and Nuclear Chemistry
 #+          Vol.279, p.443, 2009
-#DATASETS   7
+#DATASETS   9
 #
 #DATASET    31664003
 #DATE       20090204
@@ -367,7 +367,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -507,7 +507,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -527,6 +527,41 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 76184   3 107    0.025300          0.010000                                                S.F.Mughabghab (06)      V10024362
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31664
+#AUTHOR1    Junhua Luo+
+#YEAR       2009
+#INSTITUTE  (3CPRLNZ)
+#TITLE      Activation cross sections and isomeric cross section
+#+          ratios for 184Os(n,2n)183m,gOs, 190Os(n,p)190m,gRe
+#+          and 86Sr(n,2n)85m,gSr reactions from 13.5 to 14.8 MeV
+#AUTHOR(S)  Junhua Luo, Fei Tuo, Xiangzhong Kong
+#REF-CODE   (J,JRN,279,443,2009)
+#REFERENCE  Jour. Journal of Radioanalytical and Nuclear Chemistry
+#+          Vol.279, p.443, 2009
+#DATASETS   9
+#
+#DATASET    31664008
+#DATE       20090204
+#REACTION   76-OS-184(N,2N)76-OS-183-M/G,,SIG/RAT,,,DERIV
+#PROJ       1
+#TARG       76184
+#MF         203
+#MT         16
+#PRODUCT    76-OS-183-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 76184 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 76184 203  16MD  1.3500+7 200000.0 0.360000 0.040000     16.0  76184.9                     Junhua Luo,ET.AL. (09)   31664  8
+    1 76184 203  16MD  1.4800+7 200000.0 0.250000 0.030000     16.0  76184.9                     Junhua Luo,ET.AL. (09)   31664  8
+#/DATA      2
 #/DATASET
 #/ENTRY
 #

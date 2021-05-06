@@ -466,8 +466,8 @@
 #DATASETS   4
 #
 #DATASET    F0237003
-#DATE       19990405
-#REACTION   3-LI-6(T,X)0-NN-1,,SIG,,,EXP
+#DATE       20200704
+#REACTION   3-LI-6(T,X)0-NN-1,,SIG
 #PROJ       1003
 #TARG       3006
 #MF         3
@@ -950,6 +950,40 @@
 #/ENTRY
 #
 #
+#ENTRY      F1411
+#AUTHOR1    D.V.Aleksandrov+
+#YEAR       1987
+#INSTITUTE  (4RUSKUR)
+#TITLE      Observation of cluster levels in nuclei with A=6.
+#AUTHOR(S)  D.V.Aleksandrov, Yu.A.Glukhov, B.G.Novatsky,
+#+          E.Yu.Nikolsky, S.B.Sakuta, D.N.Stepanov
+#REF-CODE   (J,YF,46,385,1987)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.46, p.385, 1987
+#DATASETS   2
+#
+#DATASET    F1411003
+#DATE       20200105
+#REACTION   3-LI-6(T,HE3)2-HE-6,PAR,DA
+#PROJ       1003
+#TARG       3006
+#MF         4
+#MT         751
+#PRODUCT    2-HE-6
+#DATA-HDR   DATA
+#C4BEGIN    [ 1003  3006   4 751   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1003  3006   4 751    6.5000+7          2.9629-3 4.9080-4 0.953685          1800000.         LVLD.V.Aleksandrov, (87)    F1411  3
+ 1003  3006   4 751    6.5000+7          2.7759-3 4.5990-4 0.927940          1800000.         LVLD.V.Aleksandrov, (87)    F1411  3
+ 1003  3006   4 751    6.5000+7          1.3681-3 1.8450-4 0.845597          1800000.         LVLD.V.Aleksandrov, (87)    F1411  3
+ 1003  3006   4 751    6.5000+7          9.3490-4 1.5490-4 0.730996          1800000.         LVLD.V.Aleksandrov, (87)    F1411  3
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0761
 #AUTHOR1    T.Nakamura+
 #YEAR       2000
@@ -1184,7 +1218,7 @@
 #DATASETS   4
 #
 #DATASET    F0237002
-#DATE       20081103
+#DATE       20200704
 #REACTION   3-LI-6(T,X)0-NN-1,,DE
 #PROJ       1003
 #TARG       3006
@@ -3918,59 +3952,6 @@
  3007  3006   69000    1.6000+7          1.478-13         -0.996195   2004.9 1.3209+7          E2S.Adhikari,ET.AL. (05)   D6009  2
  3007  3006   69000    1.6000+7          7.269-14         -0.996195   2004.9 1.3283+7          E2S.Adhikari,ET.AL. (05)   D6009  2
 #/DATA      54
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0909
-#AUTHOR1    M.Mayer+
-#YEAR       2001
-#INSTITUTE  (2GERGAR)
-#TITLE      Scattering cross sections for Li-6 and Li-7 ions from
-#+          carbon below 5.5 MeV.
-#AUTHOR(S)  M.Mayer, M.Schneider
-#REF-CODE   (J,NIM/B,183,221,2001)
-#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
-#+          Vol.183, p.221, 2001
-#DATASETS   2
-#
-#DATASET    O0909002
-#DATE       20030504
-#REACTION   3-LI-6(6-C-12,EL)3-LI-6,,DA,,RTH
-#PROJ       6012
-#TARG       3006
-#MF         4
-#MT         2
-#PRODUCT    3-LI-6
-#DATA-HDR   DATA
-#C4BEGIN    [ 6012  3006   4   2   ]
-#DATA       23
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 6012  3006   4   2    1797000.          1.219171 0.035356-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    1996000.          1.017540 0.029509-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2097000.          0.859833 0.025795-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2197000.          0.807568 0.024227-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2297000.          0.701845 0.021757-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2397000.          0.685212 0.021242-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2598000.          0.594837 0.019035-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2698000.          0.540850 0.017848-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2799000.          0.522424 0.017240-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    2899000.          0.473089 0.016085-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3000000.          0.428777 0.014578-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3201000.          0.403249 0.013710-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3301000.          0.361301 0.013007-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3352000.          0.385083 0.013478-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3402000.          0.360375 0.012613-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3452000.          0.330384 0.012224-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3603000.          0.303272 0.011221-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    3804000.          0.245132 0.010050-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    4004000.          0.218823 9.4094-3-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    4205000.          0.202813 8.9238-3-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    4406000.          0.144572 7.9514-3-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    4606000.          0.128614 7.5882-3-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
- 6012  3006   4   2    4707000.          0.103801 7.0585-3-0.965927                              M.Mayer,ET.AL. (01)      O0909  2
-#/DATA      23
 #/DATASET
 #/ENTRY
 #

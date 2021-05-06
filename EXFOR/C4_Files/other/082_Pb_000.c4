@@ -1,3 +1,56 @@
+#ENTRY      O2403
+#AUTHOR1    J.Marganiec+
+#YEAR       2016
+#INSTITUTE  (2GERTHD)
+#TITLE      Coulomb and nuclear excitations of narrow resonances
+#+          in 17Ne
+#AUTHOR(S)  J.Marganiec, F.Wamers, F.Aksouh,
+#+          Yu.Aksyutina, H.Alvarez-Pol, T.Aumann,
+#+          S.Beceiro-Novo, C.A.Bertulani, K.Boretzky,
+#+          M.J.G.Borge, M.Chartier, A.Chatillon,
+#+          L.V.Chulkov, D.Cortina-Gil, H.Emling,
+#+          O.Ershova, L.M.Fraile, H.O.U.Fynbo,
+#+          D.Galaviz, H.Geissel, M.Heil,
+#+          D.H.H.Hoffmann, J.Hoffmann, H.T.Johansson,
+#+          B.Jonson, C.Karagiannis, O.A.Kiselev,
+#+          J.V.Kratz, R.Kulessa, N.Kurz,
+#+          C.Langer, M.Lantz, T.Le Bleis,
+#+          R.Lemmon, Yu.A.Litvinov, K.Mahata,
+#+          C.Muntz, T.Nilsson, C.Nociforo,
+#+          G.Nyman, W.Ott, V.Panin,
+#+          S.Paschalis, A.Perea, R.Plag,
+#+          R.Reifarth, A.Richter, C.Rodriguez-Tajes,
+#+          D.Rossi, K.Riisager, D.Savran,
+#+          G.Schrieder, H.Simon, J.Stroth,
+#+          K.Summerer, O.Tengblad, S.Typel,
+#+          H.Weick, M.Wiescher, C.Wimmer
+#REF-CODE   (J,PL/B,759,200,2016)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.759, p.200, 2016
+#DATASETS   3
+#
+#DATASET    O2403005
+#DATE       20190200
+#REACTION   82-PB-0(10-NE-17,INL)82-PB-0,PAR,SIG
+#PROJ       10017
+#TARG       82000
+#MF         3
+#MT         51
+#PRODUCT    82-PB-0
+#DATA-HDR   DATA
+#C4BEGIN    [10017 82000   3  51   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+10017 82000   3  51    8.5000+9          0.011600 1.5000-4                   1764000.         EXCJ.Marganiec,ET.AL. (16)  O2403  5
+10017 82000   3  51    8.5000+9          2.5000-3 1.2000-4                   1908000.         EXCJ.Marganiec,ET.AL. (16)  O2403  5
+10017 82000   3  51    8.5000+9          7.6800-3 7.4000-4                   2614000.         EXCJ.Marganiec,ET.AL. (16)  O2403  5
+10017 82000   3  51    8.5000+9          0.014400 1.7000-4                   5210000.         EXCJ.Marganiec,ET.AL. (16)  O2403  5
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0919
 #AUTHOR1    F.Wamers+
 #YEAR       2018
@@ -4820,6 +4873,250 @@
 #/ENTRY
 #
 #
+#ENTRY      S0206
+#AUTHOR1    Y.Y.Yang+
+#YEAR       2018
+#INSTITUTE  (3CPRIMP)
+#TITLE      Elastic scattering of the proton drip line nuclei 7Be,
+#+          8B, and 9C on a lead target at energies around three
+#+          times the Coulomb barriers
+#AUTHOR(S)  Y.Y.Yang, X.Liu, D.Y.Pang,
+#+          D.Patel, R.F.Chen, J.S.Wang,
+#+          P.Ma, J.B.Ma, S.L.Jin,
+#+          Z.Bai, V.Guimaraes, Q.Wang,
+#+          W.H.Ma, F.F.Duan, Z.H.Gao,
+#+          Y.C.Yu, Z.Y.Sun, Z.G.Hu,
+#+          S.W.Xu, S.T.Wang, D.Yan,
+#+          Y.Zhou, Y.H.Zhang, X.H.Zhou,
+#+          H.S.Xu, G.Q.Xiao, W.L.Zhan
+#REF-CODE   (J,PR/C,98,044608,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.044608, 2018
+#DATASETS   3
+#
+#DATASET    S0206004
+#DATE       20200302
+#REACTION   82-PB-0(4-BE-7,EL)82-PB-0,,DA,,RTH
+#PROJ       4007
+#TARG       82000
+#MF         4
+#MT         2
+#PRODUCT    82-PB-0
+#DATA-HDR   DATA
+#C4BEGIN    [ 4007 82000   4   2  C]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 4007 82000   4   2  C 1.3000+8 910000.0 403.0068 14.97884 0.990866                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 253.8776 6.272000 0.988255                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 162.1071 3.325258 0.985348                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 103.8918 1.975539 0.982123                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 81.57041 1.411780 0.978581                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 62.69040 1.064253 0.974683                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 48.87747 0.847654 0.970506                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 35.65100 0.684495 0.966016                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 26.15041 0.572325 0.961165                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 16.74309 0.460248 0.956049                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 11.72983 0.395706 0.950624                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 6.985721 0.319574 0.944892                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 4.663753 0.279181 0.938854                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 3.032163 0.250121 0.932450                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 1.700695 0.214259 0.925804                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 1.410800 0.228860 0.918860                              Y.Y.Yang,ET.AL. (18)     S0206  4
+ 4007 82000   4   2  C 1.3000+8 910000.0 0.662121 0.191147 0.911618                              Y.Y.Yang,ET.AL. (18)     S0206  4
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595004
+#DATE       20191201
+#REACTION   82-PB-0(40-ZR-93,X)40-ZR-92,,SIG
+#PROJ       40093
+#TARG       82000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-92
+#DATA-HDR   DATA
+#C4BEGIN    [40093 82000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40093 82000   39000    1.887+10          0.448000 0.024000           40092.9                     S.Takeuchi,ET.AL. (19)   E2595  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595005
+#DATE       20191201
+#REACTION   82-PB-0(40-ZR-93,X)40-ZR-91,,SIG
+#PROJ       40093
+#TARG       82000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-91
+#DATA-HDR   DATA
+#C4BEGIN    [40093 82000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40093 82000   39000    1.887+10          0.159000 0.016000           40091.9                     S.Takeuchi,ET.AL. (19)   E2595  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595002
+#DATE       20191201
+#REACTION   82-PB-0(40-ZR-94,X)40-ZR-93,,SIG
+#PROJ       40094
+#TARG       82000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-93
+#DATA-HDR   DATA
+#C4BEGIN    [40094 82000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40094 82000   39000    1.917+10          0.492000 0.021000           40093.9                     S.Takeuchi,ET.AL. (19)   E2595  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595003
+#DATE       20191201
+#REACTION   82-PB-0(40-ZR-94,X)40-ZR-92,,SIG
+#PROJ       40094
+#TARG       82000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-92
+#DATA-HDR   DATA
+#C4BEGIN    [40094 82000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40094 82000   39000    1.917+10          0.156000 0.015000           40092.9                     S.Takeuchi,ET.AL. (19)   E2595  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C1250
 #AUTHOR1    R.E.Warner+
 #YEAR       2001
@@ -5415,6 +5712,60 @@
 #/ENTRY
 #
 #
+#ENTRY      S0206
+#AUTHOR1    Y.Y.Yang+
+#YEAR       2018
+#INSTITUTE  (3CPRIMP)
+#TITLE      Elastic scattering of the proton drip line nuclei 7Be,
+#+          8B, and 9C on a lead target at energies around three
+#+          times the Coulomb barriers
+#AUTHOR(S)  Y.Y.Yang, X.Liu, D.Y.Pang,
+#+          D.Patel, R.F.Chen, J.S.Wang,
+#+          P.Ma, J.B.Ma, S.L.Jin,
+#+          Z.Bai, V.Guimaraes, Q.Wang,
+#+          W.H.Ma, F.F.Duan, Z.H.Gao,
+#+          Y.C.Yu, Z.Y.Sun, Z.G.Hu,
+#+          S.W.Xu, S.T.Wang, D.Yan,
+#+          Y.Zhou, Y.H.Zhang, X.H.Zhou,
+#+          H.S.Xu, G.Q.Xiao, W.L.Zhan
+#REF-CODE   (J,PR/C,98,044608,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.044608, 2018
+#DATASETS   3
+#
+#DATASET    S0206003
+#DATE       20200302
+#REACTION   82-PB-0(5-B-8,EL)82-PB-0,,DA,,RTH
+#PROJ       5008
+#TARG       82000
+#MF         4
+#MT         2
+#PRODUCT    82-PB-0
+#DATA-HDR   DATA
+#C4BEGIN    [ 5008 82000   4   2  C]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 5008 82000   4   2  C 1.7800+8 1246000. 355.2505 38.99459 0.990771                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 215.8131 16.22121 0.988148                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 126.7444 8.181401 0.985229                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 98.56910 5.345597 0.981959                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 70.76562 3.669285 0.978365                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 58.49334 2.850858 0.974448                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 40.34822 2.147583 0.970253                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 23.56761 1.547289 0.965699                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 17.35234 1.308007 0.960827                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 9.144582 0.953345 0.955639                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 5.759316 0.776536 0.950190                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 2.849044 0.569789 0.944376                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 1.665015 0.554978 0.938252                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 1.180735 0.482050 0.931881                              Y.Y.Yang,ET.AL. (18)     S0206  3
+ 5008 82000   4   2  C 1.7800+8 1246000. 0.711034 0.410517 0.925143                              Y.Y.Yang,ET.AL. (18)     S0206  3
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      S0203
 #AUTHOR1    Y.Y.Yang+
 #YEAR       2014
@@ -5656,6 +6007,58 @@
 54132 82000   69000 A  5.280+10          1.4840-7 3.4990-8 0.173646      1.9 1.8563+7 9837000. E2L.Heilbronn,ET.AL. (07)  E2050 17
 54132 82000   69000 A  5.280+10          2.5530-7 9.3790-8 0.173646      1.9 6911500. 1814500. E2L.Heilbronn,ET.AL. (07)  E2050 17
 #/DATA      72
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      S0206
+#AUTHOR1    Y.Y.Yang+
+#YEAR       2018
+#INSTITUTE  (3CPRIMP)
+#TITLE      Elastic scattering of the proton drip line nuclei 7Be,
+#+          8B, and 9C on a lead target at energies around three
+#+          times the Coulomb barriers
+#AUTHOR(S)  Y.Y.Yang, X.Liu, D.Y.Pang,
+#+          D.Patel, R.F.Chen, J.S.Wang,
+#+          P.Ma, J.B.Ma, S.L.Jin,
+#+          Z.Bai, V.Guimaraes, Q.Wang,
+#+          W.H.Ma, F.F.Duan, Z.H.Gao,
+#+          Y.C.Yu, Z.Y.Sun, Z.G.Hu,
+#+          S.W.Xu, S.T.Wang, D.Yan,
+#+          Y.Zhou, Y.H.Zhang, X.H.Zhou,
+#+          H.S.Xu, G.Q.Xiao, W.L.Zhan
+#REF-CODE   (J,PR/C,98,044608,2018)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.98, p.044608, 2018
+#DATASETS   3
+#
+#DATASET    S0206002
+#DATE       20200302
+#REACTION   82-PB-0(6-C-9,EL)82-PB-0,,DA,,RTH
+#PROJ       6009
+#TARG       82000
+#MF         4
+#MT         2
+#PRODUCT    82-PB-0
+#DATA-HDR   DATA
+#C4BEGIN    [ 6009 82000   4   2  C]
+#DATA       13
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6009 82000   4   2  C 2.2700+8 1589000. 322.2698 59.84454 0.990700                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 184.2595 23.59225 0.988041                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 127.9352 11.93000 0.985079                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 82.09445 6.817558 0.981793                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 70.25220 4.967529 0.978184                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 47.11723 3.409453 0.974213                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 33.04463 2.580406 0.969957                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 20.42784 1.904946 0.965382                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 10.00688 1.302754 0.960488                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 6.558428 1.078163 0.955278                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 3.573574 0.819792 0.949699                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 2.369640 0.714513 0.943858                              Y.Y.Yang,ET.AL. (18)     S0206  2
+ 6009 82000   4   2  C 2.2700+8 1589000. 1.464738 0.597966 0.937707                              Y.Y.Yang,ET.AL. (18)     S0206  2
+#/DATA      13
 #/DATASET
 #/ENTRY
 #
@@ -6433,7 +6836,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026005
 #DATE       20160200
@@ -6465,7 +6868,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026006
 #DATE       20160200
@@ -6497,7 +6900,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026007
 #DATE       20160200
@@ -6529,7 +6932,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026009
 #DATE       20160200
@@ -6561,7 +6964,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026010
 #DATE       20160200
@@ -6593,7 +6996,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026012
 #DATE       20160200
@@ -6625,7 +7028,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026015
 #DATE       20160200
@@ -6657,7 +7060,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026016
 #DATE       20160200
@@ -6689,7 +7092,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026018
 #DATE       20160200
@@ -6721,7 +7124,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026021
 #DATE       20160200
@@ -6753,7 +7156,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026022
 #DATE       20160200
@@ -6785,7 +7188,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026028
 #DATE       20160200
@@ -6817,7 +7220,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026034
 #DATE       20160200
@@ -6849,7 +7252,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026075
 #DATE       20160200
@@ -8268,7 +8671,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026002
 #DATE       20160200
@@ -8300,7 +8703,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026003
 #DATE       20160200
@@ -8332,7 +8735,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026004
 #DATE       20160200
@@ -8364,7 +8767,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026008
 #DATE       20160200
@@ -8396,7 +8799,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026011
 #DATE       20160200
@@ -8428,7 +8831,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026013
 #DATE       20160200
@@ -8460,7 +8863,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026014
 #DATE       20160200
@@ -8492,7 +8895,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026017
 #DATE       20160200
@@ -8524,7 +8927,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026019
 #DATE       20160200
@@ -8556,7 +8959,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026020
 #DATE       20160200
@@ -8588,7 +8991,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026023
 #DATE       20160200
@@ -8620,7 +9023,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026024
 #DATE       20160200
@@ -8652,7 +9055,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026026
 #DATE       20160200
@@ -8684,7 +9087,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026027
 #DATE       20160200
@@ -8716,7 +9119,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026030
 #DATE       20160200
@@ -8748,7 +9151,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026031
 #DATE       20160200
@@ -8780,7 +9183,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026032
 #DATE       20160200
@@ -8812,7 +9215,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026033
 #DATE       20160200
@@ -8844,7 +9247,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026035
 #DATE       20160200
@@ -8876,7 +9279,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026036
 #DATE       20160200
@@ -8908,7 +9311,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026037
 #DATE       20160200
@@ -8940,7 +9343,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026038
 #DATE       20160200
@@ -8972,7 +9375,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026039
 #DATE       20160200
@@ -9004,7 +9407,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026040
 #DATE       20160200
@@ -9036,7 +9439,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026041
 #DATE       20160200
@@ -9068,7 +9471,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026042
 #DATE       20160200
@@ -9100,7 +9503,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026043
 #DATE       20160200
@@ -9132,7 +9535,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026044
 #DATE       20160200
@@ -9164,7 +9567,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026045
 #DATE       20160200
@@ -9196,7 +9599,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026046
 #DATE       20160200
@@ -9228,7 +9631,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026047
 #DATE       20160200
@@ -9260,7 +9663,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026049
 #DATE       20160200
@@ -9292,7 +9695,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026050
 #DATE       20160200
@@ -9324,7 +9727,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026051
 #DATE       20160200
@@ -9356,7 +9759,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026052
 #DATE       20160200
@@ -9388,7 +9791,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026053
 #DATE       20160200
@@ -9420,7 +9823,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026054
 #DATE       20160200
@@ -9452,7 +9855,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026055
 #DATE       20160200
@@ -9484,7 +9887,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026056
 #DATE       20160200
@@ -9516,7 +9919,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026057
 #DATE       20160200
@@ -9548,7 +9951,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026058
 #DATE       20160200
@@ -9580,7 +9983,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026059
 #DATE       20160200
@@ -9612,7 +10015,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026060
 #DATE       20160200
@@ -9644,7 +10047,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026061
 #DATE       20160200
@@ -9676,7 +10079,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026062
 #DATE       20160200
@@ -9708,7 +10111,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026063
 #DATE       20160200
@@ -9740,7 +10143,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026064
 #DATE       20160200
@@ -9772,7 +10175,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026065
 #DATE       20160200
@@ -9804,7 +10207,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026066
 #DATE       20160200
@@ -9836,7 +10239,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026067
 #DATE       20160200
@@ -9868,7 +10271,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026068
 #DATE       20160200
@@ -9900,7 +10303,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026069
 #DATE       20160200
@@ -9932,39 +10335,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
-#
-#DATASET    A0026070
-#DATE       20160200
-#REACTION   82-PB-0(6-C-12,X)79-AU-198-G,CUM,SIG
-#PROJ       6012
-#TARG       82000
-#MF         3
-#MT         9001
-#PRODUCT    79-AU-198-G
-#DATA-HDR   DATA
-#C4BEGIN    [ 6012 82000   39001G  ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 6012 82000   39001G   4.380+10          0.038000 8.0000-3           79198.0                     C.Damdinsuren,ET.AL. (89)A0026 70
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0026
-#AUTHOR1    C.Damdinsuren+
-#YEAR       1989
-#INSTITUTE  (4ZZZDUB)
-#TITLE      Yields  of  radionuclides  formed in the interaction of
-#+          3.65 A*GeV 12C-ions and protons with nat-Pb
-#AUTHOR(S)  C.Damdinsuren, V.J.Ilyushchenko, P.Kozma,
-#+          D.Chultem
-#REF-CODE   (R,JINR-E1-89-481,1989)
-#REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
-#+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026071
 #DATE       20160200
@@ -9996,7 +10367,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026072
 #DATE       20160200
@@ -10028,7 +10399,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026073
 #DATE       20160200
@@ -10060,7 +10431,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026077
 #DATE       20160200
@@ -10092,7 +10463,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026078
 #DATE       20160200
@@ -10124,7 +10495,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026079
 #DATE       20160200
@@ -10156,7 +10527,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026080
 #DATE       20160200
@@ -10188,7 +10559,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026081
 #DATE       20160200
@@ -10220,7 +10591,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026082
 #DATE       20160200
@@ -10252,7 +10623,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026083
 #DATE       20160200
@@ -10284,7 +10655,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026084
 #DATE       20160200
@@ -10316,7 +10687,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026085
 #DATE       20160200
@@ -10348,7 +10719,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026086
 #DATE       20160200
@@ -10380,7 +10751,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026087
 #DATE       20160200
@@ -10412,7 +10783,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026088
 #DATE       20160200
@@ -10444,7 +10815,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026089
 #DATE       20160200

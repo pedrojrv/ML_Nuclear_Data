@@ -682,6 +682,40 @@
 #/ENTRY
 #
 #
+#ENTRY      33132
+#AUTHOR1    R.Pachuau+
+#YEAR       2019
+#INSTITUTE  (3INDIND)
+#TITLE      Neutron induced cross section measurements on gallium
+#+          isotopes at neutron energy 14.90 +- 0.01 MeV and
+#+          covariance analysis
+#AUTHOR(S)  R.Pachuau, B.Lalremruata, A.Gandhi,
+#+          S.V.Suryanarayana, B.K.Nayak, A.Kumar,
+#+          L.S.Danu
+#REF-CODE   (J,NP/A,992,121613,2019)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.992, p.121613, 2019
+#DATASETS   5
+#
+#DATASET    33132003
+#DATE       20191104
+#REACTION   31-GA-69(N,2N)31-GA-68,,SIG
+#PROJ       1
+#TARG       31069
+#MF         3
+#MT         16
+#PRODUCT    31-GA-68
+#DATA-HDR   DATA
+#C4BEGIN    [    1 31069   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 31069   3  16    1.4900+7          0.831280 0.039403                                       R.Pachuau,ET.AL. (19)    33132  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      11810
 #AUTHOR1    D.E.Velkley+
 #YEAR       1969
@@ -837,15 +871,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507032
-#DATE       19860702
+#DATE       20190805
 #REACTION   31-GA-69(N,G)31-GA-70,,SIG,,MXW
 #PROJ       1
 #TARG       31069
@@ -857,7 +891,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 31069   3 102    0.025300          1.990000 0.159200                                       H.POMERANCE (52)         11507 32
+    1 31069   3 102    0.025300          1.990000 0.159200                                       H.Pomerance (52)         11507 32
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1955,6 +1989,40 @@
 #/ENTRY
 #
 #
+#ENTRY      33132
+#AUTHOR1    R.Pachuau+
+#YEAR       2019
+#INSTITUTE  (3INDIND)
+#TITLE      Neutron induced cross section measurements on gallium
+#+          isotopes at neutron energy 14.90 +- 0.01 MeV and
+#+          covariance analysis
+#AUTHOR(S)  R.Pachuau, B.Lalremruata, A.Gandhi,
+#+          S.V.Suryanarayana, B.K.Nayak, A.Kumar,
+#+          L.S.Danu
+#REF-CODE   (J,NP/A,992,121613,2019)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.992, p.121613, 2019
+#DATASETS   5
+#
+#DATASET    33132002
+#DATE       20191104
+#REACTION   31-GA-69(N,P)30-ZN-69-M,,SIG
+#PROJ       1
+#TARG       31069
+#MF         3
+#MT         103
+#PRODUCT    30-ZN-69-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 31069   3 103M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 31069   3 103M   1.4900+7          0.022930 1.4240-3                                       R.Pachuau,ET.AL. (19)    33132  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      30652
 #AUTHOR1    G.Helfer+
 #YEAR       1984
@@ -2248,7 +2316,7 @@
 #REF-CODE   (J,JIN,27,2471,1965)
 #REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
 #+          Vol.27, p.2471, 1965
-#DATASETS   2
+#DATASETS   3
 #
 #DATASET    31077002
 #DATE       20090900

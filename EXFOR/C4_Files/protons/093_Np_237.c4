@@ -75,18 +75,18 @@
 #AUTHOR1    J.Aaltonen+
 #YEAR       2000
 #INSTITUTE  (2SF HLS)
-#TITLE      Proton-Induced Nuclear Reactions in Neptunium-237
-#+          Targets.Production of Plutonium Tracers in the Energy
-#+          Range 15-40 MeV.
-#AUTHOR(S)  J.Aaltonen, E.Gromova, V.Jakovlev,
+#TITLE      Proton-induced nuclear reactions in neptunium-237
+#+          targets. Production of plutonium tracers in the energy
+#+          range 15-40 MeV.
+#AUTHOR(S)  J.Aaltonen, E.A.Gromova, V.Jakovlev,
 #+          S.J.Heselius, P.Dendooven, W.Trzaska
 #REF-CODE   (J,RCA,88,129,2000)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.88, p.129, 2000
-#DATASETS   2
+#DATASETS   4
 #
 #DATASET    O0770002
-#DATE       20010305
+#DATE       20191005
 #REACTION   93-NP-237(P,N)94-PU-237,,SIG
 #PROJ       1001
 #TARG       93237
@@ -94,18 +94,92 @@
 #MT         4
 #PRODUCT    94-PU-237
 #DATA-HDR   DATA
-#C4BEGIN    [ 1001 93237   3   4   ]
+#C4BEGIN    [ 1001 93237   3   4 C ]
+#X4STATUS   [COREL] Data correlated with another data set
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 93237   3   4    1.5900+7 600000.0 5.6100-3 5.8000-4                                       J.AALTONEN,ET.AL. (00)   O0770  2
- 1001 93237   3   4    1.6500+7 200000.0 6.6500-3 4.8000-4                                       J.AALTONEN,ET.AL. (00)   O0770  2
- 1001 93237   3   4    2.0000+7 500000.0 5.8700-3 4.2000-4                                       J.AALTONEN,ET.AL. (00)   O0770  2
- 1001 93237   3   4    2.3500+7 400000.0 5.4500-3 3.6000-4                                       J.AALTONEN,ET.AL. (00)   O0770  2
- 1001 93237   3   4    2.6600+7 400000.0 4.8200-3 3.4000-4                                       J.AALTONEN,ET.AL. (00)   O0770  2
- 1001 93237   3   4    3.2000+7 300000.0 4.4800-3 1.9300-3                                       J.AALTONEN,ET.AL. (00)   O0770  2
- 1001 93237   3   4    3.9400+7 200000.0 5.0900-3 3.4000-4                                       J.AALTONEN,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  1.5900+7 600000.0 5.6100-3 5.8000-4                                       J.Aaltonen,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  1.6500+7 200000.0 6.6500-3 4.8000-4                                       J.Aaltonen,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  2.0000+7 500000.0 5.8700-3 4.2000-4                                       J.Aaltonen,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  2.3500+7 400000.0 5.4500-3 3.6000-4                                       J.Aaltonen,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  2.6600+7 400000.0 4.8200-3 3.4000-4                                       J.Aaltonen,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  3.2000+7 300000.0 4.4800-3 1.9300-3                                       J.Aaltonen,ET.AL. (00)   O0770  2
+ 1001 93237   3   4 C  3.9400+7 200000.0 5.0900-3 3.4000-4                                       J.Aaltonen,ET.AL. (00)   O0770  2
 #/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328014
+#DATE       20191201
+#REACTION   93-NP-237(P,2N)94-PU-236,,SIG
+#PROJ       1001
+#TARG       93237
+#MF         3
+#MT         16
+#PRODUCT    94-PU-236
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 93237   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 93237   3  16    1.3000+7          1.3000-7 3.0000-8                                       N.L.Lark,ET.AL. (69)     O2328 14
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0770
+#AUTHOR1    J.Aaltonen+
+#YEAR       2000
+#INSTITUTE  (2SF HLS)
+#TITLE      Proton-induced nuclear reactions in neptunium-237
+#+          targets. Production of plutonium tracers in the energy
+#+          range 15-40 MeV.
+#AUTHOR(S)  J.Aaltonen, E.A.Gromova, V.Jakovlev,
+#+          S.J.Heselius, P.Dendooven, W.Trzaska
+#REF-CODE   (J,RCA,88,129,2000)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.88, p.129, 2000
+#DATASETS   4
+#
+#DATASET    O0770004
+#DATE       20191005
+#REACTION   93-NP-237(P,2N)94-PU-236,,SIG
+#PROJ       1001
+#TARG       93237
+#MF         3
+#MT         16
+#PRODUCT    94-PU-236
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 93237   3  16   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 93237   3  16    1.5900+7 600000.0 8.3300-3 3.2000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    2.0000+7 500000.0 5.6100-3 2.2000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    2.3500+7 400000.0 4.3500-3 1.7000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    2.6600+7 400000.0 5.0700-3 2.1000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    2.9400+7 300000.0 6.0700-3 2.7000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    3.2000+7 300000.0 4.6700-3 2.0000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    3.4500+7 300000.0 6.7800-3 2.7000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    3.6800+7 200000.0 3.5400-3 1.5000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+ 1001 93237   3  16    3.9600+7 200000.0 4.2600-3 1.8000-4                                       J.Aaltonen,ET.AL. (00)   O0770  4
+#/DATA      9
 #/DATASET
 #/ENTRY
 #
@@ -122,9 +196,9 @@
 #+          I.Nishinaka, K.Sueki, Y.Hatsukawa,
 #+          K.Hata, T.Sekine, I.Kanno,
 #+          H.Ikezoe, H.Nakahara
-#REF-CODE   (J,PR/C,44,(4),1405,199110)
+#REF-CODE   (J,PR/C,44,1405,1991)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.44, Issue.4, p.1405, 1991
+#+          Vol.44, p.1405, 1991
 #DATASETS   9
 #
 #DATASET    E1411010
@@ -496,18 +570,18 @@
 #AUTHOR1    J.Aaltonen+
 #YEAR       2000
 #INSTITUTE  (2SF HLS)
-#TITLE      Proton-Induced Nuclear Reactions in Neptunium-237
-#+          Targets.Production of Plutonium Tracers in the Energy
-#+          Range 15-40 MeV.
-#AUTHOR(S)  J.Aaltonen, E.Gromova, V.Jakovlev,
+#TITLE      Proton-induced nuclear reactions in neptunium-237
+#+          targets. Production of plutonium tracers in the energy
+#+          range 15-40 MeV.
+#AUTHOR(S)  J.Aaltonen, E.A.Gromova, V.Jakovlev,
 #+          S.J.Heselius, P.Dendooven, W.Trzaska
 #REF-CODE   (J,RCA,88,129,2000)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.88, p.129, 2000
-#DATASETS   2
+#DATASETS   4
 #
 #DATASET    O0770003
-#DATE       20010305
+#DATE       20191005
 #REACTION   93-NP-237(P,X)93-NP-236-M,,SIG
 #PROJ       1001
 #TARG       93237
@@ -519,15 +593,15 @@
 #DATA       9
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 93237   39000M   1.5900+7 600000.0 0.013100 8.0000-4           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   2.0000+7 500000.0 0.039600 2.1000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   2.3500+7 400000.0 0.069100 3.6000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   2.6600+7 400000.0 0.081800 4.3000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   2.9400+7 300000.0 0.094000 5.0000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   3.2000+7 300000.0 0.081400 4.3000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   3.4500+7 300000.0 0.086300 4.5000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   3.6800+7 200000.0 0.081000 4.2000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
- 1001 93237   39000M   3.9600+7 200000.0 0.085800 4.5000-3           93236.7                     J.AALTONEN,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   1.5900+7 600000.0 0.013100 8.0000-4           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   2.0000+7 500000.0 0.039600 2.1000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   2.3500+7 400000.0 0.069100 3.6000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   2.6600+7 400000.0 0.081800 4.3000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   2.9400+7 300000.0 0.094000 5.0000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   3.2000+7 300000.0 0.081400 4.3000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   3.4500+7 300000.0 0.086300 4.5000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   3.6800+7 200000.0 0.081000 4.2000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
+ 1001 93237   39000M   3.9600+7 200000.0 0.085800 4.5000-3           93236.7                     J.Aaltonen,ET.AL. (00)   O0770  3
 #/DATA      9
 #/DATASET
 #/ENTRY
@@ -642,6 +716,47 @@
 #/ENTRY
 #
 #
+#ENTRY      O0770
+#AUTHOR1    J.Aaltonen+
+#YEAR       2000
+#INSTITUTE  (2SF HLS)
+#TITLE      Proton-induced nuclear reactions in neptunium-237
+#+          targets. Production of plutonium tracers in the energy
+#+          range 15-40 MeV.
+#AUTHOR(S)  J.Aaltonen, E.A.Gromova, V.Jakovlev,
+#+          S.J.Heselius, P.Dendooven, W.Trzaska
+#REF-CODE   (J,RCA,88,129,2000)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.88, p.129, 2000
+#DATASETS   4
+#
+#DATASET    O0770005
+#DATE       20191005
+#REACTION   93-NP-237(P,X)94-PU-236,CUM,SIG
+#PROJ       1001
+#TARG       93237
+#MF         3
+#MT         9001
+#PRODUCT    94-PU-236
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 93237   39001   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 93237   39001    1.5900+7 600000.0 0.014500 6.0000-4           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    2.0000+7 500000.0 0.024200 9.0000-4           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    2.3500+7 400000.0 0.036800 1.4000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    2.6600+7 400000.0 0.043500 1.7000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    2.9400+7 300000.0 0.050300 1.9000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    3.2000+7 300000.0 0.042900 1.6000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    3.4500+7 300000.0 0.047300 1.8000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    3.6800+7 200000.0 0.041600 1.6000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+ 1001 93237   39001    3.9600+7 200000.0 0.044600 1.7000-3           94236.9                     J.Aaltonen,ET.AL. (00)   O0770  5
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      F1232
 #AUTHOR1    A.Deppman+
 #YEAR       2013
@@ -682,7 +797,7 @@
 #YEAR       2000
 #INSTITUTE  (4ZZZDUB)
 #TITLE      Results of investigation of proton-nuclear reactions
-#+          on radioactive Np-237.
+#+          on radioactive Np-237
 #AUTHOR(S)  J.Adam, A.R.Balabekyan, R.Brandt,
 #+          V.P.Dzhelepov, S.A.Gustov, V.G.Kalinnikov,
 #+          M.I.Krivopustov, I.V.Mirokhin, J.Mrazek,
@@ -718,7 +833,7 @@
 #YEAR       2000
 #INSTITUTE  (4ZZZDUB)
 #TITLE      Results of investigation of proton-nuclear reactions
-#+          on radioactive Np-237.
+#+          on radioactive Np-237
 #AUTHOR(S)  J.Adam, A.R.Balabekyan, R.Brandt,
 #+          V.P.Dzhelepov, S.A.Gustov, V.G.Kalinnikov,
 #+          M.I.Krivopustov, I.V.Mirokhin, J.Mrazek,
@@ -2499,6 +2614,46 @@
  1001 93237 203  18    3.2220+7          0.511900              18.9  93237.9                     T.Ohtsuki,ET.AL. (89)    E1305 21
  1001 93237 203  18    3.5500+7          0.243600              18.9  93237.9                     T.Ohtsuki,ET.AL. (89)    E1305 21
 #/DATA      26
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0606
+#AUTHOR1    A.N.Smirnov+
+#YEAR       1991
+#INSTITUTE  (4RUSRI)
+#TITLE      Total and differential cross sections of 10 to 95 MeV
+#+          proton-induced fission of actinide nuclei
+#AUTHOR(S)  A.N.Smirnov, I.Yu.Gorshkov, A.V.Prokofiev,
+#+          V.P.Eismont
+#REF-CODE   (C,91GAUSSG,,214,1991)
+#REFERENCE  Conf. 21.Int.Symp.on Nucl.Phys., Gaussig 1991
+#+          p.214, 1991
+#DATASETS   8
+#
+#DATASET    O0606007
+#DATE       20200204
+#REACTION   (93-NP-237(P,F),,SIG)/(92-U-238(P,F),,SIG)
+#PROJ       1001
+#TARG       93237
+#MF         203
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 93237 203  18   ]
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 93237 203  18    2.4000+7 2000000. 1.060000 0.095400     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    2.7000+7 2000000. 1.120000 0.100800     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    2.9000+7 2000000. 1.080000 0.097200     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    3.4000+7 2000000. 1.050000 0.094500     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    3.7000+7 2000000. 1.060000 0.095400     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    4.2000+7 2000000. 0.980000 0.088200     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    4.9000+7 2000000. 1.050000 0.094500     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    5.4000+7 2000000. 1.040000 0.093600     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    5.9000+7 2000000. 1.090000 0.098100     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+ 1001 93237 203  18    6.9000+7 2000000. 0.990000 0.089100     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  7
+#/DATA      10
 #/DATASET
 #/ENTRY
 #

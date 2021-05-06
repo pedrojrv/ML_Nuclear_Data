@@ -75,7 +75,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -94,37 +94,6 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 62147   3   2    0.025300          7.200000 0.800000                                       S.F.Mughabghab (06)      V10021852
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      40363
-#AUTHOR1    V.K.Gorshkov+
-#YEAR       1957
-#INSTITUTE  (4RUSITE)
-#TITLE      The yield of U-235 fission products in the rare-earth
-#+          region
-#AUTHOR(S)  V.K.Gorshkov, R.N.Ivanov, G.M.Kukavadze,
-#+          I.A.Reformatsky
-#REF-CODE   (J,SJA,3,729,1957)
-#REFERENCE  Jour. Soviet Atomic Energy
-#+          Vol.3, p.729, 1957
-#DATASETS   4
-#
-#DATASET    40363004
-#DATE       20170101
-#REACTION   62-SM-147(N,ABS),,SIG
-#PROJ       1
-#TARG       62147
-#MF         3
-#MT         101
-#DATA-HDR   DATA
-#C4BEGIN    [    1 62147   3 101   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147   3 101    0.025000          1000.000 50.00000                                       V.K.Gorshkov,ET.AL. (57) 40363  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -156,6 +125,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 62147   3 101 D  0.025300          56.00000 7.000000                                       H.M.EILAND,ET.AL. (74)   10147 12
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40363
+#AUTHOR1    V.K.Gorshkov+
+#YEAR       1957
+#INSTITUTE  (4RUSITE)
+#TITLE      The yield of U-235 fission products in the rare-earth
+#+          region
+#AUTHOR(S)  V.K.Gorshkov, R.N.Ivanov, G.M.Kukavadze,
+#+          I.A.Reformatsky
+#REF-CODE   (J,SJA,3,729,1957)
+#REFERENCE  Jour. Soviet Atomic Energy
+#+          Vol.3, p.729, 1957
+#DATASETS   4
+#
+#DATASET    40363004
+#DATE       20200902
+#REACTION   62-SM-147(N,G)62-SM-148,,SIG
+#PROJ       1
+#TARG       62147
+#MF         3
+#MT         102
+#PRODUCT    62-SM-148
+#DATA-HDR   DATA
+#C4BEGIN    [    1 62147   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 62147   3 102    0.025000          1000.000 50.00000                                       V.K.Gorshkov,ET.AL. (57) 40363  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -217,6 +218,37 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 62147   3 102    0.025300          51.00000 3.000000                                       N.C.FENNER,ET.AL. (67)   20631  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20637
+#AUTHOR1    R.Dobrozemsky+
+#YEAR       1971
+#INSTITUTE  (2AUSSGA)
+#TITLE      Mass spectrometric determination of neutron capture
+#+          cross sections of rare earth isotopes
+#AUTHOR(S)  R.Dobrozemsky, F.Pichlmayer, F.P.Viehboeck
+#REF-CODE   (J,JMS,6,435,1971)
+#REFERENCE  Jour. Internat.J.of Mass Spectrometry and Ion Physics
+#+          Vol.6, p.435, 1971
+#DATASETS   13
+#
+#DATASET    20637002
+#DATE       20191106
+#REACTION   62-SM-147(N,G)62-SM-148,,SIG
+#PROJ       1
+#TARG       62147
+#MF         3
+#MT         102
+#PRODUCT    62-SM-148
+#DATA-HDR   DATA
+#C4BEGIN    [    1 62147   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 62147   3 102    0.025300          64.00000 5.000000                                       R.Dobrozemsky,ET.AL. (71)20637  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -295,7 +327,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1240,7 +1272,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1337,7 +1369,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -3110,39 +3142,6 @@
 #/ENTRY
 #
 #
-#ENTRY      30261
-#AUTHOR1    L.Glowacka+
-#YEAR       1973
-#INSTITUTE  (3POLIPJ)
-#TITLE      Differential cross sections for the (n,alpha) reactions
-#+          on Sm-147, Sm-149, Eu-151, Dy-161, Ho-165 at 18 MeV.
-#AUTHOR(S)  L.Glowacka, M.Jaskola, M.Kozlowski,
-#+          W.Osakiewicz, J.Turkiewicz, L.Zemlo
-#REF-CODE   (P,INR-1464,1,197305)
-#REFERENCE  Prog. Inst.Badan Jadr.(Nucl.Res.),Swierk+Warsaw,Repts
-#+          No.1464, p.1, 1973
-#DATASETS   13
-#
-#DATASET    30261003
-#DATE       20160203
-#REACTION   62-SM-147(N,A)60-ND-144,,DA
-#PROJ       1
-#TARG       62147
-#MF         4
-#MT         107
-#PRODUCT    60-ND-144
-#DATA-HDR   DATA
-#C4BEGIN    [    1 62147   4 107 D ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147   4 107 D  1.8150+7 120000.0 1.6400-3 3.0000-4 0.819152 0.196175                     L.Glowacka,ET.AL. (73)   30261  3
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      30480
 #AUTHOR1    L.Glowacka+
 #YEAR       1979
@@ -3220,18 +3219,18 @@
 #AUTHOR1    L.Glowacka+
 #YEAR       1974
 #INSTITUTE  (3POLIBJ)
-#TITLE      Differential cross sections for the (n,alpha) reactions
-#+          induced by 14 MeV neutrons in Sm-147, Sm-149, Eu-151,
-#+          Eu-153,Dy-161,Dy-163,Yb-171 and Yb-173 nuclei.-
+#TITLE      Differential cross sections for the (n,a) reactions
+#+          induced by 14 and 18 MeV neutrons in some rare-earth
+#+          nuclei
 #AUTHOR(S)  L.Glowacka, M.Jaskola, W.Osakiewicz,
 #+          J.Turkiewicz, L.Zemlo
-#REF-CODE   (P,INDC(SEC)-42,193,197412)
+#REF-CODE   (P,INDC(SEC)-42,193,1974)
 #REFERENCE  Prog. I.N.D.C. Secretariat Report Series
 #+          No.42, p.193, 1974
-#DATASETS   15
+#DATASETS   20
 #
 #DATASET    30298003
-#DATE       20060703
+#DATE       20191104
 #REACTION   62-SM-147(N,A)60-ND-144,PAR,DA
 #PROJ       1
 #TARG       62147
@@ -3244,7 +3243,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147   4 801 D  1.4050+7          1.3610-3 4.6000-5 0.819152 0.405581 2.0185+7 4265000. E2L.GLOWACKA,ET.AL. (74)   30298  3
+    1 62147   4 801 D  1.4050+7          1.3610-3 4.6000-5 0.819152 0.405581 2.0185+7 4265000. E2L.Glowacka,ET.AL. (74)   30298  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -3286,6 +3285,39 @@
     1 62147   4 801 A  1.4100+7 150000.0 1.0000-5 5.0000-5-0.694661          5500000.          E2L.Glowacka,ET.AL. (79)   30480  4
     1 62147   4 801 A  1.4100+7 150000.0 0.000000 6.0000-5-0.906309          5500000.          E2L.Glowacka,ET.AL. (79)   30480  4
 #/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30261
+#AUTHOR1    L.Glowacka+
+#YEAR       1973
+#INSTITUTE  (3POLIPJ)
+#TITLE      Differential cross sections for 18 MeV neutron induced
+#+          reactions on the 147Sm, 149Sm, 151Eu, 161Dy and 165Ho
+#AUTHOR(S)  L.Glowacka, M.Jaskola, M.Kozlowski,
+#+          W.Osakiewicz, J.Turkiewicz, L.Zemlo
+#REF-CODE   (P,INR-1464,1,1973)
+#REFERENCE  Prog. Inst.Badan Jadr.(Nucl.Res.),Swierk+Warsaw,Repts
+#+          No.1464, p.1, 1973
+#DATASETS   15
+#
+#DATASET    30261003
+#DATE       20191104
+#REACTION   62-SM-147(N,A)60-ND-144,PAR,DA
+#PROJ       1
+#TARG       62147
+#MF         4
+#MT         801
+#PRODUCT    60-ND-144
+#DATA-HDR   DATA
+#C4BEGIN    [    1 62147   4 801 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 62147   4 801 D  1.8150+7 60000.00 1.6400-3 3.0000-4 0.819152          2.3600+7 4800000. E2L.Glowacka,ET.AL. (73)   30261  3
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -3449,18 +3481,18 @@
 #AUTHOR1    L.Glowacka+
 #YEAR       1974
 #INSTITUTE  (3POLIBJ)
-#TITLE      Differential cross sections for the (n,alpha) reactions
-#+          induced by 14 MeV neutrons in Sm-147, Sm-149, Eu-151,
-#+          Eu-153,Dy-161,Dy-163,Yb-171 and Yb-173 nuclei.-
+#TITLE      Differential cross sections for the (n,a) reactions
+#+          induced by 14 and 18 MeV neutrons in some rare-earth
+#+          nuclei
 #AUTHOR(S)  L.Glowacka, M.Jaskola, W.Osakiewicz,
 #+          J.Turkiewicz, L.Zemlo
-#REF-CODE   (P,INDC(SEC)-42,193,197412)
+#REF-CODE   (P,INDC(SEC)-42,193,1974)
 #REFERENCE  Prog. I.N.D.C. Secretariat Report Series
 #+          No.42, p.193, 1974
-#DATASETS   15
+#DATASETS   20
 #
 #DATASET    30298002
-#DATE       20060703
+#DATE       20191104
 #REACTION   62-SM-147(N,A)60-ND-144,,DA/DE
 #PROJ       1
 #TARG       62147
@@ -3468,56 +3500,180 @@
 #MT         107
 #PRODUCT    60-ND-144
 #DATA-HDR   DATA
-#C4BEGIN    [    1 62147   6 107 A ]
-#X4STATUS   [APRVD] Approved by author
+#C4BEGIN    [    1 62147   6 107 C ]
+#X4STATUS   [COREL] Data correlated with another data set
 #DATA       44
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147   6 107 A  1.4050+7          1.160-10 6.600-11 0.819152 0.405581 1.5920+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          7.500-11 6.300-11 0.819152 0.405581 1.6120+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.490-10 5.800-11 0.819152 0.405581 1.6320+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.280-10 5.600-11 0.819152 0.405581 1.6510+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.800-10 5.200-11 0.819152 0.405581 1.6710+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.190-10 5.200-11 0.819152 0.405581 1.6910+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.620-10 4.800-11 0.819152 0.405581 1.7110+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.860-10 4.600-11 0.819152 0.405581 1.7310+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.730-10 4.300-11 0.819152 0.405581 1.7510+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.610-10 4.100-11 0.819152 0.405581 1.7710+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.440-10 3.800-11 0.819152 0.405581 1.7900+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.730-10 4.100-11 0.819152 0.405581 1.8100+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.520-10 3.700-11 0.819152 0.405581 1.8300+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.470-10 3.900-11 0.819152 0.405581 1.8500+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.380-10 3.500-11 0.819152 0.405581 1.8700+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.470-10 3.700-11 0.819152 0.405581 1.8900+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.840-10 3.600-11 0.819152 0.405581 1.9090+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.600-10 3.300-11 0.819152 0.405581 1.9290+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.370-10 3.200-11 0.819152 0.405581 1.9490+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.740-10 3.200-11 0.819152 0.405581 1.9690+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          3.630-10 3.400-11 0.819152 0.405581 1.9890+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          3.030-10 3.200-11 0.819152 0.405581 2.0090+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          3.260-10 3.400-11 0.819152 0.405581 2.0290+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.630-10 3.000-11 0.819152 0.405581 2.0480+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          2.550-10 2.900-11 0.819152 0.405581 2.0680+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.680-10 2.500-11 0.819152 0.405581 2.0880+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.180-10 2.100-11 0.819152 0.405581 2.1080+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.070-10 1.900-11 0.819152 0.405581 2.1280+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          8.900-11 1.800-11 0.819152 0.405581 2.1480+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.020-10 1.800-11 0.819152 0.405581 2.1680+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.240-10 2.000-11 0.819152 0.405581 2.1870+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.030-10 1.800-11 0.819152 0.405581 2.2070+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.190-10 1.800-11 0.819152 0.405581 2.2270+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          7.900-11 1.500-11 0.819152 0.405581 2.2470+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          7.900-11 1.500-11 0.819152 0.405581 2.2670+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          4.600-11 1.100-11 0.819152 0.405581 2.2870+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          3.600-11 1.000-11 0.819152 0.405581 2.3060+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          3.000-11 9.000-12 0.819152 0.405581 2.3260+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          4.400-11 1.100-11 0.819152 0.405581 2.3460+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          6.600-11 1.400-11 0.819152 0.405581 2.3660+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          8.500-11 1.500-11 0.819152 0.405581 2.3860+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          4.500-11 1.100-11 0.819152 0.405581 2.4060+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          1.500-11 7.000-12 0.819152 0.405581 2.4260+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
-    1 62147   6 107 A  1.4050+7          5.000-12 4.000-12 0.819152 0.405581 2.4450+7          E2L.GLOWACKA,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.160-10 6.600-11 0.819152 0.405581 1.5920+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          7.500-11 6.300-11 0.819152 0.405581 1.6120+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.490-10 5.800-11 0.819152 0.405581 1.6320+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.280-10 5.600-11 0.819152 0.405581 1.6510+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.800-10 5.200-11 0.819152 0.405581 1.6710+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.190-10 5.200-11 0.819152 0.405581 1.6910+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.620-10 4.800-11 0.819152 0.405581 1.7110+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.860-10 4.600-11 0.819152 0.405581 1.7310+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.730-10 4.300-11 0.819152 0.405581 1.7510+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.610-10 4.100-11 0.819152 0.405581 1.7710+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.440-10 3.800-11 0.819152 0.405581 1.7900+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.730-10 4.100-11 0.819152 0.405581 1.8100+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.520-10 3.700-11 0.819152 0.405581 1.8300+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.470-10 3.900-11 0.819152 0.405581 1.8500+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.380-10 3.500-11 0.819152 0.405581 1.8700+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.470-10 3.700-11 0.819152 0.405581 1.8900+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.840-10 3.600-11 0.819152 0.405581 1.9090+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.600-10 3.300-11 0.819152 0.405581 1.9290+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.370-10 3.200-11 0.819152 0.405581 1.9490+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.740-10 3.200-11 0.819152 0.405581 1.9690+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          3.630-10 3.400-11 0.819152 0.405581 1.9890+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          3.030-10 3.200-11 0.819152 0.405581 2.0090+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          3.260-10 3.400-11 0.819152 0.405581 2.0290+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.630-10 3.000-11 0.819152 0.405581 2.0480+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          2.550-10 2.900-11 0.819152 0.405581 2.0680+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.680-10 2.500-11 0.819152 0.405581 2.0880+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.180-10 2.100-11 0.819152 0.405581 2.1080+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.070-10 1.900-11 0.819152 0.405581 2.1280+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          8.900-11 1.800-11 0.819152 0.405581 2.1480+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.020-10 1.800-11 0.819152 0.405581 2.1680+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.240-10 2.000-11 0.819152 0.405581 2.1870+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.030-10 1.800-11 0.819152 0.405581 2.2070+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.190-10 1.800-11 0.819152 0.405581 2.2270+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          7.900-11 1.500-11 0.819152 0.405581 2.2470+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          7.900-11 1.500-11 0.819152 0.405581 2.2670+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          4.600-11 1.100-11 0.819152 0.405581 2.2870+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          3.600-11 1.000-11 0.819152 0.405581 2.3060+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          3.000-11 9.000-12 0.819152 0.405581 2.3260+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          4.400-11 1.100-11 0.819152 0.405581 2.3460+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          6.600-11 1.400-11 0.819152 0.405581 2.3660+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          8.500-11 1.500-11 0.819152 0.405581 2.3860+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          4.500-11 1.100-11 0.819152 0.405581 2.4060+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          1.500-11 7.000-12 0.819152 0.405581 2.4260+7          E2L.Glowacka,ET.AL. (74)   30298  2
+    1 62147   6 107 C  1.4050+7          5.000-12 4.000-12 0.819152 0.405581 2.4450+7          E2L.Glowacka,ET.AL. (74)   30298  2
 #/DATA      44
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30298
+#AUTHOR1    L.Glowacka+
+#YEAR       1974
+#INSTITUTE  (3POLIBJ)
+#TITLE      Differential cross sections for the (n,a) reactions
+#+          induced by 14 and 18 MeV neutrons in some rare-earth
+#+          nuclei
+#AUTHOR(S)  L.Glowacka, M.Jaskola, W.Osakiewicz,
+#+          J.Turkiewicz, L.Zemlo
+#REF-CODE   (P,INDC(SEC)-42,193,1974)
+#REFERENCE  Prog. I.N.D.C. Secretariat Report Series
+#+          No.42, p.193, 1974
+#DATASETS   20
+#
+#DATASET    30298017
+#DATE       20191104
+#REACTION   62-SM-147(N,A)60-ND-144,,DA/DE
+#PROJ       1
+#TARG       62147
+#MF         6
+#MT         107
+#PRODUCT    60-ND-144
+#DATA-HDR   DATA
+#C4BEGIN    [    1 62147   6 107 C ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       91
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 62147   6 107 C  1.4050+7          1.689-10 1.212-10 0.819152          1.5270+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.612-10 1.135-10 0.819152          1.5370+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.032-10 1.155-10 0.819152          1.5470+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          9.700-11 1.042-10 0.819152          1.5570+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          7.860-11 9.960-11 0.819152          1.5670+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          8.680-11 9.340-11 0.819152          1.5770+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.443-10 9.450-11 0.819152          1.5860+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          9.290-11 8.880-11 0.819152          1.5960+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          5.700-11 8.830-11 0.819152          1.6060+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          7.550-11 8.420-11 0.819152          1.6160+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.228-10 7.960-11 0.819152          1.6250+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.176-10 8.210-11 0.819152          1.6360+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.381-10 7.550-11 0.819152          1.6460+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.751-10 7.390-11 0.819152          1.6560+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.843-10 7.440-11 0.819152          1.6660+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          9.040-11 7.700-11 0.819152          1.6760+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.479-10 6.880-11 0.819152          1.6860+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.050-10 7.080-11 0.819152          1.6960+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.197-10 6.570-11 0.819152          1.7060+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.428-10 6.780-11 0.819152          1.7160+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.294-10 6.260-11 0.819152          1.7260+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.817-10 6.370-11 0.819152          1.7360+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.638-10 5.850-11 0.819152          1.7460+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.391-10 5.750-11 0.819152          1.7560+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.823-10 5.850-11 0.819152          1.7660+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.212-10 5.440-11 0.819152          1.7760+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.674-10 5.440-11 0.819152          1.7860+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.597-10 5.750-11 0.819152          1.7960+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.859-10 5.750-11 0.819152          1.8060+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.366-10 5.030-11 0.819152          1.8160+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.679-10 5.490-11 0.819152          1.8260+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.788-10 5.540-11 0.819152          1.8350+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.161-10 5.440-11 0.819152          1.8450+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.526-10 5.080-11 0.819152          1.8550+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.228-10 4.880-11 0.819152          1.8650+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.582-10 5.290-11 0.819152          1.8750+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.357-10 5.190-11 0.819152          1.8850+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.911-10 5.190-11 0.819152          1.8950+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.772-10 5.130-11 0.819152          1.9050+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.731-10 4.880-11 0.819152          1.9150+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.475-10 4.570-11 0.819152          1.9250+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.403-10 4.720-11 0.819152          1.9350+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.336-10 4.360-11 0.819152          1.9450+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.700-10 4.620-11 0.819152          1.9550+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.777-10 4.310-11 0.819152          1.9650+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.476-10 4.720-11 0.819152          1.9750+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.789-10 4.830-11 0.819152          1.9850+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.183-10 4.520-11 0.819152          1.9950+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.880-10 4.570-11 0.819152          2.0050+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.507-10 5.030-11 0.819152          2.0150+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.019-10 4.470-11 0.819152          2.0250+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.469-10 4.160-11 0.819152          2.0350+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.798-10 4.210-11 0.819152          2.0450+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.870-10 4.360-11 0.819152          2.0550+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.223-10 3.900-11 0.819152          2.0650+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.746-10 3.650-11 0.819152          2.0750+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.612-10 3.290-11 0.819152          2.0840+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.052-10 2.930-11 0.819152          2.0940+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.304-10 3.030-11 0.819152          2.1040+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.186-10 2.670-11 0.819152          2.1140+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          9.500-11 2.620-11 0.819152          2.1240+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          6.930-11 2.410-11 0.819152          2.1340+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.094-10 2.620-11 0.819152          2.1440+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.042-10 2.670-11 0.819152          2.1540+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.006-10 2.460-11 0.819152          2.1640+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.273-10 2.770-11 0.819152          2.1740+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.212-10 2.770-11 0.819152          2.1840+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          8.880-11 2.520-11 0.819152          2.1940+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.181-10 2.520-11 0.819152          2.2040+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          1.432-10 2.880-11 0.819152          2.2140+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          9.550-11 2.260-11 0.819152          2.2240+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          8.110-11 2.100-11 0.819152          2.2340+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          7.700-11 2.050-11 0.819152          2.2440+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          8.730-11 2.160-11 0.819152          2.2540+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          7.080-11 2.050-11 0.819152          2.2640+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          5.600-11 1.850-11 0.819152          2.2740+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.590-11 1.330-11 0.819152          2.2840+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.850-11 1.390-11 0.819152          2.2940+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.440-11 1.330-11 0.819152          2.3040+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.930-11 1.230-11 0.819152          2.3140+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.130-11 1.440-11 0.819152          2.3240+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          4.880-11 1.590-11 0.819152          2.3330+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          3.900-11 1.440-11 0.819152          2.3430+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          5.340-11 1.850-11 0.819152          2.3530+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          7.910-11 2.160-11 0.819152          2.3630+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          7.500-11 1.950-11 0.819152          2.3730+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          9.450-11 2.210-11 0.819152          2.3830+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          4.980-11 1.590-11 0.819152          2.3930+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          4.110-11 1.440-11 0.819152          2.4030+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          2.160-11 1.280-11 0.819152          2.4130+7          E2L.Glowacka,ET.AL. (74)   30298 17
+    1 62147   6 107 C  1.4050+7          8.200-12 6.700-12 0.819152          2.4230+7          E2L.Glowacka,ET.AL. (74)   30298 17
+#/DATA      91
 #/DATASET
 #/ENTRY
 #
@@ -3526,17 +3682,17 @@
 #AUTHOR1    L.Glowacka+
 #YEAR       1973
 #INSTITUTE  (3POLIPJ)
-#TITLE      Differential cross sections for the (n,alpha) reactions
-#+          on Sm-147, Sm-149, Eu-151, Dy-161, Ho-165 at 18 MeV.
+#TITLE      Differential cross sections for 18 MeV neutron induced
+#+          reactions on the 147Sm, 149Sm, 151Eu, 161Dy and 165Ho
 #AUTHOR(S)  L.Glowacka, M.Jaskola, M.Kozlowski,
 #+          W.Osakiewicz, J.Turkiewicz, L.Zemlo
-#REF-CODE   (P,INR-1464,1,197305)
+#REF-CODE   (P,INR-1464,1,1973)
 #REFERENCE  Prog. Inst.Badan Jadr.(Nucl.Res.),Swierk+Warsaw,Repts
 #+          No.1464, p.1, 1973
-#DATASETS   13
+#DATASETS   15
 #
 #DATASET    30261002
-#DATE       20160203
+#DATE       20191104
 #REACTION   62-SM-147(N,A)60-ND-144,,DA/DE
 #PROJ       1
 #TARG       62147
@@ -3544,61 +3700,191 @@
 #MT         107
 #PRODUCT    60-ND-144
 #DATA-HDR   DATA
-#C4BEGIN    [    1 62147   6 107 A ]
-#X4STATUS   [APRVD] Approved by author
+#C4BEGIN    [    1 62147   6 107 C ]
+#X4STATUS   [COREL] Data correlated with another data set
 #DATA       49
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147   6 107 A  1.8150+7 120000.0 3.280-10 8.500-11 0.819152 0.196175 1.8830+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 9.800-11 8.100-11 0.819152 0.196175 1.9030+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.970-10 8.000-11 0.819152 0.196175 1.9230+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.590-10 7.600-11 0.819152 0.196175 1.9430+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 3.140-10 7.200-11 0.819152 0.196175 1.9630+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.040-10 6.700-11 0.819152 0.196175 1.9830+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 6.800-11 6.600-11 0.819152 0.196175 2.0020+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.920-10 6.000-11 0.819152 0.196175 2.0220+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.040-10 5.900-11 0.819152 0.196175 2.0420+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.730-10 5.700-11 0.819152 0.196175 2.0620+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.900-10 5.500-11 0.819152 0.196175 2.0820+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.600-10 5.500-11 0.819152 0.196175 2.1020+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.730-10 4.900-11 0.819152 0.196175 2.1220+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.110-10 4.900-11 0.819152 0.196175 2.1420+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.830-10 4.600-11 0.819152 0.196175 2.1620+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.620-10 4.300-11 0.819152 0.196175 2.1810+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.760-10 4.400-11 0.819152 0.196175 2.2010+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.110-10 4.100-11 0.819152 0.196175 2.2210+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.220-10 4.100-11 0.819152 0.196175 2.2410+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.920-10 3.900-11 0.819152 0.196175 2.2610+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.410-10 3.800-11 0.819152 0.196175 2.2810+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 3.320-10 4.000-11 0.819152 0.196175 2.3010+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.860-10 3.800-11 0.819152 0.196175 2.3210+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 3.420-10 3.800-11 0.819152 0.196175 2.3400+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 3.020-10 3.500-11 0.819152 0.196175 2.3600+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.880-10 3.500-11 0.819152 0.196175 2.3800+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.860-10 3.300-11 0.819152 0.196175 2.4000+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.950-10 3.400-11 0.819152 0.196175 2.4200+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.930-10 3.300-11 0.819152 0.196175 2.4400+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.970-10 3.300-11 0.819152 0.196175 2.4600+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.130-10 2.700-11 0.819152 0.196175 2.4800+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.520-10 2.600-11 0.819152 0.196175 2.4990+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 9.600-11 2.100-11 0.819152 0.196175 2.5190+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 8.400-11 2.000-11 0.819152 0.196175 2.5390+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 8.400-11 1.900-11 0.819152 0.196175 2.5590+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 7.500-11 1.700-11 0.819152 0.196175 2.5790+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 5.900-11 1.600-11 0.819152 0.196175 2.5990+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 6.800-11 1.600-11 0.819152 0.196175 2.6190+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 8.700-11 1.700-11 0.819152 0.196175 2.6390+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 5.900-11 1.600-11 0.819152 0.196175 2.6590+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 5.900-11 1.500-11 0.819152 0.196175 2.6780+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.400-11 1.200-11 0.819152 0.196175 2.6980+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.600-11 1.100-11 0.819152 0.196175 2.7180+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.900-11 1.100-11 0.819152 0.196175 2.7380+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.800-11 1.200-11 0.819152 0.196175 2.7580+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 3.300-11 1.200-11 0.819152 0.196175 2.7780+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 6.600-11 1.400-11 0.819152 0.196175 2.7980+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 2.800-11 1.000-11 0.819152 0.196175 2.8180+7          E2L.Glowacka,ET.AL. (73)   30261  2
-    1 62147   6 107 A  1.8150+7 120000.0 1.600-11 7.000-12 0.819152 0.196175 2.8370+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 3.280-10 8.500-11 0.819152          1.8830+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 9.800-11 8.100-11 0.819152          1.9030+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.970-10 8.000-11 0.819152          1.9230+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.590-10 7.600-11 0.819152          1.9430+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 3.140-10 7.200-11 0.819152          1.9630+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.040-10 6.700-11 0.819152          1.9830+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 6.800-11 6.600-11 0.819152          2.0020+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.920-10 6.000-11 0.819152          2.0220+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.040-10 5.900-11 0.819152          2.0420+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.730-10 5.700-11 0.819152          2.0620+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.900-10 5.500-11 0.819152          2.0820+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.600-10 5.500-11 0.819152          2.1020+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.730-10 4.900-11 0.819152          2.1220+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.110-10 4.900-11 0.819152          2.1420+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.830-10 4.600-11 0.819152          2.1620+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.620-10 4.300-11 0.819152          2.1810+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.760-10 4.400-11 0.819152          2.2010+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.110-10 4.100-11 0.819152          2.2210+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.220-10 4.100-11 0.819152          2.2410+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.920-10 3.900-11 0.819152          2.2610+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.410-10 3.800-11 0.819152          2.2810+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 3.320-10 4.000-11 0.819152          2.3010+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.860-10 3.800-11 0.819152          2.3210+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 3.420-10 3.800-11 0.819152          2.3400+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 3.020-10 3.500-11 0.819152          2.3600+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.880-10 3.500-11 0.819152          2.3800+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.860-10 3.300-11 0.819152          2.4000+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.950-10 3.400-11 0.819152          2.4200+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.930-10 3.300-11 0.819152          2.4400+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.970-10 3.300-11 0.819152          2.4600+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.130-10 2.700-11 0.819152          2.4800+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.520-10 2.600-11 0.819152          2.4990+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 9.600-11 2.100-11 0.819152          2.5190+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 8.400-11 2.000-11 0.819152          2.5390+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 8.400-11 1.900-11 0.819152          2.5590+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 7.500-11 1.700-11 0.819152          2.5790+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 5.900-11 1.600-11 0.819152          2.5990+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 6.800-11 1.600-11 0.819152          2.6190+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 8.700-11 1.700-11 0.819152          2.6390+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 5.900-11 1.600-11 0.819152          2.6590+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 5.900-11 1.500-11 0.819152          2.6780+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.400-11 1.200-11 0.819152          2.6980+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.600-11 1.100-11 0.819152          2.7180+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.900-11 1.100-11 0.819152          2.7380+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.800-11 1.200-11 0.819152          2.7580+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 3.300-11 1.200-11 0.819152          2.7780+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 6.600-11 1.400-11 0.819152          2.7980+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 2.800-11 1.000-11 0.819152          2.8180+7          E2L.Glowacka,ET.AL. (73)   30261  2
+    1 62147   6 107 C  1.8150+7 60000.00 1.600-11 7.000-12 0.819152          2.8370+7          E2L.Glowacka,ET.AL. (73)   30261  2
 #/DATA      49
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30261
+#AUTHOR1    L.Glowacka+
+#YEAR       1973
+#INSTITUTE  (3POLIPJ)
+#TITLE      Differential cross sections for 18 MeV neutron induced
+#+          reactions on the 147Sm, 149Sm, 151Eu, 161Dy and 165Ho
+#AUTHOR(S)  L.Glowacka, M.Jaskola, M.Kozlowski,
+#+          W.Osakiewicz, J.Turkiewicz, L.Zemlo
+#REF-CODE   (P,INR-1464,1,1973)
+#REFERENCE  Prog. Inst.Badan Jadr.(Nucl.Res.),Swierk+Warsaw,Repts
+#+          No.1464, p.1, 1973
+#DATASETS   15
+#
+#DATASET    30261015
+#DATE       20191104
+#REACTION   62-SM-147(N,A)60-ND-144,,DA/DE
+#PROJ       1
+#TARG       62147
+#MF         6
+#MT         107
+#PRODUCT    60-ND-144
+#DATA-HDR   DATA
+#C4BEGIN    [    1 62147   6 107 C ]
+#X4STATUS   [COREL] Data correlated with another data set
+#DATA       98
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 62147   6 107 C  1.8200+7          3.454-10 1.236-10 0.819152          1.8780+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.098-10 1.179-10 0.819152          1.8880+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.811-10 1.161-10 0.819152          1.8980+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.640-11 1.142-10 0.819152          1.9080+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.554-10 1.147-10 0.819152          1.9180+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.354-10 1.123-10 0.819152          1.9280+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.133-10 1.076-10 0.819152          1.9380+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.050-10 1.058-10 0.819152          1.9480+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.168-10 1.025-10 0.819152          1.9580+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.122-10 9.970-11 0.819152          1.9680+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.443-10 9.780-11 0.819152          1.9780+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.629-10 9.270-11 0.819152          1.9880+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.420-11 9.310-11 0.819152          1.9970+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          5.100-11 9.270-11 0.819152          2.0070+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.385-10 8.660-11 0.819152          2.0170+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.471-10 8.380-11 0.819152          2.0270+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.975-10 8.610-11 0.819152          2.0370+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.078-10 8.190-11 0.819152          2.0470+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.947-10 8.140-11 0.819152          2.0570+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.521-10 8.050-11 0.819152          2.0670+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.540-10 7.910-11 0.819152          2.0770+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.232-10 7.720-11 0.819152          2.0870+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.874-10 7.860-11 0.819152          2.0970+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.321-10 7.530-11 0.819152          2.1070+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.830-10 6.790-11 0.819152          2.1170+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.619-10 6.930-11 0.819152          2.1270+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.783-10 7.020-11 0.819152          2.1370+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.420-10 6.790-11 0.819152          2.1470+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.092-10 6.650-11 0.819152          2.1570+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.558-10 6.460-11 0.819152          2.1660+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.451-10 6.180-11 0.819152          2.1760+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.760-10 5.940-11 0.819152          2.1860+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.722-10 6.220-11 0.819152          2.1960+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.769-10 6.130-11 0.819152          2.2060+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.265-10 5.850-11 0.819152          2.2160+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.956-10 5.710-11 0.819152          2.2260+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.952-10 5.760-11 0.819152          2.2360+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.480-10 5.850-11 0.819152          2.2460+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.148-10 5.710-11 0.819152          2.2560+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.675-10 5.290-11 0.819152          2.2660+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.087-10 5.290-11 0.819152          2.2760+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.728-10 5.430-11 0.819152          2.2860+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.187-10 5.520-11 0.819152          2.2960+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.440-10 5.800-11 0.819152          2.3060+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.925-10 5.620-11 0.819152          2.3160+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.761-10 5.190-11 0.819152          2.3260+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.604-10 5.480-11 0.819152          2.3350+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.243-10 5.290-11 0.819152          2.3450+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.958-10 5.010-11 0.819152          2.3550+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.056-10 5.010-11 0.819152          2.3650+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.686-10 4.910-11 0.819152          2.3750+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.084-10 4.960-11 0.819152          2.3850+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.042-10 4.770-11 0.819152          2.3950+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.686-10 4.540-11 0.819152          2.4050+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.733-10 4.730-11 0.819152          2.4150+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.178-10 4.870-11 0.819152          2.4250+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.724-10 4.680-11 0.819152          2.4350+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.131-10 4.540-11 0.819152          2.4450+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.295-10 4.870-11 0.819152          2.4550+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.668-10 4.450-11 0.819152          2.4650+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.195-10 3.880-11 0.819152          2.4750+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.064-10 3.740-11 0.819152          2.4850+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.699-10 3.650-11 0.819152          2.4940+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.320-10 3.560-11 0.819152          2.5040+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.330-11 3.000-11 0.819152          2.5140+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.072-10 2.900-11 0.819152          2.5240+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.800-11 2.900-11 0.819152          2.5340+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          7.860-11 2.850-11 0.819152          2.5440+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          9.310-11 2.710-11 0.819152          2.5540+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          7.440-11 2.530-11 0.819152          2.5640+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          6.220-11 2.250-11 0.819152          2.5740+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.750-11 2.530-11 0.819152          2.5840+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          6.180-11 2.110-11 0.819152          2.5940+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          5.710-11 2.390-11 0.819152          2.6040+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          6.460-11 2.290-11 0.819152          2.6140+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          7.300-11 2.290-11 0.819152          2.6240+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.420-11 2.430-11 0.819152          2.6340+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.850-11 2.430-11 0.819152          2.6440+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          8.140-11 2.430-11 0.819152          2.6540+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.740-11 1.920-11 0.819152          2.6630+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          5.710-11 2.150-11 0.819152          2.6730+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          5.900-11 2.200-11 0.819152          2.6830+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.200-11 1.870-11 0.819152          2.6930+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          5.100-12 1.540-11 0.819152          2.7030+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          5.100-12 1.360-11 0.819152          2.7130+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.670-11 1.590-11 0.819152          2.7230+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.060-11 1.360-11 0.819152          2.7330+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.730-11 1.830-11 0.819152          2.7430+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.000-11 1.870-11 0.819152          2.7530+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.810-11 1.540-11 0.819152          2.7630+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          2.900-11 1.640-11 0.819152          2.7730+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.560-11 1.730-11 0.819152          2.7830+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          6.460-11 2.060-11 0.819152          2.7930+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          6.460-11 1.920-11 0.819152          2.8030+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          3.560-11 1.640-11 0.819152          2.8130+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.870-11 1.260-11 0.819152          2.8230+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.970-11 1.080-11 0.819152          2.8320+7          E2L.Glowacka,ET.AL. (73)   30261 15
+    1 62147   6 107 C  1.8200+7          1.500-11 9.800-12 0.819152          2.8420+7          E2L.Glowacka,ET.AL. (73)   30261 15
+#/DATA      98
 #/DATASET
 #/ENTRY
 #
@@ -3856,6 +4142,133 @@
     1 62147 4026001                      687.0000                                                A.Antonov,ET.AL. (84)    40864  61
     1 62147 4026001                      692.0000                                                A.Antonov,ET.AL. (84)    40864  61
 #/DATA      70
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41122
+#AUTHOR1    G.Georgiev+
+#YEAR       1993
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Determination of 147Sm and 148Sm resonance parameters
+#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikelner,
+#+          G.V.Muradyan, Yu.V.Grigoriev, T.Madjarski,
+#+          N.Janeva
+#REF-CODE   (J,NP/A,565,643,1993)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.565, p.643, 1993
+#DATASETS   6
+#
+#DATASET    411220041
+#DATE       20191103
+#REACTION   62-SM-147(N,0),,EN
+#PROJ       1
+#TARG       62147
+#MF         402
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 62147 4026001   ]
+#DATA       97
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 62147 4026001                      18.36000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      27.16000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      29.76000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      32.14000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      39.70000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      40.72000 0.030000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      49.36000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      58.09000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      65.10000 0.030000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      65.10000 0.030000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      76.15000 0.030000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      79.89000 0.030000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      83.60000 0.040000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      99.54000 0.040000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      102.6900 0.040000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      106.9300 0.040000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      108.5800 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      123.7100 0.040000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      140.0000 0.040000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      143.2700 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      151.5400 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      161.0300 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      161.8800 0.150000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      163.6200 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      171.8000 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      179.6800 0.060000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      181.1400 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      191.0700 0.050000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      193.6100 0.070000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      198.0300 0.060000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      206.0300 0.060000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      221.6500 0.060000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      225.2800 0.060000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      228.5300 0.100000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      240.7600 0.070000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      247.6200 0.070000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      257.1300 0.080000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      257.1300 0.080000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      263.5700 0.090000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      266.2600 0.080000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      270.7200 0.090000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      274.4000 0.100000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      283.2800 0.100000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      290.1000 0.100000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      308.3000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      312.0600 0.120000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      321.1300 0.080000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      330.1000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      332.1000                                                G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      340.4000 0.020000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      349.8600 0.180000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      359.3200 0.150000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      362.1500 0.350000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      379.2000 0.200000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      382.4000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      390.5000 0.200000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      396.5000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      398.6000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      405.1000 0.200000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      412.0000 0.200000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      418.3000 0.200000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      421.8000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      435.7000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      440.2000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      446.9000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      458.6000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      462.9000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      476.0000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      479.8000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      486.4000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      496.2000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      498.6000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      513.5000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      528.9000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      532.5000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      538.1000 0.300000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      546.0000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      553.2000                                                G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      554.5000                                                G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      559.7000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      563.4000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      574.3000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      580.2000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      587.8000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      597.4000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      606.0000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      634.0000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      659.5000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      668.8000 0.400000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      714.0000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      744.3000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      796.2000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      808.0000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      821.0000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      836.1000 0.500000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      875.2000 0.600000                                       G.Georgiev,ET.AL. (93)   41122  41
+    1 62147 4026001                      896.0000                                                G.Georgiev,ET.AL. (93)   41122  41
+#/DATA      97
 #/DATASET
 #/ENTRY
 #
@@ -4271,147 +4684,17 @@
 #AUTHOR1    G.Georgiev+
 #YEAR       1993
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Determination of Neutron Resonance Parameters
-#+          Of Sm-147 and Sm-148
-#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikel'ner,
+#TITLE      Determination of 147Sm and 148Sm resonance parameters
+#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikelner,
 #+          G.V.Muradyan, Yu.V.Grigoriev, T.Madjarski,
-#+          N.Yaneva
-#REF-CODE   (J,NP/A,565,(3),643,19931220)
+#+          N.Janeva
+#REF-CODE   (J,NP/A,565,643,1993)
 #REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.565, Issue.3, p.643, 1993
-#DATASETS   10
+#+          Vol.565, p.643, 1993
+#DATASETS   6
 #
 #DATASET    411220022
-#DATE       20010202
-#REACTION   62-SM-147(N,0),,J
-#PROJ       1
-#TARG       62147
-#MF         402
-#MT         6003
-#DATA-HDR   DATA
-#C4BEGIN    [    1 62147 4026003 P ]
-#X4STATUS   [PRELM] Preliminary data
-#DATA       97
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026003 P  18.36000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  27.16000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  29.76000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  32.14000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  39.70000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  40.72000 0.030000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  49.36000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  58.09000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  65.10000 0.030000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  76.15000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  79.89000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  83.60000 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  99.54000 0.040000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  102.6900 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  106.9300 0.040000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  108.5800 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  123.7100 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  140.0000 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  143.2700 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  151.5400 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  161.0300 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  161.8800 0.150000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  163.6200 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  171.8000 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  179.6800 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  181.1400 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  191.0700 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  193.6100 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  198.0300 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  206.0300 0.060000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  221.6500 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  225.2800 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  228.5300 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  240.7600 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  247.6200 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  257.1300 0.080000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  257.1310 0.080000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  263.5700 0.090000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  266.2600 0.080000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  270.7200 0.090000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  274.4000 0.100000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  283.2800 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  290.1000 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  308.3000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  312.0600 0.120000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  321.1300 0.080000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  330.1000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  332.1000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  340.4000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  349.8600 0.180000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  359.3200 0.150000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  362.1500 0.350000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  379.2000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  382.4000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  390.5000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  396.5000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  398.6000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  405.1000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  412.0000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  418.3000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  421.8000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  435.7000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  440.2000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  446.9000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  458.6000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  462.9000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  476.0000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  479.8000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  486.4000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  496.2000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  498.6000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  513.5000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  528.9000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  532.5000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  538.1000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  546.0000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  553.2000          3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  559.7000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  563.4000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  574.3000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  580.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  587.8000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  597.4000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  606.0000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  617.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  634.0000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  659.5000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  668.8000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  697.0000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  714.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  744.3000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  796.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  808.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  821.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  836.1000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  875.2000 0.600000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-    1 62147 4026003 P  896.1000 0.600000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
-#/DATA      97
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      41122
-#AUTHOR1    G.Georgiev+
-#YEAR       1993
-#INSTITUTE  (4ZZZDUB)
-#TITLE      Determination of Neutron Resonance Parameters
-#+          Of Sm-147 and Sm-148
-#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikel'ner,
-#+          G.V.Muradyan, Yu.V.Grigoriev, T.Madjarski,
-#+          N.Yaneva
-#REF-CODE   (J,NP/A,565,(3),643,19931220)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.565, Issue.3, p.643, 1993
-#DATASETS   10
-#
-#DATASET    411220043
-#DATE       20090304
+#DATE       20191103
 #REACTION   62-SM-147(N,0),,J
 #PROJ       1
 #TARG       62147
@@ -4419,107 +4702,108 @@
 #MT         6003
 #DATA-HDR   DATA
 #C4BEGIN    [    1 62147 4026003   ]
-#DATA       97
+#DATA       98
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026003    18.36000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    27.16000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    29.76000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    32.14000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    39.70000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    40.72000 0.030000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    49.36000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    58.09000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    65.10000 0.030000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    65.10000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    76.15000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    79.89000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    83.60000 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    99.54000 0.040000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    102.6900 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    106.9300 0.040000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    108.5800 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    123.7100 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    140.0000 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    143.2700 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    151.5400 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    161.0300 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    161.8800 0.150000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    163.6200 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    171.8000 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    179.6800 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    181.1400 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    191.0700 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    193.6100 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    198.0300 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    206.0300 0.060000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    221.6500 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    225.2800 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    228.5300 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    240.7600 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    247.6200 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    257.1300 0.080000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    257.1310 0.080000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    263.5700 0.090000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    266.2600 0.080000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    270.7200 0.090000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    274.4000 0.100000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    283.2800 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    290.1000 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    308.3000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    312.0600 0.120000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    321.1300 0.080000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    330.1000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    332.1000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    340.4000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    349.8600 0.180000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    359.3200 0.150000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    362.1500 0.350000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    379.2000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    382.4000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    390.5000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    396.5000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    398.6000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    405.1000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    412.0000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    418.3000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    421.8000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    435.7000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    440.2000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    446.9000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    458.6000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    462.9000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    476.0000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    479.8000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    486.4000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    496.2000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    498.6000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    513.5000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    528.9000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    532.5000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    538.1000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    546.0000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    553.2000          3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    554.5000          4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    559.7000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    563.4000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    574.3000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    580.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    587.8000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    597.4000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    606.0000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    634.0000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    659.5000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    668.8000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    714.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    744.3000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    796.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    808.0000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    821.0000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    836.1000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    875.2000 0.600000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-    1 62147 4026003    896.0000          4.000000                                                G.Georgiev,ET.AL. (93)   41122  43
-#/DATA      97
+    1 62147 4026003    18.36000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    27.16000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    29.76000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    32.14000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    39.70000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    40.72000 0.030000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    49.36000 0.020000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    58.09000 0.020000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    65.10000 0.030000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    76.15000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    79.89000 0.030000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    83.60000 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    99.54000 0.040000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    102.6900 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    106.9300 0.040000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    108.5800 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    123.7100 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    140.0000 0.040000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    143.2700 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    151.5400 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    161.0300 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    161.8800 0.150000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    163.6200 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    171.8000 0.050000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    179.6800 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    184.1400 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    191.0700 0.050000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    193.6100 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    198.0300 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    206.0300 0.060000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    221.6500 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    225.2800 0.060000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    228.5300 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    240.7600 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    247.6200 0.070000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    257.1300 0.080000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    257.1300 0.080000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    263.5700 0.090000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    266.2600 0.080000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    270.7200 0.090000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    274.4000 0.100000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    283.2800 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    290.1000 0.100000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    308.3000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    312.0600 0.120000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    321.1300 0.080000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    330.1000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    332.1000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    340.4000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    349.8600 0.180000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    359.3200 0.150000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    362.1500 0.350000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    379.2000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    382.4000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    390.5000 0.200000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    396.5000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    398.6000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    405.1000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    412.0000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    418.3000 0.200000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    421.8000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    435.7000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    440.2000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    446.9000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    458.6000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    462.9000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    476.0000 0.300000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    479.8000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    486.4000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    496.2000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    498.6000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    513.5000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    528.9000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    532.5000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    538.1000 0.300000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    546.0000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    553.2000          3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    554.5000          4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    559.7000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    563.4000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    574.3000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    580.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    587.8000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    597.4000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    606.0000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    617.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    634.0000 0.400000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    659.5000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    668.8000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    697.0000 0.400000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    714.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    744.3000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    796.2000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    808.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    821.0000 0.500000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    836.1000 0.500000 4.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    875.2000 0.600000 3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+    1 62147 4026003    896.0000          3.000000                                                G.Georgiev,ET.AL. (93)   41122  22
+#/DATA      98
 #/DATASET
 #/ENTRY
 #
@@ -4944,16 +5228,16 @@
 #AUTHOR1    F.B.Simpson+
 #YEAR       1957
 #INSTITUTE  (1USAMTR)
-#TITLE      NEUTRON RESONANCE PARAMETERS FOR SM-147, SM-149,
-#+          GD-155, AND GD-157.
+#TITLE      Neutron Resonance Parameters for Sm-147, Sm-149,
+#+          Gd-155, and Gd-157
 #AUTHOR(S)  F.B.Simpson, R.G.Fluharty
-#REF-CODE   (J,BAP,2,42(NA7),5702)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REF-CODE   (J,BAP,2,42(NA7),1957)
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.2, p.42(NA7), 1957
 #DATASETS   16
 #
 #DATASET    119830053
-#DATE       19830802
+#DATE       20190802
 #REACTION   62-SM-147(N,EL),,WID,,G
 #PROJ       1
 #TARG       62147
@@ -4964,18 +5248,18 @@
 #DATA       12
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026022    18.30000          0.035700 3.6000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    27.00000          2.4000-3 2.0000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    29.70000          7.2000-3 5.0000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    32.00000          0.014200 1.4000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    39.60000          0.052000 6.0000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    49.40000          0.010300 7.0000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    58.00000          0.015400 2.6000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    76.10000          0.023300 8.9000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    79.40000          7.0000-3 7.0000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    83.50000          0.054000 6.0000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    94.90000          0.163000 0.082000 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
-    1 62147 4026022    99.30000          0.079000 0.040000 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  53
+    1 62147 4026022    18.30000          0.035700 3.6000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    27.00000          2.4000-3 2.0000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    29.70000          7.2000-3 5.0000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    32.00000          0.014200 1.4000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    39.60000          0.052000 6.0000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    49.40000          0.010300 7.0000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    58.00000          0.015400 2.6000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    76.10000          0.023300 8.9000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    79.40000          7.0000-3 7.0000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    83.50000          0.054000 6.0000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    94.90000          0.163000 0.082000 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
+    1 62147 4026022    99.30000          0.079000 0.040000 0.000000                              F.B.Simpson,ET.AL. (57)  11983  53
 #/DATA      12
 #/DATASET
 #/ENTRY
@@ -5025,16 +5309,16 @@
 #AUTHOR1    F.B.Simpson+
 #YEAR       1957
 #INSTITUTE  (1USAMTR)
-#TITLE      NEUTRON RESONANCE PARAMETERS FOR SM-147, SM-149,
-#+          GD-155, AND GD-157.
+#TITLE      Neutron Resonance Parameters for Sm-147, Sm-149,
+#+          Gd-155, and Gd-157
 #AUTHOR(S)  F.B.Simpson, R.G.Fluharty
-#REF-CODE   (J,BAP,2,42(NA7),5702)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REF-CODE   (J,BAP,2,42(NA7),1957)
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.2, p.42(NA7), 1957
 #DATASETS   16
 #
 #DATASET    119830054
-#DATE       19830802
+#DATE       20190802
 #REACTION   62-SM-147(N,EL),,WID/RED
 #PROJ       1
 #TARG       62147
@@ -5045,18 +5329,18 @@
 #DATA       12
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026023    18.30000          0.016800 2.3000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    27.00000          9.2000-4 7.0000-5 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    29.70000          2.6400-3 1.8000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    32.00000          3.0200-3 3.0000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    39.60000          0.016600 1.7000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    49.40000          2.9400-3 4.1000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    58.00000          4.0400-3 6.9000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    76.10000          5.3400-3 2.0300-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    79.40000          1.6000-3 1.6000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    83.50000          1.1800-3 1.3000-4 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    94.90000          0.033000 0.017000 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
-    1 62147 4026023    99.30000          0.016000 8.0000-3 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  54
+    1 62147 4026023    18.30000          0.016800 2.3000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    27.00000          9.2000-4 7.0000-5 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    29.70000          2.6400-3 1.8000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    32.00000          3.0200-3 3.0000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    39.60000          0.016600 1.7000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    49.40000          2.9400-3 4.1000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    58.00000          4.0400-3 6.9000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    76.10000          5.3400-3 2.0300-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    79.40000          1.6000-3 1.6000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    83.50000          1.1800-3 1.3000-4 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    94.90000          0.033000 0.017000 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
+    1 62147 4026023    99.30000          0.016000 8.0000-3 0.000000                              F.B.Simpson,ET.AL. (57)  11983  54
 #/DATA      12
 #/DATASET
 #/ENTRY
@@ -5391,16 +5675,16 @@
 #AUTHOR1    F.B.Simpson+
 #YEAR       1957
 #INSTITUTE  (1USAMTR)
-#TITLE      NEUTRON RESONANCE PARAMETERS FOR SM-147, SM-149,
-#+          GD-155, AND GD-157.
+#TITLE      Neutron Resonance Parameters for Sm-147, Sm-149,
+#+          Gd-155, and Gd-157
 #AUTHOR(S)  F.B.Simpson, R.G.Fluharty
-#REF-CODE   (J,BAP,2,42(NA7),5702)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REF-CODE   (J,BAP,2,42(NA7),1957)
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.2, p.42(NA7), 1957
 #DATASETS   16
 #
 #DATASET    119830052
-#DATE       19830802
+#DATE       20190802
 #REACTION   62-SM-147(N,G),,WID
 #PROJ       1
 #TARG       62147
@@ -5411,9 +5695,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026031    18.30000          0.041000 0.017000 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  52
-    1 62147 4026031    27.00000          0.046000 0.045000 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  52
-    1 62147 4026031    32.00000          0.055000 0.015000 0.000000                              F.B.SIMPSON,ET.AL. (57)  11983  52
+    1 62147 4026031    18.30000          0.041000 0.017000 0.000000                              F.B.Simpson,ET.AL. (57)  11983  52
+    1 62147 4026031    27.00000          0.046000 0.045000 0.000000                              F.B.Simpson,ET.AL. (57)  11983  52
+    1 62147 4026031    32.00000          0.055000 0.015000 0.000000                              F.B.Simpson,ET.AL. (57)  11983  52
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -5460,76 +5744,17 @@
 #AUTHOR1    G.Georgiev+
 #YEAR       1993
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Determination of Neutron Resonance Parameters
-#+          Of Sm-147 and Sm-148
-#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikel'ner,
+#TITLE      Determination of 147Sm and 148Sm resonance parameters
+#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikelner,
 #+          G.V.Muradyan, Yu.V.Grigoriev, T.Madjarski,
-#+          N.Yaneva
-#REF-CODE   (J,NP/A,565,(3),643,19931220)
+#+          N.Janeva
+#REF-CODE   (J,NP/A,565,643,1993)
 #REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.565, Issue.3, p.643, 1993
-#DATASETS   10
+#+          Vol.565, p.643, 1993
+#DATASETS   6
 #
 #DATASET    411220023
-#DATE       20010202
-#REACTION   62-SM-147(N,G),,WID
-#PROJ       1
-#TARG       62147
-#MF         402
-#MT         6031
-#DATA-HDR   DATA
-#C4BEGIN    [    1 62147 4026031 P ]
-#X4STATUS   [PRELM] Preliminary data
-#DATA       26
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026031 P  27.16000 0.020000 0.084000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  29.76000 0.020000 0.071000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  32.14000 0.020000 0.070000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  39.70000 0.020000 0.068000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  49.36000 0.020000 0.075000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  58.09000 0.020000 0.077000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  76.15000 0.030000 0.074000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  83.60000 0.040000 0.076000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  99.54000 0.040000 0.079000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  102.6900 0.040000 0.076000 7.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  106.9300 0.040000 0.082000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  123.7100 0.040000 0.073000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  151.5400 0.050000 0.075000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  163.6200 0.050000 0.077000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  171.8000 0.050000 0.069000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  191.0700 0.050000 0.079000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  198.0300 0.060000 0.061000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  206.0300 0.060000 0.083000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  221.6500 0.060000 0.067000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  225.2800 0.060000 0.086000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  240.7600 0.070000 0.091000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  247.6200 0.070000 0.069000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  266.2600 0.080000 0.072000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  270.7200 0.090000 0.085000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  283.2800 0.100000 0.058000 0.010000                                       G.Georgiev,ET.AL. (93)   41122  23
-    1 62147 4026031 P  290.1000 0.100000 0.068000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
-#/DATA      26
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      41122
-#AUTHOR1    G.Georgiev+
-#YEAR       1993
-#INSTITUTE  (4ZZZDUB)
-#TITLE      Determination of Neutron Resonance Parameters
-#+          Of Sm-147 and Sm-148
-#AUTHOR(S)  G.Georgiev, Yu.S.Zamyatnin, L.B.Pikel'ner,
-#+          G.V.Muradyan, Yu.V.Grigoriev, T.Madjarski,
-#+          N.Yaneva
-#REF-CODE   (J,NP/A,565,(3),643,19931220)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.565, Issue.3, p.643, 1993
-#DATASETS   10
-#
-#DATASET    411220044
-#DATE       20090304
+#DATE       20191103
 #REACTION   62-SM-147(N,G),,WID
 #PROJ       1
 #TARG       62147
@@ -5540,32 +5765,32 @@
 #DATA       26
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4026031    27.16000 0.020000 0.084000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    29.76000 0.020000 0.071000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    32.14000 0.020000 0.070000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    39.70000 0.020000 0.068000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    49.36000 0.020000 0.075000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    58.09000 0.020000 0.077000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    76.15000 0.030000 0.074000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    83.60000 0.040000 0.076000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    99.54000 0.040000 0.079000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    102.6900 0.040000 0.076000 7.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    106.9300 0.040000 0.082000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    123.7100 0.040000 0.073000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    151.5400 0.050000 0.075000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    163.6200 0.050000 0.077000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    171.8000 0.050000 0.069000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    191.0700 0.050000 0.079000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    198.0300 0.060000 0.061000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    206.0300 0.060000 0.083000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    221.6500 0.060000 0.067000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    225.2800 0.060000 0.086000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    240.7600 0.070000 0.091000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    247.6200 0.070000 0.069000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    266.2600 0.080000 0.072000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    270.7200 0.090000 0.085000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    283.2800 0.100000 0.058000 0.010000                                       G.Georgiev,ET.AL. (93)   41122  44
-    1 62147 4026031    290.1000 0.100000 0.068000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  44
+    1 62147 4026031    27.16000 0.020000 0.084000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    29.76000 0.020000 0.071000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    32.14000 0.020000 0.070000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    39.70000 0.020000 0.068000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    49.36000 0.020000 0.075000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    58.09000 0.020000 0.077000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    76.15000 0.030000 0.074000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    83.60000 0.040000 0.076000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    99.54000 0.040000 0.079000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    102.6900 0.040000 0.076000 7.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    106.9300 0.040000 0.082000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    123.7100 0.040000 0.073000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    151.5400 0.050000 0.075000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    163.6200 0.050000 0.077000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    171.8000 0.050000 0.069000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    191.0700 0.050000 0.079000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    198.0300 0.060000 0.061000 4.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    206.0300 0.060000 0.083000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    221.6500 0.060000 0.067000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    225.2800 0.060000 0.086000 5.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    240.7600 0.070000 0.091000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    247.6200 0.070000 0.069000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    266.2600 0.080000 0.072000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    270.7200 0.090000 0.085000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    283.2800 0.100000 0.058000 0.010000                                       G.Georgiev,ET.AL. (93)   41122  23
+    1 62147 4026031    290.1000 0.100000 0.068000 6.0000-3                                       G.Georgiev,ET.AL. (93)   41122  23
 #/DATA      26
 #/DATASET
 #/ENTRY
@@ -5792,18 +6017,18 @@
 #ENTRY      40595
 #AUTHOR1    A.V.Murzin+
 #YEAR       1980
-#INSTITUTE  (4CCPIJI)
-#TITLE      GAMMA-RAYS SPECTRA FROM SM-147(N,G)SM-148 REACTION
-#+          FOR NEUTRON ENERGIES 2.24 AND 55.KEV
+#INSTITUTE  (4UKRIJD)
+#TITLE      Gamma-rays spectra from Sm-147(N,G)Sm-148 reaction
+#+          for neutron energies 2.24 and 55.keV
 #AUTHOR(S)  A.V.Murzin, V.A.Libman, N.A.Lubchenko,
 #+          A.F.Rudyk
-#REF-CODE   (C,80KIEV,2,262,8009)
+#REF-CODE   (C,80KIEV,2,262,1980)
 #REFERENCE  Conf. 5.All Union Conf.on Neutron Phys.,Kiev,15-19 Sep 1980
 #+          Vol.2, p.262, 1980
 #DATASETS   2
 #
 #DATASET    405950022
-#DATE       19850305
+#DATE       20191205
 #REACTION   62-SM-147(N,EL),,STF
 #PROJ       1
 #TARG       62147
@@ -5814,7 +6039,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4036001    28500.00 26500.00 1.1000-4 2.7000-5 1.000000                              A.V.MURZIN,ET.AL. (80)   40595  22
+    1 62147 4036001    28500.00 26500.00 1.1000-4 2.7000-5 1.000000                              A.V.Murzin,ET.AL.        40595  22
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5918,18 +6143,18 @@
 #ENTRY      40595
 #AUTHOR1    A.V.Murzin+
 #YEAR       1980
-#INSTITUTE  (4CCPIJI)
-#TITLE      GAMMA-RAYS SPECTRA FROM SM-147(N,G)SM-148 REACTION
-#+          FOR NEUTRON ENERGIES 2.24 AND 55.KEV
+#INSTITUTE  (4UKRIJD)
+#TITLE      Gamma-rays spectra from Sm-147(N,G)Sm-148 reaction
+#+          for neutron energies 2.24 and 55.keV
 #AUTHOR(S)  A.V.Murzin, V.A.Libman, N.A.Lubchenko,
 #+          A.F.Rudyk
-#REF-CODE   (C,80KIEV,2,262,8009)
+#REF-CODE   (C,80KIEV,2,262,1980)
 #REFERENCE  Conf. 5.All Union Conf.on Neutron Phys.,Kiev,15-19 Sep 1980
 #+          Vol.2, p.262, 1980
 #DATASETS   2
 #
 #DATASET    405950021
-#DATE       19850305
+#DATE       20191205
 #REACTION   62-SM-147(N,G),,WID,,AV
 #PROJ       1
 #TARG       62147
@@ -5940,7 +6165,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 62147 4056001    28500.00 26500.00 0.091000 0.023000 1.000000                              A.V.MURZIN,ET.AL. (80)   40595  21
+    1 62147 4056001    28500.00 26500.00 0.091000 0.023000 1.000000                              A.V.Murzin,ET.AL.        40595  21
 #/DATA      1
 #/DATASET
 #/ENTRY

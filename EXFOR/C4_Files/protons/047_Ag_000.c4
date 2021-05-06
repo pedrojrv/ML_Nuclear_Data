@@ -480,8 +480,8 @@
 #AUTHOR1    G.F.Denisenko+
 #YEAR       1958
 #INSTITUTE  (4RUSRI)
-#TITLE      Fission of Uranium, Silver, and Bromine Nuclei with
-#+          High-Energy Particles
+#TITLE      Fission of uranium, silver, and bromine nuclei with
+#+          high-energy particles
 #AUTHOR(S)  G.F.Denisenko, N.S.Ivanova, N.R.Novikova,
 #+          N.A.Perfilov, E.I.Prokoffieva, V.P.Shamov
 #REF-CODE   (J,PR,109,1779,1958)
@@ -490,22 +490,21 @@
 #DATASETS   1
 #
 #DATASET    O0635003
-#DATE       20000401
-#REACTION   47-AG-CMP(P,F),,SIG,,,EXP
+#DATE       20191005
+#REACTION   47-AG-CMP(P,F),,SIG
 #PROJ       1001
 #TARG       47000
 #MF         3
 #MT         18
 #DATA-HDR   DATA
-#C4BEGIN    [ 1001 47000   3  18 P ]
-#X4STATUS   [PRELM] Preliminary data
+#C4BEGIN    [ 1001 47000   3  18   ]
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 47000   3  18 P  6.6000+8          3.5000-4 9.0000-5                                       G.F.DENISENKO,ET.AL. (58)O0635  3
- 1001 47000   3  18 P  5.0000+8          2.7000-4 8.0000-5                                       G.F.DENISENKO,ET.AL. (58)O0635  3
- 1001 47000   3  18 P  3.0000+8          3.3000-4 9.0000-5                                       G.F.DENISENKO,ET.AL. (58)O0635  3
- 1001 47000   3  18 P  1.8000+8          1.3000-4 5.0000-5                                       G.F.DENISENKO,ET.AL. (58)O0635  3
+ 1001 47000   3  18    6.6000+8          3.5000-4 9.0000-5                                       G.F.Denisenko,ET.AL. (58)O0635  3
+ 1001 47000   3  18    5.0000+8          2.7000-4 8.0000-5                                       G.F.Denisenko,ET.AL. (58)O0635  3
+ 1001 47000   3  18    3.0000+8          3.3000-4 9.0000-5                                       G.F.Denisenko,ET.AL. (58)O0635  3
+ 1001 47000   3  18    1.8000+8          1.3000-4 5.0000-5                                       G.F.Denisenko,ET.AL. (58)O0635  3
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -784,6 +783,43 @@
  1001 47000   39000    1.4700+7          1.872000 0.187200               1.9                     G.Chodil,ET.AL. (67)     C0693  81
  1001 47000   39000    1.5000+7          1.810000 0.181000               1.9                     G.Chodil,ET.AL. (67)     C0693  81
 #/DATA      20
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D6336
+#AUTHOR1    S.Parashari+
+#YEAR       2018
+#INSTITUTE  (3INDBDA)
+#TITLE      Excitation function of the p + natAg reactions in the
+#+          energy range 10-22 MeV
+#AUTHOR(S)  S.Parashari, S.Mukherjee, S.V.Suryanarayana,
+#+          R.Makwana, B.K.Nayak, A.Shanbhag,
+#+          H.Naik
+#REF-CODE   (J,NP/A,979,102,2018)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.979, p.102, 2018
+#DATASETS   2
+#
+#DATASET    D6336002
+#DATE       20191004
+#REACTION   47-AG-0(P,X)48-CD-107,,SIG
+#PROJ       1001
+#TARG       47000
+#MF         3
+#MT         9000
+#PRODUCT    48-CD-107
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 47000   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 47000   39000    1.1130+7 280000.0 0.222520 0.020440           48107.9                     S.Parashari,ET.AL. (18)  D6336  2
+ 1001 47000   39000    1.3900+7 230000.0 0.175590 0.016850           48107.9                     S.Parashari,ET.AL. (18)  D6336  2
+ 1001 47000   39000    1.6770+7 200000.0 0.047760 4.6300-3           48107.9                     S.Parashari,ET.AL. (18)  D6336  2
+ 1001 47000   39000    1.9480+7 180000.0 0.028450 2.2500-3           48107.9                     S.Parashari,ET.AL. (18)  D6336  2
+ 1001 47000   39000    2.1820+7 170000.0 0.104180 9.8900-3           48107.9                     S.Parashari,ET.AL. (18)  D6336  2
+#/DATA      5
 #/DATASET
 #/ENTRY
 #
@@ -2747,7 +2783,7 @@
 #TITLE      Production of F18 and Na24 in Bev proton Bombardments
 #AUTHOR(S)  J.Hudis, A.A.Caretto
 #REF-CODE   (J,BAP,1,224,1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.224, 1956
 #DATASETS   5
 #

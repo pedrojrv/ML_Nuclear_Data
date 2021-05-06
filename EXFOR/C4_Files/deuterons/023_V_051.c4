@@ -234,40 +234,6 @@
 #/ENTRY
 #
 #
-#ENTRY      A0295
-#AUTHOR1    H.Klewe-Nebenius+
-#YEAR       1983
-#INSTITUTE  (2GERKFK)
-#TITLE      Excitation Functions For the Production of V-49.
-#AUTHOR(S)  H.Klewe-Nebenius, F.Michel, H.Munzel,
-#+          G.Pfennig
-#REF-CODE   (J,RCA,33,177,1983)
-#REFERENCE  Jour. Radiochimica Acta
-#+          Vol.33, p.177, 1983
-#DATASETS   4
-#
-#DATASET    A0295003
-#DATE       19990601
-#REACTION   23-V-51(D,N+T)23-V-49,,SIG
-#PROJ       1002
-#TARG       23051
-#MF         3
-#MT         33
-#PRODUCT    23-V-49
-#DATA-HDR   DATA
-#C4BEGIN    [ 1002 23051   3  33   ]
-#DATA       4
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1002 23051   3  33    1.7790+7 220000.0 2.2400-4 7.8400-5                                       H.KLEWE-NEBENIUS, (83)   A0295  3
- 1002 23051   3  33    2.0860+7 220000.0 1.5300-3 5.3550-4                                       H.KLEWE-NEBENIUS, (83)   A0295  3
- 1002 23051   3  33    2.4000+7 220000.0 3.9900-3 1.3965-3                                       H.KLEWE-NEBENIUS, (83)   A0295  3
- 1002 23051   3  33    2.4880+7 220000.0 5.3300-3 1.8655-3                                       H.KLEWE-NEBENIUS, (83)   A0295  3
-#/DATA      4
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      A0169
 #AUTHOR1    R.Weinreich+
 #YEAR       1980
@@ -326,6 +292,46 @@
  1002 23051   3  37 A  8.8850+7          8.9400-3                                                R.Weinreich,ET.AL. (80)  A0169  3
  1002 23051   3  37 A  9.0590+7          9.0500-3 1.1000-3                                       R.Weinreich,ET.AL. (80)  A0169  3
 #/DATA      31
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0954
+#AUTHOR1    A.Kreisel+
+#YEAR       2019
+#INSTITUTE  (3ISLSOR)
+#TITLE      Measurements of 59Co(d,p)60m,gCo, 51V(d,p)52V, and
+#+          natV(d,xn)51Cr cross sections in the 2.7-5.4-MeV
+#+          energy range
+#AUTHOR(S)  A.Kreisel, L.Weissman, A.Cohen,
+#+          T.Hirsh, A.Shor, O.Aviv,
+#+          I.Eliyahu, M.Avrigeanu, V.Avrigeanu
+#REF-CODE   (J,PR/C,99,034611,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.99, p.034611, 2019
+#DATASETS   5
+#
+#DATASET    D0954005
+#DATE       20200701
+#REACTION   23-V-51(D,P)23-V-52,,SIG
+#PROJ       1002
+#TARG       23051
+#MF         3
+#MT         103
+#PRODUCT    23-V-52
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 23051   3 103   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 23051   3 103    2700000. 150000.0 0.019000 1.0000-3                                       A.Kreisel,ET.AL. (19)    D0954  5
+ 1002 23051   3 103    3000000. 150000.0 0.034000 1.5000-3                                       A.Kreisel,ET.AL. (19)    D0954  5
+ 1002 23051   3 103    3400000. 150000.0 0.060000 2.5000-3                                       A.Kreisel,ET.AL. (19)    D0954  5
+ 1002 23051   3 103    3800000. 150000.0 0.085000 4.0000-3                                       A.Kreisel,ET.AL. (19)    D0954  5
+ 1002 23051   3 103    4300000. 150000.0 0.172000 6.0000-3                                       A.Kreisel,ET.AL. (19)    D0954  5
+ 1002 23051   3 103    4800000. 150000.0 0.219000 0.011000                                       A.Kreisel,ET.AL. (19)    D0954  5
+ 1002 23051   3 103    5400000. 150000.0 0.286000 0.014000                                       A.Kreisel,ET.AL. (19)    D0954  5
+#/DATA      7
 #/DATASET
 #/ENTRY
 #
@@ -483,6 +489,40 @@
  1002 23051   39000    8.7716+7          6.5984-3 4.5770-4           21048.9                     S.M.Qaim,ET.AL. (84)     D0060  5
  1002 23051   39000    8.9516+7          6.7476-3                    21048.9                     S.M.Qaim,ET.AL. (84)     D0060  5
 #/DATA      40
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0295
+#AUTHOR1    H.Klewe-Nebenius+
+#YEAR       1983
+#INSTITUTE  (2GERKFK)
+#TITLE      Excitation functions for the production of V-49
+#AUTHOR(S)  H.Klewe-Nebenius, F.Michel, H.Muenzel,
+#+          G.Pfennig
+#REF-CODE   (J,RCA,33,177,1983)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.33, p.177, 1983
+#DATASETS   4
+#
+#DATASET    A0295003
+#DATE       20200201
+#REACTION   23-V-51(D,X)23-V-49,,SIG
+#PROJ       1002
+#TARG       23051
+#MF         3
+#MT         9000
+#PRODUCT    23-V-49
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 23051   39000   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 23051   39000    1.7790+7          2.2400-4 1.1200-5           23049.9                     H.Klewe-Nebenius, (83)   A0295  3
+ 1002 23051   39000    2.0860+7          1.5300-3 7.6500-5           23049.9                     H.Klewe-Nebenius, (83)   A0295  3
+ 1002 23051   39000    2.4000+7          3.9900-3 1.9950-4           23049.9                     H.Klewe-Nebenius, (83)   A0295  3
+ 1002 23051   39000    2.4880+7          5.3300-3 2.6650-4           23049.9                     H.Klewe-Nebenius, (83)   A0295  3
+#/DATA      4
 #/DATASET
 #/ENTRY
 #

@@ -566,7 +566,7 @@
 #REF-CODE   (J,APP/B,6,139,1975)
 #REFERENCE  Jour. Acta Physica Polonica, Part B
 #+          Vol.6, p.139, 1975
-#DATASETS   11
+#DATASETS   12
 #
 #DATASET    30287008
 #DATE       20081203
@@ -724,7 +724,7 @@
 #REF-CODE   (J,NIM/B,265,453,2007)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.265, p.453, 2007
-#DATASETS   6
+#DATASETS   9
 #
 #DATASET    31609006
 #DATE       20080703
@@ -760,7 +760,7 @@
 #REF-CODE   (J,NIM/B,265,453,2007)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.265, p.453, 2007
-#DATASETS   6
+#DATASETS   9
 #
 #DATASET    31609007
 #DATE       20080703
@@ -1020,7 +1020,7 @@
 #REF-CODE   (J,NP/A,100,186,196707)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.100, p.186, 1967
-#DATASETS   21
+#DATASETS   23
 #
 #DATASET    21107010
 #DATE       20070905
@@ -1051,7 +1051,7 @@
 #REF-CODE   (J,NP/A,100,186,196707)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.100, p.186, 1967
-#DATASETS   21
+#DATASETS   23
 #
 #DATASET    21107011
 #DATE       20070905
@@ -1082,7 +1082,7 @@
 #REF-CODE   (J,NP/A,100,186,196707)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.100, p.186, 1967
-#DATASETS   21
+#DATASETS   23
 #
 #DATASET    21107012
 #DATE       20070905
@@ -1206,7 +1206,7 @@
 #REF-CODE   (J,NP,69,158,1965)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.69, p.158, 1965
-#DATASETS   7
+#DATASETS   10
 #
 #DATASET    31254003
 #DATE       20090901
@@ -1236,7 +1236,7 @@
 #REF-CODE   (J,NP,69,158,1965)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.69, p.158, 1965
-#DATASETS   7
+#DATASETS   10
 #
 #DATASET    31254004
 #DATE       20090901
@@ -1446,15 +1446,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507044
-#DATE       19860702
+#DATE       20190805
 #REACTION   34-SE-82(N,G)34-SE-83,,SIG,,MXW
 #PROJ       1
 #TARG       34082
@@ -1466,7 +1466,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 34082   3 102    0.025300          2.000000 1.400000                                       H.POMERANCE (52)         11507 44
+    1 34082   3 102    0.025300          2.000000 1.400000                                       H.Pomerance (52)         11507 44
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1764,12 +1764,12 @@
 #AUTHOR1    Yu.N.Trofimov
 #YEAR       1987
 #INSTITUTE  (4RUSRI)
-#TITLE      Activation cross-sections for 31 nuclei at the
-#+          neutron energy 2 MeV .
+#TITLE      Activation cross-sections for 31 nuclei for 2 MeV
+#+          neutrons
 #AUTHOR(S)  Yu.N.Trofimov
-#REF-CODE   (J,YK,1987,(4),10,1987)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1987, Issue.4, p.10, 1987
+#REF-CODE   (J,YK,,(4),10,1987)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.4, p.10, 1987
 #DATASETS   31
 #
 #DATASET    40975003
@@ -2785,6 +2785,245 @@
 #/ENTRY
 #
 #
+#ENTRY      30287
+#AUTHOR1    W.Grochulski+
+#YEAR       1975
+#INSTITUTE  (3POLIPJ)
+#TITLE      Excitation curves for fast neutron induced reactions
+#+          on Ga-71, as-75, Se-80, Se-82, Sn-117 and Sn-118.
+#AUTHOR(S)  W.Grochulski, S.El-Konsol, A.Marcinkowski
+#REF-CODE   (J,APP/B,6,139,1975)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.6, p.139, 1975
+#DATASETS   12
+#
+#DATASET    30287009
+#DATE       20081203
+#REACTION   34-SE-82(N,2N)34-SE-81-G/M,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-G/M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34082 203  16GA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16GA  1.3000+7 100000.0 0.420000 0.120000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.3400+7 100000.0 0.420000 0.040000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.3900+7 100000.0 0.460000 0.070000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.4500+7 100000.0 0.370000 0.030000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.5100+7 200000.0 0.460000 0.050000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.5400+7 200000.0 0.410000 0.040000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.5900+7 200000.0 0.470000 0.110000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.6500+7 100000.0 0.430000 0.090000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.7300+7 200000.0 0.370000 0.050000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+    1 34082 203  16GA  1.7800+7 200000.0 0.480000 0.080000     16.7  34082.9                     W.Grochulski,ET.AL. (75) 30287  9
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41424
+#AUTHOR1    A.A.Filatenkov+
+#YEAR       2001
+#INSTITUTE  (4RUSRI)
+#TITLE      Measurement of a set of badly known neutron induced
+#+          cross sections.
+#AUTHOR(S)  A.A.Filatenkov, S.V.Chuvaev
+#REF-CODE   (R,RI-258,20010615)
+#REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
+#+          No.258, 2001
+#DATASETS   6
+#
+#DATASET    41424058
+#DATE       20160902
+#REACTION   34-SE-82(N,2N)34-SE-81-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34082 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16MD  1.3490+7          2.800000 0.530000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+    1 34082 203  16MD  1.3890+7          2.760000 0.550000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+    1 34082 203  16MD  1.4050+7          2.730000 0.730000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+    1 34082 203  16MD  1.4260+7          2.800000 0.580000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+    1 34082 203  16MD  1.4440+7          2.310000 0.700000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+    1 34082 203  16MD  1.4810+7          2.650000 0.710000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+    1 34082 203  16MD  1.4840+7          2.840000 0.990000     16.0  34082.9                     A.A.Filatenkov, (01)     41424 58
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30101
+#AUTHOR1    J.Karolyi+
+#YEAR       1968
+#INSTITUTE  (3HUNDEB)
+#TITLE      Isomeric cross-section ratios for (n,2n) reactions
+#AUTHOR(S)  J.Karolyi, J.Csikai, G.Peto
+#REF-CODE   (J,NP/A,122,234,196812)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.122, p.234, 1968
+#DATASETS   13
+#
+#DATASET    30101008
+#DATE       20080205
+#REACTION   34-SE-82(N,2N)34-SE-81-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34082 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16MD  1.4400+7          3.970000 0.960000     16.0  34082.9                     J.Karolyi,ET.AL. (68)    30101  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31490
+#AUTHOR1    F.I.Habbani+
+#YEAR       1999
+#INSTITUTE  (3SUDKHA)
+#TITLE      Isomeric cross-section ratios for some nuclides using
+#+          14.5 MeV neutrons
+#AUTHOR(S)  F.I.Habbani, I.A.Ahmed
+#REF-CODE   (J,ARI,51,81,1999)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.51, p.81, 1999
+#DATASETS   12
+#
+#DATASET    31490008
+#DATE       20130200
+#REACTION   34-SE-82(N,2N)34-SE-81-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34082 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16M   1.4500+7 200000.0 3.640000 1.0000-2     16.0  34082.9                     F.I.Habbani,ET.AL. (99)  31490  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31609
+#AUTHOR1    Junhua Luo+
+#YEAR       2007
+#INSTITUTE  (3CPRLNZ)
+#TITLE      Activation cross sections and isomeric cross section
+#+          ratios for the(n,2n) reactions on 175Lu, 198Pt and 82Se
+#+          from 13.5 to 14.6 MeV
+#AUTHOR(S)  Junhua Luo, Xiaosan Xu, Xuexiang Cao,
+#+          Xiangzhong Kong
+#REF-CODE   (J,NIM/B,265,453,2007)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.265, p.453, 2007
+#DATASETS   9
+#
+#DATASET    31609010
+#DATE       20080703
+#REACTION   34-SE-82(N,2N)34-SE-81-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34082 203  16MA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16MA  1.4600+7 200000.0 2.600000 5.2000-3     16.0  34082.9                     Junhua Luo,ET.AL. (07)   31609 10
+    1 34082 203  16MA  1.4100+7 200000.0 2.400000 4.8000-3     16.0  34082.9                     Junhua Luo,ET.AL. (07)   31609 10
+    1 34082 203  16MA  1.3500+7 200000.0 2.300000 4.6000-3     16.0  34082.9                     Junhua Luo,ET.AL. (07)   31609 10
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21107
+#AUTHOR1    B.Minetti+
+#YEAR       1967
+#INSTITUTE  (2ITYTUR)
+#TITLE      -Measurements of neutron cross sections and isomeric
+#+          cross section ratios in Se isotopes-.
+#AUTHOR(S)  B.Minetti, A.Pasquarelli
+#REF-CODE   (J,NP/A,100,186,196707)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.100, p.186, 1967
+#DATASETS   23
+#
+#DATASET    21107013
+#DATE       20070905
+#REACTION   34-SE-82(N,2N)34-SE-81-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34082 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16MD  1.4700+7 100000.0 2.800000 0.300000     16.0  34082.9                     B.Minetti,ET.AL. (67)    21107 13
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      31254
+#AUTHOR1    S.K.Mangal+
+#YEAR       1965
+#INSTITUTE  (3INDMUA)
+#TITLE      Isomeric (n,2n)cross section ratios at 14.8 MeV.
+#AUTHOR(S)  S.K.Mangal, C.S.Khurana
+#REF-CODE   (J,NP,69,158,1965)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.69, p.158, 1965
+#DATASETS   10
+#
+#DATASET    31254011
+#DATE       20090901
+#REACTION   34-SE-82(N,2N)34-SE-81-M/T,,SIG/RAT
+#PROJ       1
+#TARG       34082
+#MF         203
+#MT         16
+#PRODUCT    34-SE-81-M/T
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [    1 34082 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34082 203  16M   1.4800+7          0.900000              16.9  34082.9                     S.K.Mangal,ET.AL. (65)   31254 11
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      12787
 #AUTHOR1    J.C.Browne+
 #YEAR       1982
@@ -2866,7 +3105,7 @@
 #+          SELENIUM.
 #AUTHOR(S)  H.Muenzer, K.Nishimura, W.H.Good
 #REF-CODE   (J,BAP,6,251(H5),6104)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.6, p.251(H5), 1961
 #DATASETS   8
 #
@@ -2899,7 +3138,7 @@
 #+          SELENIUM.
 #AUTHOR(S)  H.Muenzer, K.Nishimura, W.H.Good
 #REF-CODE   (J,BAP,6,251(H5),6104)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.6, p.251(H5), 1961
 #DATASETS   8
 #

@@ -1260,47 +1260,6 @@
 #/ENTRY
 #
 #
-#ENTRY      O0365
-#AUTHOR1    A.Johansson+
-#YEAR       1961
-#INSTITUTE  (2SWDUPP)
-#TITLE      The Elastic-Scattering of 180 MeV Protons from Nuclei.
-#AUTHOR(S)  A.Johansson, U.Svanberg, P.E.Hodgson
-#REF-CODE   (J,AF,19,541,1961)
-#REFERENCE  Jour. Arkiv foer Fysik
-#+          Vol.19, p.541, 1961
-#DATASETS   9
-#
-#DATASET    O0365002
-#DATE       20001104
-#REACTION   1-H-1(P,EL)1-H-1,,DA,,,EVAL
-#PROJ       1001
-#TARG       1001
-#MF         4
-#MT         2
-#PRODUCT    1-H-1
-#DATA-HDR   DATA DATA-CM
-#C4BEGIN    [ 1001  1001   4   2  C]
-#X4DATATYPE [EVAL]  Evaluated data
-#DATA       11
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001  1001   4   2  C 1.8000+8          0.016160          0.989016                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.016020          0.984808                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.015980          0.978867                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.015890          0.973179                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.015800          0.969016                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.015480          0.956305                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.015070          0.943223                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.014610          0.929132                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.014180          0.915662                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.013800          0.902585                              A.JOHANSSON,ET.AL. (61)  O0365  2
- 1001  1001   4   2  C 1.8000+8          0.013400          0.890213                              A.JOHANSSON,ET.AL. (61)  O0365  2
-#/DATA      11
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      O1226
 #AUTHOR1    M.Mahjour-Shafiei+
 #YEAR       2004
@@ -4735,7 +4694,53 @@
 #REF-CODE   (J,ZET,47,(4),1228,1964)
 #REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
 #+          Vol.47, Issue.4, p.1228, 1964
-#DATASETS   1
+#DATASETS   2
+#
+#DATASET    F1186002
+#DATE       20130503
+#REACTION   1-H-1(P,EL)1-H-1,,DA,,AV
+#PROJ       1001
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001  1001   4   2   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001  1001   4   2    6.5000+8 5000000. 0.027021 0.015031 0.998304                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 0.015061 2.9019-3 0.991843                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 8.4541-3 7.3290-4 0.971122                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 6.8201-3 5.0030-4 0.934881                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 6.2018-3 3.9200-4 0.887019                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 5.0215-3 3.5140-4 0.828031                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 3.8227-3 3.6920-4 0.758111                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 3.9039-3 3.2550-4 0.674147                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 3.1724-3 3.0640-4 0.583370                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 3.0793-3 3.0750-4 0.480023                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 2.9676-3 2.4740-4 0.378841                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 2.4646-3 2.3800-4 0.269859                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 1.9105-3 1.9700-4 0.155726                              V.M.Guzhavin,ET.AL. (64) F1186  2
+ 1001  1001   4   2    6.5000+8 5000000. 2.0603-3 1.9900-4 0.040723                              V.M.Guzhavin,ET.AL. (64) F1186  2
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      F1186
+#AUTHOR1    V.M.Guzhavin+
+#YEAR       1964
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Elastic scattering of 650 MeV protons.
+#AUTHOR(S)  V.M.Guzhavin, G.K.Kliger, V.Z.Kolganov,
+#+          A.V.Lebedev, K.S.Marish, M.A.Musin,
+#+          Yu.D.Prokoshkin, V.T.Smolyankin, A.P.Sokolov,
+#+          L.M.Soroko, Tsui Wa-Chuan
+#REF-CODE   (J,ZET,47,(4),1228,1964)
+#REFERENCE  Jour. Zhurnal Eksperimental`noi i Teoret. Fiziki
+#+          Vol.47, Issue.4, p.1228, 1964
+#DATASETS   2
 #
 #DATASET    F1186003
 #DATE       20130503

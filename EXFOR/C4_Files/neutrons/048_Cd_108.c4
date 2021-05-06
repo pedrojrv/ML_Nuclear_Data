@@ -301,7 +301,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497017
 #DATE       20040103
@@ -877,7 +877,7 @@
 #+          of Cd108
 #AUTHOR(S)  A.G.Beda, O.V.Shvedov
 #REF-CODE   (J,YK,,(1/40),34,1981)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1/40, p.34, 1981
 #DATASETS   1
 #
@@ -1163,18 +1163,18 @@
 #AUTHOR1    A.B.Popov+
 #YEAR       1985
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Extraction of Strength Functions and Radii of Nuclei
-#+          From the Average Differential Scattering
-#+          Cross-Sections
+#TITLE      Extraction of strength functions and radii of nuclei
+#+          from the average differential scattering
+#+          cross-sections
 #AUTHOR(S)  A.B.Popov, G.S.Samosvat, V.G.Nikolenko,
 #+          Zo-In-Ok
 #REF-CODE   (C,85SANTA,1,621,1985)
 #REFERENCE  Conf. Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
 #+          Vol.1, p.621, 1985
-#DATASETS   44
+#DATASETS   71
 #
 #DATASET    40934029
-#DATE       20010805
+#DATE       20200304
 #REACTION   48-CD-108(N,EL),,STF
 #PROJ       1
 #TARG       48108
@@ -1187,6 +1187,39 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 48108 4036001                      4.1000-4 4.0000-5 1.000000                              A.B.Popov,ET.AL. (85)    40934 29
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40934
+#AUTHOR1    A.B.Popov+
+#YEAR       1985
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Extraction of strength functions and radii of nuclei
+#+          from the average differential scattering
+#+          cross-sections
+#AUTHOR(S)  A.B.Popov, G.S.Samosvat, V.G.Nikolenko,
+#+          Zo-In-Ok
+#REF-CODE   (C,85SANTA,1,621,1985)
+#REFERENCE  Conf. Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
+#+          Vol.1, p.621, 1985
+#DATASETS   71
+#
+#DATASET    40934062
+#DATE       20200304
+#REACTION   48-CD-108(N,EL),,STF
+#PROJ       1
+#TARG       48108
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 48108 4036001   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 48108 4036001                      5.7000-4 1.1000-4 1.000000                              A.B.Popov,ET.AL. (85)    40934 62
+    1 48108 4036001                      3.7500-4 3.1000-5 1.000000                              A.B.Popov,ET.AL. (85)    40934 62
+#/DATA      2
 #/DATASET
 #/ENTRY
 #

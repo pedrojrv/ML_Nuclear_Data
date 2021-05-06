@@ -1,3 +1,33 @@
+#ENTRY      12198
+#AUTHOR1    J.Halperin+
+#YEAR       1962
+#INSTITUTE  (1USAORL)
+#TITLE      Activation cross section of the 2.6*10+6 yr. Bi210.
+#AUTHOR(S)  J.Halperin, J.Oliver
+#REF-CODE   (R,ORNL-3320,2,1962)
+#REFERENCE  Rept. Oak Ridge National Lab. Reports
+#+          No.3320, p.2, 1962
+#DATASETS   2
+#
+#DATASET    12198002
+#DATE       20200104
+#REACTION   83-BI-210-M(N,G)83-BI-211,,SIG,,MXW
+#PROJ       1
+#TARG       83210 M
+#MF         3
+#MT         102
+#PRODUCT    83-BI-211
+#DATA-HDR   DATA
+#C4BEGIN    [    1 83210M  3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 83210M  3 102    0.025300          0.054000 5.4000-3                                       J.Halperin,ET.AL. (62)   12198  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      V1002
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -5,7 +35,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -24,6 +54,36 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 83210M  3 102    0.025300          0.054000 5.0000-3                                       S.F.Mughabghab (06)      V1002540
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      12198
+#AUTHOR1    J.Halperin+
+#YEAR       1962
+#INSTITUTE  (1USAORL)
+#TITLE      Activation cross section of the 2.6*10+6 yr. Bi210.
+#AUTHOR(S)  J.Halperin, J.Oliver
+#REF-CODE   (R,ORNL-3320,2,1962)
+#REFERENCE  Rept. Oak Ridge National Lab. Reports
+#+          No.3320, p.2, 1962
+#DATASETS   2
+#
+#DATASET    12198003
+#DATE       20200104
+#REACTION   83-BI-210-M(N,G)83-BI-211,,RI
+#PROJ       1
+#TARG       83210 M
+#MF         213
+#MT         102
+#PRODUCT    83-BI-211
+#DATA-HDR   DATA
+#C4BEGIN    [    1 83210M213 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 83210M213 102    0.500000 1.5000+7 0.200000 0.020000                                       J.Halperin,ET.AL. (62)   12198  3
 #/DATA      1
 #/DATASET
 #/ENTRY

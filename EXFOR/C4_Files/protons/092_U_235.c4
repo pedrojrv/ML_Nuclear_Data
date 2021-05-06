@@ -76,10 +76,10 @@
 #REF-CODE   (J,NDS,119,237,2014)
 #REFERENCE  Jour. Nuclear Data Sheets
 #+          Vol.119, p.237, 2014
-#DATASETS   10
+#DATASETS   3
 #
 #DATASET    O2399003
-#DATE       20190106
+#DATE       20210106
 #REACTION   92-U-235(P,N)93-NP-235,,SIG
 #PROJ       1001
 #TARG       92235
@@ -153,10 +153,10 @@
 #REF-CODE   (J,NDS,119,237,2014)
 #REFERENCE  Jour. Nuclear Data Sheets
 #+          Vol.119, p.237, 2014
-#DATASETS   10
+#DATASETS   3
 #
 #DATASET    O2399005
-#DATE       20190106
+#DATE       20210106
 #REACTION   92-U-235(P,2N)93-NP-234,,SIG
 #PROJ       1001
 #TARG       92235
@@ -178,6 +178,38 @@
  1001 92235   3  16    1.5080+7 120000.0 0.042000 2.0000-3                                       E.Gromova,ET.AL. (14)    O2399  5
  1001 92235   3  16    1.6080+7 110000.0 0.030100 9.0000-4                                       E.Gromova,ET.AL. (14)    O2399  5
 #/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328006
+#DATE       20191201
+#REACTION   92-U-235(P,2N)93-NP-234,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         16
+#PRODUCT    93-NP-234
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1001 92235   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  16    1.3000+7          2.0000-8                                                N.L.Lark,ET.AL. (69)     O2328  6
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -429,9 +461,9 @@
 #+          I.Nishinaka, K.Sueki, Y.Hatsukawa,
 #+          K.Hata, T.Sekine, I.Kanno,
 #+          H.Ikezoe, H.Nakahara
-#REF-CODE   (J,PR/C,44,(4),1405,199110)
+#REF-CODE   (J,PR/C,44,1405,1991)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.44, Issue.4, p.1405, 1991
+#+          Vol.44, p.1405, 1991
 #DATASETS   9
 #
 #DATASET    E1411003
@@ -532,6 +564,388 @@
  1001 92235   3  18    7.7000+7 2000000. 0.011000 2.0000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
  1001 92235   3  18    8.5000+7 2000000. 9.5000-3 1.9000-3           55134.9                     G.B.Saha,ET.AL. (71)     C2019  7
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594002
+#DATE       20200306
+#REACTION   92-U-235(P,F)39-Y-90-M,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    39-Y-90-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18M   2.0000+7          1.3000-4 2.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   3.0000+7          2.2000-4 3.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   4.0000+7          3.2000-4 5.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   5.0000+7          6.7000-4 1.0000-4           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   6.0000+7          7.9000-4 1.1000-4           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   7.0000+7          9.8000-4 1.1000-4           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   7.7000+7          1.4000-3 2.0000-4           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+ 1001 92235   3  18M   8.5000+7          1.3000-3 2.0000-4           39090.7                     A.H.Khan,ET.AL. (70)     O0594  2
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594003
+#DATE       20200306
+#REACTION   92-U-235(P,F)39-Y-90,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    39-Y-90
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7          2.4000-3 4.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    3.0000+7          3.4000-3 5.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    4.0000+7          4.0000-3 5.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    5.0000+7          4.6000-3 7.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    6.0000+7          4.7000-3 8.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    7.0000+7          5.8000-3 9.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    7.7000+7          6.1000-3 9.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+ 1001 92235   3  18    8.5000+7          6.0000-3 1.0000-3           39090.9                     A.H.Khan,ET.AL. (70)     O0594  3
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594004
+#DATE       20210104
+#REACTION   92-U-235(P,F)39-Y-91-M,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    39-Y-91-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18M   2.0000+7          1.3000-3 2.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   3.0000+7          2.1000-3 3.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   4.0000+7          3.5000-3 5.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   5.0000+7          3.9000-3 5.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   6.0000+7          5.5000-3 8.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   7.0000+7          6.0000-3 1.0000-3           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   7.7000+7          5.2000-3 7.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+ 1001 92235   3  18M   8.5000+7          5.0000-3 6.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594  4
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594005
+#DATE       20200306
+#REACTION   92-U-235(P,F)39-Y-91,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    39-Y-91
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7          3.0000-3 7.0000-4           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    3.0000+7          4.9000-3 1.0000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    4.0000+7          7.5000-3 1.7000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    5.0000+7          9.0000-3 2.0000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    6.0000+7          0.011300 2.4000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    7.0000+7          0.012200 3.0000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    7.7000+7          0.011800 2.6000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+ 1001 92235   3  18    8.5000+7          0.011500 2.5000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594  5
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594006
+#DATE       20200306
+#REACTION   92-U-235(P,F)39-Y-92,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    39-Y-92
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7          6.9000-3 1.0000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    3.0000+7          9.9000-3 1.5000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    4.0000+7          0.014300 2.4000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    5.0000+7          0.016000 2.4000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    6.0000+7          0.019700 3.1000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    7.0000+7          0.016900 2.7000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    7.7000+7          0.019500 2.9000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+ 1001 92235   3  18    8.5000+7          0.018000 2.7000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594  6
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594009
+#DATE       20200306
+#REACTION   92-U-235(P,F)38-SR-92,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    38-SR-92
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7          0.047000 7.0000-3           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    3.0000+7          0.041000 6.0000-3           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    4.0000+7          0.067000 0.011000           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    5.0000+7          0.075000 0.011000           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    6.0000+7          0.072000 0.012000           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    7.0000+7          0.077000 0.012000           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    7.7000+7          0.078000 0.012000           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+ 1001 92235   3  18    8.5000+7          0.075000 0.011000           38092.9                     A.H.Khan,ET.AL. (70)     O0594  9
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727008
+#DATE       20201002
+#REACTION   92-U-235(P,F)54-XE-135,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    54-XE-135
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7          0.021100 5.2750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+ 1001 92235   3  18    2.5000+7          0.036000 9.0000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+ 1001 92235   3  18    3.5000+7          0.027500 6.8750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+ 1001 92235   3  18    4.5000+7          0.031900 7.9750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+ 1001 92235   3  18    5.5000+7          0.026800 6.7000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+ 1001 92235   3  18    7.0000+7          0.017200 4.3000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+ 1001 92235   3  18    8.5000+7          0.020800 5.2000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  8
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727022
+#DATE       20201002
+#REACTION   92-U-235(P,F)54-XE-133-M,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    54-XE-133-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18M  ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18M   2.0000+7          5.4000-3 1.3500-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+ 1001 92235   3  18M   2.5000+7          0.012800 3.2000-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+ 1001 92235   3  18M   3.5000+7          0.015200 3.8000-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+ 1001 92235   3  18M   4.5000+7          0.020200 5.0500-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+ 1001 92235   3  18M   5.5000+7          0.018900 4.7250-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+ 1001 92235   3  18M   7.0000+7          0.012000 3.0000-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+ 1001 92235   3  18M   8.5000+7          0.013600 3.4000-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 22
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727023
+#DATE       20201002
+#REACTION   92-U-235(P,F)54-XE-133-G,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    54-XE-133-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18G  ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18G   2.0000+7          6.3000-3 1.5750-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+ 1001 92235   3  18G   2.5000+7          0.014000 3.5000-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+ 1001 92235   3  18G   3.5000+7          0.013800 3.4500-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+ 1001 92235   3  18G   4.5000+7          0.020500 5.1250-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+ 1001 92235   3  18G   5.5000+7          0.016200 4.0500-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+ 1001 92235   3  18G   7.0000+7          0.010400 2.6000-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+ 1001 92235   3  18G   8.5000+7          0.012800 3.2000-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 23
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727024
+#DATE       20201002
+#REACTION   92-U-235(P,F)54-XE-133,,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#PRODUCT    54-XE-133
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.0000+7          0.011700 2.9250-3           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+ 1001 92235   3  18    2.5000+7          0.026700 6.6750-3           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+ 1001 92235   3  18    3.5000+7          0.029000 7.2500-3           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+ 1001 92235   3  18    4.5000+7          0.040700 0.010175           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+ 1001 92235   3  18    5.5000+7          0.035100 8.7750-3           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+ 1001 92235   3  18    7.0000+7          0.022400 5.6000-3           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+ 1001 92235   3  18    8.5000+7          0.026500 6.6250-3           54133.9                     J.H.Forster,ET.AL. (66)  O0727 24
+#/DATA      7
 #/DATASET
 #/ENTRY
 #
@@ -865,6 +1279,38 @@
 #/ENTRY
 #
 #
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444047
+#DATE       20200104
+#REACTION   92-U-235(P,F),,SIG
+#PROJ       1001
+#TARG       92235
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235   3  18   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235   3  18    2.2479+8          0.794000 0.088000                                       J.Jungerman (50)         C2444 47
+ 1001 92235   3  18    2.7481+8          0.708000 0.108000                                       J.Jungerman (50)         C2444 47
+ 1001 92235   3  18    2.9403+8          0.899000 0.113000                                       J.Jungerman (50)         C2444 47
+ 1001 92235   3  18    3.3984+8          0.998000 0.113000                                       J.Jungerman (50)         C2444 47
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O0605
 #AUTHOR1    R.Brandt+
 #YEAR       1972
@@ -902,19 +1348,19 @@
 #AUTHOR1    B.A.Bochagov+
 #YEAR       1978
 #INSTITUTE  (4RUSRI)
-#TITLE      Measurement of fission cross-sections by
-#+          bombarding U-238, U-235, Th-232, Bi-209, Pb-206-Pb-208,
-#+          Au-197, Ta-181, Yb and Sm with 1 GeV protons
+#TITLE      Determination of the fission cross sections of 238U,
+#+          235U, 232Th, 209Bi, 208-206Pb, 197Au, 181Ta, Yb, and
+#+          Sm bombarded by 1-GeV protons
 #AUTHOR(S)  B.A.Bochagov, V.S.Bychenkov, V.D.Dmitriev,
 #+          S.P.Mal'cev, A.I.Obukhov, N.A.Perfilov,
 #+          V.A.Udod, O.E.Shigaev
-#REF-CODE   (J,YF,28,572,197808)
+#REF-CODE   (J,YF,28,572,1978)
 #REFERENCE  Jour. Yadernaya Fizika
 #+          Vol.28, p.572, 1978
 #DATASETS   11
 #
 #DATASET    A0029002
-#DATE       20040602
+#DATE       20200504
 #REACTION   92-U-235(P,F),,SIG
 #PROJ       1001
 #TARG       92235
@@ -1042,10 +1488,10 @@
 #REF-CODE   (J,NDS,119,237,2014)
 #REFERENCE  Jour. Nuclear Data Sheets
 #+          Vol.119, p.237, 2014
-#DATASETS   10
+#DATASETS   3
 #
 #DATASET    O2399002
-#DATE       20190106
+#DATE       20210106
 #REACTION   92-U-235(P,G)93-NP-236-M,,SIG
 #PROJ       1001
 #TARG       92235
@@ -1577,6 +2023,45 @@
 #/ENTRY
 #
 #
+#ENTRY      O0606
+#AUTHOR1    A.N.Smirnov+
+#YEAR       1991
+#INSTITUTE  (4RUSRI)
+#TITLE      Total and differential cross sections of 10 to 95 MeV
+#+          proton-induced fission of actinide nuclei
+#AUTHOR(S)  A.N.Smirnov, I.Yu.Gorshkov, A.V.Prokofiev,
+#+          V.P.Eismont
+#REF-CODE   (C,91GAUSSG,,214,1991)
+#REFERENCE  Conf. 21.Int.Symp.on Nucl.Phys., Gaussig 1991
+#+          p.214, 1991
+#DATASETS   8
+#
+#DATASET    O0606006
+#DATE       20200204
+#REACTION   (92-U-235(P,F),,SIG)/(92-U-238(P,F),,SIG)
+#PROJ       1001
+#TARG       92235
+#MF         203
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92235 203  18   ]
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92235 203  18    2.4000+7 2000000. 1.080000 0.097200     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    2.7000+7 2000000. 1.060000 0.095400     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    2.9000+7 2000000. 1.000000 0.090000     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    3.4000+7 2000000. 1.030000 0.092700     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    4.2000+7 2000000. 0.950000 0.085500     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    4.9000+7 2000000. 1.050000 0.094500     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    5.4000+7 2000000. 0.970000 0.087300     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    5.9000+7 2000000. 1.040000 0.093600     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+ 1001 92235 203  18    6.9000+7 2000000. 1.010000 0.090900     18.9  92238.9                     A.N.Smirnov,ET.AL. (91)  O0606  6
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      T0283
 #AUTHOR1    R.L.Ferguson+
 #YEAR       1973
@@ -2008,7 +2493,7 @@
 #REF-CODE   (J,IZK,,(6),40,1986)
 #REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
 #+          Issue.6, p.40, 1986
-#DATASETS   4
+#DATASETS   5
 #
 #DATASET    D0930008
 #DATE       20190101

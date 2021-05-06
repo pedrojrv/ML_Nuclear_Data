@@ -9,7 +9,7 @@
 #+          V.A.Libman, A.V.Murzin, G.M.Novosselov,
 #+          N.A.Trofimova, O.L.Chervonnaya
 #REF-CODE   (J,YK,,(3),27,1990)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.3, p.27, 1990
 #DATASETS   10
 #
@@ -7101,21 +7101,20 @@
 #/ENTRY
 #
 #
-#ENTRY      40311
-#AUTHOR1    L.S.Sokolov+
-#YEAR       1973
-#INSTITUTE  (4UKRIFU)
-#TITLE      Contribution of direct interactions in cross-sections
-#+          of neutron scattering by Mg,Ti,Cr,Ni-58,Ni-60,Ni-62
-#AUTHOR(S)  L.S.Sokolov, M.B.Fedorov, E.V.Korbetskiy,
-#+          N.T.Surovitskaya, T.I.Yakovenko
-#REF-CODE   (J,UFZ,18,(2),263,1973)
-#REFERENCE  Jour. Ukrainskii Fizichnii Zhurnal
-#+          Vol.18, Issue.2, p.263, 1973
+#ENTRY      40065
+#AUTHOR1    M.V.Pasechnik+
+#YEAR       1971
+#INSTITUTE  (4UKRIJD)
+#TITLE      Analysis of the data of 2.9 MeV neutron scattering by
+#+          the nickel isotopes
+#AUTHOR(S)  M.V.Pasechnik, M.B.Fedorov, T.I.Yakovenko
+#REF-CODE   (C,71KIEV,1,277,1971)
+#REFERENCE  Conf. Neutron Physics Conf., Kiev 1971
+#+          Vol.1, p.277, 1971
 #DATASETS   10
 #
-#DATASET    403110231
-#DATE       20151205
+#DATASET    400650111
+#DATE       20200204
 #REACTION   28-NI-62(N,EL)28-NI-62,,SIG
 #PROJ       1
 #TARG       28062
@@ -7123,12 +7122,12 @@
 #MT         2
 #PRODUCT    28-NI-62
 #DATA-HDR   DATA
-#C4BEGIN    [    1 28062   3   2 A ]
-#X4STATUS   [APRVD] Approved by author
+#C4BEGIN    [    1 28062   3   2 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3   2 A  2900000.          2.441000                                                L.S.Sokolov,ET.AL. (73)  40311 231
+    1 28062   3   2 D  2900000.          2.441000                                                M.V.Pasechnik,ET.AL. (72)40065 111
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -7302,21 +7301,20 @@
 #/ENTRY
 #
 #
-#ENTRY      40311
-#AUTHOR1    L.S.Sokolov+
-#YEAR       1973
-#INSTITUTE  (4UKRIFU)
-#TITLE      Contribution of direct interactions in cross-sections
-#+          of neutron scattering by Mg,Ti,Cr,Ni-58,Ni-60,Ni-62
-#AUTHOR(S)  L.S.Sokolov, M.B.Fedorov, E.V.Korbetskiy,
-#+          N.T.Surovitskaya, T.I.Yakovenko
-#REF-CODE   (J,UFZ,18,(2),263,1973)
-#REFERENCE  Jour. Ukrainskii Fizichnii Zhurnal
-#+          Vol.18, Issue.2, p.263, 1973
+#ENTRY      40065
+#AUTHOR1    M.V.Pasechnik+
+#YEAR       1971
+#INSTITUTE  (4UKRIJD)
+#TITLE      Analysis of the data of 2.9 MeV neutron scattering by
+#+          the nickel isotopes
+#AUTHOR(S)  M.V.Pasechnik, M.B.Fedorov, T.I.Yakovenko
+#REF-CODE   (C,71KIEV,1,277,1971)
+#REFERENCE  Conf. Neutron Physics Conf., Kiev 1971
+#+          Vol.1, p.277, 1971
 #DATASETS   10
 #
-#DATASET    403110221
-#DATE       20151205
+#DATASET    400650101
+#DATE       20200204
 #REACTION   28-NI-62(N,INL)28-NI-62,PAR,SIG
 #PROJ       1
 #TARG       28062
@@ -7324,12 +7322,12 @@
 #MT         51
 #PRODUCT    28-NI-62
 #DATA-HDR   DATA
-#C4BEGIN    [    1 28062   3  51 A ]
-#X4STATUS   [APRVD] Approved by author
+#C4BEGIN    [    1 28062   3  51 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3  51 A  2900000.          0.553000                            1172000.          E2L.S.Sokolov,ET.AL. (73)  40311 221
+    1 28062   3  51 D  2900000.          0.553000                            1172000.          E2M.V.Pasechnik,ET.AL. (72)40065 101
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -7861,15 +7859,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507029
-#DATE       19860702
+#DATE       20190805
 #REACTION   28-NI-62(N,G)28-NI-63,,SIG,,MXW
 #PROJ       1
 #TARG       28062
@@ -7881,7 +7879,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3 102    0.025300          14.60000 2.190000                                       H.POMERANCE (52)         11507 29
+    1 28062   3 102    0.025300          14.60000 2.190000                                       H.Pomerance (52)         11507 29
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8770,8 +8768,8 @@
 #DATASETS   2
 #
 #DATASET    23064005
-#DATE       20090603
-#REACTION   28-NI-62(N,G)28-NI-63,,SIG,,MXW,DERIV
+#DATE       20200903
+#REACTION   28-NI-62(N,G)28-NI-63,,SIG,,MXW,RECOM
 #PROJ       1
 #TARG       28062
 #MF         3
@@ -8780,7 +8778,7 @@
 #DATA-HDR   DATA
 #C4BEGIN    [    1 28062   3 102 D ]
 #X4STATUS   [DEP  ] Dependent data
-#X4DATATYPE [DERIV] Derived data
+#X4DATATYPE [RECOM] Recommended data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
@@ -9082,16 +9080,16 @@
 #INSTITUTE  (2FR FR)
 #TITLE      Cross section measurements of (n,p) and (n,np+pn+d)
 #+          reactions for some titanium, chromium, iron, cobalt,
-#+          nickel and zinc isotopes around 14 MeV
+#+          nickel, and zinc isotopes around 14 MeV
 #AUTHOR(S)  M.Viennot, M.Berrada, G.Paic,
 #+          S.Joly
-#REF-CODE   (J,NSE,108,289,199107)
+#REF-CODE   (J,NSE,108,289,1991)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.108, p.289, 1991
-#DATASETS   29
+#DATASETS   30
 #
 #DATASET    30978009
-#DATE       20090904
+#DATE       20201104
 #REACTION   28-NI-62(N,P)27-CO-62-M,,SIG
 #PROJ       1
 #TARG       28062
@@ -9103,11 +9101,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3 103M   1.3770+7 130000.0 0.014000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
-    1 28062   3 103M   1.4110+7 130000.0 0.014000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
-    1 28062   3 103M   1.4470+7 170000.0 0.017000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
-    1 28062   3 103M   1.4730+7 230000.0 0.018000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
-    1 28062   3 103M   1.4830+7 250000.0 0.019000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
+    1 28062   3 103M   1.3770+7          0.014000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
+    1 28062   3 103M   1.4110+7          0.014000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
+    1 28062   3 103M   1.4470+7          0.017000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
+    1 28062   3 103M   1.4730+7          0.018000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
+    1 28062   3 103M   1.4830+7          0.019000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978  9
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -9119,16 +9117,16 @@
 #INSTITUTE  (2FR FR)
 #TITLE      Cross section measurements of (n,p) and (n,np+pn+d)
 #+          reactions for some titanium, chromium, iron, cobalt,
-#+          nickel and zinc isotopes around 14 MeV
+#+          nickel, and zinc isotopes around 14 MeV
 #AUTHOR(S)  M.Viennot, M.Berrada, G.Paic,
 #+          S.Joly
-#REF-CODE   (J,NSE,108,289,199107)
+#REF-CODE   (J,NSE,108,289,1991)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.108, p.289, 1991
-#DATASETS   29
+#DATASETS   30
 #
 #DATASET    30978010
-#DATE       20090904
+#DATE       20201104
 #REACTION   28-NI-62(N,P)27-CO-62-G,,SIG
 #PROJ       1
 #TARG       28062
@@ -9140,11 +9138,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3 103G   1.3770+7 130000.0 0.020000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
-    1 28062   3 103G   1.4110+7 130000.0 0.017000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
-    1 28062   3 103G   1.4470+7 170000.0 0.020000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
-    1 28062   3 103G   1.4730+7 230000.0 0.016000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
-    1 28062   3 103G   1.4830+7 250000.0 0.022000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
+    1 28062   3 103G   1.3770+7          0.020000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
+    1 28062   3 103G   1.4110+7          0.017000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
+    1 28062   3 103G   1.4470+7          0.020000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
+    1 28062   3 103G   1.4730+7          0.016000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
+    1 28062   3 103G   1.4830+7          0.022000 2.0000-3                                       M.Viennot,ET.AL. (91)    30978 10
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -9463,7 +9461,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3 103G   1.4700+7 300000.0 0.024800 1.2000-3                                       B.M.Bahal,ET.AL. (85)    21936 23
+    1 28062   3 103G   1.4700+7          0.024800 1.2000-3                                       B.M.Bahal,ET.AL. (85)    21936 23
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -9495,7 +9493,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3 103M   1.4700+7 300000.0 0.014600 9.0000-4                                       B.M.Bahal,ET.AL. (85)    21936 24
+    1 28062   3 103M   1.4700+7          0.014600 9.0000-4                                       B.M.Bahal,ET.AL. (85)    21936 24
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -9977,18 +9975,18 @@
 #ENTRY      20841
 #AUTHOR1    K.Fukuda+
 #YEAR       1978
-#INSTITUTE  (2JAPKYU)
-#TITLE      -ACTIVATION CROSS SECTIONS ON FE,CO,NI,ZR AND MO
-#+          FOR 14.6 MEV NEUTRONS-.
+#INSTITUTE  (2JPNKYU)
+#TITLE      Activation cross sections on Fe,Co,Ni,Zr and Mo
+#+          for 14.6 MeV neutrons
 #AUTHOR(S)  K.Fukuda, K.Matsuo, S.Shirahama,
 #+          I.Kumabe
-#REF-CODE   (P,NEANDC(J)-56/U,44,7809)
+#REF-CODE   (P,NEANDC(J)-56,44,1978)
 #REFERENCE  Prog. Japanese report to NEANDC
-#+          No.56/U, p.44, 1978
+#+          No.56, p.44, 1978
 #DATASETS   12
 #
 #DATASET    20841009
-#DATE       19840203
+#DATE       20200905
 #REACTION   28-NI-62(N,A)26-FE-59,,SIG
 #PROJ       1
 #TARG       28062
@@ -10000,7 +9998,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   3 107    1.4600+7          0.025800 3.3000-3                                       K.FUKUDA,ET.AL. (78)     20841  9
+    1 28062   3 107    1.4600+7          0.025800 3.3000-3                                       K.Fukuda,ET.AL. (78)     20841  9
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -10099,41 +10097,6 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 28062   3 107    1.4800+7          0.017000 4.0000-3                                       V.N.Levkovskii, (69)     40223 121
 #/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22637
-#AUTHOR1    C.Konno+
-#YEAR       1993
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation Cross section measurements at neutron
-#+          energy from 13.3 to 14.9 MeV
-#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
-#+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1329, 1993
-#DATASETS   89
-#
-#DATASET    22637004
-#DATE       20080204
-#REACTION   (28-NI-62(N,N+P)27-CO-61,,SIG)+(28-NI-62(N,D)27-CO-61,,SIG)
-#PROJ       1
-#TARG       28062
-#MF         3
-#MT         1003
-#PRODUCT    27-CO-61
-#DATA-HDR   DATA
-#C4BEGIN    [    1 28062   31003 D ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       3
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28062   31003 D  1.4990+7          6.3200-3 4.1000-4                                       C.Konno,ET.AL. (93)      22637  4
-    1 28062   31003 D  1.4190+7          2.4400-3 1.6000-4                                       C.Konno,ET.AL. (93)      22637  4
-    1 28062   31003 D  1.3500+7          1.2730-3 9.0000-5                                       C.Konno,ET.AL. (93)      22637  4
-#/DATA      3
 #/DATASET
 #/ENTRY
 #
@@ -10303,6 +10266,41 @@
 #/ENTRY
 #
 #
+#ENTRY      22637
+#AUTHOR1    C.Konno+
+#YEAR       1993
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation Cross section measurements at neutron
+#+          energy from 13.3 to 14.9 MeV
+#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
+#+          K.Kawade, H.Yamamoto, H.Maekawa
+#REF-CODE   (R,JAERI-1329,1993)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1329, 1993
+#DATASETS   89
+#
+#DATASET    22637004
+#DATE       20200900
+#REACTION   28-NI-62(N,X)27-CO-61,,SIG
+#PROJ       1
+#TARG       28062
+#MF         3
+#MT         9000
+#PRODUCT    27-CO-61
+#DATA-HDR   DATA
+#C4BEGIN    [    1 28062   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 28062   39000 D  1.4990+7          6.3200-3 4.1000-4           27061.9                     C.Konno,ET.AL. (93)      22637  4
+    1 28062   39000 D  1.4190+7          2.4400-3 1.6000-4           27061.9                     C.Konno,ET.AL. (93)      22637  4
+    1 28062   39000 D  1.3500+7          1.2730-3 9.0000-5           27061.9                     C.Konno,ET.AL. (93)      22637  4
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      22820
 #AUTHOR1    V.Semkova+
 #YEAR       2004
@@ -10318,7 +10316,7 @@
 #REF-CODE   (J,NP/A,730,255,2004)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.730, p.255, 2004
-#DATASETS   11
+#DATASETS   12
 #
 #DATASET    22820011
 #DATE       20040102
@@ -10465,18 +10463,18 @@
 #
 #ENTRY      40065
 #AUTHOR1    M.V.Pasechnik+
-#YEAR       1972
+#YEAR       1971
 #INSTITUTE  (4UKRIJD)
 #TITLE      Analysis of the data of 2.9 MeV neutron scattering by
 #+          the nickel isotopes
 #AUTHOR(S)  M.V.Pasechnik, M.B.Fedorov, T.I.Yakovenko
-#REF-CODE   (C,71KIEV,1,277,197205)
+#REF-CODE   (C,71KIEV,1,277,1971)
 #REFERENCE  Conf. Neutron Physics Conf., Kiev 1971
-#+          Vol.1, p.277, 1972
-#DATASETS   6
+#+          Vol.1, p.277, 1971
+#DATASETS   10
 #
 #DATASET    40065003
-#DATE       20151101
+#DATE       20200204
 #REACTION   28-NI-62(N,EL)28-NI-62,,DA
 #PROJ       1
 #TARG       28062
@@ -10762,18 +10760,18 @@
 #
 #ENTRY      40065
 #AUTHOR1    M.V.Pasechnik+
-#YEAR       1972
+#YEAR       1971
 #INSTITUTE  (4UKRIJD)
 #TITLE      Analysis of the data of 2.9 MeV neutron scattering by
 #+          the nickel isotopes
 #AUTHOR(S)  M.V.Pasechnik, M.B.Fedorov, T.I.Yakovenko
-#REF-CODE   (C,71KIEV,1,277,197205)
+#REF-CODE   (C,71KIEV,1,277,1971)
 #REFERENCE  Conf. Neutron Physics Conf., Kiev 1971
-#+          Vol.1, p.277, 1972
-#DATASETS   6
+#+          Vol.1, p.277, 1971
+#DATASETS   10
 #
 #DATASET    40065007
-#DATE       20151101
+#DATE       20200204
 #REACTION   28-NI-62(N,INL)28-NI-62,PAR,DA
 #PROJ       1
 #TARG       28062
@@ -11706,7 +11704,7 @@
 #+          V.A.Libman, A.V.Murzin, G.M.Novosselov,
 #+          N.A.Trofimova, O.L.Chervonnaya
 #REF-CODE   (J,YK,,(3),27,1990)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.3, p.27, 1990
 #DATASETS   10
 #
@@ -12431,7 +12429,7 @@
 #+          V.A.Libman, A.V.Murzin, G.M.Novosselov,
 #+          N.A.Trofimova, O.L.Chervonnaya
 #REF-CODE   (J,YK,,(3),27,1990)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.3, p.27, 1990
 #DATASETS   10
 #

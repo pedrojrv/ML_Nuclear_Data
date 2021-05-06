@@ -1296,7 +1296,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1595,7 +1595,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1625,7 +1625,7 @@
 #TITLE      SUBTHRESHOLD FISSION-U234,U236,U238,PU242,AND PA231.
 #AUTHOR(S)  B.R.Leonard, R.H.Odegaarden
 #REF-CODE   (J,BAP,6,8(A8),61)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.6, p.8(A8), 1961
 #DATASETS   1
 #
@@ -6760,27 +6760,28 @@
 #AUTHOR1    O.Birgul+
 #YEAR       1969
 #INSTITUTE  (2UK KEN)
-#TITLE      -RADIOCHEMICAL STUDIES OF 3 AND 14 MEV NEUTRON
-#+          INDUCED FISSION OF PA-231 -.
+#TITLE      Radiochemical studies of 3 and 14 MeV neutron
+#+          induced fission of Pa-231
 #AUTHOR(S)  O.Birgul, S.J.Lyle
-#REF-CODE   (J,RCA,11,108,6904)
+#REF-CODE   (J,RCA,11,108,1969)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.11, p.108, 1969
-#DATASETS   2
+#DATASETS   4
 #
 #DATASET    21731003
-#DATE       19810205
-#REACTION   91-PA-231(N,F),,SIG
+#DATE       20200503
+#REACTION   91-PA-231(N,F),,SIG,,,DERIV
 #PROJ       1
 #TARG       91231
 #MF         3
 #MT         18
 #DATA-HDR   DATA
 #C4BEGIN    [    1 91231   3  18   ]
+#X4DATATYPE [DERIV] Derived data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 91231   3  18    1.4800+7 300000.0 1.430000 0.120000                                       O.BIRGUL,ET.AL. (69)     21731  3
+    1 91231   3  18    1.4800+7          1.430000 0.120000                                       O.Birgul,ET.AL. (69)     21731  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -7091,7 +7092,7 @@
 #+          O.V.Shvedov, B.F.Mjasoedov, A.V.Davydov,
 #+          S.S.Travnikov
 #REF-CODE   (J,YK,,(1/55),3,1984)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1/55, p.3, 1984
 #DATASETS   10
 #
@@ -7121,7 +7122,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -7288,7 +7289,7 @@
 #+          O.V.Shvedov, B.F.Mjasoedov, A.V.Davydov,
 #+          S.S.Travnikov
 #REF-CODE   (J,YK,,(1/55),3,1984)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1/55, p.3, 1984
 #DATASETS   10
 #
@@ -8243,6 +8244,51 @@
 #/ENTRY
 #
 #
+#ENTRY      23570
+#AUTHOR1    J.Kemmer+
+#YEAR       1970
+#INSTITUTE  (2GERMUN)
+#TITLE      Study on the reactor Neutron-induced fission of 231Pa
+#AUTHOR(S)  J.Kemmer, J.I.Kim, H.-J.Born
+#REF-CODE   (J,RCA,13,181,1970)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.13, p.181, 1970
+#DATASETS   1
+#
+#DATASET    23570002
+#DATE       20200403
+#REACTION   91-PA-231(N,F)MASS,CHN,FY,,FST
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18   ]
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18    1.000000          0.044230 1.3000-3          85.00000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.071960 1.3800-3          91.00000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.063730 3.4000-4          95.00000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.045990 8.8000-4          97.00000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.025120 2.9000-4          99.00000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          3.8600-3 5.0000-5          103.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.026250 3.4000-4          131.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.034940 1.5000-4          132.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.050450 6.5000-4          133.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.066170 1.0300-3          135.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.069640 1.5600-3          137.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.069760 4.2000-4          140.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.067890 8.0000-4          141.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.050430 6.5000-4          143.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.046590 1.3500-3          144.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          0.018080 3.6000-4          147.0000                     J.Kemmer,ET.AL. (70)     23570  2
+    1 91231 801  18    1.000000          9.1400-3 2.8000-4          149.0000                     J.Kemmer,ET.AL. (70)     23570  2
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      30950
 #AUTHOR1    M.N.Namboodiri+
 #YEAR       1968
@@ -8297,16 +8343,16 @@
 #AUTHOR1    O.Birgul+
 #YEAR       1969
 #INSTITUTE  (2UK KEN)
-#TITLE      -RADIOCHEMICAL STUDIES OF 3 AND 14 MEV NEUTRON
-#+          INDUCED FISSION OF PA-231 -.
+#TITLE      Radiochemical studies of 3 and 14 MeV neutron
+#+          induced fission of Pa-231
 #AUTHOR(S)  O.Birgul, S.J.Lyle
-#REF-CODE   (J,RCA,11,108,6904)
+#REF-CODE   (J,RCA,11,108,1969)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.11, p.108, 1969
-#DATASETS   2
+#DATASETS   4
 #
 #DATASET    21731002
-#DATE       19810205
+#DATE       20200503
 #REACTION   91-PA-231(N,F)MASS,CHN,FY
 #PROJ       1
 #TARG       91231
@@ -8317,16 +8363,221 @@
 #DATA       9
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 91231 801  18    3000000. 400000.0 0.025800 2.4000-3          83.00000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 0.039100 1.4000-3          84.00000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 0.058900 8.0000-4          91.00000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 0.039600 1.2000-3          97.00000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 2.4000-3 2.0000-4          105.0000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 7.2000-4 1.0000-4          113.0000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 8.1000-3 5.0000-4          129.0000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 0.051900 9.0000-4          143.0000                     O.BIRGUL,ET.AL. (69)     21731  2
-    1 91231 801  18    3000000. 400000.0 0.032200 2.0000-4          145.0000                     O.BIRGUL,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          0.025800 2.4000-3          83.00000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          0.039100 1.4000-3          84.00000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          0.058900 8.0000-4          91.00000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          0.039600 1.2000-3          97.00000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          2.4000-3 2.0000-4          105.0000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          7.2000-4 1.0000-4          113.0000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          8.1000-3 5.0000-4          129.0000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          0.051900 9.0000-4          143.0000                     O.Birgul,ET.AL. (69)     21731  2
+    1 91231 801  18    3000000.          0.032200 2.0000-4          145.0000                     O.Birgul,ET.AL. (69)     21731  2
 #/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21731
+#AUTHOR1    O.Birgul+
+#YEAR       1969
+#INSTITUTE  (2UK KEN)
+#TITLE      Radiochemical studies of 3 and 14 MeV neutron
+#+          induced fission of Pa-231
+#AUTHOR(S)  O.Birgul, S.J.Lyle
+#REF-CODE   (J,RCA,11,108,1969)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.11, p.108, 1969
+#DATASETS   4
+#
+#DATASET    21731004
+#DATE       20200503
+#REACTION   91-PA-231(N,F)ELEM/MASS,CUM,FY
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18    3000000.          9.2000-3 5.0000-4 51.00000 129.0000                     O.Birgul,ET.AL. (69)     21731  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21731
+#AUTHOR1    O.Birgul+
+#YEAR       1969
+#INSTITUTE  (2UK KEN)
+#TITLE      Radiochemical studies of 3 and 14 MeV neutron
+#+          induced fission of Pa-231
+#AUTHOR(S)  O.Birgul, S.J.Lyle
+#REF-CODE   (J,RCA,11,108,1969)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.11, p.108, 1969
+#DATASETS   4
+#
+#DATASET    21731005
+#DATE       20200503
+#REACTION   91-PA-231(N,F)MASS,CHN,FY
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18    3000000.          1.0000-2 6.0000-4          129.0000                     O.Birgul,ET.AL. (69)     21731  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23701
+#AUTHOR1    M.G.Brown+
+#YEAR       1966
+#INSTITUTE  (2UK KEN)
+#TITLE      Radiochemical studies of fission induced by 14.7 MeV
+#+          neutrons.Part III. Protactinium
+#AUTHOR(S)  M.G.Brown, S.J.Lyle, G.R.Martin
+#REF-CODE   (J,RCA,6,16,1966)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.6, p.16, 1966
+#DATASETS   1
+#
+#DATASET    23701004
+#DATE       20200503
+#REACTION   91-PA-231(N,F)MASS,CHN,FY
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18 D  1.4700+7 200000.0 0.027800 1.6000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.049700 4.0000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.068000 3.6000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.032100 2.8000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.013300 1.2000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.020500 2.6000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.024800 1.3000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 6.4000-3 9.0000-4                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.049700 2.6000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+    1 91231 801  18 D  1.4700+7 200000.0 0.033800 2.0000-3                                       M.G.Brown,ET.AL. (66)    23701  4
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23705
+#AUTHOR1    O.Birgul+
+#YEAR       1969
+#INSTITUTE  (2UK KEN)
+#TITLE      Fine Structure in nuclear fission.
+#+          Part II. Yields from 14.8 MeV neutron induced fission
+#+          of 231Pa in the mass region 131-135
+#AUTHOR(S)  O.Birgul, S.J.Lyle, J.Stellars
+#REF-CODE   (J,RCA,12,66,1969)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.12, p.66, 1969
+#DATASETS   3
+#
+#DATASET    237050032
+#DATE       20200503
+#REACTION   91-PA-231(N,F)ELEM/MASS,IND,FY
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18 D  1.4800+7          0.022500 1.3000-3 54.00000 135.0000                     O.Birgul,ET.AL. (69)     23705  32
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23705
+#AUTHOR1    O.Birgul+
+#YEAR       1969
+#INSTITUTE  (2UK KEN)
+#TITLE      Fine Structure in nuclear fission.
+#+          Part II. Yields from 14.8 MeV neutron induced fission
+#+          of 231Pa in the mass region 131-135
+#AUTHOR(S)  O.Birgul, S.J.Lyle, J.Stellars
+#REF-CODE   (J,RCA,12,66,1969)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.12, p.66, 1969
+#DATASETS   3
+#
+#DATASET    23705004
+#DATE       20200503
+#REACTION   91-PA-231(N,F)MASS,CHN,FY,,REL
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18 U ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18 U  1.4800+7          1.040000 0.020000          131.0000                     O.Birgul,ET.AL. (69)     23705  4
+    1 91231 801  18 U  1.4800+7          1.420000 0.020000          132.0000                     O.Birgul,ET.AL. (69)     23705  4
+    1 91231 801  18 U  1.4800+7          1.680000 0.030000          133.0000                     O.Birgul,ET.AL. (69)     23705  4
+    1 91231 801  18 U  1.4800+7          1.930000 0.070000          133.0000                     O.Birgul,ET.AL. (69)     23705  4
+    1 91231 801  18 U  1.4800+7          1.840000 0.040000          134.0000                     O.Birgul,ET.AL. (69)     23705  4
+    1 91231 801  18 U  1.4800+7          1.800000 0.100000          135.0000                     O.Birgul,ET.AL. (69)     23705  4
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23705
+#AUTHOR1    O.Birgul+
+#YEAR       1969
+#INSTITUTE  (2UK KEN)
+#TITLE      Fine Structure in nuclear fission.
+#+          Part II. Yields from 14.8 MeV neutron induced fission
+#+          of 231Pa in the mass region 131-135
+#AUTHOR(S)  O.Birgul, S.J.Lyle, J.Stellars
+#REF-CODE   (J,RCA,12,66,1969)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.12, p.66, 1969
+#DATASETS   3
+#
+#DATASET    23705006
+#DATE       20200503
+#REACTION   91-PA-231(N,F)MASS,CHN,FY
+#PROJ       1
+#TARG       91231
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 91231 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 91231 801  18 D  1.4800+7          0.033700 3.2000-3          131.0000                     O.Birgul,ET.AL. (69)     23705  6
+    1 91231 801  18 D  1.4800+7          0.047200 1.6000-3          132.0000                     O.Birgul,ET.AL. (69)     23705  6
+    1 91231 801  18 D  1.4800+7          0.057400 1.0000-3          133.0000                     O.Birgul,ET.AL. (69)     23705  6
+    1 91231 801  18 D  1.4800+7          0.061900 2.2000-3          133.0000                     O.Birgul,ET.AL. (69)     23705  6
+    1 91231 801  18 D  1.4800+7          0.091800 1.9000-3          134.0000                     O.Birgul,ET.AL. (69)     23705  6
+    1 91231 801  18 D  1.4800+7          0.068000 3.8000-3          135.0000                     O.Birgul,ET.AL. (69)     23705  6
+#/DATA      6
 #/DATASET
 #/ENTRY
 #

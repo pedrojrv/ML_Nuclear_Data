@@ -98,7 +98,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -457,7 +457,7 @@
 #REF-CODE   (J,RCA,105,779,2017)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.105, p.779, 2017
-#DATASETS   4
+#DATASETS   6
 #
 #DATASET    327690031
 #DATE       20180704
@@ -491,7 +491,7 @@
 #REF-CODE   (J,RCA,105,779,2017)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.105, p.779, 2017
-#DATASETS   4
+#DATASETS   6
 #
 #DATASET    327690033
 #DATE       20180704
@@ -558,7 +558,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497038
 #DATE       20040103
@@ -852,10 +852,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089098
-#DATE       20160704
+#DATE       20201001
 #REACTION   56-BA-134(N,2N)56-BA-133-M,,SIG
 #PROJ       1
 #TARG       56134
@@ -889,7 +889,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -928,7 +928,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1351,15 +1351,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507068
-#DATE       19860702
+#DATE       20190805
 #REACTION   56-BA-134(N,G)56-BA-135,,SIG,,MXW
 #PROJ       1
 #TARG       56134
@@ -1371,7 +1371,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56134   3 102    0.025300          2.000000 2.000000                                       H.POMERANCE (52)         11507 68
+    1 56134   3 102    0.025300          2.000000 2.000000                                       H.Pomerance (52)         11507 68
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1646,7 +1646,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1677,7 +1677,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -2092,7 +2092,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -5858,6 +5858,40 @@
     1 56134   59000  C 2.0025+7          5.438-10                     1001.9 1.8250+7          E2B.Strohmaier,ET.AL. (78) V0012 19
     1 56134   59000  C 2.0025+7          2.640-15                     1001.9 1.8750+7          E2B.Strohmaier,ET.AL. (78) V0012 19
 #/DATA      307
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      32769
+#AUTHOR1    Junhua Luo+
+#YEAR       2017
+#INSTITUTE  (3CPRHXU)
+#TITLE      Activation cross section and isomeric cross section
+#+          ratio for the (n,2n) reaction on 132,134Ba
+#AUTHOR(S)  Junhua Luo, Chunlei Wu, Li Jiang,
+#+          Suyuan Li
+#REF-CODE   (J,RCA,105,779,2017)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.105, p.779, 2017
+#DATASETS   6
+#
+#DATASET    327690034
+#DATE       20180704
+#REACTION   56-BA-134(N,2N)56-BA-133-M/G,,SIG/RAT
+#PROJ       1
+#TARG       56134
+#MF         203
+#MT         16
+#PRODUCT    56-BA-133-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 56134 203  16M  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 56134 203  16M   1.3500+7 200000.0 0.940000 0.090000     16.0  56134.9                     Junhua Luo,ET.AL. (17)   32769  34
+    1 56134 203  16M   1.4100+7 200000.0 0.960000 0.090000     16.0  56134.9                     Junhua Luo,ET.AL. (17)   32769  34
+    1 56134 203  16M   1.4800+7 200000.0 0.990000 0.090000     16.0  56134.9                     Junhua Luo,ET.AL. (17)   32769  34
+#/DATA      3
 #/DATASET
 #/ENTRY
 #

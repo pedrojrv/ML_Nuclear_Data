@@ -50,6 +50,42 @@
 #/ENTRY
 #
 #
+#ENTRY      D6297
+#AUTHOR1    N.L.Singh+
+#YEAR       2004
+#INSTITUTE  (3INDBDA)
+#TITLE      Measurement and analysis of excitation functions for
+#+          alpha-particle-induced reactions in rhenium
+#AUTHOR(S)  N.L.Singh, M.S.Gadkari
+#REF-CODE   (J,CJP,82,227,2004)
+#REFERENCE  Jour. Canadian Journal of Physics
+#+          Vol.82, p.227, 2004
+#DATASETS   3
+#
+#DATASET    D6297006
+#DATE       20200505
+#REACTION   75-RE-187(A,2N)77-IR-189,,SIG
+#PROJ       2004
+#TARG       75187
+#MF         3
+#MT         16
+#PRODUCT    77-IR-189
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 75187   3  16   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 75187   3  16    1.8400+7 4000000. 0.216600 0.016200                                       N.L.Singh,ET.AL. (04)    D6297  6
+ 2004 75187   3  16    2.5700+7 3300000. 0.572400 0.042900                                       N.L.Singh,ET.AL. (04)    D6297  6
+ 2004 75187   3  16    3.1900+7 2900000. 0.175200 0.013100                                       N.L.Singh,ET.AL. (04)    D6297  6
+ 2004 75187   3  16    3.7200+7 2600000. 0.072100 5.6000-3                                       N.L.Singh,ET.AL. (04)    D6297  6
+ 2004 75187   3  16    4.1200+7 2300000. 0.048500 3.7000-3                                       N.L.Singh,ET.AL. (04)    D6297  6
+ 2004 75187   3  16    4.6400+7 2000000. 0.040000 3.0000-3                                       N.L.Singh,ET.AL. (04)    D6297  6
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0493
 #AUTHOR1    K.J.Hofstetter+
 #YEAR       1974
@@ -86,6 +122,39 @@
  2004 75187   3  17    5.4100+7 1500000. 0.141000 0.028000                                       K.J.Hofstetter, (74)     D0493 17
  2004 75187   3  17    5.8200+7 1400000. 0.126000 0.025000                                       K.J.Hofstetter, (74)     D0493 17
 #/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2476
+#AUTHOR1    E.F.Neuzil+
+#YEAR       1968
+#INSTITUTE  (1USAWWS)
+#TITLE      The 41 and 35 MeV helium ion-induced fission of 185Re
+#+          and 187Re
+#AUTHOR(S)  E.F.Neuzil, J.E.Assink, K.Apt
+#REF-CODE   (J,JIN,30,1161,1968)
+#REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
+#+          Vol.30, p.1161, 1968
+#DATASETS   2
+#
+#DATASET    C2476007
+#DATE       20200204
+#REACTION   75-RE-187(A,F),,SIG,,,DERIV
+#PROJ       2004
+#TARG       75187
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 2004 75187   3  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 2004 75187   3  18 D  3.5000+7          5.8000-6 1.1600-6                                       E.F.Neuzil,ET.AL. (68)   C2476  7
+ 2004 75187   3  18 D  4.1000+7          9.6000-6 1.9200-6                                       E.F.Neuzil,ET.AL. (68)   C2476  7
+#/DATA      2
 #/DATASET
 #/ENTRY
 #

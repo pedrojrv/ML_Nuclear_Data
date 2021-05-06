@@ -27,7 +27,7 @@ This directory contains files related to the Evaluated Nuclear Structure Data Fi
         | Notebooks
             - 0_Extracting_ENSDF_RIPL_Data.ipynb
             - 1_Loading_ENSDF_RIPL_Datasets.ipynb
-            - 2_EDA.ipynb
+            - 2_EDA_RIPL.ipynb
         | RIPL
             | levels
                 | levels
@@ -35,7 +35,6 @@ This directory contains files related to the Evaluated Nuclear Structure Data Fi
                     - z001.dat
                     - ...
                 - levels-param.data
-                - ...
 ```
 
 
@@ -121,6 +120,7 @@ This directory contains three notebooks. The first one show how the ENSDF/RIPL .
 This directory is just a copy of the original RIPL files. The files here are used by NucML to extract level and gamma information. These files will not be described here. Please refer to the <a src="https://www-nds.iaea.org/RIPL-3/">RIPL website</a> for more information.
 
 
+<!-- https://www.nndc.bnl.gov/ensarchivals/ -->
 
 <!-- 
 Ground state file, Spoin of -1 means missing value, for parity 0 is the missing value.

@@ -9,7 +9,7 @@
 #REF-CODE   (J,PR/C,73,064608,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.064608, 2006
-#DATASETS   7
+#DATASETS   9
 #
 #DATASET    22935006
 #DATE       20151203
@@ -194,7 +194,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536036
 #DATE       20101100
@@ -371,7 +371,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -600,7 +600,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -633,13 +633,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244081
-#DATE       20110104
+#DATE       20191103
 #REACTION   80-HG-204(N,G)80-HG-205,,SIG
 #PROJ       1
 #TARG       80204
@@ -647,12 +647,11 @@
 #MT         102
 #PRODUCT    80-HG-205
 #DATA-HDR   DATA-MAX
-#C4BEGIN    [    1 80204   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 80204   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 80204   3 102 C  200000.0 30000.00 0.250000                                                A.I.Leipunskiy, (58)     40244 81
+    1 80204   3 102    200000.0 30000.00 0.250000                                                A.I.Leipunskiy, (58)     40244 81
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -667,13 +666,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244102
-#DATE       20100301
+#DATE       20191103
 #REACTION   80-HG-204(N,G)80-HG-205,,SIG
 #PROJ       1
 #TARG       80204
@@ -681,13 +680,12 @@
 #MT         102
 #PRODUCT    80-HG-205
 #DATA-HDR   DATA-MAX
-#C4BEGIN    [    1 80204   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 80204   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 80204   3 102 C  2700000.          0.050000                                                A.I.Leipunskiy, (58)     40244102
-    1 80204   3 102 C  4000000.          0.025000                                                A.I.Leipunskiy, (58)     40244102
+    1 80204   3 102    2700000.          0.050000                                                A.I.Leipunskiy, (58)     40244102
+    1 80204   3 102    4000000.          0.025000                                                A.I.Leipunskiy, (58)     40244102
 #/DATA      2
 #/DATASET
 #/ENTRY

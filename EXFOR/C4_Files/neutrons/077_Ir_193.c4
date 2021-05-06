@@ -5,7 +5,7 @@
 #TITLE      TOTAL NEUTRON CROSS SECTION OF IR191 AND IR193.
 #AUTHOR(S)  H.Bolotin, R.Chrien
 #REF-CODE   (J,BAP,4,271(SA8),59)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.4, p.271(SA8), 1959
 #DATASETS   4
 #
@@ -439,7 +439,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -536,6 +536,107 @@
     1 77193   3  16+A  1.9970+7 120000.0 0.560000 0.034000                                       B.P.Bayhurst,ET.AL. (75) 10536 52
     1 77193   3  16+A  2.1240+7 190000.0 0.508000 0.034000                                       B.P.Bayhurst,ET.AL. (75) 10536 52
 #/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23537
+#AUTHOR1    A.Kalamara+
+#YEAR       2019
+#INSTITUTE  (2GRCTUA)
+#TITLE      Determination of the 193Ir(n,2n) reaction cross
+#+          section and correction methodology for the
+#+          191Ir(n,gamma) contamination
+#AUTHOR(S)  A.Kalamara, N.Patronis, R.Vlastou,
+#+          M.Kokkoris, S.Chasapoglou, A.Stamatopoulos,
+#+          M.Serris, V.Paneta, M.Axiotis,
+#+          A.Lagoyannis, S.Harissopulos, I.E.Stamatelatos
+#REF-CODE   (J,EPJ/A,55,187,2019)
+#REFERENCE  Jour. European Physical Journal A: Hadrons and Nuclei
+#+          Vol.55, p.187, 2019
+#DATASETS   2
+#
+#DATASET    23537002
+#DATE       20200201
+#REACTION   77-IR-193(N,2N)77-IR-192-G+M1,,SIG
+#PROJ       1
+#TARG       77193
+#MF         3
+#MT         16
+#PRODUCT    77-IR-192-G+M1
+#DATA-HDR   DATA
+#C4BEGIN    [    1 77193   3  16+  ]
+#DATA       24
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 77193   3  16+   1.0000+7          1.315000 0.110460                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.0000+7          1.279000 0.102320                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.0000+7          1.282000 0.108970                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.0500+7          1.607000 0.128560                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.0500+7          1.578000 0.118350                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.0500+7          1.591000 0.125689                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.1000+7          1.951000 0.150227                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.1000+7          1.893000 0.138189                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.1000+7          1.972000 0.151844                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.1300+7          2.037000 0.156849                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.1300+7          1.896000 0.138408                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.1300+7          1.971000 0.151767                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.5300+7          1.841000 0.082845                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.5300+7          1.817000 0.083582                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.5300+7          1.834000 0.084364                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.7100+7          1.412000 0.074836                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.7100+7          1.365000 0.073710                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.7100+7          1.396000 0.078176                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.8900+7          0.740000 0.155400                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.8900+7          0.773000 0.160784                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   1.8900+7          0.810000 0.179010                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   2.0900+7          0.273000 0.099099                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   2.0900+7          0.265000 0.105735                                       A.Kalamara,ET.AL. (19)   23537  2
+    1 77193   3  16+   2.0900+7          0.274000 0.122204                                       A.Kalamara,ET.AL. (19)   23537  2
+#/DATA      24
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23537
+#AUTHOR1    A.Kalamara+
+#YEAR       2019
+#INSTITUTE  (2GRCTUA)
+#TITLE      Determination of the 193Ir(n,2n) reaction cross
+#+          section and correction methodology for the
+#+          191Ir(n,gamma) contamination
+#AUTHOR(S)  A.Kalamara, N.Patronis, R.Vlastou,
+#+          M.Kokkoris, S.Chasapoglou, A.Stamatopoulos,
+#+          M.Serris, V.Paneta, M.Axiotis,
+#+          A.Lagoyannis, S.Harissopulos, I.E.Stamatelatos
+#REF-CODE   (J,EPJ/A,55,187,2019)
+#REFERENCE  Jour. European Physical Journal A: Hadrons and Nuclei
+#+          Vol.55, p.187, 2019
+#DATASETS   2
+#
+#DATASET    23537003
+#DATE       20200201
+#REACTION   77-IR-193(N,2N)77-IR-192-G+M1,,SIG
+#PROJ       1
+#TARG       77193
+#MF         3
+#MT         16
+#PRODUCT    77-IR-192-G+M1
+#DATA-HDR   DATA
+#C4BEGIN    [    1 77193   3  16+D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 77193   3  16+D  1.0000+7 100000.0 1290.000 83.00000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  1.0500+7 100000.0 1590.000 100.0000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  1.1000+7 100000.0 1931.000 119.0000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  1.1300+7 100000.0 1953.000 120.0000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  1.5300+7 500000.0 1830.000 76.00000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  1.7100+7 300000.0 1390.000 68.00000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  1.8900+7 300000.0 769.0000 82.00000                                       A.Kalamara,ET.AL. (19)   23537  3
+    1 77193   3  16+D  2.0900+7 200000.0 270.0000 53.00000                                       A.Kalamara,ET.AL. (19)   23537  3
+#/DATA      8
 #/DATASET
 #/ENTRY
 #
@@ -692,7 +793,7 @@
 #REF-CODE   (R,RI-259,2003)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.259, 2003
-#DATASETS   39
+#DATASETS   41
 #
 #DATASET    41428062
 #DATE       20141206
@@ -726,7 +827,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536025
 #DATE       20101100
@@ -883,7 +984,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1175,7 +1276,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1206,7 +1307,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1628,7 +1729,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1833,12 +1934,12 @@
 #AUTHOR1    Yu.N.Trofimov
 #YEAR       1987
 #INSTITUTE  (4RUSRI)
-#TITLE      Activation cross-sections for 31 nuclei at the
-#+          neutron energy 2 MeV .
+#TITLE      Activation cross-sections for 31 nuclei for 2 MeV
+#+          neutrons
 #AUTHOR(S)  Yu.N.Trofimov
-#REF-CODE   (J,YK,1987,(4),10,1987)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1987, Issue.4, p.10, 1987
+#REF-CODE   (J,YK,,(4),10,1987)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.4, p.10, 1987
 #DATASETS   31
 #
 #DATASET    40975018
@@ -1969,7 +2070,7 @@
 #REF-CODE   (R,RI-259,2003)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.259, 2003
-#DATASETS   39
+#DATASETS   41
 #
 #DATASET    41428064
 #DATE       20141206
@@ -2101,7 +2202,7 @@
 #REF-CODE   (R,RI-259,2003)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.259, 2003
-#DATASETS   39
+#DATASETS   41
 #
 #DATASET    41428063
 #DATE       20141206
@@ -2952,20 +3053,18 @@
 #
 #ENTRY      21781
 #AUTHOR1    P.Fischer+
-#YEAR       1981
+#YEAR       1983
 #INSTITUTE  (2GERKIG)
-#TITLE      -ENERGY CALIBRATION OF THE IKK FAST CHOPPER
-#+          USING U-238 STANDARDS. THE RESONANCE PARAMETERS
-#+          OF IRIDIUM IN THE ENERGY RANGE BELOW 1.5 EV.
-#+          (IN GERMAN)
+#TITLE      Resonance parameters of the two low-energy iridium
+#+          resonances
 #AUTHOR(S)  P.Fischer, U.Harz, H.G.Priesmeyer
-#REF-CODE   (R,GKSS-81/E/17,81)
-#REFERENCE  Rept. Ges.Kernen.-Verwertung, Schiffbau and Schiffahrt
-#+          No.81/E/17, 1981
+#REF-CODE   (J,AKE,42,203,1983)
+#REFERENCE  Jour. Atomkernenergie
+#+          Vol.42, p.203, 1983
 #DATASETS   4
 #
 #DATASET    217810033
-#DATE       19820902
+#DATE       20200106
 #REACTION   77-IR-193(N,EL),,WID/RED,,2G
 #PROJ       1
 #TARG       77193
@@ -2976,7 +3075,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 77193 4026024    1.298000 1.0000-3 4.0000-4 5.0000-6 0.000000                              P.FISCHER,ET.AL. (81)    21781  33
+    1 77193 4026024    1.298000 1.0000-3 4.0000-4 5.0000-6 0.000000                              P.Fischer,ET.AL. (83)    21781  33
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -3080,7 +3179,7 @@
 #TITLE      TOTAL NEUTRON CROSS SECTION OF IR191 AND IR193.
 #AUTHOR(S)  H.Bolotin, R.Chrien
 #REF-CODE   (J,BAP,4,271(SA8),59)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.4, p.271(SA8), 1959
 #DATASETS   4
 #
@@ -3117,20 +3216,18 @@
 #
 #ENTRY      21781
 #AUTHOR1    P.Fischer+
-#YEAR       1981
+#YEAR       1983
 #INSTITUTE  (2GERKIG)
-#TITLE      -ENERGY CALIBRATION OF THE IKK FAST CHOPPER
-#+          USING U-238 STANDARDS. THE RESONANCE PARAMETERS
-#+          OF IRIDIUM IN THE ENERGY RANGE BELOW 1.5 EV.
-#+          (IN GERMAN)
+#TITLE      Resonance parameters of the two low-energy iridium
+#+          resonances
 #AUTHOR(S)  P.Fischer, U.Harz, H.G.Priesmeyer
-#REF-CODE   (R,GKSS-81/E/17,81)
-#REFERENCE  Rept. Ges.Kernen.-Verwertung, Schiffbau and Schiffahrt
-#+          No.81/E/17, 1981
+#REF-CODE   (J,AKE,42,203,1983)
+#REFERENCE  Jour. Atomkernenergie
+#+          Vol.42, p.203, 1983
 #DATASETS   4
 #
 #DATASET    217810032
-#DATE       19820902
+#DATE       20200106
 #REACTION   77-IR-193(N,G),,WID
 #PROJ       1
 #TARG       77193
@@ -3141,7 +3238,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 77193 4026031    1.298000 1.0000-3 0.083200 8.0000-4 0.000000                              P.FISCHER,ET.AL. (81)    21781  32
+    1 77193 4026031    1.298000 1.0000-3 0.083200 8.0000-4 0.000000                              P.Fischer,ET.AL. (83)    21781  32
 #/DATA      1
 #/DATASET
 #/ENTRY

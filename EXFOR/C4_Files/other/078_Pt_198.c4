@@ -772,21 +772,21 @@
 #
 #
 #ENTRY      C0413
-#AUTHOR1    J.Van De Plicht+
+#AUTHOR1    J.Van Der Plicht+
 #YEAR       1983
 #INSTITUTE  (1USALAS)
 #TITLE      Fission of polonium, osmium, and erbium composite
 #+          systems
-#AUTHOR(S)  J.Van De Plicht, H.C.Britt, M.M.Fowler,
+#AUTHOR(S)  J.Van Der Plicht, H.C.Britt, M.M.Fowler,
 #+          Z.Fraenkel, A.Gavron, J.B.Wilhelmy,
 #+          F.Plasil, T.C.Awes, G.R.Young
-#REF-CODE   (J,PR/C,28,2022,8311)
+#REF-CODE   (J,PR/C,28,2022,1983)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.28, p.2022, 1983
 #DATASETS   14
 #
 #DATASET    C0413010
-#DATE       19970405
+#DATE       20191101
 #REACTION   78-PT-198(6-C-12,F),,SIG
 #PROJ       6012
 #TARG       78198
@@ -797,18 +797,18 @@
 #DATA       12
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 6012 78198   3  18    5.5000+7          3.0000-6 2.0000-6                                       J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    5.8000+7          2.0000-4 2.0000-5                                       J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    6.0000+7          7.9000-4 8.0000-5                                       J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    6.5000+7          5.1000-3                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    7.0000+7          0.016600                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    7.5000+7          0.038700                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    8.0000+7          0.074700                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    8.5000+7          0.136000                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    9.0000+7          0.209000                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    1.0000+8          0.399000                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    1.1000+8          0.601000                                                J.VAN DE PLICHT, (83)    C0413 10
- 6012 78198   3  18    1.2000+8          0.775000                                                J.VAN DE PLICHT, (83)    C0413 10
+ 6012 78198   3  18    5.5000+7          3.0000-6 2.0000-6                                       J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    5.8000+7          2.0000-4 2.0000-5                                       J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    6.0000+7          7.9000-4 8.0000-5                                       J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    6.5000+7          5.1000-3                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    7.0000+7          0.016600                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    7.5000+7          0.038700                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    8.0000+7          0.074700                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    8.5000+7          0.136000                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    9.0000+7          0.209000                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    1.0000+8          0.399000                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    1.1000+8          0.601000                                                J.Van Der Plicht, (83)   C0413 10
+ 6012 78198   3  18    1.2000+8          0.775000                                                J.Van Der Plicht, (83)   C0413 10
 #/DATA      12
 #/DATASET
 #/ENTRY
@@ -1152,6 +1152,217 @@
  6012 78198   4   2  C 7.3500+7          0.387650          0.288529                              A.Shrivastava,ET.AL. (01)A0730 12
  6012 78198   4   2  C 7.3500+7          0.226355          0.203640                              A.Shrivastava,ET.AL. (01)A0730 12
 #/DATA      16
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2530
+#AUTHOR1    T.Darrah Thomas+
+#YEAR       1962
+#INSTITUTE  (1USABRK)
+#TITLE      Spallation-Fission Competition in Astatine Compound
+#+          Nuclei Formed by Heavy-Ion Bombardment
+#AUTHOR(S)  T.Darrah Thomas, G.E.Gordon, R.M.Latimer,
+#+          G.T.Seaborg
+#REF-CODE   (J,PR,126,1805,1962)
+#REFERENCE  Jour. Physical Review
+#+          Vol.126, p.1805, 1962
+#DATASETS   14
+#
+#DATASET    C2530007
+#DATE       20200505
+#REACTION   78-PT-198(7-N-14,4N)85-AT-208,,SIG
+#PROJ       7014
+#TARG       78198
+#MF         3
+#MT         37
+#PRODUCT    85-AT-208
+#DATA-HDR   DATA
+#C4BEGIN    [ 7014 78198   3  37   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 7014 78198   3  37    6.6150+7          0.019065 5.7480-3                                       T.Darrah Thomas, (62)    C2530  7
+ 7014 78198   3  37    7.3211+7          0.052051 0.013372                                       T.Darrah Thomas, (62)    C2530  7
+ 7014 78198   3  37    7.5351+7          0.034186 5.0850-3                                       T.Darrah Thomas, (62)    C2530  7
+ 7014 78198   3  37    7.7054+7          0.034200 6.1440-3                                       T.Darrah Thomas, (62)    C2530  7
+ 7014 78198   3  37    8.0185+7          0.024199 6.2200-3                                       T.Darrah Thomas, (62)    C2530  7
+ 7014 78198   3  37    8.5014+7          0.019388 6.6590-3                                       T.Darrah Thomas, (62)    C2530  7
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2530
+#AUTHOR1    T.Darrah Thomas+
+#YEAR       1962
+#INSTITUTE  (1USABRK)
+#TITLE      Spallation-Fission Competition in Astatine Compound
+#+          Nuclei Formed by Heavy-Ion Bombardment
+#AUTHOR(S)  T.Darrah Thomas, G.E.Gordon, R.M.Latimer,
+#+          G.T.Seaborg
+#REF-CODE   (J,PR,126,1805,1962)
+#REFERENCE  Jour. Physical Review
+#+          Vol.126, p.1805, 1962
+#DATASETS   14
+#
+#DATASET    C2530008
+#DATE       20200505
+#REACTION   78-PT-198(7-N-14,5N)85-AT-207,,SIG
+#PROJ       7014
+#TARG       78198
+#MF         3
+#MT         152
+#PRODUCT    85-AT-207
+#DATA-HDR   DATA
+#C4BEGIN    [ 7014 78198   3 152   ]
+#DATA       20
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 7014 78198   3 152    6.4466+7          0.010262 1.6400-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    6.7546+7          0.035647 7.5060-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    6.8530+7          0.045732 0.011385                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    7.0628+7          0.113501 0.018147                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    7.3318+7          0.106713 0.012483                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    7.4306+7          0.116451 0.024521                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    7.7702+7          0.120966 0.016795                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    7.9685+7          0.109547 0.014016                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    8.2384+7          0.076399 9.7650-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    8.3503+7          0.122629 0.029365                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    8.6928+7          0.041556 6.6430-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    8.8486+7          0.039551 9.0960-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    8.9488+7          0.025910 4.9420-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    9.2187+7          0.018070 2.5070-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    9.3334+7          0.010323 1.5420-3                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    9.7175+7          4.8350-3 8.2400-4                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    1.0029+8          4.4900-3 9.0100-4                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    1.0740+8          1.4310-3 3.1500-4                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    1.1234+8          2.0550-3 4.7300-4                                       T.Darrah Thomas, (62)    C2530  8
+ 7014 78198   3 152    1.1531+8          1.9320-3 4.2600-4                                       T.Darrah Thomas, (62)    C2530  8
+#/DATA      20
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2530
+#AUTHOR1    T.Darrah Thomas+
+#YEAR       1962
+#INSTITUTE  (1USABRK)
+#TITLE      Spallation-Fission Competition in Astatine Compound
+#+          Nuclei Formed by Heavy-Ion Bombardment
+#AUTHOR(S)  T.Darrah Thomas, G.E.Gordon, R.M.Latimer,
+#+          G.T.Seaborg
+#REF-CODE   (J,PR,126,1805,1962)
+#REFERENCE  Jour. Physical Review
+#+          Vol.126, p.1805, 1962
+#DATASETS   14
+#
+#DATASET    C2530009
+#DATE       20200505
+#REACTION   78-PT-198(7-N-14,6N)85-AT-206,,SIG
+#PROJ       7014
+#TARG       78198
+#MF         3
+#MT         153
+#PRODUCT    85-AT-206
+#DATA-HDR   DATA
+#C4BEGIN    [ 7014 78198   3 153   ]
+#DATA       11
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 7014 78198   3 153    7.5687+7          0.106336 0.031008                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    7.9668+7          0.169776 0.032064                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    8.3649+7          0.225353 0.051345                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    8.5498+7          0.230971 0.050415                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    8.7488+7          0.236730 0.049379                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    8.9479+7          0.201715 0.051607                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    9.3744+7          0.146457 0.034753                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    9.7867+7          0.095182 0.017976                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    9.9716+7          0.076261 0.017375                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    1.0185+8          0.058886 0.016655                                       T.Darrah Thomas, (62)    C2530  9
+ 7014 78198   3 153    1.0384+8          0.045469 0.014042                                       T.Darrah Thomas, (62)    C2530  9
+#/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2530
+#AUTHOR1    T.Darrah Thomas+
+#YEAR       1962
+#INSTITUTE  (1USABRK)
+#TITLE      Spallation-Fission Competition in Astatine Compound
+#+          Nuclei Formed by Heavy-Ion Bombardment
+#AUTHOR(S)  T.Darrah Thomas, G.E.Gordon, R.M.Latimer,
+#+          G.T.Seaborg
+#REF-CODE   (J,PR,126,1805,1962)
+#REFERENCE  Jour. Physical Review
+#+          Vol.126, p.1805, 1962
+#DATASETS   14
+#
+#DATASET    C2530010
+#DATE       20200505
+#REACTION   78-PT-198(7-N-14,7N)85-AT-205,,SIG
+#PROJ       7014
+#TARG       78198
+#MF         3
+#MT         160
+#PRODUCT    85-AT-205
+#DATA-HDR   DATA
+#C4BEGIN    [ 7014 78198   3 160   ]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 7014 78198   3 160    8.5841+7          0.020552 4.7060-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    8.7943+7          0.024767 7.4660-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    8.9900+7          0.032952 6.9080-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    9.1719+7          0.041208 8.2250-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    9.3820+7          0.051539 8.7220-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    9.5925+7          0.059108 0.010615                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    9.7753+7          0.062930 0.013178                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    9.9730+7          0.057043 0.010239                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    1.0157+8          0.051704 0.010320                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    1.0397+8          0.044610 8.0070-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    1.0581+8          0.038481 8.8020-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    1.0779+8          0.033610 7.0430-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    1.0963+8          0.027252 7.0000-3                                       T.Darrah Thomas, (62)    C2530 10
+ 7014 78198   3 160    1.1388+8          0.015834 5.9420-3                                       T.Darrah Thomas, (62)    C2530 10
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2530
+#AUTHOR1    T.Darrah Thomas+
+#YEAR       1962
+#INSTITUTE  (1USABRK)
+#TITLE      Spallation-Fission Competition in Astatine Compound
+#+          Nuclei Formed by Heavy-Ion Bombardment
+#AUTHOR(S)  T.Darrah Thomas, G.E.Gordon, R.M.Latimer,
+#+          G.T.Seaborg
+#REF-CODE   (J,PR,126,1805,1962)
+#REFERENCE  Jour. Physical Review
+#+          Vol.126, p.1805, 1962
+#DATASETS   14
+#
+#DATASET    C2530011
+#DATE       20200505
+#REACTION   78-PT-198(7-N-14,8N)85-AT-204,,SIG
+#PROJ       7014
+#TARG       78198
+#MF         3
+#MT         161
+#PRODUCT    85-AT-204
+#DATA-HDR   DATA
+#C4BEGIN    [ 7014 78198   3 161   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 7014 78198   3 161    1.0514+8          0.015849 7.4480-3                                       T.Darrah Thomas, (62)    C2530 11
+ 7014 78198   3 161    1.0700+8          0.024198 8.1510-3                                       T.Darrah Thomas, (62)    C2530 11
+ 7014 78198   3 161    1.0929+8          0.038351 0.010255                                       T.Darrah Thomas, (62)    C2530 11
+ 7014 78198   3 161    1.1114+8          0.049191 0.011314                                       T.Darrah Thomas, (62)    C2530 11
+ 7014 78198   3 161    1.1543+8          0.051062 0.010249                                       T.Darrah Thomas, (62)    C2530 11
+#/DATA      5
 #/DATASET
 #/ENTRY
 #

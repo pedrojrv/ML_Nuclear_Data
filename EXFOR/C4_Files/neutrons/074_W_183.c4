@@ -8280,7 +8280,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8486,15 +8486,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507092
-#DATE       19860702
+#DATE       20190805
 #REACTION   74-W-183(N,G)74-W-184,,SIG,,MXW
 #PROJ       1
 #TARG       74183
@@ -8506,7 +8506,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183   3 102    0.025300          10.90000 1.090000                                       H.POMERANCE (52)         11507 92
+    1 74183   3 102    0.025300          10.90000 1.090000                                       H.Pomerance (52)         11507 92
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8655,7 +8655,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8792,7 +8792,7 @@
 #AUTHOR(S)  M.V.Bokhovko, L.E.Kazakov, V.N.Kononov,
 #+          E.D.Poletaev, V.M.Timokhov, A.A.Voevodskiy
 #REF-CODE   (J,YK,,(1),39,1986)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.1, p.39, 1986
 #DATASETS   6
 #
@@ -8911,7 +8911,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -18905,14 +18905,15 @@
 #
 #
 #ENTRY      21619
-#AUTHOR1    S.Joly+
+#AUTHOR1    J.Voignier+
 #YEAR       1981
 #INSTITUTE  (2FR BRC)
-#TITLE      -Measurement of fast neutron capture cross sections
-#+          using a Na-I spectrometer.-
-#AUTHOR(S)  S.Joly, J.Voignier, G.Grenier,
+#TITLE      Neutron capture cross section measurements of
+#+          rubidium, yttrium, niobium, gadolinium, tungsten,
+#+          platinum and thallium between 0.5 and 3.0 MeV
+#AUTHOR(S)  J.Voignier, S.Joly, G.Grenier,
 #+          D.M.Drake, L.Nilsson
-#REF-CODE   (R,CEA-R-5089,198108)
+#REF-CODE   (R,CEA-R-5089,1981)
 #REFERENCE  Rept. Centre d`Etudes Nucleaires, Saclay Reports
 #+          No.5089, 1981
 #DATASETS   11
@@ -18931,9 +18932,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183   3 102 C  500000.0 80000.00 0.070000 9.0000-3                                       S.Joly,ET.AL. (81)       21619 13
-    1 74183   3 102 C  1000000. 70000.00 0.076000 0.012000                                       S.Joly,ET.AL. (81)       21619 13
-    1 74183   3 102 C  2500000. 60000.00 0.026000 5.0000-3                                       S.Joly,ET.AL. (81)       21619 13
+    1 74183   3 102 C  500000.0 80000.00 0.070000 9.0000-3                                       J.Voignier,ET.AL. (81)   21619 13
+    1 74183   3 102 C  1000000. 70000.00 0.076000 0.012000                                       J.Voignier,ET.AL. (81)   21619 13
+    1 74183   3 102 C  2500000. 60000.00 0.026000 5.0000-3                                       J.Voignier,ET.AL. (81)   21619 13
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -19055,7 +19056,7 @@
 #REF-CODE   (R,RI-259,2003)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.259, 2003
-#DATASETS   39
+#DATASETS   41
 #
 #DATASET    41428047
 #DATE       20141206
@@ -19114,16 +19115,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1975
 #INSTITUTE  (2GERJUL)
-#TITLE      -Neutron activation cross sections at 14.7 MeV for
-#+          isotopes of tungsten-
+#TITLE      Neutron activation cross sections at 14.7 MeV for
+#+          isotopes of tungsten
 #AUTHOR(S)  S.M.Qaim, C.Graca
 #REF-CODE   (J,NP/A,242,317,1975)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.242, p.317, 1975
-#DATASETS   15
+#DATASETS   18
 #
 #DATASET    20668009
-#DATE       20080503
+#DATE       20200905
 #REACTION   74-W-183(N,P)73-TA-183,,SIG
 #PROJ       1
 #TARG       74183
@@ -19135,7 +19136,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183   3 103    1.4700+7 300000.0 4.1000-3 5.0000-4                                       S.M.Qaim,ET.AL. (75)     20668  9
+    1 74183   3 103    1.4700+7          4.1000-3 5.0000-4                                       S.M.Qaim,ET.AL. (75)     20668  9
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -19188,7 +19189,7 @@
 #REF-CODE   (R,RI-259,2003)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.259, 2003
-#DATASETS   39
+#DATASETS   41
 #
 #DATASET    41428046
 #DATE       20141206
@@ -19215,16 +19216,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1975
 #INSTITUTE  (2GERJUL)
-#TITLE      -Neutron activation cross sections at 14.7 MeV for
-#+          isotopes of tungsten-
+#TITLE      Neutron activation cross sections at 14.7 MeV for
+#+          isotopes of tungsten
 #AUTHOR(S)  S.M.Qaim, C.Graca
 #REF-CODE   (J,NP/A,242,317,1975)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.242, p.317, 1975
-#DATASETS   15
+#DATASETS   18
 #
 #DATASET    20668011
-#DATE       20080503
+#DATE       20200905
 #REACTION   74-W-183(N,A)72-HF-180-M,,SIG
 #PROJ       1
 #TARG       74183
@@ -19236,7 +19237,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183   3 107M   1.4700+7 300000.0 2.2000-4 3.0000-5                                       S.M.Qaim,ET.AL. (75)     20668 11
+    1 74183   3 107M   1.4700+7          2.2000-4 3.0000-5                                       S.M.Qaim,ET.AL. (75)     20668 11
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -19246,16 +19247,16 @@
 #AUTHOR1    A.I.Lashuk+
 #YEAR       1996
 #INSTITUTE  (4RUSFEI)
-#TITLE      GAMMA-QUANTA PRODUCTION CROSS SECTIONS AT NEUTRON
-#+          INELASTIC SCATTERING AT THE ENERGY 3 MEV
+#TITLE      Gamma-quanta production cross sections at neutron
+#+          inelastic scattering at the energy 3 MeV
 #AUTHOR(S)  A.I.Lashuk, I.P.Sadokhin
-#REF-CODE   (J,YK,1996,(2),59,9612)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1996, Issue.2, p.59, 1996
+#REF-CODE   (J,YK,,(2),59,1996)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.2, p.59, 1996
 #DATASETS   28
 #
 #DATASET    41245022
-#DATE       19970506
+#DATE       20191106
 #REACTION   74-W-183(N,INL)74-W-183,PAR,SIG,G
 #PROJ       1
 #TARG       74183
@@ -19267,7 +19268,38 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183   39000    3000000.          2.523000 0.730000               0.9 210000.0          E2A.I.LASHUK,ET.AL. (96)   41245 22
+    1 74183   39000    3000000.          2.523000 0.730000               0.9 210000.0          E2A.I.Lashuk,ET.AL. (96)   41245 22
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20668
+#AUTHOR1    S.M.Qaim+
+#YEAR       1975
+#INSTITUTE  (2GERJUL)
+#TITLE      Neutron activation cross sections at 14.7 MeV for
+#+          isotopes of tungsten
+#AUTHOR(S)  S.M.Qaim, C.Graca
+#REF-CODE   (J,NP/A,242,317,1975)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.242, p.317, 1975
+#DATASETS   18
+#
+#DATASET    20668010
+#DATE       20200905
+#REACTION   74-W-183(N,X)73-TA-182-G,,SIG
+#PROJ       1
+#TARG       74183
+#MF         3
+#MT         9000
+#PRODUCT    73-TA-182-G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 74183   39000G  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 74183   39000G   1.4700+7          1.3000-3 5.0000-4           73182.0                     S.M.Qaim,ET.AL. (75)     20668 10
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -19931,17 +19963,17 @@
 #AUTHOR1    J.R.Waters+
 #YEAR       1959
 #INSTITUTE  (2UK HAR)
-#TITLE      -SPINS AND RADIATION WIDTHS OF THE LOW ENERGY NEUTRON
-#+          RESONANCES IN TUNGSTEN -.
+#TITLE      Spins and radiation widths of the low energy neutron
+#+          resonances in tungsten
 #AUTHOR(S)  J.R.Waters, J.E.Evans, B.B.Kinsey,
 #+          G.H.Williams
-#REF-CODE   (J,NP,12,563,5909)
+#REF-CODE   (J,NP,12,563,1959)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.12, p.563, 1959
 #DATASETS   9
 #
 #DATASET    213170033
-#DATE       19800203
+#DATE       20200804
 #REACTION   74-W-183(N,0),,J
 #PROJ       1
 #TARG       74183
@@ -19952,11 +19984,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183 4026003    7.620000          1.000000                                                J.R.WATERS,ET.AL. (59)   21317  33
-    1 74183 4026003    27.10000          1.000000                                                J.R.WATERS,ET.AL. (59)   21317  33
-    1 74183 4026003    46.10000          1.000000                                                J.R.WATERS,ET.AL. (59)   21317  33
-    1 74183 4026003    47.70000          0.000000                                                J.R.WATERS,ET.AL. (59)   21317  33
-    1 74183 4026003    100.8000          0.000000                                                J.R.WATERS,ET.AL. (59)   21317  33
+    1 74183 4026003    7.620000          1.000000                                                J.R.Waters,ET.AL. (59)   21317  33
+    1 74183 4026003    27.10000          1.000000                                                J.R.Waters,ET.AL. (59)   21317  33
+    1 74183 4026003    46.10000          1.000000                                                J.R.Waters,ET.AL. (59)   21317  33
+    1 74183 4026003    47.70000          0.000000                                                J.R.Waters,ET.AL. (59)   21317  33
+    1 74183 4026003    100.8000          0.000000                                                J.R.Waters,ET.AL. (59)   21317  33
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -19966,28 +19998,29 @@
 #AUTHOR1    R.E.Chrien+
 #YEAR       1958
 #INSTITUTE  (1USABNL)
-#TITLE      IDENTIFICATION OF LEVEL SPINS BY TOTAL CROSS-SECTION
-#+          MEASUREMENTS.
+#TITLE      Identification of level spins by total cross-section
+#+          measurements
 #AUTHOR(S)  R.E.Chrien, R.L.Zimmerman
-#REF-CODE   (J,BAP,3,19(F8),5801)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REF-CODE   (J,BAP,3,19(F8),1958)
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.3, p.19(F8), 1958
 #DATASETS   2
 #
 #DATASET    12153003
-#DATE       19821002
+#DATE       20190804
 #REACTION   74-W-183(N,0),,J
 #PROJ       1
 #TARG       74183
 #MF         402
 #MT         6003
 #DATA-HDR   DATA
-#C4BEGIN    [    1 74183 4026003   ]
+#C4BEGIN    [    1 74183 4026003 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183 4026003    27.00000          1.000000                                                R.E.CHRIEN,ET.AL. (58)   12153  3
-    1 74183 4026003    46.00000          0.000000                                                R.E.CHRIEN,ET.AL. (58)   12153  3
+    1 74183 4026003 D  27.00000          1.000000                                                R.E.Chrien,ET.AL. (58)   12153  3
+    1 74183 4026003 D  46.00000          0.000000                                                R.E.Chrien,ET.AL. (58)   12153  3
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -20489,17 +20522,17 @@
 #AUTHOR1    J.R.Waters+
 #YEAR       1959
 #INSTITUTE  (2UK HAR)
-#TITLE      -SPINS AND RADIATION WIDTHS OF THE LOW ENERGY NEUTRON
-#+          RESONANCES IN TUNGSTEN -.
+#TITLE      Spins and radiation widths of the low energy neutron
+#+          resonances in tungsten
 #AUTHOR(S)  J.R.Waters, J.E.Evans, B.B.Kinsey,
 #+          G.H.Williams
-#REF-CODE   (J,NP,12,563,5909)
+#REF-CODE   (J,NP,12,563,1959)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.12, p.563, 1959
 #DATASETS   9
 #
 #DATASET    213170031
-#DATE       19800203
+#DATE       20200804
 #REACTION   74-W-183(N,EL),,WID
 #PROJ       1
 #TARG       74183
@@ -20510,11 +20543,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183 4026021    7.620000          1.8000-3 1.0000-4                                       J.R.WATERS,ET.AL. (59)   21317  31
-    1 74183 4026021    27.10000          0.040100 1.1000-3                                       J.R.WATERS,ET.AL. (59)   21317  31
-    1 74183 4026021    46.10000          0.147000 7.0000-3                                       J.R.WATERS,ET.AL. (59)   21317  31
-    1 74183 4026021    47.70000          0.121000 7.0000-3                                       J.R.WATERS,ET.AL. (59)   21317  31
-    1 74183 4026021    100.8000          0.255000 0.012000                                       J.R.WATERS,ET.AL. (59)   21317  31
+    1 74183 4026021    7.620000          1.8000-3 1.0000-4                                       J.R.Waters,ET.AL. (59)   21317  31
+    1 74183 4026021    27.10000          0.040100 1.1000-3                                       J.R.Waters,ET.AL. (59)   21317  31
+    1 74183 4026021    46.10000          0.147000 7.0000-3                                       J.R.Waters,ET.AL. (59)   21317  31
+    1 74183 4026021    47.70000          0.121000 7.0000-3                                       J.R.Waters,ET.AL. (59)   21317  31
+    1 74183 4026021    100.8000          0.255000 0.012000                                       J.R.Waters,ET.AL. (59)   21317  31
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -20813,7 +20846,7 @@
 #TITLE      Slow neutron resonances in Cd and W
 #AUTHOR(S)  R.B.Schwartz, V.E.Pilcher, R.M.Schectman
 #REF-CODE   (J,BAP,1,187(K3),1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.187(K3), 1956
 #DATASETS   16
 #
@@ -21110,7 +21143,7 @@
 #TITLE      Slow neutron resonances in Cd and W
 #AUTHOR(S)  R.B.Schwartz, V.E.Pilcher, R.M.Schectman
 #REF-CODE   (J,BAP,1,187(K3),1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.187(K3), 1956
 #DATASETS   16
 #
@@ -21137,17 +21170,17 @@
 #AUTHOR1    J.R.Waters+
 #YEAR       1959
 #INSTITUTE  (2UK HAR)
-#TITLE      -SPINS AND RADIATION WIDTHS OF THE LOW ENERGY NEUTRON
-#+          RESONANCES IN TUNGSTEN -.
+#TITLE      Spins and radiation widths of the low energy neutron
+#+          resonances in tungsten
 #AUTHOR(S)  J.R.Waters, J.E.Evans, B.B.Kinsey,
 #+          G.H.Williams
-#REF-CODE   (J,NP,12,563,5909)
+#REF-CODE   (J,NP,12,563,1959)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.12, p.563, 1959
 #DATASETS   9
 #
 #DATASET    213170032
-#DATE       19800203
+#DATE       20200804
 #REACTION   74-W-183(N,G),,WID
 #PROJ       1
 #TARG       74183
@@ -21158,11 +21191,11 @@
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 74183 4026031    7.620000          0.068900 6.0000-3                                       J.R.WATERS,ET.AL. (59)   21317  32
-    1 74183 4026031    27.10000          0.076900 5.9000-3                                       J.R.WATERS,ET.AL. (59)   21317  32
-    1 74183 4026031    46.10000          0.071000 0.012000                                       J.R.WATERS,ET.AL. (59)   21317  32
-    1 74183 4026031    47.70000          0.068000 0.017000                                       J.R.WATERS,ET.AL. (59)   21317  32
-    1 74183 4026031    100.8000          0.030000 0.035000                                       J.R.WATERS,ET.AL. (59)   21317  32
+    1 74183 4026031    7.620000          0.068900 6.0000-3                                       J.R.Waters,ET.AL. (59)   21317  32
+    1 74183 4026031    27.10000          0.076900 5.9000-3                                       J.R.Waters,ET.AL. (59)   21317  32
+    1 74183 4026031    46.10000          0.071000 0.012000                                       J.R.Waters,ET.AL. (59)   21317  32
+    1 74183 4026031    47.70000          0.068000 0.017000                                       J.R.Waters,ET.AL. (59)   21317  32
+    1 74183 4026031    100.8000          0.030000 0.035000                                       J.R.Waters,ET.AL. (59)   21317  32
 #/DATA      5
 #/DATASET
 #/ENTRY

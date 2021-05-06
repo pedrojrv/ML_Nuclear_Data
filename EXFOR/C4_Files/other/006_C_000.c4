@@ -32,6 +32,60 @@
 #/ENTRY
 #
 #
+#ENTRY      O2403
+#AUTHOR1    J.Marganiec+
+#YEAR       2016
+#INSTITUTE  (2GERTHD)
+#TITLE      Coulomb and nuclear excitations of narrow resonances
+#+          in 17Ne
+#AUTHOR(S)  J.Marganiec, F.Wamers, F.Aksouh,
+#+          Yu.Aksyutina, H.Alvarez-Pol, T.Aumann,
+#+          S.Beceiro-Novo, C.A.Bertulani, K.Boretzky,
+#+          M.J.G.Borge, M.Chartier, A.Chatillon,
+#+          L.V.Chulkov, D.Cortina-Gil, H.Emling,
+#+          O.Ershova, L.M.Fraile, H.O.U.Fynbo,
+#+          D.Galaviz, H.Geissel, M.Heil,
+#+          D.H.H.Hoffmann, J.Hoffmann, H.T.Johansson,
+#+          B.Jonson, C.Karagiannis, O.A.Kiselev,
+#+          J.V.Kratz, R.Kulessa, N.Kurz,
+#+          C.Langer, M.Lantz, T.Le Bleis,
+#+          R.Lemmon, Yu.A.Litvinov, K.Mahata,
+#+          C.Muntz, T.Nilsson, C.Nociforo,
+#+          G.Nyman, W.Ott, V.Panin,
+#+          S.Paschalis, A.Perea, R.Plag,
+#+          R.Reifarth, A.Richter, C.Rodriguez-Tajes,
+#+          D.Rossi, K.Riisager, D.Savran,
+#+          G.Schrieder, H.Simon, J.Stroth,
+#+          K.Summerer, O.Tengblad, S.Typel,
+#+          H.Weick, M.Wiescher, C.Wimmer
+#REF-CODE   (J,PL/B,759,200,2016)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.759, p.200, 2016
+#DATASETS   3
+#
+#DATASET    O2403002
+#DATE       20190200
+#REACTION   6-C-0(10-NE-17,INL)6-C-0,PAR,SIG
+#PROJ       10017
+#TARG       6000
+#MF         3
+#MT         51
+#PRODUCT    6-C-0
+#DATA-HDR   DATA DATA-MAX
+#C4BEGIN    [10017  6000   3  51   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+10017  6000   3  51    8.5000+9          2.4400-3 1.8000-4                   1764000.         EXCJ.Marganiec,ET.AL. (16)  O2403  2
+10017  6000   3  51    8.5000+9          8.1000-4 1.5000-4                   1908000.         EXCJ.Marganiec,ET.AL. (16)  O2403  2
+10017  6000   3  51    8.5000+9          1.1400-3 1.0000-4                   2614000.         EXCJ.Marganiec,ET.AL. (16)  O2403  2
+10017  6000   3  51    8.5000+9          6.2000-4 1.0000-4                   3415000.         EXCJ.Marganiec,ET.AL. (16)  O2403  2
+10017  6000   3  51    8.5000+9          4.6000-4 1.9000-4                   5210000.         EXCJ.Marganiec,ET.AL. (16)  O2403  2
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0919
 #AUTHOR1    F.Wamers+
 #YEAR       2018
@@ -2008,6 +2062,103 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
 12020  6000   3  51    1.1600+9          0.020000 2.0000-3                   1610000.         LVLN.Iwasa,ET.AL. (08)      E2398  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0931
+#AUTHOR1    B.Fernandez-Dominguez+
+#YEAR       2018
+#INSTITUTE  (2UK LVP)
+#TITLE      Re-examining the transition into the N=20 island of
+#+          inversion: Structure of 30Mg
+#AUTHOR(S)  B.Fernandez-Dominguez, B.Pietras, W.N.Catford,
+#+          N.A.Orr, M.Petri, M.Chartier,
+#+          S.Paschalis, N.Patterson, J.S.Thomas,
+#+          M.Caamano, T.Otsuka, A.Poves,
+#+          N.Tsunoda, N.L.Achouri, J.-C.Angelique,
+#+          N.I.Ashwood, A.Banu, B.Bastin,
+#+          R.Borcea, J.Brown, F.Delaunay,
+#+          S.Franchoo, M.Freer, L.Gaudefroy,
+#+          S.Heil, M.Labiche, B.Laurent,
+#+          R.C.Lemmon, A.O.Macchiavelli, F.Negoita,
+#+          E.S.Paul, C.Rodriguez-Tajes, P.Roussel-Chomaz,
+#+          M.Staniou, M.J.Taylor, L.Trache,
+#+          G.L.Wilson
+#REF-CODE   (J,PL/B,779,124,2018)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.779, p.124, 2018
+#DATASETS   2
+#
+#DATASET    D0931002
+#DATE       20190104
+#REACTION   6-C-0(12-MG-31,X)12-MG-30,PAR,SIG
+#PROJ       12031
+#TARG       6000
+#MF         3
+#MT         9000
+#PRODUCT    12-MG-30
+#DATA-HDR   DATA
+#C4BEGIN    [12031  6000   39000 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+12031  6000   39000 A  1.7081+9          0.025500 4.8000-3           12030.9 0.000000         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          0.011000 3.3000-3           12030.9 1482000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          7.7000-3 1.5000-3           12030.9 1782000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          7.6000-3 1.1000-3           12030.9 2467000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          6.8000-3 1.1000-3           12030.9 3298000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          2.5000-3 5.0000-4           12030.9 3380000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          9.5000-3 1.3000-3           12030.9 3457000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          0.011100 1.6000-3           12030.9 3534000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          1.3000-3 2.0000-4           12030.9 4183000.         LVLB.Fernandez-Domingue (18)D0931  2
+12031  6000   39000 A  1.7081+9          4.9000-3 7.0000-4           12030.9 4252000.         LVLB.Fernandez-Domingue (18)D0931  2
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0931
+#AUTHOR1    B.Fernandez-Dominguez+
+#YEAR       2018
+#INSTITUTE  (2UK LVP)
+#TITLE      Re-examining the transition into the N=20 island of
+#+          inversion: Structure of 30Mg
+#AUTHOR(S)  B.Fernandez-Dominguez, B.Pietras, W.N.Catford,
+#+          N.A.Orr, M.Petri, M.Chartier,
+#+          S.Paschalis, N.Patterson, J.S.Thomas,
+#+          M.Caamano, T.Otsuka, A.Poves,
+#+          N.Tsunoda, N.L.Achouri, J.-C.Angelique,
+#+          N.I.Ashwood, A.Banu, B.Bastin,
+#+          R.Borcea, J.Brown, F.Delaunay,
+#+          S.Franchoo, M.Freer, L.Gaudefroy,
+#+          S.Heil, M.Labiche, B.Laurent,
+#+          R.C.Lemmon, A.O.Macchiavelli, F.Negoita,
+#+          E.S.Paul, C.Rodriguez-Tajes, P.Roussel-Chomaz,
+#+          M.Staniou, M.J.Taylor, L.Trache,
+#+          G.L.Wilson
+#REF-CODE   (J,PL/B,779,124,2018)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.779, p.124, 2018
+#DATASETS   2
+#
+#DATASET    D0931003
+#DATE       20190104
+#REACTION   6-C-0(12-MG-31,X)12-MG-30,,SIG
+#PROJ       12031
+#TARG       6000
+#MF         3
+#MT         9000
+#PRODUCT    12-MG-30
+#DATA-HDR   DATA
+#C4BEGIN    [12031  6000   39000 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+12031  6000   39000 A  1.7081+9          0.090000 0.012000           12030.9                     B.Fernandez-Domingue (18)D0931  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -4188,6 +4339,194 @@
 #/ENTRY
 #
 #
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595008
+#DATE       20191201
+#REACTION   6-C-0(40-ZR-93,X)40-ZR-92,,SIG
+#PROJ       40093
+#TARG       6000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-92
+#DATA-HDR   DATA
+#C4BEGIN    [40093  6000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40093  6000   39000    1.887+10          0.080000 2.0000-3           40092.9                     S.Takeuchi,ET.AL. (19)   E2595  8
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595009
+#DATE       20191201
+#REACTION   6-C-0(40-ZR-93,X)40-ZR-91,,SIG
+#PROJ       40093
+#TARG       6000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-91
+#DATA-HDR   DATA
+#C4BEGIN    [40093  6000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40093  6000   39000    1.887+10          0.048000 2.0000-3           40091.9                     S.Takeuchi,ET.AL. (19)   E2595  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595006
+#DATE       20191201
+#REACTION   6-C-0(40-ZR-94,X)40-ZR-93,,SIG
+#PROJ       40094
+#TARG       6000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-93
+#DATA-HDR   DATA
+#C4BEGIN    [40094  6000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40094  6000   39000    1.917+10          0.084000 2.0000-3           40093.9                     S.Takeuchi,ET.AL. (19)   E2595  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2595
+#AUTHOR1    S.Takeuchi+
+#YEAR       2019
+#INSTITUTE  (2JPNTIT)
+#TITLE      Coulomb breakup reactions of 93,94Zr in inverse
+#+          kinematics
+#AUTHOR(S)  S.Takeuchi, T.Nakamura, M.Shikata,
+#+          Y.Togano, Y.Kondo, J.Tsubota,
+#+          T.Ozaki, A.Saito, H.Otsu,
+#+          H.Wang, H.Sakurai, Yu.Watanabe,
+#+          S.Kawase, D.S.Ahn, M.Aikawa,
+#+          T.Ando, S.Araki, S.Chen,
+#+          N.Chiga, P.Doornenbal, S.Ebata,
+#+          N.Fukuda, T.Isobe, S.Kawakami,
+#+          T.Kin, S.Koyama, S.Kubono,
+#+          Y.Maeda, A.Makinaga, M.Matsushita,
+#+          T.Matsuzaki, S.Michimasa, S.Momiyama,
+#+          S.Nagamine, K.Nakano, M.Niikura,
+#+          K.Ogata, T.Saito, Y.Shiga,
+#+          Y.Shimizu, S.Shimoura, T.Sumikama,
+#+          P.-A.Soderstrom, H.Suzuki, H.Takeda,
+#+          R.Taniuchi, M.Uesaka, Ya.Watanabe,
+#+          K.Wimmer, T.Yamamoto, K.Yoshida
+#REF-CODE   (J,PTEP,2019,013D02,2019)
+#REFERENCE  Jour. Progress of Theoretical and Experimental Physics
+#+          Vol.2019, p.013D02, 2019
+#DATASETS   8
+#
+#DATASET    E2595007
+#DATE       20191201
+#REACTION   6-C-0(40-ZR-94,X)40-ZR-92,,SIG
+#PROJ       40094
+#TARG       6000
+#MF         3
+#MT         9000
+#PRODUCT    40-ZR-92
+#DATA-HDR   DATA
+#C4BEGIN    [40094  6000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+40094  6000   39000    1.917+10          0.051000 2.0000-3           40092.9                     S.Takeuchi,ET.AL. (19)   E2595  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E1174
 #AUTHOR1    I.Tanihata+
 #YEAR       1985
@@ -4324,6 +4663,50 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  4012  6000   3   3    9.4800+9          0.927000 0.018000                                       I.Tanihata,ET.AL. (88)   E1262  7
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      S0098
+#AUTHOR1    Z.H.Yang+
+#YEAR       2015
+#INSTITUTE  (3CPRBJG)
+#TITLE      Helium-helium clustering states in 12Be
+#AUTHOR(S)  Z.H.Yang, Y.L.Ye, Z.H.Li,
+#+          J.L.Lou, J.S.Wang, D.X.Jiang,
+#+          Y.C.Ge, Q.T.Li, H.Hua,
+#+          X.Q.Li, F.R.Xu, J.C.Pei,
+#+          R.Qiao, H.B.You, H.Wang,
+#+          Z.Y.Tian, K.A.Li, Y.L.Sun,
+#+          H.N.Liu, J.Chen, J.Wu,
+#+          J.Li, W.Jiang, C.Wen,
+#+          B.Yang, Y.Liu, Y.Y.Yang,
+#+          P.Ma, J.B.Ma, S.L.Jin,
+#+          J.L.Han, J.Lee
+#REF-CODE   (J,PR/C,91,024304,2015)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.91, p.024304, 2015
+#DATASETS   1
+#
+#DATASET    S0098002
+#DATE       20200106
+#REACTION   6-C-0(4-BE-12,INL)6-C-0,PAR,DA
+#PROJ       4012
+#TARG       6000
+#MF         4
+#MT         51
+#PRODUCT    6-C-0
+#DATA-HDR   DATA
+#C4BEGIN    [ 4012  6000   4  51   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 4012  6000   4  51    3.4800+8          8.7900-3 1.9600-3 0.999848          1.0300+7         EXCZ.H.Yang,ET.AL. (15)     S0098  2
+ 4012  6000   4  51    3.4800+8          2.2100-3 5.5000-4 0.998630          1.0300+7         EXCZ.H.Yang,ET.AL. (15)     S0098  2
+ 4012  6000   4  51    3.4800+8          1.5800-3 4.0000-4 0.996195          1.0300+7         EXCZ.H.Yang,ET.AL. (15)     S0098  2
+ 4012  6000   4  51    3.4800+8          4.7000-4 4.6000-4 0.992546          1.0300+7         EXCZ.H.Yang,ET.AL. (15)     S0098  2
+ 4012  6000   4  51    3.4800+8          2.3000-4 4.8000-4 0.987688          1.0300+7         EXCZ.H.Yang,ET.AL. (15)     S0098  2
+#/DATA      5
 #/DATASET
 #/ENTRY
 #
@@ -6195,6 +6578,51 @@
 #/ENTRY
 #
 #
+#ENTRY      E2631
+#AUTHOR1    Y.Itashiki+
+#YEAR       2016
+#INSTITUTE  (2JPNKYU)
+#TITLE      Measurement of Neutron Production Doubledifferential
+#+          Cross-sections on Carbon Bombarded with 430
+#+          MeV/Nucleon Carbon Ions
+#AUTHOR(S)  Y.Itashiki, Y.Imahayashi, N.Shigyo,
+#+          T.Uozumi, D.Satoh, T.Kajimoto,
+#+          T.Sanami, Y.Koba, N.Matsufuji
+#REF-CODE   (J,RPR,41,344,2016)
+#REFERENCE  Jour. Journal of Radiation Protection and Research
+#+          Vol.41, p.344, 2016
+#DATASETS   2
+#
+#DATASET    E2631003
+#DATE       20201002
+#REACTION   6-C-0(6-C-12,X)0-NN-1,PAR,DA
+#PROJ       6012
+#TARG       6000
+#MF         4
+#MT         9000
+#PRODUCT    0-NN-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 6012  6000   49000   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6012  6000   49000    5.1600+9          0.058600          0.965926      1.9 1.0500+7 9500000. E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.057700          0.866025      1.9 1.0500+7 9500000. E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.053600          0.707106      1.9 1.0500+7 9500000. E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.041500          0.499999      1.9 1.0500+7 9500000. E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.033600          0.258817      1.9 1.0500+7 9500000. E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.030600          0.000000      1.9 1.0500+7 9500000. E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          1.510000          0.965926      1.9 5.1000+8 4.9000+8 E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.632000          0.866025      1.9 5.1000+8 4.9000+8 E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.296000          0.707106      1.9 5.1000+8 4.9000+8 E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.130000          0.499999      1.9 5.1000+8 4.9000+8 E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.062800          0.258817      1.9 5.1000+8 4.9000+8 E2Y.Itashiki,ET.AL. (16)   E2631  3
+ 6012  6000   49000    5.1600+9          0.035000          0.000000      1.9 5.1000+8 4.9000+8 E2Y.Itashiki,ET.AL. (16)   E2631  3
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E1750
 #AUTHOR1    H.Sato+
 #YEAR       2001
@@ -7714,6 +8142,200 @@
  6012  6000   69000    4.8000+9          4.920-13 3.550-13 0.173646      1.9 1.6850+9          E2Y.Iwata,ET.AL. (01)      E1769 29
  6012  6000   69000    4.8000+9          0.000000 7.530-14 0.173646      1.9 1.8850+9          E2Y.Iwata,ET.AL. (01)      E1769 29
 #/DATA      37
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2631
+#AUTHOR1    Y.Itashiki+
+#YEAR       2016
+#INSTITUTE  (2JPNKYU)
+#TITLE      Measurement of Neutron Production Doubledifferential
+#+          Cross-sections on Carbon Bombarded with 430
+#+          MeV/Nucleon Carbon Ions
+#AUTHOR(S)  Y.Itashiki, Y.Imahayashi, N.Shigyo,
+#+          T.Uozumi, D.Satoh, T.Kajimoto,
+#+          T.Sanami, Y.Koba, N.Matsufuji
+#REF-CODE   (J,RPR,41,344,2016)
+#REFERENCE  Jour. Journal of Radiation Protection and Research
+#+          Vol.41, p.344, 2016
+#DATASETS   2
+#
+#DATASET    E2631002
+#DATE       20201002
+#REACTION   6-C-0(6-C-12,X)0-NN-1,,DA/DE
+#PROJ       6012
+#TARG       6000
+#MF         6
+#MT         9000
+#PRODUCT    0-NN-1
+#DATA-HDR   DATA
+#C4BEGIN    [ 6012  6000   69000   ]
+#DATA       161
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 6012  6000   69000    5.1600+9          6.8900-9 5.3400-9 0.965926      1.9 1420000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.6200-9 4.4600-9 0.965926      1.9 1790000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.7800-9 5.3100-9 0.965926      1.9 2250000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.1300-9 3.7400-9 0.965926      1.9 2830000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.5900-9 2.1800-9 0.965926      1.9 3570000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.4000-9 2.7300-9 0.965926      1.9 4500000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.5600-9 1.8100-9 0.965926      1.9 5660000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.5600-9 1.3600-9 0.965926      1.9 7120000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.6100-9 1.6800-9 0.965926      1.9 8970000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.1500-9 1.1300-9 0.965926      1.9 1.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.1800-9 1.1200-9 0.965926      1.9 1.4200+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.2000-9 1.1200-9 0.965926      1.9 1.7900+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.1900-9 1.0600-9 0.965926      1.9 2.2500+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.5000-9 1.1100-9 0.965926      1.9 2.8400+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8300-9 8.600-10 0.965926      1.9 3.5700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8000-9 8.210-10 0.965926      1.9 4.5000+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.2100-9 9.430-10 0.965926      1.9 5.6600+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.3100-9 9.660-10 0.965926      1.9 7.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.5800-9 1.0500-9 0.965926      1.9 8.9700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.3900-9 9.860-10 0.965926      1.9 1.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.2800-9 1.2900-9 0.965926      1.9 1.4200+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.2400-9 1.6100-9 0.965926      1.9 1.7900+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.9300-9 1.4800-9 0.965926      1.9 2.2500+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.2600-9 1.5800-9 0.965926      1.9 2.8400+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.8000-9 1.4000-9 0.965926      1.9 3.5700+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.4300-9 5.370-10 0.965926      1.9 4.5000+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.760-10 1.100-10 0.965926      1.9 5.6600+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          7.670-11 3.530-11 0.965926      1.9 7.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.7300-9 4.8200-9 0.866025      1.9 1130000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.7800-9 3.5200-9 0.866025      1.9 1420000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          5.6000-9 3.6100-9 0.866025      1.9 1790000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.4900-9 2.8800-9 0.866025      1.9 2250000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.2900-9 2.3100-9 0.866025      1.9 2830000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.7600-9 2.3700-9 0.866025      1.9 3570000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.2200-9 2.4000-9 0.866025      1.9 4500000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.8200-9 1.8100-9 0.866025      1.9 5660000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.2600-9 1.5900-9 0.866025      1.9 7120000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.0300-9 1.4100-9 0.866025      1.9 8970000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.4900-9 1.1700-9 0.866025      1.9 1.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.5600-9 1.1300-9 0.866025      1.9 1.4200+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.3000-9 1.0200-9 0.866025      1.9 1.7900+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.0800-9 9.040-10 0.866025      1.9 2.2500+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.7800-9 7.600-10 0.866025      1.9 2.8400+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.7800-9 7.500-10 0.866025      1.9 3.5700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.0300-9 8.250-10 0.866025      1.9 4.5000+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.2600-9 8.950-10 0.866025      1.9 5.6600+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.4400-9 9.550-10 0.866025      1.9 7.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.6300-9 1.0100-9 0.866025      1.9 8.9700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.2700-9 8.760-10 0.866025      1.9 1.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8100-9 7.000-10 0.866025      1.9 1.4200+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8300-9 7.020-10 0.866025      1.9 1.7900+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8000-9 6.860-10 0.866025      1.9 2.2500+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.5200-9 5.740-10 0.866025      1.9 2.8400+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.700-10 2.590-10 0.866025      1.9 3.5700+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.250-11 3.700-11 0.866025      1.9 4.5000+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.990-11 1.020-11 0.866025      1.9 5.6600+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.050-12 2.590-12 0.866025      1.9 7.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          7.7600-9 5.1800-9 0.707106      1.9 1130000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.7500-9 3.5300-9 0.707106      1.9 1420000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.4600-9 4.5700-9 0.707106      1.9 1790000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.8600-9 2.5800-9 0.707106      1.9 2250000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.8700-9 3.5800-9 0.707106      1.9 2830000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.8400-9 2.2500-9 0.707106      1.9 3570000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.0400-9 2.2400-9 0.707106      1.9 4500000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.6700-9 1.6000-9 0.707106      1.9 5660000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.3600-9 1.4300-9 0.707106      1.9 7120000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.3700-9 1.0400-9 0.707106      1.9 8970000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8900-9 8.380-10 0.707106      1.9 1.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.7800-9 7.720-10 0.707106      1.9 1.4200+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.7000-9 7.190-10 0.707106      1.9 1.7900+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8400-9 7.500-10 0.707106      1.9 2.2500+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.5200-9 6.170-10 0.707106      1.9 2.8400+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6700-9 6.600-10 0.707106      1.9 3.5700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6300-9 6.450-10 0.707106      1.9 4.5000+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6500-9 6.440-10 0.707106      1.9 5.6600+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6600-9 6.420-10 0.707106      1.9 7.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.4800-9 5.760-10 0.707106      1.9 8.9700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.2000-9 4.650-10 0.707106      1.9 1.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.830-10 3.800-10 0.707106      1.9 1.4200+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.880-10 3.450-10 0.707106      1.9 1.7900+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.390-10 2.510-10 0.707106      1.9 2.2500+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.600-10 1.440-10 0.707106      1.9 2.8400+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.160-10 4.980-11 0.707106      1.9 3.5700+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.510-11 8.530-12 0.707106      1.9 4.5000+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.630-12 2.000-12 0.707106      1.9 5.6600+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.2300-9 2.2200-9 0.499999      1.9 1130000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.0700-9 1.9700-9 0.499999      1.9 1420000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          5.7900-9 2.6700-9 0.499999      1.9 1790000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          5.2500-9 2.3100-9 0.499999      1.9 2250000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.3700-9 1.9700-9 0.499999      1.9 2830000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.8100-9 1.6800-9 0.499999      1.9 3570000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.3900-9 1.4800-9 0.499999      1.9 4500000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.4300-9 9.670-10 0.499999      1.9 5660000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.1600-9 8.580-10 0.499999      1.9 7120000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.8300-9 7.170-10 0.499999      1.9 8970000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.5700-9 6.170-10 0.499999      1.9 1.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.3600-9 5.340-10 0.499999      1.9 1.4200+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.3600-9 5.320-10 0.499999      1.9 1.7900+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.2800-9 4.930-10 0.499999      1.9 2.2500+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.1400-9 4.390-10 0.499999      1.9 2.8400+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.1900-9 4.540-10 0.499999      1.9 3.5700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.3100-9 4.940-10 0.499999      1.9 4.5000+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.0800-9 4.110-10 0.499999      1.9 5.6600+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.680-10 3.680-10 0.499999      1.9 7.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.230-10 3.120-10 0.499999      1.9 8.9700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.340-10 2.410-10 0.499999      1.9 1.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.930-10 1.510-10 0.499999      1.9 1.4200+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.500-10 9.840-11 0.499999      1.9 1.7900+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.180-11 3.840-11 0.499999      1.9 2.2500+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.760-11 8.580-12 0.499999      1.9 2.8400+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.430-12 1.820-12 0.499999      1.9 3.5700+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          5.1300-9 2.3500-9 0.258817      1.9 1130000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.3100-9 1.8700-9 0.258817      1.9 1420000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          5.0600-9 2.1400-9 0.258817      1.9 1790000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.0200-9 1.6600-9 0.258817      1.9 2250000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.0000-9 1.6600-9 0.258817      1.9 2830000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.2400-9 1.3400-9 0.258817      1.9 3570000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.8400-9 1.1800-9 0.258817      1.9 4500000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6600-9 6.530-10 0.258817      1.9 5660000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6500-9 6.390-10 0.258817      1.9 7120000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.4400-9 5.550-10 0.258817      1.9 8970000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.2300-9 4.730-10 0.258817      1.9 1.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.1000-9 4.250-10 0.258817      1.9 1.4200+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.730-10 3.740-10 0.258817      1.9 1.7900+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.590-10 3.650-10 0.258817      1.9 2.2500+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.830-10 3.340-10 0.258817      1.9 2.8400+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.480-10 3.200-10 0.258817      1.9 3.5700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.040-10 3.030-10 0.258817      1.9 4.5000+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.700-10 2.530-10 0.258817      1.9 5.6600+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          5.300-10 2.010-10 0.258817      1.9 7.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.030-10 1.550-10 0.258817      1.9 8.9700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.210-10 8.660-11 0.258817      1.9 1.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.150-10 4.600-11 0.258817      1.9 1.4200+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.190-11 1.440-11 0.258817      1.9 1.7900+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.820-12 3.860-12 0.258817      1.9 2.2500+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.120-12 8.930-13 0.258817      1.9 2.8400+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.4300-9 1.5800-9 0.000000      1.9 1130000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.4800-9 1.5400-9 0.000000      1.9 1420000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.7400-9 2.0100-9 0.000000      1.9 1790000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.8200-9 1.6000-9 0.000000      1.9 2250000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.7900-9 1.1700-9 0.000000      1.9 2830000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.2000-9 1.3200-9 0.000000      1.9 3570000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.4300-9 1.0200-9 0.000000      1.9 4500000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.0200-9 7.730-10 0.000000      1.9 5660000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.6100-9 6.180-10 0.000000      1.9 7120000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.4000-9 5.370-10 0.000000      1.9 8970000.          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.1700-9 4.480-10 0.000000      1.9 1.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          9.420-10 3.610-10 0.000000      1.9 1.4200+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          8.480-10 3.250-10 0.000000      1.9 1.7900+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          7.740-10 2.950-10 0.000000      1.9 2.2500+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.630-10 2.520-10 0.000000      1.9 2.8400+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          6.000-10 2.290-10 0.000000      1.9 3.5700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.850-10 1.860-10 0.000000      1.9 4.5000+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          4.050-10 1.560-10 0.000000      1.9 5.6600+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.470-10 9.750-11 0.000000      1.9 7.1300+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.530-10 6.170-11 0.000000      1.9 8.9700+7          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.010-10 4.170-11 0.000000      1.9 1.1300+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          3.380-11 1.520-11 0.000000      1.9 1.4200+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          1.130-11 5.920-12 0.000000      1.9 1.7900+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.360-12 1.610-12 0.000000      1.9 2.2500+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+ 6012  6000   69000    5.1600+9          2.130-13 2.880-13 0.000000      1.9 2.8400+8          E2Y.Itashiki,ET.AL. (16)   E2631  2
+#/DATA      161
 #/DATASET
 #/ENTRY
 #

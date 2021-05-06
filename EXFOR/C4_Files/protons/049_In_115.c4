@@ -213,6 +213,40 @@
 #/ENTRY
 #
 #
+#ENTRY      A0068
+#AUTHOR1    N.S.Biryukov+
+#YEAR       1980
+#INSTITUTE  (4RUSFEI)
+#TITLE      Direct and equilibrium processes in (p,n) reactions
+#+          at proton energy of 22.2 MeV
+#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
+#+          O.A.Salnikov, V.I.Trykova
+#REF-CODE   (J,YF,31,561,1980)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.31, p.561, 1980
+#DATASETS   48
+#
+#DATASET    A00680713
+#DATE       20200302
+#REACTION   49-IN-115(P,3N)50-SN-113,,SIG,,,DERIV
+#PROJ       1001
+#TARG       49115
+#MF         3
+#MT         17
+#PRODUCT    50-SN-113
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   3  17 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   3  17 D  2.2000+7 200000.0 0.011000                                                N.S.Biryukov,ET.AL. (80) A0068 713
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D6292
 #AUTHOR1    P.T.Muhammed Shan+
 #YEAR       2018
@@ -436,6 +470,52 @@
 #/ENTRY
 #
 #
+#ENTRY      D0949
+#AUTHOR1    E.K.Elmaghraby+
+#YEAR       2019
+#INSTITUTE  (3EGYCAI)
+#TITLE      Experimental investigation and nuclear model
+#+          calculations for proton induced reactions on indium
+#+          around thresholds
+#AUTHOR(S)  E.K.Elmaghraby, G.Y.Mohamed, M.Al-Abyad
+#REF-CODE   (J,NP/A,984,112,2019)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.984, p.112, 2019
+#DATASETS   9
+#
+#DATASET    D0949007
+#DATE       20200701
+#REACTION   49-IN-115(P,INL)49-IN-115-M,,SIG
+#PROJ       1001
+#TARG       49115
+#MF         3
+#MT         103
+#PRODUCT    49-IN-115-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   3 103MA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   3 103MA  1.4240+7          0.011700 4.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.4040+7          9.0900-3 3.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.3120+7          0.010100 3.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.3060+7          0.010200 3.4000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.2270+7          8.4600-3 3.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.1810+7          7.1100-3 2.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.0990+7          5.8000-3 2.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.0580+7          4.7800-3 2.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  1.0030+7          3.6400-3 1.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  8630000.          1.4500-3 1.0000-4                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  8470000.          1.3500-3 5.0000-5                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  7280000.          9.2000-4 4.0000-5                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  5960000.          7.2000-4 3.0000-5                                       E.K.Elmaghraby, (19)     D0949  7
+ 1001 49115   3 103MA  2940000.          5.7000-4 2.0000-5                                       E.K.Elmaghraby, (19)     D0949  7
+#/DATA      14
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0343
 #AUTHOR1    N.T.Porile
 #YEAR       1962
@@ -569,6 +649,44 @@
  1001 49115   39000MA  1.7680+7 370000.0 0.043800 4.6000-3           49114.7                     P.T.Muhammed Shan, (18)  D6292  3
  1001 49115   39000MA  2.1820+7 230000.0 0.085900 7.7000-3           49114.7                     P.T.Muhammed Shan, (18)  D6292  3
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0949
+#AUTHOR1    E.K.Elmaghraby+
+#YEAR       2019
+#INSTITUTE  (3EGYCAI)
+#TITLE      Experimental investigation and nuclear model
+#+          calculations for proton induced reactions on indium
+#+          around thresholds
+#AUTHOR(S)  E.K.Elmaghraby, G.Y.Mohamed, M.Al-Abyad
+#REF-CODE   (J,NP/A,984,112,2019)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.984, p.112, 2019
+#DATASETS   9
+#
+#DATASET    D0949006
+#DATE       20200701
+#REACTION   49-IN-115(P,X)49-IN-114-M,,SIG
+#PROJ       1001
+#TARG       49115
+#MF         3
+#MT         9000
+#PRODUCT    49-IN-114-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   39000MA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   39000MA  1.4240+7          6.8200-3 6.0000-4           49114.7                     E.K.Elmaghraby, (19)     D0949  6
+ 1001 49115   39000MA  1.4040+7          4.4400-3 4.0000-4           49114.7                     E.K.Elmaghraby, (19)     D0949  6
+ 1001 49115   39000MA  1.3120+7          1.9000-3 2.0000-4           49114.7                     E.K.Elmaghraby, (19)     D0949  6
+ 1001 49115   39000MA  1.3060+7          1.8600-3 2.0000-4           49114.7                     E.K.Elmaghraby, (19)     D0949  6
+ 1001 49115   39000MA  1.2270+7          6.4000-4 1.0000-4           49114.7                     E.K.Elmaghraby, (19)     D0949  6
+ 1001 49115   39000MA  1.1810+7          2.4000-4 1.0000-4           49114.7                     E.K.Elmaghraby, (19)     D0949  6
+#/DATA      6
 #/DATASET
 #/ENTRY
 #
@@ -719,13 +837,13 @@
 #+          at proton energy of 22.2 MeV
 #AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
 #+          O.A.Salnikov, V.I.Trykova
-#REF-CODE   (J,YF,31,(3),561,1980)
+#REF-CODE   (J,YF,31,561,1980)
 #REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.31, Issue.3, p.561, 1980
-#DATASETS   61
+#+          Vol.31, p.561, 1980
+#DATASETS   48
 #
 #DATASET    A0068061
-#DATE       20080603
+#DATE       20200302
 #REACTION   49-IN-115(P,X)0-NN-1,PAR,SIG
 #PROJ       1001
 #TARG       49115
@@ -739,6 +857,108 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 49115   39000 D  2.2000+7 200000.0 1.656000 0.107000               1.9 1000000.          E2N.S.Biryukov,ET.AL. (80) A0068 61
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0068
+#AUTHOR1    N.S.Biryukov+
+#YEAR       1980
+#INSTITUTE  (4RUSFEI)
+#TITLE      Direct and equilibrium processes in (p,n) reactions
+#+          at proton energy of 22.2 MeV
+#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
+#+          O.A.Salnikov, V.I.Trykova
+#REF-CODE   (J,YF,31,561,1980)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.31, p.561, 1980
+#DATASETS   48
+#
+#DATASET    A00680711
+#DATE       20200302
+#REACTION   49-IN-115(P,X)50-SN-115,,SIG,,,DERIV
+#PROJ       1001
+#TARG       49115
+#MF         3
+#MT         9000
+#PRODUCT    50-SN-115
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   39000 D  2.2000+7 200000.0 0.818000                    50115.9                     N.S.Biryukov,ET.AL. (80) A0068 711
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0068
+#AUTHOR1    N.S.Biryukov+
+#YEAR       1980
+#INSTITUTE  (4RUSFEI)
+#TITLE      Direct and equilibrium processes in (p,n) reactions
+#+          at proton energy of 22.2 MeV
+#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
+#+          O.A.Salnikov, V.I.Trykova
+#REF-CODE   (J,YF,31,561,1980)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.31, p.561, 1980
+#DATASETS   48
+#
+#DATASET    A00680712
+#DATE       20200302
+#REACTION   49-IN-115(P,X)50-SN-114,,SIG,,,DERIV
+#PROJ       1001
+#TARG       49115
+#MF         3
+#MT         9000
+#PRODUCT    50-SN-114
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   39000 D  2.2000+7 200000.0 0.925000                    50114.9                     N.S.Biryukov,ET.AL. (80) A0068 712
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      A0068
+#AUTHOR1    N.S.Biryukov+
+#YEAR       1980
+#INSTITUTE  (4RUSFEI)
+#TITLE      Direct and equilibrium processes in (p,n) reactions
+#+          at proton energy of 22.2 MeV
+#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
+#+          O.A.Salnikov, V.I.Trykova
+#REF-CODE   (J,YF,31,561,1980)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.31, p.561, 1980
+#DATASETS   48
+#
+#DATASET    A0068071P
+#DATE       20200302
+#REACTION   49-IN-115(P,X)49-IN-114,,SIG,,,DERIV
+#PROJ       1001
+#TARG       49115
+#MF         3
+#MT         9000
+#PRODUCT    49-IN-114
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   39000 D  2.2000+7 200000.0 0.412000                    49114.9                     N.S.Biryukov,ET.AL. (80) A0068 71P
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1176,6 +1396,392 @@
 #/ENTRY
 #
 #
+#ENTRY      O2377
+#AUTHOR1    J.C.Thompson+
+#YEAR       1966
+#INSTITUTE  (2UK LVP)
+#TITLE      Levels of 116In and their analogue resonances in 116Sn
+#AUTHOR(S)  J.C.Thompson, K.Talbot, G.Parry
+#REF-CODE   (J,NP,89,209,1966)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.89, p.209, 1966
+#DATASETS   2
+#
+#DATASET    O2377002
+#DATE       20191202
+#REACTION   49-IN-115(P,EL)49-IN-115,,DA,,RTH
+#PROJ       1001
+#TARG       49115
+#MF         4
+#MT         2
+#PRODUCT    49-IN-115
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   4   2   ]
+#DATA       357
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   4   2    6492600.          0.274739          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6550100.          0.266719          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6600000.          0.264067          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6648200.          0.257644          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6701900.          0.252263          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6726000.          0.248695          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6752000.          0.245533          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6777900.          0.244928          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6800000.          0.244845          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6827900.          0.238149          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6852000.          0.233293          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6876100.          0.230696          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6883500.          0.230200          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6892800.          0.227874          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6900300.          0.223016          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6909700.          0.219757          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6917300.          0.210592          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6926700.          0.202815          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6934200.          0.199505          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6941500.          0.202660          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6950700.          0.202622          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6957900.          0.210784          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6970700.          0.215954          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6978100.          0.215730          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6985500.          0.215040          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6992900.          0.218366          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7000300.          0.217672          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7011400.          0.214639          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7020800.          0.210570          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7026400.          0.207438          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7033900.          0.202542          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7043300.          0.196436          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7052600.          0.194976          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7059800.          0.200626          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7070800.          0.205779          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7078200.          0.204186          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7085600.          0.203759          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7094700.          0.208521          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7102200.          0.205570          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7109600.          0.204691          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7120800.          0.200401          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7128100.          0.206372          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7133500.          0.209694          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7142700.          0.210718          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7151800.          0.216967          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7159300.          0.214041          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7166800.          0.210906          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7176100.          0.208122          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7185500.          0.202647          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7194800.          0.200117          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7206000.          0.195276          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7215400.          0.187907          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7226500.          0.187330          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7233900.          0.188496          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7244900.          0.191664          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7254100.          0.194476          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7261500.          0.193647          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7267000.          0.193786          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7272600.          0.191955          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7278100.          0.193649          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7279900.          0.194414          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7285500.          0.194545          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7291000.          0.195133          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7296600.          0.195048          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7305800.          0.194343          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7313200.          0.196342          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7314900.          0.199257          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7324200.          0.197476          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7324200.          0.198539          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7335300.          0.198809          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7342700.          0.197774          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7346400.          0.198420          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7353800.          0.197810          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7359300.          0.198380          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7364900.          0.197214          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7372200.          0.198315          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7374200.          0.195669          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7379700.          0.197075          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7385200.          0.195946          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7390900.          0.193534          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7400100.          0.193053          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7409400.          0.191715          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7411300.          0.190579          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7418700.          0.190199          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7426100.          0.189407          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7433500.          0.189442          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7437200.          0.187376          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7441000.          0.185515          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7446500.          0.184830          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7454000.          0.184253          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7457600.          0.186785          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7461200.          0.190746          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7468600.          0.189755          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7470300.          0.193391          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7475800.          0.195803          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7485100.          0.192627          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7494400.          0.191337          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7501800.          0.191995          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7505500.          0.190164          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7520400.          0.187777          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7544500.          0.184354          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7572300.          0.182406          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7600100.          0.181096          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7624100.          0.181549          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7646400.          0.177740          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7659300.          0.177725          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7668600.          0.177509          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7677800.          0.176676          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7689000.          0.175005          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7698200.          0.173604          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7722400.          0.170988          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7748200.          0.171202          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7774100.          0.170461          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7796400.          0.167403          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7846400.          0.163610          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7898200.          0.161674          0.000000                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6496300.          0.098828         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6527800.          0.098317         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6550200.          0.094326         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6576000.          0.094759         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6600100.          0.094185         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6624200.          0.091826         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6650100.          0.091227         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6674200.          0.090159         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6700100.          0.090898         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6724300.          0.087005         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6748500.          0.083866         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6757700.          0.084337         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6770800.          0.081811         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6776400.          0.081676         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6785600.          0.081455         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6793000.          0.081585         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6802300.          0.080365         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6809800.          0.079598         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6819000.          0.079972         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6826400.          0.079809         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6834000.          0.076484         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6843300.          0.076179         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6852400.          0.077057         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6859900.          0.075908         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6867400.          0.073603         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6876700.          0.073994         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6882400.          0.071442         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6893500.          0.069868         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6901000.          0.068748         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6910400.          0.066831         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6917700.          0.067177         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6924900.          0.070579         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6933900.          0.074697         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6941000.          0.079405         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6950100.          0.081569         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6957600.          0.080451         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6968600.          0.081429         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6976100.          0.079369         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6992800.          0.078047         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7000400.          0.075540         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7007900.          0.074263         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7018900.          0.074864         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7026400.          0.073965         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7032000.          0.072822         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7043100.          0.072409         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7050200.          0.077352         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7057500.          0.079217         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7064900.          0.078320         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7074200.          0.077284         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7083500.          0.076172         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7094700.          0.074290         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7102200.          0.073862         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7107800.          0.072562         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7118900.          0.073156         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7126200.          0.073096         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7133700.          0.072046         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7142900.          0.073122         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7150300.          0.072336         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7159700.          0.070811         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7169000.          0.069819         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7176400.          0.069498         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7183800.          0.069266         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7193200.          0.067498         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7195100.          0.066484         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7204300.          0.066314         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7217300.          0.066523         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7224400.          0.070704         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7231600.          0.072929         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7242600.          0.073761         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7255500.          0.074635         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7257500.          0.073372         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7262900.          0.074223         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7268600.          0.073234         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7276000.          0.073181         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7283300.          0.073722         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7290700.          0.073315         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7298100.          0.073167         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7305600.          0.072589         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7311100.          0.072224         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7318500.          0.072078         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7322300.          0.071748         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7327900.          0.071043         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7333400.          0.070852         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7340900.          0.069767         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7346400.          0.069747         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7350100.          0.070531         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7353800.          0.070206         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7359400.          0.069332         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7366800.          0.068689         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7374300.          0.067878         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7379800.          0.068447         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7387200.          0.068570         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7394600.          0.068600         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7402000.          0.068213         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7411300.          0.067211         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7415000.          0.067974         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7418700.          0.067077         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7424300.          0.067059         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7429800.          0.067786         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7435300.          0.067603         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7442700.          0.067643         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7444600.          0.066858         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7448300.          0.066463         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7453900.          0.066856         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7459400.          0.066511         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7465000.          0.066666         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7470500.          0.066323         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7476100.          0.065643         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7483500.          0.065350         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7489200.          0.063778         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7500300.          0.063589         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7507700.          0.063554         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7522500.          0.063304         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7544800.          0.062129         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7570700.          0.061068         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7596700.          0.059693         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7620700.          0.059955         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7644800.          0.058953         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7655900.          0.058860         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7667100.          0.058067         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7676300.          0.058401         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7685600.          0.057788         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7694900.          0.057109         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7720800.          0.057500         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7746800.          0.055975         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7770800.          0.055781         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7796800.          0.055034         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7846800.          0.053372         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7898700.          0.051722         -0.580705                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6499900.          0.078180         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6551800.          0.075767         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6601900.          0.072951         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6651800.          0.072697         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6700100.          0.069781         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6726000.          0.069493         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6751800.          0.069845         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6775900.          0.069673         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6800300.          0.064749         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6826300.          0.062695         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6850500.          0.061088         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6874700.          0.059111         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6885800.          0.058615         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6893300.          0.057489         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6900900.          0.055750         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6911900.          0.055800         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6919300.          0.056756         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6928200.          0.059734         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6931500.          0.065007         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6940400.          0.068413         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6949600.          0.068606         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6955100.          0.069254         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6968100.          0.069079         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6983100.          0.066383         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6992500.          0.064412         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    6998100.          0.064162         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7005400.          0.064994         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7016800.          0.061517         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7026100.          0.060833         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7033400.          0.061894         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7042400.          0.063949         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7049600.          0.067135         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7057000.          0.066187         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7064200.          0.068541         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7064300.          0.067073         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7075700.          0.064376         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7084900.          0.064137         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7096000.          0.064304         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7098000.          0.062376         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7107400.          0.061057         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7114800.          0.060859         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7124100.          0.059765         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7133400.          0.060044         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7140700.          0.060134         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7151700.          0.060956         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7159200.          0.059824         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7166700.          0.058846         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7177800.          0.058664         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7183500.          0.057231         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7194700.          0.056486         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7200200.          0.056120         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7207500.          0.057833         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7214800.          0.058635         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7223700.          0.062066         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7230900.          0.064741         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7244000.          0.062002         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7247700.          0.062704         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7258700.          0.063139         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7264300.          0.062417         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7273600.          0.061711         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7282900.          0.061758         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7290400.          0.060602         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7294300.          0.058611         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7301800.          0.056711         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7312900.          0.056606         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7324100.          0.056021         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7335200.          0.056196         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7342400.          0.057308         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7353600.          0.056123         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7362900.          0.055981         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7372000.          0.057123         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7383100.          0.057224         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7392400.          0.056543         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7403500.          0.056645         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7409100.          0.055893         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7412900.          0.055170         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7418600.          0.053624         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7424100.          0.054004         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7429700.          0.053129         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7435300.          0.052722         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7439100.          0.052007         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7446500.          0.051577         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7450300.          0.050735         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7454100.          0.049562         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7461500.          0.049399         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7468900.          0.049171         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7472500.          0.050240         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7480000.          0.049809         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7485400.          0.050454         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7491000.          0.050580         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7494600.          0.051182         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7500100.          0.051886         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7503800.          0.051707         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7509400.          0.050917         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7514900.          0.051618         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7518700.          0.050727         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7526100.          0.050244         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7533400.          0.051110         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7544600.          0.050188         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7553900.          0.049811         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7563200.          0.049112         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7574400.          0.048014         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7583700.          0.047771         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7594700.          0.047953         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7615200.          0.047127         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7633700.          0.046526         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7656000.          0.045823         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7676400.          0.045266         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7695000.          0.043697         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7744900.          0.043993         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7796800.          0.042510         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+ 1001 49115   4   2    7895100.          0.039478         -0.774947                              J.C.Thompson,ET.AL. (66) O2377  2
+#/DATA      357
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O0169
 #AUTHOR1    S.D.Wassenaar+
 #YEAR       1989
@@ -1300,6 +1906,147 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 49115   4  50  C 4900000.          1.3000-3          1.000000                              R.L.Bramblett,ET.AL. (60)F1108  8
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2377
+#AUTHOR1    J.C.Thompson+
+#YEAR       1966
+#INSTITUTE  (2UK LVP)
+#TITLE      Levels of 116In and their analogue resonances in 116Sn
+#AUTHOR(S)  J.C.Thompson, K.Talbot, G.Parry
+#REF-CODE   (J,NP,89,209,1966)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.89, p.209, 1966
+#DATASETS   2
+#
+#DATASET    O2377003
+#DATE       20191202
+#REACTION   49-IN-115(P,N)50-SN-115,,DA
+#PROJ       1001
+#TARG       49115
+#MF         4
+#MT         50
+#PRODUCT    50-SN-115
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 49115   4  50   ]
+#DATA       112
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 49115   4  50    6849900.          3.9620-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6873700.          1.0341-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6899400.          1.7822-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6908300.          2.6269-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6914500.          3.2023-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6918200.          3.3983-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6922400.          4.2916-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6928000.          4.2553-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6932700.          4.0232-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6938400.          3.8034-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6943300.          3.1799-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6948100.          2.6910-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6954000.          1.8963-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6958800.          1.7009-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6963500.          1.4077-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6969200.          1.1145-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6974800.          1.0537-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6979400.          1.1764-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6984200.          7.2410-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6987900.          7.1220-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6993500.          7.4930-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    6999000.          7.7410-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7004600.          7.1340-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7009100.          1.0318-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7012800.          1.1666-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7018100.          1.6563-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7022500.          2.3050-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7027000.          2.6967-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7032400.          3.0152-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7037800.          3.3703-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7042500.          3.2239-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7047400.          2.6004-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7054100.          2.0871-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7058000.          1.5981-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7067500.          1.0727-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7078600.          1.2081-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7083300.          1.0984-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7088800.          1.1722-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7093500.          9.4010-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7098900.          1.3931-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7103400.          1.7971-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7108900.          1.8709-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7112400.          2.3972-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7116900.          2.7523-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7123000.          3.6702-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7127900.          2.9855-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7137700.          1.7874-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7142700.          9.6820-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7149900.          1.4458-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7152900.          8.2210-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7157600.          8.1020-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7164100.          6.6390-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7167700.          1.0801-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7174100.          1.1906-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7178800.          1.2032-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7182300.          1.6438-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7187800.          1.7421-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7193300.          1.9994-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7197900.          1.9508-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7203100.          2.8809-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7207900.          2.3797-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7212200.          3.2975-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7216100.          2.8207-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7221600.          2.8945-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7227100.          3.1762-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7234000.          2.1247-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7238900.          1.4156-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7242500.          1.6850-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7248500.          7.3120-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7254100.          7.5610-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7262400.          8.9130-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7268100.          4.1460-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7273600.          6.7190-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7279100.          6.9680-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7283800.          7.0940-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7289100.          1.2847-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7293800.          1.1994-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7298100.          1.8236-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7303600.          2.1053-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7308300.          1.9956-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7313100.          1.4210-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7318700.          1.3236-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7324500.          7.4900-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7329300.          5.4140-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7332100.          4.6820-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7353600.          1.2730-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7369300.          1.4070-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7379500.          1.9040-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7403600.          1.3100-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7409000.          5.4730-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7413700.          5.4760-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7419200.          5.2350-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7422600.          1.3189-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7429100.          1.4417-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7432600.          1.7600-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7438000.          2.2620-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7443400.          2.5315-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7447800.          3.2291-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7452300.          3.4618-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7457800.          3.5968-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7463700.          2.9367-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7467600.          2.4476-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7474200.          2.1056-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7479100.          1.6044-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7483800.          1.3723-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7489600.          9.0790-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7494100.          1.0183-3          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7500000.          3.5820-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7504600.          5.0530-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7509300.          2.3650-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7514900.          1.2690-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+ 1001 49115   4  50    7520500.          2.0070-4          0.499999                              J.C.Thompson,ET.AL. (66) O2377  3
+#/DATA      112
 #/DATASET
 #/ENTRY
 #
@@ -2784,13 +3531,13 @@
 #+          at proton energy of 22.2 MeV
 #AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
 #+          O.A.Salnikov, V.I.Trykova
-#REF-CODE   (J,YF,31,(3),561,1980)
+#REF-CODE   (J,YF,31,561,1980)
 #REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.31, Issue.3, p.561, 1980
-#DATASETS   61
+#+          Vol.31, p.561, 1980
+#DATASETS   48
 #
 #DATASET    A0068044
-#DATE       20080603
+#DATE       20200302
 #REACTION   49-IN-115(P,X)0-NN-1,,DA/DE
 #PROJ       1001
 #TARG       49115
@@ -2799,7 +3546,7 @@
 #PRODUCT    0-NN-1
 #DATA-HDR   DATA
 #C4BEGIN    [ 1001 49115   69000   ]
-#DATA       99
+#DATA       495
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 49115   69000    2.2000+7 200000.0 9.4890-8 5.6300-9 0.866025      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 44
@@ -2901,527 +3648,403 @@
  1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11 0.866025      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
  1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11 0.866025      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
  1001 49115   69000    2.2000+7 200000.0 4.000-11 2.000-11 0.866025      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
-#/DATA      99
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0068
-#AUTHOR1    N.S.Biryukov+
-#YEAR       1980
-#INSTITUTE  (4RUSFEI)
-#TITLE      Direct and equilibrium processes in (p,n) reactions
-#+          at proton energy of 22.2 MeV
-#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
-#+          O.A.Salnikov, V.I.Trykova
-#REF-CODE   (J,YF,31,(3),561,1980)
-#REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.31, Issue.3, p.561, 1980
-#DATASETS   61
-#
-#DATASET    A0068045
-#DATE       20080603
-#REACTION   49-IN-115(P,X)0-NN-1,,DA/DE
-#PROJ       1001
-#TARG       49115
-#MF         6
-#MT         9000
-#PRODUCT    0-NN-1
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 49115   69000   ]
-#DATA       99
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 49115   69000    2.2000+7 200000.0 9.6880-8 5.7500-9 0.499999      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 9.0140-8 5.3300-9 0.499999      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.4400-8 4.9900-9 0.499999      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.0650-8 4.7700-9 0.499999      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 7.2410-8 4.2800-9 0.499999      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.8170-8 4.0400-9 0.499999      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.4420-8 3.8200-9 0.499999      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.6930-8 3.3800-9 0.499999      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.3190-8 3.1700-9 0.499999      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.8440-8 2.8800-9 0.499999      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.4200-8 2.6400-9 0.499999      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.1450-8 2.4800-9 0.499999      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.7210-8 2.2300-9 0.499999      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.5960-8 2.1500-9 0.499999      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.2210-8 1.9400-9 0.499999      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.8220-8 1.7100-9 0.499999      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.6220-8 1.6100-9 0.499999      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.3870-8 1.4500-9 0.499999      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.3200-8 1.4300-9 0.499999      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.1220-8 1.3100-9 0.499999      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.9330-8 1.1900-9 0.499999      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.8280-8 1.1400-9 0.499999      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.6010-8 1.0400-9 0.499999      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.5280-8 9.500-10 0.499999      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.3830-8 9.200-10 0.499999      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.3210-8 8.700-10 0.499999      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.2760-8 8.400-10 0.499999      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.2560-8 8.300-10 0.499999      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.1190-8 7.500-10 0.499999      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 9.9900-9 6.800-10 0.499999      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 9.7600-9 6.600-10 0.499999      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.7400-9 6.000-10 0.499999      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.0700-9 5.600-10 0.499999      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 7.3700-9 5.200-10 0.499999      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 7.4400-9 5.200-10 0.499999      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.7900-9 5.000-10 0.499999      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.9200-9 4.400-10 0.499999      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.5400-9 4.000-10 0.499999      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.5900-9 4.200-10 0.499999      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.8700-9 3.700-10 0.499999      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.1000-9 3.200-10 0.499999      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.4700-9 3.500-10 0.499999      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.5200-9 3.600-10 0.499999      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.9500-9 3.200-10 0.499999      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.8700-9 3.200-10 0.499999      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.9500-9 3.200-10 0.499999      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.4500-9 2.900-10 0.499999      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.1000-9 2.600-10 0.499999      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.1200-9 2.600-10 0.499999      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.2200-9 2.700-10 0.499999      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.9200-9 2.500-10 0.499999      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.8000-9 2.500-10 0.499999      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.2700-9 2.200-10 0.499999      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.0500-9 2.000-10 0.499999      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.4100-9 2.300-10 0.499999      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.2300-9 2.200-10 0.499999      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.7500-9 1.800-10 0.499999      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.9100-9 2.000-10 0.499999      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.0000-9 2.100-10 0.499999      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.5400-9 1.700-10 0.499999      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.1700-9 2.400-10 0.499999      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.0700-9 2.400-10 0.499999      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.1900-9 2.500-10 0.499999      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.6100-9 1.900-10 0.499999      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.8900-9 2.200-10 0.499999      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.4600-9 1.900-10 0.499999      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.3500-9 1.800-10 0.499999      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.0700-9 1.600-10 0.499999      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.1500-9 1.700-10 0.499999      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.600-10 0.499999      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.0900-9 2.000-10 0.499999      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 9.000-10 1.800-10 0.499999      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.700-10 0.499999      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 7.500-10 1.700-10 0.499999      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.800-10 2.100-10 0.499999      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.500-10 1.900-10 0.499999      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.700-10 1.500-10 0.499999      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 7.500-10 1.700-10 0.499999      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.900-10 1.500-10 0.499999      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 7.600-10 1.700-10 0.499999      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.500-10 1.300-10 0.499999      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.500-10 1.200-10 0.499999      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.900-10 1.300-10 0.499999      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.000-10 1.100-10 0.499999      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.300-10 1.200-10 0.499999      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.600-10 1.500-10 0.499999      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 5.400-10 1.200-10 0.499999      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.500-10 1.000-10 0.499999      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11 0.499999      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.900-10 7.000-11 0.499999      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.700-10 5.000-11 0.499999      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 2.000-10 5.000-11 0.499999      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 8.000-11 3.000-11 0.499999      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 4.000-11 3.000-11 0.499999      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 5.000-11 0.499999      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11 0.499999      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11 0.499999      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 6.000-11 3.000-11 0.499999      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
- 1001 49115   69000    2.2000+7 200000.0 0.000000          0.499999      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 45
-#/DATA      99
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0068
-#AUTHOR1    N.S.Biryukov+
-#YEAR       1980
-#INSTITUTE  (4RUSFEI)
-#TITLE      Direct and equilibrium processes in (p,n) reactions
-#+          at proton energy of 22.2 MeV
-#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
-#+          O.A.Salnikov, V.I.Trykova
-#REF-CODE   (J,YF,31,(3),561,1980)
-#REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.31, Issue.3, p.561, 1980
-#DATASETS   61
-#
-#DATASET    A0068046
-#DATE       20080603
-#REACTION   49-IN-115(P,X)0-NN-1,,DA/DE
-#PROJ       1001
-#TARG       49115
-#MF         6
-#MT         9000
-#PRODUCT    0-NN-1
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 49115   69000   ]
-#DATA       99
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 49115   69000    2.2000+7 200000.0 9.3140-8 5.5300-9 0.000000      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 8.3400-8 4.9400-9 0.000000      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.7160-8 4.5700-9 0.000000      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.2910-8 4.3200-9 0.000000      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.0170-8 4.1500-9 0.000000      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 6.0930-8 3.6100-9 0.000000      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.6180-8 3.3300-9 0.000000      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.9690-8 2.9500-9 0.000000      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.6940-8 2.8000-9 0.000000      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.1950-8 2.5000-9 0.000000      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.8700-8 2.3200-9 0.000000      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.4210-8 2.0500-9 0.000000      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.2960-8 1.9800-9 0.000000      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.0710-8 1.8400-9 0.000000      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.7470-8 1.6600-9 0.000000      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.4870-8 1.5100-9 0.000000      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.2420-8 1.3800-9 0.000000      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.0230-8 1.2400-9 0.000000      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.9780-8 1.2300-9 0.000000      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.7900-8 1.1100-9 0.000000      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.6330-8 1.0200-9 0.000000      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.4960-8 9.400-10 0.000000      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.4160-8 9.300-10 0.000000      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.2880-8 8.100-10 0.000000      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.2410-8 8.300-10 0.000000      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.1640-8 7.800-10 0.000000      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.0610-8 7.100-10 0.000000      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 9.7600-9 6.600-10 0.000000      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 9.1400-9 6.300-10 0.000000      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 8.2900-9 5.800-10 0.000000      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.7900-9 5.400-10 0.000000      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.3700-9 5.200-10 0.000000      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 6.6700-9 4.700-10 0.000000      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 6.1700-9 4.400-10 0.000000      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.5700-9 4.000-10 0.000000      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.3700-9 4.100-10 0.000000      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.8700-9 3.700-10 0.000000      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.5400-9 3.400-10 0.000000      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.2200-9 3.300-10 0.000000      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.9700-9 3.100-10 0.000000      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.6700-9 3.000-10 0.000000      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.4200-9 2.800-10 0.000000      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.1200-9 2.600-10 0.000000      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.0200-9 2.600-10 0.000000      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.0200-9 2.600-10 0.000000      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.7700-9 2.400-10 0.000000      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.9500-9 2.500-10 0.000000      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.8000-9 2.400-10 0.000000      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.4800-9 2.200-10 0.000000      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.4600-9 2.200-10 0.000000      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.0100-9 1.900-10 0.000000      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.6700-9 1.700-10 0.000000      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.8400-9 1.800-10 0.000000      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.5900-9 1.600-10 0.000000      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.4300-9 1.500-10 0.000000      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.3000-9 1.400-10 0.000000      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.2300-9 1.400-10 0.000000      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.3900-9 1.500-10 0.000000      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.2500-9 1.400-10 0.000000      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.2100-9 1.400-10 0.000000      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.2500-9 1.500-10 0.000000      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.3000-9 1.600-10 0.000000      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.3600-9 1.700-10 0.000000      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.0400-9 1.300-10 0.000000      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.1200-9 1.400-10 0.000000      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.300-10 1.100-10 0.000000      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 8.600-10 1.200-10 0.000000      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.800-10 1.000-10 0.000000      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.200-10 9.000-11 0.000000      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 6.100-10 1.100-10 0.000000      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.800-10 1.200-10 0.000000      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.700-10 1.000-10 0.000000      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.700-10 9.000-11 0.000000      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.700-10 1.100-10 0.000000      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.000-10 1.200-10 0.000000      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.600-10 1.100-10 0.000000      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 4.100-10 1.000-10 0.000000      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.700-10 9.000-11 0.000000      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.400-10 8.000-11 0.000000      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 5.100-10 1.200-10 0.000000      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.400-10 8.000-11 0.000000      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.600-10 9.000-11 0.000000      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.700-10 7.000-11 0.000000      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.200-10 8.000-11 0.000000      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.000-10 6.000-11 0.000000      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.700-10 9.000-11 0.000000      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.900-10 5.000-11 0.000000      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11 0.000000      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.700-10 5.000-11 0.000000      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11 0.000000      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.300-10 4.000-11 0.000000      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11 0.000000      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.000-11 2.000-11 0.000000      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 1.000-10 3.000-11 0.000000      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 7.000-11 3.000-11 0.000000      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 3.000-11 2.000-11 0.000000      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11 0.000000      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11 0.000000      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11 0.000000      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 46
-#/DATA      99
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0068
-#AUTHOR1    N.S.Biryukov+
-#YEAR       1980
-#INSTITUTE  (4RUSFEI)
-#TITLE      Direct and equilibrium processes in (p,n) reactions
-#+          at proton energy of 22.2 MeV
-#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
-#+          O.A.Salnikov, V.I.Trykova
-#REF-CODE   (J,YF,31,(3),561,1980)
-#REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.31, Issue.3, p.561, 1980
-#DATASETS   61
-#
-#DATASET    A0068047
-#DATE       20080603
-#REACTION   49-IN-115(P,X)0-NN-1,,DA/DE
-#PROJ       1001
-#TARG       49115
-#MF         6
-#MT         9000
-#PRODUCT    0-NN-1
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 49115   69000   ]
-#DATA       99
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 49115   69000    2.2000+7 200000.0 9.5390-8 5.6600-9-0.500003      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 7.7660-8 4.6000-9-0.500003      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 7.2910-8 4.3200-9-0.500003      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 6.7420-8 3.9900-9-0.500003      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 5.8680-8 3.4800-9-0.500003      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 5.4930-8 3.2600-9-0.500003      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 5.0690-8 3.0100-9-0.500003      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.4950-8 2.6700-9-0.500003      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.6690-8 2.7800-9-0.500003      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.7460-8 2.2300-9-0.500003      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.4460-8 2.0700-9-0.500003      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.1210-8 1.8800-9-0.500003      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.8720-8 1.7300-9-0.500003      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.6470-8 1.5900-9-0.500003      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.3870-8 1.4500-9-0.500003      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.2200-8 1.3500-9-0.500003      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.0200-8 1.2500-9-0.500003      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.8480-8 1.1300-9-0.500003      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.7430-8 1.0900-9-0.500003      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.5580-8 9.700-10-0.500003      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.4480-8 9.100-10-0.500003      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.3330-8 8.400-10-0.500003      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.1960-8 8.000-10-0.500003      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.1060-8 7.000-10-0.500003      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.0310-8 7.000-10-0.500003      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 9.8400-9 6.700-10-0.500003      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 9.4600-9 6.400-10-0.500003      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 8.5100-9 5.900-10-0.500003      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 7.8200-9 5.500-10-0.500003      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 7.5900-9 5.300-10-0.500003      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 6.5400-9 4.600-10-0.500003      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 6.2200-9 4.400-10-0.500003      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 5.5700-9 4.000-10-0.500003      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 5.3400-9 3.900-10-0.500003      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.8700-9 3.600-10-0.500003      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.8900-9 3.700-10-0.500003      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.3700-9 3.300-10-0.500003      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.7500-9 2.900-10-0.500003      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.8700-9 3.000-10-0.500003      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.4700-9 2.800-10-0.500003      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.5200-9 2.900-10-0.500003      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.8000-9 2.400-10-0.500003      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.2500-9 2.700-10-0.500003      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.5700-9 2.200-10-0.500003      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.5700-9 2.200-10-0.500003      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.3100-9 2.000-10-0.500003      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.6000-9 2.200-10-0.500003      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.4900-9 2.200-10-0.500003      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.3000-9 2.000-10-0.500003      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.7800-9 1.700-10-0.500003      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.8300-9 1.700-10-0.500003      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.4400-9 1.400-10-0.500003      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.1900-9 1.300-10-0.500003      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.3500-9 1.400-10-0.500003      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.2800-9 1.400-10-0.500003      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 8.100-10 1.000-10-0.500003      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 8.600-10 1.000-10-0.500003      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.1000-9 1.300-10-0.500003      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.0100-9 1.200-10-0.500003      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.200-10-0.500003      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.1200-9 1.300-10-0.500003      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 8.200-10 1.100-10-0.500003      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 7.400-10 1.000-10-0.500003      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 9.600-10 1.200-10-0.500003      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 6.100-10 9.000-11-0.500003      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 6.500-10 1.000-10-0.500003      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 7.300-10 1.000-10-0.500003      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.800-10 8.000-11-0.500003      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.200-10 7.000-11-0.500003      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.600-10 8.000-11-0.500003      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.300-10 9.000-11-0.500003      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.200-10 9.000-11-0.500003      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 4.000-10 8.000-11-0.500003      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 5.300-10 1.200-10-0.500003      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.600-10 9.000-11-0.500003      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11-0.500003      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.200-10 6.000-11-0.500003      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.000-10 7.000-11-0.500003      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11-0.500003      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.900-10 7.000-11-0.500003      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.300-10 4.000-11-0.500003      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.600-10 6.000-11-0.500003      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.500-10 6.000-11-0.500003      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.600-10 8.000-11-0.500003      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 3.000-11-0.500003      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.000-10 5.000-11-0.500003      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.800-10 5.000-11-0.500003      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 2.800-10 7.000-11-0.500003      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 6.000-11 2.000-11-0.500003      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 3.000-11-0.500003      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.200-10 3.000-11-0.500003      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.000-11         -0.500003      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.500-10 4.000-11-0.500003      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11-0.500003      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.500003      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11-0.500003      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11-0.500003      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 3.000-11 2.000-11-0.500003      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
- 1001 49115   69000    2.2000+7 200000.0 8.000-11 3.000-11-0.500003      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 47
-#/DATA      99
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      A0068
-#AUTHOR1    N.S.Biryukov+
-#YEAR       1980
-#INSTITUTE  (4RUSFEI)
-#TITLE      Direct and equilibrium processes in (p,n) reactions
-#+          at proton energy of 22.2 MeV
-#AUTHOR(S)  N.S.Biryukov, B.V.Zhuravlev, A.P.Rudenko,
-#+          O.A.Salnikov, V.I.Trykova
-#REF-CODE   (J,YF,31,(3),561,1980)
-#REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.31, Issue.3, p.561, 1980
-#DATASETS   61
-#
-#DATASET    A0068048
-#DATE       20080603
-#REACTION   49-IN-115(P,X)0-NN-1,,DA/DE
-#PROJ       1001
-#TARG       49115
-#MF         6
-#MT         9000
-#PRODUCT    0-NN-1
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 49115   69000   ]
-#DATA       99
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 49115   69000    2.2000+7 200000.0 8.1400-8 4.8400-9-0.866027      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 7.4910-8 4.4400-9-0.866027      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 7.0670-8 4.1900-9-0.866027      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 6.6420-8 3.9400-9-0.866027      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.8930-8 3.4900-9-0.866027      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.5930-8 3.3200-9-0.866027      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.2440-8 3.1100-9-0.866027      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.5700-8 2.7200-9-0.866027      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.1700-8 2.4900-9-0.866027      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.8450-8 2.2900-9-0.866027      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.5210-8 2.1100-9-0.866027      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.2460-8 1.9500-9-0.866027      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.9460-8 1.7700-9-0.866027      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.6220-8 1.5800-9-0.866027      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.4500-8 1.4900-9-0.866027      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.2100-8 1.3500-9-0.866027      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.0380-8 1.2600-9-0.866027      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.8380-8 1.1300-9-0.866027      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.6880-8 1.0500-9-0.866027      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.5980-8 1.0000-9-0.866027      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.4060-8 8.800-10-0.866027      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.3360-8 8.500-10-0.866027      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.2210-8 8.200-10-0.866027      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.1490-8 7.300-10-0.866027      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.0360-8 7.100-10-0.866027      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 9.5400-9 6.500-10-0.866027      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 8.9100-9 6.100-10-0.866027      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 8.1900-9 5.700-10-0.866027      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 7.5400-9 5.300-10-0.866027      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 7.2400-9 5.100-10-0.866027      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 6.7400-9 4.800-10-0.866027      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.7700-9 4.200-10-0.866027      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.3700-9 3.900-10-0.866027      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.1200-9 3.800-10-0.866027      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.7900-9 3.600-10-0.866027      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.1200-9 3.200-10-0.866027      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.7500-9 3.000-10-0.866027      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.6500-9 2.800-10-0.866027      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.3500-9 2.700-10-0.866027      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.0700-9 2.500-10-0.866027      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.2200-9 2.700-10-0.866027      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.0700-9 2.500-10-0.866027      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.5200-9 2.200-10-0.866027      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.2000-9 2.000-10-0.866027      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.1400-9 2.000-10-0.866027      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.1500-9 2.000-10-0.866027      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.9400-9 1.800-10-0.866027      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.9100-9 1.800-10-0.866027      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.6800-9 1.600-10-0.866027      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.3900-9 1.400-10-0.866027      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.4300-9 1.400-10-0.866027      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.4900-9 1.500-10-0.866027      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.3100-9 1.400-10-0.866027      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 7.800-10 1.000-10-0.866027      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.2700-9 1.400-10-0.866027      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.200-10-0.866027      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.0200-9 1.200-10-0.866027      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 9.900-10 1.200-10-0.866027      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 6.300-10 9.000-11-0.866027      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 9.200-10 1.100-10-0.866027      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 9.700-10 1.200-10-0.866027      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 6.700-10 1.000-10-0.866027      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.000-10 8.000-11-0.866027      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.400-10 7.000-11-0.866027      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.200-10 7.000-11-0.866027      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.500-10 7.000-11-0.866027      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.500-10 9.000-11-0.866027      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.900-10 9.000-11-0.866027      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.900-10 6.000-11-0.866027      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.300-10 8.000-11-0.866027      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.000-10 9.000-11-0.866027      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.800-10 9.000-11-0.866027      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.900-10 6.000-11-0.866027      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.300-10 9.000-11-0.866027      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 4.100-10 1.000-10-0.866027      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.200-10 1.100-10-0.866027      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.900-10 6.000-11-0.866027      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.700-10 5.000-11-0.866027      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 3.700-10 9.000-11-0.866027      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.300-10 6.000-11-0.866027      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.500-10 5.000-11-0.866027      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.800-10 7.000-11-0.866027      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.200-10 6.000-11-0.866027      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.900-10 5.000-11-0.866027      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.700-10 7.000-11-0.866027      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11-0.866027      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.300-10 4.000-11-0.866027      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.300-10 6.000-11-0.866027      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11-0.866027      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 5.000-11 3.000-11-0.866027      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11-0.866027      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
- 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 48
-#/DATA      99
+ 1001 49115   69000    2.2000+7 200000.0 9.6880-8 5.7500-9 0.499999      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.0140-8 5.3300-9 0.499999      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.4400-8 4.9900-9 0.499999      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.0650-8 4.7700-9 0.499999      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.2410-8 4.2800-9 0.499999      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.8170-8 4.0400-9 0.499999      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.4420-8 3.8200-9 0.499999      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.6930-8 3.3800-9 0.499999      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.3190-8 3.1700-9 0.499999      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.8440-8 2.8800-9 0.499999      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.4200-8 2.6400-9 0.499999      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.1450-8 2.4800-9 0.499999      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.7210-8 2.2300-9 0.499999      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.5960-8 2.1500-9 0.499999      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.2210-8 1.9400-9 0.499999      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.8220-8 1.7100-9 0.499999      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.6220-8 1.6100-9 0.499999      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.3870-8 1.4500-9 0.499999      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.3200-8 1.4300-9 0.499999      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.1220-8 1.3100-9 0.499999      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.9330-8 1.1900-9 0.499999      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.8280-8 1.1400-9 0.499999      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.6010-8 1.0400-9 0.499999      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.5280-8 9.500-10 0.499999      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3830-8 9.200-10 0.499999      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3210-8 8.700-10 0.499999      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2760-8 8.400-10 0.499999      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2560-8 8.300-10 0.499999      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1190-8 7.500-10 0.499999      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.9900-9 6.800-10 0.499999      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.7600-9 6.600-10 0.499999      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.7400-9 6.000-10 0.499999      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.0700-9 5.600-10 0.499999      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.3700-9 5.200-10 0.499999      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.4400-9 5.200-10 0.499999      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.7900-9 5.000-10 0.499999      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.9200-9 4.400-10 0.499999      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.5400-9 4.000-10 0.499999      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.5900-9 4.200-10 0.499999      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.8700-9 3.700-10 0.499999      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.1000-9 3.200-10 0.499999      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.4700-9 3.500-10 0.499999      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.5200-9 3.600-10 0.499999      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.9500-9 3.200-10 0.499999      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.8700-9 3.200-10 0.499999      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.9500-9 3.200-10 0.499999      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.4500-9 2.900-10 0.499999      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.1000-9 2.600-10 0.499999      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.1200-9 2.600-10 0.499999      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.2200-9 2.700-10 0.499999      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.9200-9 2.500-10 0.499999      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.8000-9 2.500-10 0.499999      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.2700-9 2.200-10 0.499999      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0500-9 2.000-10 0.499999      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.4100-9 2.300-10 0.499999      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.2300-9 2.200-10 0.499999      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.7500-9 1.800-10 0.499999      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.9100-9 2.000-10 0.499999      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0000-9 2.100-10 0.499999      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.5400-9 1.700-10 0.499999      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.1700-9 2.400-10 0.499999      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0700-9 2.400-10 0.499999      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.1900-9 2.500-10 0.499999      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.6100-9 1.900-10 0.499999      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.8900-9 2.200-10 0.499999      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4600-9 1.900-10 0.499999      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3500-9 1.800-10 0.499999      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0700-9 1.600-10 0.499999      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1500-9 1.700-10 0.499999      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.600-10 0.499999      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0900-9 2.000-10 0.499999      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.000-10 1.800-10 0.499999      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.700-10 0.499999      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.500-10 1.700-10 0.499999      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.800-10 2.100-10 0.499999      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.500-10 1.900-10 0.499999      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.700-10 1.500-10 0.499999      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.500-10 1.700-10 0.499999      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.900-10 1.500-10 0.499999      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.600-10 1.700-10 0.499999      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.500-10 1.300-10 0.499999      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.500-10 1.200-10 0.499999      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.900-10 1.300-10 0.499999      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.000-10 1.100-10 0.499999      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.300-10 1.200-10 0.499999      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.600-10 1.500-10 0.499999      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.400-10 1.200-10 0.499999      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.500-10 1.000-10 0.499999      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11 0.499999      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.900-10 7.000-11 0.499999      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.700-10 5.000-11 0.499999      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.000-10 5.000-11 0.499999      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.000-11 3.000-11 0.499999      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.000-11 3.000-11 0.499999      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 5.000-11 0.499999      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11 0.499999      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11 0.499999      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.000-11 3.000-11 0.499999      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000          0.499999      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.3140-8 5.5300-9 0.000000      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.3400-8 4.9400-9 0.000000      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.7160-8 4.5700-9 0.000000      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.2910-8 4.3200-9 0.000000      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.0170-8 4.1500-9 0.000000      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.0930-8 3.6100-9 0.000000      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.6180-8 3.3300-9 0.000000      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.9690-8 2.9500-9 0.000000      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.6940-8 2.8000-9 0.000000      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.1950-8 2.5000-9 0.000000      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.8700-8 2.3200-9 0.000000      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.4210-8 2.0500-9 0.000000      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.2960-8 1.9800-9 0.000000      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.0710-8 1.8400-9 0.000000      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.7470-8 1.6600-9 0.000000      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.4870-8 1.5100-9 0.000000      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.2420-8 1.3800-9 0.000000      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0230-8 1.2400-9 0.000000      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.9780-8 1.2300-9 0.000000      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.7900-8 1.1100-9 0.000000      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.6330-8 1.0200-9 0.000000      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4960-8 9.400-10 0.000000      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4160-8 9.300-10 0.000000      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2880-8 8.100-10 0.000000      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2410-8 8.300-10 0.000000      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1640-8 7.800-10 0.000000      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0610-8 7.100-10 0.000000      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.7600-9 6.600-10 0.000000      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.1400-9 6.300-10 0.000000      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.2900-9 5.800-10 0.000000      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.7900-9 5.400-10 0.000000      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.3700-9 5.200-10 0.000000      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.6700-9 4.700-10 0.000000      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.1700-9 4.400-10 0.000000      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.5700-9 4.000-10 0.000000      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.3700-9 4.100-10 0.000000      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.8700-9 3.700-10 0.000000      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.5400-9 3.400-10 0.000000      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.2200-9 3.300-10 0.000000      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.9700-9 3.100-10 0.000000      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.6700-9 3.000-10 0.000000      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.4200-9 2.800-10 0.000000      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.1200-9 2.600-10 0.000000      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.0200-9 2.600-10 0.000000      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.0200-9 2.600-10 0.000000      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.7700-9 2.400-10 0.000000      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.9500-9 2.500-10 0.000000      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.8000-9 2.400-10 0.000000      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.4800-9 2.200-10 0.000000      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.4600-9 2.200-10 0.000000      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0100-9 1.900-10 0.000000      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.6700-9 1.700-10 0.000000      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.8400-9 1.800-10 0.000000      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.5900-9 1.600-10 0.000000      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4300-9 1.500-10 0.000000      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3000-9 1.400-10 0.000000      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2300-9 1.400-10 0.000000      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3900-9 1.500-10 0.000000      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2500-9 1.400-10 0.000000      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2100-9 1.400-10 0.000000      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2500-9 1.500-10 0.000000      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3000-9 1.600-10 0.000000      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3600-9 1.700-10 0.000000      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0400-9 1.300-10 0.000000      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1200-9 1.400-10 0.000000      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.300-10 1.100-10 0.000000      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.600-10 1.200-10 0.000000      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.800-10 1.000-10 0.000000      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.200-10 9.000-11 0.000000      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.100-10 1.100-10 0.000000      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.800-10 1.200-10 0.000000      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.700-10 1.000-10 0.000000      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.700-10 9.000-11 0.000000      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.700-10 1.100-10 0.000000      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.000-10 1.200-10 0.000000      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.600-10 1.100-10 0.000000      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.100-10 1.000-10 0.000000      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.700-10 9.000-11 0.000000      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.400-10 8.000-11 0.000000      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.100-10 1.200-10 0.000000      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.400-10 8.000-11 0.000000      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.600-10 9.000-11 0.000000      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.700-10 7.000-11 0.000000      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.200-10 8.000-11 0.000000      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.000-10 6.000-11 0.000000      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.700-10 9.000-11 0.000000      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.900-10 5.000-11 0.000000      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11 0.000000      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.700-10 5.000-11 0.000000      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11 0.000000      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.300-10 4.000-11 0.000000      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11 0.000000      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.000-11 2.000-11 0.000000      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.000-10 3.000-11 0.000000      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.000-11 3.000-11 0.000000      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.000-11 2.000-11 0.000000      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11 0.000000      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11 0.000000      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11 0.000000      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.5390-8 5.6600-9-0.500003      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.7660-8 4.6000-9-0.500003      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.2910-8 4.3200-9-0.500003      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.7420-8 3.9900-9-0.500003      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.8680-8 3.4800-9-0.500003      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.4930-8 3.2600-9-0.500003      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.0690-8 3.0100-9-0.500003      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.4950-8 2.6700-9-0.500003      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.6690-8 2.7800-9-0.500003      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.7460-8 2.2300-9-0.500003      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.4460-8 2.0700-9-0.500003      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.1210-8 1.8800-9-0.500003      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.8720-8 1.7300-9-0.500003      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.6470-8 1.5900-9-0.500003      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.3870-8 1.4500-9-0.500003      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.2200-8 1.3500-9-0.500003      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0200-8 1.2500-9-0.500003      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.8480-8 1.1300-9-0.500003      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.7430-8 1.0900-9-0.500003      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.5580-8 9.700-10-0.500003      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4480-8 9.100-10-0.500003      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3330-8 8.400-10-0.500003      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1960-8 8.000-10-0.500003      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1060-8 7.000-10-0.500003      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0310-8 7.000-10-0.500003      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.8400-9 6.700-10-0.500003      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.4600-9 6.400-10-0.500003      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.5100-9 5.900-10-0.500003      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.8200-9 5.500-10-0.500003      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.5900-9 5.300-10-0.500003      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.5400-9 4.600-10-0.500003      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.2200-9 4.400-10-0.500003      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.5700-9 4.000-10-0.500003      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.3400-9 3.900-10-0.500003      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.8700-9 3.600-10-0.500003      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.8900-9 3.700-10-0.500003      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.3700-9 3.300-10-0.500003      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.7500-9 2.900-10-0.500003      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.8700-9 3.000-10-0.500003      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.4700-9 2.800-10-0.500003      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.5200-9 2.900-10-0.500003      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.8000-9 2.400-10-0.500003      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.2500-9 2.700-10-0.500003      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.5700-9 2.200-10-0.500003      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.5700-9 2.200-10-0.500003      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.3100-9 2.000-10-0.500003      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.6000-9 2.200-10-0.500003      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.4900-9 2.200-10-0.500003      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.3000-9 2.000-10-0.500003      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.7800-9 1.700-10-0.500003      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.8300-9 1.700-10-0.500003      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4400-9 1.400-10-0.500003      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1900-9 1.300-10-0.500003      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3500-9 1.400-10-0.500003      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2800-9 1.400-10-0.500003      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.100-10 1.000-10-0.500003      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.600-10 1.000-10-0.500003      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1000-9 1.300-10-0.500003      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0100-9 1.200-10-0.500003      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.200-10-0.500003      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1200-9 1.300-10-0.500003      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.200-10 1.100-10-0.500003      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.400-10 1.000-10-0.500003      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.600-10 1.200-10-0.500003      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.100-10 9.000-11-0.500003      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.500-10 1.000-10-0.500003      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.300-10 1.000-10-0.500003      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.800-10 8.000-11-0.500003      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.200-10 7.000-11-0.500003      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.600-10 8.000-11-0.500003      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.300-10 9.000-11-0.500003      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.200-10 9.000-11-0.500003      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.000-10 8.000-11-0.500003      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.300-10 1.200-10-0.500003      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.600-10 9.000-11-0.500003      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11-0.500003      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.200-10 6.000-11-0.500003      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.000-10 7.000-11-0.500003      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.300-10 8.000-11-0.500003      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.900-10 7.000-11-0.500003      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.300-10 4.000-11-0.500003      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.600-10 6.000-11-0.500003      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.500-10 6.000-11-0.500003      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.600-10 8.000-11-0.500003      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 3.000-11-0.500003      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.000-10 5.000-11-0.500003      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.800-10 5.000-11-0.500003      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.800-10 7.000-11-0.500003      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.000-11 2.000-11-0.500003      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 3.000-11-0.500003      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.200-10 3.000-11-0.500003      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.000-11         -0.500003      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.500-10 4.000-11-0.500003      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11-0.500003      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.500003      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11-0.500003      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.000-11 2.000-11-0.500003      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.000-11 2.000-11-0.500003      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.000-11 3.000-11-0.500003      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.1400-8 4.8400-9-0.866027      1.9 910000.0          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.4910-8 4.4400-9-0.866027      1.9 1030000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.0670-8 4.1900-9-0.866027      1.9 1150000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.6420-8 3.9400-9-0.866027      1.9 1270000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.8930-8 3.4900-9-0.866027      1.9 1390000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.5930-8 3.3200-9-0.866027      1.9 1510000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.2440-8 3.1100-9-0.866027      1.9 1630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.5700-8 2.7200-9-0.866027      1.9 1750000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.1700-8 2.4900-9-0.866027      1.9 1870000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.8450-8 2.2900-9-0.866027      1.9 1990000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.5210-8 2.1100-9-0.866027      1.9 2110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.2460-8 1.9500-9-0.866027      1.9 2220000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.9460-8 1.7700-9-0.866027      1.9 2340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.6220-8 1.5800-9-0.866027      1.9 2470000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.4500-8 1.4900-9-0.866027      1.9 2590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.2100-8 1.3500-9-0.866027      1.9 2710000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.0380-8 1.2600-9-0.866027      1.9 2830000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.8380-8 1.1300-9-0.866027      1.9 2950000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.6880-8 1.0500-9-0.866027      1.9 3070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.5980-8 1.0000-9-0.866027      1.9 3190000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4060-8 8.800-10-0.866027      1.9 3310000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3360-8 8.500-10-0.866027      1.9 3440000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2210-8 8.200-10-0.866027      1.9 3550000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.1490-8 7.300-10-0.866027      1.9 3670000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0360-8 7.100-10-0.866027      1.9 3790000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.5400-9 6.500-10-0.866027      1.9 3900000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.9100-9 6.100-10-0.866027      1.9 4010000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 8.1900-9 5.700-10-0.866027      1.9 4120000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.5400-9 5.300-10-0.866027      1.9 4240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.2400-9 5.100-10-0.866027      1.9 4360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.7400-9 4.800-10-0.866027      1.9 4490000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.7700-9 4.200-10-0.866027      1.9 4630000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.3700-9 3.900-10-0.866027      1.9 4770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.1200-9 3.800-10-0.866027      1.9 4880000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.7900-9 3.600-10-0.866027      1.9 5000000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.1200-9 3.200-10-0.866027      1.9 5110000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.7500-9 3.000-10-0.866027      1.9 5240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.6500-9 2.800-10-0.866027      1.9 5360000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.3500-9 2.700-10-0.866027      1.9 5450000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.0700-9 2.500-10-0.866027      1.9 5590000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.2200-9 2.700-10-0.866027      1.9 5730000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.0700-9 2.500-10-0.866027      1.9 5820000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.5200-9 2.200-10-0.866027      1.9 5920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.2000-9 2.000-10-0.866027      1.9 6080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.1400-9 2.000-10-0.866027      1.9 6230000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.1500-9 2.000-10-0.866027      1.9 6340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.9400-9 1.800-10-0.866027      1.9 6460000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.9100-9 1.800-10-0.866027      1.9 6570000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.6800-9 1.600-10-0.866027      1.9 6690000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3900-9 1.400-10-0.866027      1.9 6810000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4300-9 1.400-10-0.866027      1.9 6940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.4900-9 1.500-10-0.866027      1.9 7070000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.3100-9 1.400-10-0.866027      1.9 7200000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 7.800-10 1.000-10-0.866027      1.9 7340000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.2700-9 1.400-10-0.866027      1.9 7480000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0000-9 1.200-10-0.866027      1.9 7620000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.0200-9 1.200-10-0.866027      1.9 7770000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.900-10 1.200-10-0.866027      1.9 7920000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.300-10 9.000-11-0.866027      1.9 8080000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.200-10 1.100-10-0.866027      1.9 8240000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 9.700-10 1.200-10-0.866027      1.9 8410000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 6.700-10 1.000-10-0.866027      1.9 8580000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.000-10 8.000-11-0.866027      1.9 8760000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.400-10 7.000-11-0.866027      1.9 8940000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.200-10 7.000-11-0.866027      1.9 9130000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.500-10 7.000-11-0.866027      1.9 9330000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.500-10 9.000-11-0.866027      1.9 9530000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.900-10 9.000-11-0.866027      1.9 9740000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.900-10 6.000-11-0.866027      1.9 9960000.          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.300-10 8.000-11-0.866027      1.9 1.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.000-10 9.000-11-0.866027      1.9 1.0400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.800-10 9.000-11-0.866027      1.9 1.0640+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.900-10 6.000-11-0.866027      1.9 1.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.300-10 9.000-11-0.866027      1.9 1.1140+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 4.100-10 1.000-10-0.866027      1.9 1.1400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.200-10 1.100-10-0.866027      1.9 1.1700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.900-10 6.000-11-0.866027      1.9 1.2000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.700-10 5.000-11-0.866027      1.9 1.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 3.700-10 9.000-11-0.866027      1.9 1.2600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.300-10 6.000-11-0.866027      1.9 1.2900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.500-10 5.000-11-0.866027      1.9 1.3200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.800-10 7.000-11-0.866027      1.9 1.3560+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.200-10 6.000-11-0.866027      1.9 1.3900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.900-10 5.000-11-0.866027      1.9 1.4300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.700-10 7.000-11-0.866027      1.9 1.4700+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11-0.866027      1.9 1.5100+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.300-10 4.000-11-0.866027      1.9 1.5500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.5900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.300-10 6.000-11-0.866027      1.9 1.6400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.6900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 2.000-11 2.000-11-0.866027      1.9 1.7400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.7900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 5.000-11 3.000-11-0.866027      1.9 1.8400+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000 2.000-11-0.866027      1.9 1.9000+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 1.100-10 4.000-11-0.866027      1.9 1.9600+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.0200+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.0900+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.1500+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+ 1001 49115   69000    2.2000+7 200000.0 0.000000         -0.866027      1.9 2.2300+7          E2N.S.Biryukov,ET.AL. (80) A0068 44
+#/DATA      495
 #/DATASET
 #/ENTRY
 #

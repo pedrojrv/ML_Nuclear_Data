@@ -8832,7 +8832,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536012
 #DATE       20101100
@@ -8862,7 +8862,7 @@
 #REF-CODE   (J,NP/A,122,234,196812)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.122, p.234, 1968
-#DATASETS   1
+#DATASETS   13
 #
 #DATASET    30101018
 #DATE       20080205
@@ -8925,7 +8925,7 @@
 #REF-CODE   (J,ASL,26,64,1976)
 #REFERENCE  Jour. Acta Physica Slovaca
 #+          Vol.26, p.64, 1976
-#DATASETS   8
+#DATASETS   10
 #
 #DATASET    30286002
 #DATE       20081203
@@ -8980,18 +8980,18 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1974
 #INSTITUTE  (2GERJUL)
-#TITLE      -MEASUREMENT AND SYSTEMATICS OF CROSS SECTIONS FOR
-#+          COMMON AND LOW YIELD 14 MEV NEUTRON INDUCED NUCLEAR
-#+          REACTIONS ON STRUCTURAL FR-MATERIAL AND TRANSMUTED
-#+          SPECIES.-
+#TITLE      Measurement and systematics of cross sections for
+#+          common and low yield 14 MeV neutron induced nuclear
+#+          reactions on structural FR-material and transmuted
+#+          species
 #AUTHOR(S)  S.M.Qaim, G.Stoecklin
-#REF-CODE   (R,EUR-5182E,939,7409)
+#REF-CODE   (R,EUR-5182,939,1974)
 #REFERENCE  Rept. Euratom Reports
-#+          No.5182E, p.939, 1974
-#DATASETS   24
+#+          No.5182, p.939, 1974
+#DATASETS   31
 #
 #DATASET    20513004
-#DATE       19760403
+#DATE       20200901
 #REACTION   30-ZN-70(N,N+A)28-NI-66,,SIG
 #PROJ       1
 #TARG       30070
@@ -9003,7 +9003,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 30070   3  22    1.4700+7 300000.0 5.6000-4 1.0000-4                                       S.M.QAIM,ET.AL. (74)     20513  4
+    1 30070   3  22    1.4700+7          5.6000-4 1.0000-4                                       S.M.Qaim,ET.AL. (74)     20513  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -9547,6 +9547,37 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 30070   3 1032   1.4700+7 300000.0 2.9000-3 3.0000-4                                       B.Anders,ET.AL. (85)     21976 23
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30101
+#AUTHOR1    J.Karolyi+
+#YEAR       1968
+#INSTITUTE  (3HUNDEB)
+#TITLE      Isomeric cross-section ratios for (n,2n) reactions
+#AUTHOR(S)  J.Karolyi, J.Csikai, G.Peto
+#REF-CODE   (J,NP/A,122,234,196812)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.122, p.234, 1968
+#DATASETS   13
+#
+#DATASET    30101006
+#DATE       20080205
+#REACTION   30-ZN-70(N,2N)30-ZN-69-M/G,,SIG/RAT
+#PROJ       1
+#TARG       30070
+#MF         203
+#MT         16
+#PRODUCT    30-ZN-69-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 30070 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 30070 203  16MD  1.4700+7          1.280000 0.350000     16.0  30070.9                     J.Karolyi,ET.AL. (68)    30101  6
 #/DATA      1
 #/DATASET
 #/ENTRY

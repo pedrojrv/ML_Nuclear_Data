@@ -441,12 +441,12 @@
 #AUTHOR1    Yu.N.Trofimov
 #YEAR       1987
 #INSTITUTE  (4RUSRI)
-#TITLE      Activation cross-sections for 31 nuclei at the
-#+          neutron energy 2 MeV .
+#TITLE      Activation cross-sections for 31 nuclei for 2 MeV
+#+          neutrons
 #AUTHOR(S)  Yu.N.Trofimov
-#REF-CODE   (J,YK,1987,(4),10,1987)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1987, Issue.4, p.10, 1987
+#REF-CODE   (J,YK,,(4),10,1987)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.4, p.10, 1987
 #DATASETS   31
 #
 #DATASET    40975005
@@ -551,18 +551,18 @@
 #AUTHOR1    Y.Ikeda+
 #YEAR       1990
 #INSTITUTE  (2JPNJAE)
-#TITLE      -ACTIVATION CROSS SECTION MEASUREMENT AT A NEUTRON
-#+          ENERGY RANGE FROM 2.1 TO 3.0 MEV BY D-D NEUTRON
-#+          SOURCE AT FNS.
+#TITLE      Activation cross section measurement at a neutron
+#+          energy range from 2.1 to 3.0 MeV by d-d neutron
+#+          source at FNS.
 #AUTHOR(S)  Y.Ikeda, C.Konno, K.Kosako,
 #+          K.Oishi
-#REF-CODE   (P,NEANDC(J)-155,11,9008)
+#REF-CODE   (P,NEANDC(J)-155,11,1990)
 #REFERENCE  Prog. Japanese report to NEANDC
 #+          No.155, p.11, 1990
 #DATASETS   8
 #
 #DATASET    22191006
-#DATE       19910701
+#DATE       20201206
 #REACTION   48-CD-111(N,INL)48-CD-111-M,,SIG
 #PROJ       1
 #TARG       48111
@@ -574,12 +574,12 @@
 #DATA       6
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111   3   4M   2810000.          0.275500 7.3000-3                                       Y.IKEDA,ET.AL.           22191  6
-    1 48111   3   4M   2670000.          0.260100 7.1000-3                                       Y.IKEDA,ET.AL.           22191  6
-    1 48111   3   4M   2540000.          0.257600 7.2000-3                                       Y.IKEDA,ET.AL.           22191  6
-    1 48111   3   4M   2400000.          0.247000 6.8000-3                                       Y.IKEDA,ET.AL.           22191  6
-    1 48111   3   4M   2200000.          0.239500 6.5000-3                                       Y.IKEDA,ET.AL.           22191  6
-    1 48111   3   4M   2080000.          0.218500 6.2000-3                                       Y.IKEDA,ET.AL.           22191  6
+    1 48111   3   4M   2810000.          0.275500 7.3000-3                                       Y.Ikeda,ET.AL.           22191  6
+    1 48111   3   4M   2670000.          0.260100 7.1000-3                                       Y.Ikeda,ET.AL.           22191  6
+    1 48111   3   4M   2540000.          0.257600 7.2000-3                                       Y.Ikeda,ET.AL.           22191  6
+    1 48111   3   4M   2400000.          0.247000 6.8000-3                                       Y.Ikeda,ET.AL.           22191  6
+    1 48111   3   4M   2200000.          0.239500 6.5000-3                                       Y.Ikeda,ET.AL.           22191  6
+    1 48111   3   4M   2080000.          0.218500 6.2000-3                                       Y.Ikeda,ET.AL.           22191  6
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -737,13 +737,13 @@
 #AUTHOR(S)  Eh.V.Vasil'eva, A.V.Vojnov, O.D.Kestarova,
 #+          V.D.Kulik, A.M.Sukhovoj, V.A.Khitrov,
 #+          Yu.V.Khol'nov
-#REF-CODE   (J,YK,1994,(1),80,1994)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1994, Issue.1, p.80, 1994
+#REF-CODE   (J,YK,,(1),80,1994)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.1, p.80, 1994
 #DATASETS   1
 #
 #DATASET    41187002
-#DATE       20150903
+#DATE       20191104
 #REACTION   48-CD-111(N,G)48-CD-112,,SIG
 #PROJ       1
 #TARG       48111
@@ -755,7 +755,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111   3 102    0.025000          2.100000 0.200000                                       Eh.V.Vasil'Eva, (94)     41187  2
+    1 48111   3 102    0.025000          2.100000 0.200000                                       Eh.V.Vasil'eva, (94)     41187  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1347,16 +1347,16 @@
 #AUTHOR1    A.I.Lashuk+
 #YEAR       1996
 #INSTITUTE  (4RUSFEI)
-#TITLE      GAMMA-QUANTA PRODUCTION CROSS SECTIONS AT NEUTRON
-#+          INELASTIC SCATTERING AT THE ENERGY 3 MEV
+#TITLE      Gamma-quanta production cross sections at neutron
+#+          inelastic scattering at the energy 3 MeV
 #AUTHOR(S)  A.I.Lashuk, I.P.Sadokhin
-#REF-CODE   (J,YK,1996,(2),59,9612)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1996, Issue.2, p.59, 1996
+#REF-CODE   (J,YK,,(2),59,1996)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.2, p.59, 1996
 #DATASETS   28
 #
 #DATASET    41245018
-#DATE       19970506
+#DATE       20191106
 #REACTION   48-CD-111(N,INL)48-CD-111,PAR,SIG,G
 #PROJ       1
 #TARG       48111
@@ -1368,7 +1368,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111   39000    3000000.          0.465000 0.055000               0.9 620000.0          E2A.I.LASHUK,ET.AL. (96)   41245 18
+    1 48111   39000    3000000.          0.465000 0.055000               0.9 620000.0          E2A.I.Lashuk,ET.AL. (96)   41245 18
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1581,7 +1581,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -1862,15 +1862,15 @@
 #AUTHOR1    S.Desjardins
 #YEAR       1959
 #INSTITUTE  (1USACOL)
-#TITLE      Slow down neutron resonances in Ag, Ta and Cd.
+#TITLE      Slow down neutron resonances in Ag, Ta and Cd
 #AUTHOR(S)  S.Desjardins
-#REF-CODE   (R,CU-189,5905)
+#REF-CODE   (R,CU-189,1959)
 #REFERENCE  Rept. Columbia Univ. report series
 #+          No.189, 1959
 #DATASETS   19
 #
 #DATASET    126270054
-#DATE       19970505
+#DATE       20190805
 #REACTION   48-CD-111(N,0),,J
 #PROJ       1
 #TARG       48111
@@ -1881,7 +1881,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111 4026003    164.3000          1.000000                                                S.DESJARDINS (59)        12627  54
+    1 48111 4026003    164.3000          1.000000                                                S.Desjardins (59)        12627  54
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2111,7 +2111,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2141,16 +2141,16 @@
 #AUTHOR1    A.Asami+
 #YEAR       1968
 #INSTITUTE  (2JPNJAE)
-#TITLE      -NEUTRON RESONANCE PARAMETERS OF CADMIUM AND ANTIMONT-
+#TITLE      Neutron-resonance parameters of cadmium and antimony
 #AUTHOR(S)  A.Asami, M.Okubo, Y.Nakajima,
 #+          T.Fuketa
-#REF-CODE   (C,68WASH,2,789(E14),196803)
+#REF-CODE   (C,68WASH,2,789,1968)
 #REFERENCE  Conf. Nuclear Cross-Sections Techn. Conf., Washington 1968
-#+          Vol.2, p.789(E14), 1968
-#DATASETS   13
+#+          Vol.2, p.789, 1968
+#DATASETS   9
 #
 #DATASET    213260043
-#DATE       20041205
+#DATE       20190803
 #REACTION   48-CD-111(N,TOT),,WID
 #PROJ       1
 #TARG       48111
@@ -2161,8 +2161,8 @@
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111 4026010    27.50000          0.170000 0.020000                                       A.ASAMI,ET.AL. (68)      21326  43
-    1 48111 4026010    137.6000          0.090000 0.020000                                       A.ASAMI,ET.AL. (68)      21326  43
+    1 48111 4026010    27.50000          0.170000 0.020000                                       A.Asami,ET.AL. (68)      21326  43
+    1 48111 4026010    137.6000          0.090000 0.020000                                       A.Asami,ET.AL. (68)      21326  43
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -2235,7 +2235,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2266,16 +2266,16 @@
 #AUTHOR1    A.Asami+
 #YEAR       1968
 #INSTITUTE  (2JPNJAE)
-#TITLE      -NEUTRON RESONANCE PARAMETERS OF CADMIUM AND ANTIMONT-
+#TITLE      Neutron-resonance parameters of cadmium and antimony
 #AUTHOR(S)  A.Asami, M.Okubo, Y.Nakajima,
 #+          T.Fuketa
-#REF-CODE   (C,68WASH,2,789(E14),196803)
+#REF-CODE   (C,68WASH,2,789,1968)
 #REFERENCE  Conf. Nuclear Cross-Sections Techn. Conf., Washington 1968
-#+          Vol.2, p.789(E14), 1968
-#DATASETS   13
+#+          Vol.2, p.789, 1968
+#DATASETS   9
 #
 #DATASET    213260041
-#DATE       20041205
+#DATE       20190803
 #REACTION   48-CD-111(N,EL),,WID
 #PROJ       1
 #TARG       48111
@@ -2286,10 +2286,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111 4026021    27.50000          4.1000-3 4.0000-4                                       A.ASAMI,ET.AL. (68)      21326  41
-    1 48111 4026021    99.30000          0.012500 7.0000-4                                       A.ASAMI,ET.AL. (68)      21326  41
-    1 48111 4026021    137.6000          0.012000 1.0000-3                                       A.ASAMI,ET.AL. (68)      21326  41
-    1 48111 4026021    163.8000          0.034000 5.0000-3                                       A.ASAMI,ET.AL. (68)      21326  41
+    1 48111 4026021    27.50000          4.1000-3 4.0000-4                                       A.Asami,ET.AL. (68)      21326  41
+    1 48111 4026021    99.30000          0.012500 7.0000-4                                       A.Asami,ET.AL. (68)      21326  41
+    1 48111 4026021    137.6000          0.012000 1.0000-3                                       A.Asami,ET.AL. (68)      21326  41
+    1 48111 4026021    163.8000          0.034000 5.0000-3                                       A.Asami,ET.AL. (68)      21326  41
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -2353,7 +2353,7 @@
 #TITLE      Slow neutron resonances in Cd and W
 #AUTHOR(S)  R.B.Schwartz, V.E.Pilcher, R.M.Schectman
 #REF-CODE   (J,BAP,1,187(K3),1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.187(K3), 1956
 #DATASETS   16
 #
@@ -2475,7 +2475,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2658,7 +2658,7 @@
 #TITLE      Slow neutron resonances in Cd and W
 #AUTHOR(S)  R.B.Schwartz, V.E.Pilcher, R.M.Schectman
 #REF-CODE   (J,BAP,1,187(K3),1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.187(K3), 1956
 #DATASETS   16
 #
@@ -2685,15 +2685,15 @@
 #AUTHOR1    S.Desjardins
 #YEAR       1959
 #INSTITUTE  (1USACOL)
-#TITLE      Slow down neutron resonances in Ag, Ta and Cd.
+#TITLE      Slow down neutron resonances in Ag, Ta and Cd
 #AUTHOR(S)  S.Desjardins
-#REF-CODE   (R,CU-189,5905)
+#REF-CODE   (R,CU-189,1959)
 #REFERENCE  Rept. Columbia Univ. report series
 #+          No.189, 1959
 #DATASETS   19
 #
 #DATASET    126270052
-#DATE       19970505
+#DATE       20190805
 #REACTION   48-CD-111(N,EL),,WID,,G
 #PROJ       1
 #TARG       48111
@@ -2704,9 +2704,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111 4026022    99.60000          0.020000 5.0000-3                                       S.DESJARDINS (59)        12627  52
-    1 48111 4026022    138.3000          0.012000 2.0000-3                                       S.DESJARDINS (59)        12627  52
-    1 48111 4026022    164.3000          0.080000 0.010000                                       S.DESJARDINS (59)        12627  52
+    1 48111 4026022    99.60000          0.020000 5.0000-3                                       S.Desjardins (59)        12627  52
+    1 48111 4026022    138.3000          0.012000 2.0000-3                                       S.Desjardins (59)        12627  52
+    1 48111 4026022    164.3000          0.080000 0.010000                                       S.Desjardins (59)        12627  52
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -3097,15 +3097,15 @@
 #AUTHOR1    S.Desjardins
 #YEAR       1959
 #INSTITUTE  (1USACOL)
-#TITLE      Slow down neutron resonances in Ag, Ta and Cd.
+#TITLE      Slow down neutron resonances in Ag, Ta and Cd
 #AUTHOR(S)  S.Desjardins
-#REF-CODE   (R,CU-189,5905)
+#REF-CODE   (R,CU-189,1959)
 #REFERENCE  Rept. Columbia Univ. report series
 #+          No.189, 1959
 #DATASETS   19
 #
 #DATASET    126270053
-#DATE       19970505
+#DATE       20190805
 #REACTION   48-CD-111(N,EL),,WID/RED,,G
 #PROJ       1
 #TARG       48111
@@ -3116,9 +3116,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48111 4026024    99.60000          2.0000-3 5.0000-4                                       S.DESJARDINS (59)        12627  53
-    1 48111 4026024    138.3000          1.0200-3 1.7000-4                                       S.DESJARDINS (59)        12627  53
-    1 48111 4026024    164.3000          6.2500-3 7.8000-4                                       S.DESJARDINS (59)        12627  53
+    1 48111 4026024    99.60000          2.0000-3 5.0000-4                                       S.Desjardins (59)        12627  53
+    1 48111 4026024    138.3000          1.0200-3 1.7000-4                                       S.Desjardins (59)        12627  53
+    1 48111 4026024    164.3000          6.2500-3 7.8000-4                                       S.Desjardins (59)        12627  53
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -3130,7 +3130,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -3249,7 +3249,7 @@
 #TITLE      Slow neutron resonances in Cd and W
 #AUTHOR(S)  R.B.Schwartz, V.E.Pilcher, R.M.Schectman
 #REF-CODE   (J,BAP,1,187(K3),1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.187(K3), 1956
 #DATASETS   16
 #
@@ -3500,7 +3500,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)

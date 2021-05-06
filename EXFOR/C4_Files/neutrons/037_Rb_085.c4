@@ -7939,7 +7939,7 @@
 #REF-CODE   (J,NP/A,180,587,1972)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.180, p.587, 1972
-#DATASETS   5
+#DATASETS   8
 #
 #DATASET    30237010
 #DATE       20081203
@@ -7964,8 +7964,8 @@
 #AUTHOR1    L.Hannappel+
 #YEAR       1979
 #INSTITUTE  (2GERJLU)
-#TITLE      -Investigation of neutron induced short living yrast
-#+          isomers -.
+#TITLE      Investigation of neutron induced short living yrast
+#+          isomers
 #AUTHOR(S)  L.Hannappel, H.Henschel, H.Schneider
 #REF-CODE   (J,NIM,167,289,1979)
 #REFERENCE  Jour. Nuclear Instrum.and Methods in Physics Res.
@@ -7985,7 +7985,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37085   3   4L   1.4900+7 200000.0 0.246000 0.046000                                       L.Hannappel,ET.AL. (79)  21612  9
+    1 37085   3   4L   1.4900+7          0.246000 0.046000                                       L.Hannappel,ET.AL. (79)  21612  9
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8536,6 +8536,108 @@
 #/ENTRY
 #
 #
+#ENTRY      32782
+#AUTHOR1    Junhua Luo+
+#YEAR       2018
+#INSTITUTE  (3CPRHXU)
+#TITLE      Measurement of cross sections and isomeric cross-
+#+          section ratios for the (n,2n) reactions on 85,87Rb in
+#+          energies between 13 and 15 MeV
+#AUTHOR(S)  Junhua Luo, Li Jiang, Long He
+#REF-CODE   (J,RCA,106,709,2018)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.106, p.709, 2018
+#DATASETS   8
+#
+#DATASET    327820021
+#DATE       20200203
+#REACTION   37-RB-85(N,2N)37-RB-84-M,,SIG
+#PROJ       1
+#TARG       37085
+#MF         3
+#MT         16
+#PRODUCT    37-RB-84-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 37085   3  16M  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 37085   3  16M   1.3500+7 200000.0 0.336000 0.019000                                       Junhua Luo,ET.AL. (18)   32782  21
+    1 37085   3  16M   1.4100+7 200000.0 0.387000 0.023000                                       Junhua Luo,ET.AL. (18)   32782  21
+    1 37085   3  16M   1.4800+7 200000.0 0.428000 0.025000                                       Junhua Luo,ET.AL. (18)   32782  21
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      32782
+#AUTHOR1    Junhua Luo+
+#YEAR       2018
+#INSTITUTE  (3CPRHXU)
+#TITLE      Measurement of cross sections and isomeric cross-
+#+          section ratios for the (n,2n) reactions on 85,87Rb in
+#+          energies between 13 and 15 MeV
+#AUTHOR(S)  Junhua Luo, Li Jiang, Long He
+#REF-CODE   (J,RCA,106,709,2018)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.106, p.709, 2018
+#DATASETS   8
+#
+#DATASET    327820022
+#DATE       20200203
+#REACTION   37-RB-85(N,2N)37-RB-84-G,,SIG
+#PROJ       1
+#TARG       37085
+#MF         3
+#MT         16
+#PRODUCT    37-RB-84-G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 37085   3  16G  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 37085   3  16G   1.3500+7 200000.0 0.656000 0.051000                                       Junhua Luo,ET.AL. (18)   32782  22
+    1 37085   3  16G   1.4100+7 200000.0 0.689000 0.055000                                       Junhua Luo,ET.AL. (18)   32782  22
+    1 37085   3  16G   1.4800+7 200000.0 0.747000 0.058000                                       Junhua Luo,ET.AL. (18)   32782  22
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      32782
+#AUTHOR1    Junhua Luo+
+#YEAR       2018
+#INSTITUTE  (3CPRHXU)
+#TITLE      Measurement of cross sections and isomeric cross-
+#+          section ratios for the (n,2n) reactions on 85,87Rb in
+#+          energies between 13 and 15 MeV
+#AUTHOR(S)  Junhua Luo, Li Jiang, Long He
+#REF-CODE   (J,RCA,106,709,2018)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.106, p.709, 2018
+#DATASETS   8
+#
+#DATASET    327820023
+#DATE       20200203
+#REACTION   37-RB-85(N,2N)37-RB-84,,SIG
+#PROJ       1
+#TARG       37085
+#MF         3
+#MT         16
+#PRODUCT    37-RB-84
+#DATA-HDR   DATA
+#C4BEGIN    [    1 37085   3  16   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 37085   3  16    1.3500+7 200000.0 0.992000 0.070000                                       Junhua Luo,ET.AL. (18)   32782  23
+    1 37085   3  16    1.4100+7 200000.0 1.076000 0.078000                                       Junhua Luo,ET.AL. (18)   32782  23
+    1 37085   3  16    1.4800+7 200000.0 1.175000 0.083000                                       Junhua Luo,ET.AL. (18)   32782  23
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      30033
 #AUTHOR1    J.Csikai+
 #YEAR       1967
@@ -8563,38 +8665,6 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 37085   3  16 A  1.3650+7          0.830000 0.124500                                       J.Csikai,ET.AL. (67)     30033  3
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      20033
-#AUTHOR1    R.Rieder+
-#YEAR       1965
-#INSTITUTE  (2AUSIRK)
-#TITLE      -(N,2N) cross sections for some nuclei with N near the
-#+          magic number 50, with 14 MeV neutrons.- (In German).
-#AUTHOR(S)  R.Rieder, H.Muenzer
-#REF-CODE   (P,EANDC(OR)-38,1,196504)
-#REFERENCE  Prog. Report from misc. OECD Countries to EANDC
-#+          No.38, p.1, 1965
-#DATASETS   12
-#
-#DATASET    20033003
-#DATE       20080506
-#REACTION   37-RB-85(N,2N)37-RB-84,,SIG
-#PROJ       1
-#TARG       37085
-#MF         3
-#MT         16
-#PRODUCT    37-RB-84
-#DATA-HDR   DATA
-#C4BEGIN    [    1 37085   3  16 P ]
-#X4STATUS   [PRELM] Preliminary data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37085   3  16 P  1.4050+7 50000.00 1.011000 0.050550                                       R.Rieder,ET.AL. (65)     20033  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8792,18 +8862,19 @@
 #
 #ENTRY      20033
 #AUTHOR1    R.Rieder+
-#YEAR       1965
+#YEAR       1966
 #INSTITUTE  (2AUSIRK)
-#TITLE      -(N,2N) cross sections for some nuclei with N near the
-#+          magic number 50, with 14 MeV neutrons.- (In German).
+#TITLE      (n,2n)- cross sections of some nuclides with
+#+          neutron numbers close to the magic number 50
+#+          at neutron energies around 14 MeV
 #AUTHOR(S)  R.Rieder, H.Muenzer
-#REF-CODE   (P,EANDC(OR)-38,1,196504)
-#REFERENCE  Prog. Report from misc. OECD Countries to EANDC
-#+          No.38, p.1, 1965
-#DATASETS   12
+#REF-CODE   (J,APA,23,42,1966)
+#REFERENCE  Jour. Acta Physica Austriaca
+#+          Vol.23, p.42, 1966
+#DATASETS   9
 #
 #DATASET    20033002
-#DATE       20070902
+#DATE       20200900
 #REACTION   37-RB-85(N,2N)37-RB-84,,SIG
 #PROJ       1
 #TARG       37085
@@ -8812,12 +8883,11 @@
 #PRODUCT    37-RB-84
 #DATA-HDR   DATA
 #C4BEGIN    [    1 37085   3  16   ]
-#DATA       2
+#DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37085   3  16    1.4700+7 100000.0 1.430000 0.071500                                       R.Rieder,ET.AL. (65)     20033  2
-    1 37085   3  16    1.4700+7 100000.0 1.391000 0.069550                                       R.Rieder,ET.AL. (65)     20033  2
-#/DATA      2
+    1 37085   3  16    1.4700+7          1.430000 0.071500                                       R.Rieder,ET.AL. (66)     20033  2
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -9049,7 +9119,7 @@
 #REF-CODE   (J,PHE,8,(2),241,198403)
 #REFERENCE  Jour. High Energy Physics and Nucl.Physics,Chinese ed.
 #+          Vol.8, Issue.2, p.241, 1984
-#DATASETS   2
+#DATASETS   3
 #
 #DATASET    32637002M
 #DATE       20100205
@@ -9080,7 +9150,7 @@
 #REF-CODE   (J,PHE,8,(2),241,198403)
 #REFERENCE  Jour. High Energy Physics and Nucl.Physics,Chinese ed.
 #+          Vol.8, Issue.2, p.241, 1984
-#DATASETS   2
+#DATASETS   3
 #
 #DATASET    32637002T
 #DATE       20100205
@@ -9361,7 +9431,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -9400,7 +9470,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -10064,7 +10134,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -10074,8 +10144,8 @@
 #DATASETS   32
 #
 #DATASET    23035016
-#DATE       20081102
-#REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW,EVAL
+#DATE       20200804
+#REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW,RECOM
 #PROJ       1
 #TARG       37085
 #MF         3
@@ -10084,7 +10154,7 @@
 #DATA-HDR   DATA
 #C4BEGIN    [    1 37085   3 102 D ]
 #X4STATUS   [DEP  ] Dependent data
-#X4DATATYPE [EVAL]  Evaluated data
+#X4DATATYPE [RECOM] Recommended data
 #DATA       11
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
@@ -10205,7 +10275,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -10215,7 +10285,7 @@
 #DATASETS   32
 #
 #DATASET    230350071
-#DATE       20120105
+#DATE       20200804
 #REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW
 #PROJ       1
 #TARG       37085
@@ -10237,7 +10307,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -10247,7 +10317,7 @@
 #DATASETS   32
 #
 #DATASET    230350072
-#DATE       20120105
+#DATE       20200804
 #REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW
 #PROJ       1
 #TARG       37085
@@ -10269,7 +10339,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -10279,7 +10349,7 @@
 #DATASETS   32
 #
 #DATASET    230350073
-#DATE       20120105
+#DATE       20200804
 #REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW
 #PROJ       1
 #TARG       37085
@@ -10301,7 +10371,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -10311,7 +10381,7 @@
 #DATASETS   32
 #
 #DATASET    230350074
-#DATE       20120105
+#DATE       20200804
 #REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW
 #PROJ       1
 #TARG       37085
@@ -10333,7 +10403,7 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Stellar (n,GAMMA) cross sections for Br and Rb:
+#TITLE      Stellar (n,gamma) cross sections for Br and Rb:
 #+          Matching the weak and main s-process components
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, S.Bisterzo, M.Pignatari
@@ -10343,7 +10413,7 @@
 #DATASETS   32
 #
 #DATASET    23035012
-#DATE       20081102
+#DATE       20200804
 #REACTION   37-RB-85(N,G)37-RB-86,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       37085
@@ -10490,16 +10560,16 @@
 #AUTHOR1    D.C.Stupegia+
 #YEAR       1968
 #INSTITUTE  (1USAANL)
-#TITLE      NEUTRON CAPTURE BETWEEN 5KEV AND 3MEV.
-#AUTHOR(S)  D.C.Stupegia, Marcia Schmidt, C.R.Keedy,
+#TITLE      Neutron capture between 5 keV and 3 MeV
+#AUTHOR(S)  D.C.Stupegia, M.Schmidt, C.R.Keedy,
 #+          A.A.Madson
-#REF-CODE   (J,JNE,22,267,6805)
+#REF-CODE   (J,JNE,22,267,1968)
 #REFERENCE  Jour. Journal of Nuclear Energy
 #+          Vol.22, p.267, 1968
 #DATASETS   11
 #
 #DATASET    11624004
-#DATE       19830801
+#DATE       20200806
 #REACTION   37-RB-85(N,G)37-RB-86,,SIG
 #PROJ       1
 #TARG       37085
@@ -10511,19 +10581,19 @@
 #DATA       13
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37085   3 102    140000.0 25000.00 0.139000 9.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    152000.0 18000.00 0.131000 9.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    266000.0 24000.00 0.101000 7.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    326000.0 22000.00 0.083000 6.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    440000.0 22000.00 0.066000 4.5000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    527000.0 46000.00 0.055000 3.8000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    746000.0 40000.00 0.041000 2.7000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    954000.0 41000.00 0.037000 2.5000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    1151000. 54000.00 0.025400 2.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    1240000. 54000.00 0.029600 2.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    1620000. 67000.00 0.018800 1.3000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    2115000. 70000.00 0.014700 1.0000-3                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
-    1 37085   3 102    2602000. 80000.00 0.011100 7.0000-4                                       D.C.STUPEGIA,ET.AL. (68) 11624  4
+    1 37085   3 102    140000.0 25000.00 0.139000 9.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    152000.0 18000.00 0.131000 9.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    266000.0 24000.00 0.101000 7.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    326000.0 22000.00 0.083000 6.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    440000.0 22000.00 0.066000 4.5000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    527000.0 46000.00 0.055000 3.8000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    746000.0 40000.00 0.041000 2.7000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    954000.0 41000.00 0.037000 2.5000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    1151000. 54000.00 0.025400 2.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    1240000. 54000.00 0.029600 2.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    1620000. 67000.00 0.018800 1.3000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    2115000. 70000.00 0.014700 1.0000-3                                       D.C.Stupegia,ET.AL. (68) 11624  4
+    1 37085   3 102    2602000. 80000.00 0.011100 7.0000-4                                       D.C.Stupegia,ET.AL. (68) 11624  4
 #/DATA      13
 #/DATASET
 #/ENTRY
@@ -10535,7 +10605,7 @@
 #INSTITUTE  (1USAANL)
 #TITLE      Reaction cross sections of 85Rb(n,gamma)86Rb(m),
 #+          87Rb(n,gamma)88Rb, and 89Y(n,gamma)90Y(m) between
-#+          0.16 MeV and 1.5 MeV.
+#+          0.16 MeV and 1.5 MeV
 #AUTHOR(S)  N.D.Dudey, R.R.Heinrich, A.A.Madson
 #REF-CODE   (J,JNE,24,181,1970)
 #REFERENCE  Jour. Journal of Nuclear Energy
@@ -10543,7 +10613,7 @@
 #DATASETS   3
 #
 #DATASET    10030002
-#DATE       20120300
+#DATE       20200802
 #REACTION   37-RB-85(N,G)37-RB-86-M,,SIG
 #PROJ       1
 #TARG       37085
@@ -10591,14 +10661,15 @@
 #
 #
 #ENTRY      21619
-#AUTHOR1    S.Joly+
+#AUTHOR1    J.Voignier+
 #YEAR       1981
 #INSTITUTE  (2FR BRC)
-#TITLE      -Measurement of fast neutron capture cross sections
-#+          using a Na-I spectrometer.-
-#AUTHOR(S)  S.Joly, J.Voignier, G.Grenier,
+#TITLE      Neutron capture cross section measurements of
+#+          rubidium, yttrium, niobium, gadolinium, tungsten,
+#+          platinum and thallium between 0.5 and 3.0 MeV
+#AUTHOR(S)  J.Voignier, S.Joly, G.Grenier,
 #+          D.M.Drake, L.Nilsson
-#REF-CODE   (R,CEA-R-5089,198108)
+#REF-CODE   (R,CEA-R-5089,1981)
 #REFERENCE  Rept. Centre d`Etudes Nucleaires, Saclay Reports
 #+          No.5089, 1981
 #DATASETS   11
@@ -10618,9 +10689,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37085   3 102 D  500000.0 80000.00 0.050960 5.3900-3                                       S.Joly,ET.AL. (81)       21619 17
-    1 37085   3 102 D  1000000. 70000.00 0.024390 4.2200-3                                       S.Joly,ET.AL. (81)       21619 17
-    1 37085   3 102 D  2500000. 60000.00 0.010880 1.6900-3                                       S.Joly,ET.AL. (81)       21619 17
+    1 37085   3 102 D  500000.0 80000.00 0.050960 5.3900-3                                       J.Voignier,ET.AL. (81)   21619 17
+    1 37085   3 102 D  1000000. 70000.00 0.024390 4.2200-3                                       J.Voignier,ET.AL. (81)   21619 17
+    1 37085   3 102 D  2500000. 60000.00 0.010880 1.6900-3                                       J.Voignier,ET.AL. (81)   21619 17
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -10939,7 +11010,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -11222,7 +11293,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -11455,6 +11526,102 @@
     1 37085   4  51    1384000.          5.2000-3 5.0000-4 0.000000          731560.0         LVLE.Barnard,ET.AL. (80)    30587  2
     1 37085   4  51    1494000.          5.7000-3 4.0000-4 0.000000          731560.0         LVLE.Barnard,ET.AL. (80)    30587  2
 #/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      32782
+#AUTHOR1    Junhua Luo+
+#YEAR       2018
+#INSTITUTE  (3CPRHXU)
+#TITLE      Measurement of cross sections and isomeric cross-
+#+          section ratios for the (n,2n) reactions on 85,87Rb in
+#+          energies between 13 and 15 MeV
+#AUTHOR(S)  Junhua Luo, Li Jiang, Long He
+#REF-CODE   (J,RCA,106,709,2018)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.106, p.709, 2018
+#DATASETS   8
+#
+#DATASET    327820024
+#DATE       20200203
+#REACTION   37-RB-85(N,2N)37-RB-84-M/G,,SIG/RAT
+#PROJ       1
+#TARG       37085
+#MF         203
+#MT         16
+#PRODUCT    37-RB-84-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 37085 203  16M  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 37085 203  16M   1.3500+7 200000.0 0.510000 0.050000     16.0  37085.9                     Junhua Luo,ET.AL. (18)   32782  24
+    1 37085 203  16M   1.4100+7 200000.0 0.560000 0.060000     16.0  37085.9                     Junhua Luo,ET.AL. (18)   32782  24
+    1 37085 203  16M   1.4800+7 200000.0 0.570000 0.060000     16.0  37085.9                     Junhua Luo,ET.AL. (18)   32782  24
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20535
+#AUTHOR1    R.Voelpel
+#YEAR       1972
+#INSTITUTE  (2GERJLU)
+#TITLE      -DETERMINATION OF ISOMERIC RATIO FROM DIFFERENT PHOTO-
+#+          AND (N,2N)-REACTIONS.- (IN GERMAN)
+#AUTHOR(S)  R.Voelpel
+#REF-CODE   (J,NP/A,182,411,7203)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.182, p.411, 1972
+#DATASETS   2
+#
+#DATASET    20535004
+#DATE       19840104
+#REACTION   37-RB-85(N,2N)37-RB-84-M/G,,SIG/RAT
+#PROJ       1
+#TARG       37085
+#MF         203
+#MT         16
+#PRODUCT    37-RB-84-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 37085 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 37085 203  16M   1.4100+7          1.070000 0.500000     16.0  37085.9                     R.VOELPEL (72)           20535  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      32637
+#AUTHOR1    Li Yingjun+
+#YEAR       1984
+#INSTITUTE  (3CPRIMP)
+#TITLE      Isomeric cross-section ratio for the reaction
+#+          Rb-85(n,2n) by 14.7 MeV neutrons.
+#AUTHOR(S)  Li Yingjun, Yan Weifan
+#REF-CODE   (J,PHE,8,(2),241,198403)
+#REFERENCE  Jour. High Energy Physics and Nucl.Physics,Chinese ed.
+#+          Vol.8, Issue.2, p.241, 1984
+#DATASETS   3
+#
+#DATASET    32637002R
+#DATE       20100205
+#REACTION   37-RB-85(N,2N)37-RB-84-M/G,,SIG/RAT
+#PROJ       1
+#TARG       37085
+#MF         203
+#MT         16
+#PRODUCT    37-RB-84-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 37085 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 37085 203  16M   1.4700+7 400000.0 1.020000 0.120000     16.0  37085.9                     Li Yingjun,ET.AL. (84)   32637  2R
+#/DATA      1
 #/DATASET
 #/ENTRY
 #

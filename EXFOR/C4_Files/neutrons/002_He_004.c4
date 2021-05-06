@@ -258,6 +258,40 @@
 #/ENTRY
 #
 #
+#ENTRY      11151
+#AUTHOR1    D.F.Measday+
+#YEAR       1966
+#INSTITUTE  (1USAHRV)
+#TITLE      Neutron total cross sections in the energy range 80 to
+#+          150 MeV.
+#AUTHOR(S)  D.F.Measday, J.N.Palmieri
+#REF-CODE   (J,NP,85,129,1966)
+#REFERENCE  Jour. Nuclear Physics
+#+          Vol.85, p.129, 1966
+#DATASETS   5
+#
+#DATASET    11151002
+#DATE       20200206
+#REACTION   2-HE-4(N,TOT),,SIG
+#PROJ       1
+#TARG       2004
+#MF         3
+#MT         1
+#DATA-HDR   DATA
+#C4BEGIN    [    1  2004   3   1   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1  2004   3   1    7.7200+7 1000000. 0.221500                                                D.F.Measday,ET.AL. (66)  11151  2
+    1  2004   3   1    8.8200+7 1000000. 0.195100                                                D.F.Measday,ET.AL. (66)  11151  2
+    1  2004   3   1    1.1000+8 1.1000+7 0.154900                                                D.F.Measday,ET.AL. (66)  11151  2
+    1  2004   3   1    1.2940+8 1000000. 0.136000                                                D.F.Measday,ET.AL. (66)  11151  2
+    1  2004   3   1    1.5090+8 6000000. 0.121400                                                D.F.Measday,ET.AL. (66)  11151  2
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      10017
 #AUTHOR1    D.C.Rorer+
 #YEAR       1969
@@ -284,6 +318,40 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1  2004   3   2 D  0.025300          0.773000 9.0000-3                                       D.C.Rorer,ET.AL. (69)    10017  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21227
+#AUTHOR1    R.Genin+
+#YEAR       1963
+#INSTITUTE  (2FR SAC)
+#TITLE      Determination of absorption and scattering cross
+#+          sections of rare gases for thermal neutrons
+#AUTHOR(S)  R.Genin, H.Beil, C.Signarbieux,
+#+          P.Carlos, R.Joly, M.Ribrag
+#REF-CODE   (J,JPR,24,21,1963)
+#REFERENCE  Jour. Journal de Physique
+#+          Vol.24, p.21, 1963
+#DATASETS   15
+#
+#DATASET    21227003
+#DATE       20191105
+#REACTION   2-HE-4(N,EL)2-HE-4,,SIG,,,DERIV
+#PROJ       1
+#TARG       2004
+#MF         3
+#MT         2
+#PRODUCT    2-HE-4
+#DATA-HDR   DATA
+#C4BEGIN    [    1  2004   3   2 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1  2004   3   2 D  0.025300          0.720000 0.030000                                       R.Genin,ET.AL. (63)      21227  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -351,6 +419,39 @@
     1  2004   3   2 D  2.0970+7          0.746000 0.014000                                       A.Niiler,ET.AL. (71)     10190  9
     1  2004   3   2 D  2.3720+7          0.653000 0.014000                                       A.Niiler,ET.AL. (71)     10190  9
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21227
+#AUTHOR1    R.Genin+
+#YEAR       1963
+#INSTITUTE  (2FR SAC)
+#TITLE      Determination of absorption and scattering cross
+#+          sections of rare gases for thermal neutrons
+#AUTHOR(S)  R.Genin, H.Beil, C.Signarbieux,
+#+          P.Carlos, R.Joly, M.Ribrag
+#REF-CODE   (J,JPR,24,21,1963)
+#REFERENCE  Jour. Journal de Physique
+#+          Vol.24, p.21, 1963
+#DATASETS   15
+#
+#DATASET    21227004
+#DATE       20191105
+#REACTION   2-HE-4(N,ABS),,SIG,,,DERIV
+#PROJ       1
+#TARG       2004
+#MF         3
+#MT         101
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [    1  2004   3 101 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1  2004   3 101 D  0.025300          0.050000                                                R.Genin,ET.AL. (63)      21227  4
+#/DATA      1
 #/DATASET
 #/ENTRY
 #

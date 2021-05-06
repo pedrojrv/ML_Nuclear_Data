@@ -750,14 +750,14 @@
 #TITLE      Gamma-quanta production cross-sections at inelastic
 #+          scattering of the neutrons on the nuclei of reactor
 #+          construction materials.
-#AUTHOR(S)  A.I.Lashuk, A.I.Gonchar, I.P.Sadokhin
-#REF-CODE   (J,YK,1994,(1),26,1994)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1994, Issue.1, p.26, 1994
+#AUTHOR(S)  A.I.Lashuk, I.P.Sadokhin
+#REF-CODE   (J,YK,,(1),26,1994)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.1, p.26, 1994
 #DATASETS   43
 #
 #DATASET    41186038
-#DATE       20090401
+#DATE       20191104
 #REACTION   22-TI-50(N,INL)22-TI-50,PAR,SIG
 #PROJ       1
 #TARG       22050
@@ -765,16 +765,15 @@
 #MT         51
 #PRODUCT    22-TI-50
 #DATA-HDR   DATA
-#C4BEGIN    [    1 22050   3  51 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 22050   3  51   ]
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3  51 C  1650000.          0.562000 0.056000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
-    1 22050   3  51 C  1700000.          0.580000 0.056000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
-    1 22050   3  51 C  1810000.          0.618000 0.062000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
-    1 22050   3  51 C  2040000.          1.030000 0.110000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
-    1 22050   3  51 C  2520000.          1.068000 0.110000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
+    1 22050   3  51    1650000.          0.562000 0.056000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
+    1 22050   3  51    1700000.          0.580000 0.056000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
+    1 22050   3  51    1810000.          0.618000 0.062000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
+    1 22050   3  51    2040000.          1.030000 0.110000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
+    1 22050   3  51    2520000.          1.068000 0.110000                   1552000.         LVLA.I.Lashuk,ET.AL. (94)   41186 38
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -816,15 +815,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507017
-#DATE       19860702
+#DATE       20190805
 #REACTION   22-TI-50(N,G)22-TI-51,,SIG,,MXW
 #PROJ       1
 #TARG       22050
@@ -836,7 +835,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3 102    0.025300          0.000000 0.400000                                       H.POMERANCE (52)         11507 17
+    1 22050   3 102    0.025300          0.000000 0.400000                                       H.Pomerance (52)         11507 17
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1340,15 +1339,15 @@
 #AUTHOR1    N.D.Dudey+
 #YEAR       1969
 #INSTITUTE  (1USAANL)
-#TITLE      Fast neutron capture by vanadium and titanium.
+#TITLE      Fast neutron capture by vanadium and titanium
 #AUTHOR(S)  N.D.Dudey, R.R.Heinrich, A.A.Madson
-#REF-CODE   (J,JNE,23,443,196908)
+#REF-CODE   (J,JNE,23,443,1969)
 #REFERENCE  Jour. Journal of Nuclear Energy
 #+          Vol.23, p.443, 1969
 #DATASETS   2
 #
 #DATASET    10026003
-#DATE       19990701
+#DATE       20200802
 #REACTION   22-TI-50(N,G)22-TI-51,,SIG
 #PROJ       1
 #TARG       22050
@@ -1361,33 +1360,33 @@
 #DATA       27
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3 102 A  140000.0 51500.00 1.1320-3 1.3100-4                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  230000.0 52200.00 7.6800-4 7.5000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  337000.0 34900.00 5.6300-4 5.1000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  355000.0 65100.00 4.1400-4 3.6000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  413000.0 37000.00 2.4600-4 3.1000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  448000.0 48300.00 2.1100-4 1.9000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  486000.0 44100.00 3.8200-4 3.8000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  523000.0 49700.00 2.8500-4 2.6000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  550000.0 49900.00 4.7200-4 4.2000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  571000.0 50400.00 5.5300-4 5.0000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  605000.0 45700.00 5.9300-4 6.3000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  650000.0 51600.00 5.1800-4 4.5000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  702000.0 47000.00 5.9100-4 5.6000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  749000.0 53400.00 4.4300-4 4.0000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  808000.0 52800.00 5.5900-4 5.4000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  847000.0 55300.00 5.7700-4 5.2000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  897000.0 54200.00 5.9500-4 5.5000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  929000.0 73300.00 5.2800-4 5.3000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1025000. 75100.00 7.4500-4 8.9000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1096000. 74800.00 7.5300-4 6.7000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1177000. 78000.00 6.0600-4 5.6000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1206000. 65900.00 7.3000-4 5.9000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1292000. 79100.00 8.0800-4 7.9000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1363000. 68000.00 8.6700-4 7.3000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1428000. 82700.00 7.3000-4 6.6000-5                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1540000. 70700.00 9.8900-4 1.0600-4                                       N.D.DUDEY,ET.AL. (69)    10026  3
-    1 22050   3 102 A  1645000. 106100.0 7.4100-4 1.1000-4                                       N.D.DUDEY,ET.AL. (69)    10026  3
+    1 22050   3 102 A  140000.0 51500.00 1.1320-3 1.3100-4                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  230000.0 52200.00 7.6800-4 7.5000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  337000.0 34900.00 5.6300-4 5.1000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  355000.0 65100.00 4.1400-4 3.6000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  413000.0 37000.00 2.4600-4 3.1000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  448000.0 48300.00 2.1100-4 1.9000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  486000.0 44100.00 3.8200-4 3.8000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  523000.0 49700.00 2.8500-4 2.6000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  550000.0 49900.00 4.7200-4 4.2000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  571000.0 50400.00 5.5300-4 5.0000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  605000.0 45700.00 5.9300-4 6.3000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  650000.0 51600.00 5.1800-4 4.5000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  702000.0 47000.00 5.9100-4 5.6000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  749000.0 53400.00 4.4300-4 4.0000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  808000.0 52800.00 5.5900-4 5.4000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  847000.0 55300.00 5.7700-4 5.2000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  897000.0 54200.00 5.9500-4 5.5000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  929000.0 73300.00 5.2800-4 5.3000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1025000. 75100.00 7.4500-4 8.9000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1096000. 74800.00 7.5300-4 6.7000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1177000. 78000.00 6.0600-4 5.6000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1206000. 65900.00 7.3000-4 5.9000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1292000. 79100.00 8.0800-4 7.9000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1363000. 68000.00 8.6700-4 7.3000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1428000. 82700.00 7.3000-4 6.6000-5                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1540000. 70700.00 9.8900-4 1.0600-4                                       N.D.Dudey,ET.AL. (69)    10026  3
+    1 22050   3 102 A  1645000. 106100.0 7.4100-4 1.1000-4                                       N.D.Dudey,ET.AL. (69)    10026  3
 #/DATA      27
 #/DATASET
 #/ENTRY
@@ -1597,16 +1596,16 @@
 #AUTHOR1    J.Csikai+
 #YEAR       1967
 #INSTITUTE  (3HUNDEB)
-#TITLE      Radiative capture cross-sections for 14.7 MeV neutrons
+#TITLE      Radiative capture cross sections for 14.7 MeV neutrons
 #AUTHOR(S)  J.Csikai, G.Peto, M.Buczko,
-#+          Z.Milligy, N.Eissa
-#REF-CODE   (J,NP/A,95,229,196703)
+#+          Z.Miligy, N.A.Eissa
+#REF-CODE   (J,NP/A,95,229,1967)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.95, p.229, 1967
-#DATASETS   17
+#DATASETS   22
 #
 #DATASET    30067008
-#DATE       20080205
+#DATE       20191203
 #REACTION   22-TI-50(N,G)22-TI-51,,SIG
 #PROJ       1
 #TARG       22050
@@ -1619,7 +1618,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3 102 A  1.4700+7          3.0000-4 1.0000-4                                       J.Csikai,ET.AL. (66)     30067  8
+    1 22050   3 102 A  1.4700+7          3.0000-4 1.0000-4                                       J.Csikai,ET.AL. (67)     30067  8
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1738,16 +1737,16 @@
 #INSTITUTE  (2FR FR)
 #TITLE      Cross section measurements of (n,p) and (n,np+pn+d)
 #+          reactions for some titanium, chromium, iron, cobalt,
-#+          nickel and zinc isotopes around 14 MeV
+#+          nickel, and zinc isotopes around 14 MeV
 #AUTHOR(S)  M.Viennot, M.Berrada, G.Paic,
 #+          S.Joly
-#REF-CODE   (J,NSE,108,289,199107)
+#REF-CODE   (J,NSE,108,289,1991)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.108, p.289, 1991
-#DATASETS   29
+#DATASETS   30
 #
 #DATASET    30978003
-#DATE       20090904
+#DATE       20201104
 #REACTION   22-TI-50(N,P)21-SC-50,,SIG
 #PROJ       1
 #TARG       22050
@@ -1759,13 +1758,13 @@
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3 103    1.3770+7 130000.0 9.2000-3 7.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
-    1 22050   3 103    1.3930+7 120000.0 9.3000-3 8.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
-    1 22050   3 103    1.4110+7 130000.0 0.011100 9.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
-    1 22050   3 103    1.4300+7 140000.0 0.010800 9.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
-    1 22050   3 103    1.4470+7 170000.0 0.010700 9.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
-    1 22050   3 103    1.4730+7 230000.0 0.012700 1.0000-3                                       M.Viennot,ET.AL. (91)    30978  3
-    1 22050   3 103    1.4830+7 250000.0 0.013700 1.1000-3                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.3770+7          9.2000-3 7.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.3930+7          9.3000-3 8.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.4110+7          0.011100 9.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.4300+7          0.010800 9.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.4470+7          0.010700 9.0000-4                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.4730+7          0.012700 1.0000-3                                       M.Viennot,ET.AL. (91)    30978  3
+    1 22050   3 103    1.4830+7          0.013700 1.1000-3                                       M.Viennot,ET.AL. (91)    30978  3
 #/DATA      7
 #/DATASET
 #/ENTRY
@@ -2210,10 +2209,10 @@
 #AUTHOR1    H.L.Pai
 #YEAR       1966
 #INSTITUTE  (1CANTOR)
-#TITLE      THE (N,P) CROSS SECTION OF TITANIUM ISOTOPES FOR
-#+          NEUTRON ENERGIES BETWEEN 13.6 MEV AND 19.5 MEV.
+#TITLE      The (n,p) cross section of titanium isotopes for
+#+          neutron energies between 13.6 MeV and 19.5 MeV.
 #AUTHOR(S)  H.L.Pai
-#REF-CODE   (J,CJP,44,2337,66)
+#REF-CODE   (J,CJP,44,2337,1966)
 #REFERENCE  Jour. Canadian Journal of Physics
 #+          Vol.44, p.2337, 1966
 #DATASETS   9
@@ -2231,10 +2230,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3 103    1.4800+7 100000.0 0.017900 2.0000-3                                       H.L.PAI (66)             11630 10
-    1 22050   3 103    1.6000+7 500000.0 0.017700 2.0000-3                                       H.L.PAI (66)             11630 10
-    1 22050   3 103    1.7300+7 700000.0 0.018200 2.0000-3                                       H.L.PAI (66)             11630 10
-    1 22050   3 103    1.9500+7 200000.0 0.014100 2.0000-3                                       H.L.PAI (66)             11630 10
+    1 22050   3 103    1.4800+7 100000.0 0.017900 2.0000-3                                       H.L.Pai (66)             11630 10
+    1 22050   3 103    1.6000+7 500000.0 0.017700 2.0000-3                                       H.L.Pai (66)             11630 10
+    1 22050   3 103    1.7300+7 700000.0 0.018200 2.0000-3                                       H.L.Pai (66)             11630 10
+    1 22050   3 103    1.9500+7 200000.0 0.014100 2.0000-3                                       H.L.Pai (66)             11630 10
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -2380,10 +2379,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089032
-#DATE       20081001
+#DATE       20201001
 #REACTION   22-TI-50(N,P)21-SC-50,,SIG
 #PROJ       1
 #TARG       22050
@@ -2398,7 +2397,7 @@
     1 22050   3 103    1.4940+7          0.013400 1.1000-3                                       Y.Ikeda,ET.AL. (88)      22089 32
     1 22050   3 103    1.4670+7          0.013100 1.1000-3                                       Y.Ikeda,ET.AL. (88)      22089 32
     1 22050   3 103    1.4430+7          0.011600 1.4000-3                                       Y.Ikeda,ET.AL. (88)      22089 32
-    1 22050   3 103    1.4040+7          0.010490 9.4000-4                                       Y.Ikeda,ET.AL. (88)      22089 32
+    1 22050   3 103    1.4040+7          0.010500 9.4000-4                                       Y.Ikeda,ET.AL. (88)      22089 32
     1 22050   3 103    1.3520+7          0.010800 1.4000-3                                       Y.Ikeda,ET.AL. (88)      22089 32
     1 22050   3 103    1.3330+7          9.0000-3 1.6000-3                                       Y.Ikeda,ET.AL. (88)      22089 32
 #/DATA      6
@@ -2664,16 +2663,16 @@
 #AUTHOR1    M.Hillman
 #YEAR       1962
 #INSTITUTE  (1USABNL)
-#TITLE      FORMATION CROSS SECTIONS FOR CA47 USING 14.5MEV
-#+          NEUTRONS.
+#TITLE      Formation cross sections for CA47 using 14.5MEV
+#+          neutrons.
 #AUTHOR(S)  M.Hillman
-#REF-CODE   (J,NP,37,78,62)
+#REF-CODE   (J,NP,37,78,1962)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.37, p.78, 1962
 #DATASETS   5
 #
 #DATASET    11610005
-#DATE       19830801
+#DATE       20200500
 #REACTION   22-TI-50(N,A)20-CA-47,,SIG
 #PROJ       1
 #TARG       22050
@@ -2685,7 +2684,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   3 107    1.4500+7 500000.0 1.0000-2 2.0000-3                                       M.HILLMAN (62)           11610  5
+    1 22050   3 107    1.4500+7 500000.0 1.0000-2 2.0000-3                                       M.Hillman (62)           11610  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2954,10 +2953,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089033
-#DATE       20081001
+#DATE       20201001
 #REACTION   22-TI-50(N,A)20-CA-47,,SIG
 #PROJ       1
 #TARG       22050
@@ -3042,9 +3041,9 @@
 #ENTRY      23346
 #AUTHOR1    A.Olacel+
 #YEAR       2017
-#INSTITUTE  (2ZZZGEL)
-#TITLE      Neutron inelastic scattering measurements on the stable
-#+          isotopes of titanium.
+#INSTITUTE  (3RUMBUC)
+#TITLE      Neutron inelastic scattering measurements on the
+#+          stable isotopes of titanium
 #AUTHOR(S)  A.Olacel, F.Belloni, C.Borcea,
 #+          M.Boromiza, P.Dessagne, G.Henning,
 #+          M.Kerveno, A.Negret, M.Nyman,
@@ -3052,16 +3051,16 @@
 #REF-CODE   (J,PR/C,96,014621,2017)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.96, p.014621, 2017
-#DATASETS   26
+#DATASETS   6
 #
 #DATASET    23346022
-#DATE       20170802
-#REACTION   22-TI-50(N,X)0-G-0,PAR,SIG
+#DATE       20200106
+#REACTION   22-TI-50(N,INL)22-TI-50,PAR,SIG,G
 #PROJ       1
 #TARG       22050
 #MF         3
 #MT         9000
-#PRODUCT    0-G-0
+#PRODUCT    22-TI-50
 #DATA-HDR   DATA
 #C4BEGIN    [    1 22050   39000 A ]
 #X4STATUS   [APRVD] Approved by author
@@ -3170,16 +3169,16 @@
 #AUTHOR1    W.Breunlich+
 #YEAR       1971
 #INSTITUTE  (2AUSIRK)
-#TITLE      -DETERMINATION OF (N,N+G) CROSS SECTIONS FOR 14.4 MEV
-#+          NEUTRONS IN THE MASS RANGE A=46 TO 88 -. (IN GERMAN)
-#AUTHOR(S)  W.Breunlich, G.Stengel
-#REF-CODE   (J,ZN/A,26,451,7103)
+#TITLE      Determination of (n,n+gamma) cross sections for
+#+          14.4 MeV neutrons in the mass range A=46 to 88
+#AUTHOR(S)  W.Breunlich, G.Stengel, H.Vonach
+#REF-CODE   (J,ZN/A,26,451,1971)
 #REFERENCE  Jour. Zeitschrift fuer Naturforschung, Section A
 #+          Vol.26, p.451, 1971
 #DATASETS   19
 #
 #DATASET    21286004
-#DATE       19800102
+#DATE       20200805
 #REACTION   22-TI-50(N,INL)22-TI-50,PAR,SIG,G
 #PROJ       1
 #TARG       22050
@@ -3191,7 +3190,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 22050   39000    1.4400+7 300000.0 0.488000 0.254000               0.9 1550000.          E2W.BREUNLICH,ET.AL. (71)  21286  4
+    1 22050   39000    1.4400+7          0.488000 0.084700               0.9 1550000.          E2W.Breunlich,ET.AL. (71)  21286  4
 #/DATA      1
 #/DATASET
 #/ENTRY

@@ -128,6 +128,53 @@
 #/ENTRY
 #
 #
+#ENTRY      E2654
+#AUTHOR1    M.Saito+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of 169Yb by the
+#+          proton-induced reaction on 169Tm
+#AUTHOR(S)  M.Saito, M.Aikawa, T.Murata,
+#+          Y.Komori, H.Haba, S.Takacs,
+#+          F.Ditroi, Z.Szucs
+#REF-CODE   (J,NIM/B,471,13,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.471, p.13, 2020
+#DATASETS   3
+#
+#DATASET    E2654002
+#DATE       20200802
+#REACTION   69-TM-169(P,N)70-YB-169,,SIG
+#PROJ       1001
+#TARG       69169
+#MF         3
+#MT         4
+#PRODUCT    70-YB-169
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 69169   3   4   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 69169   3   4    1.7500+7 300000.0 0.030700 3.8000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.6800+7 300000.0 0.041700 5.0000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.6200+7 400000.0 0.044500 5.4000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.5500+7 400000.0 0.051100 6.1000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.4800+7 400000.0 0.063800 7.6000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.4100+7 400000.0 0.071400 8.1000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.3300+7 400000.0 0.095100 0.011000                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.2500+7 400000.0 0.126000 0.014000                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.1700+7 500000.0 0.127000 0.015000                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    1.0800+7 500000.0 0.159000 0.018000                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    9900000. 500000.0 0.160000 0.018000                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    8900000. 500000.0 0.127000 0.015000                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    7900000. 600000.0 0.065400 7.6000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    6700000. 700000.0 0.016400 2.0000-3                                       M.Saito,ET.AL. (20)      E2654  2
+ 1001 69169   3   4    5300000. 800000.0 1.5600-3 1.8000-4                                       M.Saito,ET.AL. (20)      E2654  2
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D4259
 #AUTHOR1    F.Tarkanyi+
 #YEAR       2012
@@ -355,6 +402,81 @@
  1001 69169   3  37    4.2100+7          0.418000 0.039000                                       C.BIRATTARI,ET.AL. (71)  B0038  3
  1001 69169   3  37    4.4300+7          0.392000 0.040000                                       C.BIRATTARI,ET.AL. (71)  B0038  3
 #/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2654
+#AUTHOR1    M.Saito+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of 169Yb by the
+#+          proton-induced reaction on 169Tm
+#AUTHOR(S)  M.Saito, M.Aikawa, T.Murata,
+#+          Y.Komori, H.Haba, S.Takacs,
+#+          F.Ditroi, Z.Szucs
+#REF-CODE   (J,NIM/B,471,13,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.471, p.13, 2020
+#DATASETS   3
+#
+#DATASET    E2654003
+#DATE       20200802
+#REACTION   69-TM-169(P,X)69-TM-168,,SIG
+#PROJ       1001
+#TARG       69169
+#MF         3
+#MT         9000
+#PRODUCT    69-TM-168
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 69169   39000   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 69169   39000    1.7500+7 300000.0 0.019900 2.2000-3           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.6800+7 300000.0 0.016800 1.9000-3           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.6200+7 400000.0 0.011300 1.3000-3           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.5500+7 400000.0 6.9700-3 7.9000-4           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.4800+7 400000.0 4.0200-3 4.5000-4           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.4100+7 400000.0 1.6800-3 1.9000-4           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.3300+7 400000.0 6.6500-4 7.9000-5           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+ 1001 69169   39000    1.2500+7 400000.0 1.7500-4 2.4000-5           69168.9                     M.Saito,ET.AL. (20)      E2654  3
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      E2654
+#AUTHOR1    M.Saito+
+#YEAR       2020
+#INSTITUTE  (2JPNHOK)
+#TITLE      Production cross sections of 169Yb by the
+#+          proton-induced reaction on 169Tm
+#AUTHOR(S)  M.Saito, M.Aikawa, T.Murata,
+#+          Y.Komori, H.Haba, S.Takacs,
+#+          F.Ditroi, Z.Szucs
+#REF-CODE   (J,NIM/B,471,13,2020)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
+#+          Vol.471, p.13, 2020
+#DATASETS   3
+#
+#DATASET    E2654004
+#DATE       20200802
+#REACTION   69-TM-169(P,X)69-TM-167,,SIG
+#PROJ       1001
+#TARG       69169
+#MF         3
+#MT         9000
+#PRODUCT    69-TM-167
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 69169   39000   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 69169   39000    1.7500+7 300000.0 2.0500-3 5.8000-4           69167.9                     M.Saito,ET.AL. (20)      E2654  4
+ 1001 69169   39000    1.6800+7 300000.0 1.4700-3 5.1000-4           69167.9                     M.Saito,ET.AL. (20)      E2654  4
+ 1001 69169   39000    1.6200+7 400000.0 1.2300-3 5.8000-4           69167.9                     M.Saito,ET.AL. (20)      E2654  4
+#/DATA      3
 #/DATASET
 #/ENTRY
 #

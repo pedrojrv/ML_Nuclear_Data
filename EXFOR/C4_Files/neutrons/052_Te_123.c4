@@ -136,15 +136,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507062
-#DATE       19860702
+#DATE       20190805
 #REACTION   52-TE-123(N,G)52-TE-124,,SIG,,MXW
 #PROJ       1
 #TARG       52123
@@ -156,7 +156,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123   3 102    0.025300          390.0000 31.20000                                       H.POMERANCE (52)         11507 62
+    1 52123   3 102    0.025300          390.0000 31.20000                                       H.Pomerance (52)         11507 62
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -232,7 +232,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -764,7 +764,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -795,7 +795,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1539,7 +1539,7 @@
 #AUTHOR(S)  S.F.Mughabghab, D.I.Garber, O.A.Wasson,
 #+          R.E.Chrien
 #REF-CODE   (J,BAP,13,1390(BG10),68)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.13, p.1390(BG10), 1968
 #DATASETS   2
 #
@@ -1630,31 +1630,30 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    412700094
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,0),,J
 #PROJ       1
 #TARG       52123
 #MF         402
 #MT         6003
 #DATA-HDR   DATA
-#C4BEGIN    [    1 52123 4026003 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 52123 4026003   ]
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4026003 C  23.90000          0.000000                                                L.S.DANELYAN,ET.AL. (63) 41270  94
-    1 52123 4026003 C  35.50000          0.000000                                                L.S.DANELYAN,ET.AL. (63) 41270  94
-    1 52123 4026003 C  132.0000          1.000000 0.050000                                       L.S.DANELYAN,ET.AL. (63) 41270  94
-    1 52123 4026003 C  157.0000          1.000000 0.050000                                       L.S.DANELYAN,ET.AL. (63) 41270  94
+    1 52123 4026003    23.90000          0.000000                                                L.S.Danelyan,ET.AL. (63) 41270  94
+    1 52123 4026003    35.50000          0.000000                                                L.S.Danelyan,ET.AL. (63) 41270  94
+    1 52123 4026003    132.0000          1.000000                                                L.S.Danelyan,ET.AL. (63) 41270  94
+    1 52123 4026003    157.0000          1.000000                                                L.S.Danelyan,ET.AL. (63) 41270  94
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -1713,16 +1712,16 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    41270006
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,0),,D
 #PROJ       1
 #TARG       52123
@@ -1733,7 +1732,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4026004    183.6670 181.3330 23.00000 1.150000                                       L.S.DANELYAN,ET.AL. (63) 41270  6
+    1 52123 4026004                      23.00000                                                L.S.Danelyan,ET.AL. (63) 41270  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1837,32 +1836,31 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    412700096
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,TOT),,WID
 #PROJ       1
 #TARG       52123
 #MF         402
 #MT         6010
 #DATA-HDR   DATA
-#C4BEGIN    [    1 52123 4026010 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 52123 4026010   ]
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4026010 C  23.90000          0.114000 4.0000-3                                       L.S.DANELYAN,ET.AL. (63) 41270  96
-    1 52123 4026010 C  35.50000          0.200000 0.020000                                       L.S.DANELYAN,ET.AL. (63) 41270  96
-    1 52123 4026010 C  96.00000          0.125000 0.040000                                       L.S.DANELYAN,ET.AL. (63) 41270  96
-    1 52123 4026010 C  132.0000          0.220000 0.120000                                       L.S.DANELYAN,ET.AL. (63) 41270  96
-    1 52123 4026010 C  157.0000          0.250000 0.020000                                       L.S.DANELYAN,ET.AL. (63) 41270  96
+    1 52123 4026010    23.90000          0.114000 4.0000-3                                       L.S.Danelyan,ET.AL. (63) 41270  96
+    1 52123 4026010    35.50000          0.200000 0.020000                                       L.S.Danelyan,ET.AL. (63) 41270  96
+    1 52123 4026010    96.00000          0.125000 0.040000                                       L.S.Danelyan,ET.AL. (63) 41270  96
+    1 52123 4026010    132.0000          0.220000 0.120000                                       L.S.Danelyan,ET.AL. (63) 41270  96
+    1 52123 4026010    157.0000          0.250000 0.020000                                       L.S.Danelyan,ET.AL. (63) 41270  96
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -2006,31 +2004,30 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    412700095
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,EL),,WID
 #PROJ       1
 #TARG       52123
 #MF         402
 #MT         6021
 #DATA-HDR   DATA
-#C4BEGIN    [    1 52123 4026021 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 52123 4026021   ]
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4026021 C  23.90000          0.092000 8.0000-3                                       L.S.DANELYAN,ET.AL. (63) 41270  95
-    1 52123 4026021 C  35.50000          0.026400 1.8000-3                                       L.S.DANELYAN,ET.AL. (63) 41270  95
-    1 52123 4026021 C  132.0000          0.042000 7.0000-3                                       L.S.DANELYAN,ET.AL. (63) 41270  95
-    1 52123 4026021 C  157.0000          0.180000 0.020000                                       L.S.DANELYAN,ET.AL. (63) 41270  95
+    1 52123 4026021    23.90000          0.092000 8.0000-3                                       L.S.Danelyan,ET.AL. (63) 41270  95
+    1 52123 4026021    35.50000          0.026400 1.8000-3                                       L.S.Danelyan,ET.AL. (63) 41270  95
+    1 52123 4026021    132.0000          0.042000 7.0000-3                                       L.S.Danelyan,ET.AL. (63) 41270  95
+    1 52123 4026021    157.0000          0.180000 0.020000                                       L.S.Danelyan,ET.AL. (63) 41270  95
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -2070,30 +2067,29 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    412700097
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,EL),,WID/RED
 #PROJ       1
 #TARG       52123
 #MF         402
 #MT         6023
 #DATA-HDR   DATA
-#C4BEGIN    [    1 52123 4026023 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 52123 4026023   ]
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4026023 C  23.90000          6.8000-3 4.0000-4                                       L.S.DANELYAN,ET.AL. (63) 41270  97
-    1 52123 4026023 C  35.50000          0.019000 1.6000-3                                       L.S.DANELYAN,ET.AL. (63) 41270  97
-    1 52123 4026023 C  96.00000          4.4000-3 3.0000-4                                       L.S.DANELYAN,ET.AL. (63) 41270  97
+    1 52123 4026023    23.90000          6.8000-3 4.0000-4                                       L.S.Danelyan,ET.AL. (63) 41270  97
+    1 52123 4026023    35.50000          0.019000 1.6000-3                                       L.S.Danelyan,ET.AL. (63) 41270  97
+    1 52123 4026023    96.00000          4.4000-3 3.0000-4                                       L.S.Danelyan,ET.AL. (63) 41270  97
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -2107,7 +2103,7 @@
 #+          TELLURIUM.
 #AUTHOR(S)  H.H.Bolotin, R.E.Chrien
 #REF-CODE   (J,BAP,5,18(E4),60)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.5, p.18(E4), 1960
 #DATASETS   6
 #
@@ -2208,32 +2204,31 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    412700098
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,EL),,WID/RED,,2G
 #PROJ       1
 #TARG       52123
 #MF         402
 #MT         6024
 #DATA-HDR   DATA
-#C4BEGIN    [    1 52123 4026024 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 52123 4026024   ]
 #DATA       5
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4026024 C  96.00000          8.5000-4 2.0000-4                                       L.S.DANELYAN,ET.AL. (63) 41270  98
-    1 52123 4026024 C  109.0000          3.0000-4 5.0000-5                                       L.S.DANELYAN,ET.AL. (63) 41270  98
-    1 52123 4026024 C  118.0000          9.2500-4 1.8000-4                                       L.S.DANELYAN,ET.AL. (63) 41270  98
-    1 52123 4026024 C  132.0000          3.0000-4                                                L.S.DANELYAN,ET.AL. (63) 41270  98
-    1 52123 4026024 C  157.0000          8.0000-4                                                L.S.DANELYAN,ET.AL. (63) 41270  98
+    1 52123 4026024    96.00000          8.5000-4 2.0000-4                                       L.S.Danelyan,ET.AL. (63) 41270  98
+    1 52123 4026024    109.0000          3.0000-4 5.0000-5                                       L.S.Danelyan,ET.AL. (63) 41270  98
+    1 52123 4026024    118.0000          9.2500-4 1.8000-4                                       L.S.Danelyan,ET.AL. (63) 41270  98
+    1 52123 4026024    132.0000          3.0000-4                                                L.S.Danelyan,ET.AL. (63) 41270  98
+    1 52123 4026024    157.0000          8.0000-4                                                L.S.Danelyan,ET.AL. (63) 41270  98
 #/DATA      5
 #/DATASET
 #/ENTRY
@@ -2290,16 +2285,16 @@
 #AUTHOR1    L.S.Danelyan+
 #YEAR       1963
 #INSTITUTE  (4RUSKUR)
-#TITLE      Radiative Capture Cross Sections of Tellurium Isotope
-#+          As a Function of Neutron Energies Up to 1.5 KeV
+#TITLE      Radiative capture cross sections of tellurium isotopes
+#+          as a function of neutron energies up to 1.5 keV
 #AUTHOR(S)  L.S.Danelyan, B.V.Efimov
-#REF-CODE   (J,AE,14,264,196303)
+#REF-CODE   (J,AE,14,264,1963)
 #REFERENCE  Jour. Atomnaya Energiya
 #+          Vol.14, p.264, 1963
 #DATASETS   19
 #
 #DATASET    41270011
-#DATE       20010304
+#DATE       20191200
 #REACTION   52-TE-123(N,EL),,STF
 #PROJ       1
 #TARG       52123
@@ -2310,7 +2305,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52123 4036001    79.66700 77.33300 1.6000-4 7.0000-5 0.000000                              L.S.DANELYAN,ET.AL. (63) 41270 11
+    1 52123 4036001                      1.6000-4 7.0000-5 0.000000                              L.S.Danelyan,ET.AL. (63) 41270 11
 #/DATA      1
 #/DATASET
 #/ENTRY

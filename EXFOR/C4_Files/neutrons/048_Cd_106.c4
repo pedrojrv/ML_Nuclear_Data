@@ -119,7 +119,7 @@
 #TITLE      REACTIONS IN CD106 AND PR141.
 #AUTHOR(S)  L.A.Rayburn
 #REF-CODE   (J,BAP,8,60(R7),6301)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.8, p.60(R7), 1963
 #DATASETS   2
 #
@@ -283,7 +283,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298053
 #DATE       20130501
@@ -406,7 +406,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -653,7 +653,7 @@
 #+          isotopes Se, Cd, Gd, Te, Dy, Er and Yb
 #AUTHOR(S)  Yu.N.Trofimov
 #REF-CODE   (J,YK,,(2),11,1989)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.2, p.11, 1989
 #DATASETS   6
 #
@@ -824,7 +824,7 @@
 #+          at  14.4 MeV.
 #AUTHOR(S)  R.W.Fink, W.-D.Lu
 #REF-CODE   (J,BAP,15,1372(EH6),197007)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.15, p.1372(EH6), 1970
 #DATASETS   9
 #
@@ -857,7 +857,7 @@
 #+          at  14.4 MeV.
 #AUTHOR(S)  R.W.Fink, W.-D.Lu
 #REF-CODE   (J,BAP,15,1372(EH6),197007)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.15, p.1372(EH6), 1970
 #DATASETS   9
 #
@@ -982,7 +982,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1140,43 +1140,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22637
-#AUTHOR1    C.Konno+
-#YEAR       1993
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation Cross section measurements at neutron
-#+          energy from 13.3 to 14.9 MeV
-#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
-#+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1329, 1993
-#DATASETS   89
-#
-#DATASET    22637049
-#DATE       20080204
-#REACTION   (48-CD-106(N,N+P)47-AG-105,,SIG)+(48-CD-106(N,D)47-AG-105,,SIG)
-#PROJ       1
-#TARG       48106
-#MF         3
-#MT         1003
-#PRODUCT    47-AG-105
-#DATA-HDR   DATA
-#C4BEGIN    [    1 48106   31003 D ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       5
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 48106   31003 D  1.4950+7          0.170000 0.100000                                       C.Konno,ET.AL. (93)      22637 49
-    1 48106   31003 D  1.4680+7          0.140000 0.110000                                       C.Konno,ET.AL. (93)      22637 49
-    1 48106   31003 D  1.4440+7          0.120000 0.110000                                       C.Konno,ET.AL. (93)      22637 49
-    1 48106   31003 D  1.4230+7          0.150000 0.110000                                       C.Konno,ET.AL. (93)      22637 49
-    1 48106   31003 D  1.3570+7          0.120000 0.110000                                       C.Konno,ET.AL. (93)      22637 49
-#/DATA      5
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      41614
 #AUTHOR1    A.A.Filatenkov
 #YEAR       2016
@@ -1246,6 +1209,43 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 48106   39000    1.4700+7 200000.0 0.256000 0.083000           47105.9                     Xiangzhong Kong, (98)    32515  3
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22637
+#AUTHOR1    C.Konno+
+#YEAR       1993
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation Cross section measurements at neutron
+#+          energy from 13.3 to 14.9 MeV
+#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
+#+          K.Kawade, H.Yamamoto, H.Maekawa
+#REF-CODE   (R,JAERI-1329,1993)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1329, 1993
+#DATASETS   89
+#
+#DATASET    22637049
+#DATE       20200900
+#REACTION   48-CD-106(N,X)47-AG-105,,SIG
+#PROJ       1
+#TARG       48106
+#MF         3
+#MT         9000
+#PRODUCT    47-AG-105
+#DATA-HDR   DATA
+#C4BEGIN    [    1 48106   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 48106   39000 D  1.4950+7          0.170000 0.100000           47105.9                     C.Konno,ET.AL. (93)      22637 49
+    1 48106   39000 D  1.4680+7          0.140000 0.110000           47105.9                     C.Konno,ET.AL. (93)      22637 49
+    1 48106   39000 D  1.4440+7          0.120000 0.110000           47105.9                     C.Konno,ET.AL. (93)      22637 49
+    1 48106   39000 D  1.4230+7          0.150000 0.110000           47105.9                     C.Konno,ET.AL. (93)      22637 49
+    1 48106   39000 D  1.3570+7          0.120000 0.110000           47105.9                     C.Konno,ET.AL. (93)      22637 49
+#/DATA      5
 #/DATASET
 #/ENTRY
 #
@@ -1899,18 +1899,18 @@
 #AUTHOR1    A.B.Popov+
 #YEAR       1985
 #INSTITUTE  (4ZZZDUB)
-#TITLE      Extraction of Strength Functions and Radii of Nuclei
-#+          From the Average Differential Scattering
-#+          Cross-Sections
+#TITLE      Extraction of strength functions and radii of nuclei
+#+          from the average differential scattering
+#+          cross-sections
 #AUTHOR(S)  A.B.Popov, G.S.Samosvat, V.G.Nikolenko,
 #+          Zo-In-Ok
 #REF-CODE   (C,85SANTA,1,621,1985)
 #REFERENCE  Conf. Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
 #+          Vol.1, p.621, 1985
-#DATASETS   44
+#DATASETS   71
 #
 #DATASET    40934030
-#DATE       20010805
+#DATE       20200304
 #REACTION   48-CD-106(N,EL),,STF
 #PROJ       1
 #TARG       48106
@@ -1923,6 +1923,39 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 48106 4036001                      4.1000-4 6.0000-5 1.000000                              A.B.Popov,ET.AL. (85)    40934 30
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40934
+#AUTHOR1    A.B.Popov+
+#YEAR       1985
+#INSTITUTE  (4ZZZDUB)
+#TITLE      Extraction of strength functions and radii of nuclei
+#+          from the average differential scattering
+#+          cross-sections
+#AUTHOR(S)  A.B.Popov, G.S.Samosvat, V.G.Nikolenko,
+#+          Zo-In-Ok
+#REF-CODE   (C,85SANTA,1,621,1985)
+#REFERENCE  Conf. Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
+#+          Vol.1, p.621, 1985
+#DATASETS   71
+#
+#DATASET    40934061
+#DATE       20200304
+#REACTION   48-CD-106(N,EL),,STF
+#PROJ       1
+#TARG       48106
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 48106 4036001   ]
+#DATA       2
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 48106 4036001                      5.2000-4 1.8000-4 1.000000                              A.B.Popov,ET.AL. (85)    40934 61
+    1 48106 4036001                      3.5700-4 3.3000-5 1.000000                              A.B.Popov,ET.AL. (85)    40934 61
+#/DATA      2
 #/DATASET
 #/ENTRY
 #

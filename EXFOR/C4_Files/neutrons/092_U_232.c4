@@ -60,6 +60,37 @@
 #/ENTRY
 #
 #
+#ENTRY      23571
+#AUTHOR1    J.Kemmer+
+#YEAR       1971
+#INSTITUTE  (2GERMUN)
+#TITLE      Study on the reactor neutron induced fission of 232U
+#AUTHOR(S)  J.Kemmer, J.I.Kim, H.-J.Born
+#REF-CODE   (J,RCA,15,113,1971)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.15, p.113, 1971
+#DATASETS   4
+#
+#DATASET    23571006
+#DATE       20200500
+#REACTION   92-U-232(N,F),PR,NU,,,DERIV
+#PROJ       1
+#TARG       92232
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232   1 456 D ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232   1 456 D  0.025300          2.600000                                                J.Kemmer,ET.AL. (71)     23571  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      V1002
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -67,7 +98,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1056,7 +1087,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1234,6 +1265,39 @@
 #/ENTRY
 #
 #
+#ENTRY      41341
+#AUTHOR1    E.F.Fomushkin+
+#YEAR       1997
+#INSTITUTE  (4RUSEPA)
+#TITLE      Integral neutron fission cross-section measurements
+#+          for 232Pa and 238Np near thermal energy
+#AUTHOR(S)  E.F.Fomushkin, S.N.Abramovich, M.F.Andreev,
+#+          Yu.M.Bol'shakov, V.I.Serov, V.V.Gavrilov,
+#+          N.G.Krylov, I.K.Kunitsina, G.F.Novoselov,
+#+          A.M.Shvetsov
+#REF-CODE   (C,97TRIEST,2,1353,199705)
+#REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
+#+          Vol.2, p.1353, 1997
+#DATASETS   4
+#
+#DATASET    41341007
+#DATE       20200505
+#REACTION   92-U-232(N,F),,SIG,,MXW
+#PROJ       1
+#TARG       92232
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232   3  18    0.025300          83.30000 11.00000                                       E.F.Fomushkin,ET.AL. (97)41341  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      V1002
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -1241,7 +1305,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -7676,7 +7740,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -7769,7 +7833,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8257,16 +8321,16 @@
 #AUTHOR1    M.Haddad+
 #YEAR       1989
 #INSTITUTE  (2FR GRE)
-#TITLE      Post-neutron mass distribution for U-232(n,f)
+#TITLE      Post-neutron mass distribution for U-232(n-th,f)
 #AUTHOR(S)  M.Haddad, J.Crancon, G.Lhospice,
 #+          M.Asghar
 #REF-CODE   (J,RCA,46,23,1989)
 #REFERENCE  Jour. Radiochimica Acta
 #+          Vol.46, p.23, 1989
-#DATASETS   1
+#DATASETS   4
 #
 #DATASET    22119002
-#DATE       20180300
+#DATE       20190904
 #REACTION   92-U-232(N,F)ELEM/MASS,CUM,FY,,SPA
 #PROJ       1
 #TARG       92232
@@ -8318,6 +8382,321 @@
 #/ENTRY
 #
 #
+#ENTRY      22119
+#AUTHOR1    M.Haddad+
+#YEAR       1989
+#INSTITUTE  (2FR GRE)
+#TITLE      Post-neutron mass distribution for U-232(n-th,f)
+#AUTHOR(S)  M.Haddad, J.Crancon, G.Lhospice,
+#+          M.Asghar
+#REF-CODE   (J,RCA,46,23,1989)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.46, p.23, 1989
+#DATASETS   4
+#
+#DATASET    22119003
+#DATE       20180300
+#REACTION   92-U-232(N,F)MASS,CHN,FY,,SPA
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18   ]
+#DATA       27
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18    0.025300          0.022500 4.1000-3          85.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.036100 6.0000-3          87.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.056100 4.0000-3          88.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.072700 2.0000-3          89.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.070700 1.7000-3          91.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.068000 3.3000-3          92.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.072000 3.8000-3          93.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.052300 5.0000-3          94.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.058600 5.0000-3          95.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.053400 2.0000-3          97.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.042300 2.0000-3          99.00000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          4.8000-3 2.0000-3          127.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.017000 2.0000-3          129.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.035800 2.0000-3          131.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.053500 2.0000-3          132.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.060000 2.0000-3          133.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.054000 2.6000-3          134.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.052800 3.0000-3          135.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.060500 3.0000-3          138.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.069100 3.0000-3          139.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.077200 4.0000-3          140.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.072800 2.3000-3          141.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.066600 2.5000-3          142.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.052500 2.4000-3          143.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.041100 2.0000-3          144.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.030800 2.0000-3          145.0000                     M.Haddad,ET.AL. (89)     22119  3
+    1 92232 801  18    0.025300          0.024200 2.0000-3          146.0000                     M.Haddad,ET.AL. (89)     22119  3
+#/DATA      27
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22119
+#AUTHOR1    M.Haddad+
+#YEAR       1989
+#INSTITUTE  (2FR GRE)
+#TITLE      Post-neutron mass distribution for U-232(n-th,f)
+#AUTHOR(S)  M.Haddad, J.Crancon, G.Lhospice,
+#+          M.Asghar
+#REF-CODE   (J,RCA,46,23,1989)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.46, p.23, 1989
+#DATASETS   4
+#
+#DATASET    221190051
+#DATE       20180300
+#REACTION   92-U-232(N,F),SEC,AP,LF
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#C4BEGIN    [    1 92232 801  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18    0.025300          92.10000 0.100000                                       M.Haddad,ET.AL. (89)     22119  51
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22119
+#AUTHOR1    M.Haddad+
+#YEAR       1989
+#INSTITUTE  (2FR GRE)
+#TITLE      Post-neutron mass distribution for U-232(n-th,f)
+#AUTHOR(S)  M.Haddad, J.Crancon, G.Lhospice,
+#+          M.Asghar
+#REF-CODE   (J,RCA,46,23,1989)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.46, p.23, 1989
+#DATASETS   4
+#
+#DATASET    221190052
+#DATE       20180300
+#REACTION   92-U-232(N,F),SEC,AP,HF
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#C4BEGIN    [    1 92232 801  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18    0.025300          137.9000 0.100000                                       M.Haddad,ET.AL. (89)     22119  52
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23571
+#AUTHOR1    J.Kemmer+
+#YEAR       1971
+#INSTITUTE  (2GERMUN)
+#TITLE      Study on the reactor neutron induced fission of 232U
+#AUTHOR(S)  J.Kemmer, J.I.Kim, H.-J.Born
+#REF-CODE   (J,RCA,15,113,1971)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.15, p.113, 1971
+#DATASETS   4
+#
+#DATASET    23571004
+#DATE       20200500
+#REACTION   92-U-232(N,F)MASS,CHN,FY,,SPA
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18   ]
+#DATA       16
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18    0.025300          0.025000 5.0000-4          85.00000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.073800 1.4000-3          91.00000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.063000 1.0000-3          95.00000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.053100 9.0000-4          97.00000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.041500 1.0000-3          99.00000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.010200 2.0000-4          103.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.040900 6.0000-4          131.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.048600 8.0000-4          132.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.055100 2.8000-3          133.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.063300 7.0000-3          135.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.078700 1.1000-3          137.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.069500 9.0000-4          140.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.065300 4.0000-4          141.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.045900 6.0000-4          143.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.041900 1.8000-3          144.0000                     J.Kemmer,ET.AL. (71)     23571  4
+    1 92232 801  18    0.025300          0.011000 2.0000-4          147.0000                     J.Kemmer,ET.AL. (71)     23571  4
+#/DATA      16
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23571
+#AUTHOR1    J.Kemmer+
+#YEAR       1971
+#INSTITUTE  (2GERMUN)
+#TITLE      Study on the reactor neutron induced fission of 232U
+#AUTHOR(S)  J.Kemmer, J.I.Kim, H.-J.Born
+#REF-CODE   (J,RCA,15,113,1971)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.15, p.113, 1971
+#DATASETS   4
+#
+#DATASET    235710051
+#DATE       20200500
+#REACTION   92-U-232(N,F),SEC,AP,LF
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#C4BEGIN    [    1 92232 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18 D  0.025300          93.00000                                                J.Kemmer,ET.AL. (71)     23571  51
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23571
+#AUTHOR1    J.Kemmer+
+#YEAR       1971
+#INSTITUTE  (2GERMUN)
+#TITLE      Study on the reactor neutron induced fission of 232U
+#AUTHOR(S)  J.Kemmer, J.I.Kim, H.-J.Born
+#REF-CODE   (J,RCA,15,113,1971)
+#REFERENCE  Jour. Radiochimica Acta
+#+          Vol.15, p.113, 1971
+#DATASETS   4
+#
+#DATASET    235710052
+#DATE       20200500
+#REACTION   92-U-232(N,F),SEC,AP,HF
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#C4BEGIN    [    1 92232 801  18 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18 D  0.025300          137.3000                                                J.Kemmer,ET.AL. (71)     23571  52
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23582
+#AUTHOR1    J.Kaufmann+
+#YEAR       1992
+#INSTITUTE  (2FR ILL)
+#TITLE      Cold deformed fission in 232U(n,f) and 239Pu(n,f)
+#AUTHOR(S)  J.Kaufmann, W.Mollenkopf, F.Goennenwein,
+#+          P.Geltenbort, A.Oed
+#REF-CODE   (J,ZP/A,341,319,1992)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.341, p.319, 1992
+#DATASETS   2
+#
+#DATASET    23582008
+#DATE       20200806
+#REACTION   92-U-232(N,F)MASS,SEC,FY
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18   ]
+#DATA       29
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18    0.025300          7.2000-4                   78.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          8.6000-4                   79.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          2.1400-3                   80.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          4.0300-3                   81.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          6.8700-3                   82.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.011490                   83.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.018650                   84.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.024230                   85.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.033930                   86.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.049880                   87.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.065040                   88.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.073770                   89.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.073480                   90.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.072240                   91.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.074690                   92.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.075010                   93.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.072380                   94.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.063510                   95.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.055800                   96.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.053180                   97.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.047040                   98.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.041100                   99.00000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.031630                   100.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.020420                   101.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          0.014480                   102.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          8.1400-3                   103.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          4.7400-3                   104.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          2.1200-3                   105.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+    1 92232 801  18    0.025300          8.7000-4                   106.0000                     J.Kaufmann,ET.AL. (92)   23582  8
+#/DATA      29
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23582
+#AUTHOR1    J.Kaufmann+
+#YEAR       1992
+#INSTITUTE  (2FR ILL)
+#TITLE      Cold deformed fission in 232U(n,f) and 239Pu(n,f)
+#AUTHOR(S)  J.Kaufmann, W.Mollenkopf, F.Goennenwein,
+#+          P.Geltenbort, A.Oed
+#REF-CODE   (J,ZP/A,341,319,1992)
+#REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
+#+          Vol.341, p.319, 1992
+#DATASETS   2
+#
+#DATASET    23582009
+#DATE       20200806
+#REACTION   92-U-232(N,F)ELEM,CHG,FY
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18   ]
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18    0.025300          1.2600-3          32.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          8.9900-3          33.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.045740          34.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.077650          35.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.195570          36.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.139840          37.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.204550          38.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.123530          39.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.131770          40.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.043260          41.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          0.012250          42.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+    1 92232 801  18    0.025300          1.1500-3          43.00000                              J.Kaufmann,ET.AL. (92)   23582  9
+#/DATA      12
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      33009
 #AUTHOR1    H.Naik+
 #YEAR       2004
@@ -8327,7 +8706,7 @@
 #REF-CODE   (J,JP/G,30,107,2004)
 #REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
 #+          Vol.30, p.107, 2004
-#DATASETS   2
+#DATASETS   8
 #
 #DATASET    33009005
 #DATE       20100303
@@ -8381,6 +8760,131 @@
     1 92232 801  18 A  0.025300          2.0400-3 5.8000-4 59.00000 146.0000                     H.Naik,ET.AL. (04)       33009  5
     1 92232 801  18 A  0.025300          4.2400-3 3.0000-4 59.00000 148.0000                     H.Naik,ET.AL. (04)       33009  5
 #/DATA      38
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      33009
+#AUTHOR1    H.Naik+
+#YEAR       2004
+#INSTITUTE  (3INDTRM)
+#TITLE      Charge distribution in low energy fission of actinides
+#AUTHOR(S)  H.Naik, R.J.Singh, R.H.Iyer
+#REF-CODE   (J,JP/G,30,107,2004)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.30, p.107, 2004
+#DATASETS   8
+#
+#DATASET    33009008
+#DATE       20100303
+#REACTION   92-U-232(N,F)MASS,,ZP
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       18
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18 A  0.025300          50.35000 0.150000          128.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          50.75000 0.200000          129.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          51.02000 0.150000          130.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          51.40000 0.100000          131.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          51.77000 0.070000          132.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          52.10000 0.150000          133.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          52.60000 0.050000          134.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          53.16000 0.050000          135.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          53.66000 0.150000          136.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          54.05000 0.070000          137.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          54.30000 0.100000          138.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          54.81000 0.090000          139.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          55.28000 0.080000          140.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          55.60000 0.120000          141.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          55.90000 0.200000          142.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          56.60000 0.200000          144.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          57.65000 0.600000          146.0000                     H.Naik,ET.AL. (04)       33009  8
+    1 92232 801  18 A  0.025300          58.45000 0.100000          148.0000                     H.Naik,ET.AL. (04)       33009  8
+#/DATA      18
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      33009
+#AUTHOR1    H.Naik+
+#YEAR       2004
+#INSTITUTE  (3INDTRM)
+#TITLE      Charge distribution in low energy fission of actinides
+#AUTHOR(S)  H.Naik, R.J.Singh, R.H.Iyer
+#REF-CODE   (J,JP/G,30,107,2004)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.30, p.107, 2004
+#DATASETS   8
+#
+#DATASET    33009011
+#DATE       20100303
+#REACTION   92-U-232(N,F)ELEM,CHG,FY
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18 A  0.025300          0.029700 3.7000-3 50.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.065000 9.5000-3 51.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.146500 0.020100 52.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.124000 6.6000-3 53.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.187300 0.010100 54.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.137700 0.010700 55.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.199600 5.7000-3 56.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.055000 3.0000-3 57.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.046200 2.7000-3 58.00000                              H.Naik,ET.AL. (04)       33009 11
+    1 92232 801  18 A  0.025300          0.019800 3.6000-3 59.00000                              H.Naik,ET.AL. (04)       33009 11
+#/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      33009
+#AUTHOR1    H.Naik+
+#YEAR       2004
+#INSTITUTE  (3INDTRM)
+#TITLE      Charge distribution in low energy fission of actinides
+#AUTHOR(S)  H.Naik, R.J.Singh, R.H.Iyer
+#REF-CODE   (J,JP/G,30,107,2004)
+#REFERENCE  Jour. Jour. of Physics, Part G (Nucl.and Part.Phys.)
+#+          Vol.30, p.107, 2004
+#DATASETS   8
+#
+#DATASET    33009014
+#DATE       20100303
+#REACTION   92-U-232(N,F)ELEM,,AP
+#PROJ       1
+#TARG       92232
+#MF         801
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [    1 92232 801  18 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       10
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 92232 801  18 A  0.025300          128.6000 0.210000 50.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          130.7000 0.270000 51.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          133.0000 0.170000 52.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          135.1000 0.080000 53.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          137.1000 0.090000 54.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          139.5000 0.130000 55.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          142.0000 0.060000 56.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          143.7000 0.110000 57.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          146.0000 0.080000 58.00000                              H.Naik,ET.AL. (04)       33009 14
+    1 92232 801  18 A  0.025300          148.0000 0.150000 59.00000                              H.Naik,ET.AL. (04)       33009 14
+#/DATA      10
 #/DATASET
 #/ENTRY
 #

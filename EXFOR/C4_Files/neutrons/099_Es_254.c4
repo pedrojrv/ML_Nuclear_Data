@@ -484,18 +484,18 @@
 #AUTHOR1    H.Diamond+
 #YEAR       1968
 #INSTITUTE  (1USAANL)
-#TITLE      FISSION CROSS SECTIONS FOR PU243, BK250, CM247, CM245,
-#+          ES254M, AND ES254, AND ODD-ODD SYSTEMATICS.
+#TITLE      Fission cross-sections for 243Pu, 250Bk, 247Cm, 245Cm,
+#+          254mEs and 254Es, and odd-odd systematics
 #AUTHOR(S)  H.Diamond, J.J.Hines, R.K.Sjoblom,
 #+          R.F.Barnes, D.N.Metta, J.L.Lerner,
 #+          P.R.Fields
-#REF-CODE   (J,JIN,30,2553,68)
+#REF-CODE   (J,JIN,30,2553,1968)
 #REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
 #+          Vol.30, p.2553, 1968
 #DATASETS   6
 #
 #DATASET    12531007
-#DATE       19841004
+#DATE       20200404
 #REACTION   99-ES-254(N,F),,SIG,,MXW
 #PROJ       1
 #TARG       99254
@@ -506,7 +506,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 99254   3  18    0.025300          3060.000 180.0000                                       H.DIAMOND,ET.AL. (68)    12531  7
+    1 99254   3  18    0.025300          3060.000 180.0000                                       H.Diamond,ET.AL. (68)    12531  7
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -615,12 +615,12 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
 #DATASET    V10027102
-#DATE       20160406
+#DATE       20200202
 #REACTION   99-ES-254(N,F),,SIG,,,RECOM
 #PROJ       1
 #TARG       99254
@@ -850,6 +850,36 @@
 #/ENTRY
 #
 #
+#ENTRY      V1002
+#AUTHOR1    S.F.Mughabghab
+#YEAR       2006
+#INSTITUTE  (1USABNL)
+#TITLE      Atlas of neutron resonances resonance parameters and
+#+          thermal cross sections Z=1-100
+#AUTHOR(S)  S.F.Mughabghab
+#REF-CODE   (B,NEUT.RES,,,2006)
+#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
+#DATASETS   766
+#
+#DATASET    V10027103
+#DATE       20200202
+#REACTION   99-ES-254(N,ABS),,SIG,,,RECOM
+#PROJ       1
+#TARG       99254
+#MF         3
+#MT         101
+#DATA-HDR   DATA
+#C4BEGIN    [    1 99254   3 101   ]
+#X4DATATYPE [RECOM] Recommended data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 99254   3 101    0.025300          1998.000 200.0000                                       S.F.Mughabghab (06)      V10027103
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      12933
 #AUTHOR1    J.Halperin+
 #YEAR       1985
@@ -889,12 +919,12 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
 #DATASET    V10027101
-#DATE       20160406
+#DATE       20200202
 #REACTION   99-ES-254(N,G)99-ES-255,,SIG,,,RECOM
 #PROJ       1
 #TARG       99254
@@ -908,37 +938,6 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 99254   3 102    0.025300          28.30000 2.500000                                       S.F.Mughabghab (06)      V10027101
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      V1002
-#AUTHOR1    S.F.Mughabghab
-#YEAR       2006
-#INSTITUTE  (1USABNL)
-#TITLE      Atlas of neutron resonances resonance parameters and
-#+          thermal cross sections Z=1-100
-#AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
-#REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
-#DATASETS   766
-#
-#DATASET    V10027103
-#DATE       20160406
-#REACTION   99-ES-254(N,A)97-BK-251,,SIG,,,RECOM
-#PROJ       1
-#TARG       99254
-#MF         3
-#MT         107
-#PRODUCT    97-BK-251
-#DATA-HDR   DATA
-#C4BEGIN    [    1 99254   3 107   ]
-#X4DATATYPE [RECOM] Recommended data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 99254   3 107    0.025300          1998.000 200.0000                                       S.F.Mughabghab (06)      V10027103
 #/DATA      1
 #/DATASET
 #/ENTRY

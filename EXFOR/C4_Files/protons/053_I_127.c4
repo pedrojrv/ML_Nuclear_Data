@@ -1217,7 +1217,7 @@
 #INSTITUTE  (4ZZZDUB)
 #TITLE      Cross sections for the 100 MeV proton-induced nuclear
 #+          reactions and yields of some radionuclides used in
-#+          nuclear medicine.
+#+          nuclear medicine
 #AUTHOR(S)  N.G.Zaitseva, C.Deptula, O.Knotek,
 #+          Kim Sen Khan, S.Mikolaewski, P.Mikec,
 #+          E.Rurarz, V.A.Khalkin, V.A.Konov,
@@ -1228,7 +1228,7 @@
 #DATASETS   10
 #
 #DATASET    A0918017
-#DATE       20180603
+#DATE       20200204
 #REACTION   53-I-127(P,3N)54-XE-125,,SIG
 #PROJ       1001
 #TARG       53127
@@ -1433,6 +1433,40 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 53127   3  17 A  6.6000+8          6.6000-3 5.0000-4                                       M.Adilbish,ET.AL. (79)   A0062  2B
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      R0005
+#AUTHOR1    M.Adilbish+
+#YEAR       1980
+#INSTITUTE  (4ZZZDUB)
+#TITLE      123I production from radioxenon formed in
+#+          spallation reactions by 660 MeV protons for medical
+#+          research
+#AUTHOR(S)  M.Adilbish, V.G.Chumin, V.A.Khalkin,
+#+          O.Knotek, M.Ja.Kuznetsova, Ju.V.Norseev,
+#+          V.I.Fominykh, N.G.Zaitseva
+#REF-CODE   (J,ARI,31,163,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.163, 1980
+#DATASETS   12
+#
+#DATASET    R00050023
+#DATE       20191200
+#REACTION   53-I-127(P,3N)54-XE-125,,SIG
+#PROJ       1001
+#TARG       53127
+#MF         3
+#MT         17
+#PRODUCT    54-XE-125
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 53127   3  17   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 53127   3  17    6.6000+8          6.6000-3 5.0000-4                                       M.Adilbish,ET.AL. (80)   R0005  23
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2331,7 +2365,7 @@
 #INSTITUTE  (4ZZZDUB)
 #TITLE      Cross sections for the 100 MeV proton-induced nuclear
 #+          reactions and yields of some radionuclides used in
-#+          nuclear medicine.
+#+          nuclear medicine
 #AUTHOR(S)  N.G.Zaitseva, C.Deptula, O.Knotek,
 #+          Kim Sen Khan, S.Mikolaewski, P.Mikec,
 #+          E.Rurarz, V.A.Khalkin, V.A.Konov,
@@ -2342,7 +2376,7 @@
 #DATASETS   10
 #
 #DATASET    A0918013
-#DATE       20180603
+#DATE       20200204
 #REACTION   53-I-127(P,5N)54-XE-123,,SIG
 #PROJ       1001
 #TARG       53127
@@ -2618,6 +2652,40 @@
 #/ENTRY
 #
 #
+#ENTRY      R0005
+#AUTHOR1    M.Adilbish+
+#YEAR       1980
+#INSTITUTE  (4ZZZDUB)
+#TITLE      123I production from radioxenon formed in
+#+          spallation reactions by 660 MeV protons for medical
+#+          research
+#AUTHOR(S)  M.Adilbish, V.G.Chumin, V.A.Khalkin,
+#+          O.Knotek, M.Ja.Kuznetsova, Ju.V.Norseev,
+#+          V.I.Fominykh, N.G.Zaitseva
+#REF-CODE   (J,ARI,31,163,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.163, 1980
+#DATASETS   12
+#
+#DATASET    R00050022
+#DATE       20191200
+#REACTION   53-I-127(P,5N)54-XE-123,,SIG
+#PROJ       1001
+#TARG       53127
+#MF         3
+#MT         152
+#PRODUCT    54-XE-123
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 53127   3 152   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 53127   3 152    6.6000+8          3.8000-3 4.0000-4                                       M.Adilbish,ET.AL. (80)   R0005  22
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      B0081
 #AUTHOR1    M.Diksic+
 #YEAR       1977
@@ -2765,6 +2833,40 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 53127   3 153 A  6.6000+8          2.6000-3 3.0000-4                                       M.Adilbish,ET.AL. (79)   A0062  2C
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      R0005
+#AUTHOR1    M.Adilbish+
+#YEAR       1980
+#INSTITUTE  (4ZZZDUB)
+#TITLE      123I production from radioxenon formed in
+#+          spallation reactions by 660 MeV protons for medical
+#+          research
+#AUTHOR(S)  M.Adilbish, V.G.Chumin, V.A.Khalkin,
+#+          O.Knotek, M.Ja.Kuznetsova, Ju.V.Norseev,
+#+          V.I.Fominykh, N.G.Zaitseva
+#REF-CODE   (J,ARI,31,163,1980)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.31, p.163, 1980
+#DATASETS   12
+#
+#DATASET    R00050021
+#DATE       20191200
+#REACTION   53-I-127(P,6N)54-XE-122,,SIG
+#PROJ       1001
+#TARG       53127
+#MF         3
+#MT         153
+#PRODUCT    54-XE-122
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 53127   3 153   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 53127   3 153    6.6000+8          2.6000-3 3.0000-4                                       M.Adilbish,ET.AL. (80)   R0005  21
 #/DATA      1
 #/DATASET
 #/ENTRY

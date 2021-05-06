@@ -6513,28 +6513,29 @@
 #AUTHOR1    L.Koester+
 #YEAR       1981
 #INSTITUTE  (2GERMUN)
-#TITLE      -SLOW NEUTRON SCATTERING PARAMETERS FOR STABLE
-#+          NUCLEI WITH NUCLEON NUMBERS BETWEEN A=79 AND A=96*.-
+#TITLE      Slow neutron scattering parameters for stable
+#+          nuclei with nucleon numbers between A=79 and A=96*
 #AUTHOR(S)  L.Koester, K.Knopf, W.Waschkowski
-#REF-CODE   (J,ZP/A,301,215,8104)
+#REF-CODE   (J,ZP/A,301,215,1981)
 #REFERENCE  Jour. Zeitschrift fuer Physik A, Hadrons and Nuclei
 #+          Vol.301, p.215, 1981
 #DATASETS   9
 #
 #DATASET    21842020
-#DATE       19830302
-#REACTION   37-RB-0(N,EL),,SIG
+#DATE       20191105
+#REACTION   37-RB-0(N,EL)37-RB-0,,SIG
 #PROJ       1
 #TARG       37000
 #MF         3
 #MT         2
+#PRODUCT    37-RB-0
 #DATA-HDR   DATA
 #C4BEGIN    [    1 37000   3   2   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37000   3   2    1.260000          6.200000 0.040000                                       L.KOESTER,ET.AL. (81)    21842 20
-    1 37000   3   2    5.190000          6.290000 0.050000                                       L.KOESTER,ET.AL. (81)    21842 20
+    1 37000   3   2    1.260000          6.200000 0.040000                                       L.Koester,ET.AL. (81)    21842 20
+    1 37000   3   2    5.190000          6.290000 0.050000                                       L.Koester,ET.AL. (81)    21842 20
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -6593,15 +6594,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1951
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,83,641,51)
+#REF-CODE   (J,PR,83,641,1951)
 #REFERENCE  Jour. Physical Review
 #+          Vol.83, p.641, 1951
 #DATASETS   59
 #
 #DATASET    11047030
-#DATE       19820103
+#DATE       20190805
 #REACTION   37-RB-0(N,G),,SIG,,MXW
 #PROJ       1
 #TARG       37000
@@ -6612,7 +6613,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 37000   3 102    0.025300          0.700000 0.070000                                       H.POMERANCE (51)         11047 30
+    1 37000   3 102    0.025300          0.700000 0.070000                                       H.Pomerance (51)         11047 30
 #/DATA      1
 #/DATASET
 #/ENTRY

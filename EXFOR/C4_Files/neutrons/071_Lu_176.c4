@@ -380,7 +380,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -551,8 +551,8 @@
 #AUTHOR1    F.Widder
 #YEAR       1975
 #INSTITUTE  (2SWTWUR)
-#TITLE      - Neutron capture cross section measurements in the
-#+          energy region from 0.01 to 10 electron volts -
+#TITLE      Neutron capture cross section measurements in the
+#+          energy region from 0.01 to 10 electron volts
 #AUTHOR(S)  F.Widder
 #REF-CODE   (R,EIR-217,1975)
 #REFERENCE  Rept. Eidg.Inst.Reaktorforsch.Wuerenlingen Reports
@@ -8152,7 +8152,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8183,7 +8183,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8606,7 +8606,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8637,7 +8637,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -8941,13 +8941,13 @@
 #INSTITUTE  (1USAORL)
 #TITLE      Fast-chopper time-of-flight neutron spectrometer.
 #AUTHOR(S)  R.C.Block, G.G.Slaughter, J.A.Harvey
-#REF-CODE   (P,ORNL-2718,26,195906)
+#REF-CODE   (P,ORNL-2718,26,1959)
 #REFERENCE  Prog. Oak Ridge National Lab. Reports
 #+          No.2718, p.26, 1959
-#DATASETS   4
+#DATASETS   6
 #
 #DATASET    113490041
-#DATE       19820303
+#DATE       20190804
 #REACTION   71-LU-176(N,0),,EN
 #PROJ       1
 #TARG       71176
@@ -9324,12 +9324,41 @@
 #/ENTRY
 #
 #
+#ENTRY      11349
+#AUTHOR1    R.C.Block+
+#YEAR       1959
+#INSTITUTE  (1USAORL)
+#TITLE      Fast-chopper time-of-flight neutron spectrometer.
+#AUTHOR(S)  R.C.Block, G.G.Slaughter, J.A.Harvey
+#REF-CODE   (P,ORNL-2718,26,1959)
+#REFERENCE  Prog. Oak Ridge National Lab. Reports
+#+          No.2718, p.26, 1959
+#DATASETS   6
+#
+#DATASET    11349005
+#DATE       20190804
+#REACTION   71-LU-176(N,0),,D
+#PROJ       1
+#TARG       71176
+#MF         402
+#MT         6004
+#DATA-HDR   DATA
+#C4BEGIN    [    1 71176 4026004   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 71176 4026004                      6.100000 1.500000                                       R.C.Block,ET.AL. (59)    11349  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      40469
 #AUTHOR1    S.M.Kalebin+
 #YEAR       1977
 #INSTITUTE  (4RUSITE)
 #TITLE      Total neutron cross-sections and resonance
-#+          parameters of Lu-175, Lu-176 up to 200 eV
+#+          parameters of 175,176Lu up to 200 eV
 #AUTHOR(S)  S.M.Kalebin, V.S.Artamonov, R.N.Ivanov,
 #+          G.V.Rukolaine, T.S.Belanova, A.G.Kolesov,
 #+          V.A.Poruchikov

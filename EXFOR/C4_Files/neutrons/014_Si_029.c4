@@ -92,42 +92,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22089
-#AUTHOR1    Y.Ikeda+
-#YEAR       1988
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation cross section measurements for fusion
-#+          reactor structural materials at neutron energy from
-#+          13.3 to 15.0 MeV using FNS facility
-#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
-#+          T.Nakamura, H.Miyade, K.Kawade,
-#+          H.Yamamoto, T.Katoh
-#REF-CODE   (R,JAERI-1312,1988)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1312, 1988
-#DATASETS   110
-#
-#DATASET    22089010
-#DATE       20081001
-#REACTION   14-SI-29(N,N+P)13-AL-28,,SIG
-#PROJ       1
-#TARG       14029
-#MF         3
-#MT         28
-#PRODUCT    13-AL-28
-#DATA-HDR   DATA
-#C4BEGIN    [    1 14029   3  28   ]
-#DATA       3
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14029   3  28    1.4930+7          0.030400 2.7000-3                                       Y.Ikeda,ET.AL. (88)      22089 10
-    1 14029   3  28    1.4660+7          0.023700 2.4000-3                                       Y.Ikeda,ET.AL. (88)      22089 10
-    1 14029   3  28    1.4040+7          4.8000-3 1.4000-3                                       Y.Ikeda,ET.AL. (88)      22089 10
-#/DATA      3
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      22666
 #AUTHOR1    D.Schmidt+
 #YEAR       2001
@@ -184,15 +148,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507006
-#DATE       19860702
+#DATE       20190805
 #REACTION   14-SI-29(N,G)14-SI-30,,SIG,,MXW
 #PROJ       1
 #TARG       14029
@@ -204,7 +168,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14029   3 102    0.025300          0.270000 0.081000                                       H.POMERANCE (52)         11507  6
+    1 14029   3 102    0.025300          0.270000 0.081000                                       H.Pomerance (52)         11507  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -984,10 +948,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089009
-#DATE       20081001
+#DATE       20201001
 #REACTION   14-SI-29(N,P)13-AL-29,,SIG
 #PROJ       1
 #TARG       14029
@@ -1298,6 +1262,42 @@
     1 14029   39000    1.3650+7          8.6000-3 4.1280-4           13028.9                     H.Sakane,ET.AL. (02)     22800  3
     1 14029   39000    1.3400+7          6.0000-3 3.0000-4           13028.9                     H.Sakane,ET.AL. (02)     22800  3
 #/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22089
+#AUTHOR1    Y.Ikeda+
+#YEAR       1988
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation cross section measurements for fusion
+#+          reactor structural materials at neutron energy from
+#+          13.3 to 15.0 MeV using FNS facility
+#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
+#+          T.Nakamura, H.Miyade, K.Kawade,
+#+          H.Yamamoto, T.Katoh
+#REF-CODE   (R,JAERI-1312,1988)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1312, 1988
+#DATASETS   108
+#
+#DATASET    22089010
+#DATE       20201001
+#REACTION   14-SI-29(N,X)13-AL-28,,SIG
+#PROJ       1
+#TARG       14029
+#MF         3
+#MT         9000
+#PRODUCT    13-AL-28
+#DATA-HDR   DATA
+#C4BEGIN    [    1 14029   39000   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 14029   39000    1.4930+7          0.030400 2.7000-3           13028.9                     Y.Ikeda,ET.AL. (88)      22089 10
+    1 14029   39000    1.4660+7          0.023700 2.4000-3           13028.9                     Y.Ikeda,ET.AL. (88)      22089 10
+    1 14029   39000    1.4040+7          4.8000-3 1.4000-3           13028.9                     Y.Ikeda,ET.AL. (88)      22089 10
+#/DATA      3
 #/DATASET
 #/ENTRY
 #

@@ -149,7 +149,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497009
 #DATE       20040103
@@ -267,18 +267,19 @@
 #
 #ENTRY      20033
 #AUTHOR1    R.Rieder+
-#YEAR       1965
+#YEAR       1966
 #INSTITUTE  (2AUSIRK)
-#TITLE      -(N,2N) cross sections for some nuclei with N near the
-#+          magic number 50, with 14 MeV neutrons.- (In German).
+#TITLE      (n,2n)- cross sections of some nuclides with
+#+          neutron numbers close to the magic number 50
+#+          at neutron energies around 14 MeV
 #AUTHOR(S)  R.Rieder, H.Muenzer
-#REF-CODE   (P,EANDC(OR)-38,1,196504)
-#REFERENCE  Prog. Report from misc. OECD Countries to EANDC
-#+          No.38, p.1, 1965
-#DATASETS   12
+#REF-CODE   (J,APA,23,42,1966)
+#REFERENCE  Jour. Acta Physica Austriaca
+#+          Vol.23, p.42, 1966
+#DATASETS   9
 #
 #DATASET    20033013
-#DATE       20070902
+#DATE       20200900
 #REACTION   44-RU-96(N,2N)44-RU-95,,SIG
 #PROJ       1
 #TARG       44096
@@ -287,12 +288,11 @@
 #PRODUCT    44-RU-95
 #DATA-HDR   DATA
 #C4BEGIN    [    1 44096   3  16   ]
-#DATA       2
+#DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 44096   3  16    1.4700+7 100000.0 0.860000 0.043000                                       R.Rieder,ET.AL. (65)     20033 13
-    1 44096   3  16    1.4700+7 100000.0 0.838000 0.041900                                       R.Rieder,ET.AL. (65)     20033 13
-#/DATA      2
+    1 44096   3  16    1.4700+7          0.860000 0.043000                                       R.Rieder,ET.AL. (66)     20033 13
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -305,7 +305,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -343,7 +343,7 @@
 #TITLE      Partial Neutron Cross Sections for 96Ru at 15.1 MeV
 #AUTHOR(S)  W.L.Alford, T.H.Kao
 #REF-CODE   (J,BAP,19,1123(FB4),197411)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.19, p.1123(FB4), 1974
 #DATASETS   3
 #
@@ -588,6 +588,39 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 44096   3 102    0.025300          0.229000 2.7480-3                                       F.De Corte,ET.AL. (88)   23488 38
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      33134
+#AUTHOR1    P.Panikkath
+#YEAR       2019
+#INSTITUTE  (3INDMNP)
+#TITLE      Thermal neutron capture cross sections and resonance
+#+          integrals of ruthenium isotopes- 96Ru, 102Ru and
+#+          104Ru
+#AUTHOR(S)  P.Panikkath
+#REF-CODE   (J,ARI,153,108819,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.153, p.108819, 2019
+#DATASETS   8
+#
+#DATASET    33134002
+#DATE       20200304
+#REACTION   44-RU-96(N,G)44-RU-97,,SIG
+#PROJ       1
+#TARG       44096
+#MF         3
+#MT         102
+#PRODUCT    44-RU-97
+#DATA-HDR   DATA
+#C4BEGIN    [    1 44096   3 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 44096   3 102 A  0.025300          0.280000 0.104216                                       P.Panikkath (19)         33134  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -988,7 +1021,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1055,37 +1088,6 @@
 #/ENTRY
 #
 #
-#ENTRY      20033
-#AUTHOR1    R.Rieder+
-#YEAR       1965
-#INSTITUTE  (2AUSIRK)
-#TITLE      -(N,2N) cross sections for some nuclei with N near the
-#+          magic number 50, with 14 MeV neutrons.- (In German).
-#AUTHOR(S)  R.Rieder, H.Muenzer
-#REF-CODE   (P,EANDC(OR)-38,1,196504)
-#REFERENCE  Prog. Report from misc. OECD Countries to EANDC
-#+          No.38, p.1, 1965
-#DATASETS   12
-#
-#DATASET    20033014
-#DATE       20070902
-#REACTION   (44-RU-96(N,N+P)43-TC-95,,SIG)+(44-RU-96(N,D)43-TC-95,,SIG)
-#PROJ       1
-#TARG       44096
-#MF         3
-#MT         1003
-#PRODUCT    43-TC-95
-#DATA-HDR   DATA
-#C4BEGIN    [    1 44096   31003   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 44096   31003    1.4000+7          0.364000 0.072800                                       R.Rieder,ET.AL. (65)     20033 14
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      10145
 #AUTHOR1    W.D.Lu+
 #YEAR       1970
@@ -1146,85 +1148,6 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 44096   31003G   1.4400+7 300000.0 0.483000 0.050000                                       W.D.Lu,ET.AL. (70)       10145 23
 #/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22637
-#AUTHOR1    C.Konno+
-#YEAR       1993
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation Cross section measurements at neutron
-#+          energy from 13.3 to 14.9 MeV
-#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
-#+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1329, 1993
-#DATASETS   89
-#
-#DATASET    22637038
-#DATE       20080204
-#REACTION   (44-RU-96(N,N+P)43-TC-95-M,,SIG)+(44-RU-96(N,D)43-TC-95-M,,SIG)
-#PROJ       1
-#TARG       44096
-#MF         3
-#MT         1003
-#PRODUCT    43-TC-95-M
-#DATA-HDR   DATA
-#C4BEGIN    [    1 44096   31003MD ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       7
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 44096   31003MD  1.4940+7          0.061500 6.0000-3                                       C.Konno,ET.AL. (93)      22637 38
-    1 44096   31003MD  1.4680+7          0.060200 5.8000-3                                       C.Konno,ET.AL. (93)      22637 38
-    1 44096   31003MD  1.4440+7          0.053900 5.7000-3                                       C.Konno,ET.AL. (93)      22637 38
-    1 44096   31003MD  1.4230+7          0.052700 5.8000-3                                       C.Konno,ET.AL. (93)      22637 38
-    1 44096   31003MD  1.3990+7          0.046300 5.8000-3                                       C.Konno,ET.AL. (93)      22637 38
-    1 44096   31003MD  1.3570+7          0.041800 5.9000-3                                       C.Konno,ET.AL. (93)      22637 38
-    1 44096   31003MD  1.3340+7          0.037900 8.4000-3                                       C.Konno,ET.AL. (93)      22637 38
-#/DATA      7
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22637
-#AUTHOR1    C.Konno+
-#YEAR       1993
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation Cross section measurements at neutron
-#+          energy from 13.3 to 14.9 MeV
-#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
-#+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1329, 1993
-#DATASETS   89
-#
-#DATASET    22637039
-#DATE       20080204
-#REACTION   (44-RU-96(N,N+P)43-TC-95-G,,SIG)+(44-RU-96(N,D)43-TC-95-G,,SIG)
-#PROJ       1
-#TARG       44096
-#MF         3
-#MT         1003
-#PRODUCT    43-TC-95-G
-#DATA-HDR   DATA
-#C4BEGIN    [    1 44096   31003GD ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       8
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 44096   31003GD  1.4940+7          0.360000 0.058000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.4680+7          0.346000 0.055000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.4440+7          0.318000 0.052000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.4230+7          0.310000 0.049000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.3990+7          0.309000 0.046000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.3760+7          0.287000 0.042000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.3580+7          0.230000 0.040000                                       C.Konno,ET.AL. (93)      22637 39
-    1 44096   31003GD  1.3360+7          0.195000 0.039000                                       C.Konno,ET.AL. (93)      22637 39
-#/DATA      8
 #/DATASET
 #/ENTRY
 #
@@ -1364,6 +1287,85 @@
 #/ENTRY
 #
 #
+#ENTRY      22637
+#AUTHOR1    C.Konno+
+#YEAR       1993
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation Cross section measurements at neutron
+#+          energy from 13.3 to 14.9 MeV
+#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
+#+          K.Kawade, H.Yamamoto, H.Maekawa
+#REF-CODE   (R,JAERI-1329,1993)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1329, 1993
+#DATASETS   89
+#
+#DATASET    22637038
+#DATE       20200900
+#REACTION   44-RU-96(N,X)43-TC-95-M,,SIG
+#PROJ       1
+#TARG       44096
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-95-M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 44096   39000MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 44096   39000MD  1.4940+7          0.061500 6.0000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+    1 44096   39000MD  1.4680+7          0.060200 5.8000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+    1 44096   39000MD  1.4440+7          0.053900 5.7000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+    1 44096   39000MD  1.4230+7          0.052700 5.8000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+    1 44096   39000MD  1.3990+7          0.046300 5.8000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+    1 44096   39000MD  1.3570+7          0.041800 5.9000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+    1 44096   39000MD  1.3340+7          0.037900 8.4000-3           43095.7                     C.Konno,ET.AL. (93)      22637 38
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22637
+#AUTHOR1    C.Konno+
+#YEAR       1993
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation Cross section measurements at neutron
+#+          energy from 13.3 to 14.9 MeV
+#AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
+#+          K.Kawade, H.Yamamoto, H.Maekawa
+#REF-CODE   (R,JAERI-1329,1993)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1329, 1993
+#DATASETS   89
+#
+#DATASET    22637039
+#DATE       20200900
+#REACTION   44-RU-96(N,X)43-TC-95-G,,SIG
+#PROJ       1
+#TARG       44096
+#MF         3
+#MT         9000
+#PRODUCT    43-TC-95-G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 44096   39000GD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 44096   39000GD  1.4940+7          0.360000 0.058000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.4680+7          0.346000 0.055000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.4440+7          0.318000 0.052000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.4230+7          0.310000 0.049000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.3990+7          0.309000 0.046000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.3760+7          0.287000 0.042000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.3580+7          0.230000 0.040000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+    1 44096   39000GD  1.3360+7          0.195000 0.039000           43095.0                     C.Konno,ET.AL. (93)      22637 39
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      10505
 #AUTHOR1    W.L.Alford+
 #YEAR       1974
@@ -1371,7 +1373,7 @@
 #TITLE      Partial Neutron Cross Sections for 96Ru at 15.1 MeV
 #AUTHOR(S)  W.L.Alford, T.H.Kao
 #REF-CODE   (J,BAP,19,1123(FB4),197411)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.19, p.1123(FB4), 1974
 #DATASETS   3
 #
@@ -1433,7 +1435,7 @@
 #TITLE      Partial Neutron Cross Sections for 96Ru at 15.1 MeV
 #AUTHOR(S)  W.L.Alford, T.H.Kao
 #REF-CODE   (J,BAP,19,1123(FB4),197411)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.19, p.1123(FB4), 1974
 #DATASETS   3
 #
@@ -1611,6 +1613,39 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 44096 213 102    0.500000 1.5000+7 6.500000 0.800000                                       T.BEREZNAI,ET.AL. (77)   31512  2
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      33134
+#AUTHOR1    P.Panikkath
+#YEAR       2019
+#INSTITUTE  (3INDMNP)
+#TITLE      Thermal neutron capture cross sections and resonance
+#+          integrals of ruthenium isotopes- 96Ru, 102Ru and
+#+          104Ru
+#AUTHOR(S)  P.Panikkath
+#REF-CODE   (J,ARI,153,108819,2019)
+#REFERENCE  Jour. Applied Radiation and Isotopes
+#+          Vol.153, p.108819, 2019
+#DATASETS   8
+#
+#DATASET    33134003
+#DATE       20200304
+#REACTION   44-RU-96(N,G)44-RU-97,,RI
+#PROJ       1
+#TARG       44096
+#MF         213
+#MT         102
+#PRODUCT    44-RU-97
+#DATA-HDR   DATA
+#C4BEGIN    [    1 44096 213 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 44096 213 102 A  0.500000 1.5000+7 4.210000 0.379321                                       P.Panikkath (19)         33134  3
 #/DATA      1
 #/DATASET
 #/ENTRY

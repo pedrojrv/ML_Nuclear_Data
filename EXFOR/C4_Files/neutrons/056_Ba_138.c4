@@ -93,7 +93,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -248,8 +248,8 @@
 #AUTHOR1    L.Hannappel+
 #YEAR       1979
 #INSTITUTE  (2GERJLU)
-#TITLE      -Investigation of neutron induced short living yrast
-#+          isomers -.
+#TITLE      Investigation of neutron induced short living yrast
+#+          isomers
 #AUTHOR(S)  L.Hannappel, H.Henschel, H.Schneider
 #REF-CODE   (J,NIM,167,289,1979)
 #REFERENCE  Jour. Nuclear Instrum.and Methods in Physics Res.
@@ -269,7 +269,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138   3   4L   1.4900+7 200000.0 0.106000 0.015000                                       L.Hannappel,ET.AL. (79)  21612 13
+    1 56138   3   4L   1.4900+7          0.106000 0.015000                                       L.Hannappel,ET.AL. (79)  21612 13
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -446,7 +446,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298076
 #DATE       20130501
@@ -541,7 +541,7 @@
 #+          138Ba, and 186W.
 #AUTHOR(S)  H.C.Kao, D.L.Humphrey
 #REF-CODE   (J,BAP,19,700(EC7),197405)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.19, p.700(EC7), 1974
 #DATASETS   4
 #
@@ -673,7 +673,7 @@
 #DATASETS   18
 #
 #DATASET    22662013
-#DATE       20020306
+#DATE       20201201
 #REACTION   56-BA-138(N,2N)56-BA-137-M,,SIG
 #PROJ       1
 #TARG       56138
@@ -709,10 +709,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089103
-#DATE       20081001
+#DATE       20201001
 #REACTION   56-BA-138(N,2N)56-BA-137-M,,SIG
 #PROJ       1
 #TARG       56138
@@ -1208,15 +1208,15 @@
 #YEAR       1994
 #INSTITUTE  (4RUSRI)
 #TITLE      Inelastic scattering of neutrons with excitation of
-#+          the most populated levels of Ba-138 and Pr-141
+#+          the most populated levels of 138Ba and 141Pr
 #AUTHOR(S)  L.A.Pobedonostsev, Ya.M.Kramarovskij
-#REF-CODE   (J,YK,1994,(2),14,1994)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1994, Issue.2, p.14, 1994
+#REF-CODE   (J,YK,,(2),14,1994)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.2, p.14, 1994
 #DATASETS   2
 #
 #DATASET    41188002
-#DATE       20150902
+#DATE       20191104
 #REACTION   56-BA-138(N,INL)56-BA-138,PAR,SIG
 #PROJ       1
 #TARG       56138
@@ -1354,15 +1354,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507072
-#DATE       19860702
+#DATE       20190805
 #REACTION   56-BA-138(N,G)56-BA-139,,SIG,,MXW
 #PROJ       1
 #TARG       56138
@@ -1374,7 +1374,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138   3 102    0.025300          0.680000 0.102000                                       H.POMERANCE (52)         11507 72
+    1 56138   3 102    0.025300          0.680000 0.102000                                       H.Pomerance (52)         11507 72
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1682,7 +1682,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -2281,7 +2281,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -2434,13 +2434,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244079
-#DATE       20110104
+#DATE       20191103
 #REACTION   56-BA-138(N,G)56-BA-139,,SIG
 #PROJ       1
 #TARG       56138
@@ -2448,12 +2448,11 @@
 #MT         102
 #PRODUCT    56-BA-139
 #DATA-HDR   DATA
-#C4BEGIN    [    1 56138   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 56138   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138   3 102 C  200000.0 30000.00 5.1600-3 8.0000-4                                       A.I.Leipunskiy, (58)     40244 79
+    1 56138   3 102    200000.0 30000.00 5.1600-3 8.0000-4                                       A.I.Leipunskiy, (58)     40244 79
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2502,13 +2501,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244100
-#DATE       20100301
+#DATE       20191103
 #REACTION   56-BA-138(N,G)56-BA-139,,SIG
 #PROJ       1
 #TARG       56138
@@ -2516,13 +2515,12 @@
 #MT         102
 #PRODUCT    56-BA-139
 #DATA-HDR   DATA
-#C4BEGIN    [    1 56138   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 56138   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138   3 102 C  2700000.          1.1400-3 2.3000-4                                       A.I.Leipunskiy, (58)     40244100
-    1 56138   3 102 C  4000000.          7.8000-4 2.4000-4                                       A.I.Leipunskiy, (58)     40244100
+    1 56138   3 102    2700000.          1.1400-3 2.3000-4                                       A.I.Leipunskiy, (58)     40244100
+    1 56138   3 102    4000000.          7.8000-4 2.4000-4                                       A.I.Leipunskiy, (58)     40244100
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -2945,7 +2943,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298077
 #DATE       20130501
@@ -3079,10 +3077,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089104
-#DATE       20081001
+#DATE       20201001
 #REACTION   56-BA-138(N,P)55-CS-138,,SIG
 #PROJ       1
 #TARG       56138
@@ -3327,7 +3325,7 @@
 #REF-CODE   (J,JPJ,16,2371,196112)
 #REFERENCE  Jour. Journal of the Physical Society of Japan
 #+          Vol.16, p.2371, 1961
-#DATASETS   14
+#DATASETS   15
 #
 #DATASET    20289006
 #DATE       20080300
@@ -3359,7 +3357,7 @@
 #REF-CODE   (J,JPJ,16,2371,196112)
 #REFERENCE  Jour. Journal of the Physical Society of Japan
 #+          Vol.16, p.2371, 1961
-#DATASETS   14
+#DATASETS   15
 #
 #DATASET    20289007
 #DATE       20080300
@@ -3391,7 +3389,7 @@
 #REF-CODE   (J,JPJ,16,2371,196112)
 #REFERENCE  Jour. Journal of the Physical Society of Japan
 #+          Vol.16, p.2371, 1961
-#DATASETS   14
+#DATASETS   15
 #
 #DATASET    20289016
 #DATE       20080300
@@ -3425,7 +3423,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298073
 #DATE       20130501
@@ -3459,7 +3457,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298074
 #DATE       20130501
@@ -3847,10 +3845,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089105
-#DATE       20081001
+#DATE       20201001
 #REACTION   56-BA-138(N,A)54-XE-135,,SIG
 #PROJ       1
 #TARG       56138
@@ -3918,7 +3916,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298075
 #DATE       20130501
@@ -7216,6 +7214,38 @@
 #/ENTRY
 #
 #
+#ENTRY      30154
+#AUTHOR1    E.Rurarz+
+#YEAR       1970
+#INSTITUTE  (3POLIBJ)
+#TITLE      Excitation of short-living isomeric activities with
+#+          14.5 neutrons
+#AUTHOR(S)  E.Rurarz, Z.Haratym, M.Pietrzykowski,
+#+          A.Sulik
+#REF-CODE   (J,APP/B,1,415,1970)
+#REFERENCE  Jour. Acta Physica Polonica, Part B
+#+          Vol.1, p.415, 1970
+#DATASETS   15
+#
+#DATASET    30154011
+#DATE       20080205
+#REACTION   56-BA-138(N,2N)56-BA-137-M/T,,SIG/RAT
+#PROJ       1
+#TARG       56138
+#MF         203
+#MT         16
+#PRODUCT    56-BA-137-M/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 56138 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 56138 203  16M   1.4500+7 200000.0 0.600000              16.9  56138.9                     E.Rurarz,ET.AL. (70)     30154 11
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      41258
 #AUTHOR1    M.G.Meshcheryakov
 #YEAR       1945
@@ -7846,53 +7876,55 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990412
-#DATE       19830801
+#DATE       20190802
 #REACTION   56-BA-138(N,EL),,WID
 #PROJ       1
 #TARG       56138
 #MF         402
 #MT         6021
 #DATA-HDR   DATA DATA-MAX
-#C4BEGIN    [    1 56138 4026021   ]
+#C4BEGIN    [    1 56138 4026021 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       26
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138 4026021    31700.00 500.0000 190.0000 20.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    32500.00 500.0000 28.00000 12.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    39800.00 1000.000 100.0000 10.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    51000.00 1000.000 275.0000 50.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    55500.00 1000.000 50.00000 30.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    59500.00 1000.000 70.00000 30.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    61000.00 1000.000 60.00000 40.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    62500.00 1000.000 130.0000 40.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    68500.00 500.0000 460.0000 40.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    70000.00 500.0000 50.00000 40.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    73500.00 500.0000 130.0000 40.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    79300.00 500.0000 160.0000 40.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    105000.0 1000.000 370.0000 35.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    111500.0 1000.000 150.0000 70.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    112500.0 1000.000 160.0000 80.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    116000.0 1000.000 650.0000 50.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    123000.0 1000.000 250.0000 100.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    124000.0 1000.000 150.0000 75.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    129000.0 1000.000 500.0000 175.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    135500.0 100.0000 3300.000 300.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    148500.0 100.0000 800.0000 200.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    155000.0 1000.000 900.0000 200.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    170000.0 2000.000 450.0000 100.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    174000.0 2000.000 80.00000 50.00000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    189000.0 2000.000 800.0000 400.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
-    1 56138 4026021    192000.0 2000.000 2050.000 400.0000                                       E.G.BILPUCH,ET.AL. (61)  11599 412
+    1 56138 4026021 D  31700.00 500.0000 190.0000 20.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  32500.00 500.0000 28.00000 12.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  39800.00 1000.000 100.0000 10.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  51000.00 1000.000 275.0000 50.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  55500.00 1000.000 50.00000 30.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  59500.00 1000.000 70.00000 30.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  61000.00 1000.000 60.00000 40.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  62500.00 1000.000 130.0000 40.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  68500.00 500.0000 460.0000 40.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  70000.00 500.0000 50.00000 40.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  73500.00 500.0000 130.0000 40.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  79300.00 500.0000 160.0000 40.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  105000.0 1000.000 370.0000 35.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  111500.0 1000.000 150.0000 70.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  112500.0 1000.000 160.0000 80.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  116000.0 1000.000 650.0000 50.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  123000.0 1000.000 250.0000 100.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  124000.0 1000.000 150.0000 75.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  129000.0 1000.000 500.0000 175.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  135500.0 100.0000 3300.000 300.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  148500.0 100.0000 800.0000 200.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  155000.0 1000.000 900.0000 200.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  170000.0 2000.000 450.0000 100.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  174000.0 2000.000 80.00000 50.00000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  189000.0 2000.000 800.0000 400.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
+    1 56138 4026021 D  192000.0 2000.000 2050.000 400.0000                                       E.G.Bilpuch,ET.AL. (61)  11599 412
 #/DATA      26
 #/DATASET
 #/ENTRY
@@ -7902,50 +7934,52 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    11599042
-#DATE       19830801
+#DATE       20190802
 #REACTION   56-BA-138(N,EL),,WID/RED
 #PROJ       1
 #TARG       56138
 #MF         402
 #MT         6023
 #DATA-HDR   DATA
-#C4BEGIN    [    1 56138 4026023   ]
+#C4BEGIN    [    1 56138 4026023 D ]
+#X4STATUS   [DEP  ] Dependent data
 #DATA       23
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138 4026023    31700.00 500.0000 1.070000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    39800.00 1000.000 0.497000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    51000.00 1000.000 1.218000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    55500.00 1000.000 0.212000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    59500.00 1000.000 0.281000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    61000.00 1000.000 0.241000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    62500.00 1000.000 0.520000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    68500.00 500.0000 1.751000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    73500.00 500.0000 0.480000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    79300.00 500.0000 0.567000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    105000.0 1000.000 1.140000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    111500.0 1000.000 0.449000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    112500.0 1000.000 0.477000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    116000.0 1000.000 1.904000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    123000.0 1000.000 0.745000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    124000.0 1000.000 0.443000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    129000.0 1000.000 1.450000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    135500.0 100.0000 8.970000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    148500.0 100.0000 2.080000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    155000.0 1000.000 2.290000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    170000.0 2000.000 1.090000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    189000.0 2000.000 1.840000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
-    1 56138 4026023    192000.0 2000.000 4.680000          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 42
+    1 56138 4026023 D  31700.00 500.0000 1.070000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  39800.00 1000.000 0.497000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  51000.00 1000.000 1.218000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  55500.00 1000.000 0.212000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  59500.00 1000.000 0.281000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  61000.00 1000.000 0.241000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  62500.00 1000.000 0.520000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  68500.00 500.0000 1.751000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  73500.00 500.0000 0.480000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  79300.00 500.0000 0.567000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  105000.0 1000.000 1.140000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  111500.0 1000.000 0.449000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  112500.0 1000.000 0.477000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  116000.0 1000.000 1.904000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  123000.0 1000.000 0.745000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  124000.0 1000.000 0.443000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  129000.0 1000.000 1.450000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  135500.0 100.0000 8.970000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  148500.0 100.0000 2.080000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  155000.0 1000.000 2.290000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  170000.0 2000.000 1.090000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  189000.0 2000.000 1.840000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
+    1 56138 4026023 D  192000.0 2000.000 4.680000          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 42
 #/DATA      23
 #/DATASET
 #/ENTRY
@@ -7987,6 +8021,72 @@
     1 56138 4026031 O  81800.00          0.190000 0.090000                                       A.R.de L.Musgrove, (76)  30328  74
     1 56138 4026031 O  89400.00          0.280000 0.120000                                       A.R.de L.Musgrove, (76)  30328  74
 #/DATA      10
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      11599
+#AUTHOR1    E.G.Bilpuch+
+#YEAR       1961
+#INSTITUTE  (1USADKE)
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
+#AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
+#REFERENCE  Jour. Annals of Physics (New York)
+#+          Vol.14, p.387, 1961
+#DATASETS   72
+#
+#DATASET    11599043
+#DATE       20190802
+#REACTION   56-BA-138(N,EL),,STF
+#PROJ       1
+#TARG       56138
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 56138 4036001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 56138 4036001 D                    1.2500-4          0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 43
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      11599
+#AUTHOR1    E.G.Bilpuch+
+#YEAR       1961
+#INSTITUTE  (1USADKE)
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
+#AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
+#REFERENCE  Jour. Annals of Physics (New York)
+#+          Vol.14, p.387, 1961
+#DATASETS   72
+#
+#DATASET    11599046
+#DATE       20190802
+#REACTION   56-BA-138(N,EL),,STF
+#PROJ       1
+#TARG       56138
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 56138 4036001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 56138 4036001 D                    1.8000-4 8.0000-5 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599 46
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -8080,68 +8180,6 @@
     1 56138 4036001    100323.5 99676.50 6.6000-5 2.8000-5 0.000000                              A.BRUSEGAN,ET.AL. (94)   22313  4
     1 56138 4036001    100323.5 99676.50 2.0200-4 6.7000-5 1.000000                              A.BRUSEGAN,ET.AL. (94)   22313  4
 #/DATA      2
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      11599
-#AUTHOR1    E.G.Bilpuch+
-#YEAR       1961
-#INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
-#AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
-#REFERENCE  Jour. Annals of Physics (New York)
-#+          Vol.14, p.387, 1961
-#DATASETS   70
-#
-#DATASET    11599043
-#DATE       19840704
-#REACTION   56-BA-138(N,EL),,STF
-#PROJ       1
-#TARG       56138
-#MF         403
-#MT         6001
-#DATA-HDR   DATA
-#C4BEGIN    [    1 56138 4036001   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138 4036001    112500.0 112500.0 1.2500-4          0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 43
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      11599
-#AUTHOR1    E.G.Bilpuch+
-#YEAR       1961
-#INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
-#AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
-#REFERENCE  Jour. Annals of Physics (New York)
-#+          Vol.14, p.387, 1961
-#DATASETS   70
-#
-#DATASET    11599046
-#DATE       19830801
-#REACTION   56-BA-138(N,EL),,STF
-#PROJ       1
-#TARG       56138
-#MF         403
-#MT         6001
-#DATA-HDR   DATA
-#C4BEGIN    [    1 56138 4036001   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 56138 4036001    112500.0 112500.0 1.8000-4 8.0000-5 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599 46
-#/DATA      1
 #/DATASET
 #/ENTRY
 #

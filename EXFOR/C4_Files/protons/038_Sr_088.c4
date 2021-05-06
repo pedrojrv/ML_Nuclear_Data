@@ -1397,8 +1397,8 @@
 #AUTHOR1    S.Galanopoulos+
 #YEAR       2003
 #INSTITUTE  (2GRCATH)
-#TITLE      The Sr-88(p,g)Y-89 reaction at astrophysically relevant
-#+          energies.
+#TITLE      The Sr-88(p,gamma)Y-89 reaction at astrophysically
+#+          relevant energies.
 #AUTHOR(S)  S.Galanopoulos, P.Demetriou, M.Kokkoris,
 #+          S.Harissopulos, R.Kunz, M.Fey,
 #+          J.W.Hammer, Gy.Gyurky, Zs.Fulop,
@@ -1764,6 +1764,98 @@
 #/ENTRY
 #
 #
+#ENTRY      O2380
+#AUTHOR1    W.Kretschmer+
+#YEAR       1971
+#INSTITUTE  (2GERUEN)
+#TITLE      Investigation of compound elastic scattering near
+#+          isobaric analog resonances with polarized protons.
+#AUTHOR(S)  W.Kretschmer, G.Graw
+#REF-CODE   (J,PRL,27,1294,1971)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.27, p.1294, 1971
+#DATASETS   2
+#
+#DATASET    O2380003
+#DATE       20191003
+#REACTION   38-SR-88(P,EL)38-SR-88,,DA
+#PROJ       1001
+#TARG       38088
+#MF         4
+#MT         2
+#PRODUCT    38-SR-88
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 38088   4   2   ]
+#DATA       62
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 38088   4   2    4985000.          0.135800 1.3000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    4996000.          0.132600 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5006000.          0.134600 1.3000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5017000.          0.125900 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5027000.          0.129900 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5039000.          0.133300 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5048000.          0.133800 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5053000.          0.134100 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5061000.          0.138000 1.5000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5064000.          0.147000 1.3000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5068000.          0.152400 1.5000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5069000.          0.156400 1.3000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5074000.          0.150900 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5079000.          0.142500 1.0000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5090000.          0.136300 1.7000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5099000.          0.131600 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5111000.          0.130600 1.3000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5120000.          0.132600 1.0000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5142000.          0.129400 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5151000.          0.126100 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5162000.          0.127800 1.3000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5204000.          0.123600 1.2000-3-0.500003                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    4989000.          0.096300 1.3000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    4997000.          0.096000 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5004000.          0.096300 8.0000-4-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5012000.          0.096300 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5019000.          0.093100 1.0000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5031000.          0.098800 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5040000.          0.093800 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5050000.          0.101000 8.0000-4-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5054000.          0.104000 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5066000.          0.101000 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5070000.          0.089900 1.3000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5075000.          0.070600 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5083000.          0.070100 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5092000.          0.077300 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5102000.          0.076800 1.3000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5123000.          0.085700 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5143000.          0.082900 1.5000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5154000.          0.082500 1.3000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5164000.          0.083200 1.2000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5205000.          0.083000 1.3000-3-0.766047                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    4988000.          0.079700 1.2000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    4997000.          0.079900 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5010000.          0.081600 1.3000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5020000.          0.076400 8.0000-4-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5029000.          0.083100 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5040000.          0.081600 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5051000.          0.082200 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5060000.          0.082600         -0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5071000.          0.066100 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5075000.          0.044900         -0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5081000.          0.048500 1.2000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5088000.          0.048400         -0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5091000.          0.052900 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5102000.          0.059800 1.3000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5112000.          0.060900         -0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5124000.          0.064600 1.2000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5142000.          0.062500 1.0000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5153000.          0.064500 1.3000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5164000.          0.064300 1.2000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+ 1001 38088   4   2    5204000.          0.064100 1.3000-3-0.939694                              W.Kretschmer,ET.AL. (71) O2380  3
+#/DATA      62
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O0169
 #AUTHOR1    S.D.Wassenaar+
 #YEAR       1989
@@ -1903,7 +1995,7 @@
 #+          W.Pairsuwan, J.W.Watson, H.V.Klapdor,
 #+          K.Grotz, J.Metzinger, C.C.Foster
 #REF-CODE   (J,BAP,17,787(BI7),1986)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.17, p.787(BI7), 1986
 #DATASETS   4
 #

@@ -702,7 +702,7 @@
 #REF-CODE   (J,NSE,116,125,1994)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.116, p.125, 1994
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    22291010
 #DATE       20150803
@@ -734,7 +734,7 @@
 #REF-CODE   (J,NP/A,185,614,197205)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.185, p.614, 1972
-#DATASETS   29
+#DATASETS   34
 #
 #DATASET    20536013
 #DATE       20101100
@@ -856,7 +856,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1089,15 +1089,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507034
-#DATE       19860702
+#DATE       20190805
 #REACTION   32-GE-70(N,G)32-GE-71,,SIG,,MXW
 #PROJ       1
 #TARG       32070
@@ -1109,7 +1109,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 32070   3 102    0.025300          3.250000 0.260000                                       H.POMERANCE (52)         11507 34
+    1 32070   3 102    0.025300          3.250000 0.260000                                       H.Pomerance (52)         11507 34
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1729,6 +1729,92 @@
 #/ENTRY
 #
 #
+#ENTRY      23454
+#AUTHOR1    A.Gawlik+
+#YEAR       2019
+#INSTITUTE  (3POLLOU)
+#TITLE      Measurement of the 70Ge(n,g) cross section up to
+#+          300 keV at the CERN nTOF facility
+#AUTHOR(S)  A.Gawlik, C.Lederer-Woods, J.Andrzejewski,
+#+          U.Battino, P.Ferreira, F.Gunsing,
+#+          S.Heinitz, M.Krticka, C.Massimi,
+#+          F.Mingrone, J.Perkowski, R.Reifarth,
+#+          A.Tattersall, S.Valenta, C.Weiss,
+#+          O.Aberle, L.Audouin, M.Bacak,
+#+          J.Balibrea, M.Barbagallo, S.Barros,
+#+          V.Becares, F.Becvar, C.Beinrucker,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, M.Caamano, F.Calvino,
+#+          M.Calviani, D.Cano-Ott, R.Cardella,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, N.Colonna,
+#+          G.Cortes, M.A.Cortes-Giraldo, L.Cosentino,
+#+          L.A.Damone, M.Diakaki, M.Dietz,
+#+          C.Domingo-Pardo, R.Dressler, E.Dupont,
+#+          I.Duran, B.Fernandez-Dominguez, A.Ferrari,
+#+          P.Finocchiaro, V.Furman, K.Goebel,
+#+          A.R.Garcia, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          C.Guerrero, H.Harada, T.Heftrich,
+#+          J.Heyse, D.G.Jenkins, E.Jericha,
+#+          F.Kaeppeler, Y.Kadi, T.Katabuchi,
+#+          P.Kavrigin, V.Ketlerov, V.Khryachkov,
+#+          A.Kimura, N.Kivel, I.Knapova,
+#+          M.Kokkoris, E.Leal-Cidoncha, H.Leeb,
+#+          J.Lerendegui-Marco, S.Lo Meo, S.J.Lonsdale,
+#+          R.Losito, D.Macina, J.Marganiec,
+#+          T.Martinez, P.Mastinu, M.Mastromarco,
+#+          F.Matteucci, E.A.Maugeri, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.Mirea,
+#+          S.Montesano, A.Musumarra, R.Nolte,
+#+          A.Oprea, N.Patronis, A.Pavlik,
+#+          J.I.Porras, J.Praena, J.M.Quesada,
+#+          K.Rajeev, T.Rauscher, A.Riego-Perez,
+#+          P.C.Rout, C.Rubbia, J.A.Ryan,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          S.Schmidt, D.Schumann, P.Sedyshev,
+#+          A.G.Smith, A.Stamatopoulos, G.Tagliente,
+#+          J.L.Tain, A.Tarifeno-Saldivia, L.Tassan-Got,
+#+          A.Tsinganis, G.Vannini, V.Variale,
+#+          P.Vaz, A.Ventura, V.Vlachoudis,
+#+          R.Vlastou, A.Wallner, S.Warren,
+#+          M.Weigand, C.Wolf, P.J.Woods,
+#+          T.Wright, P.Zugec
+#REF-CODE   (J,PR/C,100,045804,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.045804, 2019
+#DATASETS   5
+#
+#DATASET    23454008
+#DATE       20191001
+#REACTION   32-GE-70(N,G)32-GE-71,,SIG,,MXW
+#PROJ       1
+#TARG       32070
+#MF         3
+#MT         102
+#PRODUCT    32-GE-71
+#DATA-HDR   DATA
+#C4BEGIN    [    1 32070   3 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       11
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 32070   3 102 A  5000.000          0.212400 9.3000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  10000.00          0.159700 7.1000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  20000.00          0.115800 5.6000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  30000.00          0.094200 4.9000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  40000.00          0.080800 4.3000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  50000.00          0.071500 3.9000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  60000.00          0.064600 3.6000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  70000.00          0.059300 3.3000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  80000.00          0.055100 3.0000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  90000.00          0.051700 2.9000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+    1 32070   3 102 A  100000.0          0.048900 2.7000-3                                       A.Gawlik,ET.AL. (19)     23454  8
+#/DATA      11
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      22037
 #AUTHOR1    G.Walter+
 #YEAR       1984
@@ -1765,6 +1851,192 @@
     1 32070   3 102 D  40000.00          0.081000 5.0000-3                                       G.Walter,ET.AL. (84)     22037  3
     1 32070   3 102 D  50000.00          0.075000 4.0000-3                                       G.Walter,ET.AL. (84)     22037  3
 #/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23454
+#AUTHOR1    A.Gawlik+
+#YEAR       2019
+#INSTITUTE  (3POLLOU)
+#TITLE      Measurement of the 70Ge(n,g) cross section up to
+#+          300 keV at the CERN nTOF facility
+#AUTHOR(S)  A.Gawlik, C.Lederer-Woods, J.Andrzejewski,
+#+          U.Battino, P.Ferreira, F.Gunsing,
+#+          S.Heinitz, M.Krticka, C.Massimi,
+#+          F.Mingrone, J.Perkowski, R.Reifarth,
+#+          A.Tattersall, S.Valenta, C.Weiss,
+#+          O.Aberle, L.Audouin, M.Bacak,
+#+          J.Balibrea, M.Barbagallo, S.Barros,
+#+          V.Becares, F.Becvar, C.Beinrucker,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, M.Caamano, F.Calvino,
+#+          M.Calviani, D.Cano-Ott, R.Cardella,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, N.Colonna,
+#+          G.Cortes, M.A.Cortes-Giraldo, L.Cosentino,
+#+          L.A.Damone, M.Diakaki, M.Dietz,
+#+          C.Domingo-Pardo, R.Dressler, E.Dupont,
+#+          I.Duran, B.Fernandez-Dominguez, A.Ferrari,
+#+          P.Finocchiaro, V.Furman, K.Goebel,
+#+          A.R.Garcia, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          C.Guerrero, H.Harada, T.Heftrich,
+#+          J.Heyse, D.G.Jenkins, E.Jericha,
+#+          F.Kaeppeler, Y.Kadi, T.Katabuchi,
+#+          P.Kavrigin, V.Ketlerov, V.Khryachkov,
+#+          A.Kimura, N.Kivel, I.Knapova,
+#+          M.Kokkoris, E.Leal-Cidoncha, H.Leeb,
+#+          J.Lerendegui-Marco, S.Lo Meo, S.J.Lonsdale,
+#+          R.Losito, D.Macina, J.Marganiec,
+#+          T.Martinez, P.Mastinu, M.Mastromarco,
+#+          F.Matteucci, E.A.Maugeri, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.Mirea,
+#+          S.Montesano, A.Musumarra, R.Nolte,
+#+          A.Oprea, N.Patronis, A.Pavlik,
+#+          J.I.Porras, J.Praena, J.M.Quesada,
+#+          K.Rajeev, T.Rauscher, A.Riego-Perez,
+#+          P.C.Rout, C.Rubbia, J.A.Ryan,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          S.Schmidt, D.Schumann, P.Sedyshev,
+#+          A.G.Smith, A.Stamatopoulos, G.Tagliente,
+#+          J.L.Tain, A.Tarifeno-Saldivia, L.Tassan-Got,
+#+          A.Tsinganis, G.Vannini, V.Variale,
+#+          P.Vaz, A.Ventura, V.Vlachoudis,
+#+          R.Vlastou, A.Wallner, S.Warren,
+#+          M.Weigand, C.Wolf, P.J.Woods,
+#+          T.Wright, P.Zugec
+#REF-CODE   (J,PR/C,100,045804,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.045804, 2019
+#DATASETS   5
+#
+#DATASET    23454007
+#DATE       20191001
+#REACTION   32-GE-70(N,G)32-GE-71,,SIG
+#PROJ       1
+#TARG       32070
+#MF         3
+#MT         102
+#PRODUCT    32-GE-71
+#DATA-HDR   DATA
+#C4BEGIN    [    1 32070   3 102 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       111
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 32070   3 102 A  24923.40          0.080355 5.6952-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  25499.60          0.123962 6.3688-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  26089.20          0.087976 5.6212-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  26692.30          0.118507 5.5884-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  27309.30          0.158042 5.9941-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  27940.50          0.193008 6.5594-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  28586.30          0.046498 5.1537-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  29246.90          0.114650 6.4194-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  29922.70          0.121578 5.3484-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  30614.10          0.081990 5.0151-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  31321.30          0.072117 5.0555-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  32044.90          0.151539 5.6681-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  32785.10          0.063982 6.0540-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  33542.30          0.039784 7.9397-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  34316.90          0.065965 8.7059-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  35109.40          0.061844 8.8725-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  35920.00          0.142286 0.010243                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  36749.30          0.129219 6.6438-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  37597.70          0.097072 5.7430-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  38465.50          0.081321 6.8148-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  39353.30          0.087645 7.1862-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  40261.50          0.085328 7.1427-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  41190.60          0.103424 6.1456-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  42141.00          0.093338 4.6231-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  43113.20          0.058841 7.9318-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  44107.70          0.062686 4.7373-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  45125.10          0.077703 4.6106-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  46165.80          0.060712 4.7130-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  47230.30          0.060200 5.1323-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  48319.30          0.104321 4.6417-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  49433.30          0.071106 5.7942-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  50572.90          0.080148 4.3471-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  51738.50          0.069706 5.2901-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  52930.90          0.050728 3.7363-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  54150.70          0.082391 4.1066-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  55398.30          0.057544 4.1079-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  56674.60          0.079782 3.9363-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  57980.10          0.048531 3.4412-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  59315.50          0.058331 4.1387-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  60681.50          0.048306 4.1794-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  62078.80          0.073637 3.6166-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  63508.10          0.055749 3.0965-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  64970.00          0.065626 3.3957-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  66465.40          0.068891 3.3079-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  67995.10          0.041067 3.6560-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  69559.70          0.066020 3.4233-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  71160.10          0.073079 3.1499-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  72797.10          0.055294 5.3250-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  74471.50          0.075476 3.0432-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  76184.10          0.064517 3.4831-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  77936.00          0.041139 4.2570-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  79727.80          0.057196 4.1917-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  81560.50          0.051915 4.9046-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  83435.10          0.053387 4.0915-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  85352.50          0.058662 3.6009-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  87313.70          0.042702 3.4171-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  89319.60          0.061094 3.9851-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  91371.30          0.065981 3.7770-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  93469.70          0.077456 3.5831-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  95616.00          0.045024 3.7777-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  97811.30          0.056949 3.6504-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  100057.0          0.048262 2.9142-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  102353.0          0.046400 3.4322-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  104702.0          0.044420 2.4587-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  107104.0          0.043260 3.9285-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  109561.0          0.045093 2.8501-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  112074.0          0.045362 2.8016-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  114644.0          0.041336 3.0163-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  117272.0          0.048685 2.8252-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  119961.0          0.037324 3.0552-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  122710.0          0.042271 2.4126-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  125522.0          0.048658 2.5498-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  128398.0          0.042034 2.1903-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  131339.0          0.038876 1.8641-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  134347.0          0.050708 3.0350-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  137423.0          0.041636 1.8459-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  140569.0          0.041145 2.5789-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  143786.0          0.043344 2.3618-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  147077.0          0.040909 2.2127-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  150442.0          0.037345 2.7012-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  153883.0          0.041651 2.7736-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  157403.0          0.039707 2.3296-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  161002.0          0.032418 2.2635-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  164683.0          0.036291 2.1546-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  168447.0          0.029384 1.8890-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  172296.0          0.036179 1.8914-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  176232.0          0.037573 2.4508-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  180257.0          0.035580 2.4224-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  184374.0          0.035136 1.4887-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  188583.0          0.031525 1.4784-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  192888.0          0.031813 1.6207-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  197290.0          0.033545 2.0506-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  201791.0          0.028660 1.5551-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  206394.0          0.034342 1.8681-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  211100.0          0.024073 2.1286-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  215913.0          0.025875 1.6425-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  220835.0          0.030096 1.3449-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  225867.0          0.026545 1.2943-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  231013.0          0.027966 1.2350-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  236275.0          0.030177 1.4248-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  241655.0          0.030504 1.7679-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  247156.0          0.028850 1.5455-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  252781.0          0.029427 1.2043-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  258533.0          0.024591 1.0506-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  264414.0          0.023967 1.2658-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  270427.0          0.024619 1.5201-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  276576.0          0.026400 1.7306-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  282862.0          0.021967 1.3410-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  289289.0          0.024425 1.1364-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  295861.0          0.024686 1.2582-3                                       A.Gawlik,ET.AL. (19)     23454  7
+    1 32070   3 102 A  302580.0          0.024755 9.6706-4                                       A.Gawlik,ET.AL. (19)     23454  7
+#/DATA      111
 #/DATASET
 #/ENTRY
 #
@@ -2174,16 +2446,16 @@
 #AUTHOR1    S.M.Qaim+
 #YEAR       1973
 #INSTITUTE  (2GERJUL)
-#TITLE      -A SYSTEMATIC INVESTIGATION OF (N,T) REACTIONS AT 14 TO
-#+          15 MEV ON MEDIUM AND HEAVY MASS NUCLEI.-
+#TITLE      A systematic investigation of (n,t) reactions at 14
+#+          to 15 MeV on medium and heavy mass nuclei
 #AUTHOR(S)  S.M.Qaim, G.L.Stoecklin
-#REF-CODE   (J,JIN,35,19,7301)
+#REF-CODE   (J,JIN,35,19,1973)
 #REFERENCE  Jour. Journal of Inorganic and Nuclear Chemistry
 #+          Vol.35, p.19, 1973
-#DATASETS   11
+#DATASETS   12
 #
 #DATASET    20522009
-#DATE       19840104
+#DATE       20200901
 #REACTION   32-GE-70(N,T)31-GA-68,,SIG
 #PROJ       1
 #TARG       32070
@@ -2195,7 +2467,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 32070   3 105    1.4700+7 300000.0 3.6000-5 1.0000-5                                       S.M.QAIM,ET.AL. (73)     20522  9
+    1 32070   3 105    1.4700+7          3.6000-5 1.0000-5                                       S.M.Qaim,ET.AL. (73)     20522  9
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2315,16 +2587,16 @@
 #AUTHOR1    W.Breunlich+
 #YEAR       1971
 #INSTITUTE  (2AUSIRK)
-#TITLE      -DETERMINATION OF (N,N+G) CROSS SECTIONS FOR 14.4 MEV
-#+          NEUTRONS IN THE MASS RANGE A=46 TO 88 -. (IN GERMAN)
-#AUTHOR(S)  W.Breunlich, G.Stengel
-#REF-CODE   (J,ZN/A,26,451,7103)
+#TITLE      Determination of (n,n+gamma) cross sections for
+#+          14.4 MeV neutrons in the mass range A=46 to 88
+#AUTHOR(S)  W.Breunlich, G.Stengel, H.Vonach
+#REF-CODE   (J,ZN/A,26,451,1971)
 #REFERENCE  Jour. Zeitschrift fuer Naturforschung, Section A
 #+          Vol.26, p.451, 1971
 #DATASETS   19
 #
 #DATASET    21286012
-#DATE       19800102
+#DATE       20200805
 #REACTION   32-GE-70(N,INL)32-GE-70,PAR,SIG,G
 #PROJ       1
 #TARG       32070
@@ -2336,7 +2608,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 32070   39000    1.4400+7 300000.0 0.800000 0.147000               0.9 1040000.          E2W.BREUNLICH,ET.AL. (71)  21286 12
+    1 32070   39000    1.4400+7          0.800000 0.049000               0.9 1040000.          E2W.Breunlich,ET.AL. (71)  21286 12
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2901,7 +3173,7 @@
 #TITLE      TOTAL CROSS SECTIONS OF GE70,72,74,76, CU63, CO59.
 #AUTHOR(S)  W.M.Good, P.D.Miller, J.H.Neiler
 #REF-CODE   (J,BAP,5,449(K2),6011)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.5, p.449(K2), 1960
 #DATASETS   7
 #
@@ -2963,6 +3235,265 @@
     1 32070 4026001                      1039.000 85.00000                                       E.M.BOWEY (57)           21117  2
     1 32070 4026001                      1457.000 140.0000                                       E.M.BOWEY (57)           21117  2
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23454
+#AUTHOR1    A.Gawlik+
+#YEAR       2019
+#INSTITUTE  (3POLLOU)
+#TITLE      Measurement of the 70Ge(n,g) cross section up to
+#+          300 keV at the CERN nTOF facility
+#AUTHOR(S)  A.Gawlik, C.Lederer-Woods, J.Andrzejewski,
+#+          U.Battino, P.Ferreira, F.Gunsing,
+#+          S.Heinitz, M.Krticka, C.Massimi,
+#+          F.Mingrone, J.Perkowski, R.Reifarth,
+#+          A.Tattersall, S.Valenta, C.Weiss,
+#+          O.Aberle, L.Audouin, M.Bacak,
+#+          J.Balibrea, M.Barbagallo, S.Barros,
+#+          V.Becares, F.Becvar, C.Beinrucker,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, M.Caamano, F.Calvino,
+#+          M.Calviani, D.Cano-Ott, R.Cardella,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, N.Colonna,
+#+          G.Cortes, M.A.Cortes-Giraldo, L.Cosentino,
+#+          L.A.Damone, M.Diakaki, M.Dietz,
+#+          C.Domingo-Pardo, R.Dressler, E.Dupont,
+#+          I.Duran, B.Fernandez-Dominguez, A.Ferrari,
+#+          P.Finocchiaro, V.Furman, K.Goebel,
+#+          A.R.Garcia, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          C.Guerrero, H.Harada, T.Heftrich,
+#+          J.Heyse, D.G.Jenkins, E.Jericha,
+#+          F.Kaeppeler, Y.Kadi, T.Katabuchi,
+#+          P.Kavrigin, V.Ketlerov, V.Khryachkov,
+#+          A.Kimura, N.Kivel, I.Knapova,
+#+          M.Kokkoris, E.Leal-Cidoncha, H.Leeb,
+#+          J.Lerendegui-Marco, S.Lo Meo, S.J.Lonsdale,
+#+          R.Losito, D.Macina, J.Marganiec,
+#+          T.Martinez, P.Mastinu, M.Mastromarco,
+#+          F.Matteucci, E.A.Maugeri, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.Mirea,
+#+          S.Montesano, A.Musumarra, R.Nolte,
+#+          A.Oprea, N.Patronis, A.Pavlik,
+#+          J.I.Porras, J.Praena, J.M.Quesada,
+#+          K.Rajeev, T.Rauscher, A.Riego-Perez,
+#+          P.C.Rout, C.Rubbia, J.A.Ryan,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          S.Schmidt, D.Schumann, P.Sedyshev,
+#+          A.G.Smith, A.Stamatopoulos, G.Tagliente,
+#+          J.L.Tain, A.Tarifeno-Saldivia, L.Tassan-Got,
+#+          A.Tsinganis, G.Vannini, V.Variale,
+#+          P.Vaz, A.Ventura, V.Vlachoudis,
+#+          R.Vlastou, A.Wallner, S.Warren,
+#+          M.Weigand, C.Wolf, P.J.Woods,
+#+          T.Wright, P.Zugec
+#REF-CODE   (J,PR/C,100,045804,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.045804, 2019
+#DATASETS   5
+#
+#DATASET    234540042
+#DATE       20191001
+#REACTION   32-GE-70(N,G),,WID/STR,,RM
+#PROJ       1
+#TARG       32070
+#MF         402
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 32070 4026001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       110
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 32070 4026001 D                    0.058000 2.0000-3                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    150.5000 5.700000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    140.9000 0.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    11.50000 0.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    24.00000 0.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    29.80000 0.400000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    7.600000 0.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    9.800000 0.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    46.60000 0.800000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    24.20000 0.500000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    11.50000 0.400000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    3.500000 0.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    60.30000 1.000000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    150.5000 2.100000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    5.800000 0.400000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    45.50000 1.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    271.0000 4.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    45.60000 2.500000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    17.20000 0.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    232.4000 4.000000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    120.5000 4.800000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    99.80000 4.000000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    36.80000 1.500000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    154.4000 5.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    41.20000 3.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    208.8000 6.800000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    67.50000 4.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    148.5000 6.700000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    241.5000 6.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    56.00000 3.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    42.70000 2.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    242.8000 7.600000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    237.4000 7.700000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    28.40000 2.100000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    232.0000 6.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    46.40000 2.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    253.0000 8.600000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    148.4000 5.100000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    206.0000 13.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    168.2000 8.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    194.0000 11.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    47.20000 5.100000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    121.7000 5.700000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    117.2000 5.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    30.60000 2.600000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    223.8000 8.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    326.0000 10.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    222.0000 15.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    136.5000 7.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    183.9000 8.800000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    268.0000 17.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    225.0000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    45.50000 3.600000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    41.10000 3.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    186.3000 9.700000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    362.0000 28.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    278.0000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    254.0000 28.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    209.0000 11.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    59.30000 5.200000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    278.0000 14.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    159.7000 7.800000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    88.60000 6.400000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    117.0000 22.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    127.0000 58.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    267.0000 26.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    188.0000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    190.0000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    53.90000 6.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    150.1000 9.800000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    440.0000 32.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    167.0000 13.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    329.0000 15.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    101.5000 8.300000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    293.0000 16.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    94.20000 8.900000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    111.0000 10.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    272.0000 19.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    358.0000 16.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    115.0000 10.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    554.0000 56.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    320.0000 17.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    402.0000 21.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    254.0000 15.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    493.0000 32.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    381.0000 19.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    181.0000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    360.0000 16.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    116.0000 13.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    388.0000 27.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    208.0000 18.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    172.0000 22.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    125.0000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    94.00000 12.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    212.0000 23.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    121.0000 21.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    121.0000 30.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    456.0000 49.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    88.00000 21.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    423.0000 49.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    330.0000 40.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    219.0000 35.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    207.0000 30.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    343.0000 33.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    347.0000 50.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    208.0000 24.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    146.0000 25.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    177.0000 18.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    464.0000 200.0000                                       A.Gawlik,ET.AL. (19)     23454  42
+    1 32070 4026001 D                    315.0000 39.00000                                       A.Gawlik,ET.AL. (19)     23454  42
+#/DATA      110
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23454
+#AUTHOR1    A.Gawlik+
+#YEAR       2019
+#INSTITUTE  (3POLLOU)
+#TITLE      Measurement of the 70Ge(n,g) cross section up to
+#+          300 keV at the CERN nTOF facility
+#AUTHOR(S)  A.Gawlik, C.Lederer-Woods, J.Andrzejewski,
+#+          U.Battino, P.Ferreira, F.Gunsing,
+#+          S.Heinitz, M.Krticka, C.Massimi,
+#+          F.Mingrone, J.Perkowski, R.Reifarth,
+#+          A.Tattersall, S.Valenta, C.Weiss,
+#+          O.Aberle, L.Audouin, M.Bacak,
+#+          J.Balibrea, M.Barbagallo, S.Barros,
+#+          V.Becares, F.Becvar, C.Beinrucker,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, M.Caamano, F.Calvino,
+#+          M.Calviani, D.Cano-Ott, R.Cardella,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, N.Colonna,
+#+          G.Cortes, M.A.Cortes-Giraldo, L.Cosentino,
+#+          L.A.Damone, M.Diakaki, M.Dietz,
+#+          C.Domingo-Pardo, R.Dressler, E.Dupont,
+#+          I.Duran, B.Fernandez-Dominguez, A.Ferrari,
+#+          P.Finocchiaro, V.Furman, K.Goebel,
+#+          A.R.Garcia, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          C.Guerrero, H.Harada, T.Heftrich,
+#+          J.Heyse, D.G.Jenkins, E.Jericha,
+#+          F.Kaeppeler, Y.Kadi, T.Katabuchi,
+#+          P.Kavrigin, V.Ketlerov, V.Khryachkov,
+#+          A.Kimura, N.Kivel, I.Knapova,
+#+          M.Kokkoris, E.Leal-Cidoncha, H.Leeb,
+#+          J.Lerendegui-Marco, S.Lo Meo, S.J.Lonsdale,
+#+          R.Losito, D.Macina, J.Marganiec,
+#+          T.Martinez, P.Mastinu, M.Mastromarco,
+#+          F.Matteucci, E.A.Maugeri, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.Mirea,
+#+          S.Montesano, A.Musumarra, R.Nolte,
+#+          A.Oprea, N.Patronis, A.Pavlik,
+#+          J.I.Porras, J.Praena, J.M.Quesada,
+#+          K.Rajeev, T.Rauscher, A.Riego-Perez,
+#+          P.C.Rout, C.Rubbia, J.A.Ryan,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          S.Schmidt, D.Schumann, P.Sedyshev,
+#+          A.G.Smith, A.Stamatopoulos, G.Tagliente,
+#+          J.L.Tain, A.Tarifeno-Saldivia, L.Tassan-Got,
+#+          A.Tsinganis, G.Vannini, V.Variale,
+#+          P.Vaz, A.Ventura, V.Vlachoudis,
+#+          R.Vlastou, A.Wallner, S.Warren,
+#+          M.Weigand, C.Wolf, P.J.Woods,
+#+          T.Wright, P.Zugec
+#REF-CODE   (J,PR/C,100,045804,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.045804, 2019
+#DATASETS   5
+#
+#DATASET    23454006
+#DATE       20191001
+#REACTION   32-GE-70(N,0),,D
+#PROJ       1
+#TARG       32070
+#MF         402
+#MT         6004
+#DATA-HDR   DATA
+#C4BEGIN    [    1 32070 4026004 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 32070 4026004 A                    830.0000 100.0000 0.000000                              A.Gawlik,ET.AL. (19)     23454  6
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -3198,6 +3729,81 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 32070 4036001    14857.50 13742.50 2.3000-4 1.0000-4 0.000000                              KH.MALETSKI,ET.AL. (68)  40023  4
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23454
+#AUTHOR1    A.Gawlik+
+#YEAR       2019
+#INSTITUTE  (3POLLOU)
+#TITLE      Measurement of the 70Ge(n,g) cross section up to
+#+          300 keV at the CERN nTOF facility
+#AUTHOR(S)  A.Gawlik, C.Lederer-Woods, J.Andrzejewski,
+#+          U.Battino, P.Ferreira, F.Gunsing,
+#+          S.Heinitz, M.Krticka, C.Massimi,
+#+          F.Mingrone, J.Perkowski, R.Reifarth,
+#+          A.Tattersall, S.Valenta, C.Weiss,
+#+          O.Aberle, L.Audouin, M.Bacak,
+#+          J.Balibrea, M.Barbagallo, S.Barros,
+#+          V.Becares, F.Becvar, C.Beinrucker,
+#+          E.Berthoumieux, J.Billowes, D.Bosnar,
+#+          M.Brugger, M.Caamano, F.Calvino,
+#+          M.Calviani, D.Cano-Ott, R.Cardella,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, N.Colonna,
+#+          G.Cortes, M.A.Cortes-Giraldo, L.Cosentino,
+#+          L.A.Damone, M.Diakaki, M.Dietz,
+#+          C.Domingo-Pardo, R.Dressler, E.Dupont,
+#+          I.Duran, B.Fernandez-Dominguez, A.Ferrari,
+#+          P.Finocchiaro, V.Furman, K.Goebel,
+#+          A.R.Garcia, T.Glodariu, I.F.Goncalves,
+#+          E.Gonzalez-Romero, A.Goverdovski, E.Griesmayer,
+#+          C.Guerrero, H.Harada, T.Heftrich,
+#+          J.Heyse, D.G.Jenkins, E.Jericha,
+#+          F.Kaeppeler, Y.Kadi, T.Katabuchi,
+#+          P.Kavrigin, V.Ketlerov, V.Khryachkov,
+#+          A.Kimura, N.Kivel, I.Knapova,
+#+          M.Kokkoris, E.Leal-Cidoncha, H.Leeb,
+#+          J.Lerendegui-Marco, S.Lo Meo, S.J.Lonsdale,
+#+          R.Losito, D.Macina, J.Marganiec,
+#+          T.Martinez, P.Mastinu, M.Mastromarco,
+#+          F.Matteucci, E.A.Maugeri, E.Mendoza,
+#+          A.Mengoni, P.M.Milazzo, M.Mirea,
+#+          S.Montesano, A.Musumarra, R.Nolte,
+#+          A.Oprea, N.Patronis, A.Pavlik,
+#+          J.I.Porras, J.Praena, J.M.Quesada,
+#+          K.Rajeev, T.Rauscher, A.Riego-Perez,
+#+          P.C.Rout, C.Rubbia, J.A.Ryan,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          S.Schmidt, D.Schumann, P.Sedyshev,
+#+          A.G.Smith, A.Stamatopoulos, G.Tagliente,
+#+          J.L.Tain, A.Tarifeno-Saldivia, L.Tassan-Got,
+#+          A.Tsinganis, G.Vannini, V.Variale,
+#+          P.Vaz, A.Ventura, V.Vlachoudis,
+#+          R.Vlastou, A.Wallner, S.Warren,
+#+          M.Weigand, C.Wolf, P.J.Woods,
+#+          T.Wright, P.Zugec
+#REF-CODE   (J,PR/C,100,045804,2019)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.100, p.045804, 2019
+#DATASETS   5
+#
+#DATASET    23454005
+#DATE       20191001
+#REACTION   32-GE-70(N,G),,WID,,AV
+#PROJ       1
+#TARG       32070
+#MF         405
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 32070 4056001 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 32070 4056001 A                    0.205000 0.012000                                       A.Gawlik,ET.AL. (19)     23454  5
 #/DATA      1
 #/DATASET
 #/ENTRY

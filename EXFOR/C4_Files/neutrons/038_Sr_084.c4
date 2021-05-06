@@ -317,7 +317,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -771,10 +771,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    22892013
-#DATE       20060704
+#DATE       20200904
 #REACTION   38-SR-84(N,G)38-SR-85,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       38084
@@ -818,10 +818,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    228920081
-#DATE       20101105
+#DATE       20200904
 #REACTION   38-SR-84(N,G)38-SR-85-G,,SIG,,MXW
 #PROJ       1
 #TARG       38084
@@ -829,12 +829,11 @@
 #MT         102
 #PRODUCT    38-SR-85-G
 #DATA-HDR   DATA
-#C4BEGIN    [    1 38084   3 102GC ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 38084   3 102G  ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 38084   3 102GC  25000.00          0.112000 8.8480-3                                       I.Dillmann,ET.AL. (06)   22892  81
+    1 38084   3 102G   25000.00          0.112000 8.0000-3                                       I.Dillmann,ET.AL. (06)   22892  81
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -851,10 +850,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    228920082
-#DATE       20101105
+#DATE       20200904
 #REACTION   38-SR-84(N,G)38-SR-85-M,,SIG,,MXW
 #PROJ       1
 #TARG       38084
@@ -862,12 +861,11 @@
 #MT         102
 #PRODUCT    38-SR-85-M
 #DATA-HDR   DATA
-#C4BEGIN    [    1 38084   3 102MC ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 38084   3 102M  ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 38084   3 102MC  25000.00          0.189000 0.014931                                       I.Dillmann,ET.AL. (06)   22892  82
+    1 38084   3 102M   25000.00          0.189000 0.010000                                       I.Dillmann,ET.AL. (06)   22892  82
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -884,10 +882,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    22892009
-#DATE       20070201
+#DATE       20200904
 #REACTION   38-SR-84(N,G)38-SR-85,,SIG,,MXW
 #PROJ       1
 #TARG       38084
@@ -947,44 +945,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
-#
-#DATASET    22892016
-#DATE       20070201
-#REACTION   38-SR-84(N,G)38-SR-85,,SIG,,,DERIV
-#PROJ       1
-#TARG       38084
-#MF         3
-#MT         102
-#PRODUCT    38-SR-85
-#DATA-HDR   DATA
-#C4BEGIN    [    1 38084   3 102 D ]
-#X4STATUS   [DEP  ] Dependent data
-#X4DATATYPE [DERIV] Derived data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 38084   3 102 D  30000.00          0.300000 0.017000                                       I.Dillmann,ET.AL. (06)   22892 16
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22892
-#AUTHOR1    I.Dillmann+
-#YEAR       2006
-#INSTITUTE  (2GERKFK)
-#TITLE      Experimental (n,gamma) cross section of the p-process
-#+          nuclei Se-74 and Sr-84
-#AUTHOR(S)  I.Dillmann, M.Heil, F.Kaeppeler,
-#+          T.Rauscher, F.-K.Thielemann
-#REF-CODE   (J,PR/C,73,015803,2006)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    22892017
-#DATE       20070201
+#DATE       20200904
 #REACTION   38-SR-84(N,G)38-SR-85-M,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       38084
@@ -992,13 +956,13 @@
 #MT         102
 #PRODUCT    38-SR-85-M
 #DATA-HDR   DATA
-#C4BEGIN    [    1 38084   3 102MC ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 38084   3 102MD ]
+#X4STATUS   [DEP  ] Dependent data
 #X4DATATYPE [DERIV] Derived data
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 38084   3 102MC  30000.00          0.190000 0.010000                                       I.Dillmann,ET.AL. (06)   22892 17
+    1 38084   3 102MD  30000.00          0.190000 0.010000                                       I.Dillmann,ET.AL. (06)   22892 17
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1136,12 +1100,12 @@
 #AUTHOR1    Yu.N.Trofimov
 #YEAR       1987
 #INSTITUTE  (4RUSRI)
-#TITLE      Activation cross-sections for 31 nuclei at the
-#+          neutron energy 2 MeV .
+#TITLE      Activation cross-sections for 31 nuclei for 2 MeV
+#+          neutrons
 #AUTHOR(S)  Yu.N.Trofimov
-#REF-CODE   (J,YK,1987,(4),10,1987)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
-#+          Vol.1987, Issue.4, p.10, 1987
+#REF-CODE   (J,YK,,(4),10,1987)
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+#+          Issue.4, p.10, 1987
 #DATASETS   31
 #
 #DATASET    40975006
@@ -1265,7 +1229,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1291,6 +1255,39 @@
 #/ENTRY
 #
 #
+#ENTRY      20513
+#AUTHOR1    S.M.Qaim+
+#YEAR       1974
+#INSTITUTE  (2GERJUL)
+#TITLE      Measurement and systematics of cross sections for
+#+          common and low yield 14 MeV neutron induced nuclear
+#+          reactions on structural FR-material and transmuted
+#+          species
+#AUTHOR(S)  S.M.Qaim, G.Stoecklin
+#REF-CODE   (R,EUR-5182,939,1974)
+#REFERENCE  Rept. Euratom Reports
+#+          No.5182, p.939, 1974
+#DATASETS   31
+#
+#DATASET    20513007
+#DATE       20200901
+#REACTION   38-SR-84(N,X)37-RB-83,,SIG
+#PROJ       1
+#TARG       38084
+#MF         3
+#MT         9000
+#PRODUCT    37-RB-83
+#DATA-HDR   DATA
+#C4BEGIN    [    1 38084   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 38084   39000    1.4700+7          0.120000 1.0000-2           37083.9                     S.M.Qaim,ET.AL. (74)     20513  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      22637
 #AUTHOR1    C.Konno+
 #YEAR       1993
@@ -1299,28 +1296,28 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
 #
 #DATASET    22637030
-#DATE       20080204
-#REACTION   (38-SR-84(N,N+P)37-RB-83,,SIG)+(38-SR-84(N,D)37-RB-83,,SIG)
+#DATE       20200900
+#REACTION   38-SR-84(N,X)37-RB-83,,SIG
 #PROJ       1
 #TARG       38084
 #MF         3
-#MT         1003
+#MT         9000
 #PRODUCT    37-RB-83
 #DATA-HDR   DATA
-#C4BEGIN    [    1 38084   31003 D ]
+#C4BEGIN    [    1 38084   39000 D ]
 #X4STATUS   [DEP  ] Dependent data
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 38084   31003 D  1.4950+7          0.130000 0.100000                                       C.Konno,ET.AL. (93)      22637 30
-    1 38084   31003 D  1.3990+7          0.104000 0.071000                                       C.Konno,ET.AL. (93)      22637 30
-    1 38084   31003 D  1.3340+7          0.087000 0.041000                                       C.Konno,ET.AL. (93)      22637 30
+    1 38084   39000 D  1.4950+7          0.130000 0.100000           37083.9                     C.Konno,ET.AL. (93)      22637 30
+    1 38084   39000 D  1.3990+7          0.104000 0.071000           37083.9                     C.Konno,ET.AL. (93)      22637 30
+    1 38084   39000 D  1.3340+7          0.087000 0.041000           37083.9                     C.Konno,ET.AL. (93)      22637 30
 #/DATA      3
 #/DATASET
 #/ENTRY

@@ -802,6 +802,40 @@
 #/ENTRY
 #
 #
+#ENTRY      D8014
+#AUTHOR1    V.Yu.Gonchar+
+#YEAR       1969
+#INSTITUTE  (4KASKAZ)
+#TITLE      Analytical method for angular distribution of
+#+          break-up reaction
+#AUTHOR(S)  V.Yu.Gonchar, A.V.Yushkov
+#REF-CODE   (J,IZK,,(4),34,1969)
+#REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
+#+          Issue.4, p.34, 1969
+#DATASETS   5
+#
+#DATASET    D8014002
+#DATE       20200300
+#REACTION   1-H-1(D,EL)1-H-1,,DA
+#PROJ       1002
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002  1001   4   2  C]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002  1001   4   2  C 1.9000+7          3.5000-3         -0.275640                              V.Yu.Gonchar,ET.AL. (69) D8014  2
+ 1002  1001   4   2  C 1.9000+7          3.3800-3         -0.682001                              V.Yu.Gonchar,ET.AL. (69) D8014  2
+ 1002  1001   4   2  C 1.9000+7          5.3900-3         -0.788013                              V.Yu.Gonchar,ET.AL. (69) D8014  2
+ 1002  1001   4   2  C 1.9000+7          6.0100-3         -0.819154                              V.Yu.Gonchar,ET.AL. (69) D8014  2
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A1203
 #AUTHOR1    W.T.H.Van Oers+
 #YEAR       1960
@@ -1654,6 +1688,57 @@
 #/ENTRY
 #
 #
+#ENTRY      F1428
+#AUTHOR1    A.A.Terekhin+
+#YEAR       2019
+#INSTITUTE  (4ZZZDUB)
+#TITLE      The differential cross section in deuteron-proton
+#+          elastic scattering at 500, 750 and 900 MeV/nucleon.
+#AUTHOR(S)  A.A.Terekhin, V.P.Ladygin, Yu.V.Gurchin,
+#+          A.Yu.Isupov, M.Janek, A.N.Khrenov,
+#+          A.K.Kurilkin, P.K.Kurilkin, N.B.Ladygina,
+#+          S.M.Piyadin, S.G.Reznikov
+#REF-CODE   (J,EPJ/A,55,129,2019)
+#REFERENCE  Jour. European Physical Journal A: Hadrons and Nuclei
+#+          Vol.55, p.129, 2019
+#DATASETS   1
+#
+#DATASET    F1428002
+#DATE       20200703
+#REACTION   (1-H-1(D,EL)1-H-1,,DA)=(1-H-2(P,EL)1-H-2,,DA)
+#PROJ       1002
+#TARG       1001
+#MF         4
+#MT         2
+#PRODUCT    1-H-1;1-H-2
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002  1001   4   2 AC]
+#X4STATUS   [APRVD] Approved by author
+#DATA       17
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002  1001   4   2 AC 1.0000+9          6.1540-5 1.2800-6 0.243613                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.0000+9          5.7700-5 8.3000-7 0.151259                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.0000+9          3.4560-5 9.4000-7-0.284018                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.0000+9          3.5620-5 6.5000-7-0.382686                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.0000+9          3.3450-5 5.8000-7-0.449322                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.0000+9          3.4190-5 9.4000-7-0.495461                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.5000+9          2.5190-5 2.0700-6 0.192520                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.5000+9          2.4930-5 1.4100-6 0.109732                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.5000+9          1.8820-5 1.8800-6 0.020940                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.5000+9          1.8030-5 2.1000-6-0.068018                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.5000+9          1.4510-5 2.0800-6-0.151263                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.8000+9          1.7970-5 1.1700-6 0.243613                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.8000+9          1.0000-5 9.3000-7 0.064530                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.8000+9          5.2100-6 9.3000-7-0.111471                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.8000+9          3.4500-6 4.8000-7-0.201080                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.8000+9          4.3300-6 7.0000-7-0.245310                              A.A.Terekhin,ET.AL. (19) F1428  2
+ 1002  1001   4   2 AC 1.8000+9          3.1400-6 7.4000-7-0.364879                              A.A.Terekhin,ET.AL. (19) F1428  2
+#/DATA      17
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      D0606
 #AUTHOR1    D.Chiladze+
 #YEAR       2009
@@ -1845,6 +1930,50 @@
  1002  1001   4 103  C 8000000.          0.061000 3.6600-3-0.342023                              H.B.BURROWS,ET.AL. (51)  A1111  2
  1002  1001   4 103  C 8000000.          0.068000 4.0800-3-0.500003                              H.B.BURROWS,ET.AL. (51)  A1111  2
 #/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D8014
+#AUTHOR1    V.Yu.Gonchar+
+#YEAR       1969
+#INSTITUTE  (4KASKAZ)
+#TITLE      Analytical method for angular distribution of
+#+          break-up reaction
+#AUTHOR(S)  V.Yu.Gonchar, A.V.Yushkov
+#REF-CODE   (J,IZK,,(4),34,1969)
+#REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
+#+          Issue.4, p.34, 1969
+#DATASETS   5
+#
+#DATASET    D8014003
+#DATE       20200300
+#REACTION   1-H-1(D,P)1-H-2,,DA
+#PROJ       1002
+#TARG       1001
+#MF         4
+#MT         103
+#PRODUCT    1-H-2
+#DATA-HDR   DATA-CM
+#C4BEGIN    [ 1002  1001   4 103  C]
+#DATA       14
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002  1001   4 103  C 1.9000+7          0.022200          0.529918                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          0.017800          0.374605                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          0.012000          0.207910                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          9.2400-3          0.034897                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          6.5500-3         -0.173651                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          4.1200-3         -0.358371                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          3.7500-3         -0.422621                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          3.2500-3         -0.453993                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          2.6200-3         -0.484812                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          1.7300-3         -0.515041                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          1.6900-3         -0.544642                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          1.5300-3         -0.601818                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          1.8900-3         -0.629323                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+ 1002  1001   4 103  C 1.9000+7          2.0400-3         -0.682001                              V.Yu.Gonchar,ET.AL. (69) D8014  3
+#/DATA      14
 #/DATASET
 #/ENTRY
 #

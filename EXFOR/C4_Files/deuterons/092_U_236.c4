@@ -36,6 +36,38 @@
 #/ENTRY
 #
 #
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328009
+#DATE       20191201
+#REACTION   92-U-236(D,2N)93-NP-236,,SIG
+#PROJ       1002
+#TARG       92236
+#MF         3
+#MT         16
+#PRODUCT    93-NP-236
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1002 92236   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92236   3  16    1.3000+7          2.0000-7                                                N.L.Lark,ET.AL. (69)     O2328  9
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C0719
 #AUTHOR1    R.M.Lessler+
 #YEAR       1966
@@ -104,6 +136,38 @@
 #/ENTRY
 #
 #
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328010
+#DATE       20191201
+#REACTION   92-U-236(D,P)92-U-237,,SIG
+#PROJ       1002
+#TARG       92236
+#MF         3
+#MT         103
+#PRODUCT    92-U-237
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1002 92236   3 103   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92236   3 103    1.3000+7          2.0000-7                                                N.L.Lark,ET.AL. (69)     O2328 10
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O2034
 #AUTHOR1    R.Repnow+
 #YEAR       1970
@@ -137,6 +201,72 @@
  1002 92236   39000L   1.7990+7          5.0430-7 5.3530-8           92236.6                     R.Repnow,ET.AL. (70)     O2034  3
  1002 92236   39000L   2.0060+7          6.9140-7 1.3900-7           92236.6                     R.Repnow,ET.AL. (70)     O2034  3
 #/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2563
+#AUTHOR1    K.L.Wolf+
+#YEAR       1970
+#INSTITUTE  (1USAWAU)
+#TITLE      Spontaneous Fission Isomerism in Uranium Isotopes
+#AUTHOR(S)  K.L.Wolf, R.Vandenbosch, P.A.Russo,
+#+          M.K.Mehta, C.R.Rudy
+#REF-CODE   (J,PR/C,1,2096,1970)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.2096, 1970
+#DATASETS   5
+#
+#DATASET    C2563004
+#DATE       20200803
+#REACTION   92-U-236(D,X)92-U-236-L,,SIG
+#PROJ       1002
+#TARG       92236
+#MF         3
+#MT         9000
+#PRODUCT    92-U-236-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92236   39000L  ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92236   39000L   1.2984+7          2.0340-6 7.2800-7           92236.6                     K.L.Wolf,ET.AL. (70)     C2563  4
+ 1002 92236   39000L   1.6021+7          2.5660-6 9.0900-7           92236.6                     K.L.Wolf,ET.AL. (70)     C2563  4
+ 1002 92236   39000L   1.7007+7          6.0890-6 1.2730-6           92236.6                     K.L.Wolf,ET.AL. (70)     C2563  4
+ 1002 92236   39000L   1.9170+7          8.5150-6 1.6000-6           92236.6                     K.L.Wolf,ET.AL. (70)     C2563  4
+ 1002 92236   39000L   2.1014+7          1.3089-5 1.5280-6           92236.6                     K.L.Wolf,ET.AL. (70)     C2563  4
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2563
+#AUTHOR1    K.L.Wolf+
+#YEAR       1970
+#INSTITUTE  (1USAWAU)
+#TITLE      Spontaneous Fission Isomerism in Uranium Isotopes
+#AUTHOR(S)  K.L.Wolf, R.Vandenbosch, P.A.Russo,
+#+          M.K.Mehta, C.R.Rudy
+#REF-CODE   (J,PR/C,1,2096,1970)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.1, p.2096, 1970
+#DATASETS   5
+#
+#DATASET    C2563005
+#DATE       20200803
+#REACTION   92-U-236(D,X)92-U-236-L,,SIG
+#PROJ       1002
+#TARG       92236
+#MF         3
+#MT         9000
+#PRODUCT    92-U-236-L
+#DATA-HDR   DATA
+#C4BEGIN    [ 1002 92236   39000L  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1002 92236   39000L   1.8028+7          9.0290-6 1.5270-6           92236.6                     K.L.Wolf,ET.AL. (70)     C2563  5
+#/DATA      1
 #/DATASET
 #/ENTRY
 #

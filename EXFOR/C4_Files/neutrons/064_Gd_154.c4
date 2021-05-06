@@ -183,7 +183,7 @@
 #REF-CODE   (J,NP/A,224,319,197405)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.224, p.319, 1974
-#DATASETS   48
+#DATASETS   58
 #
 #DATASET    20541034
 #DATE       20080405
@@ -385,6 +385,37 @@
 #/ENTRY
 #
 #
+#ENTRY      20637
+#AUTHOR1    R.Dobrozemsky+
+#YEAR       1971
+#INSTITUTE  (2AUSSGA)
+#TITLE      Mass spectrometric determination of neutron capture
+#+          cross sections of rare earth isotopes
+#AUTHOR(S)  R.Dobrozemsky, F.Pichlmayer, F.P.Viehboeck
+#REF-CODE   (J,JMS,6,435,1971)
+#REFERENCE  Jour. Internat.J.of Mass Spectrometry and Ion Physics
+#+          Vol.6, p.435, 1971
+#DATASETS   13
+#
+#DATASET    20637006
+#DATE       20191106
+#REACTION   64-GD-154(N,G)64-GD-155,,SIG
+#PROJ       1
+#TARG       64154
+#MF         3
+#MT         102
+#PRODUCT    64-GD-155
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154   3 102   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154   3 102    0.025300          85.00000 12.00000                                       R.Dobrozemsky,ET.AL. (71)20637  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      V1002
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -392,7 +423,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -423,7 +454,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -443,6 +474,108 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 64154   3 102L   0.025300          0.049000 0.015000                                       S.F.Mughabghab (06)      V10022382
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23459
+#AUTHOR1    A.Mazzone+
+#YEAR       2020
+#INSTITUTE  (2ITYBAU)
+#TITLE      Measurement of the 154Gd(n,g) cross section and its
+#+          astrophysical implications
+#AUTHOR(S)  A.Mazzone, S.Cristallo, O.Aberle,
+#+          G.Alaerts, V.Alcayne, S.Amaducci,
+#+          J.Andrzejewski, L.Audouin, V.Babiano-Suarez,
+#+          M.Bacak, M.Barbagallo, V.Becares,
+#+          F.Becvar, G.Bellia, E.Berthoumieux,
+#+          J.Billowes, D.Bosnar, A.S.Brown,
+#+          M.Busso, M.Caamano, L.Caballero,
+#+          M.Calviani, F.Calvino, D.Cano-Ott,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, G.Clai,
+#+          N.Colonna, G.P.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, L.A.Damone, M.Diakaki,
+#+          M.Dietz, C.Domingo-Pardo, R.Dressler,
+#+          E.Dupont, I.Duran, Z.Eleme,
+#+          B.Fernandez-Domingez, A.Ferrari, I.Ferro-Goncalves,
+#+          P.Finocchiaro, V.Furman, R.Garg,
+#+          A.Gawlik, S.Gilardoni, T.Glodariu,
+#+          K.Goebel, E.Gonzalez-Romero, C.Guerrero,
+#+          F.Gunsing, S.Heinitz, J.Heyse,
+#+          D.G.Jenkins, E.Jericha, Y.Kadi,
+#+          F.Kaeppeler, A.Kimura, N.Kivel,
+#+          M.Kokkoris, Y.Kopatch, S.Kopecky,
+#+          M.Krticka, D.Kurtulgil, I.Ladarescu,
+#+          C.Lederer-Woods, J.Lerendegui-Marco, S.Lo Meo,
+#+          S.-J.Lonsdale, D.Macina, A.Manna,
+#+          T.Martinez, A.Masi, C.Massimi,
+#+          P.F.Mastinu, M.Mastromarco, F.Matteucci,
+#+          E.Maugeri, E.Mendoza, A.Mengoni,
+#+          V.Michalopoulou, P.M.Milazzo, F.Mingrone,
+#+          R.Mucciola, A.Musumarra, A.Negret,
+#+          R.Nolte, F.Ogallar, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          J.M.Quesada, D.Radeck, D.Ramos Doval,
+#+          R.Reifarth, D.Rochman, C.Rubbia,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          D.Schumann, A.G.Smith, N.Sosnin,
+#+          A.Stamatopoulos, G.Tagliente, J.L.Tain,
+#+          Z.Talip, A.E.Tarifeno-Saldivia, L.Tassan-Got,
+#+          P.Torres-Sanchez, A.Tsinganis, J.Ulrich,
+#+          S.Urlass, S.Valenta, G.Vannini,
+#+          V.Variale, P.Vaz, A.Ventura,
+#+          D.Vescovi, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, P.J.Woods, R.Wynants,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PL/B,804,135405,2020)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.804, p.135405, 2020
+#DATASETS   6
+#
+#DATASET    23459003
+#DATE       20200601
+#REACTION   64-GD-154(N,G)64-GD-155,,SIG,,AV
+#PROJ       1
+#TARG       64154
+#MF         3
+#MT         102
+#PRODUCT    64-GD-155
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       27
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154   3 102 D  2174.188          3.834664 0.096655                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  2613.015          3.464781 0.096844                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  3140.049          2.911185 0.085388                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  3773.868          2.669334 0.087997                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  4535.054          2.749578 0.078856                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  5449.546          2.205756 0.081584                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  6548.130          1.894123 0.078338                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  7867.827          1.870761 0.073820                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  9452.907          1.616661 0.069880                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  11356.68          1.323231 0.061785                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  13642.73          1.429000 0.055845                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  16386.90          1.200673 0.056552                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  19681.45          1.056555 0.050147                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  23636.12          0.950577 0.044970                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  28382.71          0.928836 0.040636                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  34078.55          0.734863 0.062536                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  40911.15          0.751750 0.047623                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  49107.45          0.640871 0.038861                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  58935.85          0.576083 0.032494                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  70719.64          0.601201 0.026807                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  84844.58          0.495174 0.034171                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  101768.3          0.548971 0.026651                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  122043.3          0.505132 0.020984                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  146308.8          0.446609 0.023048                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  175343.0          0.357377 0.017648                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  210075.2          0.352907 0.015840                                       A.Mazzone,ET.AL. (20)    23459  3
+    1 64154   3 102 D  251585.8          0.320015 0.011064                                       A.Mazzone,ET.AL. (20)    23459  3
+#/DATA      27
 #/DATASET
 #/ENTRY
 #
@@ -541,6 +674,93 @@
     1 64154   3 102 D  187500.0 12500.00 0.421300 6.7408-3                                       K.Wisshak,ET.AL. (95)    22386  9
     1 64154   3 102 D  212500.0 12500.00 0.415300 7.8907-3                                       K.Wisshak,ET.AL. (95)    22386  9
 #/DATA      18
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23459
+#AUTHOR1    A.Mazzone+
+#YEAR       2020
+#INSTITUTE  (2ITYBAU)
+#TITLE      Measurement of the 154Gd(n,g) cross section and its
+#+          astrophysical implications
+#AUTHOR(S)  A.Mazzone, S.Cristallo, O.Aberle,
+#+          G.Alaerts, V.Alcayne, S.Amaducci,
+#+          J.Andrzejewski, L.Audouin, V.Babiano-Suarez,
+#+          M.Bacak, M.Barbagallo, V.Becares,
+#+          F.Becvar, G.Bellia, E.Berthoumieux,
+#+          J.Billowes, D.Bosnar, A.S.Brown,
+#+          M.Busso, M.Caamano, L.Caballero,
+#+          M.Calviani, F.Calvino, D.Cano-Ott,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, G.Clai,
+#+          N.Colonna, G.P.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, L.A.Damone, M.Diakaki,
+#+          M.Dietz, C.Domingo-Pardo, R.Dressler,
+#+          E.Dupont, I.Duran, Z.Eleme,
+#+          B.Fernandez-Domingez, A.Ferrari, I.Ferro-Goncalves,
+#+          P.Finocchiaro, V.Furman, R.Garg,
+#+          A.Gawlik, S.Gilardoni, T.Glodariu,
+#+          K.Goebel, E.Gonzalez-Romero, C.Guerrero,
+#+          F.Gunsing, S.Heinitz, J.Heyse,
+#+          D.G.Jenkins, E.Jericha, Y.Kadi,
+#+          F.Kaeppeler, A.Kimura, N.Kivel,
+#+          M.Kokkoris, Y.Kopatch, S.Kopecky,
+#+          M.Krticka, D.Kurtulgil, I.Ladarescu,
+#+          C.Lederer-Woods, J.Lerendegui-Marco, S.Lo Meo,
+#+          S.-J.Lonsdale, D.Macina, A.Manna,
+#+          T.Martinez, A.Masi, C.Massimi,
+#+          P.F.Mastinu, M.Mastromarco, F.Matteucci,
+#+          E.Maugeri, E.Mendoza, A.Mengoni,
+#+          V.Michalopoulou, P.M.Milazzo, F.Mingrone,
+#+          R.Mucciola, A.Musumarra, A.Negret,
+#+          R.Nolte, F.Ogallar, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          J.M.Quesada, D.Radeck, D.Ramos Doval,
+#+          R.Reifarth, D.Rochman, C.Rubbia,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          D.Schumann, A.G.Smith, N.Sosnin,
+#+          A.Stamatopoulos, G.Tagliente, J.L.Tain,
+#+          Z.Talip, A.E.Tarifeno-Saldivia, L.Tassan-Got,
+#+          P.Torres-Sanchez, A.Tsinganis, J.Ulrich,
+#+          S.Urlass, S.Valenta, G.Vannini,
+#+          V.Variale, P.Vaz, A.Ventura,
+#+          D.Vescovi, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, P.J.Woods, R.Wynants,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PL/B,804,135405,2020)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.804, p.135405, 2020
+#DATASETS   6
+#
+#DATASET    23459006
+#DATE       20200601
+#REACTION   64-GD-154(N,G)64-GD-155,,SIG,,MXW
+#PROJ       1
+#TARG       64154
+#MF         3
+#MT         102
+#PRODUCT    64-GD-155
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154   3 102 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       12
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154   3 102 D  5000.000          2.160000 0.090000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  8000.000          1.820000 0.080000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  10000.00          1.590000 0.080000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  15000.00          1.270000 0.080000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  20000.00          1.080000 0.060000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  25000.00          0.970000 0.050000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  30000.00          0.880000 0.050000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  40000.00          0.770000 0.040000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  50000.00          0.690000 0.040000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  60000.00          0.640000 0.040000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  80000.00          0.560000 0.030000                                       A.Mazzone,ET.AL. (20)    23459  6
+    1 64154   3 102 D  100000.0          0.510000 0.030000                                       A.Mazzone,ET.AL. (20)    23459  6
+#/DATA      12
 #/DATASET
 #/ENTRY
 #
@@ -871,6 +1091,83 @@
 #/ENTRY
 #
 #
+#ENTRY      23459
+#AUTHOR1    A.Mazzone+
+#YEAR       2020
+#INSTITUTE  (2ITYBAU)
+#TITLE      Measurement of the 154Gd(n,g) cross section and its
+#+          astrophysical implications
+#AUTHOR(S)  A.Mazzone, S.Cristallo, O.Aberle,
+#+          G.Alaerts, V.Alcayne, S.Amaducci,
+#+          J.Andrzejewski, L.Audouin, V.Babiano-Suarez,
+#+          M.Bacak, M.Barbagallo, V.Becares,
+#+          F.Becvar, G.Bellia, E.Berthoumieux,
+#+          J.Billowes, D.Bosnar, A.S.Brown,
+#+          M.Busso, M.Caamano, L.Caballero,
+#+          M.Calviani, F.Calvino, D.Cano-Ott,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, G.Clai,
+#+          N.Colonna, G.P.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, L.A.Damone, M.Diakaki,
+#+          M.Dietz, C.Domingo-Pardo, R.Dressler,
+#+          E.Dupont, I.Duran, Z.Eleme,
+#+          B.Fernandez-Domingez, A.Ferrari, I.Ferro-Goncalves,
+#+          P.Finocchiaro, V.Furman, R.Garg,
+#+          A.Gawlik, S.Gilardoni, T.Glodariu,
+#+          K.Goebel, E.Gonzalez-Romero, C.Guerrero,
+#+          F.Gunsing, S.Heinitz, J.Heyse,
+#+          D.G.Jenkins, E.Jericha, Y.Kadi,
+#+          F.Kaeppeler, A.Kimura, N.Kivel,
+#+          M.Kokkoris, Y.Kopatch, S.Kopecky,
+#+          M.Krticka, D.Kurtulgil, I.Ladarescu,
+#+          C.Lederer-Woods, J.Lerendegui-Marco, S.Lo Meo,
+#+          S.-J.Lonsdale, D.Macina, A.Manna,
+#+          T.Martinez, A.Masi, C.Massimi,
+#+          P.F.Mastinu, M.Mastromarco, F.Matteucci,
+#+          E.Maugeri, E.Mendoza, A.Mengoni,
+#+          V.Michalopoulou, P.M.Milazzo, F.Mingrone,
+#+          R.Mucciola, A.Musumarra, A.Negret,
+#+          R.Nolte, F.Ogallar, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          J.M.Quesada, D.Radeck, D.Ramos Doval,
+#+          R.Reifarth, D.Rochman, C.Rubbia,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          D.Schumann, A.G.Smith, N.Sosnin,
+#+          A.Stamatopoulos, G.Tagliente, J.L.Tain,
+#+          Z.Talip, A.E.Tarifeno-Saldivia, L.Tassan-Got,
+#+          P.Torres-Sanchez, A.Tsinganis, J.Ulrich,
+#+          S.Urlass, S.Valenta, G.Vannini,
+#+          V.Variale, P.Vaz, A.Ventura,
+#+          D.Vescovi, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, P.J.Woods, R.Wynants,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PL/B,804,135405,2020)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.804, p.135405, 2020
+#DATASETS   6
+#
+#DATASET    23459004
+#DATE       20200601
+#REACTION   64-GD-154(N,0),,EN
+#PROJ       1
+#TARG       64154
+#MF         402
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154 4026001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154 4026001 D                    183.1700 0.020000                                       A.Mazzone,ET.AL. (20)    23459  4
+    1 64154 4026001 D                    197.6500 1.0000-2                                       A.Mazzone,ET.AL. (20)    23459  4
+    1 64154 4026001 D                    376.2600 1.0000-2                                       A.Mazzone,ET.AL. (20)    23459  4
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      40162
 #AUTHOR1    E.N.Karzhavina+
 #YEAR       1969
@@ -1003,6 +1300,81 @@
     1 64154 4026003    973.9600 0.680000 0.500000                                                Y.-R.Kang,ET.AL. (15)    14343  74
     1 64154 4026003    985.6000 0.600000 0.500000                                                Y.-R.Kang,ET.AL. (15)    14343  74
 #/DATA      62
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23459
+#AUTHOR1    A.Mazzone+
+#YEAR       2020
+#INSTITUTE  (2ITYBAU)
+#TITLE      Measurement of the 154Gd(n,g) cross section and its
+#+          astrophysical implications
+#AUTHOR(S)  A.Mazzone, S.Cristallo, O.Aberle,
+#+          G.Alaerts, V.Alcayne, S.Amaducci,
+#+          J.Andrzejewski, L.Audouin, V.Babiano-Suarez,
+#+          M.Bacak, M.Barbagallo, V.Becares,
+#+          F.Becvar, G.Bellia, E.Berthoumieux,
+#+          J.Billowes, D.Bosnar, A.S.Brown,
+#+          M.Busso, M.Caamano, L.Caballero,
+#+          M.Calviani, F.Calvino, D.Cano-Ott,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, G.Clai,
+#+          N.Colonna, G.P.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, L.A.Damone, M.Diakaki,
+#+          M.Dietz, C.Domingo-Pardo, R.Dressler,
+#+          E.Dupont, I.Duran, Z.Eleme,
+#+          B.Fernandez-Domingez, A.Ferrari, I.Ferro-Goncalves,
+#+          P.Finocchiaro, V.Furman, R.Garg,
+#+          A.Gawlik, S.Gilardoni, T.Glodariu,
+#+          K.Goebel, E.Gonzalez-Romero, C.Guerrero,
+#+          F.Gunsing, S.Heinitz, J.Heyse,
+#+          D.G.Jenkins, E.Jericha, Y.Kadi,
+#+          F.Kaeppeler, A.Kimura, N.Kivel,
+#+          M.Kokkoris, Y.Kopatch, S.Kopecky,
+#+          M.Krticka, D.Kurtulgil, I.Ladarescu,
+#+          C.Lederer-Woods, J.Lerendegui-Marco, S.Lo Meo,
+#+          S.-J.Lonsdale, D.Macina, A.Manna,
+#+          T.Martinez, A.Masi, C.Massimi,
+#+          P.F.Mastinu, M.Mastromarco, F.Matteucci,
+#+          E.Maugeri, E.Mendoza, A.Mengoni,
+#+          V.Michalopoulou, P.M.Milazzo, F.Mingrone,
+#+          R.Mucciola, A.Musumarra, A.Negret,
+#+          R.Nolte, F.Ogallar, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          J.M.Quesada, D.Radeck, D.Ramos Doval,
+#+          R.Reifarth, D.Rochman, C.Rubbia,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          D.Schumann, A.G.Smith, N.Sosnin,
+#+          A.Stamatopoulos, G.Tagliente, J.L.Tain,
+#+          Z.Talip, A.E.Tarifeno-Saldivia, L.Tassan-Got,
+#+          P.Torres-Sanchez, A.Tsinganis, J.Ulrich,
+#+          S.Urlass, S.Valenta, G.Vannini,
+#+          V.Variale, P.Vaz, A.Ventura,
+#+          D.Vescovi, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, P.J.Woods, R.Wynants,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PL/B,804,135405,2020)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.804, p.135405, 2020
+#DATASETS   6
+#
+#DATASET    234590052
+#DATE       20200601
+#REACTION   64-GD-154(N,0),,D
+#PROJ       1
+#TARG       64154
+#MF         402
+#MT         6004
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154 4026004 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154 4026004 D                    13.40000 1.100000 0.000000                              A.Mazzone,ET.AL. (20)    23459  52
+#/DATA      1
 #/DATASET
 #/ENTRY
 #
@@ -1980,6 +2352,81 @@
 #/ENTRY
 #
 #
+#ENTRY      23459
+#AUTHOR1    A.Mazzone+
+#YEAR       2020
+#INSTITUTE  (2ITYBAU)
+#TITLE      Measurement of the 154Gd(n,g) cross section and its
+#+          astrophysical implications
+#AUTHOR(S)  A.Mazzone, S.Cristallo, O.Aberle,
+#+          G.Alaerts, V.Alcayne, S.Amaducci,
+#+          J.Andrzejewski, L.Audouin, V.Babiano-Suarez,
+#+          M.Bacak, M.Barbagallo, V.Becares,
+#+          F.Becvar, G.Bellia, E.Berthoumieux,
+#+          J.Billowes, D.Bosnar, A.S.Brown,
+#+          M.Busso, M.Caamano, L.Caballero,
+#+          M.Calviani, F.Calvino, D.Cano-Ott,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, G.Clai,
+#+          N.Colonna, G.P.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, L.A.Damone, M.Diakaki,
+#+          M.Dietz, C.Domingo-Pardo, R.Dressler,
+#+          E.Dupont, I.Duran, Z.Eleme,
+#+          B.Fernandez-Domingez, A.Ferrari, I.Ferro-Goncalves,
+#+          P.Finocchiaro, V.Furman, R.Garg,
+#+          A.Gawlik, S.Gilardoni, T.Glodariu,
+#+          K.Goebel, E.Gonzalez-Romero, C.Guerrero,
+#+          F.Gunsing, S.Heinitz, J.Heyse,
+#+          D.G.Jenkins, E.Jericha, Y.Kadi,
+#+          F.Kaeppeler, A.Kimura, N.Kivel,
+#+          M.Kokkoris, Y.Kopatch, S.Kopecky,
+#+          M.Krticka, D.Kurtulgil, I.Ladarescu,
+#+          C.Lederer-Woods, J.Lerendegui-Marco, S.Lo Meo,
+#+          S.-J.Lonsdale, D.Macina, A.Manna,
+#+          T.Martinez, A.Masi, C.Massimi,
+#+          P.F.Mastinu, M.Mastromarco, F.Matteucci,
+#+          E.Maugeri, E.Mendoza, A.Mengoni,
+#+          V.Michalopoulou, P.M.Milazzo, F.Mingrone,
+#+          R.Mucciola, A.Musumarra, A.Negret,
+#+          R.Nolte, F.Ogallar, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          J.M.Quesada, D.Radeck, D.Ramos Doval,
+#+          R.Reifarth, D.Rochman, C.Rubbia,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          D.Schumann, A.G.Smith, N.Sosnin,
+#+          A.Stamatopoulos, G.Tagliente, J.L.Tain,
+#+          Z.Talip, A.E.Tarifeno-Saldivia, L.Tassan-Got,
+#+          P.Torres-Sanchez, A.Tsinganis, J.Ulrich,
+#+          S.Urlass, S.Valenta, G.Vannini,
+#+          V.Variale, P.Vaz, A.Ventura,
+#+          D.Vescovi, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, P.J.Woods, R.Wynants,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PL/B,804,135405,2020)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.804, p.135405, 2020
+#DATASETS   6
+#
+#DATASET    234590051
+#DATE       20200601
+#REACTION   64-GD-154(N,EL),,STF
+#PROJ       1
+#TARG       64154
+#MF         403
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154 4036001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154 4036001 D                    2.7800-4 3.3000-5 0.000000                              A.Mazzone,ET.AL. (20)    23459  51
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      40162
 #AUTHOR1    E.N.Karzhavina+
 #YEAR       1969
@@ -2037,6 +2484,81 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 64154 4036001 A  1000.000          2.0000-4 3.0000-5 0.000000                              F.Rahn,ET.AL. (74)       10458 10
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      23459
+#AUTHOR1    A.Mazzone+
+#YEAR       2020
+#INSTITUTE  (2ITYBAU)
+#TITLE      Measurement of the 154Gd(n,g) cross section and its
+#+          astrophysical implications
+#AUTHOR(S)  A.Mazzone, S.Cristallo, O.Aberle,
+#+          G.Alaerts, V.Alcayne, S.Amaducci,
+#+          J.Andrzejewski, L.Audouin, V.Babiano-Suarez,
+#+          M.Bacak, M.Barbagallo, V.Becares,
+#+          F.Becvar, G.Bellia, E.Berthoumieux,
+#+          J.Billowes, D.Bosnar, A.S.Brown,
+#+          M.Busso, M.Caamano, L.Caballero,
+#+          M.Calviani, F.Calvino, D.Cano-Ott,
+#+          A.Casanovas, D.M.Castelluccio, F.Cerutti,
+#+          Y.H.Chen, E.Chiaveri, G.Clai,
+#+          N.Colonna, G.P.Cortes, M.A.Cortes-Giraldo,
+#+          L.Cosentino, L.A.Damone, M.Diakaki,
+#+          M.Dietz, C.Domingo-Pardo, R.Dressler,
+#+          E.Dupont, I.Duran, Z.Eleme,
+#+          B.Fernandez-Domingez, A.Ferrari, I.Ferro-Goncalves,
+#+          P.Finocchiaro, V.Furman, R.Garg,
+#+          A.Gawlik, S.Gilardoni, T.Glodariu,
+#+          K.Goebel, E.Gonzalez-Romero, C.Guerrero,
+#+          F.Gunsing, S.Heinitz, J.Heyse,
+#+          D.G.Jenkins, E.Jericha, Y.Kadi,
+#+          F.Kaeppeler, A.Kimura, N.Kivel,
+#+          M.Kokkoris, Y.Kopatch, S.Kopecky,
+#+          M.Krticka, D.Kurtulgil, I.Ladarescu,
+#+          C.Lederer-Woods, J.Lerendegui-Marco, S.Lo Meo,
+#+          S.-J.Lonsdale, D.Macina, A.Manna,
+#+          T.Martinez, A.Masi, C.Massimi,
+#+          P.F.Mastinu, M.Mastromarco, F.Matteucci,
+#+          E.Maugeri, E.Mendoza, A.Mengoni,
+#+          V.Michalopoulou, P.M.Milazzo, F.Mingrone,
+#+          R.Mucciola, A.Musumarra, A.Negret,
+#+          R.Nolte, F.Ogallar, A.Oprea,
+#+          N.Patronis, A.Pavlik, J.Perkowski,
+#+          L.Piersanti, I.Porras, J.Praena,
+#+          J.M.Quesada, D.Radeck, D.Ramos Doval,
+#+          R.Reifarth, D.Rochman, C.Rubbia,
+#+          M.Sabate-Gilarte, A.Saxena, P.Schillebeeckx,
+#+          D.Schumann, A.G.Smith, N.Sosnin,
+#+          A.Stamatopoulos, G.Tagliente, J.L.Tain,
+#+          Z.Talip, A.E.Tarifeno-Saldivia, L.Tassan-Got,
+#+          P.Torres-Sanchez, A.Tsinganis, J.Ulrich,
+#+          S.Urlass, S.Valenta, G.Vannini,
+#+          V.Variale, P.Vaz, A.Ventura,
+#+          D.Vescovi, V.Vlachoudis, R.Vlastou,
+#+          A.Wallner, P.J.Woods, R.Wynants,
+#+          T.J.Wright, P.Zugec
+#REF-CODE   (J,PL/B,804,135405,2020)
+#REFERENCE  Jour. Physics Letters,Section B
+#+          Vol.804, p.135405, 2020
+#DATASETS   6
+#
+#DATASET    234590053
+#DATE       20200601
+#REACTION   64-GD-154(N,G),,WID,,AV
+#PROJ       1
+#TARG       64154
+#MF         405
+#MT         6001
+#DATA-HDR   DATA
+#C4BEGIN    [    1 64154 4056001 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 64154 4056001 D                    0.059000 7.0000-3 0.000000                              A.Mazzone,ET.AL. (20)    23459  53
 #/DATA      1
 #/DATASET
 #/ENTRY

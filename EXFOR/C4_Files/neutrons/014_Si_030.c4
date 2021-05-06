@@ -148,15 +148,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507007
-#DATE       19860702
+#DATE       20190805
 #REACTION   14-SI-30(N,G)14-SI-31,,SIG,,MXW
 #PROJ       1
 #TARG       14030
@@ -168,7 +168,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14030   3 102    0.025300          0.410000 0.410000                                       H.POMERANCE (52)         11507  7
+    1 14030   3 102    0.025300          0.410000 0.410000                                       H.Pomerance (52)         11507  7
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -596,13 +596,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244068
-#DATE       20110104
+#DATE       20191103
 #REACTION   14-SI-30(N,G)14-SI-31,,SIG
 #PROJ       1
 #TARG       14030
@@ -610,12 +610,11 @@
 #MT         102
 #PRODUCT    14-SI-31
 #DATA-HDR   DATA
-#C4BEGIN    [    1 14030   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 14030   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14030   3 102 C  200000.0 30000.00 5.5000-3 5.0000-4                                       A.I.Leipunskiy, (58)     40244 68
+    1 14030   3 102    200000.0 30000.00 5.5000-3 5.0000-4                                       A.I.Leipunskiy, (58)     40244 68
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -630,13 +629,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244088
-#DATE       20100301
+#DATE       20191103
 #REACTION   14-SI-30(N,G)14-SI-31,,SIG
 #PROJ       1
 #TARG       14030
@@ -644,13 +643,12 @@
 #MT         102
 #PRODUCT    14-SI-31
 #DATA-HDR   DATA
-#C4BEGIN    [    1 14030   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 14030   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14030   3 102 C  2700000.          3.0000-4 3.0000-4                                       A.I.Leipunskiy, (58)     40244 88
-    1 14030   3 102 C  4000000.          6.7000-4 1.0000-4                                       A.I.Leipunskiy, (58)     40244 88
+    1 14030   3 102    2700000.          3.0000-4 3.0000-4                                       A.I.Leipunskiy, (58)     40244 88
+    1 14030   3 102    4000000.          6.7000-4 1.0000-4                                       A.I.Leipunskiy, (58)     40244 88
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -723,16 +721,16 @@
 #AUTHOR1    J.Csikai+
 #YEAR       1967
 #INSTITUTE  (3HUNDEB)
-#TITLE      Radiative capture cross-sections for 14.7 MeV neutrons
+#TITLE      Radiative capture cross sections for 14.7 MeV neutrons
 #AUTHOR(S)  J.Csikai, G.Peto, M.Buczko,
-#+          Z.Milligy, N.Eissa
-#REF-CODE   (J,NP/A,95,229,196703)
+#+          Z.Miligy, N.A.Eissa
+#REF-CODE   (J,NP/A,95,229,1967)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.95, p.229, 1967
-#DATASETS   17
+#DATASETS   22
 #
 #DATASET    30067005
-#DATE       20080205
+#DATE       20191203
 #REACTION   14-SI-30(N,G)14-SI-31,,SIG
 #PROJ       1
 #TARG       14030
@@ -745,7 +743,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14030   3 102 A  1.4700+7          4.8000-4 5.0000-5                                       J.Csikai,ET.AL. (66)     30067  5
+    1 14030   3 102 A  1.4700+7          4.8000-4 5.0000-5                                       J.Csikai,ET.AL. (67)     30067  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1149,7 +1147,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298005
 #DATE       20130501
@@ -1610,45 +1608,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22089
-#AUTHOR1    Y.Ikeda+
-#YEAR       1988
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation cross section measurements for fusion
-#+          reactor structural materials at neutron energy from
-#+          13.3 to 15.0 MeV using FNS facility
-#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
-#+          T.Nakamura, H.Miyade, K.Kawade,
-#+          H.Yamamoto, T.Katoh
-#REF-CODE   (R,JAERI-1312,1988)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1312, 1988
-#DATASETS   110
-#
-#DATASET    22089011
-#DATE       20081001
-#REACTION   14-SI-30(N,A)12-MG-27,,SIG
-#PROJ       1
-#TARG       14030
-#MF         3
-#MT         107
-#PRODUCT    12-MG-27
-#DATA-HDR   DATA
-#C4BEGIN    [    1 14030   3 107   ]
-#DATA       6
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 14030   3 107    1.4920+7          0.102000 0.021000                                       Y.Ikeda,ET.AL. (88)      22089 11
-    1 14030   3 107    1.4660+7          0.073000 0.017000                                       Y.Ikeda,ET.AL. (88)      22089 11
-    1 14030   3 107    1.4420+7          0.092000 0.021000                                       Y.Ikeda,ET.AL. (88)      22089 11
-    1 14030   3 107    1.4030+7          0.063000 0.023000                                       Y.Ikeda,ET.AL. (88)      22089 11
-    1 14030   3 107    1.3510+7          0.093000 0.022000                                       Y.Ikeda,ET.AL. (88)      22089 11
-    1 14030   3 107    1.3320+7          0.082000 0.025000                                       Y.Ikeda,ET.AL. (88)      22089 11
-#/DATA      6
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      22800
 #AUTHOR1    H.Sakane+
 #YEAR       2002
@@ -1684,6 +1643,45 @@
     1 14030   39000    1.4010+7          3.8000-3 5.3200-4           13029.9                     H.Sakane,ET.AL. (02)     22800  4
     1 14030   39000    1.3700+7          8.0000-4 3.4400-4           13029.9                     H.Sakane,ET.AL. (02)     22800  4
     1 14030   39000    1.3400+7          4.0000-4 2.0800-4           13029.9                     H.Sakane,ET.AL. (02)     22800  4
+#/DATA      6
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22089
+#AUTHOR1    Y.Ikeda+
+#YEAR       1988
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation cross section measurements for fusion
+#+          reactor structural materials at neutron energy from
+#+          13.3 to 15.0 MeV using FNS facility
+#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
+#+          T.Nakamura, H.Miyade, K.Kawade,
+#+          H.Yamamoto, T.Katoh
+#REF-CODE   (R,JAERI-1312,1988)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1312, 1988
+#DATASETS   108
+#
+#DATASET    22089011
+#DATE       20201001
+#REACTION   14-SI-30(N,X)12-MG-27,,SIG
+#PROJ       1
+#TARG       14030
+#MF         3
+#MT         9000
+#PRODUCT    12-MG-27
+#DATA-HDR   DATA
+#C4BEGIN    [    1 14030   39000   ]
+#DATA       6
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 14030   39000    1.4920+7          0.102000 0.021000           12027.9                     Y.Ikeda,ET.AL. (88)      22089 11
+    1 14030   39000    1.4660+7          0.073000 0.017000           12027.9                     Y.Ikeda,ET.AL. (88)      22089 11
+    1 14030   39000    1.4420+7          0.092000 0.021000           12027.9                     Y.Ikeda,ET.AL. (88)      22089 11
+    1 14030   39000    1.4030+7          0.063000 0.023000           12027.9                     Y.Ikeda,ET.AL. (88)      22089 11
+    1 14030   39000    1.3510+7          0.093000 0.022000           12027.9                     Y.Ikeda,ET.AL. (88)      22089 11
+    1 14030   39000    1.3320+7          0.082000 0.025000           12027.9                     Y.Ikeda,ET.AL. (88)      22089 11
 #/DATA      6
 #/DATASET
 #/ENTRY

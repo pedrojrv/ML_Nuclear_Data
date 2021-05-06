@@ -9,7 +9,7 @@
 #+          V.A.Libman, A.V.Murzin, G.M.Novosselov,
 #+          N.A.Trofimova, O.L.Chervonnaya
 #REF-CODE   (J,YK,,(3),27,1990)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.3, p.27, 1990
 #DATASETS   10
 #
@@ -6808,38 +6808,6 @@
 #/ENTRY
 #
 #
-#ENTRY      21936
-#AUTHOR1    B.M.Bahal+
-#YEAR       1985
-#INSTITUTE  (2GERKIG)
-#TITLE      Cross section measurements of Cr,Mn,Fe,Co,Ni for an
-#+          accurate determination of these elements in natural
-#+          and synthetic samples using a 14 MeV neutron generator
-#AUTHOR(S)  B.M.Bahal, R.Pepelnik
-#REF-CODE   (R,GKSS-85-E-11,1985)
-#REFERENCE  Rept. Ges.Kernen.-Verwertung, Schiffbau and Schiffahrt
-#+          No.85,E, p.11, 1985
-#DATASETS   25
-#
-#DATASET    21936033
-#DATE       20080403
-#REACTION   28-NI-64(N,N+P)27-CO-63,,SIG
-#PROJ       1
-#TARG       28064
-#MF         3
-#MT         28
-#PRODUCT    27-CO-63
-#DATA-HDR   DATA
-#C4BEGIN    [    1 28064   3  28   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28064   3  28    1.4700+7 300000.0 3.6000-3 7.0000-4                                       B.M.Bahal,ET.AL. (85)    21936 33
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      11740
 #AUTHOR1    I.L.Preiss+
 #YEAR       1960
@@ -7279,17 +7247,17 @@
 #AUTHOR1    M.Heil+
 #YEAR       2008
 #INSTITUTE  (2GERKFK)
-#TITLE      Neutron capture cross sections for the weak S-process
-#+          in massive stars.
+#TITLE      Neutron capture cross sections for the weak s process
+#+          in massive stars
 #AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
 #+          R.Gallino, M.Pignatari
-#REF-CODE   (J,PR/C,77,015808,200801)
+#REF-CODE   (J,PR/C,77,015808,2008)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.77, p.015808, 2008
-#DATASETS   10
+#DATASETS   5
 #
-#DATASET    22996009
-#DATE       20101105
+#DATASET    22996019
+#DATE       20201200
 #REACTION   28-NI-64(N,G)28-NI-65,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       28064
@@ -7303,17 +7271,17 @@
 #DATA       11
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28064   3 102 D  5000.000          0.011800                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  10000.00          0.013600                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  15000.00          0.012000                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  20000.00          0.010300                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  25000.00          9.0000-3 3.0000-4                                       M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  30000.00          8.0000-3                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  40000.00          6.8000-3                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  50000.00          6.1000-3                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  60000.00          5.6000-3                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  80000.00          5.1000-3                                                M.Heil,ET.AL. (08)       22996  9
-    1 28064   3 102 D  100000.0          4.8000-3                                                M.Heil,ET.AL. (08)       22996  9
+    1 28064   3 102 D  5000.000          0.012500 0.017000                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  10000.00          0.014400 9.1000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  15000.00          0.012700 4.0000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  20000.00          0.010900 1.5000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  25000.00          9.6000-3 3.0000-4                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  30000.00          8.5000-3 8.0000-4                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  40000.00          7.2000-3 1.8000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  50000.00          6.5000-3 2.3000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  60000.00          5.9000-3 2.5000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  80000.00          5.4000-3 2.8000-3                                       M.Heil,ET.AL. (08)       22996 19
+    1 28064   3 102 D  100000.0          5.1000-3 2.9000-3                                       M.Heil,ET.AL. (08)       22996 19
 #/DATA      11
 #/DATASET
 #/ENTRY
@@ -7912,38 +7880,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22996
-#AUTHOR1    M.Heil+
-#YEAR       2008
-#INSTITUTE  (2GERKFK)
-#TITLE      Neutron capture cross sections for the weak S-process
-#+          in massive stars.
-#AUTHOR(S)  M.Heil, F.Kaeppeler, E.Uberseder,
-#+          R.Gallino, M.Pignatari
-#REF-CODE   (J,PR/C,77,015808,200801)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.77, p.015808, 2008
-#DATASETS   10
-#
-#DATASET    22996004
-#DATE       20110201
-#REACTION   28-NI-64(N,G)28-NI-65,,SIG,,MXW
-#PROJ       1
-#TARG       28064
-#MF         3
-#MT         102
-#PRODUCT    28-NI-65
-#DATA-HDR   DATA
-#C4BEGIN    [    1 28064   3 102   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28064   3 102    25000.00          8.4000-3 2.8000-4                                       M.Heil,ET.AL. (08)       22996  4
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      V0102
 #AUTHOR1    Z.Y.Bao+
 #YEAR       2000
@@ -8113,13 +8049,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244072
-#DATE       20110104
+#DATE       20191103
 #REACTION   28-NI-64(N,G)28-NI-65,,SIG
 #PROJ       1
 #TARG       28064
@@ -8127,12 +8063,11 @@
 #MT         102
 #PRODUCT    28-NI-65
 #DATA-HDR   DATA
-#C4BEGIN    [    1 28064   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 28064   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28064   3 102 C  200000.0 30000.00 0.043500 4.1000-3                                       A.I.Leipunskiy, (58)     40244 72
+    1 28064   3 102    200000.0 30000.00 0.043500 4.1000-3                                       A.I.Leipunskiy, (58)     40244 72
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8147,13 +8082,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244092
-#DATE       20100301
+#DATE       20191103
 #REACTION   28-NI-64(N,G)28-NI-65,,SIG
 #PROJ       1
 #TARG       28064
@@ -8161,12 +8096,11 @@
 #MT         102
 #PRODUCT    28-NI-65
 #DATA-HDR   DATA DATA-MAX
-#C4BEGIN    [    1 28064   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 28064   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28064   3 102 C  4000000.          2.6000-3 1.3000-3                                       A.I.Leipunskiy, (58)     40244 92
+    1 28064   3 102    4000000.          2.6000-3 1.3000-3                                       A.I.Leipunskiy, (58)     40244 92
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8503,7 +8437,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 28064   3 107    1.4700+7 300000.0 3.7000-3 2.0000-4                                       B.M.Bahal,ET.AL. (85)    21936 32
+    1 28064   3 107    1.4700+7          3.7000-3 2.0000-4                                       B.M.Bahal,ET.AL. (85)    21936 32
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -8631,6 +8565,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 28064   39000    1.4700+7 300000.0 0.015000 1.0000-3           27063.9                     N.I.Molla,ET.AL. (77)    20721 39
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21936
+#AUTHOR1    B.M.Bahal+
+#YEAR       1985
+#INSTITUTE  (2GERKIG)
+#TITLE      Cross section measurements of Cr,Mn,Fe,Co,Ni for an
+#+          accurate determination of these elements in natural
+#+          and synthetic samples using a 14 MeV neutron generator
+#AUTHOR(S)  B.M.Bahal, R.Pepelnik
+#REF-CODE   (R,GKSS-85-E-11,1985)
+#REFERENCE  Rept. Ges.Kernen.-Verwertung, Schiffbau and Schiffahrt
+#+          No.85,E, p.11, 1985
+#DATASETS   25
+#
+#DATASET    21936033
+#DATE       20201001
+#REACTION   28-NI-64(N,X)27-CO-63,,SIG
+#PROJ       1
+#TARG       28064
+#MF         3
+#MT         9000
+#PRODUCT    27-CO-63
+#DATA-HDR   DATA
+#C4BEGIN    [    1 28064   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 28064   39000    1.4700+7          3.6000-3 7.0000-4           27063.9                     B.M.Bahal,ET.AL. (85)    21936 33
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -9811,7 +9777,7 @@
 #+          V.A.Libman, A.V.Murzin, G.M.Novosselov,
 #+          N.A.Trofimova, O.L.Chervonnaya
 #REF-CODE   (J,YK,,(3),27,1990)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.3, p.27, 1990
 #DATASETS   10
 #

@@ -10,7 +10,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B01130451
 #DATE       20190103
@@ -43,7 +43,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B01130452
 #DATE       20190103
@@ -492,7 +492,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B01130461
 #DATE       20190103
@@ -529,7 +529,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B01130462
 #DATE       20190103
@@ -547,6 +547,50 @@
 18040 81205   39000    2.3900+8 1.3000+7 6.0000-4 1.4000-4           86211.9                     D.Gardes,ET.AL. (78)     B0113 462
 18040 81205   39000    2.6200+8 7000000. 1.0000-3 1.0000-4           86211.9                     D.Gardes,ET.AL. (78)     B0113 462
 18040 81205   39000    2.8400+8 7000000. 1.4800-3 3.7000-4           86211.9                     D.Gardes,ET.AL. (78)     B0113 462
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      D0943
+#AUTHOR1    A.Chatillon+
+#YEAR       2007
+#INSTITUTE  (2FR SAC)
+#TITLE      Observation of a rotational band in the odd-Z
+#+          transfermium nucleus 251Md
+#AUTHOR(S)  A.Chatillon, Ch.Theisen, E.Bouchez,
+#+          P.A.Butler, E.Clement, O.Dorvaux,
+#+          S.Eeckhaudt, B.J.P.Gall, A.Goergen,
+#+          T.Grahn, P.T.Greenlees, R.-D.Herzberg,
+#+          F.Hessberger, A.Huerstel, G.D.Jones,
+#+          P.Jones, R.Julin, S.Juutinen,
+#+          H.Kettunen, F.Khalfallah, W.Korten,
+#+          Y.Le Coz, M.Leino, A.-P.Leppaenen,
+#+          P.Nieminen, J.Pakarinen, J.Perkowski,
+#+          P.Rahkila, M.Rousseau, C.Scholey,
+#+          J.Uusitalo, J.N.Wilson, P.Bonche,
+#+          P.-H.Heenen
+#REF-CODE   (J,PRL,98,132503,2007)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.98, p.132503, 2007
+#DATASETS   1
+#
+#DATASET    D0943002
+#DATE       20191001
+#REACTION   81-TL-205(20-CA-48,2N)101-MD-251,,SIG
+#PROJ       20048
+#TARG       81205
+#MF         3
+#MT         16
+#PRODUCT    101-MD-251
+#DATA-HDR   DATA
+#C4BEGIN    [20048 81205   3  16   ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+20048 81205   3  16    2.1100+8          0.000000                                                A.Chatillon,ET.AL. (07)  D0943  2
+20048 81205   3  16    2.1400+8          0.000000                                                A.Chatillon,ET.AL. (07)  D0943  2
+20048 81205   3  16    2.1700+8          0.000000                                                A.Chatillon,ET.AL. (07)  D0943  2
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -648,6 +692,261 @@
 #/ENTRY
 #
 #
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417012
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-212-M1,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-212-M1
+#DATA-HDR   DATA
+#C4BEGIN    [ 8018 81205   390001  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   390001   8.6606+7          2.0880-9                    83212.1                     K.Eskola,ET.AL. (84)     C2417 12
+ 8018 81205   390001   1.5177+8          2.9670-8                    83212.1                     K.Eskola,ET.AL. (84)     C2417 12
+ 8018 81205   390001   1.8833+8          3.1730-8                    83212.1                     K.Eskola,ET.AL. (84)     C2417 12
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417010
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-212,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-212
+#DATA-HDR   DATA
+#C4BEGIN    [ 8018 81205   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   39000    8.6618+7          2.4960-9                    83212.9                     K.Eskola,ET.AL. (84)     C2417 10
+ 8018 81205   39000    1.0050+8          1.7290-8                    83212.9                     K.Eskola,ET.AL. (84)     C2417 10
+ 8018 81205   39000    1.1370+8          2.2810-8                    83212.9                     K.Eskola,ET.AL. (84)     C2417 10
+ 8018 81205   39000    1.5197+8          3.4830-8                    83212.9                     K.Eskola,ET.AL. (84)     C2417 10
+ 8018 81205   39000    1.8607+8          3.2350-8                    83212.9                     K.Eskola,ET.AL. (84)     C2417 10
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417009
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-211,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-211
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 8018 81205   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   39000    8.6622+7          2.2950-4                    83211.9                     K.Eskola,ET.AL. (84)     C2417  9
+ 8018 81205   39000    1.0074+8          1.0790-5                    83211.9                     K.Eskola,ET.AL. (84)     C2417  9
+ 8018 81205   39000    1.1383+8          4.4570-5                    83211.9                     K.Eskola,ET.AL. (84)     C2417  9
+ 8018 81205   39000    1.5172+8          6.3370-5                    83211.9                     K.Eskola,ET.AL. (84)     C2417  9
+ 8018 81205   39000    1.8669+8          2.1680-5                    83211.9                     K.Eskola,ET.AL. (84)     C2417  9
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417015
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-214,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-214
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 8018 81205   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   39000    8.6786+7          3.1390-8                    83214.9                     K.Eskola,ET.AL. (84)     C2417 15
+ 8018 81205   39000    9.8997+7          1.8910-8                    83214.9                     K.Eskola,ET.AL. (84)     C2417 15
+ 8018 81205   39000    1.1459+8          9.5180-9                    83214.9                     K.Eskola,ET.AL. (84)     C2417 15
+ 8018 81205   39000    1.5193+8          1.8010-8                    83214.9                     K.Eskola,ET.AL. (84)     C2417 15
+ 8018 81205   39000    1.8712+8          9.9660-9                    83214.9                     K.Eskola,ET.AL. (84)     C2417 15
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417014
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-213,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-213
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 8018 81205   39000   ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   39000    8.6888+7          5.015-10                    83213.9                     K.Eskola,ET.AL. (84)     C2417 14
+ 8018 81205   39000    1.0080+8          3.301-10                    83213.9                     K.Eskola,ET.AL. (84)     C2417 14
+ 8018 81205   39000    1.1383+8          5.115-10                    83213.9                     K.Eskola,ET.AL. (84)     C2417 14
+ 8018 81205   39000    1.5168+8          4.184-10                    83213.9                     K.Eskola,ET.AL. (84)     C2417 14
+ 8018 81205   39000    1.8730+8          5.647-10                    83213.9                     K.Eskola,ET.AL. (84)     C2417 14
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417013
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-212-M2,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-212-M2
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 8018 81205   390002  ]
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   390002   8.7010+7          6.4020-9                    83212.2                     K.Eskola,ET.AL. (84)     C2417 13
+ 8018 81205   390002   1.0087+8          4.3770-9                    83212.2                     K.Eskola,ET.AL. (84)     C2417 13
+ 8018 81205   390002   1.1382+8          6.5090-9                    83212.2                     K.Eskola,ET.AL. (84)     C2417 13
+ 8018 81205   390002   1.5179+8          4.0200-9                    83212.2                     K.Eskola,ET.AL. (84)     C2417 13
+ 8018 81205   390002   1.8673+8          2.0740-8                    83212.2                     K.Eskola,ET.AL. (84)     C2417 13
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      C2417
+#AUTHOR1    K.Eskola+
+#YEAR       1984
+#INSTITUTE  (1USALAS)
+#TITLE      Production of neutron-rich Bi isotopes by transfer
+#+          reactions
+#AUTHOR(S)  K.Eskola, P.Eskola, M.M.Fowler,
+#+          H.Ohm, E.N.Treher, J.B.Wilhelmy,
+#+          D.Lee, G.T.Seaborg
+#REF-CODE   (J,PR/C,29,2160,1984)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.29, p.2160, 1984
+#DATASETS   20
+#
+#DATASET    C2417011
+#DATE       20191203
+#REACTION   81-TL-205(8-O-18,X)83-BI-212-G,,SIG
+#PROJ       8018
+#TARG       81205
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-212-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 8018 81205   39000G  ]
+#DATA       3
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 8018 81205   39000G   1.0027+8          9.5990-9                    83212.0                     K.Eskola,ET.AL. (84)     C2417 11
+ 8018 81205   39000G   1.1348+8          1.2440-8                    83212.0                     K.Eskola,ET.AL. (84)     C2417 11
+ 8018 81205   39000G   1.5174+8          1.0960-9                    83212.0                     K.Eskola,ET.AL. (84)     C2417 11
+#/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      B0113
 #AUTHOR1    D.Gardes+
 #YEAR       1978
@@ -660,7 +959,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B01130431
 #DATE       20190103
@@ -693,7 +992,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B01130432
 #DATE       20190103
@@ -726,7 +1025,7 @@
 #REF-CODE   (J,PR/C,18,1298,1978)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.18, p.1298, 1978
-#DATASETS   47
+#DATASETS   52
 #
 #DATASET    B0113044
 #DATE       20190103

@@ -1502,47 +1502,6 @@
 #/ENTRY
 #
 #
-#ENTRY      22089
-#AUTHOR1    Y.Ikeda+
-#YEAR       1988
-#INSTITUTE  (2JPNJAE)
-#TITLE      Activation cross section measurements for fusion
-#+          reactor structural materials at neutron energy from
-#+          13.3 to 15.0 MeV using FNS facility
-#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
-#+          T.Nakamura, H.Miyade, K.Kawade,
-#+          H.Yamamoto, T.Katoh
-#REF-CODE   (R,JAERI-1312,1988)
-#REFERENCE  Rept. JAERI Reports
-#+          No.1312, 1988
-#DATASETS   110
-#
-#DATASET    22089019
-#DATE       20081001
-#REACTION   20-CA-44(N,N+P)19-K-43,,SIG
-#PROJ       1
-#TARG       20044
-#MF         3
-#MT         28
-#PRODUCT    19-K-43
-#DATA-HDR   DATA
-#C4BEGIN    [    1 20044   3  28   ]
-#DATA       8
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 20044   3  28    1.5000+7          4.4600-3 2.5000-4                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.4710+7          3.0300-3 1.7000-4                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.4460+7          2.3300-3 1.3000-4                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.4240+7          1.8900-3 1.1000-4                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.3990+7          1.2790-3 7.2000-5                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.3760+7          9.8500-4 5.9000-5                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.3580+7          7.8000-4 4.9000-5                                       Y.Ikeda,ET.AL. (88)      22089 19
-    1 20044   3  28    1.3340+7          5.6500-4 3.6000-5                                       Y.Ikeda,ET.AL. (88)      22089 19
-#/DATA      8
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      10168
 #AUTHOR1    F.P.Cranston+
 #YEAR       1971
@@ -2192,10 +2151,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089018
-#DATE       20081001
+#DATE       20201001
 #REACTION   20-CA-44(N,P)19-K-44,,SIG
 #PROJ       1
 #TARG       20044
@@ -2553,10 +2512,10 @@
 #REF-CODE   (R,JAERI-1312,1988)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1312, 1988
-#DATASETS   110
+#DATASETS   108
 #
 #DATASET    22089020
-#DATE       20081001
+#DATE       20201001
 #REACTION   20-CA-44(N,A)18-AR-41,,SIG
 #PROJ       1
 #TARG       20044
@@ -2608,6 +2567,47 @@
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 20044   39000    1.4700+7 300000.0 4.0000-3 3.0000-4           19043.9                     S.M.Qaim (82)            21784  2
 #/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      22089
+#AUTHOR1    Y.Ikeda+
+#YEAR       1988
+#INSTITUTE  (2JPNJAE)
+#TITLE      Activation cross section measurements for fusion
+#+          reactor structural materials at neutron energy from
+#+          13.3 to 15.0 MeV using FNS facility
+#AUTHOR(S)  Y.Ikeda, C.Konno, K.Oishi,
+#+          T.Nakamura, H.Miyade, K.Kawade,
+#+          H.Yamamoto, T.Katoh
+#REF-CODE   (R,JAERI-1312,1988)
+#REFERENCE  Rept. JAERI Reports
+#+          No.1312, 1988
+#DATASETS   108
+#
+#DATASET    22089019
+#DATE       20201001
+#REACTION   20-CA-44(N,X)19-K-43,,SIG
+#PROJ       1
+#TARG       20044
+#MF         3
+#MT         9000
+#PRODUCT    19-K-43
+#DATA-HDR   DATA
+#C4BEGIN    [    1 20044   39000   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 20044   39000    1.5000+7          4.4600-3 2.5000-4           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.4710+7          3.0300-3 1.7000-4           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.4460+7          2.3300-3 1.3000-4           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.4240+7          1.8900-3 1.1000-4           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.3990+7          1.2790-3 7.2000-5           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.3760+7          9.8500-4 5.9000-5           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.3580+7          7.8000-4 4.9000-5           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+    1 20044   39000    1.3340+7          5.6500-4 3.6000-5           19043.9                     Y.Ikeda,ET.AL. (88)      22089 19
+#/DATA      8
 #/DATASET
 #/ENTRY
 #
@@ -2804,17 +2804,18 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990052
-#DATE       19830801
+#DATE       20190802
 #REACTION   20-CA-44(N,EL),,WID
 #PROJ       1
 #TARG       20044
@@ -2825,9 +2826,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 20044 4026021    22000.00 1000.000 540.0000 300.0000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  52
-    1 20044 4026021    51500.00 1000.000 2130.000 700.0000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  52
-    1 20044 4026021    82000.00 2000.000 1870.000 1000.000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  52
+    1 20044 4026021    22000.00 1000.000 540.0000 300.0000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  52
+    1 20044 4026021    51500.00 1000.000 2130.000 700.0000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  52
+    1 20044 4026021    82000.00 2000.000 1870.000 1000.000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  52
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -2918,17 +2919,18 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990062
-#DATE       19830801
+#DATE       20190802
 #REACTION   20-CA-44(N,EL),,WID
 #PROJ       1
 #TARG       20044
@@ -2939,8 +2941,8 @@
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 20044 4026021    150000.0 3000.000 8600.000 1000.000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  62
-    1 20044 4026021    247000.0 3000.000 2260.000 250.0000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  62
+    1 20044 4026021    150000.0 3000.000 8600.000 1000.000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  62
+    1 20044 4026021    247000.0 3000.000 2260.000 250.0000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  62
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -3026,17 +3028,18 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990053
-#DATE       19830801
+#DATE       20190802
 #REACTION   20-CA-44(N,EL),,WID/RED
 #PROJ       1
 #TARG       20044
@@ -3047,9 +3050,9 @@
 #DATA       3
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 20044 4026023    22000.00 1000.000 3.600000 1.900000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  53
-    1 20044 4026023    51500.00 1000.000 9.400000 3.100000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  53
-    1 20044 4026023    82000.00 2000.000 6.500000 3.500000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  53
+    1 20044 4026023    22000.00 1000.000 3.600000 1.900000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  53
+    1 20044 4026023    51500.00 1000.000 9.400000 3.100000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  53
+    1 20044 4026023    82000.00 2000.000 6.500000 3.500000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  53
 #/DATA      3
 #/DATASET
 #/ENTRY
@@ -3104,17 +3107,18 @@
 #AUTHOR1    E.G.Bilpuch+
 #YEAR       1961
 #INSTITUTE  (1USADKE)
-#TITLE      S-AND P-WAVE NEUTRON SPECTROSCOPY. PART VII. WIDTHS OF
-#+          NEUTRON RESONANCES.
+#TITLE      S-and p-wave neutron spectroscopy. Part VII. Widths of
+#+          neutron resonances
 #AUTHOR(S)  E.G.Bilpuch, K.K.Seth, C.D.Bowman,
-#+          R.H.Tabony, R.C.Smith, H.W.Newson
-#REF-CODE   (J,AP,14,387,61)
+#+          R.H.Tabony, R.C.Smith, H.W.Newson,
+#+          L.W.Weston, A.K.Furr, P.F.Nichols
+#REF-CODE   (J,AP,14,387,1961)
 #REFERENCE  Jour. Annals of Physics (New York)
 #+          Vol.14, p.387, 1961
-#DATASETS   70
+#DATASETS   72
 #
 #DATASET    115990063
-#DATE       19830801
+#DATE       20190802
 #REACTION   20-CA-44(N,EL),,WID/RED
 #PROJ       1
 #TARG       20044
@@ -3125,8 +3129,8 @@
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 20044 4026023    150000.0 3000.000 22.40000 2.600000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  63
-    1 20044 4026023    247000.0 3000.000 4.500000 0.500000 0.000000                              E.G.BILPUCH,ET.AL. (61)  11599  63
+    1 20044 4026023    150000.0 3000.000 22.40000 2.600000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  63
+    1 20044 4026023    247000.0 3000.000 4.500000 0.500000 0.000000                              E.G.Bilpuch,ET.AL. (61)  11599  63
 #/DATA      2
 #/DATASET
 #/ENTRY

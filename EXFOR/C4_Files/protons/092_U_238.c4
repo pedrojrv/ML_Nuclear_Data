@@ -138,6 +138,74 @@
 #/ENTRY
 #
 #
+#ENTRY      D0988
+#AUTHOR1    E.Cheifetz+
+#YEAR       1968
+#INSTITUTE  (3ISLWZI)
+#TITLE      Prompt neutrons from fission of U238 induced by 12-MeV
+#+          protons
+#AUTHOR(S)  E.Cheifetz, Z.Fraenkel
+#REF-CODE   (J,PRL,21,36,1968)
+#REFERENCE  Jour. Physical Review Letters
+#+          Vol.21, p.36, 1968
+#DATASETS   1
+#
+#DATASET    D0988005
+#DATE       20201205
+#REACTION   92-U-238(P,F),PR,NU
+#PROJ       1001
+#TARG       92238
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   1 456   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   1 456    1.2000+7          4.470000 0.150000                                       E.Cheifetz,ET.AL. (68)   D0988  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0941
+#AUTHOR1    V.A.Rubchenya+
+#YEAR       2001
+#INSTITUTE  (2SF JYV)
+#TITLE      Neutron and fragment yields in proton-induced fission
+#+          of U-238 at intermediate energies
+#AUTHOR(S)  V.A.Rubchenya, W.H.Trzaska, D.N.Vakhtin,
+#+          J.Aysto, P.Dendooven, S.Hankonen,
+#+          A.Jokinen, Z.Radivojevich, J.C.Wang,
+#+          I.D.Alkhazov, A.V.Evsenin, S.V.Khlebnikov,
+#+          A.V.Kuznetsov, V.G.Lyapin, O.I.Osetrov,
+#+          G.P.Tiourin, A.A.Aleksandrov, Yu.E.Penionzhkevich
+#REF-CODE   (J,NIM/A,463,653,2001)
+#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.A
+#+          Vol.463, p.653, 2001
+#DATASETS   1
+#
+#DATASET    O0941004
+#DATE       20201003
+#REACTION   92-U-238(P,F),PR,NU
+#PROJ       1001
+#TARG       92238
+#MF         1
+#MT         456
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   1 456   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   1 456    2.0000+7          5.390000 0.300000                                       V.A.Rubchenya,ET.AL. (01)O0941  4
+ 1001 92238   1 456    3.5000+7          6.840000 0.300000                                       V.A.Rubchenya,ET.AL. (01)O0941  4
+ 1001 92238   1 456    5.0000+7          7.800000 0.300000                                       V.A.Rubchenya,ET.AL. (01)O0941  4
+ 1001 92238   1 456    6.0000+7          8.680000 0.300000                                       V.A.Rubchenya,ET.AL. (01)O0941  4
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      T0160
 #AUTHOR1    Z.Fraenkel+
 #YEAR       1990
@@ -351,14 +419,14 @@
 #AUTHOR1    B.Ya.Guzhovskii+
 #YEAR       1994
 #INSTITUTE  (4RUSEPA)
-#TITLE      Cross-Section Activation Measurement For U-238
-#+          Through Protons and Deuterons in Energy Interval
+#TITLE      Cross-section activation measurement for U-238
+#+          through protons and deuterons in energy interval
 #+          10-14 MeV.
 #AUTHOR(S)  B.Ya.Guzhovskii, S.N.Abramovich, A.G.Zvenigorodskii,
 #+          V.S.Rudnev, S.V.Trusillo
-#REF-CODE   (C,94GATLIN,,390,1994)
+#REF-CODE   (C,94GATLIN,1,390,1994)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
-#+          p.390, 1994
+#+          Vol.1, p.390, 1994
 #DATASETS   4
 #
 #DATASET    O0177002
@@ -374,12 +442,12 @@
 #DATA       6
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3   4    9970000.          3.0000-3 3.0000-4                                       B.YA.GUZHOVSKII, (94)    O0177  2
- 1001 92238   3   4    1.0990+7          4.7000-3 4.7000-4                                       B.YA.GUZHOVSKII, (94)    O0177  2
- 1001 92238   3   4    1.1400+7          5.1000-3 5.1000-4                                       B.YA.GUZHOVSKII, (94)    O0177  2
- 1001 92238   3   4    1.1940+7          5.8000-3 5.8000-4                                       B.YA.GUZHOVSKII, (94)    O0177  2
- 1001 92238   3   4    1.2980+7          7.5000-3 7.5000-4                                       B.YA.GUZHOVSKII, (94)    O0177  2
- 1001 92238   3   4    1.3900+7          8.8000-3 8.8000-4                                       B.YA.GUZHOVSKII, (94)    O0177  2
+ 1001 92238   3   4    9970000.          3.0000-3                                                B.Ya.Guzhovskii, (94)    O0177  2
+ 1001 92238   3   4    1.0990+7          4.7000-3                                                B.Ya.Guzhovskii, (94)    O0177  2
+ 1001 92238   3   4    1.1400+7          5.1000-3                                                B.Ya.Guzhovskii, (94)    O0177  2
+ 1001 92238   3   4    1.1940+7          5.8000-3                                                B.Ya.Guzhovskii, (94)    O0177  2
+ 1001 92238   3   4    1.2980+7          7.5000-3                                                B.Ya.Guzhovskii, (94)    O0177  2
+ 1001 92238   3   4    1.3900+7          8.8000-3                                                B.Ya.Guzhovskii, (94)    O0177  2
 #/DATA      6
 #/DATASET
 #/ENTRY
@@ -425,15 +493,15 @@
 #
 #ENTRY      O1361
 #AUTHOR1    M.A.M.Uosif+
-#YEAR       2005
+#YEAR       2004
 #INSTITUTE  (2GERUH)
 #TITLE      Residual nuclide production by proton-induced reactions
 #+          on uranium for energies between 20 and 70 MeV
 #AUTHOR(S)  M.A.M.Uosif, R.Michel, U.Herpers,
 #+          P.-W.Kubik, M.Duijvestijn, A.Koning
-#REF-CODE   (C,2004SANTA,2,1547,2005)
+#REF-CODE   (C,2004SANTA,2,1547,2004)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Santa Fe 2004
-#+          Vol.2, p.1547, 2005
+#+          Vol.2, p.1547, 2004
 #DATASETS   1
 #
 #DATASET    O1361021
@@ -449,29 +517,29 @@
 #DATA       23
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3   4    2.1800+7 21800.00 8.4100-3 7.2000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    2.5600+7 25600.00 7.7100-3 3.4000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    2.9200+7 29200.00 7.7600-3 1.2700-3                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    3.2400+7 32400.00 7.2300-3 1.1800-3                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    3.5400+7 35400.00 7.4100-3 4.3000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    3.7300+7 37300.00 6.0300-3 5.9000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    3.8400+7 38400.00 5.6300-3 1.9200-3                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    3.9300+7 39300.00 6.2200-3 2.2000-3                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.0240+7 1549.000 4.9800-3 8.6000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.0300+7 40300.00 6.8300-3 2.3000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.1300+7 41300.00 6.8300-3 6.5000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.2200+7 42200.00 5.1300-3 3.1000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.3100+7 43100.00 6.6000-3 5.2000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.4000+7 44000.00 6.3300-3 6.0000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.4050+7 1451.000 5.8800-3 6.0000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    4.7600+7 1378.000 5.0500-3 3.6000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    5.1000+7 1309.000 4.4000-3 4.1000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    5.4220+7 1236.000 5.6600-3 1.1800-3                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    5.7300+7 1169.000 5.5300-3 5.4000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    6.0800+7 1094.000 5.4200-3 3.3000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    6.3150+7 1030.000 4.3100-3 4.3000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    6.5900+7 947.0000 4.3900-3 4.2000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
- 1001 92238   3   4    6.9000+7 835.0000 4.5300-3 4.1000-4                                       M.A.M.Uosif,ET.AL. (05)  O1361 21
+ 1001 92238   3   4    2.1800+7 21800.00 8.4100-3 7.2000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    2.5600+7 25600.00 7.7100-3 3.4000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    2.9200+7 29200.00 7.7600-3 1.2700-3                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    3.2400+7 32400.00 7.2300-3 1.1800-3                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    3.5400+7 35400.00 7.4100-3 4.3000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    3.7300+7 37300.00 6.0300-3 5.9000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    3.8400+7 38400.00 5.6300-3 1.9200-3                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    3.9300+7 39300.00 6.2200-3 2.2000-3                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.0240+7 1549.000 4.9800-3 8.6000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.0300+7 40300.00 6.8300-3 2.3000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.1300+7 41300.00 6.8300-3 6.5000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.2200+7 42200.00 5.1300-3 3.1000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.3100+7 43100.00 6.6000-3 5.2000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.4000+7 44000.00 6.3300-3 6.0000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.4050+7 1451.000 5.8800-3 6.0000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    4.7600+7 1378.000 5.0500-3 3.6000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    5.1000+7 1309.000 4.4000-3 4.1000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    5.4220+7 1236.000 5.6600-3 1.1800-3                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    5.7300+7 1169.000 5.5300-3 5.4000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    6.0800+7 1094.000 5.4200-3 3.3000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    6.3150+7 1030.000 4.3100-3 4.3000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    6.5900+7 947.0000 4.3900-3 4.2000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
+ 1001 92238   3   4    6.9000+7 835.0000 4.5300-3 4.1000-4                                       M.A.M.Uosif,ET.AL. (04)  O1361 21
 #/DATA      23
 #/DATASET
 #/ENTRY
@@ -582,6 +650,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 92238   3   4    2.0000+8          1.1500-3 1.5000-4                                       Y.Y.CHU,ET.AL. (83)      A0230  3A
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O2328
+#AUTHOR1    N.L.Lark+
+#YEAR       1969
+#INSTITUTE  (2DENNBI)
+#TITLE      Spontaneously fissioning isomers in U, Np, Pu and
+#+          Am isotopes
+#AUTHOR(S)  N.L.Lark, G.Sletten, J.Pedersen,
+#+          S.Bjornholm
+#REF-CODE   (J,NP/A,139,481,1969)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.481, 1969
+#DATASETS   22
+#
+#DATASET    O2328011
+#DATE       20191201
+#REACTION   92-U-238(P,2N)93-NP-237,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         16
+#PRODUCT    93-NP-237
+#DATA-HDR   DATA-MAX
+#C4BEGIN    [ 1001 92238   3  16   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  16    1.3000+7          1.0000-7                                                N.L.Lark,ET.AL. (69)     O2328 11
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1342,18 +1442,18 @@
 #AUTHOR1    A.N.Smirnov+
 #YEAR       1991
 #INSTITUTE  (4RUSRI)
-#TITLE      Total and Differential Cross Sections of 10 to 95 MeV
-#+          Proton-Induced Fission of Actinide Nuclei.
+#TITLE      Total and differential cross sections of 10 to 95 MeV
+#+          proton-induced fission of actinide nuclei
 #AUTHOR(S)  A.N.Smirnov, I.Yu.Gorshkov, A.V.Prokofiev,
 #+          V.P.Eismont
-#REF-CODE   (C,91GAUSSG,,214,199111)
+#REF-CODE   (C,91GAUSSG,,214,1991)
 #REFERENCE  Conf. 21.Int.Symp.on Nucl.Phys., Gaussig 1991
 #+          p.214, 1991
-#DATASETS   2
+#DATASETS   8
 #
 #DATASET    O0606003
-#DATE       20001104
-#REACTION   92-U-238(P,F),,SIG,,,EXP
+#DATE       20200204
+#REACTION   92-U-238(P,F),,SIG
 #PROJ       1001
 #TARG       92238
 #MF         3
@@ -1363,20 +1463,20 @@
 #DATA       14
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.1000+7 1000000. 0.018000 2.0000-3                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    1.5000+7 1500000. 0.660000 0.070000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    2.6000+7 2000000. 1.130000 0.110000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    3.3000+7 2000000. 1.550000 0.160000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    3.5000+7 2000000. 1.650000 0.170000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    4.2000+7 2000000. 1.720000 0.170000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    4.7000+7 2000000. 1.870000 0.190000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    5.0000+7 2000000. 1.710000 0.170000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    5.2000+7 2000000. 1.870000 0.190000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    6.2000+7 2000000. 1.840000 0.180000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    6.5000+7 2000000. 2.030000 0.200000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    7.6000+7 2000000. 1.830000 0.180000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    8.3000+7 2000000. 1.620000 0.160000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
- 1001 92238   3  18    9.5000+7 2000000. 1.640000 0.160000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    1.1000+7 1000000. 0.018000 2.0000-3                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    1.5000+7 1500000. 0.660000 0.070000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    2.6000+7 2000000. 1.130000 0.110000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    3.3000+7 2000000. 1.550000 0.160000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    3.5000+7 2000000. 1.650000 0.170000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    4.2000+7 2000000. 1.720000 0.170000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    4.7000+7 2000000. 1.870000 0.190000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    5.0000+7 2000000. 1.710000 0.170000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    5.2000+7 2000000. 1.870000 0.190000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    6.2000+7 2000000. 1.840000 0.180000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    6.5000+7 2000000. 2.030000 0.200000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    7.6000+7 2000000. 1.830000 0.180000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    8.3000+7 2000000. 1.620000 0.160000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
+ 1001 92238   3  18    9.5000+7 2000000. 1.640000 0.160000                                       A.N.Smirnov,ET.AL. (91)  O0606  3
 #/DATA      14
 #/DATASET
 #/ENTRY
@@ -1700,6 +1800,154 @@
 #/ENTRY
 #
 #
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727005
+#DATE       20201002
+#REACTION   92-U-238(P,F)54-XE-135,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    54-XE-135
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    1.7000+7          5.6000-3 1.4000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+ 1001 92238   3  18    2.0000+7          0.012300 3.0750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+ 1001 92238   3  18    4.2000+7          0.027800 6.9500-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+ 1001 92238   3  18    5.7000+7          0.036200 9.0500-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+ 1001 92238   3  18    6.5000+7          0.027500 6.8750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+ 1001 92238   3  18    7.5000+7          0.019200 4.8000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+ 1001 92238   3  18    8.5000+7          0.021600 5.4000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727  5
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727018
+#DATE       20201002
+#REACTION   92-U-238(P,F)54-XE-133-M,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    54-XE-133-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18M  ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18M   1.7000+7          5.0000-4 1.2500-4           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+ 1001 92238   3  18M   2.0000+7          1.2000-3 3.0000-4           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+ 1001 92238   3  18M   4.2000+7          8.1000-3 2.0250-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+ 1001 92238   3  18M   5.7000+7          0.017800 4.4500-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+ 1001 92238   3  18M   6.5000+7          0.013800 3.4500-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+ 1001 92238   3  18M   7.5000+7          0.010600 2.6500-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+ 1001 92238   3  18M   8.5000+7          0.012000 3.0000-3           54133.7                     J.H.Forster,ET.AL. (66)  O0727 18
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727019
+#DATE       20201002
+#REACTION   92-U-238(P,F)54-XE-133-G,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    54-XE-133-G
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18G  ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18G   1.7000+7          3.0000-4 7.5000-5           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+ 1001 92238   3  18G   2.0000+7          1.4000-3 3.5000-4           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+ 1001 92238   3  18G   4.2000+7          8.9000-3 2.2250-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+ 1001 92238   3  18G   5.7000+7          0.015800 3.9500-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+ 1001 92238   3  18G   6.5000+7          0.014300 3.5750-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+ 1001 92238   3  18G   7.5000+7          8.7000-3 2.1750-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+ 1001 92238   3  18G   8.5000+7          0.011900 2.9750-3           54133.0                     J.H.Forster,ET.AL. (66)  O0727 19
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0727
+#AUTHOR1    J.H.Forster+
+#YEAR       1966
+#INSTITUTE  (1CANMCG)
+#TITLE      Xenon yields in the fission of heavy elements by
+#+          medium-energy protons.
+#AUTHOR(S)  J.H.Forster, N.T.Porile, L.Yaffe
+#REF-CODE   (J,CJC,44,2951,1966)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.44, p.2951, 1966
+#DATASETS   12
+#
+#DATASET    O0727020
+#DATE       20201002
+#REACTION   92-U-238(P,F)54-XE-135,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    54-XE-135
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    1.7000+7          8.0000-4 2.0000-4           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+ 1001 92238   3  18    2.0000+7          2.6000-3 6.5000-4           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+ 1001 92238   3  18    4.2000+7          0.017100 4.2750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+ 1001 92238   3  18    5.7000+7          0.033600 8.4000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+ 1001 92238   3  18    6.5000+7          0.028100 7.0250-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+ 1001 92238   3  18    7.5000+7          0.019200 4.8000-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+ 1001 92238   3  18    8.5000+7          0.023900 5.9750-3           54135.9                     J.H.Forster,ET.AL. (66)  O0727 20
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      E2032
 #AUTHOR1    S.Baba+
 #YEAR       1971
@@ -1733,6 +1981,240 @@
  1001 92238   3  18    3.5200+7          1.450000                                                S.Baba,ET.AL. (71)       E2032 24
  1001 92238   3  18    4.0100+7          1.630000                                                S.Baba,ET.AL. (71)       E2032 24
  1001 92238   3  18    4.5100+7          1.760000                                                S.Baba,ET.AL. (71)       E2032 24
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594010
+#DATE       20200306
+#REACTION   92-U-238(P,F)39-Y-90-M,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    39-Y-90-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18M   2.0000+7          1.2000-4 2.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   3.0000+7          1.5000-4 2.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   4.0000+7          1.9000-4 3.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   5.0000+7          2.2000-4 3.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   6.0000+7          2.2000-4 3.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   7.0000+7          2.8000-4 4.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   7.7000+7          3.3000-4 5.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+ 1001 92238   3  18M   8.5000+7          3.7000-4 5.0000-5           39090.7                     A.H.Khan,ET.AL. (70)     O0594 10
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594011
+#DATE       20200306
+#REACTION   92-U-238(P,F)39-Y-90,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    39-Y-90
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    2.0000+7          2.9000-3 4.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    3.0000+7          3.0000-3 5.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    4.0000+7          3.5000-3 5.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    5.0000+7          3.9000-3 6.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    6.0000+7          3.5000-3 6.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    7.0000+7          4.1000-3 6.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    7.7000+7          4.4000-3 7.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+ 1001 92238   3  18    8.5000+7          4.4000-3 7.0000-4           39090.9                     A.H.Khan,ET.AL. (70)     O0594 11
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594012
+#DATE       20200306
+#REACTION   92-U-238(P,F)39-Y-91-M,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    39-Y-91-M
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18M  ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18M   2.0000+7          9.7000-4 1.3000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   3.0000+7          1.6000-3 2.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   4.0000+7          1.8000-3 2.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   5.0000+7          1.9000-3 3.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   6.0000+7          2.0000-3 3.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   7.0000+7          1.8000-3 2.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   7.7000+7          1.8000-3 2.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+ 1001 92238   3  18M   8.5000+7          2.0000-3 3.0000-4           39091.7                     A.H.Khan,ET.AL. (70)     O0594 12
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594013
+#DATE       20200306
+#REACTION   92-U-238(P,F)39-Y-91,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    39-Y-91
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    2.0000+7          4.5000-3 1.0000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    3.0000+7          5.6000-3 1.3000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    4.0000+7          5.4000-3 1.2000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    5.0000+7          6.2000-3 1.3000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    6.0000+7          6.4000-3 1.4000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    7.0000+7          6.7000-3 1.5000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    7.7000+7          7.6000-3 1.7000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+ 1001 92238   3  18    8.5000+7          7.7000-3 1.7000-3           39091.9                     A.H.Khan,ET.AL. (70)     O0594 13
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594014
+#DATE       20200306
+#REACTION   92-U-238(P,F)39-Y-92,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    39-Y-92
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    2.0000+7          7.3000-3 1.1000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    3.0000+7          8.9000-3 1.2000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    4.0000+7          0.011000 1.8000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    5.0000+7          0.010000 1.7000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    6.0000+7          0.013000 1.9000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    7.0000+7          0.013000 2.0000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    7.7000+7          0.013000 1.9000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+ 1001 92238   3  18    8.5000+7          0.012000 1.8000-3           39092.9                     A.H.Khan,ET.AL. (70)     O0594 14
+#/DATA      8
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0594
+#AUTHOR1    A.H.Khan+
+#YEAR       1970
+#INSTITUTE  (1CANMCG)
+#TITLE      Nuclear charge dispersion of light-mass fission
+#+          products in the fission of U-235 and U-238 by medium-
+#+          energy protons
+#AUTHOR(S)  A.H.Khan, G.B.Saha, L.Yaffe
+#REF-CODE   (J,CJC,48,1924,1970)
+#REFERENCE  Jour. Canadian Journal of Chemistry
+#+          Vol.48, p.1924, 1970
+#DATASETS   12
+#
+#DATASET    O0594017
+#DATE       20200306
+#REACTION   92-U-238(P,F)38-SR-92,,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#PRODUCT    38-SR-92
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       8
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    2.0000+7          0.031000 5.0000-3           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    3.0000+7          0.060000 8.0000-3           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    4.0000+7          0.066000 0.011000           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    5.0000+7          0.062000 0.010000           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    6.0000+7          0.059000 9.0000-3           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    7.0000+7          0.064000 0.010000           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    7.7000+7          0.052000 8.0000-3           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
+ 1001 92238   3  18    8.5000+7          0.060000 0.010000           38092.9                     A.H.Khan,ET.AL. (70)     O0594 17
 #/DATA      8
 #/DATASET
 #/ENTRY
@@ -2072,18 +2554,18 @@
 #AUTHOR1    A.N.Smirnov+
 #YEAR       1991
 #INSTITUTE  (4RUSRI)
-#TITLE      Total and Differential Cross Sections of 10 to 95 MeV
-#+          Proton-Induced Fission of Actinide Nuclei.
+#TITLE      Total and differential cross sections of 10 to 95 MeV
+#+          proton-induced fission of actinide nuclei
 #AUTHOR(S)  A.N.Smirnov, I.Yu.Gorshkov, A.V.Prokofiev,
 #+          V.P.Eismont
-#REF-CODE   (C,91GAUSSG,,214,199111)
+#REF-CODE   (C,91GAUSSG,,214,1991)
 #REFERENCE  Conf. 21.Int.Symp.on Nucl.Phys., Gaussig 1991
 #+          p.214, 1991
-#DATASETS   2
+#DATASETS   8
 #
 #DATASET    O0606002
-#DATE       20001104
-#REACTION   92-U-238(P,F),,SIG,,,EXP
+#DATE       20200204
+#REACTION   92-U-238(P,F),,SIG
 #PROJ       1001
 #TARG       92238
 #MF         3
@@ -2093,7 +2575,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    6.2000+7 2000000. 1.840000 0.180000                                       A.N.SMIRNOV,ET.AL. (91)  O0606  2
+ 1001 92238   3  18    6.2000+7 2000000. 1.840000 0.180000                                       A.N.Smirnov,ET.AL. (91)  O0606  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2639,6 +3121,38 @@
 #/ENTRY
 #
 #
+#ENTRY      C2444
+#AUTHOR1    J.Jungerman
+#YEAR       1950
+#INSTITUTE  (1USAUCX)
+#TITLE      Fission Excitation Functions for Charged Particles
+#AUTHOR(S)  J.Jungerman
+#REF-CODE   (J,PR,79,632,1950)
+#REFERENCE  Jour. Physical Review
+#+          Vol.79, p.632, 1950
+#DATASETS   49
+#
+#DATASET    C2444046
+#DATE       20200104
+#REACTION   92-U-238(P,F),,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       4
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    2.2487+8          0.490000 0.052000                                       J.Jungerman (50)         C2444 46
+ 1001 92238   3  18    2.7539+8          0.481000 0.036000                                       J.Jungerman (50)         C2444 46
+ 1001 92238   3  18    2.9520+8          0.430000 0.041000                                       J.Jungerman (50)         C2444 46
+ 1001 92238   3  18    3.3942+8          0.627000 0.041000                                       J.Jungerman (50)         C2444 46
+#/DATA      4
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O0707
 #AUTHOR1    V.A.Kon`shin+
 #YEAR       1965
@@ -2827,6 +3341,38 @@
 #/ENTRY
 #
 #
+#ENTRY      O0624
+#AUTHOR1    A.P.Vinogradov+
+#YEAR       1955
+#INSTITUTE  (4RUSGAC)
+#TITLE      Radiochemical investigation of the fission of bismuth,
+#+          thorium and uranium with 480 MeV protons
+#AUTHOR(S)  A.P.Vinogradov, I.P.Alimarin, V.I.Baranov,
+#+          A.K.Lavrukhina, T.V.Baranova, F.I.Pavlotskaya,
+#+          A.A.Bragina, Yu.V.Yakovlev
+#REF-CODE   (C,55MOSCOW,,97,1955)
+#REFERENCE  Conf. USSR Conf. Peaceful Uses of At. En., Moscow 1955
+#+          p.97, 1955
+#DATASETS   2
+#
+#DATASET    O0624005
+#DATE       20201203
+#REACTION   92-U-238(P,F),,SIG
+#PROJ       1001
+#TARG       92238
+#MF         3
+#MT         18
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 92238   3  18   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 92238   3  18    4.8000+8          1.650000                                                A.P.Vinogradov, (55)     O0624  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      A0871
 #AUTHOR1    A.R.Balabekyan+
 #YEAR       2010
@@ -2863,19 +3409,19 @@
 #AUTHOR1    B.A.Bochagov+
 #YEAR       1978
 #INSTITUTE  (4RUSRI)
-#TITLE      Measurement of fission cross-sections by
-#+          bombarding U-238, U-235, Th-232, Bi-209, Pb-206-Pb-208,
-#+          Au-197, Ta-181, Yb and Sm with 1 GeV protons
+#TITLE      Determination of the fission cross sections of 238U,
+#+          235U, 232Th, 209Bi, 208-206Pb, 197Au, 181Ta, Yb, and
+#+          Sm bombarded by 1-GeV protons
 #AUTHOR(S)  B.A.Bochagov, V.S.Bychenkov, V.D.Dmitriev,
 #+          S.P.Mal'cev, A.I.Obukhov, N.A.Perfilov,
 #+          V.A.Udod, O.E.Shigaev
-#REF-CODE   (J,YF,28,572,197808)
+#REF-CODE   (J,YF,28,572,1978)
 #REFERENCE  Jour. Yadernaya Fizika
 #+          Vol.28, p.572, 1978
 #DATASETS   11
 #
 #DATASET    A0029003
-#DATE       20040602
+#DATE       20200504
 #REACTION   92-U-238(P,F),,SIG
 #PROJ       1001
 #TARG       92238
@@ -2984,1446 +3530,6 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 92238   3  18    1.0000+9          1.140000 0.065000                                       L.N.Andronenko, (76)     O0711  2
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777002
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-79,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-79
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.0000-4 3.0000-5           37079.9                     B.N.Belyaev,ET.AL. (80)  O0777  2
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777003
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-80,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-80
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          2.3400-4 2.5740-5           37080.9                     B.N.Belyaev,ET.AL. (80)  O0777  3
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777004
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-81,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-81
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.2000-4 2.7600-5           37081.9                     B.N.Belyaev,ET.AL. (80)  O0777  4
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777005
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-82,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-82
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          2.2300-3                    37082.9                     B.N.Belyaev,ET.AL. (80)  O0777  5
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777006
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-83,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-83
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.3500-3                    37083.9                     B.N.Belyaev,ET.AL. (80)  O0777  6
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777007
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-84,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-84
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          7.2100-3                    37084.9                     B.N.Belyaev,ET.AL. (80)  O0777  7
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777008
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-85,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-85
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.8700-3                    37085.9                     B.N.Belyaev,ET.AL. (80)  O0777  8
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777009
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-86,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-86
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          0.010340                    37086.9                     B.N.Belyaev,ET.AL. (80)  O0777  9
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777010
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-87,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-87
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.7600-3                    37087.9                     B.N.Belyaev,ET.AL. (80)  O0777 10
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777011
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-88,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-88
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.3500-3                    37088.9                     B.N.Belyaev,ET.AL. (80)  O0777 11
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777012
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-89,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-89
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.5200-3                    37089.9                     B.N.Belyaev,ET.AL. (80)  O0777 12
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777013
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-90,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-90
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.6700-3                    37090.9                     B.N.Belyaev,ET.AL. (80)  O0777 13
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777014
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-91,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-91
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          8.6000-3                    37091.9                     B.N.Belyaev,ET.AL. (80)  O0777 14
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777015
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-92,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-92
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          5.4500-3                    37092.9                     B.N.Belyaev,ET.AL. (80)  O0777 15
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777016
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-93,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-93
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          3.8300-3                    37093.9                     B.N.Belyaev,ET.AL. (80)  O0777 16
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777017
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-94,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-94
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.9700-3                    37094.9                     B.N.Belyaev,ET.AL. (80)  O0777 17
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777018
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-95,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-95
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          9.8300-4                    37095.9                     B.N.Belyaev,ET.AL. (80)  O0777 18
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777019
-#DATE       20040404
-#REACTION   92-U-238(P,F)37-RB-96,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    37-RB-96
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          3.9900-4                    37096.9                     B.N.Belyaev,ET.AL. (80)  O0777 19
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777020
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-121,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-121
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.2000-4 4.8000-5           55121.9                     B.N.Belyaev,ET.AL. (80)  O0777 20
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777021
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-122,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-122
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          2.1000-4 8.4000-5           55122.9                     B.N.Belyaev,ET.AL. (80)  O0777 21
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777022
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-123,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-123
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          6.3000-4 8.1900-5           55123.9                     B.N.Belyaev,ET.AL. (80)  O0777 22
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777023
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-124,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-124
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          8.3000-4 1.3280-4           55124.9                     B.N.Belyaev,ET.AL. (80)  O0777 23
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777024
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-125,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-125
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.5700-3                    55125.9                     B.N.Belyaev,ET.AL. (80)  O0777 24
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777025
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-126,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-126
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          2.1400-3                    55126.9                     B.N.Belyaev,ET.AL. (80)  O0777 25
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777026
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-127,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-127
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          3.2700-3                    55127.9                     B.N.Belyaev,ET.AL. (80)  O0777 26
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777027
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-128,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-128
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          3.9700-3                    55128.9                     B.N.Belyaev,ET.AL. (80)  O0777 27
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777028
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-129,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-129
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.8700-3                    55129.9                     B.N.Belyaev,ET.AL. (80)  O0777 28
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777029
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-130,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-130
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.8500-3                    55130.9                     B.N.Belyaev,ET.AL. (80)  O0777 29
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777030
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-131,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-131
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          5.6100-3                    55131.9                     B.N.Belyaev,ET.AL. (80)  O0777 30
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777031
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-132,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-132
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          5.4400-3                    55132.9                     B.N.Belyaev,ET.AL. (80)  O0777 31
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777032
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-133,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-133
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          5.4200-3                    55133.9                     B.N.Belyaev,ET.AL. (80)  O0777 32
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777033
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-134,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-134
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.5300-3                    55134.9                     B.N.Belyaev,ET.AL. (80)  O0777 33
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777034
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-135,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-135
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.1200-3                    55135.9                     B.N.Belyaev,ET.AL. (80)  O0777 34
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777035
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-136,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-136
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.2400-3                    55136.9                     B.N.Belyaev,ET.AL. (80)  O0777 35
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777036
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-137,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-137
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.9800-3                    55137.9                     B.N.Belyaev,ET.AL. (80)  O0777 36
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777037
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-138,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-138
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          3.7300-3                    55138.9                     B.N.Belyaev,ET.AL. (80)  O0777 37
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777038
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-139,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-139
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          4.8000-3                    55139.9                     B.N.Belyaev,ET.AL. (80)  O0777 38
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777039
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-140,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-140
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          2.6000-3                    55140.9                     B.N.Belyaev,ET.AL. (80)  O0777 39
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777040
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-141,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-141
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.9000-3                    55141.9                     B.N.Belyaev,ET.AL. (80)  O0777 40
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777041
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-142,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-142
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.0940-3                    55142.9                     B.N.Belyaev,ET.AL. (80)  O0777 41
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777042
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-143,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-143
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          5.5900-4                    55143.9                     B.N.Belyaev,ET.AL. (80)  O0777 42
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777043
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-144,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-144
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          2.5000-4 5.0000-5           55144.9                     B.N.Belyaev,ET.AL. (80)  O0777 43
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777044
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-145,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-145
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.5000-4 4.0500-5           55145.9                     B.N.Belyaev,ET.AL. (80)  O0777 44
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777045
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-146,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-146
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          1.4000-4 5.6000-5           55146.9                     B.N.Belyaev,ET.AL. (80)  O0777 45
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0777
-#AUTHOR1    B.N.Belyaev+
-#YEAR       1980
-#INSTITUTE  (4RUSRI)
-#TITLE      Rb and Cs isotopic distributions from 1-GeV proton
-#+          fission of U-238.
-#AUTHOR(S)  B.N.Belyaev, V.D.Domkin, Yu.G.Korobulin,
-#+          L.N.Androneko, G.E.Solyakin
-#REF-CODE   (J,NP/A,348,479,1980)
-#REFERENCE  Jour. Nuclear Physics, Section A
-#+          Vol.348, p.479, 1980
-#DATASETS   45
-#
-#DATASET    O0777046
-#DATE       20040404
-#REACTION   92-U-238(P,F)55-CS-147,,SIG
-#PROJ       1001
-#TARG       92238
-#MF         3
-#MT         18
-#PRODUCT    55-CS-147
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 92238   3  18   ]
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   3  18    1.0000+9          8.0000-5 3.2000-5           55147.9                     B.N.Belyaev,ET.AL. (80)  O0777 46
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5826,9 +4932,9 @@
 #AUTHOR1    K.Beg+
 #YEAR       1971
 #INSTITUTE  (1USAPUR)
-#TITLE      Energy Dependence of the Recoil Properties of Products
-#+          From the Interaction of U-238 with 0.45-11.5-GeV
-#+          Protons.
+#TITLE      Energy dependence of the recoil properties of products
+#+          from the interaction of U-238 with 0.45-11.5-GeV
+#+          protons
 #AUTHOR(S)  K.Beg, N.T.Porile
 #REF-CODE   (J,PR/C,3,1631,1971)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -5836,7 +4942,7 @@
 #DATASETS   6
 #
 #DATASET    O0544002
-#DATE       19991103
+#DATE       20201205
 #REACTION   92-U-238(P,X)56-BA-140,CUM,SIG
 #PROJ       1001
 #TARG       92238
@@ -5848,14 +4954,14 @@
 #DATA       8
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   39001    4.5000+8          0.012100 2.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    1.5000+9          8.3000-3 1.0000-3           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    2.0000+9          7.8000-3 3.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    3.0000+9          7.4000-3 2.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    4.5000+9          7.5000-3 3.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    6.0000+9          7.6000-3 1.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    9.0000+9          7.4000-3 2.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
- 1001 92238   39001    1.150+10          7.8000-3 2.0000-4           56140.9                     K.BEG,ET.AL. (71)        O0544  2
+ 1001 92238   39001    4.5000+8          0.012100 2.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    1.5000+9          8.3000-3 1.0000-3           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    2.0000+9          7.8000-3 3.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    3.0000+9          7.4000-3 2.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    4.5000+9          7.5000-3 3.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    6.0000+9          7.6000-3 1.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    9.0000+9          7.4000-3 2.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
+ 1001 92238   39001    1.150+10          7.8000-3 2.0000-4           56140.9                     K.Beg,ET.AL. (71)        O0544  2
 #/DATA      8
 #/DATASET
 #/ENTRY
@@ -5865,9 +4971,9 @@
 #AUTHOR1    K.Beg+
 #YEAR       1971
 #INSTITUTE  (1USAPUR)
-#TITLE      Energy Dependence of the Recoil Properties of Products
-#+          From the Interaction of U-238 with 0.45-11.5-GeV
-#+          Protons.
+#TITLE      Energy dependence of the recoil properties of products
+#+          from the interaction of U-238 with 0.45-11.5-GeV
+#+          protons
 #AUTHOR(S)  K.Beg, N.T.Porile
 #REF-CODE   (J,PR/C,3,1631,1971)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -5875,7 +4981,7 @@
 #DATASETS   6
 #
 #DATASET    O0544003
-#DATE       19991103
+#DATE       20201205
 #REACTION   92-U-238(P,X)56-BA-131,CUM,SIG
 #PROJ       1001
 #TARG       92238
@@ -5887,14 +4993,14 @@
 #DATA       8
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   39001    4.5000+8          3.2000-3 1.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    1.5000+9          6.7000-3 1.0000-3           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    2.0000+9          6.9000-3 3.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    3.0000+9          8.2000-3 2.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    4.5000+9          9.6000-3 3.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    6.0000+9          9.4000-3 1.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    9.0000+9          8.4000-3 1.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
- 1001 92238   39001    1.150+10          8.8000-3 1.0000-4           56131.9                     K.BEG,ET.AL. (71)        O0544  3
+ 1001 92238   39001    4.5000+8          3.2000-3 1.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    1.5000+9          6.7000-3 1.0000-3           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    2.0000+9          6.9000-3 3.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    3.0000+9          8.2000-3 2.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    4.5000+9          9.6000-3 3.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    6.0000+9          9.4000-3 1.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    9.0000+9          8.4000-3 1.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
+ 1001 92238   39001    1.150+10          8.8000-3 1.0000-4           56131.9                     K.Beg,ET.AL. (71)        O0544  3
 #/DATA      8
 #/DATASET
 #/ENTRY
@@ -5904,9 +5010,9 @@
 #AUTHOR1    K.Beg+
 #YEAR       1971
 #INSTITUTE  (1USAPUR)
-#TITLE      Energy Dependence of the Recoil Properties of Products
-#+          From the Interaction of U-238 with 0.45-11.5-GeV
-#+          Protons.
+#TITLE      Energy dependence of the recoil properties of products
+#+          from the interaction of U-238 with 0.45-11.5-GeV
+#+          protons
 #AUTHOR(S)  K.Beg, N.T.Porile
 #REF-CODE   (J,PR/C,3,1631,1971)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -5914,7 +5020,7 @@
 #DATASETS   6
 #
 #DATASET    O0544005
-#DATE       19991103
+#DATE       20201205
 #REACTION   92-U-238(P,X)38-SR-91,CUM,SIG
 #PROJ       1001
 #TARG       92238
@@ -5926,14 +5032,14 @@
 #DATA       8
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   39001    4.5000+8          0.027500 3.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    1.5000+9          0.021400 2.0000-3           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    2.0000+9          0.016500 5.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    3.0000+9          0.014200 4.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    4.5000+9          0.015000 7.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    6.0000+9          0.014700 2.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    9.0000+9          0.013400 6.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
- 1001 92238   39001    1.150+10          0.014300 4.0000-4           38091.9                     K.BEG,ET.AL. (71)        O0544  5
+ 1001 92238   39001    4.5000+8          0.027500 3.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    1.5000+9          0.021400 2.0000-3           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    2.0000+9          0.016500 5.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    3.0000+9          0.014200 4.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    4.5000+9          0.015000 7.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    6.0000+9          0.014700 2.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    9.0000+9          0.013400 6.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
+ 1001 92238   39001    1.150+10          0.014300 4.0000-4           38091.9                     K.Beg,ET.AL. (71)        O0544  5
 #/DATA      8
 #/DATASET
 #/ENTRY
@@ -5943,9 +5049,9 @@
 #AUTHOR1    K.Beg+
 #YEAR       1971
 #INSTITUTE  (1USAPUR)
-#TITLE      Energy Dependence of the Recoil Properties of Products
-#+          From the Interaction of U-238 with 0.45-11.5-GeV
-#+          Protons.
+#TITLE      Energy dependence of the recoil properties of products
+#+          from the interaction of U-238 with 0.45-11.5-GeV
+#+          protons
 #AUTHOR(S)  K.Beg, N.T.Porile
 #REF-CODE   (J,PR/C,3,1631,1971)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -5953,7 +5059,7 @@
 #DATASETS   6
 #
 #DATASET    O0544006
-#DATE       19991103
+#DATE       20201205
 #REACTION   92-U-238(P,X)38-SR-83,CUM,SIG
 #PROJ       1001
 #TARG       92238
@@ -5965,13 +5071,13 @@
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   39001    4.5000+8          1.0000-4 1.0000-5           38083.9                     K.BEG,ET.AL. (71)        O0544  6
- 1001 92238   39001    2.0000+9          5.9000-4 1.0000-5           38083.9                     K.BEG,ET.AL. (71)        O0544  6
- 1001 92238   39001    3.0000+9          4.1000-3 1.0000-4           38083.9                     K.BEG,ET.AL. (71)        O0544  6
- 1001 92238   39001    4.5000+9          5.0000-3 3.0000-4           38083.9                     K.BEG,ET.AL. (71)        O0544  6
- 1001 92238   39001    6.0000+9          7.1000-3 3.0000-4           38083.9                     K.BEG,ET.AL. (71)        O0544  6
- 1001 92238   39001    9.0000+9          5.6000-3 2.0000-4           38083.9                     K.BEG,ET.AL. (71)        O0544  6
- 1001 92238   39001    1.150+10          5.8000-3 2.0000-4           38083.9                     K.BEG,ET.AL. (71)        O0544  6
+ 1001 92238   39001    4.5000+8          1.0000-4 1.0000-5           38083.9                     K.Beg,ET.AL. (71)        O0544  6
+ 1001 92238   39001    2.0000+9          5.9000-4 1.0000-5           38083.9                     K.Beg,ET.AL. (71)        O0544  6
+ 1001 92238   39001    3.0000+9          4.1000-3 1.0000-4           38083.9                     K.Beg,ET.AL. (71)        O0544  6
+ 1001 92238   39001    4.5000+9          5.0000-3 3.0000-4           38083.9                     K.Beg,ET.AL. (71)        O0544  6
+ 1001 92238   39001    6.0000+9          7.1000-3 3.0000-4           38083.9                     K.Beg,ET.AL. (71)        O0544  6
+ 1001 92238   39001    9.0000+9          5.6000-3 2.0000-4           38083.9                     K.Beg,ET.AL. (71)        O0544  6
+ 1001 92238   39001    1.150+10          5.8000-3 2.0000-4           38083.9                     K.Beg,ET.AL. (71)        O0544  6
 #/DATA      7
 #/DATASET
 #/ENTRY
@@ -5981,9 +5087,9 @@
 #AUTHOR1    K.Beg+
 #YEAR       1971
 #INSTITUTE  (1USAPUR)
-#TITLE      Energy Dependence of the Recoil Properties of Products
-#+          From the Interaction of U-238 with 0.45-11.5-GeV
-#+          Protons.
+#TITLE      Energy dependence of the recoil properties of products
+#+          from the interaction of U-238 with 0.45-11.5-GeV
+#+          protons
 #AUTHOR(S)  K.Beg, N.T.Porile
 #REF-CODE   (J,PR/C,3,1631,1971)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -5991,7 +5097,7 @@
 #DATASETS   6
 #
 #DATASET    O0544007
-#DATE       19991103
+#DATE       20201205
 #REACTION   92-U-238(P,X)38-SR-82,CUM,SIG
 #PROJ       1001
 #TARG       92238
@@ -6003,13 +5109,13 @@
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   39001    4.5000+8          1.3000-5 4.0000-6           38082.9                     K.BEG,ET.AL. (71)        O0544  7
- 1001 92238   39001    2.0000+9          8.2000-5 1.0000-6           38082.9                     K.BEG,ET.AL. (71)        O0544  7
- 1001 92238   39001    3.0000+9          7.4000-4 5.0000-5           38082.9                     K.BEG,ET.AL. (71)        O0544  7
- 1001 92238   39001    4.5000+9          1.1000-3 1.0000-4           38082.9                     K.BEG,ET.AL. (71)        O0544  7
- 1001 92238   39001    6.0000+9          1.3000-3 1.0000-4           38082.9                     K.BEG,ET.AL. (71)        O0544  7
- 1001 92238   39001    9.0000+9          1.3000-3 1.0000-4           38082.9                     K.BEG,ET.AL. (71)        O0544  7
- 1001 92238   39001    1.150+10          1.4000-3 1.0000-4           38082.9                     K.BEG,ET.AL. (71)        O0544  7
+ 1001 92238   39001    4.5000+8          1.3000-5 4.0000-6           38082.9                     K.Beg,ET.AL. (71)        O0544  7
+ 1001 92238   39001    2.0000+9          8.2000-5 1.0000-6           38082.9                     K.Beg,ET.AL. (71)        O0544  7
+ 1001 92238   39001    3.0000+9          7.4000-4 5.0000-5           38082.9                     K.Beg,ET.AL. (71)        O0544  7
+ 1001 92238   39001    4.5000+9          1.1000-3 1.0000-4           38082.9                     K.Beg,ET.AL. (71)        O0544  7
+ 1001 92238   39001    6.0000+9          1.3000-3 1.0000-4           38082.9                     K.Beg,ET.AL. (71)        O0544  7
+ 1001 92238   39001    9.0000+9          1.3000-3 1.0000-4           38082.9                     K.Beg,ET.AL. (71)        O0544  7
+ 1001 92238   39001    1.150+10          1.4000-3 1.0000-4           38082.9                     K.Beg,ET.AL. (71)        O0544  7
 #/DATA      7
 #/DATASET
 #/ENTRY
@@ -6199,9 +5305,9 @@
 #AUTHOR1    K.Beg+
 #YEAR       1971
 #INSTITUTE  (1USAPUR)
-#TITLE      Energy Dependence of the Recoil Properties of Products
-#+          From the Interaction of U-238 with 0.45-11.5-GeV
-#+          Protons.
+#TITLE      Energy dependence of the recoil properties of products
+#+          from the interaction of U-238 with 0.45-11.5-GeV
+#+          protons
 #AUTHOR(S)  K.Beg, N.T.Porile
 #REF-CODE   (J,PR/C,3,1631,1971)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -6209,7 +5315,7 @@
 #DATASETS   6
 #
 #DATASET    O0544004
-#DATE       19991103
+#DATE       20201205
 #REACTION   92-U-238(P,X)56-BA-128,CUM,SIG
 #PROJ       1001
 #TARG       92238
@@ -6221,13 +5327,13 @@
 #DATA       7
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 92238   39001    1.5000+9          2.7000-3 4.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
- 1001 92238   39001    2.0000+9          3.4000-3 1.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
- 1001 92238   39001    3.0000+9          5.1000-3 1.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
- 1001 92238   39001    4.5000+9          6.0000-3 1.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
- 1001 92238   39001    6.0000+9          6.6000-3 8.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
- 1001 92238   39001    9.0000+9          5.6000-3 1.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
- 1001 92238   39001    1.150+10          6.5000-3 5.0000-4           56128.9                     K.BEG,ET.AL. (71)        O0544  4
+ 1001 92238   39001    1.5000+9          2.7000-3 4.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
+ 1001 92238   39001    2.0000+9          3.4000-3 1.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
+ 1001 92238   39001    3.0000+9          5.1000-3 1.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
+ 1001 92238   39001    4.5000+9          6.0000-3 1.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
+ 1001 92238   39001    6.0000+9          6.6000-3 8.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
+ 1001 92238   39001    9.0000+9          5.6000-3 1.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
+ 1001 92238   39001    1.150+10          6.5000-3 5.0000-4           56128.9                     K.Beg,ET.AL. (71)        O0544  4
 #/DATA      7
 #/DATASET
 #/ENTRY
@@ -7259,7 +6365,7 @@
 #INSTITUTE  (1USAMSU)
 #TITLE      Multipole moments of Sm-154, Yb-176, Th-232 and U-238
 #+          from  proton inelastic scattering.
-#AUTHOR(S)  C.H.King, J.Finck, G.M.Crawley,
+#AUTHOR(S)  C.H.King, J.E.Finck, G.M.Crawley,
 #+          J.A.Nolen Jr, R.M.Ronningen
 #REF-CODE   (J,PR/C,20,2084,1979)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -7735,7 +6841,7 @@
 #INSTITUTE  (1USAMSU)
 #TITLE      Multipole moments of Sm-154, Yb-176, Th-232 and U-238
 #+          from  proton inelastic scattering.
-#AUTHOR(S)  C.H.King, J.Finck, G.M.Crawley,
+#AUTHOR(S)  C.H.King, J.E.Finck, G.M.Crawley,
 #+          J.A.Nolen Jr, R.M.Ronningen
 #REF-CODE   (J,PR/C,20,2084,1979)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
@@ -10952,7 +10058,7 @@
 #REF-CODE   (J,IZK,,(6),40,1986)
 #REFERENCE  Jour. Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
 #+          Issue.6, p.40, 1986
-#DATASETS   4
+#DATASETS   5
 #
 #DATASET    D0930016
 #DATE       20190101

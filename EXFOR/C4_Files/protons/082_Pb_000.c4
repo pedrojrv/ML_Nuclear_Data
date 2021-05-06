@@ -179,6 +179,35 @@
 #/ENTRY
 #
 #
+#ENTRY      O1947
+#AUTHOR1    J.M.Cassels+
+#YEAR       1954
+#INSTITUTE  (2UK HAR)
+#TITLE      Absorption cross sections for 134 MeV protons.
+#AUTHOR(S)  J.M.Cassels, J.D.Lawson
+#REF-CODE   (J,PPS/A,67,125,1954)
+#REFERENCE  Jour. Proc.Physical Society (London), Section A
+#+          Vol.67, p.125, 1954
+#DATASETS   5
+#
+#DATASET    O1947006
+#DATE       20210105
+#REACTION   82-PB-0(P,NON),,SIG
+#PROJ       1001
+#TARG       82000
+#MF         3
+#MT         3
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 82000   3   3   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 82000   3   3    1.3400+8 4000000. 1.782000 0.143000                                       J.M.Cassels,ET.AL. (54)  O1947  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      C1232
 #AUTHOR1    F.S.Dietrich+
 #YEAR       2002
@@ -4319,11 +4348,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347002
-#DATE       20140102
-#REACTION   82-PB-0(P,X)83-BI-207,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)83-BI-207,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4352,11 +4381,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347003
-#DATE       20140102
-#REACTION   82-PB-0(P,X)83-BI-206,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)83-BI-206,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4385,11 +4414,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347004
-#DATE       20140102
-#REACTION   82-PB-0(P,X)83-BI-205,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)83-BI-205,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4418,11 +4447,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347005
-#DATE       20140102
-#REACTION   82-PB-0(P,X)83-BI-204,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)83-BI-204,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4451,11 +4480,77 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
+#
+#DATASET    O0347006
+#DATE       20200100
+#REACTION   82-PB-0(P,X)83-BI-203,,SIG
+#PROJ       1001
+#TARG       82000
+#MF         3
+#MT         9000
+#PRODUCT    83-BI-203
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 82000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 82000   39000    6.6000+8          5.0000-3 1.0000-3           83203.9                     Yu.V.Aleksandrov, (96)   O0347  6
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0347
+#AUTHOR1    Yu.V.Aleksandrov+
+#YEAR       1996
+#INSTITUTE  (4RUSRI)
+#TITLE      Cross sections for the production of radionuclides in
+#+          lead target irradiated with 660 MeV protons
+#AUTHOR(S)  Yu.V.Aleksandrov, S.K.Vasiljev, R.B.Ivanov,
+#+          M.A.Mikhaylova, V.P.Prikhodtseva, A.V.Saulskij,
+#+          V.G.Eismont
+#REF-CODE   (C,96KALMAR,2,576,1996)
+#REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
+#+          Vol.2, p.576, 1996
+#DATASETS   64
+#
+#DATASET    O0347007
+#DATE       20200100
+#REACTION   82-PB-0(P,X)82-PB-203,,SIG
+#PROJ       1001
+#TARG       82000
+#MF         3
+#MT         9000
+#PRODUCT    82-PB-203
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 82000   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 82000   39000    6.6000+8          0.040000 8.0000-3           82203.9                     Yu.V.Aleksandrov, (96)   O0347  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0347
+#AUTHOR1    Yu.V.Aleksandrov+
+#YEAR       1996
+#INSTITUTE  (4RUSRI)
+#TITLE      Cross sections for the production of radionuclides in
+#+          lead target irradiated with 660 MeV protons
+#AUTHOR(S)  Yu.V.Aleksandrov, S.K.Vasiljev, R.B.Ivanov,
+#+          M.A.Mikhaylova, V.P.Prikhodtseva, A.V.Saulskij,
+#+          V.G.Eismont
+#REF-CODE   (C,96KALMAR,2,576,1996)
+#REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
+#+          Vol.2, p.576, 1996
+#DATASETS   64
 #
 #DATASET    O0347015
-#DATE       20140102
-#REACTION   82-PB-0(P,X)80-HG-203,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)80-HG-203,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4484,11 +4579,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347016
-#DATE       20140102
-#REACTION   82-PB-0(P,X)80-HG-197-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)80-HG-197-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4517,11 +4612,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347017
-#DATE       20140102
-#REACTION   82-PB-0(P,X)80-HG-195-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)80-HG-195-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4550,11 +4645,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347018
-#DATE       20140102
-#REACTION   82-PB-0(P,X)80-HG-193-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)80-HG-193-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4583,11 +4678,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347019
-#DATE       20140102
-#REACTION   82-PB-0(P,X)79-AU-200-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)79-AU-200-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4616,11 +4711,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347023
-#DATE       20140102
-#REACTION   82-PB-0(P,X)79-AU-194-G,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)79-AU-194-G,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4649,11 +4744,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347030
-#DATE       20140102
-#REACTION   82-PB-0(P,X)77-IR-188,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)77-IR-188,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4682,11 +4777,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347031
-#DATE       20140102
-#REACTION   82-PB-0(P,X)77-IR-186-G,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)77-IR-186-G,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4715,11 +4810,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347040
-#DATE       20140102
-#REACTION   82-PB-0(P,X)75-RE-182-G,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)75-RE-182-G,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4748,11 +4843,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347051
-#DATE       20140102
-#REACTION   82-PB-0(P,X)71-LU-172-G,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)71-LU-172-G,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4781,11 +4876,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347053
-#DATE       20140102
-#REACTION   82-PB-0(P,X)71-LU-170,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)71-LU-170,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4814,11 +4909,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347058
-#DATE       20140102
-#REACTION   82-PB-0(P,X)52-TE-123-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)52-TE-123-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4847,11 +4942,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347059
-#DATE       20140102
-#REACTION   82-PB-0(P,X)52-TE-121-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)52-TE-121-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4880,11 +4975,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347061
-#DATE       20140102
-#REACTION   82-PB-0(P,X)52-TE-119-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)52-TE-119-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -4913,7 +5008,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347064
 #DATE       20140102
@@ -4946,7 +5041,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347066
 #DATE       20140102
@@ -4979,7 +5074,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347067
 #DATE       20140102
@@ -5012,7 +5107,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347070
 #DATE       20140102
@@ -5045,7 +5140,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347071
 #DATE       20140102
@@ -5078,11 +5173,11 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347077
-#DATE       20140102
-#REACTION   82-PB-0(P,X)43-TC-95-M,IND,SIG
+#DATE       20200100
+#REACTION   82-PB-0(P,X)43-TC-95-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5111,7 +5206,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347079
 #DATE       20140102
@@ -5144,7 +5239,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347081
 #DATE       20140102
@@ -5339,19 +5434,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506002
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-206,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-206,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5362,7 +5457,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000    6.6000+8          4.7000-3 4.0000-4           83206.9                     YU.A.ALEXANDROV, (97)    O0506  2
+ 1001 82000   39000    6.6000+8          4.7000-3 4.0000-4           83206.9                     Yu.A.Alexandrov, (97)    O0506  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5372,19 +5467,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506003
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-205,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-205,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5395,7 +5490,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000    6.6000+8          6.4000-3 6.0000-4           83205.9                     YU.A.ALEXANDROV, (97)    O0506  3
+ 1001 82000   39000    6.6000+8          6.4000-3 6.0000-4           83205.9                     Yu.A.Alexandrov, (97)    O0506  3
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5405,19 +5500,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506004
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-204,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-204,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5428,7 +5523,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000    6.6000+8          6.3000-3 6.0000-4           83204.9                     YU.A.ALEXANDROV, (97)    O0506  4
+ 1001 82000   39000    6.6000+8          6.3000-3 6.0000-4           83204.9                     Yu.A.Alexandrov, (97)    O0506  4
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5438,19 +5533,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506005
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-203,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-203,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5461,7 +5556,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000    6.6000+8          5.8000-3 6.0000-4           83203.9                     YU.A.ALEXANDROV, (97)    O0506  5
+ 1001 82000   39000    6.6000+8          5.8000-3 6.0000-4           83203.9                     Yu.A.Alexandrov, (97)    O0506  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5471,19 +5566,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506006
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-202,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-202,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5494,7 +5589,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000    6.6000+8          4.6000-3 9.0000-4           83202.9                     YU.A.ALEXANDROV, (97)    O0506  6
+ 1001 82000   39000    6.6000+8          4.6000-3 9.0000-4           83202.9                     Yu.A.Alexandrov, (97)    O0506  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5504,30 +5599,30 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506007
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-200-M,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-200-M1,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
 #MT         9000
-#PRODUCT    83-BI-200-M
+#PRODUCT    83-BI-200-M1
 #DATA-HDR   DATA
-#C4BEGIN    [ 1001 82000   39000M  ]
+#C4BEGIN    [ 1001 82000   390001  ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000M   6.6000+8          5.0000-4 2.0000-4           83200.7                     YU.A.ALEXANDROV, (97)    O0506  7
+ 1001 82000   390001   6.6000+8          5.0000-4 2.0000-4           83200.1                     Yu.A.Alexandrov, (97)    O0506  7
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5537,19 +5632,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506008
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-200-G,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-200-G,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5560,7 +5655,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000G   6.6000+8          3.2000-3 6.0000-4           83200.0                     YU.A.ALEXANDROV, (97)    O0506  8
+ 1001 82000   39000G   6.6000+8          3.2000-3 6.0000-4           83200.0                     Yu.A.Alexandrov, (97)    O0506  8
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5570,19 +5665,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506009
-#DATE       20020901
-#REACTION   82-PB-0(P,X)83-BI-198-M1,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)83-BI-198-M1,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5593,7 +5688,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   390001   6.6000+8          2.9000-3 7.0000-4           83198.1                     YU.A.ALEXANDROV, (97)    O0506  9
+ 1001 82000   390001   6.6000+8          2.9000-3 7.0000-4           83198.1                     Yu.A.Alexandrov, (97)    O0506  9
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5603,19 +5698,19 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506011
-#DATE       20020901
-#REACTION   82-PB-0(P,X)82-PB-202-M,IND,SIG
+#DATE       20200800
+#REACTION   82-PB-0(P,X)82-PB-202-M,,SIG
 #PROJ       1001
 #TARG       82000
 #MF         3
@@ -5626,7 +5721,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39000M   6.6000+8          0.011400 1.0000-3           82202.7                     YU.A.ALEXANDROV, (97)    O0506 11
+ 1001 82000   39000M   6.6000+8          0.011400 1.0000-3           82202.7                     Yu.A.Alexandrov, (97)    O0506 11
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -5967,7 +6062,7 @@
 #TITLE      Production of F18 and Na24 in Bev proton Bombardments
 #AUTHOR(S)  J.Hudis, A.A.Caretto
 #REF-CODE   (J,BAP,1,224,1956)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.1, p.224, 1956
 #DATASETS   5
 #
@@ -8002,7 +8097,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026093
 #DATE       20160200
@@ -8034,7 +8129,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026095
 #DATE       20160200
@@ -8066,7 +8161,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026096
 #DATE       20160200
@@ -8098,7 +8193,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026098
 #DATE       20160200
@@ -8130,7 +8225,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026103
 #DATE       20160200
@@ -8162,7 +8257,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026104
 #DATE       20160200
@@ -8194,7 +8289,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026107
 #DATE       20160200
@@ -8226,7 +8321,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026145
 #DATE       20160200
@@ -8258,7 +8353,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026153
 #DATE       20160200
@@ -14415,7 +14510,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347008
 #DATE       20140102
@@ -14448,7 +14543,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347009
 #DATE       20140102
@@ -14481,7 +14576,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347010
 #DATE       20140102
@@ -14514,7 +14609,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347013
 #DATE       20140102
@@ -14547,7 +14642,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347014
 #DATE       20140102
@@ -14580,7 +14675,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347020
 #DATE       20140102
@@ -14613,7 +14708,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347024
 #DATE       20140102
@@ -14646,7 +14741,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347026
 #DATE       20140102
@@ -14679,7 +14774,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347027
 #DATE       20140102
@@ -14712,7 +14807,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347028
 #DATE       20140102
@@ -14745,7 +14840,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347032
 #DATE       20140102
@@ -14778,7 +14873,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347034
 #DATE       20140102
@@ -14811,7 +14906,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347036
 #DATE       20140102
@@ -14844,7 +14939,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347037
 #DATE       20140102
@@ -14877,7 +14972,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347041
 #DATE       20140102
@@ -14910,7 +15005,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347043
 #DATE       20140102
@@ -14943,7 +15038,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347044
 #DATE       20140102
@@ -14976,7 +15071,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347046
 #DATE       20140102
@@ -15009,7 +15104,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347047
 #DATE       20140102
@@ -15042,7 +15137,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347048
 #DATE       20140102
@@ -15075,7 +15170,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347049
 #DATE       20140102
@@ -15108,7 +15203,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347054
 #DATE       20140102
@@ -15141,7 +15236,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347056
 #DATE       20140102
@@ -15174,7 +15269,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347060
 #DATE       20140102
@@ -15207,7 +15302,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347065
 #DATE       20140102
@@ -15240,7 +15335,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347068
 #DATE       20140102
@@ -15273,7 +15368,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347069
 #DATE       20140102
@@ -15306,7 +15401,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347072
 #DATE       20140102
@@ -15339,7 +15434,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347074
 #DATE       20140102
@@ -15372,7 +15467,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347075
 #DATE       20140102
@@ -15405,7 +15500,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347078
 #DATE       20140102
@@ -15438,7 +15533,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347082
 #DATE       20140102
@@ -15471,7 +15566,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347083
 #DATE       20140102
@@ -15504,7 +15599,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347084
 #DATE       20140102
@@ -15537,7 +15632,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347086
 #DATE       20140102
@@ -15570,7 +15665,7 @@
 #REF-CODE   (C,96KALMAR,2,576,1996)
 #REFERENCE  Conf. Conf.on Accel.Driven Transmut.Tech.Appl.,Kalmar, 1996
 #+          Vol.2, p.576, 1996
-#DATASETS   62
+#DATASETS   64
 #
 #DATASET    O0347087
 #DATE       20140102
@@ -15765,18 +15860,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506012
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-201-G,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15788,7 +15883,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001G   6.6000+8          0.030000 3.0000-3           82201.0                     YU.A.ALEXANDROV, (97)    O0506 12
+ 1001 82000   39001G   6.6000+8          0.030000 3.0000-3           82201.0                     Yu.A.Alexandrov, (97)    O0506 12
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15798,18 +15893,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506013
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-200,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15821,7 +15916,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          0.026000 5.0000-3           82200.9                     YU.A.ALEXANDROV, (97)    O0506 13
+ 1001 82000   39001    6.6000+8          0.026000 5.0000-3           82200.9                     Yu.A.Alexandrov, (97)    O0506 13
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15831,18 +15926,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506014
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-199-G,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15854,7 +15949,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001G   6.6000+8          0.021000 2.0000-3           82199.0                     YU.A.ALEXANDROV, (97)    O0506 14
+ 1001 82000   39001G   6.6000+8          0.021000 2.0000-3           82199.0                     Yu.A.Alexandrov, (97)    O0506 14
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15864,18 +15959,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506015
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-198,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15887,7 +15982,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          0.022000 4.0000-3           82198.9                     YU.A.ALEXANDROV, (97)    O0506 15
+ 1001 82000   39001    6.6000+8          0.022000 4.0000-3           82198.9                     Yu.A.Alexandrov, (97)    O0506 15
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15897,18 +15992,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506016
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-197-M,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15920,7 +16015,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001M   6.6000+8          0.016000 4.0000-3           82197.7                     YU.A.ALEXANDROV, (97)    O0506 16
+ 1001 82000   39001M   6.6000+8          0.016000 4.0000-3           82197.7                     Yu.A.Alexandrov, (97)    O0506 16
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15930,18 +16025,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506017
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-196,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15953,7 +16048,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          0.017000 6.0000-3           82196.9                     YU.A.ALEXANDROV, (97)    O0506 17
+ 1001 82000   39001    6.6000+8          0.017000 6.0000-3           82196.9                     Yu.A.Alexandrov, (97)    O0506 17
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15963,18 +16058,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506018
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-195-M,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -15986,7 +16081,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001M   6.6000+8          0.011000                    82195.7                     YU.A.ALEXANDROV, (97)    O0506 18
+ 1001 82000   39001M   6.6000+8          0.011000                    82195.7                     Yu.A.Alexandrov, (97)    O0506 18
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -15996,18 +16091,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506019
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)82-PB-194,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16019,7 +16114,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          2.4000-3 7.0000-4           82194.9                     YU.A.ALEXANDROV, (97)    O0506 19
+ 1001 82000   39001    6.6000+8          2.4000-3 7.0000-4           82194.9                     Yu.A.Alexandrov, (97)    O0506 19
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16029,18 +16124,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506020
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)40-ZR-95,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16052,7 +16147,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          3.1000-3 4.0000-4           40095.9                     YU.A.ALEXANDROV, (97)    O0506 20
+ 1001 82000   39001    6.6000+8          3.1000-3 4.0000-4           40095.9                     Yu.A.Alexandrov, (97)    O0506 20
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16062,18 +16157,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506021
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)40-ZR-89-G,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16085,7 +16180,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001G   6.6000+8          2.0000-3 6.0000-4           40089.0                     YU.A.ALEXANDROV, (97)    O0506 21
+ 1001 82000   39001G   6.6000+8          2.0000-3 6.0000-4           40089.0                     Yu.A.Alexandrov, (97)    O0506 21
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16095,18 +16190,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506022
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)40-ZR-88,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16118,7 +16213,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          2.0000-3 4.0000-4           40088.9                     YU.A.ALEXANDROV, (97)    O0506 22
+ 1001 82000   39001    6.6000+8          2.0000-3 4.0000-4           40088.9                     Yu.A.Alexandrov, (97)    O0506 22
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16128,18 +16223,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506023
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)40-ZR-86,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16151,7 +16246,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          2.8000-3 4.0000-4           40086.9                     YU.A.ALEXANDROV, (97)    O0506 23
+ 1001 82000   39001    6.6000+8          2.8000-3 4.0000-4           40086.9                     Yu.A.Alexandrov, (97)    O0506 23
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16161,18 +16256,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506025
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)39-Y-87-G,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16184,7 +16279,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001G   6.6000+8          2.5000-3 3.0000-4           39087.0                     YU.A.ALEXANDROV, (97)    O0506 25
+ 1001 82000   39001G   6.6000+8          2.5000-3 3.0000-4           39087.0                     Yu.A.Alexandrov, (97)    O0506 25
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16194,18 +16289,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506027
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)38-SR-85-G,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16217,7 +16312,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001G   6.6000+8          2.7000-3 3.0000-4           38085.0                     YU.A.ALEXANDROV, (97)    O0506 27
+ 1001 82000   39001G   6.6000+8          2.7000-3 3.0000-4           38085.0                     Yu.A.Alexandrov, (97)    O0506 27
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16227,18 +16322,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506029
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)37-RB-83,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16250,7 +16345,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          2.8000-3 3.0000-4           37083.9                     YU.A.ALEXANDROV, (97)    O0506 29
+ 1001 82000   39001    6.6000+8          2.8000-3 3.0000-4           37083.9                     Yu.A.Alexandrov, (97)    O0506 29
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -16260,18 +16355,18 @@
 #AUTHOR1    Yu.A.Alexandrov+
 #YEAR       1997
 #INSTITUTE  (4RUSRI)
-#TITLE      New Data For the Production of Radionuclides in Thin
-#+          Lead Target by 660 MeV Protons.
+#TITLE      New data for the production of radionuclides in thin
+#+          lead target by 660 MeV protons
 #AUTHOR(S)  Yu.A.Alexandrov, V.P.Eismont, R.B.Ivanov,
 #+          M.A.Mikhailova, V.P.Prikhodtseva, A.V.Saulsky,
 #+          S.K.Vasiljev
-#REF-CODE   (C,97TRIEST,59,1525,1997)
+#REF-CODE   (C,97TRIEST,2,1525,1997)
 #REFERENCE  Conf. Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
-#+          Vol.59, p.1525, 1997
+#+          Vol.2, p.1525, 1997
 #DATASETS   25
 #
 #DATASET    O0506031
-#DATE       20020901
+#DATE       20200800
 #REACTION   82-PB-0(P,X)29-CU-67,CUM,SIG
 #PROJ       1001
 #TARG       82000
@@ -16283,7 +16378,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 82000   39001    6.6000+8          2.6000-3 3.0000-4           29067.9                     YU.A.ALEXANDROV, (97)    O0506 31
+ 1001 82000   39001    6.6000+8          2.6000-3 3.0000-4           29067.9                     Yu.A.Alexandrov, (97)    O0506 31
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -19184,7 +19279,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026090
 #DATE       20160200
@@ -19216,7 +19311,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026091
 #DATE       20160200
@@ -19248,7 +19343,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026092
 #DATE       20160200
@@ -19280,7 +19375,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026097
 #DATE       20160200
@@ -19312,7 +19407,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026099
 #DATE       20160200
@@ -19344,7 +19439,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026100
 #DATE       20160200
@@ -19376,7 +19471,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026105
 #DATE       20160200
@@ -19408,7 +19503,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026106
 #DATE       20160200
@@ -19440,7 +19535,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026109
 #DATE       20160200
@@ -19472,7 +19567,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026110
 #DATE       20160200
@@ -19504,7 +19599,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026111
 #DATE       20160200
@@ -19536,7 +19631,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026114
 #DATE       20160200
@@ -19568,7 +19663,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026116
 #DATE       20160200
@@ -19600,7 +19695,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026118
 #DATE       20160200
@@ -19632,7 +19727,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026119
 #DATE       20160200
@@ -19664,7 +19759,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026120
 #DATE       20160200
@@ -19696,7 +19791,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026121
 #DATE       20160200
@@ -19728,7 +19823,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026122
 #DATE       20160200
@@ -19760,7 +19855,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026123
 #DATE       20160200
@@ -19792,7 +19887,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026124
 #DATE       20160200
@@ -19824,7 +19919,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026125
 #DATE       20160200
@@ -19856,7 +19951,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026126
 #DATE       20160200
@@ -19888,7 +19983,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026127
 #DATE       20160200
@@ -19920,7 +20015,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026128
 #DATE       20160200
@@ -19952,7 +20047,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026129
 #DATE       20160200
@@ -19984,7 +20079,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026130
 #DATE       20160200
@@ -20016,7 +20111,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026131
 #DATE       20160200
@@ -20048,7 +20143,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026132
 #DATE       20160200
@@ -20080,7 +20175,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026133
 #DATE       20160200
@@ -20112,7 +20207,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026134
 #DATE       20160200
@@ -20144,7 +20239,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026135
 #DATE       20160200
@@ -20176,7 +20271,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026136
 #DATE       20160200
@@ -20208,7 +20303,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026137
 #DATE       20160200
@@ -20240,7 +20335,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026138
 #DATE       20160200
@@ -20272,7 +20367,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026139
 #DATE       20160200
@@ -20304,7 +20399,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026140
 #DATE       20160200
@@ -20336,7 +20431,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026141
 #DATE       20160200
@@ -20368,7 +20463,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026142
 #DATE       20160200
@@ -20400,7 +20495,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026143
 #DATE       20160200
@@ -20432,7 +20527,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026147
 #DATE       20160200
@@ -20464,7 +20559,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026148
 #DATE       20160200
@@ -20496,7 +20591,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026149
 #DATE       20160200
@@ -20528,7 +20623,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026150
 #DATE       20160200
@@ -20560,7 +20655,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026151
 #DATE       20160200
@@ -20592,7 +20687,7 @@
 #REF-CODE   (R,JINR-E1-89-481,1989)
 #REFERENCE  Rept. Joint Inst. for Nucl. Res., Dubna Reports
 #+          No.89, p.481, 1989
-#DATASETS   137
+#DATASETS   136
 #
 #DATASET    A0026152
 #DATE       20160200

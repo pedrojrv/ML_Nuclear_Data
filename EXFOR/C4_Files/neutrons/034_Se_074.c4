@@ -427,7 +427,7 @@
 #REF-CODE   (J,NP/A,139,42,196912)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.139, p.42, 1969
-#DATASETS   3
+#DATASETS   6
 #
 #DATASET    30028002
 #DATE       20080205
@@ -621,7 +621,7 @@
 #REF-CODE   (J,NP/A,100,186,196707)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.100, p.186, 1967
-#DATASETS   21
+#DATASETS   23
 #
 #DATASET    21107002
 #DATE       20070905
@@ -652,7 +652,7 @@
 #REF-CODE   (J,NP/A,100,186,196707)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.100, p.186, 1967
-#DATASETS   21
+#DATASETS   23
 #
 #DATASET    21107003
 #DATE       20070905
@@ -683,7 +683,7 @@
 #REF-CODE   (J,NP/A,100,186,196707)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.100, p.186, 1967
-#DATASETS   21
+#DATASETS   23
 #
 #DATASET    21107004
 #DATE       20070905
@@ -712,13 +712,13 @@
 #+          reactions of selenium isotopes at the neutron energy
 #+          14.7 MeV .
 #AUTHOR(S)  V.V.Ivanenko, K.A.Petrzhak
-#REF-CODE   (J,YF,9,(2),258,196909)
+#REF-CODE   (J,YF,9,258,1969)
 #REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.9, Issue.2, p.258, 1969
+#+          Vol.9, p.258, 1969
 #DATASETS   7
 #
 #DATASET    40227008
-#DATE       20081201
+#DATE       20200901
 #REACTION   34-SE-74(N,2N)34-SE-73-M,,SIG
 #PROJ       1
 #TARG       34074
@@ -741,15 +741,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507039
-#DATE       19860702
+#DATE       20190805
 #REACTION   34-SE-74(N,G)34-SE-75,,SIG,,MXW
 #PROJ       1
 #TARG       34074
@@ -761,7 +761,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 34074   3 102    0.025300          48.00000 7.200000                                       H.POMERANCE (52)         11507 39
+    1 34074   3 102    0.025300          48.00000 7.200000                                       H.Pomerance (52)         11507 39
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -936,10 +936,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    22892011
-#DATE       20060704
+#DATE       20200904
 #REACTION   34-SE-74(N,G)34-SE-75,,SIG,,MXW,DERIV
 #PROJ       1
 #TARG       34074
@@ -1013,10 +1013,10 @@
 #REF-CODE   (J,PR/C,73,015803,2006)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.73, p.015803, 2006
-#DATASETS   9
+#DATASETS   7
 #
 #DATASET    22892007
-#DATE       20101105
+#DATE       20200904
 #REACTION   34-SE-74(N,G)34-SE-75,,SIG,,MXW
 #PROJ       1
 #TARG       34074
@@ -1024,12 +1024,11 @@
 #MT         102
 #PRODUCT    34-SE-75
 #DATA-HDR   DATA
-#C4BEGIN    [    1 34074   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 34074   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 34074   3 102 C  25000.00          0.281000 0.016000                                       I.Dillmann,ET.AL. (06)   22892  7
+    1 34074   3 102    25000.00          0.281000 0.016000                                       I.Dillmann,ET.AL. (06)   22892  7
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1060,40 +1059,6 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 34074   3 102    25000.00 5000.000 0.198000 0.030000                                       K.Siddappa,ET.AL. (72)   30248  2
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      22892
-#AUTHOR1    I.Dillmann+
-#YEAR       2006
-#INSTITUTE  (2GERKFK)
-#TITLE      Experimental (n,gamma) cross section of the p-process
-#+          nuclei Se-74 and Sr-84
-#AUTHOR(S)  I.Dillmann, M.Heil, F.Kaeppeler,
-#+          T.Rauscher, F.-K.Thielemann
-#REF-CODE   (J,PR/C,73,015803,2006)
-#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
-#+          Vol.73, p.015803, 2006
-#DATASETS   9
-#
-#DATASET    22892015
-#DATE       20070201
-#REACTION   34-SE-74(N,G)34-SE-75,,SIG,,,DERIV
-#PROJ       1
-#TARG       34074
-#MF         3
-#MT         102
-#PRODUCT    34-SE-75
-#DATA-HDR   DATA
-#C4BEGIN    [    1 34074   3 102 D ]
-#X4STATUS   [DEP  ] Dependent data
-#X4DATATYPE [DERIV] Derived data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 34074   3 102 D  30000.00          0.271000 0.015000                                       I.Dillmann,ET.AL. (06)   22892 15
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1170,7 +1135,7 @@
 #+          isotopes Se, Cd, Gd, Te, Dy, Er and Yb
 #AUTHOR(S)  Yu.N.Trofimov
 #REF-CODE   (J,YK,,(2),11,1989)
-#REFERENCE  Jour. Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty
+#REFERENCE  Jour. Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
 #+          Issue.2, p.11, 1989
 #DATASETS   6
 #
@@ -1205,7 +1170,7 @@
 #REF-CODE   (J,NSE,116,125,1994)
 #REFERENCE  Jour. Nuclear Science and Engineering
 #+          Vol.116, p.125, 1994
-#DATASETS   13
+#DATASETS   14
 #
 #DATASET    22291005
 #DATE       20150803
@@ -1546,13 +1511,13 @@
 #+          reactions of selenium isotopes at the neutron energy
 #+          14.7 MeV .
 #AUTHOR(S)  V.V.Ivanenko, K.A.Petrzhak
-#REF-CODE   (J,YF,9,(2),258,196909)
+#REF-CODE   (J,YF,9,258,1969)
 #REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.9, Issue.2, p.258, 1969
+#+          Vol.9, p.258, 1969
 #DATASETS   7
 #
 #DATASET    40227002
-#DATE       20081201
+#DATE       20200901
 #REACTION   34-SE-74(N,P)33-AS-74,,SIG
 #PROJ       1
 #TARG       34074
@@ -1598,6 +1563,179 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 34074   3 103    1.4800+7          0.200000 0.040000                                       G.P.Vinitskaya, (67)     40009 231
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41424
+#AUTHOR1    A.A.Filatenkov+
+#YEAR       2001
+#INSTITUTE  (4RUSRI)
+#TITLE      Measurement of a set of badly known neutron induced
+#+          cross sections.
+#AUTHOR(S)  A.A.Filatenkov, S.V.Chuvaev
+#REF-CODE   (R,RI-258,20010615)
+#REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
+#+          No.258, 2001
+#DATASETS   6
+#
+#DATASET    41424057
+#DATE       20160902
+#REACTION   34-SE-74(N,2N)34-SE-73-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34074
+#MF         203
+#MT         16
+#PRODUCT    34-SE-73-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34074 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34074 203  16MD  1.3490+7          0.730000 0.160000     16.0  34074.9                     A.A.Filatenkov, (01)     41424 57
+    1 34074 203  16MD  1.3890+7          0.660000 0.130000     16.0  34074.9                     A.A.Filatenkov, (01)     41424 57
+    1 34074 203  16MD  1.4050+7          0.750000 0.200000     16.0  34074.9                     A.A.Filatenkov, (01)     41424 57
+    1 34074 203  16MD  1.4260+7          0.810000 0.120000     16.0  34074.9                     A.A.Filatenkov, (01)     41424 57
+    1 34074 203  16MD  1.4440+7          0.860000 0.130000     16.0  34074.9                     A.A.Filatenkov, (01)     41424 57
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30028
+#AUTHOR1    A.Abboud+
+#YEAR       1969
+#INSTITUTE  (3POLWWA)
+#TITLE      Isomeric cross-section ratios and total cross-sections
+#+          for the Se-74(n,2n)Se-73-g,m,Zr-90(n,2n)Zr-89-g,m and
+#+          Mo-92(n,2n)Mo-91-g,m reactions
+#AUTHOR(S)  A.Abboud, P.Decowski, W.Grochulski,
+#+          A.Marcinkowski, J.Piotrowski, K.Siwek,
+#+          J.Wilhelmi
+#REF-CODE   (J,NP/A,139,42,196912)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.139, p.42, 1969
+#DATASETS   6
+#
+#DATASET    30028003
+#DATE       20080205
+#REACTION   34-SE-74(N,2N)34-SE-73-G/M,,SIG/RAT
+#PROJ       1
+#TARG       34074
+#MF         203
+#MT         16
+#PRODUCT    34-SE-73-G/M
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34074 203  16GA ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       9
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34074 203  16GA  1.3710+7 120000.0 6.080000 0.520000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.4170+7 150000.0 5.710000 0.780000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.5020+7 200000.0 6.350000 0.560000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.5220+7 200000.0 4.890000 0.230000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.5930+7 280000.0 5.480000 0.510000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.6270+7 200000.0 6.170000 0.680000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.6610+7 110000.0 6.880000 0.800000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.7090+7 110000.0 5.140000 0.340000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+    1 34074 203  16GA  1.7580+7 110000.0 5.170000 0.680000     16.7  34074.9                     A.Abboud,ET.AL. (69)     30028  3
+#/DATA      9
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30101
+#AUTHOR1    J.Karolyi+
+#YEAR       1968
+#INSTITUTE  (3HUNDEB)
+#TITLE      Isomeric cross-section ratios for (n,2n) reactions
+#AUTHOR(S)  J.Karolyi, J.Csikai, G.Peto
+#REF-CODE   (J,NP/A,122,234,196812)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.122, p.234, 1968
+#DATASETS   13
+#
+#DATASET    30101007
+#DATE       20080205
+#REACTION   34-SE-74(N,2N)34-SE-73-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34074
+#MF         203
+#MT         16
+#PRODUCT    34-SE-73-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34074 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34074 203  16MD  1.4400+7          0.220000 0.070000     16.0  34074.9                     J.Karolyi,ET.AL. (68)    30101  7
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      30601
+#AUTHOR1    Fam Zui Hien+
+#YEAR       1982
+#INSTITUTE  (3VN NNR)
+#TITLE      Isomer ratio in (n,2n) reaction and spin dependence
+#+          of level density of nuclei with n about 50
+#AUTHOR(S)  Fam Zui Hien, Ngo Kuang Zui, Nguen Tak An
+#REF-CODE   (J,YF,35,257,198202)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.35, p.257, 1982
+#DATASETS   4
+#
+#DATASET    30601005
+#DATE       19840903
+#REACTION   34-SE-74(N,2N)34-SE-73-M1/G,,SIG/RAT
+#PROJ       1
+#TARG       34074
+#MF         203
+#MT         16
+#PRODUCT    34-SE-73-M1/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34074 203  16?  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34074 203  16?   1.4500+7 200000.0 0.800000 0.070000     16.0  34074.9                     Fam Zui Hien,ET.AL. (82) 30601  5
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21107
+#AUTHOR1    B.Minetti+
+#YEAR       1967
+#INSTITUTE  (2ITYTUR)
+#TITLE      -Measurements of neutron cross sections and isomeric
+#+          cross section ratios in Se isotopes-.
+#AUTHOR(S)  B.Minetti, A.Pasquarelli
+#REF-CODE   (J,NP/A,100,186,196707)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.100, p.186, 1967
+#DATASETS   23
+#
+#DATASET    21107005
+#DATE       20070905
+#REACTION   34-SE-74(N,2N)34-SE-73-M/G,,SIG/RAT
+#PROJ       1
+#TARG       34074
+#MF         203
+#MT         16
+#PRODUCT    34-SE-73-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34074 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34074 203  16MD  1.4700+7 100000.0 1.910000 0.300000     16.0  34074.9                     B.Minetti,ET.AL. (67)    21107  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1839,7 +1977,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -1962,7 +2100,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2054,7 +2192,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2124,7 +2262,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2251,7 +2389,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -2314,7 +2452,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)

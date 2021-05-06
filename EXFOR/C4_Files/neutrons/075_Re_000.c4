@@ -216,7 +216,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1231,7 +1231,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1732,15 +1732,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1951
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,83,641,51)
+#REF-CODE   (J,PR,83,641,1951)
 #REFERENCE  Jour. Physical Review
 #+          Vol.83, p.641, 1951
 #DATASETS   59
 #
 #DATASET    11047067
-#DATE       19820103
+#DATE       20190805
 #REACTION   75-RE-0(N,G),,SIG,,MXW
 #PROJ       1
 #TARG       75000
@@ -1751,7 +1751,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 75000   3 102    0.025300          84.00000 4.200000                                       H.POMERANCE (51)         11047 67
+    1 75000   3 102    0.025300          84.00000 4.200000                                       H.Pomerance (51)         11047 67
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1795,7 +1795,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -2570,41 +2570,42 @@
 #AUTHOR1    J.B.Guernsey+
 #YEAR       1956
 #INSTITUTE  (1USAMIT)
-#TITLE      EXCITATION OF SOME LOW-LYING LEVELS BY INELASTIC
-#+          NEUTRON SCATTERING.
+#TITLE      Excitation of some low-lying levels by inelastic
+#+          neutron scattering.
 #AUTHOR(S)  J.B.Guernsey, A.Wattenberg
-#REF-CODE   (J,PR,101,1516,5603)
+#REF-CODE   (J,PR,101,1516,1956)
 #REFERENCE  Jour. Physical Review
 #+          Vol.101, p.1516, 1956
 #DATASETS   8
 #
 #DATASET    11691007
-#DATE       19831002
-#REACTION   75-RE-0(N,INL),PAR,SIG,G
+#DATE       20200500
+#REACTION   75-RE-0(N,INL)75-RE-0,PAR,SIG,G
 #PROJ       1
 #TARG       75000
 #MF         3
 #MT         9000
+#PRODUCT    75-RE-0
 #DATA-HDR   DATA
 #C4BEGIN    [    1 75000   39000   ]
 #DATA       15
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 75000   39000    105000.0          0.000000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    200000.0          0.208000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    300000.0          0.470000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    452000.0          0.618000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    600000.0          0.678000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    700000.0          0.580000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    800000.0          0.600000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1000000.          0.778000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1100000.          0.812000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1210000.          0.790000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1410000.          0.786000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1600000.          0.760000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1710000.          0.780000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1810000.          0.800000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
-    1 75000   39000    1910000.          0.830000                        0.9 135000.0          E2J.B.GUERNSEY,ET.AL. (56) 11691  7
+    1 75000   39000    105000.0          0.000000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    200000.0          0.208000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    300000.0          0.470000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    452000.0          0.618000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    600000.0          0.678000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    700000.0          0.580000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    800000.0          0.600000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1000000.          0.778000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1100000.          0.812000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1210000.          0.790000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1410000.          0.786000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1600000.          0.760000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1710000.          0.780000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1810000.          0.800000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
+    1 75000   39000    1910000.          0.830000                        0.9 135000.0          E2J.B.Guernsey,ET.AL. (56) 11691  7
 #/DATA      15
 #/DATASET
 #/ENTRY

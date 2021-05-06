@@ -140,7 +140,7 @@
 #REF-CODE   (J,APP/B,1,415,1970)
 #REFERENCE  Jour. Acta Physica Polonica, Part B
 #+          Vol.1, p.415, 1970
-#DATASETS   7
+#DATASETS   15
 #
 #DATASET    30154003
 #DATE       20080205
@@ -165,15 +165,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507041
-#DATE       19860702
+#DATE       20190805
 #REACTION   34-SE-77(N,G)34-SE-78,,SIG,,MXW
 #PROJ       1
 #TARG       34077
@@ -185,7 +185,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 34077   3 102    0.025300          40.00000 4.000000                                       H.POMERANCE (52)         11507 41
+    1 34077   3 102    0.025300          40.00000 4.000000                                       H.Pomerance (52)         11507 41
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -491,39 +491,6 @@
 #/ENTRY
 #
 #
-#ENTRY      40227
-#AUTHOR1    V.V.Ivanenko+
-#YEAR       1969
-#INSTITUTE  (4RUSRI)
-#TITLE      Cross-sections and mechanism of (n,p)
-#+          reactions of selenium isotopes at the neutron energy
-#+          14.7 MeV .
-#AUTHOR(S)  V.V.Ivanenko, K.A.Petrzhak
-#REF-CODE   (J,YF,9,(2),258,196909)
-#REFERENCE  Jour. Yadernaya Fizika
-#+          Vol.9, Issue.2, p.258, 1969
-#DATASETS   7
-#
-#DATASET    40227005
-#DATE       20081201
-#REACTION   34-SE-77(N,D)33-AS-76,,SIG
-#PROJ       1
-#TARG       34077
-#MF         3
-#MT         104
-#PRODUCT    33-AS-76
-#DATA-HDR   DATA
-#C4BEGIN    [    1 34077   3 104 D ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       1
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 34077   3 104 D  1.4700+7          0.015600 2.4000-3                                       V.V.Ivanenko,ET.AL. (69) 40227  5
-#/DATA      1
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      V1001
 #AUTHOR1    S.F.Mughabghab
 #YEAR       2006
@@ -550,6 +517,39 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 34077   3 107    0.025300          9.7000-4 2.5000-5                                       S.F.Mughabghab (06)      V10012914
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      40227
+#AUTHOR1    V.V.Ivanenko+
+#YEAR       1969
+#INSTITUTE  (4RUSRI)
+#TITLE      Cross-sections and mechanism of (n,p)
+#+          reactions of selenium isotopes at the neutron energy
+#+          14.7 MeV .
+#AUTHOR(S)  V.V.Ivanenko, K.A.Petrzhak
+#REF-CODE   (J,YF,9,258,1969)
+#REFERENCE  Jour. Yadernaya Fizika
+#+          Vol.9, p.258, 1969
+#DATASETS   7
+#
+#DATASET    40227005
+#DATE       20200901
+#REACTION   34-SE-77(N,X)33-AS-76,,SIG
+#PROJ       1
+#TARG       34077
+#MF         3
+#MT         9000
+#PRODUCT    33-AS-76
+#DATA-HDR   DATA
+#C4BEGIN    [    1 34077   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 34077   39000 D  1.4700+7          0.015600 2.4000-3           33076.9                     V.V.Ivanenko,ET.AL. (69) 40227  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -737,7 +737,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -922,7 +922,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -1030,7 +1030,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -1172,7 +1172,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -1372,7 +1372,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)
@@ -1451,7 +1451,7 @@
 #INSTITUTE  (2FR SAC)
 #TITLE      Variations of the total radiative width (Gg) as a
 #+          function of the mass number (A) and the value of
-#+          spin J=I+-1/2.
+#+          spin J=I+-1/2
 #AUTHOR(S)  J.Julien, R.Alves, S.De Barros,
 #+          V.D.Huynh, J.Morgenstern, C.Samour
 #REF-CODE   (J,NP/A,132,129,1969)

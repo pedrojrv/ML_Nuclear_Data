@@ -179,7 +179,7 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276463
 #DATE       20131003
@@ -335,7 +335,7 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276464
 #DATE       20131003
@@ -541,11 +541,11 @@
 #REF-CODE   (J,JGR,81,5689,1976)
 #REFERENCE  Jour. Journal of Geophysical Research
 #+          Vol.81, p.5689, 1976
-#DATASETS   32
+#DATASETS   30
 #
 #DATASET    O0350004
-#DATE       19990701
-#REACTION   12-MG-0(P,X)2-HE-3,IND,SIG
+#DATE       20201001
+#REACTION   12-MG-0(P,X)2-HE-3,,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
@@ -594,10 +594,10 @@
 #REF-CODE   (J,JGR,81,5689,1976)
 #REFERENCE  Jour. Journal of Geophysical Research
 #+          Vol.81, p.5689, 1976
-#DATASETS   32
+#DATASETS   30
 #
 #DATASET    O0350008
-#DATE       19990701
+#DATE       20201001
 #REACTION   12-MG-0(P,X)2-HE-4,,SIG
 #PROJ       1001
 #TARG       12000
@@ -918,55 +918,6 @@
 #/ENTRY
 #
 #
-#ENTRY      O0350
-#AUTHOR1    J.R.Walton+
-#YEAR       1976
-#INSTITUTE  (1USARIC)
-#TITLE      Cross sections for He and Ne isotopes in natural Mg,Al,
-#+          and Si,He isotopes in Ca-F(2),Ar isotopes in natural Ca
-#+          and radionuclides in natural Al,Si,Ti,Cr and stainless
-#+          steel induced by 12-To 45-MeV protons.
-#AUTHOR(S)  J.R.Walton, D.Heymann, A.Yaniv,
-#+          D.Edgerley, M.W.Rowe
-#REF-CODE   (J,JGR,81,5689,1976)
-#REFERENCE  Jour. Journal of Geophysical Research
-#+          Vol.81, p.5689, 1976
-#DATASETS   32
-#
-#DATASET    O0350013
-#DATE       19990701
-#REACTION   (12-MG-0(P,X)10-NE-22,,SIG)=((12-MG-0(P,X)10-NE-22,IND,SIG)+(12-MG-0(P,X)9-F-22,CUM,SIG))
-#PROJ       1001
-#TARG       12000
-#MF         3
-#MT         9000
-#PRODUCT    9-F-22;10-NE-22
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 12000   39000   ]
-#DATA       16
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 12000   39000    1.5900+7 400000.0 6.2000-4 2.4800-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    1.7100+7 700000.0 5.2000-4                    10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    1.9200+7 500000.0 4.8000-3 7.2000-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    2.1900+7 600000.0 3.5000-3 3.8500-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    2.2000+7 800000.0 6.4000-3 8.9600-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    2.4600+7 700000.0 7.3000-3 8.7600-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    2.6100+7 300000.0 7.0000-3 1.4000-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    2.7900+7 600000.0 8.7000-3 1.5660-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    3.0400+7 1400000. 0.013000 2.3400-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    3.2600+7 700000.0 0.017000 4.9300-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    3.4000+7 900000.0 0.022000 5.0600-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    3.5600+7 1000000. 0.028000 5.8800-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    3.7600+7 1400000. 0.015000 3.0000-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    3.9500+7 1100000. 0.031000 8.0600-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    4.1500+7 1400000. 0.019900 2.7860-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
- 1001 12000   39000    4.4400+7 1400000. 0.032000 8.9600-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
-#/DATA      16
-#/DATASET
-#/ENTRY
-#
-#
 #ENTRY      D4104
 #AUTHOR1    R.L.Wilson+
 #YEAR       1976
@@ -1121,7 +1072,7 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276461
 #DATE       20131003
@@ -1480,6 +1431,101 @@
 #/ENTRY
 #
 #
+#ENTRY      D0984
+#AUTHOR1    W.Yahia-Cherif+
+#YEAR       2020
+#INSTITUTE  (3ALGUHB)
+#TITLE      Measurement and analysis of nuclear gamma-ray
+#+          production cross sections in proton interactions with
+#+          Mg, Si, and Fe nuclei abundant in astrophysical sites
+#+          over the incident energy range E=30-66 MeV
+#AUTHOR(S)  W.Yahia-Cherif, S.Ouichaoui, J.Kiener,
+#+          E.A.Lawrie, J.J.Lawrie, V.Tatischeff,
+#+          A.Belhout, D.Moussa, P.Papka,
+#+          H.Benhabiles-Mezhoud, T.D.Bucher, A.Chafa,
+#+          J.L.Conradie, S.Damache, M.Debabi,
+#+          I.Deloncle, J.L.Easton, C.Hamadache,
+#+          F.Hammache, P.Jones, B.V.Kheswa,
+#+          N.A.Khumalo, T.Lamula, S.N.T.Majola,
+#+          J.Ndayishimye, D.Negi, S.P.Noncolela,
+#+          N.De Sereville, J.F.Sharpey-Schafer, O.Shirinda,
+#+          M.Wiedeking, S.Wyngaardt
+#REF-CODE   (J,PR/C,102,025802,2020)
+#REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
+#+          Vol.102, p.025802, 2020
+#DATASETS   4
+#
+#DATASET    D0984005
+#DATE       20200904
+#REACTION   12-MG-0(P,X)0-G-0,PAR,SIG
+#PROJ       1001
+#TARG       12000
+#MF         3
+#MT         9000
+#PRODUCT    0-G-0
+#DATA-HDR   DATA
+#C4BEGIN    [ 1001 12000   39000 A ]
+#X4STATUS   [APRVD] Approved by author
+#DATA       52
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 12000   39000 A  3.0000+7          6.1000-3 4.0000-4               0.9 331910.0 331910.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          3.8800-3 2.9000-4               0.9 331910.0 331910.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          5.9500-3 4.3000-4               0.9 331910.0 331910.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          6.1300-3 4.5000-4               0.9 331910.0 331910.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.011610 7.2000-4               0.9 350730.0 350730.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          0.020820 1.3100-3               0.9 350730.0 350730.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          0.033860 2.0500-3               0.9 350730.0 350730.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          0.030850 1.8700-3               0.9 350730.0 350730.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          5.8200-3 3.7000-4               0.9 389710.0 389710.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          3.3600-3 2.5000-4               0.9 389710.0 389710.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          2.7300-3 2.0000-4               0.9 389710.0 389710.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          2.1500-3 1.6000-4               0.9 389710.0 389710.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          2.5500-3 1.7000-4               0.9 425800.0 425800.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          1.8100-3 1.7000-4               0.9 425800.0 425800.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          1.3600-3 1.1000-4               0.9 425800.0 425800.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          9.2000-4 8.0000-5               0.9 425800.0 425800.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.133900 9.2300-3               0.9 439990.0 439990.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          0.079890 5.2100-3               0.9 439990.0 439990.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          0.065110 4.0700-3               0.9 439990.0 439990.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          0.051770 3.2400-3               0.9 439990.0 439990.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.060560 4.2600-3               0.9 450700.0 450700.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          0.050400 3.6100-3               0.9 450700.0 450700.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          0.046440 2.9900-3               0.9 450700.0 450700.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          0.039060 2.5400-3               0.9 450700.0 450700.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          3.7400-3 2.4000-4               0.9 472200.0 472200.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          5.5200-3 3.6000-4               0.9 472200.0 472200.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          5.4800-3 3.4000-4               0.9 472200.0 472200.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          4.5200-3 2.8000-4               0.9 472200.0 472200.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.027010 1.6700-3               0.9 583040.0 585030.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          0.052470 3.1700-3               0.9 583040.0 585030.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          0.052870 3.2300-3               0.9 583040.0 585030.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          0.043950 2.6600-3               0.9 583040.0 585030.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          6.1700-3 4.2000-4               0.9 974740.0 974740.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          3.4900-3 2.6000-4               0.9 974740.0 974740.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          2.9400-3 2.4000-4               0.9 974740.0 974740.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          2.3800-3 1.7000-4               0.9 974740.0 974740.0 E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.147000 9.9900-3               0.9 1368620. 1368700. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          0.109100 7.3700-3               0.9 1368620. 1368700. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          0.085190 5.7400-3               0.9 1368620. 1368700. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          0.057910 3.8900-3               0.9 1368620. 1368700. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.014400 1.2000-3               0.9 1808680. 1808680. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          9.7200-3 7.7000-4               0.9 1808680. 1808680. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          7.2900-3 6.1000-4               0.9 1808680. 1808680. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          5.2100-3 4.8000-4               0.9 1808680. 1808680. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          0.023480 1.7200-3               0.9 2754010. 2754010. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          0.018790 1.5400-3               0.9 2754010. 2754010. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          0.015030 1.1600-3               0.9 2754010. 2754010. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          0.012190 1.0500-3               0.9 2754010. 2754010. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  3.0000+7          9.0200-3 7.2000-4               0.9 4237960. 4237960. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  4.2000+7          5.3000-3 5.3000-4               0.9 4237960. 4237960. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  5.4000+7          4.4500-3 4.6000-4               0.9 4237960. 4237960. E2W.Yahia-Cherif, (20)     D0984  5
+ 1001 12000   39000 A  6.6000+7          3.2800-3 3.5000-4               0.9 4237960. 4237960. E2W.Yahia-Cherif, (20)     D0984  5
+#/DATA      52
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      O0276
 #AUTHOR1    R.Michel+
 #YEAR       1997
@@ -1499,7 +1545,7 @@
 #REF-CODE   (J,NIM/B,129,153,1997)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.129, p.153, 1997
-#DATASETS   395
+#DATASETS   398
 #
 #DATASET    O0276462
 #DATE       20131003
@@ -2224,18 +2270,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073019
-#DATE       19941204
-#REACTION   12-MG-0(P,X)11-NA-24,IND,SIG,,,EXP
+#DATE       20201203
+#REACTION   12-MG-0(P,X)11-NA-24,,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
@@ -2246,10 +2292,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 12000   39000    1.3000+8 1.3000+7 0.028200 4.2000-3           11024.9                     G.V.S.RAYUDU (64)        O0073 19
- 1001 12000   39000    2.0800+8 2.0800+7 0.025200 3.7600-3           11024.9                     G.V.S.RAYUDU (64)        O0073 19
- 1001 12000   39000    2.9700+8 1.4850+7 0.029000 4.3000-3           11024.9                     G.V.S.RAYUDU (64)        O0073 19
- 1001 12000   39000    3.9600+8 1.9800+7 0.030500 4.5500-3           11024.9                     G.V.S.RAYUDU (64)        O0073 19
+ 1001 12000   39000    1.3000+8 1.3000+7 0.028200 4.2000-3           11024.9                     G.V.S.Rayudu (64)        O0073 19
+ 1001 12000   39000    2.0800+8 2.0800+7 0.025200 3.7600-3           11024.9                     G.V.S.Rayudu (64)        O0073 19
+ 1001 12000   39000    2.9700+8 1.4850+7 0.029000 4.3000-3           11024.9                     G.V.S.Rayudu (64)        O0073 19
+ 1001 12000   39000    3.9600+8 1.9800+7 0.030500 4.5500-3           11024.9                     G.V.S.Rayudu (64)        O0073 19
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -2259,18 +2305,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073020
-#DATE       19941204
-#REACTION   12-MG-0(P,X)11-NA-24,IND,SIG,,,EXP
+#DATE       20201203
+#REACTION   12-MG-0(P,X)11-NA-24,,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
@@ -2281,10 +2327,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 12000   39000    1.3000+8 1.3000+7 6.1000-3 6.1000-4           11024.9                     G.V.S.RAYUDU (64)        O0073 20
- 1001 12000   39000    2.0800+8 2.0800+7 5.3700-3 5.4000-4           11024.9                     G.V.S.RAYUDU (64)        O0073 20
- 1001 12000   39000    2.9700+8 1.4850+7 6.1800-3 6.2000-4           11024.9                     G.V.S.RAYUDU (64)        O0073 20
- 1001 12000   39000    3.9600+8 1.9800+7 6.4800-3 6.5000-4           11024.9                     G.V.S.RAYUDU (64)        O0073 20
+ 1001 12000   39000    1.3000+8 1.3000+7 6.1000-3 6.1000-4           11024.9                     G.V.S.Rayudu (64)        O0073 20
+ 1001 12000   39000    2.0800+8 2.0800+7 5.3700-3 5.4000-4           11024.9                     G.V.S.Rayudu (64)        O0073 20
+ 1001 12000   39000    2.9700+8 1.4850+7 6.1800-3 6.2000-4           11024.9                     G.V.S.Rayudu (64)        O0073 20
+ 1001 12000   39000    3.9600+8 1.9800+7 6.4800-3 6.5000-4           11024.9                     G.V.S.Rayudu (64)        O0073 20
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -2513,10 +2559,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284008
-#DATE       19970105
+#DATE       20191006
 #REACTION   12-MG-0(P,X)4-BE-7,,SIG
 #PROJ       1001
 #TARG       12000
@@ -2553,50 +2599,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
-#
-#DATASET    O0284009
-#DATE       19970105
-#REACTION   12-MG-0(P,X)4-BE-10,,SIG
-#PROJ       1001
-#TARG       12000
-#MF         3
-#MT         9000
-#PRODUCT    4-BE-10
-#DATA-HDR   DATA
-#C4BEGIN    [ 1001 12000   39000 C ]
-#X4STATUS   [COREL] Data correlated with another data set
-#DATA       4
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 12000   39000 C  2.5400+8          4.4000-4 3.0000-5            4010.9                     Th.Schiekel,ET.AL. (96)  O0284  9
- 1001 12000   39000 C  2.9600+8          5.5000-4 2.0000-5            4010.9                     Th.Schiekel,ET.AL. (96)  O0284  9
- 1001 12000   39000 C  3.6100+8          7.0000-4 4.0000-5            4010.9                     Th.Schiekel,ET.AL. (96)  O0284  9
- 1001 12000   39000 C  3.9600+8          8.3000-4 3.0000-5            4010.9                     Th.Schiekel,ET.AL. (96)  O0284  9
-#/DATA      4
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      O0284
-#AUTHOR1    Th.Schiekel+
-#YEAR       1996
-#INSTITUTE  (2GERKLN)
-#TITLE      Nuclide production by proton-induced reactions on
-#+          elements (6<=Z<=296) in the energy range from 200 MeV
-#+          to 400 MeV.
-#AUTHOR(S)  Th.Schiekel, F.Sudbrock, U.Herpers,
-#+          M.Gloris, H.-J.Lange, I.Leya,
-#+          R.Michel, B.Dittrich-Hannen, H.-A.Synal,
-#+          M.Suter, P.W.Kubik, M.Blann,
-#+          D.Filges
-#REF-CODE   (J,NIM/B,114,91,1996)
-#REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
-#+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284011
-#DATE       19970105
+#DATE       20191006
 #REACTION   12-MG-0(P,X)13-AL-26-G,,SIG
 #PROJ       1001
 #TARG       12000
@@ -2840,7 +2846,7 @@
 #DATASETS   12
 #
 #DATASET    O2056002
-#DATE       20121000
+#DATE       20191205
 #REACTION   12-MG-0(P,X)4-BE-7,,SIG
 #PROJ       1001
 #TARG       12000
@@ -2872,7 +2878,7 @@
 #DATASETS   12
 #
 #DATASET    O2056005
-#DATE       20121000
+#DATE       20191205
 #REACTION   12-MG-0(P,X)11-NA-22,,SIG
 #PROJ       1001
 #TARG       12000
@@ -2904,7 +2910,7 @@
 #DATASETS   12
 #
 #DATASET    O2056008
-#DATE       20121000
+#DATE       20191205
 #REACTION   12-MG-0(P,X)4-BE-10,,SIG
 #PROJ       1001
 #TARG       12000
@@ -3032,7 +3038,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277008
 #DATE       20110300
@@ -3072,7 +3078,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277009
 #DATE       20110300
@@ -3112,7 +3118,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277010
 #DATE       20131001
@@ -3153,7 +3159,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277011
 #DATE       20131001
@@ -3194,7 +3200,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277015
 #DATE       20110300
@@ -3726,19 +3732,19 @@
 #REF-CODE   (J,JGR,81,5689,1976)
 #REFERENCE  Jour. Journal of Geophysical Research
 #+          Vol.81, p.5689, 1976
-#DATASETS   32
+#DATASETS   30
 #
 #DATASET    O0350011
-#DATE       19990701
+#DATE       20201001
 #REACTION   12-MG-0(P,X)10-NE-21,CUM,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
 #MT         9001
 #PRODUCT    10-NE-21
-#DATA-HDR   DATA
+#DATA-HDR   DATA DATA-MIN
 #C4BEGIN    [ 1001 12000   39001   ]
-#DATA       18
+#DATA       17
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 12000   39001    1.1900+7 500000.0 0.031000 4.0300-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
@@ -3746,7 +3752,6 @@
  1001 12000   39001    1.4400+7 600000.0 0.046000 5.9800-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    1.5400+7 600000.0 0.044000 4.8400-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    1.6200+7          0.048000 4.8000-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
- 1001 12000   39001    1.7000+7 1100000. 0.030000 6.9000-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    1.9300+7 1000000. 0.040000 6.0000-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    2.1900+7 900000.0 0.028000 3.9200-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    2.2000+7 800000.0 0.018000 3.0600-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
@@ -3759,7 +3764,7 @@
  1001 12000   39001    3.9400+7 1600000. 0.029000 8.1200-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    4.1700+7 1500000. 0.026000 3.1200-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
  1001 12000   39001    4.4400+7 1100000. 0.039000 8.9700-3           10021.9                     J.R.Walton,ET.AL. (76)   O0350 11
-#/DATA      18
+#/DATA      17
 #/DATASET
 #/ENTRY
 #
@@ -3777,19 +3782,19 @@
 #REF-CODE   (J,JGR,81,5689,1976)
 #REFERENCE  Jour. Journal of Geophysical Research
 #+          Vol.81, p.5689, 1976
-#DATASETS   32
+#DATASETS   30
 #
 #DATASET    O0350007
-#DATE       19990701
+#DATE       20201001
 #REACTION   12-MG-0(P,X)10-NE-20,CUM,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
 #MT         9001
 #PRODUCT    10-NE-20
-#DATA-HDR   DATA
+#DATA-HDR   DATA DATA-MIN
 #C4BEGIN    [ 1001 12000   39001   ]
-#DATA       20
+#DATA       19
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
  1001 12000   39001    1.2200+7 400000.0 4.6000-3 6.9000-4           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
@@ -3797,7 +3802,6 @@
  1001 12000   39001    1.4400+7 400000.0 0.051000 7.1400-3           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    1.5100+7 400000.0 0.039000 7.0200-3           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    1.5700+7 300000.0 0.089000 8.0100-3           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
- 1001 12000   39001    1.6800+7 700000.0 0.082000 0.024600           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    1.9000+7 700000.0 0.179000 0.025060           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    2.1700+7 900000.0 0.120000 0.015600           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    2.1800+7 800000.0 0.198000 0.023760           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
@@ -3812,7 +3816,7 @@
  1001 12000   39001    3.9200+7 1600000. 0.091000 0.018200           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    4.1500+7 500000.0 0.061000 7.9300-3           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
  1001 12000   39001    4.4500+7 900000.0 0.080000 0.018400           10020.9                     J.R.Walton,ET.AL. (76)   O0350  7
-#/DATA      20
+#/DATA      19
 #/DATASET
 #/ENTRY
 #
@@ -4003,6 +4007,54 @@
  1001 12000   39001    3.0700+8 1000000. 0.044800 7.8000-3           10022.9                     I.Leya,ET.AL. (98)       O0520  7
  1001 12000   39001    3.8000+8 1000000. 0.045500 5.1000-3           10022.9                     I.Leya,ET.AL. (98)       O0520  7
  1001 12000   39001    1.6000+9 1000000. 0.040200 4.5000-3           10022.9                     I.Leya,ET.AL. (98)       O0520  7
+#/DATA      15
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      O0350
+#AUTHOR1    J.R.Walton+
+#YEAR       1976
+#INSTITUTE  (1USARIC)
+#TITLE      Cross sections for He and Ne isotopes in natural Mg,Al,
+#+          and Si,He isotopes in Ca-F(2),Ar isotopes in natural Ca
+#+          and radionuclides in natural Al,Si,Ti,Cr and stainless
+#+          steel induced by 12-To 45-MeV protons.
+#AUTHOR(S)  J.R.Walton, D.Heymann, A.Yaniv,
+#+          D.Edgerley, M.W.Rowe
+#REF-CODE   (J,JGR,81,5689,1976)
+#REFERENCE  Jour. Journal of Geophysical Research
+#+          Vol.81, p.5689, 1976
+#DATASETS   30
+#
+#DATASET    O0350013
+#DATE       20201001
+#REACTION   12-MG-0(P,X)10-NE-22,CUM,SIG
+#PROJ       1001
+#TARG       12000
+#MF         3
+#MT         9001
+#PRODUCT    10-NE-22
+#DATA-HDR   DATA DATA-MIN
+#C4BEGIN    [ 1001 12000   39001   ]
+#DATA       15
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+ 1001 12000   39001    1.5900+7 400000.0 6.2000-4 2.4800-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    1.9200+7 500000.0 4.8000-3 7.2000-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    2.1900+7 600000.0 3.5000-3 3.8500-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    2.2000+7 800000.0 6.4000-3 8.9600-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    2.4600+7 700000.0 7.3000-3 8.7600-4           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    2.6100+7 300000.0 7.0000-3 1.4000-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    2.7900+7 600000.0 8.7000-3 1.5660-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    3.0400+7 1400000. 0.013000 2.3400-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    3.2600+7 700000.0 0.017000 4.9300-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    3.4000+7 900000.0 0.022000 5.0600-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    3.5600+7 1000000. 0.028000 5.8800-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    3.7600+7 1400000. 0.015000 3.0000-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    3.9500+7 1100000. 0.031000 8.0600-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    4.1500+7 1400000. 0.019900 2.7860-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
+ 1001 12000   39001    4.4400+7 1400000. 0.032000 8.9600-3           10022.9                     J.R.Walton,ET.AL. (76)   O0350 13
 #/DATA      15
 #/DATASET
 #/ENTRY
@@ -4201,18 +4253,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073021
-#DATE       19941204
-#REACTION   12-MG-0(P,X)11-NA-22,CUM,SIG,,,EXP
+#DATE       20201203
+#REACTION   12-MG-0(P,X)11-NA-22,CUM,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
@@ -4223,10 +4275,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 12000   39001    1.3000+8 1.3000+7 0.028300 4.2000-3           11022.9                     G.V.S.RAYUDU (64)        O0073 21
- 1001 12000   39001    2.0800+8 2.0800+7 0.021600 3.2200-3           11022.9                     G.V.S.RAYUDU (64)        O0073 21
- 1001 12000   39001    2.9700+8 1.4850+7 0.023800 3.5500-3           11022.9                     G.V.S.RAYUDU (64)        O0073 21
- 1001 12000   39001    3.9600+8 1.9800+7 0.022200 3.3100-3           11022.9                     G.V.S.RAYUDU (64)        O0073 21
+ 1001 12000   39001    1.3000+8 1.3000+7 0.028300 4.2000-3           11022.9                     G.V.S.Rayudu (64)        O0073 21
+ 1001 12000   39001    2.0800+8 2.0800+7 0.021600 3.2200-3           11022.9                     G.V.S.Rayudu (64)        O0073 21
+ 1001 12000   39001    2.9700+8 1.4850+7 0.023800 3.5500-3           11022.9                     G.V.S.Rayudu (64)        O0073 21
+ 1001 12000   39001    3.9600+8 1.9800+7 0.022200 3.3100-3           11022.9                     G.V.S.Rayudu (64)        O0073 21
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -4236,18 +4288,18 @@
 #AUTHOR1    G.V.S.Rayudu
 #YEAR       1964
 #INSTITUTE  (1USACAR)
-#TITLE      FORMATION CROSS SECTIONS OF VARIOUS RADIONUCLIDES FROM
-#+          NI,FE,SI,MG,O AND C FOR PROTONS OF ENERGIES BETWEEN
-#+          130 AND 400 MEV.
+#TITLE      Formation cross sections of various radionuclides from
+#+          Ni,Fe,Si,Mg,O and C for protons of energies between
+#+          130 and 400 MeV.
 #AUTHOR(S)  G.V.S.Rayudu
-#REF-CODE   (J,CJC,42,1149,64)
+#REF-CODE   (J,CJC,42,1149,1964)
 #REFERENCE  Jour. Canadian Journal of Chemistry
 #+          Vol.42, p.1149, 1964
 #DATASETS   23
 #
 #DATASET    O0073022
-#DATE       19950505
-#REACTION   12-MG-0(P,X)4-BE-7,CUM,SIG,,,EXP
+#DATE       20201203
+#REACTION   12-MG-0(P,X)4-BE-7,CUM,SIG
 #PROJ       1001
 #TARG       12000
 #MF         3
@@ -4258,10 +4310,10 @@
 #DATA       4
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
- 1001 12000   39001    1.3000+8 1.3000+7 2.6600-3 6.6000-4            4007.9                     G.V.S.RAYUDU (64)        O0073 22
- 1001 12000   39001    2.0800+8 2.0800+7 2.3100-3 5.8000-4            4007.9                     G.V.S.RAYUDU (64)        O0073 22
- 1001 12000   39001    2.9700+8 1.4850+7 2.4800-3 6.2000-4            4007.9                     G.V.S.RAYUDU (64)        O0073 22
- 1001 12000   39001    3.9600+8 1.9800+7 3.2500-3 8.8000-4            4007.9                     G.V.S.RAYUDU (64)        O0073 22
+ 1001 12000   39001    1.3000+8 1.3000+7 2.6600-3 6.6000-4            4007.9                     G.V.S.Rayudu (64)        O0073 22
+ 1001 12000   39001    2.0800+8 2.0800+7 2.3100-3 5.8000-4            4007.9                     G.V.S.Rayudu (64)        O0073 22
+ 1001 12000   39001    2.9700+8 1.4850+7 2.4800-3 6.2000-4            4007.9                     G.V.S.Rayudu (64)        O0073 22
+ 1001 12000   39001    3.9600+8 1.9800+7 3.2500-3 8.8000-4            4007.9                     G.V.S.Rayudu (64)        O0073 22
 #/DATA      4
 #/DATASET
 #/ENTRY
@@ -4319,10 +4371,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284010
-#DATE       19970105
+#DATE       20191006
 #REACTION   12-MG-0(P,X)11-NA-22,CUM,SIG
 #PROJ       1001
 #TARG       12000
@@ -4359,10 +4411,10 @@
 #REF-CODE   (J,NIM/B,114,91,1996)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.114, p.91, 1996
-#DATASETS   106
+#DATASETS   89
 #
 #DATASET    O0284012
-#DATE       19970105
+#DATE       20191006
 #REACTION   12-MG-0(P,X)11-NA-24,CUM,SIG
 #PROJ       1001
 #TARG       12000
@@ -4742,7 +4794,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277012
 #DATE       20110300
@@ -4782,7 +4834,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277013
 #DATE       20110300
@@ -4822,7 +4874,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277014
 #DATE       20110300
@@ -4862,7 +4914,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277016
 #DATE       20131001
@@ -4903,7 +4955,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277203
 #DATE       20131001
@@ -4943,7 +4995,7 @@
 #REF-CODE   (J,NIM/B,103,183,1995)
 #REFERENCE  Jour. Nucl. Instrum. Methods in Physics Res., Sect.B
 #+          Vol.103, p.183, 1995
-#DATASETS   191
+#DATASETS   192
 #
 #DATASET    O0277017
 #DATE       19970106
@@ -7271,7 +7323,7 @@
 #DATASETS   12
 #
 #DATASET    O2056011
-#DATE       20121000
+#DATE       20191205
 #REACTION   (12-MG-0(P,X)4-BE-10,,SIG)/(12-MG-0(P,X)4-BE-7,,SIG)
 #PROJ       1001
 #TARG       12000

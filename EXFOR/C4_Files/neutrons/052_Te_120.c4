@@ -191,7 +191,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298063
 #DATE       20130501
@@ -225,7 +225,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298064
 #DATE       20130501
@@ -426,7 +426,7 @@
 #REF-CODE   (J,NP/A,114,663,6807)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.114, p.663, 1968
-#DATASETS   19
+#DATASETS   22
 #
 #DATASET    11999002
 #DATE       19860603
@@ -457,7 +457,7 @@
 #REF-CODE   (J,NP/A,114,663,6807)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.114, p.663, 1968
-#DATASETS   19
+#DATASETS   22
 #
 #DATASET    11999003
 #DATE       19860603
@@ -488,7 +488,7 @@
 #REF-CODE   (J,NP/A,114,663,6807)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.114, p.663, 1968
-#DATASETS   19
+#DATASETS   22
 #
 #DATASET    11999004
 #DATE       19860603
@@ -513,15 +513,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507060
-#DATE       19860702
+#DATE       20190805
 #REACTION   52-TE-120(N,G)52-TE-121,,SIG,,MXW
 #PROJ       1
 #TARG       52120
@@ -533,7 +533,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 52120   3 102    0.025300          68.00000 68.00000                                       H.POMERANCE (52)         11507 60
+    1 52120   3 102    0.025300          68.00000 68.00000                                       H.Pomerance (52)         11507 60
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -547,7 +547,7 @@
 #+          TE120.
 #AUTHOR(S)  L.Esch, W.Moore
 #REF-CODE   (J,BAP,6,70(X10),6102)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.6, p.70(X10), 1961
 #DATASETS   3
 #
@@ -578,7 +578,7 @@
 #+          TE120.
 #AUTHOR(S)  L.Esch, W.Moore
 #REF-CODE   (J,BAP,6,70(X10),6102)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.6, p.70(X10), 1961
 #DATASETS   3
 #
@@ -730,7 +730,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -761,7 +761,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -1117,6 +1117,114 @@
     1 52120   3 103MA  1.4400+7 300000.0 0.022400 2.4000-3                                       F.Zhou,ET.AL. (07)       32669  9
     1 52120   3 103MA  1.4600+7 300000.0 0.027500 2.9000-3                                       F.Zhou,ET.AL. (07)       32669  9
 #/DATA      3
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41240
+#AUTHOR1    A.A.Filatenkov+
+#YEAR       1999
+#INSTITUTE  (4RUSRI)
+#TITLE      Systematic measurement of activation cross sections
+#+          at neutron energies from 13.4 to 14.9 MeV
+#AUTHOR(S)  A.A.Filatenkov, S.V.Chuvaev, V.N.Aksenov,
+#+          V.A.Yakovlev, A.V.Malyshenkov, S.K.Vasil'ev,
+#+          M.Avrigeanu, V.Avrigeanu, D.L.Smith,
+#+          Y.Ikeda, A.Wallner, W.Kutschera,
+#+          A.Priller, P.Steier, H.Vonach,
+#+          G.Mertens, W.Rochow
+#REF-CODE   (R,RI-252,1999)
+#REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
+#+          No.252, 1999
+#DATASETS   13
+#
+#DATASET    41240128
+#DATE       20130303
+#REACTION   52-TE-120(N,2N)52-TE-119-M/T,,SIG/RAT
+#PROJ       1
+#TARG       52120
+#MF         203
+#MT         16
+#PRODUCT    52-TE-119-M/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 52120 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       7
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 52120 203  16MD  1.3480+7          0.426000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+    1 52120 203  16MD  1.3670+7          0.455000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+    1 52120 203  16MD  1.4060+7          0.477000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+    1 52120 203  16MD  1.4280+7          0.462000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+    1 52120 203  16MD  1.4460+7          0.470000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+    1 52120 203  16MD  1.4670+7          0.478000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+    1 52120 203  16MD  1.4830+7          0.483000 0.060000     16.9  52120.9                     A.A.Filatenkov, (99)     41240128
+#/DATA      7
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      41298
+#AUTHOR1    A.A.Filatenkov+
+#YEAR       1999
+#INSTITUTE  (4RUSRI)
+#TITLE      Systematic measurement of cross-sections
+#+          at neutron energies 13.4 - 14.9 MeV .
+#AUTHOR(S)  A.A.Filatenkov, S.V.Chuvaev, V.A.Yakovlev,
+#+          A.V.Malyshenkov, S.K.Vasil'ev
+#REF-CODE   (R,RI-252,199905)
+#REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
+#+          No.252, 1999
+#DATASETS   119
+#
+#DATASET    41298117
+#DATE       20130501
+#REACTION   52-TE-120(N,2N)52-TE-119-M/T,,SIG/RAT,,,DERIV
+#PROJ       1
+#TARG       52120
+#MF         203
+#MT         16
+#PRODUCT    52-TE-119-M/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 52120 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#X4DATATYPE [DERIV] Derived data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 52120 203  16MD  1.4100+7          0.524000 0.050000     16.9  52120.9                     A.A.Filatenkov, (99)     41298117
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      11999
+#AUTHOR1    L.Husain+
+#YEAR       1968
+#INSTITUTE  (1USAARK)
+#TITLE      ISOMERIC CROSS SECTION RATIOS FOR SOME REACTIONS
+#+          INDUCED BY 14.8 MEV NEUTRONS IN TE ISOTOPES.
+#AUTHOR(S)  L.Husain, P.K.Kuroda
+#REF-CODE   (J,NP/A,114,663,6807)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.114, p.663, 1968
+#DATASETS   22
+#
+#DATASET    11999005
+#DATE       19860603
+#REACTION   52-TE-120(N,2N)52-TE-119-M/G,,SIG/RAT
+#PROJ       1
+#TARG       52120
+#MF         203
+#MT         16
+#PRODUCT    52-TE-119-M/G
+#DATA-HDR   DATA
+#C4BEGIN    [    1 52120 203  16M  ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 52120 203  16M   1.4800+7 200000.0 0.780000 0.170000     16.0  52120.9                     L.HUSAIN,ET.AL. (68)     11999  5
+#/DATA      1
 #/DATASET
 #/ENTRY
 #

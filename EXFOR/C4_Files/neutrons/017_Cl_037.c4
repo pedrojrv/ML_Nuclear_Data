@@ -179,17 +179,17 @@
 #AUTHOR1    N.P.Glazkov
 #YEAR       1963
 #INSTITUTE  (4RUSFEI)
-#TITLE      Inelastic Scattering Cross Sections For Neutrons With
-#+          Energies Of 0.4-1.2 MeV On Medium And Light Nuclei.
+#TITLE      Cross sections of the inelastic scattering of neutrons
+#+          with energies of 0.4-1.2 MeV on medium and light nuclei
 #AUTHOR(S)  N.P.Glazkov
-#REF-CODE   (J,AE,15,(5),416,196311)
+#REF-CODE   (J,AE,15,416,1963)
 #REFERENCE  Jour. Atomnaya Energiya
-#+          Vol.15, Issue.5, p.416, 1963
-#DATASETS   33
+#+          Vol.15, p.416, 1963
+#DATASETS   32
 #
 #DATASET    40680010
-#DATE       20010301
-#REACTION   17-CL-37(N,INL)17-CL-37,PAR,SIG
+#DATE       20191004
+#REACTION   17-CL-37(N,INL)17-CL-37,PAR,SIG,,A
 #PROJ       1
 #TARG       17037
 #MF         3
@@ -200,44 +200,9 @@
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 17037   3  51    1000000.          0.120000                            840000.0         LVLN.P.GLAZKOV (63)         40680 10
-    1 17037   3  51    1200000.          0.120000                            840000.0         LVLN.P.GLAZKOV (63)         40680 10
+    1 17037   3  51    1000000.          0.120000                            840000.0         LVLN.P.Glazkov (63)         40680 10
+    1 17037   3  51    1200000.          0.120000                            840000.0         LVLN.P.Glazkov (63)         40680 10
 #/DATA      2
-#/DATASET
-#/ENTRY
-#
-#
-#ENTRY      11591
-#AUTHOR1    D.B.Nichols+
-#YEAR       1966
-#INSTITUTE  (1USAKTY)
-#TITLE      CROSS SECTIONS OF CL-35,37(N,N`GAMMA) REACTIONS
-#AUTHOR(S)  D.B.Nichols, B.D.Kern, M.T.Mc Ellistrem
-#REF-CODE   (J,PR,151,879,6611)
-#REFERENCE  Jour. Physical Review
-#+          Vol.151, p.879, 1966
-#DATASETS   5
-#
-#DATASET    11591006
-#DATE       19830801
-#REACTION   17-CL-37(N,INL)17-CL-37,PAR,SIG
-#PROJ       1
-#TARG       17037
-#MF         3
-#MT         51
-#PRODUCT    17-CL-37
-#DATA-HDR   DATA
-#C4BEGIN    [    1 17037   3  51 D ]
-#X4STATUS   [DEP  ] Dependent data
-#DATA       5
-# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
-#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 17037   3  51 D  2540000. 70000.00 0.167000                            1726000. 1726000. E2D.B.NICHOLS,ET.AL. (66)  11591  6
-    1 17037   3  51 D  3090000. 70000.00 0.249000                            1726000. 1726000. E2D.B.NICHOLS,ET.AL. (66)  11591  6
-    1 17037   3  51 D  4030000. 70000.00 0.278000                            1726000. 1726000. E2D.B.NICHOLS,ET.AL. (66)  11591  6
-    1 17037   3  51 D  4030000. 70000.00 0.294000                            3090000. 3110000. E2D.B.NICHOLS,ET.AL. (66)  11591  6
-    1 17037   3  51 D  4230000. 70000.00 0.118000                            3710000. 3710000. E2D.B.NICHOLS,ET.AL. (66)  11591  6
-#/DATA      5
 #/DATASET
 #/ENTRY
 #
@@ -847,13 +812,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244069
-#DATE       20110104
+#DATE       20191103
 #REACTION   17-CL-37(N,G)17-CL-38,,SIG
 #PROJ       1
 #TARG       17037
@@ -861,12 +826,11 @@
 #MT         102
 #PRODUCT    17-CL-38
 #DATA-HDR   DATA
-#C4BEGIN    [    1 17037   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 17037   3 102   ]
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 17037   3 102 C  200000.0 30000.00 4.3100-3 4.0000-5                                       A.I.Leipunskiy, (58)     40244 69
+    1 17037   3 102    200000.0 30000.00 4.3100-3 4.0000-5                                       A.I.Leipunskiy, (58)     40244 69
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -881,13 +845,13 @@
 #AUTHOR(S)  A.I.Leipunskiy, O.D.Kazachkovskiy, G.Ja.Artyukhov,
 #+          A.I.Baryshnikov, T.S.Belanova, V.I.Galkov,
 #+          Yu.Ja.Stavisskiy, E.A.Stumbur, L.E.Sherman
-#REF-CODE   (C,58GENEVA,15,50(2219),195809)
+#REF-CODE   (C,58GENEVA,15,50,1958)
 #REFERENCE  Conf. Second Internat. At.En. Conf., Geneva 1958
-#+          Vol.15, p.50(2219), 1958
+#+          Vol.15, p.50, 1958
 #DATASETS   64
 #
 #DATASET    40244089
-#DATE       20100301
+#DATE       20191103
 #REACTION   17-CL-37(N,G)17-CL-38,,SIG
 #PROJ       1
 #TARG       17037
@@ -895,13 +859,12 @@
 #MT         102
 #PRODUCT    17-CL-38
 #DATA-HDR   DATA
-#C4BEGIN    [    1 17037   3 102 C ]
-#X4STATUS   [COREL] Data correlated with another data set
+#C4BEGIN    [    1 17037   3 102   ]
 #DATA       2
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 17037   3 102 C  2700000.          6.5000-4 9.0000-5                                       A.I.Leipunskiy, (58)     40244 89
-    1 17037   3 102 C  4000000.          3.4000-4 9.0000-5                                       A.I.Leipunskiy, (58)     40244 89
+    1 17037   3 102    2700000.          6.5000-4 9.0000-5                                       A.I.Leipunskiy, (58)     40244 89
+    1 17037   3 102    4000000.          3.4000-4 9.0000-5                                       A.I.Leipunskiy, (58)     40244 89
 #/DATA      2
 #/DATASET
 #/ENTRY
@@ -1006,15 +969,15 @@
 #AUTHOR1    S.C.Mathur+
 #YEAR       1966
 #INSTITUTE  (1USATNC)
-#TITLE      THE DISINTEGRATION OF AR BY 13.0-20.2MEV NEUTRONS.
+#TITLE      The disintegration of Ar by 13.0-20.2 MeV neutrons.
 #AUTHOR(S)  S.C.Mathur, I.L.Morgan
-#REF-CODE   (J,NP,75,561,6601)
+#REF-CODE   (J,NP,75,561,1966)
 #REFERENCE  Jour. Nuclear Physics
 #+          Vol.75, p.561, 1966
 #DATASETS   3
 #
 #DATASET    11556002
-#DATE       19830402
+#DATE       20200400
 #REACTION   17-CL-37(N,P)16-S-37,,SIG
 #PROJ       1
 #TARG       17037
@@ -1026,18 +989,18 @@
 #DATA       12
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 17037   3 103    1.3100+7          0.024750 2.7500-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.4100+7          0.025000 2.5000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.5500+7          0.015000 1.3000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.6000+7          0.016000 1.2500-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.6600+7          0.016650 1.8500-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.7000+7          0.015000 1.3000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.7400+7          0.014100 1.3000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.8000+7          0.012850 1.3000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.9000+7          0.015750 1.5000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    1.9950+7          0.016850 1.6500-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    2.0050+7          0.012000 1.3000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
-    1 17037   3 103    2.2000+7          0.012850 1.0000-3                                       S.C.MATHUR,ET.AL. (66)   11556  2
+    1 17037   3 103    1.3100+7          0.024750 2.7500-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.4100+7          0.025000 2.5000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.5500+7          0.015000 1.3000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.6000+7          0.016000 1.2500-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.6600+7          0.016650 1.8500-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.7000+7          0.015000 1.3000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.7400+7          0.014100 1.3000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.8000+7          0.012850 1.3000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.9000+7          0.015750 1.5000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    1.9950+7          0.016850 1.6500-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    2.0050+7          0.012000 1.3000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
+    1 17037   3 103    2.2000+7          0.012850 1.0000-3                                       S.C.Mathur,ET.AL. (66)   11556  2
 #/DATA      12
 #/DATASET
 #/ENTRY
@@ -1690,6 +1653,41 @@
 #/ENTRY
 #
 #
+#ENTRY      11591
+#AUTHOR1    D.B.Nichols+
+#YEAR       1966
+#INSTITUTE  (1USAKTY)
+#TITLE      Cross sections of Cl-35,37(n,n`gamma) reactions
+#AUTHOR(S)  D.B.Nichols, B.D.Kern, M.T.Mcellistrem
+#REF-CODE   (J,PR,151,879,1966)
+#REFERENCE  Jour. Physical Review
+#+          Vol.151, p.879, 1966
+#DATASETS   5
+#
+#DATASET    11591006
+#DATE       20200500
+#REACTION   17-CL-37(N,INL)17-CL-37,PAR,SIG,G
+#PROJ       1
+#TARG       17037
+#MF         3
+#MT         9000
+#PRODUCT    17-CL-37
+#DATA-HDR   DATA
+#C4BEGIN    [    1 17037   39000 D ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       5
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 17037   39000 D  2540000. 70000.00 0.167000                        0.9 1726000. 1726000. E2D.B.Nichols,ET.AL. (66)  11591  6
+    1 17037   39000 D  3090000. 70000.00 0.249000                        0.9 1726000. 1726000. E2D.B.Nichols,ET.AL. (66)  11591  6
+    1 17037   39000 D  4030000. 70000.00 0.278000                        0.9 1726000. 1726000. E2D.B.Nichols,ET.AL. (66)  11591  6
+    1 17037   39000 D  4030000. 70000.00 0.294000                        0.9 3090000. 3110000. E2D.B.Nichols,ET.AL. (66)  11591  6
+    1 17037   39000 D  4230000. 70000.00 0.118000                        0.9 3710000. 3710000. E2D.B.Nichols,ET.AL. (66)  11591  6
+#/DATA      5
+#/DATASET
+#/ENTRY
+#
+#
 #ENTRY      10704
 #AUTHOR1    D.C.Palmer+
 #YEAR       1977
@@ -2270,7 +2268,7 @@
 #AUTHOR(S)  E.G.Bilpuch, L.W.Weston, C.D.Bowman,
 #+          H.W.Newson
 #REF-CODE   (J,BAP,4,42(R4),195901)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.4, p.42(R4), 1959
 #DATASETS   6
 #

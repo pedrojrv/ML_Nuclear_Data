@@ -180,7 +180,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298079
 #DATE       20130501
@@ -214,7 +214,7 @@
 #REF-CODE   (J,PR/C,1,350,197001)
 #REFERENCE  Jour. Physical Review, Part C, Nuclear Physics
 #+          Vol.1, p.350, 1970
-#DATASETS   35
+#DATASETS   36
 #
 #DATASET    10497041
 #DATE       20040103
@@ -245,7 +245,7 @@
 #REF-CODE   (J,NP/A,224,319,197405)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.224, p.319, 1974
-#DATASETS   48
+#DATASETS   58
 #
 #DATASET    20541003
 #DATE       20080405
@@ -277,7 +277,7 @@
 #REF-CODE   (J,NP/A,224,319,197405)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.224, p.319, 1974
-#DATASETS   48
+#DATASETS   58
 #
 #DATASET    20541004
 #DATE       20080405
@@ -308,7 +308,7 @@
 #REF-CODE   (J,NP/A,224,319,197405)
 #REFERENCE  Jour. Nuclear Physics, Section A
 #+          Vol.224, p.319, 1974
-#DATASETS   48
+#DATASETS   58
 #
 #DATASET    20541005
 #DATE       20080405
@@ -489,15 +489,15 @@
 #AUTHOR1    H.Pomerance
 #YEAR       1952
 #INSTITUTE  (1USAORL)
-#TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS.
+#TITLE      Thermal neutron capture cross sections
 #AUTHOR(S)  H.Pomerance
-#REF-CODE   (J,PR,88,412,52)
+#REF-CODE   (J,PR,88,412,1952)
 #REFERENCE  Jour. Physical Review
 #+          Vol.88, p.412, 1952
 #DATASETS   102
 #
 #DATASET    11507074
-#DATE       19860702
+#DATE       20190805
 #REACTION   58-CE-138(N,G)58-CE-139,,SIG,,MXW
 #PROJ       1
 #TARG       58138
@@ -509,7 +509,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 58138   3 102    0.025300          8.700000 6.090000                                       H.POMERANCE (52)         11507 74
+    1 58138   3 102    0.025300          8.700000 6.090000                                       H.Pomerance (52)         11507 74
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -582,7 +582,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -613,7 +613,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #
@@ -664,6 +664,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 58138   3 102    30000.00          0.179000 5.0000-3                                       Z.Y.Bao,ET.AL. (00)      V0102308
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      20541
+#AUTHOR1    S.M.Qaim
+#YEAR       1974
+#INSTITUTE  (2GERJUL)
+#TITLE      Total (n,2n) cross sections and isomeric cross-section
+#+          ratios at 14.7 MeV in the region of rare earths.
+#AUTHOR(S)  S.M.Qaim
+#REF-CODE   (J,NP/A,224,319,197405)
+#REFERENCE  Jour. Nuclear Physics, Section A
+#+          Vol.224, p.319, 1974
+#DATASETS   58
+#
+#DATASET    20541006
+#DATE       20080405
+#REACTION   58-CE-138(N,2N)58-CE-137-M/T,,SIG/RAT
+#PROJ       1
+#TARG       58138
+#MF         203
+#MT         16
+#PRODUCT    58-CE-137-M/T
+#DATA-HDR   DATA
+#C4BEGIN    [    1 58138 203  16MD ]
+#X4STATUS   [DEP  ] Dependent data
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 58138 203  16MD  1.4700+7 300000.0 0.510000 0.100000     16.9  58138.9                     S.M.Qaim (74)            20541  6
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -771,7 +803,7 @@
 #TITLE      Atlas of neutron resonances resonance parameters and
 #+          thermal cross sections Z=1-100
 #AUTHOR(S)  S.F.Mughabghab
-#REF-CODE   (B,NEUT.RES,,2006)
+#REF-CODE   (B,NEUT.RES,,,2006)
 #REFERENCE  Book. Atlas of Neutron Resonances, S.F.Mughabghab, 2006
 #DATASETS   766
 #

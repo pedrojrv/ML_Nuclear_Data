@@ -6,7 +6,7 @@
 #+          AND CD ISOTOPES WITH 14.4 MEV NEUTRONS
 #AUTHOR(S)  W.D.Lu, R.W.Fink
 #REF-CODE   (J,BAP,13,1422(DB15),6811)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.13, p.1422(DB15), 1968
 #DATASETS   1
 #
@@ -172,7 +172,7 @@
 #DATASETS   18
 #
 #DATASET    22662009
-#DATE       20020306
+#DATE       20201201
 #REACTION   46-PD-108(N,2N)46-PD-107-M,,SIG
 #PROJ       1
 #TARG       46108
@@ -203,7 +203,7 @@
 #+          range of 15.1 to 16.3 MeV.
 #AUTHOR(S)  R.L.White, T.J.Gray
 #REF-CODE   (J,BAP,17,687(FD10),197205)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.17, p.687(FD10), 1972
 #DATASETS   5
 #
@@ -1459,7 +1459,7 @@
 #+          range of 15.1 to 16.3 MeV.
 #AUTHOR(S)  R.L.White, T.J.Gray
 #REF-CODE   (J,BAP,17,687(FD10),197205)
-#REFERENCE  Jour. Bulletin of the American Physical Society
+#REFERENCE  Jour. Bulletin of the American Physical Society Ser.II
 #+          Vol.17, p.687(FD10), 1972
 #DATASETS   5
 #
@@ -1528,9 +1528,9 @@
 #AUTHOR1    H.G.Blosser+
 #YEAR       1958
 #INSTITUTE  (1USAORL)
-#TITLE      MEASUREMENTS OF (N,ALPHA) CROSS SECTION AT 14 MEV.
+#TITLE      Measurements of (n,alpha) cross section at 14 MeV.
 #AUTHOR(S)  H.G.Blosser, C.D.Goodman, T.H.Handley
-#REF-CODE   (J,PR,110,531,58)
+#REF-CODE   (J,PR,110,531,1958)
 #REFERENCE  Jour. Physical Review
 #+          Vol.110, p.531, 1958
 #DATASETS   5
@@ -1548,7 +1548,7 @@
 #DATA       1
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
-    1 46108   3 107    1.4050+7 550000.0 2.3000-3 4.0000-4                                       H.G.BLOSSER,ET.AL. (58)  11747  5
+    1 46108   3 107    1.4050+7 550000.0 2.3000-3 4.0000-4                                       H.G.Blosser,ET.AL. (58)  11747  5
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -1565,7 +1565,7 @@
 #REF-CODE   (R,RI-252,199905)
 #REFERENCE  Rept. Khlopin Radiev. Inst., Leningrad Reports
 #+          No.252, 1999
-#DATASETS   110
+#DATASETS   119
 #
 #DATASET    41298050
 #DATE       20130501
@@ -1722,7 +1722,7 @@
 #+          energy from 13.3 to 14.9 MeV
 #AUTHOR(S)  C.Konno, Y.Ikeda, K.Oishi,
 #+          K.Kawade, H.Yamamoto, H.Maekawa
-#REF-CODE   (R,JAERI-1329,199310)
+#REF-CODE   (R,JAERI-1329,1993)
 #REFERENCE  Rept. JAERI Reports
 #+          No.1329, 1993
 #DATASETS   89
@@ -1779,6 +1779,38 @@
 # Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
 #---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
     1 46108   31003    1.4800+7          2.0000-3                                                A.K.Ganguly,ET.AL. (63)  31329  3
+#/DATA      1
+#/DATASET
+#/ENTRY
+#
+#
+#ENTRY      21441
+#AUTHOR1    J.F.Barry+
+#YEAR       1959
+#INSTITUTE  (2UK ALD)
+#TITLE      Cross sections for some (n,pn) reactions with heavy
+#+          nuclides
+#AUTHOR(S)  J.F.Barry, R.F.Coleman, B.E.Hawker,
+#+          J.L.Perkin
+#REF-CODE   (J,PPS,74,632,1959)
+#REFERENCE  Jour. Proceedings of the Physical Society (London),
+#+          Vol.74, p.632, 1959
+#DATASETS   6
+#
+#DATASET    21441002
+#DATE       20200903
+#REACTION   46-PD-108(N,X)45-RH-107,,SIG
+#PROJ       1
+#TARG       46108
+#MF         3
+#MT         9000
+#PRODUCT    45-RH-107
+#DATA-HDR   DATA
+#C4BEGIN    [    1 46108   39000   ]
+#DATA       1
+# Prj Targ M MF MT PXC  Energy  dEnergy  Data      dData   Cos/LO   dCos/LO   ELV/HL  dELV/HL I78 Refer (YY)              EntrySubP
+#---><---->o<-><-->ooo<-------><-------><-------><-------><-------><-------><-------><-------><-><-----------------------><---><->o
+    1 46108   39000    1.4500+7          4.0000-3 8.0000-4           45107.9                     J.F.Barry,ET.AL. (59)    21441  2
 #/DATA      1
 #/DATASET
 #/ENTRY
@@ -2469,7 +2501,7 @@
 #TITLE      Low energy neutron resonances of palladium
 #AUTHOR(S)  C.Coceva, F.Corvi, P.Giacobbe,
 #+          M.Stefanon
-#REF-CODE   (J,PL,16,159,196505)
+#REF-CODE   (J,PL,16,159,1965)
 #REFERENCE  Jour. Physics Letters
 #+          Vol.16, p.159, 1965
 #DATASETS   8
@@ -2738,7 +2770,7 @@
 #TITLE      Low energy neutron resonances of palladium
 #AUTHOR(S)  C.Coceva, F.Corvi, P.Giacobbe,
 #+          M.Stefanon
-#REF-CODE   (J,PL,16,159,196505)
+#REF-CODE   (J,PL,16,159,1965)
 #REFERENCE  Jour. Physics Letters
 #+          Vol.16, p.159, 1965
 #DATASETS   8
@@ -2799,7 +2831,7 @@
 #TITLE      Low energy neutron resonances of palladium
 #AUTHOR(S)  C.Coceva, F.Corvi, P.Giacobbe,
 #+          M.Stefanon
-#REF-CODE   (J,PL,16,159,196505)
+#REF-CODE   (J,PL,16,159,1965)
 #REFERENCE  Jour. Physics Letters
 #+          Vol.16, p.159, 1965
 #DATASETS   8
