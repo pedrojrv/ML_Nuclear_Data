@@ -29,7 +29,7 @@ def load_ensdf_samples(df, Z, A, scale=False, scaler=None, to_scale=[]):
         DataFrame: Extracted isotope sample.
     """
     logging.info("Extracting samples from dataframe.")
-    sample = df[(df["Protons"] == Z) & (df["Mass_Number"] == A)].sort_values(by='Level_Number', ascending=True)
+    sample = df[(df["Z"] == Z) & (df["Mass_Number"] == A)].sort_values(by='Level_Number', ascending=True)
     if scale:
         logging.info("Scaling dataset...")
         sample[to_scale] = scaler.transform(sample[to_scale])
@@ -51,7 +51,7 @@ def load_ensdf_element(df, Z, scale=False, scaler=None, to_scale=[]):
         DataFrame: Extracted element sample.
     """
     logging.info("Extracting samples from dataframe.")
-    sample = df[(df["Protons"] == Z)]
+    sample = df[(df["Z"] == Z)]
     if scale:
         logging.info("Scaling dataset...")
         sample[to_scale] = scaler.transform(sample[to_scale])
