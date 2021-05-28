@@ -1,0 +1,165 @@
+% ---PU-MET-INTER-004 ---
+
+set title "PU-MET-INTER-004"
+
+%===============================================================================
+% GEOMETRY
+%===============================================================================
+
+% SURFACES ---------------------------------------------------------------------
+% --- Planes ---
+% z planes
+surf   1	pz	  -85.09		% Beginning of matrix
+surf   2	pz	  -53.4248		% Beginning of lower axial reflector
+surf   3	pz	  -50.8106      % Beginning of radial reflector half 2
+surf   4	pz	  -22.9448		% End of lower axial reflector / beginning of core
+surf   5	pz	    0.0			% End of radial reflector half 2 / beginning of radial reflector half 1
+surf   6    pz	   28.0249		% End of core / beginning of upper axial reflector
+surf   7    pz	   38.1849		% Beginning of drawer gap
+surf   8    pz	   38.8199		% End of drawer gap
+surf   9    pz     59.1392		% End of upper axial reflector
+surf  10    pz     60.8772		% End of radial reflector half 1
+surf  11    pz     85.09		% End of matrix
+
+% --- Cylinders ---
+surf  12    cyl		 0.0	0.0		27.5843		% Outer radius of core, axial reflectors & drawer gap / inner radius of radial reflectors
+surf  13	cyl		 0.0	0.0		58.3482		% Outer radius of radial reflectors / inner radius of matrix (hollow portion)
+surf  14    cyl		 0.0	0.0	    96.8226		% Outer radius of matrix
+
+% CELLS ------------------------------------------------------------------------
+% system boundaries
+cell	1   0	outside   -1						% Bottom boundary
+cell	2	0	outside	  11						% Top boundary
+cell	3   0   outside   14						% Radial boundary
+% core
+cell	4	0	core	   4 -6   -12				% Core
+% reflectors
+cell    5	0	ax_ref     2 -4   -12	    		% Lower axial reflector
+cell    6   0   ax_ref     6 -7   -12 			    % Part of upper axial reflector
+cell    7	0	ax_ref     8 -9   -12   			% Part of upper axial reflector
+cell    8	0	rad_ref_2  5 -10   12 -13			% Radial reflector half 1
+cell    9	0	rad_ref_2  3 -5    12 -13  			% Radial reflector half 2	
+% drawer gap
+cell   10	0	gap		   7 -8	  -12				% Drawer gap
+% matrix
+cell   11   0   matrix	   1 -2   -14				% Part of lower portion
+cell   12   0   matrix     2 -3    12 -14			% Part of lower portion
+cell   13   0   matrix     3 -10   13 -14			% Hollow portion
+cell   14   0   matrix	   9 -10  -12				% Part of upper portion
+cell   15   0	matrix	  10 -11  -14				% Part of upper portion
+
+% BOUNDARY CONDITIONS ----------------------------------------------------------
+% --- Vacuum boundary condition ---
+set	bc	1  % Vacuum boundary
+
+%===============================================================================
+% MATERIALS
+%===============================================================================
+% SIMPLE MATERIALS -------------------------------------------------------------
+
+% --- Axial reflectors ---
+	% Evaluated @ 300K (approx. room temperature)
+mat ax_ref sum
+24000.03c	1.46684E-03		% Cr (natural)
+28000.03c	6.20786E-04		% Ni (natural)
+26000.03c	5.89311E-03		% Fe (natural)
+25055.03c	7.20937E-05		% Mn-55
+82000.03c	2.75143E-02		% Pb (natural)
+14000.03c	7.46598E-05		% Si (natural)
+
+% --- Radial reflector half 1 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat rad_ref_1 sum
+24000.03c	1.11212E-03		% Cr (natural)
+28000.03c	4.55197E-04		% Ni (natural)
+26000.03c	4.53786E-03		% Fe (natural)
+25055.03c	4.39192E-05		% Mn-55
+82000.03c	2.76345E-02		% Pb (natural)
+14000.03c	6.07818E-05		% Si (natural)
+
+% --- Radial reflector half 2 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat rad_ref_2 sum
+24000.03c	1.10431E-03		% Cr (natural)
+28000.03c	4.51668E-04		% Ni (natural)
+26000.03c	4.50718E-03		% Fe (natural)
+25055.03c	4.34331E-05		% Mn-55
+82000.03c	2.76393E-02		% Pb (natural)
+14000.03c	6.04244E-05		% Si (natural)
+9019.03c	1.21690E-05		% F-19
+
+% --- Drawer gap ---
+	% Evaluated @ 300K (approx. room temperature)
+mat gap sum
+24000.03c	3.17537E-03		% Cr (natural)
+28000.03c	1.46192E-03		% Ni (natural)
+26000.03c	1.88265E-02		% Fe (natural)
+6000.03c	2.94049E-04		% C (natural)
+25055.03c	2.11494E-04		% Mn-55
+14000.03c	1.40104E-04		% Si (natural)
+
+% --- Matrix ---
+	% Evaluated @ 300K (approx. room temperature)
+mat matrix sum
+24000.03c	1.10960E-03		% Cr (natural)
+28000.03c	4.53554E-04		% Ni (natural)
+26000.03c	4.52968E-03		% Fe (natural)
+25055.03c	4.34957E-05		% Mn-55
+14000.03c	6.07700E-05		% Si (natural)
+
+% MODERATORS -------------------------------------------------------------------
+
+% --- Core region: Pu, C and stainless steel ---
+	% Evaluated @ 300K (approx. room temperature)
+mat core sum moder sssth1 6000
+94240.03c	9.95365E-05		% Pu-240
+94241.03c	5.72562E-06		% Pu-241
+94239.03c	2.10081E-03		% Pu-239
+94238.03c	3.73187E-09		% Pu-238
+94242.03c	1.79101E-07		% Pu-242
+95241.03c	3.29312E-06		% Am-241
+24000.03c	1.91426E-03		% Cr (natural)
+28000.03c	8.56174E-04		% Ni (natural)
+26000.03c	7.44997E-03		% Fe (natural)
+13027.03c	2.20421E-04		% Al-27 (natural not available in ENDF/B-VII)
+8016.03c	8.96044E-05		% O-16 (natural not available in ENDF/B-VII)
+6000.03c	5.77309E-02		% C (natural)
+42000.03c	4.34689E-06		% Mo (natural)
+25055.03c	1.13224E-04		% Mn-55
+29000.03c	5.70933E-06		% Cu (natural)
+22000.03c	4.47813E-05		% Ti (natural)
+14000.03c	9.55959E-05		% Si (natural)
+9019.03c	1.43132E-04		% F-19
+therm sssth1 gre7.00t
+
+%===============================================================================
+% OPTIONS
+%===============================================================================
+% NEUTRON CYCLES ---------------------------------------------------------------
+% --- 10000 neutrons per cycle, 100 cycles, 50 inactive ---
+set	pop	10000 100 50
+
+%===============================================================================
+% PLOTS
+%===============================================================================
+% GEOMETRY PLOTS ---------------------------------------------------------------
+% --- yz-plane, 500px x 500px ---
+plot  1 569 500
+
+% --- xy-plane, 500px x 500px ---
+plot  3 569 569
+
+% MESH PLOTS -------------------------------------------------------------------
+% --- yz-plane, 500px x 500px ---
+mesh  1 569 500
+
+% --- xy-plane, 500px x 500px ---
+mesh  3 569 569
+
+%===============================================================================
+% DETECTORS + ENERGY GRIDS
+%===============================================================================
+% FLUX-ENERGY SPECTRUM ---------------------------------------------------------
+% --- 500 energy bins, uniform lethargy width, between 1E-11 MeV and 2E1 MeV ---
+det EnergyDetector de MyEnergyGrid
+ene MyEnergyGrid 3 500 1E-11 2E1

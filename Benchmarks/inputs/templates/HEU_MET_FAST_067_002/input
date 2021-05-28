@@ -1,0 +1,154 @@
+% --- HEU-MET-FAST-067-002 ---
+
+set title "HEU-MET-FAST-067-002"
+
+%===============================================================================
+% GEOMETRY
+%===============================================================================
+
+% SURFACES ---------------------------------------------------------------------
+% --- Planes ---
+% z planes
+surf   1	pz	  -61.91504		% Beginning of lower axial reflector 3 & aluminum radial reflector 2
+surf   2    pz	  -61.67882		% End of lower axial reflector 3 / beginning of lower aluminum axial reflector 2
+surf   3    pz    -50.92573		% End of lower aluminum axial reflector 2 / beginning of lower aluminum axial reflector 1
+surf   4    pz    -30.56288		% End of lower aluminum axial reflector 1 / beginning of core & aluminum radial reflector 1
+surf   5    pz     30.56288		% End of core & aluminum radial reflector 1 / beginning of upper aluminum axial reflector 1
+surf   6    pz	   50.92573		% End of upper aluminum axial reflector 1 / beginning of upper aluminum axial reflector 2
+surf   7    pz     61.67882		% End of upper aluminum axial reflector 2 / beginning of upper axial reflector 3
+surf   8    pz	   61.91504		% End of upper axial reflector 3 & aluminum radial reflector 2
+
+% --- Cylinders ---
+surf   9    cyl		 0.0	0.0		36.87395	% Outer radius of core / inner radius of aluminum radial reflector 1
+surf  10	cyl		 0.0	0.0		38.17733	% Outer radius of aluminum radial reflector 1 & axial reflectors 1, 2 & 3 / inner radius of aluminum radial reflector 2
+surf  11    cyl		 0.0	0.0	    75.90495	% Outer radius of aluminum radial reflector 2
+
+% CELLS ------------------------------------------------------------------------
+% system boundaries
+cell	1   0	outside   -1						% Bottom boundary
+cell	2	0	outside	   8						% Top boundary
+cell	3   0   outside   11						% Radial boundary
+% core
+cell	4	0	core	   4 -5   -9				% Core
+% axial reflectors
+cell    5	0	ar3        1 -2   -10	    		% Lower axial reflector 3
+cell    6   0   ar2        2 -3   -10 			    % Lower aluminum axial reflector 2
+cell    7	0	ar1        3 -4   -10   			% Lower aluminum axial reflector 1
+cell    8	0	ar1        5 -6   -10	    		% Upper aluminum axial reflector 1
+cell    9   0   ar2        6 -7   -10 			    % Upper aluminum axial reflector 2
+cell   10	0	ar3        7 -8   -10   			% Upper axial reflector 3
+
+% radial reflectors
+cell   11	0	rr1		   4 -5     9 -10			% Aluminum radial reflector 1
+cell   12	0	rr2		   1 -8    10 -11  			% Aluminum radial reflector 2
+
+% BOUNDARY CONDITIONS ----------------------------------------------------------
+% --- Vacuum boundary condition ---
+set	bc	1  % Vacuum boundary
+
+%===============================================================================
+% MATERIALS
+%===============================================================================
+% SIMPLE MATERIALS -------------------------------------------------------------
+% --- Core region: HEU (93% U-235) with W, C, and Al diluents ---
+	% Evaluated @ 300K (approx. room temperature)
+mat core sum
+92235.03c	4.50657E-03		% U-235
+92238.03c	2.60887E-04		% U-238
+92234.03c	4.46358E-05		% U-234
+92236.03c	2.13983E-05		% U-236
+24000.03c	4.51216E-05		% Cr (natural)
+28000.03c	1.61740E-05		% Ni (natural)
+26000.03c	1.50232E-04		% Fe (natural)
+13027.03c	1.51117E-02		% Al-27 (natural not available in ENDF/B-VII)
+6000.03c	1.47100E-05		% C (natural)
+42000.03c	2.90728E-07		% Mo (natural)
+25055.03c	9.17333E-06		% Mn-55 (natural not available in ENDF/B-VII)
+29000.03c	6.07329E-06		% Cu (natural)
+1001.03c	4.04868E-06		% H-1 (natural not available in ENDF/B-VII)
+22000.03c	2.74534E-06		% Ti (natural)
+14000.03c	2.82693E-05		% Si (natural)
+12000.03c	1.34332E-04		% Mg (natural)
+17000.03c	7.09986E-06		% Cl (natural)
+9019.03c	2.10256E-05		% F-19 (natural not available in ENDF/B-VII)
+74000.03c	2.13477E-02		% W (natural)
+
+% --- Aliminum axial reflector 1 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat ar1 sum
+24000.03c	4.10691E-05		% Cr (natural)
+28000.03c	1.42675E-05		% Ni (natural)
+26000.03c	2.98772E-04		% Fe (natural)
+13027.03c	5.49957E-02		% Al-27 (natural not available in ENDF/B-VII)
+6000.03c	8.00231E-06		% C (natural)
+42000.03c	2.56457E-07		% Mo (natural)
+25055.03c	1.01005E-05		% Mn-55 (natural not available in ENDF/B-VII)
+29000.03c	6.43103E-06		% Cu (natural)
+22000.03c	3.06014E-06		% Ti (natural)
+14000.03c	3.00395E-05		% Si (natural)
+12000.03c	1.60836E-04		% Mg (natural)
+
+% --- Aliminum axial reflector 2 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat ar2 sum
+24000.03c	4.10258E-05		% Cr (natural)
+28000.03c	1.43351E-05		% Ni (natural)
+26000.03c	5.32030E-04		% Fe (natural)
+13027.03c	5.51727E-02		% Al-27 (natural not available in ENDF/B-VII)
+6000.03c	3.32546E-06		% C (natural)
+42000.03c	2.56999E-07		% Mo (natural)
+25055.03c	1.13990E-05		% Mn-55 (natural not available in ENDF/B-VII)
+29000.03c	6.40119E-06		% Cu (natural)
+22000.03c	2.99143E-06		% Ti (natural)
+14000.03c	2.99042E-05		% Si (natural)
+12000.03c	1.54081E-04		% Mg (natural)
+
+% --- Axial reflector 3 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat ar3 sum
+24000.03c	4.10258E-05		% Cr (natural)
+28000.03c	1.43241E-05		% Ni (natural)
+26000.03c	4.18763E-04		% Fe (natural)
+13027.03c	6.40368E-03		% Al-27 (natural not available in ENDF/B-VII)
+6000.03c	2.51846E-06		% C (natural)
+42000.03c	2.56999E-07		% Mo (natural)
+25055.03c	1.09346E-05		% Mn-55 (natural not available in ENDF/B-VII)
+29000.03c	6.39109E-06		% Cu (natural)
+22000.03c	2.99142E-06		% Ti (natural)
+14000.03c	2.98606E-05		% Si (natural)
+12000.03c	1.54081E-04		% Mg (natural)
+
+% --- Aluminum radial reflector 1 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat rr1 sum
+24000.03c	5.86474E-06		% Cr (natural)
+26000.03c	9.44106E-06		% Fe (natural)
+13027.03c	5.57536E-02		% Al-27 (natural not available in ENDF/B-VII)
+25055.03c	6.19021E-06		% Mn-55 (natural not available in ENDF/B-VII)
+29000.03c	5.75389E-06		% Cu (natural)
+22000.03c	2.77894E-06		% Ti (natural)
+14000.03c	2.76181E-05		% Si (natural)
+12000.03c	1.37651E-04		% Mg (natural)
+
+% --- Aluminum radial reflector 2 ---
+	% Evaluated @ 300K (approx. room temperature)
+mat rr2 sum
+24000.03c	6.25067E-06		% Cr (natural)
+26000.03c	6.59296E-05		% Fe (natural)
+13027.03c	5.60085E-02		% Al-27 (natural not available in ENDF/B-VII)
+6000.03c	2.55604E-06		% C (natural)
+25055.03c	7.10273E-06		% Mn-55 (natural not available in ENDF/B-VII)
+29000.03c	6.00085E-06		% Cu (natural)
+22000.03c	2.98857E-06		% Ti (natural)
+14000.03c	2.87875E-05		% Si (natural)
+12000.03c	1.56196E-04		% Mg (natural)
+
+% CROSS-SECTION LIBRARY --------------------------------------------------------
+set acelib "to_replace"
+
+%===============================================================================
+% OPTIONS
+%===============================================================================
+% NEUTRON CYCLES ---------------------------------------------------------------
+% --- 10000 neutrons per cycle, 100 cycles, 50 inactive ---
+set	pop	10000 100 50
