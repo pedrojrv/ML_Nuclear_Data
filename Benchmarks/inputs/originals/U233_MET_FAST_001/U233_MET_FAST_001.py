@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec 22 02:25:01 2020
+Created on Tue Dec 22 02:25:01 2020.
 
 @author: Chris
 """
@@ -15,7 +15,7 @@ DETEnergyDetectorE = mat['DETEnergyDetectorE']
 energy = []
 for i in range(len(DETEnergyDetectorE)):
     energy.append(DETEnergyDetectorE[i][2])
-    
+
 scores = []
 error = []
 for i in range(len(DETEnergyDetector)):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec 22 02:25:01 2020
+Created on Tue Dec 22 02:25:01 2020.
 
 @author: Chris
 """
@@ -15,7 +15,7 @@ DETEnergyDetectorE = mat['DETEnergyDetectorE']
 energy = []
 for i in range(len(DETEnergyDetectorE)):
     energy.append(DETEnergyDetectorE[i][2])
-    
+
 scores = []
 error = []
 for i in range(len(DETEnergyDetector)):
@@ -24,7 +24,7 @@ for i in range(len(DETEnergyDetector)):
 plt.figure()
 plt.semilogx(energy, scores)
 plt.xlabel('Energy (MeV)')
-plt.ylabel('Normalized Flux ($\phi$/$\phi_{tot}$)')
+plt.ylabel('Normalized Flux ($\phi$/$\phi_{tot}$)')  # noqa
 plt.title('Flux-Energy Spectrum for LEU_COMP_THERM_001_002')
 plt.savefig('LEU_COMP_THERM_001_002_FluxEnergySpectrum.png')
 plt.show()

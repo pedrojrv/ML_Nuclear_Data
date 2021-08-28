@@ -24,14 +24,14 @@ from os.path import join
 # dictionary for sorting by projectile.
 # If projectile not found, use 'other'
 projectiles = {
-        '0':'gammas',
-        '1':'neutrons',
-        '1001':'protons',
-        '1002':'deuterons',	
-        '2003':'helions',			
-        '2004':'alphas',		
-        'other':'other'
-        }
+    '0': 'gammas',
+    '1': 'neutrons',
+    '1001': 'protons',
+    '1002': 'deuterons',
+    '2003': 'helions',
+    '2004': 'alphas',
+    'other': 'other'
+}
 
 
 def getSymbol(zzz):
@@ -39,25 +39,30 @@ def getSymbol(zzz):
     Return Chemical symbol of element with z=zzz
     """
     izzz = int(zzz)
-    
-    mat = 'n H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Ns Hs Mt ??'.split()
-    
-    if (izzz > 109):    SMAT = mat[-1]  # return '??' for unknown
-    else:   SMAT = mat[izzz]
+
+    mat = 'n H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y \
+           Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re \
+           Os, Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Ns Hs Mt \
+           ??'.split()
+
+    if (izzz > 109):
+        SMAT = mat[-1]  # return '??' for unknown
+    else:
+        SMAT = mat[izzz]
     return SMAT
 
 
-def parseC4( filename ):
+def parseC4(filename):
     """
     read full C4 database and sort by incident particle, then by isotope
     tbd: also sort within each isotope by MF/MT and energy?
     """
-    def readC4( line ):
+    def readC4(line):
         proj = line[:5].strip()
         targ = line[5:11].strip()
         isomer = line[11]
         return proj, targ, isomer
-    
+
     print "\n...Reading file: %s" % filename
 #    c4 = open(filename,"r").readlines()
 #2014-Zerkin: user-friendly reading showing process and Entries
@@ -79,22 +84,22 @@ def parseC4( filename ):
     print ""
 
 
-    
+
     entry = []
     ENTRY = False
     data = []
     DATA = False
     ndatasets = 0
     emptySets = 0
-    
+
     # use newline appropriate for system:
     newline = os.linesep
-    
+
     # double-check that target and projectile information is correct?
     dblcheck = True
-    
+
     print "sorting by target and projectile:"
-    
+
     iEntry = 0
     for i in range(len(c4)):
         line = c4[i]
@@ -121,25 +126,25 @@ def parseC4( filename ):
                 zam = int(targ[0])
             except ValueError:
                 print "trouble getting target information line %i"%i
-        
+
         # split library up by projectile
         elif line.startswith("#PROJ "):
             proj = line.strip().split()[-1]
             # if projectile not found, put in 'other' directory
             dir = projectiles.get(proj, 'other')
-        
+
         elif line.startswith("#/DATASET"):
             ndatasets += 1
-            
+
             data.append(line.strip()+newline)
             data.append("#/ENTRY%s#%s#%s" % ((newline,)*3) )
-            
+
             # done with this data set. write to file:
             z = str( zam//1000 ).zfill(3)
             a = str( zam%1000 ).zfill(3)
             el = getSymbol( z )
             #print "z,a=",z,a
-            
+
             if isomer:
                 f = open(join(dir,"%s_%s_%s_%s.c4") % (z,el,a,isomer), "a")
             else:
@@ -149,31 +154,31 @@ def parseC4( filename ):
             f.close()
             data = []
             DATA = False
-        
+
         elif line.startswith("#DATASETS   0"):
             emptySets += 1
-        
+
         if dblcheck and not line.startswith('#'):
             # do some checking:
             PROJ, TARG, ISOMER = readC4( line )
             if not PROJ == proj and TARG == repr(zam):
                 print "bad targ/proj info on line %i" % i
-        
-        
+
+
         if DATA:
             data.append(line.rstrip() + newline)
         if ENTRY:
             entry.append(line.rstrip() + newline)
-        
+
         #if ndatasets >= 10:    # debugging
         #    break
-        
+
     print "%i data sets extracted" % ndatasets
     print "of these, %i are empty" % emptySets
 
 
 
-""" 
+"""
 after sorting by projectile and target, also sort by MF/MT and energy:
 """
 
@@ -193,12 +198,12 @@ def sortC4file( filename ):
         energy = line[22:31].strip()
         entry = line[122:127]
         subent = line[127:].strip()
-        
+
         if energy and energy[0] == '-':
 #2013-Zerkin2win            name = filename.split('/')[1].split('.')[0]
             name = filename.split(os.sep)[1].split('.')[0]
             print "energy<0! %s, entry %s, subent %s" % (name,entry,subent)
-        
+
         try:
             energy = float(energy)
         except ValueError:
@@ -208,13 +213,13 @@ def sortC4file( filename ):
                 sign = energy[0]
                 energy = energy[1:].replace('+','E+').replace('-','E-')
                 energy = float(sign+energy)
-        
+
         return proj,targ,MF,MT,energy,entry
-    
+
     datasets = []
     current = []
     firstPoint = True
-    
+
     fin = open(filename,"r").readlines()
     for i in range(len(fin)):
         line = fin[i]
@@ -228,7 +233,7 @@ def sortC4file( filename ):
             lastline = i+2
             datasets.append( [proj,targ,MF,MT,energy,entry, firstline,lastline+1] )
             firstPoint = True
-    
+
     datasets.sort()
     #fout = open(filename+'s',"w")
     fout = open(filename,"w")
@@ -240,11 +245,11 @@ def sortC4file( filename ):
 def sortC4():
     # read all files produced by parseC4, sort using sortC4
     from glob import glob
-    
+
     files = []
     for dir in projectiles.values():
         files += glob(dir+"/*.c4")
-    
+
     print "now sorting C4 files"
     iFile=0
     for f in files:
@@ -269,7 +274,7 @@ if __name__ == '__main__':
         sys.exit()
 
     start = time.clock()
-    
+
     parseC4( sys.argv[1] )
     print
     sortC4()

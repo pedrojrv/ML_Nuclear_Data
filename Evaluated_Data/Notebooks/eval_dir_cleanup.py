@@ -1,4 +1,7 @@
-import glob, os, shutil
+"""Cleans evaluation directories from unnecessary files."""
+import glob
+import os
+import shutil
 
 evaluated_data_path = "../../Evaluated_Data/"
 

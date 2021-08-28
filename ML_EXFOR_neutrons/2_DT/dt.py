@@ -1,41 +1,53 @@
+"""DT Model training script."""
 import argparse
 import numpy as np
+import pandas as pd
+import os
+from joblib import dump
+import time
+from sklearn import tree
+import itertools
+from sklearn.model_selection import train_test_split
 
-CLI=argparse.ArgumentParser()
+
+import nucml.datasets as nuc_data
+import nucml.model.utilities as model_utils
+
+CLI = argparse.ArgumentParser()
 
 CLI.add_argument(
-  "--version",  # name on the CLI - drop the `--` for positional/required parameters
-  nargs="?",  # 0 or more values expected => creates a list
-  type=str,
-  default="v1",  # default if nothing is provided
+    "--version",  # name on the CLI - drop the `--` for positional/required parameters
+    nargs="?",  # 0 or more values expected => creates a list
+    type=str,
+    default="v1",  # default if nothing is provided
 )
 
 CLI.add_argument(
-  "--range",  # name on the CLI - drop the `--` for positional/required parameters
-  nargs="*",  # 0 or more values expected => creates a list
-  type=int,
-  default=[60, 410, 10],  # default if nothing is provided
+    "--range",  # name on the CLI - drop the `--` for positional/required parameters
+    nargs="*",  # 0 or more values expected => creates a list
+    type=int,
+    default=[60, 410, 10],  # default if nothing is provided
 )
 
 CLI.add_argument(
-  "--dataset",  # name on the CLI - drop the `--` for positional/required parameters
-  nargs="?",  # 0 or more values expected => creates a list
-  type=str,
-  default="B0"  # default if nothing is provided
+    "--dataset",  # name on the CLI - drop the `--` for positional/required parameters
+    nargs="?",  # 0 or more values expected => creates a list
+    type=str,
+    default="B0"  # default if nothing is provided
 )
 
 CLI.add_argument(
-  "--normalizer",  # name on the CLI - drop the `--` for positional/required parameters
-  nargs="?",  # 0 or more values expected => creates a list
-  type=str,
-  default="none"  # default if nothing is provided
+    "--normalizer",  # name on the CLI - drop the `--` for positional/required parameters
+    nargs="?",  # 0 or more values expected => creates a list
+    type=str,
+    default="none"  # default if nothing is provided
 )
 
 CLI.add_argument(
-  "--train_frac",  # name on the CLI - drop the `--` for positional/required parameters
-  nargs="?",  # 0 or more values expected => creates a list
-  type=int,
-  default=0.9  # default if nothing is provided
+    "--train_frac",  # name on the CLI - drop the `--` for positional/required parameters
+    nargs="?",  # 0 or more values expected => creates a list
+    type=int,
+    default=0.9  # default if nothing is provided
 )
 
 args = CLI.parse_args()
@@ -43,7 +55,7 @@ args = CLI.parse_args()
 START_LOOP_NUM = 0
 DATASET = args.dataset
 VERSION = '_' + args.version
-DATASET_DICT = {"B0":0, "B1":1, "B2":2, "B3":3, "B4":4}
+DATASET_DICT = {"B0": 0, "B1": 1, "B2": 2, "B3": 3, "B4": 4}
 NORMALIZER_TYPE = args.normalizer
 MT_STRATEGY = "one_hot"
 TRAIN_FRACTION = args.train_frac
@@ -51,39 +63,21 @@ MAX_DEPTH_LIST = np.arange(args.range[0], args.range[1], args.range[2])
 MIN_SPLIT_LIST = [2, 5, 10, 15]
 MIN_LEAF_LIST = [1, 3, 5, 7, 10]
 
+# #############################################################################################
+# ################################## IMPORTING MODULES ########################################
+# #############################################################################################
 
-##############################################################################################
-################################### IMPORTING MODULES ########################################
-##############################################################################################
+parameters_dict = {"max_depth_list": MAX_DEPTH_LIST, "min_split_list": MIN_SPLIT_LIST, "min_leaf_list": MIN_LEAF_LIST}
 
-import pandas as pd
-import os
-from joblib import dump
-import time
-from sklearn import tree
-import sys
-import itertools
-from sklearn.model_selection import train_test_split
-
-# This allows us to import the nucml utilities
-sys.path.append("../..")
-
-import nucml.datasets as nuc_data # pylint: disable=import-error
-import nucml.model.utilities as model_utils # pylint: disable=import-error
-
-
-
-parameters_dict = {"max_depth_list":MAX_DEPTH_LIST, "min_split_list":MIN_SPLIT_LIST, "min_leaf_list":MIN_LEAF_LIST}
-
-df, x_train, x_test, y_train, y_test = nuc_data.load_exfor(normalize=False,
-    pedro_v2=True, basic=DATASET_DICT[DATASET], frac=1-TRAIN_FRACTION, mt_coding=MT_STRATEGY)
+df, x_train, x_test, y_train, y_test = nuc_data.load_exfor(
+    normalize=False, pedro_v2=True, basic=DATASET_DICT[DATASET], frac=1-TRAIN_FRACTION, mt_coding=MT_STRATEGY)
 
 x_val, x_test, y_val, y_test = train_test_split(x_test, y_test, test_size=0.5)
 
 
 a = [list(MAX_DEPTH_LIST), list(MIN_SPLIT_LIST), list(MIN_LEAF_LIST)]
 total_num_iterations = len(list(itertools.product(*a)))
-loop_number = 1 # ORIGINAL INDENT
+loop_number = 1
 for i in MAX_DEPTH_LIST:
     for mss in MIN_SPLIT_LIST:
         for msl in MIN_LEAF_LIST:
@@ -113,19 +107,20 @@ for i in MAX_DEPTH_LIST:
                     y_hat_train = dt_model.predict(x_train)
                     y_hat_val = dt_model.predict(x_val)
                     y_hat_test = dt_model.predict(x_test)
-                    
+
                     train_error_metrics = model_utils.regression_error_metrics(y_hat_train, y_train)
                     val_error_metrics = model_utils.regression_error_metrics(y_hat_val, y_val)
                     test_error_metrics = model_utils.regression_error_metrics(y_hat_test, y_test)
 
-                    ################# MODEL AND SCALER SAVING ###########################
-                    RUN_NAME = 'DT{}_MSS{}_MSL{}_{}_{}_{}{}'.format(int(dt_model.get_depth()), mss, msl, NORMALIZER_TYPE, MT_STRATEGY, DATASET, VERSION) 
+                    # ################ MODEL AND SCALER SAVING ###########################
+                    RUN_NAME = 'DT{}_MSS{}_MSL{}_{}_{}_{}{}'.format(
+                        int(dt_model.get_depth()), mss, msl, NORMALIZER_TYPE, MT_STRATEGY, DATASET, VERSION)
 
                     if RUN_NAME in os.listdir("E:ML_Models_EXFOR/DT_{}/".format(DATASET)):
                         print("Duplicate Training. Skipping")
                         loop_number = loop_number + 1
                         continue
-                    
+
                     model_saving_directory = os.path.join("E:/ML_Models_EXFOR/DT_{}/".format(DATASET), RUN_NAME + "/")
                     os.makedirs(model_saving_directory)
                     model_saving_path = os.path.join(model_saving_directory, RUN_NAME + ".joblib")
@@ -133,14 +128,15 @@ for i in MAX_DEPTH_LIST:
                     dump(dt_model, model_saving_path)  # dump it on wandb.run.dir
                     # dump(scaler, open(scaler_saving_path, 'wb'))
 
-                    #################### GATHERING RESULTS ##############################
+                    # ################### GATHERING RESULTS ##############################
                     model_error_metrics = pd.DataFrame(columns=[
-                        "id", "max_depth", "mss", "msl", 'mt_strategy', 'normalizer', 
+                        "id", "max_depth", "mss", "msl", 'mt_strategy', 'normalizer',
                         "train_mae", "train_mse", "train_evs", "train_mae_m", "train_r2",
-                        "val_mae", "val_mse", "val_evs",  "val_mae_m", "val_r2", 
-                        "test_mae", "test_mse", "test_evs",  "test_mae_m", "test_r2",
+                        "val_mae", "val_mse", "val_evs", "val_mae_m", "val_r2",
+                        "test_mae", "test_mse", "test_evs", "test_mae_m", "test_r2",
                         "model_path", "training_time", "scaler_path"])
-                    to_append = model_utils.create_train_test_error_df(loop_number, train_error_metrics, test_error_metrics, val_error_metrics=val_error_metrics)
+                    to_append = model_utils.create_train_test_error_df(
+                        loop_number, train_error_metrics, test_error_metrics, val_error_metrics=val_error_metrics)
                     to_append['mt_strategy'] = MT_STRATEGY
                     to_append["normalizer"] = NORMALIZER_TYPE
                     to_append["max_depth"] = dt_model.get_depth()
